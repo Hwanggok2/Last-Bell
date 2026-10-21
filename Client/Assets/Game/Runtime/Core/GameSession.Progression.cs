@@ -22,26 +22,32 @@ namespace LastBell
                 equippedRelicIds = (string[])character.equippedRelicIds.Clone(),
                 appliedRelicLevels = Array.ConvertAll(character.equippedRelicIds, FindRelicLevel)
             };
-            state.run.stats = CalculateStats(character.id, state.run.statLevels, state.run.equippedRelicIds, state.run.appliedRelicLevels);
-            state.run.playerHpMilli = state.run.stats.maxHpMilli;
-            BeginStage(character.checkpoint + 1);
-            if (state.phase == SessionPhase.Combat && state.tutorialStep < 2)
+            state.run.combatStats = CalculateStats(character.id, state.run.statLevels, state.run.equippedRelicIds, state.run.appliedRelicLevels);
+            state.run.playerHpMilli = state.run.combatStats.maxHpMilli;
+            PrepareStage(character.checkpoint + 1);
+            if (state.phase != SessionPhase.MvpComplete && state.tutorialStep < 2)
             {
                 state.phase = state.tutorialStep == 0 ? SessionPhase.TutorialDodge : SessionPhase.TutorialAttack;
                 state.run.enemyHitAtMs = -1;
             }
+            else if (state.phase != SessionPhase.MvpComplete)
+                StartTransition(TransitionKind.Arrival, state.run.stage, state.run.stage, catalog.transitions.arrivalMs);
+            if (state.phase != SessionPhase.MvpComplete) Emit(SessionEventKind.StagePrepared);
             Publish();
             return true;
         }
 
-        private void BeginStage(int stageNumber)
+        private void PrepareStage(int stageNumber)
         {
             var run = state.run;
+            ClearPendingEnemyImpact();
+            ClearCombatQueue();
             if (run.cycle != 0 || !catalog.TryGetStage(stageNumber, out StageDefinition stage))
             {
                 state.phase = SessionPhase.MvpComplete;
                 run.enemyHitAtMs = -1;
                 run.attackHitAtMs = -1;
+                run.transition = null;
                 LastMessage = "1~10층 MVP와 11층 경계 전투를 마쳤습니다. 이후 콘텐츠는 제작 중입니다.";
                 Emit(SessionEventKind.MvpCompleted);
                 return;
@@ -53,24 +59,28 @@ namespace LastBell
             run.stunUntilMs = -1;
             run.immunityUntilMs = -1;
             run.attackHitAtMs = -1;
+            run.enemyHitAtMs = -1;
+            run.attackReadyAtMs = run.clockMs;
+            run.dodgeStartMs = -1000000;
             run.patternStep = 0;
             run.patternIndex = 0;
             run.stageRewardApplied = false;
             run.offer = null;
-            state.phase = SessionPhase.Combat;
-            ScheduleCurrentCue();
-            Emit(SessionEventKind.StageStarted);
+            run.story = null;
         }
 
         private bool EndRun()
         {
-            if (state.phase == SessionPhase.RewardChoice) return Reject("유물을 먼저 선택하세요.");
+            if (state.phase == SessionPhase.RewardChoice || state.phase == SessionPhase.StoryDialogue ||
+                (state.phase == SessionPhase.Transition && state.run?.offer != null)) return Reject("보상을 먼저 마치세요.");
             if (state.tutorialStep < 2) return Reject("회피와 공격 연습을 먼저 마치세요.");
             if (state.phase == SessionPhase.Lobby || state.phase == SessionPhase.ExchangeConfirmation) return false;
             state.phase = SessionPhase.Lobby;
             state.exchange = null;
             paused = false;
-            if (state.run != null) { state.run.attackHitAtMs = -1; state.run.enemyHitAtMs = -1; }
+            ClearPendingEnemyImpact();
+            ClearCombatQueue();
+            if (state.run != null) { state.run.attackHitAtMs = -1; state.run.enemyHitAtMs = -1; state.run.transition = null; }
             Publish();
             return true;
         }
@@ -80,9 +90,9 @@ namespace LastBell
             state.run.playerHpMilli = 0;
             state.run.attackHitAtMs = -1;
             state.run.enemyHitAtMs = -1;
-            state.phase = SessionPhase.Lobby;
+            StartTransition(TransitionKind.Death, state.run.stage, CurrentCharacter.checkpoint + 1, catalog.transitions.deathMs);
             paused = false;
-            LastMessage = "쓰러졌습니다. 강화 후 다시 출전하세요.";
+            LastMessage = "쓰러졌습니다.";
             Emit(SessionEventKind.PlayerDefeated);
         }
 
@@ -95,14 +105,27 @@ namespace LastBell
             run.enemyHitAtMs = -1;
             run.attackHitAtMs = -1;
             var stage = catalog.GetStage(run.stage);
-            int gold = checked((int)Math.Floor(catalog.GetBaseGold(stage) * run.stats.goldMultiplier));
+            long gold = checked((long)decimal.Floor(catalog.GetBaseGold(stage) * (decimal)run.combatStats.goldMultiplier));
             state.gold = checked(state.gold + gold);
-            state.fragments = checked(state.fragments + catalog.GetFragmentReward(stage));
+            int fragments=catalog.GetFragmentReward(stage);
+            state.fragments = checked(state.fragments + fragments);
+            run.earnedGold=checked(run.earnedGold+gold);
+            run.earnedFragments=checked(run.earnedFragments+fragments);
             state.walletVersion++;
             state.highestClearedStage = Math.Max(state.highestClearedStage, run.stage);
             CurrentCharacter.highestStage = Math.Max(CurrentCharacter.highestStage, run.stage);
+            if (stage.kind == "boss")
+            {
+                CreateRelicOffer();
+                PrepareStory();
+            }
+            StartTransition(TransitionKind.EnemyDefeat, run.stage, run.stage + 1, catalog.transitions.enemyDefeatMs);
             Emit(SessionEventKind.EnemyDefeated);
-            if (stage.kind == "normal") { BeginStage(run.stage + 1); return; }
+        }
+
+        private void CreateRelicOffer()
+        {
+            var run = state.run;
             string[] candidates = Array.ConvertAll(catalog.relics, x => x.id);
             int count = catalog.relicRules.choicesPerBoss;
             for (int i = 0; i < count; i++)
@@ -122,12 +145,11 @@ namespace LastBell
                 offeredLevels = Array.ConvertAll(ids, FindRelicLevel),
                 maxGold = catalog.GetMaxRelicGold(run.stage)
             };
-            state.phase = SessionPhase.RewardChoice;
         }
 
         private bool CommitRelicChoice(string id)
         {
-            if (state.phase != SessionPhase.RewardChoice || state.run?.offer == null) return false;
+            if (paused || state.phase != SessionPhase.RewardChoice || state.run?.offer == null) return false;
             var run = state.run;
             var offer = run.offer;
             int index = Array.IndexOf(offer.relicIds, id);
@@ -136,19 +158,19 @@ namespace LastBell
             if (level != offer.offeredLevels[index]) return Reject("보상 상태가 달라졌습니다. 저장 상태를 확인하세요.");
             if (level == 0) state.relics.Add(new OwnedRelicData { id = id, level = 1 });
             else if (level < catalog.relicRules.maxLevel) state.relics.Find(x => x.id == id).level++;
-            else { state.gold = checked(state.gold + offer.maxGold); state.walletVersion++; }
-            long oldMax = run.stats.maxHpMilli;
+            else { state.gold = checked(state.gold + offer.maxGold); run.earnedGold=checked(run.earnedGold+offer.maxGold); state.walletVersion++; }
+            long oldMax = run.combatStats.maxHpMilli;
             run.appliedRelicLevels = Array.ConvertAll(run.equippedRelicIds, FindRelicLevel);
-            run.stats = CalculateStats(run.characterId, run.statLevels, run.equippedRelicIds, run.appliedRelicLevels);
-            run.playerHpMilli = Math.Min(run.stats.maxHpMilli, run.playerHpMilli + Math.Max(0, run.stats.maxHpMilli - oldMax));
+            run.combatStats = CalculateStats(run.characterId, run.statLevels, run.equippedRelicIds, run.appliedRelicLevels);
+            run.playerHpMilli = Math.Min(run.combatStats.maxHpMilli, run.playerHpMilli + Math.Max(0, run.combatStats.maxHpMilli - oldMax));
             if (run.stage % 10 == 0)
             {
                 CurrentCharacter.checkpoint = run.stage;
-                run.playerHpMilli = run.stats.maxHpMilli;
+                run.playerHpMilli = run.combatStats.maxHpMilli;
             }
             run.lastAppliedRewardId = offer.rewardId;
             run.offer = null;
-            BeginStage(run.stage + 1);
+            BeginTravel(run.stage, run.stage + 1);
             Emit(SessionEventKind.RelicChosen, relicId: id, eventStage: offer.stage);
             Publish();
             return true;

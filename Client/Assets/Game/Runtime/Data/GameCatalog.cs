@@ -20,6 +20,8 @@ namespace LastBell
         public GrowthConfig growth;
         public EconomyConfig economy;
         public RelicRules relicRules;
+        public TransitionConfig transitions;
+        public StoryDefinition[] stories;
         public CharacterDefinition[] characters;
         public EnemyDefinition[] enemies;
         public StageDefinition[] stages;
@@ -49,21 +51,32 @@ namespace LastBell
         public EnemyDefinition GetEnemy(string id) { EnsureIndex(); return enemyIndex[id]; }
         public StageDefinition GetStage(int number) { EnsureIndex(); return stageIndex[number]; }
         public RelicDefinition GetRelic(string id) { EnsureIndex(); return relicIndex[id]; }
+        public StoryDefinition FindStory(int stage) { return Array.Find(stories, x => x.stage == stage); }
+        public StoryDefinition FindStory(string id) { return Array.Find(stories, x => x.id == id); }
         public bool TryGetStage(int number, out StageDefinition stage) { EnsureIndex(); return stageIndex.TryGetValue(number, out stage); }
 
         // targetLevel is the level being purchased: 1..50. Index 0 is the initial level, not a purchase.
-        public int GetUpgradeCost(int targetLevel)
+        public long GetUpgradeCost(int targetLevel)
         {
             EnsureIndex();
             if (targetLevel <= growth.minLevel || targetLevel > growth.maxLevel) throw new ArgumentOutOfRangeException(nameof(targetLevel));
             return economy.upgradeCosts[targetLevel];
         }
 
-        public int GetBaseGold(StageDefinition stage)
+        public long GetBaseGold(StageDefinition stage)
         {
             EnsureIndex();
             int multiplier = stage.kind == "boss" ? economy.bossGoldMultiplier : stage.kind == "miniboss" ? economy.minibossGoldMultiplier : 1;
-            return economy.normalGoldPerZone[(stage.number - 1) / 10] * multiplier;
+            return checked(economy.normalGoldPerStage[stage.number] * multiplier);
+        }
+
+        public long GetExchangeRate(int highestClearedStage)
+        {
+            EnsureIndex();
+            int tier = 0;
+            for (int i = 1; i < economy.exchangeTierUnlockBosses.Length; i++)
+                if (highestClearedStage >= economy.exchangeTierUnlockBosses[i]) tier = i;
+            return economy.exchangeGoldPerUnlockTier[tier];
         }
 
         public int GetFragmentReward(StageDefinition stage)
@@ -72,7 +85,7 @@ namespace LastBell
             return stage.kind == "boss" ? economy.bossFragments : stage.kind == "miniboss" ? economy.minibossFragments : 0;
         }
 
-        public int GetMaxRelicGold(int stageNumber)
+        public long GetMaxRelicGold(int stageNumber)
         {
             EnsureIndex();
             int zone = (stageNumber - 1) / 10;
@@ -89,7 +102,7 @@ namespace LastBell
         public string[] Validate()
         {
             var errors = new List<string>();
-            Require(errors, schemaVersion == 1, "schemaVersion: expected 1");
+            Require(errors, schemaVersion == 2, "schemaVersion: expected 2");
             Require(errors, !string.IsNullOrWhiteSpace(dataVersion), "dataVersion: required");
             Require(errors, combat != null && growth != null && economy != null && relicRules != null, "combat/growth/economy/relicRules: required");
             var characterIds = CheckIds(errors, characters, x => x.id, "characters");
@@ -97,6 +110,26 @@ namespace LastBell
             CheckIds(errors, relics, x => x.id, "relics");
             Require(errors, defaultCharacterId != null && characterIds.Contains(defaultCharacterId), "defaultCharacterId: unknown character");
             if (combat == null || growth == null || economy == null || relicRules == null) return errors.ToArray();
+            Require(errors, transitions != null, "transitions: required");
+            if (transitions != null)
+                Require(errors, transitions.enemyDefeatMs > 0 && transitions.travelMs > 0 && transitions.arrivalMs > 0 && transitions.deathMs > 0 &&
+                    transitions.minibossIntroMs > 0 && transitions.bossIntroMs > 0 && transitions.repeatMinibossIntroMs > 0 && transitions.repeatBossIntroMs > 0,
+                    "transitions: durations must be positive");
+            CheckIds(errors, stories, x => x.id, "stories");
+            if (stories != null) foreach (var story in stories)
+            {
+                if (story == null) continue;
+                Require(errors, story.stage == 10 && story.bossId == "bell_knight", "stories: MVP supports Stage 10 bell_knight only");
+                Require(errors, story.lines != null && story.lines.Length == 3, "stories.lines: three dialogue lines required");
+                if (story.lines != null) foreach (var line in story.lines)
+                {
+                    Require(errors, line != null && !string.IsNullOrWhiteSpace(line.speaker) && !string.IsNullOrWhiteSpace(line.text), "stories.lines: speaker/text required");
+                    if (line?.responses == null) { errors.Add("stories.lines.responses: required array"); continue; }
+                    var responseIds = new HashSet<string>();
+                    foreach (var response in line.responses)
+                        Require(errors, response != null && characterIds.Contains(response.characterId ?? "") && responseIds.Add(response.characterId) && !string.IsNullOrWhiteSpace(response.text), "stories.lines.responses: invalid character/text");
+                }
+            }
             Require(errors, growth.minLevel == 0 && growth.maxLevel == 50, "growth: MVP levels must be 0..50");
             Require(errors, growth.breakthroughLevels != null && growth.breakthroughLevels.Length == 4, "growth.breakthroughLevels: four milestones required");
             if (growth.breakthroughLevels != null) for (int i = 0; i < growth.breakthroughLevels.Length; i++)
@@ -108,20 +141,27 @@ namespace LastBell
             Require(errors, Positive(growth.critBase) && growth.critBase <= combat.critChanceCap && Positive(growth.critPerEffectiveLevel) && Positive(growth.goldBonusPerEffectiveLevel) && Positive(growth.resonanceBase) && growth.resonanceBase <= combat.stunDamageMultiplierCap && Positive(growth.resonancePerEffectiveLevel), "growth: invalid luck/resonance coefficients");
             Require(errors, economy.upgradeCosts != null && economy.upgradeCosts.Length == growth.maxLevel + 1, "economy.upgradeCosts: expected 51 entries indexed by target level");
             if (economy.upgradeCosts != null)
-                for (int i = 0; i < economy.upgradeCosts.Length; i++) Require(errors, i == 0 ? economy.upgradeCosts[i] == 0 : economy.upgradeCosts[i] > 0, "economy.upgradeCosts[" + i + "]: invalid cost");
-            Require(errors, economy.exchangeGoldPerFragment > 0, "economy.exchangeGoldPerFragment: must be positive");
+                for (int i = 0; i < economy.upgradeCosts.Length; i++) Require(errors, i == 0 ? economy.upgradeCosts[i] == 0 : economy.upgradeCosts[i] > economy.upgradeCosts[i - 1], "economy.upgradeCosts[" + i + "]: invalid cost");
+            Require(errors, PositiveArray(economy.exchangeGoldPerUnlockTier, 5) && economy.exchangeGoldPerUnlockTier[0] == 100, "economy.exchangeGoldPerUnlockTier: five positive rates starting100");
+            Require(errors, economy.exchangeTierUnlockBosses != null && economy.exchangeTierUnlockBosses.Length == 5, "economy.exchangeTierUnlockBosses: five thresholds required");
+            if (economy.exchangeTierUnlockBosses != null) for (int i=0;i<economy.exchangeTierUnlockBosses.Length;i++)
+                Require(errors,economy.exchangeTierUnlockBosses[i]==i*10,"economy.exchangeTierUnlockBosses: expected0/10/20/30/40");
+            if(economy.exchangeGoldPerUnlockTier!=null) for(int i=1;i<economy.exchangeGoldPerUnlockTier.Length;i++)
+                Require(errors,economy.exchangeGoldPerUnlockTier[i]>economy.exchangeGoldPerUnlockTier[i-1],"economy.exchangeGoldPerUnlockTier: must increase");
             Require(errors, economy.initialGold >= 0 && economy.initialFragments >= 0 && economy.minibossFragments == 1 && economy.bossFragments == 3, "economy: invalid initial wallet or fixed 1/3 rewards");
             Require(errors, economy.minibossGoldMultiplier > 0 && economy.bossGoldMultiplier > 0 && economy.ngGoldMultiplier == 1f, "economy: invalid gold multipliers");
-            Require(errors, economy.exchangeGoldPerFragment == 100, "economy.exchangeGoldPerFragment: expected 100");
-            Require(errors, PositiveArray(economy.normalGoldPerZone, 5), "economy.normalGoldPerZone: expected five positive zones");
+            Require(errors, economy.normalGoldPerStage != null && economy.normalGoldPerStage.Length == 51 && economy.normalGoldPerStage[0] == 0, "economy.normalGoldPerStage: expected51 entries, index0=0");
+            if(economy.normalGoldPerStage!=null) for(int i=1;i<economy.normalGoldPerStage.Length;i++)
+                Require(errors,economy.normalGoldPerStage[i]>economy.normalGoldPerStage[i-1] && economy.normalGoldPerStage[i]<=long.MaxValue/Math.Max(1,Math.Max(economy.bossGoldMultiplier,economy.minibossGoldMultiplier)),"economy.normalGoldPerStage: increasing Int64 rewards required");
             Require(errors, PositiveArray(economy.maxRelicGoldPerZone, 5), "economy.maxRelicGoldPerZone: expected five positive zones");
             Require(errors, PositiveArray(economy.slotCosts, 2) && economy.slotCosts[0] == 4 && economy.slotCosts[1] == 8, "economy.slotCosts: expected 4/8");
             Require(errors, PositiveArray(economy.slotUnlockStages, 2) && economy.slotUnlockStages[0] == 10 && economy.slotUnlockStages[1] == 20, "economy.slotUnlockStages: expected 10/20");
             Require(errors, relicRules.maxLevel == 5 && relicRules.maxEquipped == 3 && relicRules.choicesPerBoss == 3 && relicRules.includeMaxInPool, "relicRules: expected five levels, three slots/choices, MAX included");
             Require(errors, relics != null && relics.Length == 10, "relics: expected ten definitions");
             Require(errors, combat.dodgeActiveMs > 0 && combat.dodgeRecoveryMs >= 0 && combat.perfectWindowMs > 0 && combat.perfectWindowMs <= combat.dodgeActiveMs, "combat: invalid dodge timing");
-            Require(errors, combat.comboMinGapMs >= combat.dodgeActiveMs + combat.dodgeRecoveryMs && combat.singleTelegraphMs > 0 && combat.comboOverviewMs > 0 && combat.followupHighlightMs > 0, "combat: invalid cue/combo timing");
-            Require(errors, combat.comboMinGapMs >= 450 && combat.followupHighlightMs <= combat.comboMinGapMs && combat.maxVisibleThreats > 0, "combat: invalid minimum hit gap/threat visibility");
+            Require(errors, combat.singleTelegraphMs%6==0 && combat.fastTelegraphMs%6==0 && combat.attackFlightMs*6==combat.singleTelegraphMs && combat.fastAttackFlightMs*6==combat.fastTelegraphMs && combat.comboDefaultGapMs*3==combat.singleTelegraphMs*2 && combat.comboMinGapMs*3==combat.fastTelegraphMs*2, "combat: warning, flight and followups must share one rhythm");
+            Require(errors, combat.comboMinGapMs >= combat.dodgeActiveMs + combat.dodgeRecoveryMs && combat.singleTelegraphMs > 0 && combat.fastTelegraphMs > combat.attackFlightMs && combat.attackFlightMs > 0 && combat.singleTelegraphMs >= combat.fastTelegraphMs && combat.perfectCounterMs > 0, "combat: invalid cue/combo timing");
+            Require(errors, combat.comboDefaultGapMs >= combat.comboMinGapMs && combat.maxVisibleThreats > 0, "combat: invalid minimum hit gap/threat visibility");
             Require(errors, combat.attackWindupMs > 0 && combat.attackWindupMs < combat.attackIntervalMs && combat.hpUnitsPerPoint == 1000, "combat: invalid attack timing or milli-HP scale");
             Require(errors, combat.normalStagger > 0 && combat.perfectStagger > 0 && combat.staggerThreshold > 0 && combat.damageStaggerPenalty > 0 && combat.normalStunMs > 0 && combat.minibossStunMs > 0 && combat.bossStunMs > 0 && combat.postStunImmunityMs > 0, "combat: invalid stagger/stun settings");
             Require(errors, Positive(combat.critDamageMultiplier) && Positive(combat.critChanceCap) && combat.critChanceCap <= 1 && Positive(combat.goldLuckBonusCap) && combat.goldLuckBonusCap <= 1 && Positive(combat.stunDamageMultiplierCap), "combat: invalid caps");
@@ -160,7 +200,7 @@ namespace LastBell
                 if (s.patternSteps == null) continue;
                 if (s.number >= 1 && s.number <= 4)
                 {
-                    string direction = new[] { "up", "back", "down", "forward" }[s.number - 1];
+                    string direction = new[] { "up", "back", "parry", "forward" }[s.number - 1];
                     Require(errors, s.teachDodge == direction && s.patternSteps.Length > 0 && s.patternSteps[0] != null && s.patternSteps[0].requiredDodge == direction, path + ": first attack must introduce its tutorial direction");
                 }
                 for (int i = 0; i < s.patternSteps.Length; i++)
@@ -169,9 +209,9 @@ namespace LastBell
                     if (p == null) { errors.Add(path + ".patternSteps[" + i + "]: null"); continue; }
                     string expected = RequiredDodge(p.danger);
                     Require(errors, expected != null && p.requiredDodge == expected, path + ".patternSteps[" + i + "]: danger/dodge mismatch");
-                    int cue = p.comboStep == 0 ? combat.singleTelegraphMs : p.comboStep == 1 ? combat.comboOverviewMs : combat.followupHighlightMs;
-                    Require(errors, p.comboStep >= 0 && p.telegraphMs == cue, path + ".patternSteps[" + i + "]: invalid cue");
-                    Require(errors, p.intervalMs >= combat.comboMinGapMs && p.intervalMs >= p.telegraphMs, path + ".patternSteps[" + i + "]: invalid hit interval");
+                    Require(errors,p.comboStep>=0&&p.comboStep<=combat.maxVisibleThreats&&(p.telegraphMs==combat.singleTelegraphMs||p.telegraphMs==combat.fastTelegraphMs),path+": invalid cue");
+                    Require(errors,p.intervalMs>=combat.comboMinGapMs&&(p.comboStep>1||p.intervalMs>=p.telegraphMs),path+": invalid hit interval");
+                    Require(errors,p.comboStep<=1||(i>0&&s.patternSteps[i-1]!=null&&p.telegraphMs==s.patternSteps[i-1].telegraphMs),path+": combo tempo mismatch");
                     Require(errors, p.comboStep <= 1 || (i > 0 && s.patternSteps[i - 1] != null && s.patternSteps[i - 1].comboStep == p.comboStep - 1), path + ".patternSteps[" + i + "]: broken combo order");
                     Require(errors, p.comboStep != 1 || (i + 1 < s.patternSteps.Length && s.patternSteps[i + 1] != null && s.patternSteps[i + 1].comboStep == 2), path + ".patternSteps[" + i + "]: combo start needs a followup");
                 }
@@ -179,10 +219,10 @@ namespace LastBell
             return errors.ToArray();
         }
 
-        public static bool IsDirection(string direction) { return direction == "up" || direction == "back" || direction == "down" || direction == "forward"; }
+        public static bool IsDirection(string direction) { return direction == "up" || direction == "back" || direction == "parry" || direction == "forward"; }
         public static string RequiredDodge(string danger)
         {
-            switch (danger) { case "low_sweep": return "up"; case "high_sweep": return "down"; case "thrust": return "back"; case "outer_arc": return "forward"; default: return null; }
+            switch (danger) { case "low_sweep": return "up"; case "high_sweep": return "parry"; case "thrust": return "back"; case "outer_arc": return "forward"; default: return null; }
         }
         private static bool IsFinite(float value) { return !float.IsNaN(value) && !float.IsInfinity(value); }
         private static bool Positive(float value) { return IsFinite(value) && value > 0; }
@@ -195,6 +235,12 @@ namespace LastBell
         private static bool IsEffect(string effect)
         {
             return effect == "attackPercent" || effect == "maxHpPercent" || effect == "normalStaggerPercent" || effect == "perfectStaggerPercent" || effect == "stunDamageBonus" || effect == "damageReduction" || effect == "critChanceBonus";
+        }
+        private static bool PositiveArray(long[] values,int count)
+        {
+            if(values==null||values.Length!=count)return false;
+            foreach(long value in values)if(value<=0)return false;
+            return true;
         }
         private static void Require(List<string> errors, bool condition, string message) { if (!condition) errors.Add(message); }
         private static HashSet<string> CheckIds<T>(List<string> errors, T[] values, Func<T, string> id, string path) where T : class
@@ -211,12 +257,29 @@ namespace LastBell
         }
     }
 
+    [Serializable] public sealed class TransitionConfig
+    {
+        public int enemyDefeatMs, travelMs, arrivalMs, deathMs;
+        public int minibossIntroMs, bossIntroMs, repeatMinibossIntroMs, repeatBossIntroMs;
+    }
+    [Serializable] public sealed class StoryDefinition
+    {
+        public string id, bossId;
+        public int stage;
+        public StoryLineDefinition[] lines;
+    }
+    [Serializable] public sealed class StoryLineDefinition
+    {
+        public string speaker, text;
+        public StoryResponseDefinition[] responses;
+    }
+    [Serializable] public sealed class StoryResponseDefinition { public string characterId, text; }
     [Serializable] public sealed class CombatConfig
     {
         public int dodgeActiveMs, dodgeRecoveryMs, perfectWindowMs, comboMinGapMs;
         public int normalStagger, perfectStagger, staggerThreshold, damageStaggerPenalty;
         public int attackIntervalMs, attackWindupMs, normalStunMs, minibossStunMs, bossStunMs, postStunImmunityMs;
-        public int singleTelegraphMs, comboOverviewMs, followupHighlightMs, maxVisibleThreats, hpUnitsPerPoint;
+        public int singleTelegraphMs, fastTelegraphMs, attackFlightMs, fastAttackFlightMs, comboDefaultGapMs, perfectCounterMs, maxVisibleThreats, hpUnitsPerPoint;
         public float critDamageMultiplier, critChanceCap, goldLuckBonusCap, stunDamageMultiplierCap;
     }
     [Serializable] public sealed class GrowthConfig
@@ -230,9 +293,11 @@ namespace LastBell
     }
     [Serializable] public sealed class EconomyConfig
     {
-        public int initialGold, initialFragments, minibossFragments, bossFragments;
-        public int minibossGoldMultiplier, bossGoldMultiplier, exchangeGoldPerFragment;
-        public int[] normalGoldPerZone, maxRelicGoldPerZone, upgradeCosts, slotCosts, slotUnlockStages;
+        public long initialGold;
+        public int initialFragments, minibossFragments, bossFragments;
+        public int minibossGoldMultiplier, bossGoldMultiplier;
+        public long[] normalGoldPerStage, maxRelicGoldPerZone, upgradeCosts, exchangeGoldPerUnlockTier;
+        public int[] slotCosts, slotUnlockStages, exchangeTierUnlockBosses;
         public float ngGoldMultiplier;
     }
     [Serializable] public sealed class RelicRules

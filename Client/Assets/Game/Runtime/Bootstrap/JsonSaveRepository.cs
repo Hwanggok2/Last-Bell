@@ -39,13 +39,16 @@ namespace LastBell
             if(envelope==null||envelope.envelopeVersion!=1||string.IsNullOrEmpty(envelope.payload)||Hash(envelope.payload)!=envelope.sha256)
                 throw new InvalidDataException("Save envelope/checksum mismatch");
             var value=JsonUtility.FromJson<GameSaveData>(envelope.payload);
-            if(value==null||value.schemaVersion!=1)throw new InvalidDataException("Unsupported save version");
+            if(value==null||(value.schemaVersion!=1&&value.schemaVersion!=2&&value.schemaVersion!=3&&value.schemaVersion!=4))throw new InvalidDataException("Unsupported save version");
+            // Normalize the in-memory DTO only, after verifying the original payload.
+            // Never rewrite the envelope/checksum or discard a partially populated record.
+            value.NormalizeOptionalRecords();
             return value;
         }
 
         public void Save(GameSaveData value)
         {
-            if(value==null||value.schemaVersion!=1)throw new InvalidDataException("Unsupported save version");
+            if(value==null||(value.schemaVersion!=1&&value.schemaVersion!=2&&value.schemaVersion!=3&&value.schemaVersion!=4))throw new InvalidDataException("Unsupported save version");
             string payload=JsonUtility.ToJson(value);
             string encoded=JsonUtility.ToJson(new Envelope{payload=payload,sha256=Hash(payload)},true);
             string temporary=path+".tmp";

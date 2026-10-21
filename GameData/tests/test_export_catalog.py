@@ -22,14 +22,31 @@ class CatalogExportTests(unittest.TestCase):
     def test_current_source_and_mvp_totals(self):
         catalog.validate(self.data)
         e = self.data["economy"]
-        self.assertEqual(sum(e["upgradeCosts"]), 1780)
-        self.assertEqual(sum(e["normalGoldPerZone"]) * 16, 8000)
+        self.assertEqual(sum(e["upgradeCosts"]), 42297564)
+        self.assertEqual(sum(g * (5 if s % 10 == 0 else 3 if s % 5 == 0 else 1) for s, g in enumerate(e["normalGoldPerStage"]) if s), 172833824)
         self.assertEqual(5 * (e["minibossFragments"] + e["bossFragments"]), 20)
         self.assertEqual(self.data["stages"][9]["maxHp"], 706)
         self.assertEqual(self.data["stages"][10]["enemyId"], "chain_thrall")
 
     def test_duplicate_relic_id(self):
         self.reject(lambda d: d["relics"][1].update(id=d["relics"][0]["id"]), "duplicate ID")
+
+    def test_current_presentation_timing_and_story_are_exported(self):
+        self.assertEqual(self.data["combat"]["attackWindupMs"], 200)
+        t = self.data["transitions"]
+        self.assertEqual(t["enemyDefeatMs"] + t["travelMs"] + t["arrivalMs"], 3250)
+        self.assertEqual(t["deathMs"], 1800)
+        self.assertEqual([t["minibossIntroMs"], t["bossIntroMs"]], [1800, 2200])
+        self.assertEqual(self.data["stories"][0]["stage"], 10)
+        self.assertEqual(self.data["stories"][0]["lines"][0]["text"], "문은… 안에서 잠갔다.")
+
+    def test_invalid_transition_duration(self):
+        self.reject(lambda d: d["transitions"].update(travelMs=0), "duration must be positive")
+
+    def test_story_cannot_reference_miniboss_or_unknown_character(self):
+        self.reject(lambda d: d["stories"][0].update(stage=5), "MVP story")
+        self.setUp()
+        self.reject(lambda d: d["stories"][0]["lines"][2]["responses"][0].update(characterId="unknown"), "invalid character")
 
     def test_unknown_enemy_reference(self):
         self.reject(lambda d: d["stages"][0].update(enemyId="not_in_catalog"), "unknown enemy")
@@ -38,7 +55,7 @@ class CatalogExportTests(unittest.TestCase):
         self.reject(lambda d: d["stages"][8].update(number=10), "ordered unique floors")
 
     def test_unsafe_combo_hit_gap(self):
-        self.reject(lambda d: d["stages"][4]["patternSteps"][1].update(intervalMs=449), "intervalMs")
+        self.reject(lambda d: d["stages"][4]["patternSteps"][1].update(intervalMs=259), "intervalMs")
 
     def test_orphan_followup(self):
         self.reject(lambda d: d["stages"][0]["patternSteps"][0].update(comboStep=2, telegraphMs=250), "followups must be consecutive")

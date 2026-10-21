@@ -1,9 +1,9 @@
 {
-  "schemaVersion": 1,
-  "dataVersion": "mvp-1.0.0",
-  "sourcePlanningVersion": "planning-v4",
+  "schemaVersion": 2,
+  "dataVersion": "mvp-1.4.0",
+  "sourcePlanningVersion": "planning-v5.9",
   "generatedNotice": "GENERATED from GameData/mvp-catalog.json; DO NOT EDIT. Run python GameData/export_catalog.py.",
-  "sourceSha256": "223368a55add276066d9a1aa62ad36fafc8a8dd015cf318582c743eb47cc1f76",
+  "sourceSha256": "ab78e19fa1bb000a1147b31a66981837dbe7595e89c844a4b9d20d2d1d59519a",
   "defaultCharacterId": "on",
   "mvpLastStage": 10,
   "boundaryStage": 11,
@@ -11,18 +11,16 @@
     "dodgeActiveMs": 160,
     "dodgeRecoveryMs": 100,
     "perfectWindowMs": 60,
-    "comboMinGapMs": 450,
+    "comboMinGapMs": 320,
     "normalStagger": 20,
     "perfectStagger": 40,
     "staggerThreshold": 100,
     "damageStaggerPenalty": 20,
     "attackIntervalMs": 500,
-    "attackWindupMs": 100,
+    "attackWindupMs": 200,
     "postStunImmunityMs": 2000,
-    "singleTelegraphMs": 650,
-    "comboOverviewMs": 900,
-    "followupHighlightMs": 250,
-    "maxVisibleThreats": 2,
+    "singleTelegraphMs": 540,
+    "maxVisibleThreats": 3,
     "critDamageMultiplier": 1.5,
     "critChanceCap": 0.3,
     "goldLuckBonusCap": 0.2,
@@ -30,7 +28,12 @@
     "normalStunMs": 1500,
     "minibossStunMs": 1200,
     "bossStunMs": 1000,
-    "hpUnitsPerPoint": 1000
+    "hpUnitsPerPoint": 1000,
+    "fastTelegraphMs": 480,
+    "attackFlightMs": 90,
+    "comboDefaultGapMs": 360,
+    "perfectCounterMs": 500,
+    "fastAttackFlightMs": 80
   },
   "growth": {
     "minLevel": 0,
@@ -70,73 +73,65 @@
     "bossFragments": 3,
     "minibossGoldMultiplier": 3,
     "bossGoldMultiplier": 5,
-    "exchangeGoldPerFragment": 100,
-    "normalGoldPerZone": [
-      40,
-      70,
-      100,
-      130,
-      160
-    ],
     "maxRelicGoldPerZone": [
-      20,
-      40,
-      60,
-      80,
-      100
+      75,
+      1388,
+      25850,
+      481483,
+      8968311
     ],
     "upgradeCosts": [
       0,
       10,
-      10,
-      10,
-      10,
-      10,
-      10,
-      10,
-      10,
-      10,
-      10,
+      13,
+      16,
+      20,
+      25,
+      31,
+      39,
+      48,
       60,
-      20,
-      20,
-      20,
-      20,
-      20,
-      20,
-      20,
-      20,
-      20,
-      90,
-      30,
-      30,
-      30,
-      30,
-      30,
-      30,
-      30,
-      30,
-      30,
-      120,
-      40,
-      40,
-      40,
-      40,
-      40,
-      40,
-      40,
-      40,
-      40,
-      150,
-      50,
-      50,
-      50,
-      50,
-      50,
-      50,
-      50,
-      50,
-      50
+      75,
+      187,
+      233,
+      292,
+      364,
+      455,
+      569,
+      711,
+      889,
+      1111,
+      1388,
+      3470,
+      4337,
+      5422,
+      6777,
+      8471,
+      10588,
+      13235,
+      16544,
+      20680,
+      25850,
+      64624,
+      80780,
+      100975,
+      126218,
+      157773,
+      197216,
+      246520,
+      308149,
+      385186,
+      481483,
+      1203707,
+      1504633,
+      1880791,
+      2350989,
+      2938736,
+      3673420,
+      4591775,
+      5739719,
+      7174649,
+      8968311
     ],
     "slotCosts": [
       4,
@@ -146,7 +141,74 @@
       10,
       20
     ],
-    "ngGoldMultiplier": 1
+    "ngGoldMultiplier": 1,
+    "normalGoldPerStage": [
+      0,
+      20,
+      26,
+      32,
+      40,
+      50,
+      62,
+      78,
+      96,
+      120,
+      150,
+      374,
+      466,
+      584,
+      728,
+      910,
+      1138,
+      1422,
+      1778,
+      2222,
+      2776,
+      6940,
+      8674,
+      10844,
+      13554,
+      16942,
+      21176,
+      26470,
+      33088,
+      41360,
+      51700,
+      129248,
+      161560,
+      201950,
+      252436,
+      315546,
+      394432,
+      493040,
+      616298,
+      770372,
+      962966,
+      2407414,
+      3009266,
+      3761582,
+      4701978,
+      5877472,
+      7346840,
+      9183550,
+      11479438,
+      14349298,
+      17936622
+    ],
+    "exchangeGoldPerUnlockTier": [
+      100,
+      150,
+      2776,
+      51700,
+      962966
+    ],
+    "exchangeTierUnlockBosses": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ]
   },
   "relicRules": {
     "maxLevel": 5,
@@ -231,7 +293,7 @@
         {
           "danger": "low_sweep",
           "requiredDodge": "up",
-          "telegraphMs": 650,
+          "telegraphMs": 540,
           "intervalMs": 1800,
           "comboStep": 0
         }
@@ -248,14 +310,14 @@
         {
           "danger": "thrust",
           "requiredDodge": "back",
-          "telegraphMs": 650,
+          "telegraphMs": 540,
           "intervalMs": 1800,
           "comboStep": 0
         },
         {
           "danger": "low_sweep",
           "requiredDodge": "up",
-          "telegraphMs": 650,
+          "telegraphMs": 540,
           "intervalMs": 1800,
           "comboStep": 0
         }
@@ -267,26 +329,26 @@
       "kind": "normal",
       "maxHp": 137,
       "damage": 9,
-      "teachDodge": "down",
+      "teachDodge": "parry",
       "patternSteps": [
         {
           "danger": "high_sweep",
-          "requiredDodge": "down",
-          "telegraphMs": 650,
+          "requiredDodge": "parry",
+          "telegraphMs": 540,
           "intervalMs": 1800,
           "comboStep": 0
         },
         {
           "danger": "low_sweep",
           "requiredDodge": "up",
-          "telegraphMs": 650,
+          "telegraphMs": 540,
           "intervalMs": 1800,
           "comboStep": 0
         },
         {
           "danger": "thrust",
           "requiredDodge": "back",
-          "telegraphMs": 650,
+          "telegraphMs": 540,
           "intervalMs": 1800,
           "comboStep": 0
         }
@@ -303,28 +365,28 @@
         {
           "danger": "outer_arc",
           "requiredDodge": "forward",
-          "telegraphMs": 650,
+          "telegraphMs": 540,
           "intervalMs": 1800,
           "comboStep": 0
         },
         {
           "danger": "high_sweep",
-          "requiredDodge": "down",
-          "telegraphMs": 650,
+          "requiredDodge": "parry",
+          "telegraphMs": 540,
           "intervalMs": 1800,
           "comboStep": 0
         },
         {
           "danger": "thrust",
           "requiredDodge": "back",
-          "telegraphMs": 650,
+          "telegraphMs": 540,
           "intervalMs": 1800,
           "comboStep": 0
         },
         {
           "danger": "low_sweep",
           "requiredDodge": "up",
-          "telegraphMs": 650,
+          "telegraphMs": 540,
           "intervalMs": 1800,
           "comboStep": 0
         }
@@ -341,28 +403,28 @@
         {
           "danger": "low_sweep",
           "requiredDodge": "up",
-          "telegraphMs": 900,
+          "telegraphMs": 540,
           "intervalMs": 2750,
           "comboStep": 1
         },
         {
           "danger": "high_sweep",
-          "requiredDodge": "down",
-          "telegraphMs": 250,
-          "intervalMs": 450,
+          "requiredDodge": "parry",
+          "telegraphMs": 540,
+          "intervalMs": 360,
           "comboStep": 2
         },
         {
           "danger": "thrust",
           "requiredDodge": "back",
-          "telegraphMs": 650,
+          "telegraphMs": 540,
           "intervalMs": 1600,
           "comboStep": 0
         },
         {
           "danger": "outer_arc",
           "requiredDodge": "forward",
-          "telegraphMs": 650,
+          "telegraphMs": 540,
           "intervalMs": 1600,
           "comboStep": 0
         }
@@ -379,28 +441,28 @@
         {
           "danger": "thrust",
           "requiredDodge": "back",
-          "telegraphMs": 650,
+          "telegraphMs": 540,
           "intervalMs": 1800,
           "comboStep": 0
         },
         {
           "danger": "outer_arc",
           "requiredDodge": "forward",
-          "telegraphMs": 650,
+          "telegraphMs": 540,
           "intervalMs": 1800,
           "comboStep": 0
         },
         {
           "danger": "high_sweep",
-          "requiredDodge": "down",
-          "telegraphMs": 650,
+          "requiredDodge": "parry",
+          "telegraphMs": 540,
           "intervalMs": 1800,
           "comboStep": 0
         },
         {
           "danger": "low_sweep",
           "requiredDodge": "up",
-          "telegraphMs": 650,
+          "telegraphMs": 540,
           "intervalMs": 1800,
           "comboStep": 0
         }
@@ -416,22 +478,22 @@
       "patternSteps": [
         {
           "danger": "high_sweep",
-          "requiredDodge": "down",
-          "telegraphMs": 900,
+          "requiredDodge": "parry",
+          "telegraphMs": 480,
           "intervalMs": 3150,
           "comboStep": 1
         },
         {
           "danger": "low_sweep",
           "requiredDodge": "up",
-          "telegraphMs": 250,
-          "intervalMs": 450,
+          "telegraphMs": 480,
+          "intervalMs": 320,
           "comboStep": 2
         },
         {
           "danger": "thrust",
           "requiredDodge": "back",
-          "telegraphMs": 650,
+          "telegraphMs": 480,
           "intervalMs": 1800,
           "comboStep": 0
         }
@@ -448,28 +510,28 @@
         {
           "danger": "outer_arc",
           "requiredDodge": "forward",
-          "telegraphMs": 900,
+          "telegraphMs": 480,
           "intervalMs": 3150,
           "comboStep": 1
         },
         {
           "danger": "thrust",
           "requiredDodge": "back",
-          "telegraphMs": 250,
-          "intervalMs": 450,
+          "telegraphMs": 480,
+          "intervalMs": 320,
           "comboStep": 2
         },
         {
           "danger": "low_sweep",
           "requiredDodge": "up",
-          "telegraphMs": 650,
+          "telegraphMs": 480,
           "intervalMs": 1800,
           "comboStep": 0
         },
         {
           "danger": "high_sweep",
-          "requiredDodge": "down",
-          "telegraphMs": 650,
+          "requiredDodge": "parry",
+          "telegraphMs": 480,
           "intervalMs": 1800,
           "comboStep": 0
         }
@@ -486,28 +548,28 @@
         {
           "danger": "thrust",
           "requiredDodge": "back",
-          "telegraphMs": 900,
+          "telegraphMs": 480,
           "intervalMs": 3150,
           "comboStep": 1
         },
         {
           "danger": "outer_arc",
           "requiredDodge": "forward",
-          "telegraphMs": 250,
-          "intervalMs": 450,
+          "telegraphMs": 480,
+          "intervalMs": 320,
           "comboStep": 2
         },
         {
           "danger": "high_sweep",
-          "requiredDodge": "down",
-          "telegraphMs": 650,
+          "requiredDodge": "parry",
+          "telegraphMs": 480,
           "intervalMs": 1800,
           "comboStep": 0
         },
         {
           "danger": "low_sweep",
           "requiredDodge": "up",
-          "telegraphMs": 650,
+          "telegraphMs": 480,
           "intervalMs": 1800,
           "comboStep": 0
         }
@@ -524,28 +586,28 @@
         {
           "danger": "low_sweep",
           "requiredDodge": "up",
-          "telegraphMs": 900,
+          "telegraphMs": 480,
           "intervalMs": 3600,
           "comboStep": 1
         },
         {
           "danger": "high_sweep",
-          "requiredDodge": "down",
-          "telegraphMs": 250,
-          "intervalMs": 450,
+          "requiredDodge": "parry",
+          "telegraphMs": 480,
+          "intervalMs": 320,
           "comboStep": 2
         },
         {
           "danger": "outer_arc",
           "requiredDodge": "forward",
-          "telegraphMs": 250,
-          "intervalMs": 450,
+          "telegraphMs": 480,
+          "intervalMs": 320,
           "comboStep": 3
         },
         {
           "danger": "thrust",
           "requiredDodge": "back",
-          "telegraphMs": 650,
+          "telegraphMs": 480,
           "intervalMs": 1500,
           "comboStep": 0
         }
@@ -562,28 +624,28 @@
         {
           "danger": "thrust",
           "requiredDodge": "back",
-          "telegraphMs": 650,
+          "telegraphMs": 480,
           "intervalMs": 1650,
           "comboStep": 0
         },
         {
           "danger": "high_sweep",
-          "requiredDodge": "down",
-          "telegraphMs": 650,
+          "requiredDodge": "parry",
+          "telegraphMs": 480,
           "intervalMs": 1650,
           "comboStep": 0
         },
         {
           "danger": "outer_arc",
           "requiredDodge": "forward",
-          "telegraphMs": 650,
+          "telegraphMs": 480,
           "intervalMs": 1650,
           "comboStep": 0
         },
         {
           "danger": "low_sweep",
           "requiredDodge": "up",
-          "telegraphMs": 650,
+          "telegraphMs": 480,
           "intervalMs": 1650,
           "comboStep": 0
         }
@@ -729,6 +791,53 @@
         0.02,
         0.025,
         0.03
+      ]
+    }
+  ],
+  "transitions": {
+    "enemyDefeatMs": 550,
+    "travelMs": 2000,
+    "arrivalMs": 700,
+    "deathMs": 1800,
+    "minibossIntroMs": 1800,
+    "bossIntroMs": 2200,
+    "repeatMinibossIntroMs": 1000,
+    "repeatBossIntroMs": 1200
+  },
+  "stories": [
+    {
+      "id": "story_boss_10",
+      "stage": 10,
+      "bossId": "bell_knight",
+      "lines": [
+        {
+          "speaker": "종의 기사",
+          "text": "문은… 안에서 잠갔다.",
+          "responses": []
+        },
+        {
+          "speaker": "종의 기사",
+          "text": "사슬 끝을 봐라. 묶인 건 우리가 아니다.",
+          "responses": []
+        },
+        {
+          "speaker": "선택한 종지기",
+          "text": "그럼, 무엇을 가둔 거지?",
+          "responses": [
+            {
+              "characterId": "on",
+              "text": "그럼, 무엇을 가둔 거지?"
+            },
+            {
+              "characterId": "dam",
+              "text": "내가 지키던 문도… 안에서 잠겼어."
+            },
+            {
+              "characterId": "rin",
+              "text": "사슬 너머에서 사람 목소리가 들려."
+            }
+          ]
+        }
       ]
     }
   ]

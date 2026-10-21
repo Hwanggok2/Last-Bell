@@ -5,7 +5,7 @@ namespace LastBell
 {
     public sealed partial class GameSession
     {
-        private int StatUpgradeCost(int index)
+        private long StatUpgradeCost(int index)
         {
             if (index < 0 || index >= 4 || CurrentCharacter.statLevels[index] >= catalog.growth.maxLevel) return 0;
             return catalog.GetUpgradeCost(CurrentCharacter.statLevels[index] + 1);
@@ -14,7 +14,7 @@ namespace LastBell
         private bool UpgradeStat(int index)
         {
             if (state.phase != SessionPhase.Lobby) return Reject("로비에서 강화할 수 있습니다.");
-            int cost = StatUpgradeCost(index);
+            long cost = StatUpgradeCost(index);
             if (cost == 0) return Reject("강화할 수 없는 능력치입니다.");
             if (state.gold >= cost)
             {
@@ -25,8 +25,8 @@ namespace LastBell
             }
             else
             {
-                int rate = catalog.economy.exchangeGoldPerFragment;
-                int fragments = (cost - state.gold + rate - 1) / rate;
+                long rate = ExchangeRate;
+                int fragments = RequiredFragments(cost - state.gold, rate);
                 state.exchange = new ExchangeQuoteData
                 {
                     characterId = state.selectedCharacterId, statIndex = index, level = GetStatLevel(index),
@@ -41,14 +41,19 @@ namespace LastBell
             return true;
         }
 
+        private static int RequiredFragments(long missing,long rate)
+        {
+            return checked((int)(missing/rate + (missing%rate == 0 ? 0 : 1)));
+        }
+
         private bool IsQuoteCurrent()
         {
             var quote = state.exchange;
             return quote != null && quote.characterId == state.selectedCharacterId && quote.statIndex >= 0 && quote.statIndex < 4 &&
                 quote.level == GetStatLevel(quote.statIndex) && quote.upgradeCost == StatUpgradeCost(quote.statIndex) &&
                 quote.walletVersion == state.walletVersion && quote.walletGold == state.gold && quote.walletFragments == state.fragments &&
-                quote.exchangeRate == catalog.economy.exchangeGoldPerFragment && quote.upgradeCost > state.gold &&
-                quote.fragments == (quote.upgradeCost - state.gold + quote.exchangeRate - 1) / quote.exchangeRate &&
+                quote.exchangeRate == ExchangeRate && quote.upgradeCost > state.gold &&
+                quote.fragments == RequiredFragments(quote.upgradeCost - state.gold, quote.exchangeRate) &&
                 quote.gold == quote.fragments * quote.exchangeRate;
         }
 
@@ -65,7 +70,7 @@ namespace LastBell
             }
             var quote = state.exchange;
             if (state.fragments < quote.fragments) return Reject("종 파편이 부족합니다.");
-            int newGold = checked(state.gold + quote.gold);
+            long newGold = checked(state.gold + quote.gold);
             state.fragments -= quote.fragments;
             state.gold = newGold;
             state.walletVersion++;
