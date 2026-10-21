@@ -1,0 +1,60 @@
+{
+  "checkedAt": "2026-10-21T17:11:02.3810323+09:00",
+  "endpoint": "http://127.0.0.1:8093/mcp",
+  "expectedProject": "C:/Github/Test2/Client",
+  "expectedInstance": "Client@65e60f79bc76ded9",
+  "serverInitialized": true,
+  "toolCount": 48,
+  "unityConnected": true,
+  "projectVerified": true,
+  "readSmokePassed": true,
+  "serverInfo": {
+    "name": "mcp-for-unity-server",
+    "version": "3.4.11"
+  },
+  "protocolVersion": "2024-11-05",
+  "instances": [
+    {
+      "id": "Client@65e60f79bc76ded9",
+      "name": "Client",
+      "hash": "65e60f79bc76ded9",
+      "unity_version": "6000.3.15f1",
+      "connected_at": "2026-10-21T17:10:58.099194+09:00",
+      "session_id": "3588a790-dd75-4944-a8f9-22725ef5b76c"
+    }
+  ],
+  "project": {
+    "success": true,
+    "message": "Retrieved project info.",
+    "error": null,
+    "data": {
+      "projectRoot": "C:/Github/Test2/Client",
+      "projectName": "Client",
+      "unityVersion": "6000.3.15f1",
+      "platform": "Android",
+      "assetsPath": "C:/Github/Test2/Client/Assets"
+    },
+    "hint": null
+  },
+  "readSmoke": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"success\":true,\"message\":\"Retrieved active scene information.\",\"data\":{\"name\":\"\",\"path\":\"\",\"buildIndex\":-1,\"isDirty\":false,\"isLoaded\":true,\"rootCount\":2}}"
+      }
+    ],
+    "structuredContent": {
+      "success": true,
+      "message": "Retrieved active scene information.",
+      "data": {
+        "name": "",
+        "path": "",
+        "buildIndex": -1,
+        "isDirty": false,
+        "isLoaded": true,
+        "rootCount": 2
+      }
+    },
+    "isError": false
+  }
+}

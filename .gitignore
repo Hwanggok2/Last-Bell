@@ -70,6 +70,20 @@ Thumbs.db
 # Local coordination and test player profiles; retain verification reports/images.
 /Planning/sessions.json
 /Planning/Evidence/Unity/smoke-profile-*/
+/Planning/Evidence/UnityPresentation-20261021/profiles/
+/Planning/Evidence/UnityPresentation-20261021/playerprefs-before.json
+
+# Preview encoders regenerate these intermediate PNG sequences. Keep source art,
+# contact sheets, encoded previews and actual Unity QA captures in version control.
+/Planning/Evidence/Presentation*/attack/*.png
+/Planning/Evidence/Presentation*/feedback/*.png
+/Planning/Evidence/Presentation*/hit-flash/*.png
+/Planning/Evidence/Presentation*/random/*.png
+/Planning/Evidence/Presentation*/run/*.png
+/Planning/Evidence/Presentation*/transition/*.png
+
+# The repository root is not a Unity project; Client/ProjectSettings is the source.
+/ProjectSettings/
 
 # Local credentials and signing material.
 .env
