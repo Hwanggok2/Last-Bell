@@ -1,0 +1,1587 @@
+{
+  "version": "planning-v5.7",
+  "date": "2026-10-21",
+  "status": "v5.7-planning-preview-only; Unity-Windows-remains-v5.5",
+  "scope": "Large circles expand from hidden off-screen sources and touch at viewport center at impact. Compare shorter gold fill without changing combat timing. Preserve bells and chosen preview movement; game implementation follows review.",
+  "referenceResearch": {
+    "game": "용사는 타이밍 / Timing Hero, Buff Studio / 21c.Ducks",
+    "coverage": "Public descriptions, historical patch notes, reviews and community balance evidence; not complete internal game data.",
+    "unverified": [
+      "exact Just timing window",
+      "input latency/buffering",
+      "full per-level upgrade prices",
+      "per-enemy timing/HP/damage/rewards",
+      "complete skill coefficients and artifact probabilities"
+    ],
+    "sources": [
+      {
+        "id": "official",
+        "title": "개발사 App Store 소개·버전 기록",
+        "url": "https://apps.apple.com/mk/app/timing-hero-colosseum-and-raid/id1041854448/",
+        "kind": "공식 공개 설명",
+        "access": "직접 본문·패치 기록 확인",
+        "scope": "Just 회피/공격, 40/80/120층, 유물24종, 모드, 큰 밸런스 패치. 전체 가격표·판정 ms 없음."
+      },
+      {
+        "id": "review2021",
+        "title": "2021 플레이 리뷰",
+        "url": "https://crashinggamenight.com/blog/mobile-game-monday-timing-hero",
+        "kind": "당시 플레이 리뷰",
+        "access": "검색 색인 본문",
+        "scope": "방향 안내, 빠름/늦음/정확함, 타이밍 보상, 사망 후 성장·체크포인트."
+      },
+      {
+        "id": "general",
+        "title": "General Gameplay",
+        "url": "https://timing-hero.fandom.com/wiki/General_Gameplay",
+        "kind": "커뮤니티",
+        "access": "검색 색인 본문; 직접 접근 제한",
+        "scope": "위/아래/뒤 3회피와 공격, 방향 오입력 피격."
+      },
+      {
+        "id": "libre",
+        "title": "용사는 타이밍 · 리브레 위키",
+        "url": "https://librewiki.net/wiki/%EC%9A%A9%EC%82%AC%EB%8A%94_%ED%83%80%EC%9D%B4%EB%B0%8D",
+        "kind": "커뮤니티·버전 혼재",
+        "access": "검색 색인 본문; 직접 접근403",
+        "scope": "Just 보상, 주기적 강화 급등·스탯 상한. 완전한 가격표는 없음."
+      },
+      {
+        "id": "heroes",
+        "title": "Heroes",
+        "url": "https://timing-hero.fandom.com/wiki/Heroes",
+        "kind": "커뮤니티",
+        "access": "검색 색인 본문",
+        "scope": "스탯4종·캐릭터별 성장 잠재력과 스킬. 전체 캐릭터 밸런스 검증표가 아님."
+      },
+      {
+        "id": "novice",
+        "title": "Novice 성장 표본",
+        "url": "https://timing-hero.fandom.com/wiki/Novice",
+        "kind": "커뮤니티·미완성 표기",
+        "access": "검색 색인 본문",
+        "scope": "레벨별 스탯 표본. 가격표로 사용하지 않음."
+      },
+      {
+        "id": "sorcerer",
+        "title": "Sorcerer 성장 표본",
+        "url": "https://timing-hero.fandom.com/wiki/Sorcerer",
+        "kind": "커뮤니티",
+        "access": "검색 색인 본문",
+        "scope": "10→11/20→21 스탯 급등 표본. 강화 횟수/레벨 기준과 버전 주의."
+      },
+      {
+        "id": "credits",
+        "title": "Credits",
+        "url": "https://timing-hero.fandom.com/wiki/Credits",
+        "kind": "커뮤니티",
+        "access": "검색 색인 본문",
+        "scope": "기본 보상·배율·보상 무작위성, 획득/소비 구조."
+      },
+      {
+        "id": "artifacts",
+        "title": "Artifacts",
+        "url": "https://timing-hero.fandom.com/wiki/Artifacts",
+        "kind": "커뮤니티",
+        "access": "검색 색인 본문",
+        "scope": "24종·중복 레벨 성장·공용 효과·보유 슬롯."
+      },
+      {
+        "id": "raid",
+        "title": "Raid Bosses",
+        "url": "https://timing-hero.fandom.com/wiki/Raid_Bosses",
+        "kind": "커뮤니티 전략",
+        "access": "검색 색인 본문",
+        "scope": "보스 스킬과 기절 연쇄 전략. 전략 글을 공식 계수표로 사용하지 않음."
+      },
+      {
+        "id": "review2019",
+        "title": "2019 플레이 리뷰",
+        "url": "https://www.gameindustry.com/reviews/time-waster/killing-time-with-timing-hero/",
+        "kind": "당시 플레이 리뷰",
+        "access": "검색 색인 본문",
+        "scope": "개별 캐릭터 성장·처치 골드 투자·패턴 학습."
+      }
+    ]
+  },
+  "timing": {
+    "singleMs": 900,
+    "comboOpeningMs": 1680,
+    "minimumHitGapMs": 320,
+    "normalWindowMs": 160,
+    "perfectWindowMs": 60,
+    "reuseMs": 260,
+    "lateGraceMs": 0,
+    "normalInterval": "[T-160,T-60)",
+    "perfectInterval": "[T-60,T]",
+    "maxVisibleThreats": 3,
+    "simultaneousTimingGauges": 0,
+    "tutorialCopy": "파동이 중앙에서 만날 때 회피하세요.",
+    "directionGuide": {
+      "mode": "translucent-gold-danger-hitbox",
+      "text": false,
+      "answerMarker": false,
+      "correctButtonPreHighlight": false,
+      "keepTimingBar": false,
+      "flashCount": 3
+    },
+    "currentRuntimeMs": {
+      "singleDefault": 900,
+      "singleFast": 650,
+      "flight": 120,
+      "comboDefaultImpacts": [
+        1680,
+        2040
+      ],
+      "comboFastImpacts": [
+        1180,
+        1500
+      ],
+      "bossThreeHitImpacts": [
+        1710,
+        2030,
+        2350
+      ],
+      "minimumHitGap": 320
+    },
+    "proposalNote": "Fixed hidden sources at x=-0.125W and1.125W. Radius grows from0 to0.625W at each impact. Short gold-fill option540/390ms preserves all attack times and leaves outline0.14.",
+    "hitboxGuide": {
+      "version": "hitbox-preview-v5.7",
+      "status": "planning-preview-only",
+      "referenceSize": [
+        960,
+        540
+      ],
+      "color": "#E9B85A",
+      "fillAlpha": {
+        "bright": 0.2,
+        "dim": 0.04
+      },
+      "borderAlpha": {
+        "bright": 0.62,
+        "dim": 0.2
+      },
+      "borderPx": 2,
+      "blinkCount": 3,
+      "brightFraction": 0.5,
+      "defaultImpactMs": 900,
+      "fastImpactMs": 650,
+      "flightMs": 120,
+      "impactEffectMs": 260,
+      "normalWindowMs": 160,
+      "perfectWindowMs": 60,
+      "recoveryMs": 260,
+      "playerAnchor": [
+        375,
+        442
+      ],
+      "enemyAnchor": [
+        675,
+        442
+      ],
+      "enemyFrontX": 624,
+      "playerBody": [
+        353,
+        340,
+        44,
+        100
+      ],
+      "crouchedBody": [
+        351,
+        364,
+        54,
+        76
+      ],
+      "dodgeOffsets": {
+        "up": [
+          0,
+          -108
+        ],
+        "back": [
+          -90,
+          0
+        ],
+        "down": [
+          0,
+          0
+        ],
+        "forward": [
+          90,
+          0
+        ]
+      },
+      "timingRule": "cueMs=singleImpactMs-120; each cue has three equal bright/dim periods; combo queues all cues first, then120ms flights with360/320ms impact gaps; ordinary160ms/perfect60ms measured separately for each impact",
+      "combo": {
+        "rule": "Preview ALL attacks in sequence, three full flashes each; only then execute attacks in the same order.",
+        "defaultImpactGapMs": 360,
+        "fastImpactGapMs": 320,
+        "maxAttacks": 3,
+        "completedCue": "outline alpha0.14 only; does not flash again",
+        "defaultExampleMs": {
+          "frontCue": [
+            0,
+            780
+          ],
+          "rearCue": [
+            780,
+            1560
+          ],
+          "frontFlight": [
+            1560,
+            1680
+          ],
+          "frontHit": 1680,
+          "rearFlight": [
+            1920,
+            2040
+          ],
+          "rearHit": 2040
+        }
+      },
+      "attacks": [
+        {
+          "id": "thrust",
+          "name": "창 찌르기",
+          "dodge": "back",
+          "reviewLabel": "몸통 전체를 덮는 앞쪽 통로 · 후퇴",
+          "rect": [
+            340,
+            306,
+            284,
+            136
+          ],
+          "anchorRule": "몬스터 전면 X부터 플레이어 몸통 뒤쪽 경계까지. 상단은 점프 회수 위치까지 포함.",
+          "effect": "수평 창/충격 궤적이 몬스터 전면에서 플레이어 쪽으로 이동"
+        },
+        {
+          "id": "low",
+          "name": "낮은 휩쓸기",
+          "dodge": "up",
+          "reviewLabel": "발밑을 쓸어가는 띠 · 점프",
+          "rect": [
+            248,
+            406,
+            376,
+            36
+          ],
+          "anchorRule": "플레이어 발밑 높이. 뒤로 한 걸음 영역까지 덮고 위쪽을 비운다.",
+          "effect": "지면 가까운 수평 베기가 몬스터에서 플레이어 쪽으로 이동"
+        },
+        {
+          "id": "high",
+          "name": "높은 휩쓸기",
+          "dodge": "down",
+          "reviewLabel": "머리 높이의 띠 · 숙이기",
+          "rect": [
+            248,
+            270,
+            376,
+            88
+          ],
+          "anchorRule": "서 있는 머리와 점프 위치를 덮고 숙인 머리 위에 최소4px 여백.",
+          "effect": "높은 수평 베기가 몬스터에서 플레이어 쪽으로 이동"
+        },
+        {
+          "id": "rear",
+          "name": "후방 내려치기",
+          "dodge": "forward",
+          "reviewLabel": "등 뒤부터 현재 자리까지 · 전진",
+          "rect": [
+            248,
+            218,
+            165,
+            224
+          ],
+          "anchorRule": "플레이어 뒤쪽과 현재 위치를 덮고 몬스터 쪽 빈 공간은 남긴다.",
+          "effect": "몬스터가 보낸 궤적이 위로 돌아 등 뒤와 현재 자리에 낙하"
+        }
+      ],
+      "visibility": {
+        "directionText": false,
+        "answerArrow": false,
+        "preHighlightedCorrectButton": false,
+        "timingBar": false,
+        "normalDodgeControls": true,
+        "simultaneousFlashingAreas": 1,
+        "reducedFlash": "constant gold fill0.12 during visible cue; three corner contractions; keep essential large circular fronts only"
+      },
+      "geometryContract": "Rectangles are dangerous areas, never safe zones. Shared authored AttackShape and player dodge-body poses must drive both the visual and Core hit decision. No hidden required-direction failure for a dodge that actually leaves the shown footprint.",
+      "previewScope": "Planning only: large circular waves expanding from two hidden off-screen sources, plus an optional shorter gold-fill preview. Preserve v5.6 bells and chosen v5.5 movement.",
+      "perfect": {
+        "origin": "fixed center of the battle viewport, in screen space; independent of character position and world-camera shake",
+        "ringMs": 420,
+        "color": "#9EE3D4",
+        "textMs": 320,
+        "counterEligibilityMs": 500,
+        "autoCounterDelayMs": 90,
+        "returnMs": 0,
+        "counterHitAfterInputMs": 200,
+        "counterDurationMs": 500,
+        "rule": "Only a confirmed perfect dodge unlocks snap-home on an accepted attack input. Reset root to battle anchor, then start existing approach/attack. No automatic damage, cooldown reset, extra invulnerability, queue cancellation or time dilation.",
+        "originNormalized": [
+          0.5,
+          0.5
+        ],
+        "shape": "circle in screen pixels, equal radius on both axes",
+        "ringDelayMs": [
+          0,
+          45
+        ],
+        "outerMarginPx": 64,
+        "radiusFormula": "hypot(viewportWidth/2, viewportHeight/2)+64; both circles expand beyond all four corners",
+        "drawLayer": "screen overlay after world camera transform is restored, before HUD",
+        "reducedMotion": "static centered circle and label, no expansion"
+      },
+      "enemyVfx": {
+        "clock": "combat clock; pause freezes poses, particles and all lifetimes",
+        "warmup": "gold flecks gather at the weapon; brace then release in the final120ms",
+        "release": "weapon trail120ms + directional streaks, faster final approach",
+        "impact": "local gold/ivory core45ms + radial shards260ms + dust340ms + ground ripple300ms",
+        "shake": {
+          "maxPx": 3,
+          "durationMs": 90,
+          "hudMoves": false,
+          "reducedMotion": false
+        },
+        "hitstopMs": 0,
+        "particleBudget": 96,
+        "sources": "authored reusable ParticleSystem/TrailRenderer prefabs in future Unity implementation; PerfectWave uses a screen-space overlay; deterministic canvas particles in this planning preview",
+        "dangerVsDecoration": "danger rectangle is the full gameplay footprint; outlying sparks/dust/rings are decorative and do not deal damage",
+        "palette": "enemy gold/amber; confirmed perfect mint/ivory",
+        "audioPlan": "wind-up metal tension, release whoosh, impact low thump with metallic tick; not synthesized in this preview"
+      },
+      "timingAssist": {
+        "origin": "two hidden fixed screen-space sources (-0.125W,0.5H) and (1.125W,0.5H)",
+        "color": "#C7DAFA",
+        "firstLeadMs": 600,
+        "followupLead": "emit at previous impact; expand for360ms default /320ms fast; visible for288ms /256ms",
+        "motion": "p=clamp((clock-start)/(T-start)); radius=(0.5+0.125)*W*p; same radius on both axes",
+        "perfectTargetFromMs": -60,
+        "perfectTargetUntilMs": 0,
+        "target": "small fixed diamond; four short brackets appear during T-60..T; neutral contact pulse is never a success signal",
+        "lateInputGraceMs": 0,
+        "successWave": "existing confirmed-only mint circles expand outward",
+        "drawLayer": "above perfect-result rings and world VFX, below controls; fixed screen coordinates",
+        "reducedMotion": "keep one essential expanding circle per side; no halo, echo, particles or success expansion",
+        "shape": "true circles expanding from radius zero; full-viewport clipping, no short translated curves",
+        "sourceOffsetWidth": 0.125,
+        "primaryStrokePx": 4,
+        "haloStrokePx": 18,
+        "echoRadiusGapPx": 28,
+        "firstEmissionLeadMs": 600,
+        "firstVisibleLeadMs": 480,
+        "contact": "radius=0.625W; leftSourceX+radius=rightSourceX-radius=W/2 at T",
+        "contactAfterglowMs": 45
+      },
+      "bells": {
+        "centerNormalized": [
+          0.5,
+          0.3333333333333333
+        ],
+        "iconSize": [
+          28,
+          34
+        ],
+        "slotSpacingPx": 44,
+        "maxCount": 3,
+        "meaning": "visible bells = unresolved attacks; show whole count at cue start; remove left-to-right on each impact regardless of hit/dodge",
+        "layout": "reserve initial slot positions; do not recenter remaining bells; no ghost bells",
+        "clearOn": [
+          "enemy death",
+          "stun cancelling the queue",
+          "combat end"
+        ],
+        "pause": "freeze with combat clock"
+      },
+      "movementTarget": {
+        "source": "hitbox-preview-v55.js: dodge, heroState, drawHero",
+        "backDodge": {
+          "distancePx": -90,
+          "enterMs": 50,
+          "holdAfterImpactMs": 100,
+          "returnMs": 130,
+          "curve": "1-(1-p)^3",
+          "pose": "hero-dodge-back/08.png"
+        },
+        "attack": {
+          "homeX": 375,
+          "strikeX": 540,
+          "approachMs": 120,
+          "hitMs": 200,
+          "returnStartMs": 230,
+          "endMs": 500,
+          "curve": "1-(1-p)^3",
+          "pose": "hero-v6-slash-up frames 0..10,17,23,24"
+        },
+        "status": "requested target for next game implementation, not applied in this planning revision"
+      },
+      "hitboxExposure": {
+        "defaultMode": "short",
+        "options": {
+          "original": {
+            "defaultMs": 780,
+            "fastMs": 530
+          },
+          "short": {
+            "defaultMs": 540,
+            "fastMs": 390
+          }
+        },
+        "blinkCount": 3,
+        "schedule": "same cue start/slot and all impact deadlines; shorten bright/dim fill only at the end of each cue",
+        "afterVisibleCue": "no fill; retain fixed outline alpha0.14 through its own impact to preserve direction memory",
+        "reason": "separate spatial recognition from the independent circular timing cue; compare before changing combat tempo"
+      }
+    }
+  },
+  "perfectFeedback": {
+    "event": "PerfectDodge, after confirmed avoidance at impact T",
+    "copy": "완벽",
+    "textMs": 320,
+    "textHoldMs": 220,
+    "ringMs": 420,
+    "normalStagger": 20,
+    "perfectStagger": 40,
+    "meterLimit": 100,
+    "textPx": {
+      "960x540": 22,
+      "640x360": 18
+    },
+    "color": "#9ee3d4",
+    "shape": "two screen-centered circles expanding beyond all viewport corners",
+    "sfx": "distinct short bell once, not only volume change",
+    "hapticMsCandidate": 20,
+    "hapticOptional": true,
+    "hitstopMs": 0,
+    "slowMotion": false,
+    "extraDamage": false,
+    "shake": false,
+    "immunity": "Feedback is allowed; no fake meter gain during existing post-stun immunity.",
+    "reducedMotion": "static centered circle and label; no expansion",
+    "pauseFreezesLifetime": true,
+    "hapticImplemented": false,
+    "counter": {
+      "origin": "fixed center of the battle viewport, in screen space; independent of character position and world-camera shake",
+      "ringMs": 420,
+      "color": "#9EE3D4",
+      "textMs": 320,
+      "counterEligibilityMs": 500,
+      "autoCounterDelayMs": 90,
+      "returnMs": 0,
+      "counterHitAfterInputMs": 200,
+      "counterDurationMs": 500,
+      "rule": "Only a confirmed perfect dodge unlocks snap-home on an accepted attack input. Reset root to battle anchor, then start existing approach/attack. No automatic damage, cooldown reset, extra invulnerability, queue cancellation or time dilation.",
+      "originNormalized": [
+        0.5,
+        0.5
+      ],
+      "shape": "circle in screen pixels, equal radius on both axes",
+      "ringDelayMs": [
+        0,
+        45
+      ],
+      "outerMarginPx": 64,
+      "radiusFormula": "hypot(viewportWidth/2, viewportHeight/2)+64; both circles expand beyond all four corners",
+      "drawLayer": "screen overlay after world camera transform is restored, before HUD",
+      "reducedMotion": "static centered circle and label, no expansion"
+    },
+    "origin": "viewport center, independent of actor and world camera",
+    "v56OverlayRule": {
+      "labelOffsetBelowCenterPx": 34,
+      "outgoingRingAlphaMultiplierDuringNextIncomingCue": 0.45,
+      "successStillRequiresConfirmedPerfect": true
+    }
+  },
+  "economy": {
+    "revision": "economy-v2-compound-cost-and-stage-income",
+    "status": "applied-catalog-mvp-1.2.0",
+    "supersedes": "v5 +1G per level / fixed zone gold; rejected by user",
+    "formula": "C(L)=ceil(10*1.25^(L-1)*2^floor((L-1)/10)), L=1..50; C(0)=0",
+    "levelMeaning": "Target level, independently per stat; 10->11, 20->21, 30->31, 40->41 retain existing stat breakthroughs",
+    "normalGrowthRate": 1.25,
+    "breakthroughAdditionalMultiplier": 2,
+    "breakthroughStepRatioBeforeRounding": 2.5,
+    "rounding": "Evaluate the unrounded formula with exact rational arithmetic and ceil once to integer gold; do not multiply already rounded prices.",
+    "upgradeCosts": [
+      0,
+      10,
+      13,
+      16,
+      20,
+      25,
+      31,
+      39,
+      48,
+      60,
+      75,
+      187,
+      233,
+      292,
+      364,
+      455,
+      569,
+      711,
+      889,
+      1111,
+      1388,
+      3470,
+      4337,
+      5422,
+      6777,
+      8471,
+      10588,
+      13235,
+      16544,
+      20680,
+      25850,
+      64624,
+      80780,
+      100975,
+      126218,
+      157773,
+      197216,
+      246520,
+      308149,
+      385186,
+      481483,
+      1203707,
+      1504633,
+      1880791,
+      2350989,
+      2938736,
+      3673420,
+      4591775,
+      5739719,
+      7174649,
+      8968311
+    ],
+    "cumulativeCosts": [
+      0,
+      10,
+      23,
+      39,
+      59,
+      84,
+      115,
+      154,
+      202,
+      262,
+      337,
+      524,
+      757,
+      1049,
+      1413,
+      1868,
+      2437,
+      3148,
+      4037,
+      5148,
+      6536,
+      10006,
+      14343,
+      19765,
+      26542,
+      35013,
+      45601,
+      58836,
+      75380,
+      96060,
+      121910,
+      186534,
+      267314,
+      368289,
+      494507,
+      652280,
+      849496,
+      1096016,
+      1404165,
+      1789351,
+      2270834,
+      3474541,
+      4979174,
+      6859965,
+      9210954,
+      12149690,
+      15823110,
+      20414885,
+      26154604,
+      33329253,
+      42297564
+    ],
+    "totalPerStat": 42297564,
+    "totalFourStats": 169190256,
+    "breakthroughLevels": [
+      11,
+      21,
+      31,
+      41
+    ],
+    "extraBreakthroughSurcharge": false,
+    "breakthroughExamples": [
+      {
+        "fromLevel": 10,
+        "targetLevel": 11,
+        "previousPrice": 75,
+        "price": 187,
+        "priceRatio": 2.493333333333333,
+        "onBefore": {
+          "attack": 43,
+          "hp": 320
+        },
+        "onAfter": {
+          "attack": 106,
+          "hp": 616
+        }
+      },
+      {
+        "fromLevel": 20,
+        "targetLevel": 21,
+        "previousPrice": 1388,
+        "price": 3470,
+        "priceRatio": 2.5,
+        "onBefore": {
+          "attack": 175,
+          "hp": 972
+        },
+        "onAfter": {
+          "attack": 419,
+          "hp": 1821
+        }
+      },
+      {
+        "fromLevel": 30,
+        "targetLevel": 31,
+        "previousPrice": 25850,
+        "price": 64624,
+        "priceRatio": 2.4999613152804643,
+        "onBefore": {
+          "attack": 577,
+          "hp": 2462
+        },
+        "onAfter": {
+          "attack": 1366,
+          "hp": 4561
+        }
+      },
+      {
+        "fromLevel": 40,
+        "targetLevel": 41,
+        "previousPrice": 481483,
+        "price": 1203707,
+        "priceRatio": 2.4999989615417366,
+        "onBefore": {
+          "attack": 1728,
+          "hp": 5715
+        },
+        "onAfter": {
+          "attack": 4066,
+          "hp": 10519
+        }
+      }
+    ],
+    "baseGoldFormula": "B(S)=2*C(S), S=1..50. Kind multiplier normal=1, miniboss=3, boss=5.",
+    "normalGoldPerStage": [
+      0,
+      20,
+      26,
+      32,
+      40,
+      50,
+      62,
+      78,
+      96,
+      120,
+      150,
+      374,
+      466,
+      584,
+      728,
+      910,
+      1138,
+      1422,
+      1778,
+      2222,
+      2776,
+      6940,
+      8674,
+      10844,
+      13554,
+      16942,
+      21176,
+      26470,
+      33088,
+      41360,
+      51700,
+      129248,
+      161560,
+      201950,
+      252436,
+      315546,
+      394432,
+      493040,
+      616298,
+      770372,
+      962966,
+      2407414,
+      3009266,
+      3761582,
+      4701978,
+      5877472,
+      7346840,
+      9183550,
+      11479438,
+      14349298,
+      17936622
+    ],
+    "stageRewards": [
+      {
+        "stage": 1,
+        "kind": "normal",
+        "baseGold": 20,
+        "kindMultiplier": 1,
+        "killGold": 20,
+        "cumulativeGold": 20
+      },
+      {
+        "stage": 2,
+        "kind": "normal",
+        "baseGold": 26,
+        "kindMultiplier": 1,
+        "killGold": 26,
+        "cumulativeGold": 46
+      },
+      {
+        "stage": 3,
+        "kind": "normal",
+        "baseGold": 32,
+        "kindMultiplier": 1,
+        "killGold": 32,
+        "cumulativeGold": 78
+      },
+      {
+        "stage": 4,
+        "kind": "normal",
+        "baseGold": 40,
+        "kindMultiplier": 1,
+        "killGold": 40,
+        "cumulativeGold": 118
+      },
+      {
+        "stage": 5,
+        "kind": "miniboss",
+        "baseGold": 50,
+        "kindMultiplier": 3,
+        "killGold": 150,
+        "cumulativeGold": 268
+      },
+      {
+        "stage": 6,
+        "kind": "normal",
+        "baseGold": 62,
+        "kindMultiplier": 1,
+        "killGold": 62,
+        "cumulativeGold": 330
+      },
+      {
+        "stage": 7,
+        "kind": "normal",
+        "baseGold": 78,
+        "kindMultiplier": 1,
+        "killGold": 78,
+        "cumulativeGold": 408
+      },
+      {
+        "stage": 8,
+        "kind": "normal",
+        "baseGold": 96,
+        "kindMultiplier": 1,
+        "killGold": 96,
+        "cumulativeGold": 504
+      },
+      {
+        "stage": 9,
+        "kind": "normal",
+        "baseGold": 120,
+        "kindMultiplier": 1,
+        "killGold": 120,
+        "cumulativeGold": 624
+      },
+      {
+        "stage": 10,
+        "kind": "boss",
+        "baseGold": 150,
+        "kindMultiplier": 5,
+        "killGold": 750,
+        "cumulativeGold": 1374
+      },
+      {
+        "stage": 11,
+        "kind": "normal",
+        "baseGold": 374,
+        "kindMultiplier": 1,
+        "killGold": 374,
+        "cumulativeGold": 1748
+      },
+      {
+        "stage": 12,
+        "kind": "normal",
+        "baseGold": 466,
+        "kindMultiplier": 1,
+        "killGold": 466,
+        "cumulativeGold": 2214
+      },
+      {
+        "stage": 13,
+        "kind": "normal",
+        "baseGold": 584,
+        "kindMultiplier": 1,
+        "killGold": 584,
+        "cumulativeGold": 2798
+      },
+      {
+        "stage": 14,
+        "kind": "normal",
+        "baseGold": 728,
+        "kindMultiplier": 1,
+        "killGold": 728,
+        "cumulativeGold": 3526
+      },
+      {
+        "stage": 15,
+        "kind": "miniboss",
+        "baseGold": 910,
+        "kindMultiplier": 3,
+        "killGold": 2730,
+        "cumulativeGold": 6256
+      },
+      {
+        "stage": 16,
+        "kind": "normal",
+        "baseGold": 1138,
+        "kindMultiplier": 1,
+        "killGold": 1138,
+        "cumulativeGold": 7394
+      },
+      {
+        "stage": 17,
+        "kind": "normal",
+        "baseGold": 1422,
+        "kindMultiplier": 1,
+        "killGold": 1422,
+        "cumulativeGold": 8816
+      },
+      {
+        "stage": 18,
+        "kind": "normal",
+        "baseGold": 1778,
+        "kindMultiplier": 1,
+        "killGold": 1778,
+        "cumulativeGold": 10594
+      },
+      {
+        "stage": 19,
+        "kind": "normal",
+        "baseGold": 2222,
+        "kindMultiplier": 1,
+        "killGold": 2222,
+        "cumulativeGold": 12816
+      },
+      {
+        "stage": 20,
+        "kind": "boss",
+        "baseGold": 2776,
+        "kindMultiplier": 5,
+        "killGold": 13880,
+        "cumulativeGold": 26696
+      },
+      {
+        "stage": 21,
+        "kind": "normal",
+        "baseGold": 6940,
+        "kindMultiplier": 1,
+        "killGold": 6940,
+        "cumulativeGold": 33636
+      },
+      {
+        "stage": 22,
+        "kind": "normal",
+        "baseGold": 8674,
+        "kindMultiplier": 1,
+        "killGold": 8674,
+        "cumulativeGold": 42310
+      },
+      {
+        "stage": 23,
+        "kind": "normal",
+        "baseGold": 10844,
+        "kindMultiplier": 1,
+        "killGold": 10844,
+        "cumulativeGold": 53154
+      },
+      {
+        "stage": 24,
+        "kind": "normal",
+        "baseGold": 13554,
+        "kindMultiplier": 1,
+        "killGold": 13554,
+        "cumulativeGold": 66708
+      },
+      {
+        "stage": 25,
+        "kind": "miniboss",
+        "baseGold": 16942,
+        "kindMultiplier": 3,
+        "killGold": 50826,
+        "cumulativeGold": 117534
+      },
+      {
+        "stage": 26,
+        "kind": "normal",
+        "baseGold": 21176,
+        "kindMultiplier": 1,
+        "killGold": 21176,
+        "cumulativeGold": 138710
+      },
+      {
+        "stage": 27,
+        "kind": "normal",
+        "baseGold": 26470,
+        "kindMultiplier": 1,
+        "killGold": 26470,
+        "cumulativeGold": 165180
+      },
+      {
+        "stage": 28,
+        "kind": "normal",
+        "baseGold": 33088,
+        "kindMultiplier": 1,
+        "killGold": 33088,
+        "cumulativeGold": 198268
+      },
+      {
+        "stage": 29,
+        "kind": "normal",
+        "baseGold": 41360,
+        "kindMultiplier": 1,
+        "killGold": 41360,
+        "cumulativeGold": 239628
+      },
+      {
+        "stage": 30,
+        "kind": "boss",
+        "baseGold": 51700,
+        "kindMultiplier": 5,
+        "killGold": 258500,
+        "cumulativeGold": 498128
+      },
+      {
+        "stage": 31,
+        "kind": "normal",
+        "baseGold": 129248,
+        "kindMultiplier": 1,
+        "killGold": 129248,
+        "cumulativeGold": 627376
+      },
+      {
+        "stage": 32,
+        "kind": "normal",
+        "baseGold": 161560,
+        "kindMultiplier": 1,
+        "killGold": 161560,
+        "cumulativeGold": 788936
+      },
+      {
+        "stage": 33,
+        "kind": "normal",
+        "baseGold": 201950,
+        "kindMultiplier": 1,
+        "killGold": 201950,
+        "cumulativeGold": 990886
+      },
+      {
+        "stage": 34,
+        "kind": "normal",
+        "baseGold": 252436,
+        "kindMultiplier": 1,
+        "killGold": 252436,
+        "cumulativeGold": 1243322
+      },
+      {
+        "stage": 35,
+        "kind": "miniboss",
+        "baseGold": 315546,
+        "kindMultiplier": 3,
+        "killGold": 946638,
+        "cumulativeGold": 2189960
+      },
+      {
+        "stage": 36,
+        "kind": "normal",
+        "baseGold": 394432,
+        "kindMultiplier": 1,
+        "killGold": 394432,
+        "cumulativeGold": 2584392
+      },
+      {
+        "stage": 37,
+        "kind": "normal",
+        "baseGold": 493040,
+        "kindMultiplier": 1,
+        "killGold": 493040,
+        "cumulativeGold": 3077432
+      },
+      {
+        "stage": 38,
+        "kind": "normal",
+        "baseGold": 616298,
+        "kindMultiplier": 1,
+        "killGold": 616298,
+        "cumulativeGold": 3693730
+      },
+      {
+        "stage": 39,
+        "kind": "normal",
+        "baseGold": 770372,
+        "kindMultiplier": 1,
+        "killGold": 770372,
+        "cumulativeGold": 4464102
+      },
+      {
+        "stage": 40,
+        "kind": "boss",
+        "baseGold": 962966,
+        "kindMultiplier": 5,
+        "killGold": 4814830,
+        "cumulativeGold": 9278932
+      },
+      {
+        "stage": 41,
+        "kind": "normal",
+        "baseGold": 2407414,
+        "kindMultiplier": 1,
+        "killGold": 2407414,
+        "cumulativeGold": 11686346
+      },
+      {
+        "stage": 42,
+        "kind": "normal",
+        "baseGold": 3009266,
+        "kindMultiplier": 1,
+        "killGold": 3009266,
+        "cumulativeGold": 14695612
+      },
+      {
+        "stage": 43,
+        "kind": "normal",
+        "baseGold": 3761582,
+        "kindMultiplier": 1,
+        "killGold": 3761582,
+        "cumulativeGold": 18457194
+      },
+      {
+        "stage": 44,
+        "kind": "normal",
+        "baseGold": 4701978,
+        "kindMultiplier": 1,
+        "killGold": 4701978,
+        "cumulativeGold": 23159172
+      },
+      {
+        "stage": 45,
+        "kind": "miniboss",
+        "baseGold": 5877472,
+        "kindMultiplier": 3,
+        "killGold": 17632416,
+        "cumulativeGold": 40791588
+      },
+      {
+        "stage": 46,
+        "kind": "normal",
+        "baseGold": 7346840,
+        "kindMultiplier": 1,
+        "killGold": 7346840,
+        "cumulativeGold": 48138428
+      },
+      {
+        "stage": 47,
+        "kind": "normal",
+        "baseGold": 9183550,
+        "kindMultiplier": 1,
+        "killGold": 9183550,
+        "cumulativeGold": 57321978
+      },
+      {
+        "stage": 48,
+        "kind": "normal",
+        "baseGold": 11479438,
+        "kindMultiplier": 1,
+        "killGold": 11479438,
+        "cumulativeGold": 68801416
+      },
+      {
+        "stage": 49,
+        "kind": "normal",
+        "baseGold": 14349298,
+        "kindMultiplier": 1,
+        "killGold": 14349298,
+        "cumulativeGold": 83150714
+      },
+      {
+        "stage": 50,
+        "kind": "boss",
+        "baseGold": 17936622,
+        "kindMultiplier": 5,
+        "killGold": 89683110,
+        "cumulativeGold": 172833824
+      }
+    ],
+    "zoneSummaries": [
+      {
+        "firstStage": 1,
+        "lastStage": 10,
+        "baseGoldStart": 20,
+        "baseGoldEnd": 150,
+        "minibossGold": 150,
+        "bossGold": 750,
+        "zoneGold": 1374,
+        "cumulativeGold": 1374,
+        "priceStart": 10,
+        "priceEnd": 75,
+        "cumulativeUpgradeCost": 337
+      },
+      {
+        "firstStage": 11,
+        "lastStage": 20,
+        "baseGoldStart": 374,
+        "baseGoldEnd": 2776,
+        "minibossGold": 2730,
+        "bossGold": 13880,
+        "zoneGold": 25322,
+        "cumulativeGold": 26696,
+        "priceStart": 187,
+        "priceEnd": 1388,
+        "cumulativeUpgradeCost": 6536
+      },
+      {
+        "firstStage": 21,
+        "lastStage": 30,
+        "baseGoldStart": 6940,
+        "baseGoldEnd": 51700,
+        "minibossGold": 50826,
+        "bossGold": 258500,
+        "zoneGold": 471432,
+        "cumulativeGold": 498128,
+        "priceStart": 3470,
+        "priceEnd": 25850,
+        "cumulativeUpgradeCost": 121910
+      },
+      {
+        "firstStage": 31,
+        "lastStage": 40,
+        "baseGoldStart": 129248,
+        "baseGoldEnd": 962966,
+        "minibossGold": 946638,
+        "bossGold": 4814830,
+        "zoneGold": 8780804,
+        "cumulativeGold": 9278932,
+        "priceStart": 64624,
+        "priceEnd": 481483,
+        "cumulativeUpgradeCost": 2270834
+      },
+      {
+        "firstStage": 41,
+        "lastStage": 50,
+        "baseGoldStart": 2407414,
+        "baseGoldEnd": 17936622,
+        "minibossGold": 17632416,
+        "bossGold": 89683110,
+        "zoneGold": 163554892,
+        "cumulativeGold": 172833824,
+        "priceStart": 1203707,
+        "priceEnd": 8968311,
+        "cumulativeUpgradeCost": 42297564
+      }
+    ],
+    "baseGoldFull50Stages": 172833824,
+    "rewardChanges": true,
+    "growthStatChanges": false,
+    "enemyStatChanges": false,
+    "budgetExamples": [
+      {
+        "clearedThroughStage": 10,
+        "earnedGold": 1374,
+        "attackLevel": 11,
+        "hpLevel": 11,
+        "luckLevel": 7,
+        "resonanceLevel": 7,
+        "spentGold": 1356,
+        "remainingGold": 18,
+        "scope": "Cumulative purchasing power after returning to lobby; not in-run upgrades or proof of clearability."
+      },
+      {
+        "clearedThroughStage": 20,
+        "earnedGold": 26696,
+        "attackLevel": 21,
+        "hpLevel": 21,
+        "luckLevel": 17,
+        "resonanceLevel": 17,
+        "spentGold": 26308,
+        "remainingGold": 388,
+        "scope": "Cumulative purchasing power after returning to lobby; not in-run upgrades or proof of clearability."
+      },
+      {
+        "clearedThroughStage": 30,
+        "earnedGold": 498128,
+        "attackLevel": 31,
+        "hpLevel": 31,
+        "luckLevel": 27,
+        "resonanceLevel": 27,
+        "spentGold": 490740,
+        "remainingGold": 7388,
+        "scope": "Cumulative purchasing power after returning to lobby; not in-run upgrades or proof of clearability."
+      },
+      {
+        "clearedThroughStage": 40,
+        "earnedGold": 9278932,
+        "attackLevel": 41,
+        "hpLevel": 41,
+        "luckLevel": 37,
+        "resonanceLevel": 37,
+        "spentGold": 9141114,
+        "remainingGold": 137818,
+        "scope": "Cumulative purchasing power after returning to lobby; not in-run upgrades or proof of clearability."
+      },
+      {
+        "clearedThroughStage": 50,
+        "earnedGold": 172833824,
+        "attackLevel": 50,
+        "hpLevel": 50,
+        "luckLevel": 50,
+        "resonanceLevel": 50,
+        "spentGold": 169190256,
+        "remainingGold": 3643568,
+        "scope": "Cumulative purchasing power after returning to lobby; not in-run upgrades or proof of clearability."
+      }
+    ],
+    "budgetAssumptions": "One initial 1-50 sweep, gold only, no luck/artifacts/fragments/ads/payments. Gold earned remains available across deaths. Purchases occur in lobby only.",
+    "budgetTarget": "At each completed 10-stage block, enough cumulative base income for attack and HP at next breakthrough plus utility stats a few levels behind. At 50, all four can reach cap using final-boss income.",
+    "balanceStatus": "Exact arithmetic verified; natural 1..10 desktop flow passed. Long-term investment strategy, 12..50 and NG+ progression are not playtested.",
+    "exchangeGoldPerUnlockTier": [
+      100,
+      150,
+      2776,
+      51700,
+      962966
+    ],
+    "exchangeTierUnlockBosses": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "exchangeTierScope": "Account-wide highest completed boss threshold, monotonic and capped at40; persists across characters and NG+. Existing clear records restore it; if no clear history is recoverable, start at0.",
+    "exchangeFormula": "rate=max(100,B(highest completed boss in {10,20,30,40})); no completed boss ->100. fragments=ceil(max(0,cost-wallet)/rate).",
+    "exchangeReason": "Keep fragment exchange meaningful with larger gold units; fixed100G is superseded. Payments, fragment drops1/3 and slot costs4/8 remain unchanged.",
+    "exchangeExample": {
+      "tier": 0,
+      "targetLevel": 11,
+      "cost": 187,
+      "walletBefore": 12,
+      "rate": 100,
+      "requiredFragments": 2,
+      "walletAfterExchange": 212,
+      "walletAfterSeparateUpgrade": 25
+    },
+    "maxRelicGoldPerZone": [
+      75,
+      1388,
+      25850,
+      481483,
+      8968311
+    ],
+    "maxRelicFormula": "MAX duplicate at boss S grants B(S)/2=C(S); ordinary duplicates still grant only a relic level. No luck multiplier.",
+    "ngGoldMultiplier": 1,
+    "ngScope": "Same 1-50 stage reward table in NG+ for now; early NG+ gold per combat time is not validated. No guaranteed NG+ farming rate.",
+    "sharedWallet": "Gold and fragments remain account-shared. High-stage income accelerates early upgrades on alternate characters intentionally; the budget table concerns one character only.",
+    "saveMigration": "Keep existing levels and wallets. Apply new prices and rewards only to future transactions. Do not reprice pending kill/choice rewards. Restore exchange tier from completed-boss history; invalidate stale purchase quotes.",
+    "numericStorageRequirement": "Implemented checked signed Int64 gold/cost/reward/quote/save/UI paths; save schema3 migrates schema1/2 without retroactive charges or replacing promised rewards.",
+    "largeNumberUi": "HUD may use floor-truncated 만/억 units; purchase and exchange confirmation always display exact comma-separated amounts. Do not silently round a charged price.",
+    "baseline": {
+      "runtimePerStat": 1780,
+      "runtimeFourStats": 7120,
+      "runtimeFull50Gold": 8000,
+      "rejectedV5PerStat": 2125,
+      "rejectedV5FourStats": 8500
+    }
+  },
+  "ui": {
+    "theme": "남색 철판·황동 모서리·크림 글자, 절제된 도트 테두리",
+    "directionBackground": false,
+    "referenceUnits": "Reference canvas pixels, not physical dp",
+    "safeAreaAnchors": true,
+    "minimumPhysicalTargetDpCandidate": 48,
+    "battleBounds": {
+      "960x540": {
+        "up": [
+          88,
+          312,
+          64,
+          64
+        ],
+        "back": [
+          16,
+          384,
+          64,
+          64
+        ],
+        "down": [
+          88,
+          456,
+          64,
+          64
+        ],
+        "forward": [
+          160,
+          384,
+          64,
+          64
+        ],
+        "attack": [
+          836,
+          410,
+          104,
+          104
+        ],
+        "pause": [
+          896,
+          12,
+          52,
+          52
+        ]
+      },
+      "640x360": {
+        "up": [
+          68,
+          176,
+          56,
+          56
+        ],
+        "back": [
+          8,
+          236,
+          56,
+          56
+        ],
+        "down": [
+          68,
+          296,
+          56,
+          56
+        ],
+        "forward": [
+          128,
+          236,
+          56,
+          56
+        ],
+        "attack": [
+          548,
+          260,
+          80,
+          80
+        ],
+        "pause": [
+          580,
+          8,
+          48,
+          48
+        ]
+      }
+    },
+    "lobbyBounds": {
+      "960x540": {
+        "start": [
+          656,
+          446,
+          288,
+          68
+        ],
+        "relics": [
+          420,
+          446,
+          216,
+          68
+        ],
+        "upgradeSize": [
+          64,
+          56
+        ],
+        "statRowHeight": 72
+      },
+      "640x360": {
+        "start": [
+          400,
+          304,
+          232,
+          48
+        ],
+        "relics": [
+          196,
+          304,
+          188,
+          48
+        ],
+        "upgradeSize": [
+          64,
+          48
+        ],
+        "statRowHeight": 52
+      }
+    },
+    "states": [
+      "normal",
+      "pressed",
+      "cooldown",
+      "selected",
+      "locked",
+      "insufficient-gold",
+      "max",
+      "saving",
+      "save-failed"
+    ],
+    "smallViewport": "Reflow and compact portrait; do not uniformly scale all controls below minimum."
+  },
+  "runDirection": {
+    "status": "applied-approved-run-dash-20261021-02",
+    "currentFrames": 8,
+    "currentCycleMs": 400,
+    "currentWorldTravelPx": 1920,
+    "currentTravelMs": 2000,
+    "preferredDirection": "승인된 낮은 전경과 긴 뒷발 밀기, 8장 원본과40/60ms 박자 보존",
+    "newKeyPoseCountCandidate": 8,
+    "cycleCandidatesMs": [
+      400
+    ],
+    "bodyLeanDegreesCandidate": [
+      20,
+      25
+    ],
+    "headBobSourcePxCandidate": [
+      2,
+      3
+    ],
+    "hipBobSourcePxCandidate": [
+      4,
+      6
+    ],
+    "groundSlipScreenPxTarget": 2,
+    "phaseEntryExitMsCandidate": [
+      100,
+      140
+    ],
+    "worldSpeedChangeApproved": true,
+    "groundCoupling": "1920 planning px / 2s; five400ms cycles; contacts0/200ms; total3250ms transition retained.",
+    "totalTransitionMsToPreserve": 3250,
+    "appliedSourceId": "hero-approved-dash-20261021-02",
+    "appliedFramePivotsX": [
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60
+    ],
+    "appliedFrameGroundY": 111,
+    "frameDurationsMs": [
+      40,
+      40,
+      60,
+      60,
+      40,
+      40,
+      60,
+      60
+    ]
+  },
+  "verificationStatus": "v5.7 offline Canvas and time sampling passed; no Unity or device test of this proposal.",
+  "planningEvidence": {
+    "board": "feedback-plan-v57.html",
+    "preview": "hitbox-preview-v57.html",
+    "validation": "../Evidence/Timing-v57/render-check.json",
+    "protectedRuntime": "../Evidence/Timing-v57/runtime-unchanged.json"
+  },
+  "implementationEvidence": [
+    "../Evidence/Feedback-v52/verification.json",
+    "../Evidence/ApprovedRun-20261021/verification.json",
+    "../Evidence/Combat-v55/verification.json"
+  ],
+  "integerStats": {
+    "storage": "Int32 combat stats; integer percent chance/bonus/multiplier",
+    "rounding": "nearest whole point, midpoint away from zero after final modifier",
+    "damage": "same whole-point calculation used by HP and displayed damage",
+    "saveSchema": 4,
+    "migration": "keep wallets, levels, reward promises; rebuild old fractional combat snapshots; label legacy earnings since update"
+  },
+  "deathResult": {
+    "afterDeathMs": 1800,
+    "fields": [
+      "defeated stage",
+      "earned gold in this run",
+      "earned fragments in this run"
+    ],
+    "buttons": [
+      "다시하기",
+      "로비"
+    ],
+    "retry": "saved boss checkpoint + 1, full HP, new run earnings ledger",
+    "persistence": "restore result on load; wallet already credited at each reward, no additional result payout",
+    "includes": "enemy rewards and MAX relic compensation"
+  },
+  "enemyAttackPresentation": {
+    "clock": "combat clock; pause freezes poses, particles and all lifetimes",
+    "warmup": "gold flecks gather at the weapon; brace then release in the final120ms",
+    "release": "weapon trail120ms + directional streaks, faster final approach",
+    "impact": "local gold/ivory core45ms + radial shards260ms + dust340ms + ground ripple300ms",
+    "shake": {
+      "maxPx": 3,
+      "durationMs": 90,
+      "hudMoves": false,
+      "reducedMotion": false
+    },
+    "hitstopMs": 0,
+    "particleBudget": 96,
+    "sources": "Saved World-space ParticleSystem pool96, Core-sampled LineRenderer weapon silhouette and TrailRenderer motion history; full-viewport PerfectWave overlay. Actual Windows captures are separate from the planning Canvas preview.",
+    "dangerVsDecoration": "danger rectangle is the full gameplay footprint; outlying sparks/dust/rings are decorative and do not deal damage",
+    "palette": "enemy gold/amber; confirmed perfect mint/ivory",
+    "audioPlan": "wind-up metal tension, release whoosh, impact low thump with metallic tick; not synthesized in this preview"
+  },
+  "baselineVersion": "planning-v5.5",
+  "baselineStatus": "applied-and-verified-Windows",
+  "baselineDocument": "feedback-plan-v55.html",
+  "previewMovementTarget": {
+    "source": "hitbox-preview-v55.js: dodge, heroState, drawHero",
+    "backDodge": {
+      "distancePx": -90,
+      "enterMs": 50,
+      "holdAfterImpactMs": 100,
+      "returnMs": 130,
+      "curve": "1-(1-p)^3",
+      "pose": "hero-dodge-back/08.png"
+    },
+    "attack": {
+      "homeX": 375,
+      "strikeX": 540,
+      "approachMs": 120,
+      "hitMs": 200,
+      "returnStartMs": 230,
+      "endMs": 500,
+      "curve": "1-(1-p)^3",
+      "pose": "hero-v6-slash-up frames 0..10,17,23,24"
+    },
+    "status": "requested target for next game implementation, not applied in this planning revision"
+  },
+  "previousPlanningVersion": "planning-v5.6"
+}

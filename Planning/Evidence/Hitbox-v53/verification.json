@@ -1,0 +1,150 @@
+{
+  "version": "planning-v5.3",
+  "date": "2026-10-21",
+  "passed": true,
+  "scope": "planning and browser preview only",
+  "browser": {
+    "passed": true,
+    "cases": [
+      {
+        "attack": "thrust",
+        "duration": 900,
+        "threeBlinkCycles": true,
+        "launchAt": 780,
+        "impactAt": 900,
+        "dodgeOutside": true
+      },
+      {
+        "attack": "low",
+        "duration": 900,
+        "threeBlinkCycles": true,
+        "launchAt": 780,
+        "impactAt": 900,
+        "dodgeOutside": true
+      },
+      {
+        "attack": "high",
+        "duration": 900,
+        "threeBlinkCycles": true,
+        "launchAt": 780,
+        "impactAt": 900,
+        "dodgeOutside": true
+      },
+      {
+        "attack": "rear",
+        "duration": 900,
+        "threeBlinkCycles": true,
+        "launchAt": 780,
+        "impactAt": 900,
+        "dodgeOutside": true
+      },
+      {
+        "attack": "thrust",
+        "duration": 650,
+        "threeBlinkCycles": true,
+        "launchAt": 530,
+        "impactAt": 650,
+        "dodgeOutside": true
+      },
+      {
+        "attack": "low",
+        "duration": 650,
+        "threeBlinkCycles": true,
+        "launchAt": 530,
+        "impactAt": 650,
+        "dodgeOutside": true
+      },
+      {
+        "attack": "high",
+        "duration": 650,
+        "threeBlinkCycles": true,
+        "launchAt": 530,
+        "impactAt": 650,
+        "dodgeOutside": true
+      },
+      {
+        "attack": "rear",
+        "duration": 650,
+        "threeBlinkCycles": true,
+        "launchAt": 530,
+        "impactAt": 650,
+        "dodgeOutside": true
+      }
+    ],
+    "geometry": [
+      {
+        "attack": "thrust",
+        "expected": "back",
+        "clear": [
+          "back"
+        ]
+      },
+      {
+        "attack": "low",
+        "expected": "up",
+        "clear": [
+          "up"
+        ]
+      },
+      {
+        "attack": "high",
+        "expected": "down",
+        "clear": [
+          "down"
+        ]
+      },
+      {
+        "attack": "rear",
+        "expected": "forward",
+        "clear": [
+          "forward"
+        ]
+      }
+    ],
+    "pause": true,
+    "reducedFlashConstantAlpha": 0.12,
+    "layouts": [
+      {
+        "width": 1008,
+        "scrollWidth": 1008,
+        "canvasWidth": 958
+      },
+      {
+        "width": 688,
+        "scrollWidth": 688,
+        "canvasWidth": 638
+      },
+      {
+        "width": 375,
+        "scrollWidth": 375,
+        "canvasWidth": 349
+      },
+      {
+        "width": 320,
+        "scrollWidth": 320,
+        "canvasWidth": 294
+      }
+    ],
+    "embeddedFrameHeight": 1017,
+    "boardLegacyPerfectTool": true,
+    "errors": [],
+    "missingImages": []
+  },
+  "runtimeAndGameData": {
+    "filesChecked": 824,
+    "changedOrAddedOrRemoved": []
+  },
+  "visualReview": [
+    "thrust-preview.png",
+    "low-preview.png",
+    "high-dodge.png",
+    "rear-preview.png",
+    "layout-375.png",
+    "board-timing.png"
+  ],
+  "limits": [
+    "Static existing character poses and schematic attack effects; no new enemy animation authored.",
+    "900ms default / 650ms fast / follow-up minimum650ms and hit intervals800ms or1050ms are proposed, not deployed.",
+    "Hitbox and dodge-body examples verified in preview coordinates, not Unity gameplay."
+  ]
+}

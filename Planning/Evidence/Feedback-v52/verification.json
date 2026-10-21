@@ -1,0 +1,171 @@
+{
+  "revision": "feedback-v5.2",
+  "date": "2026-10-21T20:34:36.863164+09:00",
+  "passed": true,
+  "build": {
+    "platform": "Windows x64 development",
+    "unity": "6000.3.15f1",
+    "errors": 0,
+    "runtimeSha256": "58e27dd885fc6b717dc22f4805b5dca5979062b9ad8f58e2ffa317285af49588",
+    "zipRuntimeMatches": true
+  },
+  "tests": {
+    "editMode": {
+      "result": "Passed",
+      "total": "101",
+      "passed": "101",
+      "failed": "0"
+    },
+    "playMode": {
+      "result": "Passed",
+      "total": "13",
+      "passed": "13",
+      "failed": "0"
+    },
+    "independentContractAssertions": 808
+  },
+  "fullFlow": {
+    "passed": true,
+    "tutorial": true,
+    "bossRewards": 1,
+    "storyLines": 3,
+    "minibossCurrencyOnly": true,
+    "travel": true,
+    "stageBanner": true,
+    "bossIntro": true,
+    "deathLantern": true,
+    "perfectDodges": 82,
+    "normalDodges": 1,
+    "criticalHits": 11,
+    "playerHits": 3,
+    "checkpoint": 11,
+    "attackLevel": 14,
+    "equippedRelics": 1
+  },
+  "diskResume": {
+    "passed": true,
+    "stage": 11,
+    "attackLevel": 14,
+    "equippedRelics": 1
+  },
+  "viewports": {
+    "640x360": {
+      "passed": true,
+      "exactHighPrice": 8968311,
+      "largeWallet": 3000000000,
+      "perfectAfterImpact": true,
+      "pauseFreezesFeedback": true,
+      "fourDirections": true,
+      "runFrames": 48,
+      "runFps": 24,
+      "travelPixels": 1920,
+      "deathResult": true,
+      "resultRestore": true,
+      "retry": true
+    },
+    "960x540": {
+      "passed": true,
+      "exactHighPrice": 8968311,
+      "largeWallet": 3000000000,
+      "perfectAfterImpact": true,
+      "pauseFreezesFeedback": true,
+      "fourDirections": true,
+      "runFrames": 48,
+      "runFps": 24,
+      "travelPixels": 1920,
+      "deathResult": true,
+      "resultRestore": true,
+      "retry": true
+    },
+    "1280x720": {
+      "passed": true,
+      "exactHighPrice": 8968311,
+      "largeWallet": 3000000000,
+      "perfectAfterImpact": true,
+      "pauseFreezesFeedback": true,
+      "fourDirections": true,
+      "runFrames": 48,
+      "runFps": 24,
+      "travelPixels": 1920,
+      "deathResult": true,
+      "resultRestore": true,
+      "retry": true
+    }
+  },
+  "art": {
+    "passed": true,
+    "selectedAssetHashes": 281,
+    "runOriginalHashes": 8,
+    "errors": []
+  },
+  "board": {
+    "passed": true,
+    "errors": [],
+    "missing": [],
+    "normalSpeedSamples250ms": [
+      "6",
+      "12",
+      "18",
+      "24"
+    ],
+    "pause": true,
+    "scrub": true
+  },
+  "run": {
+    "sourceId": "hero-v12-fast-run",
+    "jobId": "88141990-d9f4-4be6-b9a9-1fb608d923a4",
+    "sourceFrames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fps": 24,
+    "travelPx": 1920,
+    "travelMs": 2000,
+    "oldTravelPx": 640,
+    "sharedPivot": [
+      60,
+      114
+    ]
+  },
+  "stats": {
+    "finalStatStorage": "Int32",
+    "percentStorage": "whole integer percent",
+    "rounding": "nearest whole point, midpoint away from zero",
+    "damage": "whole point before milli-HP storage",
+    "saveSchema": 4
+  },
+  "result": {
+    "defeatedStage": 11,
+    "earnedGold": 1374,
+    "earnedFragments": 4,
+    "buttons": [
+      "retry checkpoint",
+      "lobby"
+    ],
+    "legacyRunLedger": "since update label",
+    "noDuplicatePayout": true
+  },
+  "reviewedScreens": [
+    "640/direction-Forward.png",
+    "640/death-result.png",
+    "640/lobby-high-price.png",
+    "960/direction-Back.png",
+    "960/death-result.png",
+    "full/death-result.png",
+    "1280/direction-Down.png",
+    "run-preview-review.png"
+  ],
+  "scopeNotes": [
+    "Tests use isolated saves; existing user save untouched.",
+    "Android APK was not rebuilt.",
+    "12-50 stages are still outside the playable MVP.",
+    "Integer-percent rounding may leave some adjacent luck/resonance levels at the same final percentage; growth coefficients were preserved.",
+    "Source-frame inspection and recorded 24fps playback verified; artistic preference is still subject to user review."
+  ]
+}

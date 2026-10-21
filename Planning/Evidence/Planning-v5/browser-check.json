@@ -1,0 +1,166 @@
+{
+  "date": "2026-10-21",
+  "scope": "Planning document arithmetic, layout and review controls only; not Unity gameplay, touch, sound or animation validation",
+  "errors": [],
+  "viewports": [
+    {
+      "width": 1280,
+      "documentWidth": 1280,
+      "missingImages": []
+    },
+    {
+      "width": 768,
+      "documentWidth": 768,
+      "missingImages": []
+    },
+    {
+      "width": 360,
+      "documentWidth": 360,
+      "missingImages": []
+    },
+    {
+      "page": "main",
+      "width": 1280,
+      "documentWidth": 1280
+    },
+    {
+      "page": "main",
+      "width": 360,
+      "documentWidth": 360
+    }
+  ],
+  "timing": [
+    {
+      "duration": 650,
+      "timeToImpact": 161,
+      "expected": "preparation"
+    },
+    {
+      "duration": 650,
+      "timeToImpact": 160,
+      "expected": "normal"
+    },
+    {
+      "duration": 650,
+      "timeToImpact": 61,
+      "expected": "normal"
+    },
+    {
+      "duration": 650,
+      "timeToImpact": 60,
+      "expected": "perfect"
+    },
+    {
+      "duration": 650,
+      "timeToImpact": 0,
+      "expected": "perfect"
+    },
+    {
+      "duration": 900,
+      "timeToImpact": 161,
+      "expected": "preparation"
+    },
+    {
+      "duration": 900,
+      "timeToImpact": 160,
+      "expected": "normal"
+    },
+    {
+      "duration": 900,
+      "timeToImpact": 61,
+      "expected": "normal"
+    },
+    {
+      "duration": 900,
+      "timeToImpact": 60,
+      "expected": "perfect"
+    },
+    {
+      "duration": 900,
+      "timeToImpact": 0,
+      "expected": "perfect"
+    },
+    {
+      "duration": 250,
+      "timeToImpact": 161,
+      "expected": "preparation"
+    },
+    {
+      "duration": 250,
+      "timeToImpact": 160,
+      "expected": "normal"
+    },
+    {
+      "duration": 250,
+      "timeToImpact": 61,
+      "expected": "normal"
+    },
+    {
+      "duration": 250,
+      "timeToImpact": 60,
+      "expected": "perfect"
+    },
+    {
+      "duration": 250,
+      "timeToImpact": 0,
+      "expected": "perfect"
+    }
+  ],
+  "prices": [
+    {
+      "level": 0,
+      "next": "0 → 1 · 10G",
+      "cumulative": "0G"
+    },
+    {
+      "level": 1,
+      "next": "1 → 2 · 11G",
+      "cumulative": "10G"
+    },
+    {
+      "level": 2,
+      "next": "2 → 3 · 12G",
+      "cumulative": "21G"
+    },
+    {
+      "level": 9,
+      "next": "9 → 10 · 19G",
+      "cumulative": "126G"
+    },
+    {
+      "level": 10,
+      "next": "10 → 11 · 24G",
+      "cumulative": "145G"
+    },
+    {
+      "level": 11,
+      "next": "11 → 12 · 25G",
+      "cumulative": "169G"
+    },
+    {
+      "level": 40,
+      "next": "40 → 41 · 66G",
+      "cumulative": "1,420G"
+    },
+    {
+      "level": 49,
+      "next": "49 → 50 · 75G",
+      "cumulative": "2,050G"
+    },
+    {
+      "level": 50,
+      "next": "최대 강화",
+      "cumulative": "2,125G"
+    }
+  ],
+  "screens": [
+    "battle-timing-960.png",
+    "battle-perfect-960.png",
+    "battle-bounds-640.png",
+    "lobby-960.png",
+    "lobby-640.png",
+    "button-states.png",
+    "growth-prices.png",
+    "main-revision.png"
+  ]
+}

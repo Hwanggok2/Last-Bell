@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-21",
+  "revision": "economy-v2-compound-cost-and-stage-income",
+  "scope": "Planning arithmetic and untouched product files, not gameplay balance validation",
+  "pricesChecked": 50,
+  "stageRewardsChecked": 50,
+  "allPricesAndBaseRewardsStrictlyIncreasing": true,
+  "breakthroughLevels": [
+    11,
+    21,
+    31,
+    41
+  ],
+  "totalPerStat": 42297564,
+  "totalFourStats": 169190256,
+  "totalBaseIncome50": 172833824,
+  "budgetExamples": [
+    {
+      "clearedThroughStage": 10,
+      "earnedGold": 1374,
+      "attackLevel": 11,
+      "hpLevel": 11,
+      "luckLevel": 7,
+      "resonanceLevel": 7,
+      "spentGold": 1356,
+      "remainingGold": 18,
+      "scope": "Cumulative purchasing power after returning to lobby; not in-run upgrades or proof of clearability."
+    },
+    {
+      "clearedThroughStage": 20,
+      "earnedGold": 26696,
+      "attackLevel": 21,
+      "hpLevel": 21,
+      "luckLevel": 17,
+      "resonanceLevel": 17,
+      "spentGold": 26308,
+      "remainingGold": 388,
+      "scope": "Cumulative purchasing power after returning to lobby; not in-run upgrades or proof of clearability."
+    },
+    {
+      "clearedThroughStage": 30,
+      "earnedGold": 498128,
+      "attackLevel": 31,
+      "hpLevel": 31,
+      "luckLevel": 27,
+      "resonanceLevel": 27,
+      "spentGold": 490740,
+      "remainingGold": 7388,
+      "scope": "Cumulative purchasing power after returning to lobby; not in-run upgrades or proof of clearability."
+    },
+    {
+      "clearedThroughStage": 40,
+      "earnedGold": 9278932,
+      "attackLevel": 41,
+      "hpLevel": 41,
+      "luckLevel": 37,
+      "resonanceLevel": 37,
+      "spentGold": 9141114,
+      "remainingGold": 137818,
+      "scope": "Cumulative purchasing power after returning to lobby; not in-run upgrades or proof of clearability."
+    },
+    {
+      "clearedThroughStage": 50,
+      "earnedGold": 172833824,
+      "attackLevel": 50,
+      "hpLevel": 50,
+      "luckLevel": 50,
+      "resonanceLevel": 50,
+      "spentGold": 169190256,
+      "remainingGold": 3643568,
+      "scope": "Cumulative purchasing power after returning to lobby; not in-run upgrades or proof of clearability."
+    }
+  ],
+  "exchangeExample": {
+    "tier": 0,
+    "targetLevel": 11,
+    "cost": 187,
+    "walletBefore": 12,
+    "rate": 100,
+    "requiredFragments": 2,
+    "walletAfterExchange": 212,
+    "walletAfterSeparateUpgrade": 25
+  },
+  "linkedExchangeAndMaxRelicTablesChecked": true,
+  "localLinksChecked": 64,
+  "missingLinks": [],
+  "productFilesCompared": 846,
+  "changedProductFiles": [],
+  "addedProductFiles": [],
+  "unityTestsRun": false,
+  "playtested": false
+}

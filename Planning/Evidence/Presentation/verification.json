@@ -1,0 +1,99 @@
+{
+  "scope": "offline-canvas-and-static-only",
+  "date": "2026-10-21",
+  "unityModified": false,
+  "browserRendered": false,
+  "browserReason": "In-app browser file URL policy blocked automatic opening; no alternate browser navigation used.",
+  "missingLinks": [],
+  "spriteCount": 23,
+  "directions": 4,
+  "sequences": 4,
+  "allFramesRendered": 16,
+  "proposedScaleRatio": 1.5,
+  "notes": [
+    "Browser layout and interactive controls still require a user-opened page or a separately authorized preview surface.",
+    "Static drawing functions rendered offline with Skia. No Unity/device validation claimed."
+  ],
+  "captions": [
+    {
+      "key": "normal",
+      "t": 200,
+      "caption": "적의 실루엣이 도트 조각으로 빠져나갑니다."
+    },
+    {
+      "key": "normal",
+      "t": 450,
+      "caption": "적의 실루엣이 도트 조각으로 빠져나갑니다."
+    },
+    {
+      "key": "normal",
+      "t": 850,
+      "caption": "온은 앞으로, 배경은 뒤로. 다음 적을 만납니다."
+    },
+    {
+      "key": "normal",
+      "t": 1400,
+      "caption": "Stage 4 · 조작 재개와 함께 첫 예고가 처음부터 시작됩니다."
+    },
+    {
+      "key": "death",
+      "t": 300,
+      "caption": "온의 몸에서 작은 금빛 도트가 떨어집니다."
+    },
+    {
+      "key": "death",
+      "t": 700,
+      "caption": "짧게 숨을 고르는 어둠."
+    },
+    {
+      "key": "death",
+      "t": 1100,
+      "caption": "등불의 불씨가 퍼지며 로비를 드러냅니다."
+    },
+    {
+      "key": "death",
+      "t": 1800,
+      "caption": "로비 · 강화와 Stage 출전 입력을 엽니다."
+    },
+    {
+      "key": "mini",
+      "t": 0,
+      "caption": "적에게 시선이 가까워집니다. HUD는 카메라와 분리합니다."
+    },
+    {
+      "key": "mini",
+      "t": 450,
+      "caption": "가슴빛과 각진 잔향으로 괴성을 표현합니다. 음원은 제작 전입니다."
+    },
+    {
+      "key": "mini",
+      "t": 1000,
+      "caption": "줌아웃 · 원래 전투 구도로 돌아옵니다."
+    },
+    {
+      "key": "mini",
+      "t": 1400,
+      "caption": "조작 재개 · 온전한 첫 공격 예고를 시작합니다."
+    },
+    {
+      "key": "boss",
+      "t": 0,
+      "caption": "적에게 시선이 가까워집니다. HUD는 카메라와 분리합니다."
+    },
+    {
+      "key": "boss",
+      "t": 600,
+      "caption": "가슴빛과 각진 잔향으로 괴성을 표현합니다. 음원은 제작 전입니다."
+    },
+    {
+      "key": "boss",
+      "t": 1250,
+      "caption": "줌아웃 · 원래 전투 구도로 돌아옵니다."
+    },
+    {
+      "key": "boss",
+      "t": 1800,
+      "caption": "조작 재개 · 온전한 첫 공격 예고를 시작합니다."
+    }
+  ]
+}

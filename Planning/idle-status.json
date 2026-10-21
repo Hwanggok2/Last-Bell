@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-21",
+  "scope": "플레이어3명 + 계획 몬스터50종. 정지 이미지와 연속 Idle을 구분한 자산 감사.",
+  "totalActors": 53,
+  "continuousCandidateActors": 1,
+  "stillOnlyActors": 5,
+  "notProducedActors": 47,
+  "rows": [
+    ["온", "1명", "새 연속 Idle 8장 후보", "입력0 제외·1~8 재생. 최종 품질 확정·Unity 적용 전."],
+    ["담·린", "2명", "미제작", "전용 Idle 이미지와 연속 클립 없음."],
+    ["MVP 몬스터", "5종", "정지 대기 그림만 각1장", "성문 파수병·사슬 망령·재의 불씨·성문 수문장·종의 기사. 연속 Idle 없음."],
+    ["확장 몬스터", "45종", "미제작", "명단·동작 제작 계획만 있음. 계획 프레임 수를 제작 실적으로 세지 않음."]
+  ],
+  "previewClip": "hero-v5-idle",
+  "previewGif": "Presentation/PixelLab/clips/hero-v5-idle/edited-preview.gif",
+  "displayNotes": [
+    "현재 전투 미리보기의 온은 대기 프레임1을 고정 표시한다. 상태 검토에서 ‘대기’를 선택해 재생하면 8장이 전환되지만 700ms 후 재생이 멈춘다.",
+    "Unity에는 온의 기존2포즈 반복과 MVP 적5종의 정지 그림·위치 흔들림만 있다. 새8장 Idle은 적용하지 않았으며 로비 초상도 정지다.",
+    "따라서 ‘모든 캐릭터·몬스터 Idle 제작 완료’가 아니다. 원본 파일 존재·연속 모션 검수·기획 연결·Unity 연결을 각각 구분한다."
+  ],
+  "nextPriority": "다음 제작 순서는 MVP 적5종의 연속 Idle과 온의 루프 검수·연결, 이후 담·린과 확장45종이다. 이번 수정은 현황 공개이며 새 Idle 생성 작업을 완료한 것으로 표시하지 않는다.",
+  "sources": [
+    "Presentation/PixelLab/assets.json",
+    "Presentation/motion-catalog-v7.json",
+    "Presentation/motions-v7.js",
+    "Production/world-art-roster.json",
+    "../Client/Assets/Game/Art/MvpArtCatalog.asset",
+    "../Client/Assets/Game/Runtime/Presentation/ActorView.cs",
+    "../Client/Assets/Game/Runtime/Presentation/MvpPresenter.cs"
+  ]
+}

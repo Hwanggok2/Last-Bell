@@ -1,0 +1,19 @@
+{
+  "version": 10,
+  "date": "2026-10-21",
+  "scope": "Planning only; SimpleGame BladeMage motion reference",
+  "jobs": [
+    {
+      "id": "hero-v10-blademage-run",
+      "name": "온 · 검술사 참고 달리기",
+      "jobId": "929856d9-e432-453f-bec9-379bbfd9166f",
+      "requestedGeneratedFrames": 8,
+      "inputFrameIncluded": true,
+      "method": "PixelLab animate_image_pixminimax; SimpleGame BladeMage reference",
+      "fps": 24,
+      "loop": true,
+      "status": "review",
+      "input": "v10/sprint-keypose.png"
+    }
+  ]
+}

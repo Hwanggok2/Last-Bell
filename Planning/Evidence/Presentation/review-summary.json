@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-21",
+  "status": "planning-reviewed-not-applied",
+  "art": "Planning/Reviews/presentation-v1-art.md",
+  "flow": "Planning/Reviews/presentation-v1-flow.md",
+  "ui": "Planning/Reviews/presentation-v1-ui.md",
+  "passed": [
+    "offline drawing of all four warning directions",
+    "before/after size comparison",
+    "16 sequence keyframes",
+    "24 offline handler states",
+    "local document links",
+    "no Client or GameData changes"
+  ],
+  "notPerformed": [
+    "browser CSS/layout rendering",
+    "real touch/gameplay testing",
+    "Unity implementation",
+    "audio or final animation production"
+  ],
+  "proposalValues": {
+    "wispScale": 1.5,
+    "normalTransitionSeconds": 1.4,
+    "deathSeconds": 1.8,
+    "miniIntroSeconds": 1.4,
+    "bossIntroSeconds": 1.8
+  },
+  "sourceOfTruth": "Planning/Presentation/proposal.json"
+}

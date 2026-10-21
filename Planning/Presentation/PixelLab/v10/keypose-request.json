@@ -1,0 +1,29 @@
+{
+  "method": "reference",
+  "description": "Repose ONLY this same small hooded bellkeeper into a strong forward sprint to screen RIGHT. Use the reference swordsman's running mechanics, mirrored to face right: shoulders and head low ahead of hips, bent knees alternating a front drive and rear push-off, sword carried low BEHIND the hip pointing backward-left and slightly downward, elbow bent, fist clearly gripping the hilt at an angle to the blade. The reference is motion guidance ONLY. Preserve this bellkeeper's oversized angular CREAM HOOD, black faceless opening with one vertical amber eye, SHORT dark navy body and short limbs, cream shoulder cloth and split tunic tails, one small GOLD WAIST BELL, cream boots, gold gloves and original SHORT THICK GOLD SWORD. Do not copy reference human face, hair, slender proportions, teal clothes or silver long sword. Torso naturally leans about30degrees; face looks forward, not at the floor. Recovering boot must be clearly separated below/behind the coat, not hidden inside it. Cloth tails stream back to left. One hand carries sword behind, free arm bent near chest. Articulate the whole body; no whole-image rotation. 128x128 transparent canvas, original pixel size and palette, feet near y114 with clear margins. No slash, speed lines or effects.",
+  "reference_image": {
+    "usage_description": "LEFT-facing SimpleGame BladeMage run. Mirror the movement into RIGHT-facing: forward lean, bent rear sword carry and clear striding legs. Preserve the main bellkeeper character appearance; this reference guides pose and balance only."
+  },
+  "no_background": true,
+  "use_color_palette_correction": true,
+  "seed": 210110,
+  "failedUrlAttempt": {
+    "image_url": "https://api.pixellab.ai/mcp/images/49f0ec50-37d2-46d8-b851-567f9965b56c/download?index=1",
+    "reference_url": "https://api.pixellab.ai/mcp/images/356223ae-00c8-4878-86c4-68a9cb670ae6/download?index=1",
+    "result": "HTTP404; no generated result"
+  },
+  "binaryInputs": {
+    "image_base64": {
+      "path": "C:\\Github\\Test2\\Planning\\Presentation\\PixelLab\\clips\\hero-v5-idle\\frames\\01.png",
+      "sha256": "70730ff409e0dcbe687edfcb90372d02248941f9a467bfb56ff8297110600f0f",
+      "transport": "base64 supplied directly; encoded content omitted from record"
+    },
+    "reference_image.base64": {
+      "path": "C:\\Github\\SimpleGame\\Exports\\IndependentArt_20261012\\BladeMageRunGripV4\\selected\\Run\\00.png",
+      "sha256": "667895b70ca9a3227b8e95b4cf5780562b14a358e369f33104dadc0c85fd38c6",
+      "transport": "base64 supplied directly; encoded content omitted from record"
+    }
+  },
+  "successfulJobId": "fb1dd7d5-cdbf-4453-93e2-9f15960b346a",
+  "sourceImageId": "34b56d24-a43f-5aaf-bf90-af7002081ed2"
+}

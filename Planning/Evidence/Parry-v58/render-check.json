@@ -1,0 +1,95 @@
+{
+  "passed": true,
+  "method": "Offline native Canvas + Node VM; prototype input/timing only, not Unity cooldown/damage validation",
+  "checks": [
+    {
+      "duration": 900,
+      "pattern": "single",
+      "passed": true
+    },
+    {
+      "duration": 900,
+      "pattern": "low-high",
+      "passed": true
+    },
+    {
+      "duration": 900,
+      "pattern": "high-low",
+      "passed": true
+    },
+    {
+      "duration": 900,
+      "pattern": "high-high",
+      "passed": true
+    },
+    {
+      "duration": 650,
+      "pattern": "single",
+      "passed": true
+    },
+    {
+      "duration": 650,
+      "pattern": "low-high",
+      "passed": true
+    },
+    {
+      "duration": 650,
+      "pattern": "high-low",
+      "passed": true
+    },
+    {
+      "duration": 650,
+      "pattern": "high-high",
+      "passed": true
+    }
+  ],
+  "inputCases": [
+    {
+      "delta": 50,
+      "action": "attack",
+      "expected": "perfect"
+    },
+    {
+      "delta": 120,
+      "action": "attack",
+      "expected": "normal"
+    },
+    {
+      "delta": 160,
+      "action": "attack",
+      "expected": "normal"
+    },
+    {
+      "delta": 161,
+      "action": "attack",
+      "expected": "early"
+    },
+    {
+      "delta": 0,
+      "action": "attack",
+      "expected": "perfect"
+    },
+    {
+      "delta": 50,
+      "action": "dodge",
+      "expected": "wrong"
+    }
+  ],
+  "highStandsAndParries": true,
+  "noCrouchControl": true,
+  "sharedDefenseReuseAllows320msCombo": true,
+  "normalParryDoesNotEmitPerfectWave": true,
+  "wrongOrMissingInputNotParried": true,
+  "largeCircularWaveAndBellsPreserved": true,
+  "pausePixels": true,
+  "viewports": [
+    [
+      960,
+      540
+    ],
+    [
+      640,
+      360
+    ]
+  ]
+}

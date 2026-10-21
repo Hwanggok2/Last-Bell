@@ -1,0 +1,43 @@
+{
+  "version": 9,
+  "date": "2026-10-21",
+  "scope": "Planning only",
+  "jobs": [
+    {
+      "id": "hero-v9-sprint-a",
+      "name": "온 · 전경 질주 A",
+      "jobId": "c67e54a8-d19e-4769-a56c-e4e888b662d4",
+      "requestedGeneratedFrames": 12,
+      "inputFrameIncluded": true,
+      "method": "PixelLab animate_image_pixminimax",
+      "fps": 25,
+      "loop": true,
+      "status": "rejected",
+      "input": "v9/sprint-keypose-b.png"
+    },
+    {
+      "id": "hero-v9-sprint-b",
+      "name": "온 · 전경 질주 B",
+      "jobId": "24e1fe78-a558-4441-94c3-426ed2bc27dc",
+      "requestedGeneratedFrames": 12,
+      "inputFrameIncluded": true,
+      "method": "PixelLab animate_image",
+      "fps": 25,
+      "loop": true,
+      "status": "rejected",
+      "input": "v9/sprint-keypose-b.png"
+    },
+    {
+      "id": "hero-v9-sprint-authored",
+      "name": "온 · 몸을 숙인 질주",
+      "jobId": "drawing:a37e3f5e-26e9-40b5-a1ef-115fa3741489",
+      "requestedGeneratedFrames": 12,
+      "inputFrameIncluded": false,
+      "method": "PixelLab pixelart_workbench: new keypose + authored articulated limbs",
+      "fps": 25,
+      "loop": true,
+      "status": "review",
+      "input": "v9/sprint-keypose-b.png"
+    }
+  ]
+}

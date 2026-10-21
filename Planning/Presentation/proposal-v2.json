@@ -1,0 +1,464 @@
+{
+  "version": "presentation-v2",
+  "status": "planning-only",
+  "date": "2026-10-21",
+  "referenceFrame": {
+    "width": 1280,
+    "height": 720,
+    "origin": "top-left",
+    "playerFoot": [
+      500,
+      590
+    ],
+    "enemyFoot": [
+      900,
+      590
+    ],
+    "groundY": 600
+  },
+  "telegraph": {
+    "name": "준비 자세에서 이어지는 실체 공격",
+    "durationsMs": {
+      "single": 650,
+      "comboOpening": 900,
+      "comboFollowup": 250
+    },
+    "hitModel": "one damage event per patternStep; decorative projectile count never creates extra damage",
+    "recoveryMs": 240,
+    "regions": [
+      {
+        "id": "low_sweep",
+        "name": "바닥 가시",
+        "dodge": "▲",
+        "bounds": [
+          430,
+          510,
+          150,
+          80
+        ],
+        "prepare": "무기 끝을 지면에 대고 균열을 열음",
+        "impact": "3~5개 가시가 높이80px까지 솟음",
+        "sourceBounds": [
+          430,
+          576,
+          150,
+          18
+        ]
+      },
+      {
+        "id": "high_sweep",
+        "name": "머리 높이 칼날",
+        "dodge": "▼",
+        "bounds": [
+          430,
+          466,
+          190,
+          38
+        ],
+        "prepare": "무기를 어깨 위에 수평으로 들어올림",
+        "impact": "머리 높이를 쓸고 지나가는 금빛 칼날",
+        "sourceBounds": [
+          430,
+          466,
+          190,
+          38
+        ]
+      },
+      {
+        "id": "thrust",
+        "name": "정면 창찌르기",
+        "dodge": "◀",
+        "bounds": [
+          500,
+          507,
+          310,
+          36
+        ],
+        "prepare": "몸을 뒤로 당기고 창끝을 모음",
+        "impact": "앞에서 수평으로 찔러 들어오는 무기",
+        "sourceBounds": [
+          554,
+          507,
+          226,
+          36
+        ]
+      },
+      {
+        "id": "outer_arc",
+        "name": "후방 무기비",
+        "dodge": "▶",
+        "bounds": [
+          390,
+          230,
+          128,
+          360
+        ],
+        "prepare": "무기를 세워 하늘의 검·창·화살 3발을 소환",
+        "impact": "등 뒤 x404/450/496에 동시에 꽂힘",
+        "sourceBounds": [
+          390,
+          230,
+          128,
+          340
+        ]
+      }
+    ],
+    "nextSignal": "다음 공격은 작은 빈 실루엣만, 현재는 채워진 재료·수축하는 접점. 본타격의 큰VFX는판정시각T부터.",
+    "playerHp": [
+      447,
+      608,
+      106,
+      10
+    ],
+    "enemyHp": [
+      847,
+      608,
+      106,
+      10
+    ],
+    "bellMeter": [
+      326,
+      88,
+      627,
+      18
+    ],
+    "rearFallMs": 120,
+    "successfulUpDodgeVisual": {
+      "footLiftPx": 100,
+      "holdUntilAfterHitMs": 140,
+      "landAfterHitMs": 220,
+      "changesInvulnerability": false,
+      "needsBoundaryPoseReview": true
+    }
+  },
+  "sequences": {
+    "normal": {
+      "name": "일반 적 처치 → 다음 적",
+      "totalMs": 1400,
+      "segments": [
+        [
+          0,
+          550,
+          "적 분해"
+        ],
+        [
+          550,
+          1200,
+          "전진"
+        ],
+        [
+          1200,
+          1400,
+          "정착"
+        ]
+      ]
+    },
+    "death": {
+      "name": "플레이어 사망 → 등불 로비",
+      "totalMs": 1800,
+      "segments": [
+        [
+          0,
+          550,
+          "플레이어 분해"
+        ],
+        [
+          250,
+          700,
+          "암전"
+        ],
+        [
+          700,
+          850,
+          "어둠 유지"
+        ],
+        [
+          850,
+          1600,
+          "등불 점등·로비 공개"
+        ],
+        [
+          1600,
+          1800,
+          "로비 정착"
+        ]
+      ]
+    },
+    "mini": {
+      "name": "중간 보스 등장",
+      "totalMs": 1800,
+      "repeatMs": 1000,
+      "maxZoom": 1.45,
+      "segments": [
+        [
+          0,
+          400,
+          "크게 줌인"
+        ],
+        [
+          400,
+          1150,
+          "큰 줌 유지 · 포효"
+        ],
+        [
+          1150,
+          1600,
+          "줌아웃"
+        ],
+        [
+          1600,
+          1800,
+          "전투 구도 정착"
+        ]
+      ],
+      "repeatSegments": [
+        [
+          0,
+          200,
+          "줌인"
+        ],
+        [
+          200,
+          550,
+          "포효 유지"
+        ],
+        [
+          550,
+          800,
+          "줌아웃"
+        ],
+        [
+          800,
+          1000,
+          "정착"
+        ]
+      ]
+    },
+    "boss": {
+      "name": "보스 등장",
+      "totalMs": 2200,
+      "repeatMs": 1200,
+      "maxZoom": 1.6,
+      "segments": [
+        [
+          0,
+          500,
+          "크게 줌인"
+        ],
+        [
+          500,
+          1500,
+          "큰 줌 유지 · 포효"
+        ],
+        [
+          1500,
+          2000,
+          "줌아웃"
+        ],
+        [
+          2000,
+          2200,
+          "전투 구도 정착"
+        ]
+      ],
+      "repeatSegments": [
+        [
+          0,
+          250,
+          "줌인"
+        ],
+        [
+          250,
+          700,
+          "포효 유지"
+        ],
+        [
+          700,
+          1000,
+          "줌아웃"
+        ],
+        [
+          1000,
+          1200,
+          "정착"
+        ]
+      ]
+    }
+  },
+  "rules": {
+    "firstTelegraphAfterSettle": true,
+    "combatClockFrozenDuringTransition": true,
+    "rewardsOnce": true,
+    "rewardOrder": [
+      "처치 확정·보상 원장 저장",
+      "적 분해",
+      "유물 3택1",
+      "선택 결과 저장",
+      "전진",
+      "다음 적 등장",
+      "온전한 첫 공격 예고"
+    ],
+    "reducedMotion": "줌·화면흔들림·배경스크롤만제거. 공격가시/무기비의필수궤적은유지,잔해감축. 전투 재개 시점 동일.",
+    "audio": "사용자가 켠 사운드만 재생. 무음에서도 가슴빛과 각진 잔향으로 괴성 단계 표현"
+  },
+  "lantern": {
+    "anchor": [
+      520,
+      130
+    ],
+    "bounds": [
+      500,
+      104,
+      40,
+      59
+    ]
+  },
+  "actors": [
+    {
+      "id": "hero_on",
+      "name": "온",
+      "sprite": "on_00",
+      "current": 1.1,
+      "proposed": 1.1
+    },
+    {
+      "id": "gate_sentinel",
+      "name": "성문 파수병",
+      "sprite": "gate_00",
+      "current": 1.5,
+      "proposed": 2.0
+    },
+    {
+      "id": "chain_thrall",
+      "name": "사슬 망령",
+      "sprite": "gate_01",
+      "current": 1.5,
+      "proposed": 2.0
+    },
+    {
+      "id": "ash_wisp",
+      "name": "재의 불씨",
+      "sprite": "gate_02",
+      "current": 1.0,
+      "proposed": 2.0
+    },
+    {
+      "id": "gate_warden",
+      "name": "성문 수문장",
+      "sprite": "gate_03",
+      "current": 1.8,
+      "proposed": 3.2
+    },
+    {
+      "id": "bell_knight",
+      "name": "종의 기사",
+      "sprite": "gate_04",
+      "current": 2.1,
+      "proposed": 4.0
+    }
+  ],
+  "camera": {
+    "baseOrthographicSize": 3.1,
+    "introAllowsHeroAndFeetCrop": true,
+    "combatCameraRestoredBeforeCue": true,
+    "pixelPolicy": "판정 중 원래 격자; 비전투 줌에서만 비정수 배율 허용 후 복귀, 화면샘플로떨림검수",
+    "closeupAnchors": {
+      "mini": {
+        "world": [
+          900,
+          330
+        ],
+        "screen": [
+          820,
+          350
+        ]
+      },
+      "boss": {
+        "world": [
+          880,
+          270
+        ],
+        "screen": [
+          800,
+          350
+        ]
+      }
+    }
+  },
+  "parallax": {
+    "projection": "orthographic",
+    "baseTravelPx": 160,
+    "travelMs": 650,
+    "layers": [
+      {
+        "id": "sky",
+        "name": "달·하늘",
+        "factor": 0.02,
+        "sortingOrder": -50
+      },
+      {
+        "id": "far",
+        "name": "먼 성벽·첨탑",
+        "factor": 0.08,
+        "sortingOrder": -40
+      },
+      {
+        "id": "mid",
+        "name": "중경 아치·성문",
+        "factor": 0.22,
+        "sortingOrder": -30
+      },
+      {
+        "id": "near",
+        "name": "가까운 기둥",
+        "factor": 0.48,
+        "sortingOrder": -20
+      },
+      {
+        "id": "floor",
+        "name": "바닥·접지면",
+        "factor": 1.0,
+        "sortingOrder": -10
+      }
+    ],
+    "formula": "screenOffset = -travelDistance * factor; cumulative travel, not reset per stage; tile wrap only at seamless boundaries",
+    "status": "레이어 분리 제작 전, 브라우저의 도형 레이어는 이동량 비교용"
+  },
+  "playerAttack": {
+    "windupMs": 100,
+    "slashMs": 80,
+    "settleMs": 100,
+    "criticalShakeMs": 80,
+    "criticalPopupScale": 1.5,
+    "effects": [
+      "초승 모양 검흔",
+      "칼끝에서 적 접점으로 이어지는 짧은 종의 잔향",
+      "접점 사각 불꽃·기존 도트 파편",
+      "일반/치명 피해 팝업"
+    ],
+    "noDamageEventFromVfx": true,
+    "cuePriority": "적현재예고 > 플레이어검흔/파편",
+    "vfxEndMs": 220,
+    "nextAttackReadyMs": 500,
+    "contactReference": {
+      "actor": "gate_sentinel",
+      "position": [
+        866,
+        505
+      ],
+      "rule": "몸통/갑옷 접점. 무기 끝과 sprite bounds 외곽을 명중점으로 쓰지 않는다. 적마다 별도 지정."
+    },
+    "poseRecoveredMs": 280,
+    "slashPhasesMs": {
+      "main": [
+        100,
+        180
+      ],
+      "tail": [
+        180,
+        220
+      ]
+    }
+  },
+  "audioManifest": "audio-sources-v2.json"
+}

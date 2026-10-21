@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-21",
+  "status": "applied-and-desktop-verified",
+  "unity": "6000.3.15f1",
+  "catalog": "mvp-1.2.0",
+  "catalogSchema": 2,
+  "saveSchema": 3,
+  "build": {
+    "platform": "Windows x64 Development",
+    "path": "Builds/Windows/LastBellMvp.exe",
+    "result": "Succeeded",
+    "errors": 0
+  },
+  "tests": {
+    "exporter": 19,
+    "sessionContractAssertions": 808,
+    "editMode": 97,
+    "playMode": 11,
+    "catalogSmoke": "passed",
+    "fullFlow": "tutorial through boss10, choice, stage11, death, upgrade, exchange, equip, checkpoint",
+    "separateProcessResume": "passed: Stage11, attackLv14, one equipped relic"
+  },
+  "visualChecks": [
+    "960x540",
+    "640x360",
+    "1280x540",
+    "exact 8,968,311G price",
+    "3,000,000,000G wallet",
+    "120% lobby text",
+    "perfect only at impact",
+    "paused feedback lifetime",
+    "no button backgrounds on directions"
+  ],
+  "run": {
+    "job": "09fb395f-01a2-497b-9b26-caab6bb6e41f",
+    "sourceFrames": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "fps": 20,
+    "cycleMs": 400,
+    "travelPlanningPx": 640,
+    "travelMs": 2000,
+    "totalTransitionMs": 3250
+  },
+  "limitations": [
+    "Windows desktop automated inputs and render capture, not physical touchscreen/input latency testing.",
+    "Stage12..50 and NG+ content remain unimplemented; 50-stage economy is arithmetic reference only.",
+    "Optional haptics not implemented.",
+    "Run contact/loop frames reviewed; <=2px ground-slip target and 100..140ms bespoke entry/exit poses are not certified.",
+    "Known QA-003 Unity6000.3.15f1 native shutdown issue remains tracked; Unity version was not changed."
+  ]
+}

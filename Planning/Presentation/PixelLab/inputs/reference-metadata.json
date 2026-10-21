@@ -1,0 +1,140 @@
+[
+  {
+    "id": "hero",
+    "key": "on_00",
+    "canvas": [
+      128,
+      128
+    ],
+    "foot": [
+      60,
+      114
+    ],
+    "height": 84,
+    "sourceRect": {
+      "sheet": "hero",
+      "x": 158,
+      "y": 133,
+      "w": 235,
+      "h": 286,
+      "px": 0.44893616,
+      "py": 0
+    },
+    "method": "reference preparation only: crop existing idle, nearest sampling, transparent margins; no animation invented"
+  },
+  {
+    "id": "sentinel",
+    "key": "gate_00",
+    "canvas": [
+      128,
+      128
+    ],
+    "foot": [
+      78,
+      114
+    ],
+    "height": 86,
+    "sourceRect": {
+      "sheet": "enemy",
+      "x": 65,
+      "y": 163,
+      "w": 190,
+      "h": 220,
+      "px": 0.6342105,
+      "py": 0
+    },
+    "method": "reference preparation only: crop existing idle, nearest sampling, transparent margins; no animation invented"
+  },
+  {
+    "id": "chain",
+    "key": "gate_01",
+    "canvas": [
+      128,
+      128
+    ],
+    "foot": [
+      78,
+      114
+    ],
+    "height": 86,
+    "sourceRect": {
+      "sheet": "enemy",
+      "x": 401,
+      "y": 158,
+      "w": 187,
+      "h": 225,
+      "px": 0.70053476,
+      "py": 0
+    },
+    "method": "reference preparation only: crop existing idle, nearest sampling, transparent margins; no animation invented"
+  },
+  {
+    "id": "wisp",
+    "key": "gate_02",
+    "canvas": [
+      128,
+      128
+    ],
+    "foot": [
+      76,
+      114
+    ],
+    "height": 88,
+    "sourceRect": {
+      "sheet": "enemy",
+      "x": 711,
+      "y": 103,
+      "w": 160,
+      "h": 268,
+      "px": 0.428125,
+      "py": 0
+    },
+    "method": "reference preparation only: crop existing idle, nearest sampling, transparent margins; no animation invented"
+  },
+  {
+    "id": "warden",
+    "key": "gate_03",
+    "canvas": [
+      128,
+      128
+    ],
+    "foot": [
+      78,
+      114
+    ],
+    "height": 92,
+    "sourceRect": {
+      "sheet": "enemy",
+      "x": 942,
+      "y": 90,
+      "w": 308,
+      "h": 293,
+      "px": 0.5746753,
+      "py": 0
+    },
+    "method": "reference preparation only: crop existing idle, nearest sampling, transparent margins; no animation invented"
+  },
+  {
+    "id": "knight",
+    "key": "gate_04",
+    "canvas": [
+      128,
+      128
+    ],
+    "foot": [
+      78,
+      114
+    ],
+    "height": 94,
+    "sourceRect": {
+      "sheet": "enemy",
+      "x": 1331,
+      "y": 30,
+      "w": 255,
+      "h": 353,
+      "px": 0.58235294,
+      "py": 0
+    },
+    "method": "reference preparation only: crop existing idle, nearest sampling, transparent margins; no animation invented"
+  }
+]

@@ -1,0 +1,19 @@
+Use case: identity-preserve.
+Asset type: ONE eight-frame pixel-art animation sprite sheet.
+Input image: the ONLY visual character reference. Preserve this EXACT small hooded adventurer: oversized cream/sand cloth hood with a back-pointing tip, deep navy nearly black face opening with ONE vertical yellow/gold eye, thick dark navy outline, cream tunic/shoulder patches and boots, dark limbs, little golden waist pouch and small golden back item, short golden dagger in the near hand. Do not reinterpret the hood as hair. Do not add skin, a mouth, armor, cape, scarf, or new accessories. Match its simple chunky pixel clusters, compact body, large hood-to-body ratio, and palette.
+
+PRIMARY CHANGE: create a LOW, EXPLOSIVE, FORWARD-SHOOTING SPRINT toward screen RIGHT. It should feel like a tiny assassin being fired forward, pushing hard across the ground. Emphasize the actual body mechanics, not visual FX. ALL EIGHT poses have a pronounced 40-50 degree forward torso lean from vertical, hips low, shoulders and hood clearly IN FRONT OF hips, hood/face leading the silhouette. Head is about 12-16 native sprite pixels ahead of hips. The body is angled diagonally forward, never upright. Hood tail streams backward left, while maintaining the original hood's shape. Long aggressive back-leg extension, high fast forward knee drive, low flat flight trajectory. Minimal vertical bob (only 1-2 native pixels), strong horizontal drive. Front foot lands UNDER the body on its ball rather than braking far ahead. Distinct opposing limb phases. The near hand holds the same gold dagger low and pointed right/up-right around waist height, with small controlled arm swing; far elbow drives backward. Maintain the same right-facing 3/4 view as the reference, fixed camera, coherent scale and anatomy.
+
+Output a clean 2:1 landscape sprite sheet, exactly FOUR EQUAL SQUARE COLUMNS and TWO EQUAL SQUARE ROWS, 8 frames row-major. Ideal size 1536x768. ONE full-body character in each invisible square cell, identical scale/hip registration, generous margins, no overlaps. Feet at the same floor level about 88% down each cell when grounded. Each sprinting character about 65% cell height and at most 85% cell width.
+Frame 1: NEAR forefoot touches under hip, low compressed knee, far knee driving forward; head already well ahead of hips.
+Frame 2: NEAR leg powerfully extends BACK-LEFT and toe pushes off, far knee high forward-right.
+Frame 3: LOW FLIGHT, near leg trails long back-left, far thigh projects forward-right with folded lower leg; both feet off ground, head stays low.
+Frame 4: recovery, FAR lower leg snaps down toward next contact under body; near leg folds sharply behind, keeping forward lean.
+Frame 5: FAR forefoot lands under hip with bent knee, near knee starts driving forward; opposite weight-bearing leg from frame 1.
+Frame 6: FAR leg powerfully extends back-left, near knee lifts high forward-right.
+Frame 7: LOW FLIGHT, far leg trails long back-left, near thigh drives forward-right; both feet off ground.
+Frame 8: recovery, NEAR lower leg sweeps down toward frame 1 contact, far heel folds sharply toward rump.
+Seamless repeat 8->1. All eight must be distinct useful animation poses; do not simply duplicate the first four frames. The overlapping near and far legs must trade roles clearly.
+
+STYLE: crisp low-resolution pixel art, hard square stepped edges, chunky original pixel grid, restrained palette, no antialiasing, no painted smooth detail. No realistic textures or highlights. Strongly preserve character identity.
+BACKGROUND: true transparent alpha. NO grid, no labels, no text, no dust, no streaks, no speed lines, no floor or shadow. Only eight character sprites.

@@ -1,0 +1,72 @@
+{
+  "motion": "Run",
+  "sourceId": "hero-v11-grounded-run",
+  "sourceJob": "09fb395f-01a2-497b-9b26-caab6bb6e41f",
+  "note": "8 distinct generated run poses; 400ms cycle. Shared ground Y and per-frame pelvis anchors remove source drift. Travel 640 planning px / 2s; five strides; timing unchanged.",
+  "frames": [
+    "Assets/Game/Art/Presentation/Clips/hero-v11-grounded-run/00.png",
+    "Assets/Game/Art/Presentation/Clips/hero-v11-grounded-run/01.png",
+    "Assets/Game/Art/Presentation/Clips/hero-v11-grounded-run/02.png",
+    "Assets/Game/Art/Presentation/Clips/hero-v11-grounded-run/03.png",
+    "Assets/Game/Art/Presentation/Clips/hero-v11-grounded-run/04.png",
+    "Assets/Game/Art/Presentation/Clips/hero-v11-grounded-run/05.png",
+    "Assets/Game/Art/Presentation/Clips/hero-v11-grounded-run/06.png",
+    "Assets/Game/Art/Presentation/Clips/hero-v11-grounded-run/07.png"
+  ],
+  "sourceFrames": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "fps": 20,
+  "loop": true,
+  "contactFrame": -1,
+  "referenceHeightPixels": 0,
+  "lowPoseFrames": [],
+  "recoverFrames": [],
+  "faceAnchors": [
+    {
+      "x": 62,
+      "y": 46
+    },
+    {
+      "x": 68,
+      "y": 46
+    },
+    {
+      "x": 67,
+      "y": 46
+    },
+    {
+      "x": 65,
+      "y": 46
+    },
+    {
+      "x": 70,
+      "y": 46
+    },
+    {
+      "x": 69,
+      "y": 46
+    },
+    {
+      "x": 68,
+      "y": 46
+    },
+    {
+      "x": 101,
+      "y": 46
+    }
+  ],
+  "effectOrigin": {
+    "x": 0,
+    "y": 0
+  },
+  "staticFallback": false,
+  "legacyStun": false
+}

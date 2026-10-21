@@ -1,0 +1,4798 @@
+{
+  "version": 7,
+  "date": "2026-10-21",
+  "scope": "Planning only",
+  "clips": [
+    {
+      "id": "hero-v7-run-authored",
+      "name": "온 · 직접 설계한 12자세 질주",
+      "actor": "hero",
+      "action": "v7-run-authored",
+      "sheet": "clips/hero-v7-run-authored/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 12,
+      "fps": 50,
+      "loop": true,
+      "pivot": [
+        60,
+        114
+      ],
+      "status": "review",
+      "note": "PixelLab Workbench 직접 제작12키포즈. 원본 후드 보존, 몸통 전경·양팔 교대·무릎·검의 연속 궤적을 지정. 독립 정지 시퀀스 검토에서 기획 후보 적합. 240ms 반복·Unity 실제 입력 검증은 별도.",
+      "sourceJob": "drawing:148d66b5-7d30-4b4a-847d-6668715fd590",
+      "generatedFrameCount": 0,
+      "authoredFrameCount": 12,
+      "inputFrameIncluded": false,
+      "contact": "clips/hero-v7-run-authored/contact.png",
+      "gif": "clips/hero-v7-run-authored/animation.gif",
+      "frameBounds": [
+        [
+          28,
+          39,
+          103,
+          112
+        ],
+        [
+          30,
+          41,
+          101,
+          114
+        ],
+        [
+          36,
+          40,
+          101,
+          115
+        ],
+        [
+          36,
+          39,
+          101,
+          115
+        ],
+        [
+          34,
+          37,
+          101,
+          113
+        ],
+        [
+          36,
+          38,
+          118,
+          108
+        ],
+        [
+          36,
+          39,
+          120,
+          112
+        ],
+        [
+          36,
+          41,
+          118,
+          114
+        ],
+        [
+          36,
+          40,
+          101,
+          115
+        ],
+        [
+          36,
+          39,
+          101,
+          115
+        ],
+        [
+          35,
+          37,
+          101,
+          113
+        ],
+        [
+          30,
+          38,
+          101,
+          108
+        ]
+      ],
+      "uniqueFrames": 12,
+      "playbackFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "editedGif": "clips/hero-v7-run-authored/edited-preview.gif"
+    },
+    {
+      "id": "hero-v6-slash-down",
+      "name": "온 · 크게 내려베기",
+      "actor": "hero",
+      "action": "v6-slash-down",
+      "sheet": "clips/hero-v6-slash-down/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 25,
+      "fps": 60,
+      "loop": false,
+      "pivot": [
+        60,
+        114
+      ],
+      "status": "draft",
+      "note": "24장원본중 긴hold를제외한단발내려베기. 명중04. 효과는03머리위칼날궤적에서아래로흐름. 초반은색검/후드정면은원화정리대상. 외부 하향 궤적은 준비01의 실제 칼끝 [66,17]에서 시작한다.",
+      "sourceJob": "ac6567e7-8e77-44c4-8c9b-5eccf282af54",
+      "generatedFrameCount": 24,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/hero-v6-slash-down/contact.png",
+      "gif": "clips/hero-v6-slash-down/animation.gif",
+      "frameBounds": [
+        [
+          24,
+          15,
+          99,
+          114
+        ],
+        [
+          23,
+          14,
+          89,
+          114
+        ],
+        [
+          25,
+          15,
+          88,
+          114
+        ],
+        [
+          17,
+          14,
+          95,
+          114
+        ],
+        [
+          25,
+          14,
+          110,
+          114
+        ],
+        [
+          21,
+          35,
+          106,
+          114
+        ],
+        [
+          21,
+          35,
+          109,
+          114
+        ],
+        [
+          21,
+          35,
+          104,
+          114
+        ],
+        [
+          21,
+          35,
+          104,
+          114
+        ],
+        [
+          21,
+          35,
+          104,
+          114
+        ],
+        [
+          21,
+          35,
+          104,
+          114
+        ],
+        [
+          21,
+          35,
+          104,
+          114
+        ],
+        [
+          21,
+          35,
+          104,
+          114
+        ],
+        [
+          21,
+          35,
+          104,
+          114
+        ],
+        [
+          21,
+          35,
+          104,
+          114
+        ],
+        [
+          21,
+          35,
+          104,
+          114
+        ],
+        [
+          21,
+          35,
+          104,
+          114
+        ],
+        [
+          21,
+          35,
+          104,
+          114
+        ],
+        [
+          21,
+          35,
+          104,
+          114
+        ],
+        [
+          21,
+          35,
+          98,
+          114
+        ],
+        [
+          25,
+          35,
+          97,
+          114
+        ],
+        [
+          28,
+          34,
+          110,
+          114
+        ],
+        [
+          33,
+          32,
+          106,
+          114
+        ],
+        [
+          33,
+          30,
+          99,
+          114
+        ],
+        [
+          29,
+          30,
+          97,
+          114
+        ]
+      ],
+      "uniqueFrames": 18,
+      "playbackFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "contactSourceFrame": 4,
+      "handAtContact": [
+        77,
+        84
+      ],
+      "effectOrigin": [
+        66,
+        17
+      ],
+      "editedGif": "clips/hero-v6-slash-down/edited-preview.gif"
+    },
+    {
+      "id": "hero-v6-slash-up",
+      "name": "온 · 크게 올려베기",
+      "actor": "hero",
+      "action": "v6-slash-up",
+      "sheet": "clips/hero-v6-slash-up/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 25,
+      "fps": 60,
+      "loop": false,
+      "pivot": [
+        60,
+        114
+      ],
+      "status": "draft",
+      "note": "24장원본중 긴hold/후속도약18~22제외. 실제단발올려베기07명중. 내장원호가손을가리는구간과정면두눈은원화정리대상.",
+      "sourceJob": "7ecc3608-786d-48ae-9b51-f23de1d494c0",
+      "generatedFrameCount": 24,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/hero-v6-slash-up/contact.png",
+      "gif": "clips/hero-v6-slash-up/animation.gif",
+      "frameBounds": [
+        [
+          15,
+          30,
+          95,
+          114
+        ],
+        [
+          13,
+          30,
+          87,
+          114
+        ],
+        [
+          18,
+          30,
+          86,
+          114
+        ],
+        [
+          29,
+          30,
+          86,
+          114
+        ],
+        [
+          28,
+          30,
+          86,
+          114
+        ],
+        [
+          27,
+          30,
+          86,
+          114
+        ],
+        [
+          15,
+          30,
+          90,
+          114
+        ],
+        [
+          14,
+          14,
+          115,
+          114
+        ],
+        [
+          35,
+          32,
+          115,
+          114
+        ],
+        [
+          35,
+          31,
+          112,
+          114
+        ],
+        [
+          36,
+          31,
+          110,
+          114
+        ],
+        [
+          36,
+          31,
+          110,
+          114
+        ],
+        [
+          36,
+          31,
+          110,
+          114
+        ],
+        [
+          36,
+          31,
+          110,
+          114
+        ],
+        [
+          36,
+          31,
+          110,
+          114
+        ],
+        [
+          36,
+          31,
+          110,
+          114
+        ],
+        [
+          36,
+          31,
+          110,
+          114
+        ],
+        [
+          35,
+          31,
+          105,
+          114
+        ],
+        [
+          31,
+          31,
+          96,
+          114
+        ],
+        [
+          28,
+          28,
+          96,
+          114
+        ],
+        [
+          30,
+          27,
+          99,
+          114
+        ],
+        [
+          37,
+          30,
+          107,
+          114
+        ],
+        [
+          41,
+          33,
+          116,
+          114
+        ],
+        [
+          39,
+          30,
+          110,
+          114
+        ],
+        [
+          29,
+          30,
+          98,
+          114
+        ]
+      ],
+      "uniqueFrames": 20,
+      "playbackFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        17,
+        23,
+        24
+      ],
+      "contactSourceFrame": 7,
+      "handAtContact": [
+        91,
+        82
+      ],
+      "effectOrigin": [
+        91,
+        82
+      ],
+      "editedGif": "clips/hero-v6-slash-up/edited-preview.gif"
+    },
+    {
+      "id": "sentinel-v6-hit-clean",
+      "name": "성문 파수병 · 몸 반동 피격",
+      "actor": "sentinel",
+      "action": "v6-hit-clean",
+      "sheet": "clips/sentinel-v6-hit-clean/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 17,
+      "fps": 50,
+      "loop": false,
+      "pivot": [
+        78,
+        114
+      ],
+      "status": "draft",
+      "note": "새 몸 반동 기획 후보. 원본 16장 중 9셀을 180ms로 선별. 무기/섬광이 추가된 이전 생성본은 제외. 도끼 실루엣 정리 필요.",
+      "sourceJob": "4701aba2-8269-4fb5-a140-4732753791dd",
+      "generatedFrameCount": 16,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/sentinel-v6-hit-clean/contact.png",
+      "gif": "clips/sentinel-v6-hit-clean/animation.gif",
+      "frameBounds": [
+        [
+          31,
+          28,
+          105,
+          114
+        ],
+        [
+          31,
+          28,
+          105,
+          114
+        ],
+        [
+          31,
+          28,
+          105,
+          114
+        ],
+        [
+          34,
+          16,
+          105,
+          114
+        ],
+        [
+          37,
+          34,
+          105,
+          114
+        ],
+        [
+          29,
+          36,
+          104,
+          114
+        ],
+        [
+          23,
+          36,
+          104,
+          114
+        ],
+        [
+          23,
+          36,
+          104,
+          114
+        ],
+        [
+          23,
+          35,
+          104,
+          114
+        ],
+        [
+          27,
+          32,
+          104,
+          114
+        ],
+        [
+          30,
+          30,
+          105,
+          114
+        ],
+        [
+          31,
+          28,
+          105,
+          114
+        ],
+        [
+          31,
+          28,
+          105,
+          114
+        ],
+        [
+          31,
+          28,
+          105,
+          114
+        ],
+        [
+          31,
+          28,
+          105,
+          114
+        ],
+        [
+          31,
+          28,
+          105,
+          114
+        ],
+        [
+          31,
+          28,
+          105,
+          114
+        ]
+      ],
+      "uniqueFrames": 16,
+      "playbackFrames": [
+        0,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        0
+      ],
+      "editedGif": "clips/sentinel-v6-hit-clean/edited-preview.gif"
+    },
+    {
+      "id": "chain-v6-hit-clean",
+      "name": "사슬 망령 · 몸 반동 피격",
+      "actor": "chain",
+      "action": "v6-hit-clean",
+      "sheet": "clips/chain-v6-hit-clean/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 17,
+      "fps": 50,
+      "loop": false,
+      "pivot": [
+        78,
+        114
+      ],
+      "status": "draft",
+      "note": "새 몸 반동 기획 후보. 원본 16장 중 9셀을 180ms로 선별. 무기/섬광이 추가된 이전 생성본은 제외. 장비·몸의 연결과 복귀를 출시 전 정리.",
+      "sourceJob": "a7f76cad-fac8-4cd6-8011-32d53b5cc298",
+      "generatedFrameCount": 16,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/chain-v6-hit-clean/contact.png",
+      "gif": "clips/chain-v6-hit-clean/animation.gif",
+      "frameBounds": [
+        [
+          28,
+          28,
+          99,
+          114
+        ],
+        [
+          26,
+          14,
+          93,
+          114
+        ],
+        [
+          28,
+          20,
+          89,
+          114
+        ],
+        [
+          26,
+          24,
+          88,
+          114
+        ],
+        [
+          29,
+          28,
+          101,
+          114
+        ],
+        [
+          34,
+          28,
+          102,
+          114
+        ],
+        [
+          39,
+          28,
+          102,
+          114
+        ],
+        [
+          40,
+          28,
+          102,
+          114
+        ],
+        [
+          39,
+          28,
+          100,
+          114
+        ],
+        [
+          39,
+          28,
+          99,
+          114
+        ],
+        [
+          39,
+          28,
+          99,
+          114
+        ],
+        [
+          38,
+          28,
+          99,
+          114
+        ],
+        [
+          35,
+          28,
+          99,
+          114
+        ],
+        [
+          32,
+          28,
+          99,
+          114
+        ],
+        [
+          30,
+          28,
+          99,
+          114
+        ],
+        [
+          29,
+          28,
+          99,
+          114
+        ],
+        [
+          28,
+          28,
+          99,
+          114
+        ]
+      ],
+      "uniqueFrames": 16,
+      "playbackFrames": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        7,
+        9,
+        10,
+        16
+      ],
+      "editedGif": "clips/chain-v6-hit-clean/edited-preview.gif"
+    },
+    {
+      "id": "wisp-v6-hit-clean",
+      "name": "재의 불씨 · 몸 반동 피격",
+      "actor": "wisp",
+      "action": "v6-hit-clean",
+      "sheet": "clips/wisp-v6-hit-clean/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 17,
+      "fps": 50,
+      "loop": false,
+      "pivot": [
+        76,
+        114
+      ],
+      "status": "draft",
+      "note": "새 몸 반동 기획 후보. 원본 16장 중 9셀을 180ms로 선별. 무기/섬광이 추가된 이전 생성본은 제외. 장비·몸의 연결과 복귀를 출시 전 정리.",
+      "sourceJob": "bef5d823-9595-4479-8c4d-dcc9439d2900",
+      "generatedFrameCount": 16,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/wisp-v6-hit-clean/contact.png",
+      "gif": "clips/wisp-v6-hit-clean/animation.gif",
+      "frameBounds": [
+        [
+          54,
+          26,
+          107,
+          114
+        ],
+        [
+          54,
+          26,
+          107,
+          114
+        ],
+        [
+          46,
+          24,
+          105,
+          113
+        ],
+        [
+          48,
+          29,
+          109,
+          113
+        ],
+        [
+          61,
+          35,
+          111,
+          113
+        ],
+        [
+          60,
+          34,
+          109,
+          113
+        ],
+        [
+          58,
+          32,
+          106,
+          113
+        ],
+        [
+          61,
+          35,
+          111,
+          113
+        ],
+        [
+          60,
+          34,
+          109,
+          113
+        ],
+        [
+          58,
+          32,
+          106,
+          114
+        ],
+        [
+          56,
+          25,
+          101,
+          114
+        ],
+        [
+          52,
+          24,
+          102,
+          113
+        ],
+        [
+          52,
+          25,
+          105,
+          114
+        ],
+        [
+          54,
+          26,
+          107,
+          114
+        ],
+        [
+          54,
+          26,
+          107,
+          114
+        ],
+        [
+          54,
+          26,
+          107,
+          114
+        ],
+        [
+          54,
+          26,
+          107,
+          114
+        ]
+      ],
+      "uniqueFrames": 16,
+      "playbackFrames": [
+        0,
+        2,
+        3,
+        4,
+        9,
+        10,
+        11,
+        12,
+        16
+      ],
+      "editedGif": "clips/wisp-v6-hit-clean/edited-preview.gif"
+    },
+    {
+      "id": "warden-v6-hit-clean",
+      "name": "성문 수문장 · 몸 반동 피격",
+      "actor": "warden",
+      "action": "v6-hit-clean",
+      "sheet": "clips/warden-v6-hit-clean/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 17,
+      "fps": 50,
+      "loop": false,
+      "pivot": [
+        78,
+        114
+      ],
+      "status": "draft",
+      "note": "새 몸 반동 기획 후보. 원본 16장 중 9셀을 180ms로 선별. 무기/섬광이 추가된 이전 생성본은 제외. 장비·몸의 연결과 복귀를 출시 전 정리.",
+      "sourceJob": "1c7ca319-c832-431e-b16e-b102d9709365",
+      "generatedFrameCount": 16,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/warden-v6-hit-clean/contact.png",
+      "gif": "clips/warden-v6-hit-clean/animation.gif",
+      "frameBounds": [
+        [
+          22,
+          22,
+          119,
+          114
+        ],
+        [
+          22,
+          16,
+          119,
+          114
+        ],
+        [
+          15,
+          13,
+          117,
+          114
+        ],
+        [
+          15,
+          13,
+          116,
+          114
+        ],
+        [
+          15,
+          23,
+          114,
+          114
+        ],
+        [
+          15,
+          23,
+          113,
+          114
+        ],
+        [
+          15,
+          23,
+          113,
+          114
+        ],
+        [
+          15,
+          23,
+          114,
+          114
+        ],
+        [
+          16,
+          22,
+          115,
+          114
+        ],
+        [
+          18,
+          22,
+          117,
+          114
+        ],
+        [
+          20,
+          22,
+          118,
+          114
+        ],
+        [
+          22,
+          22,
+          119,
+          114
+        ],
+        [
+          22,
+          22,
+          119,
+          114
+        ],
+        [
+          22,
+          22,
+          119,
+          114
+        ],
+        [
+          22,
+          22,
+          119,
+          114
+        ],
+        [
+          22,
+          22,
+          119,
+          114
+        ],
+        [
+          22,
+          22,
+          119,
+          114
+        ]
+      ],
+      "uniqueFrames": 16,
+      "playbackFrames": [
+        0,
+        1,
+        2,
+        4,
+        7,
+        9,
+        10,
+        11,
+        16
+      ],
+      "editedGif": "clips/warden-v6-hit-clean/edited-preview.gif"
+    },
+    {
+      "id": "knight-v6-hit-clean",
+      "name": "종의 기사 · 몸 반동 피격",
+      "actor": "knight",
+      "action": "v6-hit-clean",
+      "sheet": "clips/knight-v6-hit-clean/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 17,
+      "fps": 50,
+      "loop": false,
+      "pivot": [
+        78,
+        114
+      ],
+      "status": "draft",
+      "note": "새 몸 반동 기획 후보. 원본 16장 중 9셀을 180ms로 선별. 무기/섬광이 추가된 이전 생성본은 제외. 첫 반동만 사용하고 두 번째 반동을 제외.",
+      "sourceJob": "4aa1f3b0-655c-4466-97fa-d4c87ad0e638",
+      "generatedFrameCount": 16,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/knight-v6-hit-clean/contact.png",
+      "gif": "clips/knight-v6-hit-clean/animation.gif",
+      "frameBounds": [
+        [
+          38,
+          20,
+          106,
+          114
+        ],
+        [
+          32,
+          22,
+          107,
+          114
+        ],
+        [
+          29,
+          22,
+          109,
+          114
+        ],
+        [
+          28,
+          22,
+          111,
+          114
+        ],
+        [
+          29,
+          22,
+          110,
+          114
+        ],
+        [
+          32,
+          22,
+          108,
+          114
+        ],
+        [
+          38,
+          20,
+          109,
+          114
+        ],
+        [
+          38,
+          20,
+          109,
+          114
+        ],
+        [
+          38,
+          20,
+          106,
+          114
+        ],
+        [
+          33,
+          21,
+          106,
+          114
+        ],
+        [
+          30,
+          22,
+          107,
+          114
+        ],
+        [
+          28,
+          22,
+          111,
+          114
+        ],
+        [
+          29,
+          22,
+          109,
+          114
+        ],
+        [
+          30,
+          22,
+          108,
+          114
+        ],
+        [
+          35,
+          20,
+          108,
+          114
+        ],
+        [
+          38,
+          20,
+          108,
+          114
+        ],
+        [
+          38,
+          20,
+          107,
+          114
+        ]
+      ],
+      "uniqueFrames": 16,
+      "playbackFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "editedGif": "clips/knight-v6-hit-clean/edited-preview.gif"
+    },
+    {
+      "id": "hero-v5-idle",
+      "name": "온 v5 · 대기",
+      "actor": "hero",
+      "action": "v5-idle",
+      "sheet": "clips/hero-v5-idle/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 9,
+      "fps": 12,
+      "loop": true,
+      "pivot": [
+        60,
+        114
+      ],
+      "status": "draft",
+      "note": "새 대기8장. 호흡과 망토 움직임. 원본0은 입력으로 루프에서 제외.",
+      "sourceJob": "49f0ec50-37d2-46d8-b851-567f9965b56c",
+      "generatedFrameCount": 8,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/hero-v5-idle/contact.png",
+      "gif": "clips/hero-v5-idle/animation.gif",
+      "frameBounds": [
+        [
+          29,
+          30,
+          98,
+          114
+        ],
+        [
+          29,
+          30,
+          96,
+          114
+        ],
+        [
+          29,
+          33,
+          95,
+          113
+        ],
+        [
+          29,
+          34,
+          95,
+          114
+        ],
+        [
+          29,
+          33,
+          95,
+          114
+        ],
+        [
+          29,
+          33,
+          96,
+          114
+        ],
+        [
+          29,
+          30,
+          98,
+          114
+        ],
+        [
+          29,
+          30,
+          98,
+          114
+        ],
+        [
+          29,
+          30,
+          98,
+          114
+        ]
+      ],
+      "uniqueFrames": 8,
+      "playbackFrames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "editedGif": "clips/hero-v5-idle/edited-preview.gif"
+    },
+    {
+      "id": "hero-v5-attack",
+      "name": "온 v5 · 단발 사선 베기",
+      "actor": "hero",
+      "action": "v5-attack",
+      "sheet": "clips/hero-v5-attack/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 17,
+      "fps": 48,
+      "loop": false,
+      "pivot": [
+        60,
+        114
+      ],
+      "status": "draft",
+      "note": "새 단발 상향 사선 베기16장. 원본11의 검 뻗음에200ms 명중을 맞춤. 작은 원본 검흔과 큰 VFX는 같은1회 베기.",
+      "sourceJob": "aecfe8df-8c80-46d2-aa14-4eb9326329e0",
+      "generatedFrameCount": 16,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/hero-v5-attack/contact.png",
+      "gif": "clips/hero-v5-attack/animation.gif",
+      "frameBounds": [
+        [
+          29,
+          30,
+          98,
+          114
+        ],
+        [
+          26,
+          30,
+          105,
+          114
+        ],
+        [
+          22,
+          31,
+          101,
+          114
+        ],
+        [
+          22,
+          31,
+          97,
+          114
+        ],
+        [
+          22,
+          33,
+          91,
+          114
+        ],
+        [
+          22,
+          33,
+          90,
+          114
+        ],
+        [
+          19,
+          33,
+          90,
+          114
+        ],
+        [
+          31,
+          30,
+          102,
+          114
+        ],
+        [
+          34,
+          30,
+          101,
+          114
+        ],
+        [
+          34,
+          29,
+          98,
+          114
+        ],
+        [
+          35,
+          28,
+          98,
+          114
+        ],
+        [
+          38,
+          16,
+          111,
+          114
+        ],
+        [
+          38,
+          15,
+          98,
+          114
+        ],
+        [
+          38,
+          16,
+          95,
+          113
+        ],
+        [
+          38,
+          26,
+          98,
+          114
+        ],
+        [
+          36,
+          30,
+          102,
+          114
+        ],
+        [
+          29,
+          30,
+          98,
+          114
+        ]
+      ],
+      "uniqueFrames": 16,
+      "playbackFrames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "contactSourceFrame": 11,
+      "editedGif": "clips/hero-v5-attack/edited-preview.gif"
+    },
+    {
+      "id": "hero-v5-dodge-up",
+      "name": "온 v5 · 위 회피",
+      "actor": "hero",
+      "action": "v5-dodge-up",
+      "sheet": "clips/hero-v5-dodge-up/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 17,
+      "fps": 60,
+      "loop": false,
+      "pivot": [
+        60,
+        114
+      ],
+      "status": "draft",
+      "note": "새 위 회피16장. 편집 순서는 중간 하강6~7을 제외해 한 번의 도약/착지를 강조. 모든 원본 보존.",
+      "sourceJob": "dec86e8f-e728-4d7d-a8a9-1edd9527647f",
+      "generatedFrameCount": 16,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/hero-v5-dodge-up/contact.png",
+      "gif": "clips/hero-v5-dodge-up/animation.gif",
+      "frameBounds": [
+        [
+          29,
+          30,
+          98,
+          114
+        ],
+        [
+          30,
+          28,
+          98,
+          114
+        ],
+        [
+          30,
+          24,
+          95,
+          114
+        ],
+        [
+          30,
+          21,
+          94,
+          114
+        ],
+        [
+          31,
+          16,
+          91,
+          107
+        ],
+        [
+          32,
+          16,
+          89,
+          104
+        ],
+        [
+          32,
+          20,
+          92,
+          107
+        ],
+        [
+          32,
+          17,
+          92,
+          107
+        ],
+        [
+          32,
+          13,
+          96,
+          98
+        ],
+        [
+          32,
+          14,
+          98,
+          98
+        ],
+        [
+          32,
+          19,
+          97,
+          104
+        ],
+        [
+          32,
+          19,
+          91,
+          107
+        ],
+        [
+          32,
+          22,
+          89,
+          110
+        ],
+        [
+          30,
+          26,
+          90,
+          110
+        ],
+        [
+          30,
+          30,
+          91,
+          114
+        ],
+        [
+          29,
+          30,
+          95,
+          114
+        ],
+        [
+          29,
+          30,
+          98,
+          114
+        ]
+      ],
+      "uniqueFrames": 16,
+      "playbackFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "editedGif": "clips/hero-v5-dodge-up/edited-preview.gif"
+    },
+    {
+      "id": "hero-v5-dodge-front",
+      "name": "온 v5 · 앞 회피",
+      "actor": "hero",
+      "action": "v5-dodge-front",
+      "sheet": "clips/hero-v5-dodge-front/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 17,
+      "fps": 60,
+      "loop": false,
+      "pivot": [
+        60,
+        114
+      ],
+      "status": "draft",
+      "note": "새 앞 회피16장. 전경 준비·낮은 이동·일어서기. 반복된 낮은 hold는 편집에서 축소.",
+      "sourceJob": "867c01c7-d245-4c65-868e-3dfe93bd3c44",
+      "generatedFrameCount": 16,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/hero-v5-dodge-front/contact.png",
+      "gif": "clips/hero-v5-dodge-front/animation.gif",
+      "frameBounds": [
+        [
+          29,
+          30,
+          98,
+          114
+        ],
+        [
+          30,
+          30,
+          101,
+          114
+        ],
+        [
+          30,
+          30,
+          98,
+          114
+        ],
+        [
+          29,
+          33,
+          94,
+          113
+        ],
+        [
+          25,
+          35,
+          91,
+          114
+        ],
+        [
+          25,
+          35,
+          91,
+          114
+        ],
+        [
+          26,
+          35,
+          91,
+          114
+        ],
+        [
+          27,
+          36,
+          93,
+          114
+        ],
+        [
+          27,
+          35,
+          92,
+          114
+        ],
+        [
+          26,
+          36,
+          91,
+          114
+        ],
+        [
+          25,
+          34,
+          94,
+          114
+        ],
+        [
+          26,
+          37,
+          96,
+          113
+        ],
+        [
+          30,
+          34,
+          91,
+          114
+        ],
+        [
+          28,
+          34,
+          92,
+          114
+        ],
+        [
+          27,
+          30,
+          94,
+          114
+        ],
+        [
+          27,
+          30,
+          98,
+          114
+        ],
+        [
+          29,
+          30,
+          98,
+          114
+        ]
+      ],
+      "uniqueFrames": 16,
+      "playbackFrames": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        9,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "editedGif": "clips/hero-v5-dodge-front/edited-preview.gif"
+    },
+    {
+      "id": "hero-v5-dodge-back",
+      "name": "온 v5 · 뒤 회피",
+      "actor": "hero",
+      "action": "v5-dodge-back",
+      "sheet": "clips/hero-v5-dodge-back/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 17,
+      "fps": 60,
+      "loop": false,
+      "pivot": [
+        60,
+        114
+      ],
+      "status": "draft",
+      "note": "새 뒤 회피16장. 오른쪽 시선을 유지한 몸 당김과 발 받아내기.",
+      "sourceJob": "f040e9ab-32eb-4e9b-aeb5-4c0a6583f5c1",
+      "generatedFrameCount": 16,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/hero-v5-dodge-back/contact.png",
+      "gif": "clips/hero-v5-dodge-back/animation.gif",
+      "frameBounds": [
+        [
+          29,
+          30,
+          98,
+          114
+        ],
+        [
+          35,
+          30,
+          99,
+          114
+        ],
+        [
+          35,
+          30,
+          100,
+          114
+        ],
+        [
+          35,
+          28,
+          99,
+          114
+        ],
+        [
+          33,
+          28,
+          98,
+          114
+        ],
+        [
+          30,
+          29,
+          99,
+          114
+        ],
+        [
+          29,
+          30,
+          102,
+          114
+        ],
+        [
+          27,
+          30,
+          102,
+          114
+        ],
+        [
+          27,
+          30,
+          101,
+          114
+        ],
+        [
+          32,
+          28,
+          100,
+          114
+        ],
+        [
+          33,
+          26,
+          100,
+          114
+        ],
+        [
+          33,
+          26,
+          100,
+          114
+        ],
+        [
+          35,
+          28,
+          99,
+          114
+        ],
+        [
+          36,
+          30,
+          100,
+          114
+        ],
+        [
+          36,
+          30,
+          99,
+          114
+        ],
+        [
+          32,
+          30,
+          98,
+          114
+        ],
+        [
+          29,
+          30,
+          98,
+          114
+        ]
+      ],
+      "uniqueFrames": 16,
+      "playbackFrames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "editedGif": "clips/hero-v5-dodge-back/edited-preview.gif"
+    },
+    {
+      "id": "hero-v5-hit",
+      "name": "온 v5 · 피격",
+      "actor": "hero",
+      "action": "v5-hit",
+      "sheet": "clips/hero-v5-hit/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 9,
+      "fps": 40,
+      "loop": false,
+      "pivot": [
+        60,
+        114
+      ],
+      "status": "draft",
+      "note": "새 피격8장. 짧은 상체 반동 후 대기로 복귀. 눈의 형태 변화는 후속 정리 대상.",
+      "sourceJob": "a6f18c5b-ce9e-410d-a43b-9b54fbf50ac0",
+      "generatedFrameCount": 8,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/hero-v5-hit/contact.png",
+      "gif": "clips/hero-v5-hit/animation.gif",
+      "frameBounds": [
+        [
+          29,
+          30,
+          98,
+          114
+        ],
+        [
+          35,
+          30,
+          97,
+          114
+        ],
+        [
+          33,
+          30,
+          92,
+          114
+        ],
+        [
+          33,
+          30,
+          88,
+          114
+        ],
+        [
+          29,
+          30,
+          84,
+          114
+        ],
+        [
+          33,
+          30,
+          87,
+          114
+        ],
+        [
+          33,
+          30,
+          91,
+          114
+        ],
+        [
+          36,
+          30,
+          94,
+          114
+        ],
+        [
+          29,
+          30,
+          98,
+          114
+        ]
+      ],
+      "uniqueFrames": 8,
+      "playbackFrames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "editedGif": "clips/hero-v5-hit/edited-preview.gif"
+    },
+    {
+      "id": "hero-v5-death",
+      "name": "온 v5 · 쓰러짐",
+      "actor": "hero",
+      "action": "v5-death",
+      "sheet": "clips/hero-v5-death/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 17,
+      "fps": 32,
+      "loop": false,
+      "pivot": [
+        60,
+        114
+      ],
+      "status": "draft",
+      "note": "새 쓰러짐16장. 무릎 꿇기→바닥에 눕기. 마지막 자세를 유지하며 도트 분해, 대기로 돌아오지 않음.",
+      "sourceJob": "f732c94f-8ef9-4b00-a830-e0d57a9e7f4d",
+      "generatedFrameCount": 16,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/hero-v5-death/contact.png",
+      "gif": "clips/hero-v5-death/animation.gif",
+      "frameBounds": [
+        [
+          29,
+          30,
+          98,
+          114
+        ],
+        [
+          36,
+          32,
+          98,
+          114
+        ],
+        [
+          39,
+          34,
+          96,
+          114
+        ],
+        [
+          43,
+          36,
+          102,
+          114
+        ],
+        [
+          35,
+          38,
+          103,
+          114
+        ],
+        [
+          32,
+          41,
+          107,
+          114
+        ],
+        [
+          29,
+          42,
+          106,
+          114
+        ],
+        [
+          29,
+          42,
+          107,
+          114
+        ],
+        [
+          32,
+          42,
+          109,
+          114
+        ],
+        [
+          32,
+          40,
+          106,
+          114
+        ],
+        [
+          32,
+          42,
+          105,
+          114
+        ],
+        [
+          32,
+          42,
+          109,
+          114
+        ],
+        [
+          25,
+          56,
+          111,
+          114
+        ],
+        [
+          20,
+          70,
+          110,
+          114
+        ],
+        [
+          16,
+          72,
+          113,
+          113
+        ],
+        [
+          16,
+          72,
+          114,
+          114
+        ],
+        [
+          16,
+          72,
+          112,
+          113
+        ]
+      ],
+      "uniqueFrames": 16,
+      "playbackFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "editedGif": "clips/hero-v5-death/edited-preview.gif"
+    },
+    {
+      "id": "hero-v5-return",
+      "name": "온 v5 · 공격 후 복귀",
+      "actor": "hero",
+      "action": "v5-return",
+      "sheet": "clips/hero-v5-return/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 17,
+      "fps": 64,
+      "loop": false,
+      "pivot": [
+        60,
+        114
+      ],
+      "status": "draft",
+      "note": "공격 후 별도 신규 복귀16장. 오른쪽 시선을 유지한 반동/발 교대. 전체 몸 이동은 합성 x780→500.",
+      "sourceJob": "48b2bc96-d2e6-49cc-9272-50ee0b85e066",
+      "generatedFrameCount": 16,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/hero-v5-return/contact.png",
+      "gif": "clips/hero-v5-return/animation.gif",
+      "frameBounds": [
+        [
+          29,
+          30,
+          98,
+          114
+        ],
+        [
+          32,
+          30,
+          98,
+          114
+        ],
+        [
+          35,
+          28,
+          99,
+          114
+        ],
+        [
+          35,
+          26,
+          98,
+          114
+        ],
+        [
+          35,
+          24,
+          98,
+          114
+        ],
+        [
+          32,
+          24,
+          97,
+          114
+        ],
+        [
+          32,
+          26,
+          94,
+          114
+        ],
+        [
+          31,
+          28,
+          94,
+          114
+        ],
+        [
+          29,
+          30,
+          93,
+          114
+        ],
+        [
+          29,
+          27,
+          91,
+          114
+        ],
+        [
+          30,
+          24,
+          92,
+          114
+        ],
+        [
+          29,
+          22,
+          93,
+          114
+        ],
+        [
+          32,
+          24,
+          96,
+          114
+        ],
+        [
+          33,
+          26,
+          96,
+          114
+        ],
+        [
+          36,
+          29,
+          98,
+          113
+        ],
+        [
+          33,
+          30,
+          98,
+          114
+        ],
+        [
+          29,
+          30,
+          98,
+          114
+        ]
+      ],
+      "uniqueFrames": 16,
+      "playbackFrames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "editedGif": "clips/hero-v5-return/edited-preview.gif"
+    },
+    {
+      "id": "hero-v5-dodge-down-retry",
+      "name": "온 v5 · 깊은 아래 회피",
+      "actor": "hero",
+      "action": "v5-dodge-down-retry",
+      "sheet": "clips/hero-v5-dodge-down-retry/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 17,
+      "fps": 60,
+      "loop": false,
+      "pivot": [
+        60,
+        114
+      ],
+      "status": "draft",
+      "note": "재생성한 깊은 무릎굽힘. 머리 약15px 하강. 성공 합성은 낮은4~12를 타격 잔해140ms까지 유지, 이후13~16으로복귀. 원본16장 보존.",
+      "sourceJob": "bef081e4-6a2c-49a6-8c26-22b5b1e07049",
+      "generatedFrameCount": 16,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/hero-v5-dodge-down-retry/contact.png",
+      "gif": "clips/hero-v5-dodge-down-retry/animation.gif",
+      "frameBounds": [
+        [
+          29,
+          30,
+          98,
+          114
+        ],
+        [
+          31,
+          32,
+          95,
+          114
+        ],
+        [
+          32,
+          38,
+          91,
+          114
+        ],
+        [
+          32,
+          42,
+          89,
+          114
+        ],
+        [
+          33,
+          45,
+          87,
+          113
+        ],
+        [
+          33,
+          45,
+          88,
+          113
+        ],
+        [
+          33,
+          45,
+          91,
+          113
+        ],
+        [
+          32,
+          44,
+          94,
+          114
+        ],
+        [
+          33,
+          44,
+          92,
+          114
+        ],
+        [
+          33,
+          45,
+          94,
+          113
+        ],
+        [
+          33,
+          45,
+          87,
+          113
+        ],
+        [
+          33,
+          45,
+          91,
+          113
+        ],
+        [
+          33,
+          44,
+          91,
+          114
+        ],
+        [
+          29,
+          38,
+          95,
+          114
+        ],
+        [
+          29,
+          33,
+          97,
+          114
+        ],
+        [
+          29,
+          30,
+          98,
+          114
+        ],
+        [
+          29,
+          30,
+          98,
+          114
+        ]
+      ],
+      "uniqueFrames": 16,
+      "playbackFrames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        8,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "lowPoseFrames": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "recoverFrames": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "editedGif": "clips/hero-v5-dodge-down-retry/edited-preview.gif"
+    },
+    {
+      "id": "hero-v5-run",
+      "name": "온 v5 · 전력질주",
+      "actor": "hero",
+      "action": "v5-run",
+      "sheet": "clips/hero-v5-run/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 17,
+      "fps": 40,
+      "loop": true,
+      "pivot": [
+        67,
+        106
+      ],
+      "status": "draft",
+      "note": "새 전경 질주 A16장. 실제 다리 교차·망토 전개. 공통 지면 pivot(67,106). B와 비교 보존.",
+      "sourceJob": "763f8b3e-0b34-450e-ba4f-98f7250c8a48",
+      "generatedFrameCount": 16,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/hero-v5-run/contact.png",
+      "gif": "clips/hero-v5-run/animation.gif",
+      "frameBounds": [
+        [
+          5,
+          26,
+          125,
+          106
+        ],
+        [
+          5,
+          25,
+          124,
+          106
+        ],
+        [
+          5,
+          24,
+          122,
+          106
+        ],
+        [
+          5,
+          22,
+          118,
+          106
+        ],
+        [
+          5,
+          22,
+          114,
+          106
+        ],
+        [
+          5,
+          24,
+          116,
+          106
+        ],
+        [
+          6,
+          26,
+          118,
+          106
+        ],
+        [
+          8,
+          26,
+          120,
+          106
+        ],
+        [
+          5,
+          24,
+          122,
+          106
+        ],
+        [
+          5,
+          24,
+          120,
+          106
+        ],
+        [
+          5,
+          22,
+          118,
+          106
+        ],
+        [
+          5,
+          22,
+          116,
+          106
+        ],
+        [
+          5,
+          22,
+          116,
+          106
+        ],
+        [
+          5,
+          22,
+          120,
+          106
+        ],
+        [
+          6,
+          22,
+          122,
+          106
+        ],
+        [
+          8,
+          26,
+          124,
+          106
+        ],
+        [
+          5,
+          26,
+          125,
+          106
+        ]
+      ],
+      "uniqueFrames": 16,
+      "playbackFrames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "editedGif": "clips/hero-v5-run/edited-preview.gif"
+    },
+    {
+      "id": "hero-v5-run-alt",
+      "name": "온 v5 · 전력질주 비교",
+      "actor": "hero",
+      "action": "v5-run-alt",
+      "sheet": "clips/hero-v5-run-alt/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 17,
+      "fps": 40,
+      "loop": true,
+      "pivot": [
+        67,
+        106
+      ],
+      "status": "draft",
+      "note": "아트 담당 비교로 메인 채택한 질주 B 후보. 상체 전경·검 각도 안정·다리 명암 구분. 공통 pivot(67,106). 16장/400ms, 원본00 제외.",
+      "sourceJob": "1055e065-e365-4cbf-a26b-21e3f0bc5a2a",
+      "generatedFrameCount": 16,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/hero-v5-run-alt/contact.png",
+      "gif": "clips/hero-v5-run-alt/animation.gif",
+      "frameBounds": [
+        [
+          5,
+          26,
+          125,
+          106
+        ],
+        [
+          3,
+          26,
+          125,
+          106
+        ],
+        [
+          3,
+          24,
+          125,
+          106
+        ],
+        [
+          3,
+          23,
+          125,
+          106
+        ],
+        [
+          3,
+          21,
+          125,
+          106
+        ],
+        [
+          3,
+          22,
+          125,
+          106
+        ],
+        [
+          3,
+          24,
+          125,
+          106
+        ],
+        [
+          5,
+          24,
+          125,
+          106
+        ],
+        [
+          3,
+          22,
+          125,
+          104
+        ],
+        [
+          3,
+          22,
+          125,
+          106
+        ],
+        [
+          3,
+          24,
+          125,
+          106
+        ],
+        [
+          5,
+          26,
+          125,
+          106
+        ],
+        [
+          3,
+          24,
+          125,
+          106
+        ],
+        [
+          3,
+          22,
+          125,
+          106
+        ],
+        [
+          3,
+          21,
+          125,
+          106
+        ],
+        [
+          5,
+          24,
+          125,
+          106
+        ],
+        [
+          5,
+          26,
+          125,
+          106
+        ]
+      ],
+      "uniqueFrames": 16,
+      "playbackFrames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "editedGif": "clips/hero-v5-run-alt/edited-preview.gif"
+    },
+    {
+      "id": "sentinel-attack",
+      "name": "성문 파수병 · 공격",
+      "actor": "sentinel",
+      "action": "attack",
+      "sheet": "clips/sentinel-attack/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 25,
+      "fps": 20,
+      "loop": false,
+      "pivot": [
+        78,
+        114
+      ],
+      "status": "review",
+      "note": "단일 공격 편집 후보. 메인 순서 1,5~13,21~24. 긴 중복 대기 제거. 원본 시트와 프레임은 전부 보존.",
+      "sourceJob": "0247ba65-3671-405c-adfa-8d2198faaea4",
+      "generatedFrameCount": 24,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/sentinel-attack/contact.png",
+      "gif": "clips/sentinel-attack/animation.gif",
+      "playbackFrames": [
+        1,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        21,
+        22,
+        23,
+        24
+      ],
+      "contactSourceFrame": 11,
+      "editedGif": "clips/sentinel-attack/edited-preview.gif"
+    },
+    {
+      "id": "chain-attack",
+      "name": "사슬 망령 · 공격",
+      "actor": "chain",
+      "action": "attack",
+      "sheet": "clips/chain-attack/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 25,
+      "fps": 20,
+      "loop": false,
+      "pivot": [
+        78,
+        114
+      ],
+      "status": "review",
+      "note": "단일 사슬 휘두르기 후보. 메인 중복 대기 축소. 사슬·추 연결과 회수 프레임 후속 검수.",
+      "sourceJob": "ec00530e-eaf5-462e-8885-7ec4648ec9b7",
+      "generatedFrameCount": 24,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/chain-attack/contact.png",
+      "gif": "clips/chain-attack/animation.gif",
+      "playbackFrames": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        20,
+        24
+      ],
+      "contactSourceFrame": 11,
+      "editedGif": "clips/chain-attack/edited-preview.gif"
+    },
+    {
+      "id": "wisp-attack",
+      "name": "재의 불씨 · 공격",
+      "actor": "wisp",
+      "action": "attack",
+      "sheet": "clips/wisp-attack/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 25,
+      "fps": 20,
+      "loop": false,
+      "pivot": [
+        76,
+        114
+      ],
+      "status": "review",
+      "note": "한 번 손을 뻗는 시전 후보. 메인 중복 대기 축소. 네 방향별 예고용 모션을 전부 만든 상태는 아님.",
+      "sourceJob": "a009465a-a238-4dbf-94ef-a380061180a2",
+      "generatedFrameCount": 24,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/wisp-attack/contact.png",
+      "gif": "clips/wisp-attack/animation.gif",
+      "playbackFrames": [
+        1,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14,
+        18,
+        19,
+        20,
+        21,
+        22,
+        24
+      ],
+      "contactSourceFrame": 12,
+      "editedGif": "clips/wisp-attack/edited-preview.gif"
+    },
+    {
+      "id": "warden-attack",
+      "name": "성문 수문장 · 공격",
+      "actor": "warden",
+      "action": "attack",
+      "sheet": "clips/warden-attack/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 25,
+      "fps": 20,
+      "loop": false,
+      "pivot": [
+        78,
+        114
+      ],
+      "status": "review",
+      "note": "철퇴 구간 단발 기획 후보. 방패 밀기는 제외했으나 0→10 준비 연결이 튀어 비타격 전환 프레임 보강 필요. 최종 채택 아님.",
+      "sourceJob": "f039c5ed-514d-4b24-aa27-fa01290a3457",
+      "generatedFrameCount": 24,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/warden-attack/contact.png",
+      "gif": "clips/warden-attack/animation.gif",
+      "playbackFrames": [
+        0,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "contactSourceFrame": 19,
+      "faceByFrame": {
+        "0": [
+          68,
+          46
+        ],
+        "3": [
+          58,
+          46
+        ],
+        "8": [
+          58,
+          46
+        ],
+        "10": [
+          61,
+          46
+        ],
+        "11": [
+          63,
+          46
+        ],
+        "12": [
+          65,
+          46
+        ],
+        "13": [
+          67,
+          46
+        ],
+        "14": [
+          70,
+          46
+        ],
+        "15": [
+          72,
+          46
+        ],
+        "18": [
+          76,
+          50
+        ],
+        "19": [
+          64,
+          49
+        ],
+        "20": [
+          69,
+          47
+        ],
+        "21": [
+          69,
+          47
+        ],
+        "22": [
+          69,
+          47
+        ],
+        "23": [
+          67,
+          46
+        ],
+        "24": [
+          68,
+          46
+        ]
+      },
+      "editedGif": "clips/warden-attack/edited-preview.gif"
+    },
+    {
+      "id": "knight-attack-retry",
+      "name": "종의 기사 · 단발 재작업",
+      "actor": "knight",
+      "action": "attack-retry",
+      "sheet": "clips/knight-attack-retry/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 17,
+      "fps": 20,
+      "loop": false,
+      "pivot": [
+        78,
+        114
+      ],
+      "status": "draft",
+      "note": "재작업 단발 내려베기 후보. 원본9~11에 한 번의 타격과 잔상, 이후 회수. 보스 등장용은 피해 없는 한 클립으로 재생. 생성된 무기 잔상은 향후 분리 보강 대상.",
+      "sourceJob": "8fd0327d-9aa4-471b-9985-a7452019f3d6",
+      "generatedFrameCount": 16,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/knight-attack-retry/contact.png",
+      "gif": "clips/knight-attack-retry/animation.gif",
+      "contactSourceFrame": 10,
+      "faceAnchor": [
+        76,
+        46
+      ],
+      "faceByFrame": {
+        "0": [
+          75,
+          45
+        ],
+        "1": [
+          76,
+          46
+        ],
+        "2": [
+          76,
+          45
+        ],
+        "3": [
+          76,
+          46
+        ],
+        "4": [
+          77,
+          46
+        ],
+        "5": [
+          65,
+          45
+        ],
+        "6": [
+          62,
+          45
+        ],
+        "7": [
+          60,
+          46
+        ],
+        "8": [
+          57,
+          46
+        ],
+        "9": [
+          75,
+          50
+        ],
+        "10": [
+          76,
+          49
+        ],
+        "11": [
+          76,
+          49
+        ],
+        "12": [
+          76,
+          49
+        ],
+        "13": [
+          76,
+          49
+        ],
+        "14": [
+          76,
+          46
+        ],
+        "15": [
+          76,
+          46
+        ],
+        "16": [
+          75,
+          45
+        ]
+      }
+    },
+    {
+      "id": "diagonal-slash",
+      "name": "온 · 긴 사선 참격 VFX",
+      "actor": "vfx",
+      "action": "slash",
+      "sheet": "clips/diagonal-slash/sheet.png",
+      "frameWidth": 256,
+      "frameHeight": 128,
+      "columns": 4,
+      "frameCount": 10,
+      "fps": 40,
+      "loop": false,
+      "pivot": [
+        12,
+        110
+      ],
+      "status": "draft",
+      "note": "긴 사선 참격 기획 후보. 크림 중심·황동 테두리·암청 외곽. 10장/40fps/250ms, VFX 추가 피해 없음.",
+      "sourceJob": "effect:faf3549e-3c15-4f10-aca4-5c0e8a54127a"
+    },
+    {
+      "id": "hero-run",
+      "name": "온 · 달리기 A",
+      "actor": "hero",
+      "action": "run",
+      "sheet": "clips/hero-run/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 17,
+      "fps": 20,
+      "loop": true,
+      "pivot": [
+        60,
+        114
+      ],
+      "status": "review",
+      "note": "달리기 A: 입력 대기 0을 루프에서 제외. 실제 다리 교차는 있으나 상하 바운스·옷 형태 변화 재검토 중. 최종 채택 아님.",
+      "sourceJob": "01d0d600-4d89-4a30-97aa-a04aa73d3829",
+      "generatedFrameCount": 16,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/hero-run/contact.png",
+      "gif": "clips/hero-run/animation.gif",
+      "playbackFrames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "editedGif": "clips/hero-run/edited-preview.gif"
+    },
+    {
+      "id": "hero-dodge-up",
+      "name": "온 · 위 회피",
+      "actor": "hero",
+      "action": "dodge-up",
+      "sheet": "clips/hero-dodge-up/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 17,
+      "fps": 20,
+      "loop": false,
+      "pivot": [
+        60,
+        114
+      ],
+      "status": "draft",
+      "note": "단일 상승→착지 기획 후보. 전투의 점프 이동/무적 판정과 별도인 실제 몸 동작 프레임.",
+      "sourceJob": "c6ff6c62-4330-48d9-921b-dc4bc9ccf0a6",
+      "generatedFrameCount": 16,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/hero-dodge-up/contact.png",
+      "gif": "clips/hero-dodge-up/animation.gif"
+    },
+    {
+      "id": "hero-dodge-down",
+      "name": "온 · 아래 회피",
+      "actor": "hero",
+      "action": "dodge-down",
+      "sheet": "clips/hero-dodge-down/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 17,
+      "fps": 20,
+      "loop": false,
+      "pivot": [
+        60,
+        114
+      ],
+      "status": "draft",
+      "note": "낮은 자세→복귀 기획 후보. 넓은 다리 벌림을 무릎 굽힘으로 보강할 여지. 중복 낮은자세 hold 축소.",
+      "sourceJob": "1b5c7f5d-04ea-462b-9e6d-1e72b25eb70a",
+      "generatedFrameCount": 16,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/hero-dodge-down/contact.png",
+      "gif": "clips/hero-dodge-down/animation.gif",
+      "playbackFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "lowPoseFrames": [
+        4,
+        6,
+        10
+      ],
+      "recoverFrames": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "editedGif": "clips/hero-dodge-down/edited-preview.gif"
+    },
+    {
+      "id": "hero-dodge-front",
+      "name": "온 · 앞 회피",
+      "actor": "hero",
+      "action": "dodge-front",
+      "sheet": "clips/hero-dodge-front/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 17,
+      "fps": 20,
+      "loop": false,
+      "pivot": [
+        60,
+        114
+      ],
+      "status": "draft",
+      "note": "낮은 전진 자세→복귀 기획 후보. 원본 고정 캔버스 유지. 실제 거리/무적 판정은 전투 소유.",
+      "sourceJob": "b14aaf41-f793-41bb-904d-d05c51126720",
+      "generatedFrameCount": 16,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/hero-dodge-front/contact.png",
+      "gif": "clips/hero-dodge-front/animation.gif"
+    },
+    {
+      "id": "hero-dodge-back",
+      "name": "온 · 뒤 회피",
+      "actor": "hero",
+      "action": "dodge-back",
+      "sheet": "clips/hero-dodge-back/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 17,
+      "fps": 20,
+      "loop": false,
+      "pivot": [
+        60,
+        114
+      ],
+      "status": "draft",
+      "note": "한 번 뒤로 피하는 편집 후보. 원본의 첫 불필요 도약2~5를 제외. 편집 순서는 메인 합성에 사용, 원본은 비교용으로 보존.",
+      "sourceJob": "5cdaabb3-b007-4975-87f2-8b47bde76281",
+      "generatedFrameCount": 16,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/hero-dodge-back/contact.png",
+      "gif": "clips/hero-dodge-back/animation.gif",
+      "playbackFrames": [
+        0,
+        1,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "editedGif": "clips/hero-dodge-back/edited-preview.gif"
+    },
+    {
+      "id": "hero-attack-retry",
+      "name": "온 · 사선 베기 재작업",
+      "actor": "hero",
+      "action": "attack-retry",
+      "sheet": "clips/hero-attack-retry/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 17,
+      "fps": 20,
+      "loop": false,
+      "pivot": [
+        60,
+        114
+      ],
+      "status": "draft",
+      "note": "단발 공격 기획 후보. 이중 공격/정면 회전 제거. 손과 검 접점·뻗음은 추가 보강 대상. 원본15를 명중시각에 매핑한다.",
+      "sourceJob": "ef8178a9-c787-421d-93d2-682c1266d215",
+      "generatedFrameCount": 16,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/hero-attack-retry/contact.png",
+      "gif": "clips/hero-attack-retry/animation.gif",
+      "playbackFrames": [
+        0,
+        1,
+        2,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "contactSourceFrame": 15,
+      "editedGif": "clips/hero-attack-retry/edited-preview.gif"
+    },
+    {
+      "id": "hero-run-retry",
+      "name": "온 · 달리기 C",
+      "actor": "hero",
+      "action": "run-retry",
+      "sheet": "clips/hero-run-retry/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 17,
+      "fps": 20,
+      "loop": true,
+      "pivot": [
+        60,
+        114
+      ],
+      "status": "draft",
+      "note": "달리기 C 기획 후보. 진행 중 포즈로 시작해 상하 바운스 축소, 실제 좌우 다리 교차. 원본0은 기준 입력이며 메인 루프에서 제외. 최종 발 미끄러짐/기기 연속재생 검수 필요.",
+      "sourceJob": "7eda690c-324b-43c2-83f6-a3c631b2f434",
+      "generatedFrameCount": 16,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/hero-run-retry/contact.png",
+      "gif": "clips/hero-run-retry/animation.gif",
+      "playbackFrames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "editedGif": "clips/hero-run-retry/edited-preview.gif"
+    },
+    {
+      "id": "hero-run-classic",
+      "name": "온 · 달리기 B",
+      "actor": "hero",
+      "action": "run-classic",
+      "sheet": "clips/hero-run-classic/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 17,
+      "fps": 20,
+      "loop": true,
+      "pivot": [
+        60,
+        114
+      ],
+      "status": "rejected",
+      "note": "아트 검수 보류: 보폭이 작고 손·검이 흔들림. 원본 비교용으로 보존, 메인 미리보기 미사용.",
+      "sourceJob": "2f50e287-7323-4e20-807d-b4678fda029f",
+      "generatedFrameCount": 16,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/hero-run-classic/contact.png",
+      "gif": "clips/hero-run-classic/animation.gif"
+    },
+    {
+      "id": "hero-attack",
+      "name": "온 · 사선 베기",
+      "actor": "hero",
+      "action": "attack",
+      "sheet": "clips/hero-attack/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 25,
+      "fps": 20,
+      "loop": false,
+      "pivot": [
+        60,
+        114
+      ],
+      "status": "rejected",
+      "note": "반려: 3과13에서 두 번 공격하고 정면으로 회전. 단발 사선 베기 재생성. 메인 미사용.",
+      "sourceJob": "679d755b-1e3c-4c9d-8198-28026fddd226",
+      "generatedFrameCount": 24,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/hero-attack/contact.png",
+      "gif": "clips/hero-attack/animation.gif"
+    },
+    {
+      "id": "knight-attack",
+      "name": "종의 기사 · 공격",
+      "actor": "knight",
+      "action": "attack",
+      "sheet": "clips/knight-attack/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 25,
+      "fps": 20,
+      "loop": false,
+      "pivot": [
+        78,
+        114
+      ],
+      "status": "rejected",
+      "note": "반려: 7과10에서 두 번의 참격으로 읽힘. 단발 공격 재생성. 메인 미사용.",
+      "sourceJob": "974ed9a0-255a-490b-8071-849934f1670a",
+      "generatedFrameCount": 24,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/knight-attack/contact.png",
+      "gif": "clips/knight-attack/animation.gif"
+    },
+    {
+      "id": "hero-v7-run-rig",
+      "name": "온 · 새 골격 질주",
+      "actor": "hero",
+      "action": "v7-run-rig",
+      "sheet": "clips/hero-v7-run-rig/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 12,
+      "fps": 50,
+      "loop": true,
+      "pivot": [
+        60,
+        114
+      ],
+      "status": "rejected",
+      "note": "반려: 직립, 팔 교대·검·원형 비율의 불일치. 신규 키포즈 방식으로 대체.",
+      "sourceJob": "70be4d97-2bea-48e3-86f3-e372190b011b",
+      "generatedFrameCount": 12,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": false,
+      "contact": "clips/hero-v7-run-rig/contact.png",
+      "gif": "clips/hero-v7-run-rig/animation.gif",
+      "frameBounds": [
+        [
+          33,
+          23,
+          97,
+          119
+        ],
+        [
+          32,
+          26,
+          95,
+          121
+        ],
+        [
+          33,
+          24,
+          95,
+          121
+        ],
+        [
+          33,
+          24,
+          95,
+          121
+        ],
+        [
+          32,
+          22,
+          100,
+          112
+        ],
+        [
+          31,
+          23,
+          99,
+          117
+        ],
+        [
+          31,
+          24,
+          99,
+          120
+        ],
+        [
+          33,
+          26,
+          99,
+          121
+        ],
+        [
+          33,
+          25,
+          98,
+          121
+        ],
+        [
+          33,
+          24,
+          95,
+          121
+        ],
+        [
+          31,
+          22,
+          100,
+          113
+        ],
+        [
+          32,
+          23,
+          100,
+          116
+        ]
+      ],
+      "uniqueFrames": 12,
+      "playbackFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "editedGif": "clips/hero-v7-run-rig/edited-preview.gif"
+    },
+    {
+      "id": "hero-v7-sprint",
+      "name": "온 · 신규 전력질주",
+      "actor": "hero",
+      "action": "v7-sprint",
+      "sheet": "clips/hero-v7-sprint/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 13,
+      "fps": 50,
+      "loop": true,
+      "pivot": [
+        60,
+        114
+      ],
+      "status": "rejected",
+      "note": "반려: 직립, 팔 교대·검·원형 비율의 불일치. 신규 키포즈 방식으로 대체.",
+      "sourceJob": "d79bd7aa-25c2-40c3-8f38-5e12fbcda61c",
+      "generatedFrameCount": 12,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/hero-v7-sprint/contact.png",
+      "gif": "clips/hero-v7-sprint/animation.gif",
+      "frameBounds": [
+        [
+          26,
+          26,
+          99,
+          110
+        ],
+        [
+          30,
+          27,
+          95,
+          110
+        ],
+        [
+          36,
+          24,
+          91,
+          110
+        ],
+        [
+          42,
+          21,
+          97,
+          110
+        ],
+        [
+          39,
+          20,
+          103,
+          110
+        ],
+        [
+          30,
+          22,
+          105,
+          110
+        ],
+        [
+          26,
+          25,
+          108,
+          108
+        ],
+        [
+          29,
+          28,
+          106,
+          110
+        ],
+        [
+          37,
+          26,
+          103,
+          110
+        ],
+        [
+          41,
+          22,
+          97,
+          110
+        ],
+        [
+          41,
+          20,
+          90,
+          110
+        ],
+        [
+          35,
+          22,
+          92,
+          110
+        ],
+        [
+          26,
+          26,
+          99,
+          110
+        ]
+      ],
+      "uniqueFrames": 12,
+      "playbackFrames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "editedGif": "clips/hero-v7-sprint/edited-preview.gif"
+    },
+    {
+      "id": "hero-v7-sprint-alt",
+      "name": "온 · 원본 기반 새 질주",
+      "actor": "hero",
+      "action": "v7-sprint-alt",
+      "sheet": "clips/hero-v7-sprint-alt/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 9,
+      "fps": 33.333333333333336,
+      "loop": true,
+      "pivot": [
+        60,
+        114
+      ],
+      "status": "rejected",
+      "note": "반려: 직립, 팔 교대·검·원형 비율의 불일치. 신규 키포즈 방식으로 대체.",
+      "sourceJob": "91a46b97-bdc9-4ca4-aca9-6ea01dc0fa58",
+      "generatedFrameCount": 8,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/hero-v7-sprint-alt/contact.png",
+      "gif": "clips/hero-v7-sprint-alt/animation.gif",
+      "frameBounds": [
+        [
+          29,
+          30,
+          98,
+          114
+        ],
+        [
+          28,
+          23,
+          97,
+          114
+        ],
+        [
+          23,
+          16,
+          103,
+          106
+        ],
+        [
+          29,
+          24,
+          96,
+          114
+        ],
+        [
+          26,
+          30,
+          96,
+          114
+        ],
+        [
+          29,
+          18,
+          107,
+          102
+        ],
+        [
+          29,
+          24,
+          105,
+          114
+        ],
+        [
+          26,
+          30,
+          96,
+          114
+        ],
+        [
+          22,
+          16,
+          103,
+          106
+        ]
+      ],
+      "uniqueFrames": 8,
+      "playbackFrames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "editedGif": "clips/hero-v7-sprint-alt/edited-preview.gif"
+    },
+    {
+      "id": "sentinel-v6-hit",
+      "name": "성문 파수병 · 신규 피격",
+      "actor": "sentinel",
+      "action": "v6-hit",
+      "sheet": "clips/sentinel-v6-hit/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 17,
+      "fps": 60,
+      "loop": false,
+      "pivot": [
+        78,
+        114
+      ],
+      "status": "rejected",
+      "note": "몸반동 외에 흰 참격/새 무기/섬광을 생성해 반려. 원본 비교 보존. 몸동작 재작업본으로 교체.",
+      "sourceJob": "54ce6479-eeea-43d9-bfff-9145b2293f8d",
+      "generatedFrameCount": 16,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/sentinel-v6-hit/contact.png",
+      "gif": "clips/sentinel-v6-hit/animation.gif",
+      "frameBounds": [
+        [
+          31,
+          28,
+          105,
+          114
+        ],
+        [
+          31,
+          28,
+          105,
+          114
+        ],
+        [
+          27,
+          30,
+          105,
+          114
+        ],
+        [
+          22,
+          18,
+          105,
+          114
+        ],
+        [
+          23,
+          16,
+          108,
+          114
+        ],
+        [
+          20,
+          16,
+          108,
+          114
+        ],
+        [
+          24,
+          16,
+          105,
+          114
+        ],
+        [
+          24,
+          14,
+          105,
+          114
+        ],
+        [
+          17,
+          14,
+          105,
+          114
+        ],
+        [
+          25,
+          14,
+          105,
+          114
+        ],
+        [
+          14,
+          15,
+          105,
+          114
+        ],
+        [
+          17,
+          14,
+          105,
+          114
+        ],
+        [
+          24,
+          30,
+          105,
+          114
+        ],
+        [
+          24,
+          32,
+          106,
+          114
+        ],
+        [
+          25,
+          32,
+          105,
+          114
+        ],
+        [
+          29,
+          30,
+          105,
+          114
+        ],
+        [
+          31,
+          28,
+          105,
+          114
+        ]
+      ],
+      "uniqueFrames": 16
+    },
+    {
+      "id": "chain-v6-hit",
+      "name": "사슬 망령 · 신규 피격",
+      "actor": "chain",
+      "action": "v6-hit",
+      "sheet": "clips/chain-v6-hit/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 17,
+      "fps": 60,
+      "loop": false,
+      "pivot": [
+        78,
+        114
+      ],
+      "status": "rejected",
+      "note": "몸반동 외에 흰 참격/새 무기/섬광을 생성해 반려. 원본 비교 보존. 몸동작 재작업본으로 교체.",
+      "sourceJob": "ee4f3b1c-62de-4451-9fc5-715584eb8d18",
+      "generatedFrameCount": 16,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/chain-v6-hit/contact.png",
+      "gif": "clips/chain-v6-hit/animation.gif",
+      "frameBounds": [
+        [
+          28,
+          28,
+          99,
+          114
+        ],
+        [
+          28,
+          26,
+          99,
+          114
+        ],
+        [
+          14,
+          18,
+          99,
+          114
+        ],
+        [
+          21,
+          18,
+          100,
+          114
+        ],
+        [
+          32,
+          18,
+          105,
+          114
+        ],
+        [
+          30,
+          18,
+          104,
+          114
+        ],
+        [
+          28,
+          18,
+          102,
+          114
+        ],
+        [
+          24,
+          16,
+          100,
+          114
+        ],
+        [
+          28,
+          20,
+          100,
+          114
+        ],
+        [
+          26,
+          23,
+          100,
+          114
+        ],
+        [
+          23,
+          26,
+          99,
+          114
+        ],
+        [
+          20,
+          28,
+          99,
+          114
+        ],
+        [
+          20,
+          30,
+          99,
+          114
+        ],
+        [
+          21,
+          30,
+          99,
+          114
+        ],
+        [
+          23,
+          30,
+          99,
+          114
+        ],
+        [
+          25,
+          28,
+          99,
+          114
+        ],
+        [
+          28,
+          28,
+          99,
+          114
+        ]
+      ],
+      "uniqueFrames": 16
+    },
+    {
+      "id": "wisp-v6-hit",
+      "name": "재의 불씨 · 신규 피격",
+      "actor": "wisp",
+      "action": "v6-hit",
+      "sheet": "clips/wisp-v6-hit/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 17,
+      "fps": 60,
+      "loop": false,
+      "pivot": [
+        76,
+        114
+      ],
+      "status": "rejected",
+      "note": "몸반동 외에 흰 참격/새 무기/섬광을 생성해 반려. 원본 비교 보존. 몸동작 재작업본으로 교체.",
+      "sourceJob": "f6056d67-f0aa-49fa-b40c-ab5b3bf57e68",
+      "generatedFrameCount": 16,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/wisp-v6-hit/contact.png",
+      "gif": "clips/wisp-v6-hit/animation.gif",
+      "frameBounds": [
+        [
+          54,
+          26,
+          107,
+          114
+        ],
+        [
+          6,
+          0,
+          108,
+          114
+        ],
+        [
+          19,
+          2,
+          108,
+          112
+        ],
+        [
+          28,
+          13,
+          109,
+          110
+        ],
+        [
+          23,
+          13,
+          109,
+          110
+        ],
+        [
+          24,
+          13,
+          110,
+          110
+        ],
+        [
+          19,
+          16,
+          110,
+          110
+        ],
+        [
+          19,
+          14,
+          110,
+          110
+        ],
+        [
+          18,
+          14,
+          110,
+          110
+        ],
+        [
+          21,
+          14,
+          110,
+          110
+        ],
+        [
+          26,
+          14,
+          110,
+          110
+        ],
+        [
+          32,
+          33,
+          109,
+          110
+        ],
+        [
+          50,
+          32,
+          109,
+          111
+        ],
+        [
+          54,
+          25,
+          110,
+          113
+        ],
+        [
+          55,
+          24,
+          108,
+          114
+        ],
+        [
+          54,
+          25,
+          106,
+          114
+        ],
+        [
+          54,
+          26,
+          107,
+          114
+        ]
+      ],
+      "uniqueFrames": 16
+    },
+    {
+      "id": "warden-v6-hit",
+      "name": "성문 수문장 · 신규 피격",
+      "actor": "warden",
+      "action": "v6-hit",
+      "sheet": "clips/warden-v6-hit/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 17,
+      "fps": 60,
+      "loop": false,
+      "pivot": [
+        78,
+        114
+      ],
+      "status": "rejected",
+      "note": "몸반동 외에 흰 참격/새 무기/섬광을 생성해 반려. 원본 비교 보존. 몸동작 재작업본으로 교체.",
+      "sourceJob": "f58d8e46-d4c7-4990-892a-0f832e64ff2c",
+      "generatedFrameCount": 16,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/warden-v6-hit/contact.png",
+      "gif": "clips/warden-v6-hit/animation.gif",
+      "frameBounds": [
+        [
+          22,
+          22,
+          119,
+          114
+        ],
+        [
+          19,
+          22,
+          118,
+          114
+        ],
+        [
+          9,
+          22,
+          119,
+          114
+        ],
+        [
+          10,
+          20,
+          120,
+          114
+        ],
+        [
+          10,
+          21,
+          119,
+          114
+        ],
+        [
+          14,
+          23,
+          118,
+          114
+        ],
+        [
+          14,
+          24,
+          118,
+          114
+        ],
+        [
+          13,
+          23,
+          118,
+          114
+        ],
+        [
+          14,
+          24,
+          118,
+          114
+        ],
+        [
+          13,
+          23,
+          117,
+          114
+        ],
+        [
+          11,
+          22,
+          119,
+          114
+        ],
+        [
+          18,
+          22,
+          120,
+          114
+        ],
+        [
+          22,
+          22,
+          120,
+          114
+        ],
+        [
+          21,
+          22,
+          120,
+          114
+        ],
+        [
+          23,
+          22,
+          120,
+          114
+        ],
+        [
+          22,
+          22,
+          120,
+          114
+        ],
+        [
+          22,
+          22,
+          119,
+          114
+        ]
+      ],
+      "uniqueFrames": 16
+    },
+    {
+      "id": "knight-v6-hit",
+      "name": "종의 기사 · 신규 피격",
+      "actor": "knight",
+      "action": "v6-hit",
+      "sheet": "clips/knight-v6-hit/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 17,
+      "fps": 60,
+      "loop": false,
+      "pivot": [
+        78,
+        114
+      ],
+      "status": "rejected",
+      "note": "몸반동 외에 흰 참격/새 무기/섬광을 생성해 반려. 원본 비교 보존. 몸동작 재작업본으로 교체.",
+      "sourceJob": "4679a59d-732f-4350-ae10-1df5b82e9085",
+      "generatedFrameCount": 16,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/knight-v6-hit/contact.png",
+      "gif": "clips/knight-v6-hit/animation.gif",
+      "frameBounds": [
+        [
+          38,
+          20,
+          106,
+          114
+        ],
+        [
+          38,
+          20,
+          106,
+          114
+        ],
+        [
+          36,
+          20,
+          104,
+          114
+        ],
+        [
+          32,
+          15,
+          105,
+          114
+        ],
+        [
+          27,
+          22,
+          106,
+          114
+        ],
+        [
+          25,
+          22,
+          107,
+          114
+        ],
+        [
+          24,
+          25,
+          107,
+          114
+        ],
+        [
+          25,
+          13,
+          107,
+          114
+        ],
+        [
+          24,
+          16,
+          107,
+          114
+        ],
+        [
+          24,
+          18,
+          107,
+          114
+        ],
+        [
+          24,
+          18,
+          107,
+          114
+        ],
+        [
+          26,
+          16,
+          107,
+          114
+        ],
+        [
+          32,
+          19,
+          106,
+          114
+        ],
+        [
+          36,
+          20,
+          106,
+          114
+        ],
+        [
+          38,
+          20,
+          106,
+          114
+        ],
+        [
+          38,
+          20,
+          106,
+          114
+        ],
+        [
+          38,
+          20,
+          106,
+          114
+        ]
+      ],
+      "uniqueFrames": 16
+    },
+    {
+      "id": "hero-v6-run",
+      "name": "온 · 양팔 펌핑 질주",
+      "actor": "hero",
+      "action": "v6-run",
+      "sheet": "clips/hero-v6-run/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 25,
+      "fps": 32.5,
+      "loop": true,
+      "pivot": [
+        67,
+        106
+      ],
+      "status": "rejected",
+      "note": "사용자 반려. 달리기 자세/리듬이 부자연스러워 v7에서 완전히 재제작. 현재 미리보기 미사용.",
+      "sourceJob": "fdea8e2e-cbdd-4116-a109-df9b76bcab94",
+      "generatedFrameCount": 24,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/hero-v6-run/contact.png",
+      "gif": "clips/hero-v6-run/animation.gif",
+      "frameBounds": [
+        [
+          5,
+          26,
+          109,
+          106
+        ],
+        [
+          5,
+          28,
+          105,
+          106
+        ],
+        [
+          9,
+          26,
+          98,
+          106
+        ],
+        [
+          13,
+          22,
+          97,
+          106
+        ],
+        [
+          13,
+          20,
+          115,
+          106
+        ],
+        [
+          8,
+          24,
+          123,
+          106
+        ],
+        [
+          10,
+          26,
+          123,
+          106
+        ],
+        [
+          8,
+          24,
+          121,
+          106
+        ],
+        [
+          5,
+          22,
+          118,
+          106
+        ],
+        [
+          5,
+          24,
+          114,
+          106
+        ],
+        [
+          12,
+          26,
+          98,
+          106
+        ],
+        [
+          7,
+          23,
+          96,
+          106
+        ],
+        [
+          5,
+          20,
+          103,
+          106
+        ],
+        [
+          5,
+          24,
+          107,
+          106
+        ],
+        [
+          5,
+          26,
+          109,
+          106
+        ],
+        [
+          5,
+          28,
+          105,
+          106
+        ],
+        [
+          9,
+          26,
+          98,
+          106
+        ],
+        [
+          13,
+          22,
+          109,
+          106
+        ],
+        [
+          13,
+          20,
+          121,
+          106
+        ],
+        [
+          8,
+          24,
+          123,
+          106
+        ],
+        [
+          6,
+          26,
+          118,
+          106
+        ],
+        [
+          12,
+          24,
+          98,
+          106
+        ],
+        [
+          7,
+          22,
+          97,
+          106
+        ],
+        [
+          5,
+          22,
+          104,
+          106
+        ],
+        [
+          5,
+          26,
+          109,
+          106
+        ]
+      ],
+      "uniqueFrames": 24,
+      "playbackFrames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "editedGif": "clips/hero-v6-run/edited-preview.gif"
+    },
+    {
+      "id": "hero-v5-dodge-down",
+      "name": "온 v5 · 아래 회피",
+      "actor": "hero",
+      "action": "v5-dodge-down",
+      "sheet": "clips/hero-v5-dodge-down/sheet.png",
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "columns": 5,
+      "frameCount": 17,
+      "fps": 60,
+      "loop": false,
+      "pivot": [
+        60,
+        114
+      ],
+      "status": "rejected",
+      "note": "아래로 숙이는 폭이 작아 메인 제외. 깊은 아래 회피 재작업본을 사용하며 원본은 비교 보존.",
+      "sourceJob": "fde5a7c0-d992-4143-b995-25051c5db74c",
+      "generatedFrameCount": 16,
+      "authoredFrameCount": 0,
+      "inputFrameIncluded": true,
+      "contact": "clips/hero-v5-dodge-down/contact.png",
+      "gif": "clips/hero-v5-dodge-down/animation.gif",
+      "frameBounds": [
+        [
+          29,
+          30,
+          98,
+          114
+        ],
+        [
+          34,
+          30,
+          98,
+          114
+        ],
+        [
+          39,
+          34,
+          98,
+          114
+        ],
+        [
+          34,
+          38,
+          96,
+          114
+        ],
+        [
+          34,
+          38,
+          96,
+          114
+        ],
+        [
+          34,
+          39,
+          96,
+          114
+        ],
+        [
+          31,
+          39,
+          97,
+          114
+        ],
+        [
+          34,
+          38,
+          96,
+          114
+        ],
+        [
+          32,
+          39,
+          96,
+          114
+        ],
+        [
+          34,
+          38,
+          96,
+          114
+        ],
+        [
+          32,
+          39,
+          96,
+          114
+        ],
+        [
+          32,
+          39,
+          96,
+          114
+        ],
+        [
+          34,
+          39,
+          96,
+          114
+        ],
+        [
+          36,
+          38,
+          98,
+          114
+        ],
+        [
+          39,
+          34,
+          98,
+          114
+        ],
+        [
+          31,
+          30,
+          98,
+          114
+        ],
+        [
+          29,
+          30,
+          98,
+          114
+        ]
+      ],
+      "uniqueFrames": 16,
+      "playbackFrames": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        9,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "editedGif": "clips/hero-v5-dodge-down/edited-preview.gif"
+    }
+  ]
+}

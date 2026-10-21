@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>마지막 종지기 · 실제 프레임 검토</title>
+  <link rel="stylesheet" href="review.css">
+  <script src="assets-v7.js" defer></script>
+  <script src="review-v7.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a href="../index.html">← 전투 연출 기획</a>
+    <a href="../index.html#player">돌진 → 사선 베기 → 복귀 보기 ↗</a>
+  </header>
+  <main>
+    <header class="page-header">
+      <div><p class="eyebrow">PIXELLAB · MOTION v7</p><h1>신규 질주·기존 네 방향 회피·피격</h1></div>
+      <span class="badge">검토용 · Unity 미적용</span>
+    </header>
+
+    <section id="emptyState" class="empty-state" aria-live="polite">
+      <span class="status-dot" aria-hidden="true"></span><h2>생성 중</h2>
+    </section>
+
+    <div id="reviewWorkspace" hidden>
+      <section class="clip-picker" aria-label="애니메이션 선택">
+        <label for="clipSelect">검토할 동작</label>
+        <select id="clipSelect"></select>
+        <span id="clipCount" class="muted"></span>
+      </section>
+
+      <section class="review-layout" aria-label="프레임 재생 검토">
+        <article class="player-panel">
+          <div class="panel-heading"><div><p id="actorAction" class="eyebrow"></p><h2 id="clipName"></h2></div><span id="clipStatus" class="badge"></span></div>
+          <div id="imageStatus" class="image-status" role="status"></div>
+          <div id="frameViewport" class="frame-viewport" hidden>
+            <div id="frameStack" class="frame-stack">
+              <canvas id="frameCanvas" width="1" height="1" tabindex="0" aria-label="원본 애니메이션 프레임" aria-describedby="keyboardHelp"></canvas>
+              <div id="pixelGrid" class="pixel-grid" hidden aria-hidden="true"></div>
+              <div id="pivotMarker" class="pivot-marker" hidden aria-hidden="true"></div>
+            </div>
+          </div>
+          <div class="frame-readout"><strong id="frameNumber">—</strong><span id="frameTime" class="muted"></span><span id="phaseName" class="phase-label" hidden></span></div>
+          <div class="scrub-row"><label for="frameScrub">프레임</label><input id="frameScrub" type="range" min="1" max="1" value="1" step="1" disabled></div>
+          <div id="phaseMarks" class="phase-marks" hidden aria-label="동작 단계"></div>
+          <div class="playback-controls">
+            <button id="firstFrame" type="button" title="첫 프레임" disabled>처음</button>
+            <button id="previousFrame" type="button" aria-label="이전 프레임" disabled>‹</button>
+            <button id="playPause" class="primary" type="button" disabled>▶ 재생</button>
+            <button id="nextFrame" type="button" aria-label="다음 프레임" disabled>›</button>
+            <label class="check"><input id="loopToggle" type="checkbox" disabled>반복</label>
+            <label class="compact-label" for="speedSelect">속도 <select id="speedSelect" disabled><option value="0.25">0.25×</option><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label>
+          </div>
+          <div class="view-controls">
+            <label class="compact-label" for="scaleSelect">표시 배율 <select id="scaleSelect" disabled><option value="2">2×</option><option value="3" selected>3×</option><option value="4">4×</option></select></label>
+            <label class="check"><input id="gridToggle" type="checkbox" disabled>픽셀 격자</label>
+            <label class="check"><input id="pivotToggle" type="checkbox" checked disabled>공통 피벗</label>
+          </div>
+          <p id="keyboardHelp" class="small">프레임 화면에 포커스한 뒤 ← → 한 장씩 · Space 재생/정지 · Home/End 처음/마지막</p>
+        </article>
+
+        <aside class="details-panel" aria-label="원본 정보 및 검토 안내">
+          <h2>원본 정보</h2>
+          <dl class="metadata">
+            <div><dt>프레임 크기</dt><dd id="frameSize">—</dd></div>
+            <div><dt>원본 프레임</dt><dd id="totalFrames">—</dd></div>
+            <div><dt>재생 기준</dt><dd id="fpsValue">—</dd></div>
+            <div><dt>표시 속도</dt><dd id="effectiveFps">—</dd></div>
+            <div><dt>공통 피벗</dt><dd id="pivotValue">—</dd></div>
+            <div><dt>시트 배치</dt><dd id="sheetLayout">—</dd></div>
+          </dl>
+          <p id="clipNote" class="clip-note" hidden></p>
+          <details class="source-details"><summary>생성 기록</summary><p id="sourceJob" class="mono"></p><p id="sourcePath" class="mono"></p></details>
+          <div class="review-note"><h3>검토 화면 안내</h3><p>원본 셀을 그대로 표시합니다. 프레임별 잘라내기·위치 보정·보간은 적용하지 않습니다.</p><p>피벗 십자선과 격자는 검토용 표시입니다. 재생 FPS는 시각 비교 기준이며, Unity의 공격 판정·이동·취소 시점을 검증하지 않습니다.</p></div>
+        </aside>
+      </section>
+
+      <section id="comparisonSection" class="comparison-section" hidden>
+        <div class="section-heading"><div><p class="eyebrow">FIRST / LAST</p><h2>처음과 마지막, 연결이 자연스러운가</h2></div><span class="muted">동일 캔버스 · 동일 피벗 · 2×</span></div>
+        <div class="comparison-grid">
+          <figure><div id="firstStack" class="comparison-frame frame-stack"><canvas id="firstCanvas" width="1" height="1" aria-label="첫 원본 프레임"></canvas><div id="firstPivot" class="pivot-marker" hidden aria-hidden="true"></div></div><figcaption>첫 프레임 <b>1</b></figcaption></figure>
+          <figure><div id="lastStack" class="comparison-frame frame-stack"><canvas id="lastCanvas" width="1" height="1" aria-label="마지막 원본 프레임"></canvas><div id="lastPivot" class="pivot-marker" hidden aria-hidden="true"></div></div><figcaption>마지막 프레임 <b id="lastFrameLabel">—</b></figcaption></figure>
+        </div>
+      </section>
+
+      <section id="sheetSection" class="sheet-section" hidden>
+        <div class="section-heading"><div><p class="eyebrow">ORIGINAL SHEET</p><h2>전체 프레임</h2></div><a id="downloadSheet" class="download-link" download>원본 PNG 다운로드 ↓</a></div>
+        <p id="sheetCaption" class="muted"></p>
+        <div class="sheet-scroll"><img id="contactSheet" alt="생성된 원본 애니메이션 전체 프레임 시트"></div>
+      </section>
+    </div>
+    <footer>이 페이지의 조작·수치·설명은 제작 검토용이며 실제 게임 문구가 아닙니다.</footer>
+  </main>
+</body>
+</html>

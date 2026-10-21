@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-21",
+  "type": "offline-handler-and-data-check",
+  "passed": true,
+  "checkedStates": 43,
+  "motionActors": 6,
+  "motionStates": 75,
+  "checks": [
+    "unique DOM ids and all local data/images load",
+    "5 size comparisons",
+    "4 attack directions × 3 durations × success/failure",
+    "4 sequences × repeat option",
+    "hold zoom constant, restore camera before combat",
+    "play/end/reset and reduced-motion duration",
+    "player critical/normal and parallax endpoints",
+    "5 audio sources / 13 cues and unimplemented status",
+    "MVP 6 actors and all motion states render",
+    "travel: player x fixed / enemy and floor distance agree",
+    "actual source frame renderer keeps run root fixed",
+    "new attack rerolls once, pause/scrub/target change preserve selection",
+    "six slash variants pair with matching cut animation",
+    "five monster hit clips and size-specific approach endpoints"
+  ],
+  "limits": [
+    "No browser DOM/CSS, real touch, Unity or audio audition.",
+    "PixelLab candidate frames are loaded; final animation quality requires visual/continuous playback review."
+  ]
+}

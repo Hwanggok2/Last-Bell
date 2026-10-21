@@ -1,0 +1,750 @@
+{
+  "version": "presentation-v8",
+  "status": "planning-only",
+  "date": "2026-10-21",
+  "referenceFrame": {
+    "width": 1280,
+    "height": 720,
+    "origin": "top-left",
+    "playerFoot": [
+      500,
+      590
+    ],
+    "enemyFoot": [
+      900,
+      590
+    ],
+    "groundY": 600
+  },
+  "telegraph": {
+    "name": "준비 자세에서 이어지는 실체 공격",
+    "durationsMs": {
+      "single": 650,
+      "comboOpening": 900,
+      "comboFollowup": 250
+    },
+    "hitModel": "one damage event per patternStep; decorative projectile count never creates extra damage",
+    "recoveryMs": 240,
+    "regions": [
+      {
+        "id": "low_sweep",
+        "name": "좌상향 큰 가시",
+        "dodge": "▲",
+        "bounds": [
+          388,
+          470,
+          224,
+          120
+        ],
+        "prepare": "무기 끝을 지면에 대고 균열을 열음",
+        "impact": "좌상향 가시4개, 최대120px",
+        "sourceBounds": [
+          430,
+          576,
+          182,
+          18
+        ]
+      },
+      {
+        "id": "high_sweep",
+        "name": "머리 높이 칼날",
+        "dodge": "▼",
+        "bounds": [
+          430,
+          466,
+          190,
+          38
+        ],
+        "prepare": "무기를 어깨 위에 수평으로 들어올림",
+        "impact": "머리 높이를 쓸고 지나가는 금빛 칼날",
+        "sourceBounds": [
+          430,
+          466,
+          190,
+          38
+        ]
+      },
+      {
+        "id": "thrust",
+        "name": "정면 창찌르기",
+        "dodge": "◀",
+        "bounds": [
+          500,
+          507,
+          310,
+          36
+        ],
+        "prepare": "몸을 뒤로 당기고 창끝을 모음",
+        "impact": "앞에서 수평으로 찔러 들어오는 무기",
+        "sourceBounds": [
+          554,
+          507,
+          226,
+          36
+        ]
+      },
+      {
+        "id": "outer_arc",
+        "name": "화면 밖 사선 대형 화살",
+        "dodge": "▶",
+        "bounds": [
+          330,
+          0,
+          560,
+          590
+        ],
+        "prepare": "팔·무기를 들어 하늘을 부르고 등 뒤 착탄점을 밝힘",
+        "impact": "보이지 않는 오른쪽 위 하늘에서 큰 화살3발이 왼쪽 아래로 꽂힘",
+        "sourceBounds": [
+          330,
+          574,
+          160,
+          18
+        ]
+      }
+    ],
+    "nextSignal": "다음 공격은 작은 빈 실루엣만, 현재는 채워진 재료·수축하는 접점. 본타격의 큰VFX는판정시각T부터.",
+    "playerHp": [
+      447,
+      608,
+      106,
+      10
+    ],
+    "enemyHp": [
+      847,
+      608,
+      106,
+      10
+    ],
+    "bellMeter": [
+      326,
+      88,
+      627,
+      18
+    ],
+    "rearFallMs": 180,
+    "successfulUpDodgeVisual": {
+      "footLiftPx": 144,
+      "holdUntilAfterHitMs": 140,
+      "landAfterHitMs": 220,
+      "changesInvulnerability": false,
+      "needsBoundaryPoseReview": true
+    },
+    "spikes": {
+      "basesX": [
+        464,
+        506,
+        548,
+        590
+      ],
+      "heightPx": [
+        94,
+        110,
+        120,
+        104
+      ],
+      "leanLeftPx": 52,
+      "baseWidthPx": 38,
+      "peakAfterHitMs": 40,
+      "goneAfterHitMs": 140
+    },
+    "rearArrows": {
+      "landingX": [
+        350,
+        410,
+        470
+      ],
+      "landingY": 590,
+      "originOffset": [
+        400,
+        -780
+      ],
+      "lengthPx": 200,
+      "shaftPx": 10,
+      "headWidthPx": 40,
+      "forwardDodgeOffsetPx": 100,
+      "singleDamageEvent": true
+    },
+    "highSweepOffsetY": -24,
+    "downDodgePresentation": "타격시 낮은 원본4~12를140ms 유지, 칼날/예고는 기존보다24px위. 실제판정 변경아닌 합성시안."
+  },
+  "sequences": {
+    "normal": {
+      "name": "일반 적 처치 → 다음 적",
+      "totalMs": 3250,
+      "segments": [
+        [
+          0,
+          550,
+          "적 분해·복귀"
+        ],
+        [
+          550,
+          2550,
+          "2초 이동 · 960px"
+        ],
+        [
+          2550,
+          2750,
+          "새 적과 조우·정착"
+        ],
+        [
+          2750,
+          3030,
+          "Stage 도트 조립"
+        ],
+        [
+          3030,
+          3150,
+          "완성 유지"
+        ],
+        [
+          3150,
+          3250,
+          "소멸 → 첫 예고"
+        ]
+      ]
+    },
+    "death": {
+      "name": "플레이어 사망 → 등불 로비",
+      "totalMs": 1800,
+      "segments": [
+        [
+          0,
+          550,
+          "플레이어 분해"
+        ],
+        [
+          250,
+          700,
+          "암전"
+        ],
+        [
+          700,
+          850,
+          "어둠 유지"
+        ],
+        [
+          850,
+          1600,
+          "등불 점등·로비 공개"
+        ],
+        [
+          1600,
+          1800,
+          "로비 정착"
+        ]
+      ]
+    },
+    "mini": {
+      "name": "중간 보스 등장",
+      "totalMs": 2300,
+      "repeatMs": 1500,
+      "maxZoom": 1.45,
+      "segments": [
+        [
+          0,
+          500,
+          "Stage 도트 조립·표시"
+        ],
+        [
+          500,
+          900,
+          "크게 줌인"
+        ],
+        [
+          900,
+          1650,
+          "큰 줌 유지 · 포효"
+        ],
+        [
+          1650,
+          2100,
+          "줌아웃"
+        ],
+        [
+          2100,
+          2300,
+          "전투 구도 정착"
+        ]
+      ],
+      "repeatSegments": [
+        [
+          0,
+          500,
+          "Stage 도트 조립·표시"
+        ],
+        [
+          500,
+          700,
+          "줌인"
+        ],
+        [
+          700,
+          1050,
+          "포효 유지"
+        ],
+        [
+          1050,
+          1300,
+          "줌아웃"
+        ],
+        [
+          1300,
+          1500,
+          "정착"
+        ]
+      ]
+    },
+    "boss": {
+      "name": "보스 등장",
+      "totalMs": 2700,
+      "repeatMs": 1700,
+      "maxZoom": 1.6,
+      "segments": [
+        [
+          0,
+          500,
+          "Stage 도트 조립·표시"
+        ],
+        [
+          500,
+          1000,
+          "크게 줌인"
+        ],
+        [
+          1000,
+          2000,
+          "큰 줌 유지 · 포효"
+        ],
+        [
+          2000,
+          2500,
+          "줌아웃"
+        ],
+        [
+          2500,
+          2700,
+          "전투 구도 정착"
+        ]
+      ],
+      "repeatSegments": [
+        [
+          0,
+          500,
+          "Stage 도트 조립·표시"
+        ],
+        [
+          500,
+          750,
+          "줌인"
+        ],
+        [
+          750,
+          1200,
+          "포효 유지"
+        ],
+        [
+          1200,
+          1500,
+          "줌아웃"
+        ],
+        [
+          1500,
+          1700,
+          "정착"
+        ]
+      ]
+    }
+  },
+  "rules": {
+    "firstTelegraphAfterSettle": true,
+    "combatClockFrozenDuringTransition": true,
+    "rewardsOnce": true,
+    "rewardOrder": [
+      "처치 확정·보상 원장 저장",
+      "적 분해",
+      "유물 3택1",
+      "선택 결과 저장",
+      "전진",
+      "다음 적 등장",
+      "온전한 첫 공격 예고"
+    ],
+    "reducedMotion": "줌·화면흔들림·배경스크롤만제거. 공격가시/무기비의필수궤적은유지,잔해감축. 전투 재개 시점 동일.",
+    "audio": "사용자가 켠 사운드만 재생. 무음에서도 얼굴 원형 파동과 표시용 공격동작 1회로 포효 단계를 표현",
+    "afterRelicSelectionMs": 1600
+  },
+  "lantern": {
+    "anchor": [
+      520,
+      130
+    ],
+    "bounds": [
+      500,
+      104,
+      40,
+      59
+    ]
+  },
+  "actors": [
+    {
+      "id": "hero_on",
+      "name": "온",
+      "sprite": "on_00",
+      "current": 1.1,
+      "proposed": 1.1
+    },
+    {
+      "id": "gate_sentinel",
+      "name": "성문 파수병",
+      "sprite": "gate_00",
+      "current": 1.5,
+      "proposed": 2.0
+    },
+    {
+      "id": "chain_thrall",
+      "name": "사슬 망령",
+      "sprite": "gate_01",
+      "current": 1.5,
+      "proposed": 2.0
+    },
+    {
+      "id": "ash_wisp",
+      "name": "재의 불씨",
+      "sprite": "gate_02",
+      "current": 1.0,
+      "proposed": 2.0
+    },
+    {
+      "id": "gate_warden",
+      "name": "성문 수문장",
+      "sprite": "gate_03",
+      "current": 1.8,
+      "proposed": 3.2
+    },
+    {
+      "id": "bell_knight",
+      "name": "종의 기사",
+      "sprite": "gate_04",
+      "current": 2.1,
+      "proposed": 4.0
+    }
+  ],
+  "camera": {
+    "baseOrthographicSize": 3.1,
+    "introAllowsHeroAndFeetCrop": true,
+    "combatCameraRestoredBeforeCue": true,
+    "pixelPolicy": "판정 중 원래 격자; 비전투 줌에서만 비정수 배율 허용 후 복귀, 화면샘플로떨림검수",
+    "closeupAnchors": {
+      "mini": {
+        "world": [
+          900,
+          330
+        ],
+        "screen": [
+          820,
+          350
+        ]
+      },
+      "boss": {
+        "world": [
+          880,
+          270
+        ],
+        "screen": [
+          800,
+          350
+        ]
+      }
+    }
+  },
+  "parallax": {
+    "projection": "orthographic",
+    "baseTravelPx": 960,
+    "travelMs": 2000,
+    "layers": [
+      {
+        "id": "sky",
+        "name": "달·하늘",
+        "factor": 0.02,
+        "sortingOrder": -50
+      },
+      {
+        "id": "far",
+        "name": "먼 성벽·첨탑",
+        "factor": 0.08,
+        "sortingOrder": -40
+      },
+      {
+        "id": "mid",
+        "name": "중경 아치·성문",
+        "factor": 0.22,
+        "sortingOrder": -30
+      },
+      {
+        "id": "near",
+        "name": "가까운 기둥",
+        "factor": 0.48,
+        "sortingOrder": -20
+      },
+      {
+        "id": "floor",
+        "name": "바닥·접지면",
+        "factor": 1.0,
+        "sortingOrder": -10
+      }
+    ],
+    "formula": "screenOffset = -travelDistance * factor; cumulative travel, not reset per stage; tile wrap only at seamless boundaries",
+    "status": "대기 원본 의상·무기 보존 / 반속도 달리기 검토 시안",
+    "playerScreenX": 500,
+    "nextEnemyStartX": 1860,
+    "nextEnemyEndX": 900,
+    "runCycleMs": 480,
+    "runFrames": 12,
+    "selectedRunClip": "hero-v8-run-consistent",
+    "selectedRunFrames": 12
+  },
+  "playerAttack": {
+    "windupMs": 200,
+    "slashMs": 250,
+    "settleMs": 40,
+    "criticalShakeMs": 80,
+    "criticalPopupScale": 1.5,
+    "effects": [
+      "플레이어부터 몬스터 몸통을 가르는 긴 사선 참격",
+      "크림 중심·황동 테두리·암청 외곽",
+      "접점 사각 불꽃·도트 파편",
+      "일반/치명 피해 팝업"
+    ],
+    "noDamageEventFromVfx": true,
+    "cuePriority": "적현재예고 > 플레이어검흔/파편",
+    "vfxEndMs": 425,
+    "nextAttackReadyMs": 500,
+    "poseRecoveredMs": 460,
+    "slashPhasesMs": {
+      "lead": [
+        175,
+        200
+      ],
+      "main": [
+        200,
+        275
+      ],
+      "tail": [
+        275,
+        425
+      ]
+    },
+    "vfxStartMs": 175,
+    "asset": "PixelLab/clips/diagonal-slash/sheet.png",
+    "frameContract": "접근 0~120ms → 베기 준비 120~200ms → 명중 200ms 1회 → 회수 200~300ms → 복귀 300~460ms → 대기 460~500ms. 이동은 표시이며 무적이나 추가 판정을 만들지 않는다.",
+    "homeX": 500,
+    "strikeX": 780,
+    "approachEndMs": 120,
+    "returnStartMs": 300,
+    "returnEndMs": 460,
+    "phases": [
+      [
+        0,
+        120,
+        "접근"
+      ],
+      [
+        120,
+        200,
+        "준비"
+      ],
+      [
+        200,
+        300,
+        "베기"
+      ],
+      [
+        300,
+        460,
+        "복귀"
+      ],
+      [
+        460,
+        500,
+        "정착"
+      ]
+    ],
+    "variants": [
+      {
+        "id": "up0",
+        "name": "올려베기 1",
+        "clip": "hero-v6-slash-up",
+        "direction": "up",
+        "angleOffsetDeg": -7
+      },
+      {
+        "id": "up1",
+        "name": "올려베기 2",
+        "clip": "hero-v6-slash-up",
+        "direction": "up",
+        "angleOffsetDeg": 0
+      },
+      {
+        "id": "up2",
+        "name": "올려베기 3",
+        "clip": "hero-v6-slash-up",
+        "direction": "up",
+        "angleOffsetDeg": 7
+      },
+      {
+        "id": "down0",
+        "name": "내려베기 1",
+        "clip": "hero-v6-slash-down",
+        "direction": "down",
+        "angleOffsetDeg": -7
+      },
+      {
+        "id": "down1",
+        "name": "내려베기 2",
+        "clip": "hero-v6-slash-down",
+        "direction": "down",
+        "angleOffsetDeg": 0
+      },
+      {
+        "id": "down2",
+        "name": "내려베기 3",
+        "clip": "hero-v6-slash-down",
+        "direction": "down",
+        "angleOffsetDeg": 7
+      }
+    ],
+    "randomRule": "새 공격 시작 때 직전과 다른6후보 중1개. 시각용난수만 사용, 스크럽/대상변경/멈춤 중 고정.",
+    "enemyHitMs": 180,
+    "targets": {
+      "gate_sentinel": {
+        "strikeX": 780,
+        "up": [
+          900,
+          460
+        ],
+        "down": [
+          895,
+          535
+        ]
+      },
+      "chain_thrall": {
+        "strikeX": 780,
+        "up": [
+          900,
+          460
+        ],
+        "down": [
+          895,
+          530
+        ]
+      },
+      "ash_wisp": {
+        "strikeX": 780,
+        "up": [
+          900,
+          460
+        ],
+        "down": [
+          910,
+          510
+        ]
+      },
+      "gate_warden": {
+        "strikeX": 690,
+        "up": [
+          875,
+          380
+        ],
+        "down": [
+          844,
+          545
+        ]
+      },
+      "bell_knight": {
+        "strikeX": 680,
+        "up": [
+          875,
+          330
+        ],
+        "down": [
+          855,
+          545
+        ]
+      }
+    }
+  },
+  "audioManifest": "audio-sources-v2.json",
+  "bossRoar": {
+    "center": "현재 포즈의 얼굴",
+    "ringShape": "circle",
+    "radiusPx": [
+      24,
+      108
+    ],
+    "pulseCount": 3,
+    "pulseLifetimeFraction": 0.4,
+    "attackCycles": 1,
+    "damageEvents": 0,
+    "projectiles": 0,
+    "holdPosePhases": [
+      [
+        0,
+        0.18,
+        "windup"
+      ],
+      [
+        0.18,
+        0.62,
+        "attack"
+      ],
+      [
+        0.62,
+        1,
+        "recover"
+      ]
+    ],
+    "faceAnchors": {
+      "mini": {
+        "idle": [
+          848,
+          330
+        ],
+        "attack": [
+          848,
+          372
+        ]
+      },
+      "boss": {
+        "idle": [
+          874,
+          244
+        ],
+        "attack": [
+          847,
+          376
+        ]
+      }
+    },
+    "releasedPulseCenter": "fixed at emission; does not chase the face"
+  },
+  "motionCatalog": "motion-catalog-v8.json",
+  "animationManifest": "PixelLab/assets.json",
+  "animationScope": "실제 PixelLab 프레임의 기획 후보. 반려본 보존·상태별 미제작 명시. Unity 미적용.",
+  "playerMotionManifest": "PixelLab/motion-v8-jobs.json",
+  "stageBanner": {
+    "assembleMs": 280,
+    "fadeStartMs": 400,
+    "totalMs": 500,
+    "pixelSize": 12,
+    "normalStage": 2,
+    "policy": "조우 정착 후 조립→완성 유지→소멸. 종료 후 첫 전체 예고. 보스는 배너 종료 뒤 기존 줌·포효·복귀."
+  },
+  "hitFlash": {
+    "holdMs": 45,
+    "endMs": 120,
+    "color": "#ffffff",
+    "scope": "피격 캐릭터의 현재 알파 실루엣 전체. HUD/배경/사각 프레임 제외."
+  },
+  "storySource": "../story.json"
+}

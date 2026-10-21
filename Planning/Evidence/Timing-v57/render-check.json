@@ -1,0 +1,291 @@
+{
+  "passed": true,
+  "method": "Offline native Canvas + Node VM; no browser/device gameplay validation",
+  "checks": [
+    {
+      "exposure": "original",
+      "duration": 900,
+      "pattern": "single",
+      "visibleCueMs": 780,
+      "impacts": [
+        900
+      ],
+      "passed": true
+    },
+    {
+      "exposure": "original",
+      "duration": 900,
+      "pattern": "front-rear",
+      "visibleCueMs": 780,
+      "impacts": [
+        1680,
+        2040
+      ],
+      "passed": true
+    },
+    {
+      "exposure": "original",
+      "duration": 900,
+      "pattern": "rear-front",
+      "visibleCueMs": 780,
+      "impacts": [
+        1680,
+        2040
+      ],
+      "passed": true
+    },
+    {
+      "exposure": "original",
+      "duration": 900,
+      "pattern": "low-high",
+      "visibleCueMs": 780,
+      "impacts": [
+        1680,
+        2040
+      ],
+      "passed": true
+    },
+    {
+      "exposure": "original",
+      "duration": 900,
+      "pattern": "high-low",
+      "visibleCueMs": 780,
+      "impacts": [
+        1680,
+        2040
+      ],
+      "passed": true
+    },
+    {
+      "exposure": "original",
+      "duration": 900,
+      "pattern": "triple",
+      "visibleCueMs": 780,
+      "impacts": [
+        2460,
+        2820,
+        3180
+      ],
+      "passed": true
+    },
+    {
+      "exposure": "original",
+      "duration": 650,
+      "pattern": "single",
+      "visibleCueMs": 530,
+      "impacts": [
+        650
+      ],
+      "passed": true
+    },
+    {
+      "exposure": "original",
+      "duration": 650,
+      "pattern": "front-rear",
+      "visibleCueMs": 530,
+      "impacts": [
+        1180,
+        1500
+      ],
+      "passed": true
+    },
+    {
+      "exposure": "original",
+      "duration": 650,
+      "pattern": "rear-front",
+      "visibleCueMs": 530,
+      "impacts": [
+        1180,
+        1500
+      ],
+      "passed": true
+    },
+    {
+      "exposure": "original",
+      "duration": 650,
+      "pattern": "low-high",
+      "visibleCueMs": 530,
+      "impacts": [
+        1180,
+        1500
+      ],
+      "passed": true
+    },
+    {
+      "exposure": "original",
+      "duration": 650,
+      "pattern": "high-low",
+      "visibleCueMs": 530,
+      "impacts": [
+        1180,
+        1500
+      ],
+      "passed": true
+    },
+    {
+      "exposure": "original",
+      "duration": 650,
+      "pattern": "triple",
+      "visibleCueMs": 530,
+      "impacts": [
+        1710,
+        2030,
+        2350
+      ],
+      "passed": true
+    },
+    {
+      "exposure": "short",
+      "duration": 900,
+      "pattern": "single",
+      "visibleCueMs": 540,
+      "impacts": [
+        900
+      ],
+      "passed": true
+    },
+    {
+      "exposure": "short",
+      "duration": 900,
+      "pattern": "front-rear",
+      "visibleCueMs": 540,
+      "impacts": [
+        1680,
+        2040
+      ],
+      "passed": true
+    },
+    {
+      "exposure": "short",
+      "duration": 900,
+      "pattern": "rear-front",
+      "visibleCueMs": 540,
+      "impacts": [
+        1680,
+        2040
+      ],
+      "passed": true
+    },
+    {
+      "exposure": "short",
+      "duration": 900,
+      "pattern": "low-high",
+      "visibleCueMs": 540,
+      "impacts": [
+        1680,
+        2040
+      ],
+      "passed": true
+    },
+    {
+      "exposure": "short",
+      "duration": 900,
+      "pattern": "high-low",
+      "visibleCueMs": 540,
+      "impacts": [
+        1680,
+        2040
+      ],
+      "passed": true
+    },
+    {
+      "exposure": "short",
+      "duration": 900,
+      "pattern": "triple",
+      "visibleCueMs": 540,
+      "impacts": [
+        2460,
+        2820,
+        3180
+      ],
+      "passed": true
+    },
+    {
+      "exposure": "short",
+      "duration": 650,
+      "pattern": "single",
+      "visibleCueMs": 390,
+      "impacts": [
+        650
+      ],
+      "passed": true
+    },
+    {
+      "exposure": "short",
+      "duration": 650,
+      "pattern": "front-rear",
+      "visibleCueMs": 390,
+      "impacts": [
+        1180,
+        1500
+      ],
+      "passed": true
+    },
+    {
+      "exposure": "short",
+      "duration": 650,
+      "pattern": "rear-front",
+      "visibleCueMs": 390,
+      "impacts": [
+        1180,
+        1500
+      ],
+      "passed": true
+    },
+    {
+      "exposure": "short",
+      "duration": 650,
+      "pattern": "low-high",
+      "visibleCueMs": 390,
+      "impacts": [
+        1180,
+        1500
+      ],
+      "passed": true
+    },
+    {
+      "exposure": "short",
+      "duration": 650,
+      "pattern": "high-low",
+      "visibleCueMs": 390,
+      "impacts": [
+        1180,
+        1500
+      ],
+      "passed": true
+    },
+    {
+      "exposure": "short",
+      "duration": 650,
+      "pattern": "triple",
+      "visibleCueMs": 390,
+      "impacts": [
+        1710,
+        2030,
+        2350
+      ],
+      "passed": true
+    }
+  ],
+  "trueFullCircles": true,
+  "fixedHiddenSources": true,
+  "exactCenterTangencyAtT": true,
+  "contactAfterglowAcrossFrameBoundary": true,
+  "identityScreenTransform": true,
+  "shortExposureKeepsImpactSchedule": true,
+  "threeFlashesPreserved": true,
+  "bellsPreserved": true,
+  "practiceConfirmedOnly": true,
+  "pausePixelIdentical": true,
+  "preferredMovementPreserved": true,
+  "viewports": [
+    [
+      960,
+      540
+    ],
+    [
+      640,
+      360
+    ]
+  ]
+}

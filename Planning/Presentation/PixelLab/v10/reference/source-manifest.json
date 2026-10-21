@@ -1,0 +1,413 @@
+{
+  "schemaVersion": 1,
+  "id": "simplegame-blademage-move-reference-v10",
+  "sourceProject": "C:\\Github\\SimpleGame",
+  "purpose": "사용자가 지정한 SimpleGame 프로젝트 검술사의 이동 동작 참고. LastBell 완성 자산으로 표시하지 않음.",
+  "rights": "사용자 프로젝트의 동작 참고 자료로 추출했다. 라이선스 종류·재배포 허용 여부를 추정하거나 새로 부여하지 않는다.",
+  "sourceReadOnly": true,
+  "originalsUnchangedAfterExtraction": true,
+  "sources": [
+    {
+      "role": "texture",
+      "path": "C:/Github/SimpleGame/Assets/SourceAssets/PixelLabCharacters/BladeMage/Character.png",
+      "sha256": "61484cc7326777791290c513c6c5f5c5813b799d25ab4a4fa2a4bcfa8dceefed",
+      "bytes": 24051
+    },
+    {
+      "role": "textureMeta",
+      "path": "C:/Github/SimpleGame/Assets/SourceAssets/PixelLabCharacters/BladeMage/Character.png.meta",
+      "sha256": "5ac26174885f3a8d5b82154e42f5dd626167f59badb08c18987f2236bd603352",
+      "bytes": 36329
+    },
+    {
+      "role": "clip",
+      "path": "C:/Github/SimpleGame/Assets/Game/Characters/Animations/BladeMage/BladeMage_Move.anim",
+      "sha256": "14644b5b51bf00a79032357b428eb456d3759bd737e046d5c8f8aa1758ec4248",
+      "bytes": 3211
+    },
+    {
+      "role": "clipMeta",
+      "path": "C:/Github/SimpleGame/Assets/Game/Characters/Animations/BladeMage/BladeMage_Move.anim.meta",
+      "sha256": "8a9531a2caec65f0804f79c5c5e7bbcb11665532476fb8742c8b9a4052a409c3",
+      "bytes": 188
+    },
+    {
+      "role": "overrideController",
+      "path": "C:/Github/SimpleGame/Assets/Game/Characters/Animators/BladeMage.overrideController",
+      "sha256": "9128e4413843f5bd32230e00303121b48eca69c18b9cb9aacf1da42f54f06006",
+      "bytes": 1613
+    },
+    {
+      "role": "overrideMeta",
+      "path": "C:/Github/SimpleGame/Assets/Game/Characters/Animators/BladeMage.overrideController.meta",
+      "sha256": "48441c395ed72d64bc30ca4cfc0d683f7c8675245d37f41ac13ad310cb3b2795",
+      "bytes": 189
+    },
+    {
+      "role": "baseController",
+      "path": "C:/Github/SimpleGame/Assets/Game/Characters/Animators/Player.controller",
+      "sha256": "e6c55f2a48b1ecb11b2e4157f7f7a6534318c3a8af2d45f4631d00f9ec8ae7be",
+      "bytes": 20206
+    },
+    {
+      "role": "baseControllerMeta",
+      "path": "C:/Github/SimpleGame/Assets/Game/Characters/Animators/Player.controller.meta",
+      "sha256": "07789fb6a0bd8a17760a937d2082606a6773fee89a41a294dcadb1badaa3b49b",
+      "bytes": 188
+    }
+  ],
+  "trace": {
+    "baseControllerGuid": "b95265f99b6d90e438df1308a89c8bab",
+    "stateName": "Move",
+    "stateFileId": "-3411647153672557546",
+    "baseMotionGuid": "c2755e67fa2a27c4784f3f25fb5572ef",
+    "overrideControllerGuid": "08e62cf7207517f45be5c98e262ae011",
+    "overrideMotionGuid": "f6cfea1cfe909284c8d1c53daf6484d2",
+    "spriteCurvePath": "Visual/Sprite",
+    "textureGuid": "dbbecb984fffaae4cb3fd84e51e56976",
+    "chain": "Player.controller Move.m_Motion → BladeMage.overrideController → BladeMage_Move.anim sprite fileID → Character.png.meta internalID/rect → Character.png"
+  },
+  "timing": {
+    "clipFps": 16.0,
+    "clipStartSeconds": 0.0,
+    "clipStopSeconds": 0.5,
+    "clipLoop": true,
+    "frameCount": 8,
+    "frameDurationMs": 62.5,
+    "loopDurationMs": 500,
+    "controllerStateSpeed": 1.0,
+    "controllerSpeedParameterActive": false,
+    "loopAtSerializedControllerSpeedMs": 500.0,
+    "scope": "클립과 직렬화된 Move 상태 속도 근거. 실시간 Animator.speed·Time.timeScale·실행 중 전환 측정은 포함하지 않음.",
+    "gifDurationsMs": [
+      60,
+      60,
+      70,
+      60,
+      60,
+      60,
+      70,
+      60
+    ],
+    "gifLoopDurationMs": 500,
+    "gifAverageFps": 16,
+    "gifTimingNote": "GIF10ms 단위에 맞춘60/70ms 분배. 각 프레임을 정확62.5ms로 표시할 수 없어 경계 오차 최대5ms, 한 주기500ms 보존."
+  },
+  "image": {
+    "sourceSize": [
+      384,
+      512
+    ],
+    "frameSize": [
+      64,
+      64
+    ],
+    "framePixelPolicy": "원형 그대로: resize/flip/trim/color edit 없음",
+    "facing": "left in the source drawings; not mirrored",
+    "sheet": "sheet.png",
+    "columns": 8,
+    "contact": "contact.png",
+    "contactScale": 4,
+    "gif": "reference.gif",
+    "gifSize": [
+      64,
+      64
+    ],
+    "opaquePaletteColors": 59,
+    "gifVisibleColorsLossless": true,
+    "alphaValues": [
+      0,
+      255
+    ]
+  },
+  "frames": [
+    {
+      "order": 0,
+      "spriteName": "BladeMage_08",
+      "spriteFileId": "-5675689056224240827",
+      "textureGuid": "dbbecb984fffaae4cb3fd84e51e56976",
+      "keyTimeSeconds": 0.0,
+      "keyTimeMs": 0.0,
+      "durationMs": 62.5,
+      "unityRectBottomLeft": {
+        "x": 128,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "pngCropBoxTopLeft": [
+        128,
+        64,
+        192,
+        128
+      ],
+      "pivotNormalizedBottomLeft": [
+        0.45291385,
+        0.12584458
+      ],
+      "pivotPixelsTopLeft": [
+        28.9864864,
+        55.94594688
+      ],
+      "file": "frames/00.png",
+      "sha256": "248c6b3f7192fc1910ab04a444a46ed5c7daf531395f0a8e8e306ef15f757eb9",
+      "rgbaSha256": "ff9e0c3db2af305f97e6e48427e51a1c12de611e5703ff81ffef857ab9941746",
+      "rgbaExactSourceCrop": true
+    },
+    {
+      "order": 1,
+      "spriteName": "BladeMage_09",
+      "spriteFileId": "8630208792588433815",
+      "textureGuid": "dbbecb984fffaae4cb3fd84e51e56976",
+      "keyTimeSeconds": 0.0625,
+      "keyTimeMs": 62.5,
+      "durationMs": 62.5,
+      "unityRectBottomLeft": {
+        "x": 192,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "pngCropBoxTopLeft": [
+        192,
+        64,
+        256,
+        128
+      ],
+      "pivotNormalizedBottomLeft": [
+        0.45291385,
+        0.12584458
+      ],
+      "pivotPixelsTopLeft": [
+        28.9864864,
+        55.94594688
+      ],
+      "file": "frames/01.png",
+      "sha256": "01d368cc427126ce61c3014391b1e1027ea64e7bf58e234940b122ff0d1038f9",
+      "rgbaSha256": "d5ec08ea665480d7a7518ad2519fd30f030586b602576fe80b33b9e2e911b515",
+      "rgbaExactSourceCrop": true
+    },
+    {
+      "order": 2,
+      "spriteName": "BladeMage_10",
+      "spriteFileId": "-5104631513309507390",
+      "textureGuid": "dbbecb984fffaae4cb3fd84e51e56976",
+      "keyTimeSeconds": 0.125,
+      "keyTimeMs": 125.0,
+      "durationMs": 62.5,
+      "unityRectBottomLeft": {
+        "x": 256,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "pngCropBoxTopLeft": [
+        256,
+        64,
+        320,
+        128
+      ],
+      "pivotNormalizedBottomLeft": [
+        0.45291385,
+        0.12584458
+      ],
+      "pivotPixelsTopLeft": [
+        28.9864864,
+        55.94594688
+      ],
+      "file": "frames/02.png",
+      "sha256": "a4af2fa398c4a995d4624623eb8783ca1d8118ad41a00a19b2f0f157044e70f1",
+      "rgbaSha256": "23b34dee346a64cfe972599bfdd076f1214d2de2482a85e4000ef0f75d4c32d2",
+      "rgbaExactSourceCrop": true
+    },
+    {
+      "order": 3,
+      "spriteName": "BladeMage_11",
+      "spriteFileId": "-4210157775965774149",
+      "textureGuid": "dbbecb984fffaae4cb3fd84e51e56976",
+      "keyTimeSeconds": 0.1875,
+      "keyTimeMs": 187.5,
+      "durationMs": 62.5,
+      "unityRectBottomLeft": {
+        "x": 320,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "pngCropBoxTopLeft": [
+        320,
+        64,
+        384,
+        128
+      ],
+      "pivotNormalizedBottomLeft": [
+        0.45291385,
+        0.12584458
+      ],
+      "pivotPixelsTopLeft": [
+        28.9864864,
+        55.94594688
+      ],
+      "file": "frames/03.png",
+      "sha256": "2cf5a7e8d709cfb3a060c518037444618412867be34a771c847b141a42753b74",
+      "rgbaSha256": "c5989ddebb7485b3ba2c2a6ec32788f13f460a7d5775f272cd1f62d94cf795de",
+      "rgbaExactSourceCrop": true
+    },
+    {
+      "order": 4,
+      "spriteName": "BladeMage_12",
+      "spriteFileId": "2847205463010010617",
+      "textureGuid": "dbbecb984fffaae4cb3fd84e51e56976",
+      "keyTimeSeconds": 0.25,
+      "keyTimeMs": 250.0,
+      "durationMs": 62.5,
+      "unityRectBottomLeft": {
+        "x": 0,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "pngCropBoxTopLeft": [
+        0,
+        128,
+        64,
+        192
+      ],
+      "pivotNormalizedBottomLeft": [
+        0.45291385,
+        0.12584458
+      ],
+      "pivotPixelsTopLeft": [
+        28.9864864,
+        55.94594688
+      ],
+      "file": "frames/04.png",
+      "sha256": "46ef99ccd836616e0db6ec8aafd9d08038d5c9b9dc9dabe48b0774c87e2575a9",
+      "rgbaSha256": "5d0a98d0f77317585222bbd5f6be7194cb99e1ce660024e7d21df5d7772226d3",
+      "rgbaExactSourceCrop": true
+    },
+    {
+      "order": 5,
+      "spriteName": "BladeMage_13",
+      "spriteFileId": "1063321865318625962",
+      "textureGuid": "dbbecb984fffaae4cb3fd84e51e56976",
+      "keyTimeSeconds": 0.3125,
+      "keyTimeMs": 312.5,
+      "durationMs": 62.5,
+      "unityRectBottomLeft": {
+        "x": 64,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "pngCropBoxTopLeft": [
+        64,
+        128,
+        128,
+        192
+      ],
+      "pivotNormalizedBottomLeft": [
+        0.45291385,
+        0.12584458
+      ],
+      "pivotPixelsTopLeft": [
+        28.9864864,
+        55.94594688
+      ],
+      "file": "frames/05.png",
+      "sha256": "81960ecb11c5b96892e5d0022b03a68a88c3e84961456365cba111ee0641d5fd",
+      "rgbaSha256": "db6ae707c21bdeb5d142ab12ec6c9d321c8c0d3f30a5a5cba205c43552a5c12a",
+      "rgbaExactSourceCrop": true
+    },
+    {
+      "order": 6,
+      "spriteName": "BladeMage_14",
+      "spriteFileId": "-5240060083387051239",
+      "textureGuid": "dbbecb984fffaae4cb3fd84e51e56976",
+      "keyTimeSeconds": 0.375,
+      "keyTimeMs": 375.0,
+      "durationMs": 62.5,
+      "unityRectBottomLeft": {
+        "x": 128,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "pngCropBoxTopLeft": [
+        128,
+        128,
+        192,
+        192
+      ],
+      "pivotNormalizedBottomLeft": [
+        0.45291385,
+        0.12584458
+      ],
+      "pivotPixelsTopLeft": [
+        28.9864864,
+        55.94594688
+      ],
+      "file": "frames/06.png",
+      "sha256": "6186e01d4afc676feed050bd0571fad3a627ec667842faa048020ef29e1b47e8",
+      "rgbaSha256": "6345327ae9c1f0c09df5d5d9499e612427af27b13f2daf0206fdcecd6ec237ac",
+      "rgbaExactSourceCrop": true
+    },
+    {
+      "order": 7,
+      "spriteName": "BladeMage_15",
+      "spriteFileId": "-6668834273465110479",
+      "textureGuid": "dbbecb984fffaae4cb3fd84e51e56976",
+      "keyTimeSeconds": 0.4375,
+      "keyTimeMs": 437.5,
+      "durationMs": 62.5,
+      "unityRectBottomLeft": {
+        "x": 192,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "pngCropBoxTopLeft": [
+        192,
+        128,
+        256,
+        192
+      ],
+      "pivotNormalizedBottomLeft": [
+        0.45291385,
+        0.12584458
+      ],
+      "pivotPixelsTopLeft": [
+        28.9864864,
+        55.94594688
+      ],
+      "file": "frames/07.png",
+      "sha256": "1eb2c9ccc3f12bcf98125102174272380e6577b65f0f7dc70bcb8d85b063ed74",
+      "rgbaSha256": "9dace3625c8040d3592e130f0eef5f1e9c1841573a29617904b024647189960c",
+      "rgbaExactSourceCrop": true
+    }
+  ],
+  "qa": {
+    "mappedFrameIds": 8,
+    "sourceRectMatches": 8,
+    "rgbaExactSourceCrops": 8,
+    "decodedGifFrames": 8,
+    "decodedGifDurationMs": 500,
+    "gifVisibleColorsAndAlphaExact": true,
+    "sourceHashesUnchanged": true,
+    "unityRuntimePlaybackTested": false
+  },
+  "outputs": [
+    {
+      "path": "sheet.png",
+      "sha256": "a0a94d0faf390d55e98b92395fb83ff5afc41e443967aa9014c54de932069525"
+    },
+    {
+      "path": "contact.png",
+      "sha256": "7721e469712379d7677273a63b55ee4fdadbe7a5100749a8f2413b25f199a9ab"
+    },
+    {
+      "path": "reference.gif",
+      "sha256": "d6330c60495430185137075d218be9fd40ed4dabf560801b9b468cbdcb6aca1a"
+    }
+  ]
+}

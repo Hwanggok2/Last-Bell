@@ -1,0 +1,17 @@
+{
+  "scope": "Offline Canvas render, asset-grid/link/timing validation",
+  "browserRendered": false,
+  "unityTested": false,
+  "renderedFrames": 62,
+  "clips": 16,
+  "missingLinks": [],
+  "checks": [
+    "source frame cells intact",
+    "frame indices in bounds",
+    "fixed player root x500",
+    "100ms hit / 500ms next attack unchanged"
+  ],
+  "notes": [
+    "Visual review required for art quality. This does not certify release-ready motion."
+  ]
+}

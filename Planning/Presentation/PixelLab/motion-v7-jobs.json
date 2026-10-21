@@ -1,0 +1,72 @@
+{
+  "version": 7,
+  "date": "2026-10-21",
+  "scope": "Planning only",
+  "jobs": [
+    {
+      "id": "hero-v7-run-rig",
+      "name": "온 · 새 골격 질주",
+      "jobId": "70be4d97-2bea-48e3-86f3-e372190b011b",
+      "requestedGeneratedFrames": 12,
+      "inputFrameIncluded": false,
+      "method": "PixelLab animate_with_skeleton_v3",
+      "seed": 901,
+      "input": "inputs/hero.png",
+      "skeleton": "run-v7-rig.json",
+      "fps": 50,
+      "loop": true,
+      "status": "rejected"
+    },
+    {
+      "id": "hero-v7-sprint",
+      "name": "온 · 신규 전력질주",
+      "jobId": "d79bd7aa-25c2-40c3-8f38-5e12fbcda61c",
+      "requestedGeneratedFrames": 12,
+      "inputFrameIncluded": true,
+      "method": "PixelLab animate_image_pixminimax",
+      "seed": 934,
+      "input": "https://api.pixellab.ai/mcp/images/3da349c9-6849-4dd9-95b1-79e8415d82b7/download?index=0",
+      "fps": 50,
+      "loop": true,
+      "status": "rejected"
+    },
+    {
+      "id": "hero-v7-sprint-alt",
+      "name": "온 · 원본 기반 새 질주",
+      "jobId": "91a46b97-bdc9-4ca4-aca9-6ea01dc0fa58",
+      "requestedGeneratedFrames": 8,
+      "inputFrameIncluded": true,
+      "method": "PixelLab animate_image_pixminimax",
+      "seed": 943,
+      "input": "inputs/hero.png",
+      "fps": 33.3333333333,
+      "loop": true,
+      "status": "rejected"
+    },
+    {
+      "id": "hero-v7-run-authored",
+      "name": "온 · 직접 설계한 12자세 질주",
+      "jobId": "drawing:148d66b5-7d30-4b4a-847d-6668715fd590",
+      "requestedGeneratedFrames": 12,
+      "inputFrameIncluded": false,
+      "method": "PixelLab pixelart_workbench; original hood + authored complete poses",
+      "fps": 50,
+      "loop": true,
+      "status": "review",
+      "input": "inputs/hero.png"
+    }
+  ],
+  "poseAttempts": [
+    {
+      "jobId": "aa8dd261-4bdf-4f98-a0db-9352dc9c5d50",
+      "status": "rejected",
+      "reason": "밝은 몸통, 비율 변화, 약한 전경"
+    },
+    {
+      "jobId": "3da349c9-6849-4dd9-95b1-79e8415d82b7",
+      "status": "animation-input",
+      "source": "inputs/hero.png",
+      "seed": 923
+    }
+  ]
+}

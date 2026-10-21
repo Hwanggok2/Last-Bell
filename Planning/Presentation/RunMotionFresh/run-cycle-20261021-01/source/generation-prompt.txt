@@ -1,0 +1,19 @@
+Use case: identity-preserve.
+Asset type: one production sprite sheet, a seamless eight-frame running animation.
+Input image 1 is the ONLY visual reference. Preserve this exact small pixel-art hooded adventurer: large pale cream/sand hood, almost-black navy featureless face opening, one vertical golden yellow eye, thick dark navy outline, pale cream shoulders/tunic/boots, dark arms and legs, small golden belt pouch and golden item at the back, and short golden dagger held by the near hand pointing forward/up-right. The hood is cloth, NOT blond hair. No skin, no new facial features. Preserve the distinctive hood silhouette, palette, short compact body proportions, pixel density, and simple chunky pixel clusters of the reference.
+
+Create a complete NEW eight-pose full-body RUN cycle toward screen RIGHT, in place, maintaining the same right-facing three-quarter camera as the reference. Strong readable knee and foot articulation, opposing arm swing, slight forward torso lean, two actual airborne phases. Keep the dagger visible, consistently attached to the same near hand, pointed generally forward/up-right while the elbow swings a little. Small controlled head bob, slight hood-tail follow-through. Do not make eight duplicate standing poses. Do not turn the character around. Keep anatomy, outfit and scale stable.
+
+COMPOSITION: exactly FOUR equal square columns by TWO equal square rows, a 2:1 landscape transparent canvas, ideally 1536x768 (each cell 384x384). Eight equally sized invisible square cells with one sprite per cell. Row-major animation order:
+1 top-left: near leg reaching forward-right heel contact, far leg extended back-left.
+2: near foot plants under/just ahead of hip and knee bends to absorb contact, far knee comes forward.
+3: near foot pushes back off ground, far knee swings forward and high.
+4: airborne flight, far foot reaches forward-right, near leg folds back-left.
+5 bottom-left: far foot forward-right contact, near leg extends back-left.
+6: far foot planted, hip lowers, near knee passing forward.
+7: far foot pushes backward, near knee lifts forward high.
+8: airborne flight, near foot reaches forward-right and far knee folds back, smoothly leading to frame 1.
+
+All frames aligned to the SAME camera, identical head/body size, same hip x position, the same ground baseline about 88% down each square cell. Natural vertical bounce only 2-3 original sprite pixels. Allow broad readable strides. Each character about 70% of cell height, generous transparent margins, no clipping or overlap between cells.
+Style: faithful low-resolution pixel-art game sprite, large crisp square pixel clusters, hard stepped silhouettes, tiny restrained reference palette, no antialiasing, no smooth rendering, no added textures.
+Background genuinely transparent alpha. NO grid lines, no labels, no text, no shadows, no dust, no speed lines, no extra props. Output ONLY the sprite sheet.

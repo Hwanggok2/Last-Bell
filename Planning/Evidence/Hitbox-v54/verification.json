@@ -1,0 +1,290 @@
+{
+  "passed": true,
+  "version": "planning-v5.4",
+  "gameCombatApplied": false,
+  "runtimeException": "Only separately approved run-dash-20261021-02 integrated; see ApprovedRun-20261021 evidence. BattlePresentation change is solely5Hz footsteps.",
+  "requirements": {
+    "noCharacterTimingGauge": true,
+    "perfectWaveFromCharacterCenter": true,
+    "acceptedAttackSnapsHomeThenAttacks": true,
+    "comboPreviewsAllDirectionsBeforeAnyLaunch": true,
+    "threeFlashesPerDirection": true,
+    "enemyAttackParticlePreview": true
+  },
+  "browser": {
+    "passed": true,
+    "cases": [
+      {
+        "duration": 900,
+        "pattern": "thrust",
+        "impacts": [
+          900
+        ],
+        "allCuesBeforeLaunch": true,
+        "threeFlashesEach": true,
+        "correctDodgeSafe": true
+      },
+      {
+        "duration": 900,
+        "pattern": "low",
+        "impacts": [
+          900
+        ],
+        "allCuesBeforeLaunch": true,
+        "threeFlashesEach": true,
+        "correctDodgeSafe": true
+      },
+      {
+        "duration": 900,
+        "pattern": "high",
+        "impacts": [
+          900
+        ],
+        "allCuesBeforeLaunch": true,
+        "threeFlashesEach": true,
+        "correctDodgeSafe": true
+      },
+      {
+        "duration": 900,
+        "pattern": "rear",
+        "impacts": [
+          900
+        ],
+        "allCuesBeforeLaunch": true,
+        "threeFlashesEach": true,
+        "correctDodgeSafe": true
+      },
+      {
+        "duration": 900,
+        "pattern": "front-rear",
+        "impacts": [
+          1680,
+          2040
+        ],
+        "allCuesBeforeLaunch": true,
+        "threeFlashesEach": true,
+        "correctDodgeSafe": true
+      },
+      {
+        "duration": 900,
+        "pattern": "rear-front",
+        "impacts": [
+          1680,
+          2040
+        ],
+        "allCuesBeforeLaunch": true,
+        "threeFlashesEach": true,
+        "correctDodgeSafe": true
+      },
+      {
+        "duration": 900,
+        "pattern": "low-high",
+        "impacts": [
+          1680,
+          2040
+        ],
+        "allCuesBeforeLaunch": true,
+        "threeFlashesEach": true,
+        "correctDodgeSafe": true
+      },
+      {
+        "duration": 900,
+        "pattern": "high-low",
+        "impacts": [
+          1680,
+          2040
+        ],
+        "allCuesBeforeLaunch": true,
+        "threeFlashesEach": true,
+        "correctDodgeSafe": true
+      },
+      {
+        "duration": 650,
+        "pattern": "thrust",
+        "impacts": [
+          650
+        ],
+        "allCuesBeforeLaunch": true,
+        "threeFlashesEach": true,
+        "correctDodgeSafe": true
+      },
+      {
+        "duration": 650,
+        "pattern": "low",
+        "impacts": [
+          650
+        ],
+        "allCuesBeforeLaunch": true,
+        "threeFlashesEach": true,
+        "correctDodgeSafe": true
+      },
+      {
+        "duration": 650,
+        "pattern": "high",
+        "impacts": [
+          650
+        ],
+        "allCuesBeforeLaunch": true,
+        "threeFlashesEach": true,
+        "correctDodgeSafe": true
+      },
+      {
+        "duration": 650,
+        "pattern": "rear",
+        "impacts": [
+          650
+        ],
+        "allCuesBeforeLaunch": true,
+        "threeFlashesEach": true,
+        "correctDodgeSafe": true
+      },
+      {
+        "duration": 650,
+        "pattern": "front-rear",
+        "impacts": [
+          1180,
+          1500
+        ],
+        "allCuesBeforeLaunch": true,
+        "threeFlashesEach": true,
+        "correctDodgeSafe": true
+      },
+      {
+        "duration": 650,
+        "pattern": "rear-front",
+        "impacts": [
+          1180,
+          1500
+        ],
+        "allCuesBeforeLaunch": true,
+        "threeFlashesEach": true,
+        "correctDodgeSafe": true
+      },
+      {
+        "duration": 650,
+        "pattern": "low-high",
+        "impacts": [
+          1180,
+          1500
+        ],
+        "allCuesBeforeLaunch": true,
+        "threeFlashesEach": true,
+        "correctDodgeSafe": true
+      },
+      {
+        "duration": 650,
+        "pattern": "high-low",
+        "impacts": [
+          1180,
+          1500
+        ],
+        "allCuesBeforeLaunch": true,
+        "threeFlashesEach": true,
+        "correctDodgeSafe": true
+      }
+    ],
+    "counters": [
+      {
+        "attack": "thrust",
+        "from": [
+          285,
+          442
+        ],
+        "snapTo": [
+          375,
+          442
+        ],
+        "counterContactAfterInput": 200
+      },
+      {
+        "attack": "low",
+        "from": [
+          375,
+          334
+        ],
+        "snapTo": [
+          375,
+          442
+        ],
+        "counterContactAfterInput": 200
+      },
+      {
+        "attack": "high",
+        "from": [
+          375,
+          442
+        ],
+        "snapTo": [
+          375,
+          442
+        ],
+        "counterContactAfterInput": 200
+      },
+      {
+        "attack": "rear",
+        "from": [
+          465,
+          442
+        ],
+        "snapTo": [
+          375,
+          442
+        ],
+        "counterContactAfterInput": 200
+      }
+    ],
+    "noTimingGauge": true,
+    "pausePixelIdentical": true,
+    "reduced": true,
+    "layouts": [
+      {
+        "width": 1008,
+        "scrollWidth": 1008
+      },
+      {
+        "width": 688,
+        "scrollWidth": 688
+      },
+      {
+        "width": 375,
+        "scrollWidth": 375
+      },
+      {
+        "width": 320,
+        "scrollWidth": 320
+      }
+    ],
+    "board": true,
+    "errors": []
+  },
+  "defaultCombo": {
+    "frontCue": [
+      0,
+      780
+    ],
+    "rearCue": [
+      780,
+      1560
+    ],
+    "frontFlight": [
+      1560,
+      1680
+    ],
+    "frontHit": 1680,
+    "rearFlight": [
+      1920,
+      2040
+    ],
+    "rearHit": 2040
+  },
+  "visualReview": [
+    "combo-second-cue.png",
+    "thrust-perfect.png",
+    "combo-second-strike.png",
+    "combo-counter.png",
+    "mobile-375.png"
+  ],
+  "scope": "Canvas planning preview and documentation, not a Unity ParticleSystem implementation. Actual sound is not included.",
+  "runtimeCoreDataFilesUnchanged": 21,
+  "openTabRefresh": "Not performed: browser tool file-protocol policy. Independent browser rendering had already passed before attempting the user-tab refresh."
+}

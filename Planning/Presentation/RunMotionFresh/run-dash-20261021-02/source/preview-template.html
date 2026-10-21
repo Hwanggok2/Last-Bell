@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>쏘아지는 달리기 · 8 frames</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#171d26;color:#e9edf3;font-family:system-ui,sans-serif}main{max-width:880px;margin:40px auto;padding:24px}h1{font-size:26px;margin:0 0 8px}p{color:#9faebe;font-size:14px;line-height:1.6}.stage{margin:26px 0 18px;border:1px solid #475467;border-radius:18px;background:#353e4a;display:grid;place-items:center;overflow:hidden}.stage img{display:block;width:min(100%,512px);height:auto;image-rendering:pixelated}.controls{display:flex;align-items:center;gap:12px;flex-wrap:wrap}button,select{font:inherit;background:#293444;color:#edf2f8;border:1px solid #536277;border-radius:8px;padding:9px 14px;cursor:pointer}button:hover{background:#3b4a5e}button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid #ffd16f;outline-offset:3px}output{font-variant-numeric:tabular-nums;color:#ffd16f}.timeline{width:100%;margin:18px 0;accent-color:#f8c65c}.strip{display:grid;grid-template-columns:repeat(8,1fr);gap:5px}.strip button{padding:2px 2px 7px;min-width:0;font-size:11px}.strip img{width:100%;image-rendering:pixelated}.strip button.active{border-color:#ffd16f;background:#4b4639}.note{margin-top:22px}a{color:#f6d081}label{font-size:14px}
+</style>
+<main><h1>쏘아지는 달리기</h1><p>낮은 자세 · 긴 뒷발 밀기 · 8프레임 · 한 주기 0.4초 · PNG 128 × 128</p>
+<div class="stage"><img id="sprite" width="128" height="128" alt="크림색 후드와 금색 단검을 든 캐릭터의 달리기"></div>
+<div class="controls"><button id="play" type="button">일시정지</button><button id="prev" type="button" aria-label="이전 프레임">←</button><button id="next" type="button" aria-label="다음 프레임">→</button><label>재생 속도 <select id="speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option></select></label><output id="status"></output></div>
+<input class="timeline" id="seek" type="range" min="0" max="7" value="0" step="1" aria-label="프레임 선택"><div class="strip" id="strip"></div>
+<p class="note">짧은 착지 → 강한 밀어내기 → 낮은 공중 동작 → 빠른 발 회수를 양발로 반복합니다.<br><a href="run-preview.gif">GIF 열기</a> · <a href="contact-sheet.png">전체 프레임 보기</a> · <a href="run-sheet.png">스프라이트 시트</a></p>
+</main><script>
+const frames=__FRAMES__;
+const sprite=document.querySelector('#sprite'),play=document.querySelector('#play'),seek=document.querySelector('#seek'),speed=document.querySelector('#speed'),status=document.querySelector('#status'),strip=document.querySelector('#strip');
+let index=0,playing=true,last=performance.now(),elapsed=0;
+const images=frames.map(f=>{const image=new Image();image.src=f.data;return image});
+const buttons=frames.map((f,i)=>{const button=document.createElement('button');button.type='button';button.innerHTML=`<img src="${f.data}" alt="">${String(i+1).padStart(2,'0')}`;button.setAttribute('aria-label',`${i+1}번 프레임`);button.onclick=()=>jump(i);strip.append(button);return button});
+function show(){sprite.src=images[index].src;seek.value=index;status.textContent=`${String(index+1).padStart(2,'0')} / 08 · ${frames[index].durationMs} ms`;buttons.forEach((b,i)=>b.classList.toggle('active',i===index))}
+function jump(i){index=(i+8)%8;playing=false;elapsed=0;play.textContent='재생';show()}
+play.onclick=()=>{playing=!playing;last=performance.now();play.textContent=playing?'일시정지':'재생'};
+document.querySelector('#prev').onclick=()=>jump(index-1);document.querySelector('#next').onclick=()=>jump(index+1);seek.oninput=()=>jump(Number(seek.value));
+function tick(now){const dt=Math.min(now-last,200);last=now;if(playing){elapsed+=dt*Number(speed.value);while(elapsed>=frames[index].durationMs){elapsed-=frames[index].durationMs;index=(index+1)%8;show()}}requestAnimationFrame(tick)}
+show();requestAnimationFrame(tick);
+</script></html>

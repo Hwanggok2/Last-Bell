@@ -1,0 +1,256 @@
+{
+  "version": "presentation-v1",
+  "status": "planning-only",
+  "date": "2026-10-21",
+  "referenceFrame": {
+    "width": 1280,
+    "height": 720,
+    "origin": "top-left",
+    "playerFoot": [
+      548,
+      590
+    ],
+    "enemyFoot": [
+      808,
+      590
+    ],
+    "groundY": 600
+  },
+  "monster": {
+    "id": "ash_wisp",
+    "name": "재의 불씨",
+    "currentHeight": 1.0,
+    "proposedHeight": 1.5,
+    "heroHeight": 1.1,
+    "miniBossHeight": 1.8,
+    "bossHeight": 2.1,
+    "currentStages": [
+      3,
+      7
+    ]
+  },
+  "telegraph": {
+    "name": "금 간 종의 잔향",
+    "palette": [
+      "#0C172B",
+      "#AC7833",
+      "#DCA947",
+      "#FFF0B4",
+      "#F2D184"
+    ],
+    "durationsMs": {
+      "single": 650,
+      "comboOpening": 900,
+      "comboFollowup": 250
+    },
+    "regions": [
+      {
+        "id": "low_sweep",
+        "name": "하단 쓸기",
+        "dodge": "▲",
+        "shape": "발목 앞뒤를 잇는 끊긴 수평 잔향",
+        "bounds": [
+          480,
+          560,
+          136,
+          12
+        ]
+      },
+      {
+        "id": "high_sweep",
+        "name": "상단 쓸기",
+        "dodge": "▼",
+        "shape": "머리 위를 가로지르는 수평 균열",
+        "bounds": [
+          480,
+          438,
+          136,
+          12
+        ]
+      },
+      {
+        "id": "thrust",
+        "name": "정면 찌르기",
+        "dodge": "◀",
+        "shape": "플레이어 오른쪽의 짧은 세로 균열",
+        "bounds": [
+          628,
+          478,
+          12,
+          72
+        ]
+      },
+      {
+        "id": "outer_arc",
+        "name": "후방 원호",
+        "dodge": "▶",
+        "shape": "플레이어 왼쪽, 오른쪽이 열린 C형 잔향",
+        "bounds": [
+          440,
+          466,
+          40,
+          92
+        ]
+      }
+    ],
+    "corePx": 12,
+    "darkOutlinePx": 2,
+    "nextOffsetPx": 16,
+    "nextBrightness": 0.55,
+    "playerHp": [
+      495,
+      601,
+      106,
+      11
+    ],
+    "enemyHp": [
+      755,
+      601,
+      106,
+      11
+    ],
+    "coreOuterPx": 16,
+    "activeBandPx": 10,
+    "nextDotPx": 4,
+    "nextDotSpacingPx": 16,
+    "boundsNote": "Base motif slot; the 16px core outline can overflow the 12px slot by 2px per side."
+  },
+  "sequences": {
+    "normal": {
+      "name": "일반 적 처치 → 다음 적",
+      "totalMs": 1400,
+      "segments": [
+        [
+          0,
+          550,
+          "적 분해"
+        ],
+        [
+          550,
+          1200,
+          "전진"
+        ],
+        [
+          1200,
+          1400,
+          "정착"
+        ]
+      ]
+    },
+    "death": {
+      "name": "플레이어 사망 → 등불 로비",
+      "totalMs": 1800,
+      "segments": [
+        [
+          0,
+          550,
+          "플레이어 분해"
+        ],
+        [
+          250,
+          700,
+          "암전"
+        ],
+        [
+          700,
+          850,
+          "어둠 유지"
+        ],
+        [
+          850,
+          1600,
+          "등불 점등·로비 공개"
+        ],
+        [
+          1600,
+          1800,
+          "로비 정착"
+        ]
+      ]
+    },
+    "mini": {
+      "name": "중간 보스 등장",
+      "totalMs": 1400,
+      "repeatMs": 800,
+      "maxZoom": 1.12,
+      "segments": [
+        [
+          0,
+          350,
+          "다가가기·줌인"
+        ],
+        [
+          350,
+          800,
+          "괴성·종의 잔향"
+        ],
+        [
+          800,
+          1200,
+          "줌아웃"
+        ],
+        [
+          1200,
+          1400,
+          "정착"
+        ]
+      ]
+    },
+    "boss": {
+      "name": "보스 등장",
+      "totalMs": 1800,
+      "repeatMs": 1000,
+      "maxZoom": 1.18,
+      "segments": [
+        [
+          0,
+          450,
+          "다가가기·줌인"
+        ],
+        [
+          450,
+          1100,
+          "괴성·종의 잔향"
+        ],
+        [
+          1100,
+          1600,
+          "줌아웃"
+        ],
+        [
+          1600,
+          1800,
+          "정착"
+        ]
+      ]
+    }
+  },
+  "rules": {
+    "firstTelegraphAfterSettle": true,
+    "combatClockFrozenDuringTransition": true,
+    "rewardsOnce": true,
+    "rewardOrder": [
+      "처치 확정·보상 원장 저장",
+      "적 분해",
+      "유물 3택1",
+      "선택 결과 저장",
+      "전진",
+      "다음 적 등장",
+      "온전한 첫 공격 예고"
+    ],
+    "reducedMotion": "줌·흔들림·배경 스크롤 제거, 원래 길이와 시점 유지, 위치 이동은 짧은 교차 전환으로 표현",
+    "audio": "사용자가 켠 사운드만 재생. 무음에서도 가슴빛과 각진 잔향으로 괴성 단계 표현"
+  },
+  "lantern": {
+    "anchor": [
+      520,
+      130
+    ],
+    "bounds": [
+      500,
+      104,
+      40,
+      59
+    ]
+  }
+}

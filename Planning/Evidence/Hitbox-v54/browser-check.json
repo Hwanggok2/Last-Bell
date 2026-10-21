@@ -1,0 +1,246 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "duration": 900,
+      "pattern": "thrust",
+      "impacts": [
+        900
+      ],
+      "allCuesBeforeLaunch": true,
+      "threeFlashesEach": true,
+      "correctDodgeSafe": true
+    },
+    {
+      "duration": 900,
+      "pattern": "low",
+      "impacts": [
+        900
+      ],
+      "allCuesBeforeLaunch": true,
+      "threeFlashesEach": true,
+      "correctDodgeSafe": true
+    },
+    {
+      "duration": 900,
+      "pattern": "high",
+      "impacts": [
+        900
+      ],
+      "allCuesBeforeLaunch": true,
+      "threeFlashesEach": true,
+      "correctDodgeSafe": true
+    },
+    {
+      "duration": 900,
+      "pattern": "rear",
+      "impacts": [
+        900
+      ],
+      "allCuesBeforeLaunch": true,
+      "threeFlashesEach": true,
+      "correctDodgeSafe": true
+    },
+    {
+      "duration": 900,
+      "pattern": "front-rear",
+      "impacts": [
+        1680,
+        2040
+      ],
+      "allCuesBeforeLaunch": true,
+      "threeFlashesEach": true,
+      "correctDodgeSafe": true
+    },
+    {
+      "duration": 900,
+      "pattern": "rear-front",
+      "impacts": [
+        1680,
+        2040
+      ],
+      "allCuesBeforeLaunch": true,
+      "threeFlashesEach": true,
+      "correctDodgeSafe": true
+    },
+    {
+      "duration": 900,
+      "pattern": "low-high",
+      "impacts": [
+        1680,
+        2040
+      ],
+      "allCuesBeforeLaunch": true,
+      "threeFlashesEach": true,
+      "correctDodgeSafe": true
+    },
+    {
+      "duration": 900,
+      "pattern": "high-low",
+      "impacts": [
+        1680,
+        2040
+      ],
+      "allCuesBeforeLaunch": true,
+      "threeFlashesEach": true,
+      "correctDodgeSafe": true
+    },
+    {
+      "duration": 650,
+      "pattern": "thrust",
+      "impacts": [
+        650
+      ],
+      "allCuesBeforeLaunch": true,
+      "threeFlashesEach": true,
+      "correctDodgeSafe": true
+    },
+    {
+      "duration": 650,
+      "pattern": "low",
+      "impacts": [
+        650
+      ],
+      "allCuesBeforeLaunch": true,
+      "threeFlashesEach": true,
+      "correctDodgeSafe": true
+    },
+    {
+      "duration": 650,
+      "pattern": "high",
+      "impacts": [
+        650
+      ],
+      "allCuesBeforeLaunch": true,
+      "threeFlashesEach": true,
+      "correctDodgeSafe": true
+    },
+    {
+      "duration": 650,
+      "pattern": "rear",
+      "impacts": [
+        650
+      ],
+      "allCuesBeforeLaunch": true,
+      "threeFlashesEach": true,
+      "correctDodgeSafe": true
+    },
+    {
+      "duration": 650,
+      "pattern": "front-rear",
+      "impacts": [
+        1180,
+        1500
+      ],
+      "allCuesBeforeLaunch": true,
+      "threeFlashesEach": true,
+      "correctDodgeSafe": true
+    },
+    {
+      "duration": 650,
+      "pattern": "rear-front",
+      "impacts": [
+        1180,
+        1500
+      ],
+      "allCuesBeforeLaunch": true,
+      "threeFlashesEach": true,
+      "correctDodgeSafe": true
+    },
+    {
+      "duration": 650,
+      "pattern": "low-high",
+      "impacts": [
+        1180,
+        1500
+      ],
+      "allCuesBeforeLaunch": true,
+      "threeFlashesEach": true,
+      "correctDodgeSafe": true
+    },
+    {
+      "duration": 650,
+      "pattern": "high-low",
+      "impacts": [
+        1180,
+        1500
+      ],
+      "allCuesBeforeLaunch": true,
+      "threeFlashesEach": true,
+      "correctDodgeSafe": true
+    }
+  ],
+  "counters": [
+    {
+      "attack": "thrust",
+      "from": [
+        285,
+        442
+      ],
+      "snapTo": [
+        375,
+        442
+      ],
+      "counterContactAfterInput": 200
+    },
+    {
+      "attack": "low",
+      "from": [
+        375,
+        334
+      ],
+      "snapTo": [
+        375,
+        442
+      ],
+      "counterContactAfterInput": 200
+    },
+    {
+      "attack": "high",
+      "from": [
+        375,
+        442
+      ],
+      "snapTo": [
+        375,
+        442
+      ],
+      "counterContactAfterInput": 200
+    },
+    {
+      "attack": "rear",
+      "from": [
+        465,
+        442
+      ],
+      "snapTo": [
+        375,
+        442
+      ],
+      "counterContactAfterInput": 200
+    }
+  ],
+  "noTimingGauge": true,
+  "pausePixelIdentical": true,
+  "reduced": true,
+  "layouts": [
+    {
+      "width": 1008,
+      "scrollWidth": 1008
+    },
+    {
+      "width": 688,
+      "scrollWidth": 688
+    },
+    {
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "width": 320,
+      "scrollWidth": 320
+    }
+  ],
+  "board": true,
+  "errors": []
+}

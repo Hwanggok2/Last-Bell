@@ -1,0 +1,54 @@
+{
+  "name": "Fresh right-facing run",
+  "reference": "../character-base.png",
+  "frameSize": [
+    128,
+    128
+  ],
+  "frameCount": 8,
+  "cycleMs": 560,
+  "loop": true,
+  "generator": "Built-in image_gen",
+  "frames": [
+    {
+      "file": "frames/run-01.png",
+      "durationMs": 80,
+      "phase": "CONTACT"
+    },
+    {
+      "file": "frames/run-02.png",
+      "durationMs": 60,
+      "phase": "DOWN"
+    },
+    {
+      "file": "frames/run-03.png",
+      "durationMs": 60,
+      "phase": "PUSH"
+    },
+    {
+      "file": "frames/run-04.png",
+      "durationMs": 80,
+      "phase": "FLIGHT"
+    },
+    {
+      "file": "frames/run-05.png",
+      "durationMs": 80,
+      "phase": "CONTACT"
+    },
+    {
+      "file": "frames/run-06.png",
+      "durationMs": 60,
+      "phase": "DOWN"
+    },
+    {
+      "file": "frames/run-07.png",
+      "durationMs": 60,
+      "phase": "PUSH"
+    },
+    {
+      "file": "frames/run-08.png",
+      "durationMs": 80,
+      "phase": "FLIGHT"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "version": 9,
+  "date": "2026-10-21",
+  "scope": "Planning only",
+  "canonicalSource": "../clips/hero-v5-idle/frames/01.png",
+  "planningReview": "../../../Reviews/run-v9-prompt.md",
+  "constraints": {
+    "runCycleMs": 480,
+    "travelMs": 2000,
+    "travelPx": 960,
+    "rootX": 500
+  },
+  "keyposeAttempts": [
+    {
+      "jobId": "5087bbc1-7d08-49c2-aeac-b6b966a3561c",
+      "tool": "edit_image_pro_flash",
+      "seed": 1091,
+      "prompt": "Edit this exact pixel-art character into one powerful forward-leaning sprint key pose, facing screen right. Preserve the original identity: the same oversized angular cream hood, black face opening with one vertical amber eye, very short dark-navy torso and limbs, cream cape/tunic tails, small golden waist bell, blocky boots, and the same thick short golden sword attached to the same hand. Keep the source palette and chunky pixel scale. Build the pose through the waist and shoulder joints: the torso leans 30-35 degrees forward from vertical, shoulders clearly ahead of the pelvis. Head low and looking forward, less tilted than torso, with no stretched neck. A low driving sprint. One leg pushes backward from the ground while the opposite knee recovers forward. Both elbows are bent; the upper arms swing in opposite phases. The sword-side whole arm is forward in this key pose while its same-side leg pushes back; the far arm is behind the torso. Hold the sword low in a compact running carry, with its original blade length and width. Keep the same short body proportions and costume. Foot contact near source ground y=114, all pixels inside the128x128 canvas with a clear border. Redraw the articulated pose, do not rotate the entire standing sprite. Transparent background, one isolated pose, no slash, trails, dust, blur, labels or scenery.",
+      "status": "anatomy-fix-required",
+      "review": "Posture accepted; stray extra mitten at lower back and squashed bell require correction."
+    },
+    {
+      "jobId": "65cfe1d2-1900-41f7-b83a-299151b3a9d5",
+      "tool": "edit_image_pro_flash",
+      "seed": 1092,
+      "prompt": "Keep this exact low forward-leaning sprint pose, original hood, clothing, proportions, right-facing silhouette, feet and sword unchanged. Correct ONLY two small anatomy/accessory errors. There must be exactly TWO hands: the rear hand at approximately (30,68), and the sword hand connected to the sword at the front. REMOVE the stray third gold mitten-shaped blob at approximately x33..42, y76..85 below the rear hand, restoring dark-navy cloth there with a clean torso/cape contour. The gold object at x51..59,y86..91 is the WAIST BELL: restore its recognizable tiny bell silhouette with a rounded dome, flared lower rim and one tiny clapper underneath, extending 2 pixels downward if needed. One waist bell only. Do not add hands, weapons, armor or effects. Preserve current forward torso lean and leg/arm arrangement, 128x128 transparent pixel-art canvas and source palette.",
+      "status": "accepted-start-pose",
+      "review": "Planning and art reviewers accepted the low forward lean, two hands, restored waist bell and connected sword; loop not yet reviewed."
+    },
+    {
+      "jobId": "465041bc-6b5c-409f-829a-279fa382ee00",
+      "tool": "edit_image_pro_flash",
+      "seed": 1095,
+      "prompt": "Create the OPPOSITE FOOT-CONTACT key pose of this same right-facing low sprint, half a running cycle later. Keep the exact hood, head direction and position, deeply forward-leaning torso, cream shoulder cloth and short split hem, waist bell, body proportions, palette and ground baseline. Change ONLY the articulated arms and legs, do not mirror the sprite. The NEAR leg now reaches forward with a bent knee and its boot approaches ground under the forward body; the FAR leg pushes backward. The NEAR ARM THAT HOLDS THE SWORD now swings clearly BEHIND THE HIP, elbow bent, hand visible beside the rear of the waist. Move that SAME intact short gold sword with its hand, original length and width, carried low with blade extending outward behind the runner, not through the body. The OTHER free arm swings forward with a bent elbow, empty gold glove near the front chest. Exactly TWO arms and TWO hands, ONE waist bell, ONE sword in the same near hand. Keep the shoulder-to-hip lean and low sprint silhouette, no upright pose, no long legs, no third mitten or extra bell. Transparent128x128 pixel art, clear margins, no attack or effects. This is the second opposite contact pose for the same running loop.",
+      "status": "rejected",
+      "review": "The sword changes hands while the actual arm and leg configuration barely swaps; 150 degree blade reversal resembles an attack. Not used."
+    }
+  ],
+  "animationAttempts": [
+    {
+      "jobId": "c67e54a8-d19e-4769-a56c-e4e888b662d4",
+      "tool": "animate_image_pixminimax",
+      "status": "rejected",
+      "request": {
+        "description": "One complete seamless low driving SPRINT cycle in place to the right. Stay bent forward throughout: shoulders ahead of hips, head low looking forward, tiny bob. Alternate bent-knee recovery, firm foot contact, backward push-off and brief flight; second half swaps limbs. BOTH upper arms swing from the shoulders, bent elbows, opposite their same-side legs. Hands travel clearly forward and backward past the torso. The sword arm also pumps low; keep the same rigid short sword attached to that hand throughout, same length/width. Preserve hood, cream tunic tails, ONE waist bell, short body. No upright jogging, hopping, frozen arms, wrist-only motion, extra hands, disappearing sword, attacks or costume changes. Start already sprinting; end in the matching running phase, no idle/stop. Fixed side camera, scale, pelvis screen position and ground line. Transparent; no blur, dust, trails, slash or scenery.",
+        "direction": "east",
+        "view": "side",
+        "initial_pose": "Already in a low forward-leaning sprint: near sword arm forward, near leg pushing back, far knee recovering forward, far bent arm behind; shoulders ahead of pelvis.",
+        "subject_description": "The exact supplied short bellkeeper: large cream hood, black face with one amber eye, short dark body, cream shoulders/split hem/boots, one gold waist bell, two gold gloves and one thick short gold sword in the near hand. Same chunky pixel art, proportions and palette.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/65cfe1d2-1900-41f7-b83a-299151b3a9d5/download",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/65cfe1d2-1900-41f7-b83a-299151b3a9d5/download",
+        "frame_count": 12,
+        "no_background": true,
+        "seed": 1093,
+        "enhance_prompt": false
+      },
+      "review": "Frames03-08 shrink/lose the sword; sword arm remains in front; bell becomes a mitten-like blob. Planning preview must not select this clip."
+    },
+    {
+      "jobId": "24e1fe78-a558-4441-94c3-426ed2bc27dc",
+      "tool": "animate_image",
+      "status": "rejected",
+      "request": {
+        "action": "A seamless full sprint cycle to the right, already leaning forward. Keep the torso LOW and tilted forward at the hips throughout. Head looks right with minimal bob. Drive bent knees forward and push each planted boot backward, alternating feet, with brief flight. Both BENT ARMS swing from the shoulders in opposite phases. Move the entire sword-carrying arm backward beside the hip then forward; the free arm does the opposite. Preserve the EXACT same cream hood, tunic, golden waist bell, compact short limbs and ONE rigid short gold sword firmly in the same hand, retaining blade length and width throughout. The sword is carried during running, never swung to attack. do not pivot a static sprite, jog upright, hop, freeze the arms, shrink the sword, add hands or change the outfit. Fixed side camera and pelvis screen position, same ground baseline and scale. One complete loop returning to the running start, no idle or held end pose. Transparent background.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/65cfe1d2-1900-41f7-b83a-299151b3a9d5/download",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/65cfe1d2-1900-41f7-b83a-299151b3a9d5/download",
+        "frame_count": 12,
+        "no_background": true,
+        "seed": 1094
+      },
+      "review": "Sword shrinks in frames03-07 then grows at08-09; weapon changes shape and looks like an attack. Not selected."
+    }
+  ],
+  "authoredAnimation": {
+    "tool": "pixelart_workbench",
+    "drawingId": "a37e3f5e-26e9-40b5-a1ef-115fa3741489",
+    "status": "review",
+    "sourceKeypose": "sprint-keypose-b.png",
+    "recipe": "authored-run-recipe.json",
+    "deliveredRecipe": "../clips/hero-v9-sprint-authored/recipe.json",
+    "clipId": "hero-v9-sprint-authored",
+    "method": "Copy the new forward-lean hood, clothing and waist bell; author 12 upper/lower arm and leg poses with one rigid sword-hand source patch. No per-frame scaling or normalization.",
+    "frameCount": 12,
+    "durationMs": 480,
+    "bodyBobPx": 1,
+    "previousDrawingId": "75cf1cc9-ad20-46b0-a8c0-50929c57b623",
+    "revision": "Remove fixed cream pixels from old far arm in hood mask; shift both arms, gloves and sword six frames against leg cycle."
+  }
+}

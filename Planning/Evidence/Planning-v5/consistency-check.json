@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-21",
+  "scope": "Planning-only consistency and untouched product-file hash verification",
+  "prices": {
+    "levels": 50,
+    "strictlyIncreasing": true,
+    "totalPerStat": 2125,
+    "totalFourStats": 8500,
+    "budgetExamples": [
+      {
+        "gold": 160,
+        "attackAndHpLevel": 6,
+        "left": 10
+      },
+      {
+        "gold": 280,
+        "attackAndHpLevel": 9,
+        "left": 28
+      },
+      {
+        "gold": 440,
+        "attackAndHpLevel": 13,
+        "left": 0
+      },
+      {
+        "gold": 640,
+        "attackAndHpLevel": 16,
+        "left": 32
+      },
+      {
+        "gold": 1760,
+        "attackAndHpLevel": 30,
+        "left": 50
+      },
+      {
+        "gold": 3360,
+        "attackAndHpLevel": 43,
+        "left": 118
+      }
+    ]
+  },
+  "battleBounds": {
+    "viewports": [
+      "960x540",
+      "640x360"
+    ],
+    "containedAndNonOverlapping": true
+  },
+  "localLinksChecked": 64,
+  "missingLinks": [],
+  "productFilesCompared": 846,
+  "changedProductFiles": [],
+  "addedProductFiles": [],
+  "unityTestsRun": false,
+  "gameBalanceValidated": false,
+  "newAnimationValidated": false
+}

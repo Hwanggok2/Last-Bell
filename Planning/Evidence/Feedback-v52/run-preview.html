@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>마지막 종지기 · 실제 게임 달리기 v12</title>
+<style>*{box-sizing:border-box}body{margin:24px auto;max-width:1000px;padding:0 20px;background:#0c1723;color:#efdfbd;font:17px/1.6 system-ui,sans-serif}h1{font-size:28px}canvas{display:block;width:100%;image-rendering:pixelated;background:#152738}button,select{padding:10px 18px;background:#243a4c;color:inherit;border:1px solid #af8d50;font:inherit}input{width:100%;accent-color:#eabb67}a{color:#eabb67}.controls{display:flex;align-items:center;gap:16px;margin:16px 0;flex-wrap:wrap}small{color:#aebcc7}</style>
+<h1>달리기 v12 · 실제 게임 장면</h1><p>새8프레임 · 24fps · 이동1,920기획px / 2초. 2초 구간을 반복합니다.</p>
+<canvas id="scene" width="960" height="540" aria-label="실제 게임에서 캡처한 이동 구간"></canvas>
+<div class="controls"><button id="toggle" type="button">일시정지</button><label>속도 <select id="speed"><option value="1">1배 · 실제 속도</option><option value="0.5">0.5배</option><option value="0.25">0.25배</option></select></label><output id="time">불러오는 중</output></div>
+<input id="frame" type="range" min="0" max="47" value="0" aria-label="48개 캡처 프레임 탐색"><small>Core 이동 시계를1/24초씩 진행해 실제 Windows 빌드에서 렌더한48장입니다. 정지 이미지 사이를 보간하지 않습니다. 오디오는 포함하지 않습니다.</small>
+<p><a href="../../Presentation/feedback-plan-v5.html#run">기획서로 돌아가기</a></p>
+<script>
+const canvas=document.getElementById('scene'),ctx=canvas.getContext('2d'),slider=document.getElementById('frame'),label=document.getElementById('time'),toggle=document.getElementById('toggle'),speed=document.getElementById('speed');
+let playing=true,elapsed=0,last=0,ready=false;
+const frames=Array.from({length:48},(_,i)=>{const image=new Image();image.src='960/run-'+String(i).padStart(2,'0')+'.png';return image;});
+Promise.all(frames.map(image=>image.decode())).then(()=>{ready=true;last=performance.now();requestAnimationFrame(draw)}).catch(()=>label.textContent='캡처 이미지를 불러오지 못했습니다.');
+function draw(now){if(playing)elapsed=(elapsed+(now-last)*Number(speed.value))%2000;last=now;const i=Math.min(47,Math.floor(elapsed*24/1000));ctx.imageSmoothingEnabled=false;ctx.drawImage(frames[i],0,0,960,540);slider.value=i;label.value=(i/24).toFixed(2)+'초 · '+(i+1)+'/48';requestAnimationFrame(draw)}
+toggle.onclick=()=>{playing=!playing;toggle.textContent=playing?'일시정지':'재생'};
+slider.oninput=()=>{playing=false;toggle.textContent='재생';elapsed=Number(slider.value)*1000/24;};
+document.addEventListener('visibilitychange',()=>{last=performance.now()});
+</script></html>

@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-21",
+  "type": "offline-handler-check",
+  "passed": true,
+  "checkedStates": 24,
+  "checks": [
+    "initial data/image loading",
+    "4 warning directions × 4 visual modes",
+    "slider percentage updates",
+    "4 sequence types × repeat option",
+    "play/pause-end/reset handlers",
+    "reduced motion preserves duration"
+  ],
+  "limits": [
+    "No browser DOM/CSS rendering or actual input-device validation.",
+    "Timeline active CSS and responsive layout need browser review."
+  ]
+}

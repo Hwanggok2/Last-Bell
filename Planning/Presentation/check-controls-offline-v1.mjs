@@ -1,0 +1,23 @@
+// Exercise the owned page's handlers with local Canvas and minimal DOM doubles.
+// This is not a browser/CSS/touch test and opens no browser or network connection.
+import fs from 'node:fs';import path from 'node:path';import vm from 'node:vm';import assert from 'node:assert/strict';import {createRequire} from 'node:module';import {fileURLToPath} from 'node:url';
+const require=createRequire(import.meta.url),here=path.dirname(fileURLToPath(import.meta.url));
+const {createCanvas,Image,GlobalFonts}=require(path.join(process.env.LASTBELL_NODE_MODULES||'C:/Users/JW/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules','@napi-rs/canvas'));
+GlobalFonts.registerFromPath(path.resolve(here,'../../Client/Assets/Game/Art/Fonts/NanumGothic-Regular.ttf'),'Bell');
+class Element{constructor(tag='div'){this.tagName=tag;this.value='';this.checked=false;this.children=[];this.events={};this.attributes={};this.classList={toggle(){}};this._html=''}addEventListener(type,fn){this.events[type]=fn}append(...els){this.children.push(...els)}setAttribute(k,v){this.attributes[k]=v}set innerHTML(value){this._html=value;this.children=[]}get innerHTML(){return this._html}}
+function make(tag){if(tag==='canvas'){const c=createCanvas(1280,720);c.attributes={};c.setAttribute=(k,v)=>{c.attributes[k]=v};return c}return new Element(tag)}
+const ids={};for(const id of ['scaleBefore','scaleAfter','warning','sequenceCanvas'])ids[id]=make('canvas');
+for(const id of ['direction','visualMode','nextSignal','mono','signalTime','signalReadout','sequenceType','play','reset','reduced','repeat','sequenceTime','sequenceReadout','timeline','sequenceCaption','storyStrip','boundsRows','directionStrip','loadState'])ids[id]=make('div');
+Object.assign(ids.direction,{value:'low_sweep'});Object.assign(ids.visualMode,{value:'brass'});Object.assign(ids.signalTime,{value:72});Object.assign(ids.sequenceType,{value:'normal'});Object.assign(ids.sequenceTime,{value:0,max:1400});
+class LocalImage extends Image{set src(value){super.src=path.resolve(here,value)}}
+let callback=null,cancelled=false;
+const document={getElementById:id=>ids[id],createElement:make,fonts:{ready:Promise.resolve()},querySelectorAll:()=>[],addEventListener(){},hidden:false};
+const ctx=vm.createContext({window:{},document,console,Image:LocalImage,matchMedia:()=>({matches:false}),performance:{now:()=>0},requestAnimationFrame:fn=>{callback=fn;cancelled=false;return 1},cancelAnimationFrame:()=>{cancelled=true}});
+vm.runInContext(fs.readFileSync(path.join(here,'data-v1.js'),'utf8'),ctx);vm.runInContext(fs.readFileSync(path.join(here,'app-v1.js'),'utf8'),ctx);
+for(let i=0;i<200&&!ctx.window.reviewReady;i++)await new Promise(r=>setTimeout(r,10));
+assert.equal(ctx.window.reviewReady,true);assert.equal(ids.directionStrip.children.length,4);assert.equal(ids.storyStrip.children.length,4);
+let states=0;for(const direction of ['low_sweep','high_sweep','thrust','outer_arc'])for(const mode of ['brass','ornament','current','wire']){ids.direction.value=direction;ids.visualMode.value=mode;ids.nextSignal.checked=true;ids.mono.checked=true;ids.signalTime.value=25;ids.direction.events.input();assert.equal(ids.signalReadout.textContent,'25%');states++}
+for(const key of ['normal','death','mini','boss'])for(const repeat of [false,true]){ids.sequenceType.value=key;ids.repeat.checked=repeat;ids.sequenceType.events.change();assert.equal(ids.storyStrip.children.length,4);ids.sequenceTime.value=ids.sequenceTime.max;ids.sequenceTime.events.input();assert.equal(ids.sequenceReadout.textContent,(+ids.sequenceTime.max/1000).toFixed(2)+'s');states++}
+ids.sequenceType.value='boss';ids.repeat.checked=false;ids.sequenceType.events.change();ids.play.events.click();assert.equal(ids.play.attributes['aria-pressed'],'true');callback(500);assert.equal(+ids.sequenceTime.value,500);callback(2000);assert.equal(+ids.sequenceTime.value,1800);assert.equal(ids.play.attributes['aria-pressed'],'false');assert.ok(cancelled);ids.reset.events.click();assert.equal(+ids.sequenceTime.value,0);ids.reduced.checked=true;ids.reduced.events.change();assert.equal(+ids.sequenceTime.max,1800);
+const report={date:'2026-10-21',type:'offline-handler-check',passed:true,checkedStates:states,checks:['initial data/image loading','4 warning directions × 4 visual modes','slider percentage updates','4 sequence types × repeat option','play/pause-end/reset handlers','reduced motion preserves duration'],limits:['No browser DOM/CSS rendering or actual input-device validation.','Timeline active CSS and responsive layout need browser review.']};
+fs.writeFileSync(path.resolve(here,'../Evidence/Presentation/control-check.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));

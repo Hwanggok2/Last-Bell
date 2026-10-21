@@ -302,11 +302,11 @@ const html=`<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta nam
 <div class="controls"><label>크기<select id="size"><option value="960,540">960×540</option><option value="1200,540">1200×540</option><option value="640,360">640×360</option></select></label>
 <label>안전영역<select id="safe"><option value="24,24,12,12">L24 R24 T12 B12</option><option value="44,32,16,16">L44 R32 T16 B16</option><option value="0,0,0,0">없음</option></select></label>
 <label><input id="large" type="checkbox">한글120%</label><label><input id="guides" type="checkbox">bounds·손가림</label><label><input id="color" type="checkbox" checked>컬러 배치</label><label><input id="reduced" type="checkbox">흔들림 줄이기</label></div>
-<div class="controls"><button data-scenario="tutorial">튜토리얼</button><button data-scenario="lobby">로비</button><button data-scenario="battle">전투</button><button data-scenario="kill">적 처치</button><button data-scenario="death">사망</button><button data-scenario="finish5">5 보상→6</button><button data-scenario="finish10">10 보상→11</button><button data-scenario="ending">50 보상→엔딩</button><button data-scenario="convert">부족 골드 교환</button><button data-scenario="fragment-shortage">파편 부족</button><button data-scenario="relics-empty">유물 미보유</button><button data-scenario="relics-owned">Lv.1 보유</button><button data-scenario="duplicate">중복 Lv.1→2</button><button data-scenario="max">MAX 보상</button><button data-scenario="resume-offer">같은 후보 복원</button><button data-scenario="hit">일반 피해</button><button data-scenario="critical">치명타</button><button data-scenario="mixed">5자리 동시 피해</button><button data-scenario="funds">검토용 재화</button><button data-scenario="reset">초기화</button></div>
+<div class="controls"><button data-scenario="tutorial">튜토리얼</button><button data-scenario="lobby">로비</button><button data-scenario="battle">전투</button><button data-scenario="kill">적 처치</button><button data-scenario="death">사망</button><button data-scenario="finish5">5 파편→6</button><button data-scenario="finish10">10 보상→11</button><button data-scenario="ending">50 보상→엔딩</button><button data-scenario="convert">부족 골드 교환</button><button data-scenario="fragment-shortage">파편 부족</button><button data-scenario="relics-empty">유물 미보유</button><button data-scenario="relics-owned">Lv.1 보유</button><button data-scenario="duplicate">중복 Lv.1→2</button><button data-scenario="max">MAX 보상</button><button data-scenario="resume-offer">같은 후보 복원</button><button data-scenario="hit">일반 피해</button><button data-scenario="critical">치명타</button><button data-scenario="mixed">5자리 동시 피해</button><button data-scenario="funds">검토용 재화</button><button data-scenario="reset">초기화</button></div>
 <p id="status" role="status">검토용 인터랙션 준비. 전투 입력은 방향키/WASD, 공격은 Space로도 확인할 수 있습니다.</p></header>
 <main><section class="card"><h2>동작 시안</h2><div class="controls"><label>화면<select id="live-kind"></select></label><label>상태<select id="live-state"></select></label></div><div class="screen" id="live"></div><p class="note">튜토리얼은 ▲ → 검 순서입니다. 다른 버튼은 첫 행동을 통과시키지 않습니다. 이후 전투 흐름이 자동 재개되며 플레이어 자동공격은 하지 않습니다.</p><details id="live-details"><summary>bounds · anchor · hit area</summary><div id="inspector"></div></details></section>
 <section class="card"><h2>비교 화면</h2><div class="controls"><label>화면<select id="compare-kind"></select></label><label>상태<select id="compare-state"></select></label></div><div class="screen" id="compare"></div><p class="note">위험은 공격 위치의 모양이며 정답 화살표가 아닙니다. 기절 글자·숫자와 상단 공격 안내는 게임 화면에서 제거했습니다. 피해 숫자는 픽셀 도형입니다.</p></section></main>
-<footer><p>승리 → 중간/보스는 유물3개 중1개 → 다음 Stage 자동 진입. 10층 진행 선택 화면은 없습니다. 50층만 엔딩 후 로비로 돌아갑니다.</p><p><a href="../Reviews/ui-v4.md">UI 검토</a> · <a href="wireframes-v4.svg">전체 시트</a> · <a href="landscape-battle-v4.svg">전투 SVG</a> · <a href="lobby-v4.svg">로비 SVG</a></p></footer>
+<footer><p>유물은10·20·30·40·50층 보스에서만3개 중1개를 선택합니다. 중간 보스는 골드·종 파편1개를 받고 선택창 없이 다음 Stage로 이어집니다. 10층 진행 선택 화면은 없습니다. 50층만 엔딩 후 로비로 돌아갑니다.</p><p><a href="../Reviews/ui-v4.md">UI 검토</a> · <a href="wireframes-v4.svg">전체 시트</a> · <a href="landscape-battle-v4.svg">전투 SVG</a> · <a href="lobby-v4.svg">로비 SVG</a></p></footer>
 <script>
 const model=${JSON.stringify(model)},names=${JSON.stringify(names)},states=${JSON.stringify(states)};
 const upgradeCost=${upgradeCost.toString()},statValue=${statValue.toString()},relicEffect=${relicEffect.toString()},renderV4=${renderV4.toString()};
@@ -317,7 +317,7 @@ let app=initial(),comparison={kind:"battle",state:"boss5"},timer=null,anim=null,
 const rec=()=>app.records[app.character],clone=value=>JSON.parse(JSON.stringify(value));
 const status=s=>{document.getElementById("status").textContent=s;};
 function persistOffer(){try{if(app.pendingOffer)localStorage.setItem("jong-ui-v4-pending",JSON.stringify(app));else localStorage.removeItem("jong-ui-v4-pending");}catch{}}
-function restoreOffer(){try{const saved=JSON.parse(localStorage.getItem("jong-ui-v4-pending"));if(saved?.pendingOffer&&!saved.pendingOffer.committed){app=saved;app.kind="reward";app.resolving=false;return true;}}catch{}return false;}
+function restoreOffer(){try{const saved=JSON.parse(localStorage.getItem("jong-ui-v4-pending"));if(saved?.pendingOffer&&!saved.pendingOffer.committed){app=saved;app.resolving=false;if(saved.pendingOffer.stage%10!==0){const next=saved.pendingOffer.stage+1;app.pendingOffer=null;persistOffer();enterStage(next);return true;}app.kind="reward";return true;}}catch{}return false;}
 function options(){const [width,height]=document.getElementById("size").value.split(",").map(Number),[left,right,top,bottom]=document.getElementById("safe").value.split(",").map(Number);return {width,height,left,right,top,bottom,color:document.getElementById("color").checked,large:document.getElementById("large").checked,guides:document.getElementById("guides").checked,reduced:document.getElementById("reduced").checked};}
 function setSelect(id,values,value){document.getElementById(id).innerHTML=values.map(([k,v])=>'<option value="'+k+'"'+(k===value?' selected':'')+'>'+v+'</option>').join("");}
 function paint(){
@@ -334,6 +334,7 @@ function startFlow(){stop();auto=true;let n=0;timer=setInterval(()=>{if(app.kind
 function snapshot(){app.battleSnapshot={character:app.character,levels:[...rec().levels],equipped:[...rec().equipped],relicLevels:Object.fromEntries(rec().equipped.map(id=>[id,app.inventory[id]||0]))};}
 function enterStage(stage){rec().stage=stage;app.kind="battle";app.state="normal";app.enemyHits=0;app.damage="";app.motion="";startFlow();status("Stage "+stage+" 자동 진입 · 공격3회 또는 적 처치 버튼으로 다음 상태를 확인하는 시안");}
 function beginOffer(stage,ids=null){
+ if(stage%10!==0)return;
  stop();if(!app.pendingOffer){const pool=model.relics.map(r=>r.id);for(let i=pool.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[pool[i],pool[j]]=[pool[j],pool[i]];}
  app.pendingOffer={id:++app.offerSerial,stage,character:app.character,ids:ids||pool.slice(0,3),committed:false};}
  app.kind="reward";app.state="normal";persistOffer();paint();
@@ -341,7 +342,8 @@ function beginOffer(stage,ids=null){
 function completeStage(){
  if(app.kind!=="battle"||app.pendingOffer)return;const s=rec().stage;stop();app.highestClear=Math.max(app.highestClear,s);
  app.gold+=model.normalGoldPerZone[Math.min(4,Math.floor((s-1)/10))]*(s%10===0?5:s%5===0?3:1);
- if(s%5===0){app.fragments+=s%10===0?3:1;beginOffer(s);status("유효 처치 보상과 고정된3개 후보 · 하나를 선택하면 자동 진행");}
+ if(s%5===0)app.fragments+=s%10===0?3:1;
+ if(s%10===0){beginOffer(s);status("10단위 보스 보상 · 유물3개 중 하나를 선택하면 자동 진행");}
  else enterStage(s+1);paint();
 }
 function chooseReward(id){
@@ -420,8 +422,8 @@ function scenario(s){
  if(s==="fragment-shortage"){app.kind="lobby";app.state="normal";app.gold=0;app.fragments=0;action("upgrade-0");}
  if(s==="relics-empty"){app.kind="relics";app.state="normal";app.inventory={};for(const r of Object.values(app.records))r.equipped=[];}
  if(s==="relics-owned"){app.kind="relics";app.state="normal";app.inventory.relic_05=1;app.selectedRelic="relic_05";}
- if(s==="duplicate"||s==="max"){app.pendingOffer=null;app.inventory.relic_05=s==="max"?5:1;rec().stage=5;snapshot();beginOffer(5,["relic_05","relic_10","relic_15"]);status("고정 검토 후보 · 첫 카드를 선택하면 "+(s==="max"?"최대레벨 보상":"Lv.1→2")+" 및 Stage 6");}
- if(s==="resume-offer"){if(restoreOffer())status("저장된 같은 후보 복원 · 다시 뽑지 않음");}
+ if(s==="duplicate"||s==="max"){app.pendingOffer=null;app.inventory.relic_05=s==="max"?5:1;rec().stage=10;snapshot();beginOffer(10,["relic_05","relic_10","relic_15"]);status("고정 검토 후보 · 첫 카드를 선택하면 "+(s==="max"?"최대레벨 보상":"Lv.1→2")+" 및 Stage 11");}
+ if(s==="resume-offer"){if(restoreOffer())status(app.pendingOffer?"저장된 같은 후보 복원 · 다시 뽑지 않음":"중간 보스의 이전 시안 선택창 종료 · 보상 재지급 없이 다음 층");}
  if(s==="hit"||s==="critical"||s==="mixed"){app.kind="battle";app.state=s;}
  if(s==="funds"){app.gold+=200;app.fragments+=50;status("검토용 재화 · 게임 획득 규칙 아님");}
  paint();
@@ -429,7 +431,7 @@ function scenario(s){
 document.getElementById("live").addEventListener("pointerdown",e=>{const t=e.target.closest("[data-action]");if(!t||t.dataset.hit!=="true")return;e.preventDefault();action(t.dataset.action);});
 document.addEventListener("keydown",e=>{if(["SELECT","INPUT","BUTTON"].includes(document.activeElement.tagName))return;const a={ArrowUp:"dodge-up",w:"dodge-up",ArrowLeft:"dodge-back",a:"dodge-back",ArrowDown:"dodge-down",s:"dodge-down",ArrowRight:"dodge-front",d:"dodge-front"," ":"attack"}[e.key];if(a&&!e.repeat){e.preventDefault();action(a);}});
 document.addEventListener("change",e=>{
- const id=e.target.id;if(app.pendingOffer&&(id==="live-kind"||id==="live-state")){paint();return;}if(id==="live-kind"){stop();app.kind=e.target.value;app.state="normal";if(app.kind==="reward"&&!app.pendingOffer)beginOffer(5);}
+ const id=e.target.id;if(app.pendingOffer&&(id==="live-kind"||id==="live-state")){paint();return;}if(id==="live-kind"){stop();app.kind=e.target.value;app.state="normal";if(app.kind==="reward"&&!app.pendingOffer)beginOffer(10);}
  if(id==="live-state"){stop();app.state=e.target.value;if(app.state==="death19")rec().checkpoint=11;if(app.state==="death9")rec().checkpoint=1;if(app.kind==="relics"&&app.state==="owned")app.inventory.relic_05=1;if(app.kind==="relics"&&app.state==="empty"){app.inventory={};for(const r of Object.values(app.records))r.equipped=[];}}
  if(id==="compare-kind"){comparison.kind=e.target.value;comparison.state="normal";}if(id==="compare-state")comparison.state=e.target.value;paint();
 });

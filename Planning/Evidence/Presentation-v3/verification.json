@@ -1,0 +1,14 @@
+{
+  "scope": "offline-canvas-and-static-only",
+  "date": "2026-10-21",
+  "browserRendered": false,
+  "unityTested": false,
+  "missingLinks": [],
+  "spriteCount": 23,
+  "frameCount": 55,
+  "notes": [
+    "Skia rendered the owned Canvas drawing functions.",
+    "No browser DOM/CSS, physical input, real animation assets or Unity validation claimed.",
+    "Browser file URL policy was respected; no alternate browser navigation used."
+  ]
+}

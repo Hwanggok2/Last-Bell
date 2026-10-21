@@ -1,0 +1,19 @@
+{
+  "version": 8,
+  "date": "2026-10-21",
+  "scope": "Planning only",
+  "jobs": [
+    {
+      "id": "hero-v8-run-consistent",
+      "name": "온 · 원본 의상 보존 달리기",
+      "jobId": "drawing:e5e8514e-3ea4-4c39-9521-4c858b48bf3f",
+      "requestedGeneratedFrames": 12,
+      "inputFrameIncluded": false,
+      "method": "PixelLab pixelart_workbench; Idle01 source garment, hood, gloves, bell, boots and sword parts",
+      "fps": 25,
+      "loop": true,
+      "status": "review",
+      "input": "clips/hero-v5-idle/frames/01.png"
+    }
+  ]
+}

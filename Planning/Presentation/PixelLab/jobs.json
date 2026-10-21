@@ -1,0 +1,129 @@
+{
+  "date": "2026-10-21",
+  "scope": "Planning only — no Unity import",
+  "jobs": [
+    {
+      "id": "hero-run",
+      "jobId": "01d0d600-4d89-4a30-97aa-a04aa73d3829",
+      "requestedGeneratedFrames": 16,
+      "sourceFrameIndex": 0,
+      "method": "PixelLab PixMiniMax",
+      "status": "downloaded"
+    },
+    {
+      "id": "hero-run-classic",
+      "jobId": "2f50e287-7323-4e20-807d-b4678fda029f",
+      "requestedGeneratedFrames": 16,
+      "sourceFrameIndex": 0,
+      "method": "PixelLab animate_image",
+      "status": "downloaded"
+    },
+    {
+      "id": "hero-attack",
+      "jobId": "679d755b-1e3c-4c9d-8198-28026fddd226",
+      "requestedGeneratedFrames": 24,
+      "sourceFrameIndex": 0,
+      "method": "PixelLab PixMiniMax",
+      "status": "downloaded"
+    },
+    {
+      "id": "sentinel-attack",
+      "jobId": "0247ba65-3671-405c-adfa-8d2198faaea4",
+      "requestedGeneratedFrames": 24,
+      "sourceFrameIndex": 0,
+      "method": "PixelLab PixMiniMax",
+      "status": "downloaded"
+    },
+    {
+      "id": "chain-attack",
+      "jobId": "ec00530e-eaf5-462e-8885-7ec4648ec9b7",
+      "requestedGeneratedFrames": 24,
+      "sourceFrameIndex": 0,
+      "method": "PixelLab PixMiniMax",
+      "status": "downloaded"
+    },
+    {
+      "id": "wisp-attack",
+      "jobId": "a009465a-a238-4dbf-94ef-a380061180a2",
+      "requestedGeneratedFrames": 24,
+      "sourceFrameIndex": 0,
+      "method": "PixelLab PixMiniMax",
+      "status": "downloaded"
+    },
+    {
+      "id": "warden-attack",
+      "jobId": "f039c5ed-514d-4b24-aa27-fa01290a3457",
+      "requestedGeneratedFrames": 24,
+      "sourceFrameIndex": 0,
+      "method": "PixelLab PixMiniMax",
+      "status": "downloaded"
+    },
+    {
+      "id": "knight-attack",
+      "jobId": "974ed9a0-255a-490b-8071-849934f1670a",
+      "requestedGeneratedFrames": 24,
+      "sourceFrameIndex": 0,
+      "method": "PixelLab PixMiniMax",
+      "status": "downloaded"
+    },
+    {
+      "id": "hero-dodge-up",
+      "jobId": "c6ff6c62-4330-48d9-921b-dc4bc9ccf0a6",
+      "requestedGeneratedFrames": 16,
+      "sourceFrameIndex": 0,
+      "method": "PixelLab animate_image",
+      "status": "downloaded"
+    },
+    {
+      "id": "hero-dodge-down",
+      "jobId": "1b5c7f5d-04ea-462b-9e6d-1e72b25eb70a",
+      "requestedGeneratedFrames": 16,
+      "sourceFrameIndex": 0,
+      "method": "PixelLab animate_image",
+      "status": "downloaded"
+    },
+    {
+      "id": "hero-dodge-front",
+      "jobId": "b14aaf41-f793-41bb-904d-d05c51126720",
+      "requestedGeneratedFrames": 16,
+      "sourceFrameIndex": 0,
+      "method": "PixelLab animate_image",
+      "status": "downloaded"
+    },
+    {
+      "id": "hero-dodge-back",
+      "jobId": "5cdaabb3-b007-4975-87f2-8b47bde76281",
+      "requestedGeneratedFrames": 16,
+      "sourceFrameIndex": 0,
+      "method": "PixelLab animate_image",
+      "status": "downloaded"
+    },
+    {
+      "id": "hero-attack-retry",
+      "jobId": "ef8178a9-c787-421d-93d2-682c1266d215",
+      "requestedGeneratedFrames": 16,
+      "sourceFrameIndex": 0,
+      "method": "PixelLab animate_image",
+      "status": "downloaded"
+    },
+    {
+      "id": "hero-run-retry",
+      "jobId": "7eda690c-324b-43c2-83f6-a3c631b2f434",
+      "requestedGeneratedFrames": 16,
+      "sourceFrameIndex": 0,
+      "method": "PixelLab animate_image",
+      "status": "downloaded"
+    },
+    {
+      "id": "knight-attack-retry",
+      "jobId": "8fd0327d-9aa4-471b-9985-a7452019f3d6",
+      "requestedGeneratedFrames": 16,
+      "sourceFrameIndex": 0,
+      "method": "PixelLab animate_image",
+      "status": "downloaded"
+    }
+  ],
+  "requestedGeneratedFramesTotal": 288,
+  "inputFramesSeparate": 15,
+  "vfxFramesSeparate": 10
+}

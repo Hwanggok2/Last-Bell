@@ -1,0 +1,55 @@
+{
+  "version": "planning-v5.9",
+  "date": "2026-10-21",
+  "status": "applied-and-verified-Windows",
+  "preview": "hitbox-preview-v59.html",
+  "evidence": "../Evidence/Combat-v59/verification.json",
+  "story": "../Story/story-world-v1.html",
+  "timing": {
+    "beatMs": 180,
+    "fastBeatMs": 160,
+    "singleImpactMs": 540,
+    "fastImpactMs": 480,
+    "comboGapMs": 360,
+    "fastComboGapMs": 320,
+    "normalWindowMs": 160,
+    "perfectWindowMs": 60,
+    "defenseReuseMs": 260,
+    "attackIntervalMs": 500,
+    "waveEmissionBeats": 2.5,
+    "waveVisibleBeats": 2
+  },
+  "scope": [
+    "timing circles",
+    "bell count",
+    "high attack parry",
+    "selected dodge and attack motion",
+    "perfect wave and counter",
+    "all-cues-first combo",
+    "enemy effects"
+  ],
+  "runtimeSource": "../../GameData/mvp-catalog.json",
+  "runtimeDataVersion": "mvp-1.4.0",
+  "verification": {
+    "EditMode": 131,
+    "PlayMode": 18,
+    "Python": 19,
+    "independentAssertions": 808,
+    "viewports": [
+      [
+        960,
+        540
+      ],
+      [
+        640,
+        360
+      ],
+      [
+        1280,
+        540
+      ]
+    ],
+    "fullFlow": true,
+    "restartResume": true
+  }
+}

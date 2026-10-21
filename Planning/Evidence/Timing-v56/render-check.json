@@ -1,0 +1,130 @@
+{
+  "passed": true,
+  "method": "Offline Node VM + native Canvas; not browser/device gameplay validation",
+  "checks": [
+    {
+      "duration": 900,
+      "pattern": "single",
+      "impacts": [
+        900
+      ],
+      "passed": true
+    },
+    {
+      "duration": 900,
+      "pattern": "front-rear",
+      "impacts": [
+        1680,
+        2040
+      ],
+      "passed": true
+    },
+    {
+      "duration": 900,
+      "pattern": "rear-front",
+      "impacts": [
+        1680,
+        2040
+      ],
+      "passed": true
+    },
+    {
+      "duration": 900,
+      "pattern": "low-high",
+      "impacts": [
+        1680,
+        2040
+      ],
+      "passed": true
+    },
+    {
+      "duration": 900,
+      "pattern": "high-low",
+      "impacts": [
+        1680,
+        2040
+      ],
+      "passed": true
+    },
+    {
+      "duration": 900,
+      "pattern": "triple",
+      "impacts": [
+        2460,
+        2820,
+        3180
+      ],
+      "passed": true
+    },
+    {
+      "duration": 650,
+      "pattern": "single",
+      "impacts": [
+        650
+      ],
+      "passed": true
+    },
+    {
+      "duration": 650,
+      "pattern": "front-rear",
+      "impacts": [
+        1180,
+        1500
+      ],
+      "passed": true
+    },
+    {
+      "duration": 650,
+      "pattern": "rear-front",
+      "impacts": [
+        1180,
+        1500
+      ],
+      "passed": true
+    },
+    {
+      "duration": 650,
+      "pattern": "low-high",
+      "impacts": [
+        1180,
+        1500
+      ],
+      "passed": true
+    },
+    {
+      "duration": 650,
+      "pattern": "high-low",
+      "impacts": [
+        1180,
+        1500
+      ],
+      "passed": true
+    },
+    {
+      "duration": 650,
+      "pattern": "triple",
+      "impacts": [
+        1710,
+        2030,
+        2350
+      ],
+      "passed": true
+    }
+  ],
+  "exactDeadlineConvergence": true,
+  "bellConsumption": true,
+  "perfectWindowBoundary": true,
+  "practiceConfirmedOnly": true,
+  "pausePixelIdentical": true,
+  "preferredMovementPreserved": true,
+  "viewports": [
+    [
+      960,
+      540
+    ],
+    [
+      640,
+      360
+    ]
+  ]
+}

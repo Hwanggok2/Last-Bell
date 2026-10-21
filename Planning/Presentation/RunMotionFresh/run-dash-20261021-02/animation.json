@@ -1,0 +1,54 @@
+{
+  "name": "Low explosive forward sprint",
+  "reference": "../character-base.png",
+  "frameSize": [
+    128,
+    128
+  ],
+  "frameCount": 8,
+  "cycleMs": 400,
+  "loop": true,
+  "generator": "Built-in image_gen",
+  "frames": [
+    {
+      "file": "frames/run-01.png",
+      "durationMs": 40,
+      "phase": "CONTACT"
+    },
+    {
+      "file": "frames/run-02.png",
+      "durationMs": 40,
+      "phase": "DRIVE"
+    },
+    {
+      "file": "frames/run-03.png",
+      "durationMs": 60,
+      "phase": "FLIGHT"
+    },
+    {
+      "file": "frames/run-04.png",
+      "durationMs": 60,
+      "phase": "RECOVER"
+    },
+    {
+      "file": "frames/run-05.png",
+      "durationMs": 40,
+      "phase": "CONTACT"
+    },
+    {
+      "file": "frames/run-06.png",
+      "durationMs": 40,
+      "phase": "DRIVE"
+    },
+    {
+      "file": "frames/run-07.png",
+      "durationMs": 60,
+      "phase": "FLIGHT"
+    },
+    {
+      "file": "frames/run-08.png",
+      "durationMs": 60,
+      "phase": "RECOVER"
+    }
+  ]
+}

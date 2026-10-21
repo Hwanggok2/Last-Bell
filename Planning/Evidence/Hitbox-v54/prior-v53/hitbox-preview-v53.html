@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>금빛 히트박스 · 세 번의 예고</title>
+<style>
+@font-face{font-family:Nanum;src:url('../../Client/Assets/Game/Art/Fonts/NanumGothic-Regular.ttf')}
+*{box-sizing:border-box}body{margin:0;background:#0d1723;color:#eee1c7;font:16px/1.65 Nanum,system-ui,sans-serif}main{max-width:1120px;margin:auto;padding:32px 24px}h1{font-size:32px;line-height:1.3;margin:8px 0 14px}h2{font-size:23px;margin:30px 0 12px}p{margin:10px 0 20px}a{color:#e9b85a;text-underline-offset:4px}.eyebrow{font-size:12px;letter-spacing:1.5px;color:#e9b85a}.muted,small{color:#aab9c9}.notice{border-left:3px solid #c19a59;padding:12px 18px;background:#1a2939}.attacks{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:20px 0 14px}button,select{font:inherit;color:inherit;background:#203449;border:1px solid #738294;padding:10px 15px;cursor:pointer;min-height:44px}button[aria-pressed=true]{border-color:#e9b85a;background:#3b3427;color:#f6d493}button:hover{background:#31475b}button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #9ee3d4;outline-offset:3px}button small{display:block;font-size:12px}canvas{display:block;width:100%;height:auto;image-rendering:pixelated;background:#233d60}.stage{border:1px solid #51677e;position:relative}.toolbar{display:flex;gap:12px 20px;align-items:center;flex-wrap:wrap;margin:16px 0}.toolbar label{display:flex;align-items:center;gap:8px}input[type=checkbox]{width:18px;height:18px;accent-color:#e9b85a}input[type=range]{width:100%;accent-color:#e9b85a}.time-row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-variant-numeric:tabular-nums;margin:12px 0 4px}#phase{color:#f4cc87}#timeline{height:30px;display:flex;align-items:stretch;border:1px solid #40566b;margin:8px 0 4px}#timeline span{display:grid;place-items:center;font-size:12px;border-right:1px solid #0d1723;white-space:nowrap;overflow:hidden}#timeline .on{background:#685337;color:#ffe2a5}#timeline .off{background:#25384a;color:#aebaca}#timeline .flight{background:#3a5c6d}#timeline .hit{background:#4d7771}#timeline .rest{background:#172839}.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:#aab9c9}.description{margin-top:20px;padding-top:18px;border-top:1px solid #34495f}.description p{margin:5px 0}table{border-collapse:collapse;width:100%;font-size:14px;margin:16px 0}th,td{text-align:left;border-bottom:1px solid #34495f;padding:10px;vertical-align:top}th{color:#edc789}.table-wrap{overflow:auto}.embed main{padding:0}.embed .standalone{display:none}.embed .attacks{margin-top:0}.error{color:#ffc0a7}footer{margin:24px 0 0;font-size:14px;color:#aab9c9}@media(max-width:680px){main{padding:20px 12px}.attacks{grid-template-columns:repeat(2,1fr)}h1{font-size:25px}.toolbar{gap:10px}.toolbar label{flex-wrap:wrap}#timeline span{font-size:11px}button,select{padding:9px 11px}.description{font-size:14px}}
+.table-wrap th:nth-child(2),.table-wrap td:nth-child(2){min-width:72px}.table-wrap th:last-child,.table-wrap td:last-child{white-space:nowrap;min-width:82px}
+</style></head><body><main>
+<header class="standalone"><div class="eyebrow">LAST BELL · PLANNING v5.3</div><h1>맞을 곳이 먼저 보이고,<br>세 번 깜빡인 뒤 공격이 온다.</h1><p>방향 문구 대신 반투명 금빛 범위로 피할 공간을 보여 줍니다. 캐릭터 위 타이밍 바와 네 회피 버튼은 유지합니다.</p><p class="notice">기획 미리보기입니다. 현재 게임 실행본에는 적용하지 않았습니다.</p></header>
+<div class="attacks" role="group" aria-label="공격 유형">
+<button type="button" data-attack="thrust" aria-pressed="true">창 찌르기<small>몬스터 앞 → 몸통</small></button>
+<button type="button" data-attack="low" aria-pressed="false">낮은 휩쓸기<small>발밑을 가로지르는 띠</small></button>
+<button type="button" data-attack="high" aria-pressed="false">높은 휩쓸기<small>머리 높이의 띠</small></button>
+<button type="button" data-attack="rear" aria-pressed="false">후방 내려치기<small>등 뒤와 현재 자리</small></button>
+</div>
+<div class="stage"><canvas id="battle-preview" width="960" height="540" role="img" aria-label="금빛 위험 영역이 세 번 깜빡인 뒤 공격이 이동하는 미리보기">금빛 사각형은 공격 위험 영역입니다. 방향 문구와 정답 화살표는 표시하지 않습니다.</canvas></div>
+<div class="toolbar">
+<button type="button" id="play">일시정지</button><button type="button" id="restart">처음부터</button>
+<label>타격까지 <select id="duration"><option value="900">900ms · 기본안</option><option value="650">650ms · 빠른안</option></select></label>
+<label><input type="checkbox" id="auto-dodge">회피 예시</label><label><input type="checkbox" id="repeat" checked>반복</label><label><input type="checkbox" id="reduce">점멸 줄이기</label>
+</div>
+<div class="time-row"><label for="scrub">재생 위치 <output id="elapsed">0ms</output></label><output id="phase">준비</output></div>
+<input id="scrub" type="range" min="0" max="1350" value="0" step="1" aria-label="예고부터 타격 후까지 시간 탐색">
+<div id="timeline" role="img" aria-label="세 차례의 밝음과 흐림, 공격 비행, 타격"></div>
+<div class="legend"><span>금빛 채움 alpha 0.20 ↔ 0.04</span><span>밝음·흐림 × 3 → 비행120ms → 타격</span></div>
+<div class="description" aria-live="polite"><strong id="attack-description"></strong><p id="shape-description"></p><p class="muted">게임 화면 안에는 회피 안내 문구·정답 화살표·정답 버튼의 사전 강조를 넣지 않습니다. 아래 설명은 검토용입니다.</p></div>
+<section class="standalone"><h2>네 방향을 같은 규칙으로 읽는다</h2><div class="table-wrap"><table><thead><tr><th>공격 범위</th><th>남는 공간</th><th>회피 예시</th></tr></thead><tbody><tr><td>몬스터 앞에서 캐릭터까지 연결된 몸통 통로</td><td>캐릭터 뒤쪽</td><td>◀ 후퇴</td></tr><tr><td>발목 높이의 긴 띠</td><td>위쪽</td><td>▲ 점프</td></tr><tr><td>머리 높이의 긴 띠</td><td>아래쪽</td><td>▼ 숙이기</td></tr><tr><td>등 뒤와 현재 자리를 덮는 세로 범위</td><td>몬스터 쪽</td><td>▶ 전진</td></tr></tbody></table></div>
+<p>금빛은 안전지대가 아닌 위험 영역입니다. 예고가 끝나면 공격이 출발하고, 타이밍 바가 끝선에 닿을 때 접촉합니다. 일반160ms·완벽60ms 판정창은 타격 시점 기준입니다.</p>
+<p class="muted">현재 후속 예고250ms에 세 번의 깜빡임을 압축하지 않습니다. 연타도 다음 타격150ms 전환 뒤650ms 이상 예고하는 안으로 수정했습니다. 기존 포즈와 간략한 공격 궤적으로 표현한 기획 시안이며, 실제 전투 판정·새 적 애니메이션의 완성본은 아닙니다.</p></section>
+<footer class="standalone"><a href="feedback-plan-v5.html#timing">전체 기획 보드</a> · <a href="design-spec.md">상세 규칙</a></footer>
+</main><script src="hitbox-preview-v53-data.js"></script><script src="hitbox-preview-v53.js"></script></body></html>

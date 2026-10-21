@@ -1,0 +1,101 @@
+{
+  "passed": true,
+  "method": "Offline Node VM + native Canvas rendering; no browser/tab access",
+  "cases": [
+    {
+      "attack": "thrust",
+      "screenCenter": true,
+      "circularArc": true,
+      "worldShakeIndependent": true,
+      "allCornersCleared": true
+    },
+    {
+      "attack": "low",
+      "screenCenter": true,
+      "circularArc": true,
+      "worldShakeIndependent": true,
+      "allCornersCleared": true
+    },
+    {
+      "attack": "high",
+      "screenCenter": true,
+      "circularArc": true,
+      "worldShakeIndependent": true,
+      "allCornersCleared": true
+    },
+    {
+      "attack": "rear",
+      "screenCenter": true,
+      "circularArc": true,
+      "worldShakeIndependent": true,
+      "allCornersCleared": true
+    }
+  ],
+  "comboRegression": [
+    {
+      "pattern": "front-rear",
+      "duration": 900,
+      "allCuesFirst": true,
+      "threeFlashesPerDirection": true
+    },
+    {
+      "pattern": "rear-front",
+      "duration": 900,
+      "allCuesFirst": true,
+      "threeFlashesPerDirection": true
+    },
+    {
+      "pattern": "low-high",
+      "duration": 900,
+      "allCuesFirst": true,
+      "threeFlashesPerDirection": true
+    },
+    {
+      "pattern": "high-low",
+      "duration": 900,
+      "allCuesFirst": true,
+      "threeFlashesPerDirection": true
+    },
+    {
+      "pattern": "front-rear",
+      "duration": 650,
+      "allCuesFirst": true,
+      "threeFlashesPerDirection": true
+    },
+    {
+      "pattern": "rear-front",
+      "duration": 650,
+      "allCuesFirst": true,
+      "threeFlashesPerDirection": true
+    },
+    {
+      "pattern": "low-high",
+      "duration": 650,
+      "allCuesFirst": true,
+      "threeFlashesPerDirection": true
+    },
+    {
+      "pattern": "high-low",
+      "duration": 650,
+      "allCuesFirst": true,
+      "threeFlashesPerDirection": true
+    }
+  ],
+  "manualCounterKeepsCenter": true,
+  "noWaveOnHit": true,
+  "reducedCenterCircle": true,
+  "demoButton": true,
+  "pausePixelIdentical": true,
+  "freshEntryPoints": [
+    "hitbox-preview-v55.html",
+    "hitbox-preview-v53.html",
+    "feedback-plan-v55.html",
+    "feedback-plan-v5.html"
+  ],
+  "htmlReferencesExist": true,
+  "viewport": [
+    960,
+    540
+  ],
+  "maxRadius": 614.7267925205746
+}
