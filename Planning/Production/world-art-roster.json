@@ -1,0 +1,2904 @@
+{
+  "schemaVersion": 1,
+  "planVersion": "world-art-plan-1",
+  "date": "2026-10-21",
+  "status": "production-proposal-not-produced-assets",
+  "scope": "50종 확장 명단과 MVP 5종의 제작 범위를 구분하는 기획 데이터",
+  "runtimeCatalog": false,
+  "owner": "concept-planning",
+  "sourceContract": "Planning/mvp-implementation-contract.md",
+  "sourcePlanningVersion": "planning-v4",
+  "reference": {
+    "path": "C:/Users/JW/AppData/Local/Temp/codex-clipboard-924f49ca-2e6d-4745-b8d0-72e33b0ae608.png",
+    "inspected": true,
+    "observations": [
+      "어두운 청색의 구조물과 먼 배경",
+      "밝은 황금색 인물·무기 외곽",
+      "큰 도트 덩어리와 제한된 명암",
+      "작은 주인공과 크게 다른 적 체급",
+      "아치·사슬·종이 만드는 수직 실루엣"
+    ],
+    "limitations": [
+      "이미지 한 장으로 제작 가능 프레임 수·시트 일관성·실제 애니메이션 품질을 확인할 수 없다.",
+      "사용자 참고의 색·덩어리·체급을 기준으로 삼되 개별 실루엣과 액션은 새로 설계한다."
+    ]
+  },
+  "style": {
+    "paletteProposal": {
+      "ink": "#0C172B",
+      "deepBlue": "#1B3150",
+      "midBlue": "#345379",
+      "fogBlue": "#526F92",
+      "goldShadow": "#AC7833",
+      "gold": "#DCA947",
+      "goldLight": "#F2D184",
+      "cueCore": "#FFF0B4"
+    },
+    "logicalWorldSize": [
+      320,
+      180
+    ],
+    "referenceViewport": [
+      960,
+      540
+    ],
+    "pixelScale": 3,
+    "groundRatio": 0.82,
+    "filter": "Point",
+    "mipmaps": false,
+    "compression": "lossless-or-uncompressed-for-review",
+    "cellSizeProposal": {
+      "player": [
+        48,
+        48
+      ],
+      "normal": [
+        64,
+        64
+      ],
+      "miniboss": [
+        80,
+        80
+      ],
+      "boss": [
+        96,
+        96
+      ]
+    },
+    "spriteFootAnchor": "same ground contact per clip; floating bodies keep a separate stable shadow anchor",
+    "facing": "side-view; player faces right; enemy faces left",
+    "directionMeaning": "up/down/back/forward are dodge actions and threat responses, not four camera directions",
+    "readabilityRules": [
+      "몸·무기·예고의 외곽 형태를 색 없이도 구분한다.",
+      "배경 황금 포인트는 인물보다 어둡고 작게 유지한다.",
+      "위험 예고는 대상 주변 위험 영역이며 정답 화살표가 아니다.",
+      "HUD·피해 숫자·손가락 영역 밖에서 예고 전체가 읽혀야 한다.",
+      "회전·확대된 도트가 흔들리지 않도록 최종 합성 프레임을 정수 좌표로 점검한다."
+    ]
+  },
+  "distinctness": {
+    "minimumAxes": [
+      "silhouette",
+      "weapon-or-attacking-part",
+      "attack-preparation-and-motion"
+    ],
+    "paletteOnlyCountsAsNewSpecies": false,
+    "requiredChecks": [
+      "동일 크기 검은 실루엣에서 같은 family의 다른 종과 구분되는 몸·부속 외곽",
+      "무기 종류 또는 공격 부위의 다른 외곽·도달 궤적",
+      "준비 자세와 실제 공격 동작이 달라지고 패턴 순서 또는 궤적이 다른 행동 표본"
+    ],
+    "notSufficient": [
+      "색 교체만",
+      "이름·HP·공격력만 변경",
+      "크기만 확대",
+      "같은 몸과 무기에 장식 한 점만 추가"
+    ],
+    "patternsAreConcepts": true,
+    "patternTimingSource": "runtime catalog owner; this file defines no executable timings or damage"
+  },
+  "cues": [
+    {
+      "id": "low_sweep",
+      "danger": "발목 가까운 수평 궤적",
+      "safeDodgeDirection": "up",
+      "symbol": "▲"
+    },
+    {
+      "id": "high_sweep",
+      "danger": "머리·상체 높이 궤적",
+      "safeDodgeDirection": "down",
+      "symbol": "▼"
+    },
+    {
+      "id": "thrust",
+      "danger": "적에서 몸통으로 좁혀오는 선",
+      "safeDodgeDirection": "back",
+      "symbol": "◀"
+    },
+    {
+      "id": "outer_arc",
+      "danger": "뒤·바깥을 휩쓰고 안쪽을 비운 원호",
+      "safeDodgeDirection": "forward",
+      "symbol": "▶"
+    }
+  ],
+  "player": {
+    "id": "on",
+    "displayName": "온",
+    "states": [
+      {
+        "id": "idle",
+        "frames": 4
+      },
+      {
+        "id": "attack",
+        "frames": 6
+      },
+      {
+        "id": "hit",
+        "frames": 2
+      },
+      {
+        "id": "death",
+        "frames": 6
+      },
+      {
+        "id": "dodge_up",
+        "frames": 5
+      },
+      {
+        "id": "dodge_down",
+        "frames": 4
+      },
+      {
+        "id": "dodge_back",
+        "frames": 4
+      },
+      {
+        "id": "dodge_forward",
+        "frames": 4
+      }
+    ],
+    "totalFrames": 35,
+    "optionalStunnedFrames": 4,
+    "optionalStunnedIncludedInTotal": false,
+    "stunnedPolicy": "현 계약의 기절 대상은 적이다. 플레이어 기절 규칙이 추가되지 않으면 별도 player_stunned 클립을 만들거나 게임 규칙을 추가하지 않는다.",
+    "dodgeClips": {
+      "dodge_up": "측면을 유지하며 무릎 접기→수직 뛰기→같은 기준점 착지",
+      "dodge_down": "측면을 유지하며 상체 숙이기→유지→복귀",
+      "dodge_back": "시선을 적에 둔 채 뒤로 체중 이동→짧은 후퇴→기준점 복귀",
+      "dodge_forward": "시선을 유지하며 몸을 낮춰 앞쪽 빈 공간으로 들어가기→기준점 복귀; 적 통과 금지"
+    },
+    "movementPolicy": "자유 이동·8방향 보행 스프라이트는 범위 밖. 프레임 재생이 판정창을 소유하지 않는다."
+  },
+  "families": [
+    {
+      "id": "armored_biped",
+      "displayName": "갑옷 이족",
+      "seedEnemyId": "gate_sentinel",
+      "shared": "발 고정·골반 회전·어깨와 손목 기준점",
+      "distinct": "투구·어깨·몸통 폭·방패/창/망치와 준비 자세를 종별로 다시 그린다.",
+      "memberIds": [
+        "gate_sentinel",
+        "gate_mason",
+        "chain_reeler",
+        "chain_pendulum",
+        "clock_sentry",
+        "ash_soldier",
+        "ash_bladeguard",
+        "dawn_sentinel"
+      ],
+      "baseStateFrames": {
+        "idle": 4,
+        "telegraph": 3,
+        "attack": 4,
+        "hit": 2,
+        "stunned": 3,
+        "death": 6
+      },
+      "baseFrameCount": 22,
+      "extraAttackDirectionFrames": 7,
+      "reuseStatus": "template-proposal-not-built"
+    },
+    {
+      "id": "light_biped",
+      "displayName": "가벼운 이족",
+      "seedEnemyId": "gate_runner",
+      "shared": "낮은 중심·무릎 접힘·짧은 반동",
+      "distinct": "후드·팔다리 비율·무기 장착점은 개별 수정. 쇠뇌는 발사 손 위치 별도.",
+      "memberIds": [
+        "gate_runner",
+        "gate_crossbowman",
+        "chain_hooker",
+        "clock_duelist",
+        "ash_climber",
+        "dawn_duelist"
+      ],
+      "baseStateFrames": {
+        "idle": 4,
+        "telegraph": 3,
+        "attack": 4,
+        "hit": 2,
+        "stunned": 3,
+        "death": 6
+      },
+      "baseFrameCount": 22,
+      "extraAttackDirectionFrames": 7,
+      "reuseStatus": "template-proposal-not-built"
+    },
+    {
+      "id": "beast_quadruped",
+      "displayName": "낮은 사족",
+      "seedEnemyId": "gate_hound",
+      "shared": "앞발 버팀·등 굽힘·턱 기준점",
+      "distinct": "뿔·턱·등 장식·추 꼬리와 무게 이동은 개별 수정. 비행 새에 전용하지 않는다.",
+      "memberIds": [
+        "gate_hound",
+        "chain_hound",
+        "clock_hound",
+        "ash_stalker",
+        "dawn_hound"
+      ],
+      "baseStateFrames": {
+        "idle": 4,
+        "telegraph": 3,
+        "attack": 4,
+        "hit": 2,
+        "stunned": 3,
+        "death": 6
+      },
+      "baseFrameCount": 22,
+      "extraAttackDirectionFrames": 7,
+      "reuseStatus": "template-proposal-not-built"
+    },
+    {
+      "id": "wisp_hover",
+      "displayName": "작은 부유체",
+      "seedEnemyId": "ash_wisp",
+      "shared": "중심 부유·수축·분해",
+      "distinct": "외곽 물방울/고리/날개/불꽃을 종별 재작화하고 공격 부위를 바꾼다.",
+      "memberIds": [
+        "ash_wisp",
+        "chain_echo",
+        "clock_mote",
+        "ash_cinder",
+        "dawn_moth"
+      ],
+      "baseStateFrames": {
+        "idle": 4,
+        "telegraph": 3,
+        "attack": 4,
+        "hit": 2,
+        "stunned": 3,
+        "death": 6
+      },
+      "baseFrameCount": 22,
+      "extraAttackDirectionFrames": 7,
+      "reuseStatus": "template-proposal-not-built"
+    },
+    {
+      "id": "bell_hulk",
+      "displayName": "넓은 중형 거체",
+      "seedEnemyId": "gate_warden",
+      "shared": "짧은 다리·무거운 흔들림·두 손 기준점",
+      "distinct": "문짝·철창·기어·화구·쌍종 외곽을 교체하고 충돌한 것처럼 보이는 질량을 다시 조절한다.",
+      "memberIds": [
+        "gate_warden",
+        "chain_gaoler",
+        "clock_escapement",
+        "ash_furnace",
+        "dawn_bellbearer"
+      ],
+      "baseStateFrames": {
+        "idle": 4,
+        "telegraph": 3,
+        "attack": 4,
+        "hit": 2,
+        "stunned": 3,
+        "death": 6
+      },
+      "baseFrameCount": 22,
+      "extraAttackDirectionFrames": 7,
+      "reuseStatus": "template-proposal-not-built"
+    },
+    {
+      "id": "robed_hover",
+      "displayName": "긴 옷의 부유체",
+      "seedEnemyId": "gate_lantern",
+      "shared": "옷자락 펄럭임·소매 기준점·부유",
+      "distinct": "후드·소매·후광·소품·빈 공간을 개별 제작한다. 공격 예고를 소품만 회전시켜 해결하지 않는다.",
+      "memberIds": [
+        "gate_lantern",
+        "chain_cantor",
+        "clock_scribe",
+        "ash_tollkeeper",
+        "dawn_chorister",
+        "dawn_cantor"
+      ],
+      "baseStateFrames": {
+        "idle": 4,
+        "telegraph": 3,
+        "attack": 4,
+        "hit": 2,
+        "stunned": 3,
+        "death": 6
+      },
+      "baseFrameCount": 22,
+      "extraAttackDirectionFrames": 7,
+      "reuseStatus": "template-proposal-not-built"
+    },
+    {
+      "id": "chain_biped",
+      "displayName": "사슬 이족",
+      "seedEnemyId": "chain_thrall",
+      "shared": "비대칭 팔 당김·등 반동·한 손 견인",
+      "distinct": "사슬 길이·원호·무기 질량과 다른 팔 자세를 종별 수정. 사슬/추는 별도 레이어.",
+      "memberIds": [
+        "gate_executioner",
+        "chain_thrall",
+        "clock_winder",
+        "ash_chainbearer",
+        "dawn_chainweaver"
+      ],
+      "baseStateFrames": {
+        "idle": 4,
+        "telegraph": 3,
+        "attack": 4,
+        "hit": 2,
+        "stunned": 3,
+        "death": 6
+      },
+      "baseFrameCount": 22,
+      "extraAttackDirectionFrames": 7,
+      "reuseStatus": "template-proposal-not-built"
+    },
+    {
+      "id": "clock_construct",
+      "displayName": "소형 기계체",
+      "seedEnemyId": "chain_crawler",
+      "shared": "중심축 반동·하부 지지점·회전부 기준점",
+      "distinct": "충형/삼각/바퀴/천구 구조가 달라 몸통은 개별 제작. 회전 주기와 재질/VFX만 넓게 공유.",
+      "memberIds": [
+        "chain_crawler",
+        "clock_scarab",
+        "clock_metronome",
+        "ash_mill",
+        "dawn_orrery"
+      ],
+      "baseStateFrames": {
+        "idle": 4,
+        "telegraph": 3,
+        "attack": 4,
+        "hit": 2,
+        "stunned": 3,
+        "death": 6
+      },
+      "baseFrameCount": 22,
+      "extraAttackDirectionFrames": 7,
+      "reuseStatus": "template-proposal-not-built"
+    },
+    {
+      "id": "boss_knight",
+      "displayName": "큰 기사 보스",
+      "seedEnemyId": "bell_knight",
+      "shared": "긴 무기·다리 버팀·흉갑 회전",
+      "distinct": "대검·투구·날개·보조무기와 네 방향 예고 자세 별도 교정.",
+      "memberIds": [
+        "bell_knight",
+        "ash_paladin"
+      ],
+      "baseStateFrames": {
+        "idle": 4,
+        "telegraph": 3,
+        "attack": 4,
+        "hit": 2,
+        "stunned": 3,
+        "death": 6
+      },
+      "baseFrameCount": 22,
+      "extraAttackDirectionFrames": 7,
+      "reuseStatus": "template-proposal-not-built"
+    },
+    {
+      "id": "boss_colossus",
+      "displayName": "구조물 보스",
+      "seedEnemyId": "chain_jailer",
+      "shared": "중앙 진동·세로 축·매달린 부분의 흔들림",
+      "distinct": "사슬 틀/시계탑/빈 종은 골격까지 다르므로 프레임 순서와 VFX만 공유하고 몸체 재작화.",
+      "memberIds": [
+        "chain_jailer",
+        "clock_regent",
+        "dawn_last_bell"
+      ],
+      "baseStateFrames": {
+        "idle": 4,
+        "telegraph": 3,
+        "attack": 4,
+        "hit": 2,
+        "stunned": 3,
+        "death": 6
+      },
+      "baseFrameCount": 22,
+      "extraAttackDirectionFrames": 7,
+      "reuseStatus": "template-proposal-not-built"
+    }
+  ],
+  "zones": [
+    {
+      "id": "gate",
+      "displayName": "성문",
+      "firstStage": 1,
+      "lastStage": 10,
+      "backgroundId": "bg_gate",
+      "foreground": "깨진 문턱·끊긴 성벽 바닥·낮은 벽돌",
+      "midground": "아치 성문·부서진 창·녹슨 빗장",
+      "farBackground": "푸른 안개 속 성벽·가느다란 탑",
+      "landmark": "적 뒤쪽 높은 성문 아치",
+      "avoid": "창살과 벽돌의 수평선을 공격 예고 높이에 강하게 반복하지 않는다."
+    },
+    {
+      "id": "chain_corridor",
+      "displayName": "사슬회랑",
+      "firstStage": 11,
+      "lastStage": 20,
+      "backgroundId": "bg_chain_corridor",
+      "foreground": "끊어진 철제 난간·고리 고정대",
+      "midground": "높은 기둥·비어 있는 철창·수직 사슬",
+      "farBackground": "원근이 깊은 좁은 회랑과 사슬 그림자",
+      "landmark": "중앙 위쪽에 매달린 큰 빈 종",
+      "avoid": "배경 사슬은 저대비로 고정하고 공격 사슬과 색·밝기·움직임을 구분한다."
+    },
+    {
+      "id": "stopped_clock",
+      "displayName": "멈춘시계",
+      "firstStage": 21,
+      "lastStage": 30,
+      "backgroundId": "bg_stopped_clock",
+      "foreground": "멈춘 기어 이빨·평평한 시계틀 바닥",
+      "midground": "부서진 원형 시계판·진자 틀",
+      "farBackground": "거대한 정지 톱니와 끊긴 초침 그림자",
+      "landmark": "대각선으로 멎은 큰 시침",
+      "avoid": "전투 예고와 오인되는 기어 회전은 쓰지 않는다. 시계침은 정지시킨다."
+    },
+    {
+      "id": "ash_spire",
+      "displayName": "잿빛첨탑",
+      "firstStage": 31,
+      "lastStage": 40,
+      "backgroundId": "bg_ash_spire",
+      "foreground": "재 쌓인 석판·깨진 난간",
+      "midground": "가늘고 높은 탑 기둥·갈라진 창문",
+      "farBackground": "겹친 첨탑과 옅은 재 안개",
+      "landmark": "한쪽이 무너진 긴 첨탑 창",
+      "avoid": "황금색 재 파편을 배경에 다량 사용하지 않는다. 피격 파편은 전경 사건으로 남긴다."
+    },
+    {
+      "id": "dawn_belfry",
+      "displayName": "새벽종루",
+      "firstStage": 41,
+      "lastStage": 50,
+      "backgroundId": "bg_dawn_belfry",
+      "foreground": "종루 석판·종 끈의 낮은 고정대",
+      "midground": "큰 종 지지대·두꺼운 수직 기둥",
+      "farBackground": "청색 하늘·낮은 수평 구름·가느다란 새벽빛",
+      "landmark": "중앙 위의 큰 빈 종과 좁은 하늘 틈",
+      "avoid": "새벽빛을 적과 같은 밝기로 채우지 않는다. 종추·기둥은 위험 궤적 뒤에서 저대비 유지."
+    }
+  ],
+  "roster": [
+    {
+      "id": "gate_sentinel",
+      "displayName": "성문 파수병",
+      "zoneId": "gate",
+      "targetStage": 1,
+      "role": "normal",
+      "familyId": "armored_biped",
+      "silhouette": "긴 사각 방패·좁은 투구·곧게 선 몸통",
+      "weapon": "창과 사각 방패",
+      "attackChoreography": "방패 뒤 창을 수평으로 모은 뒤 찌르거나 끝을 낮춰 쓸기. MVP의 높은 쓸기는 방패 상단, 바깥 원호는 창대 회전으로 구분한다.",
+      "patternVariants": [
+        {
+          "id": "gate_sentinel_concept_1",
+          "steps": [
+            {
+              "cueId": "thrust",
+              "safeDodgeDirection": "back"
+            }
+          ]
+        },
+        {
+          "id": "gate_sentinel_concept_2",
+          "steps": [
+            {
+              "cueId": "low_sweep",
+              "safeDodgeDirection": "up"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ],
+      "runtimeArtId": "gate_sentinel",
+      "mvpRequiredCueIds": [
+        "low_sweep",
+        "outer_arc",
+        "high_sweep",
+        "thrust"
+      ]
+    },
+    {
+      "id": "gate_runner",
+      "displayName": "성문 길잡이",
+      "zoneId": "gate",
+      "targetStage": 2,
+      "role": "normal",
+      "familyId": "light_biped",
+      "silhouette": "앞으로 기운 짧은 몸통·삼각 후드·갈라진 망토",
+      "weapon": "한 손 갈고리 단검",
+      "attackChoreography": "낮게 웅크린 자세에서 발목 베기 후 상단 되치기",
+      "patternVariants": [
+        {
+          "id": "gate_runner_concept_1",
+          "steps": [
+            {
+              "cueId": "low_sweep",
+              "safeDodgeDirection": "up"
+            }
+          ]
+        },
+        {
+          "id": "gate_runner_concept_2",
+          "steps": [
+            {
+              "cueId": "low_sweep",
+              "safeDodgeDirection": "up"
+            },
+            {
+              "cueId": "high_sweep",
+              "safeDodgeDirection": "down"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "gate_hound",
+      "displayName": "빗장 사냥개",
+      "zoneId": "gate",
+      "targetStage": 3,
+      "role": "normal",
+      "familyId": "beast_quadruped",
+      "silhouette": "낮은 네 발·등의 빗장·길게 벌어진 턱",
+      "weapon": "빗장 이빨과 앞발",
+      "attackChoreography": "턱을 접고 직선 물기, 앞발을 끌어 바닥 쓸기",
+      "patternVariants": [
+        {
+          "id": "gate_hound_concept_1",
+          "steps": [
+            {
+              "cueId": "thrust",
+              "safeDodgeDirection": "back"
+            }
+          ]
+        },
+        {
+          "id": "gate_hound_concept_2",
+          "steps": [
+            {
+              "cueId": "low_sweep",
+              "safeDodgeDirection": "up"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "ash_wisp",
+      "displayName": "재의 불씨",
+      "zoneId": "gate",
+      "targetStage": 4,
+      "role": "normal",
+      "familyId": "wisp_hover",
+      "silhouette": "빈 중심의 물방울 몸·아래로 갈라진 불꽃 꼬리",
+      "weapon": "휘는 불꽃 띠",
+      "attackChoreography": "꼬리를 머리 높이로 모아 펴거나 낮게 흘려 쓸기. MVP의 찌르기는 불꽃 띠를 몸통 높이의 좁은 침으로 모은다.",
+      "patternVariants": [
+        {
+          "id": "ash_wisp_concept_1",
+          "steps": [
+            {
+              "cueId": "high_sweep",
+              "safeDodgeDirection": "down"
+            }
+          ]
+        },
+        {
+          "id": "ash_wisp_concept_2",
+          "steps": [
+            {
+              "cueId": "low_sweep",
+              "safeDodgeDirection": "up"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ],
+      "runtimeArtId": "ash_wisp",
+      "mvpRequiredCueIds": [
+        "high_sweep",
+        "low_sweep",
+        "thrust"
+      ]
+    },
+    {
+      "id": "gate_warden",
+      "displayName": "성문 수문장",
+      "zoneId": "gate",
+      "targetStage": 5,
+      "role": "miniboss",
+      "familyId": "bell_hulk",
+      "silhouette": "양쪽 문짝 어깨·종 모양 몸통·짧고 굵은 다리",
+      "weapon": "문짝 방패와 무거운 쇠추",
+      "attackChoreography": "쇠추를 바닥에 끌어 쓴 뒤 방패 밀기, 크게 벌린 추는 안쪽을 비움. MVP의 높은 쓸기는 들어 올린 문짝 방패 상단으로 구분한다.",
+      "patternVariants": [
+        {
+          "id": "gate_warden_concept_1",
+          "steps": [
+            {
+              "cueId": "low_sweep",
+              "safeDodgeDirection": "up"
+            },
+            {
+              "cueId": "thrust",
+              "safeDodgeDirection": "back"
+            }
+          ]
+        },
+        {
+          "id": "gate_warden_concept_2",
+          "steps": [
+            {
+              "cueId": "outer_arc",
+              "safeDodgeDirection": "forward"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ],
+      "runtimeArtId": "gate_warden",
+      "mvpRequiredCueIds": [
+        "low_sweep",
+        "high_sweep",
+        "thrust",
+        "outer_arc"
+      ]
+    },
+    {
+      "id": "gate_crossbowman",
+      "displayName": "틈새 사수",
+      "zoneId": "gate",
+      "targetStage": 6,
+      "role": "normal",
+      "familyId": "light_biped",
+      "silhouette": "등의 긴 쇠뇌 가로대·한쪽 무릎을 접은 자세",
+      "weapon": "접이식 쇠뇌",
+      "attackChoreography": "몸통 조준을 당겨 직선 사격, 쇠뇌 가로대를 올려 높은 쓸기",
+      "patternVariants": [
+        {
+          "id": "gate_crossbowman_concept_1",
+          "steps": [
+            {
+              "cueId": "thrust",
+              "safeDodgeDirection": "back"
+            }
+          ]
+        },
+        {
+          "id": "gate_crossbowman_concept_2",
+          "steps": [
+            {
+              "cueId": "high_sweep",
+              "safeDodgeDirection": "down"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "gate_mason",
+      "displayName": "폐문 석공",
+      "zoneId": "gate",
+      "targetStage": 7,
+      "role": "normal",
+      "familyId": "armored_biped",
+      "silhouette": "각진 돌 어깨·짧은 머리·허리까지 넓은 앞치마",
+      "weapon": "긴 석공 망치",
+      "attackChoreography": "양손 망치를 들어 넓은 바깥 원호, 낮춰 끌면 발목 궤적",
+      "patternVariants": [
+        {
+          "id": "gate_mason_concept_1",
+          "steps": [
+            {
+              "cueId": "outer_arc",
+              "safeDodgeDirection": "forward"
+            }
+          ]
+        },
+        {
+          "id": "gate_mason_concept_2",
+          "steps": [
+            {
+              "cueId": "low_sweep",
+              "safeDodgeDirection": "up"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "gate_lantern",
+      "displayName": "빈 등불지기",
+      "zoneId": "gate",
+      "targetStage": 8,
+      "role": "normal",
+      "familyId": "robed_hover",
+      "silhouette": "긴 빈 소매·원통 등불·발 없는 수직 옷자락",
+      "weapon": "등불 장대",
+      "attackChoreography": "등불을 머리 높이로 흔들고 장대 끝을 몸통으로 뻗음",
+      "patternVariants": [
+        {
+          "id": "gate_lantern_concept_1",
+          "steps": [
+            {
+              "cueId": "high_sweep",
+              "safeDodgeDirection": "down"
+            },
+            {
+              "cueId": "thrust",
+              "safeDodgeDirection": "back"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "gate_executioner",
+      "displayName": "빗장 집행자",
+      "zoneId": "gate",
+      "targetStage": 9,
+      "role": "normal",
+      "familyId": "chain_biped",
+      "silhouette": "삼각 철가면·한쪽 어깨만 높은 비대칭 몸",
+      "weapon": "사슬에 매단 넓은 도끼날",
+      "attackChoreography": "도끼날을 바깥으로 던져 되감고 회수한 날로 상단 쓸기",
+      "patternVariants": [
+        {
+          "id": "gate_executioner_concept_1",
+          "steps": [
+            {
+              "cueId": "outer_arc",
+              "safeDodgeDirection": "forward"
+            },
+            {
+              "cueId": "high_sweep",
+              "safeDodgeDirection": "down"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "bell_knight",
+      "displayName": "종의 기사",
+      "zoneId": "gate",
+      "targetStage": 10,
+      "role": "boss",
+      "familyId": "boss_knight",
+      "silhouette": "종형 투구·한쪽 긴 견갑·긴 흉갑의 큰 기사",
+      "weapon": "대검과 손종",
+      "attackChoreography": "검끝을 낮춘 쓸기에서 찌르기로 잇고, 손종을 들어 높은 베기 후 바깥 원호",
+      "patternVariants": [
+        {
+          "id": "bell_knight_concept_1",
+          "steps": [
+            {
+              "cueId": "low_sweep",
+              "safeDodgeDirection": "up"
+            },
+            {
+              "cueId": "thrust",
+              "safeDodgeDirection": "back"
+            }
+          ]
+        },
+        {
+          "id": "bell_knight_concept_2",
+          "steps": [
+            {
+              "cueId": "high_sweep",
+              "safeDodgeDirection": "down"
+            },
+            {
+              "cueId": "outer_arc",
+              "safeDodgeDirection": "forward"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ],
+      "runtimeArtId": "bell_knight",
+      "mvpRequiredCueIds": [
+        "low_sweep",
+        "high_sweep",
+        "outer_arc",
+        "thrust"
+      ]
+    },
+    {
+      "id": "chain_thrall",
+      "displayName": "사슬 망령",
+      "zoneId": "chain_corridor",
+      "targetStage": 11,
+      "role": "normal",
+      "familyId": "chain_biped",
+      "silhouette": "굽은 등·길게 늘어진 한 팔·고리 어깨",
+      "weapon": "한 팔 쇠사슬 갈고리",
+      "attackChoreography": "쇠사슬을 머리 높이로 당겨 쓸고 바깥 고리로 확장. MVP의 찌르기는 좁힌 갈고리 투척, 낮은 쓸기는 바닥에 끄는 사슬로 구분한다.",
+      "patternVariants": [
+        {
+          "id": "chain_thrall_concept_1",
+          "steps": [
+            {
+              "cueId": "high_sweep",
+              "safeDodgeDirection": "down"
+            }
+          ]
+        },
+        {
+          "id": "chain_thrall_concept_2",
+          "steps": [
+            {
+              "cueId": "outer_arc",
+              "safeDodgeDirection": "forward"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ],
+      "runtimeArtId": "chain_thrall",
+      "mvpRequiredCueIds": [
+        "thrust",
+        "low_sweep",
+        "outer_arc",
+        "high_sweep"
+      ]
+    },
+    {
+      "id": "chain_hound",
+      "displayName": "추 달린 짐승",
+      "zoneId": "chain_corridor",
+      "targetStage": 12,
+      "role": "normal",
+      "familyId": "beast_quadruped",
+      "silhouette": "앞가슴은 낮고 뒤쪽에 큰 추·등 사슬 두 줄",
+      "weapon": "추 꼬리와 납작한 턱",
+      "attackChoreography": "추 꼬리를 바닥으로 돌린 뒤 턱을 뻗어 추격 물기",
+      "patternVariants": [
+        {
+          "id": "chain_hound_concept_1",
+          "steps": [
+            {
+              "cueId": "low_sweep",
+              "safeDodgeDirection": "up"
+            },
+            {
+              "cueId": "thrust",
+              "safeDodgeDirection": "back"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "chain_reeler",
+      "displayName": "권양 파수병",
+      "zoneId": "chain_corridor",
+      "targetStage": 13,
+      "role": "normal",
+      "familyId": "armored_biped",
+      "silhouette": "등의 큰 권양 원판·좁은 다리·앞으로 튀어나온 손",
+      "weapon": "닻과 손잡이 권양기",
+      "attackChoreography": "닻을 직선으로 보낸 뒤 양손 권양을 당겨 바깥으로 회수",
+      "patternVariants": [
+        {
+          "id": "chain_reeler_concept_1",
+          "steps": [
+            {
+              "cueId": "thrust",
+              "safeDodgeDirection": "back"
+            },
+            {
+              "cueId": "outer_arc",
+              "safeDodgeDirection": "forward"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "chain_crawler",
+      "displayName": "고리 기어충",
+      "zoneId": "chain_corridor",
+      "targetStage": 14,
+      "role": "normal",
+      "familyId": "clock_construct",
+      "silhouette": "여섯 개 짧은 발·낮은 다각 고리 몸·앞 집게",
+      "weapon": "갈고리 집게와 링크 꼬리",
+      "attackChoreography": "집게를 높여 닫고 이어 꼬리 링크를 바닥에 펼침",
+      "patternVariants": [
+        {
+          "id": "chain_crawler_concept_1",
+          "steps": [
+            {
+              "cueId": "high_sweep",
+              "safeDodgeDirection": "down"
+            },
+            {
+              "cueId": "low_sweep",
+              "safeDodgeDirection": "up"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "chain_gaoler",
+      "displayName": "철창 간수",
+      "zoneId": "chain_corridor",
+      "targetStage": 15,
+      "role": "miniboss",
+      "familyId": "bell_hulk",
+      "silhouette": "사각 철창 몸통·어깨의 빈 종·긴 가로 빗장",
+      "weapon": "양손 철창 빗장",
+      "attackChoreography": "빗장을 수평으로 밀고 하단을 끌며 방향을 바꿈",
+      "patternVariants": [
+        {
+          "id": "chain_gaoler_concept_1",
+          "steps": [
+            {
+              "cueId": "thrust",
+              "safeDodgeDirection": "back"
+            },
+            {
+              "cueId": "low_sweep",
+              "safeDodgeDirection": "up"
+            }
+          ]
+        },
+        {
+          "id": "chain_gaoler_concept_2",
+          "steps": [
+            {
+              "cueId": "outer_arc",
+              "safeDodgeDirection": "forward"
+            },
+            {
+              "cueId": "thrust",
+              "safeDodgeDirection": "back"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "chain_hooker",
+      "displayName": "고리 도약자",
+      "zoneId": "chain_corridor",
+      "targetStage": 16,
+      "role": "normal",
+      "familyId": "light_biped",
+      "silhouette": "가느다란 두 다리·굽은 갈고리 모자·짧은 앞치마",
+      "weapon": "양손 작은 훅",
+      "attackChoreography": "짧게 몸을 접었다 높은 훅을 두 번 다른 높이로 교차",
+      "patternVariants": [
+        {
+          "id": "chain_hooker_concept_1",
+          "steps": [
+            {
+              "cueId": "high_sweep",
+              "safeDodgeDirection": "down"
+            },
+            {
+              "cueId": "low_sweep",
+              "safeDodgeDirection": "up"
+            }
+          ]
+        },
+        {
+          "id": "chain_hooker_concept_2",
+          "steps": [
+            {
+              "cueId": "outer_arc",
+              "safeDodgeDirection": "forward"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "chain_echo",
+      "displayName": "매듭 잔향",
+      "zoneId": "chain_corridor",
+      "targetStage": 17,
+      "role": "normal",
+      "familyId": "wisp_hover",
+      "silhouette": "세로로 뚫린 두 고리·짧은 끊어진 꼬리",
+      "weapon": "고리 파동",
+      "attackChoreography": "고리를 눕혀 몸통으로 조인 뒤 바깥 반원으로 풀어냄",
+      "patternVariants": [
+        {
+          "id": "chain_echo_concept_1",
+          "steps": [
+            {
+              "cueId": "thrust",
+              "safeDodgeDirection": "back"
+            },
+            {
+              "cueId": "outer_arc",
+              "safeDodgeDirection": "forward"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "chain_cantor",
+      "displayName": "속박 성가수",
+      "zoneId": "chain_corridor",
+      "targetStage": 18,
+      "role": "normal",
+      "familyId": "robed_hover",
+      "silhouette": "입 부분 철고리·양옆으로 묶인 소매·좁은 옷자락",
+      "weapon": "늘어나는 매듭 끈",
+      "attackChoreography": "두 소매를 벌려 높은 끈을 만들고 한쪽을 낮춰 쓸기",
+      "patternVariants": [
+        {
+          "id": "chain_cantor_concept_1",
+          "steps": [
+            {
+              "cueId": "high_sweep",
+              "safeDodgeDirection": "down"
+            },
+            {
+              "cueId": "low_sweep",
+              "safeDodgeDirection": "up"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "chain_pendulum",
+      "displayName": "쌍추 운반자",
+      "zoneId": "chain_corridor",
+      "targetStage": 19,
+      "role": "normal",
+      "familyId": "armored_biped",
+      "silhouette": "긴 어깨 가로대·양끝 서로 다른 크기의 추",
+      "weapon": "가로대 쌍추",
+      "attackChoreography": "작은 추의 낮은 쓸기 뒤 큰 추의 바깥 원호가 도착",
+      "patternVariants": [
+        {
+          "id": "chain_pendulum_concept_1",
+          "steps": [
+            {
+              "cueId": "low_sweep",
+              "safeDodgeDirection": "up"
+            },
+            {
+              "cueId": "outer_arc",
+              "safeDodgeDirection": "forward"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "chain_jailer",
+      "displayName": "매달린 집행관",
+      "zoneId": "chain_corridor",
+      "targetStage": 20,
+      "role": "boss",
+      "familyId": "boss_colossus",
+      "silhouette": "천장에 이어진 긴 사각 틀·중앙 빈 공간·늘어진 팔",
+      "weapon": "천장 사슬과 두 닻",
+      "attackChoreography": "양쪽 사슬을 바깥으로 펴고 닻을 찌른 뒤 위쪽 사슬을 회수",
+      "patternVariants": [
+        {
+          "id": "chain_jailer_concept_1",
+          "steps": [
+            {
+              "cueId": "outer_arc",
+              "safeDodgeDirection": "forward"
+            },
+            {
+              "cueId": "thrust",
+              "safeDodgeDirection": "back"
+            }
+          ]
+        },
+        {
+          "id": "chain_jailer_concept_2",
+          "steps": [
+            {
+              "cueId": "high_sweep",
+              "safeDodgeDirection": "down"
+            },
+            {
+              "cueId": "low_sweep",
+              "safeDodgeDirection": "up"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "clock_sentry",
+      "displayName": "시침 파수병",
+      "zoneId": "stopped_clock",
+      "targetStage": 21,
+      "role": "normal",
+      "familyId": "armored_biped",
+      "silhouette": "가늘고 높은 몸·시침 모양 투구·둥근 작은 방패",
+      "weapon": "시침 창",
+      "attackChoreography": "시침을 곧게 세운 준비에서 몸통 찌르기, 창대 상단으로 연속 쓸기",
+      "patternVariants": [
+        {
+          "id": "clock_sentry_concept_1",
+          "steps": [
+            {
+              "cueId": "thrust",
+              "safeDodgeDirection": "back"
+            },
+            {
+              "cueId": "high_sweep",
+              "safeDodgeDirection": "down"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "clock_scarab",
+      "displayName": "태엽 갑충",
+      "zoneId": "stopped_clock",
+      "targetStage": 22,
+      "role": "normal",
+      "familyId": "clock_construct",
+      "silhouette": "톱니 반구 등·바닥에 붙은 여섯 다리·짧은 앞날",
+      "weapon": "전면 톱니날",
+      "attackChoreography": "톱니를 낮게 굴린 뒤 앞날을 들어 높게 재회전",
+      "patternVariants": [
+        {
+          "id": "clock_scarab_concept_1",
+          "steps": [
+            {
+              "cueId": "low_sweep",
+              "safeDodgeDirection": "up"
+            },
+            {
+              "cueId": "high_sweep",
+              "safeDodgeDirection": "down"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "clock_mote",
+      "displayName": "초침 불씨",
+      "zoneId": "stopped_clock",
+      "targetStage": 23,
+      "role": "normal",
+      "familyId": "wisp_hover",
+      "silhouette": "네모 입자 테두리·작은 원심·한쪽 긴 침 꼬리",
+      "weapon": "가늘게 뻗는 빛의 침",
+      "attackChoreography": "긴 꼬리를 수평으로 모아 찌르고 반시계 원호로 걷음",
+      "patternVariants": [
+        {
+          "id": "clock_mote_concept_1",
+          "steps": [
+            {
+              "cueId": "thrust",
+              "safeDodgeDirection": "back"
+            },
+            {
+              "cueId": "outer_arc",
+              "safeDodgeDirection": "forward"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "clock_scribe",
+      "displayName": "누락의 기록자",
+      "zoneId": "stopped_clock",
+      "targetStage": 24,
+      "role": "normal",
+      "familyId": "robed_hover",
+      "silhouette": "넓은 열린 책 실루엣·몸보다 큰 후드·짧은 소매",
+      "weapon": "책갈피 쇠날",
+      "attackChoreography": "책을 높이 펼쳐 쓸고 페이지 끝을 접어 직선으로 보냄",
+      "patternVariants": [
+        {
+          "id": "clock_scribe_concept_1",
+          "steps": [
+            {
+              "cueId": "high_sweep",
+              "safeDodgeDirection": "down"
+            },
+            {
+              "cueId": "thrust",
+              "safeDodgeDirection": "back"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "clock_escapement",
+      "displayName": "멈춘 탈진기",
+      "zoneId": "stopped_clock",
+      "targetStage": 25,
+      "role": "miniboss",
+      "familyId": "bell_hulk",
+      "silhouette": "양쪽 어깨의 서로 물린 큰 톱니·중앙 좁은 가슴",
+      "weapon": "진자 포크와 기어 주먹",
+      "attackChoreography": "포크를 바닥에서 들어 쓸고 주먹을 뻗음, 반대 기어를 크게 돌림",
+      "patternVariants": [
+        {
+          "id": "clock_escapement_concept_1",
+          "steps": [
+            {
+              "cueId": "low_sweep",
+              "safeDodgeDirection": "up"
+            },
+            {
+              "cueId": "thrust",
+              "safeDodgeDirection": "back"
+            }
+          ]
+        },
+        {
+          "id": "clock_escapement_concept_2",
+          "steps": [
+            {
+              "cueId": "outer_arc",
+              "safeDodgeDirection": "forward"
+            },
+            {
+              "cueId": "high_sweep",
+              "safeDodgeDirection": "down"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "clock_duelist",
+      "displayName": "분침 결투자",
+      "zoneId": "stopped_clock",
+      "targetStage": 26,
+      "role": "normal",
+      "familyId": "light_biped",
+      "silhouette": "길고 얇은 두 팔·뾰족한 시계바늘 투구·짧은 외투",
+      "weapon": "길이가 다른 두 시계바늘 검",
+      "attackChoreography": "긴 검을 높이 돌린 뒤 짧은 검을 몸통으로 밀어넣음",
+      "patternVariants": [
+        {
+          "id": "clock_duelist_concept_1",
+          "steps": [
+            {
+              "cueId": "high_sweep",
+              "safeDodgeDirection": "down"
+            },
+            {
+              "cueId": "thrust",
+              "safeDodgeDirection": "back"
+            }
+          ]
+        },
+        {
+          "id": "clock_duelist_concept_2",
+          "steps": [
+            {
+              "cueId": "low_sweep",
+              "safeDodgeDirection": "up"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "clock_hound",
+      "displayName": "진자 사냥개",
+      "zoneId": "stopped_clock",
+      "targetStage": 27,
+      "role": "normal",
+      "familyId": "beast_quadruped",
+      "silhouette": "가슴 아래 큰 진자·길게 뻗은 뒤다리·짧은 주둥이",
+      "weapon": "진자 턱과 앞발",
+      "attackChoreography": "진자를 바깥으로 흔들어 빈 안쪽을 만들고 앞발로 낮게 걸기",
+      "patternVariants": [
+        {
+          "id": "clock_hound_concept_1",
+          "steps": [
+            {
+              "cueId": "outer_arc",
+              "safeDodgeDirection": "forward"
+            },
+            {
+              "cueId": "low_sweep",
+              "safeDodgeDirection": "up"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "clock_winder",
+      "displayName": "태엽 감개꾼",
+      "zoneId": "stopped_clock",
+      "targetStage": 28,
+      "role": "normal",
+      "familyId": "chain_biped",
+      "silhouette": "등의 말린 스프링·한쪽 둥근 손·넓은 띠 팔",
+      "weapon": "스프링 띠",
+      "attackChoreography": "압축한 띠를 몸통으로 뻗고 높은 위치에서 두 번째로 펴냄",
+      "patternVariants": [
+        {
+          "id": "clock_winder_concept_1",
+          "steps": [
+            {
+              "cueId": "thrust",
+              "safeDodgeDirection": "back"
+            },
+            {
+              "cueId": "high_sweep",
+              "safeDodgeDirection": "down"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "clock_metronome",
+      "displayName": "박자 추적기",
+      "zoneId": "stopped_clock",
+      "targetStage": 29,
+      "role": "normal",
+      "familyId": "clock_construct",
+      "silhouette": "삼각 지지대·한쪽 긴 바늘·두 바퀴 받침",
+      "weapon": "경사진 큰 바늘",
+      "attackChoreography": "바늘이 높은 쪽을 지난 뒤 반대쪽 바깥 원호로 내려옴",
+      "patternVariants": [
+        {
+          "id": "clock_metronome_concept_1",
+          "steps": [
+            {
+              "cueId": "high_sweep",
+              "safeDodgeDirection": "down"
+            },
+            {
+              "cueId": "outer_arc",
+              "safeDodgeDirection": "forward"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "clock_regent",
+      "displayName": "정지한 시왕",
+      "zoneId": "stopped_clock",
+      "targetStage": 30,
+      "role": "boss",
+      "familyId": "boss_colossus",
+      "silhouette": "거대한 시계탑 몸·몸통 빈 원판·세로로 긴 왕관",
+      "weapon": "시침 팔과 진자 망치",
+      "attackChoreography": "시침 팔의 높은 쓸기와 진자 낮은 쓸기를 묶고 바깥 원호 뒤 찌르기",
+      "patternVariants": [
+        {
+          "id": "clock_regent_concept_1",
+          "steps": [
+            {
+              "cueId": "high_sweep",
+              "safeDodgeDirection": "down"
+            },
+            {
+              "cueId": "low_sweep",
+              "safeDodgeDirection": "up"
+            }
+          ]
+        },
+        {
+          "id": "clock_regent_concept_2",
+          "steps": [
+            {
+              "cueId": "outer_arc",
+              "safeDodgeDirection": "forward"
+            },
+            {
+              "cueId": "thrust",
+              "safeDodgeDirection": "back"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "ash_soldier",
+      "displayName": "그을린 보초",
+      "zoneId": "ash_spire",
+      "targetStage": 31,
+      "role": "normal",
+      "familyId": "armored_biped",
+      "silhouette": "굴뚝 투구·한쪽 부서진 견갑·짧은 넓은 다리",
+      "weapon": "재 삽창",
+      "attackChoreography": "삽날을 낮게 밀어 쓴 뒤 똑바로 세워 몸통을 찌름",
+      "patternVariants": [
+        {
+          "id": "ash_soldier_concept_1",
+          "steps": [
+            {
+              "cueId": "low_sweep",
+              "safeDodgeDirection": "up"
+            },
+            {
+              "cueId": "thrust",
+              "safeDodgeDirection": "back"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "ash_stalker",
+      "displayName": "탄화 추적견",
+      "zoneId": "ash_spire",
+      "targetStage": 32,
+      "role": "normal",
+      "familyId": "beast_quadruped",
+      "silhouette": "앞으로 솟은 탄화 뿔·높은 어깨·얇은 뒷다리",
+      "weapon": "갈라진 뿔과 발톱",
+      "attackChoreography": "뿔을 높이 모아 흔든 뒤 앞발을 넓게 벌려 원호",
+      "patternVariants": [
+        {
+          "id": "ash_stalker_concept_1",
+          "steps": [
+            {
+              "cueId": "high_sweep",
+              "safeDodgeDirection": "down"
+            },
+            {
+              "cueId": "outer_arc",
+              "safeDodgeDirection": "forward"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "ash_cinder",
+      "displayName": "쪼개진 잿불",
+      "zoneId": "ash_spire",
+      "targetStage": 33,
+      "role": "normal",
+      "familyId": "wisp_hover",
+      "silhouette": "갈라진 두 봉우리·넓고 낮은 불씨 몸·짧은 꼬리",
+      "weapon": "두 갈래 재 띠",
+      "attackChoreography": "두 갈래가 바닥에서 합쳐 쓴 뒤 좁은 몸통 침으로 모임",
+      "patternVariants": [
+        {
+          "id": "ash_cinder_concept_1",
+          "steps": [
+            {
+              "cueId": "low_sweep",
+              "safeDodgeDirection": "up"
+            },
+            {
+              "cueId": "thrust",
+              "safeDodgeDirection": "back"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "ash_tollkeeper",
+      "displayName": "재받이 사제",
+      "zoneId": "ash_spire",
+      "targetStage": 34,
+      "role": "normal",
+      "familyId": "robed_hover",
+      "silhouette": "굽은 긴 후드·옆으로 기운 재 항아리·긴 장대",
+      "weapon": "재 항아리 장대",
+      "attackChoreography": "항아리를 바깥으로 크게 돌렸다 머리 높이로 되감음",
+      "patternVariants": [
+        {
+          "id": "ash_tollkeeper_concept_1",
+          "steps": [
+            {
+              "cueId": "outer_arc",
+              "safeDodgeDirection": "forward"
+            },
+            {
+              "cueId": "high_sweep",
+              "safeDodgeDirection": "down"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "ash_furnace",
+      "displayName": "빈 화로지기",
+      "zoneId": "ash_spire",
+      "targetStage": 35,
+      "role": "miniboss",
+      "familyId": "bell_hulk",
+      "silhouette": "가슴의 큰 사각 화구·둥근 한쪽 어깨·짧은 목",
+      "weapon": "화로 망치와 불집게",
+      "attackChoreography": "망치를 낮게 끌어 쓴 뒤 불집게로 몸통을 집고 높은 반격",
+      "patternVariants": [
+        {
+          "id": "ash_furnace_concept_1",
+          "steps": [
+            {
+              "cueId": "low_sweep",
+              "safeDodgeDirection": "up"
+            },
+            {
+              "cueId": "thrust",
+              "safeDodgeDirection": "back"
+            }
+          ]
+        },
+        {
+          "id": "ash_furnace_concept_2",
+          "steps": [
+            {
+              "cueId": "high_sweep",
+              "safeDodgeDirection": "down"
+            },
+            {
+              "cueId": "outer_arc",
+              "safeDodgeDirection": "forward"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "ash_climber",
+      "displayName": "첨탑 갈퀴꾼",
+      "zoneId": "ash_spire",
+      "targetStage": 36,
+      "role": "normal",
+      "familyId": "light_biped",
+      "silhouette": "무릎의 돌출 갈고리·짧은 꼽추 몸·쌍갈래 모자",
+      "weapon": "손등 갈퀴",
+      "attackChoreography": "낮게 접은 몸을 펴며 높은 긁기, 팔을 벌려 바깥을 휩씀",
+      "patternVariants": [
+        {
+          "id": "ash_climber_concept_1",
+          "steps": [
+            {
+              "cueId": "high_sweep",
+              "safeDodgeDirection": "down"
+            },
+            {
+              "cueId": "outer_arc",
+              "safeDodgeDirection": "forward"
+            }
+          ]
+        },
+        {
+          "id": "ash_climber_concept_2",
+          "steps": [
+            {
+              "cueId": "low_sweep",
+              "safeDodgeDirection": "up"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "ash_chainbearer",
+      "displayName": "향로 운반자",
+      "zoneId": "ash_spire",
+      "targetStage": 37,
+      "role": "normal",
+      "familyId": "chain_biped",
+      "silhouette": "큰 향로를 멘 한쪽 어깨·허리보다 긴 사슬·작은 머리",
+      "weapon": "긴 사슬 향로",
+      "attackChoreography": "향로를 바깥에서 끌어온 뒤 바닥에 가깝게 다시 돌림",
+      "patternVariants": [
+        {
+          "id": "ash_chainbearer_concept_1",
+          "steps": [
+            {
+              "cueId": "outer_arc",
+              "safeDodgeDirection": "forward"
+            },
+            {
+              "cueId": "low_sweep",
+              "safeDodgeDirection": "up"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "ash_mill",
+      "displayName": "재갈이 수레",
+      "zoneId": "ash_spire",
+      "targetStage": 38,
+      "role": "normal",
+      "familyId": "clock_construct",
+      "silhouette": "거대한 세로 분쇄 바퀴·작은 두 지지발·낮은 돌출 깔때기",
+      "weapon": "분쇄 바퀴와 밀대",
+      "attackChoreography": "바퀴 가장자리를 몸통 높이로 밀고 바닥 가장자리로 이어감",
+      "patternVariants": [
+        {
+          "id": "ash_mill_concept_1",
+          "steps": [
+            {
+              "cueId": "thrust",
+              "safeDodgeDirection": "back"
+            },
+            {
+              "cueId": "low_sweep",
+              "safeDodgeDirection": "up"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "ash_bladeguard",
+      "displayName": "부서진 날개병",
+      "zoneId": "ash_spire",
+      "targetStage": 39,
+      "role": "normal",
+      "familyId": "armored_biped",
+      "silhouette": "깨진 한쪽 날개 방패·넓은 역삼각 흉갑·가는 투구",
+      "weapon": "원형 칼날과 날개 방패",
+      "attackChoreography": "칼날을 머리 높이로 던져 돌리고 방패를 몸통으로 밀음",
+      "patternVariants": [
+        {
+          "id": "ash_bladeguard_concept_1",
+          "steps": [
+            {
+              "cueId": "high_sweep",
+              "safeDodgeDirection": "down"
+            },
+            {
+              "cueId": "thrust",
+              "safeDodgeDirection": "back"
+            }
+          ]
+        },
+        {
+          "id": "ash_bladeguard_concept_2",
+          "steps": [
+            {
+              "cueId": "outer_arc",
+              "safeDodgeDirection": "forward"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "ash_paladin",
+      "displayName": "잿빛 성기사",
+      "zoneId": "ash_spire",
+      "targetStage": 40,
+      "role": "boss",
+      "familyId": "boss_knight",
+      "silhouette": "부서진 쌍날개·낮은 종투구·긴 외투의 굵은 하체",
+      "weapon": "톱니 대검과 방패",
+      "attackChoreography": "대검을 높이 휘두른 뒤 낮게 되치고 방패 찌르기 뒤 큰 검 원호",
+      "patternVariants": [
+        {
+          "id": "ash_paladin_concept_1",
+          "steps": [
+            {
+              "cueId": "high_sweep",
+              "safeDodgeDirection": "down"
+            },
+            {
+              "cueId": "low_sweep",
+              "safeDodgeDirection": "up"
+            }
+          ]
+        },
+        {
+          "id": "ash_paladin_concept_2",
+          "steps": [
+            {
+              "cueId": "thrust",
+              "safeDodgeDirection": "back"
+            },
+            {
+              "cueId": "outer_arc",
+              "safeDodgeDirection": "forward"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "dawn_sentinel",
+      "displayName": "새벽 문지기",
+      "zoneId": "dawn_belfry",
+      "targetStage": 41,
+      "role": "normal",
+      "familyId": "armored_biped",
+      "silhouette": "반원 해 방패·옆으로 솟은 투구 뿔·곧은 긴 다리",
+      "weapon": "갈래 창과 해 방패",
+      "attackChoreography": "갈래 창의 찌르기 뒤 방패 가장자리를 높게 돌림",
+      "patternVariants": [
+        {
+          "id": "dawn_sentinel_concept_1",
+          "steps": [
+            {
+              "cueId": "thrust",
+              "safeDodgeDirection": "back"
+            },
+            {
+              "cueId": "high_sweep",
+              "safeDodgeDirection": "down"
+            }
+          ]
+        },
+        {
+          "id": "dawn_sentinel_concept_2",
+          "steps": [
+            {
+              "cueId": "low_sweep",
+              "safeDodgeDirection": "up"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "dawn_moth",
+      "displayName": "빛먹는 나방",
+      "zoneId": "dawn_belfry",
+      "targetStage": 42,
+      "role": "normal",
+      "familyId": "wisp_hover",
+      "silhouette": "수평으로 넓은 빈 날개·작은 세로 몸·두 가는 꼬리",
+      "weapon": "날개 가장자리 빛 띠",
+      "attackChoreography": "날개를 바깥으로 벌려 원호를 만들고 아래 꼬리를 스침",
+      "patternVariants": [
+        {
+          "id": "dawn_moth_concept_1",
+          "steps": [
+            {
+              "cueId": "outer_arc",
+              "safeDodgeDirection": "forward"
+            },
+            {
+              "cueId": "low_sweep",
+              "safeDodgeDirection": "up"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "dawn_chorister",
+      "displayName": "무음 합창자",
+      "zoneId": "dawn_belfry",
+      "targetStage": 43,
+      "role": "normal",
+      "familyId": "robed_hover",
+      "silhouette": "머리 위 겹친 두 후광·넓은 소매·아래로 좁은 옷",
+      "weapon": "두 개의 평행 소리날",
+      "attackChoreography": "두 소매를 모아 높은 날과 몸통 선을 차례로 보냄",
+      "patternVariants": [
+        {
+          "id": "dawn_chorister_concept_1",
+          "steps": [
+            {
+              "cueId": "high_sweep",
+              "safeDodgeDirection": "down"
+            },
+            {
+              "cueId": "thrust",
+              "safeDodgeDirection": "back"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "dawn_hound",
+      "displayName": "초승 뿔짐승",
+      "zoneId": "dawn_belfry",
+      "targetStage": 44,
+      "role": "normal",
+      "familyId": "beast_quadruped",
+      "silhouette": "큰 초승 뿔·짧은 등·길게 뻗은 턱·작은 꼬리",
+      "weapon": "초승 턱과 뿔",
+      "attackChoreography": "턱을 낮게 휩쓸고 뿔을 들어 바깥으로 크게 돌림",
+      "patternVariants": [
+        {
+          "id": "dawn_hound_concept_1",
+          "steps": [
+            {
+              "cueId": "low_sweep",
+              "safeDodgeDirection": "up"
+            },
+            {
+              "cueId": "outer_arc",
+              "safeDodgeDirection": "forward"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "dawn_bellbearer",
+      "displayName": "쌍종 운반자",
+      "zoneId": "dawn_belfry",
+      "targetStage": 45,
+      "role": "miniboss",
+      "familyId": "bell_hulk",
+      "silhouette": "두 개의 벌어진 종 껍질 어깨·기둥 같은 다리·빈 목",
+      "weapon": "종추 장봉",
+      "attackChoreography": "장봉을 몸통으로 밀고 한쪽 종을 높이 돌리며 다른 종을 낮춤",
+      "patternVariants": [
+        {
+          "id": "dawn_bellbearer_concept_1",
+          "steps": [
+            {
+              "cueId": "thrust",
+              "safeDodgeDirection": "back"
+            },
+            {
+              "cueId": "high_sweep",
+              "safeDodgeDirection": "down"
+            }
+          ]
+        },
+        {
+          "id": "dawn_bellbearer_concept_2",
+          "steps": [
+            {
+              "cueId": "low_sweep",
+              "safeDodgeDirection": "up"
+            },
+            {
+              "cueId": "outer_arc",
+              "safeDodgeDirection": "forward"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "dawn_duelist",
+      "displayName": "여명 결투자",
+      "zoneId": "dawn_belfry",
+      "targetStage": 46,
+      "role": "normal",
+      "familyId": "light_biped",
+      "silhouette": "세 갈래 작은 왕관·뒤로 뻗은 긴 소매·날씬한 옆선",
+      "weapon": "초승 쌍검",
+      "attackChoreography": "앞 검을 낮게 돌리고 뒤 검을 높게 펴며 마지막에는 몸통 찌르기",
+      "patternVariants": [
+        {
+          "id": "dawn_duelist_concept_1",
+          "steps": [
+            {
+              "cueId": "low_sweep",
+              "safeDodgeDirection": "up"
+            },
+            {
+              "cueId": "high_sweep",
+              "safeDodgeDirection": "down"
+            }
+          ]
+        },
+        {
+          "id": "dawn_duelist_concept_2",
+          "steps": [
+            {
+              "cueId": "thrust",
+              "safeDodgeDirection": "back"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "dawn_chainweaver",
+      "displayName": "햇실 직조자",
+      "zoneId": "dawn_belfry",
+      "targetStage": 47,
+      "role": "normal",
+      "familyId": "chain_biped",
+      "silhouette": "어깨에 매단 열린 태양 고리·긴 두 손·좁은 허리",
+      "weapon": "가는 사슬과 직조 훅",
+      "attackChoreography": "한 손 고리를 바깥으로 당긴 뒤 다른 훅을 직선으로 보냄",
+      "patternVariants": [
+        {
+          "id": "dawn_chainweaver_concept_1",
+          "steps": [
+            {
+              "cueId": "outer_arc",
+              "safeDodgeDirection": "forward"
+            },
+            {
+              "cueId": "thrust",
+              "safeDodgeDirection": "back"
+            }
+          ]
+        },
+        {
+          "id": "dawn_chainweaver_concept_2",
+          "steps": [
+            {
+              "cueId": "high_sweep",
+              "safeDodgeDirection": "down"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "dawn_orrery",
+      "displayName": "천구 회전기",
+      "zoneId": "dawn_belfry",
+      "targetStage": 48,
+      "role": "normal",
+      "familyId": "clock_construct",
+      "silhouette": "엇갈린 큰 두 고리·작은 중심 렌즈·세 지지발",
+      "weapon": "천구 고리와 렌즈 막대",
+      "attackChoreography": "고리를 높은 위치에서 회전시키고 낮은 고리를 뒤따르게 함",
+      "patternVariants": [
+        {
+          "id": "dawn_orrery_concept_1",
+          "steps": [
+            {
+              "cueId": "high_sweep",
+              "safeDodgeDirection": "down"
+            },
+            {
+              "cueId": "low_sweep",
+              "safeDodgeDirection": "up"
+            }
+          ]
+        },
+        {
+          "id": "dawn_orrery_concept_2",
+          "steps": [
+            {
+              "cueId": "outer_arc",
+              "safeDodgeDirection": "forward"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "dawn_cantor",
+      "displayName": "마지막 선창자",
+      "zoneId": "dawn_belfry",
+      "targetStage": 49,
+      "role": "normal",
+      "familyId": "robed_hover",
+      "silhouette": "가운데 뚫린 후광·가지 모양 장대·양쪽 긴 옷자락",
+      "weapon": "세 갈래 소리굽쇠",
+      "attackChoreography": "소리굽쇠를 몸통으로 뻗은 뒤 바깥 두 가지를 펼침",
+      "patternVariants": [
+        {
+          "id": "dawn_cantor_concept_1",
+          "steps": [
+            {
+              "cueId": "thrust",
+              "safeDodgeDirection": "back"
+            },
+            {
+              "cueId": "outer_arc",
+              "safeDodgeDirection": "forward"
+            }
+          ]
+        },
+        {
+          "id": "dawn_cantor_concept_2",
+          "steps": [
+            {
+              "cueId": "low_sweep",
+              "safeDodgeDirection": "up"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    },
+    {
+      "id": "dawn_last_bell",
+      "displayName": "새벽의 빈 종",
+      "zoneId": "dawn_belfry",
+      "targetStage": 50,
+      "role": "boss",
+      "familyId": "boss_colossus",
+      "silhouette": "안쪽이 빈 거대한 종 틀·안에 매달린 작은 인영·양쪽 지지대",
+      "weapon": "큰 종추와 두 개의 종 끈",
+      "attackChoreography": "종추를 낮게 스치고 높은 끈을 회수한 뒤, 바깥 종 원호와 중앙 찌르기를 분리",
+      "patternVariants": [
+        {
+          "id": "dawn_last_bell_concept_1",
+          "steps": [
+            {
+              "cueId": "low_sweep",
+              "safeDodgeDirection": "up"
+            },
+            {
+              "cueId": "high_sweep",
+              "safeDodgeDirection": "down"
+            }
+          ]
+        },
+        {
+          "id": "dawn_last_bell_concept_2",
+          "steps": [
+            {
+              "cueId": "thrust",
+              "safeDodgeDirection": "back"
+            },
+            {
+              "cueId": "outer_arc",
+              "safeDodgeDirection": "forward"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "concept-only",
+      "requiredDistinctness": [
+        "silhouette",
+        "weapon-or-attacking-part",
+        "attack-preparation-and-motion"
+      ]
+    }
+  ],
+  "mvp": {
+    "status": "five-enemy-art-draft-scope-not-ten-final-gate-species",
+    "playerId": "on",
+    "enemyIds": [
+      "gate_sentinel",
+      "chain_thrall",
+      "ash_wisp",
+      "gate_warden",
+      "bell_knight"
+    ],
+    "normalEnemyIds": [
+      "gate_sentinel",
+      "chain_thrall",
+      "ash_wisp"
+    ],
+    "miniboss": {
+      "stage": 5,
+      "enemyId": "gate_warden"
+    },
+    "boss": {
+      "stage": 10,
+      "enemyId": "bell_knight"
+    },
+    "stageBindings": [
+      {
+        "stage": 1,
+        "enemyId": "gate_sentinel",
+        "kind": "normal",
+        "teachDodge": "up",
+        "patternSteps": [
+          {
+            "danger": "low_sweep",
+            "requiredDodge": "up"
+          }
+        ],
+        "scope": "mvp"
+      },
+      {
+        "stage": 2,
+        "enemyId": "chain_thrall",
+        "kind": "normal",
+        "teachDodge": "back",
+        "patternSteps": [
+          {
+            "danger": "thrust",
+            "requiredDodge": "back"
+          },
+          {
+            "danger": "low_sweep",
+            "requiredDodge": "up"
+          }
+        ],
+        "scope": "mvp"
+      },
+      {
+        "stage": 3,
+        "enemyId": "ash_wisp",
+        "kind": "normal",
+        "teachDodge": "down",
+        "patternSteps": [
+          {
+            "danger": "high_sweep",
+            "requiredDodge": "down"
+          },
+          {
+            "danger": "low_sweep",
+            "requiredDodge": "up"
+          },
+          {
+            "danger": "thrust",
+            "requiredDodge": "back"
+          }
+        ],
+        "scope": "mvp"
+      },
+      {
+        "stage": 4,
+        "enemyId": "gate_sentinel",
+        "kind": "normal",
+        "teachDodge": "forward",
+        "patternSteps": [
+          {
+            "danger": "outer_arc",
+            "requiredDodge": "forward"
+          },
+          {
+            "danger": "high_sweep",
+            "requiredDodge": "down"
+          },
+          {
+            "danger": "thrust",
+            "requiredDodge": "back"
+          },
+          {
+            "danger": "low_sweep",
+            "requiredDodge": "up"
+          }
+        ],
+        "scope": "mvp"
+      },
+      {
+        "stage": 5,
+        "enemyId": "gate_warden",
+        "kind": "miniboss",
+        "teachDodge": null,
+        "patternSteps": [
+          {
+            "danger": "low_sweep",
+            "requiredDodge": "up"
+          },
+          {
+            "danger": "high_sweep",
+            "requiredDodge": "down"
+          },
+          {
+            "danger": "thrust",
+            "requiredDodge": "back"
+          },
+          {
+            "danger": "outer_arc",
+            "requiredDodge": "forward"
+          }
+        ],
+        "scope": "mvp"
+      },
+      {
+        "stage": 6,
+        "enemyId": "chain_thrall",
+        "kind": "normal",
+        "teachDodge": null,
+        "patternSteps": [
+          {
+            "danger": "thrust",
+            "requiredDodge": "back"
+          },
+          {
+            "danger": "outer_arc",
+            "requiredDodge": "forward"
+          },
+          {
+            "danger": "high_sweep",
+            "requiredDodge": "down"
+          },
+          {
+            "danger": "low_sweep",
+            "requiredDodge": "up"
+          }
+        ],
+        "scope": "mvp"
+      },
+      {
+        "stage": 7,
+        "enemyId": "ash_wisp",
+        "kind": "normal",
+        "teachDodge": null,
+        "patternSteps": [
+          {
+            "danger": "high_sweep",
+            "requiredDodge": "down"
+          },
+          {
+            "danger": "low_sweep",
+            "requiredDodge": "up"
+          },
+          {
+            "danger": "thrust",
+            "requiredDodge": "back"
+          }
+        ],
+        "scope": "mvp"
+      },
+      {
+        "stage": 8,
+        "enemyId": "gate_sentinel",
+        "kind": "normal",
+        "teachDodge": null,
+        "patternSteps": [
+          {
+            "danger": "outer_arc",
+            "requiredDodge": "forward"
+          },
+          {
+            "danger": "thrust",
+            "requiredDodge": "back"
+          },
+          {
+            "danger": "low_sweep",
+            "requiredDodge": "up"
+          },
+          {
+            "danger": "high_sweep",
+            "requiredDodge": "down"
+          }
+        ],
+        "scope": "mvp"
+      },
+      {
+        "stage": 9,
+        "enemyId": "chain_thrall",
+        "kind": "normal",
+        "teachDodge": null,
+        "patternSteps": [
+          {
+            "danger": "thrust",
+            "requiredDodge": "back"
+          },
+          {
+            "danger": "outer_arc",
+            "requiredDodge": "forward"
+          },
+          {
+            "danger": "high_sweep",
+            "requiredDodge": "down"
+          },
+          {
+            "danger": "low_sweep",
+            "requiredDodge": "up"
+          }
+        ],
+        "scope": "mvp"
+      },
+      {
+        "stage": 10,
+        "enemyId": "bell_knight",
+        "kind": "boss",
+        "teachDodge": null,
+        "patternSteps": [
+          {
+            "danger": "low_sweep",
+            "requiredDodge": "up"
+          },
+          {
+            "danger": "high_sweep",
+            "requiredDodge": "down"
+          },
+          {
+            "danger": "outer_arc",
+            "requiredDodge": "forward"
+          },
+          {
+            "danger": "thrust",
+            "requiredDodge": "back"
+          }
+        ],
+        "scope": "mvp"
+      },
+      {
+        "stage": 11,
+        "enemyId": "chain_thrall",
+        "kind": "normal",
+        "teachDodge": null,
+        "patternSteps": [
+          {
+            "danger": "thrust",
+            "requiredDodge": "back"
+          },
+          {
+            "danger": "high_sweep",
+            "requiredDodge": "down"
+          },
+          {
+            "danger": "outer_arc",
+            "requiredDodge": "forward"
+          },
+          {
+            "danger": "low_sweep",
+            "requiredDodge": "up"
+          }
+        ],
+        "scope": "boundary-sample"
+      }
+    ],
+    "stageBindingStatus": "matched-runtime-catalog-2026-10-21",
+    "stageBindingSource": "GameData/mvp-catalog.json; read-only snapshot, execution timings remain owned by catalog",
+    "stage11Policy": "10층 선택 뒤11층 자동 진입을 확인하는 경계 표본. 11~20 전체 구현/아트 제작으로 세지 않는다.",
+    "reuseDisclosure": "현재 첫10층은 일반3종을 반복 배치한다. chain_thrall의 확장안 배치는11층이며 MVP에서 앞당겨 쓰는 임시 재사용이다. 최종 성문10종을 제작 완료한 것으로 세지 않는다.",
+    "imageOwner": "총괄; 본 담당은 이미지 생성·수정·임포트하지 않음",
+    "firstTenEnemySequence": [
+      "gate_sentinel",
+      "chain_thrall",
+      "ash_wisp",
+      "gate_sentinel",
+      "gate_warden",
+      "chain_thrall",
+      "ash_wisp",
+      "gate_sentinel",
+      "chain_thrall",
+      "bell_knight"
+    ],
+    "animationScope": "각 적은 해당 ID가 배치된 모든 MVP 층의 공격 방향을 지원해야 한다. 확장안 패턴만 보고 프레임을 줄이지 않는다."
+  },
+  "animationBudget": {
+    "status": "planning-count-not-delivered-sprite-count",
+    "perEnemyBaseFrames": 22,
+    "additionalAttackDirectionFrames": 7,
+    "full": {
+      "enemyCount": 50,
+      "uniqueAttackDirections": 133,
+      "baseFrames": 1100,
+      "additionalDirectionFrames": 581,
+      "compositeEnemyFrames": 1681,
+      "playerFrames": 35,
+      "totalCompositeCharacterFrames": 1716,
+      "countBasis": "확장안 패턴과 현재 MVP 필수 방향의 합집합"
+    },
+    "mvp": {
+      "enemyCount": 5,
+      "uniqueAttackDirections": 19,
+      "baseFrames": 110,
+      "additionalDirectionFrames": 98,
+      "compositeEnemyFrames": 208,
+      "playerFrames": 35,
+      "totalCompositeCharacterFrames": 243,
+      "countBasis": "현재 runtime catalog의 ID별 필요 공격 방향 합집합: 4+4+3+4+4=19"
+    },
+    "exclusions": [
+      "BG/VFX/UI 프레임",
+      "추가 패턴마다 완전히 다른 예고·공격이 필요해 생기는 프레임",
+      "플레이어 기절4프레임",
+      "방향반전용 미러 사본"
+    ],
+    "interpretation": "최종 합성 셀 수다. 그 수만큼 완전 독립 수작업을 뜻하지 않으며 원형 공유가 모든 종의 픽셀 정리와 검수를 없애지도 않는다.",
+    "reusedCoreFrames": 220,
+    "fortyNonSeedAdaptationCellsMin": 480,
+    "fortyNonSeedAdaptationCellsMax": 880,
+    "overlayRules": [
+      "body/weapon-or-attacking-part/chain-or-cloth/fx 레이어를 분리하고 무기 부착점을 공유한다.",
+      "무기만 바꿔 종 수를 늘리지 않는다. 몸 실루엣과 준비 자세도 종별로 수정한다.",
+      "공통 원형의 자세·기준점·상태 순서를 공유하되 적별 타격 판정은 세션 결과를 따른다.",
+      "구조물 보스3종과 기계5종은 골격 차이가 커서 낮은 재사용률을 전제로 한다."
+    ]
+  },
+  "effortEstimate": {
+    "status": "unmeasured-scenario-not-quote-or-deadline",
+    "unit": "focused artist hours; one person-day=6 hours",
+    "level": "manual pixel cleanup of the proposed full clip set, not a quick pose/transform prototype",
+    "rows": [
+      {
+        "id": "style",
+        "label": "팔레트·크기·기준 샘플",
+        "full": {
+          "quantity": 1,
+          "hoursEachMin": 8,
+          "hoursEachMax": 16
+        },
+        "mvp": {
+          "quantity": 1,
+          "hoursEachMin": 8,
+          "hoursEachMax": 16
+        }
+      },
+      {
+        "id": "player",
+        "label": "온 35프레임 설계·정리",
+        "full": {
+          "quantity": 1,
+          "hoursEachMin": 20,
+          "hoursEachMax": 36
+        },
+        "mvp": {
+          "quantity": 1,
+          "hoursEachMin": 20,
+          "hoursEachMax": 36
+        }
+      },
+      {
+        "id": "species",
+        "label": "종별 실루엣·무기·대표 자세",
+        "full": {
+          "quantity": 50,
+          "hoursEachMin": 1,
+          "hoursEachMax": 2
+        },
+        "mvp": {
+          "quantity": 5,
+          "hoursEachMin": 1,
+          "hoursEachMax": 2
+        }
+      },
+      {
+        "id": "families",
+        "label": "22프레임 기본 동작 원형",
+        "full": {
+          "quantity": 10,
+          "hoursEachMin": 6,
+          "hoursEachMax": 10
+        },
+        "mvp": {
+          "quantity": 5,
+          "hoursEachMin": 6,
+          "hoursEachMax": 10
+        }
+      },
+      {
+        "id": "adaptations",
+        "label": "원형 이외 종의 동작 수정",
+        "full": {
+          "quantity": 40,
+          "hoursEachMin": 3,
+          "hoursEachMax": 6
+        },
+        "mvp": {
+          "quantity": 0,
+          "hoursEachMin": 3,
+          "hoursEachMax": 6
+        }
+      },
+      {
+        "id": "directions",
+        "label": "추가 방향별 예고3+공격4 수정",
+        "full": {
+          "quantity": 83,
+          "hoursEachMin": 1,
+          "hoursEachMax": 2
+        },
+        "mvp": {
+          "quantity": 14,
+          "hoursEachMin": 1,
+          "hoursEachMax": 2
+        }
+      },
+      {
+        "id": "backgrounds",
+        "label": "구역별 배경 3레이어",
+        "full": {
+          "quantity": 5,
+          "hoursEachMin": 8,
+          "hoursEachMax": 14
+        },
+        "mvp": {
+          "quantity": 1,
+          "hoursEachMin": 8,
+          "hoursEachMax": 14
+        }
+      },
+      {
+        "id": "vfx",
+        "label": "위험4방향·명중·치명·기절·사망 VFX",
+        "full": {
+          "quantity": 1,
+          "hoursEachMin": 16,
+          "hoursEachMax": 28
+        },
+        "mvp": {
+          "quantity": 1,
+          "hoursEachMin": 16,
+          "hoursEachMax": 28
+        }
+      },
+      {
+        "id": "qa",
+        "label": "종별 아틀라스·앵커·예고 가림 검사",
+        "full": {
+          "quantity": 50,
+          "hoursEachMin": 0.5,
+          "hoursEachMax": 1
+        },
+        "mvp": {
+          "quantity": 5,
+          "hoursEachMin": 0.5,
+          "hoursEachMax": 1
+        }
+      }
+    ],
+    "full": {
+      "baseHoursMin": 422,
+      "baseHoursMax": 806,
+      "revisionAllowance": 0.25,
+      "totalHoursMin": 528,
+      "totalHoursMax": 1008,
+      "sixHourPersonDaysMin": 88,
+      "sixHourPersonDaysMax": 168
+    },
+    "mvp": {
+      "baseHoursMin": 103.5,
+      "baseHoursMax": 187,
+      "revisionAllowance": 0.25,
+      "totalHoursMin": 130,
+      "totalHoursMax": 234,
+      "sixHourPersonDaysMin": 22,
+      "sixHourPersonDaysMax": 39
+    },
+    "excludes": [
+      "게임 코드·데이터 제작",
+      "결제·SDK·스토어·QA 기기 확보",
+      "UI 전체 제작·음향",
+      "ImageGen의 대기시간·실패·시트 재작업을 줄였다고 가정한 할인"
+    ],
+    "calibration": "온+gate_sentinel+chain_thrall+ash_wisp의 실제 제작 시간과 수정 횟수를 기록한 뒤 시간 범위를 갱신한다. 50종 모두 일정 안에 수작업 가능하다고 보장하지 않는다."
+  },
+  "completionLevels": [
+    {
+      "id": "concept",
+      "meaning": "이름·실루엣·무기·행동 기획만 있음"
+    },
+    {
+      "id": "pose-draft",
+      "meaning": "한 장/소수 자세와 위치·회전·색 변화로 동작을 연결한 초안. 전프레임 수작업 애니메이션 아님"
+    },
+    {
+      "id": "clip-draft",
+      "meaning": "필수 상태별 클립이 있고 전이가 연결됨; 픽셀·실루엣 정리 전"
+    },
+    {
+      "id": "pixel-clean",
+      "meaning": "프레임별 외곽·팔레트·피벗·무기 일관성 검사 완료"
+    },
+    {
+      "id": "integrated-verified",
+      "meaning": "Unity 저장 자산으로 연결하고 실제 최소화면에서 공격 예고·기절·사망·복귀를 확인"
+    }
+  ],
+  "validation": {
+    "rosterEntryCount": 50,
+    "uniqueEnemyIdCount": 50,
+    "zoneCounts": [
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "roleCounts": {
+      "normal": 40,
+      "miniboss": 5,
+      "boss": 5
+    },
+    "familyCount": 10,
+    "referenceImageViewed": true,
+    "renderVerified": false,
+    "animationProduced": false,
+    "runtimeStageBindingsVerified": true
+  }
+}

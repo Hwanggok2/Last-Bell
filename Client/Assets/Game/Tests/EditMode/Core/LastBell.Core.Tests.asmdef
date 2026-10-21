@@ -1,0 +1,8 @@
+{
+  "name": "LastBell.Core.Tests",
+  "rootNamespace": "LastBell.Tests",
+  "references": ["LastBell.Runtime"],
+  "includePlatforms": ["Editor"],
+  "optionalUnityReferences": ["TestAssemblies"],
+  "autoReferenced": false
+}

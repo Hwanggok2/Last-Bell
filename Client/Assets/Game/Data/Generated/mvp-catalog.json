@@ -1,0 +1,735 @@
+{
+  "schemaVersion": 1,
+  "dataVersion": "mvp-1.0.0",
+  "sourcePlanningVersion": "planning-v4",
+  "generatedNotice": "GENERATED from GameData/mvp-catalog.json; DO NOT EDIT. Run python GameData/export_catalog.py.",
+  "sourceSha256": "223368a55add276066d9a1aa62ad36fafc8a8dd015cf318582c743eb47cc1f76",
+  "defaultCharacterId": "on",
+  "mvpLastStage": 10,
+  "boundaryStage": 11,
+  "combat": {
+    "dodgeActiveMs": 160,
+    "dodgeRecoveryMs": 100,
+    "perfectWindowMs": 60,
+    "comboMinGapMs": 450,
+    "normalStagger": 20,
+    "perfectStagger": 40,
+    "staggerThreshold": 100,
+    "damageStaggerPenalty": 20,
+    "attackIntervalMs": 500,
+    "attackWindupMs": 100,
+    "postStunImmunityMs": 2000,
+    "singleTelegraphMs": 650,
+    "comboOverviewMs": 900,
+    "followupHighlightMs": 250,
+    "maxVisibleThreats": 2,
+    "critDamageMultiplier": 1.5,
+    "critChanceCap": 0.3,
+    "goldLuckBonusCap": 0.2,
+    "stunDamageMultiplierCap": 1.75,
+    "normalStunMs": 1500,
+    "minibossStunMs": 1200,
+    "bossStunMs": 1000,
+    "hpUnitsPerPoint": 1000
+  },
+  "growth": {
+    "minLevel": 0,
+    "maxLevel": 50,
+    "effectiveMilestoneLevels": 10,
+    "starScale": [
+      1,
+      1.05,
+      1.1,
+      1.15,
+      1.2
+    ],
+    "attackBase": 10,
+    "attackLinearPerLevel": 3,
+    "attackBreakBase": 2,
+    "attackBreakPerStar": 0.15,
+    "hpBase": 100,
+    "hpLinearPerLevel": 20,
+    "hpBreakBase": 1.6,
+    "hpBreakPerStar": 0.1,
+    "critBase": 0.05,
+    "critPerEffectiveLevel": 0.0015,
+    "goldBonusPerEffectiveLevel": 0.0018,
+    "resonanceBase": 1.4,
+    "resonancePerEffectiveLevel": 0.002,
+    "breakthroughLevels": [
+      11,
+      21,
+      31,
+      41
+    ]
+  },
+  "economy": {
+    "initialGold": 0,
+    "initialFragments": 0,
+    "minibossFragments": 1,
+    "bossFragments": 3,
+    "minibossGoldMultiplier": 3,
+    "bossGoldMultiplier": 5,
+    "exchangeGoldPerFragment": 100,
+    "normalGoldPerZone": [
+      40,
+      70,
+      100,
+      130,
+      160
+    ],
+    "maxRelicGoldPerZone": [
+      20,
+      40,
+      60,
+      80,
+      100
+    ],
+    "upgradeCosts": [
+      0,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      60,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      90,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      120,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      150,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50
+    ],
+    "slotCosts": [
+      4,
+      8
+    ],
+    "slotUnlockStages": [
+      10,
+      20
+    ],
+    "ngGoldMultiplier": 1
+  },
+  "relicRules": {
+    "maxLevel": 5,
+    "maxEquipped": 3,
+    "choicesPerBoss": 3,
+    "includeMaxInPool": true
+  },
+  "characters": [
+    {
+      "id": "on",
+      "displayName": "온 · 종지기",
+      "artId": "hero_on",
+      "stars": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "availableInMvp": true
+    },
+    {
+      "id": "dam",
+      "displayName": "담 · 성문지기",
+      "artId": "hero_dam",
+      "stars": [
+        2,
+        5,
+        2,
+        3
+      ],
+      "availableInMvp": false
+    },
+    {
+      "id": "rin",
+      "displayName": "린 · 잔향지기",
+      "artId": "hero_rin",
+      "stars": [
+        4,
+        2,
+        4,
+        2
+      ],
+      "availableInMvp": false
+    }
+  ],
+  "enemies": [
+    {
+      "id": "gate_sentinel",
+      "displayName": "성문 파수병",
+      "artId": "gate_sentinel"
+    },
+    {
+      "id": "chain_thrall",
+      "displayName": "사슬 망령",
+      "artId": "chain_thrall"
+    },
+    {
+      "id": "ash_wisp",
+      "displayName": "재의 불씨",
+      "artId": "ash_wisp"
+    },
+    {
+      "id": "gate_warden",
+      "displayName": "성문 수문장",
+      "artId": "gate_warden"
+    },
+    {
+      "id": "bell_knight",
+      "displayName": "종의 기사",
+      "artId": "bell_knight"
+    }
+  ],
+  "stages": [
+    {
+      "number": 1,
+      "enemyId": "gate_sentinel",
+      "kind": "normal",
+      "maxHp": 120,
+      "damage": 8,
+      "teachDodge": "up",
+      "patternSteps": [
+        {
+          "danger": "low_sweep",
+          "requiredDodge": "up",
+          "telegraphMs": 650,
+          "intervalMs": 1800,
+          "comboStep": 0
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "enemyId": "chain_thrall",
+      "kind": "normal",
+      "maxHp": 128,
+      "damage": 9,
+      "teachDodge": "back",
+      "patternSteps": [
+        {
+          "danger": "thrust",
+          "requiredDodge": "back",
+          "telegraphMs": 650,
+          "intervalMs": 1800,
+          "comboStep": 0
+        },
+        {
+          "danger": "low_sweep",
+          "requiredDodge": "up",
+          "telegraphMs": 650,
+          "intervalMs": 1800,
+          "comboStep": 0
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "enemyId": "ash_wisp",
+      "kind": "normal",
+      "maxHp": 137,
+      "damage": 9,
+      "teachDodge": "down",
+      "patternSteps": [
+        {
+          "danger": "high_sweep",
+          "requiredDodge": "down",
+          "telegraphMs": 650,
+          "intervalMs": 1800,
+          "comboStep": 0
+        },
+        {
+          "danger": "low_sweep",
+          "requiredDodge": "up",
+          "telegraphMs": 650,
+          "intervalMs": 1800,
+          "comboStep": 0
+        },
+        {
+          "danger": "thrust",
+          "requiredDodge": "back",
+          "telegraphMs": 650,
+          "intervalMs": 1800,
+          "comboStep": 0
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "enemyId": "gate_sentinel",
+      "kind": "normal",
+      "maxHp": 147,
+      "damage": 10,
+      "teachDodge": "forward",
+      "patternSteps": [
+        {
+          "danger": "outer_arc",
+          "requiredDodge": "forward",
+          "telegraphMs": 650,
+          "intervalMs": 1800,
+          "comboStep": 0
+        },
+        {
+          "danger": "high_sweep",
+          "requiredDodge": "down",
+          "telegraphMs": 650,
+          "intervalMs": 1800,
+          "comboStep": 0
+        },
+        {
+          "danger": "thrust",
+          "requiredDodge": "back",
+          "telegraphMs": 650,
+          "intervalMs": 1800,
+          "comboStep": 0
+        },
+        {
+          "danger": "low_sweep",
+          "requiredDodge": "up",
+          "telegraphMs": 650,
+          "intervalMs": 1800,
+          "comboStep": 0
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "enemyId": "gate_warden",
+      "kind": "miniboss",
+      "maxHp": 283,
+      "damage": 11,
+      "teachDodge": "",
+      "patternSteps": [
+        {
+          "danger": "low_sweep",
+          "requiredDodge": "up",
+          "telegraphMs": 900,
+          "intervalMs": 2750,
+          "comboStep": 1
+        },
+        {
+          "danger": "high_sweep",
+          "requiredDodge": "down",
+          "telegraphMs": 250,
+          "intervalMs": 450,
+          "comboStep": 2
+        },
+        {
+          "danger": "thrust",
+          "requiredDodge": "back",
+          "telegraphMs": 650,
+          "intervalMs": 1600,
+          "comboStep": 0
+        },
+        {
+          "danger": "outer_arc",
+          "requiredDodge": "forward",
+          "telegraphMs": 650,
+          "intervalMs": 1600,
+          "comboStep": 0
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "enemyId": "chain_thrall",
+      "kind": "normal",
+      "maxHp": 168,
+      "damage": 10,
+      "teachDodge": "",
+      "patternSteps": [
+        {
+          "danger": "thrust",
+          "requiredDodge": "back",
+          "telegraphMs": 650,
+          "intervalMs": 1800,
+          "comboStep": 0
+        },
+        {
+          "danger": "outer_arc",
+          "requiredDodge": "forward",
+          "telegraphMs": 650,
+          "intervalMs": 1800,
+          "comboStep": 0
+        },
+        {
+          "danger": "high_sweep",
+          "requiredDodge": "down",
+          "telegraphMs": 650,
+          "intervalMs": 1800,
+          "comboStep": 0
+        },
+        {
+          "danger": "low_sweep",
+          "requiredDodge": "up",
+          "telegraphMs": 650,
+          "intervalMs": 1800,
+          "comboStep": 0
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "enemyId": "ash_wisp",
+      "kind": "normal",
+      "maxHp": 180,
+      "damage": 11,
+      "teachDodge": "",
+      "patternSteps": [
+        {
+          "danger": "high_sweep",
+          "requiredDodge": "down",
+          "telegraphMs": 900,
+          "intervalMs": 3150,
+          "comboStep": 1
+        },
+        {
+          "danger": "low_sweep",
+          "requiredDodge": "up",
+          "telegraphMs": 250,
+          "intervalMs": 450,
+          "comboStep": 2
+        },
+        {
+          "danger": "thrust",
+          "requiredDodge": "back",
+          "telegraphMs": 650,
+          "intervalMs": 1800,
+          "comboStep": 0
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "enemyId": "gate_sentinel",
+      "kind": "normal",
+      "maxHp": 193,
+      "damage": 11,
+      "teachDodge": "",
+      "patternSteps": [
+        {
+          "danger": "outer_arc",
+          "requiredDodge": "forward",
+          "telegraphMs": 900,
+          "intervalMs": 3150,
+          "comboStep": 1
+        },
+        {
+          "danger": "thrust",
+          "requiredDodge": "back",
+          "telegraphMs": 250,
+          "intervalMs": 450,
+          "comboStep": 2
+        },
+        {
+          "danger": "low_sweep",
+          "requiredDodge": "up",
+          "telegraphMs": 650,
+          "intervalMs": 1800,
+          "comboStep": 0
+        },
+        {
+          "danger": "high_sweep",
+          "requiredDodge": "down",
+          "telegraphMs": 650,
+          "intervalMs": 1800,
+          "comboStep": 0
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "enemyId": "chain_thrall",
+      "kind": "normal",
+      "maxHp": 206,
+      "damage": 12,
+      "teachDodge": "",
+      "patternSteps": [
+        {
+          "danger": "thrust",
+          "requiredDodge": "back",
+          "telegraphMs": 900,
+          "intervalMs": 3150,
+          "comboStep": 1
+        },
+        {
+          "danger": "outer_arc",
+          "requiredDodge": "forward",
+          "telegraphMs": 250,
+          "intervalMs": 450,
+          "comboStep": 2
+        },
+        {
+          "danger": "high_sweep",
+          "requiredDodge": "down",
+          "telegraphMs": 650,
+          "intervalMs": 1800,
+          "comboStep": 0
+        },
+        {
+          "danger": "low_sweep",
+          "requiredDodge": "up",
+          "telegraphMs": 650,
+          "intervalMs": 1800,
+          "comboStep": 0
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "enemyId": "bell_knight",
+      "kind": "boss",
+      "maxHp": 706,
+      "damage": 16,
+      "teachDodge": "",
+      "patternSteps": [
+        {
+          "danger": "low_sweep",
+          "requiredDodge": "up",
+          "telegraphMs": 900,
+          "intervalMs": 3600,
+          "comboStep": 1
+        },
+        {
+          "danger": "high_sweep",
+          "requiredDodge": "down",
+          "telegraphMs": 250,
+          "intervalMs": 450,
+          "comboStep": 2
+        },
+        {
+          "danger": "outer_arc",
+          "requiredDodge": "forward",
+          "telegraphMs": 250,
+          "intervalMs": 450,
+          "comboStep": 3
+        },
+        {
+          "danger": "thrust",
+          "requiredDodge": "back",
+          "telegraphMs": 650,
+          "intervalMs": 1500,
+          "comboStep": 0
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "enemyId": "chain_thrall",
+      "kind": "normal",
+      "maxHp": 1050,
+      "damage": 40,
+      "teachDodge": "",
+      "patternSteps": [
+        {
+          "danger": "thrust",
+          "requiredDodge": "back",
+          "telegraphMs": 650,
+          "intervalMs": 1650,
+          "comboStep": 0
+        },
+        {
+          "danger": "high_sweep",
+          "requiredDodge": "down",
+          "telegraphMs": 650,
+          "intervalMs": 1650,
+          "comboStep": 0
+        },
+        {
+          "danger": "outer_arc",
+          "requiredDodge": "forward",
+          "telegraphMs": 650,
+          "intervalMs": 1650,
+          "comboStep": 0
+        },
+        {
+          "danger": "low_sweep",
+          "requiredDodge": "up",
+          "telegraphMs": 650,
+          "intervalMs": 1650,
+          "comboStep": 0
+        }
+      ]
+    }
+  ],
+  "relics": [
+    {
+      "id": "relic_05",
+      "displayName": "재의 고리",
+      "effect": "attackPercent",
+      "effectLabel": "공격력 증가",
+      "cap": 0.2,
+      "values": [
+        0.04,
+        0.05,
+        0.06,
+        0.07,
+        0.08
+      ]
+    },
+    {
+      "id": "relic_10",
+      "displayName": "새벽의 조각",
+      "effect": "maxHpPercent",
+      "effectLabel": "최대HP 증가",
+      "cap": 0.25,
+      "values": [
+        0.06,
+        0.075,
+        0.09,
+        0.105,
+        0.12
+      ]
+    },
+    {
+      "id": "relic_15",
+      "displayName": "사슬 종추",
+      "effect": "normalStaggerPercent",
+      "effectLabel": "일반 회피 누적 증가",
+      "cap": 0.25,
+      "values": [
+        0.05,
+        0.1,
+        0.15,
+        0.2,
+        0.25
+      ]
+    },
+    {
+      "id": "relic_20",
+      "displayName": "맑은 종추",
+      "effect": "perfectStaggerPercent",
+      "effectLabel": "완벽 회피 누적 증가",
+      "cap": 0.25,
+      "values": [
+        0.05,
+        0.1,
+        0.15,
+        0.2,
+        0.25
+      ]
+    },
+    {
+      "id": "relic_25",
+      "displayName": "종망치 파편",
+      "effect": "stunDamageBonus",
+      "effectLabel": "기절 적 피해 배율 가산",
+      "cap": 1.75,
+      "values": [
+        0.02,
+        0.04,
+        0.06,
+        0.08,
+        0.1
+      ]
+    },
+    {
+      "id": "relic_30",
+      "displayName": "새벽의 장막",
+      "effect": "damageReduction",
+      "effectLabel": "받는 피해 감소",
+      "cap": 0.15,
+      "values": [
+        0.04,
+        0.05,
+        0.06,
+        0.07,
+        0.08
+      ]
+    },
+    {
+      "id": "relic_35",
+      "displayName": "꺼진 심지",
+      "effect": "attackPercent",
+      "effectLabel": "공격력 증가",
+      "cap": 0.2,
+      "values": [
+        0.02,
+        0.03,
+        0.04,
+        0.05,
+        0.06
+      ]
+    },
+    {
+      "id": "relic_40",
+      "displayName": "청동 매듭",
+      "effect": "maxHpPercent",
+      "effectLabel": "최대HP 증가",
+      "cap": 0.25,
+      "values": [
+        0.06,
+        0.07,
+        0.08,
+        0.09,
+        0.1
+      ]
+    },
+    {
+      "id": "relic_45",
+      "displayName": "울림 고리",
+      "effect": "critChanceBonus",
+      "effectLabel": "치명 확률 가산",
+      "cap": 0.3,
+      "values": [
+        0.01,
+        0.015,
+        0.02,
+        0.025,
+        0.03
+      ]
+    },
+    {
+      "id": "relic_50",
+      "displayName": "여명의 종인",
+      "effect": "stunDamageBonus",
+      "effectLabel": "기절 적 피해 배율 가산",
+      "cap": 1.75,
+      "values": [
+        0.01,
+        0.015,
+        0.02,
+        0.025,
+        0.03
+      ]
+    }
+  ]
+}

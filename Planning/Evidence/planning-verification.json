@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-21",
+  "version": "planning-v2",
+  "combat": {
+    "reuseMs": 260,
+    "worstValidInputSpacingMs": 290,
+    "slackMs": 30,
+    "normalDodgesToStun": 5,
+    "perfectDodgesToStun": 3,
+    "boostedNormalDodges": 4,
+    "boostedPerfectDodges": 2
+  },
+  "economy": {
+    "all30StagesLevelMatchedPathAffordable": true,
+    "beforeBosses": [
+      {
+        "beforeStage": 10,
+        "earnedGold": 440,
+        "bothStatCost": 440,
+        "remaining": 0
+      },
+      {
+        "beforeStage": 20,
+        "earnedGold": 1410,
+        "bothStatCost": 1400,
+        "remaining": 10
+      },
+      {
+        "beforeStage": 30,
+        "earnedGold": 2860,
+        "bothStatCost": 2840,
+        "remaining": 20
+      }
+    ],
+    "allFirstClearGold": 3360,
+    "bothStatsMaxCost": 2840,
+    "firstClearGems": 90,
+    "totalSlotCost": 60,
+    "bossClearsToReplaceOneExchange": 3
+  },
+  "animationFrames": 150,
+  "revenueSensitivity": 130080,
+  "missingLocalLinks": [],
+  "limits": "Planning arithmetic and document integrity; no Unity, player, device, purchase or measured campaign test."
+}

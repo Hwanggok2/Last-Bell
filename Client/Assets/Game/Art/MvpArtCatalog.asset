@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ee81ad5985b7f54583b1d48abd0a132, type: 3}
+  m_Name: MvpArtCatalog
+  m_EditorClassIdentifier: LastBell.Runtime::LastBell.ArtCatalog
+  actors:
+  - id: hero_on
+    idle:
+    - {fileID: -4349877184324403773, guid: 834027c33ed54864d9155acbca7f6619, type: 3}
+    - {fileID: -6918167780303434132, guid: 834027c33ed54864d9155acbca7f6619, type: 3}
+    attack:
+    - {fileID: 7290090152850258949, guid: 834027c33ed54864d9155acbca7f6619, type: 3}
+    - {fileID: 238696074574182507, guid: 834027c33ed54864d9155acbca7f6619, type: 3}
+    stun:
+    - {fileID: -6609881236248229933, guid: 834027c33ed54864d9155acbca7f6619, type: 3}
+    dodgeUp:
+    - {fileID: -8405276266276689019, guid: 834027c33ed54864d9155acbca7f6619, type: 3}
+    dodgeDown:
+    - {fileID: -6609881236248229933, guid: 834027c33ed54864d9155acbca7f6619, type: 3}
+    dodgeBack:
+    - {fileID: 3752551683390993589, guid: 834027c33ed54864d9155acbca7f6619, type: 3}
+    dodgeForward:
+    - {fileID: -4876480842098600757, guid: 834027c33ed54864d9155acbca7f6619, type: 3}
+    facesRight: 1
+    height: 1.1
+  - id: gate_sentinel
+    idle:
+    - {fileID: 4220631875692089602, guid: f846594fddd735f4bafee0487516413b, type: 3}
+    attack:
+    - {fileID: 5236743475925259516, guid: f846594fddd735f4bafee0487516413b, type: 3}
+    stun:
+    - {fileID: 317748415028096417, guid: f846594fddd735f4bafee0487516413b, type: 3}
+    dodgeUp: []
+    dodgeDown: []
+    dodgeBack: []
+    dodgeForward: []
+    facesRight: 0
+    height: 1.5
+  - id: chain_thrall
+    idle:
+    - {fileID: -6248920883826564948, guid: f846594fddd735f4bafee0487516413b, type: 3}
+    attack:
+    - {fileID: -8599347965018434111, guid: f846594fddd735f4bafee0487516413b, type: 3}
+    stun:
+    - {fileID: -2464838755124118109, guid: f846594fddd735f4bafee0487516413b, type: 3}
+    dodgeUp: []
+    dodgeDown: []
+    dodgeBack: []
+    dodgeForward: []
+    facesRight: 0
+    height: 1.5
+  - id: ash_wisp
+    idle:
+    - {fileID: 6048234732608999934, guid: f846594fddd735f4bafee0487516413b, type: 3}
+    attack:
+    - {fileID: -7691111076444312794, guid: f846594fddd735f4bafee0487516413b, type: 3}
+    stun:
+    - {fileID: -4658551166589717869, guid: f846594fddd735f4bafee0487516413b, type: 3}
+    dodgeUp: []
+    dodgeDown: []
+    dodgeBack: []
+    dodgeForward: []
+    facesRight: 0
+    height: 1
+  - id: gate_warden
+    idle:
+    - {fileID: 1035665901339192520, guid: f846594fddd735f4bafee0487516413b, type: 3}
+    attack:
+    - {fileID: -6296011396451321152, guid: f846594fddd735f4bafee0487516413b, type: 3}
+    stun:
+    - {fileID: 9019926859475258984, guid: f846594fddd735f4bafee0487516413b, type: 3}
+    dodgeUp: []
+    dodgeDown: []
+    dodgeBack: []
+    dodgeForward: []
+    facesRight: 0
+    height: 1.8
+  - id: bell_knight
+    idle:
+    - {fileID: -2679260945762427078, guid: f846594fddd735f4bafee0487516413b, type: 3}
+    attack:
+    - {fileID: -7613341265138669893, guid: f846594fddd735f4bafee0487516413b, type: 3}
+    stun:
+    - {fileID: 8883373813876935054, guid: f846594fddd735f4bafee0487516413b, type: 3}
+    dodgeUp: []
+    dodgeDown: []
+    dodgeBack: []
+    dodgeForward: []
+    facesRight: 0
+    height: 2.1
+  gateBackground: {fileID: 21300000, guid: c44f826b42df6c9408aa2c3018cfa70e, type: 3}
+  uiFont: {fileID: 12800000, guid: fbe25c357e4ff56449eb3cda3bbd1e0c, type: 3}

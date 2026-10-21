@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>마지막 종지기 · UI 와이어프레임</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#eee;color:#222;font-family:"Malgun Gothic","Apple SD Gothic Neo",sans-serif;font-size:14px}
+header{padding:24px 24px 16px;background:#fff;border-bottom:1px solid #aaa}h1{font-size:24px;margin:0 0 10px}p{line-height:1.6;margin:6px 0}
+.controls{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:18px}select,button{font:inherit;padding:8px;border:1px solid #777;background:#fff;color:#111;min-height:40px;border-radius:0}label{display:flex;gap:7px;align-items:center}
+.board{display:grid;grid-template-columns:repeat(2,minmax(0,360px));gap:32px;padding:24px;align-items:start;justify-content:center}
+.panel{min-width:0}.panel h2{font-size:18px;margin:0 0 12px}.panel select{max-width:204px;min-width:0}.screen{width:100%;line-height:0;background:white}.screen svg{display:block;width:100%;height:auto}
+.panel-controls{display:flex;gap:8px;justify-content:space-between;margin-bottom:12px}.note{font-size:13px;line-height:1.6;margin:10px 0;min-height:42px}
+details{background:#fff;border:1px solid #aaa;padding:10px}summary{cursor:pointer;font-weight:600}table{border-collapse:collapse;font-size:11px;width:100%;margin-top:12px}td,th{padding:5px 3px;border-bottom:1px solid #ddd;text-align:left;word-break:break-word}td:first-child{max-width:90px}
+footer{padding:24px;background:#fff;border-top:1px solid #aaa}a{color:#222}input{width:18px;height:18px}
+.flow{font-size:16px;margin:18px 0;line-height:1.8}.badges{font-size:12px;letter-spacing:.03em}
+@media(min-width:1584px){.board{grid-template-columns:repeat(4,360px)}}
+@media(max-width:799px){.board{grid-template-columns:minmax(0,360px);padding:16px}}
+@media print{header .controls,.panel-controls{display:none}.board{display:grid;grid-template-columns:repeat(2,360px);overflow:visible;gap:24px}details{display:none}.panel{break-inside:avoid}}
+</style></head>
+<body>
+<header><div class="badges">검토 초안 v0.1 · 기획 제안 · 2026-10-20</div><h1>마지막 종지기 · 화면과 조작</h1>
+<p>기본 2×2, 넓은 창 4열, 좁은 창 1열로 비교합니다. 화면 안에는 게임 문구를, 좌표·조건·미확정 사항은 바깥에 표시합니다.</p>
+<p>기획 기준: 장식 조각은 일반전 +1·보스 +3·완주 +6(총24), 광고 +5·결과당 1회·일 3회, 무료 외형 80/160. 무료 수집 완료 시 광고를 숨깁니다. 패배 예시는 일반전 3회 완료 후 +3입니다. ‘표시 가격’은 스토어 가격 자리이며 기기 터치 검증 전입니다.</p>
+<div class="controls">
+<label>화면 <select id="height"><option value="800">360×800 · 20:9</option><option value="640">360×640 · 9:16 / 최소</option></select></label>
+<label>안전 영역 <select id="safe"><option value="24,24">상단 24 / 하단 24</option><option value="44,34">상단 44 / 하단 34</option><option value="0,0">없음</option></select></label>
+<label><input id="guides" type="checkbox" checked>입력 영역·가림 가이드</label>
+<label><input id="large" type="checkbox">한글 120% 길이 검토</label>
+<button id="core">기본 4화면</button><button id="services">서사·설정·상점·구매 대기</button><button id="errors">오류 상태 비교</button>
+</div></header>
+<main><div class="board" id="board"></div></main>
+<footer>
+<p class="flow">첫 시작 → 짧은 서사 → 로비 → 전투 ⇄ 일시정지 → 결과 → 재도전 / 로비<br>로비 ⇄ 수집 · 설정 · 상점　|　결과 → 선택형 보상 광고 → 결과</p>
+<p>원점: 각 화면 좌상단. bounds = x,y,width,height. TL/TR/T는 안전 영역 상단, BL/BR/B는 안전 영역 하단, C는 안전 영역 중앙 기준입니다.</p>
+<p>점선은 안전 영역·입력 영역입니다. 전투 하단 208 논리 단위의 음영은 손가락 가림을 검토하기 위한 가정입니다. 예고는 그 위에 둡니다. 48 논리 단위가 실제 48dp를 보장하지는 않으므로 기기에서 확인해야 합니다.</p>
+<p>좌표와 상태는 <a href="../Reviews/ui.md">UI 검토 문서</a>에 설명했습니다. <a href="wireframes.svg">기본 4화면 SVG</a>는 정적 공유용입니다.</p>
+</footer>
+<script>
+const renderScreen = function renderScreen(kind, options = {}) {
+  const { height = 800, top = 24, bottom = 24, state = "normal", guides = false, large = false } = options;
+  const W = 360, H = height, B = H - bottom, S = top;
+  const items = [];
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&apos;" }[c]));
+  const rect = (x, y, w, h, fill = "#fff", stroke = "#333", extra = "") =>
+    `<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="${fill}" stroke="${stroke}" ${extra}/>`;
+  const text = (x, y, value, size = 16, anchor = "start", color = "#222", bold = false) => {
+    const lines = String(value).split("\n"), font = large ? Math.round(size * 1.2) : size;
+    return `<text x="${x}" y="${y}" font-size="${font}" text-anchor="${anchor}" fill="${color}" font-weight="${bold ? 700 : 400}">${lines.map((line, i) => `<tspan x="${x}" dy="${i ? Math.ceil(font * 1.45) : 0}">${esc(line)}</tspan>`).join("")}</text>`;
+  };
+  const item = (id, x, y, w, h, anchor, priority, hit, content) => {
+    items.push({ id, x, y, w, h, anchor, priority, hit: !!hit });
+    return `<g data-id="${id}" data-bounds="${x},${y},${w},${h}" data-anchor="${anchor}" data-priority="${priority}" data-hit="${!!hit}">${content}</g>`;
+  };
+  const label = (id, x, y, w, h, value, size = 16, anchor = "TL", priority = 2, centered = false) =>
+    item(id, x, y, w, h, anchor, priority, false, text(centered ? x + w / 2 : x, y + size + 3, value, size, centered ? "middle" : "start"));
+  const button = (id, x, y, w, h, value, primary = false, disabled = false, anchor = "B", priority = 1) =>
+    item(id, x, y, w, h, anchor, priority, !disabled,
+      rect(x, y, w, h, disabled ? "#ededed" : primary ? "#292929" : "#fff", "#333") +
+      text(x + w / 2, y + h / 2 + 6 - (String(value).split("\n").length - 1) * Math.ceil((large ? 19 : 16) * 1.45) / 2, value, 16, "middle", disabled ? "#555" : primary ? "#fff" : "#222", true));
+  const box = (id, x, y, w, h, anchor, priority, content) =>
+    item(id, x, y, w, h, anchor, priority, false, rect(x, y, w, h, "#fafafa", "#aaa") + content);
+  const heading = (title, suffix = "") =>
+    label("screen-title", 16, S + 12, 232, 40, title, 22, "TL", 2) +
+    (suffix ? label("balance", 16, S + 62, 328, 28, suffix, 16, "TL", 2) : "") +
+    button("back", 296, S + 8, 48, 48, "뒤로", false, false, "TR", 3);
+  const modal = (title, body, primary, secondary = "", disabled = false) => {
+    // All background inputs are blocked while a modal is visible.
+    items.forEach(i => { if (i.hit) i.hit = false; });
+    const y = Math.round(S + (B - S - 296) / 2);
+    let m = rect(0, 0, W, H, "#eee", "none", 'fill-opacity=".9"') +
+      box("modal", 24, y, 312, 296, "C", 1, "") +
+      label("modal-title", 40, y + 20, 280, 38, title, 20, "C", 1, true) +
+      label("modal-body", 40, y + 70, 280, 84, body, 16, "C", 1, true) +
+      button("modal-primary", 40, y + 168, 280, 48, primary, true, disabled, "C");
+    if (secondary) m += button("modal-secondary", 40, y + 232, 280, 48, secondary, false, false, "C", 2);
+    return m;
+  };
+  let body = rect(0, 0, W, H, "#fff", "#222");
+  if (kind === "lobby") {
+    body += label("title", 16, S + 20, 256, 44, "마지막 종지기", 26, "TL", 1) +
+      button("settings", 296, S + 16, 48, 48, "설정", false, false, "TR", 3) +
+      label("best", 16, S + 82, 328, 28, "최고 기록 3구역", 16) +
+      box("chapter", 16, S + 132, 328, 160, "TL", 2,
+        text(32, S + 170, "1구역 · 무너진 문", 20, "start", "#222", true) +
+        text(32, S + 234, "장식 조각 120", 18)) +
+      button("start", 16, B - 184, 328, 64, "도전", true) +
+      button("collection", 16, B - 88, 156, 64, "수집", false, false, "BL", 2) +
+      button("shop", 188, B - 88, 156, 64, "상점", false, false, "BR", 3);
+    if (state === "locked") body += modal("아직 닫힌 문", "기본 난이도를 완주하면\n열립니다.", "돌아가기");
+  } else if (kind === "combat") {
+    const arenaHeight = Math.min(360, B - S - 256);
+    const controlsY = B - 104;
+    body += label("hp", 16, S + 12, 120, 40, "체력 100/100", 16, "TL", 2) +
+      label("floor", 140, S + 14, 140, 36, "1구역 · 2/4", 16, "T", 2, true) +
+      button("pause", 296, S + 8, 48, 48, "Ⅱ", false, false, "TR", 3) +
+      label("enemy-name", 40, S + 68, 280, 28, state === "charged" || state === "opening" ? "쌍추 종" : "재의 보초", 16, "T", 2, true) +
+      item("enemy-hp", 72, S + 104, 216, 8, "T", 2, false,
+        rect(72, S + 104, 216, 8, "#eee") + rect(72, S + 104, 162, 8, "#555", "none")) +
+      item("arena", 16, S + 120, 328, arenaHeight - 24, "T", 2, false,
+        `<path d="M214 ${S + 180} L246 ${S + 140} L278 ${S + 180} L246 ${S + 204} Z" fill="#777" stroke="#222"/>` +
+        rect(76, S + arenaHeight + 48, 32, 40, "#ddd") +
+        `<path d="M40 ${S + arenaHeight + 96}H320" stroke="#bbb"/>`);
+    const cue = state === "opening" ? "틈!" : state === "tutorial" ? "빛이 모이면 피하기" : "!";
+    if (state === "charged" || state === "opening") {
+      body += item("combo-remaining", 168, S + 208, 24, 8, "T", 1, false,
+        `<circle cx="172" cy="${S + 212}" r="4" fill="#fff" stroke="#222"/><circle cx="188" cy="${S + 212}" r="4" fill="${state === "opening" ? "#fff" : "#222"}" stroke="#222"/>`);
+    }
+    body += item("telegraph", 48, S + 224, 264, 68, "T", 1, false,
+      rect(48, S + 224, 264, 68, "#fff", "#222", 'stroke-width="3"') +
+      text(180, S + 269, cue, state === "tutorial" ? 18 : 30, "middle", "#111", true)) +
+      label("combat-feedback", 16, controlsY - 52, 328, 32,
+        state === "opening" ? "지금 공격!" : state === "cooldown" ? "다시 자세를 잡는 중" : "", 16, "B", 2, true) +
+      button("dodge", 16, controlsY, 156, 88, "피하기", false, state === "cooldown", "BL") +
+      button("attack", 188, controlsY, 156, 88, "공격", state === "opening", false, "BR");
+    if (state === "charged" || state === "opening") {
+      body += item("ring-charge", 196, controlsY + 8, 140, 72, "BR", 1, false,
+        rect(196, controlsY + 8, 140, 72, "none", state === "opening" ? "#fff" : "#222", 'stroke-width="3"') +
+        `<path d="M310 ${controlsY + 32}h16l-3 -5v-6h-10v6z M316 ${controlsY + 36}h4" fill="none" stroke="${state === "opening" ? "#fff" : "#222"}" stroke-width="2"/>`);
+    }
+    if (state === "cooldown") body += item("cooldown", 28, controlsY + 70, 132, 4, "BL", 2, false,
+      rect(28, controlsY + 70, 132, 4, "#ddd", "none") + rect(28, controlsY + 70, 66, 4, "#444", "none"));
+    if (state === "paused") body += modal("잠시 멈춤", "종탑은 기다립니다.", "계속", "그만두기");
+    if (state === "resume") body += modal("준비됐나요?", "버튼을 누르면\n전투가 이어집니다.", "계속");
+    if (state === "leave") body += modal("도전을 끝낼까요?", "이번 도전의 기본 보상은\n그대로 받습니다.", "도전 끝내기", "계속하기");
+  } else if (kind === "result") {
+    const victory = state === "victory";
+    body += label("result-title", 16, S + 28, 328, 44, victory ? "종이 울렸다" : "불씨는 남았다", 26, "T", 1, true) +
+      label("result-detail", 16, S + 90, 328, 64, state === "save-error" ? "기록을 저장하지 못했어요.\n앱을 닫으면 사라질 수 있어요." : victory ? "종탑 완주" : "1구역 · 문지기 종에게 패배", 16, "T", 2, true) +
+      box("reward", 16, S + 170, 328, 112, "T", 2,
+        text(180, S + 209, state === "save-error" ? "저장 대기 중인 장식 조각" : "기본 장식 조각", 16, "middle") +
+        text(180, S + 253, victory ? "+24" : "+3", 28, "middle", "#222", true)) +
+      button("retry", 16, B - 244, 328, 64, "다시 도전", true) +
+      (state === "collection-complete" ? "" : button("reward-ad", 16, B - 164, 328, 64,
+        state === "save-error" ? "저장 다시 시도" : state === "rewarded" ? "장식 조각 +5 받음" : state === "ad-loading" ? "광고 준비 중" : state === "ad-limit" ? "오늘 보상 완료\n내일 다시 받을 수 있어요." : "광고 보고 장식 조각 +5\n오늘 남은 횟수 2/3", false,
+        state === "rewarded" || state === "ad-loading" || state === "ad-limit", "B", 3)) +
+      button("home", 16, B - 84, 328, 60, "로비로", false, false, "B", 2);
+    if (state === "ad-unavailable") body += modal("광고가 없어요", "기본 보상은\n이미 받았습니다.", "다시 도전", "로비로");
+    if (state === "ad-error") body += modal("광고를 마치지 못했어요", "추가 조각은 받지 못했어요.\n기본 보상은 받았습니다.", "다시 도전", "로비로");
+    if (state === "grant-pending") body += modal("보상을 확인하고 있어요", "광고를 다시 볼 필요는 없어요.\n확인이 끝나면 지급됩니다.", "다시 도전", "로비로");
+  } else if (kind === "collection") {
+    body += heading("수집", state === "insufficient" ? "장식 조각 20" : "장식 조각 120") +
+      box("cosmetic", 16, S + 114, 328, 174, "T", 1,
+        text(32, S + 150, "재의 망토", 20, "start", "#222", true) +
+        rect(158, S + 164, 44, 48, "#ddd") +
+        text(32, S + 243, "외형", 16) +
+        text(32, S + 272, state === "owned" ? "보유 중" : "장식 조각 80개", 16)) +
+      label("collection-status", 16, S + 306, 328, 50, state === "insufficient" ? "장식 조각 60개가 더 필요해요." : "", 16, "T", 2) +
+      button("unlock-action", 16, B - 168, 328, 64, state === "owned" ? "적용" : "장식 조각 80으로 열기",
+        true, state === "insufficient", "B") +
+      button("to-lobby", 16, B - 88, 328, 64, "로비로", false, false, "B", 2);
+    if (state === "save-error") body += modal("저장하지 못했어요", "장식 조각은 쓰지 않았어요.\n다시 시도해 주세요.", "다시 시도", "닫기");
+  } else if (kind === "settings") {
+    body += heading("설정");
+    const rows = [["sound", "소리", "켬"], ["vibration", "진동", "켬"], ["shake", "화면 흔들림", "줄임"], ["swap", "버튼 위치", "기본"]];
+    rows.forEach(([id, name, value], i) => {
+      const y = S + 96 + i * 68;
+      body += label(`${id}-label`, 16, y + 6, 196, 42, name, 18) +
+        button(id, 224, y, 120, 52, value, false, false, "TR", 2);
+    });
+    body += button("replay", 16, B - 160, 156, 52, "이야기 보기", false, false, "BL", 3) +
+      button("restore", 188, B - 160, 156, 52, "구매 복원", false, false, "BR", 3) +
+      button("privacy", 16, B - 92, 156, 52, "개인정보", false, false, "BL", 3) +
+      button("support", 188, B - 92, 156, 52, "문의", false, false, "BR", 3);
+    if (state === "restore-empty") body += modal("복원할 구매가 없어요", "구매한 스토어 계정을\n확인해 주세요.", "닫기");
+    if (state === "restore-done") body += modal("구매를 복원했어요", "보유한 외형을\n다시 사용할 수 있어요.", "확인");
+  } else if (kind === "shop") {
+    body += heading("상점");
+    const purchasing = state === "pending" || state === "pending-inline";
+    body += box("product", 16, S + 104, 328, 228, "T", 1,
+      text(32, S + 142, "낡은 등불", 22, "start", "#222", true) +
+      rect(154, S + 158, 52, 64, "#ddd") +
+      text(32, S + 259, "외형 1종 · 능력치 변화 없음", 16) +
+      text(32, S + 303, state === "loading" ? "가격 확인 중" : "표시 가격", 22)) +
+      button("buy", 16, B - 168, 328, 64,
+        state === "owned" ? "적용" : state === "loading" || purchasing ? "확인 중" : "구매", true, state === "loading" || purchasing, "B") +
+      button("shop-restore", 16, B - 88, 328, 64, "구매 복원", false, false, "B", 3);
+    if (state === "pending-inline") body += label("purchase-status", 16, S + 338, 328, 40, "구매 확인 중", 16, "T", 1, true);
+    if (state === "pending") body += modal("구매 확인 중", "스토어에서 확인하고 있어요.\n결과는 상점에서 볼 수 있어요.", "닫기");
+    if (state === "failed") body += modal("구매하지 못했어요", "결제 내역을 확인해 주세요.\n확인 중인 구매는\n다시 결제하지 마세요.", "구매 내역 확인", "닫기");
+    if (state === "cancelled") body += modal("구매를 취소했어요", "상품은 지급되지 않았어요.", "닫기");
+    if (state === "offline") body += modal("상점에 연결하지 못했어요", "연결을 확인한 뒤\n다시 시도해 주세요.", "다시 시도", "닫기");
+  } else if (kind === "intro") {
+    const story = state === "cut2" ? "새벽을 깨우던 종도\n잠들었다." : state === "cut3" ? "남은 불씨 하나.\n종을 깨워라." : "밤이 끝나지 않았다.";
+    body += button("skip", 240, S + 8, 104, 48, "건너뛰기", false, false, "TR", 3) +
+      label("story", 32, Math.round(H * .31), 296, 132, story, 22, "C", 1) +
+      button("story-start", 16, B - 104, 328, 64, state === "cut3" ? "종탑으로" : "다음", true);
+  }
+  if (guides) {
+    body += `<g pointer-events="none" aria-hidden="true">` +
+      rect(1, S, 358, B - S, "none", "#777", 'stroke-dasharray="6 4"') +
+      items.filter(i => i.hit).map(i => rect(i.x + 2, i.y + 2, i.w - 4, i.h - 4, "none", "#777", 'stroke-dasharray="3 3"')).join("");
+    if (kind === "combat") {
+      body += rect(0, B - 208, 360, 208, "#777", "none", 'fill-opacity=".07"');
+    }
+    body += "</g>";
+  }
+  // Match exported SVG metadata to the active targets listed in the inspector.
+  body = body.replace(/data-id="([^"]+)"([^>]*?)data-hit="(?:true|false)"/g,
+    (_, id, attributes) => `data-id="${id}"${attributes}data-hit="${items.find(i => i.id === id).hit}"`);
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="${kind}, ${state}, ${W}×${H}" font-family="'Malgun Gothic','Apple SD Gothic Neo',sans-serif">${body}</svg>`;
+  return { svg, items };
+};
+const names = {"lobby":"로비","combat":"전투","result":"결과","collection":"수집","settings":"설정","shop":"상점","intro":"시작 서사"};
+const states = {"lobby":[["normal","기본"],["locked","콘텐츠 잠김"]],"combat":[["normal","공격 예고"],["charged","울림 충전 / 연속타 중"],["opening","마지막 타격 뒤 800ms"],["cooldown","회피 회복 중"],["tutorial","첫 안내"],["paused","일시정지"],["resume","앱 복귀"],["leave","도전 중단 확인"]],"result":[["normal","패배"],["victory","돌파"],["ad-loading","광고 준비"],["ad-unavailable","광고 없음"],["ad-error","광고 미완료"],["ad-limit","일일 광고 보상 소진"],["grant-pending","광고 보상 확인"],["rewarded","결과당 광고 1회 지급됨"],["collection-complete","무료 수집 완료 / 광고 숨김"],["save-error","기록 저장 실패"]],"collection":[["normal","해금 가능"],["insufficient","재화 부족"],["owned","보유 중"],["save-error","저장 실패"]],"settings":[["normal","기본"],["restore-empty","복원 없음"],["restore-done","복원 완료"]],"shop":[["normal","상품 조회 완료"],["loading","가격 조회 중"],["pending","구매 확인 중"],["pending-inline","구매 대기 / 모달 닫음"],["failed","구매 오류"],["cancelled","구매 취소"],["offline","연결 실패"],["owned","보유 중"]],"intro":[["normal","첫 컷 · 0~3초"],["cut2","둘째 컷 · 3~6초"],["cut3","셋째 컷 · 6~9초"]]};
+let selection = [{kind:"lobby",state:"normal"},{kind:"combat",state:"normal"},{kind:"result",state:"normal"},{kind:"collection",state:"normal"}];
+const notes = {
+lobby:"주 행동은 도전. 외형 전용 재화·수집·상점은 전투 진입을 밀어내지 않습니다.",
+combat:"피하기·공격 각각 156×88. 정밀회피 울림 1회는 공격 버튼 테두리·종 아이콘으로 표시합니다.",
+result:"재도전을 먼저 제공합니다. 광고는 기본 보상 지급 뒤 선택하며 실패해도 재도전할 수 있습니다.",
+collection:"외형 전용 수집입니다. 공격력·체력 성장은 없습니다. 거래 저장에 실패하면 재화 차감도 취소합니다.",
+settings:"모든 전환 영역은 48 이상입니다. 소리·진동을 꺼도 공격 예고를 읽을 수 있어야 합니다.",
+shop:"가격은 스토어 조회값을 표시합니다. 구매 대기는 중복 구매를 막고 닫아도 확인을 계속합니다.",
+intro:"최초 9초·3컷입니다. 컷마다 1문장, 건너뛰기·설정에서 무료 다시 보기를 제공합니다. 시안에서는 자동 진행하지 않습니다."
+};
+function paint(){
+ const height=Number(document.getElementById("height").value),[top,bottom]=document.getElementById("safe").value.split(",").map(Number);
+ const guides=document.getElementById("guides").checked,large=document.getElementById("large").checked;
+ document.getElementById("board").innerHTML=selection.map((s,i)=>{
+  const r=renderScreen(s.kind,{height,top,bottom,state:s.state,guides,large});
+  const screenOptions=Object.entries(names).map(([k,v])=>'<option value="'+k+'"'+(k===s.kind?' selected':'')+'>'+v+'</option>').join("");
+  const stateOptions=states[s.kind].map(([k,v])=>'<option value="'+k+'"'+(k===s.state?' selected':'')+'>'+v+'</option>').join("");
+  const rows=r.items.map(x=>'<tr><td>'+x.id+'</td><td>'+[x.x,x.y,x.w,x.h].join(",")+'</td><td>'+x.anchor+'</td><td>P'+x.priority+'</td><td>'+(x.hit?'입력':'—')+'</td></tr>').join("");
+  return '<section class="panel"><h2>0'+(i+1)+' · '+names[s.kind]+'</h2><div class="panel-controls"><select aria-label="'+(i+1)+'번 화면" data-kind="'+i+'">'+screenOptions+'</select><select aria-label="'+(i+1)+'번 상태" data-state="'+i+'">'+stateOptions+'</select></div><div class="screen">'+r.svg+'</div><p class="note">'+notes[s.kind]+'</p><details><summary>bounds · anchor · hit area</summary><table><thead><tr><th>ID</th><th>x,y,w,h</th><th>고정</th><th>순위</th><th>입력</th></tr></thead><tbody>'+rows+'</tbody></table></details></section>';
+ }).join("");
+}
+document.addEventListener("change",e=>{
+ if(e.target.dataset.kind!==undefined){const i=Number(e.target.dataset.kind);selection[i]={kind:e.target.value,state:"normal"};}
+ if(e.target.dataset.state!==undefined)selection[Number(e.target.dataset.state)].state=e.target.value;
+ paint();
+});
+document.getElementById("core").onclick=()=>{selection=[{kind:"lobby",state:"normal"},{kind:"combat",state:"normal"},{kind:"result",state:"normal"},{kind:"collection",state:"normal"}];paint();};
+document.getElementById("services").onclick=()=>{selection=[{kind:"intro",state:"normal"},{kind:"settings",state:"normal"},{kind:"shop",state:"normal"},{kind:"shop",state:"pending"}];paint();};
+document.getElementById("errors").onclick=()=>{selection=[{kind:"result",state:"ad-unavailable"},{kind:"result",state:"save-error"},{kind:"shop",state:"pending"},{kind:"collection",state:"insufficient"}];paint();};
+paint();
+</script></body></html>

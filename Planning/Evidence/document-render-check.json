@@ -1,0 +1,46 @@
+{
+  "checkedAt": "2026-10-21",
+  "version": "planning-v2",
+  "type": "document browser rendering; no Unity or physical-device testing",
+  "screens": [
+    {
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "missingImages": []
+    },
+    {
+      "viewport": 768,
+      "documentWidth": 768,
+      "missingImages": []
+    },
+    {
+      "viewport": 360,
+      "documentWidth": 360,
+      "missingImages": []
+    }
+  ],
+  "errors": [],
+  "calculator": {
+    "before": "130,080원",
+    "after": "650,400원",
+    "changed": true
+  },
+  "wireframeScreens": [
+    {
+      "viewport": 1600,
+      "documentWidth": 1600
+    },
+    {
+      "viewport": 1440,
+      "documentWidth": 1440
+    },
+    {
+      "viewport": 768,
+      "documentWidth": 768
+    },
+    {
+      "viewport": 360,
+      "documentWidth": 360
+    }
+  ]
+}

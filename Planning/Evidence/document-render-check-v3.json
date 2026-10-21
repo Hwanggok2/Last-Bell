@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-21",
+  "version": "planning-v3",
+  "scope": "Document/interactive-wireframe browser checks, not Unity/device/payment tests",
+  "screens": [
+    {
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "missingImages": []
+    },
+    {
+      "viewport": 768,
+      "documentWidth": 768,
+      "missingImages": []
+    },
+    {
+      "viewport": 360,
+      "documentWidth": 360,
+      "missingImages": []
+    }
+  ],
+  "errors": [],
+  "wireframeScreens": [
+    {
+      "viewport": 1600,
+      "documentWidth": 1600
+    },
+    {
+      "viewport": 1440,
+      "documentWidth": 1440
+    },
+    {
+      "viewport": 768,
+      "documentWidth": 768
+    },
+    {
+      "viewport": 360,
+      "documentWidth": 360
+    }
+  ],
+  "textBounds": {
+    "cases": 174,
+    "texts": 1818,
+    "issues": []
+  },
+  "interactions": {
+    "firstRun": "tutorial",
+    "tutorialCompletes": true,
+    "characterGrowthIndependent": true,
+    "costs9to10to11": [
+      10,
+      60
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-20",
+  "version": "planning-v1.1",
+  "status": "planning-baseline-confirmed",
+  "scope": "First planning milestone; not a completed Unity game or verified commercial forecast.",
+  "theme": {"workingTitle": "마지막 종지기", "premise": "밤에 잠긴 종탑의 세 종을 깨워 아침을 되찾는다.", "alternativesDeferred": ["퇴근길 퇴마사", "고철 검투사"]},
+  "input": {"orientation":"portrait","buttons":["피하기","공격"],"movement":"stationary one-versus-one","holdInput":false,"directionalDodge":false},
+  "combat": {
+    "playerHp":100,"attackDamage":10,"counterDamage":20,"attackCooldownMs":600,"attackWindupMs":120,
+    "dodgeWindowMs":220,"perfectWindowMs":70,"dodgeCooldownMs":700,"postDodgeAttackLockMs":180,"counterWindowMs":800,
+    "hitStopMs":0,
+    "normalAttack":"Can deal normal damage during enemy patterns; dodge cancels unlanded attacks without refunding the attack cooldown.",
+    "echo":"One charge from a perfect dodge. No stacking. Must avoid every hit in that pattern. Any damage clears it and blocks reacquisition in that pattern. Ready only after final hit; consumption requires a landed attack within 800ms. Clear on expiry, enemy defeat, next pattern, or run exit.",
+    "pause":"Freeze combat clock; if resuming by restarting a telegraph, clear echo and mark the record interrupted.",
+    "precisionRequiredToClear":false,
+    "timingStatus":"Initial test values, not measured device thresholds."
+  },
+  "content": {
+    "prototype":{"playerTypes":1,"normalTypes":1,"bossTypes":1},
+    "releaseTarget":{"playerTypes":1,"normalTypes":4,"bossTypes":3,"zones":3,"encountersPerZone":4,"encountersTotal":12,"condition":"Expand only after fun test and affordable asset estimate."},
+    "repeatRunEstimateSeconds":216.3,
+    "runEstimateStatus":"Analytic scenario using assumed skill; not playtest result.",
+    "retryTargetSeconds":2,
+    "story":{"openingSeconds":9,"openingCuts":3,"endingSeconds":6,"endingCuts":2,"endingPlayback":"First clear only, after the run record is finalized; excluded from run time. Skippable and free to replay in settings.","skippable":true,"autoReplayOnRetry":false,"freeReplayInSettings":true,"firstSessionWithTutorialAndAllStoryEstimateSeconds":[251.3,271.3]}
+  },
+  "visual": {
+    "reference":"Visuals/concept-simple-v2.png",
+    "artifactStatus":"Generated concept, not verified production pixels.",
+    "targetBaseColors":4,
+    "heroSpritePixels":[16,24],
+    "normalSpriteRangePixels":[24,32],
+    "bossSpriteRangePixels":[48,64],
+    "proposedAnimationFrames":85,
+    "proposedVfxFrames":15,
+    "hud":"Enemy telegraphs above thumb area. Echo uses attack button icon/border; no separate management gauge.",
+    "layoutOwner":"UI review's bounds and anchors supersede combat review's illustrative layout.",
+    "copy":"Only actions, necessary state, brief narrative, purchase conditions and recovery. No implementation commentary in game UI."
+  },
+  "economy": {
+    "currency":"장식 조각",
+    "normalReward":1,"bossReward":3,"clearBonus":6,"fullClearTotal":24,
+    "failure":"Keep rewards for completed encounters only; no reward just for dying.",
+    "freeCosmeticCosts":[80,160],"freeCosmeticsExcludingDefault":2,
+    "paidItems":[{"id":"cosmetic_a","priceKRWAssumption":3300,"content":"영구 외형 1종"},{"id":"supporter_b","priceKRWAssumption":5500,"content":"A와 다른 영구 외형 1종 + 감사 배지"}],
+    "rewardedAdBonus":5,"rewardedAdDailyCap":3,"rewardedAdMaxPerResult":1,
+    "noAdsProduct":false,"forcedAds":false,"permanentCombatStatGrowth":false,
+    "priceStatus":"Planning assumptions; actual display price comes from store.",
+    "contentExhaustionRisk":"All free unlocks cost 240: 10 full clears without ads, about 36 minutes under the analytic run assumption. Hide rewarded currency ads once no free unlock remains. D7 and ad participation may fall after collection."
+  },
+  "business": {
+    "platform":"ONE store native Android, Korea first",
+    "baseFirst30Days":{"installs":2500,"mau":2000,"activeDaysPerUser":6,"dau":400,"payerRate":0.015,"arppuKRW":4400,"refundRate":0.02,"adImpressionsPerActiveUserDay":0.5,"publisherEcpmKRW":6000,"iapFee":0.2,"revenueAfterModeledDeductionsKRW":130080,"operatingCashCostKRW":100000,"balanceBeforeLaborAndUAKRW":30080},
+    "forecastStatus":"Hypothetical scenarios; no acquired audience or measured revenue.",
+    "strategy":"Prototype first, external observation, limited soft launch. Do not scale paid UA without measured economics.",
+    "schedule":"Three-week prototype assumption, followed by testing. Reduced release scope estimate: assets 21-38 person-days plus implementation 19-33; with 20% allowance total 48-85 person-days at six focused hours per day. Platform integration, policies and review are additional. The earlier 7-9 week release guess is superseded; actual availability is unknown."
+  },
+  "reviews": {
+    "concept":{"file":"Reviews/concept.md","section":12,"status":"agreed; no unresolved required planning edits"},
+    "combat":{"file":"Reviews/combat.md","section":12,"status":"agreed; both required clarification edits verified"},
+    "ui":{"file":"Reviews/ui.md","section":11,"status":"agreed; no unresolved required planning edits"},
+    "market":{"file":"Reviews/market.md","section":10,"status":"agreed for prototype validation; commercial viability unverified"}
+  }
+}

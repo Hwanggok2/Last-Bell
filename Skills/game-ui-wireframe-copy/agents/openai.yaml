@@ -1,0 +1,4 @@
+interface:
+  display_name: "게임 UI 와이어프레임과 문구"
+  short_description: "와이어프레임을 실제 화면으로 옮기고 불필요한 게임 설명 문구를 정리"
+  default_prompt: "Use $game-ui-wireframe-copy to design a game screen from a wireframe and retain only necessary player-facing text."

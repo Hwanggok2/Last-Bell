@@ -1,0 +1,488 @@
+fileFormatVersion: 2
+guid: f846594fddd735f4bafee0487516413b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gate_00
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 588
+        width: 190
+        height: 220
+      alignment: 9
+      pivot: {x: 0.6342105, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 201515e3452b29a30800000000000000
+      internalID: 4220631875692089602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate_01
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 588
+        width: 187
+        height: 225
+      alignment: 9
+      pivot: {x: 0.70053476, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca06ff9709f5749a0800000000000000
+      internalID: -6248920883826564948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate_02
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 600
+        width: 160
+        height: 268
+      alignment: 9
+      pivot: {x: 0.428125, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef1d653c175afe350800000000000000
+      internalID: 6048234732608999934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate_03
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 588
+        width: 308
+        height: 293
+      alignment: 9
+      pivot: {x: 0.5746753, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ccae4b66ac6f5e00800000000000000
+      internalID: 1035665901339192520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate_04
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 588
+        width: 255
+        height: 353
+      alignment: 9
+      pivot: {x: 0.58235294, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3fd04b7d5a51dad0800000000000000
+      internalID: -2679260945762427078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate_05
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 308
+        width: 236
+        height: 197
+      alignment: 9
+      pivot: {x: 0.6864407, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf49e562276aca840800000000000000
+      internalID: 5236743475925259516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate_06
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 308
+        width: 310
+        height: 197
+      alignment: 9
+      pivot: {x: 0.7693548, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c5191d469af8a880800000000000000
+      internalID: -8599347965018434111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate_07
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 313
+        width: 216
+        height: 230
+      alignment: 9
+      pivot: {x: 0.7476852, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62be678a93fa34590800000000000000
+      internalID: -7691111076444312794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate_08
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 308
+        width: 344
+        height: 241
+      alignment: 9
+      pivot: {x: 0.67877907, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ca35bc1ef210a8a0800000000000000
+      internalID: -6296011396451321152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate_09
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 308
+        width: 347
+        height: 252
+      alignment: 9
+      pivot: {x: 0.71037465, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb62691e47af75690800000000000000
+      internalID: -7613341265138669893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate_10
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 45
+        width: 193
+        height: 147
+      alignment: 9
+      pivot: {x: 0.5284974, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ad61bdff7ed86400800000000000000
+      internalID: 317748415028096417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate_11
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 45
+        width: 221
+        height: 159
+      alignment: 9
+      pivot: {x: 0.53846157, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3adf53426322bcdd0800000000000000
+      internalID: -2464838755124118109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate_12
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 52
+        width: 150
+        height: 204
+      alignment: 9
+      pivot: {x: 0.62666667, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39230736560895fb0800000000000000
+      internalID: -4658551166589717869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate_13
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 38
+        width: 297
+        height: 209
+      alignment: 9
+      pivot: {x: 0.7020202, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86e070760b73d2d70800000000000000
+      internalID: 9019926859475258984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate_14
+      rect:
+        serializedVersion: 2
+        x: 1377
+        y: 41
+        width: 210
+        height: 216
+      alignment: 9
+      pivot: {x: 0.49761903, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e894427ea65184b70800000000000000
+      internalID: 8883373813876935054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      gate_00: 4220631875692089602
+      gate_01: -6248920883826564948
+      gate_02: 6048234732608999934
+      gate_03: 1035665901339192520
+      gate_04: -2679260945762427078
+      gate_05: 5236743475925259516
+      gate_06: -8599347965018434111
+      gate_07: -7691111076444312794
+      gate_08: -6296011396451321152
+      gate_09: -7613341265138669893
+      gate_10: 317748415028096417
+      gate_11: -2464838755124118109
+      gate_12: -4658551166589717869
+      gate_13: 9019926859475258984
+      gate_14: 8883373813876935054
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

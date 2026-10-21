@@ -1,0 +1,66 @@
+{
+  "status": "playable-mvp",
+  "unity": "6000.3.15f1",
+  "editMode": {
+    "passed": 37,
+    "failed": 0
+  },
+  "windowsFlow": {
+    "passed": true,
+    "tutorial": true,
+    "bossRewards": 2,
+    "perfectDodges": 76,
+    "normalDodges": 1,
+    "criticalHits": 11,
+    "playerHits": 3,
+    "checkpoint": 11,
+    "attackLevel": 29,
+    "equippedRelics": 1
+  },
+  "diskResume": {
+    "passed": true,
+    "stage": 11,
+    "attackLevel": 29,
+    "equippedRelics": 1
+  },
+  "smallViewport": {
+    "passed": true,
+    "tutorial": true,
+    "bossRewards": 2,
+    "perfectDodges": 76,
+    "normalDodges": 1,
+    "criticalHits": 11,
+    "playerHits": 3,
+    "checkpoint": 11,
+    "attackLevel": 29,
+    "equippedRelics": 1
+  },
+  "packages": [
+    {
+      "path": "Builds/LastBellMvp-Windows.zip",
+      "bytes": 65789565,
+      "sha256": "98d7bca85ee1f7edd3257cdbe9556046495f3deecef5bbc195227bdf33968345",
+      "archiveIntegrity": "passed"
+    },
+    {
+      "path": "Builds/Android/LastBellMvp.apk",
+      "bytes": 43234090,
+      "sha256": "499f9b49589571409c96783275c727889aa8c34213cdbdacf14cb866e836125a",
+      "archiveIntegrity": "passed"
+    }
+  ],
+  "androidPhysicalDeviceTested": false,
+  "storePublished": false,
+  "scope": {
+    "stages": [
+      1,
+      10
+    ],
+    "boundaryStage": 11,
+    "playableCharacters": 1,
+    "enemyPrototypes": 5,
+    "worldBackgrounds": 1,
+    "relicDefinitions": 10,
+    "plannedMonsterSpecies": 50
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-21",
+  "version": "planning-v3",
+  "growthCases": [
+    {
+      "stars": 1,
+      "attack10": 40,
+      "attack11": 86,
+      "attack50": 2560,
+      "hp50": 7209
+    },
+    {
+      "stars": 2,
+      "attack10": 41.5,
+      "attack11": 95.9975,
+      "attack50": 3579.0572968750002,
+      "hp50": 9605
+    },
+    {
+      "stars": 3,
+      "attack10": 43,
+      "attack11": 106.49,
+      "attack50": 4897.217499999999,
+      "hp50": 12597
+    },
+    {
+      "stars": 4,
+      "attack10": 44.5,
+      "attack11": 117.47749999999999,
+      "attack50": 6575.476140625003,
+      "hp50": 16290
+    },
+    {
+      "stars": 5,
+      "attack10": 46,
+      "attack11": 128.95999999999998,
+      "attack50": 8682.544,
+      "hp50": 20800
+    }
+  ],
+  "budgets": [
+    {
+      "completedStage": 10,
+      "basicGold": 640,
+      "fourStatsTarget": 11,
+      "totalCost": 640,
+      "remainder": 0,
+      "fragments": 4
+    },
+    {
+      "completedStage": 20,
+      "basicGold": 1760,
+      "fourStatsTarget": 21,
+      "totalCost": 1720,
+      "remainder": 40,
+      "fragments": 8
+    },
+    {
+      "completedStage": 30,
+      "basicGold": 3360,
+      "fourStatsTarget": 31,
+      "totalCost": 3280,
+      "remainder": 80,
+      "fragments": 12
+    },
+    {
+      "completedStage": 40,
+      "basicGold": 5440,
+      "fourStatsTarget": 41,
+      "totalCost": 5320,
+      "remainder": 120,
+      "fragments": 16
+    },
+    {
+      "completedStage": 50,
+      "basicGold": 8000,
+      "fourStatsTarget": 50,
+      "totalCost": 7120,
+      "remainder": 880,
+      "fragments": 20
+    }
+  ],
+  "totalGold": 8000,
+  "totalFragments": 20,
+  "costPerCharacter": 7120,
+  "maximumResonance": 1.746,
+  "enemy50NG2": {
+    "hp": 349454,
+    "damage": 2087
+  },
+  "animationFrames": 212,
+  "revenueSensitivities": [
+    0,
+    7840,
+    47040,
+    141120
+  ],
+  "checkpointExamplesPassed": true,
+  "duplicateCommitRejected": true,
+  "repeatBossRewardPreserved": true,
+  "characterProgressIndependent": true,
+  "cycleTransitionOnce": true,
+  "missingLocalLinks": [],
+  "limits": "Planning arithmetic and executable contract examples; not Unity save, device, payment or measured gameplay tests."
+}

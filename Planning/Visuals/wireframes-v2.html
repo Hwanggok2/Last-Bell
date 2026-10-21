@@ -1,0 +1,235 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>마지막 종지기 · 가로 UI v2</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#eee;color:#222;font:14px "Malgun Gothic",sans-serif}header,footer{padding:20px;background:#fff}h1{font-size:24px;margin:0 0 8px}p{line-height:1.6;margin:8px 0}button,select{font:inherit;color:#222;background:#fff;border:1px solid #888;padding:8px;min-height:40px}label{display:flex;gap:8px;align-items:center}.controls{display:flex;flex-wrap:wrap;gap:14px;margin-top:16px}main{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;padding:24px}.card{min-width:0}.card h2{font-size:18px;margin:0 0 10px}.card-controls{display:flex;gap:10px;margin-bottom:10px}.screen svg{display:block;width:100%;height:auto}.note{font-size:13px;min-height:42px}details{background:white;padding:12px}summary{cursor:pointer}table{border-collapse:collapse;width:100%;font-size:12px}td,th{text-align:left;padding:6px;border-bottom:1px solid #ddd}code{font-family:monospace}a{color:#224b74}input[type=checkbox]{width:18px;height:18px}@media(max-width:1000px){main{grid-template-columns:minmax(0,1fr);padding:16px}}@media print{.controls,.card-controls,details{display:none}main{grid-template-columns:1fr}.card{break-inside:avoid}}</style></head><body>
+<header><h1>마지막 종지기 · 가로 UI v2</h1><p>가로 전장 · 낮은 지면 · 세 방향 회피 · 기절 누적 · 강화와 유물. 이 뷰어는 배치/문구 검토용이며 실제 전투·거래를 실행하지 않습니다.</p>
+<p>planning-v2 기획 수치이며 실측 전입니다. 시작은 0골드/0새벽석, 강화·교환 화면은 재화를 얻은 뒤의 독립 표본입니다. 기존 울림1회는 제거했습니다. 미리보기 축소 크기를 실제 dp로 판단하지 마세요.</p>
+<div class="controls"><label>크기 <select id="size"><option value="960,540">960×540 · 16:9</option><option value="1200,540">1200×540 · 20:9</option><option value="640,360">640×360 · 최소</option></select></label>
+<label>안전 영역 <select id="safe"><option value="24,24,12,12">L24 R24 T12 B12</option><option value="44,32,16,16">L44 R32 T16 B16</option><option value="0,0,0,0">없음</option></select></label>
+<label>회피 <select id="controls"><option value="three">위 · 뒤 · 아래</option><option value="one">1버튼 대조안</option></select></label>
+<label><input id="guides" type="checkbox" checked>입력·손가림 가이드</label><label><input id="large" type="checkbox">한글 120%</label><label><input id="color" type="checkbox">전투 컬러 도트 배치</label>
+<button id="all">6화면</button><button id="battle-set">전투 상태 비교</button><button id="errors">거래·장착 상태 비교</button></div></header><main id="board"></main>
+<footer><p>로비 → 전투 → 결과 → 계속 / 재도전 / 강화 · 로비 ⇄ 강화 · 유물 ⇄ 슬롯 확장 · 재화 교환</p><p>원점은 각 화면 좌상단. TL/TR/T/BL/BR/B는 안전 영역 모서리/중앙, C는 안전 영역 중앙. 3방향 버튼의 이름은 종지기가 움직일 방향입니다. 예고는 적이 공격할 위치입니다.</p><p><a href="../Reviews/ui-v2.md">검토 문서</a> · <a href="wireframes-v2.svg">전체 SVG</a> · <a href="landscape-battle-v2.svg">컬러 전투 배치 SVG</a></p></footer>
+<script>
+const renderV2=function renderV2(kind, opts = {}, m = {}) {
+  const { width: W = 960, height: H = 540, left = 24, right = 24, top = 12, bottom = 12,
+    state = "normal", controls = "three", guides = false, large = false, color = false } = opts;
+  const L = left, R = W - right, T = top, B = H - bottom, SW = R - L, SH = B - T;
+  const small = H < 400, K = small ? 56 : 64, G = 8, pixel = small ? 2 : 4;
+  const floorY = Math.round(H * .82 / pixel) * pixel;
+  const items = [], regions = [];
+  const p = color ? { bg: "#101d2c", mid: "#304b62", paper: "#101d2c", ink: "#efd39d", dim: "#304b62", accent: "#d89335" } :
+    { bg: "#fff", mid: "#ddd", paper: "#fff", ink: "#222", dim: "#aaa", accent: "#555" };
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&apos;" }[c]));
+  const rect = (x,y,w,h,fill=p.paper,stroke=p.ink,extra="") => `<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="${fill}" stroke="${stroke}" ${extra}/>`;
+  const text = (x,y,s,size=16,align="start",fill=p.ink,bold=false,leading=1.4) => {
+    const fs = large ? Math.round(size*1.2) : size;
+    return `<text x="${x}" y="${y}" fill="${fill}" font-size="${fs}" text-anchor="${align}" font-weight="${bold?700:400}">${String(s).split("\n").map((line,i)=>`<tspan x="${x}" dy="${i?Math.ceil(fs*leading):0}">${esc(line)}</tspan>`).join("")}</text>`;
+  };
+  const item = (id,x,y,w,h,anchor,priority,hit,svg,extra={}) => {
+    items.push({id,x,y,w,h,anchor,priority,hit,...extra});
+    return `<g data-id="${id}" data-bounds="${x},${y},${w},${h}" data-anchor="${anchor}" data-priority="${priority}" data-hit="${hit}">${svg}</g>`;
+  };
+  const label = (id,x,y,w,h,s,size=16,anchor="TL",priority=2,center=false) =>
+    item(id,x,y,w,h,anchor,priority,false,text(center?x+w/2:x,y+(large?Math.round(size*1.2):size)+3,s,size,center?"middle":"start"));
+  const button = (id,x,y,w,h,s,primary=false,disabled=false,anchor="B") => {
+    const fs=large?19:16, lines=String(s).split("\n").length;
+    return item(id,x,y,w,h,anchor,primary?1:3,!disabled,
+      rect(x,y,w,h,disabled?p.mid:primary?p.ink:p.paper) +
+      text(x+w/2,y+h/2+(large?7:6)-(lines-1)*Math.ceil(fs*1.25)/2,s,16,"middle",primary&&!disabled?p.paper:p.ink,true,1.25),
+      {control:true,disabled});
+  };
+  const panel = (id,x,y,w,h,content,anchor="C") =>
+    item(id,x,y,w,h,anchor,2,false,rect(x,y,w,h,p.paper,p.dim)+content);
+  const header = (title,wallet=true) => label("title",L+12,T+8,SW-84,40,title,24,"TL",1) +
+    button(title==="마지막 종지기"?"settings":"back",R-60,T+8,48,48,title==="마지막 종지기"?"설정":"뒤로",false,false,"TR") +
+    (wallet?label("wallet",L+12,T+56,SW-24,28,`골드 ${kind==="lobby"&&state==="normal"?m.initialGold:state==="insufficient"?50:m.gold}   ·   새벽석 ${kind==="lobby"&&state==="normal"?m.initialGems:state==="gem-short"?2:state==="third-slot"?50:m.gems}`,16):"");
+  const footerY=B-64;
+  const gap=12, colW=(SW-36)/2, colX=L+12, col2=L+24+colW, bodyY=T+96;
+  const bodyH=SH-176;
+  const rowButtons = buttons => {
+    const bw=(SW-24-(buttons.length-1)*12)/buttons.length;
+    return buttons.map((b,i)=>button(b[0],L+12+i*(bw+12),footerY,bw,52,b[1],!!b[2],!!b[3],"B")).join("");
+  };
+  const modal = (title,body,yes,no="닫기",disabled=false) => {
+    items.forEach(i=>{i.hit=false;});
+    const mw=Math.min(488,SW-32), mh=240, x=L+(SW-mw)/2, y=T+(SH-mh)/2, bw=(mw-48)/2;
+    return rect(0,0,W,H,p.bg,"none",'fill-opacity=".92"')+
+      panel("modal",x,y,mw,mh,"")+
+      label("modal-title",x+16,y+16,mw-32,36,title,22,"C",1,true)+
+      label("modal-body",x+20,y+66,mw-40,88,body,16,"C",2,true)+
+      button("modal-confirm",x+16,y+mh-68,bw,52,yes,true,disabled,"C")+
+      button("modal-close",x+32+bw,y+mh-68,bw,52,no,false,false,"C");
+  };
+  let body=rect(0,0,W,H,p.bg);
+  if(kind==="battle") {
+    const ly=B-(2*K+G+12), lx=L+12, attackW=small?80:96, attackH=small?72:88;
+    const leftDanger={x:0,y:B-(2*K+G+44),w:L+2*K+G+44,h:2*K+G+44};
+    const rightDanger={x:R-(K+88),y:B-(K+112),w:W-R+K+88,h:K+112};
+    const protectedL=leftDanger.x+leftDanger.w+12, protectedR=rightDanger.x-12;
+    const protectedW=protectedR-protectedL, cx=(protectedL+protectedR)/2;
+    const heroX=Math.round((protectedL+protectedW*.24)/pixel)*pixel;
+    const enemyX=Math.round((protectedL+protectedW*.72)/pixel)*pixel;
+    const heroW=16*pixel, heroH=24*pixel, enemyW=24*pixel, enemyH=36*pixel;
+    regions.push({...leftDanger,id:"assumed-left-thumb"},{...rightDanger,id:"assumed-right-thumb"});
+    const silhouette = (x,y,scale,enemy=false) => {
+      const cells=enemy?[
+        [8,0,8,4,2],[4,4,16,4,2],[2,8,20,12,1],[4,20,16,8,2],
+        [4,28,6,8,3],[14,28,6,8,3],[3,34,7,2,2],[14,34,7,2,2],
+        [0,12,4,18,3],[20,12,4,14,2],[9,10,6,3,3]
+      ]:[
+        [5,0,7,3,2],[3,3,11,5,2],[4,5,7,6,1],[9,6,2,3,3],
+        [4,11,9,8,2],[2,12,3,6,2],[12,12,4,3,3],[5,19,3,5,1],[10,19,3,5,1],
+        [4,23,4,1,2],[10,23,4,1,2]
+      ];
+      const palette=["none",p.bg,p.ink,p.accent];
+      return `<g shape-rendering="crispEdges">${cells.map(([a,b,w,h,c])=>rect(x+a*scale,y+b*scale,w*scale,h*scale,palette[c],"none")).join("")}</g>`;
+    };
+    if(color) {
+      body+=`<g shape-rendering="crispEdges">`+
+        rect(0,Math.round(H*.2/pixel)*pixel,W,pixel*10,p.mid,"none")+
+        Array.from({length:Math.ceil(W/(pixel*40))},(_,i)=>{
+          const x=i*pixel*40;return rect(x,pixel*12,pixel*6,floorY-pixel*12,p.mid,"none")+
+            rect(x+pixel*6,pixel*12,pixel*20,pixel*4,p.mid,"none");
+        }).join("")+
+        rect(0,floorY,W,H-floorY,p.mid,"none")+
+        Array.from({length:Math.ceil(W/(pixel*16))},(_,i)=>rect(i*pixel*16,floorY,pixel*12,pixel,p.ink,"none")).join("")+"</g>";
+    } else body+=item("ground",0,floorY,W,1,"B",3,false,`<path d="M0 ${floorY}H${W}" stroke="#999"/>`,{world:true});
+    body+=item("hero",heroX-heroW/2,floorY-heroH,heroW,heroH,"C",1,false,
+      silhouette(heroX-heroW/2,floorY-heroH,pixel),{world:true,critical:true});
+    const retreat=small?40:64, jump=small?40:96;
+    body+=item("dodge-envelope",heroX-heroW/2-retreat,floorY-heroH-jump,heroW+retreat,heroH+jump,"C",1,false,
+      guides?rect(heroX-heroW/2-retreat,floorY-heroH-jump,heroW+retreat,heroH+jump,"none",p.dim,'stroke-dasharray="3 5"'):"",{world:true,critical:true});
+    body+=item("enemy",enemyX-enemyW/2,floorY-enemyH,enemyW,enemyH,"C",1,false,
+      silhouette(enemyX-enemyW/2,floorY-enemyH,pixel,true),{world:true,critical:true});
+    const warningX=heroX-heroW/2-4;
+    if(state==="high")body+=item("attack-path",warningX,floorY-heroH+4,enemyX-warningX,8,"C",1,false,rect(warningX,floorY-heroH+4,enemyX-warningX,8,p.accent,"none"),{world:true});
+    else if(state==="thrust")body+=item("attack-path",heroX+heroW/2,floorY-heroH/2,enemyX-heroX-heroW/2,8,"C",1,false,rect(heroX+heroW/2,floorY-heroH/2,enemyX-heroX-heroW/2,8,p.accent,"none"),{world:true});
+    else if(!["stunned","dodged","perfect","paused"].includes(state))body+=item("attack-path",warningX,floorY-8,enemyX-warningX,8,"C",1,false,rect(warningX,floorY-8,enemyX-warningX,8,p.accent,"none"),{world:true});
+    body+=label("player-hp",L+12,T+8,172,40,`체력 ${m.hp}/${m.maxHp}`,18,"TL",2)+
+      label("stage",W/2-76,T+8,152,32,"스테이지 5 / 30",16,"T",2,true)+
+      button("pause",R-60,T+8,48,48,"Ⅱ",false,false,"TR")+
+      label("enemy-name",cx-110,T+40,220,28,"중간 보스 · 사슬지기",16,"T",2,true)+
+      item("enemy-hp",cx-108,T+68,216,6,"T",2,false,rect(cx-108,T+68,216,6,p.mid,p.dim)+rect(cx-108,T+68,150,6,p.ink,"none"));
+    const stun=state==="stunned"?100:state==="immune"?0:state==="hit"?20:state==="perfect"?40+m.perfectStun:state==="dodged"?40+m.normalStun:40;
+    body+=item("stun",cx-108,T+80,216,32,"T",1,false,
+      text(cx,T+96+(large?3:0),state==="stunned"?`기절 · ${m.stunSeconds.toFixed(1)}초`:state==="immune"?"기절 저항 · 2.0초":`기절 ${stun} / ${m.stunLimit}`,14,"middle")+
+      rect(cx-108,T+104,216,8,p.mid,p.dim)+rect(cx-108,T+104,216*(state==="stunned"?.75:stun/m.stunLimit),8,p.accent,"none"));
+    let cue=state==="high"?"상단 공격":state==="thrust"?"찌르기":state==="stunned"?"기절!":state==="hit"?"피격 -20":state==="dodged"?`회피 +${m.normalStun}`:state==="perfect"?`완벽 +${m.perfectStun}`:state==="recover"?"회피 준비 중":state==="tutorial"?"위로 피하기":"하단 공격";
+    const cw=Math.min(272,protectedW);
+    body+=item("telegraph",cx-cw/2,T+132,cw,52,"T",1,false,rect(cx-cw/2,T+132,cw,52,p.paper,p.ink,'stroke-width="2"')+text(cx,T+165,cue,20,"middle",p.ink,true),{critical:true});
+    if(state==="combo")body+=item("combo",cx-24,T+120,48,8,"T",1,false,
+      [cx-16,cx,cx+16].map((x,i)=>rect(x-4,T+120,8,8,i===0?p.paper:p.accent,p.ink)).join(""),{critical:true});
+    if(controls==="three") {
+      body+=button("dodge-up",lx+K+G,ly,K,K,"위",false,state==="recover","BL")+
+        button("dodge-back",lx,ly+K+G,K,K,"뒤",false,state==="recover","BL")+
+        button("dodge-down",lx+K+G,ly+K+G,K,K,"아래",false,state==="recover","BL");
+    } else body+=button("dodge-single",lx,B-K-12,2*K+G,K,"피하기",false,state==="recover","BL");
+    body+=button("attack",R-12-attackW,B-12-attackH,attackW,attackH,"공격",state==="stunned",false,"BR");
+    if(state==="paused")body+=modal("잠시 멈춤","계속하거나 도전을 끝낼 수 있어요.","계속","도전 끝내기");
+  } else if(kind==="lobby") {
+    body+=header("마지막 종지기")+
+      panel("stage-card",colX,bodyY,colW,bodyH,
+        text(colX+16,bodyY+30,`스테이지 ${state==="midboss"?5:state==="boss"?10:state==="normal"?1:4} / 30`,22)+
+        text(colX+16,bodyY+64,state==="midboss"?"중간 보스":state==="boss"?"보스 · 유물 보상":"다음 중간 보스 5",16))+
+      panel("loadout-card",col2,bodyY,colW,bodyH,
+        text(col2+16,bodyY+30,`공격력 ${m.attack} · 체력 ${m.maxHp}`,18)+
+        text(col2+16,bodyY+64,`유물 ${state==="normal"?0:1} / ${m.initialSlots}`,18)+
+        text(col2+16,bodyY+96,state==="normal"?"5 스테이지 첫 유물":"재의 고리",16))+
+      rowButtons([["upgrade","강화"],["relics","유물"],["exchange","교환"],["start","출전",true]]);
+    if(state==="locked")body+=modal("아직 갈 수 없어요","이전 스테이지를 깨세요.","확인","로비로");
+  } else if(kind==="result") {
+    const win=["clear","midboss","boss","duplicate","final-boss","grant-pending"].includes(state);
+    const resultStage=state==="final-boss"?30:state==="midboss"?5:["boss","duplicate","grant-pending"].includes(state)?10:4;
+    const relicReward=["midboss","boss","final-boss"].includes(state);
+    const rewardGold=resultStage===30?500:resultStage===10?200:resultStage===5?120:40;
+    const newRelic=m.relics.find(r=>r.stage===resultStage);
+    body+=header(win?"스테이지 돌파":"도전 종료",false)+
+      panel("result-record",colX,T+72,colW,SH-152,
+        text(colX+16,T+104,`스테이지 ${resultStage} / 30`,22)+
+        text(colX+16,T+142,state==="final-boss"?"모든 스테이지 돌파":win?`다음 스테이지 ${resultStage+1}`:"하단 공격에 피격",16)+
+        text(colX+16,T+180,state==="save-error"?"기록 저장 대기":win?`처치 골드 +${rewardGold}`:"이번 전투 보상 0",20))+
+      panel("result-reward",col2,T+72,colW,SH-152,
+        text(col2+16,T+108,relicReward?"유물 획득":state==="duplicate"?"중복 유물":state==="grant-pending"?"유물 지급 확인 중":"보상",20)+
+        text(col2+16,T+146,relicReward?newRelic.name:state==="duplicate"?"새벽의 조각":win?"처치 보상":"처치하지 못했어요.",18)+
+        text(col2+16,T+182,relicReward?"새벽석 +15":state==="duplicate"?"골드 +20 · 새벽석 +2":state==="save-error"?"앱을 닫으면 기록이\n사라질 수 있어요.":"이미 받은 보상은 유지돼요.",small?14:16))+
+      rowButtons([["home","로비"],["upgrade","강화"],["retry",state==="final-boss"?"로비로":win?"계속":"다시 도전",true]]);
+    if(state==="save-error")body+=modal("저장하지 못했어요","앱을 닫으면 기록이 사라질 수 있어요.","저장 재시도","다시 도전");
+    if(state==="grant-pending")body+=modal("보상을 확인하고 있어요","확인이 끝나면 유물에 추가됩니다.","계속","로비");
+  } else if(kind==="upgrade") {
+    body+=header("강화");
+    for(const [id,title,from,to,x] of [["attack","공격력",14.22,m.nextAttack,colX],["hp","최대 체력",132,m.nextHp,col2]]) {
+      body+=panel(`${id}-panel`,x,bodyY,colW,bodyH,
+        text(x+16,bodyY+24,state==="max"?`${title} Lv.30`:`${title} Lv.${m.level} → ${m.level+1}`,small?18:20)+
+        text(x+16,bodyY+52,state==="max"?"최고 단계":`${from} → ${to} · 돌파`,18)+
+        text(x+16,bodyY+80,state==="max"?"강화를 마쳤어요.":`필요 골드 ${m.upgradeCost}`,16))+
+        button(`${id}-upgrade`,x+12,bodyY+bodyH-60,colW-24,48,state==="max"?"최고 단계":state==="insufficient"?"골드 부족":state==="saving"?"강화 중":"강화",true,["max","insufficient","saving"].includes(state),"C");
+    }
+    body+=rowButtons([["home","로비"],["start","출전",true]]);
+    if(state==="save-error")body+=modal("강화를 저장하지 못했어요","골드는 쓰지 않았어요.","다시 시도");
+    if(state==="saving")body+=modal("강화 중","저장 결과를 확인하고 있어요.","확인 중","닫기",true);
+  } else if(kind==="relics") {
+    body+=header("유물");
+    const selectedIndex=state==="unowned"?1:state.startsWith("relic-")?m.relics.findIndex(r=>r.stage===Number(state.slice(6))):0;
+    const selected=m.relics[selectedIndex], pair=Math.floor(selectedIndex/2)*2, first=m.relics[pair], second=m.relics[pair+1];
+    body+=panel("relic-list",colX,bodyY,colW,bodyH,"");
+    body+=button("select-owned",colX+12,bodyY+12,colW-24,48,state==="empty"?"보유 유물 없음":first.name,selectedIndex%2===0,state==="empty","TL");
+    body+=button("select-missing",colX+12,bodyY+72,colW-24,48,second.name+(pair===0?" · 미보유":""),selectedIndex%2===1,false,"TL");
+    const sx=col2+12, sy=bodyY+12, slot=small?48:56;
+    body+=panel("relic-detail",col2,bodyY,colW,bodyH,"");
+    body+=button("slot-1",sx,sy,slot,48,state==="empty"?"비움":"1",false,false,"T")+
+      button("slot-2",sx+slot+8,sy,slot,48,state==="third-slot"?"2":"+",false,false,"T")+
+      button("slot-locked",sx+2*(slot+8),sy,slot,48,"+",false,false,"T");
+    body+=label("relic-info",sx,sy+60,colW-24,58,state==="unowned"?"최대 체력 +12%\n10 스테이지 첫 보상":state==="empty"?"5 스테이지 첫 보상":state==="equipped"?"장착 중 · 공격력 +8%":selected.effect,16,"C");
+    body+=rowButtons([["home","로비"],["slots",`슬롯 확장\n새벽석 ${m.slotCost}`],["equip",state==="equipped"?"해제":state==="unowned"||state==="empty"?"미보유":"장착",true,["unowned","empty"].includes(state)]]);
+    if(state==="slot-full")body+=modal("장착 슬롯이 찼어요","기존 유물을 바꾸거나\n슬롯을 늘릴 수 있어요.","유물 바꾸기","닫기");
+    if(state==="unlock")body+=modal("슬롯을 늘릴까요?",`새벽석 ${m.slotCost}개 사용 · 남음 ${m.gems-m.slotCost}\n슬롯 ${m.initialSlots} → ${m.initialSlots+1}`,`새벽석 ${m.slotCost} 사용`);
+    if(state==="third-slot")body+=modal("슬롯을 늘릴까요?",`새벽석 ${m.thirdSlotCost}개 사용 · 남음 ${50-m.thirdSlotCost}\n슬롯 2 → 3`,`새벽석 ${m.thirdSlotCost} 사용`);
+    if(state==="slot-locked")body+=modal("아직 늘릴 수 없어요","10 스테이지를 완료하면\n새벽석 20개로 늘릴 수 있어요.","확인","닫기");
+    if(state==="gem-short")body+=modal("새벽석이 부족해요",`보유 2개 · 필요 ${m.slotCost}개`,"돌아가기","닫기");
+    if(state==="save-error")body+=modal("장착하지 못했어요","기존 장착 상태를 유지했어요.","다시 시도","닫기");
+  } else if(kind==="exchange"&&state==="complete") {
+    body+=header("재화 교환")+panel("complete",colX,bodyY,SW-24,bodyH,
+      text(colX+16,bodyY+36,"강화를 모두 마쳤어요.",20)+text(colX+16,bodyY+76,"보유 재화는 그대로 남습니다.",18))+
+      rowButtons([["home","로비로",true]]);
+  } else if(kind==="exchange") {
+    const gems=state==="gem-short"?2:m.gems;
+    body+=header("재화 교환")+
+      panel("exchange-offer",colX,bodyY,colW,bodyH,
+        text(colX+16,bodyY+32,`골드 ${m.exchangeGold.toLocaleString("ko-KR")}`,22)+
+        text(colX+16,bodyY+70,`새벽석 ${m.exchangeGems}개`,18)+
+        text(colX+16,bodyY+108,"보스 재처치 · 새벽석 +2",16))+
+      panel("exchange-balance",col2,bodyY,colW,bodyH,
+        text(col2+16,bodyY+32,state==="gem-short"?`보유 새벽석 ${gems}`:`새벽석 ${gems} → ${gems-m.exchangeGems}`,20)+
+        text(col2+16,bodyY+70,`골드 ${m.gold} → ${(m.gold+m.exchangeGold).toLocaleString("ko-KR")}`,18)+
+        text(col2+16,bodyY+104,`다음 슬롯 · 새벽석 ${m.slotCost}`,16))+
+      rowButtons([["home","로비"],["exchange",state==="pending"?"교환 중":state==="gem-short"?"새벽석 부족":`새벽석 ${m.exchangeGems}으로 교환`,true,["pending","gem-short"].includes(state)]]);
+    if(state==="confirm")body+=modal("교환할까요?",`새벽석 ${m.exchangeGems} → 골드 ${m.exchangeGold}\n남은 새벽석 ${gems-m.exchangeGems}\n다음 슬롯 ${m.slotCost} · 10 스테이지 완료 후`,"교환","취소");
+    if(state==="error")body+=modal("교환하지 못했어요","새벽석은 쓰지 않았어요.","다시 시도","닫기");
+    if(state==="pending")body+=modal("교환 확인 중","결과를 확인하고 있어요.\n다시 교환하지 않아도 됩니다.","확인 중","닫기",true);
+    if(state==="done")body+=modal("교환 완료",`골드 ${m.exchangeGold.toLocaleString("ko-KR")}개를 받았어요.`,"확인","로비");
+  }
+  if(guides) {
+    body+=`<g pointer-events="none" opacity=".75">`+rect(L,T,SW,SH,"none",p.dim,'stroke-dasharray="6 4"')+
+      items.filter(i=>i.hit).map(i=>rect(i.x+2,i.y+2,i.w-4,i.h-4,"none",p.dim,'stroke-dasharray="3 3"')).join("")+
+      regions.map(r=>rect(r.x,r.y,r.w,r.h,p.mid,"none",'fill-opacity=".22"')).join("")+"</g>";
+  }
+  body=body.replace(/data-id="([^"]+)"([^>]*?)data-hit="(?:true|false)"/g,(_,id,a)=>`data-id="${id}"${a}data-hit="${items.find(i=>i.id===id).hit}"`);
+  return {svg:`<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${kind} ${state} ${W}×${H}" font-family="'Malgun Gothic','Apple SD Gothic Neo',sans-serif">${body}</svg>`,
+    items,regions,floorY};
+};
+const model={"hp":100,"maxHp":100,"attack":10,"level":9,"nextAttack":18.58,"nextHp":164,"initialGold":0,"initialGems":0,"gold":200,"gems":25,"upgradeCost":60,"slotCost":20,"thirdSlotCost":40,"exchangeGems":5,"exchangeGold":100,"initialSlots":1,"slotCap":3,"normalStun":20,"perfectStun":40,"stunLimit":100,"stunSeconds":1.2,"relics":[{"id":"relic_05","stage":5,"name":"재의 고리","effect":"공격력 +8%"},{"id":"relic_10","stage":10,"name":"새벽의 조각","effect":"최대 체력 +12%"},{"id":"relic_15","stage":15,"name":"사슬 종추","effect":"일반 누적 +25%\n20 → 25"},{"id":"relic_20","stage":20,"name":"맑은 종추","effect":"완벽 누적 +25%\n40 → 50"},{"id":"relic_25","stage":25,"name":"종망치 파편","effect":"기절 피해 배율 1.4 → 1.5"},{"id":"relic_30","stage":30,"name":"새벽의 장막","effect":"받는 피해 8% 감소"}],"status":"planning-v2 values; initial funds zero, menu samples use later earned balances"},names={"lobby":"로비","battle":"전투","result":"결과","upgrade":"강화","relics":"유물","exchange":"재화 교환"},states={"lobby":[["normal","최초 시작 / 재화0"],["midboss","5 중간 보스"],["boss","10 보스"],["locked","진행 잠김"]],"battle":[["normal","하단 공격"],["high","상단 공격"],["thrust","찌르기"],["tutorial","첫 방향 안내"],["dodged","일반 회피"],["perfect","완벽 회피"],["hit","피격 / 누적 감소"],["combo","빠른 연속 공격"],["recover","회피 복귀 중"],["stunned","적 기절"],["immune","기절 후 저항"],["paused","일시정지"]],"result":[["normal","패배"],["clear","스테이지 돌파"],["midboss","중간 보스 유물"],["boss","보스 유물 획득"],["duplicate","보스 재처치 / 중복 전환"],["final-boss","30 스테이지 완료"],["grant-pending","유물 지급 대기"],["save-error","기록 저장 실패"]],"upgrade":[["normal","강화 가능"],["insufficient","재화 부족"],["max","최대 단계"],["saving","강화 저장 중"],["save-error","저장 실패"]],"relics":[["normal","보유 / 미장착"],["unowned","선택 유물 미보유"],["relic-15","사슬 종추"],["relic-20","맑은 종추"],["relic-25","종망치 파편"],["relic-30","새벽의 장막"],["empty","보유 유물 없음"],["equipped","장착 중"],["slot-full","슬롯 가득 참"],["slot-locked","확장 진행 조건 미달"],["unlock","1→2 슬롯 확장"],["third-slot","2→3 슬롯 확장"],["gem-short","확장 재화 부족"],["save-error","장착 저장 실패"]],"exchange":[["normal","교환 가능"],["confirm","교환 확인"],["gem-short","새벽석 부족"],["pending","거래 확인 중"],["error","거래 실패"],["done","교환 완료"],["complete","공격·체력 Lv.30 / 교환 숨김"]]};
+let selection=Object.keys(names).map(kind=>({kind,state:"normal"}));
+const notes={lobby:"출전이 주 행동입니다. 5/15/25 중간 보스, 10/20/30 보스에서 유물6종을 얻습니다. 최초 잔액은 모두0입니다.",battle:"일반회피+20·완벽+40. 중앙 인물·예고와 엄지 영역을 분리하고 기절 누적/남은 시간은 같은 자리 하나를 사용합니다.",result:"실패는 현재 스테이지 재도전, 돌파는 계속. 일반40/중간120/10보스200/30보스500의 골드를 표본에 반영했습니다. 신규 유물과 중복 골드를 함께 주지 않습니다.",upgrade:"공격/체력 독립 Lv.1~30, 9→10 돌파 비용은 각각60골드입니다. 공격은14.22→18.58, 체력은132→164 표본입니다.",relics:"유물6종 효과를 선택 상태에서 비교합니다. 슬롯1→2는 10클리어/20새벽석, 2→3은 20클리어/40새벽석이며 직접 구매합니다.",exchange:"5새벽석→100골드. 비용·잔액·다음 슬롯 가격을 보되 강제 예약은 없습니다. 두 능력치 성장 완료 시 골드 교환을 숨깁니다."};
+function paint(){
+ const [width,height]=document.getElementById("size").value.split(",").map(Number),[left,right,top,bottom]=document.getElementById("safe").value.split(",").map(Number);
+ const options={width,height,left,right,top,bottom,controls:document.getElementById("controls").value,guides:document.getElementById("guides").checked,large:document.getElementById("large").checked,color:document.getElementById("color").checked};
+ document.getElementById("board").innerHTML=selection.map((s,i)=>{
+  const r=renderV2(s.kind,{...options,state:s.state,color:s.kind==="battle"&&options.color},model);
+  return '<section class="card"><h2>'+names[s.kind]+'</h2><div class="card-controls"><select aria-label="'+i+'번 화면" data-kind="'+i+'">'+Object.entries(names).map(([k,v])=>'<option value="'+k+'"'+(k===s.kind?' selected':'')+'>'+v+'</option>').join("")+'</select><select aria-label="'+i+'번 상태" data-state="'+i+'">'+states[s.kind].map(([k,v])=>'<option value="'+k+'"'+(k===s.state?' selected':'')+'>'+v+'</option>').join("")+'</select></div><div class="screen">'+r.svg+'</div><p class="note">'+notes[s.kind]+'</p><details><summary>bounds · anchor · hit area · 우선순위</summary><table><thead><tr><th>ID</th><th>x,y,w,h</th><th>anchor</th><th>P</th><th>입력</th></tr></thead><tbody>'+r.items.map(v=>'<tr><td>'+v.id+'</td><td>'+[v.x,v.y,v.w,v.h].join(",")+'</td><td>'+v.anchor+'</td><td>'+v.priority+'</td><td>'+(v.hit?'활성':v.control?'비활성':'—')+'</td></tr>').join("")+'</tbody></table></details></section>';
+ }).join("");
+}
+document.addEventListener("change",e=>{if(e.target.dataset.kind!==undefined)selection[Number(e.target.dataset.kind)]={kind:e.target.value,state:"normal"};if(e.target.dataset.state!==undefined)selection[Number(e.target.dataset.state)].state=e.target.value;paint();});
+document.getElementById("all").onclick=()=>{selection=Object.keys(names).map(kind=>({kind,state:"normal"}));paint();};
+document.getElementById("battle-set").onclick=()=>{selection=["normal","high","thrust","combo","perfect","stunned"].map(state=>({kind:"battle",state}));paint();};
+document.getElementById("errors").onclick=()=>{selection=[{kind:"upgrade",state:"insufficient"},{kind:"relics",state:"unowned"},{kind:"relics",state:"equipped"},{kind:"relics",state:"unlock"},{kind:"exchange",state:"confirm"},{kind:"exchange",state:"pending"}];paint();};
+paint();
+</script></body></html>

@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-20",
+  "revenue": {
+    "netIap": 94080,
+    "ads": 36000,
+    "total": 130080,
+    "operatingBalance": 30080
+  },
+  "balance": {
+    "enemyTtk": [
+      {
+        "id": "ash_guard",
+        "seconds": 8.1
+      },
+      {
+        "id": "bell_hound",
+        "seconds": 10.2
+      },
+      {
+        "id": "chain_keeper",
+        "seconds": 12.2
+      },
+      {
+        "id": "lantern_knight",
+        "seconds": 14.3
+      },
+      {
+        "id": "gate_bell",
+        "seconds": 24.4
+      },
+      {
+        "id": "twin_clapper",
+        "seconds": 29.4
+      },
+      {
+        "id": "hollow_bell",
+        "seconds": 35.8
+      }
+    ],
+    "battleSeconds": 187.32876286519382,
+    "repeatRunSeconds": 216.32876286519382
+  },
+  "fullClearReward": 24,
+  "missingLocalLinks": [],
+  "skills": [
+    {
+      "name": "unity-project-foundation",
+      "installedMatchesWorkspace": true
+    },
+    {
+      "name": "game-ui-wireframe-copy",
+      "installedMatchesWorkspace": true
+    }
+  ],
+  "limits": "Planning arithmetic and document integrity only; no Unity, physical device, purchase, or player test."
+}

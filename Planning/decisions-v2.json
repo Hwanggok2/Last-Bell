@@ -1,0 +1,512 @@
+{
+  "date": "2026-10-21",
+  "version": "planning-v2",
+  "status": "planning-baseline-confirmed",
+  "reviewDisplay": "기획·전투·UI·경제 4개 담당이 수정 기준에 동의했고 필수 수정 사항을 반영했다.",
+  "scope": "Planning revision only. No Unity implementation or measured gameplay results.",
+  "supersedes": "planning-v1.1; portrait, one-button dodge, 700ms reuse, echo charge, no stat growth, 12 encounters and 216.3s run are retired.",
+  "input": {
+    "orientation": "landscape",
+    "buttons": [
+      "위",
+      "아래",
+      "뒤",
+      "공격"
+    ],
+    "directionalDodge": true,
+    "movement": "Fixed facing; short jump, duck or backstep, then return. No free locomotion.",
+    "holdInput": false,
+    "oneButtonAlternative": "Prototype comparison only, same timings and enemies."
+  },
+  "visual": {
+    "reference": "Visuals/landscape-battle-v2.svg",
+    "groundRatio": 0.82,
+    "targetViewports": [
+      [
+        960,
+        540
+      ],
+      [
+        1200,
+        540
+      ],
+      [
+        640,
+        360
+      ]
+    ],
+    "artifactStatus": "SVG planning illustration, not production art or a game screenshot.",
+    "targetBaseColors": 4
+  },
+  "combat": {
+    "attackDamage": 10,
+    "attackIntervalMs": 500,
+    "attackWindupMs": 100,
+    "dodgeActiveMs": 160,
+    "dodgeRecoveryMs": 100,
+    "dodgeReuseMs": 260,
+    "perfectWindowMs": 60,
+    "comboMinGapMs": 450,
+    "normalStagger": 20,
+    "perfectStagger": 40,
+    "damageStaggerPenalty": 20,
+    "staggerThreshold": 100,
+    "stunDurationMs": 1000,
+    "stunDurationsMs": {
+      "normal": 1500,
+      "miniboss": 1200,
+      "boss": 1000
+    },
+    "stunDamageMultiplier": 1.4,
+    "postStunImmunityMs": 2000,
+    "normalWindowDisplay": "올바른 방향으로 타격 직전 160ms 안에 입력 (마지막 60ms는 완벽회피)",
+    "perfectWindowDisplay": "타격 직전 60ms 안의 올바른 방향 입력",
+    "comboGapDisplay": "최소 450ms, 지연 패턴은 더 길게",
+    "stunRuleDisplay": "일반 1.5초 / 중간 보스 1.2초 / 보스 1초. 발동 즉시 남은 타격 취소, 초과 게이지 폐기",
+    "attackRuleDisplay": "준비 100ms, 회피가 공격을 취소할 수 있음. 취소한 공격 간격은 환급하지 않음. 기절 중 피해 ×1.4",
+    "antiLockDisplay": "기절 중과 종료 후 2초는 기절이 누적되지 않는다. 공격으로 기절 시간을 연장하지 않으며 종료 후 온전한 예고부터 다시 시작한다. 피격하면 누적 20을 잃되 전량 초기화하지 않는다. 일반회피만으로도 누적 가능하다.",
+    "timingExampleDisplay": "450ms 간격의 연속타에서 첫 회피를 타격 직전0ms, 다음 회피를160ms 앞서 입력하는 경우 시작 간격은290ms다. 최소재입력260ms보다30ms 여유가 남는다. 같은타이밍으로계속피하면450ms 간격이다. 실제기기입력지연과30fps에서이여유가충분한지검증한다.",
+    "normalAttackDuringPattern": true,
+    "bufferedDodges": false,
+    "relicsChangeDodgeTiming": false,
+    "timingStatus": "New game initial hypotheses, not Timing Hero measurements."
+  },
+  "growth": {
+    "stats": [
+      "attack",
+      "hp"
+    ],
+    "minLevel": 1,
+    "maxLevel": 30,
+    "independentLevels": true,
+    "attackPerLevelMultiplier": 1.045,
+    "hpPerLevelMultiplier": 1.035,
+    "attackMilestoneMultiplier": 1.25,
+    "hpMilestoneMultiplier": 1.2,
+    "milestones": [
+      10,
+      20,
+      30
+    ],
+    "summaryDisplay": "공격력과 최대 체력을 각각 골드로 올린다. 두 능력치는 별도 Lv.1~30이며, 해당 능력치 Lv.10·20·30에 큰 성장이 적용된다. 공속·회피 판정창·회피 재사용 시간은 강화하지 않는다.",
+    "displayRows": [
+      [
+        "1",
+        "10.00",
+        "100",
+        "기본"
+      ],
+      [
+        "9",
+        "14.22",
+        "132",
+        "일반 성장"
+      ],
+      [
+        "10",
+        "18.58",
+        "164",
+        "돌파"
+      ],
+      [
+        "19",
+        "27.61",
+        "223",
+        "일반 성장"
+      ],
+      [
+        "20",
+        "36.06",
+        "277",
+        "돌파"
+      ],
+      [
+        "29",
+        "53.59",
+        "377",
+        "일반 성장"
+      ],
+      [
+        "30",
+        "70.00",
+        "469",
+        "돌파"
+      ]
+    ],
+    "formulaDisplay": "공격 A(L)=10×1.045^(L−1)×1.25^floor(L/10). HP H(L)=round(100×1.035^(L−1)×1.20^floor(L/10)). L은 각 능력치의 개별 레벨. 피해는 내부 소수값, HP는 반올림.",
+    "purchaseDisplay": "능력치별 2~9 도달은 회당20골드, 10은60골드. 11~19는40, 20은120. 21~29는60, 30은180. 한 능력치 1→30은1,420골드, 둘 다30은2,840골드. 자동 일괄 강화 없이 선택한 능력치와 전후 수치·비용을 표시한다.",
+    "balanceDisplay": "9→10처럼 돌파하는 한 번의 강화는 공격 약30.6%, HP 약24.2%가 증가한다. 적은 플레이어 현재 레벨에 맞춰 자동으로 강해지지 않는다. 낮은 레벨 도전도 가능하며 입장 레벨 제한은 없다."
+  },
+  "content": {
+    "campaignStages": 30,
+    "normalStages": 24,
+    "minibossStages": [
+      5,
+      15,
+      25
+    ],
+    "bossStages": [
+      10,
+      20,
+      30
+    ],
+    "checkpoints": "Every cleared stage persists. Retry current failed stage. Every fight starts at full player HP; enemy and stagger reset.",
+    "prototypeStages": 10,
+    "progressionDisplay": "모든 스테이지 클리어를 저장한다. 패배하면 현재 스테이지부터 재도전하고, 이미 받은 골드·새벽석·유물·성장은 보존한다. 플레이어와 적 모두 새 전투의 최대 체력에서 시작한다. 5단위는 정비와 유물 확인 기회이며 이전 구간을 다시 깨야 하는 입장 조건이 아니다. 완료 스테이지는 선택해서 재플레이할 수 있다.",
+    "balanceRows": [
+      [
+        "5 · 중간 보스",
+        "HP 486 / 피해 18",
+        "공격·체력 Lv.5, 유물 없음 가정",
+        "수치 가설; 체감 난이도·수급 속도 미검증"
+      ],
+      [
+        "10 · 보스",
+        "HP 1110 / 피해 26",
+        "공격·체력 Lv.10, 유물 없음 가정",
+        "수치 가설; 체감 난이도·수급 속도 미검증"
+      ],
+      [
+        "15 · 중간 보스",
+        "HP 913 / 피해 30",
+        "공격·체력 Lv.15, 유물 없음 가정",
+        "수치 가설; 체감 난이도·수급 속도 미검증"
+      ],
+      [
+        "20 · 보스",
+        "HP 2084 / 피해 44",
+        "공격·체력 Lv.20, 유물 없음 가정",
+        "수치 가설; 체감 난이도·수급 속도 미검증"
+      ],
+      [
+        "25 · 중간 보스",
+        "HP 1713 / 피해 50",
+        "공격·체력 Lv.25, 유물 없음 가정",
+        "수치 가설; 체감 난이도·수급 속도 미검증"
+      ],
+      [
+        "30 · 보스",
+        "HP 3913 / 피해 74",
+        "공격·체력 Lv.30, 유물 없음 가정",
+        "수치 가설; 체감 난이도·수급 속도 미검증"
+      ]
+    ],
+    "enemyHpBase": 180,
+    "enemyHpGrowth": 1.065,
+    "enemyDamageBase": 12,
+    "enemyDamageGrowth": 1.055,
+    "enemyHpMultipliers": {
+      "normal": 1,
+      "miniboss": 2.1,
+      "boss": 3.5
+    },
+    "enemyDamageMultipliers": {
+      "normal": 1,
+      "miniboss": 1.15,
+      "boss": 1.3
+    },
+    "timeLimitDisplay": "공격·체력 레벨=스테이지, 유물 없음, 올바른 회피율92%·전체 공격 중 완벽회피35%·공격 활용률90%를 가정한 유한 전투 근사: 30단계 순수 전투420.4초 + 전환54초 = 474.4초(약7분54초). 기준·초심자 가정에서 5단계 묶음은 전투·전환 약70~110초다. 성장 메뉴·파밍·실패·서사는 제외했으므로 실제 캠페인 완료 시간이나 플레이 테스트 결과로 해석하지 않는다.",
+    "story": {
+      "openingSeconds": 9,
+      "endingSeconds": 6,
+      "skippable": true,
+      "autoReplayOnRetry": false,
+      "endingStage": 30,
+      "freeReplayInSettings": true
+    },
+    "prototype": {
+      "normalTypes": 2,
+      "minibossVariants": 1,
+      "bossTypes": 1,
+      "stages": 10,
+      "relics": 2,
+      "maxSlots": 2
+    },
+    "release": {
+      "normalTypes": 4,
+      "minibossVariants": 3,
+      "bossTypes": 3,
+      "stages": 30,
+      "relics": 6,
+      "maxSlots": 3
+    }
+  },
+  "relics": {
+    "count": 6,
+    "dropStages": [
+      5,
+      10,
+      15,
+      20,
+      25,
+      30
+    ],
+    "guaranteedPerKill": 1,
+    "duplicateSameIdEquip": false,
+    "upgradeTree": false,
+    "displayRows": [
+      [
+        "5 · 재의 고리",
+        "공격력 +8%",
+        "합산 공격 증가 상한20%"
+      ],
+      [
+        "10 · 새벽의 조각",
+        "최대HP +12%",
+        "합산 HP 증가 상한25%"
+      ],
+      [
+        "15 · 사슬 종추",
+        "일반 회피 누적 +25%: 20→25",
+        "일반 누적 증가 상한25%, 완벽에는 적용하지 않음"
+      ],
+      [
+        "20 · 맑은 종추",
+        "완벽 회피 누적 +25%: 40→50",
+        "완벽 누적 증가 상한25%, 일반과 이중 지급하지 않음"
+      ],
+      [
+        "25 · 종망치 파편",
+        "기절 적 피해 배율 1.4→1.5",
+        "배율 상한1.5"
+      ],
+      [
+        "30 · 새벽의 장막",
+        "받는 피해 8% 감소",
+        "총 감소 상한15%, 최종 피해 최소1"
+      ]
+    ],
+    "dropDisplay": "5·10·15·20·25·30에서 각기 다른 유물 1종을 매 처치 확정 드랍한다. 처음 얻으면 영구 보유하고 같은 유물을 다시 얻으면 구역별 20/40/60골드로 바뀐다. 유물 자체의 추가 강화 트리는 초기 범위에서 제외한다.",
+    "inventoryDisplay": "보유함은 6종 모두 보관한다. 장착만 기본1칸, 최대3칸이다. 미장착 유물이 사라지거나 슬롯 부족으로 보상이 버려지지 않는다. 같은 ID 중복 장착 불가, 정비 화면에서 무료 교체한다.",
+    "definitions": [
+      {
+        "id": "relic_05",
+        "stage": 5,
+        "name": "재의 고리",
+        "effect": "attackPercent",
+        "value": 0.08,
+        "cap": 0.2
+      },
+      {
+        "id": "relic_10",
+        "stage": 10,
+        "name": "새벽의 조각",
+        "effect": "maxHpPercent",
+        "value": 0.12,
+        "cap": 0.25
+      },
+      {
+        "id": "relic_15",
+        "stage": 15,
+        "name": "사슬 종추",
+        "effect": "normalStaggerPercent",
+        "value": 0.25,
+        "cap": 0.25
+      },
+      {
+        "id": "relic_20",
+        "stage": 20,
+        "name": "맑은 종추",
+        "effect": "perfectStaggerPercent",
+        "value": 0.25,
+        "cap": 0.25
+      },
+      {
+        "id": "relic_25",
+        "stage": 25,
+        "name": "종망치 파편",
+        "effect": "stunDamageMultiplier",
+        "value": 1.5,
+        "cap": 1.5
+      },
+      {
+        "id": "relic_30",
+        "stage": 30,
+        "name": "새벽의 장막",
+        "effect": "damageReduction",
+        "value": 0.08,
+        "cap": 0.15
+      }
+    ]
+  },
+  "economy": {
+    "goldName": "골드",
+    "gemName": "새벽석",
+    "initialGold": 0,
+    "initialGems": 0,
+    "normalGoldPerZone": [
+      40,
+      70,
+      100
+    ],
+    "minibossGoldMultiplier": 3,
+    "bossGoldMultiplier": 5,
+    "duplicateGoldPerZone": [
+      20,
+      40,
+      60
+    ],
+    "costPerStat": {
+      "regular": [
+        20,
+        40,
+        60
+      ],
+      "milestone": [
+        60,
+        120,
+        180
+      ]
+    },
+    "firstBossGems": 15,
+    "repeatBossGems": 2,
+    "slotCosts": [
+      20,
+      40
+    ],
+    "slotUnlockStages": [
+      10,
+      20
+    ],
+    "exchangeGems": 5,
+    "exchangeGold": 100,
+    "reserveSlotCurrency": false,
+    "paidGems": false,
+    "rewardedAdGems": 2,
+    "adMaxPerResult": 1,
+    "adDailyCap": 3,
+    "adsOnFailure": false,
+    "adDisplay": "클리어 결과에서 새벽석 +2 / 결과당1회·일3회",
+    "gemSpendDisplay": "장착2칸은 새벽석20(10스테이지 후), 3칸은40(20스테이지 후). 새벽석5를 골드100으로 교환할 수 있다. 슬롯 자동 개방이 아니라 직접 구매한다.",
+    "displayRows": [
+      [
+        "일반전 골드",
+        "1구역40 / 2구역70 / 3구역100",
+        "최초·반복 동일"
+      ],
+      [
+        "중간/보스 골드",
+        "일반 보상의 ×3 / ×5",
+        "실패한 전투 자체는 무보상"
+      ],
+      [
+        "새벽석",
+        "각 중간/보스 첫 처치15, 반복2",
+        "첫15는 반복2+최초13 합계, 17로 지급하지 않음"
+      ],
+      [
+        "중복 유물",
+        "구역별20 / 40 / 60골드",
+        "새 유물과 중복 골드는 동시 지급하지 않음"
+      ],
+      [
+        "슬롯",
+        "1→2:20 / 2→3:40 새벽석",
+        "10 / 20스테이지 클리어 후 구매 가능"
+      ],
+      [
+        "골드 교환",
+        "새벽석5 → 골드100",
+        "고정 교환, 역교환·강제 예약 없음"
+      ],
+      [
+        "선택 광고",
+        "새벽석+2, 클리어 결과당1회·일3회",
+        "사용처가 없으면 숨김. 기본 보상·다음 전투는 광고와 무관"
+      ]
+    ],
+    "freeRouteDisplay": "광고·반복·교환이 없는 경로: 10/20/30 보스 전 누적골드440/1,410/2,860. 두 능력치10/20/30의 누적비용440/1,400/2,840을 충당한다. 시작골드는0이다. 새벽석은10보스까지30,20보스까지60으로 슬롯20+40을 구매 가능하다.",
+    "currencyPolicyDisplay": "새벽석을 골드로 먼저 쓰면 슬롯 확장이 늦어질 수 있다. 교환 창에서 비용·교환 후 잔액·다음 슬롯 가격을 보여 준다. 예컨대5새벽석을 먼저 교환했다면20스테이지 시점에5가 모자라며, 완료한 보스3회 재처치(+6)로 무료 보완할 수 있다. 장식 조각은 폐기하고 두 통화만 유지한다. 공격·체력이 모두30이면 골드 교환을 숨긴다. 모든 슬롯도 열려 새벽석 사용처까지 소진되면 재화 광고를 숨긴다. 잔액은 보존한다."
+  },
+  "resources": {
+    "displayRows": [
+      [
+        "캐릭터·적",
+        "종지기1, 일반2원형, 중간1변형, 보스1원형",
+        "일반4원형·중간3변형·보스3원형; 30개의 독립 캐릭터 아님"
+      ],
+      [
+        "동작",
+        "위/아래/뒤 회피와 기절 자세",
+        "플레이어14 + 일반4×19 + 보스3×20 = 150프레임 상한 후보"
+      ],
+      [
+        "효과·배경",
+        "회피·기절·공격 효과, 가로 배경1",
+        "VFX21프레임 후보, 공통 가로 배경+3구역 변형"
+      ],
+      [
+        "화면",
+        "전투·결과·강화·유물·교환",
+        "가로 로비·설정·상점·스테이지 선택·오류 상태"
+      ],
+      [
+        "유물",
+        "5/10드랍2종·슬롯최대2",
+        "24×24px 아이콘6개·슬롯최대3"
+      ],
+      [
+        "데이터·저장",
+        "10스테이지·두능력치·두통화",
+        "30스테이지·돌파·장착·거래·중복 보상 검증"
+      ]
+    ],
+    "estimateDisplay": "첫10스테이지 시제품은 임시 자산2~4인일+개발·검증8~14인일, 합계10~18인일의 계획 범위다. 전체후보는 자산34~63+구현·검증34~60인일, 여유20% 포함약82~148인일이다. 1인일은집중6시간이며 실제견적이나 납기가 아니다. 원스토어SDK·정책·심사·모집대기는별도. v1의85프레임·48~85인일은폐기하고, 첫10개검증후 실제사용자산에맞춰 다시산정한다.",
+    "animationFrames": 150,
+    "vfxFrames": 21,
+    "releasePersonDays": [
+      82,
+      148
+    ],
+    "prototypePersonDays": [
+      10,
+      18
+    ]
+  },
+  "validation": {
+    "display": "8명 관찰에서 1버튼/3방향 순서를 교차한다. 3명 이상이3회차에도 방향·피격 이유를 오해하면 예고·입력부터 수정한다. 첫10스테이지에서 무료 진행,기절 이해,공격/체력 선택,Lv.10전후,유물2종 조합을 관찰한다. 동일한 성장·유물 조건으로 조작을 비교하고, 파밍을 재미 검증 대신 쓰지 않는다. 이 숫자는 내부 운영 기준이며 업계 평균이나 달성 결과가 아니다."
+  },
+  "business": {
+    "platform": "ONE store native Android, Korea first",
+    "baseFirst30Days": {
+      "installs": 2500,
+      "mau": 2000,
+      "activeDaysPerUser": 6,
+      "dau": 400,
+      "payerRate": 0.015,
+      "arppuKRW": 4400,
+      "refundRate": 0.02,
+      "adImpressionsPerActiveUserDay": 0.5,
+      "publisherEcpmKRW": 6000,
+      "iapFee": 0.2,
+      "revenueAfterModeledDeductionsKRW": 130080,
+      "operatingCashCostKRW": 100000,
+      "balanceBeforeLaborAndUAKRW": 30080
+    },
+    "forecastStatus": "Unchanged arithmetic sensitivity from v1, not a v2 forecast. New paid gems revenue is zero.",
+    "strategy": "Prototype first, external observation, limited soft launch. Do not scale paid UA without measured economics.",
+    "schedule": "Prototype 10-18 person-days; full candidate 82-148 person-days incl. 20% allowance at six focused hours/day. Planning estimate only; platform integration, review, recruiting waits excluded."
+  },
+  "reviews": {
+    "concept": {
+      "file": "Reviews/concept-v2.md",
+      "status": "agreed",
+      "finalReviewSection": 11
+    },
+    "combat": {
+      "file": "Reviews/combat-v2.md",
+      "status": "agreed",
+      "finalReviewSection": 9
+    },
+    "ui": {
+      "file": "Reviews/ui-v2.md",
+      "status": "agreed",
+      "finalReviewSection": 11
+    },
+    "market": {
+      "file": "Reviews/market-v2.md",
+      "status": "agreed",
+      "finalReviewSection": 11
+    }
+  }
+}

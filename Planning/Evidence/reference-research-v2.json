@@ -1,0 +1,37 @@
+{
+  "checkedAt": "2026-10-21",
+  "task": "Landscape, directional dodge, stagger, growth, relics and stage progression revision",
+  "sources": [
+    {
+      "url": "https://timing-hero.fandom.com/wiki/General_Gameplay",
+      "type": "Community wiki; search-index text, direct retrieval blocked",
+      "supports": ["Three dodge buttons: up, down and backward", "Wrong-direction dodges can be hit"],
+      "limits": "Not an official specification or a measurement of the current game."
+    },
+    {
+      "url": "https://crashinggamenight.com/blog/mobile-game-monday-timing-hero",
+      "type": "2021 hands-on review",
+      "supports": ["Timing-based counter-meter bonus", "Mini-boss every fifth level and boss every tenth", "Combat gold upgrades", "Boss checkpoints", "Gems limit how many artifacts can be carried"],
+      "limits": "A historical player's account; does not provide an exact dodge cooldown."
+    },
+    {
+      "url": "https://enhawiki.kr/wiki/%EC%9A%A9%EC%82%AC%EB%8A%94_%ED%83%80%EC%9D%B4%EB%B0%8D",
+      "type": "Libre Wiki mirror; search-index excerpt",
+      "supports": ["Just dodge increases counter-gauge gain", "Artifacts and diamond-funded capacity expansion"],
+      "limits": "Community source. Exact counter/stun duration, latest version behavior and stat formulas are not independently measured."
+    },
+    {
+      "url": "https://apps.apple.com/au/app/timing-hero-colosseum-and-raid/id1041854448",
+      "type": "Official listing URL",
+      "supports": [],
+      "limits": "Direct request returned 404 on this check; no assertion of current availability."
+    }
+  ],
+  "notVerified": [
+    "The original game's precise dodge reuse delay",
+    "The original game's exact growth multiplier at every tenth stat level",
+    "The original game's exact normal/Just gauge values and incapacitation duration"
+  ],
+  "correction": "The previous 700 ms dodge cooldown, single stored echo, lack of permanent stat growth and 12-encounter scope were original v1 proposals, not faithful reconstructions of Timing Hero.",
+  "designBoundary": "All v2 timing, growth, stagger and economy numbers are new planning hypotheses. Source mechanics are inspiration; names, art, story, code and numeric tuning are original."
+}
