@@ -1,0 +1,3963 @@
+{
+  "source": "C:\\Github\\Test2\\Client",
+  "copy": "C:\\Github\\Test2\\Temp\\CombatFeedbackValidation\\Client",
+  "createdAt": "2026-10-21T17:24:01.9756547+09:00",
+  "libraryReused": true,
+  "files": [
+    {
+      "path": "Assets\\Game.meta",
+      "sha256": "98FC6C9596FAE0A9D4940268C81C1EC475CFE748E8B1DD191591975F48868B8B",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Art.meta",
+      "sha256": "7ECE32779ECEAFDBE4DCC563C2799650F42B4DE370CD0CB86D24E7336B854D9C",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Audio.meta",
+      "sha256": "684961E1A9960C2A60835BAD44A4C7ED95531A457778B1C738D6D44A61E1ED38",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Data.meta",
+      "sha256": "F1FBDD03F4D6C4BFDB117171A9752D7E6981C586250DFDC9AE73B0D6482663F8",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Editor.meta",
+      "sha256": "2722B4A8AB5B51AA99473BC410D96E7AE65CF453E3975ED523196BE88E958C95",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Prefabs.meta",
+      "sha256": "2832070B63F3414CE43610D31DA941DB37A5DBD138A23CC27CD4809BDADE3629",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Runtime.meta",
+      "sha256": "580D936A2EC54D002995FF9A5EDAEF5C368A685CCE4E0F1037B3164044A5A3A4",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Scenes.meta",
+      "sha256": "CD32DDDADF35CE42DAA02166F70D31E1CBF10C3035E441C93ADFC4EA1E7F8FC8",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Tests.meta",
+      "sha256": "96934D3A4DBDC941F9B9011DD111FBDD8DEDC68511A8309A5975D457E3896A34",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Art\\Fonts.meta",
+      "sha256": "1D9B0B034330DDD8EA57CC6579C085226318D87C9CD1A7AD1FDB4641DC3705D9",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Art\\MvpArtCatalog.asset",
+      "sha256": "0DD4BE74D1440B8C70472A200A4384A5E613FD34D7EA363BF762A63FBADF1082",
+      "bytes": 3601
+    },
+    {
+      "path": "Assets\\Game\\Art\\MvpArtCatalog.asset.meta",
+      "sha256": "399F7FDE78CA9310C1A08D20032C76EB7D74C742580647AF643320A21AD18259",
+      "bytes": 189
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation.meta",
+      "sha256": "A6624C276A1A885D66C9188933D48D9CDF1C18F0612C795962FA0C9175654EF4",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Art\\Source.meta",
+      "sha256": "197B695F7053D3B95F2ECCFF124ABEC6C03D2D8831BF2A094CBCD435C9819C6B",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Art\\UI.meta",
+      "sha256": "EB3A7BB256663B0E75DC942DE91443AD11B178E3504B47F6AA11D57BAF73EDB3",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Art\\Fonts\\NanumGothic-Regular.ttf",
+      "sha256": "76F45EF4A6BCFF344C837C95A7DCC26E017E38B5846D5AE0CDCB5B86BE2E2D31",
+      "bytes": 2054744
+    },
+    {
+      "path": "Assets\\Game\\Art\\Fonts\\NanumGothic-Regular.ttf.meta",
+      "sha256": "5B9B1FA495F1C83B8C17E465DB05E96904A1764EDFF8FA6CFE434A1EE811A9DF",
+      "bytes": 476
+    },
+    {
+      "path": "Assets\\Game\\Art\\Fonts\\OFL.txt",
+      "sha256": "EEACF16032901D0ED0456876EC77B8F0FDA6B3FECEC7D972F8543EB602E6C30F",
+      "bytes": 4534
+    },
+    {
+      "path": "Assets\\Game\\Art\\Fonts\\OFL.txt.meta",
+      "sha256": "58071823CF8D6FBB749E7076B5B472AD5DDBC1A11A97A00388F34BA5B38DDC2E",
+      "bytes": 158
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Background.meta",
+      "sha256": "E1312F9ABD3EAAF6ACFCE63D0A37D5A7C3D87D0D4F3A6D064FE238F301D7CC28",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips.meta",
+      "sha256": "34A67B08CB5B7062A08BED434651C88DFFE44C4A72CF5AD8D17491C3F751D8CD",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\manifest.json",
+      "sha256": "0B167BD7F5C94A1277F6B7439DBBE8F476E2CE196AD3771E5AD313799DDB7333",
+      "bytes": 179240
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\manifest.json.meta",
+      "sha256": "83159DB1A33FC5273F7F2690DFEF6E1370A9D2509877D0A77D5F6E4A4965DC42",
+      "bytes": 102
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\prepare-sources.cjs",
+      "sha256": "A0C4474279C88A23BCB928F9711F4FD7AE97C15681B9E6219D4838D4D0FF7348",
+      "bytes": 13555
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\prepare-sources.cjs.meta",
+      "sha256": "D7F13CBC145E0FC61B4247F2DF2A60A245605AAA22D57674C1BC279C793D51FD",
+      "bytes": 155
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\PresentationActor.prefab",
+      "sha256": "B4E8A1CFD968BBD667C26F16F7EC70654568C7EAE1AE848DA096C0DE4492ECBE",
+      "bytes": 6489
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\PresentationActor.prefab.meta",
+      "sha256": "A201EECD861396B3349C6BFF76A445F028E1DF44E100DECB177F409DF6BA09B2",
+      "bytes": 98
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\PresentationArtCatalog.asset",
+      "sha256": "357434F31AF529FEF5D3DA8867008AF02A3BD00EEE90E95EED9652C7CEA05141",
+      "bytes": 60845
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\PresentationArtCatalog.asset.meta",
+      "sha256": "831182319F6636E210B7C511F3B9ED52B425501FDC6FC34D62CF434C33D7BA32",
+      "bytes": 133
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\PresentationSprite.mat",
+      "sha256": "C6BA4007F1A0685C948004A09ED44F88E2E3665F8C57FE8D8EFF5AC172CF0AA0",
+      "bytes": 1193
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\PresentationSprite.mat.meta",
+      "sha256": "3BD35B0D2AE375C4E593683A0E2D2693602E5A16DFC051D08D36261DB75172E5",
+      "bytes": 132
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\README.md",
+      "sha256": "F8EF9EDBA003612DC369EB2295EB87C684E0D602A0438F8FE1BDA5C153E47CC3",
+      "bytes": 2990
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\README.md.meta",
+      "sha256": "96E03C4A0680B5361C9439B8A31883D72121D3D2AC4EF56DE5F46510567ED798",
+      "bytes": 99
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\SpriteWhiteFlash.shader",
+      "sha256": "141CDE14E4ACEEA7117D8E2F168D5F47064968285C18A7D41E4D10DC7F6A6411",
+      "bytes": 2074
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\SpriteWhiteFlash.shader.meta",
+      "sha256": "25630AED665EEF10A6AB931760D0251AF8A611EAB5E8F3558A08FD04FCDBF7A2",
+      "bytes": 204
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Background\\gate-far.png",
+      "sha256": "790F890F64A9C3F6D2A1381B355067E5911C250783156DEFF32A38B9FB3B97F8",
+      "bytes": 5819
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Background\\gate-far.png.meta",
+      "sha256": "1327D8EDFD8E48C68A8DBECB468C8C47FB25D6498C5EF87709E9893E5841BC3A",
+      "bytes": 3409
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Background\\gate-floor.png",
+      "sha256": "FCCF6BD2B359DDE448470AC4B3C35EA8EB5CFC435271DFE50DF781BCEA35F44F",
+      "bytes": 4692
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Background\\gate-floor.png.meta",
+      "sha256": "6D5F7331AF3017D973E01907B8784E2C4376A51F956819FDBCD221F0B3409AEE",
+      "bytes": 3409
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Background\\gate-mid.png",
+      "sha256": "C3BC337410916C1BB49178D09ED7FD9A1FE1430E04C0C66D9D5453A84A66C47C",
+      "bytes": 6025
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Background\\gate-mid.png.meta",
+      "sha256": "62DCAF6AE1109C68BB623A6571D3E9733D847283E326BDBB0C59FEE298F7E92A",
+      "bytes": 3409
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Background\\gate-near.png",
+      "sha256": "D4CA0C257BB401F07EA28D4EC8B92C86B9647809665B72C234822A498C5AB67C",
+      "bytes": 5483
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Background\\gate-near.png.meta",
+      "sha256": "77917BA161FE36691F4F043CE58D36E706CB3B54F5DA7C4677D1662A1217FF8D",
+      "bytes": 3408
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Background\\gate-sky.png",
+      "sha256": "4FBCFBC4E8E696CF4C763AA07901BEDEC7EB3D129A46780D08AD30AF4ABC7A5F",
+      "bytes": 5433
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Background\\gate-sky.png.meta",
+      "sha256": "294244EEB6917462B688F076DC72E9981990A5B63DD9D176D41F6E7E49C018DA",
+      "bytes": 3402
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-attack.meta",
+      "sha256": "CB8907A9517591066E97DE51CFB1EF99FF626F5795D4F24A6C33A63314B55654",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-idle.meta",
+      "sha256": "AD6F982CBD1606F27919A58C7FB40078FEE03247AE52DC4B6FCC1FE8081B483C",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-v6-hit-clean.meta",
+      "sha256": "A5549CF37F3DA2A7ADF228BA0AB575FAA2EC7CD44D3FC9B2D9DA7687E444282A",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\diagonal-slash.meta",
+      "sha256": "89C787F5313BDA34100E0C883A82161349127A7980C2B4488A72363EE676EC26",
+      "bytes": 116
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-back.meta",
+      "sha256": "AB35B966CECB593872A1EDA18C7EA7D85CA1AC3FBE810107719AEC0ACBC4FFAB",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-down.meta",
+      "sha256": "F74EFE9CC559E0BC0B21B8280A29BC4609AC8EEA2153603174B39303D3349E3A",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-front.meta",
+      "sha256": "E28F39C9515316E3FC1185EAECB99DD5F9EFBDE320A1DC7D16F40B170C6A131E",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-up.meta",
+      "sha256": "9825D22DC1A8E177C2144FA866C1494F7193C9626F817A3AACC37E73221A88F9",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v10-blademage-run.meta",
+      "sha256": "330B498068C4C06C9DF771B5DB9E6042310508515193B1B766AFCD92053F23D1",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-death.meta",
+      "sha256": "C18B55A8F1E8C0250ACB0713E13F264079CD84FB61B9F67EB777585A6FEBC9EB",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-hit.meta",
+      "sha256": "8D38623A5CF0B9476AA97C5F1DAC34E4CB21603AA6784DA210AA3BE7F4F4AFD3",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-idle.meta",
+      "sha256": "5B004CB5055EC5FDBBD3677C4AF366DBBE7479F1BF6177DE373DE26C979255F9",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-return.meta",
+      "sha256": "7F80B3EDCE6DE09A7303A36DA64515FB151C2BAF4B384B48FE07154902614EE5",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-down.meta",
+      "sha256": "67C9EDC879DE76C44C973994DB1D499BCF10F50AE3CB09D066BC23D0B0296BB1",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-up.meta",
+      "sha256": "8A1C179E3E9CD31B239AECA89DF86D190D36049EE6AA4381AE8ACDAC0BE9774F",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-attack-retry.meta",
+      "sha256": "E6C33D0D99D44F197ED28BBF9BB04B87F3B622859B222EC845796954C86A62CA",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-idle.meta",
+      "sha256": "90287DF47AFB4DCDA420491D28AF01FE583A0D3B9358FF455B6C62B202AA21A6",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-v6-hit-clean.meta",
+      "sha256": "DD21ADD45BED06D6A87DE0F6121F53EF45207118CF9C502350A4D72807D382A2",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-attack.meta",
+      "sha256": "B152E92B32A8D6D81041C49CA34862AD45EBF6805CB2F3AEF9051CC3436C8044",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-idle.meta",
+      "sha256": "79F7721B6AA4EF77FBDA730C06F568879FA59BE2CE812C041325B416004AE24C",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-v6-hit-clean.meta",
+      "sha256": "01A8F9980B490BB2502D6350E59932C2B667EC750835723C4CB2236E5CC84D42",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-attack.meta",
+      "sha256": "6016DA94889C9819E6AB872A5FC61F66816577164C5DB739775D461CB6EF90D1",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-idle.meta",
+      "sha256": "DF32265C06A4141713EAA275F9A61AF26D97E48F28F15590128DB0CCCB7D137A",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-v6-hit-clean.meta",
+      "sha256": "ED73F1BD5DA9CDB287AD84A7D66AC59D2749844EEA3F9CA006A867987BBE0160",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-attack.meta",
+      "sha256": "E5B5EBC9E4247F226C762505DA7FEBB261F15602B180C0C4B4341A2323F2D698",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-idle.meta",
+      "sha256": "9431BE2631E1099DA8EB661BFA8740046C1F8E3758F94A0D558329E44C57A02D",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-v6-hit-clean.meta",
+      "sha256": "623F8B8D127C5219F2169CA674FC40451BAA98B375CEC6CA4F2F7C173BE69B5F",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-attack\\01.png",
+      "sha256": "4A4E34D95036FAEE42E16C0789DD8594EE19DD79272096AAAFF9D1912FD0D3FE",
+      "bytes": 5107
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-attack\\01.png.meta",
+      "sha256": "98224E8ADB4F7598B84A4EE3111018A20B882EED3C01229A65F0A1BA5430FC92",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-attack\\04.png",
+      "sha256": "A380421609DC96538A13B010906138AB8F7A7B317B0316E7000E9870D31C4EEA",
+      "bytes": 4500
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-attack\\04.png.meta",
+      "sha256": "5191F1D5DCB5483FB52AC0AB37EFFAEC5D5E28846C262764BE5DD67CC07EE8E9",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-attack\\05.png",
+      "sha256": "09BF85E4CEDDB83A631340F3C8B1178FDAD15D77EA7B148C88AB0B93518B409E",
+      "bytes": 4461
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-attack\\05.png.meta",
+      "sha256": "7F74340DCB2ECA3D706C6B1F707766CF9C512ABAC350E6A073035DC5EBD5C37B",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-attack\\06.png",
+      "sha256": "4B33C47987FA091F900AFE5F6F95EEAD7A91B0444EBA9F837D9AD153036B732E",
+      "bytes": 4594
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-attack\\06.png.meta",
+      "sha256": "398279CA2E501F5F1A987C8F2588CEA5E33FDC007EA06B15B86CD976769B6FD8",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-attack\\07.png",
+      "sha256": "64909E530C7E967774906ED541327C5168B0B187D00110E0C5E3B23EDE0F9E8D",
+      "bytes": 5426
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-attack\\07.png.meta",
+      "sha256": "4A76FC337AAFEEE958090ABCDF26F397AE3B2D83DDD2634E4028981988F661A5",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-attack\\08.png",
+      "sha256": "7EA8BB593A0D93787A51948BC981FE9BC543B8791B35666ED1F72AE44E5C04B4",
+      "bytes": 5381
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-attack\\08.png.meta",
+      "sha256": "0F9B73DC932EE2F30DBEDE90653FDCE4307457B80BFB1F3A9598D6578FD5D093",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-attack\\09.png",
+      "sha256": "0D77E4C94724462E985AEFD29AAD36EF5D7BBC63768F1C0DAB5F7C111FE78791",
+      "bytes": 5441
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-attack\\09.png.meta",
+      "sha256": "0FEE5F132EA4F74132D616FE865708EFB529E407BE28C947B53F62D8EE3C3F37",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-attack\\10.png",
+      "sha256": "58D74DEC142806D60FD274B304DEEE3C5E0B8CB9510DFDFD712B54CF1C7CB346",
+      "bytes": 6347
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-attack\\10.png.meta",
+      "sha256": "1D03FAE1B378326F8A56D5EF3E5670C0FC8CEDC7F4D5C7F901DFA5726666201F",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-attack\\11.png",
+      "sha256": "998E55DEAA048BC2B8DFAE16558A4041E0C54CC0C62A41CD288655588DA8BDA3",
+      "bytes": 7382
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-attack\\11.png.meta",
+      "sha256": "8C45AA45E1096865F6432EBA5245469DFFF6C28F9990A887AFFF125BBEE9C186",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-attack\\12.png",
+      "sha256": "84535C39DCD44B763DC6A36F7A6A8979C2AAE9F81F6AA5D27A50C666128A6046",
+      "bytes": 5369
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-attack\\12.png.meta",
+      "sha256": "D5B37BA5D232B92B014EAC7A0774C6F16B62C08320F2D96923511CE79EA19FD1",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-attack\\13.png",
+      "sha256": "5AB9A38AF781A354A1A6D34F61CFF8B2A8BBC51C3849980F920F07FD773A2073",
+      "bytes": 4932
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-attack\\13.png.meta",
+      "sha256": "12758BB967CDBE595A4DB5B30B8614C46A83E69FC0AEDE9B680ADD2725FC16B4",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-attack\\14.png",
+      "sha256": "D03835FFB636A4FCD3DF029B0D648F0BF19DB326829F421DA293E5733ABE3A8B",
+      "bytes": 4962
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-attack\\14.png.meta",
+      "sha256": "D19463AFC09BDCC53E91ECD6170C17F0123515F5980E4B195E733B1DAB791028",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-attack\\15.png",
+      "sha256": "E4A10734021DEF8048CA7FC76F0F31A305A0FEB30634C0A4F32DF456FFC3C24C",
+      "bytes": 5039
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-attack\\15.png.meta",
+      "sha256": "C0F61EBCFC29EADE667BB967D21C468798B839691A9D843F4A55E2ED95DD9973",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-attack\\16.png",
+      "sha256": "4464D926678A07CDD263C5CA278C31D4873E652F2EBBB0DE5630CC3F230D9C2C",
+      "bytes": 5086
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-attack\\16.png.meta",
+      "sha256": "FFBD2EE77E5C2ED1798C470582C021F6902C69178045716823D330D266DB355B",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-attack\\17.png",
+      "sha256": "3A711C1157B08CE15E59D14A23A626C9DEB43C91DEE49EDB4FFF1AE426850C49",
+      "bytes": 5004
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-attack\\17.png.meta",
+      "sha256": "12C757A9B9716658BFCA14373A0D9794BC3C22B53B6C82BCA7B05E0C55E96ED4",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-attack\\20.png",
+      "sha256": "44A217DD992CE7A51F6E7AE74D708954B4A3444BC04F0D0BDE6FD438D62FEF64",
+      "bytes": 4798
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-attack\\20.png.meta",
+      "sha256": "1C8F423CA22DB33843218A8F7365D7B2650E53ED716FEFA8655F7F57C4ACE414",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-attack\\24.png",
+      "sha256": "B4FAE5D93374274F8DA38708B189F10DC3F56184B62471028F537C11A7E4FEAA",
+      "bytes": 4939
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-attack\\24.png.meta",
+      "sha256": "7F6B1B6D26D2BD0BDCCC2E98A26257AB9F461B29ECF873C3BBDA97FE144D4210",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-idle\\00.png",
+      "sha256": "C3A79ABE93354BC91DEAEC11A2345A60DB8309340D582D21D9887A0469B1F1CC",
+      "bytes": 10632
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-idle\\00.png.meta",
+      "sha256": "3359507C25DB05A9A9AFEB89C9A6541E70D44F2312FA14F9B30246979C16F9FE",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-v6-hit-clean\\00.png",
+      "sha256": "B460578DF80C88D7FE20BD6BBBEA59E8B673EDC37D8125492795E6769C7A2AB3",
+      "bytes": 10615
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-v6-hit-clean\\00.png.meta",
+      "sha256": "B494E106660F5F56A8C322588EBDF82F2A6E748173B795638DEA46AE88B5ABA4",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-v6-hit-clean\\01.png",
+      "sha256": "3AEE067281263E268B331E1673114B4BE053FB1AE8465582B3FE424D2DBBEDF4",
+      "bytes": 5811
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-v6-hit-clean\\01.png.meta",
+      "sha256": "05EEBBFE94EA1B85CB90A83495A3D50581ED31E83EB48E6A1DCDF6F25BB2C667",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-v6-hit-clean\\02.png",
+      "sha256": "BF57C87AFEF0409CE4335E5E0AF4C233D27233640DE85C187E8368D5B7AC2898",
+      "bytes": 5164
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-v6-hit-clean\\02.png.meta",
+      "sha256": "BA68D0A12302D55A21774FA4055214F88FAB8509CFECCDED5B19602D9C729AC2",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-v6-hit-clean\\04.png",
+      "sha256": "333B3CBAA460067DEAA73F5D4CF483E6846269F24A9444B4B148C58C86EA2995",
+      "bytes": 5093
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-v6-hit-clean\\04.png.meta",
+      "sha256": "6793C34C82F2B2B7F106A91BE5AB5E1B6C4DB25AC630D6BAEC4CFF65BC3C30ED",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-v6-hit-clean\\05.png",
+      "sha256": "E6728B6424795497B910289DE161FDC2C17F745768EEF2619D398A6C1AFB1F40",
+      "bytes": 5121
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-v6-hit-clean\\05.png.meta",
+      "sha256": "83826D25724DC9842234CCE7F45ADB1C1C59637AF4798A35A1E9D3FEA0C85E82",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-v6-hit-clean\\07.png",
+      "sha256": "5C9712900015C0698AA183462AA23D4B997299C130ED11756EA71720498AA0C3",
+      "bytes": 4993
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-v6-hit-clean\\07.png.meta",
+      "sha256": "FB74C41BFB060B93625D14C5A7791836D44A4481D431C90611DC8D252BC5F40F",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-v6-hit-clean\\09.png",
+      "sha256": "B6ED1FE426AAF471F1E6BA12A8BC4DD90970D0F093706CBFBBA1AAFB19E22A9D",
+      "bytes": 4587
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-v6-hit-clean\\09.png.meta",
+      "sha256": "170EF2380A340772D6A40AD08C01E02F3953492BF3FCF13B221E57F1DD78B0F8",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-v6-hit-clean\\10.png",
+      "sha256": "C8A78716E448B792758752A1EC2AAF86EC214D600470E01712FF800D543EEBB4",
+      "bytes": 4760
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-v6-hit-clean\\10.png.meta",
+      "sha256": "7451CDFFCF7674D309AA448BA2AFBB8E3B4FE27C3CF504D50845C7A8D13D4F6A",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-v6-hit-clean\\16.png",
+      "sha256": "3F89F29FC63EEF181748B6833E6696335280FB1AF8306E511030BEEA25B91CCB",
+      "bytes": 4713
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\chain-v6-hit-clean\\16.png.meta",
+      "sha256": "E481412AE2EAC4BB8230780244810E2C12C60C6FF15E5AEBEF15CAD889BB1DE2",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\diagonal-slash\\00.png",
+      "sha256": "FA840B9E608151A1A03A470A805BFEFE3E0F51371D7C9D6F05E8BDA028BE31C5",
+      "bytes": 638
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\diagonal-slash\\00.png.meta",
+      "sha256": "F58F72598F2A45F52AB41B318CF2AA7A7A1C25BEDF6ACE112920063DF269C16B",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\diagonal-slash\\01.png",
+      "sha256": "5CBA82B0C005E8BB38BBE60A680D65624B51B1C76FE59677952BFA49D98AD1E1",
+      "bytes": 1278
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\diagonal-slash\\01.png.meta",
+      "sha256": "171521A767982C40F5FC8384F83E122D6F1F2352FD96B0F214ECFD102D01B6A1",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\diagonal-slash\\02.png",
+      "sha256": "F1498EE208AFB1886CC8EBABA92C52A314B2F8500170377B7D551835C448C1E6",
+      "bytes": 1341
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\diagonal-slash\\02.png.meta",
+      "sha256": "47A1DEC90F3381A5C366C9C589A769FF00D1AA1E16226ED781F1E88E713BA18C",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\diagonal-slash\\03.png",
+      "sha256": "7B5C2F61789B21CF7929FC11C3F35226621B8AA76D2F2959A987DCBA61936025",
+      "bytes": 1426
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\diagonal-slash\\03.png.meta",
+      "sha256": "286E851236CC3345D019A7B7B17C5E387421A0CAA559404925BB4540EC6785C2",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\diagonal-slash\\04.png",
+      "sha256": "C91E0D15D04208DD330BDE9864033A141B9BF75CC6B0F93A38440DB6009D60B5",
+      "bytes": 1477
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\diagonal-slash\\04.png.meta",
+      "sha256": "FC53B0E3D8BCD5BD2DA92B2D4D3A128F0E462E2A6AA010EDED56E6F895C2109C",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\diagonal-slash\\05.png",
+      "sha256": "9308A7CCCFF9C483D563AC058E0673E7D077F65F68597D9E9201DF0D89DCE9AD",
+      "bytes": 1266
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\diagonal-slash\\05.png.meta",
+      "sha256": "CD744F739EA4F2AF1822B4E81031A5748CF56BD40B8ACC8319AE7B1DF32B5BA3",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\diagonal-slash\\06.png",
+      "sha256": "9084C6C1A3CA0EEB037828E3FC13F95BB16EF68AFC760F7C822E742D27D23C49",
+      "bytes": 932
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\diagonal-slash\\06.png.meta",
+      "sha256": "7BABF995FCC2E7B1C5F78AA0F10C91ADD7A51E7E0429F0AEEA6BEFBB7470BC82",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\diagonal-slash\\07.png",
+      "sha256": "BDD651817E282BA6714CAA21C7C6888CD01FF0E2DC591A3630096D47B1E3ACEE",
+      "bytes": 683
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\diagonal-slash\\07.png.meta",
+      "sha256": "AB4D0F3188C9E4D1EC2929298DDECC19D204E4359A3EFCBB83CEF792F112451F",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\diagonal-slash\\08.png",
+      "sha256": "430A8F11BFA891FD35DDA9D29B94D3FD20E6F95296E052D2FC02ABDE298B9578",
+      "bytes": 333
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\diagonal-slash\\08.png.meta",
+      "sha256": "9AF546FF788DE817060517D86114E49A8F416EB8BB62AD2F4D9E5A2F4FF2910F",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\diagonal-slash\\09.png",
+      "sha256": "16990410D2AEAAA093AECB7046964013DAC2FF30E3CE4B8DF1614D44E5DDEF4A",
+      "bytes": 236
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\diagonal-slash\\09.png.meta",
+      "sha256": "D13F55C53A576AF640B111743806DD55501EB6B30F1D0D176F36CF8FDBC3555B",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-back\\00.png",
+      "sha256": "88715A25AEEF0577BD68D045624F692233F5898080857F7A24EC8E5EBC372AB8",
+      "bytes": 3510
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-back\\00.png.meta",
+      "sha256": "36401984D5462C5588B8C3C0BA25A6771B62B10395C06C7546CF8FB9C03ABC3A",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-back\\01.png",
+      "sha256": "E27885687C494601B19D07CD697369C954E395B18D8F1A0F2572D031D4610D02",
+      "bytes": 3033
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-back\\01.png.meta",
+      "sha256": "209DD8BB6C4F58713258FCD3DE55575D2E59C1183E74EDC0768B0B029CE2DC61",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-back\\06.png",
+      "sha256": "7A19A88303356540C68FF94FE60A349DC2358776726CE8DBB95986063EA316AF",
+      "bytes": 2149
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-back\\06.png.meta",
+      "sha256": "688787EE64A56DBFDF043496B029B0EA20D2F8E31D94A80BD9133B788842F08B",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-back\\07.png",
+      "sha256": "3824E303A42A671E9DD083D9BDC5E53374A765CC67273E94AB63BCB2BFE74B92",
+      "bytes": 2248
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-back\\07.png.meta",
+      "sha256": "E25DD9C08FEA4A71741D58D1F49AC1B6AA9CE8F6FF5AE3D525A60EA610D7EA46",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-back\\08.png",
+      "sha256": "9BECF69C93ACA5A9BF9B097A0964BF5786D8CD1C5AE3200990154D628DF9F6FF",
+      "bytes": 2143
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-back\\08.png.meta",
+      "sha256": "2770D7E03DE188730291C5C2CAC8432959B7EB52EFBBBB79D17CECE910FAE585",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-back\\09.png",
+      "sha256": "35CF532004042E4AF73219328F3ADCB3C76605032421330FF0535055959B2D34",
+      "bytes": 2305
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-back\\09.png.meta",
+      "sha256": "C55B0A1BDE5965EE62F30D00D91A861E9004AFB0CB82DAB6B4D4C5B2022C0C41",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-back\\10.png",
+      "sha256": "1F4D272195FC9646711E183EEA857BE0A01EB39EDD2F7C273A12B4FAE81415B5",
+      "bytes": 2278
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-back\\10.png.meta",
+      "sha256": "CE2D8619DB121D5995E07AB88E23FD17D95EE560D7D8EF0C7A663389DA2721E7",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-back\\11.png",
+      "sha256": "4DD838B4D81C667C9C38EC1D1C367FE1BEA4592E6E473E75C4F34417F01C92FE",
+      "bytes": 2688
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-back\\11.png.meta",
+      "sha256": "0A62CFEED0D32466BCEB65E5278F6598086AF637C451B5FD4634FA52D2EBEBF3",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-back\\12.png",
+      "sha256": "7260D0C093BFBB48E489CE40A36CB42B161ECDED47961BD385AD4D4B22695EE2",
+      "bytes": 2342
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-back\\12.png.meta",
+      "sha256": "B9E162E2E7E188ED65E39BC43E3A73A5C1E87C179C68960F178EA91AB786621C",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-back\\13.png",
+      "sha256": "8938654B64ADA603EA27BF10CA6F49879273538E811A8F740B57A32BF0EC0739",
+      "bytes": 2659
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-back\\13.png.meta",
+      "sha256": "B08E837D650D22C126B6405F444F4CADA928172270CBF46476D4F0056C2EACDC",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-back\\14.png",
+      "sha256": "5F11D343AB85BC3991D35FA3E8F0E21F9A4C260E02C71FD0A2CCA17D333C126E",
+      "bytes": 2675
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-back\\14.png.meta",
+      "sha256": "36E6D846E51062839DC090D5F63032928CDBD5C7CB18B21B41C80300C7B85D3D",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-back\\15.png",
+      "sha256": "DD7E8228A34321B45345F6FA08B144B0B1A2FB823B236DDA7C1BE515C152C5C9",
+      "bytes": 2843
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-back\\15.png.meta",
+      "sha256": "815DA60F0BB28E549C61763BC359AF134B4C9E30538A17DA30E66B988B0FAFAC",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-back\\16.png",
+      "sha256": "5A10DB47E1706F70E95062EC70DB4202B7DC9BAE5690B9E31AAFC34C45A1DB8F",
+      "bytes": 3322
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-back\\16.png.meta",
+      "sha256": "B28E326C41B04B1115B63E1AEACEB51713A4B26084C1C852514405F554A446DF",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-down\\00.png",
+      "sha256": "08282CB5E1969CC3D60F87549124FA5D0ACB066B2ED2A8F2B9F5D8EF945F40ED",
+      "bytes": 3679
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-down\\00.png.meta",
+      "sha256": "7D71DB6003836D87DF408EF49B0C269554F8C0779877C9971A2C555E138BB159",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-down\\01.png",
+      "sha256": "7F383A409C31E72073DEEC26DB17BA2FC5E916429BBBA4B926973AAD7B56DB73",
+      "bytes": 3487
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-down\\01.png.meta",
+      "sha256": "F954EF35B3B3F5196377EE6771AE385391BC634A44866EAB1C835A996F9B96AA",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-down\\02.png",
+      "sha256": "5644328FC3345E01785CEDFC33B607EE6178BEA7A5FA1F053D137AA9B4E8E93C",
+      "bytes": 2335
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-down\\02.png.meta",
+      "sha256": "FEA9A5DE4E8381A65E321E0105BC1E806694D4BA2EB3C5A550FF3B564B342C7E",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-down\\03.png",
+      "sha256": "CBB8850828588AF7D7A4000923E12767C54A9C09F0AA147C7FF869C941CB8A90",
+      "bytes": 2369
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-down\\03.png.meta",
+      "sha256": "1B1C5EE48436C0D01B9713DA9EAA0E56995FABC9ADB6CD6B97AADD0EEAD9B1A1",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-down\\04.png",
+      "sha256": "284D3C9D5ED26C906C4156CA7237896780B635DCEB9F276A0FA46FAB4F68D340",
+      "bytes": 2120
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-down\\04.png.meta",
+      "sha256": "D2F23966FDA1EC1DB2D91E068420D68A0907732D5807314969EB2082C0679AAB",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-down\\06.png",
+      "sha256": "D70004AD8C3C138D79D905F04127F8C5EE34592E6ECEC9EC6833359BD46DEC14",
+      "bytes": 2144
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-down\\06.png.meta",
+      "sha256": "030D5B4C0A4CE6F82CEB3881623BC23C32C47E17A4C1823F2A607B647147F7F2",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-down\\10.png",
+      "sha256": "4B03A29C5882EC53D9A7955060EEC4BC4C1DFF1CE2B426A1FB608AB27D3F421E",
+      "bytes": 2086
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-down\\10.png.meta",
+      "sha256": "EC39F7450E5AABA35275A1B8E6E24723D2626EE43A7A5B7AC75C372268B67C51",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-down\\11.png",
+      "sha256": "BAFAA6FB3C2D56F3B166390C5DE82484C2B28A836BB9CCCD0FDACB80F5FCD9A3",
+      "bytes": 2470
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-down\\11.png.meta",
+      "sha256": "88ADA1DF2838639CFFB56376531086F2E5EE8194F651D791D50F4E034080A5C9",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-down\\12.png",
+      "sha256": "C847C7B9EDA8E808A6E824D5C72D2F6F764CF3C75BB306FBAA2E0FF8B649A02A",
+      "bytes": 2103
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-down\\12.png.meta",
+      "sha256": "E4BE8CB242BF203C5984F3D06620A8B9673CE3E229DA81251DB52C3380F5159B",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-down\\13.png",
+      "sha256": "7A05EE34EB0F2DD47ED0264B04A44EF62A1C43AEC35EB9B5748B248F39BFBCA8",
+      "bytes": 2561
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-down\\13.png.meta",
+      "sha256": "9CE1F3300D16858A8DADB2803DDE1E02943066F1641C6CD229B4CA35010367CC",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-down\\14.png",
+      "sha256": "1E5A5A5BBF183E05F4596E7E75F95534C2E06A4549058BFA4F119822461FCD1C",
+      "bytes": 2860
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-down\\14.png.meta",
+      "sha256": "106516504F7B925228AE0DDB5233CF56C266F9DBAB768F8177F739FD6A75CF8C",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-down\\15.png",
+      "sha256": "8D5B04429C69F55DAE6B72D6F5440DF8361221E98326A7F3FA4BD3635D802B5B",
+      "bytes": 3170
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-down\\15.png.meta",
+      "sha256": "2D525A026E040B32F5893C0D1254580536D96611883728DFEDE8B9ED1DB99F9B",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-down\\16.png",
+      "sha256": "89ED97D407EB3D0D2462D253C28EC800EED1593F9843B2C3DF2495A8BA56F7B0",
+      "bytes": 3587
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-down\\16.png.meta",
+      "sha256": "D97E9188B82EB7FDC0B932BAAAF9770B8BA3A9947FAA350ED961F9F04D5F5252",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-front\\00.png",
+      "sha256": "3E726A73C9CA697208B06D93E2469041F4D53F4614D46190110DAA273023FF37",
+      "bytes": 3416
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-front\\00.png.meta",
+      "sha256": "BEFD1F59CD51DA773804FF52D4FB108134DDD9D1F8523E0BC2CF1047BC210CCA",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-front\\01.png",
+      "sha256": "29C37A3CD06C0F031074C05DD3ACAA4A8D65B8A748E35984BCD0AB794131385E",
+      "bytes": 3108
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-front\\01.png.meta",
+      "sha256": "E75D484BD7B9DA80E44F5AE53D36BBB71B3D6CE6A823845093940B6CE4A13CB6",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-front\\02.png",
+      "sha256": "A411F46E2E791D6E98CB93C0822F4116E48AAC99D88283B34676A8068359320F",
+      "bytes": 2843
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-front\\02.png.meta",
+      "sha256": "C84FCBC18F5D3640FC14C246FC7A5CA69223B9679E300F933D75E1EF74202F77",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-front\\03.png",
+      "sha256": "64B6944E357D4C93619CA85B8C6DA78380841E3F21CAB4E3D10D5B8E90D0D58A",
+      "bytes": 2796
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-front\\03.png.meta",
+      "sha256": "925783909727CF92967CBE45D401270E502AED4E7D5300AA177D145BD3D10D8F",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-front\\04.png",
+      "sha256": "C080ADD2719D9E9FAF445667002346E1F8F97786689253AD80888F0DC8B89053",
+      "bytes": 2346
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-front\\04.png.meta",
+      "sha256": "558D41B070297E7DE91A2E1A051DBB65FD1826FDC64AC9799C18494614F75985",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-front\\05.png",
+      "sha256": "668AE2DEFF9241BD36646B427AF8F0FD19B9DB67F41FF0DB35328167D45FA0DB",
+      "bytes": 2819
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-front\\05.png.meta",
+      "sha256": "4A29EC411A8BD011345F24B3F2F7356D5E8BB3A21BD2F7AFA37453884279DD72",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-front\\06.png",
+      "sha256": "76C8FDDF628DBCD3BCE2F78F0AABE5DEE1F43A7CE0444F6CC3844DC92260AF3A",
+      "bytes": 2396
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-front\\06.png.meta",
+      "sha256": "CDB6F9E2AB9CFB91243CED4AE2F4F9BAB402FF75673B66ABE512E001960056D9",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-front\\07.png",
+      "sha256": "8E416919743DA6F790B5E4D4B7EC34EB1E3B66AB35A5999F7FFB46E3B0F7F091",
+      "bytes": 2509
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-front\\07.png.meta",
+      "sha256": "B8C4AC88C9F364D2A693801C4AD0E4E125BE3EDE70BE9A0A0D6E86AA9AE6D080",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-front\\08.png",
+      "sha256": "7A101C29CF3B789FCA6CFE3EF066CD13D4A6A1C6FACD6FBBC8A78B6217110235",
+      "bytes": 2342
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-front\\08.png.meta",
+      "sha256": "E51128630B6BB3BB23CE6ACA2DC6DD7A835DAB091489798FDECE502764EBFA21",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-front\\09.png",
+      "sha256": "49D22FB189EB66386670E83E375B3A27AC82D2D71285CE48204FE32AD1BFF9CB",
+      "bytes": 2573
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-front\\09.png.meta",
+      "sha256": "5DC19953A9423F2827AECF159C6C89E0E3A624CEBFB0C171BE4446DF26B2AA94",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-front\\10.png",
+      "sha256": "A9EB7A28D929F1ED82F38D66F56D254AE29DAEAD2710BC884C2D5CC9C13A14EE",
+      "bytes": 2390
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-front\\10.png.meta",
+      "sha256": "341104B0DCA25A314B3D39D652E37714942A1D2571C193D18A1E3106EBFE60BE",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-front\\11.png",
+      "sha256": "32982B47BCDB8008FDDB479D056CFDBD79A24235B7DA0401926B8B5BC2856311",
+      "bytes": 2530
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-front\\11.png.meta",
+      "sha256": "1E3A2E26E8B0146267C93335C7EC6700B52B317E080AD6CE021A99BFC1864EFA",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-front\\12.png",
+      "sha256": "31AF7982F92CFE493C7CB8CE79CF2FE508DE4F4F74382A574F9D21B5E16796F6",
+      "bytes": 2471
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-front\\12.png.meta",
+      "sha256": "2628B97FA0B7D42566B97FEB75D5F773B513AECBDFE2DA0641FB7CFB28AA7B16",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-front\\13.png",
+      "sha256": "A22F239BE5FF268B82F9EC8BFDAC2D59594C50A8E72BF1517E576C99F5B6254F",
+      "bytes": 2515
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-front\\13.png.meta",
+      "sha256": "84A1BEFD85786C5D692148DBA955E9D0E072215A653FEB8811A215B83BCE85E1",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-front\\14.png",
+      "sha256": "0E6CDAF4677CF817C8334634455A4401B9FB1440F2BC1D24EA1FBC72B9185651",
+      "bytes": 2584
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-front\\14.png.meta",
+      "sha256": "52434C2107BE15559B8D2AFBDFAA1D33F316E2FAC48307E6BF0A7F5B8879E915",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-front\\15.png",
+      "sha256": "FED0B6CBB0402CA3711AD641B30E6D929798BE96DB7D6AD6DDB667575D45A3B3",
+      "bytes": 2828
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-front\\15.png.meta",
+      "sha256": "03E49B06CB6FC267DA6FBBAB050446FD4DF7EA8393018823D8D6947C841F1394",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-front\\16.png",
+      "sha256": "614A64EB6A83CD59BF548462BB867A4A6424D264AA5CA1AA4C2EF6AC7CBE05C3",
+      "bytes": 3729
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-front\\16.png.meta",
+      "sha256": "D05E3AFFCFBA6ECA9C7F3C4C03EF45F1B3E94106DB4D660FD61493AD76BCEF95",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-up\\00.png",
+      "sha256": "CA296EB01422BB92771E30DAECE8D0F5674C66908C6ADAAA0EBDAB067D69C27C",
+      "bytes": 3069
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-up\\00.png.meta",
+      "sha256": "8A1DF80F10D4C23C29F4087E456867F01434DF67AB4CAECB694A72DE29D92330",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-up\\01.png",
+      "sha256": "D73642454262D707A245C57D2D9FF4A6C4391FF0D01DA08557F47EF7831FB942",
+      "bytes": 2853
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-up\\01.png.meta",
+      "sha256": "3FCF176D34B82B72018A633108AEB74F6C8DC3AFB48BCA421F642DCC3FBA2855",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-up\\02.png",
+      "sha256": "97AB89EA7D45E3A7B89FE51A66F8331557FB4C58358C9B3E13CF8D7D363A949C",
+      "bytes": 2420
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-up\\02.png.meta",
+      "sha256": "5A903092917567AC84F4B5EA65864D8255E594A14E2084A523D47B9FFE6FB9AB",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-up\\03.png",
+      "sha256": "45A60F0FA76A45D02EF3D55A09A1F258B8A21A1A53DC97296314DE7ECA185D22",
+      "bytes": 2468
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-up\\03.png.meta",
+      "sha256": "36C489E9F76D5C31490BB59F344C3056AAEA0448F8BF3511E12F2127C48ED7E8",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-up\\04.png",
+      "sha256": "5AC32402FE7F6EB400BC3D1EC26FAE38CDAC25F9A8455E5422CB2F2EBD881417",
+      "bytes": 2249
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-up\\04.png.meta",
+      "sha256": "4900C5BD32182533FF9C1704027E6A56EB65E3E7989ABE6355F0D27DAD7AC507",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-up\\05.png",
+      "sha256": "1AE15D8302A98E8AF2436FA4BF4A70AC19A9BDDE5270F9AF51C5E588556AFA36",
+      "bytes": 2466
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-up\\05.png.meta",
+      "sha256": "2AD8D7D9549CE2133EA2620C68C50E3B42536F2AADF50ED97F185460C8CF873C",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-up\\06.png",
+      "sha256": "8362605BD53F0905C235D3367B95E2C1928541FC6D0965DBE4ECCE354C99BEED",
+      "bytes": 2226
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-up\\06.png.meta",
+      "sha256": "9C2EA17FBF44F2C1DDA7838E080AFD3455C6B5CC89A112BD483C6FB3D3BF995D",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-up\\07.png",
+      "sha256": "83B72A656B3CC5D44C65A365715F846DBFA1EC6411F7ABFD0FD9EBB1D517F5AF",
+      "bytes": 2493
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-up\\07.png.meta",
+      "sha256": "D0134543FB628551952F64A48A9185D609210471C4E54FDB117B1E8923302BAC",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-up\\08.png",
+      "sha256": "39A7EA9024084E4961725431C8BAF3BFCD974C138BBF8D209FF819A00A6C2AD9",
+      "bytes": 2206
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-up\\08.png.meta",
+      "sha256": "867B2F427FF9B4464FF6789D7C249B418B6D5AAAD8854C71D6CBAC6E6CAD0238",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-up\\09.png",
+      "sha256": "85B402CF6ECC16F79AB1A3AA936CED2FF926674E834E2322C2F72B119FB32FBA",
+      "bytes": 2372
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-up\\09.png.meta",
+      "sha256": "24D5A6FE44E16C11DC29D83A314BD21AD19B7BB5519C57D1C9383F45EC45CB3B",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-up\\10.png",
+      "sha256": "59A0D00850A7CD3E31F323638FDF8F2CAB2FCDB7913301BCD3DD80903873FD2A",
+      "bytes": 2198
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-up\\10.png.meta",
+      "sha256": "CA4D0782371FBC8BB7C96CC69E095B77A2C3A07D85B0C8947177AE107A2024B7",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-up\\11.png",
+      "sha256": "C3EE92570C7AE02E1719DF45FF8E3330566659F7279CB6C6613DC41EF981BBAE",
+      "bytes": 2393
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-up\\11.png.meta",
+      "sha256": "9B78D5E8DEDA35CD15CCDA5651CDF56C7F704AB7B60B963A0A5106F42AFB2A89",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-up\\12.png",
+      "sha256": "F7F48B25741BE895D7D0B6A651180E5CE3BD6270EBA1AC29C0D161D493B07511",
+      "bytes": 2140
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-up\\12.png.meta",
+      "sha256": "BA0273F912B5601B908C5D7B3D40572B6A007C2BBB5E00EFE5AADCA099B163B8",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-up\\13.png",
+      "sha256": "4249FFF94E921FEB67C0FDF838072646DE8387C53B0567F239145403BA8E7A61",
+      "bytes": 2326
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-up\\13.png.meta",
+      "sha256": "5BB66ADC56577B4D0F1BDA90FDCE1C6F29C5CBB8DB02386CED3ECAB33D87EA37",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-up\\14.png",
+      "sha256": "0C7B6FD69224CA299D5B6C2A91AFF33309A9C182D2ABA3B464CE24B9F65F728A",
+      "bytes": 2491
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-up\\14.png.meta",
+      "sha256": "6E0AE6F09F464F3B0CD0A3B6DACA6B8644ED9605C95C84DCE2D7DEBECC7224F8",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-up\\15.png",
+      "sha256": "84BDB765738B52209A71580FB298B6C52E9EC299FD376000DD9DFDD34F48FED2",
+      "bytes": 2810
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-up\\15.png.meta",
+      "sha256": "7CCED73D75E1CD62BBB12DD3BBAE7707E0CBA41FFB21494168C45034DF24470F",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-up\\16.png",
+      "sha256": "DCB3CFFAAF2184991C993FDCDEB4AF2B67BF4582C25CAE06BFA61F0D52E73866",
+      "bytes": 3056
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-dodge-up\\16.png.meta",
+      "sha256": "706BC8C6586836C0281E2FB9D09EFF2A58CC563181316F9FE04520ABD92A953A",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v10-blademage-run\\00.png",
+      "sha256": "C77F3DF835FF693DF6265E9289A9EA690EF3E6AA4423A5D3F0190F0B25E16E19",
+      "bytes": 1847
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v10-blademage-run\\00.png.meta",
+      "sha256": "DAFFDB6C8F56413193AF747DA4E4B8720697D18F2CAD7A7FBCB273C83864DC6B",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v10-blademage-run\\01.png",
+      "sha256": "15AE2FD10F8C86EBBB3F30360B2F1F56410EF0263A6D3588E505B978A73F2976",
+      "bytes": 1886
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v10-blademage-run\\01.png.meta",
+      "sha256": "C892F544A6813D081B0FFE4F1F2A0B126D306AFB57B0241AA05B7FFD9C514D8F",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v10-blademage-run\\02.png",
+      "sha256": "BEA55007AE699DD5B49FA09A5386844B8EBDA4A95B844002ED31AFE82B79C87C",
+      "bytes": 1751
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v10-blademage-run\\02.png.meta",
+      "sha256": "052A75479756145D333D678C5E0B3DE91FB98CC20C593C292F98E7AE57211F35",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v10-blademage-run\\03.png",
+      "sha256": "0AD538B6E8DD17F58029E9EB2485FFD2B7CC973B77FA736934B6D380060E0C27",
+      "bytes": 2001
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v10-blademage-run\\03.png.meta",
+      "sha256": "AD0F2CDDD20FE4005A5F152125E7A81D6EAB679849D1064E0308A87D42CE7D90",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v10-blademage-run\\04.png",
+      "sha256": "2564D061991D95879059C2CBF03E6C55B09F3622F9E3D180770591080E481E19",
+      "bytes": 1943
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v10-blademage-run\\04.png.meta",
+      "sha256": "0F4139A7A6FF498723127D5BFCB38C8FE9646C2A3AE9BCC57CD7D325E97ACFAE",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v10-blademage-run\\05.png",
+      "sha256": "35A5F2F096D873C4A2B14B5BD1B2AB85FE8BAA3186F3A55E70ACED4AD3954A40",
+      "bytes": 1833
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v10-blademage-run\\05.png.meta",
+      "sha256": "D4F86EE17DEFFE99E3C5537E32F63D6EA21BAA6CEEB191942E09C40CC25F92D0",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v10-blademage-run\\06.png",
+      "sha256": "E27D61AA43E2D9530B3A7E80BE1BA892A20AE444D80A96D8DE2F624C506A5D50",
+      "bytes": 1796
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v10-blademage-run\\06.png.meta",
+      "sha256": "ECE3E00311F1919BD952525AC220B4A7011F75D7A1609C4F2C79819E610A6BBC",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v10-blademage-run\\07.png",
+      "sha256": "387FE4B7A50E930BD81B6A38D1CB8AD706462051E8E81C06FDEBA3BE6AB95434",
+      "bytes": 2167
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v10-blademage-run\\07.png.meta",
+      "sha256": "E6255931E8243F1444714D07C51D294256A1D91A8097CC0E1D860B0764D0C1F4",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-death\\00.png",
+      "sha256": "D7CC55C89088FA6A0C6E09F4E26BC6B01B8DD2855999E22E7BA7E629C506CBA5",
+      "bytes": 3148
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-death\\00.png.meta",
+      "sha256": "0E47A5F05F91E428F0BF91569CC24444ADF91F850FFB635AF7E063A7FA95D41A",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-death\\01.png",
+      "sha256": "013337334645EA6F53F594F6A17AF3320C45A57E627EB839B50F4B5F364E5FA2",
+      "bytes": 2272
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-death\\01.png.meta",
+      "sha256": "890CFE3251E95A928D68695DB7A21CBF4801071D71CE11C41BB350B8E6EA9DF6",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-death\\02.png",
+      "sha256": "F60BB76C51CA4A4193ED1EB4E8C3CF5E5ECF04846F25F62AB52BB312BD30294F",
+      "bytes": 2050
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-death\\02.png.meta",
+      "sha256": "1BDB0AE67C2D1497DE22E11B210699E6C152D680B2510BD641BCD1562CAD8DDF",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-death\\03.png",
+      "sha256": "9833B56EB1A715C193A8CE24785A47E88A3C2F6F6808005F6BF6F0B6F7E70B23",
+      "bytes": 2059
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-death\\03.png.meta",
+      "sha256": "361184B3540FB31BF8A9DD882AE3BFABDF68D2017B33F834C8C9F95109BDB14D",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-death\\04.png",
+      "sha256": "67E736150E4635128C5C683DB6A984A905A09E7939942A94789E69E69CF69084",
+      "bytes": 1930
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-death\\04.png.meta",
+      "sha256": "30394BCC344B0B6D3F6376B8717B7B05D1E49F0B436754B9E4C7E3B994CF58BF",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-death\\05.png",
+      "sha256": "144C38CD5389304EC6039B3DA249DDA0EFC843F9140CA1EF252C4938DD6ADC2C",
+      "bytes": 2091
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-death\\05.png.meta",
+      "sha256": "C2D4CF54D02E1DA4B2B0F38ED4914DBF38AC6DEA2F4FAF7B9A39E2ECBA0DF366",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-death\\11.png",
+      "sha256": "D3376B2F841BA0D565B172BD9D9683660224657ED0CD95B1F715586D98B19944",
+      "bytes": 2288
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-death\\11.png.meta",
+      "sha256": "93F0A41D351CFA6A7EEAB9CBF84F69259E2C6C58C5C72E89F103FD0F32C123A9",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-death\\12.png",
+      "sha256": "3E33CC3C6499645186824FD46C3199F3D5C2345E1AA864BEA76969B5E94554A3",
+      "bytes": 2211
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-death\\12.png.meta",
+      "sha256": "94B375AB93DC9B946A784E1041A87F01FCCF211FC2599FFEB4D68545D7C390A7",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-death\\13.png",
+      "sha256": "740EFAFD6674183FEDD790074C4444C57799A262B8D765CA36DC1DAADD3783E6",
+      "bytes": 2101
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-death\\13.png.meta",
+      "sha256": "F8E843C35AD52A47A5EADCA96C030271879DC0CA241E923C614464A0D80CAB4F",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-death\\14.png",
+      "sha256": "5D4B129CE3D4281245A03DCF6FB4C1D3790702ADB5143318A823D0E1309D078D",
+      "bytes": 1630
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-death\\14.png.meta",
+      "sha256": "B4B9C464C170B3A009BA6080D516A511D7C3AE1DB1F1561C5DB6008CA71E1A82",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-death\\15.png",
+      "sha256": "FCDC19E635B55FC03EC17A9148C7E7388E70C5D7F9779D7CD5B0208998B634E3",
+      "bytes": 1629
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-death\\15.png.meta",
+      "sha256": "7CDB1B1AF5F7B76E3A43266526887ECD42DB974C40B6B017F38304E5DD0EDB53",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-death\\16.png",
+      "sha256": "0E6AB0DD692BF06592F85BED04167AB2E4D84627EBA42446C3D7E12A8331A655",
+      "bytes": 1467
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-death\\16.png.meta",
+      "sha256": "1A7A8B18C099A17A210242685CD0B29DDECE36B4FC4C2257504730F805DE01BA",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-hit\\01.png",
+      "sha256": "06E8C3BD3C79B052FDBAAA0E97D4189A003654A6718B1E4B4D5B87B7F00278AA",
+      "bytes": 2849
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-hit\\01.png.meta",
+      "sha256": "7C5268EDE80CDFFA8417BE0E253709805836205A6868ECDDA671B68C59A1295C",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-hit\\02.png",
+      "sha256": "9B43597E8B723777A261A1075E62C30AE971222ABAA7B362DEB22481B7562D2F",
+      "bytes": 2438
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-hit\\02.png.meta",
+      "sha256": "1C4CA1EC4874CFC94DE765997331422595B6CD85E4ADE25D4E1A6167FAB9918D",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-hit\\03.png",
+      "sha256": "2DE89CDB4C957543FE7789DA35AC3E44F530C9AFD29B402E8DCA3F428B2F1A6B",
+      "bytes": 2506
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-hit\\03.png.meta",
+      "sha256": "C9EA3704105004D9E9FC2E5EE0B2F1B583E06E33072D5180005578381484E576",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-hit\\04.png",
+      "sha256": "BE4E7E11D56E7EBB0FB880D5DB31F6A38E766C76BA7533CC23300721EE6E7B0E",
+      "bytes": 2252
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-hit\\04.png.meta",
+      "sha256": "470A35FAA3C06BA3E9180E3F4D0726872E2B10263EBD2E8F0EB2AA66682F193C",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-hit\\05.png",
+      "sha256": "CC74C630454081ACC79AEBA11EF6BF1868D30FA3C146A8CE681F57A46E63B76E",
+      "bytes": 2660
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-hit\\05.png.meta",
+      "sha256": "D215822A22BD87A0CB691F21EC2834978B4E84A1385B9A3EDF94734E79D5802D",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-hit\\06.png",
+      "sha256": "9C7074A1015373DE6097CB068047867E0F3E6D32EC973EAF4037E45BBFFDC108",
+      "bytes": 2373
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-hit\\06.png.meta",
+      "sha256": "99CE2B150C79274C0A47314E35BD3E263BBFA51588E53168455207F00F7D20EA",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-hit\\07.png",
+      "sha256": "52E71A1985E0C3CEF0814583B85D7AC928FDD9B30E06502931A78DA3B85B2AFA",
+      "bytes": 2636
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-hit\\07.png.meta",
+      "sha256": "E2DA3476B0ADC31FA8222AE3768B4C5F509A22AC2D0DF8D7D5158C675D32460C",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-hit\\08.png",
+      "sha256": "B1BFCE564A194EF96DCAAE6B0494C39F114F05CBE80DDE4609DD95A6A3848D91",
+      "bytes": 3341
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-hit\\08.png.meta",
+      "sha256": "9BF249F173536BA1484057956275914C3E8F3975515F7D713C9B2048E0F1BE4D",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-idle\\01.png",
+      "sha256": "70730FF409E0DCBE687EDFCB90372D02248941F9A467BFB56FF8297110600F0F",
+      "bytes": 3438
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-idle\\01.png.meta",
+      "sha256": "EF2938755849189926A490F565D594C2E87D771085FA20095C174CB621104385",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-idle\\02.png",
+      "sha256": "63462D6EBCC8B0863A693CE7240841AA98866FAC5E1F99598BE9CDA27426F473",
+      "bytes": 3131
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-idle\\02.png.meta",
+      "sha256": "361F90C2233EF57EEE66C7411B00F98205CC2C6049AED83060F8B3688B93857A",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-idle\\03.png",
+      "sha256": "56A0934C49F4566683098AD0678424CD77422A1C4EF86A488AF859061892C567",
+      "bytes": 3231
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-idle\\03.png.meta",
+      "sha256": "40EB86C61B2FEEDB7D8B825C0FCB889429BD8DD8535D5241C2BAF974548C6B7C",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-idle\\04.png",
+      "sha256": "3EB3439901392FB4FEFF2C17B8A69E6A0C8EB6995BD95C4809033AFA8DE2868B",
+      "bytes": 3122
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-idle\\04.png.meta",
+      "sha256": "A07CDD7A0E820C68E12CD6C3A3A1BCBF5F66D1ACA78B3715EEE91AB843369DE9",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-idle\\05.png",
+      "sha256": "B24225D9FB016452EDE81C3EB690F16ACF9FE80E3E27CA6E808B05F4F04D3C52",
+      "bytes": 3280
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-idle\\05.png.meta",
+      "sha256": "5125A93678B0EBAAEED2E27B0582055E28BA68C2BE99C25920F32FB677EB940F",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-idle\\06.png",
+      "sha256": "98BAF250B47F652F7987CF8B8C26DC0655B5DC977DA77EE5F50A7B18170E57D1",
+      "bytes": 3519
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-idle\\06.png.meta",
+      "sha256": "9AA5AB60E808EB0D77F1965C2CB42F493E30366353E52F53ED34450AE6570A4A",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-idle\\07.png",
+      "sha256": "F009ED31358E7924ECC7925BAB1A6E059BEE0E10ADAB3B8D4A591CAA41A1CB66",
+      "bytes": 3529
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-idle\\07.png.meta",
+      "sha256": "858591EE709B17022DEDD411A027955592124017036F8F9051D57F34C21F7A96",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-idle\\08.png",
+      "sha256": "3B5D2B15EC1A070788C5FFC8A824D86AE2B6B57BDFE11DA058A7E79BE7B1CFD6",
+      "bytes": 3551
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-idle\\08.png.meta",
+      "sha256": "E1C27138CFFDBA391D10D1522F0708CE122E6EBAEF9CEDB4F1A9FE6C406A743D",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-return\\01.png",
+      "sha256": "E303B1CE2B243A4F0DD8BB9242E09BD13658DD943BA9356B030752BCF714B110",
+      "bytes": 3312
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-return\\01.png.meta",
+      "sha256": "97760A6D4E9F4FD6BFF2C0000F16F8D3392980867447F25FCBAF33CA081DC61D",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-return\\02.png",
+      "sha256": "19ADCC7A265B6E9DDF17B03427261AF38A025904BD2B40884CF97832F0F9E918",
+      "bytes": 2864
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-return\\02.png.meta",
+      "sha256": "96C8B555B1070AEE432335992ECCB9C5FF98C7F740610DC17614354F92A1709F",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-return\\03.png",
+      "sha256": "F0676ACD41366D020E72D701C6E02FF21AF9FDF7D9691A2BF57958AE1A5A1D5B",
+      "bytes": 2825
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-return\\03.png.meta",
+      "sha256": "0CD294DF80E65C6B519591482C7CB86E825FC5A9878BACAC348E6C9E7E74D7BA",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-return\\04.png",
+      "sha256": "347CF53C155B9A5B9016FDE2992D55E5EDAB6689F4E66DB033515A0960D76AFD",
+      "bytes": 2654
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-return\\04.png.meta",
+      "sha256": "15ECB71D096F4A880D0AEEE1AAD5C5A5ECD98017C4EF04CFBDFF61F9A6CE11FF",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-return\\05.png",
+      "sha256": "E6E9D3B159E3A9DBCE015A423AD95627B0A9D5A2F853982D2DD8253E214317DE",
+      "bytes": 2856
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-return\\05.png.meta",
+      "sha256": "2F204161B5674A663809F93D5F70A33707E45B5939C9FFF4FA7D84EBA17A069E",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-return\\06.png",
+      "sha256": "0500DC5244F215DCE9BBC01F2AC20A8C2C9347C84A705248DB28137C6B7A972A",
+      "bytes": 2724
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-return\\06.png.meta",
+      "sha256": "4213F40E0B864B4AE18546F9D85F3CB7F036D2636892A373A6B09260839FBC2E",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-return\\07.png",
+      "sha256": "653DE4F052BA17F1153CF144556507F76E816285F49DB1D9385690DFE0F418B7",
+      "bytes": 2969
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-return\\07.png.meta",
+      "sha256": "2FCA67965F7D410B106784D71877D58E63EAF8F69EA9CE257D027578B143CE34",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-return\\08.png",
+      "sha256": "A585895C6B75350F3FD9792608FB349221B7FE4B90FADF0E98FC9FF827915859",
+      "bytes": 2855
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-return\\08.png.meta",
+      "sha256": "50020ABB5F571B369966D53E0D5B70871C50BB7DA6FEF6FBC1948ADA9FECAC34",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-return\\09.png",
+      "sha256": "687DC47DE9CD58961C61EE773D75B3E9E8AA957CA1521F89D4A98BB248778BD0",
+      "bytes": 2921
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-return\\09.png.meta",
+      "sha256": "22AEB554EDAAC302C3FE49ED860CBAC309F1A4C5C7C3189E257DB11A7BF1BCBC",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-return\\10.png",
+      "sha256": "9208455244DD225397554C14BEBF458C143E1300E7CBA5C9B33558BCAD3E0AB4",
+      "bytes": 2617
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-return\\10.png.meta",
+      "sha256": "1CEA75A9E7CEE67F87EBBB8AF8E2A23206B82178060C437FE6809A615D1CD1DE",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-return\\11.png",
+      "sha256": "42475DED88ECE7E4784389655C2FC0B4522865211A85D392ED4DE847269A9CB0",
+      "bytes": 2733
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-return\\11.png.meta",
+      "sha256": "4E6B4C5FCCC40016EBDBAFD61114FE6DD20F04A4B779D2CB5F9CEF457F21AB5B",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-return\\12.png",
+      "sha256": "5536DAB98CA14D76DC1C73C8EC9526DEDB4723F54FC114C81D4111A9501E4AE9",
+      "bytes": 2717
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-return\\12.png.meta",
+      "sha256": "7A1686AD255FEA4BF43BCAEC9A161840FB458B367B289720189A4322FC4DEE95",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-return\\13.png",
+      "sha256": "A821CD22F4BABC65993F18E57607F1E291FAD02AC4922E587B7EEEE78C2AE3C0",
+      "bytes": 2996
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-return\\13.png.meta",
+      "sha256": "5E4E61445719F8B3897357B76E6BA93F58CF705F4FB1C710809687587C027851",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-return\\14.png",
+      "sha256": "A730784F10E3D95A6100BA80A76199E32D2CB2E0B1C64EA6449D6AE83965C3A7",
+      "bytes": 2952
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-return\\14.png.meta",
+      "sha256": "D9EF50743DC61E9016E300048E8AAC75447E6A10BC9931EAAD22B9B03A90785C",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-return\\15.png",
+      "sha256": "1103EDB95283AA44B0E1F626646064F0674B11EE9D61953F963EA4383EA9B4BF",
+      "bytes": 3100
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-return\\15.png.meta",
+      "sha256": "5E80BAD9980216A6DEA45CAAB413969626FC028177D6BB6B834B88F58AD022B8",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-return\\16.png",
+      "sha256": "4B0907AC3427792388CDCE7DE68B743278027ED78C5D351C2703ACFC15C52768",
+      "bytes": 3593
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v5-return\\16.png.meta",
+      "sha256": "159A60913FF7D1409FCC51C96643C5886B6119451C2B442FA4157B4920F3936D",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-down\\00.png",
+      "sha256": "5B25F91661C6BCA315A62D6F8F8CC2F836CD2C0FEFAF849CEBDA2489E0C47C31",
+      "bytes": 4102
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-down\\00.png.meta",
+      "sha256": "1C3C7BAF8E1A4FB498C97FF784A0BC1F2D67E4FC55C3A4977216C5EF176A2BBC",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-down\\01.png",
+      "sha256": "00A77F3E9161CD813D1176E1E518365F9B53D7E1E9060BCEB5C76CD5F0487570",
+      "bytes": 3500
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-down\\01.png.meta",
+      "sha256": "BE6B6779183BC7422B6936864108A65C29680FBF1573121CE17BF2DE72E3FC14",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-down\\02.png",
+      "sha256": "C9E85C62EE461D51CB7FD2F257EDE27262924E1002EBDAD210FEC3542899FBEA",
+      "bytes": 3052
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-down\\02.png.meta",
+      "sha256": "2CBCBE74EA3536C41C875D8AFB0AFCAC83F251EB168E4ECC9511A947D68E9975",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-down\\03.png",
+      "sha256": "471052356763CB52DD5A186DAD83B0F714FD7ED9D0FFDC80A6D50EB3E4ECC0EB",
+      "bytes": 3452
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-down\\03.png.meta",
+      "sha256": "4E0FA229089CE8C33BFA2CD61AE392547DC9D024AE1C6E5F996640EB0F1767A1",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-down\\04.png",
+      "sha256": "E4AEEC96396B71B9A4E78806836CC0A307BF91F5FA462362A6012950176B4C3C",
+      "bytes": 3205
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-down\\04.png.meta",
+      "sha256": "3B5DA868F3038E592363A9FFBD01331BC9304E4E2C7E732CC8E615DC58C0D266",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-down\\05.png",
+      "sha256": "96705E742760C614190E529F168C3D3330A4E10280507A1D6D36C2343AF7417E",
+      "bytes": 2848
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-down\\05.png.meta",
+      "sha256": "A2A4FAF08E063CCE9193D1FBA7029B31DA546034E6C0D8406F1CD5B123ED9FA1",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-down\\19.png",
+      "sha256": "25FAA01DC2F2C8AD1A4DD292D359FDB899BE8975E788735FEF2AA3C3021107E6",
+      "bytes": 3919
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-down\\19.png.meta",
+      "sha256": "306AFAC6B339F64B49A6BC3D28CA8819AE599A6F07F50FF0A9160F38C4C9611F",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-down\\20.png",
+      "sha256": "69EE08AF26D6DE94474F28FFF7FF9ACC8A1B3F72EB72B6808F6C270DE8D1AF00",
+      "bytes": 3157
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-down\\20.png.meta",
+      "sha256": "5B8A27AA3DCB7C96274CE27795D058969A3037FCD53C88B76E0BC2D1213FFFB9",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-down\\21.png",
+      "sha256": "F9469A95029B800470FD0F90BBED6163AD45B4FDBAC8587D12C028D12FDA32C7",
+      "bytes": 3301
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-down\\21.png.meta",
+      "sha256": "BBC032423EF29411560D3677D2276F80C912C20FB5C2CD7636A2F2E489E1B990",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-down\\22.png",
+      "sha256": "6B0077B3182103A9278C8C4219C871864F4BAA52D56184F89EF40A75009AE77A",
+      "bytes": 3095
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-down\\22.png.meta",
+      "sha256": "2CB097D87D299F7BB1DF534B4A674B463F6CFD144F176DF82009E83315291190",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-down\\23.png",
+      "sha256": "FE7308ADE68EF295D10696D4AB1944C73A36D2CFE492F1AF4F1D8BA01DB1C5B2",
+      "bytes": 2948
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-down\\23.png.meta",
+      "sha256": "269AFE984FDDCC9795E776B21D88780969032238AD042290249D3EACA60B7784",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-down\\24.png",
+      "sha256": "96914C5F47C4CBE0318507FF21F828C70BC4743AC64F0EC12272C151BF9F83F0",
+      "bytes": 2406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-down\\24.png.meta",
+      "sha256": "6110672B812301A93865CF625ED0D11F3CE1A0ADE2DE6454082FE445E990B028",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-up\\00.png",
+      "sha256": "764DD37CB05126236F16EB07311A660D74F30F8C3D5AC7F1F48708DE5B8E336E",
+      "bytes": 4189
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-up\\00.png.meta",
+      "sha256": "74A2E196C2DFC30D760CE4F030FA39517771757549E328DFC532CB68E2877B1E",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-up\\01.png",
+      "sha256": "67893C414ADB81DDDEAEA41FF99891AE153F94635BD603380D77357A0D77B2F8",
+      "bytes": 2632
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-up\\01.png.meta",
+      "sha256": "D3E3187A3DFA2685469B26E9A4B111232C9CA563D7B0CB038368DF7044050701",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-up\\02.png",
+      "sha256": "CECC2393D89465108CE24C9B8A12F8502659DC8C89048D88A8DEDE8B0AD9E99A",
+      "bytes": 2917
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-up\\02.png.meta",
+      "sha256": "A9C895FB25DAECFE9848C9369ACF4879A73E33C73B9BD2BEF3DF4C9FDB936F49",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-up\\03.png",
+      "sha256": "9363589818B8765BDAC870130A7B605E3A97EF4A9377F123056019CF49B8DE81",
+      "bytes": 2550
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-up\\03.png.meta",
+      "sha256": "3704164D4D83073932F3DE59D790DBDB9471E24653232A3C3C046FB6D397CA07",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-up\\04.png",
+      "sha256": "6E84234AD1620A0538F1C390EF2575FAA43F983E25A9661E04517518A8923FEC",
+      "bytes": 2448
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-up\\04.png.meta",
+      "sha256": "4531B028CB752D6EC9953851BD80547173C1BBEA459AAE95BBDDDD345558C9ED",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-up\\05.png",
+      "sha256": "5C64B98F5622679EEC38843B4E58409892AF9788CB1C86AD041E8EED61CFE80B",
+      "bytes": 2544
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-up\\05.png.meta",
+      "sha256": "27519EEB85131290CBDD793F95D4AD4AED0D5C1296F81779AC89CB2BEC7AFF22",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-up\\06.png",
+      "sha256": "49859A0CA773EEC66B2094F19789769B97735E8DD2341FC79DE3236B26C6E8F0",
+      "bytes": 2953
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-up\\06.png.meta",
+      "sha256": "C767F83B32391DF2130DA5F6B3D4A7370CC018198B65F9670CF84A7D781F9190",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-up\\07.png",
+      "sha256": "74CDC82FFCAF113AE7EC158CF30AB3E53FF0D26DD61D81C5F7F13B1D48F193E3",
+      "bytes": 4648
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-up\\07.png.meta",
+      "sha256": "99B3A75EEA94AF0AF0CB14823DC04353387458810637DFEBBE0525B9118DCAA3",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-up\\08.png",
+      "sha256": "EFB2B32A581F0F11D1D574ECE4A57ABC074B9FD08DD23C6464EA34CB8B29DF93",
+      "bytes": 3100
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-up\\08.png.meta",
+      "sha256": "E4DBF7A0E19248F23A1B91F216B9C466316025E1A75B1E8429E42D0488A9634A",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-up\\09.png",
+      "sha256": "B00C5A9C358B43908A2DF336D06F3AD54FB82523711B4225E76B154FF4DB427E",
+      "bytes": 2898
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-up\\09.png.meta",
+      "sha256": "2F9074A1AD5BBBEB61B82C766D7F4EBEEE815317E95A31274CE44C28EF54535D",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-up\\10.png",
+      "sha256": "BC69D70F87389942113AE80DFCB749EB6A4F2A0A61DA7E049443776CB9D3F9AF",
+      "bytes": 2840
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-up\\10.png.meta",
+      "sha256": "BC72F0E4D9A91DCF18122BB809EAD50DCF95451B439446FD6EC331C7F43BB78A",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-up\\17.png",
+      "sha256": "2B0A108FBC403EE7EC5B822AD7F2FA6C6CFBCEEAC254C3693E1E8F71D3872E27",
+      "bytes": 3879
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-up\\17.png.meta",
+      "sha256": "C75B2D22D67EF5F40B304029A2FA9C63A69E6A0BB44DFBC2A7C9DE7BFA116B7B",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-up\\23.png",
+      "sha256": "4484C72DE81ACE424E97BDE1953716F5F7EAA233AC64642E57C785112C3BC614",
+      "bytes": 3392
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-up\\23.png.meta",
+      "sha256": "DC325701FD7D65522794CC041439B351BF9E47208DA1B0870C4C99770A70D63B",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-up\\24.png",
+      "sha256": "942EF799A086AAE943CCBF381987C25E5BA339233B8BF5728A6692FC73965055",
+      "bytes": 2939
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\hero-v6-slash-up\\24.png.meta",
+      "sha256": "7DCFE65D562EACFBEE29F65E89C682F5F073FDA377401C49CC5A60677B31A488",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-attack-retry\\00.png",
+      "sha256": "679D256A32F6799C07BF8C0EF6AF473BCA1D914B0F03988C831FD8DD39E0A33F",
+      "bytes": 5329
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-attack-retry\\00.png.meta",
+      "sha256": "0DBC28628611032E8EDB17B11D4288CBD453D4B825CB298682676814E9577BEF",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-attack-retry\\01.png",
+      "sha256": "A87ECC24CDF0C7FC1873A121BA2E7AC40991062035D29A174329B9E4D195D22E",
+      "bytes": 4994
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-attack-retry\\01.png.meta",
+      "sha256": "3CC08A259E854CA5B13106E7D7BB4EE26D2015A107B3ECDC5DC2C162CF186696",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-attack-retry\\02.png",
+      "sha256": "871AFC39775CE84DE48CA7C8A219C832972966D0A18A3D32E923399F7EAE3FDA",
+      "bytes": 4423
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-attack-retry\\02.png.meta",
+      "sha256": "9F3053FDD9B4316B31B993BA2CD9FD6A9E791587C597D51715954A819623E7CD",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-attack-retry\\03.png",
+      "sha256": "D308F2D864EC4944DC46F61B9978B8D923B33B33A1B8ABAF6A1A434261D1F857",
+      "bytes": 5018
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-attack-retry\\03.png.meta",
+      "sha256": "58F5347D035AFF0866A265AD9E11AD11A11319B8833DA43026E2593664FC0AD5",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-attack-retry\\04.png",
+      "sha256": "977A50B598932DF6E66F6B7D052A19776857FC315F8F82F40465822118C1851E",
+      "bytes": 3904
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-attack-retry\\04.png.meta",
+      "sha256": "E928E41D972A80ECCD7F357E5967C78C2FA96115131F44696B9599D649E15ADE",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-attack-retry\\05.png",
+      "sha256": "B3680693F9FD057A3DB4B9AD81D00269210E8BFB53DA1314A327CE015043A9DC",
+      "bytes": 3886
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-attack-retry\\05.png.meta",
+      "sha256": "82BF95F1B7F1F832C1121A877EC80949CA513FF44E3CE3DA94F55FDF8C05F4FC",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-attack-retry\\06.png",
+      "sha256": "25360B985B4EE0764676308096FB8E6D706BFF803B2FB30D4F6A1AE6597F73E4",
+      "bytes": 3761
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-attack-retry\\06.png.meta",
+      "sha256": "09B49D6A146F5B8A5AE2EB019C93F10D9427019A8A3C8B3FCC86F0BD710C80CA",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-attack-retry\\07.png",
+      "sha256": "94D941778276EE07E25819657080FD0DF4F744046B77669BC380B07A482F4E2B",
+      "bytes": 3801
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-attack-retry\\07.png.meta",
+      "sha256": "608123EF191B733EACE7323F753333CEECD4C0205AF7E1979BC9C5A8E3DC381A",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-attack-retry\\08.png",
+      "sha256": "B296E05F38AF1111F7277B9F455ED10B496551E363C7E5B427A83865A352E9E7",
+      "bytes": 4057
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-attack-retry\\08.png.meta",
+      "sha256": "2C67E668C7C39AF358ACCD95A885F0F97FC0427F8AA75ED5BE58DE90FA628D58",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-attack-retry\\09.png",
+      "sha256": "852307B082E103709918C33A7197035815D91B4E35E928742E0D7619CE5E5B05",
+      "bytes": 5982
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-attack-retry\\09.png.meta",
+      "sha256": "6760DB6A375B72C6B64B938FBB9DFF5EDAF5C5AA0446767A2EE974D4F9F5958B",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-attack-retry\\10.png",
+      "sha256": "B42B1BCE99CAC63421FECC62996E3F48B53ADAE33CEF25B6C43096C331CFE659",
+      "bytes": 5396
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-attack-retry\\10.png.meta",
+      "sha256": "9D6096E7892B7AF68D34377F0BDE4446E919FA88D866D5EAD5169D550869B9C7",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-attack-retry\\11.png",
+      "sha256": "DB12CBA0AB973EA4C23569EEEE728F3CDE39F3FE994735D1B6D151EE34AAB6E6",
+      "bytes": 4900
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-attack-retry\\11.png.meta",
+      "sha256": "65D360A175F9394B6BCB9E1BED2A52FFC4670219A036DBCF05EBEEC249248A18",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-attack-retry\\12.png",
+      "sha256": "5FC57C48D7FF9B5F09A1138EC3D6130F07E8EC14F98040384E728D7059EEA99A",
+      "bytes": 4373
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-attack-retry\\12.png.meta",
+      "sha256": "72E02FDAE7496DB44F0D1972D5DEFB14BF2603A509C525B6A90FB245EAA2B316",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-attack-retry\\13.png",
+      "sha256": "343DB1DCD4E45D985CB310E94F0003D422198EEDA517DD04A9277929BF7152DC",
+      "bytes": 4594
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-attack-retry\\13.png.meta",
+      "sha256": "E0E5B4E5A021FFDB308FA6D844A6F5600848B11CA169BD07E02117ACFCF782AE",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-attack-retry\\14.png",
+      "sha256": "B6A2B1AEBC2A9E1A8A4FE2263D3FC154D7DDFB77AC7839EE278A3F63931169AB",
+      "bytes": 4958
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-attack-retry\\14.png.meta",
+      "sha256": "1A5BFED1A1D932496220084C7865C3E5AEF558783C2955A74D9E6212B1A1AB53",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-attack-retry\\15.png",
+      "sha256": "3FF9ACB250B37CFE3C75A3B546D9E83097C93580096F38AEA3817593EE2EE48B",
+      "bytes": 5405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-attack-retry\\15.png.meta",
+      "sha256": "2D09EFECB8286FF8002552052628BE265582DB8B9B41C2CF3CBE4243A508E340",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-attack-retry\\16.png",
+      "sha256": "8616B03B056E658C9D8B491FFAC3B0B93A4904DB15FF5087DD956CC0549E7571",
+      "bytes": 5331
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-attack-retry\\16.png.meta",
+      "sha256": "D93004D405869CE8FEBF86EECF96CC3C0894622B2398E4ECDE8B69164BAF6C00",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-idle\\00.png",
+      "sha256": "3813C0C19881F3B075CEA842927408A600D7A5980B710230C4FFF19C59FBFF4B",
+      "bytes": 10637
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-idle\\00.png.meta",
+      "sha256": "5269AFEAF24514CECC35A34344BBEA5AB3DEE8D4E6B509E697D7230B34A9CC76",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-v6-hit-clean\\00.png",
+      "sha256": "74D8B12713841A1BA1B051F8B7174386A7CA5AD681AB3888B54D781E68E45403",
+      "bytes": 10600
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-v6-hit-clean\\00.png.meta",
+      "sha256": "53B6DEE1CB53965599367861F2A8AFE698E72C17ABEF13AA4A6D741BF7D84AAF",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-v6-hit-clean\\01.png",
+      "sha256": "FA9E258762E5C07CA0CBFE0002D21075E0F56F2B2D7F5A1C1DF3BC88387611F7",
+      "bytes": 5148
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-v6-hit-clean\\01.png.meta",
+      "sha256": "E925C4BADFFFBDF248297D98B4782D3AB2C20A927C59B9FCFCB3D0508C17501D",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-v6-hit-clean\\02.png",
+      "sha256": "A7270BF9A80CF45B3398EC075F2463F7358AAE5AAD0D085885A2B407D45B062B",
+      "bytes": 5333
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-v6-hit-clean\\02.png.meta",
+      "sha256": "CF995C900657089F175FF2B568A3197E4C49D582B5F3BF5ECF4AECDBA03D91E5",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-v6-hit-clean\\03.png",
+      "sha256": "7E9D0E88E0B6062ADB310C0B80B3C0469DB465489BE0BB86EA17C92B9DE6D6BE",
+      "bytes": 5236
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-v6-hit-clean\\03.png.meta",
+      "sha256": "93E07AE5E4613AC2C9766C643F553E0161F3705811D5445CAC1747326B7543A8",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-v6-hit-clean\\04.png",
+      "sha256": "C55BDA71CC2A1712CF1332DAB152CF2119FC93BC09DB88F01EEC0078FA839A99",
+      "bytes": 5112
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-v6-hit-clean\\04.png.meta",
+      "sha256": "399AEE6FCCF8A4E6DCA1DA00511B9FB06845B2DA7AE7B576FE125F3BD8F0E0F6",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-v6-hit-clean\\05.png",
+      "sha256": "76E8447CCF6AA64B54117BD8640A7D9205F507C625EC0819EFC7E38554D3DD7E",
+      "bytes": 5264
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-v6-hit-clean\\05.png.meta",
+      "sha256": "98BCBB0826F84FAAD52FF2656AA1F63C2A516AAA493787F21F1CFACCA336BADA",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-v6-hit-clean\\06.png",
+      "sha256": "4F1AF7E1011537413E9D14D136D49F9BA58487FA4FCDE936C6EED9843E7A782B",
+      "bytes": 4908
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-v6-hit-clean\\06.png.meta",
+      "sha256": "ED8359C2AB8A099C20BCF421FA74A0CCE6682717E5B55C236010483F6B505F63",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-v6-hit-clean\\07.png",
+      "sha256": "7330BC5436D1FA79113B4CB6F300AFB201838E498D4F1B48D7D4619301308F50",
+      "bytes": 4829
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-v6-hit-clean\\07.png.meta",
+      "sha256": "03A25574A3242B8FB7CA31F1DF18C5CD5D78B9950CFB2CFECDE09D22E0B067BE",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-v6-hit-clean\\08.png",
+      "sha256": "531DA8C46A15AC7E4FF22257C24678A854341F8F12CC647F0A12D10D46CED1C3",
+      "bytes": 4756
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\knight-v6-hit-clean\\08.png.meta",
+      "sha256": "993A3823AB236CFF498927BA1E72BCA598D462AC0B625B2489807F0CE4312185",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-attack\\01.png",
+      "sha256": "48014E53D9E96EE44E9E1563014AE9FEE0F22CE7516A7A49DB55E2E83669A5B0",
+      "bytes": 4983
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-attack\\01.png.meta",
+      "sha256": "84DA2424A17746508262B19A777700B1F91D643A779061FF46C3349536EAAF04",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-attack\\05.png",
+      "sha256": "37DE0628FB76F0B1FDCBEEE59AAEC54EE6B872A25E44C2589384EF5102D5EA52",
+      "bytes": 6296
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-attack\\05.png.meta",
+      "sha256": "6FA0721FDFD9FB9D60E5B1289D18999112A5F4B6D144805B4B32BC7CAC8C8C9E",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-attack\\06.png",
+      "sha256": "7BBEF37881A4CCAB86CC2F2E184AA40BEB6AC994D5005AA751051E36CF7C9F3A",
+      "bytes": 5533
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-attack\\06.png.meta",
+      "sha256": "4D86D2103E55F626AB4031A386098C8084A791A181FDEC9B5ED039AA60C9C1BB",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-attack\\07.png",
+      "sha256": "CC80D74F7ABE540F32BC4F620E5D3976E3A3A299B8A853F2B8EEC24F7751C08E",
+      "bytes": 5621
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-attack\\07.png.meta",
+      "sha256": "33D171653FD9D5D5BE2059236C636F287BB602296AF6BDEEC074C9F3B72DF8C0",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-attack\\08.png",
+      "sha256": "314C236D33C4C2AF084C12D0E8A0BA1BFDB116AEF6B75D5690215468AAD5A563",
+      "bytes": 5585
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-attack\\08.png.meta",
+      "sha256": "69FB027930630BEE78D412CBBCFEEA153897F11CB136FDA91456A24890B0DE1E",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-attack\\09.png",
+      "sha256": "C1E0D6D5EF83FA72A0FCE8D55B900EF31335E8005CAE00AFDE613EC7B3B84788",
+      "bytes": 5800
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-attack\\09.png.meta",
+      "sha256": "34D70A9E20B558D8EED74419C5B82959723FAB6601902859AAAF258698D5527F",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-attack\\10.png",
+      "sha256": "78582FB9011EECD5D1BE6B2ED199DC6586BE056779781B6C5B3543A313AADDCA",
+      "bytes": 5587
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-attack\\10.png.meta",
+      "sha256": "BFC23CF9D7C4E990FBBE71FB5CA5E5803D15D0DE1305144A1CF3AE546053701B",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-attack\\11.png",
+      "sha256": "3596260DA60045A761C48B6D7917BBBDA2E21C0EA9B2749CE667637E31F9746A",
+      "bytes": 7679
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-attack\\11.png.meta",
+      "sha256": "32F9845DB2701B3BD1F0A9E2AD5DA480026B756C7455FBB3CEC118ADBF3E840B",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-attack\\12.png",
+      "sha256": "EBAB7D58586150A21554F81AFDA5281BD7D61BBBCC293C561A24E2781D9C5C60",
+      "bytes": 6020
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-attack\\12.png.meta",
+      "sha256": "6BAC15FD04B7F010A68CD0ADB45E33CC859CA2A7EB0BF83B03B73DD66B84A629",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-attack\\13.png",
+      "sha256": "3D1A5949B5C1064A430E6515B688BAC02C277BF5FAAA33ADF974F675AB23348E",
+      "bytes": 5984
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-attack\\13.png.meta",
+      "sha256": "2FEE2350D426069759EEFE76611FA1378D389B45B421E9BDF3F1B68557029E85",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-attack\\21.png",
+      "sha256": "9159770EFD7DD2458080D2830F19BF965F02D8E4EADD71CB906953F36E4B0518",
+      "bytes": 6307
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-attack\\21.png.meta",
+      "sha256": "83E674D53F3A0D1332ED0267A111E5C371E8B92E0705A38BFE93BF4D33947B28",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-attack\\22.png",
+      "sha256": "6866BD0134A35EB49B0459DED380E4978E36BA0A2073F17497147C43B515CDD8",
+      "bytes": 6108
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-attack\\22.png.meta",
+      "sha256": "53FE684165E871AB3B0D2BEE9BC75FD0F0C58749EAC527ACC573D1DF110C5202",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-attack\\23.png",
+      "sha256": "8B24A6B4CCB8334FB3254337CDAD1AF159A4C733B2173054469611A55C5B07C1",
+      "bytes": 5735
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-attack\\23.png.meta",
+      "sha256": "9047235B0BBF4B7586C54961AC7AB6F74A087D3CE2D7936A59EAEABD7C98077B",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-attack\\24.png",
+      "sha256": "D5F36EADDBCE5D6B780F6A883F05FD6A8710115A48B2C30FFE4BA30503202A7E",
+      "bytes": 5120
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-attack\\24.png.meta",
+      "sha256": "F2D30D56C1B4F9E900CA6D1BE9E39120B7ED2E4221ECB5103EEB3ADE79352219",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-idle\\00.png",
+      "sha256": "B9817BBAB506A2F4EB6D73763C7B29A19EE96FA129C7F74E823E1FDD611C50F5",
+      "bytes": 11210
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-idle\\00.png.meta",
+      "sha256": "2E6C808F817CD44E6CB0E7AE4714992F0584A250309FF079CA7E5DA4F2749562",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-v6-hit-clean\\00.png",
+      "sha256": "DBAD83A2AEEC21C6CCDF523C91D58E3567DD4435700E78C46BE6D5CEB3AFC35A",
+      "bytes": 11183
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-v6-hit-clean\\00.png.meta",
+      "sha256": "8023B8A5B4E93DF52A62B22C404F527D43DC90D6C51C3CB7CAC9F6A07B4E9E25",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-v6-hit-clean\\04.png",
+      "sha256": "CC188B595C65ABBF24DCADC3A468EED78E0049BDFF17D1B9CA8F8F445AFEF1D8",
+      "bytes": 4825
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-v6-hit-clean\\04.png.meta",
+      "sha256": "08E6AC82B5945A4C1820CF98139F166FE5D752CB532F119687D7465D4C27C521",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-v6-hit-clean\\05.png",
+      "sha256": "BB58E0655956FD324B3945464CB02C7EF7E864CE7C5547E51CC6909A5E048FCD",
+      "bytes": 4826
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-v6-hit-clean\\05.png.meta",
+      "sha256": "B1DECC8E040B6B84BB443A554C003F57CBF141CBD4929CD57DB6FADB4CB8B2A2",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-v6-hit-clean\\06.png",
+      "sha256": "3BFBF4885E1842409AB4EFED3C229EA96582471305241CC91DC3EFAD1D53F58F",
+      "bytes": 4874
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-v6-hit-clean\\06.png.meta",
+      "sha256": "291A772B0CA10E07DAC5F2219DBF3E292FE08C34769291554B886F684AE8F17F",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-v6-hit-clean\\08.png",
+      "sha256": "D3B89C1F2AEC31D0397A7E16059747F3A2493A7839D69A844FF9991C1A4D5685",
+      "bytes": 5086
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-v6-hit-clean\\08.png.meta",
+      "sha256": "8261F18095F51DF22790A7388BE730345F7CD58DCF0C6C8D6DA3624BBC4EC8E6",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-v6-hit-clean\\09.png",
+      "sha256": "62C696DEE2C50D96BD8CEF105FA22160EF233B6B516812F65B4E079EC490E58D",
+      "bytes": 5297
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-v6-hit-clean\\09.png.meta",
+      "sha256": "612D6C6F757E2E94E0711C74294E475E19DAC1BD35E1DF34BD87EEB4305E5417",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-v6-hit-clean\\10.png",
+      "sha256": "EFCE9D42D2C2C6D9B4A43CE41FD226BD86EDD4CD0FCB17B320DF9874153140F6",
+      "bytes": 4985
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-v6-hit-clean\\10.png.meta",
+      "sha256": "2366773C9E3A5F68A31E19122F3BEA64C70FE37E84ADBAF81643D9E3838898F5",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-v6-hit-clean\\11.png",
+      "sha256": "212DCB2FFDB2C242C8B042744698A0900F6CFC17B362CE5716F15E0B503AAB13",
+      "bytes": 4846
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\sentinel-v6-hit-clean\\11.png.meta",
+      "sha256": "2325C4F99DEBB3D7878E1A01D1F7B998BE7FE28D7A27CEE66785CA3460B04B67",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-attack\\00.png",
+      "sha256": "650F5C475A1D97B263C3D40A17657E6C0ECC9F16D6C7A1C64434B581A5DC2724",
+      "bytes": 14225
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-attack\\00.png.meta",
+      "sha256": "AAD3F326D956BE9F21EF1063ADA561D3AF7C41CE32739C06657A3F6F689BC1F2",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-attack\\10.png",
+      "sha256": "E72AC51B31BE00253615CC6491415AD1BB4A6FDE4F35DC2A151116AFC9D10307",
+      "bytes": 5677
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-attack\\10.png.meta",
+      "sha256": "88A822A3F2529EEC87EC51B6D6BDCC86A4825F373E63E6A42EDDCD2F31158820",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-attack\\11.png",
+      "sha256": "F7E988EC5DD3427717F7AF341B08B87005891B96CDB3BF17392B790810B365AD",
+      "bytes": 6196
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-attack\\11.png.meta",
+      "sha256": "8067A41809A4E1F9C9AF27B1A37E316C15EA6601707E5A0889F5E96CFD3FB3DB",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-attack\\12.png",
+      "sha256": "0EF8B3A2753C03B84011692B07BF0A834CC62B8576607E557E8AA2B418F9E470",
+      "bytes": 6541
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-attack\\12.png.meta",
+      "sha256": "27C25CC3F0D7BCFE5A7FEFEE6473FAEE25250693D480C9E9BE4FA1B3CB51A54D",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-attack\\13.png",
+      "sha256": "A70C9123D23E285F9A8B93AB204263B1AF7ADC15875ACC39DF79D1EE3AB9CE74",
+      "bytes": 6590
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-attack\\13.png.meta",
+      "sha256": "195CD7159FB279E20C844A69EB58DCB6B67849516665E3E4A19770FA52345D15",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-attack\\14.png",
+      "sha256": "8F85CAEEDA968E8C448908A7278706557DB26988748C28D67D5E51BE87E9A80B",
+      "bytes": 6837
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-attack\\14.png.meta",
+      "sha256": "655C2051A6DD929905BB8A0047F284091220E7BF4DE9350A526FBA74B1F3CC13",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-attack\\15.png",
+      "sha256": "C300E0D5731B5C23C7CE1B8FC72946E947F978C483D3EDE357D3816E1F1FF362",
+      "bytes": 7159
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-attack\\15.png.meta",
+      "sha256": "8948A3C1DADDD38FCB5EFF1AF528510DCA58AEE95FA5F9D454AACF36CD1FF0E0",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-attack\\18.png",
+      "sha256": "E8D324CFECA22D21A548178B8BD147EA6E29A57D1D9430D45C75144989E88209",
+      "bytes": 7678
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-attack\\18.png.meta",
+      "sha256": "CE22C5ABD66698D46EDD0FBE92AF85A6E993EABD378F02D5D93421B0D362026C",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-attack\\19.png",
+      "sha256": "1FCFA0CF2C756F9A9B5D8514556E84FE5C0AE690F5C628B162689819D502B88C",
+      "bytes": 9654
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-attack\\19.png.meta",
+      "sha256": "2D7D221162A506A12EEB17FDB7FB37E6256F693DFF4779F04F2E3A480CB1F8BA",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-attack\\20.png",
+      "sha256": "F8DDEC91B064CA0300D8852AC24C5E694A4CFF091E5A5DAEB3BDBB3C450CE936",
+      "bytes": 8718
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-attack\\20.png.meta",
+      "sha256": "CD480FBDC44E1509E5AA2F1427C16154AA92E358AAEDC81224CCE7532A8AE87F",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-attack\\21.png",
+      "sha256": "466C00EDE4488DE4580A8962C95BBC5E89EDC6C9B7BBBD694DA29422847C7334",
+      "bytes": 8597
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-attack\\21.png.meta",
+      "sha256": "AA854CCB3F9BB0B6FC91D1995DD6E94A37B7280FCD1A60EEAE9CA0D70C5C8A49",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-attack\\22.png",
+      "sha256": "686EDAC0D03389460772C92DA665643F2795063967D3C20292C40E1C6B6E1953",
+      "bytes": 8576
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-attack\\22.png.meta",
+      "sha256": "E146EA8487179E0A3B8B985B0415C5CCE4862B0FD43E9AF3D915BC431FA38219",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-attack\\23.png",
+      "sha256": "8368EA227632C3B72F8590B4132B052A7BFF332836474F807CF681B83372C78E",
+      "bytes": 8191
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-attack\\23.png.meta",
+      "sha256": "1B39E422E5FFF6A9352A334425FA517B866C01944B11CF56B7908CE3E5A0C387",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-attack\\24.png",
+      "sha256": "E6D8CA8E9B81D8C9A9C1C86CC37EF9C67004CE6700B11A6D8A7C0A61B5CB0541",
+      "bytes": 7907
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-attack\\24.png.meta",
+      "sha256": "DC19F2F16ECBEA50DC27BB60C2B7BA4F77976CD64FF614F4133034A346E0242C",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-idle\\00.png",
+      "sha256": "B9F1CE6461578AE747A56888E087CD34D573D176A63A5B3E7FBF7BD1E069C0F0",
+      "bytes": 14292
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-idle\\00.png.meta",
+      "sha256": "CD91DA2BA598BAB9868E0FC4D1B79E681BF539798BADE29DE8362F5D85AD3F6B",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-v6-hit-clean\\00.png",
+      "sha256": "650F5C475A1D97B263C3D40A17657E6C0ECC9F16D6C7A1C64434B581A5DC2724",
+      "bytes": 14225
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-v6-hit-clean\\00.png.meta",
+      "sha256": "7422F72263028B5CA2F4B71AFBAB226908A82FEE1126634B3E6C4EC94C6A9BEE",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-v6-hit-clean\\01.png",
+      "sha256": "7D2177BD1DBC9F5DBC13EB16BAE055454AAE0E4100E8BDFA249B0D1145EF2AF6",
+      "bytes": 8246
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-v6-hit-clean\\01.png.meta",
+      "sha256": "C3FE5F8AD5E50F100EC166532938F56C1B49E87EF691AA70BBFEB99E9142F783",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-v6-hit-clean\\02.png",
+      "sha256": "F56DF048DC89EA5A093D6AF757D1BBB3374BACBAB99718131BE32606C7061143",
+      "bytes": 8133
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-v6-hit-clean\\02.png.meta",
+      "sha256": "DBFB09D455E445E9E9EEEBBE4DA371BB9AD50A9295B158661C06CAC1D01965DE",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-v6-hit-clean\\04.png",
+      "sha256": "D9F3992E8361EEDC72463B81863621D1B62F0A132C76DB8D242AD5760AA07664",
+      "bytes": 7890
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-v6-hit-clean\\04.png.meta",
+      "sha256": "D49AC10FB711B84D57CAE13AA37D442C9BA988315E4FFF846F466F771B7C9E7D",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-v6-hit-clean\\07.png",
+      "sha256": "32C7D2AC1001D68846FE6B895409929F555BB0607D6E6CE13F634E0694D49789",
+      "bytes": 7789
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-v6-hit-clean\\07.png.meta",
+      "sha256": "92B19DD9A2C689C6E68548AA9C30197D334AB785D2DF022FE4335989C7ABCF13",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-v6-hit-clean\\09.png",
+      "sha256": "C194FE2F3731F920464C6AB127095F374D5B01E1EA915343E49210F3BA79128B",
+      "bytes": 8054
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-v6-hit-clean\\09.png.meta",
+      "sha256": "7FAB92716ED51D60B3ABEF3FA10F320030966D9A91A7E63E61096B32ACC4353C",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-v6-hit-clean\\10.png",
+      "sha256": "B92B62F3C4D733B0AC1C24950CB7660FD050854CF359EE274BA1A11DB6ABC1C2",
+      "bytes": 8243
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-v6-hit-clean\\10.png.meta",
+      "sha256": "6ED54EE916F7221D64980C4E68C9728572BDDC119558FB7C3BC4620E56DAE310",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-v6-hit-clean\\11.png",
+      "sha256": "60E77B05CE9E31DFA747035E891F54C53A003232788199F53B02FF6EFCA1D02C",
+      "bytes": 7823
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-v6-hit-clean\\11.png.meta",
+      "sha256": "366E6A5C68778ABD68C3E7B4221EEEB4BCFBC2ECE33F602F0CA6B1E77665B565",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-v6-hit-clean\\16.png",
+      "sha256": "E196540AEC201AF0B2F25B8E506BEDB64F6E7ECB05F504CF87A3E32F0EA7072D",
+      "bytes": 7508
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\warden-v6-hit-clean\\16.png.meta",
+      "sha256": "E6C2FBF453AD65991EC1B53291DB1E2259C4927AA30579B291A8EC05B493B0DF",
+      "bytes": 3406
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-attack\\01.png",
+      "sha256": "F60948CBAE8FFD300A7022CF3FA29BF6EC9B7E8998C7BC3AF76B52966867319E",
+      "bytes": 3869
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-attack\\01.png.meta",
+      "sha256": "CCEB2FB3591AD85EF54A503676F7511BF6486BDAB04821472B687FFEE071FB8E",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-attack\\05.png",
+      "sha256": "A3A910E422BFC4E19004DB2FDCC6C458E1ACB85A91E2436FD090B2F705CA1994",
+      "bytes": 3931
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-attack\\05.png.meta",
+      "sha256": "FE2DB6712DD02B7E1B43F02CB190B865490B8816CE68AD250D24AF438A696F48",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-attack\\06.png",
+      "sha256": "D0296AC00CBDC5A0DBC67678DB5B0A10EE897A985DEB6038E3BE05133ACEE429",
+      "bytes": 3782
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-attack\\06.png.meta",
+      "sha256": "9D2C6C20AD6D49FA4B2728AB3AA90B3DDE6BCD2B8D5BB630993D01E4A8474E8E",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-attack\\10.png",
+      "sha256": "37A2B16FD69A40B424618DC6F97C5A5F0029DC687AEF8E6D84E7C8EEAF5E6C29",
+      "bytes": 3680
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-attack\\10.png.meta",
+      "sha256": "DC738F81244F4DE0846000295EC3B70FA493A99814ECDDB83759F88AC811DC96",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-attack\\11.png",
+      "sha256": "AA2A3E77B7235BCB12457CF370D14CD2F501A14E9ADA65A6DC56EBABC7B48CEF",
+      "bytes": 4535
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-attack\\11.png.meta",
+      "sha256": "26265FA6D1A527DAE8F3985696FC15CFDE23C65ACE2E7EFFFEC67A1FC91326F7",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-attack\\12.png",
+      "sha256": "25E243994B575A8A9EFE5443C82A83C0B8B2F00391F4F8770BB5D7F9F3C0B629",
+      "bytes": 4185
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-attack\\12.png.meta",
+      "sha256": "7316BD4ABE2B6E16FA071E30911ED40074E9CB93FC9DC4693A8D2B652F963C3A",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-attack\\13.png",
+      "sha256": "A43E7B41F1D58F56882AFF56FDF729817BE342ABD5C94F666E6D8D7CAFA3FAD0",
+      "bytes": 4165
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-attack\\13.png.meta",
+      "sha256": "909A15241E0B3FFD4305B26E48DF108BB14C49D36AE0211A99B4E3DF0A4DB174",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-attack\\14.png",
+      "sha256": "03AE0A70BCE552B86A859F81C2431961A73AB764C5C3B0A4A383F5B4093F7549",
+      "bytes": 4349
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-attack\\14.png.meta",
+      "sha256": "832CCF71F0932E51CB119F6DF4B60C5AF03F97BC8E07A7F46C7CB4A485B3DD50",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-attack\\18.png",
+      "sha256": "9A38557F63366964D44A37DF8114352B543297989D48EC654626D6FAEDB1932C",
+      "bytes": 4436
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-attack\\18.png.meta",
+      "sha256": "A51B91025B99B8D46EF393F1350CBCCEDDAAD8C81C826310C6F191CF05387805",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-attack\\19.png",
+      "sha256": "A731C43E4B1EBEB744019B465793E2E5A033F8AA85AFF30FFCC739865E9C908A",
+      "bytes": 4381
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-attack\\19.png.meta",
+      "sha256": "F27ED83F3481DB1E98E0728A515086750772566761950DBFC4CB121FFEBDA7EA",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-attack\\20.png",
+      "sha256": "E5AB7D30BA28805501E669DE5505F5CB5B01FAC015FC86B2AD70550B71930561",
+      "bytes": 4445
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-attack\\20.png.meta",
+      "sha256": "D1BBBE1A3BEFE95428BFA7AD516A28ECA702B55AC741887E49539A1F1A212113",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-attack\\21.png",
+      "sha256": "B7F71B82004232F625CF81D412EAE16FFA2EFB8AAB852E4C270D42427D299074",
+      "bytes": 4226
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-attack\\21.png.meta",
+      "sha256": "BD37962D4F29065F6D2D4C6DD6E3C92649F571B7532717B0137B8738CBAAE6EE",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-attack\\22.png",
+      "sha256": "B99560E678FA639C3317CA78C723F76411B7323BA3B4223128456B63F14199EE",
+      "bytes": 3824
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-attack\\22.png.meta",
+      "sha256": "A917241A579BCD290FCEFB66C69CF2638DC02788C5178790D1A7C13F51919F3F",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-attack\\24.png",
+      "sha256": "F62DEDE66E7883926C4FC17F41C3B48EA3B0CF11034EB1642FEC0C25F01D2812",
+      "bytes": 3818
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-attack\\24.png.meta",
+      "sha256": "AED10066FCE560C343F188E274D3E24904667C6B4B88D18A239C5A9748346531",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-idle\\00.png",
+      "sha256": "4535A26D9EBCB2DC3C97820629A5C4C196C3FD9CFB945A9C9ADE1DD25EEBDBA8",
+      "bytes": 8195
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-idle\\00.png.meta",
+      "sha256": "8C0D8E7845F59491C38C271E97A715B9B975B82037F8811E37D765CFA2C311C6",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-v6-hit-clean\\00.png",
+      "sha256": "39946F4559B439BA2DC0F2814BC66707219E4480E9F300609DEBC4C11C77DDBF",
+      "bytes": 8159
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-v6-hit-clean\\00.png.meta",
+      "sha256": "B68960BE244B01EB07650387041F4557731D469F9A50B41D70E7FCA7E45D0FBA",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-v6-hit-clean\\02.png",
+      "sha256": "3520B693868C3FA73D25F5DF6087FCB4BCF85CD806922F53C1F5D50B52F9CE17",
+      "bytes": 4157
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-v6-hit-clean\\02.png.meta",
+      "sha256": "888C83B1E8EE371B8BEBB9CFD993F22DE53DF7EB09624B26C680A80C6C0C7136",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-v6-hit-clean\\03.png",
+      "sha256": "8935AD75DFA94E2F185D15FDE4626F32240B9D1851B18D872A2F4F31D06F0050",
+      "bytes": 4698
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-v6-hit-clean\\03.png.meta",
+      "sha256": "4179205D5C67CA2805B7F5610B74ABFCA98B3408EE3DFBDB8FA2F0A2DBD45551",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-v6-hit-clean\\04.png",
+      "sha256": "464953D7B57418F1AC986D05DE9D91C02B85FBB3BB49C541E6C1CF10CBC91DB1",
+      "bytes": 3922
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-v6-hit-clean\\04.png.meta",
+      "sha256": "849924F0E5F071BC0BE999871FF3D34A9FBDA1F7DFC46087987D71C63BF3E8E1",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-v6-hit-clean\\09.png",
+      "sha256": "4E856DFB4FBAF5609AA03F28E0189E86E0F52E959EDE43DAFFC8DF6251707869",
+      "bytes": 3876
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-v6-hit-clean\\09.png.meta",
+      "sha256": "11B78C997E17FC729328CD628473B58A00FD643DCF6F012E26AEFFD8D111B885",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-v6-hit-clean\\10.png",
+      "sha256": "4CFBF2166E1EC77C7D90FF8ED365F1836A8E35C24AF2A50730B439A827F3E9B5",
+      "bytes": 4326
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-v6-hit-clean\\10.png.meta",
+      "sha256": "4828ECE462112CDF3973267C42280B09AF114178AD93EE879AA8FCA17D043711",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-v6-hit-clean\\11.png",
+      "sha256": "B03E56B573F59FEE3D136021813ECA22F3A0C7AC5C3FEB5725E875812659F3D5",
+      "bytes": 4459
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-v6-hit-clean\\11.png.meta",
+      "sha256": "337CB7CF94CEB72F7FEA19A7CE0EF3FE6A281FF43F6AC807BC392207C49FE15C",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-v6-hit-clean\\12.png",
+      "sha256": "080D3A895D21C9432C9E87B122B42E46E058D46893BC86349C380EF41D929C0B",
+      "bytes": 3690
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-v6-hit-clean\\12.png.meta",
+      "sha256": "78DFB367586F5FBD83661EA2DA89528125957077F1F9531386629BDF77335588",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-v6-hit-clean\\16.png",
+      "sha256": "83B33A4040CB1BF6C3C0EEBB2E8C04DD1C274F4FDFE26E47CCCB33399838B62C",
+      "bytes": 3214
+    },
+    {
+      "path": "Assets\\Game\\Art\\Presentation\\Clips\\wisp-v6-hit-clean\\16.png.meta",
+      "sha256": "B47D6D69E1F36008CF30EC987E768397D161B0CA6A37D652ACDB7ECC544F2EF0",
+      "bytes": 3405
+    },
+    {
+      "path": "Assets\\Game\\Art\\Source\\gate-background-v1.png",
+      "sha256": "E419C7D1E49BE7D42ADFA28171D28E4506CD13E18BD231017AC25373C514154C",
+      "bytes": 1312996
+    },
+    {
+      "path": "Assets\\Game\\Art\\Source\\gate-background-v1.png.meta",
+      "sha256": "74F0DB03601BE1E3F3DE38EA0CC84CAA04485CC7CABD85099A062B35764E63FC",
+      "bytes": 3396
+    },
+    {
+      "path": "Assets\\Game\\Art\\Source\\gate-enemies-v1.png",
+      "sha256": "9749CE4D1C8D01F20A9D378DD585341CA1FE85D0CECA8B8765FB1E147C34B2B9",
+      "bytes": 965767
+    },
+    {
+      "path": "Assets\\Game\\Art\\Source\\gate-enemies-v1.png.meta",
+      "sha256": "F6F7E5913BB97EDD2DF9CD2202C39C17C9F867C4FAAC312C39C36F24CD10A271",
+      "bytes": 11548
+    },
+    {
+      "path": "Assets\\Game\\Art\\Source\\on-poses-v1.png",
+      "sha256": "9F9CAF4057C3E1386327FC9D19EB1C46B04DF0C2DF4D5A8C58A2591209563F30",
+      "bytes": 609389
+    },
+    {
+      "path": "Assets\\Game\\Art\\Source\\on-poses-v1.png.meta",
+      "sha256": "8EC14E3B67695E442407A9E597898EF5684D101B4C15D80D7CC5D0E4742DD4CB",
+      "bytes": 7698
+    },
+    {
+      "path": "Assets\\Game\\Art\\UI\\WhitePixel.png",
+      "sha256": "2C5AAF41BB79B35D23604986F34BCAC5674F30BE3D718990FA8B02E8F8935B19",
+      "bytes": 68
+    },
+    {
+      "path": "Assets\\Game\\Art\\UI\\WhitePixel.png.meta",
+      "sha256": "CB2E7A600777E24C591D48923C351D9C5B23D3BECCFA4B122329C6C95A4C0B09",
+      "bytes": 3394
+    },
+    {
+      "path": "Assets\\Game\\Audio\\Presentation.meta",
+      "sha256": "55E4778EF44E146F20846C6821A118D9E5182D959B9DE65F204F06B68FB3A604",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Audio\\Presentation\\audio-provenance.json",
+      "sha256": "B0057F2DFD70001EBACD407F2A7B05BD73967C4931F12581193ACD210FB6DBB5",
+      "bytes": 3578
+    },
+    {
+      "path": "Assets\\Game\\Audio\\Presentation\\audio-provenance.json.meta",
+      "sha256": "9361D04E0E23850AC63A133453F3B43BE91AB16E168A2AF7840499CDEA5EA1A0",
+      "bytes": 158
+    },
+    {
+      "path": "Assets\\Game\\Audio\\Presentation\\battle-bells.wav",
+      "sha256": "ED6352694ACF2E0FFA2906F721406CFA3F3BEF540C737CB0C6D0B807A899B36B",
+      "bytes": 882044
+    },
+    {
+      "path": "Assets\\Game\\Audio\\Presentation\\battle-bells.wav.meta",
+      "sha256": "F09F3CBD2F9F075C96D96F79A1049BC8DA830AF2DF5DB9170FA12BBA2810AEF8",
+      "bytes": 487
+    },
+    {
+      "path": "Assets\\Game\\Audio\\Presentation\\boss-bells.wav",
+      "sha256": "EF5DC1E9620224FE8F6691339353F75B726648080107C19F27628E6EEE569EF9",
+      "bytes": 705644
+    },
+    {
+      "path": "Assets\\Game\\Audio\\Presentation\\boss-bells.wav.meta",
+      "sha256": "27439C254E9A3F3129D0B020EEEB74C07DA4149133F7B9F6C95E7EEE1232F61D",
+      "bytes": 487
+    },
+    {
+      "path": "Assets\\Game\\Audio\\Presentation\\boss-roar.wav",
+      "sha256": "6088D1CE5A873B8842A44AC059EB1727610F6D2D1FABB2108EEB2A928BF08DBF",
+      "bytes": 44144
+    },
+    {
+      "path": "Assets\\Game\\Audio\\Presentation\\boss-roar.wav.meta",
+      "sha256": "DF884287A5A48002323DBEA5860B14CB04DDEAEEBBD91BB5F86D5F41BF8D6DD6",
+      "bytes": 487
+    },
+    {
+      "path": "Assets\\Game\\Audio\\Presentation\\CREDITS.txt",
+      "sha256": "EA4D692D0D91A8D3E0C210A0A39961DA6F4451884145AE0568DC09BCEF6246A9",
+      "bytes": 175
+    },
+    {
+      "path": "Assets\\Game\\Audio\\Presentation\\CREDITS.txt.meta",
+      "sha256": "E8AB1DEEF2401BE50C3317EDF7A09C25EC6A53A2C477323681D11F2863FF7CB6",
+      "bytes": 158
+    },
+    {
+      "path": "Assets\\Game\\Audio\\Presentation\\critical-bell.wav",
+      "sha256": "E9F4BE716F311C889A2AF34E791E080211267CB3A6D4E3529E427F49FD2586C8",
+      "bytes": 22094
+    },
+    {
+      "path": "Assets\\Game\\Audio\\Presentation\\critical-bell.wav.meta",
+      "sha256": "4A554E0805FBA7E17590782EFC8EAF148424546CD5C0045D7323E084EB281DD3",
+      "bytes": 487
+    },
+    {
+      "path": "Assets\\Game\\Audio\\Presentation\\footstep03.ogg",
+      "sha256": "A86756B9AF9F370455AB47844239BB07FD1BEE7A113068C91F0FCD9B72703FAE",
+      "bytes": 10559
+    },
+    {
+      "path": "Assets\\Game\\Audio\\Presentation\\footstep03.ogg.meta",
+      "sha256": "0405DE1FF237E883434A521B1A0919BE28F732030C5EAF4E40A3CAED6F8A7D45",
+      "bytes": 487
+    },
+    {
+      "path": "Assets\\Game\\Audio\\Presentation\\hit.ogg",
+      "sha256": "E8A9EABA7C4D27422E4EEB3E6C7100D5D7DC0F83E005EFC98C960ADCC5265337",
+      "bytes": 6151
+    },
+    {
+      "path": "Assets\\Game\\Audio\\Presentation\\hit.ogg.meta",
+      "sha256": "25D683CD430653827A3D0A870DB069475EB4CE58656D5E8294EC2EF2DC97DF0B",
+      "bytes": 487
+    },
+    {
+      "path": "Assets\\Game\\Audio\\Presentation\\impact-LICENSE.txt",
+      "sha256": "B49AA9C56B04528B95913DE13E506A0F7C5E807B9925DB9BFEF86AF1F91120DB",
+      "bytes": 608
+    },
+    {
+      "path": "Assets\\Game\\Audio\\Presentation\\impact-LICENSE.txt.meta",
+      "sha256": "6ECC237C6B1B3DD53D9B78666E71E1AECD532E42290D815D246142598D03F2DC",
+      "bytes": 158
+    },
+    {
+      "path": "Assets\\Game\\Audio\\Presentation\\knifeSlice.ogg",
+      "sha256": "4CD96DC630BED9840C15F1DD2306DA2CC56A4DA26A5D3F1A03C5A7265AC5E54F",
+      "bytes": 15532
+    },
+    {
+      "path": "Assets\\Game\\Audio\\Presentation\\knifeSlice.ogg.meta",
+      "sha256": "3A68D4CE98002B65CD39B7B518E7D43177D555C70303F9468999F609D8D15518",
+      "bytes": 487
+    },
+    {
+      "path": "Assets\\Game\\Audio\\Presentation\\lantern-ignite.wav",
+      "sha256": "2BAA7E94E6D1302A8A3BC4877099622E55E9582A3A655CE682491B20AB33331C",
+      "bytes": 28708
+    },
+    {
+      "path": "Assets\\Game\\Audio\\Presentation\\lantern-ignite.wav.meta",
+      "sha256": "7CC173CF159482CADD4B6339328B9E45A4FB4447DF84740C782819079261B43A",
+      "bytes": 487
+    },
+    {
+      "path": "Assets\\Game\\Audio\\Presentation\\lobby-bells.wav",
+      "sha256": "AD78AF16C6C7D75A621E3F494B83F5834DCA45A2DE7CABF269C8988E09970841",
+      "bytes": 1176044
+    },
+    {
+      "path": "Assets\\Game\\Audio\\Presentation\\lobby-bells.wav.meta",
+      "sha256": "3F7612CBF795603200D4CFEF0E05A76FBD66ABAF34DB33F237CD8A97F9ADA72E",
+      "bytes": 487
+    },
+    {
+      "path": "Assets\\Game\\Audio\\Presentation\\mini-roar.wav",
+      "sha256": "D3557D7475AEEA5E4FE23E88CC8CA859C98E276D3762974D324F6924430DA5E9",
+      "bytes": 33118
+    },
+    {
+      "path": "Assets\\Game\\Audio\\Presentation\\mini-roar.wav.meta",
+      "sha256": "22695362168A9004A3610F165C1F543420E603A8A1C9C28D93550A1C512799B4",
+      "bytes": 487
+    },
+    {
+      "path": "Assets\\Game\\Audio\\Presentation\\perfect-dodge.wav",
+      "sha256": "A07049B64E13A641228E1B9AD6D7A0716A78602E215497198393ED557FA944D5",
+      "bytes": 11068
+    },
+    {
+      "path": "Assets\\Game\\Audio\\Presentation\\perfect-dodge.wav.meta",
+      "sha256": "503C91E8721C131570A04D76D284263A6118EF38F3B38CFA4B48768502BFF0E4",
+      "bytes": 487
+    },
+    {
+      "path": "Assets\\Game\\Audio\\Presentation\\rpg-LICENSE.txt",
+      "sha256": "5735DFD72CB64CBBCEDA4EBC00C380C41CA680EDB82FF153AA7C9AB97614C539",
+      "bytes": 478
+    },
+    {
+      "path": "Assets\\Game\\Audio\\Presentation\\rpg-LICENSE.txt.meta",
+      "sha256": "B6FC3747D068A1A315477B0A89A9AECD360A3E89004F06AFDA858D5657544B48",
+      "bytes": 158
+    },
+    {
+      "path": "Assets\\Game\\Audio\\Presentation\\spike.ogg",
+      "sha256": "F1B07A53AC10C615FFF9BA470511FDEB722B5902E1A8520759FC20AD6F546015",
+      "bytes": 6239
+    },
+    {
+      "path": "Assets\\Game\\Audio\\Presentation\\spike.ogg.meta",
+      "sha256": "3F946D07A7819BF3F0313C41474E505EED54BFB23FCAE935C47D21C7DF3B7DC4",
+      "bytes": 487
+    },
+    {
+      "path": "Assets\\Game\\Data\\Generated.meta",
+      "sha256": "F4C3A39AA2AA357CD8CD46D1A2AFA1BEC63C39BCD9E017CAC3A69C6E5007C00C",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Data\\Generated\\mvp-catalog.json",
+      "sha256": "A6763D50C465EF4FC1804F64C7849307A9DF8D38BEF4BD73CD9188C92D36BB08",
+      "bytes": 16462
+    },
+    {
+      "path": "Assets\\Game\\Data\\Generated\\mvp-catalog.json.meta",
+      "sha256": "F16A42CB996F1C6495E4B4FD6B3D2F84E06B0BF541DB1F047889DD73AAE4785D",
+      "bytes": 158
+    },
+    {
+      "path": "Assets\\Game\\Editor\\LastBell.Editor.asmdef",
+      "sha256": "4D0DC0249CB05E91C727C049D3AEAFDBCFB6CC4FC9DDCEC843C39877233D1DB0",
+      "bytes": 186
+    },
+    {
+      "path": "Assets\\Game\\Editor\\LastBell.Editor.asmdef.meta",
+      "sha256": "7DE50A4E26BAC78BC7786C663C9FFCD3E3FCFF684E33343A7196BC0B9F2FAD98",
+      "bytes": 166
+    },
+    {
+      "path": "Assets\\Game\\Editor\\LastBellMcpConnection.cs",
+      "sha256": "CFE5B9993C867515471B1DA427302DDEDF999AE6A3EE3C54CA5DF094489B40F0",
+      "bytes": 4809
+    },
+    {
+      "path": "Assets\\Game\\Editor\\LastBellMcpConnection.cs.meta",
+      "sha256": "D9B3F1767028FB2D999CBC004FF18A4CC282FA3EBFB01070EB8DB02A2A4EA450",
+      "bytes": 60
+    },
+    {
+      "path": "Assets\\Game\\Editor\\MvpArtImporter.cs",
+      "sha256": "28336E4F5198B76CF79A22CB7D96D1760342AF512EA480CDB7152A3696D41A5B",
+      "bytes": 7652
+    },
+    {
+      "path": "Assets\\Game\\Editor\\MvpArtImporter.cs.meta",
+      "sha256": "58379BC994BD5AC4D7F8EFC004D6B8844A1346B3B90F8AB62CE7649F2C5E8CBF",
+      "bytes": 59
+    },
+    {
+      "path": "Assets\\Game\\Editor\\MvpBuild.cs",
+      "sha256": "D50A04B62FFDF52F772C94C1D8348F411F9C80D0EC5A8ECE5AFF0E53BDA30A39",
+      "bytes": 3810
+    },
+    {
+      "path": "Assets\\Game\\Editor\\MvpBuild.cs.meta",
+      "sha256": "3012E8CA8EA7C7A1EE827D9CABA657AC564922F440807CF48E3440676B7AD292",
+      "bytes": 59
+    },
+    {
+      "path": "Assets\\Game\\Editor\\MvpSceneBuilder.cs",
+      "sha256": "A7E84C79306B54C761D77686641D8A6C6F94007AD9631487F1898C4C42DFB49A",
+      "bytes": 34661
+    },
+    {
+      "path": "Assets\\Game\\Editor\\MvpSceneBuilder.cs.meta",
+      "sha256": "CFDA4C36A12951134487A02C6188F639D90730EC31A52FEC235F2BD26003E144",
+      "bytes": 59
+    },
+    {
+      "path": "Assets\\Game\\Editor\\ParallaxWorldBuilder.cs",
+      "sha256": "6EEB5426141B49A5565D084E8B1DA0D3FB68E518A350FE59D8637BE679C4B0EE",
+      "bytes": 7350
+    },
+    {
+      "path": "Assets\\Game\\Editor\\ParallaxWorldBuilder.cs.meta",
+      "sha256": "4485CC5856E1C4E2EDFA75AD280400564126C44014B2C1E21E11A1D4F71599F2",
+      "bytes": 60
+    },
+    {
+      "path": "Assets\\Game\\Editor\\PresentationArtImporter.cs",
+      "sha256": "1141FD5E041AD7D2636E15CB1DD542952A7B656239420111F31A34002D364B3B",
+      "bytes": 16377
+    },
+    {
+      "path": "Assets\\Game\\Editor\\PresentationArtImporter.cs.meta",
+      "sha256": "C3124CFA2461EDB1C6211D2EE396C4399332D09AAA2FB2DCBB8D933C0CD59258",
+      "bytes": 59
+    },
+    {
+      "path": "Assets\\Game\\Editor\\PresentationMigration.cs",
+      "sha256": "C28D2349C2362F9345CFD2CB3FD756C26D08235AF458CD6E2FF2E916F085CBC7",
+      "bytes": 10843
+    },
+    {
+      "path": "Assets\\Game\\Editor\\PresentationMigration.cs.meta",
+      "sha256": "086011CFDA9A5105E805B08E9F36CBD67181449581A9015B0B313D3B0DB7B6E4",
+      "bytes": 59
+    },
+    {
+      "path": "Assets\\Game\\Editor\\PresentationVfxBuilder.cs",
+      "sha256": "7120B5A60DC3F1D2D3D1C099CF7AFF178D72F7C04D2B104E64721103F08FF12A",
+      "bytes": 5723
+    },
+    {
+      "path": "Assets\\Game\\Editor\\PresentationVfxBuilder.cs.meta",
+      "sha256": "830D1C712F71DC5E602D25A8A0E343E1E2BD0DBBD2ECA23BD462731F6BC4FB6B",
+      "bytes": 60
+    },
+    {
+      "path": "Assets\\Game\\Prefabs\\Actor.prefab",
+      "sha256": "DCFFE4A536FBE08735447951F978C4C77DA36037D6ED1292945A4B5B4A55F9AA",
+      "bytes": 4106
+    },
+    {
+      "path": "Assets\\Game\\Prefabs\\Actor.prefab.meta",
+      "sha256": "19A34EA47691596C6AB20E18A38CFC941243AB213081D43C2E3BB6042050A988",
+      "bytes": 154
+    },
+    {
+      "path": "Assets\\Game\\Prefabs\\GameView.prefab",
+      "sha256": "6EDD242DB392BE4C84F8AF72E9E66FDFFE872265C2324A44D581301D881F719A",
+      "bytes": 657416
+    },
+    {
+      "path": "Assets\\Game\\Prefabs\\GameView.prefab.meta",
+      "sha256": "2002B188C6FCE805D626279B90CF52C23A53F0A25B0F76305EC17977B557B529",
+      "bytes": 154
+    },
+    {
+      "path": "Assets\\Game\\Prefabs\\PresentationAudio.prefab",
+      "sha256": "19E6F987210752E2789047A84A39AC7973F9A3EF7ED3E84EC0268F9AEDBF550A",
+      "bytes": 6713
+    },
+    {
+      "path": "Assets\\Game\\Prefabs\\PresentationAudio.prefab.meta",
+      "sha256": "E0964B25A75DC64E7DE80B06A7003B1014F6C413252BCEB47C554FF624847841",
+      "bytes": 154
+    },
+    {
+      "path": "Assets\\Game\\Prefabs\\PresentationWorld.prefab",
+      "sha256": "5D0CBDA49999314AE4E078963C7DA7154C8FD12423166E95331063FCCD110ED1",
+      "bytes": 71741
+    },
+    {
+      "path": "Assets\\Game\\Prefabs\\PresentationWorld.prefab.meta",
+      "sha256": "7A50BB9CBDC17FCA346FB187DC77EF2053A09CEC7AD1D919D57877CF28388CCB",
+      "bytes": 154
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Art.meta",
+      "sha256": "E97846D15777846166EBDF485517356B861517640B34909A7D758A0074383436",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Bootstrap.meta",
+      "sha256": "A4FB83D94E12E972065E3F42B7F984C666BACE52AC22CD8D9FD161B60F0180F1",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Core.meta",
+      "sha256": "0E10F12BC0536CBEDAF4A0B4579904CFDDF47A9AD151B28FCEE2069F578BBCD7",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Data.meta",
+      "sha256": "7F287C2E6BD2FBE228570E4E090075ED17497C15CE80D2853D7150C86642268A",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\LastBell.Runtime.asmdef",
+      "sha256": "BD4F59D2EED8D004310017767C87F8668C0099C92836BC7CCB4D42760EA01FD1",
+      "bytes": 126
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\LastBell.Runtime.asmdef.meta",
+      "sha256": "FF7312DB0DA9571E620DB3F73CFECD9B7B7B5A86C0EFE77E89EAB0C810662607",
+      "bytes": 166
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Presentation.meta",
+      "sha256": "DF9F7FE46790317AB74F3992847F74E20F2D69AD2FFFA72D922942B20CF78604",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Art\\ArtCatalog.cs",
+      "sha256": "E39F453E41EBC282180DDB03F5B6101EB954402F662A46DC718C9B554AD17A6A",
+      "bytes": 3769
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Art\\ArtCatalog.cs.meta",
+      "sha256": "21B69B645562D7F624F14D80096386C18331A05E2C60E1CE1B2EBCD07AC5B735",
+      "bytes": 59
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Bootstrap\\GameBootstrap.cs",
+      "sha256": "438866184865FE302278E244DDC35818A68E5034E45607F23689D972735FC169",
+      "bytes": 3360
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Bootstrap\\GameBootstrap.cs.meta",
+      "sha256": "A48D9CAF558DB6E7C56BF504B3155EE8A96F74DD92C4C1917533B2B581C6729C",
+      "bytes": 59
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Bootstrap\\JsonSaveRepository.cs",
+      "sha256": "B9112058D59A15AECDFBCDEF5C346D9DC128E4CAD7E543C549A13010448F44C5",
+      "bytes": 2941
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Bootstrap\\JsonSaveRepository.cs.meta",
+      "sha256": "7552CF86F86DF687DB0AAF3C5E73EADF21EB916CF8B6E8364697FC8341D0E95F",
+      "bytes": 59
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Bootstrap\\MvpSmokeProbe.cs",
+      "sha256": "93DBBD4921F0BACA2D4A427BBBEA2C5A96124632AAE942723A257B39CFADAFCB",
+      "bytes": 16683
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Bootstrap\\MvpSmokeProbe.cs.meta",
+      "sha256": "F890BE3EAAAF07B72193AA2E0190875AE832639F05786800A7EE31F461CCEF66",
+      "bytes": 59
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Core\\GameSession.Combat.cs",
+      "sha256": "F3A1F9978BEF84C1347B8844193B338BFF2110AEBCEC97C74C834E48CD4A195E",
+      "bytes": 11515
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Core\\GameSession.Combat.cs.meta",
+      "sha256": "9E4FDE0594FEC3C01E2EED4612DF3B130D7948ADA05D7F9BFA79BD08BA6C830F",
+      "bytes": 59
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Core\\GameSession.cs",
+      "sha256": "73CE3DAF8591F811EDB14AD6EC11D2C11296E5C525E814E3B4741D290E2C7F12",
+      "bytes": 6123
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Core\\GameSession.cs.meta",
+      "sha256": "A057002082E51D6EDC26C01B8001EBD42EF986A3F5414546D76D3B7DA140B049",
+      "bytes": 59
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Core\\GameSession.Economy.cs",
+      "sha256": "346526C8DAA840DF776E685157070195F074A72A819F55AD41877A7C2C6AC11C",
+      "bytes": 6278
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Core\\GameSession.Economy.cs.meta",
+      "sha256": "CA7BF6C0775C17DCAA7426E5FA2CB660568A8DBA010D4A9B90DD2BB42BC123B7",
+      "bytes": 59
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Core\\GameSession.Progression.cs",
+      "sha256": "AA6CF1748A4E8F1A54485A2E8C4C0B818DDAEECEA98B937EBEEB16C1DA4102CC",
+      "bytes": 8165
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Core\\GameSession.Progression.cs.meta",
+      "sha256": "11E639F6C633517F13AAF64627CAF5013D5892270E3740DD1AD8D5E2AC8FCD9F",
+      "bytes": 59
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Core\\GameSession.State.cs",
+      "sha256": "14E5E5FAB98E276510A381435FAFE76F17B3420314F12FB26B7263D2ED6D5EBD",
+      "bytes": 14214
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Core\\GameSession.State.cs.meta",
+      "sha256": "8B410FC21F5E874EBBA181B357271A212C12C12B6394C7600185C5D0599BEE30",
+      "bytes": 59
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Core\\GameSession.Transitions.cs",
+      "sha256": "D5B9CAC29B1F1B36675C84296C9515A2B68CAD19AADAB2E995B2EA9B21ABE805",
+      "bytes": 6965
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Core\\GameSession.Transitions.cs.meta",
+      "sha256": "14D7D4AFE4849FD8F35C2314FEDB4E5ACC9C6B8C16214EFB322295B93E9C3BF3",
+      "bytes": 62
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Core\\SessionState.cs",
+      "sha256": "D35893E73CDB70D9A4EEF59A92D48944BF4478B3FB465663DAE46D8328D7E406",
+      "bytes": 8545
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Core\\SessionState.cs.meta",
+      "sha256": "8674C8A3566BECEC179CD7904BDE16F5DBAAE98CF40F8FA33A001B24528E283F",
+      "bytes": 59
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Data\\GameCatalog.cs",
+      "sha256": "C9592E924FEBB4B9B31F9F19B69F9EE06389AE14A69999CBC2C86159644D85E3",
+      "bytes": 22943
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Data\\GameCatalog.cs.meta",
+      "sha256": "771CF722443D36A85AE7B5FE137BFFA12488C3180218D370B3D03E5199620C50",
+      "bytes": 59
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Presentation\\ActorView.cs",
+      "sha256": "23175F0DE30E083B11705A748FCCE7B6E43323064235EFB9B5CE1AD6A0479DF3",
+      "bytes": 10187
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Presentation\\ActorView.cs.meta",
+      "sha256": "037DB91CA781E4600058576EE5F3B0F6C6A51572E0AA85DBF4A9267274B5A6CB",
+      "bytes": 59
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Presentation\\BattleAudio.cs",
+      "sha256": "74AD3B9B637CC31240A2B4ECF3DC9E9A9E3CBD16082593A493C03DBB8134D83D",
+      "bytes": 1552
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Presentation\\BattleAudio.cs.meta",
+      "sha256": "E84E6D96122527AEFB6E0304D7439AC2F478E4C6B095985DBB2ACAB845659A42",
+      "bytes": 59
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Presentation\\BattleEffects.cs",
+      "sha256": "91F2656E5554151D4E9BCA07B9C14DF0CD97F60C58379827F3DB72586F506AD6",
+      "bytes": 4227
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Presentation\\BattleEffects.cs.meta",
+      "sha256": "74E8652BACD8A54CAFE25E9016F9DA256CD2163DD5DEF2894E4D89937A507BD6",
+      "bytes": 59
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Presentation\\BattlePresentation.cs",
+      "sha256": "FA3CA976AAF3AD8A12F3FF56C6D33702EA2C018DC93830AA929BF96C6E766E18",
+      "bytes": 14460
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Presentation\\BattlePresentation.cs.meta",
+      "sha256": "D018F6E6B1E6B78278933BCD54FA391A54A5F46DB47FBBD379F62BA94057EEC1",
+      "bytes": 59
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Presentation\\CombatVfx.cs",
+      "sha256": "2DFE99CE3FBBBB95D5FCCF49DE78EB37AB1AA64EB6A791D1461BFB46FAA45057",
+      "bytes": 7434
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Presentation\\CombatVfx.cs.meta",
+      "sha256": "EFE7F49139FB10BBA27CF3610D7EDF602E3FA5E819FC1F019B1BD407A53EDADC",
+      "bytes": 59
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Presentation\\DangerGraphic.cs",
+      "sha256": "A874ED00A18044B21143D447E784FDB4989B5098A2DB1FC2F64086C02DD1C54B",
+      "bytes": 6981
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Presentation\\DangerGraphic.cs.meta",
+      "sha256": "F321E547F0260858BAB5A4EAF53BB1D5E6C34F4848CC91FF5296C9A23A4EC701",
+      "bytes": 59
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Presentation\\MvpPresenter.cs",
+      "sha256": "3D5235E984D001C258676FF2C931936B39CDE9AD9CFFBB02263DAD14D6E15602",
+      "bytes": 22919
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Presentation\\MvpPresenter.cs.meta",
+      "sha256": "C7CDF738ACC42FB6D7B261EC602B6A82FB5698C5A38F93038E0B4D8EF4B6755A",
+      "bytes": 59
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Presentation\\MvpView.cs",
+      "sha256": "3AF915B2EFACE898E0B6D455009CC9060A460F9B9D53416C0276C8268A69C08D",
+      "bytes": 2692
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Presentation\\MvpView.cs.meta",
+      "sha256": "200A199ACC57632B975851CCF0CDEFA05AF05A2D542EDC618A1815FDF6CA78DA",
+      "bytes": 59
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Presentation\\ParallaxWorld.cs",
+      "sha256": "4E921ECBF32DA6127F05496A2ECDB46E38F9983CAA63C7BA626FCC80801CFC0F",
+      "bytes": 1216
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Presentation\\ParallaxWorld.cs.meta",
+      "sha256": "B73B8D0111E3034C2FC4891DC25D0A3BEC5282CFAA8200B828F513C261BF141C",
+      "bytes": 59
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Presentation\\PixelNumber.cs",
+      "sha256": "210455D16887B664C9B2C9C4940B7676A4D92202DFBD22CAB191C54242380724",
+      "bytes": 1949
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Presentation\\PixelNumber.cs.meta",
+      "sha256": "83F28FD76A524CC64A90F7461309A7885D38502076E6AAC78933742DC623DF8C",
+      "bytes": 59
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Presentation\\PointerCommand.cs",
+      "sha256": "362A567DB5D02E1F237C0FF37CE31C5E0B804DB7805E3200AF23B001CE24BAFE",
+      "bytes": 427
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Presentation\\PointerCommand.cs.meta",
+      "sha256": "C98055A9571B2477F1BC618782A4054209302F52F61E64B1B150A0245CBE4262",
+      "bytes": 59
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Presentation\\PresentationOverlay.cs",
+      "sha256": "D612358E6D6557883A4F50464F1BCFAF78FE7EA1FA91AEA2632B7877665043E9",
+      "bytes": 3557
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Presentation\\PresentationOverlay.cs.meta",
+      "sha256": "0FEB408816737D2413777A1B4EF99447C7537497CFA5364BB401B9AA1375AD7E",
+      "bytes": 60
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Presentation\\SafeAreaLayout.cs",
+      "sha256": "51C3361E917DF46B4ACB5C622F0710D4BCABA524DA1760B77A92BBAF3ABDFC4D",
+      "bytes": 930
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Presentation\\SafeAreaLayout.cs.meta",
+      "sha256": "020E096727E0D08D8C349786C36AF7FA110AEC66FEC06493216531B3A48FD59D",
+      "bytes": 59
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Presentation\\StageBannerGraphic.cs",
+      "sha256": "FF08F3401530E6917D8C2B2442F803672B7B62DD63747744C6361CD725DA0A45",
+      "bytes": 3396
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Presentation\\StageBannerGraphic.cs.meta",
+      "sha256": "02486D8C6EE1D8F5E50541E0324B71F9109C6A73AF6657CCF72F8E1A74C34940",
+      "bytes": 59
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Presentation\\SymbolGraphic.cs",
+      "sha256": "8B8DCEE4EE7BCB2D458446832502BF5876822CA30D8CA65F9A4E0239F3B09DF0",
+      "bytes": 3172
+    },
+    {
+      "path": "Assets\\Game\\Runtime\\Presentation\\SymbolGraphic.cs.meta",
+      "sha256": "DAC232FE53F08CC4C944F73442AE0FAB36555F324506831B9B247B055E542C6B",
+      "bytes": 59
+    },
+    {
+      "path": "Assets\\Game\\Scenes\\Mvp.unity",
+      "sha256": "4EE2EEFAFFD7DCB54D6D10097C8F7E5B11C5DF4D39589BF6324030F4C3835274",
+      "bytes": 55616
+    },
+    {
+      "path": "Assets\\Game\\Scenes\\Mvp.unity.meta",
+      "sha256": "A6ACB106B348E6F4D6C26829A747CA5302AA49BE333A1794CE39C9299CB6EEB1",
+      "bytes": 155
+    },
+    {
+      "path": "Assets\\Game\\Tests\\EditMode.meta",
+      "sha256": "7E38D9BFF6BEB7F4409B101AD7E3E586B96AAE81B9B740A5D864BBE48F9B5ADB",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Tests\\PlayMode.meta",
+      "sha256": "7195B7247AC2B62626BF4E8D946AB811D29DED822C09D47F6280AF695CFE0238",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Tests\\EditMode\\Core.meta",
+      "sha256": "27EBE00A5286864B3F9CEE710CFF73010353DFB3AD2C28E6118FCBC3FCAC21E2",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Tests\\EditMode\\Persistence.meta",
+      "sha256": "A11ECFF944084E95909422EFB260ADA5662AA1F9A090CB8AA68BDE7FAABC82D7",
+      "bytes": 172
+    },
+    {
+      "path": "Assets\\Game\\Tests\\EditMode\\Core\\GameSessionTests.cs",
+      "sha256": "195E043BFF6D173872F69699396A7A7A366172BD1A6B7250AEEC50DBD6572598",
+      "bytes": 45143
+    },
+    {
+      "path": "Assets\\Game\\Tests\\EditMode\\Core\\GameSessionTests.cs.meta",
+      "sha256": "8886DAF6CEB2EABDFC9D1C7ADD9A9B5398881AAD300E1C2222E4713F72FC563A",
+      "bytes": 59
+    },
+    {
+      "path": "Assets\\Game\\Tests\\EditMode\\Core\\LastBell.Core.Tests.asmdef",
+      "sha256": "9DB76A766B8B0BE43CCEAE2EEFD0A0D22409F8A8C6DCEB490C5E71A00E95A484",
+      "bytes": 221
+    },
+    {
+      "path": "Assets\\Game\\Tests\\EditMode\\Core\\LastBell.Core.Tests.asmdef.meta",
+      "sha256": "6A8326C63ACB80CD595903545AF7DDC02984531213C214CAB5C549CAFF88F8BE",
+      "bytes": 166
+    },
+    {
+      "path": "Assets\\Game\\Tests\\EditMode\\Persistence\\JsonSaveRepositoryTests.cs",
+      "sha256": "E5DE4C17B18ED1BD76F78D78E121F179C3A5BB52257C35AB14F95B6E7EF69AF2",
+      "bytes": 5041
+    },
+    {
+      "path": "Assets\\Game\\Tests\\EditMode\\Persistence\\JsonSaveRepositoryTests.cs.meta",
+      "sha256": "A9DC2CCBC4655945E7A0B9B2A0D1C2C5CD017F6ECCFBDB6304AFAF6DA2F7295C",
+      "bytes": 59
+    },
+    {
+      "path": "Assets\\Game\\Tests\\EditMode\\Persistence\\LastBell.Persistence.Tests.asmdef",
+      "sha256": "D982054DE0AF3B5792D6E6BD633429AE892D8554608998B01C2FBB11B47E6705",
+      "bytes": 164
+    },
+    {
+      "path": "Assets\\Game\\Tests\\EditMode\\Persistence\\LastBell.Persistence.Tests.asmdef.meta",
+      "sha256": "F42F977552FFA5EC59F2C53A6F483ED909B7DC5C526A700C7A0B09A330791FDD",
+      "bytes": 166
+    },
+    {
+      "path": "Assets\\Game\\Tests\\PlayMode\\CombatPresentationTests.cs",
+      "sha256": "BAFB5F0DD38C4E4702EF2250AE930CB8C3B7F1C640BC8DA0136F0A8342F76E2C",
+      "bytes": 17147
+    },
+    {
+      "path": "Assets\\Game\\Tests\\PlayMode\\CombatPresentationTests.cs.meta",
+      "sha256": "1EBE4341CE663259083C92CA61A66B46DB41E7CE5136D129ACF6D961D4677DB7",
+      "bytes": 59
+    },
+    {
+      "path": "Assets\\Game\\Tests\\PlayMode\\LastBell.Presentation.Tests.asmdef",
+      "sha256": "498D27383124EA34A0BDE48E8714F2A22D1D582ACF3266A2BEBBAB6483125E42",
+      "bytes": 209
+    },
+    {
+      "path": "Assets\\Game\\Tests\\PlayMode\\LastBell.Presentation.Tests.asmdef.meta",
+      "sha256": "73E233EDA5228068C76FF6ED47D57E78A093CC42EA1265010971B3A13B806A2E",
+      "bytes": 166
+    },
+    {
+      "path": "Packages\\manifest.json",
+      "sha256": "754BBC6039927D7BD3ED608458EF49EAF4ED5963C77044E0DD552C0E46577B2C",
+      "bytes": 667
+    },
+    {
+      "path": "Packages\\packages-lock.json",
+      "sha256": "95EF62A7F760C0D88857C867E92EA95912AC9FD8A28D56E39944130AC37423EB",
+      "bytes": 3706
+    },
+    {
+      "path": "ProjectSettings\\AudioManager.asset",
+      "sha256": "9543C41DBFC7D3951217C4DD9481ED026EB8E529B85ECF4463969A0FEA747729",
+      "bytes": 523
+    },
+    {
+      "path": "ProjectSettings\\ClusterInputManager.asset",
+      "sha256": "40E65DD214BF254955D2C8829CA8CE2130FD3510485560CE012E9A1DDD93E623",
+      "bytes": 114
+    },
+    {
+      "path": "ProjectSettings\\DynamicsManager.asset",
+      "sha256": "FB36E677F7DE32325BEDE8462E7E3EAF0BE86CA374216D2907886FCE7CB1D488",
+      "bytes": 1553
+    },
+    {
+      "path": "ProjectSettings\\EditorBuildSettings.asset",
+      "sha256": "79ACD7A4E8430F35F4DD220542FD06E76B58E5A8A969332A4339C6E4D791E18A",
+      "bytes": 284
+    },
+    {
+      "path": "ProjectSettings\\EditorSettings.asset",
+      "sha256": "4A87C54B3541C7BD242AAD68C3FC28661083DB1117EC56149694EE592156415E",
+      "bytes": 1603
+    },
+    {
+      "path": "ProjectSettings\\GraphicsSettings.asset",
+      "sha256": "40DE98F4D46D02FB08E268AD3A722A00EED7289F4EF6D2E759984B1B4A85D2AF",
+      "bytes": 2433
+    },
+    {
+      "path": "ProjectSettings\\InputManager.asset",
+      "sha256": "D0F454DDB880912ABCAE92E3E12957A7446786BA89E24937E019FF3BBC0D4300",
+      "bytes": 5816
+    },
+    {
+      "path": "ProjectSettings\\MemorySettings.asset",
+      "sha256": "1E8379A461B10AE09F3F696911088C16875D63E87ED5F2D95DF9E1892703F9FD",
+      "bytes": 1192
+    },
+    {
+      "path": "ProjectSettings\\MultiplayerManager.asset",
+      "sha256": "CE4075D7A7DD8AC7FFE55DE2427692C63F90DAE398208BD80CEC0F27CBE09F4B",
+      "bytes": 232
+    },
+    {
+      "path": "ProjectSettings\\NavMeshAreas.asset",
+      "sha256": "7EBBF8F53B8033104E1878B95CA07A28D0954092D81C220F14196A42F651E658",
+      "bytes": 1361
+    },
+    {
+      "path": "ProjectSettings\\PackageManagerSettings.asset",
+      "sha256": "D5368F5E862D6964716EC46CEDFB30EE9B2EE274CD5AEF5436F6C74DCF1C4797",
+      "bytes": 1132
+    },
+    {
+      "path": "ProjectSettings\\Physics2DSettings.asset",
+      "sha256": "1CFC0C8FBCEEC604FD7CD2A06C04FF05DDDEE6335B75C92B0F5715AD80BA9490",
+      "bytes": 1862
+    },
+    {
+      "path": "ProjectSettings\\PresetManager.asset",
+      "sha256": "29C125923FE6E29F90190D4FCE1C82D660E7051546E2C9D02908D18C9CF2436C",
+      "bytes": 146
+    },
+    {
+      "path": "ProjectSettings\\ProjectSettings.asset",
+      "sha256": "0E96794222F03B192784D341221DB0CBE97B784FC5181394ED3316D5697E5BDF",
+      "bytes": 22273
+    },
+    {
+      "path": "ProjectSettings\\ProjectVersion.txt",
+      "sha256": "EB53E4B5D12D3D06D286E892C35AD0E21A56C047AE570B0797F78CBC4B1BFDB7",
+      "bytes": 85
+    },
+    {
+      "path": "ProjectSettings\\QualitySettings.asset",
+      "sha256": "F1F893B1BE47AD2442F58338DD7C860DC1986BB317E2F5BB31084454FFABBF4C",
+      "bytes": 9802
+    },
+    {
+      "path": "ProjectSettings\\SceneTemplateSettings.json",
+      "sha256": "BB9098B3BFCDE78D93E264B96F7B77B5430E64E8C57A7AAD7F5A5D9C3945E16A",
+      "bytes": 3535
+    },
+    {
+      "path": "ProjectSettings\\TagManager.asset",
+      "sha256": "DA4B5EEFC927F8B91BCF9E56A186D2B852F49D9CBE91D466638D26C79D6A83CE",
+      "bytes": 411
+    },
+    {
+      "path": "ProjectSettings\\TimeManager.asset",
+      "sha256": "3396F52FDC16D445024E01D7A2D99DB6F0A37569D1D73C0302E9FFB857D90287",
+      "bytes": 305
+    },
+    {
+      "path": "ProjectSettings\\UnityConnectSettings.asset",
+      "sha256": "11251DAE0356B6F43DD2C67BB511F6B7ECDA4E5DE425186BBA3297E6F3DC1C6F",
+      "bytes": 1063
+    },
+    {
+      "path": "ProjectSettings\\VersionControlSettings.asset",
+      "sha256": "E199CDFA6A8F2BF33CFD47E549198F13E3EB2A5099E908FDB4E0F14D939CCC6B",
+      "bytes": 172
+    },
+    {
+      "path": "ProjectSettings\\VFXManager.asset",
+      "sha256": "2973A6AF930E142F62CDE00076BEDA8A3CC3A66D9BFCDE7A58BA7D4BE2251C26",
+      "bytes": 525
+    }
+  ]
+}

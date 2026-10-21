@@ -1,0 +1,5 @@
+{
+  "name": "LastBell.Tests.GameSessionTests.EveryNormalTransitionRoundTripsWithoutDuplicateRewardOrLostElapsed(2.9f,Arrival)",
+  "message": "  Expected: 350.00009536743164d\n  But was:  350.0000953674317d\n",
+  "stack": "at LastBell.Tests.GameSessionTests.EveryNormalTransitionRoundTripsWithoutDuplicateRewardOrLostElapsed (System.Single elapsed, LastBell.TransitionKind expected) [0x00054] in C:\\Github\\Test2\\Temp\\CombatFeedbackValidation\\Client\\Assets\\Game\\Tests\\EditMode\\Core\\GameSessionTests.cs:798\n"
+}

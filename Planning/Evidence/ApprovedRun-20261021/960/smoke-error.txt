@@ -1,0 +1,4 @@
+InvalidOperationException: SMOKE FAILED: Run keeps idle scale and fixed travel root
+LastBell.MvpSmokeProbe.Require (System.Boolean condition, System.String description) (at C:/Github/Test2/Client/Assets/Game/Runtime/Bootstrap/MvpSmokeProbe.cs:329)
+LastBell.MvpSmokeProbe+<ApprovedRunReview>d__30.MoveNext () (at C:/Github/Test2/Client/Assets/Game/Runtime/Bootstrap/MvpSmokeProbe.cs:281)
+UnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)

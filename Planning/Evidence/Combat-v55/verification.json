@@ -1,0 +1,228 @@
+{
+  "version": "combat-v5.5",
+  "date": "2026-10-21",
+  "status": "applied-and-verified-Windows",
+  "tests": {
+    "EditMode": {
+      "total": "118",
+      "passed": "118",
+      "failed": "0",
+      "duration": "0.9165953"
+    },
+    "PlayMode": {
+      "total": "15",
+      "passed": "15",
+      "failed": "0",
+      "duration": "4.9209607"
+    }
+  },
+  "catalogPythonTests": 19,
+  "independentContractAssertions": 808,
+  "actualPlayer": {
+    "960": {
+      "passed": true,
+      "width": 960,
+      "height": 540,
+      "peakParticles": 38,
+      "comboFrames": 106,
+      "frameMs": 20,
+      "checks": [
+        "stored combat references",
+        "pool capacity 96",
+        "removed gauge and old cue 1",
+        "sampled weapon ribbon and trail 1",
+        "weapon ribbon has visible triangle area 1",
+        "confirmed geometric perfect 1",
+        "removed gauge and old cue 2",
+        "sampled weapon ribbon and trail 2",
+        "weapon ribbon has visible triangle area 2",
+        "confirmed geometric perfect 2",
+        "removed gauge and old cue 3",
+        "sampled weapon ribbon and trail 3",
+        "weapon ribbon has visible triangle area 3",
+        "confirmed geometric perfect 3",
+        "removed gauge and old cue 4",
+        "sampled weapon ribbon and trail 4",
+        "weapon ribbon has visible triangle area 4",
+        "confirmed geometric perfect 4",
+        "fast combo deadlines 1180 / 1500",
+        "counter ready after second perfect",
+        "accepted attack consumes counter",
+        "counter snaps at input",
+        "all warnings before strikes, no repeated cue",
+        "two separate confirmed perfects",
+        "one counter contact, no extra hit",
+        "wave at viewport center",
+        "wave clears every corner",
+        "pause freezes core and particles",
+        "reduced motion suppresses particles",
+        "reduced motion has no shake",
+        "stun cancels queued attacks",
+        "approved run preserved"
+      ]
+    },
+    "640": {
+      "passed": true,
+      "width": 640,
+      "height": 360,
+      "peakParticles": 38,
+      "comboFrames": 106,
+      "frameMs": 20,
+      "checks": [
+        "stored combat references",
+        "pool capacity 96",
+        "removed gauge and old cue 1",
+        "sampled weapon ribbon and trail 1",
+        "weapon ribbon has visible triangle area 1",
+        "confirmed geometric perfect 1",
+        "removed gauge and old cue 2",
+        "sampled weapon ribbon and trail 2",
+        "weapon ribbon has visible triangle area 2",
+        "confirmed geometric perfect 2",
+        "removed gauge and old cue 3",
+        "sampled weapon ribbon and trail 3",
+        "weapon ribbon has visible triangle area 3",
+        "confirmed geometric perfect 3",
+        "removed gauge and old cue 4",
+        "sampled weapon ribbon and trail 4",
+        "weapon ribbon has visible triangle area 4",
+        "confirmed geometric perfect 4",
+        "fast combo deadlines 1180 / 1500",
+        "counter ready after second perfect",
+        "accepted attack consumes counter",
+        "counter snaps at input",
+        "all warnings before strikes, no repeated cue",
+        "two separate confirmed perfects",
+        "one counter contact, no extra hit",
+        "wave at viewport center",
+        "wave clears every corner",
+        "pause freezes core and particles",
+        "reduced motion suppresses particles",
+        "reduced motion has no shake",
+        "stun cancels queued attacks",
+        "approved run preserved"
+      ]
+    },
+    "wide": {
+      "passed": true,
+      "width": 1280,
+      "height": 540,
+      "peakParticles": 38,
+      "comboFrames": 106,
+      "frameMs": 20,
+      "checks": [
+        "stored combat references",
+        "pool capacity 96",
+        "removed gauge and old cue 1",
+        "sampled weapon ribbon and trail 1",
+        "weapon ribbon has visible triangle area 1",
+        "confirmed geometric perfect 1",
+        "removed gauge and old cue 2",
+        "sampled weapon ribbon and trail 2",
+        "weapon ribbon has visible triangle area 2",
+        "confirmed geometric perfect 2",
+        "removed gauge and old cue 3",
+        "sampled weapon ribbon and trail 3",
+        "weapon ribbon has visible triangle area 3",
+        "confirmed geometric perfect 3",
+        "removed gauge and old cue 4",
+        "sampled weapon ribbon and trail 4",
+        "weapon ribbon has visible triangle area 4",
+        "confirmed geometric perfect 4",
+        "fast combo deadlines 1180 / 1500",
+        "counter ready after second perfect",
+        "accepted attack consumes counter",
+        "counter snaps at input",
+        "all warnings before strikes, no repeated cue",
+        "two separate confirmed perfects",
+        "one counter contact, no extra hit",
+        "wave at viewport center",
+        "wave clears every corner",
+        "pause freezes core and particles",
+        "reduced motion suppresses particles",
+        "reduced motion has no shake",
+        "stun cancels queued attacks",
+        "approved run preserved"
+      ]
+    }
+  },
+  "fullFlow": {
+    "passed": true,
+    "tutorial": true,
+    "bossRewards": 1,
+    "storyLines": 3,
+    "minibossCurrencyOnly": true,
+    "travel": true,
+    "stageBanner": true,
+    "bossIntro": true,
+    "deathLantern": true,
+    "perfectDodges": 88,
+    "normalDodges": 1,
+    "criticalHits": 11,
+    "playerHits": 3,
+    "checkpoint": 11,
+    "attackLevel": 14,
+    "equippedRelics": 1
+  },
+  "restartResume": {
+    "passed": true,
+    "stage": 11,
+    "attackLevel": 14,
+    "equippedRelics": 1
+  },
+  "approvedRunPngsByteIdentical": true,
+  "geometry": "CombatGeometry is shared by Core collision, gold world rectangles, attack approach and dodge displacement. No required-direction gate exists outside the footprint. An untimed geometric escape earns no stagger.",
+  "timing": {
+    "singleDefault": [
+      780,
+      900
+    ],
+    "singleFast": [
+      530,
+      650
+    ],
+    "comboDefaultImpacts": [
+      1680,
+      2040
+    ],
+    "comboFastImpacts": [
+      1180,
+      1500
+    ],
+    "bossThreeHitImpacts": [
+      1710,
+      2030,
+      2350
+    ],
+    "normalWindowMs": 160,
+    "perfectWindowMs": 60,
+    "reuseMs": 260
+  },
+  "counter": "Accepted attack within 500ms snaps to home, retains both cooldowns, then hits once at input+200ms. Rejected input does not snap. Stun/death cancels remaining attacks; counter alone does not.",
+  "rendering": {
+    "wave": "viewport center; equal XY radii; 420ms; second ring delayed45ms; both clear viewport diagonal plus64 physical pixels",
+    "enemy": "World ParticleSystem pools, sampled LineRenderer weapon silhouette plus TrailRenderer motion history; local flash/shards/dust/ground ripple; no hitstop",
+    "maxAllocatedParticles": 96,
+    "peakObservedParticles": 38,
+    "pause": "Core time freezes lifetimes; no queued re-emission",
+    "reduced": "static center seal, constant gold fill with three corner contractions; no particles/trails/shake",
+    "pauseScreenshotsByteIdentical": {
+      "960": true,
+      "640": true,
+      "wide": true
+    },
+    "resolvedInvestigation": "A degenerate first-frame TrailRenderer strip was resolved by a Core-sampled weapon ribbon with optional motion history. Final triangle-area checks and rendered captures pass."
+  },
+  "artifacts": {
+    "exe": "../../../Builds/Windows/LastBellMvp.exe",
+    "zip": "../../../Builds/LastBellMvp-Windows.zip",
+    "runtimeDllSha256": "a59d0cf5eefbcc214e6367c30fbba554cea9e00bf23a659b18fd041269654d7b",
+    "zipSha256": "91079e4c77d24e94f130637041afdd4725028450f88c33a271b0333ed2bc0bf3",
+    "replay": "index.html"
+  },
+  "limitations": [
+    "Android APK not rebuilt",
+    "Monster sprite frames reused; attack effects, timing and movement presentation remade",
+    "Local browser tabs were not controlled or refreshed; evidence is rendered by the real Unity Windows player"
+  ]
+}

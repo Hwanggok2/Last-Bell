@@ -1,0 +1,193 @@
+{
+  "passed": true,
+  "method": "Offline native Canvas, not Unity player",
+  "cases": [
+    {
+      "duration": 540,
+      "kind": "thrust",
+      "impacts": [
+        540
+      ]
+    },
+    {
+      "duration": 540,
+      "kind": "low",
+      "impacts": [
+        540
+      ]
+    },
+    {
+      "duration": 540,
+      "kind": "high",
+      "impacts": [
+        540
+      ]
+    },
+    {
+      "duration": 540,
+      "kind": "rear",
+      "impacts": [
+        540
+      ]
+    },
+    {
+      "duration": 540,
+      "kind": "front-rear",
+      "impacts": [
+        1080,
+        1440
+      ]
+    },
+    {
+      "duration": 540,
+      "kind": "rear-front",
+      "impacts": [
+        1080,
+        1440
+      ]
+    },
+    {
+      "duration": 540,
+      "kind": "low-high",
+      "impacts": [
+        1080,
+        1440
+      ]
+    },
+    {
+      "duration": 540,
+      "kind": "high-low",
+      "impacts": [
+        1080,
+        1440
+      ]
+    },
+    {
+      "duration": 540,
+      "kind": "high-high",
+      "impacts": [
+        1080,
+        1440
+      ]
+    },
+    {
+      "duration": 540,
+      "kind": "triple",
+      "impacts": [
+        1620,
+        1980,
+        2340
+      ]
+    },
+    {
+      "duration": 480,
+      "kind": "thrust",
+      "impacts": [
+        480
+      ]
+    },
+    {
+      "duration": 480,
+      "kind": "low",
+      "impacts": [
+        480
+      ]
+    },
+    {
+      "duration": 480,
+      "kind": "high",
+      "impacts": [
+        480
+      ]
+    },
+    {
+      "duration": 480,
+      "kind": "rear",
+      "impacts": [
+        480
+      ]
+    },
+    {
+      "duration": 480,
+      "kind": "front-rear",
+      "impacts": [
+        960,
+        1280
+      ]
+    },
+    {
+      "duration": 480,
+      "kind": "rear-front",
+      "impacts": [
+        960,
+        1280
+      ]
+    },
+    {
+      "duration": 480,
+      "kind": "low-high",
+      "impacts": [
+        960,
+        1280
+      ]
+    },
+    {
+      "duration": 480,
+      "kind": "high-low",
+      "impacts": [
+        960,
+        1280
+      ]
+    },
+    {
+      "duration": 480,
+      "kind": "high-high",
+      "impacts": [
+        960,
+        1280
+      ]
+    },
+    {
+      "duration": 480,
+      "kind": "triple",
+      "impacts": [
+        1440,
+        1760,
+        2080
+      ]
+    }
+  ],
+  "inputCases": [
+    {
+      "lead": 0,
+      "action": "attack",
+      "result": "perfect"
+    },
+    {
+      "lead": 60,
+      "action": "attack",
+      "result": "perfect"
+    },
+    {
+      "lead": 61,
+      "action": "attack",
+      "result": "normal"
+    },
+    {
+      "lead": 160,
+      "action": "attack",
+      "result": "normal"
+    },
+    {
+      "lead": 161,
+      "action": "attack",
+      "result": "early"
+    },
+    {
+      "lead": 50,
+      "action": "dodge",
+      "result": "wrong"
+    }
+  ],
+  "pausePixels": true
+}

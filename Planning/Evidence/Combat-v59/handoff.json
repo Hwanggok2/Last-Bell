@@ -1,0 +1,36 @@
+{
+  "status": "complete-files-stable",
+  "committed": false,
+  "pushed": false,
+  "summary": "v5.9 540ms rhythm + circular timing waves/bells + high parry + selected preview movement applied; final Windows build/ZIP and actual evidence saved.",
+  "validation": {
+    "EditMode": 131,
+    "PlayMode": 18,
+    "Python": 19,
+    "independentAssertions": 808,
+    "localLinks": 23
+  },
+  "sourceDirectories": [
+    "Client/Assets/Game/Runtime",
+    "Client/Assets/Game/Editor",
+    "Client/Assets/Game/Tests",
+    "Client/Assets/Game/Prefabs/GameView.prefab",
+    "Client/Assets/Game/Scenes/Mvp.unity",
+    "Client/Assets/Game/Audio/Presentation",
+    "Client/Tools/build_combat_v59_audio.py",
+    "GameData",
+    "Planning/Presentation",
+    "Planning/Evidence/Combat-v59"
+  ],
+  "review": "verification.json",
+  "buildsIgnoredByGit": [
+    "Builds/Windows",
+    "Builds/LastBellMvp-Windows.zip"
+  ],
+  "note": "No git stage/commit/push performed in this chat; repository contains pre-existing changes from other work.",
+  "catalogLineEndingNormalization": {
+    "builtCatalogSourceSha256": "822c124d2c705bc07640bea32c6adab6fa3b35789c59e984794bbbbc9869ffb6",
+    "workspaceCatalogSourceSha256": "ab78e19fa1bb000a1147b31a66981837dbe7595e89c844a4b9d20d2d1d59519a",
+    "normalization": "Coordinator normalized the editable source from CRLF to LF for Git/exporter consistency after the final build. Reconstructing CRLF bytes reproduces the exact built source hash; all gameplay data is unchanged. Source and generated catalog now agree. Windows build contains the earlier sourceSha256 metadata only; no QA rerun required."
+  }
+}

@@ -1,0 +1,675 @@
+[
+  {
+    "actor": "hero_on",
+    "motion": "Idle",
+    "source": "hero-v5-idle",
+    "frames": 8,
+    "fps": 12,
+    "sourceFrames": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "fallback": false
+  },
+  {
+    "actor": "hero_on",
+    "motion": "Run",
+    "source": "hero-v10-blademage-run",
+    "frames": 8,
+    "fps": 24,
+    "sourceFrames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fallback": false
+  },
+  {
+    "actor": "hero_on",
+    "motion": "AttackUp",
+    "source": "hero-v6-slash-up",
+    "frames": 14,
+    "fps": 60,
+    "sourceFrames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      17,
+      23,
+      24
+    ],
+    "fallback": false
+  },
+  {
+    "actor": "hero_on",
+    "motion": "AttackDown",
+    "source": "hero-v6-slash-down",
+    "frames": 12,
+    "fps": 60,
+    "sourceFrames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "fallback": false
+  },
+  {
+    "actor": "hero_on",
+    "motion": "DodgeUp",
+    "source": "hero-dodge-up",
+    "frames": 17,
+    "fps": 20,
+    "sourceFrames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "fallback": false
+  },
+  {
+    "actor": "hero_on",
+    "motion": "DodgeDown",
+    "source": "hero-dodge-down",
+    "frames": 13,
+    "fps": 20,
+    "sourceFrames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "fallback": false
+  },
+  {
+    "actor": "hero_on",
+    "motion": "DodgeBack",
+    "source": "hero-dodge-back",
+    "frames": 13,
+    "fps": 20,
+    "sourceFrames": [
+      0,
+      1,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "fallback": false
+  },
+  {
+    "actor": "hero_on",
+    "motion": "DodgeForward",
+    "source": "hero-dodge-front",
+    "frames": 17,
+    "fps": 20,
+    "sourceFrames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "fallback": false
+  },
+  {
+    "actor": "hero_on",
+    "motion": "Hit",
+    "source": "hero-v5-hit",
+    "frames": 8,
+    "fps": 40,
+    "sourceFrames": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "fallback": false
+  },
+  {
+    "actor": "hero_on",
+    "motion": "Death",
+    "source": "hero-v5-death",
+    "frames": 12,
+    "fps": 32,
+    "sourceFrames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "fallback": false
+  },
+  {
+    "actor": "hero_on",
+    "motion": "Return",
+    "source": "hero-v5-return",
+    "frames": 16,
+    "fps": 64,
+    "sourceFrames": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "fallback": false
+  },
+  {
+    "actor": "hero_on",
+    "motion": "Stun",
+    "source": "legacy-hero_on-static-stun",
+    "frames": 0,
+    "fps": 1,
+    "sourceFrames": [],
+    "fallback": true
+  },
+  {
+    "actor": "gate_sentinel",
+    "motion": "Idle",
+    "source": "sentinel-canonical-static-idle",
+    "frames": 1,
+    "fps": 1,
+    "sourceFrames": [
+      0
+    ],
+    "fallback": true
+  },
+  {
+    "actor": "gate_sentinel",
+    "motion": "Attack",
+    "source": "sentinel-attack",
+    "frames": 14,
+    "fps": 20,
+    "sourceFrames": [
+      1,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      21,
+      22,
+      23,
+      24
+    ],
+    "fallback": false
+  },
+  {
+    "actor": "gate_sentinel",
+    "motion": "Hit",
+    "source": "sentinel-v6-hit-clean",
+    "frames": 9,
+    "fps": 50,
+    "sourceFrames": [
+      0,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      0
+    ],
+    "fallback": false
+  },
+  {
+    "actor": "gate_sentinel",
+    "motion": "Death",
+    "source": "sentinel-v6-hit-clean",
+    "frames": 9,
+    "fps": 50,
+    "sourceFrames": [
+      0,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      0
+    ],
+    "fallback": false
+  },
+  {
+    "actor": "gate_sentinel",
+    "motion": "Stun",
+    "source": "legacy-gate_sentinel-static-stun",
+    "frames": 0,
+    "fps": 1,
+    "sourceFrames": [],
+    "fallback": true
+  },
+  {
+    "actor": "chain_thrall",
+    "motion": "Idle",
+    "source": "chain-canonical-static-idle",
+    "frames": 1,
+    "fps": 1,
+    "sourceFrames": [
+      0
+    ],
+    "fallback": true
+  },
+  {
+    "actor": "chain_thrall",
+    "motion": "Attack",
+    "source": "chain-attack",
+    "frames": 17,
+    "fps": 20,
+    "sourceFrames": [
+      1,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      20,
+      24
+    ],
+    "fallback": false
+  },
+  {
+    "actor": "chain_thrall",
+    "motion": "Hit",
+    "source": "chain-v6-hit-clean",
+    "frames": 9,
+    "fps": 50,
+    "sourceFrames": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      7,
+      9,
+      10,
+      16
+    ],
+    "fallback": false
+  },
+  {
+    "actor": "chain_thrall",
+    "motion": "Death",
+    "source": "chain-v6-hit-clean",
+    "frames": 9,
+    "fps": 50,
+    "sourceFrames": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      7,
+      9,
+      10,
+      16
+    ],
+    "fallback": false
+  },
+  {
+    "actor": "chain_thrall",
+    "motion": "Stun",
+    "source": "legacy-chain_thrall-static-stun",
+    "frames": 0,
+    "fps": 1,
+    "sourceFrames": [],
+    "fallback": true
+  },
+  {
+    "actor": "ash_wisp",
+    "motion": "Idle",
+    "source": "wisp-canonical-static-idle",
+    "frames": 1,
+    "fps": 1,
+    "sourceFrames": [
+      0
+    ],
+    "fallback": true
+  },
+  {
+    "actor": "ash_wisp",
+    "motion": "Attack",
+    "source": "wisp-attack",
+    "frames": 14,
+    "fps": 20,
+    "sourceFrames": [
+      1,
+      5,
+      6,
+      10,
+      11,
+      12,
+      13,
+      14,
+      18,
+      19,
+      20,
+      21,
+      22,
+      24
+    ],
+    "fallback": false
+  },
+  {
+    "actor": "ash_wisp",
+    "motion": "Hit",
+    "source": "wisp-v6-hit-clean",
+    "frames": 9,
+    "fps": 50,
+    "sourceFrames": [
+      0,
+      2,
+      3,
+      4,
+      9,
+      10,
+      11,
+      12,
+      16
+    ],
+    "fallback": false
+  },
+  {
+    "actor": "ash_wisp",
+    "motion": "Death",
+    "source": "wisp-v6-hit-clean",
+    "frames": 9,
+    "fps": 50,
+    "sourceFrames": [
+      0,
+      2,
+      3,
+      4,
+      9,
+      10,
+      11,
+      12,
+      16
+    ],
+    "fallback": false
+  },
+  {
+    "actor": "ash_wisp",
+    "motion": "Stun",
+    "source": "legacy-ash_wisp-static-stun",
+    "frames": 0,
+    "fps": 1,
+    "sourceFrames": [],
+    "fallback": true
+  },
+  {
+    "actor": "gate_warden",
+    "motion": "Idle",
+    "source": "warden-canonical-static-idle",
+    "frames": 1,
+    "fps": 1,
+    "sourceFrames": [
+      0
+    ],
+    "fallback": true
+  },
+  {
+    "actor": "gate_warden",
+    "motion": "Attack",
+    "source": "warden-attack",
+    "frames": 14,
+    "fps": 20,
+    "sourceFrames": [
+      0,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "fallback": false
+  },
+  {
+    "actor": "gate_warden",
+    "motion": "Hit",
+    "source": "warden-v6-hit-clean",
+    "frames": 9,
+    "fps": 50,
+    "sourceFrames": [
+      0,
+      1,
+      2,
+      4,
+      7,
+      9,
+      10,
+      11,
+      16
+    ],
+    "fallback": false
+  },
+  {
+    "actor": "gate_warden",
+    "motion": "Death",
+    "source": "warden-v6-hit-clean",
+    "frames": 9,
+    "fps": 50,
+    "sourceFrames": [
+      0,
+      1,
+      2,
+      4,
+      7,
+      9,
+      10,
+      11,
+      16
+    ],
+    "fallback": false
+  },
+  {
+    "actor": "gate_warden",
+    "motion": "Stun",
+    "source": "legacy-gate_warden-static-stun",
+    "frames": 0,
+    "fps": 1,
+    "sourceFrames": [],
+    "fallback": true
+  },
+  {
+    "actor": "bell_knight",
+    "motion": "Idle",
+    "source": "knight-canonical-static-idle",
+    "frames": 1,
+    "fps": 1,
+    "sourceFrames": [
+      0
+    ],
+    "fallback": true
+  },
+  {
+    "actor": "bell_knight",
+    "motion": "Attack",
+    "source": "knight-attack-retry",
+    "frames": 17,
+    "fps": 20,
+    "sourceFrames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "fallback": false
+  },
+  {
+    "actor": "bell_knight",
+    "motion": "Hit",
+    "source": "knight-v6-hit-clean",
+    "frames": 9,
+    "fps": 50,
+    "sourceFrames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "fallback": false
+  },
+  {
+    "actor": "bell_knight",
+    "motion": "Death",
+    "source": "knight-v6-hit-clean",
+    "frames": 9,
+    "fps": 50,
+    "sourceFrames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "fallback": false
+  },
+  {
+    "actor": "bell_knight",
+    "motion": "Stun",
+    "source": "legacy-bell_knight-static-stun",
+    "frames": 0,
+    "fps": 1,
+    "sourceFrames": [],
+    "fallback": true
+  }
+]

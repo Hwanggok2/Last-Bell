@@ -1,0 +1,27 @@
+{
+  "startedAt": "2026-10-21T17:25:25.0708561+09:00",
+  "pid": 3356,
+  "phase": "PlayMode",
+  "arguments": [
+    "-batchmode",
+    "-nographics",
+    "-projectPath",
+    "\"C:\\Github\\Test2\\Temp\\CombatFeedbackValidation\\Client\"",
+    "-buildTarget",
+    "Win64",
+    "-logFile",
+    "\"C:\\Github\\Test2\\Planning\\Evidence\\UnityPresentation-20261021\\playmode.log\"",
+    "-lastbell-save-dir",
+    "\"C:\\Github\\Test2\\Planning\\Evidence\\UnityPresentation-20261021\\profiles\\tests\"",
+    "-runTests",
+    "-testPlatform",
+    "PlayMode",
+    "-testResults",
+    "\"C:\\Github\\Test2\\Planning\\Evidence\\UnityPresentation-20261021\\playmode.xml\"",
+    "-testFilter",
+    "LastBell.Tests.CombatPresentationTests"
+  ],
+  "endedAt": "2026-10-21T17:25:40.2879340+09:00",
+  "exe": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.3.15f1\\Editor\\Unity.exe",
+  "exitCode": 0
+}

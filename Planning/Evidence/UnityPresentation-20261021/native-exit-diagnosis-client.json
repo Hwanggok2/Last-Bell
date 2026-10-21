@@ -1,0 +1,381 @@
+{
+  "investigatedAt": "2026-10-21T17:54:24.855724+09:00",
+  "issue": "QA-003",
+  "scope": "Read-only investigation of existing crash dumps, event records, source and logs. No game/editor execution, process termination, source edits, engine upgrade or QA rerun.",
+  "conclusion": {
+    "confirmedFailurePath": "Unity native Windows accessibility shutdown calls the window-handle accessor after GetScreenManager returns null.",
+    "strongMatchingKnownIssue": "UUM-146676",
+    "confidence": "All three crash dumps have the identical fully unwound exception stack. Official release notes describe a matching Windows UI Automation shutdown crash. The specific UI Automation client and activation time are not identified, and the upgrade has not been tested here.",
+    "notEstablished": "There is no direct stack evidence blaming BattleAudio, streaming decoder, RenderTexture release, JSON normalization, NVIDIA driver or the subsequent QA-004 presentation fix."
+  },
+  "engine": {
+    "version": "6000.3.15f1 (c1aa84e375f6)",
+    "sha256": "0c1eeff52d6fe56ff9bcb42d332e7cc01720d2d474fa3dc4b1f3c298453bb048",
+    "sameEngineBinaryIn": [
+      "Temp/PresentationIntegration/BuildR2",
+      "Temp/PresentationIntegration/BuildQA",
+      "Temp/CombatFeedbackValidation/Builds/Windows"
+    ],
+    "symbolFile": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.3.15f1\\Editor\\Data\\PlaybackEngines\\windowsstandalonesupport\\Variations\\win64_player_development_mono\\UnityPlayer_Win64_player_development_mono_x64.pdb",
+    "peCodeViewGuid": "3457e82e-4e88-47d2-ae94-84e6d0a56f1d",
+    "peCodeViewAge": 1
+  },
+  "method": "Offline Microsoft DbgHelp SymFromAddr and StackWalk64 with dump memory/context, matching installed Unity PDB, and PE .pdata/.xdata fallback. Raw stack candidates are excluded from this evidence; stack_unwound contains actual unwind results.",
+  "readerScript": "Temp/native_dump_read.py",
+  "faultInstruction": {
+    "rva": "0xc29819",
+    "operation": "mov rax, qword ptr [rax+0x138]",
+    "rax": "0x0",
+    "readAddress": "0x138",
+    "accessorCalledBeforeFault": {
+      "address": "0x7ff991012130",
+      "module": "UnityPlayer.dll",
+      "offset": "0x822130",
+      "symbol": "GetScreenManager",
+      "displacement": "0x0",
+      "symbol_error": 0
+    }
+  },
+  "allThreeUnwoundStacksIdentical": true,
+  "cases": [
+    {
+      "dump": "C:\\Users\\JW\\AppData\\Local\\CrashDumps\\LastBellMvp.exe.33724.dmp",
+      "thread_id": 5040,
+      "exception": "0xc0000005",
+      "exception_parameters": [
+        "0x0",
+        "0x138"
+      ],
+      "fault": {
+        "address": "0x7ff991419819",
+        "module": "UnityPlayer.dll",
+        "offset": "0xc29819",
+        "symbol": "ExternalGPUProfiler::GetGameViewWindowHandle",
+        "displacement": "0x9",
+        "symbol_error": 0
+      },
+      "stack_unwound": [
+        {
+          "address": "0x7ff991419819",
+          "module": "UnityPlayer.dll",
+          "offset": "0xc29819",
+          "symbol": "ExternalGPUProfiler::GetGameViewWindowHandle",
+          "displacement": "0x9",
+          "symbol_error": 0,
+          "frame_rsp": "0xf1d0eef2c0"
+        },
+        {
+          "address": "0x7ff991d4efbb",
+          "module": "UnityPlayer.dll",
+          "offset": "0x155efbb",
+          "symbol": "RuntimeStatic<PlatformAccessibilityManager,0>::StaticDestroy",
+          "displacement": "0x3b",
+          "symbol_error": 0,
+          "frame_rsp": "0xf1d0eef2f0"
+        },
+        {
+          "address": "0x7ff9926d64bd",
+          "module": "UnityPlayer.dll",
+          "offset": "0x1ee64bd",
+          "symbol": "RegisterRuntimeInitializeAndCleanup::ExecuteCleanup",
+          "displacement": "0xed",
+          "symbol_error": 0,
+          "frame_rsp": "0xf1d0eef320"
+        },
+        {
+          "address": "0x7ff99139c03c",
+          "module": "UnityPlayer.dll",
+          "offset": "0xbac03c",
+          "symbol": "RuntimeCleanup",
+          "displacement": "0x2c",
+          "symbol_error": 0,
+          "frame_rsp": "0xf1d0eef370"
+        },
+        {
+          "address": "0x7ff99195f3a0",
+          "module": "UnityPlayer.dll",
+          "offset": "0x116f3a0",
+          "symbol": "UnityMainImpl",
+          "displacement": "0x1290",
+          "symbol_error": 0,
+          "frame_rsp": "0xf1d0eef3e0"
+        },
+        {
+          "address": "0x7ff99196014b",
+          "module": "UnityPlayer.dll",
+          "offset": "0x117014b",
+          "symbol": "UnityMain",
+          "displacement": "0xb",
+          "symbol_error": 0,
+          "frame_rsp": "0xf1d0eff700"
+        },
+        {
+          "address": "0x7ff74ad411f6",
+          "module": "LastBellMvp.exe",
+          "offset": "0x11f6",
+          "symbol": "__scrt_common_main_seh",
+          "displacement": "0x106",
+          "symbol_error": 0,
+          "frame_rsp": "0xf1d0eff730"
+        },
+        {
+          "address": "0x7ffaf89cdda7",
+          "module": "kernel32.dll",
+          "offset": "0x2dda7",
+          "symbol": "BaseThreadInitThunk",
+          "displacement": "0x17",
+          "symbol_error": 0,
+          "frame_rsp": "0xf1d0eff770"
+        },
+        {
+          "address": "0x7ffaf9fbee4c",
+          "module": "ntdll.dll",
+          "offset": "0x7ee4c",
+          "symbol": "RtlUserThreadStart",
+          "displacement": "0x2c",
+          "symbol_error": 0,
+          "frame_rsp": "0xf1d0eff7a0"
+        }
+      ]
+    },
+    {
+      "dump": "C:\\Users\\JW\\AppData\\Local\\CrashDumps\\LastBellMvp.exe.14208.dmp",
+      "thread_id": 32916,
+      "exception": "0xc0000005",
+      "exception_parameters": [
+        "0x0",
+        "0x138"
+      ],
+      "fault": {
+        "address": "0x7ff98bc89819",
+        "module": "UnityPlayer.dll",
+        "offset": "0xc29819",
+        "symbol": "ExternalGPUProfiler::GetGameViewWindowHandle",
+        "displacement": "0x9",
+        "symbol_error": 0
+      },
+      "stack_unwound": [
+        {
+          "address": "0x7ff98bc89819",
+          "module": "UnityPlayer.dll",
+          "offset": "0xc29819",
+          "symbol": "ExternalGPUProfiler::GetGameViewWindowHandle",
+          "displacement": "0x9",
+          "symbol_error": 0,
+          "frame_rsp": "0xe4158f470"
+        },
+        {
+          "address": "0x7ff98c5befbb",
+          "module": "UnityPlayer.dll",
+          "offset": "0x155efbb",
+          "symbol": "RuntimeStatic<PlatformAccessibilityManager,0>::StaticDestroy",
+          "displacement": "0x3b",
+          "symbol_error": 0,
+          "frame_rsp": "0xe4158f4a0"
+        },
+        {
+          "address": "0x7ff98cf464bd",
+          "module": "UnityPlayer.dll",
+          "offset": "0x1ee64bd",
+          "symbol": "RegisterRuntimeInitializeAndCleanup::ExecuteCleanup",
+          "displacement": "0xed",
+          "symbol_error": 0,
+          "frame_rsp": "0xe4158f4d0"
+        },
+        {
+          "address": "0x7ff98bc0c03c",
+          "module": "UnityPlayer.dll",
+          "offset": "0xbac03c",
+          "symbol": "RuntimeCleanup",
+          "displacement": "0x2c",
+          "symbol_error": 0,
+          "frame_rsp": "0xe4158f520"
+        },
+        {
+          "address": "0x7ff98c1cf3a0",
+          "module": "UnityPlayer.dll",
+          "offset": "0x116f3a0",
+          "symbol": "UnityMainImpl",
+          "displacement": "0x1290",
+          "symbol_error": 0,
+          "frame_rsp": "0xe4158f590"
+        },
+        {
+          "address": "0x7ff98c1d014b",
+          "module": "UnityPlayer.dll",
+          "offset": "0x117014b",
+          "symbol": "UnityMain",
+          "displacement": "0xb",
+          "symbol_error": 0,
+          "frame_rsp": "0xe4159f8b0"
+        },
+        {
+          "address": "0x7ff6185011f6",
+          "module": "LastBellMvp.exe",
+          "offset": "0x11f6",
+          "symbol": "__scrt_common_main_seh",
+          "displacement": "0x106",
+          "symbol_error": 0,
+          "frame_rsp": "0xe4159f8e0"
+        },
+        {
+          "address": "0x7ffaf89cdda7",
+          "module": "kernel32.dll",
+          "offset": "0x2dda7",
+          "symbol": "BaseThreadInitThunk",
+          "displacement": "0x17",
+          "symbol_error": 0,
+          "frame_rsp": "0xe4159f920"
+        },
+        {
+          "address": "0x7ffaf9fbee4c",
+          "module": "ntdll.dll",
+          "offset": "0x7ee4c",
+          "symbol": "RtlUserThreadStart",
+          "displacement": "0x2c",
+          "symbol_error": 0,
+          "frame_rsp": "0xe4159f950"
+        }
+      ]
+    },
+    {
+      "dump": "C:\\Users\\JW\\AppData\\Local\\CrashDumps\\LastBellMvp.exe.24088.dmp",
+      "thread_id": 41688,
+      "exception": "0xc0000005",
+      "exception_parameters": [
+        "0x0",
+        "0x138"
+      ],
+      "fault": {
+        "address": "0x7ff992a49819",
+        "module": "UnityPlayer.dll",
+        "offset": "0xc29819",
+        "symbol": "ExternalGPUProfiler::GetGameViewWindowHandle",
+        "displacement": "0x9",
+        "symbol_error": 0
+      },
+      "stack_unwound": [
+        {
+          "address": "0x7ff992a49819",
+          "module": "UnityPlayer.dll",
+          "offset": "0xc29819",
+          "symbol": "ExternalGPUProfiler::GetGameViewWindowHandle",
+          "displacement": "0x9",
+          "symbol_error": 0,
+          "frame_rsp": "0xe905cef3f0"
+        },
+        {
+          "address": "0x7ff99337efbb",
+          "module": "UnityPlayer.dll",
+          "offset": "0x155efbb",
+          "symbol": "RuntimeStatic<PlatformAccessibilityManager,0>::StaticDestroy",
+          "displacement": "0x3b",
+          "symbol_error": 0,
+          "frame_rsp": "0xe905cef420"
+        },
+        {
+          "address": "0x7ff993d064bd",
+          "module": "UnityPlayer.dll",
+          "offset": "0x1ee64bd",
+          "symbol": "RegisterRuntimeInitializeAndCleanup::ExecuteCleanup",
+          "displacement": "0xed",
+          "symbol_error": 0,
+          "frame_rsp": "0xe905cef450"
+        },
+        {
+          "address": "0x7ff9929cc03c",
+          "module": "UnityPlayer.dll",
+          "offset": "0xbac03c",
+          "symbol": "RuntimeCleanup",
+          "displacement": "0x2c",
+          "symbol_error": 0,
+          "frame_rsp": "0xe905cef4a0"
+        },
+        {
+          "address": "0x7ff992f8f3a0",
+          "module": "UnityPlayer.dll",
+          "offset": "0x116f3a0",
+          "symbol": "UnityMainImpl",
+          "displacement": "0x1290",
+          "symbol_error": 0,
+          "frame_rsp": "0xe905cef510"
+        },
+        {
+          "address": "0x7ff992f9014b",
+          "module": "UnityPlayer.dll",
+          "offset": "0x117014b",
+          "symbol": "UnityMain",
+          "displacement": "0xb",
+          "symbol_error": 0,
+          "frame_rsp": "0xe905cff830"
+        },
+        {
+          "address": "0x7ff6185011f6",
+          "module": "LastBellMvp.exe",
+          "offset": "0x11f6",
+          "symbol": "__scrt_common_main_seh",
+          "displacement": "0x106",
+          "symbol_error": 0,
+          "frame_rsp": "0xe905cff860"
+        },
+        {
+          "address": "0x7ffaf89cdda7",
+          "module": "kernel32.dll",
+          "offset": "0x2dda7",
+          "symbol": "BaseThreadInitThunk",
+          "displacement": "0x17",
+          "symbol_error": 0,
+          "frame_rsp": "0xe905cff8a0"
+        },
+        {
+          "address": "0x7ffaf9fbee4c",
+          "module": "ntdll.dll",
+          "offset": "0x7ee4c",
+          "symbol": "RtlUserThreadStart",
+          "displacement": "0x2c",
+          "symbol_error": 0,
+          "frame_rsp": "0xe905cff8d0"
+        }
+      ]
+    }
+  ],
+  "sourceReview": {
+    "resumeQuit": "Client/Assets/Game/Runtime/Bootstrap/MvpSmokeProbe.cs:58 calls Quit immediately after final capture; fresh smoke yields one extra frame at :201.",
+    "captureCleanup": "MvpSmokeProbe.cs:219-222 schedules texture destruction and releases RenderTexture before return. Tools/QA/PresentationQaProbe.cs:65 quits at sequence completion.",
+    "audio": "BattleAudio uses Play/Pause/UnPause and has no explicit OnApplicationQuit cleanup. BGM imports are Streaming. These are observations, not established crash causes.",
+    "bootstrapQuit": "GameBootstrap.cs:77 saves on quit. Completed JSON and the native cleanup stack do not implicate nullable normalization."
+  },
+  "laterSuccessfulRun": {
+    "name": "final-resume-default",
+    "exe": "C:\\Github\\Test2\\Temp\\CombatFeedbackValidation\\Builds\\Windows\\LastBellMvp.exe",
+    "arguments": [
+      "-lastbell-resume-smoke",
+      "C:\\Github\\Test2\\Planning\\Evidence\\UnityPresentation-20261021\\final-resume-default",
+      "-lastbell-save-dir",
+      "C:\\Github\\Test2\\Planning\\Evidence\\UnityPresentation-20261021\\profiles\\final-resume-default",
+      "-screen-width",
+      "960",
+      "-screen-height",
+      "540",
+      "-screen-fullscreen",
+      "0",
+      "-logFile",
+      "C:\\Github\\Test2\\Planning\\Evidence\\UnityPresentation-20261021\\final-resume-default.log"
+    ],
+    "exitCode": 0,
+    "resultExists": true,
+    "finished": "2026-10-21T17:47:36.4917957+09:00"
+  },
+  "officialSource": {
+    "url": "https://unity.com/releases/editor/whats-new/6000.3.21f1",
+    "issue": "UUM-146676",
+    "finding": "Unity lists a fix for Windows player shutdown crashes after UI Automation client interaction in 6000.3.21f1."
+  },
+  "recommendations": [
+    "Keep QA-003 open as an intermittent native accessibility shutdown defect strongly matching UUM-146676; one later exit0 does not erase the three matching dumps.",
+    "Use a separate validation checkout/build to evaluate Unity 6000.3.21f1, which explicitly includes the fix, before migrating the original project. Preserve existing Editor and engine pin during the investigation.",
+    "Have the existing QA owner compare targeted exit cases with/without UI Automation access and on the patched engine, preserving renderer/audio/save inputs. No duplicate QA has been launched here.",
+    "A next-frame quit after capture cleanup may improve probe lifecycle consistency, but must not be reported as the fix for QA-003 without validation.",
+    "Do not change BGM load type, stop audio, force D3D11 or force-kill the player to claim this defect fixed; the present stack points to engine window/accessibility cleanup."
+  ]
+}

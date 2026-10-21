@@ -1,0 +1,5 @@
+InvalidOperationException: COMBAT_V55_FAILED: weapon trail has visible triangle area 1
+LastBell.CombatV55SmokeProbe.CheckQuiet (System.Boolean value, System.String text) (at C:/Github/Test2/Client/Assets/Game/Runtime/Bootstrap/CombatV55SmokeProbe.cs:115)
+LastBell.CombatV55SmokeProbe.Check (System.Boolean value, System.String text) (at C:/Github/Test2/Client/Assets/Game/Runtime/Bootstrap/CombatV55SmokeProbe.cs:114)
+LastBell.CombatV55SmokeProbe+<Start>d__9.MoveNext () (at C:/Github/Test2/Client/Assets/Game/Runtime/Bootstrap/CombatV55SmokeProbe.cs:47)
+UnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)

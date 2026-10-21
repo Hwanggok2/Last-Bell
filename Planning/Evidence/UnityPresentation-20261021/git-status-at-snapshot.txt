@@ -1,0 +1,122 @@
+ M Client/Assets/Game/Data/Generated/mvp-catalog.json
+ M Client/Assets/Game/Editor/MvpBuild.cs
+ M Client/Assets/Game/Prefabs/GameView.prefab
+ M Client/Assets/Game/Runtime/Art/ArtCatalog.cs
+ M Client/Assets/Game/Runtime/Bootstrap/JsonSaveRepository.cs
+ M Client/Assets/Game/Runtime/Bootstrap/MvpSmokeProbe.cs
+ M Client/Assets/Game/Runtime/Core/GameSession.Combat.cs
+ M Client/Assets/Game/Runtime/Core/GameSession.Progression.cs
+ M Client/Assets/Game/Runtime/Core/GameSession.State.cs
+ M Client/Assets/Game/Runtime/Core/GameSession.cs
+ M Client/Assets/Game/Runtime/Core/SessionState.cs
+ M Client/Assets/Game/Runtime/Data/GameCatalog.cs
+ M Client/Assets/Game/Runtime/Presentation/ActorView.cs
+ M Client/Assets/Game/Runtime/Presentation/BattleEffects.cs
+ M Client/Assets/Game/Runtime/Presentation/DangerGraphic.cs
+ M Client/Assets/Game/Runtime/Presentation/MvpPresenter.cs
+ M Client/Assets/Game/Runtime/Presentation/MvpView.cs
+ M Client/Assets/Game/Scenes/Mvp.unity
+ M Client/Assets/Game/Tests/EditMode/Core/GameSessionTests.cs
+ M Client/Assets/Game/Tests/EditMode/Persistence/JsonSaveRepositoryTests.cs
+ M Client/Packages/manifest.json
+ M Client/Packages/packages-lock.json
+ M Client/ProjectSettings/ProjectSettings.asset
+ M Client/README.md
+ M GameData/README.md
+ M GameData/export_catalog.py
+ M GameData/mvp-catalog.json
+ M GameData/tests/SessionContractReview/Program.cs
+ M GameData/tests/test_export_catalog.py
+ M Planning/Production/build-production-board.py
+ M Planning/Production/index.html
+ M Planning/Visuals/build-wireframes-v4.mjs
+ M Planning/Visuals/wireframes-v4.html
+ M Planning/build-plan-v4.py
+ M Planning/decisions.json
+ M Planning/index.html
+ M Planning/mvp-implementation-contract.md
+?? .codex/
+?? Client/Assets/Game/Art/Presentation.meta
+?? Client/Assets/Game/Art/Presentation/
+?? Client/Assets/Game/Audio.meta
+?? Client/Assets/Game/Audio/
+?? Client/Assets/Game/Editor/LastBellMcpConnection.cs
+?? Client/Assets/Game/Editor/LastBellMcpConnection.cs.meta
+?? Client/Assets/Game/Editor/ParallaxWorldBuilder.cs
+?? Client/Assets/Game/Editor/ParallaxWorldBuilder.cs.meta
+?? Client/Assets/Game/Editor/PresentationArtImporter.cs
+?? Client/Assets/Game/Editor/PresentationArtImporter.cs.meta
+?? Client/Assets/Game/Editor/PresentationMigration.cs
+?? Client/Assets/Game/Editor/PresentationMigration.cs.meta
+?? Client/Assets/Game/Editor/PresentationVfxBuilder.cs
+?? Client/Assets/Game/Editor/PresentationVfxBuilder.cs.meta
+?? Client/Assets/Game/Prefabs/PresentationAudio.prefab
+?? Client/Assets/Game/Prefabs/PresentationAudio.prefab.meta
+?? Client/Assets/Game/Prefabs/PresentationWorld.prefab
+?? Client/Assets/Game/Prefabs/PresentationWorld.prefab.meta
+?? Client/Assets/Game/Runtime/Core/GameSession.Transitions.cs
+?? Client/Assets/Game/Runtime/Core/GameSession.Transitions.cs.meta
+?? Client/Assets/Game/Runtime/Presentation/BattleAudio.cs
+?? Client/Assets/Game/Runtime/Presentation/BattleAudio.cs.meta
+?? Client/Assets/Game/Runtime/Presentation/BattlePresentation.cs
+?? Client/Assets/Game/Runtime/Presentation/BattlePresentation.cs.meta
+?? Client/Assets/Game/Runtime/Presentation/CombatVfx.cs
+?? Client/Assets/Game/Runtime/Presentation/CombatVfx.cs.meta
+?? Client/Assets/Game/Runtime/Presentation/ParallaxWorld.cs
+?? Client/Assets/Game/Runtime/Presentation/ParallaxWorld.cs.meta
+?? Client/Assets/Game/Runtime/Presentation/PresentationOverlay.cs
+?? Client/Assets/Game/Runtime/Presentation/PresentationOverlay.cs.meta
+?? Client/Assets/Game/Runtime/Presentation/StageBannerGraphic.cs
+?? Client/Assets/Game/Runtime/Presentation/StageBannerGraphic.cs.meta
+?? Client/Assets/Game/Tests/PlayMode.meta
+?? Client/Assets/Game/Tests/PlayMode/
+?? Client/ProjectSettings/PackageManagerSettings.asset
+?? Client/Tools/
+?? Planning/Evidence/Presentation-v10/
+?? Planning/Evidence/Presentation-v2/
+?? Planning/Evidence/Presentation-v3/
+?? Planning/Evidence/Presentation-v4/
+?? Planning/Evidence/Presentation-v5/
+?? Planning/Evidence/Presentation-v6/
+?? Planning/Evidence/Presentation-v7/
+?? Planning/Evidence/Presentation-v8/
+?? Planning/Evidence/Presentation-v9/
+?? Planning/Evidence/Presentation/
+?? Planning/Evidence/UnityCombatFeedback-20261021/
+?? Planning/Evidence/UnityPresentation-20261021/
+?? Planning/Evidence/boss-only-relic-rule.json
+?? Planning/Presentation/
+?? Planning/Production/mcp-setup-20261021.md
+?? Planning/QA/
+?? Planning/Reviews/hit-flash-v7-flow.md
+?? Planning/Reviews/pixellab-motion-v4-art.md
+?? Planning/Reviews/pixellab-player-v5-art.md
+?? Planning/Reviews/pixellab-v6-art.md
+?? Planning/Reviews/player-v5-flow.md
+?? Planning/Reviews/presentation-v1-art.md
+?? Planning/Reviews/presentation-v1-flow.md
+?? Planning/Reviews/presentation-v1-ui.md
+?? Planning/Reviews/presentation-v2-art.md
+?? Planning/Reviews/presentation-v2-flow.md
+?? Planning/Reviews/presentation-v2-research.md
+?? Planning/Reviews/presentation-v3-art.md
+?? Planning/Reviews/presentation-v3-flow.md
+?? Planning/Reviews/presentation-v3-motion.md
+?? Planning/Reviews/presentation-v6-flow.md
+?? Planning/Reviews/run-v10-art.md
+?? Planning/Reviews/run-v10-prompt.md
+?? Planning/Reviews/run-v7-art.md
+?? Planning/Reviews/run-v8-art.md
+?? Planning/Reviews/run-v9-art.md
+?? Planning/Reviews/run-v9-prompt.md
+?? Planning/Reviews/telegraph-end-timing.md
+?? Planning/Reviews/unity-latest-mvp-core.md
+?? Planning/decisions-presentation-v9.json
+?? Planning/idle-status-presentation-v9.json
+?? Planning/idle-status.json
+?? Planning/index-presentation-v9.html
+?? Planning/story-presentation-v9.json
+?? Planning/story.json
+?? Planning/style-presentation-v9.css
+?? ProjectSettings/
+?? Tools/

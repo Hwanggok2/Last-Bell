@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-21",
+  "unityVersion": "6000.3.15f1",
+  "sourceRuntimeMatchesValidatedCopy": true,
+  "tests": {
+    "playmode": {
+      "result": "Passed",
+      "total": "5",
+      "passed": "5",
+      "failed": "0"
+    },
+    "editmode": {
+      "result": "Passed",
+      "total": "58",
+      "passed": "58",
+      "failed": "0"
+    }
+  },
+  "windowsBuild": {
+    "result": "Succeeded",
+    "errors": 0,
+    "sizeBytes": 166062892
+  },
+  "smoke": {
+    "passed": true,
+    "tutorial": true,
+    "bossRewards": 2,
+    "perfectDodges": 76,
+    "normalDodges": 1,
+    "criticalHits": 11,
+    "playerHits": 3,
+    "checkpoint": 11,
+    "attackLevel": 29,
+    "equippedRelics": 1
+  },
+  "limits": [
+    "Automated PointerDown is not hardware touch latency measurement.",
+    "PlayMode used batchmode/nographics; Windows smoke captures used the GPU renderer.",
+    "Existing art, stage transitions and midboss relic rules are unchanged.",
+    "Android APK was not rebuilt."
+  ],
+  "runtimeAssembly": {
+    "path": "Builds/Windows/LastBellMvp_Data/Managed/LastBell.Runtime.dll",
+    "sha256": "9c49b7515e4f8f504020a4a30b7894068e78422409895a3ca82f8b9aa300f91a"
+  },
+  "windowsZip": {
+    "path": "Builds/LastBellMvp-Windows.zip",
+    "sha256": "ff04b6028ebd456e810c17118a680a99d52348af6d3e95b8a5e44de27940c17f"
+  }
+}

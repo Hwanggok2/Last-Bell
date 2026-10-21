@@ -1,0 +1,639 @@
+{
+  "limits": [
+    "Real frame clock; synthetic fixture save and PointerCommand, not OS input.",
+    "PNG capture can affect frame intervals; this is not a performance benchmark.",
+    "TravelPixels is logical distance, including reduced mode; not rendered background displacement.",
+    "CSV motion and flash columns describe the player, not the enemy."
+  ],
+  "scenarios": {
+    "arrival-from-1": {
+      "frames": 246,
+      "segments": [
+        {
+          "state": [
+            "Combat",
+            "",
+            "1"
+          ],
+          "firstRealtime": 2.673579,
+          "firstTransitionMs": 0.0,
+          "frames": 3,
+          "lastRealtime": 2.719812,
+          "lastTransitionMs": 0.0,
+          "observedUntilNextStateMs": 63.472
+        },
+        {
+          "state": [
+            "Transition",
+            "EnemyDefeat",
+            "1"
+          ],
+          "firstRealtime": 2.737051,
+          "firstTransitionMs": 0.0,
+          "frames": 33,
+          "lastRealtime": 3.266793,
+          "lastTransitionMs": 533.3484,
+          "observedUntilNextStateMs": 547.709
+        },
+        {
+          "state": [
+            "Transition",
+            "Travel",
+            "2"
+          ],
+          "firstRealtime": 3.28476,
+          "firstTransitionMs": 0.0148,
+          "frames": 120,
+          "lastRealtime": 5.266867,
+          "lastTransitionMs": 1983.355,
+          "observedUntilNextStateMs": 2000.621
+        },
+        {
+          "state": [
+            "Transition",
+            "Arrival",
+            "2"
+          ],
+          "firstRealtime": 5.285381,
+          "firstTransitionMs": 1.8524,
+          "frames": 42,
+          "lastRealtime": 5.969471,
+          "lastTransitionMs": 685.1881,
+          "observedUntilNextStateMs": 700.787
+        },
+        {
+          "state": [
+            "Combat",
+            "",
+            "2"
+          ],
+          "firstRealtime": 5.986168,
+          "firstTransitionMs": 0.0,
+          "frames": 48,
+          "lastRealtime": 6.773606,
+          "lastTransitionMs": 0.0
+        }
+      ],
+      "deltaMsRange": [
+        16.665,
+        130.366
+      ],
+      "zoomRange": [
+        1.0,
+        1.0
+      ],
+      "travelPlayerXRange": [
+        -1.20556,
+        -1.20556
+      ],
+      "travelRunFramesObserved": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "travelCombatMsRange": [
+        200.0,
+        200.0
+      ]
+    },
+    "arrival-from-4": {
+      "frames": 371,
+      "segments": [
+        {
+          "state": [
+            "Combat",
+            "",
+            "4"
+          ],
+          "firstRealtime": 6.79039,
+          "firstTransitionMs": 0.0,
+          "frames": 11,
+          "lastRealtime": 6.957119,
+          "lastTransitionMs": 0.0,
+          "observedUntilNextStateMs": 183.373
+        },
+        {
+          "state": [
+            "Transition",
+            "EnemyDefeat",
+            "4"
+          ],
+          "firstRealtime": 6.973763,
+          "firstTransitionMs": 0.0,
+          "frames": 33,
+          "lastRealtime": 7.507516,
+          "lastTransitionMs": 533.7978,
+          "observedUntilNextStateMs": 550.621
+        },
+        {
+          "state": [
+            "Transition",
+            "Travel",
+            "5"
+          ],
+          "firstRealtime": 7.524384,
+          "firstTransitionMs": 0.4647,
+          "frames": 120,
+          "lastRealtime": 9.523377,
+          "lastTransitionMs": 1999.617,
+          "observedUntilNextStateMs": 2015.289
+        },
+        {
+          "state": [
+            "Transition",
+            "Arrival",
+            "5"
+          ],
+          "firstRealtime": 9.539673,
+          "firstTransitionMs": 16.2839,
+          "frames": 42,
+          "lastRealtime": 10.22323,
+          "lastTransitionMs": 699.6531,
+          "observedUntilNextStateMs": 700.927
+        },
+        {
+          "state": [
+            "Transition",
+            "BossIntro",
+            "5"
+          ],
+          "firstRealtime": 10.2406,
+          "firstTransitionMs": 16.3192,
+          "frames": 108,
+          "lastRealtime": 12.02384,
+          "lastTransitionMs": 1799.819,
+          "observedUntilNextStateMs": 1800.02
+        },
+        {
+          "state": [
+            "Combat",
+            "",
+            "5"
+          ],
+          "firstRealtime": 12.04062,
+          "firstTransitionMs": 0.0,
+          "frames": 57,
+          "lastRealtime": 12.97578,
+          "lastTransitionMs": 0.0
+        }
+      ],
+      "deltaMsRange": [
+        16.665,
+        28.951
+      ],
+      "zoomRange": [
+        1.0,
+        1.45
+      ],
+      "travelPlayerXRange": [
+        -1.20556,
+        -1.20556
+      ],
+      "travelRunFramesObserved": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "travelCombatMsRange": [
+        200.0,
+        200.0
+      ]
+    },
+    "arrival-from-9": {
+      "frames": 371,
+      "segments": [
+        {
+          "state": [
+            "Combat",
+            "",
+            "9"
+          ],
+          "firstRealtime": 12.99272,
+          "firstTransitionMs": 0.0,
+          "frames": 11,
+          "lastRealtime": 13.16633,
+          "lastTransitionMs": 0.0,
+          "observedUntilNextStateMs": 190.3
+        },
+        {
+          "state": [
+            "Transition",
+            "EnemyDefeat",
+            "9"
+          ],
+          "firstRealtime": 13.18302,
+          "firstTransitionMs": 0.0,
+          "frames": 33,
+          "lastRealtime": 13.71653,
+          "lastTransitionMs": 533.3438,
+          "observedUntilNextStateMs": 559.93
+        },
+        {
+          "state": [
+            "Transition",
+            "Travel",
+            "10"
+          ],
+          "firstRealtime": 13.74295,
+          "firstTransitionMs": 0.0102,
+          "frames": 120,
+          "lastRealtime": 15.71846,
+          "lastTransitionMs": 1985.43,
+          "observedUntilNextStateMs": 1991.83
+        },
+        {
+          "state": [
+            "Transition",
+            "Arrival",
+            "10"
+          ],
+          "firstRealtime": 15.73478,
+          "firstTransitionMs": 2.096,
+          "frames": 42,
+          "lastRealtime": 16.42202,
+          "lastTransitionMs": 689.1224,
+          "observedUntilNextStateMs": 703.81
+        },
+        {
+          "state": [
+            "Transition",
+            "BossIntro",
+            "10"
+          ],
+          "firstRealtime": 16.43859,
+          "firstTransitionMs": 5.7885,
+          "frames": 132,
+          "lastRealtime": 18.63054,
+          "lastTransitionMs": 2197.175,
+          "observedUntilNextStateMs": 2208.79
+        },
+        {
+          "state": [
+            "Combat",
+            "",
+            "10"
+          ],
+          "firstRealtime": 18.64738,
+          "firstTransitionMs": 0.0,
+          "frames": 33,
+          "lastRealtime": 19.18041,
+          "lastTransitionMs": 0.0
+        }
+      ],
+      "deltaMsRange": [
+        16.665,
+        23.932
+      ],
+      "zoomRange": [
+        1.0,
+        1.6
+      ],
+      "travelPlayerXRange": [
+        -1.20556,
+        -1.20556
+      ],
+      "travelRunFramesObserved": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "travelCombatMsRange": [
+        200.0,
+        200.0
+      ]
+    },
+    "death": {
+      "frames": 180,
+      "segments": [
+        {
+          "state": [
+            "Combat",
+            "",
+            "9"
+          ],
+          "firstRealtime": 19.1977,
+          "firstTransitionMs": 0.0,
+          "frames": 54,
+          "lastRealtime": 20.08088,
+          "lastTransitionMs": 0.0,
+          "observedUntilNextStateMs": 899.81
+        },
+        {
+          "state": [
+            "Transition",
+            "Death",
+            "9"
+          ],
+          "firstRealtime": 20.09751,
+          "firstTransitionMs": 0.0,
+          "frames": 108,
+          "lastRealtime": 21.89691,
+          "lastTransitionMs": 1799.68,
+          "observedUntilNextStateMs": 1816.86
+        },
+        {
+          "state": [
+            "Lobby",
+            "",
+            "1"
+          ],
+          "firstRealtime": 21.91437,
+          "firstTransitionMs": 0.0,
+          "frames": 18,
+          "lastRealtime": 22.19684,
+          "lastTransitionMs": 0.0
+        }
+      ],
+      "deltaMsRange": [
+        16.665,
+        30.032
+      ],
+      "zoomRange": [
+        1.0,
+        1.0
+      ]
+    },
+    "dodge-1": {
+      "frames": 25,
+      "segments": [
+        {
+          "state": [
+            "Combat",
+            "",
+            "1"
+          ],
+          "firstRealtime": 22.8312,
+          "firstTransitionMs": 0.0,
+          "frames": 25,
+          "lastRealtime": 23.23239,
+          "lastTransitionMs": 0.0
+        }
+      ],
+      "deltaMsRange": [
+        16.665,
+        17.860999999999997
+      ],
+      "zoomRange": [
+        1.0,
+        1.0
+      ]
+    },
+    "dodge-2": {
+      "frames": 25,
+      "segments": [
+        {
+          "state": [
+            "Combat",
+            "",
+            "2"
+          ],
+          "firstRealtime": 23.86548,
+          "firstTransitionMs": 0.0,
+          "frames": 25,
+          "lastRealtime": 24.26649,
+          "lastTransitionMs": 0.0
+        }
+      ],
+      "deltaMsRange": [
+        16.665,
+        17.155
+      ],
+      "zoomRange": [
+        1.0,
+        1.0
+      ]
+    },
+    "dodge-3": {
+      "frames": 25,
+      "segments": [
+        {
+          "state": [
+            "Combat",
+            "",
+            "3"
+          ],
+          "firstRealtime": 24.90014,
+          "firstTransitionMs": 0.0,
+          "frames": 25,
+          "lastRealtime": 25.30233,
+          "lastTransitionMs": 0.0
+        }
+      ],
+      "deltaMsRange": [
+        16.665,
+        17.753
+      ],
+      "zoomRange": [
+        1.0,
+        1.0
+      ]
+    },
+    "dodge-4": {
+      "frames": 25,
+      "segments": [
+        {
+          "state": [
+            "Combat",
+            "",
+            "4"
+          ],
+          "firstRealtime": 25.93742,
+          "firstTransitionMs": 0.0,
+          "frames": 25,
+          "lastRealtime": 26.33801,
+          "lastTransitionMs": 0.0
+        }
+      ],
+      "deltaMsRange": [
+        16.665,
+        18.256999999999998
+      ],
+      "zoomRange": [
+        1.0,
+        1.0
+      ]
+    },
+    "attack-and-hit-flash": {
+      "frames": 61,
+      "segments": [
+        {
+          "state": [
+            "Combat",
+            "",
+            "1"
+          ],
+          "firstRealtime": 26.35564,
+          "firstTransitionMs": 0.0,
+          "frames": 61,
+          "lastRealtime": 27.35821,
+          "lastTransitionMs": 0.0
+        }
+      ],
+      "deltaMsRange": [
+        16.665,
+        19.717
+      ],
+      "zoomRange": [
+        1.0,
+        1.0
+      ]
+    },
+    "pause-travel": {
+      "frames": 49,
+      "segments": [
+        {
+          "state": [
+            "Transition",
+            "Travel",
+            "2"
+          ],
+          "firstRealtime": 28.44327,
+          "firstTransitionMs": 316.6702,
+          "frames": 49,
+          "lastRealtime": 29.24242,
+          "lastTransitionMs": 716.7399
+        }
+      ],
+      "deltaMsRange": [
+        16.666,
+        16.956
+      ],
+      "zoomRange": [
+        1.0,
+        1.0
+      ],
+      "travelPlayerXRange": [
+        -1.20556,
+        -1.20556
+      ],
+      "travelRunFramesObserved": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "travelCombatMsRange": [
+        200.0,
+        200.0
+      ]
+    },
+    "reduced-mini": {
+      "frames": 361,
+      "segments": [
+        {
+          "state": [
+            "Combat",
+            "",
+            "4"
+          ],
+          "firstRealtime": 29.25903,
+          "firstTransitionMs": 0.0,
+          "frames": 12,
+          "lastRealtime": 29.44231,
+          "lastTransitionMs": 0.0,
+          "observedUntilNextStateMs": 200.61
+        },
+        {
+          "state": [
+            "Transition",
+            "EnemyDefeat",
+            "4"
+          ],
+          "firstRealtime": 29.45964,
+          "firstTransitionMs": 0.0,
+          "frames": 33,
+          "lastRealtime": 29.99203,
+          "lastTransitionMs": 533.4215,
+          "observedUntilNextStateMs": 549.27
+        },
+        {
+          "state": [
+            "Transition",
+            "Travel",
+            "5"
+          ],
+          "firstRealtime": 30.00891,
+          "firstTransitionMs": 0.088,
+          "frames": 120,
+          "lastRealtime": 31.99248,
+          "lastTransitionMs": 1983.765,
+          "observedUntilNextStateMs": 2001.03
+        },
+        {
+          "state": [
+            "Transition",
+            "Arrival",
+            "5"
+          ],
+          "firstRealtime": 32.00994,
+          "firstTransitionMs": 0.433,
+          "frames": 42,
+          "lastRealtime": 32.69261,
+          "lastTransitionMs": 683.8179,
+          "observedUntilNextStateMs": 699.29
+        },
+        {
+          "state": [
+            "Transition",
+            "BossIntro",
+            "5"
+          ],
+          "firstRealtime": 32.70923,
+          "firstTransitionMs": 0.4842,
+          "frames": 108,
+          "lastRealtime": 34.4929,
+          "lastTransitionMs": 1784.332,
+          "observedUntilNextStateMs": 1800.81
+        },
+        {
+          "state": [
+            "Combat",
+            "",
+            "5"
+          ],
+          "firstRealtime": 34.51004,
+          "firstTransitionMs": 0.0,
+          "frames": 46,
+          "lastRealtime": 35.26054,
+          "lastTransitionMs": 0.0
+        }
+      ],
+      "deltaMsRange": [
+        16.665,
+        17.309
+      ],
+      "zoomRange": [
+        1.0,
+        1.0
+      ],
+      "travelPlayerXRange": [
+        -1.20556,
+        -1.20556
+      ],
+      "travelRunFramesObserved": [],
+      "travelCombatMsRange": [
+        200.0,
+        200.0
+      ]
+    }
+  }
+}

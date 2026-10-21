@@ -2,6 +2,10 @@
 
 2026-10-21 · Unity6000.3.15f1 · 개발용 MVP0.1.0
 
+> 이 문서 아래 수치·검증은 초기 MVP 기록이다. 최신 달리기·전투 연출·보스 전용 유물·서사는 [2026-10-21 Unity 통합 기록](unity-presentation-integration-20261021.md)과 [전용 QA 기준](../QA/acceptance-20261021.md)을 따른다. 아래의5층 유물·보상2회·37개 검사·기존 APK를 최신 통합 결과로 해석하지 않는다.
+
+> 최신 v5.2는 달리기24fps·1,920px/2초, 회피 방향 기호·문구, 정수 전투 스탯, 사망 결과·다시하기·로비를 적용했다. [현재 기획 보드](../Presentation/feedback-plan-v5.html)와 [검증 기록](../Evidence/Feedback-v52/verification.json)을 우선한다. Windows 실행본·ZIP 갱신, Android APK는 이전 빌드다.
+
 ## 전달물
 
 - [Windows 실행본 ZIP](../../Builds/LastBellMvp-Windows.zip) — 전체를 풀고 Windows/LastBellMvp.exe 실행.
