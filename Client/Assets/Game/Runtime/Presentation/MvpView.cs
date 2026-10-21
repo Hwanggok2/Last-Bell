@@ -6,7 +6,7 @@ namespace LastBell
 {
     [Serializable] public sealed class StatRowBinding
     {
-        public Text Title, Value, Level;
+        public Text Title, Value, Level, Price;
         public SymbolGraphic[] Stars, Bells;
         public Button Upgrade;
     }
@@ -21,6 +21,7 @@ namespace LastBell
     {
         public RectTransform SafeRoot;
         public GameObject BattlePanel, LobbyPanel, RelicPanel, RewardPanel, ModalPanel, PausePanel;
+        public CanvasGroup LobbyInput;
         public Text Stage, Tutorial, Wallet, CharacterName, Cycle, StartLabel, Feedback;
         public Button StartRun, OpenRelics, RelicBack, RelicEquip, SlotPurchase, Pause, Resume, ReturnHome;
         public Toggle ReducedShake;
@@ -28,10 +29,15 @@ namespace LastBell
         public PointerCommand Attack;
         public SymbolGraphic[] DodgeSymbols;
         public SymbolGraphic AttackSymbol;
+        public PlateGraphic AttackPlate;
         public Image PlayerHp, EnemyHp, BossHp, Stagger;
+        public GameObject StaggerIcon;
         public RectTransform PlayerHpRoot, EnemyHpRoot, DangerRoot, NextDangerRoot;
         public GameObject BossHpRoot;
         public DangerGraphic Danger, NextDanger;
+        public TimingGraphic Timing;
+        public DodgeFeedback DodgeResult;
+        public CombatRhythmGraphic Rhythm;
         public SymbolGraphic[] StunStars;
         public Button[] Characters;
         public Text[] CharacterLabels;
@@ -45,11 +51,15 @@ namespace LastBell
         public Text RewardNote;
         public Text ModalTitle, ModalBody, ModalConfirmLabel, ModalCancelLabel;
         public Button ModalConfirm, ModalCancel;
+        public GameObject ResultPanel;
+        public Text ResultTitle, ResultScope, ResultGold, ResultFragments, ResultRetryHint;
+        public Button ResultRetry, ResultLobby;
 
         public void Only(GameObject panel)
         {
             BattlePanel.SetActive(panel==BattlePanel);LobbyPanel.SetActive(panel==LobbyPanel);
             RelicPanel.SetActive(panel==RelicPanel);RewardPanel.SetActive(panel==RewardPanel);
+            if(ResultPanel)ResultPanel.SetActive(panel==ResultPanel);
         }
         public void SetModal(string title,string body,string confirm,string cancel,bool canConfirm)
         {

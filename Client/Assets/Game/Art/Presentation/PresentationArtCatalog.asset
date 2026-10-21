@@ -1,0 +1,1427 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ee81ad5985b7f54583b1d48abd0a132, type: 3}
+  m_Name: PresentationArtCatalog
+  m_EditorClassIdentifier: LastBell.Runtime::LastBell.ArtCatalog
+  actors:
+  - id: hero_on
+    idle:
+    - {fileID: 21300000, guid: 8aeb3922bd951a685fa10e7510783292, type: 3}
+    - {fileID: 21300000, guid: 74f14eb6e6643c55dcae5035e71650b7, type: 3}
+    - {fileID: 21300000, guid: f4e8bfa71c48ba9cda9d2765f358dfad, type: 3}
+    - {fileID: 21300000, guid: 07bbe70cd860d2bdb2353c8c297d1bad, type: 3}
+    - {fileID: 21300000, guid: d3959d4676ad3cedab2e0f0f322ecd21, type: 3}
+    - {fileID: 21300000, guid: 0ba8b5e6f694268aaf641a547766f34b, type: 3}
+    - {fileID: 21300000, guid: da0af984ac2519060b697310a9a0c7c4, type: 3}
+    - {fileID: 21300000, guid: 34c542d9af8307b2893b3fc3b7d05e19, type: 3}
+    attack:
+    - {fileID: 21300000, guid: 95147a81142a32d5b3512a3edc4f5b0b, type: 3}
+    - {fileID: 21300000, guid: 9f9e9110611a992e723dffc4b770a06c, type: 3}
+    - {fileID: 21300000, guid: 85269349611fb6c19fe72de5a0403c48, type: 3}
+    - {fileID: 21300000, guid: 8fe8b619d513c77cf43a76f93aee899d, type: 3}
+    - {fileID: 21300000, guid: 8793e6261f21bd44f3365c0c26a005a6, type: 3}
+    - {fileID: 21300000, guid: cdcf0ded8e5759734f0351cd42e4e9fb, type: 3}
+    - {fileID: 21300000, guid: f54777afb17aa59b803b922b5e92e4ec, type: 3}
+    - {fileID: 21300000, guid: 9ec6e3a380548ebac7b45bdc6b2eddcc, type: 3}
+    - {fileID: 21300000, guid: b432df17da6e91b77e42ad81bc538396, type: 3}
+    - {fileID: 21300000, guid: 14f1d498e86f8c969ce5e7c8b9c8c70b, type: 3}
+    - {fileID: 21300000, guid: a575616cd0097d198876b40fe6df3cd0, type: 3}
+    - {fileID: 21300000, guid: 4598854296489a4ca038d3a6920f199a, type: 3}
+    - {fileID: 21300000, guid: 601755deddb43dffe0f9288385e90bf1, type: 3}
+    - {fileID: 21300000, guid: 1ef0021b3acb55b62485fabca7453c51, type: 3}
+    stun:
+    - {fileID: -6609881236248229933, guid: 834027c33ed54864d9155acbca7f6619, type: 3}
+    dodgeUp:
+    - {fileID: 21300000, guid: c78cda6fea8c86d62dd78cab60b78006, type: 3}
+    - {fileID: 21300000, guid: 59d1c23d70cbbc4547d416200a119f26, type: 3}
+    - {fileID: 21300000, guid: 3c076d2cc15e67337b6e6ab17afc505e, type: 3}
+    - {fileID: 21300000, guid: aee030058e887d68e230145bad2b6e01, type: 3}
+    - {fileID: 21300000, guid: a1e3c1cd62f4ace2ef4b64149e8032ad, type: 3}
+    - {fileID: 21300000, guid: 82b0b1760bcc33e610771d8f536568d7, type: 3}
+    - {fileID: 21300000, guid: 18cc94827dde9e84f7d85368f5437a26, type: 3}
+    - {fileID: 21300000, guid: 731f13c2d72f092ee7f020c6c4c5b1c0, type: 3}
+    - {fileID: 21300000, guid: 65e702818ece726d3308c09cd55dd2c8, type: 3}
+    - {fileID: 21300000, guid: c486607c88724bda71f345bee128c5a0, type: 3}
+    - {fileID: 21300000, guid: ed66527a682cf6f76fb1c69254089cff, type: 3}
+    - {fileID: 21300000, guid: 074c72c3b37ea8240f93ec2fbb097cf2, type: 3}
+    - {fileID: 21300000, guid: 70a36189ae1df28226eb97f510ca4337, type: 3}
+    - {fileID: 21300000, guid: 71591c59c5bb59e5978a2ace021b0636, type: 3}
+    - {fileID: 21300000, guid: 87b3ddd813c467d9983ac63228c45944, type: 3}
+    - {fileID: 21300000, guid: d1d2e5e737dc0885ee33f91120689b55, type: 3}
+    - {fileID: 21300000, guid: fe6f1bc65c563d4e5f2067b9345901b9, type: 3}
+    dodgeDown:
+    - {fileID: 21300000, guid: b88aad217682d0169c8e22ed70868e67, type: 3}
+    - {fileID: 21300000, guid: 92551857c160f6ca55acfd9970a5471c, type: 3}
+    - {fileID: 21300000, guid: e62d82941d71a8653766eb084aebaa52, type: 3}
+    - {fileID: 21300000, guid: fd8ef9029e89e37cb3dac46877b50cdf, type: 3}
+    - {fileID: 21300000, guid: 4847321a2c51369d5d385a3e49a60279, type: 3}
+    - {fileID: 21300000, guid: f9ddfe4640a7ce702585c60ad8122fca, type: 3}
+    - {fileID: 21300000, guid: 5da1866e158c1e507a78a8bd64666e1a, type: 3}
+    - {fileID: 21300000, guid: 307cbdf90fef28733f7e1002b368ed9b, type: 3}
+    - {fileID: 21300000, guid: 6cecd4283105da179f76e0641b886117, type: 3}
+    - {fileID: 21300000, guid: 17f63797617ce2d86d4de2f06be8380f, type: 3}
+    - {fileID: 21300000, guid: 57fc9ffe6c7558e3c049cff11c3ff2e1, type: 3}
+    - {fileID: 21300000, guid: 0b08e54dacb5ed0186fe354c0784c8a0, type: 3}
+    - {fileID: 21300000, guid: e8ea83f4202400838e99b3a213466929, type: 3}
+    dodgeBack:
+    - {fileID: 21300000, guid: 05f73f8b5d17ea0b05c8002b86abe85a, type: 3}
+    - {fileID: 21300000, guid: 0ca8d4ac5427de788cb7da6daf87ccab, type: 3}
+    - {fileID: 21300000, guid: 54c2f1f989cef4ea79b71af2ed73bdec, type: 3}
+    - {fileID: 21300000, guid: abfe7b362442af65c08ab3050176f699, type: 3}
+    - {fileID: 21300000, guid: 9955fb7077a23319af20af4bcde4327b, type: 3}
+    - {fileID: 21300000, guid: 749ea46bd2b63cf0a31ba73bf2378f46, type: 3}
+    - {fileID: 21300000, guid: 76a3f6800fcb8df868158fd86a61f86d, type: 3}
+    - {fileID: 21300000, guid: 5b5079501a9fc1b6e83c1dae565129d7, type: 3}
+    - {fileID: 21300000, guid: d5ac75b0fe42d28d535706730cf05b2c, type: 3}
+    - {fileID: 21300000, guid: fa1a8ab7adf34c5604736ff41297fad9, type: 3}
+    - {fileID: 21300000, guid: bfa37e995a4aca51f15850ed2ed1cc7e, type: 3}
+    - {fileID: 21300000, guid: 1729446c0d480ad2c58611a8efbb886a, type: 3}
+    - {fileID: 21300000, guid: 9bb177b5d664c08789bad200800eb44d, type: 3}
+    dodgeForward:
+    - {fileID: 21300000, guid: 027354c01206274a0c7434e8eb58ff58, type: 3}
+    - {fileID: 21300000, guid: 9339c21511acfc11b376b50e3580b814, type: 3}
+    - {fileID: 21300000, guid: fa472afbf054035cd3e3f095098c9949, type: 3}
+    - {fileID: 21300000, guid: c9f658b570bdfd73d0437866c82c8283, type: 3}
+    - {fileID: 21300000, guid: ce81597e47a127cca122997b54f8599c, type: 3}
+    - {fileID: 21300000, guid: f2db56ec9509c5581cf7ab7573e5d9ce, type: 3}
+    - {fileID: 21300000, guid: 5d44ed4699964ba61ba5ff7fb7a4cbbe, type: 3}
+    - {fileID: 21300000, guid: 364620fc8963c8045cfa42d9aa89d575, type: 3}
+    - {fileID: 21300000, guid: 0edae2315589c8420e396e968cd47c8f, type: 3}
+    - {fileID: 21300000, guid: 1f84e2df4c7ea2fd3c77919d8e3f4f21, type: 3}
+    - {fileID: 21300000, guid: bdd73ef34cb8fbd494ba1910f627d3c6, type: 3}
+    - {fileID: 21300000, guid: e10466f171471710fc5fa081035ac3ae, type: 3}
+    - {fileID: 21300000, guid: 3fddca062de949e9ab35e2e0bcbfb770, type: 3}
+    - {fileID: 21300000, guid: 10b461876cdf5fa5029761f750dec809, type: 3}
+    - {fileID: 21300000, guid: 48039b63e88b40f28228026020e7c3f2, type: 3}
+    - {fileID: 21300000, guid: be32c33738fe9d5f423d9d5ffba886e3, type: 3}
+    - {fileID: 21300000, guid: 7ebaae3fc0a75aabf33f36fa5618904c, type: 3}
+    facesRight: 1
+    height: 1.1
+    referenceHeightPixels: 84
+    material: {fileID: 2100000, guid: be9afea85f4c54c45907d1db78805247, type: 2}
+    clips:
+    - motion: 0
+      sourceId: hero-v5-idle
+      frames:
+      - {fileID: 21300000, guid: 8aeb3922bd951a685fa10e7510783292, type: 3}
+      - {fileID: 21300000, guid: 74f14eb6e6643c55dcae5035e71650b7, type: 3}
+      - {fileID: 21300000, guid: f4e8bfa71c48ba9cda9d2765f358dfad, type: 3}
+      - {fileID: 21300000, guid: 07bbe70cd860d2bdb2353c8c297d1bad, type: 3}
+      - {fileID: 21300000, guid: d3959d4676ad3cedab2e0f0f322ecd21, type: 3}
+      - {fileID: 21300000, guid: 0ba8b5e6f694268aaf641a547766f34b, type: 3}
+      - {fileID: 21300000, guid: da0af984ac2519060b697310a9a0c7c4, type: 3}
+      - {fileID: 21300000, guid: 34c542d9af8307b2893b3fc3b7d05e19, type: 3}
+      sourceFrames: 0100000002000000030000000400000005000000060000000700000008000000
+      fps: 12
+      frameDurationsMs: 
+      loop: 1
+      contactFrame: -1
+      referenceHeightPixels: 0
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors:
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      effectOrigin: {x: 0, y: 0}
+      staticFallback: 0
+    - motion: 1
+      sourceId: hero-approved-dash-20261021-02
+      frames:
+      - {fileID: 21300000, guid: 9ab5382bbab506f4594bed5659ca0123, type: 3}
+      - {fileID: 21300000, guid: 9471fcec626e44a4091a4466612210e9, type: 3}
+      - {fileID: 21300000, guid: 5c53492b62be1ce4a9478952ba78bf5e, type: 3}
+      - {fileID: 21300000, guid: b67eea1b9f8f59e4bac39f7c55024cb9, type: 3}
+      - {fileID: 21300000, guid: b7df1760b7218c44a897687da36d7974, type: 3}
+      - {fileID: 21300000, guid: 036f2fb02a24c7a4a9b800fd8a788c88, type: 3}
+      - {fileID: 21300000, guid: 2bc8ce1cb029cab49a16994967f47fec, type: 3}
+      - {fileID: 21300000, guid: 747db2021df97034a8a51df94a19d60f, type: 3}
+      sourceFrames: 0100000002000000030000000400000005000000060000000700000008000000
+      fps: 20
+      frameDurationsMs: 28000000280000003c0000003c00000028000000280000003c0000003c000000
+      loop: 1
+      contactFrame: -1
+      referenceHeightPixels: 0
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors:
+      - {x: 86, y: 60}
+      - {x: 86, y: 60}
+      - {x: 86, y: 60}
+      - {x: 86, y: 60}
+      - {x: 86, y: 60}
+      - {x: 86, y: 60}
+      - {x: 86, y: 60}
+      - {x: 86, y: 60}
+      effectOrigin: {x: 0, y: 0}
+      staticFallback: 0
+    - motion: 3
+      sourceId: hero-v6-slash-up
+      frames:
+      - {fileID: 21300000, guid: 95147a81142a32d5b3512a3edc4f5b0b, type: 3}
+      - {fileID: 21300000, guid: 9f9e9110611a992e723dffc4b770a06c, type: 3}
+      - {fileID: 21300000, guid: 85269349611fb6c19fe72de5a0403c48, type: 3}
+      - {fileID: 21300000, guid: 8fe8b619d513c77cf43a76f93aee899d, type: 3}
+      - {fileID: 21300000, guid: 8793e6261f21bd44f3365c0c26a005a6, type: 3}
+      - {fileID: 21300000, guid: cdcf0ded8e5759734f0351cd42e4e9fb, type: 3}
+      - {fileID: 21300000, guid: f54777afb17aa59b803b922b5e92e4ec, type: 3}
+      - {fileID: 21300000, guid: 9ec6e3a380548ebac7b45bdc6b2eddcc, type: 3}
+      - {fileID: 21300000, guid: b432df17da6e91b77e42ad81bc538396, type: 3}
+      - {fileID: 21300000, guid: 14f1d498e86f8c969ce5e7c8b9c8c70b, type: 3}
+      - {fileID: 21300000, guid: a575616cd0097d198876b40fe6df3cd0, type: 3}
+      - {fileID: 21300000, guid: 4598854296489a4ca038d3a6920f199a, type: 3}
+      - {fileID: 21300000, guid: 601755deddb43dffe0f9288385e90bf1, type: 3}
+      - {fileID: 21300000, guid: 1ef0021b3acb55b62485fabca7453c51, type: 3}
+      sourceFrames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a000000110000001700000018000000
+      fps: 60
+      frameDurationsMs: 
+      loop: 0
+      contactFrame: 7
+      referenceHeightPixels: 0
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors:
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      effectOrigin: {x: 91, y: 82}
+      staticFallback: 0
+    - motion: 4
+      sourceId: hero-v6-slash-down
+      frames:
+      - {fileID: 21300000, guid: 195933181a775752ce701ef81c22ad3e, type: 3}
+      - {fileID: 21300000, guid: c8155504c7208fff71bab93c5fe47f6b, type: 3}
+      - {fileID: 21300000, guid: f2ba6a258246fdd21d3c63b153d6bf99, type: 3}
+      - {fileID: 21300000, guid: bc77e50cee04f64fc5af4c4d81baac9a, type: 3}
+      - {fileID: 21300000, guid: 4a332f6bdfa0d087e1c31948e676de10, type: 3}
+      - {fileID: 21300000, guid: 0cec1ee8e7054c653a07fbbc0e5dadda, type: 3}
+      - {fileID: 21300000, guid: a18fa24f1b17149b75e5d423b5be4e52, type: 3}
+      - {fileID: 21300000, guid: 2c7c46efae192318f5fc280ff2097c54, type: 3}
+      - {fileID: 21300000, guid: 21230876c47afcbd0017355112167504, type: 3}
+      - {fileID: 21300000, guid: 4f74c6857decb4e23ce6baac74f5cb2a, type: 3}
+      - {fileID: 21300000, guid: 969c403e0801494e3f60ad358e71bb3c, type: 3}
+      - {fileID: 21300000, guid: 7f3e793b7c2de39642aacb3132ed39dd, type: 3}
+      sourceFrames: 000000000100000002000000030000000400000005000000130000001400000015000000160000001700000018000000
+      fps: 60
+      frameDurationsMs: 
+      loop: 0
+      contactFrame: 4
+      referenceHeightPixels: 0
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors:
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      effectOrigin: {x: 66, y: 17}
+      staticFallback: 0
+    - motion: 7
+      sourceId: hero-dodge-up
+      frames:
+      - {fileID: 21300000, guid: c78cda6fea8c86d62dd78cab60b78006, type: 3}
+      - {fileID: 21300000, guid: 59d1c23d70cbbc4547d416200a119f26, type: 3}
+      - {fileID: 21300000, guid: 3c076d2cc15e67337b6e6ab17afc505e, type: 3}
+      - {fileID: 21300000, guid: aee030058e887d68e230145bad2b6e01, type: 3}
+      - {fileID: 21300000, guid: a1e3c1cd62f4ace2ef4b64149e8032ad, type: 3}
+      - {fileID: 21300000, guid: 82b0b1760bcc33e610771d8f536568d7, type: 3}
+      - {fileID: 21300000, guid: 18cc94827dde9e84f7d85368f5437a26, type: 3}
+      - {fileID: 21300000, guid: 731f13c2d72f092ee7f020c6c4c5b1c0, type: 3}
+      - {fileID: 21300000, guid: 65e702818ece726d3308c09cd55dd2c8, type: 3}
+      - {fileID: 21300000, guid: c486607c88724bda71f345bee128c5a0, type: 3}
+      - {fileID: 21300000, guid: ed66527a682cf6f76fb1c69254089cff, type: 3}
+      - {fileID: 21300000, guid: 074c72c3b37ea8240f93ec2fbb097cf2, type: 3}
+      - {fileID: 21300000, guid: 70a36189ae1df28226eb97f510ca4337, type: 3}
+      - {fileID: 21300000, guid: 71591c59c5bb59e5978a2ace021b0636, type: 3}
+      - {fileID: 21300000, guid: 87b3ddd813c467d9983ac63228c45944, type: 3}
+      - {fileID: 21300000, guid: d1d2e5e737dc0885ee33f91120689b55, type: 3}
+      - {fileID: 21300000, guid: fe6f1bc65c563d4e5f2067b9345901b9, type: 3}
+      sourceFrames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f00000010000000
+      fps: 20
+      frameDurationsMs: 
+      loop: 0
+      contactFrame: -1
+      referenceHeightPixels: 0
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors:
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      effectOrigin: {x: 0, y: 0}
+      staticFallback: 0
+    - motion: 9
+      sourceId: hero-dodge-down
+      frames:
+      - {fileID: 21300000, guid: b88aad217682d0169c8e22ed70868e67, type: 3}
+      - {fileID: 21300000, guid: 92551857c160f6ca55acfd9970a5471c, type: 3}
+      - {fileID: 21300000, guid: e62d82941d71a8653766eb084aebaa52, type: 3}
+      - {fileID: 21300000, guid: fd8ef9029e89e37cb3dac46877b50cdf, type: 3}
+      - {fileID: 21300000, guid: 4847321a2c51369d5d385a3e49a60279, type: 3}
+      - {fileID: 21300000, guid: f9ddfe4640a7ce702585c60ad8122fca, type: 3}
+      - {fileID: 21300000, guid: 5da1866e158c1e507a78a8bd64666e1a, type: 3}
+      - {fileID: 21300000, guid: 307cbdf90fef28733f7e1002b368ed9b, type: 3}
+      - {fileID: 21300000, guid: 6cecd4283105da179f76e0641b886117, type: 3}
+      - {fileID: 21300000, guid: 17f63797617ce2d86d4de2f06be8380f, type: 3}
+      - {fileID: 21300000, guid: 57fc9ffe6c7558e3c049cff11c3ff2e1, type: 3}
+      - {fileID: 21300000, guid: 0b08e54dacb5ed0186fe354c0784c8a0, type: 3}
+      - {fileID: 21300000, guid: e8ea83f4202400838e99b3a213466929, type: 3}
+      sourceFrames: 0000000001000000020000000300000004000000060000000a0000000b0000000c0000000d0000000e0000000f00000010000000
+      fps: 20
+      frameDurationsMs: 
+      loop: 0
+      contactFrame: -1
+      referenceHeightPixels: 0
+      lowPoseFrames:
+      - {fileID: 21300000, guid: 4847321a2c51369d5d385a3e49a60279, type: 3}
+      - {fileID: 21300000, guid: f9ddfe4640a7ce702585c60ad8122fca, type: 3}
+      - {fileID: 21300000, guid: 5da1866e158c1e507a78a8bd64666e1a, type: 3}
+      recoverFrames:
+      - {fileID: 21300000, guid: 307cbdf90fef28733f7e1002b368ed9b, type: 3}
+      - {fileID: 21300000, guid: 6cecd4283105da179f76e0641b886117, type: 3}
+      - {fileID: 21300000, guid: 17f63797617ce2d86d4de2f06be8380f, type: 3}
+      - {fileID: 21300000, guid: 57fc9ffe6c7558e3c049cff11c3ff2e1, type: 3}
+      - {fileID: 21300000, guid: 0b08e54dacb5ed0186fe354c0784c8a0, type: 3}
+      - {fileID: 21300000, guid: e8ea83f4202400838e99b3a213466929, type: 3}
+      faceAnchors:
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      effectOrigin: {x: 0, y: 0}
+      staticFallback: 0
+    - motion: 8
+      sourceId: hero-dodge-back
+      frames:
+      - {fileID: 21300000, guid: 05f73f8b5d17ea0b05c8002b86abe85a, type: 3}
+      - {fileID: 21300000, guid: 0ca8d4ac5427de788cb7da6daf87ccab, type: 3}
+      - {fileID: 21300000, guid: 54c2f1f989cef4ea79b71af2ed73bdec, type: 3}
+      - {fileID: 21300000, guid: abfe7b362442af65c08ab3050176f699, type: 3}
+      - {fileID: 21300000, guid: 9955fb7077a23319af20af4bcde4327b, type: 3}
+      - {fileID: 21300000, guid: 749ea46bd2b63cf0a31ba73bf2378f46, type: 3}
+      - {fileID: 21300000, guid: 76a3f6800fcb8df868158fd86a61f86d, type: 3}
+      - {fileID: 21300000, guid: 5b5079501a9fc1b6e83c1dae565129d7, type: 3}
+      - {fileID: 21300000, guid: d5ac75b0fe42d28d535706730cf05b2c, type: 3}
+      - {fileID: 21300000, guid: fa1a8ab7adf34c5604736ff41297fad9, type: 3}
+      - {fileID: 21300000, guid: bfa37e995a4aca51f15850ed2ed1cc7e, type: 3}
+      - {fileID: 21300000, guid: 1729446c0d480ad2c58611a8efbb886a, type: 3}
+      - {fileID: 21300000, guid: 9bb177b5d664c08789bad200800eb44d, type: 3}
+      sourceFrames: 0000000001000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f00000010000000
+      fps: 20
+      frameDurationsMs: 
+      loop: 0
+      contactFrame: -1
+      referenceHeightPixels: 0
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors:
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      effectOrigin: {x: 0, y: 0}
+      staticFallback: 0
+    - motion: 10
+      sourceId: hero-dodge-front
+      frames:
+      - {fileID: 21300000, guid: 027354c01206274a0c7434e8eb58ff58, type: 3}
+      - {fileID: 21300000, guid: 9339c21511acfc11b376b50e3580b814, type: 3}
+      - {fileID: 21300000, guid: fa472afbf054035cd3e3f095098c9949, type: 3}
+      - {fileID: 21300000, guid: c9f658b570bdfd73d0437866c82c8283, type: 3}
+      - {fileID: 21300000, guid: ce81597e47a127cca122997b54f8599c, type: 3}
+      - {fileID: 21300000, guid: f2db56ec9509c5581cf7ab7573e5d9ce, type: 3}
+      - {fileID: 21300000, guid: 5d44ed4699964ba61ba5ff7fb7a4cbbe, type: 3}
+      - {fileID: 21300000, guid: 364620fc8963c8045cfa42d9aa89d575, type: 3}
+      - {fileID: 21300000, guid: 0edae2315589c8420e396e968cd47c8f, type: 3}
+      - {fileID: 21300000, guid: 1f84e2df4c7ea2fd3c77919d8e3f4f21, type: 3}
+      - {fileID: 21300000, guid: bdd73ef34cb8fbd494ba1910f627d3c6, type: 3}
+      - {fileID: 21300000, guid: e10466f171471710fc5fa081035ac3ae, type: 3}
+      - {fileID: 21300000, guid: 3fddca062de949e9ab35e2e0bcbfb770, type: 3}
+      - {fileID: 21300000, guid: 10b461876cdf5fa5029761f750dec809, type: 3}
+      - {fileID: 21300000, guid: 48039b63e88b40f28228026020e7c3f2, type: 3}
+      - {fileID: 21300000, guid: be32c33738fe9d5f423d9d5ffba886e3, type: 3}
+      - {fileID: 21300000, guid: 7ebaae3fc0a75aabf33f36fa5618904c, type: 3}
+      sourceFrames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f00000010000000
+      fps: 20
+      frameDurationsMs: 
+      loop: 0
+      contactFrame: -1
+      referenceHeightPixels: 0
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors:
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      effectOrigin: {x: 0, y: 0}
+      staticFallback: 0
+    - motion: 5
+      sourceId: hero-v5-hit
+      frames:
+      - {fileID: 21300000, guid: bd41244077065a7ce44cafadb8c81012, type: 3}
+      - {fileID: 21300000, guid: d10b3481b1d5be6e9ec59c6bca5891c0, type: 3}
+      - {fileID: 21300000, guid: edb30af5ba4dfd3744de1467f50cd628, type: 3}
+      - {fileID: 21300000, guid: 22acdb04dbae6e80935d5e39247b0acd, type: 3}
+      - {fileID: 21300000, guid: e5d3ed92b86dd897f08b73912a1364d6, type: 3}
+      - {fileID: 21300000, guid: aa68ecb20b2553c1a58d85e548c44ca9, type: 3}
+      - {fileID: 21300000, guid: 06db7dada0b09a9c713b277fe94f09a3, type: 3}
+      - {fileID: 21300000, guid: 3d4fdc9e6ad3f7819ca6b463cc1c94fa, type: 3}
+      sourceFrames: 0100000002000000030000000400000005000000060000000700000008000000
+      fps: 40
+      frameDurationsMs: 
+      loop: 0
+      contactFrame: -1
+      referenceHeightPixels: 0
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors:
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      effectOrigin: {x: 0, y: 0}
+      staticFallback: 0
+    - motion: 12
+      sourceId: hero-v5-death
+      frames:
+      - {fileID: 21300000, guid: 228dde882c1fcd8cc8cfaed185eb6fe3, type: 3}
+      - {fileID: 21300000, guid: 2d2a0fd4ba2d2b5c1ce287e88c006799, type: 3}
+      - {fileID: 21300000, guid: e09eca7cb1585efef91520fa59c55fcb, type: 3}
+      - {fileID: 21300000, guid: 5227265634e64f9f909f19bc4d336826, type: 3}
+      - {fileID: 21300000, guid: 5db537b3a4ed7d439097ecbd569e1be0, type: 3}
+      - {fileID: 21300000, guid: 587c1f692a2ef295d0514e2a30fb203a, type: 3}
+      - {fileID: 21300000, guid: 0ea33a412379712f42478f24235e9713, type: 3}
+      - {fileID: 21300000, guid: 476e8cc3928d782338d415b37081382e, type: 3}
+      - {fileID: 21300000, guid: a9637c21b1229e21ebe3e2afa9d2c59d, type: 3}
+      - {fileID: 21300000, guid: f1bd84fc1356dc7c6d00c61e9c99c4f6, type: 3}
+      - {fileID: 21300000, guid: 4f631e45d7fc27c104956a431f90a7e4, type: 3}
+      - {fileID: 21300000, guid: fa32b87e49b5123a8aa4a4363f7c4bd7, type: 3}
+      sourceFrames: 0000000001000000020000000300000004000000050000000b0000000c0000000d0000000e0000000f00000010000000
+      fps: 32
+      frameDurationsMs: 
+      loop: 0
+      contactFrame: -1
+      referenceHeightPixels: 0
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors:
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      effectOrigin: {x: 0, y: 0}
+      staticFallback: 0
+    - motion: 11
+      sourceId: hero-v5-return
+      frames:
+      - {fileID: 21300000, guid: e353fed30cfebb921599ef1eb74de15b, type: 3}
+      - {fileID: 21300000, guid: b692f6accae4a3659692055ae8ede075, type: 3}
+      - {fileID: 21300000, guid: 7038c38d6721c6575dbda90dfe622265, type: 3}
+      - {fileID: 21300000, guid: 55cb40e1f4f9ca7d076bf89be2d4ab12, type: 3}
+      - {fileID: 21300000, guid: 15fe80189962146e943ebb1484064c7f, type: 3}
+      - {fileID: 21300000, guid: 3f6e594d6164b18daaf27451139230a8, type: 3}
+      - {fileID: 21300000, guid: 7adc8182b90a88b96afce53e3c4965af, type: 3}
+      - {fileID: 21300000, guid: bf36baa5bd635329669c2592a98b02eb, type: 3}
+      - {fileID: 21300000, guid: 0e096476927d56aba52265d8ea79ce42, type: 3}
+      - {fileID: 21300000, guid: 90db97ac5faa97790fd8b0e0b5fffd32, type: 3}
+      - {fileID: 21300000, guid: b91fe46b4643525af515dbbb908365ea, type: 3}
+      - {fileID: 21300000, guid: 0ebb7a47da1b97d51b3c88197a5f4aaa, type: 3}
+      - {fileID: 21300000, guid: 3248f22fcfde7d89ae893a106dd805f7, type: 3}
+      - {fileID: 21300000, guid: 25114794a77d6465d94d1223e19f1f21, type: 3}
+      - {fileID: 21300000, guid: 40a35338595eaceb9436f62ba0320f7f, type: 3}
+      - {fileID: 21300000, guid: 45d269fe6df696f1c36233b65e28647a, type: 3}
+      sourceFrames: 0100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f00000010000000
+      fps: 64
+      frameDurationsMs: 
+      loop: 0
+      contactFrame: -1
+      referenceHeightPixels: 0
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors:
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      - {x: 60, y: 46}
+      effectOrigin: {x: 0, y: 0}
+      staticFallback: 0
+    - motion: 6
+      sourceId: legacy-hero_on-static-stun
+      frames:
+      - {fileID: -6609881236248229933, guid: 834027c33ed54864d9155acbca7f6619, type: 3}
+      sourceFrames: 
+      fps: 1
+      frameDurationsMs: 
+      loop: 1
+      contactFrame: -1
+      referenceHeightPixels: 286
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors: []
+      effectOrigin: {x: 0, y: 0}
+      staticFallback: 1
+  - id: gate_sentinel
+    idle:
+    - {fileID: 21300000, guid: a65b266fa3c1cc8edbed0cd75391ecfd, type: 3}
+    attack:
+    - {fileID: 21300000, guid: b8edd1acb1e12af3df6afd6dd8882f7d, type: 3}
+    - {fileID: 21300000, guid: c196e5a60c2666620c945a341c4bf345, type: 3}
+    - {fileID: 21300000, guid: c7a40217b00e3d492682055717df2752, type: 3}
+    - {fileID: 21300000, guid: dbd7118f50e35294d3bbbe013f9cb6d5, type: 3}
+    - {fileID: 21300000, guid: 9f09e73a98325aa556a571b957bedb4e, type: 3}
+    - {fileID: 21300000, guid: 0d9cf741c5e782086a1cce46424dcf3b, type: 3}
+    - {fileID: 21300000, guid: bed52e25754b6b3a19a54f080872902f, type: 3}
+    - {fileID: 21300000, guid: b145426aa3fccb6acbda14ca14cc0b0a, type: 3}
+    - {fileID: 21300000, guid: 606875faffe8eff6031bc7e358d11769, type: 3}
+    - {fileID: 21300000, guid: ed74a6c7e213974b9115833578ba551a, type: 3}
+    - {fileID: 21300000, guid: 4186b15c050b3afd4fe378221e3d13db, type: 3}
+    - {fileID: 21300000, guid: 4a467742327266489eca882f2246fad1, type: 3}
+    - {fileID: 21300000, guid: 17803bac58758fa91c6d50e7745e1f92, type: 3}
+    - {fileID: 21300000, guid: 900f2e5e7d016c43d17df7b74cfdade9, type: 3}
+    stun:
+    - {fileID: 317748415028096417, guid: f846594fddd735f4bafee0487516413b, type: 3}
+    dodgeUp: []
+    dodgeDown: []
+    dodgeBack: []
+    dodgeForward: []
+    facesRight: 0
+    height: 2
+    referenceHeightPixels: 86
+    material: {fileID: 2100000, guid: be9afea85f4c54c45907d1db78805247, type: 2}
+    clips:
+    - motion: 0
+      sourceId: sentinel-canonical-static-idle
+      frames:
+      - {fileID: 21300000, guid: a65b266fa3c1cc8edbed0cd75391ecfd, type: 3}
+      sourceFrames: 00000000
+      fps: 1
+      frameDurationsMs: 
+      loop: 1
+      contactFrame: -1
+      referenceHeightPixels: 0
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors:
+      - {x: 76, y: 46}
+      effectOrigin: {x: 0, y: 0}
+      staticFallback: 1
+    - motion: 2
+      sourceId: sentinel-attack
+      frames:
+      - {fileID: 21300000, guid: b8edd1acb1e12af3df6afd6dd8882f7d, type: 3}
+      - {fileID: 21300000, guid: c196e5a60c2666620c945a341c4bf345, type: 3}
+      - {fileID: 21300000, guid: c7a40217b00e3d492682055717df2752, type: 3}
+      - {fileID: 21300000, guid: dbd7118f50e35294d3bbbe013f9cb6d5, type: 3}
+      - {fileID: 21300000, guid: 9f09e73a98325aa556a571b957bedb4e, type: 3}
+      - {fileID: 21300000, guid: 0d9cf741c5e782086a1cce46424dcf3b, type: 3}
+      - {fileID: 21300000, guid: bed52e25754b6b3a19a54f080872902f, type: 3}
+      - {fileID: 21300000, guid: b145426aa3fccb6acbda14ca14cc0b0a, type: 3}
+      - {fileID: 21300000, guid: 606875faffe8eff6031bc7e358d11769, type: 3}
+      - {fileID: 21300000, guid: ed74a6c7e213974b9115833578ba551a, type: 3}
+      - {fileID: 21300000, guid: 4186b15c050b3afd4fe378221e3d13db, type: 3}
+      - {fileID: 21300000, guid: 4a467742327266489eca882f2246fad1, type: 3}
+      - {fileID: 21300000, guid: 17803bac58758fa91c6d50e7745e1f92, type: 3}
+      - {fileID: 21300000, guid: 900f2e5e7d016c43d17df7b74cfdade9, type: 3}
+      sourceFrames: 0100000005000000060000000700000008000000090000000a0000000b0000000c0000000d00000015000000160000001700000018000000
+      fps: 20
+      frameDurationsMs: 
+      loop: 0
+      contactFrame: 7
+      referenceHeightPixels: 0
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors:
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      effectOrigin: {x: 0, y: 0}
+      staticFallback: 0
+    - motion: 5
+      sourceId: sentinel-v6-hit-clean
+      frames:
+      - {fileID: 21300000, guid: 6db6b9b978de6773b4546db0c34f65e1, type: 3}
+      - {fileID: 21300000, guid: 8f72d16b7e0449c5abcbf2da441fa5ca, type: 3}
+      - {fileID: 21300000, guid: 71b78d528dbcee4497ea28005d6d67fd, type: 3}
+      - {fileID: 21300000, guid: 1945a3db47e0444c87b408d9db02ba94, type: 3}
+      - {fileID: 21300000, guid: fbff0c3688b10d79877d16499ea3ea53, type: 3}
+      - {fileID: 21300000, guid: 15b4e66e5550e9c8a7e14e472ffaf89e, type: 3}
+      - {fileID: 21300000, guid: d7a00c7aa9471eedb2a7375eea564043, type: 3}
+      - {fileID: 21300000, guid: 789ca1ba4f6060fff7ef946d8e3ca471, type: 3}
+      - {fileID: 21300000, guid: 6db6b9b978de6773b4546db0c34f65e1, type: 3}
+      sourceFrames: 0000000004000000050000000600000008000000090000000a0000000b00000000000000
+      fps: 50
+      frameDurationsMs: 
+      loop: 0
+      contactFrame: -1
+      referenceHeightPixels: 0
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors:
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      effectOrigin: {x: 0, y: 0}
+      staticFallback: 0
+    - motion: 12
+      sourceId: sentinel-v6-hit-clean
+      frames:
+      - {fileID: 21300000, guid: 6db6b9b978de6773b4546db0c34f65e1, type: 3}
+      - {fileID: 21300000, guid: 8f72d16b7e0449c5abcbf2da441fa5ca, type: 3}
+      - {fileID: 21300000, guid: 71b78d528dbcee4497ea28005d6d67fd, type: 3}
+      - {fileID: 21300000, guid: 1945a3db47e0444c87b408d9db02ba94, type: 3}
+      - {fileID: 21300000, guid: fbff0c3688b10d79877d16499ea3ea53, type: 3}
+      - {fileID: 21300000, guid: 15b4e66e5550e9c8a7e14e472ffaf89e, type: 3}
+      - {fileID: 21300000, guid: d7a00c7aa9471eedb2a7375eea564043, type: 3}
+      - {fileID: 21300000, guid: 789ca1ba4f6060fff7ef946d8e3ca471, type: 3}
+      - {fileID: 21300000, guid: 6db6b9b978de6773b4546db0c34f65e1, type: 3}
+      sourceFrames: 0000000004000000050000000600000008000000090000000a0000000b00000000000000
+      fps: 50
+      frameDurationsMs: 
+      loop: 0
+      contactFrame: -1
+      referenceHeightPixels: 0
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors:
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      effectOrigin: {x: 0, y: 0}
+      staticFallback: 0
+    - motion: 6
+      sourceId: legacy-gate_sentinel-static-stun
+      frames:
+      - {fileID: 317748415028096417, guid: f846594fddd735f4bafee0487516413b, type: 3}
+      sourceFrames: 
+      fps: 1
+      frameDurationsMs: 
+      loop: 1
+      contactFrame: -1
+      referenceHeightPixels: 220
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors: []
+      effectOrigin: {x: 0, y: 0}
+      staticFallback: 1
+  - id: chain_thrall
+    idle:
+    - {fileID: 21300000, guid: 6c68dbdd62f8695f9ac6a3f2814fe466, type: 3}
+    attack:
+    - {fileID: 21300000, guid: 9366a37440c9c6d00579d2b4ef74d94e, type: 3}
+    - {fileID: 21300000, guid: 56a47271915e6fc566c95fa156527466, type: 3}
+    - {fileID: 21300000, guid: 149c4d0edb7f1a5da29a7cc65b36e0bf, type: 3}
+    - {fileID: 21300000, guid: 006b30c2730bd45f2f1096aa8f7dc5c6, type: 3}
+    - {fileID: 21300000, guid: b610a77392fc823731168b359a1fb283, type: 3}
+    - {fileID: 21300000, guid: 1423575110648848ef1f91dfb66cb6fb, type: 3}
+    - {fileID: 21300000, guid: b423a5bff0ab9de4d885621f7b32bfe9, type: 3}
+    - {fileID: 21300000, guid: a24a37211f13094e789f11b913ecd107, type: 3}
+    - {fileID: 21300000, guid: 99209368a9e407ae64454f27d7bc8e0a, type: 3}
+    - {fileID: 21300000, guid: c12a95366e66cf42a7c1c3c936c97d32, type: 3}
+    - {fileID: 21300000, guid: 8c12ac39824296b17f4c3382443d9ee7, type: 3}
+    - {fileID: 21300000, guid: 51f7614ed40abc1b4ac40cb11fc31731, type: 3}
+    - {fileID: 21300000, guid: 256304ee74430a92a1413d7eb8538d83, type: 3}
+    - {fileID: 21300000, guid: 56e5dca31cf8ec24703254d6e3027d8c, type: 3}
+    - {fileID: 21300000, guid: 5769ddcddf55a6801eb8e833dba68aa6, type: 3}
+    - {fileID: 21300000, guid: fd10a68c8a919227d4dd72fe057209ab, type: 3}
+    - {fileID: 21300000, guid: 176134fa36389a58a24a25b8b15480c1, type: 3}
+    stun:
+    - {fileID: -2464838755124118109, guid: f846594fddd735f4bafee0487516413b, type: 3}
+    dodgeUp: []
+    dodgeDown: []
+    dodgeBack: []
+    dodgeForward: []
+    facesRight: 0
+    height: 2
+    referenceHeightPixels: 86
+    material: {fileID: 2100000, guid: be9afea85f4c54c45907d1db78805247, type: 2}
+    clips:
+    - motion: 0
+      sourceId: chain-canonical-static-idle
+      frames:
+      - {fileID: 21300000, guid: 6c68dbdd62f8695f9ac6a3f2814fe466, type: 3}
+      sourceFrames: 00000000
+      fps: 1
+      frameDurationsMs: 
+      loop: 1
+      contactFrame: -1
+      referenceHeightPixels: 0
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors:
+      - {x: 76, y: 46}
+      effectOrigin: {x: 0, y: 0}
+      staticFallback: 1
+    - motion: 2
+      sourceId: chain-attack
+      frames:
+      - {fileID: 21300000, guid: 9366a37440c9c6d00579d2b4ef74d94e, type: 3}
+      - {fileID: 21300000, guid: 56a47271915e6fc566c95fa156527466, type: 3}
+      - {fileID: 21300000, guid: 149c4d0edb7f1a5da29a7cc65b36e0bf, type: 3}
+      - {fileID: 21300000, guid: 006b30c2730bd45f2f1096aa8f7dc5c6, type: 3}
+      - {fileID: 21300000, guid: b610a77392fc823731168b359a1fb283, type: 3}
+      - {fileID: 21300000, guid: 1423575110648848ef1f91dfb66cb6fb, type: 3}
+      - {fileID: 21300000, guid: b423a5bff0ab9de4d885621f7b32bfe9, type: 3}
+      - {fileID: 21300000, guid: a24a37211f13094e789f11b913ecd107, type: 3}
+      - {fileID: 21300000, guid: 99209368a9e407ae64454f27d7bc8e0a, type: 3}
+      - {fileID: 21300000, guid: c12a95366e66cf42a7c1c3c936c97d32, type: 3}
+      - {fileID: 21300000, guid: 8c12ac39824296b17f4c3382443d9ee7, type: 3}
+      - {fileID: 21300000, guid: 51f7614ed40abc1b4ac40cb11fc31731, type: 3}
+      - {fileID: 21300000, guid: 256304ee74430a92a1413d7eb8538d83, type: 3}
+      - {fileID: 21300000, guid: 56e5dca31cf8ec24703254d6e3027d8c, type: 3}
+      - {fileID: 21300000, guid: 5769ddcddf55a6801eb8e833dba68aa6, type: 3}
+      - {fileID: 21300000, guid: fd10a68c8a919227d4dd72fe057209ab, type: 3}
+      - {fileID: 21300000, guid: 176134fa36389a58a24a25b8b15480c1, type: 3}
+      sourceFrames: 010000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f00000010000000110000001400000018000000
+      fps: 20
+      frameDurationsMs: 
+      loop: 0
+      contactFrame: 8
+      referenceHeightPixels: 0
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors:
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      effectOrigin: {x: 0, y: 0}
+      staticFallback: 0
+    - motion: 5
+      sourceId: chain-v6-hit-clean
+      frames:
+      - {fileID: 21300000, guid: b651930f38b65c614516374d30539493, type: 3}
+      - {fileID: 21300000, guid: 15fada4e2b5267e04c75811cb5e92d44, type: 3}
+      - {fileID: 21300000, guid: 47a784b41c87d35fec29004259d872be, type: 3}
+      - {fileID: 21300000, guid: bf2a45729c0da9f115c04015a2fc7a8a, type: 3}
+      - {fileID: 21300000, guid: 113fc3faf20247f18f3f6fa4ee8a0565, type: 3}
+      - {fileID: 21300000, guid: c07f3415d0d77133f936d554a2d91190, type: 3}
+      - {fileID: 21300000, guid: 8b8ebd4d41c4d78124dbd509abae03ee, type: 3}
+      - {fileID: 21300000, guid: e817e75e876fc0eeee0b3fff22c965bb, type: 3}
+      - {fileID: 21300000, guid: 34c12dddf533b80065f637e5a64d1e01, type: 3}
+      sourceFrames: 000000000100000002000000040000000500000007000000090000000a00000010000000
+      fps: 50
+      frameDurationsMs: 
+      loop: 0
+      contactFrame: -1
+      referenceHeightPixels: 0
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors:
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      effectOrigin: {x: 0, y: 0}
+      staticFallback: 0
+    - motion: 12
+      sourceId: chain-v6-hit-clean
+      frames:
+      - {fileID: 21300000, guid: b651930f38b65c614516374d30539493, type: 3}
+      - {fileID: 21300000, guid: 15fada4e2b5267e04c75811cb5e92d44, type: 3}
+      - {fileID: 21300000, guid: 47a784b41c87d35fec29004259d872be, type: 3}
+      - {fileID: 21300000, guid: bf2a45729c0da9f115c04015a2fc7a8a, type: 3}
+      - {fileID: 21300000, guid: 113fc3faf20247f18f3f6fa4ee8a0565, type: 3}
+      - {fileID: 21300000, guid: c07f3415d0d77133f936d554a2d91190, type: 3}
+      - {fileID: 21300000, guid: 8b8ebd4d41c4d78124dbd509abae03ee, type: 3}
+      - {fileID: 21300000, guid: e817e75e876fc0eeee0b3fff22c965bb, type: 3}
+      - {fileID: 21300000, guid: 34c12dddf533b80065f637e5a64d1e01, type: 3}
+      sourceFrames: 000000000100000002000000040000000500000007000000090000000a00000010000000
+      fps: 50
+      frameDurationsMs: 
+      loop: 0
+      contactFrame: -1
+      referenceHeightPixels: 0
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors:
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      effectOrigin: {x: 0, y: 0}
+      staticFallback: 0
+    - motion: 6
+      sourceId: legacy-chain_thrall-static-stun
+      frames:
+      - {fileID: -2464838755124118109, guid: f846594fddd735f4bafee0487516413b, type: 3}
+      sourceFrames: 
+      fps: 1
+      frameDurationsMs: 
+      loop: 1
+      contactFrame: -1
+      referenceHeightPixels: 225
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors: []
+      effectOrigin: {x: 0, y: 0}
+      staticFallback: 1
+  - id: ash_wisp
+    idle:
+    - {fileID: 21300000, guid: da9b4137e2d097c7f488dc89c7b37639, type: 3}
+    attack:
+    - {fileID: 21300000, guid: bf96312393802cb6fe4074419bcab97c, type: 3}
+    - {fileID: 21300000, guid: d5180f96852244c38d1c038e13f8bcc1, type: 3}
+    - {fileID: 21300000, guid: 5216b23ef2ab0f758227ee5aaa53ce62, type: 3}
+    - {fileID: 21300000, guid: ff0c425db022b7538469c925534e558c, type: 3}
+    - {fileID: 21300000, guid: f6b4974895208ea6a0f6d335587be30f, type: 3}
+    - {fileID: 21300000, guid: a657cd4c74410ddd8181433c2ab780fc, type: 3}
+    - {fileID: 21300000, guid: df1c7ad37de7536f00057299795d1855, type: 3}
+    - {fileID: 21300000, guid: 0aa666f77c9ccb570f6fb83eb81d4f97, type: 3}
+    - {fileID: 21300000, guid: c85463ddf2bb7c490d7b5accde1bfb0e, type: 3}
+    - {fileID: 21300000, guid: 9a40c48fc645e7fcfbf01fa47134c87b, type: 3}
+    - {fileID: 21300000, guid: 7ec9df8d71bfed1e699287896dafbf99, type: 3}
+    - {fileID: 21300000, guid: 575a9ddc5debbf3d134050f21118b5e9, type: 3}
+    - {fileID: 21300000, guid: 1bfd08b2ca93328fb19c1c56d2e93411, type: 3}
+    - {fileID: 21300000, guid: b30cfb31bac12f1f9c94db7ffb0fb188, type: 3}
+    stun:
+    - {fileID: -4658551166589717869, guid: f846594fddd735f4bafee0487516413b, type: 3}
+    dodgeUp: []
+    dodgeDown: []
+    dodgeBack: []
+    dodgeForward: []
+    facesRight: 0
+    height: 2
+    referenceHeightPixels: 88
+    material: {fileID: 2100000, guid: be9afea85f4c54c45907d1db78805247, type: 2}
+    clips:
+    - motion: 0
+      sourceId: wisp-canonical-static-idle
+      frames:
+      - {fileID: 21300000, guid: da9b4137e2d097c7f488dc89c7b37639, type: 3}
+      sourceFrames: 00000000
+      fps: 1
+      frameDurationsMs: 
+      loop: 1
+      contactFrame: -1
+      referenceHeightPixels: 0
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors:
+      - {x: 76, y: 46}
+      effectOrigin: {x: 0, y: 0}
+      staticFallback: 1
+    - motion: 2
+      sourceId: wisp-attack
+      frames:
+      - {fileID: 21300000, guid: bf96312393802cb6fe4074419bcab97c, type: 3}
+      - {fileID: 21300000, guid: d5180f96852244c38d1c038e13f8bcc1, type: 3}
+      - {fileID: 21300000, guid: 5216b23ef2ab0f758227ee5aaa53ce62, type: 3}
+      - {fileID: 21300000, guid: ff0c425db022b7538469c925534e558c, type: 3}
+      - {fileID: 21300000, guid: f6b4974895208ea6a0f6d335587be30f, type: 3}
+      - {fileID: 21300000, guid: a657cd4c74410ddd8181433c2ab780fc, type: 3}
+      - {fileID: 21300000, guid: df1c7ad37de7536f00057299795d1855, type: 3}
+      - {fileID: 21300000, guid: 0aa666f77c9ccb570f6fb83eb81d4f97, type: 3}
+      - {fileID: 21300000, guid: c85463ddf2bb7c490d7b5accde1bfb0e, type: 3}
+      - {fileID: 21300000, guid: 9a40c48fc645e7fcfbf01fa47134c87b, type: 3}
+      - {fileID: 21300000, guid: 7ec9df8d71bfed1e699287896dafbf99, type: 3}
+      - {fileID: 21300000, guid: 575a9ddc5debbf3d134050f21118b5e9, type: 3}
+      - {fileID: 21300000, guid: 1bfd08b2ca93328fb19c1c56d2e93411, type: 3}
+      - {fileID: 21300000, guid: b30cfb31bac12f1f9c94db7ffb0fb188, type: 3}
+      sourceFrames: 0100000005000000060000000a0000000b0000000c0000000d0000000e000000120000001300000014000000150000001600000018000000
+      fps: 20
+      frameDurationsMs: 
+      loop: 0
+      contactFrame: 5
+      referenceHeightPixels: 0
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors:
+      - {x: 76, y: 46}
+      - {x: 76, y: 46}
+      - {x: 76, y: 46}
+      - {x: 76, y: 46}
+      - {x: 76, y: 46}
+      - {x: 76, y: 46}
+      - {x: 76, y: 46}
+      - {x: 76, y: 46}
+      - {x: 76, y: 46}
+      - {x: 76, y: 46}
+      - {x: 76, y: 46}
+      - {x: 76, y: 46}
+      - {x: 76, y: 46}
+      - {x: 76, y: 46}
+      effectOrigin: {x: 0, y: 0}
+      staticFallback: 0
+    - motion: 5
+      sourceId: wisp-v6-hit-clean
+      frames:
+      - {fileID: 21300000, guid: 8b690db73523ee37db4c4820e06c2ab0, type: 3}
+      - {fileID: 21300000, guid: 84965a7d16866232b50013cd6a9edcdc, type: 3}
+      - {fileID: 21300000, guid: 84bab39558c25ff851fffe7eaf43a0bc, type: 3}
+      - {fileID: 21300000, guid: 0f4fad761c9be6b9b5f2e841e83b1119, type: 3}
+      - {fileID: 21300000, guid: 4072eea49f98401effd749ad61adbdf9, type: 3}
+      - {fileID: 21300000, guid: c1e8d20a67af836ae78491d5647080da, type: 3}
+      - {fileID: 21300000, guid: f5cfec4cdbd88a8c0149bef1f4c214b9, type: 3}
+      - {fileID: 21300000, guid: 403294473fece5cf27c0c44783c1b670, type: 3}
+      - {fileID: 21300000, guid: 29c5e2daeaff18e70f7e7de344abf54e, type: 3}
+      sourceFrames: 00000000020000000300000004000000090000000a0000000b0000000c00000010000000
+      fps: 50
+      frameDurationsMs: 
+      loop: 0
+      contactFrame: -1
+      referenceHeightPixels: 0
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors:
+      - {x: 76, y: 46}
+      - {x: 76, y: 46}
+      - {x: 76, y: 46}
+      - {x: 76, y: 46}
+      - {x: 76, y: 46}
+      - {x: 76, y: 46}
+      - {x: 76, y: 46}
+      - {x: 76, y: 46}
+      - {x: 76, y: 46}
+      effectOrigin: {x: 0, y: 0}
+      staticFallback: 0
+    - motion: 12
+      sourceId: wisp-v6-hit-clean
+      frames:
+      - {fileID: 21300000, guid: 8b690db73523ee37db4c4820e06c2ab0, type: 3}
+      - {fileID: 21300000, guid: 84965a7d16866232b50013cd6a9edcdc, type: 3}
+      - {fileID: 21300000, guid: 84bab39558c25ff851fffe7eaf43a0bc, type: 3}
+      - {fileID: 21300000, guid: 0f4fad761c9be6b9b5f2e841e83b1119, type: 3}
+      - {fileID: 21300000, guid: 4072eea49f98401effd749ad61adbdf9, type: 3}
+      - {fileID: 21300000, guid: c1e8d20a67af836ae78491d5647080da, type: 3}
+      - {fileID: 21300000, guid: f5cfec4cdbd88a8c0149bef1f4c214b9, type: 3}
+      - {fileID: 21300000, guid: 403294473fece5cf27c0c44783c1b670, type: 3}
+      - {fileID: 21300000, guid: 29c5e2daeaff18e70f7e7de344abf54e, type: 3}
+      sourceFrames: 00000000020000000300000004000000090000000a0000000b0000000c00000010000000
+      fps: 50
+      frameDurationsMs: 
+      loop: 0
+      contactFrame: -1
+      referenceHeightPixels: 0
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors:
+      - {x: 76, y: 46}
+      - {x: 76, y: 46}
+      - {x: 76, y: 46}
+      - {x: 76, y: 46}
+      - {x: 76, y: 46}
+      - {x: 76, y: 46}
+      - {x: 76, y: 46}
+      - {x: 76, y: 46}
+      - {x: 76, y: 46}
+      effectOrigin: {x: 0, y: 0}
+      staticFallback: 0
+    - motion: 6
+      sourceId: legacy-ash_wisp-static-stun
+      frames:
+      - {fileID: -4658551166589717869, guid: f846594fddd735f4bafee0487516413b, type: 3}
+      sourceFrames: 
+      fps: 1
+      frameDurationsMs: 
+      loop: 1
+      contactFrame: -1
+      referenceHeightPixels: 268
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors: []
+      effectOrigin: {x: 0, y: 0}
+      staticFallback: 1
+  - id: gate_warden
+    idle:
+    - {fileID: 21300000, guid: 8ec866db0b648910d5d07f75b4836572, type: 3}
+    attack:
+    - {fileID: 21300000, guid: d9cf61d0fc979ba32bc9033a5b7d3bd3, type: 3}
+    - {fileID: 21300000, guid: 55b3b72e01db2ec0d8f0d564d9387cbf, type: 3}
+    - {fileID: 21300000, guid: c60a005311eac8ca5a373a06eb4bac29, type: 3}
+    - {fileID: 21300000, guid: ad07bec24c39cea0902964d78c0cd7d8, type: 3}
+    - {fileID: 21300000, guid: 7a5bb78460f1aa424ac8a82eddc88e0a, type: 3}
+    - {fileID: 21300000, guid: fe1d0ab65cd1b27bd511a0e943f05407, type: 3}
+    - {fileID: 21300000, guid: 2bea328039ca4f71a9d68fc819812904, type: 3}
+    - {fileID: 21300000, guid: b2780bc3c1842932b0f570709ac5dc70, type: 3}
+    - {fileID: 21300000, guid: d97b40b6309e123ce7d5a94e91fac584, type: 3}
+    - {fileID: 21300000, guid: 397b17a7ab150bff2822152b2ed01c8e, type: 3}
+    - {fileID: 21300000, guid: c8a8134f361794c4607bb36e12e30934, type: 3}
+    - {fileID: 21300000, guid: 51a26ff736c72684427409e064a56775, type: 3}
+    - {fileID: 21300000, guid: 3507fe10c6f7fac9fc9e473918164bb6, type: 3}
+    - {fileID: 21300000, guid: fec57ae8b6f3ae2b867301fef8fee169, type: 3}
+    stun:
+    - {fileID: 9019926859475258984, guid: f846594fddd735f4bafee0487516413b, type: 3}
+    dodgeUp: []
+    dodgeDown: []
+    dodgeBack: []
+    dodgeForward: []
+    facesRight: 0
+    height: 3.2
+    referenceHeightPixels: 92
+    material: {fileID: 2100000, guid: be9afea85f4c54c45907d1db78805247, type: 2}
+    clips:
+    - motion: 0
+      sourceId: warden-canonical-static-idle
+      frames:
+      - {fileID: 21300000, guid: 8ec866db0b648910d5d07f75b4836572, type: 3}
+      sourceFrames: 00000000
+      fps: 1
+      frameDurationsMs: 
+      loop: 1
+      contactFrame: -1
+      referenceHeightPixels: 0
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors:
+      - {x: 68, y: 46}
+      effectOrigin: {x: 0, y: 0}
+      staticFallback: 1
+    - motion: 2
+      sourceId: warden-attack
+      frames:
+      - {fileID: 21300000, guid: d9cf61d0fc979ba32bc9033a5b7d3bd3, type: 3}
+      - {fileID: 21300000, guid: 55b3b72e01db2ec0d8f0d564d9387cbf, type: 3}
+      - {fileID: 21300000, guid: c60a005311eac8ca5a373a06eb4bac29, type: 3}
+      - {fileID: 21300000, guid: ad07bec24c39cea0902964d78c0cd7d8, type: 3}
+      - {fileID: 21300000, guid: 7a5bb78460f1aa424ac8a82eddc88e0a, type: 3}
+      - {fileID: 21300000, guid: fe1d0ab65cd1b27bd511a0e943f05407, type: 3}
+      - {fileID: 21300000, guid: 2bea328039ca4f71a9d68fc819812904, type: 3}
+      - {fileID: 21300000, guid: b2780bc3c1842932b0f570709ac5dc70, type: 3}
+      - {fileID: 21300000, guid: d97b40b6309e123ce7d5a94e91fac584, type: 3}
+      - {fileID: 21300000, guid: 397b17a7ab150bff2822152b2ed01c8e, type: 3}
+      - {fileID: 21300000, guid: c8a8134f361794c4607bb36e12e30934, type: 3}
+      - {fileID: 21300000, guid: 51a26ff736c72684427409e064a56775, type: 3}
+      - {fileID: 21300000, guid: 3507fe10c6f7fac9fc9e473918164bb6, type: 3}
+      - {fileID: 21300000, guid: fec57ae8b6f3ae2b867301fef8fee169, type: 3}
+      sourceFrames: 000000000a0000000b0000000c0000000d0000000e0000000f00000012000000130000001400000015000000160000001700000018000000
+      fps: 20
+      frameDurationsMs: 
+      loop: 0
+      contactFrame: 8
+      referenceHeightPixels: 0
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors:
+      - {x: 68, y: 46}
+      - {x: 61, y: 46}
+      - {x: 63, y: 46}
+      - {x: 65, y: 46}
+      - {x: 67, y: 46}
+      - {x: 70, y: 46}
+      - {x: 72, y: 46}
+      - {x: 76, y: 50}
+      - {x: 64, y: 49}
+      - {x: 69, y: 47}
+      - {x: 69, y: 47}
+      - {x: 69, y: 47}
+      - {x: 67, y: 46}
+      - {x: 68, y: 46}
+      effectOrigin: {x: 0, y: 0}
+      staticFallback: 0
+    - motion: 5
+      sourceId: warden-v6-hit-clean
+      frames:
+      - {fileID: 21300000, guid: 6d8313214e95ec62778778856a11f389, type: 3}
+      - {fileID: 21300000, guid: 757072e50e914563afde9efd65bfec32, type: 3}
+      - {fileID: 21300000, guid: 2198206d53510c6d305456004e8d0261, type: 3}
+      - {fileID: 21300000, guid: 8c1c2ded42ac2eda0f8e3023abbd4b7b, type: 3}
+      - {fileID: 21300000, guid: 5419cc33439a47119261d210bfca81c7, type: 3}
+      - {fileID: 21300000, guid: a9e0b0b0209ced914311503e83051e7d, type: 3}
+      - {fileID: 21300000, guid: 6f92db41371d782d559c98347423c666, type: 3}
+      - {fileID: 21300000, guid: 9e35b8d834b3d1114af6e2e8e0a213bc, type: 3}
+      - {fileID: 21300000, guid: 4d17af56069ea9c3a181a68ce986cdc3, type: 3}
+      sourceFrames: 0000000001000000020000000400000007000000090000000a0000000b00000010000000
+      fps: 50
+      frameDurationsMs: 
+      loop: 0
+      contactFrame: -1
+      referenceHeightPixels: 0
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors:
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      effectOrigin: {x: 0, y: 0}
+      staticFallback: 0
+    - motion: 12
+      sourceId: warden-v6-hit-clean
+      frames:
+      - {fileID: 21300000, guid: 6d8313214e95ec62778778856a11f389, type: 3}
+      - {fileID: 21300000, guid: 757072e50e914563afde9efd65bfec32, type: 3}
+      - {fileID: 21300000, guid: 2198206d53510c6d305456004e8d0261, type: 3}
+      - {fileID: 21300000, guid: 8c1c2ded42ac2eda0f8e3023abbd4b7b, type: 3}
+      - {fileID: 21300000, guid: 5419cc33439a47119261d210bfca81c7, type: 3}
+      - {fileID: 21300000, guid: a9e0b0b0209ced914311503e83051e7d, type: 3}
+      - {fileID: 21300000, guid: 6f92db41371d782d559c98347423c666, type: 3}
+      - {fileID: 21300000, guid: 9e35b8d834b3d1114af6e2e8e0a213bc, type: 3}
+      - {fileID: 21300000, guid: 4d17af56069ea9c3a181a68ce986cdc3, type: 3}
+      sourceFrames: 0000000001000000020000000400000007000000090000000a0000000b00000010000000
+      fps: 50
+      frameDurationsMs: 
+      loop: 0
+      contactFrame: -1
+      referenceHeightPixels: 0
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors:
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      effectOrigin: {x: 0, y: 0}
+      staticFallback: 0
+    - motion: 6
+      sourceId: legacy-gate_warden-static-stun
+      frames:
+      - {fileID: 9019926859475258984, guid: f846594fddd735f4bafee0487516413b, type: 3}
+      sourceFrames: 
+      fps: 1
+      frameDurationsMs: 
+      loop: 1
+      contactFrame: -1
+      referenceHeightPixels: 293
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors: []
+      effectOrigin: {x: 0, y: 0}
+      staticFallback: 1
+  - id: bell_knight
+    idle:
+    - {fileID: 21300000, guid: 6eb3c7a7659ef5649384ff13d1fac190, type: 3}
+    attack:
+    - {fileID: 21300000, guid: e2fa7eaa446c2e69a0a7012cd34fdf02, type: 3}
+    - {fileID: 21300000, guid: ac77d03ebf2df724e222bae81e0e44f5, type: 3}
+    - {fileID: 21300000, guid: a54b50afeb2e0e330452c878a5bd5935, type: 3}
+    - {fileID: 21300000, guid: 86fecda89f3c88af75345cdfb3416c80, type: 3}
+    - {fileID: 21300000, guid: 11c7131b26f01d13879491841f13c4d5, type: 3}
+    - {fileID: 21300000, guid: c47b16cf280e0a3006ee034595e08a7d, type: 3}
+    - {fileID: 21300000, guid: 74bff5ae518873baa1e8682fd966f2a8, type: 3}
+    - {fileID: 21300000, guid: c836f8669d5150f430a28fa6867bb81b, type: 3}
+    - {fileID: 21300000, guid: be24961830705c384d8afe467c5d015b, type: 3}
+    - {fileID: 21300000, guid: 6e8e08c281fe71613a8dfced1779bc50, type: 3}
+    - {fileID: 21300000, guid: 7b003f52a7901636879ec7fc0f6f32c3, type: 3}
+    - {fileID: 21300000, guid: e5a8259bae3d6b022c0b7f8fdcb555a6, type: 3}
+    - {fileID: 21300000, guid: bfd62d1bb701685c4bda2bdb81513ee3, type: 3}
+    - {fileID: 21300000, guid: b6d871549180e70d2bfad2e361b1cbd9, type: 3}
+    - {fileID: 21300000, guid: 3ec6d5c9c01066994fcc33b1cf7f36c3, type: 3}
+    - {fileID: 21300000, guid: 3ea9f5d1b733aaac7c309322dab0f26a, type: 3}
+    - {fileID: 21300000, guid: 5c9daadcf2f6d7c0f6a5adc7e2102ea5, type: 3}
+    stun:
+    - {fileID: 8883373813876935054, guid: f846594fddd735f4bafee0487516413b, type: 3}
+    dodgeUp: []
+    dodgeDown: []
+    dodgeBack: []
+    dodgeForward: []
+    facesRight: 0
+    height: 4
+    referenceHeightPixels: 94
+    material: {fileID: 2100000, guid: be9afea85f4c54c45907d1db78805247, type: 2}
+    clips:
+    - motion: 0
+      sourceId: knight-canonical-static-idle
+      frames:
+      - {fileID: 21300000, guid: 6eb3c7a7659ef5649384ff13d1fac190, type: 3}
+      sourceFrames: 00000000
+      fps: 1
+      frameDurationsMs: 
+      loop: 1
+      contactFrame: -1
+      referenceHeightPixels: 0
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors:
+      - {x: 75, y: 46}
+      effectOrigin: {x: 0, y: 0}
+      staticFallback: 1
+    - motion: 2
+      sourceId: knight-attack-retry
+      frames:
+      - {fileID: 21300000, guid: e2fa7eaa446c2e69a0a7012cd34fdf02, type: 3}
+      - {fileID: 21300000, guid: ac77d03ebf2df724e222bae81e0e44f5, type: 3}
+      - {fileID: 21300000, guid: a54b50afeb2e0e330452c878a5bd5935, type: 3}
+      - {fileID: 21300000, guid: 86fecda89f3c88af75345cdfb3416c80, type: 3}
+      - {fileID: 21300000, guid: 11c7131b26f01d13879491841f13c4d5, type: 3}
+      - {fileID: 21300000, guid: c47b16cf280e0a3006ee034595e08a7d, type: 3}
+      - {fileID: 21300000, guid: 74bff5ae518873baa1e8682fd966f2a8, type: 3}
+      - {fileID: 21300000, guid: c836f8669d5150f430a28fa6867bb81b, type: 3}
+      - {fileID: 21300000, guid: be24961830705c384d8afe467c5d015b, type: 3}
+      - {fileID: 21300000, guid: 6e8e08c281fe71613a8dfced1779bc50, type: 3}
+      - {fileID: 21300000, guid: 7b003f52a7901636879ec7fc0f6f32c3, type: 3}
+      - {fileID: 21300000, guid: e5a8259bae3d6b022c0b7f8fdcb555a6, type: 3}
+      - {fileID: 21300000, guid: bfd62d1bb701685c4bda2bdb81513ee3, type: 3}
+      - {fileID: 21300000, guid: b6d871549180e70d2bfad2e361b1cbd9, type: 3}
+      - {fileID: 21300000, guid: 3ec6d5c9c01066994fcc33b1cf7f36c3, type: 3}
+      - {fileID: 21300000, guid: 3ea9f5d1b733aaac7c309322dab0f26a, type: 3}
+      - {fileID: 21300000, guid: 5c9daadcf2f6d7c0f6a5adc7e2102ea5, type: 3}
+      sourceFrames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f00000010000000
+      fps: 20
+      frameDurationsMs: 
+      loop: 0
+      contactFrame: 10
+      referenceHeightPixels: 0
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors:
+      - {x: 75, y: 45}
+      - {x: 76, y: 46}
+      - {x: 76, y: 45}
+      - {x: 76, y: 46}
+      - {x: 77, y: 46}
+      - {x: 65, y: 45}
+      - {x: 62, y: 45}
+      - {x: 60, y: 46}
+      - {x: 57, y: 46}
+      - {x: 75, y: 50}
+      - {x: 76, y: 49}
+      - {x: 76, y: 49}
+      - {x: 76, y: 49}
+      - {x: 76, y: 49}
+      - {x: 76, y: 46}
+      - {x: 76, y: 46}
+      - {x: 75, y: 45}
+      effectOrigin: {x: 0, y: 0}
+      staticFallback: 0
+    - motion: 5
+      sourceId: knight-v6-hit-clean
+      frames:
+      - {fileID: 21300000, guid: 36b7fa88951ef3f0ed2ec65f4e43b73c, type: 3}
+      - {fileID: 21300000, guid: 7b1181b55eaaa9f6623707275ecd6ab3, type: 3}
+      - {fileID: 21300000, guid: 2d523623820290ff51c5cb4e5cec0976, type: 3}
+      - {fileID: 21300000, guid: 8c48da652a96b7daebb13c790cb6d026, type: 3}
+      - {fileID: 21300000, guid: bc4e3eb6392b546075eac03b6630cf4f, type: 3}
+      - {fileID: 21300000, guid: 2b1afdcb60ba440504bddb5ab8272648, type: 3}
+      - {fileID: 21300000, guid: 848bb747885b462415997c32fb7d4b1f, type: 3}
+      - {fileID: 21300000, guid: 07b22fd560b857d3b058869fad84bddf, type: 3}
+      - {fileID: 21300000, guid: 8b53d645a5456672b2b7e207bb68c348, type: 3}
+      sourceFrames: 000000000100000002000000030000000400000005000000060000000700000008000000
+      fps: 50
+      frameDurationsMs: 
+      loop: 0
+      contactFrame: -1
+      referenceHeightPixels: 0
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors:
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      effectOrigin: {x: 0, y: 0}
+      staticFallback: 0
+    - motion: 12
+      sourceId: knight-v6-hit-clean
+      frames:
+      - {fileID: 21300000, guid: 36b7fa88951ef3f0ed2ec65f4e43b73c, type: 3}
+      - {fileID: 21300000, guid: 7b1181b55eaaa9f6623707275ecd6ab3, type: 3}
+      - {fileID: 21300000, guid: 2d523623820290ff51c5cb4e5cec0976, type: 3}
+      - {fileID: 21300000, guid: 8c48da652a96b7daebb13c790cb6d026, type: 3}
+      - {fileID: 21300000, guid: bc4e3eb6392b546075eac03b6630cf4f, type: 3}
+      - {fileID: 21300000, guid: 2b1afdcb60ba440504bddb5ab8272648, type: 3}
+      - {fileID: 21300000, guid: 848bb747885b462415997c32fb7d4b1f, type: 3}
+      - {fileID: 21300000, guid: 07b22fd560b857d3b058869fad84bddf, type: 3}
+      - {fileID: 21300000, guid: 8b53d645a5456672b2b7e207bb68c348, type: 3}
+      sourceFrames: 000000000100000002000000030000000400000005000000060000000700000008000000
+      fps: 50
+      frameDurationsMs: 
+      loop: 0
+      contactFrame: -1
+      referenceHeightPixels: 0
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors:
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      - {x: 78, y: 46}
+      effectOrigin: {x: 0, y: 0}
+      staticFallback: 0
+    - motion: 6
+      sourceId: legacy-bell_knight-static-stun
+      frames:
+      - {fileID: 8883373813876935054, guid: f846594fddd735f4bafee0487516413b, type: 3}
+      sourceFrames: 
+      fps: 1
+      frameDurationsMs: 
+      loop: 1
+      contactFrame: -1
+      referenceHeightPixels: 353
+      lowPoseFrames: []
+      recoverFrames: []
+      faceAnchors: []
+      effectOrigin: {x: 0, y: 0}
+      staticFallback: 1
+  gateBackground: {fileID: 21300000, guid: c44f826b42df6c9408aa2c3018cfa70e, type: 3}
+  uiFont: {fileID: 12800000, guid: fbe25c357e4ff56449eb3cda3bbd1e0c, type: 3}
+  actorMaterial: {fileID: 2100000, guid: be9afea85f4c54c45907d1db78805247, type: 2}
+  diagonalSlash:
+  - {fileID: 21300000, guid: 1e83b918eaf3d6d36fbd5b6f57143e89, type: 3}
+  - {fileID: 21300000, guid: 7d178274aaf556af1fe4e51f7a31b42e, type: 3}
+  - {fileID: 21300000, guid: 86917f08eef2fc6d11f76e298db5c93a, type: 3}
+  - {fileID: 21300000, guid: 525a7a2a4a7aef375d52526cf1da2036, type: 3}
+  - {fileID: 21300000, guid: 2bae1274607ec4fe840d4780c2fd81c2, type: 3}
+  - {fileID: 21300000, guid: 033277ca95ee7b9806c1821217894f46, type: 3}
+  - {fileID: 21300000, guid: adaa53bd537ce0eda212aa70e9f635a0, type: 3}
+  - {fileID: 21300000, guid: a769d83f228bbffa9d03dbf0f71b9065, type: 3}
+  - {fileID: 21300000, guid: ddde2847904d58670f2e9a6a107cf862, type: 3}
+  - {fileID: 21300000, guid: 44ccfd11c2dc64af937f3fa5da85497e, type: 3}

@@ -21,6 +21,7 @@ namespace LastBell
                 Vector2[] points = { new Vector2(0, 1), new Vector2(-1, -1), new Vector2(1, -1) };
                 float angle = Symbol == UiSymbol.Back ? 90 : Symbol == UiSymbol.Down ? 180 : Symbol == UiSymbol.Forward ? -90 : 0;
                 var q = Quaternion.Euler(0, 0, angle);
+                Triangle(vh, c + (Vector2)(q * points[0]) * (s+3), c + (Vector2)(q * points[1]) * (s+3), c + (Vector2)(q * points[2]) * (s+3),new Color32(8,18,29,255));
                 Triangle(vh, c + (Vector2)(q * points[0]) * s, c + (Vector2)(q * points[1]) * s, c + (Vector2)(q * points[2]) * s);
                 return;
             }
@@ -51,10 +52,10 @@ namespace LastBell
             Line(vh,c+new Vector2(-.55f,-.55f)*s,c+new Vector2(-.95f,-.95f)*s,s*.2f);
         }
 
-        void Triangle(VertexHelper vh, Vector2 a, Vector2 b, Vector2 c)
+        void Triangle(VertexHelper vh, Vector2 a, Vector2 b, Vector2 c, Color? tint=null)
         {
             int n = vh.currentVertCount;
-            vh.AddVert(a, color, Vector2.zero); vh.AddVert(b, color, Vector2.zero); vh.AddVert(c, color, Vector2.zero);
+            Color col=tint??color;vh.AddVert(a, col, Vector2.zero); vh.AddVert(b, col, Vector2.zero); vh.AddVert(c, col, Vector2.zero);
             vh.AddTriangle(n, n + 1, n + 2);
         }
         void Line(VertexHelper vh, Vector2 a, Vector2 b, float width)

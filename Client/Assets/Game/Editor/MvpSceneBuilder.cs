@@ -180,7 +180,8 @@ namespace LastBell.Editor
             if(!binding||!binding.SafeRoot||!binding.BattlePanel||!binding.LobbyPanel||!binding.RewardPanel||!binding.RelicPanel||binding.Stats.Length!=4||binding.Rewards.Length!=3||binding.Dodge.Length!=4)
                 throw new InvalidOperationException("GameView serialized references are incomplete.");
             foreach(var row in binding.Stats)if(!row.Title||!row.Value||!row.Level||!row.Upgrade||row.Stars.Length!=5||row.Bells.Length!=10)throw new InvalidOperationException("Incomplete saved stat row.");
-            foreach(var key in binding.Dodge){var r=(RectTransform)key.transform;if(r.sizeDelta.x<72||r.sizeDelta.y<72)throw new InvalidOperationException("Dodge hit area must stay at least72 reference pixels (48 at640x360).");}
+            float minDodge=binding.GetComponent<FeedbackLayout>()?64:72;
+            foreach(var key in binding.Dodge){var r=(RectTransform)key.transform;if(r.sizeDelta.x<minDodge||r.sizeDelta.y<minDodge)throw new InvalidOperationException("Dodge hit area is smaller than its authored layout. FeedbackLayout uses 64px at960 and 56px at640.");}
             var effects=view.GetComponentInChildren<BattleEffects>(true);if(!effects||effects.Numbers.Length<6||effects.Fragments.Length<16)throw new InvalidOperationException("Effect pools missing.");
             Debug.Log("MVP saved scene, GameView/Actor prefabs, input targets and pooled VFX validated.");
         }

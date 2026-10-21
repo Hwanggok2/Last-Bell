@@ -14,6 +14,9 @@ namespace LastBell.Editor
             MvpArtImporter.CreateMissing();
             MvpSceneBuilder.CreateMissing();
             MvpSceneBuilder.Validate();
+            PresentationMigration.Validate();
+            CombatV55Migration.Validate();
+            CombatV59Migration.Validate();
             PlayerSettings.companyName="LastBellPrototype";
             PlayerSettings.productName="Last Bell MVP";
             PlayerSettings.bundleVersion="0.1.0";

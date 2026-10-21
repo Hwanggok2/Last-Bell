@@ -2,59 +2,226 @@ using UnityEngine;
 
 namespace LastBell
 {
+    // Renders stored frames only. The battle director owns root movement and hit timing.
     public sealed class ActorView : MonoBehaviour
     {
         public SpriteRenderer Body;
-        public Sprite[] IdleFrames;
-        public Sprite[] AttackFrames;
-        public Sprite[] HurtFrames;
-        public Sprite[] StunFrames;
-        public Sprite[] DodgeFrames;
-        public Vector3 SpriteOffset = new Vector3(0,.8f,0);
-        float age,poseTime;
-        int pose,direction;
-        bool stunned,facingRight=true;
-        Vector3 baseScale=Vector3.one;
+        public Sprite[] IdleFrames, AttackFrames, HurtFrames, StunFrames, DodgeFrames;
+        public Vector3 SpriteOffset = Vector3.zero;
+        public ArtCatalog DefaultCatalog;
+        public string DefaultActorId = "hero_on";
+        public bool DefaultFacesRight = true;
+
+        public ActorMotion CurrentMotion { get; private set; }
+        public int CurrentFrame { get; private set; }
+        public float HitFlashAmount { get; private set; }
+        public float DissolveAmount { get; private set; }
+        public bool PlaybackPaused => paused;
+        public bool IsHitPlaying => transient && transientMotion == ActorMotion.Hit;
+
+        static readonly int FlashId = Shader.PropertyToID("_Flash");
+        static readonly int DissolveId = Shader.PropertyToID("_Dissolve");
+        MaterialPropertyBlock properties;
         ActorSprites art;
-        Color normalColor=Color.white;
-        public void PlayDodge(int value){pose=1;direction=value;poseTime=.26f;}
-        public void PlayAttack(){pose=2;poseTime=.28f;}
-        public void PlayHit(){pose=3;poseTime=.18f;}
-        public void SetStunned(bool value){stunned=value;}
-        public void ApplyArt(ActorSprites value,bool faceRight)
+        ActorClip displayedClip;
+        ActorMotion transientMotion;
+        float idleAge, poseAge, poseDuration, poseContact = -1, flashAge = 1;
+        int sampledFrame = -1;
+        bool transient, paused, stunned, running, facingRight = true;
+
+        void Awake()
         {
-            if(value==null||value==art)return;art=value;facingRight=faceRight;
-            IdleFrames=value.idle;AttackFrames=value.attack;StunFrames=value.stun;
-            if(IdleFrames.Length>0&&Body)
-            {
-                Body.sprite=IdleFrames[0];float height=Mathf.Max(.01f,Body.sprite.bounds.size.y);
-                baseScale=Vector3.one*(value.height/height);SpriteOffset=Vector3.zero;Body.flipX=value.facesRight!=faceRight;Body.transform.localPosition=SpriteOffset;Body.transform.localScale=baseScale;
-            }
+            if (DefaultCatalog) ApplyArt(DefaultCatalog.Find(DefaultActorId), DefaultFacesRight);
         }
+
+        public void ApplyArt(ActorSprites value, bool faceRight)
+        {
+            if (value == null || (value == art && faceRight == facingRight)) return;
+            art = value; facingRight = faceRight;
+            IdleFrames = value.idle; AttackFrames = value.attack; StunFrames = value.stun;
+            var hit = value.FindClip(ActorMotion.Hit);
+            HurtFrames = hit == null ? null : hit.frames;
+            SpriteOffset = Vector3.zero;
+            if (Body)
+            {
+                Body.flipX = value.facesRight != faceRight;
+                if (value.material) Body.sharedMaterial = value.material;
+            }
+            ResetVisuals();
+        }
+
+        public void PlayAttack() => PlayAttack(true);
+        public void PlayAttack(bool rising, float duration = .18f, float contactTime = .08f)
+            => Play(rising ? ActorMotion.AttackUp : ActorMotion.AttackDown, duration, contactTime);
+        public void PlayHit()
+        {
+            flashAge = 0; Play(ActorMotion.Hit, .18f); ApplyMaterialProperties();
+        }
+        public void PlayDodge(int direction) => Play(DodgeMotion(direction), .28f);
+        public void SetStunned(bool value) { stunned = value; }
+        public void SetRunning(bool value) { running = value; }
+        public void SetPlaybackPaused(bool value) { paused = value; }
+
+        void Play(ActorMotion motion, float duration, float contactTime = -1)
+        {
+            transient = true; transientMotion = motion; poseAge = 0;
+            poseDuration = Mathf.Max(.001f, duration); poseContact = contactTime;
+            Render(motion, 0, poseDuration, poseContact);
+        }
+
+        public void SampleMotion(ActorMotion motion, float elapsedSeconds, float duration = 0, float contactTime = -1)
+        {
+            sampledFrame = Time.frameCount;
+            Render(motion, elapsedSeconds, duration, contactTime);
+        }
+
+        public void SampleDodgeImpact(int direction, float elapsedSeconds)
+        {
+            if (elapsedSeconds >= .22f) { SampleMotion(ActorMotion.Idle, idleAge); return; }
+            var motion = DodgeMotion(direction);
+            var clip = ResolveClip(motion);
+            sampledFrame = Time.frameCount;
+            if (direction == 2 && clip != null && clip.lowPoseFrames.Length > 0)
+            {
+                var frames = elapsedSeconds < .14f ? clip.lowPoseFrames : clip.recoverFrames;
+                if (frames.Length > 0)
+                {
+                    float elapsed = elapsedSeconds < .14f ? elapsedSeconds : elapsedSeconds - .14f;
+                    float duration = elapsedSeconds < .14f ? .14f : .08f;
+                    int index = Mathf.Clamp(Mathf.FloorToInt(elapsed / duration * frames.Length), 0, frames.Length - 1);
+                    CurrentMotion = motion; CurrentFrame = index; displayedClip = clip;
+                    SetSprite(frames[index], clip); return;
+                }
+            }
+            Render(motion, Mathf.Max(0, elapsedSeconds) + .06f, .28f, -1);
+        }
+
+        public void SampleClipFrame(ActorMotion motion,int index)
+        {
+            var clip=ResolveClip(motion);if(clip==null||clip.frames.Length==0)return;
+            sampledFrame=Time.frameCount;CurrentMotion=motion;displayedClip=clip;
+            CurrentFrame=Mathf.Clamp(index,0,clip.frames.Length-1);SetSprite(clip.frames[CurrentFrame],clip);
+        }
+        public void SampleSourceFrame(ActorMotion motion,int sourceFrame)
+        {
+            var clip=ResolveClip(motion);if(clip==null)return;
+            SampleClipFrame(motion,System.Array.IndexOf(clip.sourceFrames,sourceFrame));
+        }
+
+        public void ClearMotionOverride() { sampledFrame = -1; RenderAutomatic(); }
+        public void EndSample() => ClearMotionOverride();
+        public void SetDissolve(float value)
+        {
+            DissolveAmount = Mathf.Clamp01(value); ApplyMaterialProperties();
+        }
+        public void ResetVisuals()
+        {
+            idleAge = poseAge = 0; flashAge = 1; transient = stunned = running = false;
+            paused = false; sampledFrame = -1; DissolveAmount = 0;
+            Render(ActorMotion.Idle, 0, 0, -1); ApplyMaterialProperties();
+        }
+
         void LateUpdate()
         {
-            if(!Body)return;
-            age+=Time.unscaledDeltaTime;poseTime=Mathf.Max(0,poseTime-Time.unscaledDeltaTime);if(poseTime==0)pose=0;
-            Vector3 offset=SpriteOffset;Vector3 scale=Vector3.one;
-            if(pose==1){float k=Mathf.Sin((1-poseTime/.26f)*Mathf.PI);if(direction==0)offset.y+=.7f*k;else if(direction==1)offset.x-=.45f*k;else if(direction==3)offset.x+=.45f*k;else scale.y=1-.35f*k;}
-            else if(pose==2)
+            if (!Body || paused) return;
+            float dt = Time.unscaledDeltaTime;
+            idleAge += dt; flashAge += dt;
+            if (transient)
             {
-                float elapsed=.28f-poseTime;
-                // Presentation follows the 100ms core windup; no hit or damage is decided here.
-                float reach=elapsed<.1f?elapsed/.1f:1-(elapsed-.1f)/.18f;
-                offset.x+=(facingRight?.35f:-.16f)*Mathf.Sin(Mathf.Clamp01(reach)*Mathf.PI*.5f);
+                poseAge += dt;
+                if (poseAge >= poseDuration && transientMotion != ActorMotion.Death) transient = false;
             }
-            else offset.y+=Mathf.Floor(Mathf.Sin(age*3)*1.5f)/100;
-            Body.transform.localPosition=offset;Body.transform.localScale=Vector3.Scale(scale,baseScale);
-            Body.color=pose==3?new Color(1,.55f,.35f):normalColor;
-            var dodge=art==null?DodgeFrames:direction==0?art.dodgeUp:direction==1?art.dodgeBack:direction==2?art.dodgeDown:art.dodgeForward;
-            var frames=pose==1?dodge:pose==2?AttackFrames:pose==3?HurtFrames:stunned?StunFrames:IdleFrames;
-            if(frames!=null&&frames.Length>0)
-            {
-                int frame=pose==2?(.28f-poseTime<.1f?0:Mathf.Min(1,frames.Length-1)):(int)(age*8)%frames.Length;
-                Body.sprite=frames[frame];
-            }
-            Body.transform.localRotation=Quaternion.Euler(0,0,stunned?Mathf.Sin(age*14)*6:0);
+            // A sample lasts one frame. Missing the next sample cannot leave a permanent pose.
+            if (sampledFrame != Time.frameCount) RenderAutomatic();
+            ApplyMaterialProperties();
         }
+
+        void RenderAutomatic()
+        {
+            if (transient) Render(transientMotion, poseAge, poseDuration, poseContact);
+            else Render(stunned ? ActorMotion.Stun : running ? ActorMotion.Run : ActorMotion.Idle, idleAge, 0, -1);
+        }
+
+        ActorClip ResolveClip(ActorMotion motion)
+        {
+            if (art == null) return null;
+            var clip = art.FindClip(motion);
+            if (clip != null && clip.frames.Length > 0) return clip;
+            if (motion == ActorMotion.AttackUp || motion == ActorMotion.AttackDown || motion == ActorMotion.Roar)
+                return art.FindClip(ActorMotion.Attack);
+            return null;
+        }
+
+        void Render(ActorMotion motion, float elapsed, float duration, float contactTime)
+        {
+            CurrentMotion = motion; displayedClip = ResolveClip(motion);
+            var frames = displayedClip != null ? displayedClip.frames : LegacyFrames(motion);
+            if (frames == null || frames.Length == 0) { frames = IdleFrames; displayedClip = null; }
+            if (frames == null || frames.Length == 0) return;
+            CurrentFrame = displayedClip != null ? displayedClip.FrameIndex(elapsed, duration, contactTime)
+                : Mathf.Min(frames.Length - 1, Mathf.FloorToInt(Mathf.Max(0, elapsed) * 8) % frames.Length);
+            SetSprite(frames[CurrentFrame], displayedClip);
+        }
+
+        Sprite[] LegacyFrames(ActorMotion motion)
+        {
+            switch (motion)
+            {
+                case ActorMotion.Attack: case ActorMotion.AttackUp: case ActorMotion.AttackDown: case ActorMotion.Roar: return AttackFrames;
+                case ActorMotion.Hit: return HurtFrames;
+                case ActorMotion.Stun: return StunFrames;
+                case ActorMotion.DodgeUp: return art == null ? DodgeFrames : art.dodgeUp;
+                case ActorMotion.DodgeBack: return art == null ? DodgeFrames : art.dodgeBack;
+                case ActorMotion.DodgeDown: return art == null ? DodgeFrames : art.dodgeDown;
+                case ActorMotion.DodgeForward: return art == null ? DodgeFrames : art.dodgeForward;
+                default: return IdleFrames;
+            }
+        }
+
+        void SetSprite(Sprite sprite, ActorClip clip)
+        {
+            if (!Body || !sprite) return;
+            Body.sprite = sprite;
+            float reference = clip != null && clip.referenceHeightPixels > 0 ? clip.referenceHeightPixels
+                : art == null ? 0 : art.referenceHeightPixels;
+            float scale = art == null ? 1 : reference > 0 ? art.height * sprite.pixelsPerUnit / reference
+                : art.height / Mathf.Max(.01f, IdleFrames != null && IdleFrames.Length > 0 ? IdleFrames[0].bounds.size.y : sprite.bounds.size.y);
+            Body.transform.localPosition = SpriteOffset;
+            Body.transform.localRotation = Quaternion.identity;
+            Body.transform.localScale = new Vector3(scale, scale, 1);
+            Body.color = Color.white;
+        }
+
+        public Vector3 SourcePixelToWorld(Vector2 topLeftPixel)
+        {
+            if (!Body || !Body.sprite) return transform.position;
+            var sprite = Body.sprite;
+            float x = (topLeftPixel.x - sprite.pivot.x) / sprite.pixelsPerUnit;
+            float y = (sprite.rect.height - topLeftPixel.y - sprite.pivot.y) / sprite.pixelsPerUnit;
+            return Body.transform.TransformPoint(new Vector3(Body.flipX ? -x : x, y));
+        }
+
+        public Vector3 FaceWorldPosition
+        {
+            get
+            {
+                if (displayedClip != null && displayedClip.faceAnchors.Length > CurrentFrame)
+                    return SourcePixelToWorld(displayedClip.faceAnchors[CurrentFrame]);
+                return Body ? Body.bounds.center + Vector3.up * Body.bounds.extents.y * .6f : transform.position;
+            }
+        }
+
+        void ApplyMaterialProperties()
+        {
+            HitFlashAmount = flashAge <= .045f ? 1 : Mathf.Clamp01(1 - (flashAge - .045f) / .075f);
+            if (!Body) return;
+            if (properties == null) properties = new MaterialPropertyBlock();
+            Body.GetPropertyBlock(properties);
+            properties.SetFloat(FlashId, HitFlashAmount); properties.SetFloat(DissolveId, DissolveAmount);
+            Body.SetPropertyBlock(properties);
+        }
+
+        static ActorMotion DodgeMotion(int direction) => direction == 0 ? ActorMotion.DodgeUp
+            : direction == 1 ? ActorMotion.DodgeBack : direction == 2 ? ActorMotion.DodgeDown : ActorMotion.DodgeForward;
     }
 }

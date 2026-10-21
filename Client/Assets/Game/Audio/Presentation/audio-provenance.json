@@ -1,0 +1,96 @@
+{
+  "date": "2026-10-21",
+  "sampleRate": 22050,
+  "files": [
+    {
+      "file": "knifeSlice.ogg",
+      "originalFile": "knifeSlice.ogg",
+      "source": "https://kenney.nl/assets/rpg-audio",
+      "license": "CC0-1.0",
+      "sha256": "4cd96dc630bed9840c15f1dd2306da2cc56a4da26a5d3f1a03c5a7265ac5e54f"
+    },
+    {
+      "file": "footstep03.ogg",
+      "originalFile": "footstep03.ogg",
+      "source": "https://kenney.nl/assets/rpg-audio",
+      "license": "CC0-1.0",
+      "sha256": "a86756b9af9f370455ab47844239bb07fd1bee7a113068c91f0fcd9b72703fae"
+    },
+    {
+      "file": "hit.ogg",
+      "originalFile": "impactMetal_medium_001.ogg",
+      "source": "https://kenney.nl/assets/impact-sounds",
+      "license": "CC0-1.0",
+      "sha256": "e8a9eaba7c4d27422e4eeb3e6c7100d5d7dc0f83e005efc98c960adcc5265337"
+    },
+    {
+      "file": "spike.ogg",
+      "originalFile": "impactWood_heavy_001.ogg",
+      "source": "https://kenney.nl/assets/impact-sounds",
+      "license": "CC0-1.0",
+      "sha256": "f1b07a53ac10c615fff9ba470511fdeb722b5902e1a8520759fc20ad6f546015"
+    },
+    {
+      "file": "battle-bells.wav",
+      "source": "Client/Tools/build_presentation_audio.py",
+      "license": "Original procedural audio produced for Last Bell; no third-party samples or borrowed melody",
+      "sha256": "ed6352694acf2e0ffa2906f721406cfa3f3bef540c737cb0c6d0b807a899b36b"
+    },
+    {
+      "file": "boss-bells.wav",
+      "source": "Client/Tools/build_presentation_audio.py",
+      "license": "Original procedural audio produced for Last Bell; no third-party samples or borrowed melody",
+      "sha256": "ef5dc1e9620224fe8f6691339353f75b726648080107c19f27628e6eee569ef9"
+    },
+    {
+      "file": "boss-roar.wav",
+      "source": "Client/Tools/build_presentation_audio.py",
+      "license": "Original procedural audio produced for Last Bell; no third-party samples or borrowed melody",
+      "sha256": "6088d1ce5a873b8842a44ac059eb1727610f6d2d1fabb2108eeb2a928bf08dbf"
+    },
+    {
+      "file": "critical-bell.wav",
+      "source": "Client/Tools/build_presentation_audio.py",
+      "license": "Original procedural audio produced for Last Bell; no third-party samples or borrowed melody",
+      "sha256": "e9f4be716f311c889a2af34e791e080211267cb3a6d4e3529e427f49fd2586c8"
+    },
+    {
+      "file": "lantern-ignite.wav",
+      "source": "Client/Tools/build_presentation_audio.py",
+      "license": "Original procedural audio produced for Last Bell; no third-party samples or borrowed melody",
+      "sha256": "2baa7e94e6d1302a8a3bc4877099622e55e9582a3a655ce682491b20ab33331c"
+    },
+    {
+      "file": "lobby-bells.wav",
+      "source": "Client/Tools/build_presentation_audio.py",
+      "license": "Original procedural audio produced for Last Bell; no third-party samples or borrowed melody",
+      "sha256": "ad78af16c6c7d75a621e3f494b83f5834dca45a2de7cabf269c8988e09970841"
+    },
+    {
+      "file": "mini-roar.wav",
+      "source": "Client/Tools/build_presentation_audio.py",
+      "license": "Original procedural audio produced for Last Bell; no third-party samples or borrowed melody",
+      "sha256": "d3557d7475aeea5e4fe23e88cc8ca859c98e276d3762974d324f6924430da5e9"
+    },
+    {
+      "file": "perfect-dodge.wav",
+      "source": "Client/Tools/build_presentation_audio.py",
+      "license": "Original procedural audio produced for Last Bell; no third-party samples or borrowed melody",
+      "sha256": "a07049b64e13a641228e1b9ad6d7a0716a78602e215497198393ed557fa944d5"
+    },
+    {
+      "file": "enemy-windup-v55.wav",
+      "source": "Client/Tools/build_combat_v55_audio.py",
+      "license": "Original procedural audio produced for Last Bell; no third-party samples",
+      "sha256": "1ce9cc510264285bef82582bb9be59bf47052274e61cab5e7523876b0af4dc18"
+    },
+    {
+      "file": "enemy-beat-v59.wav",
+      "source": "Client/Tools/build_combat_v59_audio.py",
+      "license": "Original procedural audio produced for Last Bell; no third-party samples",
+      "sampleRate": 44100,
+      "durationMs": 70,
+      "sha256": "d98488ef8927fe8c739de992e03a6062aefe81d027d4c8e9f5f479d95961e5fb"
+    }
+  ]
+}
