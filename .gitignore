@@ -28,6 +28,7 @@
 # Local builds, .NET test output and tool caches (test .csproj files are source).
 /Build/
 /Builds/
+/Web/
 /Temp/
 /GameData/tests/**/bin/
 /GameData/tests/**/obj/
@@ -96,3 +97,37 @@ Thumbs.db
 *.pfx
 *.pem
 *.key
+
+# Local QA archives: keep reports and explicitly selected review images, not raw runs.
+/Tools/QA/**/bin/
+/Tools/QA/**/obj/
+/Tools/QA/**/Validation/*.dll
+/Tools/QA/**/Validation/*.rsp
+/Planning/Production/*Validation/*.dll
+/Planning/Production/*Validation/*.rsp
+/Client/Captures/
+/Logs/
+/Planning/Evidence/**/*.jsonl
+/Planning/Evidence/**/profiles/
+/Planning/Evidence/**/fixtures/
+/Planning/Evidence/**/saves/
+/Planning/Evidence/**/*playerprefs*.json
+/Planning/Evidence/**/last-bell-save.json*
+/Planning/Evidence/**/v*-frame-*.png
+/Planning/Evidence/**/frame-*.png
+/Planning/Evidence/**/frame_*.png
+/Planning/Evidence/**/*-frame-[0-9]*.png
+/Planning/Evidence/**/v*-frame-evidence.json
+/Planning/Evidence/Dragon-*/**/*.png
+/Planning/Evidence/Dragon-*/**/*.jpg
+!/Planning/Evidence/Dragon-*/**/review/**/*.png
+!/Planning/Evidence/Dragon-*/**/visual-review/**/*.png
+/Planning/Evidence/Dragon-*/**/*-layout.json
+/Planning/Evidence/Dragon-*/**/expected-catalog.json
+/Planning/Evidence/Dragon-*/**/timeline.csv
+/Planning/Evidence/Dragon-*/**/events.csv
+# Large downloaded archives and raw webpages with embedded third-party access tokens.
+/Planning/Story/Audio-v4/Sources/*.7z
+/Planning/Story/Audio-v72/Sources/540752-source.html
+/Planning/Story/Audio-v72/Sources/60030-source.html
+/Planning/Story/Audio-v72/Sources/649361-source.html
