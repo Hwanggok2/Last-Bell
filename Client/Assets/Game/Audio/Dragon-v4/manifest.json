@@ -1,0 +1,45 @@
+{
+  "version": "Dragon-v4 / 0.9.3",
+  "checkedAt": "2026-10-24",
+  "status": "assets-prepared-awaiting-saved-bindings",
+  "sourceEvidence": "Planning/Story/Dragon-v1/Audio-v1/Sources/retro/source.html",
+  "files": [
+    {
+      "file": "pixel-hit.wav",
+      "author": "SubspaceAudio / Juhani Junkala",
+      "sourceUrl": "https://opengameart.org/content/512-sound-effects-8-bit-style",
+      "license": "CC0-1.0",
+      "sourceArchive": "Planning/Story/Dragon-v1/Audio-v1/Sources/retro/The Essential Retro Video Game Sound Effects Collection [512 sounds].zip",
+      "sourceMember": "The Essential Retro Video Game Sound Effects Collection [512 sounds] By Juhani Junkala/General Sounds/Simple Damage Sounds/sfx_damage_hit3.wav",
+      "sourceSha256": "26ade96e607a37cb97040f7e13e13d2fe2699c6cd1480dd5abf98855bb7590e1",
+      "sha256": "2a35a808d94a56267f8e2b1b59b90a040c09abb21f34fa34ad212ed1f80e2627",
+      "frames": 5015,
+      "durationMs": 113.719,
+      "sampleRate": 44100,
+      "channels": 1,
+      "peakDbfs": -6,
+      "gain": 0.9999332240318106,
+      "trigger": "Confirmed player hit, once at the Core contact event",
+      "edits": "Mono PCM16; fixed gain only. No trim, pitch, time change or layered sound."
+    },
+    {
+      "file": "pixel-touch.wav",
+      "author": "SubspaceAudio / Juhani Junkala",
+      "sourceUrl": "https://opengameart.org/content/512-sound-effects-8-bit-style",
+      "license": "CC0-1.0",
+      "sourceArchive": "Planning/Story/Dragon-v1/Audio-v1/Sources/retro/The Essential Retro Video Game Sound Effects Collection [512 sounds].zip",
+      "sourceMember": "The Essential Retro Video Game Sound Effects Collection [512 sounds] By Juhani Junkala/General Sounds/Menu Sounds/sfx_menu_move1.wav",
+      "sourceSha256": "3b65d806195db0dd80fc36e03f950864d91302bc2d477981e9686d6b1b826131",
+      "sha256": "03bac4e93b6ee1e687885922f2679f04f7021384b7a4fceb0676eb16ac1fdf5b",
+      "frames": 1733,
+      "durationMs": 39.297,
+      "sampleRate": 44100,
+      "channels": 1,
+      "peakDbfs": -12,
+      "gain": 0.5011842817250558,
+      "trigger": "Attack button/key press while combat input is enabled; never a hit event",
+      "edits": "Mono PCM16; fixed gain only. No trim, pitch, time change or layered sound."
+    }
+  ],
+  "limitation": "Chosen from author-described 8-bit library. No claim of auditory identity with Timing Hero."
+}

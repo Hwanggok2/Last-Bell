@@ -49,7 +49,8 @@ namespace LastBell
     public enum ActorMotion
     {
         Idle, Run, Attack, AttackUp, AttackDown, Hit, Stun,
-        DodgeUp, DodgeBack, DodgeDown, DodgeForward, Return, Death, Roar
+        DodgeUp, DodgeBack, DodgeDown, DodgeForward, Return, Death, Roar,
+        AttackLow, AttackHigh, AttackThrust, AttackRear
     }
 
     [Serializable]
@@ -84,6 +85,18 @@ namespace LastBell
             }
         }
         public float Duration => AuthoredDurationMs > 0 ? AuthoredDurationMs / 1000f : frames.Length / Mathf.Max(1f, fps);
+        public bool HasAuthoredTiming => AuthoredDurationMs > 0;
+        public float ContactTime
+        {
+            get
+            {
+                if (contactFrame < 0 || contactFrame >= frames.Length) return -1;
+                if (!HasAuthoredTiming) return contactFrame / Mathf.Max(1f, fps);
+                int ms = 0;
+                for (int i = 0; i < contactFrame; i++) ms += frameDurationsMs[i];
+                return ms / 1000f;
+            }
+        }
 
         public int FrameIndex(float elapsed, float duration = 0, float contactTime = -1)
         {

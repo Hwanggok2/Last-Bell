@@ -1,0 +1,410 @@
+{
+  "source": "Approved project-native UI pixel maps: Planning/Story/Dragon-v1/render-battle-v4.cjs",
+  "assets": [
+    {
+      "file": "bag-disabled.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/bag-disabled.png",
+      "sha256": "a4c1e7ce8b71e5dd7a1354a4e7694ab086534aeeeea188c0cd855269f013dad5",
+      "size": [
+        40,
+        48
+      ]
+    },
+    {
+      "file": "bag-normal.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/bag-normal.png",
+      "sha256": "f6ef77050022a09d4e20766c61ae60f275d70bc99b6baf3dba1a59c1f2078b5a",
+      "size": [
+        40,
+        48
+      ]
+    },
+    {
+      "file": "bag-pressed.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/bag-pressed.png",
+      "sha256": "d5dccd001e525d6021ef6b10bce27025dd017cdfef80fd2e01d4bc5b6fc979c2",
+      "size": [
+        40,
+        48
+      ]
+    },
+    {
+      "file": "check-disabled.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/check-disabled.png",
+      "sha256": "4fb9c2e89dd3a191d68622405be4d130d193d68551a924685e7a504460618253",
+      "size": [
+        40,
+        36
+      ]
+    },
+    {
+      "file": "check-normal.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/check-normal.png",
+      "sha256": "81d08f57a26b25fc178d4b86ebe4a3ef4e7472e17737824d4a62b701af10f1d8",
+      "size": [
+        40,
+        36
+      ]
+    },
+    {
+      "file": "check-pressed.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/check-pressed.png",
+      "sha256": "42eabc6bd124495b3750177e67774be29e59c8418a8116b1ff7a60d04f7fb328",
+      "size": [
+        40,
+        36
+      ]
+    },
+    {
+      "file": "coin-disabled.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/coin-disabled.png",
+      "sha256": "7ec77523354fa38aefd90986f76a3291f8841724bbd9a49a6ae76ad3cdaf7af0",
+      "size": [
+        32,
+        36
+      ]
+    },
+    {
+      "file": "coin-normal.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/coin-normal.png",
+      "sha256": "53ec1174b60c418488f61d437ae28e54a1e081ece5327c3c6f4ac573ed247de9",
+      "size": [
+        32,
+        36
+      ]
+    },
+    {
+      "file": "coin-pressed.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/coin-pressed.png",
+      "sha256": "b9dfe67a5dcd7b9fa59fbe638b8a2d5583a1694588bc0609f218e231f14488bf",
+      "size": [
+        32,
+        36
+      ]
+    },
+    {
+      "file": "cross-disabled.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/cross-disabled.png",
+      "sha256": "4d9b04a062deeca78b168232dd56370ec5b6f359359904e977cfbecdcaefc19a",
+      "size": [
+        40,
+        44
+      ]
+    },
+    {
+      "file": "cross-normal.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/cross-normal.png",
+      "sha256": "e2ed8da7cd9fa15933c31682a8a9a600ba5cbe8411622c6da0134bdd609345d8",
+      "size": [
+        40,
+        44
+      ]
+    },
+    {
+      "file": "cross-pressed.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/cross-pressed.png",
+      "sha256": "10089f1dcce3d6c8f98ff572af89bd4458c9c8e350a599bf64b35137a0e82feb",
+      "size": [
+        40,
+        44
+      ]
+    },
+    {
+      "file": "down-disabled.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/down-disabled.png",
+      "sha256": "52daf1b32cb21246a2572ffaaa8b3c0b02b58a38a0bb677bf1de755c646738b2",
+      "size": [
+        68,
+        56
+      ]
+    },
+    {
+      "file": "down-normal.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/down-normal.png",
+      "sha256": "e2d39fe781d0989b68ccc543115b261a0853b627a27508c6ab85b511c2df377b",
+      "size": [
+        68,
+        56
+      ]
+    },
+    {
+      "file": "down-pressed.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/down-pressed.png",
+      "sha256": "0d30087f0504e75c35ecd0149331e8600f900a0efbba2fe1652b7466e6220487",
+      "size": [
+        68,
+        56
+      ]
+    },
+    {
+      "file": "gem-disabled.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/gem-disabled.png",
+      "sha256": "477496e7e78cdf64a13f4b11d8e4dcc7d3d02b90cf5933e6afb361d48cf41296",
+      "size": [
+        36,
+        36
+      ]
+    },
+    {
+      "file": "gem-normal.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/gem-normal.png",
+      "sha256": "fc4993f9e5626c0cbc112c4a4ad617f4391625c28a6bdd64a4ed1c257a7829d7",
+      "size": [
+        36,
+        36
+      ]
+    },
+    {
+      "file": "gem-pressed.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/gem-pressed.png",
+      "sha256": "cb7e687ad83465c878df29ddbeed4f64e6de33cd6eb10dcb26e165207574e9b7",
+      "size": [
+        36,
+        36
+      ]
+    },
+    {
+      "file": "heart-disabled.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/heart-disabled.png",
+      "sha256": "50c1165148b8a82b5775607646fe00aef7f1d28d67ce36c401c2ba9c610e07ae",
+      "size": [
+        36,
+        36
+      ]
+    },
+    {
+      "file": "heart-normal.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/heart-normal.png",
+      "sha256": "7f12039570668ebc5680f78747f99080d8f469a6560cb55037c72357a6b3c4b0",
+      "size": [
+        36,
+        36
+      ]
+    },
+    {
+      "file": "heart-pressed.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/heart-pressed.png",
+      "sha256": "b697094c53d9a357d3741deb26d828e995100d84f962a6035cd07b3505084aed",
+      "size": [
+        36,
+        36
+      ]
+    },
+    {
+      "file": "left-disabled.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/left-disabled.png",
+      "sha256": "3801a539f39c8ed2e0d1b91a8e8b5c4787af6cdab2a3079cc84f37480f812331",
+      "size": [
+        52,
+        72
+      ]
+    },
+    {
+      "file": "left-normal.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/left-normal.png",
+      "sha256": "1f83b6f05acddf57ff491abca4d937035ea10564ace6403a346236b372327ba6",
+      "size": [
+        52,
+        72
+      ]
+    },
+    {
+      "file": "left-pressed.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/left-pressed.png",
+      "sha256": "8c96e778b68a9af7b83f751312a3e51087f0cfaae9c1c742c31e11f551d8f5ef",
+      "size": [
+        52,
+        72
+      ]
+    },
+    {
+      "file": "pause-disabled.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/pause-disabled.png",
+      "sha256": "5e30096339195613bfeb9db8988ec19907579d4e73c390a02cd7a7b360f7451b",
+      "size": [
+        32,
+        44
+      ]
+    },
+    {
+      "file": "pause-normal.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/pause-normal.png",
+      "sha256": "609d15fb36b1c1fed29257e692907ac8f762d4c19ac61b4e6af10d70bd2f200e",
+      "size": [
+        32,
+        44
+      ]
+    },
+    {
+      "file": "pause-pressed.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/pause-pressed.png",
+      "sha256": "bc62b69f9041321c23802bd46a278d46b640aa92cc7a5b574f857c4a502c6b8f",
+      "size": [
+        32,
+        44
+      ]
+    },
+    {
+      "file": "plus-disabled.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/plus-disabled.png",
+      "sha256": "29eec938a2784e4341b51a805d2a2d2cdf96e9b9f37e66abec88e8b0f05d27ef",
+      "size": [
+        32,
+        36
+      ]
+    },
+    {
+      "file": "plus-normal.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/plus-normal.png",
+      "sha256": "d912c834c0715918cd19649112de2298f8e7ef90c45eb62c6a22ec08140f1805",
+      "size": [
+        32,
+        36
+      ]
+    },
+    {
+      "file": "plus-pressed.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/plus-pressed.png",
+      "sha256": "731145e2d0850762180b6cda6e5cc136380de99c8f2509a25f892004123d89c1",
+      "size": [
+        32,
+        36
+      ]
+    },
+    {
+      "file": "right-disabled.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/right-disabled.png",
+      "sha256": "54cd6dbf545fee51f06a414eacff3d9ebdc5e3ffef522d5fe7b3276edd4997b2",
+      "size": [
+        52,
+        72
+      ]
+    },
+    {
+      "file": "right-normal.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/right-normal.png",
+      "sha256": "0c56d27de37289b05b3fe9a56b393b66a9b19aba6e988266ebdbf94a81cee3ed",
+      "size": [
+        52,
+        72
+      ]
+    },
+    {
+      "file": "right-pressed.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/right-pressed.png",
+      "sha256": "a83cb465524c5799de9260a9c503fcb4ecb41529c5fdf4c13721de2873aded45",
+      "size": [
+        52,
+        72
+      ]
+    },
+    {
+      "file": "shield-disabled.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/shield-disabled.png",
+      "sha256": "f2158a40a59b92b9376e5932ebba55ee8d85a017f83a6009ff9b6be679f3363e",
+      "size": [
+        36,
+        44
+      ]
+    },
+    {
+      "file": "shield-normal.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/shield-normal.png",
+      "sha256": "76411041b615e9c064dac2f4c03e998c4a3d30607b86a82f0f03c61baccbb6ee",
+      "size": [
+        36,
+        44
+      ]
+    },
+    {
+      "file": "shield-pressed.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/shield-pressed.png",
+      "sha256": "0b088dd94ddbfc232a1133aed37bb26adbef4aae788246de2cbf91c68db56eab",
+      "size": [
+        36,
+        44
+      ]
+    },
+    {
+      "file": "star-disabled.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/star-disabled.png",
+      "sha256": "c8f580ab3d493fcf78f31ef2168cecd7c131a68f084790dbe595406c25f0ed35",
+      "size": [
+        36,
+        44
+      ]
+    },
+    {
+      "file": "star-normal.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/star-normal.png",
+      "sha256": "9985882c65f55272c3004e123d85320e8882b429b7c797097359690e7a86aed2",
+      "size": [
+        36,
+        44
+      ]
+    },
+    {
+      "file": "star-pressed.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/star-pressed.png",
+      "sha256": "a65f39b540796ede7e8b0f6386bdf060a982cbf1e73ebbd992c1be62024fa816",
+      "size": [
+        36,
+        44
+      ]
+    },
+    {
+      "file": "sword-disabled.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/sword-disabled.png",
+      "sha256": "1b59c6f87df3ea5f52b7593fe86a7384ee37575466dba5bf995f796e979f2971",
+      "size": [
+        104,
+        108
+      ]
+    },
+    {
+      "file": "sword-normal.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/sword-normal.png",
+      "sha256": "eefe79d3877343175f2f7da0be73410fdca6286d5f940f5a51abd4604fe8e421",
+      "size": [
+        104,
+        108
+      ]
+    },
+    {
+      "file": "sword-pressed.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/sword-pressed.png",
+      "sha256": "bc5c148b265a45df972a8b70cf2659af7728e1934a8b81364e047f52f1943c87",
+      "size": [
+        104,
+        108
+      ]
+    },
+    {
+      "file": "up-disabled.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/up-disabled.png",
+      "sha256": "0f4e3f998d7bb1d2647b2c7409d0bd13e3ea596e11e121aa8fd2ec2c22a882db",
+      "size": [
+        68,
+        56
+      ]
+    },
+    {
+      "file": "up-normal.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/up-normal.png",
+      "sha256": "3f6febe1b07f732381fc1f349cc08a4f7c436d7f63d56628197e5ba65cf1c8a8",
+      "size": [
+        68,
+        56
+      ]
+    },
+    {
+      "file": "up-pressed.png",
+      "source": "Planning/Story/Dragon-v1/images/ui-pixel-v4/up-pressed.png",
+      "sha256": "b19eb432190748725e013aaf85239c51edfa3470c9ad6f562952f14ffc0924c0",
+      "size": [
+        68,
+        56
+      ]
+    }
+  ]
+}

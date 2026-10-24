@@ -1,0 +1,159 @@
+{
+  "version": "combat-audio-v8.6",
+  "checkedAt": "2026-10-23",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "files": [
+    {
+      "role": "lobby",
+      "label": "로비 · Stage Select",
+      "file": "bgm-lobby.ogg",
+      "creator": "Juhani Junkala / SubspaceAudio",
+      "title": "Juhani Junkala [Chiptune Adventures] 4. Stage Select",
+      "sourceUrl": "https://opengameart.org/content/4-chiptunes-adventure",
+      "license": "CC0-1.0",
+      "originalFile": "Juhani Junkala [Chiptune Adventures] 4. Stage Select.ogg",
+      "originalSha256": "8d5c0456107049b0d846b72eba722bea5f897e3b2c96a68512edb8f898170e7c",
+      "sha256": "a34b3def137b617c290d0a7ffe3616a8c813a39a2548bc7b380e154dcc66c5af",
+      "edits": "Fixed gain 0.640232; stereo 44.1kHz Vorbis; original full loop and tempo preserved, no added bell layer.",
+      "durationSeconds": 21.3362358276644,
+      "peakDbfs": -3.542426109313965,
+      "rmsDbfs": -21.067245483398438,
+      "loopJump": 0.04449509084224701
+    },
+    {
+      "role": "road",
+      "label": "성 밖 · Stage 1",
+      "file": "bgm-road.ogg",
+      "creator": "Juhani Junkala / SubspaceAudio",
+      "title": "Juhani Junkala [Chiptune Adventures] 1. Stage 1",
+      "sourceUrl": "https://opengameart.org/content/4-chiptunes-adventure",
+      "license": "CC0-1.0",
+      "originalFile": "Juhani Junkala [Chiptune Adventures] 1. Stage 1.ogg",
+      "originalSha256": "cd35b9cf8929352d60b79fdedbe43f7fab3e6e0c228b22970851c542a89f0531",
+      "sha256": "1847819dd2ce35ef498eee65fb95df06c23441c15885c9d8e7b4b303334ace3d",
+      "edits": "Fixed gain 0.523584; stereo 44.1kHz Vorbis; original full loop and tempo preserved, no added bell layer.",
+      "durationSeconds": 41.145759637188206,
+      "peakDbfs": -5.222089767456055,
+      "rmsDbfs": -19.005809783935547,
+      "loopJump": 0.1505025327205658
+    },
+    {
+      "role": "quarter",
+      "label": "주거구 · Stage 2",
+      "file": "bgm-quarter.ogg",
+      "creator": "Juhani Junkala / SubspaceAudio",
+      "title": "Juhani Junkala [Chiptune Adventures] 2. Stage 2",
+      "sourceUrl": "https://opengameart.org/content/4-chiptunes-adventure",
+      "license": "CC0-1.0",
+      "originalFile": "Juhani Junkala [Chiptune Adventures] 2. Stage 2.ogg",
+      "originalSha256": "68ec252839e1f227275fe46fca5e38ffab5086b39a6ab2650a752e4f2ef2a5a7",
+      "sha256": "acdde646260eb40c70b9c1d3329fd7e04d76ae2085f737909cca98bfc2afccda",
+      "edits": "Fixed gain 0.510633; stereo 44.1kHz Vorbis; original full loop and tempo preserved, no added bell layer.",
+      "durationSeconds": 56.105215419501135,
+      "peakDbfs": -5.821564674377441,
+      "rmsDbfs": -18.99664306640625,
+      "loopJump": 0.03209158405661583
+    },
+    {
+      "role": "boss",
+      "label": "보스 · Boss Fight",
+      "file": "bgm-boss.ogg",
+      "creator": "Juhani Junkala / SubspaceAudio",
+      "title": "Juhani Junkala [Chiptune Adventures] 3. Boss Fight",
+      "sourceUrl": "https://opengameart.org/content/4-chiptunes-adventure",
+      "license": "CC0-1.0",
+      "originalFile": "Juhani Junkala [Chiptune Adventures] 3. Boss Fight.ogg",
+      "originalSha256": "1c5521a07cf503b79cc0ff8f6c031d5a9c213e9c31f27bcc614883b092ee0b7a",
+      "sha256": "0a5d56e31891e62df569cf2ff3e29e967e08b0ce7689b04e13cba498ff0c0fe7",
+      "edits": "Fixed gain 0.526855; stereo 44.1kHz Vorbis; original full loop and tempo preserved, no added bell layer.",
+      "durationSeconds": 71.72643990929706,
+      "peakDbfs": -5.300388813018799,
+      "rmsDbfs": -19.015512466430664,
+      "loopJump": 0.09501617401838303
+    },
+    {
+      "role": "attack",
+      "label": "공격 · 짧은 베기",
+      "file": "sword-strike.wav",
+      "creator": "Kenney",
+      "title": "RPG Audio: knifeSlice2 + chop",
+      "sourceUrl": "https://kenney.nl/assets/rpg-audio",
+      "license": "CC0-1.0",
+      "originalFiles": [
+        {
+          "file": "knifeSlice2.ogg",
+          "sha256": "6c2064d0ef988d1ec3d56868e823ea8823a5cac00f2742560052633529407def"
+        },
+        {
+          "file": "chop.ogg",
+          "sha256": "d00c2b3c9fff07e376145c8c8c45c90e5084ec192f6ce0387db233f7b86f1486"
+        }
+      ],
+      "sha256": "2d2eb4374ff21b8c967ac9754d0147cbe4e7e631bf510547e96a95313267ae6a",
+      "edits": "Onset trim 0.015782/0.017188s, EQ, layer blade .85 + chop .65, 280ms, 2ms attack/35ms release, fixed gain 0.724140.",
+      "durationSeconds": 0.28,
+      "peakDbfs": -3.0,
+      "rmsDbfs": -23.282432556152344,
+      "loopJump": 0.0
+    },
+    {
+      "role": "dodge",
+      "label": "일반·완벽 회피 · 바람",
+      "file": "dodge-air.wav",
+      "creator": "qubodup",
+      "title": "Swosh / Whoosh / Air Cut",
+      "sourceUrl": "https://freesound.org/people/qubodup/sounds/60030/",
+      "license": "CC0-1.0",
+      "originalFile": "60030-hq.mp3",
+      "originalSha256": "0301adf448c60b80c09b89df57510fd09949d6b15bb457ef7c9e70999b8a2ad0",
+      "sha256": "42b2d0b851da09c2e35721db999a9d343c74240eaed97f43cbf1311726b8c0ec",
+      "edits": "Public HQ MP3 preview; 45–315ms excerpt, highpass240/lowpass8500, 2ms/30ms fades, fixed gain 0.871424. Accepted input plays once; perfect result does not add a bell or duplicate.",
+      "durationSeconds": 0.2700226757369614,
+      "peakDbfs": -5.124001979827881,
+      "rmsDbfs": -19.0,
+      "loopJump": 0.0
+    }
+  ],
+  "sourceEvidence": [
+    {
+      "file": "Planning/Story/Audio-v86/Sources/chiptune-adventures.zip",
+      "sha256": "9c9547e184a6daef0cddf9eff5b8c42b357a9a0d2c8f2b5a01aa95154b85edef"
+    },
+    {
+      "file": "Planning/Story/Audio-v86/Sources/chiptune-adventures/INFO.txt",
+      "sha256": "0f80ba371b1c5b87875ea009b865a3d47f6cbc20f5d83cfd05c8836e76ac0c53"
+    },
+    {
+      "file": "Planning/Story/Audio-v86/Sources/kenney-rpg.zip",
+      "sha256": "6dbeaf8544da958d8f2adcb4a4a4b76c1ade34a05f8ab9edccd327da7375f38b"
+    },
+    {
+      "file": "Planning/Story/Audio-v86/Sources/kenney-rpg/License.txt",
+      "sha256": "5735dfd72cb64cbbceda4ebc00c380c41ca680edb82ff153aa7c9ab97614c539"
+    },
+    {
+      "file": "Planning/Story/Audio-v86/Sources/music-source.html",
+      "sha256": "2482bb5a7eb7f36169d908101b6235ff82e20c52667f9df897fc9d3fa4662c48"
+    },
+    {
+      "file": "Planning/Story/Audio-v86/Sources/rpg-source.html",
+      "sha256": "a700ca539391b0293657fe7e63a1eb492a5ccaba02311260605cfec2bf7720b2"
+    },
+    {
+      "file": "Planning/Story/Audio-v86/Sources/impact-source.html",
+      "sha256": "d792cb205f6952bd3f43d386b4ee98fb97df4a3bb89996622fc03f07fbe39005"
+    },
+    {
+      "file": "Planning/Story/Audio-v72/Sources/60030-source.html",
+      "sha256": "ae3e66980e661a160abed14bb992676de5c623f98fd5c7ba9a58a62789f882cf"
+    }
+  ],
+  "removedFromPlayback": [
+    "bell-low-long",
+    "dark shrine",
+    "dark theme",
+    "dungeon ambience",
+    "fire sword"
+  ],
+  "qualityNote": "Signal/clipping and loop-boundary measurements recorded. Runtime verification is in Planning/Evidence/Feedback-v86. Subjective timbre is reviewable in the audio preview."
+}
