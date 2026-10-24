@@ -37,15 +37,15 @@ namespace LastBell.Editor
             if(!existing){var go=new GameObject("CombatRhythm",typeof(RectTransform),typeof(CanvasRenderer),typeof(CombatRhythmGraphic));go.layer=5;go.transform.SetParent(view.transform,false);existing=go.transform;}
             var rect=(RectTransform)existing;rect.anchorMin=Vector2.zero;rect.anchorMax=Vector2.one;rect.pivot=new Vector2(.5f,.5f);rect.offsetMin=rect.offsetMax=Vector2.zero;
             view.Rhythm=existing.GetComponent<CombatRhythmGraphic>();view.Rhythm.raycastTarget=false;existing.SetSiblingIndex(1);
-            view.Dodge[2].gameObject.SetActive(false);view.GetComponent<FeedbackLayout>().Apply(960,540,false);
+            view.Dodge[2].gameObject.SetActive(true);view.GetComponent<FeedbackLayout>().Apply(960,540,false);
             EditorUtility.SetDirty(view);EditorUtility.SetDirty(view.Rhythm);
             if(PrefabUtility.IsPartOfPrefabInstance(view)){PrefabUtility.RecordPrefabInstancePropertyModifications(view);PrefabUtility.RecordPrefabInstancePropertyModifications(view.Rhythm);}
         }
         public static void Validate()
         {
             var view=AssetDatabase.LoadAssetAtPath<GameObject>(MvpSceneBuilder.ViewPath).GetComponent<MvpView>();
-            if(!view.Rhythm||view.Rhythm.raycastTarget||view.Rhythm.transform.parent!=view.transform||view.Dodge[2].gameObject.activeSelf)
-                throw new InvalidOperationException("Missing saved v5.9 rhythm overlay or crouch control still active.");
+            if(!view.Rhythm||view.Rhythm.raycastTarget||view.Rhythm.transform.parent!=view.transform||!view.Dodge[2].gameObject.activeSelf)
+                throw new InvalidOperationException("Missing saved rhythm overlay or Down parry control.");
         }
         public static void ApplyAndBuild(){Apply();MvpBuild.Windows();}
     }

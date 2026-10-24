@@ -35,26 +35,26 @@ namespace LastBell
             for(int stage=1;stage<=4;stage++)
             {
                 Playing(stage);yield return Capture("shape-"+stage+"-blink1");
-                Check(!presenter.View.Dodge[2].gameObject.activeSelf&&!presenter.View.Timing.gameObject.activeSelf,"no crouch or overhead gauge "+stage);
-                session.Tick(.18f);yield return Capture("shape-"+stage+"-blink2");
-                session.Tick(.18f);yield return Capture("shape-"+stage+"-blink3");
-                session.Tick(.13f);yield return Capture("shape-"+stage+"-prepare");
-                if(stage==3)Press(presenter.View.Attack);else Press(presenter.View.Dodge[(int)session.EnemyIntent.Direction]);
+                Check(presenter.View.Dodge[2].gameObject.activeSelf&&!presenter.View.Timing.gameObject.activeSelf,"Down parry button and no overhead gauge "+stage);
+                session.Tick(.24f);yield return Capture("shape-"+stage+"-blink2");
+                session.Tick(.24f);yield return Capture("shape-"+stage+"-blink3");
+                session.Tick(.19f);yield return Capture("shape-"+stage+"-prepare");
+                Press(presenter.View.Dodge[(int)session.EnemyIntent.Direction]);
                 session.TickInputFrame(.05f);yield return Capture("shape-"+stage+"-contact");
-                Check(session.IsEnemyImpactPending&&System.Math.Abs(session.ClockMs-540)<.001,"contact exactly540 before resolution "+stage);
+                Check(session.IsEnemyImpactPending&&System.Math.Abs(session.ClockMs-720)<.001,"contact exactly720 before resolution "+stage);
                 Check(System.Math.Abs(presenter.View.Rhythm.WaveProgress-1)<.001,"wave meets at contact "+stage);
                 session.TickInputFrame(0);yield return Capture("shape-"+stage+"-impact");
                 Check(session.PlayerHp==100&&session.Stagger==40,"perfect defense via actual UI "+stage);
                 if(stage==3)Check(presenter.PlayerActor.transform.localPosition==ParallaxWorld.PlanPoint(500,590),"parry remains standing at home");
                 session.Tick(.1f);yield return Capture("shape-"+stage+"-wave");
             }
-            Playing(9,0,true);Check(session.EnemyThreats[0].ImpactAtMs==960&&session.EnemyThreats[1].ImpactAtMs==1280,"fast chain960 /1280");
+            Playing(9,0,true);Check(session.EnemyThreats[0].ImpactAtMs==1440&&session.EnemyThreats[1].ImpactAtMs==1920,"chain1440 /1920");
             var events=new List<SessionEvent>();session.EventRaised+=events.Add;
-            for(int ms=0;ms<=1880;ms+=10)
+            for(int ms=0;ms<=2520;ms+=10)
             {
                 if(ms>0)session.Tick(.01f);
-                if(ms==910||ms==1230){yield return null;Press(presenter.View.Dodge[(int)session.EnemyIntent.Direction]);}
-                if(ms==1370){yield return null;Press(presenter.View.Attack);Check(!session.CanPerfectCounter,"counter consumes only accepted input");Check(presenter.PlayerActor.transform.localPosition==ParallaxWorld.PlanPoint(500,590),"counter snaps immediately");}
+                if(ms==1390||ms==1870){yield return null;Press(presenter.View.Dodge[(int)session.EnemyIntent.Direction]);}
+                if(ms==2010){yield return null;Press(presenter.View.Attack);Check(!session.CanPerfectCounter,"counter consumes only accepted input");Check(presenter.PlayerActor.transform.localPosition==ParallaxWorld.PlanPoint(500,590),"counter snaps immediately");}
                 if(ms%20==0)yield return Capture("combo-"+(ms/20).ToString("D3"));
                 peakParticles=System.Math.Max(peakParticles,presenter.Presentation.EnemyEffects.ActiveParticles);
             }
@@ -62,25 +62,25 @@ namespace LastBell
             Check(events.FindAll(e=>e.Kind==SessionEventKind.EnemyDamaged).Count==1,"counter deals one hit");
             Check(peakParticles<=96,"particle cap96");
             Playing(10,0,true);yield return Capture("three-bells");Check(presenter.View.Rhythm.BellCount==3,"three upcoming attacks three bells");
-            session.Tick(1.39f);yield return null;Press(presenter.View.Dodge[0]);session.Tick(.05f);yield return Capture("two-bells");Check(presenter.View.Rhythm.BellCount==2,"one resolved bell disappears without recentering");
-            session.Tick(.27f);yield return null;Press(presenter.View.Attack);session.Tick(.05f);yield return Capture("mixed-parry");Check(session.PlayerHp==100,"dodge then parry mixed chain");
-            Playing(3);session.Tick(.42f);yield return null;Press(presenter.View.Attack);session.Tick(.12f);yield return Capture("normal-parry");
+            session.Tick(2.11f);yield return null;Press(presenter.View.Dodge[0]);session.Tick(session.EnemyIntent.SecondsToHit);yield return Capture("two-bells");Check(presenter.View.Rhythm.BellCount==2,"one resolved bell disappears without recentering");
+            session.Tick(.43f);yield return null;Press(presenter.View.Dodge[2]);session.Tick(.05f);yield return Capture("mixed-parry");Check(session.PlayerHp==100,"dodge then parry mixed chain");
+            Playing(3);session.Tick(.6f);yield return null;Press(presenter.View.Dodge[2]);session.Tick(.12f);yield return Capture("normal-parry");
             Check(!session.CanPerfectCounter&&presenter.View.DodgeResult.Label.text=="쳐냄","ordinary parry has no perfect counter");
-            Playing(3);session.Tick(.49f);yield return null;Press(presenter.View.Dodge[1]);session.Tick(.05f);yield return Capture("wrong-dodge");Check(session.PlayerHp<100,"high punishes dodge within gold footprint");
-            Playing(2);session.Tick(.49f);yield return null;Press(presenter.View.Dodge[1]);session.Tick(.025f);yield return Capture("back-entry");
+            Playing(3);session.Tick(.67f);yield return null;Press(presenter.View.Dodge[1]);session.Tick(.05f);yield return Capture("wrong-dodge");Check(session.PlayerHp<100,"high punishes dodge within gold footprint");
+            Playing(2);session.Tick(.67f);yield return null;Press(presenter.View.Dodge[1]);session.Tick(.025f);yield return Capture("back-entry");
             Check(System.Math.Abs(session.DodgeVisualAmount-.875)<.001,"50ms eased dodge entry");session.Tick(.025f);session.Tick(.165f);yield return Capture("back-return");
             Check(System.Math.Abs(session.DodgeVisualAmount-.125)<.001,"130ms eased return");
             session.Tick(.065f);yield return null;Press(presenter.View.Attack);session.Tick(.06f);yield return Capture("attack-approach");
             Check(presenter.PlayerActor.CurrentMotion!=ActorMotion.Run,"attack approach uses prepared slash not run");
             session.Tick(.06f);yield return Capture("attack-endpoint");Check(System.Math.Abs(session.PlayerCombatBody.X-518)<.01,"attack165px endpoint");
-            Playing(2);session.Tick(.36f);yield return Capture("pause-before");session.SetPaused(true);double clock=session.ClockMs;yield return new WaitForSecondsRealtime(.25f);yield return Capture("pause-after");Check(session.ClockMs==clock,"pause freezes wave clock");
-            presenter.View.ReducedShake.isOn=true;presenter.Effects.ReducedShake=true;Playing(2);session.Tick(.36f);yield return Capture("reduced-wave");
+            Playing(2);session.Tick(.48f);yield return Capture("pause-before");session.SetPaused(true);double clock=session.ClockMs;yield return new WaitForSecondsRealtime(.25f);yield return Capture("pause-after");Check(session.ClockMs==clock,"pause freezes wave clock");
+            presenter.View.ReducedShake.isOn=true;presenter.Effects.ReducedShake=true;Playing(2);session.Tick(.48f);yield return Capture("reduced-wave");
             Check(presenter.View.Rhythm.WaveProgress>0&&presenter.Presentation.EnemyEffects.ActiveParticles==0,"reduced motion keeps essential circle without particles");
             presenter.View.ReducedShake.isOn=false;presenter.Effects.ReducedShake=false;
             session.ReturnToLobby();yield return Capture("lobby-clears-rhythm");Check(presenter.View.Rhythm.BellCount==0,"lobby clears rhythm overlay");
             Check(presenter.Art.Find("hero_on").FindClip(ActorMotion.Run).sourceId=="hero-approved-dash-20261021-02","approved travel run preserved");
             if(failed)throw new InvalidOperationException("Combat v5.9 smoke logged an error");
-            File.WriteAllText(Path.Combine(output,"combat-result.json"),"{\"passed\":true,\"width\":"+Screen.width+",\"height\":"+Screen.height+",\"peakParticles\":"+peakParticles+",\"comboFrames\":95,\"frameMs\":20,\"checks\":[\""+string.Join("\",\"",checks)+"\"]}");
+            File.WriteAllText(Path.Combine(output,"combat-result.json"),"{\"passed\":true,\"width\":"+Screen.width+",\"height\":"+Screen.height+",\"peakParticles\":"+peakParticles+",\"comboFrames\":127,\"frameMs\":20,\"checks\":[\""+string.Join("\",\"",checks)+"\"]}");
             Debug.Log("LAST_BELL_COMBAT_V59_SMOKE_PASSED");Application.Quit(0);
         }
         IEnumerator Capture(string name)

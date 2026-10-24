@@ -51,12 +51,12 @@ namespace LastBell
             if(feedbackOnly){yield return FeedbackReview();yield break;}
             if(resumeOnly)
             {
-                Require(session.Phase==SessionPhase.Combat&&session.Stage==11&&session.IsPaused,"Disk save restores paused Stage 11");
+                Require(session.Phase==SessionPhase.Combat&&session.Stage==1&&session.IsPaused,"Disk save restores paused Stage 1");
                 Require(session.GetStatLevel(0)>0&&session.EquippedRelicIds.Count==1,"Growth and equipped relic survive process restart");
                 yield return Capture("17-restored-pause");
                 presenter.View.Resume.onClick.Invoke();Require(!session.IsPaused,"Continue UI resumes restored battle");
                 yield return Capture("18-restored-battle");
-                File.WriteAllText(Path.Combine(output,"resume-result.json"),$"{{\"passed\":true,\"stage\":11,\"attackLevel\":{session.GetStatLevel(0)},\"equippedRelics\":1}}");
+                File.WriteAllText(Path.Combine(output,"resume-result.json"),$"{{\"passed\":true,\"stage\":1,\"attackLevel\":{session.GetStatLevel(0)},\"equippedRelics\":1}}");
                 Debug.Log("LAST_BELL_RESUME_PASSED");finished=true;Application.Quit(0);yield break;
             }
             session.SetPaused(false);
@@ -83,7 +83,7 @@ namespace LastBell
             Require(session.Phase==SessionPhase.Combat,"Attack UI finishes tutorial");
             yield return Capture("03-stage-1");
             int seenStage=1,iterations=0;
-            while(!(session.Stage==11&&session.Phase==SessionPhase.Combat)&&iterations++<100000&&!failed)
+            while(session.Phase!=SessionPhase.MvpComplete&&iterations++<100000&&!failed)
             {
                 if(session.Phase==SessionPhase.Transition)
                 {
@@ -109,7 +109,7 @@ namespace LastBell
                 }
                 if(session.Phase==SessionPhase.StoryDialogue)
                 {
-                    Require(session.Stage==10&&session.CheckpointStartStage==1,"First boss story precedes checkpoint and relic selection");
+                    Require(session.Stage==10&&session.CheckpointStartStage==11,"First boss unlocks checkpoint before story and relic selection");
                     var story=session.Story;
                     Require(story!=null&&story.LineCount==3,"Three-line Stage 10 story");
                     string name="story-10-line-"+(story.LineIndex+1);
@@ -122,15 +122,15 @@ namespace LastBell
                     float rewardDeadline=Time.realtimeSinceStartup+5;
                     while(!presenter.View.RewardPanel.activeSelf&&Time.realtimeSinceStartup<rewardDeadline)yield return null;
                     Require(presenter.View.RewardPanel.activeSelf,"Reward panel visible after story");
-                    int stage=session.Stage;int expected=stage+1;
+                    int stage=session.Stage;
                     Require(stage==10&&storyLines==3,"Only main boss grants relic after all story lines");
                     Require(session.RelicChoices.Count==3,"Three distinct reward choices");
                     Require(session.RelicChoices[0]!=session.RelicChoices[1]&&session.RelicChoices[1]!=session.RelicChoices[2]&&session.RelicChoices[0]!=session.RelicChoices[2],"No duplicate reward cards");
                     yield return Capture("07-boss-reward");
                     int choice=0;
                     for(int i=0;i<3;i++)if(session.GetRelicLevel(session.RelicChoices[i])>0){choice=i;break;}
-                    presenter.View.Rewards[choice].Receive.onClick.Invoke();rewards++;
-                    Require(session.Stage==expected&&session.Transition!=null&&session.Transition.Kind==TransitionKind.Travel,"Reward starts automatic travel to Stage "+expected);
+                    presenter.View.Rewards[choice].Receive.onClick.Invoke();presenter.View.RewardConfirm.onClick.Invoke();rewards++;
+                    Require(session.Stage==10&&session.Phase==SessionPhase.MvpComplete&&session.Transition==null,"Final reward completes prototype without Stage 11 travel");
                     yield return null;continue;
                 }
                 if(session.Stage!=seenStage)
@@ -147,7 +147,7 @@ namespace LastBell
                 for(int sub=0;sub<6&&session.Phase==SessionPhase.Combat&&session.Stage<=10;sub++)
                 {
                     var cue=session.EnemyIntent;
-                    if(cue.Visible&&cue.SecondsToHit<=.04f)Press(session.EnemyThreats[0].RequiresParry?presenter.View.Attack:presenter.View.Dodge[(int)cue.Direction]);
+                    if(cue.Visible&&cue.SecondsToHit<=.04f)Press(presenter.View.Dodge[(int)cue.Direction]);
                     else Press(presenter.View.Attack);
                     // The probe runs six simulation ticks per rendered frame. Clear only previous
                     // presentation effects before a new impact so screenshots do not stack six
@@ -158,18 +158,23 @@ namespace LastBell
                 }
                 yield return null;
             }
-            Require(session.Stage==11&&session.Phase==SessionPhase.Combat,"Stage 10 does not stop the run");
+            Require(session.Stage==10&&session.Phase==SessionPhase.MvpComplete&&session.Result.Cleared,"Stage 10 opens clear results");
             Require(rewards==1&&session.Fragments==4&&sawMinibossCurrency,"One boss relic choice and exactly 1 + 3 fragments");
             Require(sawTravel&&sawBanner&&sawBossIntro&&storyLines==3,"Travel, stage banner, boss entrance and story were traversed");
-            yield return Capture("08-stage-11-continuation");
-            // Let the actual boundary enemy defeat the player; do not edit HP or saved state.
+            yield return Capture("08-stage-10-clear");
+            Require(presenter.View.ResultPanel.activeSelf&&presenter.View.ResultTitle.text.Contains("클리어"),"Clear results reuse the stored result panel");
+            Require(session.Result.Gold==session.Gold&&session.Result.Fragments==4,"Clear result includes all run earnings");
+            long clearedGold=session.Gold;presenter.View.ResultRetry.onClick.Invoke();session.Tick(.7f);yield return null;
+            Require(session.Stage==1&&session.Phase==SessionPhase.Combat&&session.Gold==clearedGold,"Clear retry starts Stage 1 and preserves wallet");
+            yield return Capture("retry-stage-1");
+            // Verify a fresh retry can fail and show its own empty earnings ledger.
             for(int i=0;i<10000&&session.Phase==SessionPhase.Combat;i++)
             {session.Tick(.1f);if(i%6==0)yield return null;}
             Require(session.Transition!=null&&session.Transition.Kind==TransitionKind.Death,"Death starts dissolve and lantern flow");
             sawDeath=true;session.Tick(.9f);yield return Capture("death-lantern",.05f);
             session.Tick(.9f);yield return null;
-            Require(session.Phase==SessionPhase.DeathResult&&session.Result.DefeatedStage==11&&session.Result.RetryStage==11,"Death shows Stage 11 result and checkpoint");
-            Require(session.Result.Gold==session.Gold&&session.Result.Fragments==4,"Result includes exactly this run earnings");
+            Require(session.Phase==SessionPhase.DeathResult&&session.Result.DefeatedStage==1&&session.Result.RetryStage==1,"Death shows Stage 1 result and restart");
+            Require(session.Result.Gold==0&&session.Result.Fragments==0&&session.Gold==clearedGold,"New run result does not repeat prior earnings");
             yield return Capture("death-result");
             presenter.View.ResultLobby.onClick.Invoke();yield return null;
             Require(session.Phase==SessionPhase.Lobby,"Result lobby button returns to lobby");
@@ -196,11 +201,11 @@ namespace LastBell
             Require(session.GetStatLevel(0)==levelBefore+1,"Explicit second + buys upgrade");
             yield return Capture("14-lobby-grown");
             presenter.View.StartRun.onClick.Invoke();
-            Require(session.Transition!=null&&session.Transition.Kind==TransitionKind.Arrival,"Checkpoint departure displays Stage before combat");
+            Require(session.Transition!=null&&session.Transition.Kind==TransitionKind.Arrival,"New run displays Stage 1 before combat");
             session.Tick(.7f);yield return null;
-            Require(session.Stage==11&&session.Phase==SessionPhase.Combat,"Stage button resumes saved checkpoint");
+            Require(session.Stage==1&&session.Phase==SessionPhase.Combat,"Lobby departure always starts Stage 1");
             session.SetPaused(true);bootstrap.Save();
-            yield return Capture("15-checkpoint-resume");
+            yield return Capture("15-stage-1-departure");
             string report=$"{{\"passed\":true,\"tutorial\":true,\"bossRewards\":{rewards},\"storyLines\":{storyLines},\"minibossCurrencyOnly\":{sawMinibossCurrency.ToString().ToLowerInvariant()},\"travel\":{sawTravel.ToString().ToLowerInvariant()},\"stageBanner\":{sawBanner.ToString().ToLowerInvariant()},\"bossIntro\":{sawBossIntro.ToString().ToLowerInvariant()},\"deathLantern\":{sawDeath.ToString().ToLowerInvariant()},\"perfectDodges\":{perfect},\"normalDodges\":{normal},\"criticalHits\":{critical},\"playerHits\":{hits},\"checkpoint\":{session.CheckpointStartStage},\"attackLevel\":{session.GetStatLevel(0)},\"equippedRelics\":{session.EquippedRelicIds.Count}}}";
             File.WriteAllText(Path.Combine(output,"smoke-result.json"),report);
             Debug.Log("LAST_BELL_SMOKE_PASSED: "+report);finished=true;
@@ -254,7 +259,7 @@ namespace LastBell
             session=new GameSession(session.Catalog,JsonUtility.FromJson<GameSaveData>(JsonUtility.ToJson(session.ExportSave())));presenter.Bind(session);yield return null;
             Require(session.Result.DefeatedStage==resultStage&&session.Result.Gold==resultGold&&session.Gold==wallet,"Result restore retains earnings without paying twice");
             presenter.View.ResultRetry.onClick.Invoke();yield return null;
-            Require(session.Phase==SessionPhase.Transition&&session.Stage==1&&session.Gold==wallet&&session.ExportSave().run.earnedGold==0,"Retry starts checkpoint and resets only run earnings");
+            Require(session.Phase==SessionPhase.Transition&&session.Stage==session.CheckpointStartStage&&session.Gold==wallet&&session.ExportSave().run.earnedGold==0,"Retry starts checkpoint and resets only run earnings");
             yield return Capture("result-retry");
             session.ReturnToLobby();yield return null;
             File.WriteAllText(Path.Combine(output,"feedback-result.json"),"{\"passed\":true,\"exactHighPrice\":8968311,\"largeWallet\":3000000000,\"perfectAfterImpact\":true,\"pauseFreezesFeedback\":true,\"fourDirections\":true,\"runFrames\":48,\"captureFps\":24,\"runCycleMs\":400,\"travelPixels\":1920,\"deathResult\":true,\"resultRestore\":true,\"retry\":true}");

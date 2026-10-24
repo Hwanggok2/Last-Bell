@@ -1,5 +1,4 @@
 using System;
-using System.IO;
 using UnityEngine;
 
 namespace LastBell
@@ -26,9 +25,15 @@ namespace LastBell
                 if(Session!=null)Session.SaveRequested-=Save;
                 var data=JsonUtility.FromJson<GameCatalog>(CatalogJson.text);
                 data.ValidateOrThrow();
-                string directory=Application.persistentDataPath;
-                var args=Environment.GetCommandLineArgs();
-                for(int i=0;i+1<args.Length;i++)if(args[i]=="-lastbell-save-dir")directory=Path.GetFullPath(args[i+1]);
+                bool playtest=false;
+#if UNITY_STANDALONE_WIN && LASTBELL_PLAYTEST_092 && !UNITY_EDITOR
+                playtest=true;
+#endif
+                string[] args=null;
+#if !UNITY_WEBGL || UNITY_EDITOR
+                args=Environment.GetCommandLineArgs();
+#endif
+                string directory=SaveDirectorySelector.Select(Application.persistentDataPath,args,playtest);
                 repository=new JsonSaveRepository(directory);
                 var saved=repository.Load(out bool recovered);
                 Session=new GameSession(data,saved);
@@ -71,9 +76,14 @@ namespace LastBell
 
         void OnApplicationPause(bool paused)
         {
-            if(!paused||Session==null)return;
+            if(Session==null)return;
+            if(Session.Phase==SessionPhase.Prologue){Session.SetPaused(paused);Save();return;}
+            if(!paused)return;
+            if(Session.Phase==SessionPhase.ComboHint){Save();return;}
+            if(Session.Phase==SessionPhase.Prologue){if(!Session.ProloguePaused)Session.ToggleProloguePause();Save();return;}
             Session.SetPaused(true);Save();
         }
+        void OnApplicationFocus(bool focus){if(Session!=null&&Session.Phase==SessionPhase.Prologue)Session.SetPaused(!focus);}
         void OnApplicationQuit(){Save();}
         void OnDestroy(){if(Session!=null)Session.SaveRequested-=Save;}
     }

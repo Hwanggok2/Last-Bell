@@ -17,9 +17,16 @@ namespace LastBell.Editor
             PresentationMigration.Validate();
             CombatV55Migration.Validate();
             CombatV59Migration.Validate();
+            ReviewedMotionAudioMigration.Validate();
+            FeedbackV6Migration.Validate();
+            FeedbackV7Migration.Validate();
+            GateCheckpointMigration.Validate();
+            AudioV72Migration.Validate();
+            ReferenceV81Migration.Validate();
             PlayerSettings.companyName="LastBellPrototype";
             PlayerSettings.productName="Last Bell MVP";
-            PlayerSettings.bundleVersion="0.1.0";
+            FeedbackV86Migration.Validate();
+            PlayerSettings.bundleVersion="0.8.6";
             PlayerSettings.defaultScreenWidth=960;
             PlayerSettings.defaultScreenHeight=540;
             PlayerSettings.fullScreenMode=FullScreenMode.Windowed;
@@ -48,6 +55,26 @@ namespace LastBell.Editor
             });
             Debug.Log($"LAST_BELL_BUILD: {report.summary.result}; {report.summary.totalSize} bytes; {report.summary.totalErrors} errors");
             if(report.summary.result!=BuildResult.Succeeded)throw new System.Exception("MVP build failed");
+        }
+
+        [MenuItem("Last Bell/Build/Web Prototype")]
+        public static void Web()
+        {
+            Prepare();
+            PlayerSettings.SetScriptingBackend(NamedBuildTarget.WebGL,ScriptingImplementation.IL2CPP);
+            PlayerSettings.SetManagedStrippingLevel(NamedBuildTarget.WebGL,ManagedStrippingLevel.Low);
+            PlayerSettings.WebGL.compressionFormat=WebGLCompressionFormat.Brotli;
+            PlayerSettings.WebGL.decompressionFallback=true;
+            PlayerSettings.WebGL.nameFilesAsHashes=true;
+            PlayerSettings.WebGL.template="PROJECT:LastBell";
+            string destination=Path.GetFullPath(Path.Combine(Application.dataPath,"../../Builds/WebGL"));
+            Directory.CreateDirectory(destination);
+            var report=BuildPipeline.BuildPlayer(new BuildPlayerOptions {
+                scenes=new[]{"Assets/Game/Scenes/Mvp.unity"},locationPathName=destination,
+                target=BuildTarget.WebGL,options=BuildOptions.None
+            });
+            Debug.Log($"LAST_BELL_WEB_BUILD: {report.summary.result}; {report.summary.totalSize} bytes; {report.summary.totalErrors} errors");
+            if(report.summary.result!=BuildResult.Succeeded)throw new System.Exception("Web prototype build failed");
         }
 
         [MenuItem("Last Bell/Build/Android Test APK")]

@@ -91,7 +91,7 @@ namespace LastBell.Editor
             SaveActorPrefab(catalog);
             AssetDatabase.SaveAssets();
             Validate();
-            Debug.Log($"LAST_BELL_PRESENTATION_ART_IMPORTED: {manifest.textures.Length} preserved source PNGs; six actors; approved eight-pose run with authored 400ms timing. Monster Idle/Stun remain documented single-pose fallbacks.");
+            Debug.Log($"LAST_BELL_PRESENTATION_ART_IMPORTED: {manifest.textures.Length} preserved source PNGs; {actors.Length} actors; approved hero run retained.");
         }
 
         [MenuItem("Last Bell/Art/Presentation/Validate")]
@@ -99,7 +99,7 @@ namespace LastBell.Editor
         {
             var manifest = ReadAndValidateSources();
             var catalog = AssetDatabase.LoadAssetAtPath<ArtCatalog>(CatalogPath);
-            if (!catalog || catalog.actors.Length != 6 || !catalog.actorMaterial || catalog.diagonalSlash.Length != 10)
+            if (!catalog || catalog.actors.Length != manifest.actors.Length || !catalog.actorMaterial || catalog.diagonalSlash.Length != 10)
                 throw new InvalidDataException("Presentation catalog/material/slash references are incomplete.");
             foreach (var texture in manifest.textures)
             {
@@ -234,7 +234,7 @@ namespace LastBell.Editor
             }).ToArray();
             actor.idle = actor.FindClip(ActorMotion.Idle).frames;
             actor.attack = (actor.FindClip(ActorMotion.Attack) ?? actor.FindClip(ActorMotion.AttackUp)).frames;
-            actor.stun = actor.FindClip(ActorMotion.Stun).frames;
+            actor.stun = actor.FindClip(ActorMotion.Stun)?.frames ?? Array.Empty<Sprite>();
             actor.dodgeUp = actor.FindClip(ActorMotion.DodgeUp)?.frames ?? Array.Empty<Sprite>();
             actor.dodgeDown = actor.FindClip(ActorMotion.DodgeDown)?.frames ?? Array.Empty<Sprite>();
             actor.dodgeBack = actor.FindClip(ActorMotion.DodgeBack)?.frames ?? Array.Empty<Sprite>();
