@@ -7,8 +7,8 @@ namespace LastBell
     {
         private long StatUpgradeCost(int index)
         {
-            if (index < 0 || index >= 4 || CurrentCharacter.statLevels[index] >= catalog.growth.maxLevel) return 0;
-            return catalog.GetUpgradeCost(CurrentCharacter.statLevels[index] + 1);
+            if (index < 0 || index >= 5 || CurrentCharacter.statLevels[index] >= catalog.growth.maxLevel) return 0;
+            return catalog.GetStatUpgradeCost(index,CurrentCharacter.statLevels[index] + 1);
         }
 
         private bool UpgradeStat(int index)
@@ -45,11 +45,19 @@ namespace LastBell
         {
             return checked((int)(missing/rate + (missing%rate == 0 ? 0 : 1)));
         }
+        public bool RequestPurchaseExchange(long cost)
+        {
+            if(Phase!=SessionPhase.Lobby||cost<=Gold||cost<=0)return false;
+            int fragments=RequiredFragments(cost-Gold,ExchangeRate);
+            state.exchange=new ExchangeQuoteData{purchaseOnly=true,characterId=CurrentCharacterId,statIndex=-1,upgradeCost=cost,fragments=fragments,gold=checked(fragments*ExchangeRate),exchangeRate=ExchangeRate,walletGold=Gold,walletFragments=Fragments,walletVersion=state.walletVersion};
+            state.phase=SessionPhase.ExchangeConfirmation;Publish();return true;
+        }
 
         private bool IsQuoteCurrent()
         {
             var quote = state.exchange;
-            return quote != null && quote.characterId == state.selectedCharacterId && quote.statIndex >= 0 && quote.statIndex < 4 &&
+            if(quote!=null&&quote.purchaseOnly)return quote.characterId==CurrentCharacterId&&quote.walletVersion==state.walletVersion&&quote.walletGold==Gold&&quote.walletFragments==Fragments&&quote.upgradeCost>Gold&&quote.exchangeRate==ExchangeRate&&quote.fragments==RequiredFragments(quote.upgradeCost-Gold,ExchangeRate)&&quote.gold==quote.fragments*quote.exchangeRate;
+            return quote != null && quote.characterId == state.selectedCharacterId && quote.statIndex >= 0 && quote.statIndex < 5 &&
                 quote.level == GetStatLevel(quote.statIndex) && quote.upgradeCost == StatUpgradeCost(quote.statIndex) &&
                 quote.walletVersion == state.walletVersion && quote.walletGold == state.gold && quote.walletFragments == state.fragments &&
                 quote.exchangeRate == ExchangeRate && quote.upgradeCost > state.gold &&
@@ -91,24 +99,6 @@ namespace LastBell
             return true;
         }
 
-        private bool ChangeEquipment(string id, bool equip)
-        {
-            if (state.phase != SessionPhase.Lobby) return Reject("장착은 로비에서 변경하세요.");
-            if (FindRelicLevel(id) == 0) return Reject("아직 보유하지 않은 유물입니다.");
-            var list = new List<string>(CurrentCharacter.equippedRelicIds);
-            if (equip)
-            {
-                if (list.Contains(id)) return false;
-                if (list.Count >= state.unlockedSlots) return Reject("장착 슬롯이 가득 찼습니다.");
-                list.Add(id);
-            }
-            else if (!list.Remove(id)) return false;
-            CurrentCharacter.equippedRelicIds = list.ToArray();
-            LastMessage = "";
-            Publish();
-            return true;
-        }
-
         private bool ChangeCharacter(string id)
         {
             if (state.phase != SessionPhase.Lobby && state.phase != SessionPhase.ExchangeConfirmation) return false;
@@ -125,17 +115,13 @@ namespace LastBell
         private bool PurchaseSlot()
         {
             if (state.phase != SessionPhase.Lobby) return false;
-            int index = state.unlockedSlots - 1;
-            if (state.unlockedSlots >= catalog.relicRules.maxEquipped || index >= catalog.economy.slotCosts.Length)
-                return Reject("모든 슬롯을 열었습니다.");
-            if (state.highestClearedStage < catalog.economy.slotUnlockStages[index])
-                return Reject(catalog.economy.slotUnlockStages[index] + "층 완료 후 구매할 수 있습니다.");
-            int cost = catalog.economy.slotCosts[index];
+            int cost = NextStorageExpansionCost;
+            if (cost <= 0) return Reject("보관함을 최대로 확장했습니다.");
             if (state.fragments < cost) return Reject("종 파편이 부족합니다.");
             state.fragments -= cost;
             state.walletVersion++;
-            state.unlockedSlots++;
-            LastMessage = "공용 장착 슬롯을 열었습니다.";
+            state.storageCapacity++;
+            LastMessage = "유물 보관함을 확장했습니다.";
             Publish();
             return true;
         }

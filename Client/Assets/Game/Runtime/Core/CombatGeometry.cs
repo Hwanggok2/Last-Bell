@@ -18,7 +18,7 @@ namespace LastBell
         {
             switch(pattern)
             {
-                case "thrust": return new CombatRect(340,306,284,136);
+                case "thrust": case "frontal_dash": return new CombatRect(340,306,284,136);
                 case "low_sweep": return new CombatRect(248,406,376,36);
                 case "high_sweep": return new CombatRect(248,270,376,88);
                 case "outer_arc": return new CombatRect(248,218,165,224);
@@ -61,7 +61,8 @@ namespace LastBell
         public double BeatMs=>(CueEndMs-CueAtMs)/3;
         public double WaveStartMs=>ImpactAtMs-BeatMs*2.5;
         public CombatRect Bounds=>CombatGeometry.Threat(PatternId);
-        internal bool CueEmitted,ReleaseEmitted,Resolved;
+        public bool Resolved {get;internal set;}
+        internal bool CueEmitted,ReleaseEmitted;
         internal EnemyThreatView Copy()=>(EnemyThreatView)MemberwiseClone();
     }
 }

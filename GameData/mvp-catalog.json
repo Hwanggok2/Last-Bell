@@ -1,17 +1,17 @@
 {
   "schemaVersion": 2,
-  "dataVersion": "mvp-1.4.0",
-  "sourcePlanningVersion": "planning-v5.9",
+  "dataVersion": "mvp1.18.0",
+  "sourcePlanningVersion": "Adventure-v6 / independent player skills and level-scaled companion proc skills",
   "generatedNotice": "EDITABLE SOURCE: GameData/mvp-catalog.json. Export with python GameData/export_catalog.py.",
   "sourceSha256": "",
   "defaultCharacterId": "on",
-  "mvpLastStage": 10,
-  "boundaryStage": 11,
+  "mvpLastStage": 20,
+  "boundaryStage": 21,
   "combat": {
-    "dodgeActiveMs": 160,
-    "dodgeRecoveryMs": 100,
-    "perfectWindowMs": 60,
-    "comboMinGapMs": 320,
+    "dodgeActiveMs": 240,
+    "dodgeRecoveryMs": 120,
+    "perfectWindowMs": 90,
+    "comboMinGapMs": 750,
     "normalStagger": 20,
     "perfectStagger": 40,
     "staggerThreshold": 100,
@@ -19,66 +19,91 @@
     "attackIntervalMs": 500,
     "attackWindupMs": 200,
     "postStunImmunityMs": 2000,
-    "singleTelegraphMs": 540,
+    "singleTelegraphMs": 900,
     "maxVisibleThreats": 3,
     "critDamageMultiplier": 1.5,
-    "critChanceCap": 0.3,
-    "goldLuckBonusCap": 0.2,
-    "stunDamageMultiplierCap": 1.75,
+    "critChanceCap": 0.6,
+    "goldLuckBonusCap": 1.5,
+    "stunDamageMultiplierCap": 6,
     "normalStunMs": 1500,
     "minibossStunMs": 1200,
     "bossStunMs": 1000,
     "hpUnitsPerPoint": 1000,
-    "fastTelegraphMs": 480,
-    "attackFlightMs": 90,
-    "comboDefaultGapMs": 360,
-    "perfectCounterMs": 500,
-    "fastAttackFlightMs": 80
+    "fastTelegraphMs": 900,
+    "attackFlightMs": 120,
+    "comboDefaultGapMs": 750,
+    "perfectCounterMs": 1200,
+    "fastAttackFlightMs": 120,
+    "stunAttackSpeedMultiplier": 1.2,
+    "stunExtensionMs": 50,
+    "stunExtensionCapMs": 300,
+    "minibossStaggerMultiplier": 0.6,
+    "bossStaggerMultiplier": 0.4,
+    "perfectStreakStep": 0.2,
+    "perfectStreakMaxSteps": 4
   },
   "growth": {
     "minLevel": 0,
     "maxLevel": 50,
     "effectiveMilestoneLevels": 10,
     "starScale": [
+      0.5,
+      0.75,
       1,
-      1.05,
-      1.1,
-      1.15,
-      1.2
+      1.25,
+      1.5
     ],
     "attackBase": 10,
-    "attackLinearPerLevel": 3,
-    "attackBreakBase": 2,
-    "attackBreakPerStar": 0.15,
+    "attackLinearPerLevel": 4,
+    "attackBreakBase": 2.3,
+    "attackBreakPerStar": 0.05,
     "hpBase": 100,
-    "hpLinearPerLevel": 20,
-    "hpBreakBase": 1.6,
-    "hpBreakPerStar": 0.1,
+    "hpLinearPerLevel": 24,
+    "hpBreakBase": 1.7,
+    "hpBreakPerStar": 0.05,
     "critBase": 0.05,
-    "critPerEffectiveLevel": 0.0015,
-    "goldBonusPerEffectiveLevel": 0.0018,
     "resonanceBase": 1.4,
-    "resonancePerEffectiveLevel": 0.002,
     "breakthroughLevels": [
       11,
       21,
       31,
       41
+    ],
+    "luckCritPerTenLevels": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "luckGoldPerLevel": [
+      1,
+      1,
+      1,
+      2,
+      2
+    ],
+    "resonancePerLevel": [
+      1,
+      2,
+      3,
+      4,
+      5
     ]
   },
   "economy": {
     "initialGold": 0,
     "initialFragments": 0,
-    "minibossFragments": 1,
-    "bossFragments": 3,
+    "minibossFragments": 0,
+    "bossFragments": 4,
     "minibossGoldMultiplier": 3,
     "bossGoldMultiplier": 5,
     "maxRelicGoldPerZone": [
       75,
-      1388,
-      25850,
-      481483,
-      8968311
+      2399,
+      125078,
+      10336979,
+      1318008419
     ],
     "upgradeCosts": [
       0,
@@ -92,54 +117,46 @@
       48,
       60,
       75,
-      187,
-      233,
-      292,
-      364,
-      455,
-      569,
-      711,
-      889,
-      1111,
-      1388,
-      3470,
-      4337,
-      5422,
-      6777,
-      8471,
-      10588,
-      13235,
-      16544,
-      20680,
-      25850,
-      64624,
-      80780,
-      100975,
-      126218,
-      157773,
-      197216,
-      246520,
-      308149,
-      385186,
-      481483,
-      1203707,
-      1504633,
-      1880791,
-      2350989,
-      2938736,
-      3673420,
-      4591775,
-      5739719,
-      7174649,
-      8968311
-    ],
-    "slotCosts": [
-      4,
-      8
-    ],
-    "slotUnlockStages": [
-      10,
-      20
+      225,
+      293,
+      381,
+      496,
+      645,
+      839,
+      1091,
+      1419,
+      1845,
+      2399,
+      8397,
+      11336,
+      15304,
+      20661,
+      27893,
+      37656,
+      50836,
+      68629,
+      92650,
+      125078,
+      500312,
+      700437,
+      980612,
+      1372857,
+      1922000,
+      2690800,
+      3767120,
+      5273968,
+      7383556,
+      10336979,
+      46516406,
+      67448789,
+      97800745,
+      141811081,
+      205626068,
+      298157799,
+      432328809,
+      626876774,
+      908971323,
+      1318008419
     ],
     "ngGoldMultiplier": 1,
     "normalGoldPerStage": [
@@ -154,53 +171,53 @@
       96,
       120,
       150,
-      374,
-      466,
-      584,
-      728,
-      910,
-      1138,
-      1422,
-      1778,
-      2222,
-      2776,
-      6940,
-      8674,
-      10844,
-      13554,
-      16942,
-      21176,
-      26470,
-      33088,
-      41360,
-      51700,
-      129248,
-      161560,
-      201950,
-      252436,
-      315546,
-      394432,
-      493040,
-      616298,
-      770372,
-      962966,
-      2407414,
-      3009266,
-      3761582,
-      4701978,
-      5877472,
-      7346840,
-      9183550,
-      11479438,
-      14349298,
-      17936622
+      180,
+      235,
+      305,
+      397,
+      516,
+      672,
+      873,
+      1136,
+      1476,
+      1920,
+      5039,
+      6802,
+      9183,
+      12397,
+      16736,
+      22594,
+      30502,
+      41178,
+      55590,
+      75047,
+      250156,
+      350219,
+      490306,
+      686429,
+      961000,
+      1345400,
+      1883560,
+      2636984,
+      3691778,
+      5168490,
+      18606563,
+      26979516,
+      39120298,
+      56724433,
+      82250428,
+      119263120,
+      172931524,
+      250750710,
+      363588530,
+      527203368
     ],
     "exchangeGoldPerUnlockTier": [
       100,
       150,
-      2776,
-      51700,
-      962966
+      1920,
+      75047,
+      5168490
     ],
     "exchangeTierUnlockBosses": [
       0,
@@ -208,20 +225,31 @@
       20,
       30,
       40
+    ],
+    "storageExpansionCosts": [
+      4,
+      8,
+      12,
+      18,
+      26,
+      36,
+      48
     ]
   },
   "relicRules": {
     "maxLevel": 5,
-    "maxEquipped": 3,
     "choicesPerBoss": 3,
-    "includeMaxInPool": true
+    "includeMaxInPool": true,
+    "initialCapacity": 3,
+    "maxOwned": 10
   },
   "characters": [
     {
       "id": "on",
-      "displayName": "온 · 종지기",
-      "artId": "hero_on",
+      "displayName": "루카 · 검사",
+      "artId": "dragon_hero_on",
       "stars": [
+        3,
         3,
         3,
         3,
@@ -231,27 +259,29 @@
     },
     {
       "id": "dam",
-      "displayName": "담 · 성문지기",
-      "artId": "hero_dam",
+      "displayName": "다렌 · 수호기사",
+      "artId": "player_dragon_daren",
       "stars": [
         2,
         5,
         2,
-        3
+        3,
+        4
       ],
-      "availableInMvp": false
+      "availableInMvp": true
     },
     {
       "id": "rin",
-      "displayName": "린 · 잔향지기",
-      "artId": "hero_rin",
+      "displayName": "미엘 · 마법사",
+      "artId": "player_dragon_miel",
       "stars": [
         4,
         2,
         4,
+        2,
         2
       ],
-      "availableInMvp": false
+      "availableInMvp": true
     }
   ],
   "enemies": [
@@ -262,13 +292,13 @@
     },
     {
       "id": "chain_thrall",
-      "displayName": "사슬 망령",
-      "artId": "chain_thrall"
+      "displayName": "숲송이 대장",
+      "artId": "dragon_mushroom_captain"
     },
     {
       "id": "ash_wisp",
-      "displayName": "재의 불씨",
-      "artId": "ash_wisp"
+      "displayName": "방패 고블린",
+      "artId": "dragon_goblin_shield"
     },
     {
       "id": "gate_warden",
@@ -277,14 +307,124 @@
     },
     {
       "id": "bell_knight",
-      "displayName": "종의 기사",
+      "displayName": "큰엄니",
+      "artId": "dragon_great_tusk"
+    },
+    {
+      "id": "gate_sentry",
+      "displayName": "빗장 초병",
+      "artId": "gate_sentry"
+    },
+    {
+      "id": "bell_hound",
+      "displayName": "종추 사냥개",
+      "artId": "bell_hound"
+    },
+    {
+      "id": "gate_lock",
+      "displayName": "검문쇠 거인",
+      "artId": "gate_lock"
+    },
+    {
+      "id": "cracked_blade",
+      "displayName": "이끼 숲송이",
+      "artId": "dragon_moss_mushroom"
+    },
+    {
+      "id": "chain_jailer",
+      "displayName": "기블",
+      "artId": "dragon_gib"
+    },
+    {
+      "id": "chain_dancer",
+      "displayName": "기블의 문지기",
+      "artId": "dragon_goblin_guard"
+    },
+    {
+      "id": "chain_puppet",
+      "displayName": "포자 숲송이",
+      "artId": "dragon_spore_mushroom"
+    },
+    {
+      "id": "pendulum_warden",
+      "displayName": "수문 추지기",
+      "artId": "pendulum_warden"
+    },
+    {
+      "id": "hook_hound",
+      "displayName": "창 고블린",
+      "artId": "dragon_goblin_spear"
+    },
+    {
+      "id": "faded_bell_knight",
+      "displayName": "빛바랜 종기사",
       "artId": "bell_knight"
+    },
+    {
+      "id": "wild_dog",
+      "displayName": "오솔길 슬라임",
+      "artId": "dragon_trail_slime"
+    },
+    {
+      "id": "grey_wolf",
+      "displayName": "풀잎 슬라임",
+      "artId": "dragon_grass_slime"
+    },
+    {
+      "id": "brown_bear",
+      "displayName": "뿔토끼",
+      "artId": "dragon_horn_rabbit"
+    },
+    {
+      "id": "sewer_rat",
+      "displayName": "숲길 고블린",
+      "artId": "dragon_goblin_scout"
+    },
+    {
+      "id": "drowned_resident",
+      "displayName": "돌팔매 고블린",
+      "artId": "dragon_goblin_slinger"
+    },
+    {
+      "id": "water_wraith",
+      "displayName": "숲송이",
+      "artId": "dragon_forest_mushroom"
+    },
+    {
+      "id": "red_fox",
+      "displayName": "돌조각 슬라임",
+      "artId": "dragon_pebble_slime"
+    },
+    {
+      "id": "wild_boar",
+      "displayName": "큰뿔토끼",
+      "artId": "dragon_great_horn_rabbit"
+    },
+    {
+      "id": "badger",
+      "displayName": "산멧돼지",
+      "artId": "dragon_young_boar"
+    },
+    {
+      "id": "lynx",
+      "displayName": "물방울 슬라임",
+      "artId": "dragon_puddle_slime"
+    },
+    {
+      "id": "mountain_goat",
+      "displayName": "돌발 뿔토끼",
+      "artId": "dragon_stone_throw_rabbit"
+    },
+    {
+      "id": "great_stag",
+      "displayName": "붉은등 멧돼지",
+      "artId": "dragon_ridge_boar"
     }
   ],
   "stages": [
     {
       "number": 1,
-      "enemyId": "gate_sentinel",
+      "enemyId": "wild_dog",
       "kind": "normal",
       "maxHp": 120,
       "damage": 8,
@@ -293,369 +433,563 @@
         {
           "danger": "low_sweep",
           "requiredDodge": "up",
-          "telegraphMs": 540,
-          "intervalMs": 1800,
+          "telegraphMs": 900,
+          "intervalMs": 4800,
           "comboStep": 0
         }
+      ],
+      "randomPatterns": [
+        "low_sweep",
+        "thrust"
+      ],
+      "sequenceWeights": [
+        100,
+        0,
+        0
       ]
     },
     {
       "number": 2,
-      "enemyId": "chain_thrall",
+      "enemyId": "grey_wolf",
       "kind": "normal",
-      "maxHp": 128,
+      "maxHp": 136,
       "damage": 9,
       "teachDodge": "back",
       "patternSteps": [
         {
           "danger": "thrust",
           "requiredDodge": "back",
-          "telegraphMs": 540,
-          "intervalMs": 1800,
-          "comboStep": 0
-        },
-        {
-          "danger": "low_sweep",
-          "requiredDodge": "up",
-          "telegraphMs": 540,
-          "intervalMs": 1800,
+          "telegraphMs": 900,
+          "intervalMs": 4800,
           "comboStep": 0
         }
+      ],
+      "randomPatterns": [
+        "thrust",
+        "low_sweep"
+      ],
+      "sequenceWeights": [
+        100,
+        0,
+        0
       ]
     },
     {
       "number": 3,
-      "enemyId": "ash_wisp",
+      "enemyId": "brown_bear",
       "kind": "normal",
-      "maxHp": 137,
-      "damage": 9,
+      "maxHp": 153,
+      "damage": 11,
       "teachDodge": "parry",
       "patternSteps": [
         {
           "danger": "high_sweep",
           "requiredDodge": "parry",
-          "telegraphMs": 540,
-          "intervalMs": 1800,
-          "comboStep": 0
-        },
-        {
-          "danger": "low_sweep",
-          "requiredDodge": "up",
-          "telegraphMs": 540,
-          "intervalMs": 1800,
-          "comboStep": 0
-        },
-        {
-          "danger": "thrust",
-          "requiredDodge": "back",
-          "telegraphMs": 540,
-          "intervalMs": 1800,
+          "telegraphMs": 900,
+          "intervalMs": 4800,
           "comboStep": 0
         }
+      ],
+      "randomPatterns": [
+        "high_sweep",
+        "low_sweep"
+      ],
+      "sequenceWeights": [
+        100,
+        0,
+        0
       ]
     },
     {
       "number": 4,
-      "enemyId": "gate_sentinel",
+      "enemyId": "red_fox",
       "kind": "normal",
-      "maxHp": 147,
-      "damage": 10,
-      "teachDodge": "forward",
+      "maxHp": 173,
+      "damage": 13,
+      "teachDodge": "",
       "patternSteps": [
-        {
-          "danger": "outer_arc",
-          "requiredDodge": "forward",
-          "telegraphMs": 540,
-          "intervalMs": 1800,
-          "comboStep": 0
-        },
-        {
-          "danger": "high_sweep",
-          "requiredDodge": "parry",
-          "telegraphMs": 540,
-          "intervalMs": 1800,
-          "comboStep": 0
-        },
-        {
-          "danger": "thrust",
-          "requiredDodge": "back",
-          "telegraphMs": 540,
-          "intervalMs": 1800,
-          "comboStep": 0
-        },
         {
           "danger": "low_sweep",
           "requiredDodge": "up",
-          "telegraphMs": 540,
-          "intervalMs": 1800,
+          "telegraphMs": 900,
+          "intervalMs": 4800,
           "comboStep": 0
         }
+      ],
+      "randomPatterns": [
+        "low_sweep",
+        "thrust"
+      ],
+      "sequenceWeights": [
+        100,
+        0,
+        0
       ]
     },
     {
       "number": 5,
-      "enemyId": "gate_warden",
+      "enemyId": "wild_boar",
       "kind": "miniboss",
-      "maxHp": 283,
-      "damage": 11,
-      "teachDodge": "",
+      "maxHp": 293,
+      "damage": 17,
+      "teachDodge": "up",
       "patternSteps": [
         {
           "danger": "low_sweep",
           "requiredDodge": "up",
-          "telegraphMs": 540,
-          "intervalMs": 2750,
-          "comboStep": 1
-        },
-        {
-          "danger": "high_sweep",
-          "requiredDodge": "parry",
-          "telegraphMs": 540,
-          "intervalMs": 360,
-          "comboStep": 2
-        },
-        {
-          "danger": "thrust",
-          "requiredDodge": "back",
-          "telegraphMs": 540,
-          "intervalMs": 1600,
-          "comboStep": 0
-        },
-        {
-          "danger": "outer_arc",
-          "requiredDodge": "forward",
-          "telegraphMs": 540,
-          "intervalMs": 1600,
-          "comboStep": 0
-        }
-      ]
-    },
-    {
-      "number": 6,
-      "enemyId": "chain_thrall",
-      "kind": "normal",
-      "maxHp": 168,
-      "damage": 10,
-      "teachDodge": "",
-      "patternSteps": [
-        {
-          "danger": "thrust",
-          "requiredDodge": "back",
-          "telegraphMs": 540,
-          "intervalMs": 1800,
-          "comboStep": 0
-        },
-        {
-          "danger": "outer_arc",
-          "requiredDodge": "forward",
-          "telegraphMs": 540,
-          "intervalMs": 1800,
-          "comboStep": 0
-        },
-        {
-          "danger": "high_sweep",
-          "requiredDodge": "parry",
-          "telegraphMs": 540,
-          "intervalMs": 1800,
-          "comboStep": 0
-        },
-        {
-          "danger": "low_sweep",
-          "requiredDodge": "up",
-          "telegraphMs": 540,
-          "intervalMs": 1800,
-          "comboStep": 0
-        }
-      ]
-    },
-    {
-      "number": 7,
-      "enemyId": "ash_wisp",
-      "kind": "normal",
-      "maxHp": 180,
-      "damage": 11,
-      "teachDodge": "",
-      "patternSteps": [
-        {
-          "danger": "high_sweep",
-          "requiredDodge": "parry",
-          "telegraphMs": 480,
-          "intervalMs": 3150,
-          "comboStep": 1
-        },
-        {
-          "danger": "low_sweep",
-          "requiredDodge": "up",
-          "telegraphMs": 480,
-          "intervalMs": 320,
-          "comboStep": 2
-        },
-        {
-          "danger": "thrust",
-          "requiredDodge": "back",
-          "telegraphMs": 480,
-          "intervalMs": 1800,
-          "comboStep": 0
-        }
-      ]
-    },
-    {
-      "number": 8,
-      "enemyId": "gate_sentinel",
-      "kind": "normal",
-      "maxHp": 193,
-      "damage": 11,
-      "teachDodge": "",
-      "patternSteps": [
-        {
-          "danger": "outer_arc",
-          "requiredDodge": "forward",
-          "telegraphMs": 480,
-          "intervalMs": 3150,
-          "comboStep": 1
-        },
-        {
-          "danger": "thrust",
-          "requiredDodge": "back",
-          "telegraphMs": 480,
-          "intervalMs": 320,
-          "comboStep": 2
-        },
-        {
-          "danger": "low_sweep",
-          "requiredDodge": "up",
-          "telegraphMs": 480,
-          "intervalMs": 1800,
-          "comboStep": 0
-        },
-        {
-          "danger": "high_sweep",
-          "requiredDodge": "parry",
-          "telegraphMs": 480,
-          "intervalMs": 1800,
-          "comboStep": 0
-        }
-      ]
-    },
-    {
-      "number": 9,
-      "enemyId": "chain_thrall",
-      "kind": "normal",
-      "maxHp": 206,
-      "damage": 12,
-      "teachDodge": "",
-      "patternSteps": [
-        {
-          "danger": "thrust",
-          "requiredDodge": "back",
-          "telegraphMs": 480,
-          "intervalMs": 3150,
-          "comboStep": 1
-        },
-        {
-          "danger": "outer_arc",
-          "requiredDodge": "forward",
-          "telegraphMs": 480,
-          "intervalMs": 320,
-          "comboStep": 2
-        },
-        {
-          "danger": "high_sweep",
-          "requiredDodge": "parry",
-          "telegraphMs": 480,
-          "intervalMs": 1800,
-          "comboStep": 0
-        },
-        {
-          "danger": "low_sweep",
-          "requiredDodge": "up",
-          "telegraphMs": 480,
-          "intervalMs": 1800,
-          "comboStep": 0
-        }
-      ]
-    },
-    {
-      "number": 10,
-      "enemyId": "bell_knight",
-      "kind": "boss",
-      "maxHp": 706,
-      "damage": 16,
-      "teachDodge": "",
-      "patternSteps": [
-        {
-          "danger": "low_sweep",
-          "requiredDodge": "up",
-          "telegraphMs": 480,
+          "telegraphMs": 900,
           "intervalMs": 3600,
           "comboStep": 1
         },
         {
           "danger": "high_sweep",
           "requiredDodge": "parry",
-          "telegraphMs": 480,
-          "intervalMs": 320,
+          "telegraphMs": 900,
+          "intervalMs": 750,
           "comboStep": 2
-        },
-        {
-          "danger": "outer_arc",
-          "requiredDodge": "forward",
-          "telegraphMs": 480,
-          "intervalMs": 320,
-          "comboStep": 3
-        },
+        }
+      ],
+      "randomPatterns": [
+        "high_sweep",
+        "low_sweep"
+      ],
+      "sequenceWeights": [
+        30,
+        70,
+        0
+      ]
+    },
+    {
+      "number": 6,
+      "enemyId": "badger",
+      "kind": "normal",
+      "maxHp": 221,
+      "damage": 18,
+      "teachDodge": "back",
+      "patternSteps": [
         {
           "danger": "thrust",
           "requiredDodge": "back",
-          "telegraphMs": 480,
-          "intervalMs": 1500,
+          "telegraphMs": 900,
+          "intervalMs": 4800,
           "comboStep": 0
         }
+      ],
+      "randomPatterns": [
+        "thrust",
+        "low_sweep"
+      ],
+      "sequenceWeights": [
+        100,
+        0,
+        0
+      ]
+    },
+    {
+      "number": 7,
+      "enemyId": "lynx",
+      "kind": "normal",
+      "maxHp": 250,
+      "damage": 22,
+      "teachDodge": "up",
+      "patternSteps": [
+        {
+          "danger": "low_sweep",
+          "requiredDodge": "up",
+          "telegraphMs": 900,
+          "intervalMs": 4800,
+          "comboStep": 0
+        }
+      ],
+      "randomPatterns": [
+        "low_sweep",
+        "thrust"
+      ],
+      "sequenceWeights": [
+        100,
+        0,
+        0
+      ]
+    },
+    {
+      "number": 8,
+      "enemyId": "mountain_goat",
+      "kind": "normal",
+      "maxHp": 282,
+      "damage": 25,
+      "teachDodge": "parry",
+      "patternSteps": [
+        {
+          "danger": "high_sweep",
+          "requiredDodge": "parry",
+          "telegraphMs": 900,
+          "intervalMs": 4800,
+          "comboStep": 0
+        }
+      ],
+      "randomPatterns": [
+        "high_sweep",
+        "low_sweep"
+      ],
+      "sequenceWeights": [
+        100,
+        0,
+        0
+      ]
+    },
+    {
+      "number": 9,
+      "enemyId": "great_stag",
+      "kind": "normal",
+      "maxHp": 319,
+      "damage": 30,
+      "teachDodge": "up",
+      "patternSteps": [
+        {
+          "danger": "low_sweep",
+          "requiredDodge": "up",
+          "telegraphMs": 900,
+          "intervalMs": 4800,
+          "comboStep": 0
+        }
+      ],
+      "randomPatterns": [
+        "thrust",
+        "low_sweep"
+      ],
+      "sequenceWeights": [
+        100,
+        0,
+        0
+      ]
+    },
+    {
+      "number": 10,
+      "enemyId": "bell_knight",
+      "kind": "boss",
+      "maxHp": 865,
+      "damage": 44,
+      "teachDodge": "back",
+      "patternSteps": [
+        {
+          "danger": "thrust",
+          "requiredDodge": "back",
+          "telegraphMs": 900,
+          "intervalMs": 2700,
+          "comboStep": 1
+        },
+        {
+          "danger": "high_sweep",
+          "requiredDodge": "parry",
+          "telegraphMs": 900,
+          "intervalMs": 750,
+          "comboStep": 2
+        }
+      ],
+      "randomPatterns": [
+        "thrust",
+        "high_sweep"
+      ],
+      "sequenceWeights": [
+        0,
+        100,
+        0
       ]
     },
     {
       "number": 11,
-      "enemyId": "chain_thrall",
+      "enemyId": "sewer_rat",
       "kind": "normal",
-      "maxHp": 1050,
-      "damage": 40,
+      "maxHp": 1200,
+      "damage": 180,
+      "teachDodge": "back",
+      "patternSteps": [
+        {
+          "danger": "frontal_dash",
+          "requiredDodge": "back",
+          "telegraphMs": 900,
+          "intervalMs": 4800,
+          "comboStep": 0
+        }
+      ],
+      "randomPatterns": [
+        "frontal_dash"
+      ],
+      "sequenceWeights": [
+        60,
+        40,
+        0
+      ]
+    },
+    {
+      "number": 12,
+      "enemyId": "drowned_resident",
+      "kind": "normal",
+      "maxHp": 1356,
+      "damage": 202,
       "teachDodge": "",
       "patternSteps": [
         {
           "danger": "thrust",
           "requiredDodge": "back",
-          "telegraphMs": 480,
-          "intervalMs": 1650,
-          "comboStep": 0
-        },
-        {
-          "danger": "high_sweep",
-          "requiredDodge": "parry",
-          "telegraphMs": 480,
-          "intervalMs": 1650,
-          "comboStep": 0
-        },
-        {
-          "danger": "outer_arc",
-          "requiredDodge": "forward",
-          "telegraphMs": 480,
-          "intervalMs": 1650,
-          "comboStep": 0
-        },
-        {
-          "danger": "low_sweep",
-          "requiredDodge": "up",
-          "telegraphMs": 480,
-          "intervalMs": 1650,
+          "telegraphMs": 900,
+          "intervalMs": 4800,
           "comboStep": 0
         }
+      ],
+      "randomPatterns": [
+        "high_sweep",
+        "thrust"
+      ],
+      "sequenceWeights": [
+        30,
+        70,
+        0
+      ]
+    },
+    {
+      "number": 13,
+      "enemyId": "water_wraith",
+      "kind": "normal",
+      "maxHp": 1532,
+      "damage": 226,
+      "teachDodge": "",
+      "patternSteps": [
+        {
+          "danger": "thrust",
+          "requiredDodge": "back",
+          "telegraphMs": 900,
+          "intervalMs": 4800,
+          "comboStep": 0
+        }
+      ],
+      "randomPatterns": [
+        "high_sweep",
+        "low_sweep",
+        "thrust"
+      ],
+      "sequenceWeights": [
+        30,
+        70,
+        0
+      ]
+    },
+    {
+      "number": 14,
+      "enemyId": "ash_wisp",
+      "kind": "normal",
+      "maxHp": 1731,
+      "damage": 253,
+      "teachDodge": "",
+      "patternSteps": [
+        {
+          "danger": "thrust",
+          "requiredDodge": "back",
+          "telegraphMs": 900,
+          "intervalMs": 4800,
+          "comboStep": 0
+        }
+      ],
+      "randomPatterns": [
+        "low_sweep",
+        "thrust"
+      ],
+      "sequenceWeights": [
+        30,
+        70,
+        0
+      ]
+    },
+    {
+      "number": 15,
+      "enemyId": "chain_thrall",
+      "kind": "miniboss",
+      "maxHp": 2935,
+      "damage": 312,
+      "teachDodge": "",
+      "patternSteps": [
+        {
+          "danger": "thrust",
+          "requiredDodge": "back",
+          "telegraphMs": 900,
+          "intervalMs": 3600,
+          "comboStep": 0
+        }
+      ],
+      "randomPatterns": [
+        "high_sweep",
+        "thrust"
+      ],
+      "sequenceWeights": [
+        0,
+        50,
+        50
+      ]
+    },
+    {
+      "number": 16,
+      "enemyId": "hook_hound",
+      "kind": "normal",
+      "maxHp": 2211,
+      "damage": 317,
+      "teachDodge": "",
+      "patternSteps": [
+        {
+          "danger": "thrust",
+          "requiredDodge": "back",
+          "telegraphMs": 900,
+          "intervalMs": 4800,
+          "comboStep": 0
+        }
+      ],
+      "randomPatterns": [
+        "high_sweep",
+        "low_sweep",
+        "thrust"
+      ],
+      "sequenceWeights": [
+        20,
+        50,
+        30
+      ]
+    },
+    {
+      "number": 17,
+      "enemyId": "chain_puppet",
+      "kind": "normal",
+      "maxHp": 2498,
+      "damage": 355,
+      "teachDodge": "",
+      "patternSteps": [
+        {
+          "danger": "thrust",
+          "requiredDodge": "back",
+          "telegraphMs": 900,
+          "intervalMs": 4800,
+          "comboStep": 0
+        }
+      ],
+      "randomPatterns": [
+        "low_sweep",
+        "thrust"
+      ],
+      "sequenceWeights": [
+        20,
+        50,
+        30
+      ]
+    },
+    {
+      "number": 18,
+      "enemyId": "cracked_blade",
+      "kind": "normal",
+      "maxHp": 2823,
+      "damage": 398,
+      "teachDodge": "",
+      "patternSteps": [
+        {
+          "danger": "thrust",
+          "requiredDodge": "back",
+          "telegraphMs": 900,
+          "intervalMs": 4800,
+          "comboStep": 0
+        }
+      ],
+      "randomPatterns": [
+        "high_sweep",
+        "thrust"
+      ],
+      "sequenceWeights": [
+        20,
+        50,
+        30
+      ]
+    },
+    {
+      "number": 19,
+      "enemyId": "chain_dancer",
+      "kind": "normal",
+      "maxHp": 3190,
+      "damage": 446,
+      "teachDodge": "",
+      "patternSteps": [
+        {
+          "danger": "thrust",
+          "requiredDodge": "back",
+          "telegraphMs": 900,
+          "intervalMs": 4800,
+          "comboStep": 0
+        }
+      ],
+      "randomPatterns": [
+        "high_sweep",
+        "low_sweep",
+        "thrust"
+      ],
+      "sequenceWeights": [
+        20,
+        50,
+        30
+      ]
+    },
+    {
+      "number": 20,
+      "enemyId": "chain_jailer",
+      "kind": "boss",
+      "maxHp": 8652,
+      "damage": 624,
+      "teachDodge": "",
+      "patternSteps": [
+        {
+          "danger": "thrust",
+          "requiredDodge": "back",
+          "telegraphMs": 900,
+          "intervalMs": 2700,
+          "comboStep": 0
+        }
+      ],
+      "randomPatterns": [
+        "high_sweep",
+        "low_sweep"
+      ],
+      "sequenceWeights": [
+        0,
+        25,
+        75
+      ]
+    },
+    {
+      "number": 21,
+      "enemyId": "chain_thrall",
+      "kind": "normal",
+      "maxHp": 12000,
+      "damage": 900,
+      "teachDodge": "",
+      "patternSteps": [
+        {
+          "danger": "thrust",
+          "requiredDodge": "back",
+          "telegraphMs": 900,
+          "intervalMs": 4800,
+          "comboStep": 0
+        }
+      ],
+      "randomPatterns": [
+        "thrust",
+        "low_sweep",
+        "high_sweep"
+      ],
+      "sequenceWeights": [
+        20,
+        50,
+        30
       ]
     }
   ],
   "relics": [
     {
       "id": "relic_05",
-      "displayName": "재의 고리",
+      "displayName": "전사의 반지",
       "effect": "attackPercent",
       "effectLabel": "공격력 증가",
       "cap": 0.2,
@@ -669,21 +1003,21 @@
     },
     {
       "id": "relic_10",
-      "displayName": "새벽의 조각",
+      "displayName": "생명의 목걸이",
       "effect": "maxHpPercent",
       "effectLabel": "최대HP 증가",
       "cap": 0.25,
       "values": [
         0.06,
-        0.075,
-        0.09,
-        0.105,
-        0.12
+        0.08,
+        0.1,
+        0.12,
+        0.14
       ]
     },
     {
       "id": "relic_15",
-      "displayName": "사슬 종추",
+      "displayName": "바위 부적",
       "effect": "normalStaggerPercent",
       "effectLabel": "일반 회피 누적 증가",
       "cap": 0.25,
@@ -697,7 +1031,7 @@
     },
     {
       "id": "relic_20",
-      "displayName": "맑은 종추",
+      "displayName": "바람 깃털",
       "effect": "perfectStaggerPercent",
       "effectLabel": "완벽 회피 누적 증가",
       "cap": 0.25,
@@ -711,7 +1045,7 @@
     },
     {
       "id": "relic_25",
-      "displayName": "종망치 파편",
+      "displayName": "사냥꾼 부적",
       "effect": "stunDamageBonus",
       "effectLabel": "기절 적 피해 배율 가산",
       "cap": 1.75,
@@ -725,7 +1059,7 @@
     },
     {
       "id": "relic_30",
-      "displayName": "새벽의 장막",
+      "displayName": "수호 망토",
       "effect": "damageReduction",
       "effectLabel": "받는 피해 감소",
       "cap": 0.15,
@@ -739,7 +1073,7 @@
     },
     {
       "id": "relic_35",
-      "displayName": "꺼진 심지",
+      "displayName": "행운 주머니",
       "effect": "attackPercent",
       "effectLabel": "공격력 증가",
       "cap": 0.2,
@@ -753,7 +1087,7 @@
     },
     {
       "id": "relic_40",
-      "displayName": "청동 매듭",
+      "displayName": "튼튼한 팔찌",
       "effect": "maxHpPercent",
       "effectLabel": "최대HP 증가",
       "cap": 0.25,
@@ -767,30 +1101,30 @@
     },
     {
       "id": "relic_45",
-      "displayName": "울림 고리",
+      "displayName": "집중의 반지",
       "effect": "critChanceBonus",
       "effectLabel": "치명 확률 가산",
       "cap": 0.3,
       "values": [
         0.01,
-        0.015,
         0.02,
-        0.025,
-        0.03
+        0.03,
+        0.04,
+        0.05
       ]
     },
     {
       "id": "relic_50",
-      "displayName": "여명의 종인",
+      "displayName": "용기의 문장",
       "effect": "stunDamageBonus",
       "effectLabel": "기절 적 피해 배율 가산",
       "cap": 1.75,
       "values": [
         0.01,
-        0.015,
         0.02,
-        0.025,
-        0.03
+        0.03,
+        0.04,
+        0.05
       ]
     }
   ],
@@ -806,37 +1140,721 @@
   },
   "stories": [
     {
+      "id": "story_encounter_2",
+      "stage": 2,
+      "bossId": "",
+      "kind": "encounter",
+      "companionId": "tori",
+      "lines": [
+        {
+          "speaker": "???",
+          "text": "쉿! 그쪽은 멧돼지들이 다니는 길이야.",
+          "portraitId": "unknown",
+          "responses": []
+        },
+        {
+          "speaker": "토리",
+          "text": "난 토리. 이 들판에서 길을 잃은 적은… 거의 없어.",
+          "portraitId": "tori",
+          "responses": []
+        },
+        {
+          "speaker": "토리",
+          "text": "용 때문에 배달이 멈췄거든. 나도 같이 길을 열래.",
+          "portraitId": "tori",
+          "responses": []
+        },
+        {
+          "speaker": "토리",
+          "text": "길 안내는 맡겨. 놓친 주머니도 챙겨 줄게!",
+          "portraitId": "tori",
+          "responses": []
+        }
+      ]
+    },
+    {
       "id": "story_boss_10",
       "stage": 10,
       "bossId": "bell_knight",
+      "kind": "boss",
       "lines": [
         {
-          "speaker": "종의 기사",
-          "text": "문은… 안에서 잠갔다.",
+          "speaker": "토리",
+          "text": "와, 큰엄니도 물리쳤네! 이제 숲으로 갈 수 있겠다.",
+          "portraitId": "tori",
           "responses": []
         },
         {
-          "speaker": "종의 기사",
-          "text": "사슬 끝을 봐라. 묶인 건 우리가 아니다.",
+          "speaker": "토리",
+          "text": "숲길은 내가 안내할게. 대신 무거운 짐은 네가 들어 줘!",
+          "portraitId": "tori",
           "responses": []
         },
         {
-          "speaker": "선택한 종지기",
-          "text": "그럼, 무엇을 가둔 거지?",
+          "speaker": "player",
+          "text": "길만 제대로 알려 줘. 짐은 내가 들게.",
+          "portraitId": "player",
           "responses": [
             {
               "characterId": "on",
-              "text": "그럼, 무엇을 가둔 거지?"
+              "text": "길만 제대로 알려 줘. 짐은 내가 들게."
             },
             {
               "characterId": "dam",
-              "text": "내가 지키던 문도… 안에서 잠겼어."
+              "text": "하하, 그 정도야 쉽지. 길 안내는 부탁한다!"
             },
             {
               "characterId": "rin",
-              "text": "사슬 너머에서 사람 목소리가 들려."
+              "text": "좋아. 대신 내 마법책에는 손대면 안 돼!"
             }
           ]
+        }
+      ],
+      "companionId": ""
+    },
+    {
+      "id": "story_encounter_12",
+      "stage": 12,
+      "bossId": "",
+      "kind": "encounter",
+      "companionId": "barun",
+      "lines": [
+        {
+          "speaker": "???",
+          "text": "어이! 고블린들 쪽으로 갈 셈이야?",
+          "portraitId": "barun",
+          "responses": []
+        },
+        {
+          "speaker": "바룬",
+          "text": "난 바룬. 짐꾼인데, 무거운 검도 좀 들어.",
+          "portraitId": "barun",
+          "responses": []
+        },
+        {
+          "speaker": "바룬",
+          "text": "용이 길을 막더니 저놈들까지 통행세라니. 같이 치우자!",
+          "portraitId": "barun",
+          "responses": []
+        },
+        {
+          "speaker": "바룬",
+          "text": "여관에서 짐을 다시 꾸리자. 동료가 더 따라올 수 있게.",
+          "portraitId": "barun",
+          "responses": []
+        }
+      ]
+    },
+    {
+      "id": "story_boss_20",
+      "stage": 20,
+      "bossId": "chain_jailer",
+      "kind": "boss",
+      "lines": [
+        {
+          "speaker": "기블",
+          "text": "알았어, 알았다고! 통행료 안 받을 테니까 그만해!",
+          "portraitId": "gib",
+          "responses": []
+        },
+        {
+          "speaker": "???",
+          "text": "이제야 조용해졌군. 내 수레도 지나갈 수 있겠어.",
+          "portraitId": "doto",
+          "responses": []
+        },
+        {
+          "speaker": "도토",
+          "text": "난 대장장이 도토야. 너희, 용을 잡으러 간다면서?",
+          "portraitId": "doto",
+          "responses": []
+        },
+        {
+          "speaker": "바룬",
+          "text": "통행세는 이제 끝이군! 여관에서 숨 좀 돌리고 다음 길을 준비하자.",
+          "portraitId": "barun",
+          "responses": []
+        }
+      ],
+      "companionId": ""
+    }
+  ],
+  "onboarding": {
+    "prologueTitle": "용 잡으러 갑니다",
+    "prologueDurationMs": 18000,
+    "prologueParagraphs": [
+      "북쪽 산길에 커다란 용이 눌러앉았다.",
+      "마을 길드에 의뢰가 붙었다. “산길의 용을 혼내 주세요!”",
+      "도시락과 무기를 챙겼다. 자, 용 잡으러 가자!"
+    ],
+    "comboHint": "적들은 가끔 연속 공격을 합니다.\n방패 표식을 살피세요!"
+  },
+  "skills": [
+    {
+      "id": "skill_luka_gale_slash",
+      "characterId": "on",
+      "displayName": "바람 베기",
+      "description": "공격력 160%로 베기",
+      "cooldownMs": 20000,
+      "damagePercent": 160,
+      "shieldMaxHpPercent": 0,
+      "shieldDurationMs": 0,
+      "staggerGain": 0,
+      "contactDelayMs": 200
+    },
+    {
+      "id": "skill_daren_iron_counter",
+      "characterId": "dam",
+      "displayName": "방패 충격",
+      "description": "공격력 115%. 3초간 체력 8%를 1회 보호",
+      "cooldownMs": 20000,
+      "damagePercent": 115,
+      "shieldMaxHpPercent": 8,
+      "shieldDurationMs": 3000,
+      "staggerGain": 0,
+      "contactDelayMs": 200
+    },
+    {
+      "id": "skill_miel_star_seal",
+      "characterId": "rin",
+      "displayName": "별빛 벼락",
+      "description": "공격력 125%. 기절 누적 +50, 보스 저항 적용",
+      "cooldownMs": 20000,
+      "damagePercent": 125,
+      "shieldMaxHpPercent": 0,
+      "shieldDurationMs": 0,
+      "staggerGain": 50,
+      "contactDelayMs": 200
+    }
+  ],
+  "adventure": {
+    "recoveryBase": 5,
+    "recoveryLinear": 2,
+    "recoveryBreakBase": 1.7,
+    "recoveryBreakPerStar": 0.05,
+    "recoveryCostPercent": 50,
+    "companionMaxLevel": 30,
+    "companionGrowthPercent": 3,
+    "companionBreakPercent": 25,
+    "partyDpsCapPercent": 24,
+    "companionWindupMs": 180,
+    "newEnemyGraceMs": 350,
+    "slotPhaseMs": 400,
+    "guideGoldPercent": 3,
+    "blessingHpPercent": 5,
+    "teaRecoveryPercent": 15,
+    "servicePricePercent": 10,
+    "slotGemCosts": [
+      4,
+      8
+    ],
+    "slotBossRequirements": [
+      10,
+      30
+    ],
+    "levelCapBosses": [
+      0,
+      10,
+      20
+    ],
+    "levelCaps": [
+      10,
+      20,
+      30
+    ],
+    "weaponAttackPercents": [
+      4,
+      7,
+      10
+    ],
+    "weaponBossRequirements": [
+      0,
+      30,
+      40
+    ],
+    "weaponGoldCosts": [
+      8400,
+      125100,
+      10337000
+    ],
+    "companionSkillChanceBasePercent": 12,
+    "companionSkillChancePerLevel": 1,
+    "companionSkillChanceCapPercent": 45,
+    "companionPeriodReductionPerLevel": 1,
+    "companionPeriodFloorPercent": 70
+  },
+  "companions": [
+    {
+      "id": "tori",
+      "displayName": "토리",
+      "speciesId": "beastfolk",
+      "jobId": "ranger",
+      "attackName": "짧은 활",
+      "serviceId": "route_guide",
+      "returnLine": "또 만났네! 이번 길 안내도 맡겨 줘.",
+      "joinStage": 2,
+      "periodMs": 6000,
+      "damagePercent": 24,
+      "skillId": "companion_tori_double_shot",
+      "skillName": "쌍쏘기",
+      "skillDamagePercent": 180,
+      "skillStaggerGain": 0,
+      "skillHealMaxHpPercent": 0
+    },
+    {
+      "id": "barun",
+      "displayName": "바룬",
+      "speciesId": "human",
+      "jobId": "barbarian",
+      "attackName": "묵직한 한 칼",
+      "serviceId": "pack_cart",
+      "returnLine": "다시 왔구나! 이번에는 나도 한자리 끼워 줘.",
+      "joinStage": 12,
+      "periodMs": 10000,
+      "damagePercent": 40,
+      "skillId": "companion_barun_ground_slam",
+      "skillName": "쿵 내려찍기",
+      "skillDamagePercent": 170,
+      "skillStaggerGain": 8,
+      "skillHealMaxHpPercent": 0
+    },
+    {
+      "id": "doto",
+      "displayName": "도토",
+      "speciesId": "dwarf",
+      "jobId": "blacksmith",
+      "attackName": "작업 망치",
+      "serviceId": "weapon_craft",
+      "returnLine": "또 만났군. 이번엔 광산 너머까지 함께 가 보자.",
+      "joinStage": 22,
+      "periodMs": 8000,
+      "damagePercent": 32,
+      "skillId": "companion_doto_flame_hammer",
+      "skillName": "불꽃 망치",
+      "skillDamagePercent": 200,
+      "skillStaggerGain": 0,
+      "skillHealMaxHpPercent": 0
+    },
+    {
+      "id": "rina",
+      "displayName": "리나",
+      "speciesId": "human",
+      "jobId": "mage",
+      "attackName": "바람 방울",
+      "serviceId": "travel_blessing",
+      "returnLine": "또 만났네! 이번엔 용이 있는 곳까지 같이 가자.",
+      "joinStage": 32,
+      "periodMs": 7000,
+      "damagePercent": 28,
+      "skillId": "companion_rina_lightning",
+      "skillName": "번개 줄기",
+      "skillDamagePercent": 180,
+      "skillStaggerGain": 10,
+      "skillHealMaxHpPercent": 0
+    },
+    {
+      "id": "momo",
+      "displayName": "모모",
+      "speciesId": "human",
+      "jobId": "herbalist",
+      "attackName": "단단한 씨앗",
+      "serviceId": "herbal_tea",
+      "returnLine": "또 왔구나! 약초 챙겼으니 이번에도 함께 가자.",
+      "joinStage": 42,
+      "periodMs": 6000,
+      "damagePercent": 24,
+      "skillId": "companion_momo_seed_bomb",
+      "skillName": "씨앗 폭탄",
+      "skillDamagePercent": 170,
+      "skillStaggerGain": 0,
+      "skillHealMaxHpPercent": 2
+    }
+  ],
+  "legacyStories": [
+    {
+      "id": "story_boss_10",
+      "stage": 10,
+      "bossId": "bell_knight",
+      "kind": "boss",
+      "lines": [
+        {
+          "speaker": "토리",
+          "text": "와, 큰엄니도 물리쳤네! 이제 숲으로 갈 수 있겠다.",
+          "portraitId": "tori",
+          "responses": []
+        },
+        {
+          "speaker": "토리",
+          "text": "숲길은 내가 안내할게. 대신 무거운 짐은 네가 들어 줘!",
+          "portraitId": "tori",
+          "responses": []
+        },
+        {
+          "speaker": "player",
+          "text": "길만 제대로 알려 줘. 짐은 내가 들게.",
+          "portraitId": "player",
+          "responses": [
+            {
+              "characterId": "on",
+              "text": "길만 제대로 알려 줘. 짐은 내가 들게."
+            },
+            {
+              "characterId": "dam",
+              "text": "하하, 그 정도야 쉽지. 길 안내는 부탁한다!"
+            },
+            {
+              "characterId": "rin",
+              "text": "좋아. 대신 내 마법책에는 손대면 안 돼!"
+            }
+          ]
+        }
+      ],
+      "companionId": "tori"
+    },
+    {
+      "id": "story_boss_20",
+      "stage": 20,
+      "bossId": "chain_jailer",
+      "kind": "boss",
+      "lines": [
+        {
+          "speaker": "기블",
+          "text": "알았어, 알았다고! 통행료 안 받을 테니까 그만해!",
+          "portraitId": "gib",
+          "responses": []
+        },
+        {
+          "speaker": "???",
+          "text": "이제야 조용해졌군. 내 수레도 지나갈 수 있겠어.",
+          "portraitId": "doto",
+          "responses": []
+        },
+        {
+          "speaker": "도토",
+          "text": "난 대장장이 도토야. 너희, 용을 잡으러 간다면서?",
+          "portraitId": "doto",
+          "responses": []
+        },
+        {
+          "speaker": "player",
+          "text": "맞아. 저 산으로 올라가는 길을 찾고 있어.",
+          "portraitId": "player",
+          "responses": [
+            {
+              "characterId": "on",
+              "text": "맞아. 저 산으로 올라가는 길을 찾고 있어."
+            },
+            {
+              "characterId": "dam",
+              "text": "그래. 수레길을 막은 녀석을 좀 혼내 줘야지."
+            },
+            {
+              "characterId": "rin",
+              "text": "맞아요! 산 위까지 갈 수 있는 길이 있나요?"
+            }
+          ]
+        },
+        {
+          "speaker": "도토",
+          "text": "이 갱도를 지나면 고개 아래야. 바닥이 고르지 않으니 조심해.",
+          "portraitId": "doto",
+          "responses": []
+        },
+        {
+          "speaker": "player",
+          "text": "알려 줘서 고마워. 돌아오면 검 좀 봐 줘.",
+          "portraitId": "player",
+          "responses": [
+            {
+              "characterId": "on",
+              "text": "알려 줘서 고마워. 돌아오면 검 좀 봐 줘."
+            },
+            {
+              "characterId": "dam",
+              "text": "고맙다! 돌아오면 같이 한 끼 하자고."
+            },
+            {
+              "characterId": "rin",
+              "text": "고마워요, 도토! 돌아오는 길엔 수레가 많아질 거예요."
+            }
+          ]
+        }
+      ],
+      "companionId": "doto"
+    },
+    {
+      "id": "story_encounter_2",
+      "stage": 2,
+      "bossId": "",
+      "kind": "encounter",
+      "lines": [
+        {
+          "speaker": "???",
+          "text": "어이! 잠깐만!",
+          "portraitId": "unknown",
+          "responses": []
+        },
+        {
+          "speaker": "토리",
+          "text": "반가워! 난 토리야. 이 길에서 뭐 하고 있어?",
+          "portraitId": "tori",
+          "responses": []
+        },
+        {
+          "speaker": "player",
+          "text": "못된 용을 혼내 주러 가는 중이야. 혹시 가는 길 알아?",
+          "portraitId": "player",
+          "responses": [
+            {
+              "characterId": "on",
+              "text": "못된 용을 혼내 주러 가는 중이야. 혹시 가는 길 알아?"
+            },
+            {
+              "characterId": "dam",
+              "text": "산길을 막은 용을 찾고 있다. 이쪽으로 가면 되나?"
+            },
+            {
+              "characterId": "rin",
+              "text": "용을 잡으러 가! 길을 조금 헤매고 있긴 하지만."
+            }
+          ]
+        },
+        {
+          "speaker": "토리",
+          "text": "용을 잡으러 간다고? 멋지다! 나도 같이 갈래!",
+          "portraitId": "tori",
+          "responses": []
+        },
+        {
+          "speaker": "player",
+          "text": "나는 루카야. 잘 부탁해, 토리.",
+          "portraitId": "player",
+          "responses": [
+            {
+              "characterId": "on",
+              "text": "나는 루카야. 잘 부탁해, 토리."
+            },
+            {
+              "characterId": "dam",
+              "text": "난 다렌이야. 내 뒤로 따라와. 길은 네가 알려 주고!"
+            },
+            {
+              "characterId": "rin",
+              "text": "나는 미엘이야. 그럼 길 안내는 토리에게 맡길게!"
+            }
+          ]
+        },
+        {
+          "speaker": "토리",
+          "text": "좋아! 숲길은 내가 잘 알아. 일단 저 언덕부터 넘자.",
+          "portraitId": "tori",
+          "responses": []
+        }
+      ],
+      "companionId": "tori"
+    },
+    {
+      "id": "story_encounter_7",
+      "stage": 7,
+      "bossId": "",
+      "kind": "encounter",
+      "lines": [
+        {
+          "speaker": "???",
+          "text": "잠깐, 그 풀은 밟지 마. 신발이 온통 가려워질 거야.",
+          "portraitId": "rina",
+          "responses": []
+        },
+        {
+          "speaker": "player",
+          "text": "고마워. 하마터면 밟을 뻔했네.",
+          "portraitId": "player",
+          "responses": [
+            {
+              "characterId": "on",
+              "text": "고마워. 하마터면 밟을 뻔했네."
+            },
+            {
+              "characterId": "dam",
+              "text": "이런, 크게 밟을 뻔했군. 알려 줘서 고맙다."
+            },
+            {
+              "characterId": "rin",
+              "text": "앗, 책에서 본 풀이네! 알려 줘서 고마워."
+            }
+          ]
+        },
+        {
+          "speaker": "리나",
+          "text": "난 리나야. 산에서 약초를 구해 왔어. 너희는 어디 가?",
+          "portraitId": "rina",
+          "responses": []
+        },
+        {
+          "speaker": "토리",
+          "text": "우린 용 잡으러 가! 내가 길 안내를 맡았지.",
+          "portraitId": "tori",
+          "responses": []
+        },
+        {
+          "speaker": "리나",
+          "text": "그럼 물을 넉넉히 챙겨. 위쪽은 그늘이 별로 없어. 무사히 다녀와!",
+          "portraitId": "rina",
+          "responses": []
+        }
+      ],
+      "companionId": "rina"
+    },
+    {
+      "id": "story_encounter_15",
+      "stage": 15,
+      "bossId": "",
+      "kind": "encounter",
+      "lines": [
+        {
+          "speaker": "???",
+          "text": "허허, 큰 버섯 때문에 꼼짝 못 했는데! 덕분에 살았네.",
+          "portraitId": "barun",
+          "responses": []
+        },
+        {
+          "speaker": "바룬",
+          "text": "나는 바룬이야. 이 짐을 광산까지 옮기는 중이지.",
+          "portraitId": "barun",
+          "responses": []
+        },
+        {
+          "speaker": "player",
+          "text": "나는 루카야. 우리도 그쪽으로 가는 중이야.",
+          "portraitId": "player",
+          "responses": [
+            {
+              "characterId": "on",
+              "text": "나는 루카야. 우리도 그쪽으로 가는 중이야."
+            },
+            {
+              "characterId": "dam",
+              "text": "난 다렌이다. 짐이 제법 무겁겠는데!"
+            },
+            {
+              "characterId": "rin",
+              "text": "나는 미엘이야. 배낭에 대체 뭘 넣은 거야?"
+            }
+          ]
+        },
+        {
+          "speaker": "바룬",
+          "text": "광부들 점심을 가져가는데, 앞에서 기블이 통행세를 달라지 뭔가!",
+          "portraitId": "barun",
+          "responses": []
+        },
+        {
+          "speaker": "토리",
+          "text": "또 그 녀석이야? 걱정 마, 우리가 길을 열어 줄게!",
+          "portraitId": "tori",
+          "responses": []
+        }
+      ],
+      "companionId": "barun"
+    }
+  ],
+  "plannedStories": [
+    {
+      "id": "story_encounter_22",
+      "stage": 22,
+      "bossId": "",
+      "kind": "encounter",
+      "companionId": "doto",
+      "lines": [
+        {
+          "speaker": "???",
+          "text": "잠깐! 그 돌 밟으면 발이 푹 빠진다!",
+          "portraitId": "doto",
+          "responses": []
+        },
+        {
+          "speaker": "도토",
+          "text": "대장장이 도토다. 좋은 쇠를 찾으러 왔지.",
+          "portraitId": "doto",
+          "responses": []
+        },
+        {
+          "speaker": "도토",
+          "text": "용이 길을 막아서 광석을 못 나르고 있어. 나도 거들마.",
+          "portraitId": "doto",
+          "responses": []
+        },
+        {
+          "speaker": "도토",
+          "text": "여관에 작업대를 펴 두지. 네 손에 맞는 무기를 만들어 주마.",
+          "portraitId": "doto",
+          "responses": []
+        }
+      ]
+    },
+    {
+      "id": "story_encounter_32",
+      "stage": 32,
+      "bossId": "",
+      "kind": "encounter",
+      "companionId": "rina",
+      "lines": [
+        {
+          "speaker": "???",
+          "text": "바람이 세네! 모자 단단히 잡아!",
+          "portraitId": "rina",
+          "responses": []
+        },
+        {
+          "speaker": "리나",
+          "text": "난 리나. 이 고개의 바람 마법을 연구하고 있어.",
+          "portraitId": "rina",
+          "responses": []
+        },
+        {
+          "speaker": "리나",
+          "text": "용 때문에 사람들이 못 올라오잖아. 나도 함께 갈게.",
+          "portraitId": "rina",
+          "responses": []
+        },
+        {
+          "speaker": "리나",
+          "text": "떠나기 전에 여관에 들러. 든든한 축복 하나 걸어 줄게.",
+          "portraitId": "rina",
+          "responses": []
+        }
+      ]
+    },
+    {
+      "id": "story_encounter_42",
+      "stage": 42,
+      "bossId": "",
+      "kind": "encounter",
+      "companionId": "momo",
+      "lines": [
+        {
+          "speaker": "???",
+          "text": "멈춰! 그 풀은 먹는 게 아니야!",
+          "portraitId": "momo",
+          "responses": []
+        },
+        {
+          "speaker": "모모",
+          "text": "난 모모. 이 근처에서 약초를 캐고 있어.",
+          "portraitId": "momo",
+          "responses": []
+        },
+        {
+          "speaker": "모모",
+          "text": "용이 내 약초밭을 깔고 앉았어. 이번엔 꼭 쫓아내자.",
+          "portraitId": "momo",
+          "responses": []
+        },
+        {
+          "speaker": "모모",
+          "text": "여관에서 약초차 끓여 줄게. 싸운 뒤 기운 차리는 데 좋아.",
+          "portraitId": "momo",
+          "responses": []
         }
       ]
     }
