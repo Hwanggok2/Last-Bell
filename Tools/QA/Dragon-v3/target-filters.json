@@ -1,0 +1,12 @@
+{
+  "status": "PREPARED_NOT_RUN",
+  "EditMode": [
+    "LastBell.Tests.SaveDirectorySelectorTests.ProductionKeepsExistingNamespaceAndSelectionCreatesNothing",
+    "LastBell.Tests.SaveDirectorySelectorTests.ExplicitDirectoryHasPriority",
+    "LastBell.Tests.SaveDirectorySelectorTests.FirstPlaytestStartsStageOneWithoutChangingLegacyPrimaryOrBackup",
+    "LastBell.Tests.SaveDirectorySelectorTests.ReopeningTheSamePlaytestPreservesItsCheckpointAndWallet"
+  ],
+  "expectedCases": 5,
+  "PlayMode": [],
+  "limits": "Run only after the coordinator hands over Editor execution ownership. ExplicitDirectoryHasPriority expands to two cases. Do not repeat the previous eleven motion cases."
+}

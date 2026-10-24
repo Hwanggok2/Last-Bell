@@ -1,0 +1,15 @@
+{
+  "verdict": "QA_STRING_COMPARISON_FALSE_POSITIVE",
+  "recoveredBackup": false,
+  "differences": [
+    {
+      "path": "$.run.skillCooldownRemainingMs",
+      "before": 19356.571599841118,
+      "after": 19356.57159984112,
+      "absoluteDifference": 3.637978807091713e-12,
+      "ulpDistance": 1
+    }
+  ],
+  "allOtherFieldsExact": true,
+  "inputEvidenceSha256": "9216faba83c860cdb5d06954801426ac92717c7ce4528689f885bcb430a8f259"
+}

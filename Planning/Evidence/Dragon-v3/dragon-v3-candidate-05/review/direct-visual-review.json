@@ -1,0 +1,46 @@
+{
+  "candidate": "dragon-v3-candidate-05",
+  "status": "PASS_OBSERVED_CHANGED_SCOPE",
+  "issue": "DQA3-003",
+  "issueStatus": "CLOSED",
+  "method": "Direct image viewing of generated contact sheets and original native PNG captures, combined with per-frame coordinates. No normal-speed video playback.",
+  "sheetsViewed": [
+    "review/1280x720-enemy-19-recovery.png",
+    "review/1280x720-enemy-20-recovery.png",
+    "review/640x360-enemy-19-recovery.png",
+    "review/640x360-enemy-20-recovery.png",
+    "review/1280x720-enemy-19-automatic-idle.png",
+    "review/1280x720-enemy-20-automatic-idle.png",
+    "review/640x360-enemy-19-automatic-idle.png",
+    "review/640x360-enemy-20-automatic-idle.png",
+    "review/1280x720-enemy-18-regression.png",
+    "review/640x360-enemy-18-regression.png"
+  ],
+  "originalPngsViewed": [
+    "640x360/fresh/v3-frame-recheck-19-actual-combo-recovery-000161.png",
+    "640x360/fresh/v3-frame-recheck-19-actual-combo-recovery-000162.png",
+    "640x360/fresh/v3-frame-recheck-20-actual-combo-recovery-000457.png",
+    "640x360/fresh/v3-frame-recheck-20-actual-combo-recovery-000458.png",
+    "1280x720/fresh/v3-frame-recheck-19-actual-combo-recovery-000131.png",
+    "1280x720/fresh/v3-frame-recheck-20-actual-combo-recovery-000403.png"
+  ],
+  "findings": [
+    "Both resolutions show contact, progressive return, home position and next ready pose across three actual contacts per enemy. No instant next-frame reset remains.",
+    "Guard weapon/shield and Gib shield/helmet/body size remain attached and visually consistent through the reviewed poses.",
+    "Automatic Arrival Idle shows all eight frames per enemy and lasts more than two seconds in every case; this is separate from combat Idle frequency.",
+    "Actual combat displays guard Attack frames 0-7 and Gib frames 0-5 without forced samples.",
+    "Stage18 adjacent non-authored branch retains attack/effect/hit and ground alignment in representative frames.",
+    "All 12 observed recoveries are monotonic, match the existing 280ms smooth-return curve within 0.00045px, and preserve the original 2700/3450/4200ms contact times."
+  ],
+  "measurementNotes": [
+    "Compare the exact combatMs==impact contact pose with the immediately following captured frame. Damage event dispatch may use the next update's frameCount.",
+    "Root X projection excludes camera shake. Differing frame intervals prevent direct quality comparison using only first-step pixel magnitude.",
+    "Ground error describes the actor feet pivot, not the lowest opaque pixel."
+  ],
+  "nativeEvidenceUnmodified": true,
+  "normalSpeedPlayback": "NOT_RUN",
+  "osInput": "DEFERRED_BY_USER",
+  "mobile": "DEFERRED",
+  "userDefaultProfile": "NOT_ACCESSED",
+  "releaseZipVerification": "COORDINATOR_OWNED"
+}

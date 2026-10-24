@@ -1,0 +1,20 @@
+{
+  "sources": [
+    {
+      "sha256": "B174B11EC7D4A0E82BAFF1C8438794F0A5109EC54C2CDF4DAB095082871ECCBA",
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V4.cs"
+    },
+    {
+      "sha256": "FAFA68520AE67EEC732D1248CB3B578D6B5B5FD2E2516FDDB6E6B8011FDB13A9",
+      "path": "Tools/QA/Dragon-v4/run-campaign.ps1"
+    }
+  ],
+  "issue": "DQA4-002",
+  "scope": "1280 resume from candidate02,640 fresh/resume only",
+  "unity": "ROOT_OWNED",
+  "nativeRerun": "NOT_STARTED",
+  "powerShellSyntax": "PASS",
+  "status": "SOURCE_FROZEN_READY_FOR_ROOT_OBSERVED_REBUILD",
+  "compile": "NOT_REPEATED",
+  "priorFailureGuard": "PASS"
+}

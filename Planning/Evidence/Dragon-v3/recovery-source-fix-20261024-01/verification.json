@@ -1,0 +1,66 @@
+{
+  "status": "SOURCE_FROZEN_WAITING_FOR_FIXED_OBSERVED_BUILD",
+  "recordedAtUtc": "2026-10-24T11:20:49.8115206Z",
+  "files": [
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.cs",
+      "sha256": "88a6b29b3bfd6a22ec8477aa3d7d0285ec30e6e4206a3afe389341f4640795a2",
+      "bytes": 30815
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V3.cs",
+      "sha256": "1f92fa68bcc67ae532619f07b39d386a72bf795d5596852a0386afb74e74045c",
+      "bytes": 35509
+    },
+    {
+      "path": "Tools/QA/Dragon-v3/run-campaign.ps1",
+      "sha256": "fd91897947885fa876fe12f9a3e119964f825119eafa9d05c585f2acc9c2f7ce",
+      "bytes": 9081
+    }
+  ],
+  "sourceCompile": [
+    {
+      "defines": "player",
+      "status": "PASS",
+      "errors": 0,
+      "warnings": 27
+    },
+    {
+      "defines": "editor",
+      "status": "PASS",
+      "errors": 0,
+      "warnings": 28
+    }
+  ],
+  "launcherSyntax": "PASS",
+  "productFixReadOnly": {
+    "path": "Client/Assets/Game/Runtime/Presentation/BattlePresentation.cs",
+    "owner": "Client",
+    "sha256": "e7ad0f8a2e6ad2074c1096c683b05778a5f1117bc9e9c90627b800de0cece9ec"
+  },
+  "nativeRun": false,
+  "unityAccess": false,
+  "osInput": "DEFERRED_BY_USER",
+  "userDefaultProfile": "NOT_ACCESSED",
+  "plannedNextCandidate": "dragon-v3-candidate-04",
+  "launcherSwitch": "-RecoveryOnly",
+  "plannedProcesses": 2,
+  "scenariosPerResolution": [
+    "19 Arrival automatic Idle two cycles",
+    "19 explicit Attack asset samples 80ms each",
+    "19 actual full queued combo plus post-final recovery",
+    "20 Arrival automatic Idle two cycles",
+    "20 explicit Attack asset samples 80ms each",
+    "20 actual full queued combo plus post-final recovery",
+    "18 adjacent non-authored actual attack regression"
+  ],
+  "notRepeated": [
+    "full forest roster campaign",
+    "player motion suite",
+    "save native restart",
+    "story and settlement",
+    "EditMode5",
+    "PlayMode11"
+  ],
+  "limits": "Automatic assertions do not certify smooth X recovery. Review consecutive actual-combo frames and root timeline against DQA3-003. Asset frame sampling is not combat timing validation."
+}

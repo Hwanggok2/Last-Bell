@@ -1,0 +1,837 @@
+{
+  "defect": "DQA2-001",
+  "scope": "HP 30 states only",
+  "motionRerun": false,
+  "playModeRerun": false,
+  "cases": [
+    {
+      "case": "v2-hp-1280x720",
+      "automaticPassed": true,
+      "checks": 70,
+      "errors": [],
+      "samples": [
+        {
+          "file": "v2-hp-1280x720-stage-1-zero.png",
+          "role": "player",
+          "value": 0.0,
+          "capacity": 26,
+          "expected": 0,
+          "actual": 0,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 420.0,
+            "y": 169.0,
+            "width": 160.0,
+            "height": 36.0
+          },
+          "sha256": "ee5b1db34747e9b15e49c3be76aa4f88a2d126c99d136f613d534f1fd2ee664f",
+          "mixedPixels": {},
+          "brightPixels": 0,
+          "fillPixels": 0,
+          "expectedBrightPixels": 0,
+          "integerBounds": true,
+          "sizePreserved": true,
+          "shiftFromCandidate01": {
+            "x": 0.0,
+            "yBottom": 0.2258148193359375
+          },
+          "rasterPassed": true
+        },
+        {
+          "file": "v2-hp-1280x720-stage-1-zero.png",
+          "role": "enemy",
+          "value": 0.0,
+          "capacity": 31,
+          "expected": 0,
+          "actual": 0,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 808.0,
+            "y": 169.0,
+            "width": 184.0,
+            "height": 36.0
+          },
+          "sha256": "ee5b1db34747e9b15e49c3be76aa4f88a2d126c99d136f613d534f1fd2ee664f",
+          "mixedPixels": {},
+          "brightPixels": 0,
+          "fillPixels": 0,
+          "expectedBrightPixels": 0,
+          "integerBounds": true,
+          "sizePreserved": true,
+          "shiftFromCandidate01": {
+            "x": 0.0,
+            "yBottom": 0.2258148193359375
+          },
+          "rasterPassed": true
+        },
+        {
+          "file": "v2-hp-1280x720-stage-1-tiny.png",
+          "role": "player",
+          "value": 9.999999974752427e-07,
+          "capacity": 26,
+          "expected": 1,
+          "actual": 1,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 420.0,
+            "y": 169.0,
+            "width": 160.0,
+            "height": 36.0
+          },
+          "sha256": "65a33ab8408549aa9826a747ed6c5837b2959b1729eed059f8b07d890032b477",
+          "mixedPixels": {},
+          "brightPixels": 16,
+          "fillPixels": 64,
+          "expectedBrightPixels": 16,
+          "integerBounds": true,
+          "sizePreserved": true,
+          "shiftFromCandidate01": {
+            "x": 0.0,
+            "yBottom": 0.2258148193359375
+          },
+          "rasterPassed": true
+        },
+        {
+          "file": "v2-hp-1280x720-stage-1-tiny.png",
+          "role": "enemy",
+          "value": 9.999999974752427e-07,
+          "capacity": 31,
+          "expected": 1,
+          "actual": 1,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 808.0,
+            "y": 169.0,
+            "width": 184.0,
+            "height": 36.0
+          },
+          "sha256": "65a33ab8408549aa9826a747ed6c5837b2959b1729eed059f8b07d890032b477",
+          "mixedPixels": {},
+          "brightPixels": 16,
+          "fillPixels": 64,
+          "expectedBrightPixels": 16,
+          "integerBounds": true,
+          "sizePreserved": true,
+          "shiftFromCandidate01": {
+            "x": 0.0,
+            "yBottom": 0.2258148193359375
+          },
+          "rasterPassed": true
+        },
+        {
+          "file": "v2-hp-1280x720-stage-1-25.png",
+          "role": "player",
+          "value": 0.25,
+          "capacity": 26,
+          "expected": 7,
+          "actual": 7,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 420.0,
+            "y": 169.0,
+            "width": 160.0,
+            "height": 36.0
+          },
+          "sha256": "dd690bd4f2f72658ab046b763370737a4cf783cea26b62f981df5db6de4884e7",
+          "mixedPixels": {},
+          "brightPixels": 112,
+          "fillPixels": 448,
+          "expectedBrightPixels": 112,
+          "integerBounds": true,
+          "sizePreserved": true,
+          "shiftFromCandidate01": {
+            "x": 0.0,
+            "yBottom": 0.2258148193359375
+          },
+          "rasterPassed": true
+        },
+        {
+          "file": "v2-hp-1280x720-stage-1-25.png",
+          "role": "enemy",
+          "value": 0.25,
+          "capacity": 31,
+          "expected": 8,
+          "actual": 8,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 808.0,
+            "y": 169.0,
+            "width": 184.0,
+            "height": 36.0
+          },
+          "sha256": "dd690bd4f2f72658ab046b763370737a4cf783cea26b62f981df5db6de4884e7",
+          "mixedPixels": {},
+          "brightPixels": 128,
+          "fillPixels": 512,
+          "expectedBrightPixels": 128,
+          "integerBounds": true,
+          "sizePreserved": true,
+          "shiftFromCandidate01": {
+            "x": 0.0,
+            "yBottom": 0.2258148193359375
+          },
+          "rasterPassed": true
+        },
+        {
+          "file": "v2-hp-1280x720-stage-1-50.png",
+          "role": "player",
+          "value": 0.5,
+          "capacity": 26,
+          "expected": 13,
+          "actual": 13,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 420.0,
+            "y": 169.0,
+            "width": 160.0,
+            "height": 36.0
+          },
+          "sha256": "69545a9382f67ab74bed2738e1ccf8bcc09542ef780f16c882e9a0e5c0701da8",
+          "mixedPixels": {},
+          "brightPixels": 208,
+          "fillPixels": 832,
+          "expectedBrightPixels": 208,
+          "integerBounds": true,
+          "sizePreserved": true,
+          "shiftFromCandidate01": {
+            "x": 0.0,
+            "yBottom": 0.2258148193359375
+          },
+          "rasterPassed": true
+        },
+        {
+          "file": "v2-hp-1280x720-stage-1-50.png",
+          "role": "enemy",
+          "value": 0.5,
+          "capacity": 31,
+          "expected": 16,
+          "actual": 16,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 808.0,
+            "y": 169.0,
+            "width": 184.0,
+            "height": 36.0
+          },
+          "sha256": "69545a9382f67ab74bed2738e1ccf8bcc09542ef780f16c882e9a0e5c0701da8",
+          "mixedPixels": {},
+          "brightPixels": 256,
+          "fillPixels": 1024,
+          "expectedBrightPixels": 256,
+          "integerBounds": true,
+          "sizePreserved": true,
+          "shiftFromCandidate01": {
+            "x": 0.0,
+            "yBottom": 0.2258148193359375
+          },
+          "rasterPassed": true
+        },
+        {
+          "file": "v2-hp-1280x720-stage-1-100.png",
+          "role": "player",
+          "value": 1.0,
+          "capacity": 26,
+          "expected": 26,
+          "actual": 26,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 420.0,
+            "y": 169.0,
+            "width": 160.0,
+            "height": 36.0
+          },
+          "sha256": "b979ead2a8c474eb3b0548ff3e230275e44eaf32bd8071a439a60e4970e749ee",
+          "mixedPixels": {},
+          "brightPixels": 416,
+          "fillPixels": 1664,
+          "expectedBrightPixels": 416,
+          "integerBounds": true,
+          "sizePreserved": true,
+          "shiftFromCandidate01": {
+            "x": 0.0,
+            "yBottom": 0.2258148193359375
+          },
+          "rasterPassed": true
+        },
+        {
+          "file": "v2-hp-1280x720-stage-1-100.png",
+          "role": "enemy",
+          "value": 1.0,
+          "capacity": 31,
+          "expected": 31,
+          "actual": 31,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 808.0,
+            "y": 169.0,
+            "width": 184.0,
+            "height": 36.0
+          },
+          "sha256": "b979ead2a8c474eb3b0548ff3e230275e44eaf32bd8071a439a60e4970e749ee",
+          "mixedPixels": {},
+          "brightPixels": 496,
+          "fillPixels": 1984,
+          "expectedBrightPixels": 496,
+          "integerBounds": true,
+          "sizePreserved": true,
+          "shiftFromCandidate01": {
+            "x": 0.0,
+            "yBottom": 0.2258148193359375
+          },
+          "rasterPassed": true
+        },
+        {
+          "file": "v2-hp-1280x720-stage-10-zero.png",
+          "role": "boss",
+          "value": 0.0,
+          "capacity": 50,
+          "expected": 0,
+          "actual": 0,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 760.0,
+            "y": 169.0,
+            "width": 280.0,
+            "height": 36.0
+          },
+          "sha256": "90cb76099b71916e858ffd34e200571f70a4a8e03a51081fa5e8ffd3a808aab2",
+          "mixedPixels": {},
+          "brightPixels": 0,
+          "fillPixels": 0,
+          "expectedBrightPixels": 0,
+          "integerBounds": true,
+          "sizePreserved": true,
+          "shiftFromCandidate01": {
+            "x": 0.0,
+            "yBottom": 0.2258148193359375
+          },
+          "rasterPassed": true
+        },
+        {
+          "file": "v2-hp-1280x720-stage-10-tiny.png",
+          "role": "boss",
+          "value": 9.999999974752427e-07,
+          "capacity": 50,
+          "expected": 1,
+          "actual": 1,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 760.0,
+            "y": 169.0,
+            "width": 280.0,
+            "height": 36.0
+          },
+          "sha256": "54b90fed34f91adf4e4c1ccd3cf167896205edafec5717a0f38ff6709bfb95f4",
+          "mixedPixels": {},
+          "brightPixels": 16,
+          "fillPixels": 64,
+          "expectedBrightPixels": 16,
+          "integerBounds": true,
+          "sizePreserved": true,
+          "shiftFromCandidate01": {
+            "x": 0.0,
+            "yBottom": 0.2258148193359375
+          },
+          "rasterPassed": true
+        },
+        {
+          "file": "v2-hp-1280x720-stage-10-25.png",
+          "role": "boss",
+          "value": 0.25,
+          "capacity": 50,
+          "expected": 13,
+          "actual": 13,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 760.0,
+            "y": 169.0,
+            "width": 280.0,
+            "height": 36.0
+          },
+          "sha256": "a7913252630be063f2a8b1cd074f9b6f52a7c80558690ccf63d780c80318d174",
+          "mixedPixels": {},
+          "brightPixels": 208,
+          "fillPixels": 832,
+          "expectedBrightPixels": 208,
+          "integerBounds": true,
+          "sizePreserved": true,
+          "shiftFromCandidate01": {
+            "x": 0.0,
+            "yBottom": 0.2258148193359375
+          },
+          "rasterPassed": true
+        },
+        {
+          "file": "v2-hp-1280x720-stage-10-50.png",
+          "role": "boss",
+          "value": 0.5,
+          "capacity": 50,
+          "expected": 25,
+          "actual": 25,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 760.0,
+            "y": 169.0,
+            "width": 280.0,
+            "height": 36.0
+          },
+          "sha256": "4c84db48a2ffbc6b8836ec1816bafaeeab634f7aff963f01bc112668d2ca7a2b",
+          "mixedPixels": {},
+          "brightPixels": 400,
+          "fillPixels": 1600,
+          "expectedBrightPixels": 400,
+          "integerBounds": true,
+          "sizePreserved": true,
+          "shiftFromCandidate01": {
+            "x": 0.0,
+            "yBottom": 0.2258148193359375
+          },
+          "rasterPassed": true
+        },
+        {
+          "file": "v2-hp-1280x720-stage-10-100.png",
+          "role": "boss",
+          "value": 1.0,
+          "capacity": 50,
+          "expected": 50,
+          "actual": 50,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 760.0,
+            "y": 169.0,
+            "width": 280.0,
+            "height": 36.0
+          },
+          "sha256": "87d87a4959a308d23c8337108bfc77fe2f4271743f62663c172fad35af258535",
+          "mixedPixels": {},
+          "brightPixels": 800,
+          "fillPixels": 3200,
+          "expectedBrightPixels": 800,
+          "integerBounds": true,
+          "sizePreserved": true,
+          "shiftFromCandidate01": {
+            "x": 0.0,
+            "yBottom": 0.2258148193359375
+          },
+          "rasterPassed": true
+        }
+      ],
+      "rasterPassed": true
+    },
+    {
+      "case": "v2-hp-640x360",
+      "automaticPassed": true,
+      "checks": 70,
+      "errors": [],
+      "samples": [
+        {
+          "file": "v2-hp-640x360-stage-1-zero.png",
+          "role": "player",
+          "value": 0.0,
+          "capacity": 26,
+          "expected": 0,
+          "actual": 0,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 210.0,
+            "y": 84.0,
+            "width": 80.0,
+            "height": 18.0
+          },
+          "sha256": "2ab38e39f46f0c590636e2ced7c11044c99554581462a16940f0c0abc42eb285",
+          "mixedPixels": {},
+          "brightPixels": 0,
+          "fillPixels": 0,
+          "expectedBrightPixels": 0,
+          "integerBounds": true,
+          "sizePreserved": true,
+          "shiftFromCandidate01": {
+            "x": 0.0,
+            "yBottom": -0.38709259033203125
+          },
+          "rasterPassed": true
+        },
+        {
+          "file": "v2-hp-640x360-stage-1-zero.png",
+          "role": "enemy",
+          "value": 0.0,
+          "capacity": 31,
+          "expected": 0,
+          "actual": 0,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 404.0,
+            "y": 84.0,
+            "width": 92.0,
+            "height": 18.0
+          },
+          "sha256": "2ab38e39f46f0c590636e2ced7c11044c99554581462a16940f0c0abc42eb285",
+          "mixedPixels": {},
+          "brightPixels": 0,
+          "fillPixels": 0,
+          "expectedBrightPixels": 0,
+          "integerBounds": true,
+          "sizePreserved": true,
+          "shiftFromCandidate01": {
+            "x": 0.0,
+            "yBottom": -0.38709259033203125
+          },
+          "rasterPassed": true
+        },
+        {
+          "file": "v2-hp-640x360-stage-1-tiny.png",
+          "role": "player",
+          "value": 9.999999974752427e-07,
+          "capacity": 26,
+          "expected": 1,
+          "actual": 1,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 210.0,
+            "y": 84.0,
+            "width": 80.0,
+            "height": 18.0
+          },
+          "sha256": "77373bff42e684ad4e4eb0cbbf83f7767894fc1b383f3961a1f4d9d34fcd7ca6",
+          "mixedPixels": {},
+          "brightPixels": 4,
+          "fillPixels": 16,
+          "expectedBrightPixels": 4,
+          "integerBounds": true,
+          "sizePreserved": true,
+          "shiftFromCandidate01": {
+            "x": 0.0,
+            "yBottom": -0.38709259033203125
+          },
+          "rasterPassed": true
+        },
+        {
+          "file": "v2-hp-640x360-stage-1-tiny.png",
+          "role": "enemy",
+          "value": 9.999999974752427e-07,
+          "capacity": 31,
+          "expected": 1,
+          "actual": 1,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 404.0,
+            "y": 84.0,
+            "width": 92.0,
+            "height": 18.0
+          },
+          "sha256": "77373bff42e684ad4e4eb0cbbf83f7767894fc1b383f3961a1f4d9d34fcd7ca6",
+          "mixedPixels": {},
+          "brightPixels": 4,
+          "fillPixels": 16,
+          "expectedBrightPixels": 4,
+          "integerBounds": true,
+          "sizePreserved": true,
+          "shiftFromCandidate01": {
+            "x": 0.0,
+            "yBottom": -0.38709259033203125
+          },
+          "rasterPassed": true
+        },
+        {
+          "file": "v2-hp-640x360-stage-1-25.png",
+          "role": "player",
+          "value": 0.25,
+          "capacity": 26,
+          "expected": 7,
+          "actual": 7,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 210.0,
+            "y": 84.0,
+            "width": 80.0,
+            "height": 18.0
+          },
+          "sha256": "8a2644e59846f80d1fc78d6617897f6485e8a3944c04774f318cc4b525d515d4",
+          "mixedPixels": {},
+          "brightPixels": 28,
+          "fillPixels": 112,
+          "expectedBrightPixels": 28,
+          "integerBounds": true,
+          "sizePreserved": true,
+          "shiftFromCandidate01": {
+            "x": 0.0,
+            "yBottom": -0.38709259033203125
+          },
+          "rasterPassed": true
+        },
+        {
+          "file": "v2-hp-640x360-stage-1-25.png",
+          "role": "enemy",
+          "value": 0.25,
+          "capacity": 31,
+          "expected": 8,
+          "actual": 8,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 404.0,
+            "y": 84.0,
+            "width": 92.0,
+            "height": 18.0
+          },
+          "sha256": "8a2644e59846f80d1fc78d6617897f6485e8a3944c04774f318cc4b525d515d4",
+          "mixedPixels": {},
+          "brightPixels": 32,
+          "fillPixels": 128,
+          "expectedBrightPixels": 32,
+          "integerBounds": true,
+          "sizePreserved": true,
+          "shiftFromCandidate01": {
+            "x": 0.0,
+            "yBottom": -0.38709259033203125
+          },
+          "rasterPassed": true
+        },
+        {
+          "file": "v2-hp-640x360-stage-1-50.png",
+          "role": "player",
+          "value": 0.5,
+          "capacity": 26,
+          "expected": 13,
+          "actual": 13,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 210.0,
+            "y": 84.0,
+            "width": 80.0,
+            "height": 18.0
+          },
+          "sha256": "446e861d2efa4ddd27688e0f0b82c08a81690717cc2242701916afcfe4d6dd45",
+          "mixedPixels": {},
+          "brightPixels": 52,
+          "fillPixels": 208,
+          "expectedBrightPixels": 52,
+          "integerBounds": true,
+          "sizePreserved": true,
+          "shiftFromCandidate01": {
+            "x": 0.0,
+            "yBottom": -0.38709259033203125
+          },
+          "rasterPassed": true
+        },
+        {
+          "file": "v2-hp-640x360-stage-1-50.png",
+          "role": "enemy",
+          "value": 0.5,
+          "capacity": 31,
+          "expected": 16,
+          "actual": 16,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 404.0,
+            "y": 84.0,
+            "width": 92.0,
+            "height": 18.0
+          },
+          "sha256": "446e861d2efa4ddd27688e0f0b82c08a81690717cc2242701916afcfe4d6dd45",
+          "mixedPixels": {},
+          "brightPixels": 64,
+          "fillPixels": 256,
+          "expectedBrightPixels": 64,
+          "integerBounds": true,
+          "sizePreserved": true,
+          "shiftFromCandidate01": {
+            "x": 0.0,
+            "yBottom": -0.38709259033203125
+          },
+          "rasterPassed": true
+        },
+        {
+          "file": "v2-hp-640x360-stage-1-100.png",
+          "role": "player",
+          "value": 1.0,
+          "capacity": 26,
+          "expected": 26,
+          "actual": 26,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 210.0,
+            "y": 84.0,
+            "width": 80.0,
+            "height": 18.0
+          },
+          "sha256": "a433c3dd0a52054d1a4d937f3310d72e2056f03cc4bc81ad83580842282dc2aa",
+          "mixedPixels": {},
+          "brightPixels": 104,
+          "fillPixels": 416,
+          "expectedBrightPixels": 104,
+          "integerBounds": true,
+          "sizePreserved": true,
+          "shiftFromCandidate01": {
+            "x": 0.0,
+            "yBottom": -0.38709259033203125
+          },
+          "rasterPassed": true
+        },
+        {
+          "file": "v2-hp-640x360-stage-1-100.png",
+          "role": "enemy",
+          "value": 1.0,
+          "capacity": 31,
+          "expected": 31,
+          "actual": 31,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 404.0,
+            "y": 84.0,
+            "width": 92.0,
+            "height": 18.0
+          },
+          "sha256": "a433c3dd0a52054d1a4d937f3310d72e2056f03cc4bc81ad83580842282dc2aa",
+          "mixedPixels": {},
+          "brightPixels": 124,
+          "fillPixels": 496,
+          "expectedBrightPixels": 124,
+          "integerBounds": true,
+          "sizePreserved": true,
+          "shiftFromCandidate01": {
+            "x": 0.0,
+            "yBottom": -0.38709259033203125
+          },
+          "rasterPassed": true
+        },
+        {
+          "file": "v2-hp-640x360-stage-10-zero.png",
+          "role": "boss",
+          "value": 0.0,
+          "capacity": 50,
+          "expected": 0,
+          "actual": 0,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 380.0,
+            "y": 84.0,
+            "width": 140.0,
+            "height": 18.0
+          },
+          "sha256": "b3c8b68b2bbe2df3e2704eb95528dd523ae280e7d8cf533befa421be6013d14c",
+          "mixedPixels": {},
+          "brightPixels": 0,
+          "fillPixels": 0,
+          "expectedBrightPixels": 0,
+          "integerBounds": true,
+          "sizePreserved": true,
+          "shiftFromCandidate01": {
+            "x": 0.0,
+            "yBottom": -0.38709259033203125
+          },
+          "rasterPassed": true
+        },
+        {
+          "file": "v2-hp-640x360-stage-10-tiny.png",
+          "role": "boss",
+          "value": 9.999999974752427e-07,
+          "capacity": 50,
+          "expected": 1,
+          "actual": 1,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 380.0,
+            "y": 84.0,
+            "width": 140.0,
+            "height": 18.0
+          },
+          "sha256": "948bc3aad1b1539816b7988d30cf26d153fd50cb6d050f9ca5c639aac04771b4",
+          "mixedPixels": {},
+          "brightPixels": 4,
+          "fillPixels": 16,
+          "expectedBrightPixels": 4,
+          "integerBounds": true,
+          "sizePreserved": true,
+          "shiftFromCandidate01": {
+            "x": 0.0,
+            "yBottom": -0.38709259033203125
+          },
+          "rasterPassed": true
+        },
+        {
+          "file": "v2-hp-640x360-stage-10-25.png",
+          "role": "boss",
+          "value": 0.25,
+          "capacity": 50,
+          "expected": 13,
+          "actual": 13,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 380.0,
+            "y": 84.0,
+            "width": 140.0,
+            "height": 18.0
+          },
+          "sha256": "c991d9ea6b58cd848b6b136735d868a565dc8bdc13ae6a2e134586f00f0d525a",
+          "mixedPixels": {},
+          "brightPixels": 52,
+          "fillPixels": 208,
+          "expectedBrightPixels": 52,
+          "integerBounds": true,
+          "sizePreserved": true,
+          "shiftFromCandidate01": {
+            "x": 0.0,
+            "yBottom": -0.38709259033203125
+          },
+          "rasterPassed": true
+        },
+        {
+          "file": "v2-hp-640x360-stage-10-50.png",
+          "role": "boss",
+          "value": 0.5,
+          "capacity": 50,
+          "expected": 25,
+          "actual": 25,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 380.0,
+            "y": 84.0,
+            "width": 140.0,
+            "height": 18.0
+          },
+          "sha256": "44159541b75ad6f1b924196814b4f2361aa24480574e209e5145b08a9d9a238c",
+          "mixedPixels": {},
+          "brightPixels": 100,
+          "fillPixels": 400,
+          "expectedBrightPixels": 100,
+          "integerBounds": true,
+          "sizePreserved": true,
+          "shiftFromCandidate01": {
+            "x": 0.0,
+            "yBottom": -0.38709259033203125
+          },
+          "rasterPassed": true
+        },
+        {
+          "file": "v2-hp-640x360-stage-10-100.png",
+          "role": "boss",
+          "value": 1.0,
+          "capacity": 50,
+          "expected": 50,
+          "actual": 50,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 380.0,
+            "y": 84.0,
+            "width": 140.0,
+            "height": 18.0
+          },
+          "sha256": "7be6925da11b8a32abf71b54fdb5fb97689e991e041cb19c659dd2b0fd9cafd1",
+          "mixedPixels": {},
+          "brightPixels": 200,
+          "fillPixels": 800,
+          "expectedBrightPixels": 200,
+          "integerBounds": true,
+          "sizePreserved": true,
+          "shiftFromCandidate01": {
+            "x": 0.0,
+            "yBottom": -0.38709259033203125
+          },
+          "rasterPassed": true
+        }
+      ],
+      "rasterPassed": true
+    }
+  ],
+  "all30RasterPassed": true
+}

@@ -1,0 +1,15 @@
+{
+  "id": "QA6-PROBE-001",
+  "status": "UNRESOLVED_COMPARISON_FAILURE",
+  "trigger": "V6Roundtrip(player-on-after), DragonThemeSmokeProbe.V6.cs:148",
+  "observed": "Repository Load returned, then exact JsonUtility.ToJson(before)==JsonUtility.ToJson(disk) assertion failed. Loaded DTO/string/diff was not persisted.",
+  "payloadChecksumValid": true,
+  "payloadSemanticallyEqualsLastRenderedSave": true,
+  "lastRenderedFrame": "v3-frame-v6-skill-on-overlap-000071.png",
+  "clockMs": 643.4284001588821,
+  "skillCooldownRemainingMs": 19356.571599841118,
+  "backupPresent": false,
+  "conclusion": "Campaign blocker. Product save loss is not established; precision/normalization or comparison behavior requires loaded-value diagnostic evidence. No source change, native retry or additional case run was made.",
+  "nextStep": "Root/Client inspect exact loaded-vs-before differences; if authorizing diagnostic change/new build, preserve candidate01 and run only an explicitly handed-over case or remainder.",
+  "savedEnvelopeSha256": "46ae530d051b0f9b722baf08d8fbc624cecc09f556ad5158d3dd85cabbd700e8"
+}

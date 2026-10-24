@@ -1,0 +1,52 @@
+{
+  "status": "PARTIAL_VISUAL_REVIEW_STAGE11_PRODUCT_FAILURE_OPEN",
+  "reviewer": "QA assistant direct image inspection",
+  "dialogue": {
+    "pagesReviewed": 75,
+    "characters": [
+      "on",
+      "dam",
+      "rin"
+    ],
+    "stages": [
+      2,
+      7,
+      10,
+      15,
+      20
+    ],
+    "method": "All15 dialogue-native sheets, native-size cropped regions; not OCR-only",
+    "findings": "No observed text clipping/portrait mismatch. Scene-specific unknown speaker policy, introductions and distinct selected-player replies read directly."
+  },
+  "static": {
+    "imagesReviewed": 28,
+    "sheets": [
+      "static-1.png",
+      "static-2.png",
+      "static-3.png"
+    ],
+    "method": "Complete PNGs at50% on contact sheets, four shield/stun originals also inspected",
+    "findings": "Shield icon visible before/file restore, absent after absorption/expiry. Stagger states readable, warning bright edges/fill. Miel roster/skill layout readable."
+  },
+  "motion": {
+    "method": "12-frame sampled sheets for19/20,Miel skill,Daren absorption; full475 frames hash/ground metrics",
+    "visualSheets": [
+      "1280x720-v4-enemy-19-combo.png",
+      "1280x720-v4-enemy-20-combo.png",
+      "1280x720-v4-skill-rin-ready-contact.png",
+      "1280x720-v4-dam-shield-absorption.png"
+    ],
+    "stage11": "FAIL_PRODUCT_DQA4-003: rootX constant across113 first/repeat frames. Contact events do not certify forward dash."
+  },
+  "adoptedCandidate01DirectVisual": [
+    "v4-select-on-preview.png",
+    "v4-select-dam-preview.png",
+    "v4-skill-dam-ready-contact-paused.png",
+    "v4-skill-dam-ready-contact-paused-file-restored.png",
+    "review/1280x720-v4-skill-on-ready-contact.png"
+  ],
+  "audioPCM": "NOT_ADOPTED_MULTI_SOURCE_ATTRIBUTION_ERROR",
+  "audioListening": "NOT_RUN",
+  "osInput": "DEFERRED",
+  "limits": "Not every continuous PNG independently viewed at full resolution; all75 dialogue pages reviewed. No native video/performance/device-audio certification."
+}

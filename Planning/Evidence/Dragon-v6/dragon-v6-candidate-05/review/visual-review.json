@@ -1,0 +1,143 @@
+{
+  "candidate": "dragon-v6-candidate-05",
+  "version": "0.9.6",
+  "reviewedAtUtc": "2026-10-24T17:08:34.194067+00:00",
+  "status": "PASS_BOUNDED_HEALTH_TRAIL",
+  "acceptance": "NOT_CERTIFIED",
+  "inspection": {
+    "fullOriginal1280": 3,
+    "unscaledSheets": 5,
+    "sourceCropsOrFull640": 15,
+    "distinctSourcePNGs": 18,
+    "totalCapturedPNGs": 424,
+    "allFramesReviewed": false
+  },
+  "inspected": [
+    {
+      "file": "review/1280x720-player.png",
+      "sha256": "f818e8b7ef99534f9fa575a3b0dbb8787ca164b26f83cf9a2ca4bf850b043f58",
+      "method": "view_image; unscaled source crops/full640 images; bounds in crop-manifest.json",
+      "sources": [
+        "1280x720/fresh/v3-frame-v6-hp-trail-player-000002.png",
+        "1280x720/fresh/v3-frame-v6-hp-trail-player-000024.png",
+        "1280x720/fresh/v3-frame-v6-hp-trail-player-000042.png"
+      ]
+    },
+    {
+      "file": "review/1280x720-normal.png",
+      "sha256": "365b08e7247cf8982165c69628787c340fdadaaf9ed02ec8baacd05cbf47c481",
+      "method": "view_image; unscaled source crops/full640 images; bounds in crop-manifest.json",
+      "sources": [
+        "1280x720/fresh/v3-frame-v6-hp-trail-normal-000079.png",
+        "1280x720/fresh/v3-frame-v6-hp-trail-normal-000101.png",
+        "1280x720/fresh/v3-frame-v6-hp-trail-normal-000119.png"
+      ]
+    },
+    {
+      "file": "review/640x360-player.png",
+      "sha256": "7e2b00a080714254fa0c7298a6433c58a210557509b7dd6239a72c81ca2dd07e",
+      "method": "view_image; unscaled source crops/full640 images; bounds in crop-manifest.json",
+      "sources": [
+        "640x360/fresh/v3-frame-v6-hp-trail-player-000003.png",
+        "640x360/fresh/v3-frame-v6-hp-trail-player-000025.png",
+        "640x360/fresh/v3-frame-v6-hp-trail-player-000043.png"
+      ]
+    },
+    {
+      "file": "review/640x360-normal.png",
+      "sha256": "35f6e131af88bf92a059abc8e60184b9c84dd968c3aa728db04811070d5b9f63",
+      "method": "view_image; unscaled source crops/full640 images; bounds in crop-manifest.json",
+      "sources": [
+        "640x360/fresh/v3-frame-v6-hp-trail-normal-000082.png",
+        "640x360/fresh/v3-frame-v6-hp-trail-normal-000104.png",
+        "640x360/fresh/v3-frame-v6-hp-trail-normal-000122.png"
+      ]
+    },
+    {
+      "file": "review/640x360-boss.png",
+      "sha256": "ec7a81c28459d228bbaa9a0d4a0b430980ddbcf422fbb4b69d3d374539269a72",
+      "method": "view_image; unscaled source crops/full640 images; bounds in crop-manifest.json",
+      "sources": [
+        "640x360/fresh/v3-frame-v6-hp-trail-boss-000153.png",
+        "640x360/fresh/v3-frame-v6-hp-trail-boss-000175.png",
+        "640x360/fresh/v3-frame-v6-hp-trail-boss-000193.png"
+      ]
+    },
+    {
+      "file": "1280x720/fresh/v3-frame-v6-hp-trail-boss-000151.png",
+      "sha256": "25fe40b00133425a7817da49748d9acc837179597e6896a39bfb3c65bd84895e",
+      "method": "view_image; full original1280x720"
+    },
+    {
+      "file": "1280x720/fresh/v3-frame-v6-hp-trail-boss-000173.png",
+      "sha256": "60433c50c8ca99aea6feda3a704ee842982ca7ffd2da1e0ef15878051da90e89",
+      "method": "view_image; full original1280x720"
+    },
+    {
+      "file": "1280x720/fresh/v3-frame-v6-hp-trail-boss-000191.png",
+      "sha256": "dbf0e6fce83c722be8af2926b8dc5e31318332c53b4e840a964f3a2681a1e62e",
+      "method": "view_image; full original1280x720"
+    }
+  ],
+  "verdicts": [
+    {
+      "target": "player",
+      "resolution": "1280x720",
+      "verdict": "PASS_BOUNDED",
+      "notes": "Green actual HP immediately reduced and constant; orange afterimage shrinks at intermediate sample and absent at end; other bar stays green."
+    },
+    {
+      "target": "normal",
+      "resolution": "1280x720",
+      "verdict": "PASS_BOUNDED",
+      "notes": "Green actual HP immediately reduced and constant; orange afterimage shrinks at intermediate sample and absent at end; other bar stays green."
+    },
+    {
+      "target": "boss",
+      "resolution": "1280x720",
+      "verdict": "PASS_BOUNDED",
+      "notes": "Green actual HP immediately reduced and constant; orange afterimage shrinks at intermediate sample and absent at end; other bar stays green."
+    },
+    {
+      "target": "player",
+      "resolution": "640x360",
+      "verdict": "PASS_BOUNDED",
+      "notes": "Green actual HP immediately reduced and constant; orange afterimage shrinks at intermediate sample and absent at end; other bar stays green."
+    },
+    {
+      "target": "normal",
+      "resolution": "640x360",
+      "verdict": "PASS_BOUNDED",
+      "notes": "Green actual HP immediately reduced and constant; orange afterimage shrinks at intermediate sample and absent at end; other bar stays green."
+    },
+    {
+      "target": "boss",
+      "resolution": "640x360",
+      "verdict": "PASS_BOUNDED",
+      "notes": "Green actual HP immediately reduced and constant; orange afterimage shrinks at intermediate sample and absent at end; other bar stays green."
+    }
+  ],
+  "metadataAudit": "health-trail-readonly-audit.json; maximum linear error1.59e-7 under1e-5; all18 bar crops have exact palette green and first/middle orange, end0 orange",
+  "htmlRecommendations": "html-image-recommendations.json",
+  "rootUnitEvidence": {
+    "file": "root-healthbar-playmode-15.json",
+    "passed": 15,
+    "scope": "5 filled-cell cases,7 single-hit threshold cases,3 trail/linear/smallhits/followup/heal/reset cases",
+    "pauseIncluded": false
+  },
+  "limits": [
+    "Only3 real nonlethal contacts per resolution; explicit fixture maxHP; Core ticking held after first contact while actual presenter clock animates",
+    "No direct graphics mutation by probe; no save/balance/product changes by QA",
+    "Lethal/new-target behavior has unit-only evidence, no native transition capture here",
+    "No replay of full0.9.5 campaign; candidate04 adopted",
+    "Physical input deferred; mobile/audio/performance/long-duration/full acceptance unverified",
+    "Pause integration uses Root PlayMode evidence; native/guided-specific pause capture not performed"
+  ],
+  "rootPauseEvidence": {
+    "file": "root-healthbar-pause-retest.json",
+    "passed": 1,
+    "jobId": "ff6ba71a47c241909d9cde011ac06999",
+    "scope": "Actual Stage11 enemy contact -> paused.25s unchanged actual/trail -> resumed.8s trail equals actual",
+    "priorFailedFixture": "root-healthbar-pause-attempt1.json; Root diagnosed omitted SetPaused(false) on restored session; failed before pause assertion; production unchanged"
+  }
+}

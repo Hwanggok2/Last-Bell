@@ -1,0 +1,1163 @@
+{
+  "videoPlaybackPerformed": false,
+  "reviewMethod": "Original PNGs, ordered rendered-pose contact sheets, and recorded timestamps. No interpolated frames.",
+  "cases": [
+    {
+      "case": "v2-1280x720",
+      "automaticPassed": true,
+      "errors": [],
+      "indexedPngs": 661,
+      "allHashesMatch": true,
+      "segments": [
+        {
+          "scenario": "idle",
+          "frames": 82,
+          "renderFrameGaps": 0,
+          "duration": 1.3724291324615479,
+          "meanCaptureRate": 59.01944084698991,
+          "maxGapMs": 37.700653076171875,
+          "p95GapMs": 16.954898834228516,
+          "observedClipFrames": {
+            "Idle": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          },
+          "sheet": "v2-1280x720-idle.png"
+        },
+        {
+          "scenario": "attack-stage-01",
+          "frames": 46,
+          "renderFrameGaps": 0,
+          "duration": 0.8079004287719727,
+          "meanCaptureRate": 55.699933305396364,
+          "maxGapMs": 38.50841522216797,
+          "p95GapMs": 21.521568298339844,
+          "observedClipFrames": {
+            "Idle": [
+              4,
+              5,
+              6
+            ],
+            "Attack": [
+              0,
+              2,
+              3,
+              5,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ]
+          },
+          "sheet": "v2-1280x720-attack-stage-01.png"
+        },
+        {
+          "scenario": "attack-stage-10",
+          "frames": 48,
+          "renderFrameGaps": 0,
+          "duration": 0.8082294464111328,
+          "meanCaptureRate": 58.15180356110397,
+          "maxGapMs": 31.988143920898438,
+          "p95GapMs": 17.000198364257812,
+          "observedClipFrames": {
+            "Idle": [
+              4,
+              5,
+              6
+            ],
+            "Attack": [
+              0,
+              2,
+              3,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ]
+          },
+          "sheet": "v2-1280x720-attack-stage-10.png"
+        },
+        {
+          "scenario": "defense-DodgeUp",
+          "frames": 83,
+          "renderFrameGaps": 0,
+          "duration": 1.4165725708007812,
+          "meanCaptureRate": 57.886197777813685,
+          "maxGapMs": 32.53364562988281,
+          "p95GapMs": 17.425537109375,
+          "observedClipFrames": {
+            "Idle": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "DodgeUp": [
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          },
+          "sheet": "v2-1280x720-defense-DodgeUp.png"
+        },
+        {
+          "scenario": "defense-DodgeBack",
+          "frames": 82,
+          "renderFrameGaps": 0,
+          "duration": 1.4106616973876953,
+          "meanCaptureRate": 57.41986200518393,
+          "maxGapMs": 37.03117370605469,
+          "p95GapMs": 21.799087524414062,
+          "observedClipFrames": {
+            "Idle": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "DodgeBack": [
+              3,
+              4,
+              6,
+              7
+            ]
+          },
+          "sheet": "v2-1280x720-defense-DodgeBack.png"
+        },
+        {
+          "scenario": "defense-DodgeDown",
+          "frames": 83,
+          "renderFrameGaps": 0,
+          "duration": 1.4132766723632812,
+          "meanCaptureRate": 58.021194012124745,
+          "maxGapMs": 32.657623291015625,
+          "p95GapMs": 17.5628662109375,
+          "observedClipFrames": {
+            "Idle": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "DodgeDown": [
+              2,
+              4,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ]
+          },
+          "sheet": "v2-1280x720-defense-DodgeDown.png"
+        },
+        {
+          "scenario": "defeat-travel-arrival",
+          "frames": 237,
+          "renderFrameGaps": 0,
+          "duration": 4.004558563232422,
+          "meanCaptureRate": 58.932837733181806,
+          "maxGapMs": 33.138275146484375,
+          "p95GapMs": 18.08929443359375,
+          "observedClipFrames": {
+            "Idle": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "Attack": [
+              0,
+              2,
+              3,
+              4,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "Run": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          },
+          "sheet": "v2-1280x720-defeat-travel-arrival.png"
+        }
+      ],
+      "hpRaster": [
+        {
+          "file": "v2-hp-1280x720-stage-1-zero.png",
+          "role": "player",
+          "value": 0.0,
+          "capacity": 26,
+          "expected": 0,
+          "actual": 0,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 420.0,
+            "y": 168.77418518066406,
+            "width": 160.0,
+            "height": 36.0
+          },
+          "pixels": {
+            "bright": 0,
+            "fill": 0
+          },
+          "expectedBrightPixels": 0,
+          "rasterMatches": true,
+          "brightPixelColumns": 0,
+          "filledColumnsMatch": true
+        },
+        {
+          "file": "v2-hp-1280x720-stage-1-zero.png",
+          "role": "enemy",
+          "value": 0.0,
+          "capacity": 31,
+          "expected": 0,
+          "actual": 0,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 808.0,
+            "y": 168.77418518066406,
+            "width": 184.0,
+            "height": 36.0
+          },
+          "pixels": {
+            "bright": 0,
+            "fill": 0
+          },
+          "expectedBrightPixels": 0,
+          "rasterMatches": true,
+          "brightPixelColumns": 0,
+          "filledColumnsMatch": true
+        },
+        {
+          "file": "v2-hp-1280x720-stage-1-tiny.png",
+          "role": "player",
+          "value": 9.999999974752427e-07,
+          "capacity": 26,
+          "expected": 1,
+          "actual": 1,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 420.0,
+            "y": 168.77418518066406,
+            "width": 160.0,
+            "height": 36.0
+          },
+          "pixels": {
+            "bright": 16,
+            "fill": 64
+          },
+          "expectedBrightPixels": 16,
+          "rasterMatches": true,
+          "brightPixelColumns": 4,
+          "filledColumnsMatch": true
+        },
+        {
+          "file": "v2-hp-1280x720-stage-1-tiny.png",
+          "role": "enemy",
+          "value": 9.999999974752427e-07,
+          "capacity": 31,
+          "expected": 1,
+          "actual": 1,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 808.0,
+            "y": 168.77418518066406,
+            "width": 184.0,
+            "height": 36.0
+          },
+          "pixels": {
+            "bright": 16,
+            "fill": 64
+          },
+          "expectedBrightPixels": 16,
+          "rasterMatches": true,
+          "brightPixelColumns": 4,
+          "filledColumnsMatch": true
+        },
+        {
+          "file": "v2-hp-1280x720-stage-1-25.png",
+          "role": "player",
+          "value": 0.25,
+          "capacity": 26,
+          "expected": 7,
+          "actual": 7,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 420.0,
+            "y": 168.77418518066406,
+            "width": 160.0,
+            "height": 36.0
+          },
+          "pixels": {
+            "bright": 112,
+            "fill": 448
+          },
+          "expectedBrightPixels": 112,
+          "rasterMatches": true,
+          "brightPixelColumns": 28,
+          "filledColumnsMatch": true
+        },
+        {
+          "file": "v2-hp-1280x720-stage-1-25.png",
+          "role": "enemy",
+          "value": 0.25,
+          "capacity": 31,
+          "expected": 8,
+          "actual": 8,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 808.0,
+            "y": 168.77418518066406,
+            "width": 184.0,
+            "height": 36.0
+          },
+          "pixels": {
+            "bright": 128,
+            "fill": 512
+          },
+          "expectedBrightPixels": 128,
+          "rasterMatches": true,
+          "brightPixelColumns": 32,
+          "filledColumnsMatch": true
+        },
+        {
+          "file": "v2-hp-1280x720-stage-1-50.png",
+          "role": "player",
+          "value": 0.5,
+          "capacity": 26,
+          "expected": 13,
+          "actual": 13,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 420.0,
+            "y": 168.77418518066406,
+            "width": 160.0,
+            "height": 36.0
+          },
+          "pixels": {
+            "bright": 208,
+            "fill": 832
+          },
+          "expectedBrightPixels": 208,
+          "rasterMatches": true,
+          "brightPixelColumns": 52,
+          "filledColumnsMatch": true
+        },
+        {
+          "file": "v2-hp-1280x720-stage-1-50.png",
+          "role": "enemy",
+          "value": 0.5,
+          "capacity": 31,
+          "expected": 16,
+          "actual": 16,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 808.0,
+            "y": 168.77418518066406,
+            "width": 184.0,
+            "height": 36.0
+          },
+          "pixels": {
+            "bright": 256,
+            "fill": 1024
+          },
+          "expectedBrightPixels": 256,
+          "rasterMatches": true,
+          "brightPixelColumns": 64,
+          "filledColumnsMatch": true
+        },
+        {
+          "file": "v2-hp-1280x720-stage-1-100.png",
+          "role": "player",
+          "value": 1.0,
+          "capacity": 26,
+          "expected": 26,
+          "actual": 26,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 420.0,
+            "y": 168.77418518066406,
+            "width": 160.0,
+            "height": 36.0
+          },
+          "pixels": {
+            "bright": 416,
+            "fill": 1664
+          },
+          "expectedBrightPixels": 416,
+          "rasterMatches": true,
+          "brightPixelColumns": 104,
+          "filledColumnsMatch": true
+        },
+        {
+          "file": "v2-hp-1280x720-stage-1-100.png",
+          "role": "enemy",
+          "value": 1.0,
+          "capacity": 31,
+          "expected": 31,
+          "actual": 31,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 808.0,
+            "y": 168.77418518066406,
+            "width": 184.0,
+            "height": 36.0
+          },
+          "pixels": {
+            "bright": 496,
+            "fill": 1984
+          },
+          "expectedBrightPixels": 496,
+          "rasterMatches": true,
+          "brightPixelColumns": 124,
+          "filledColumnsMatch": true
+        },
+        {
+          "file": "v2-hp-1280x720-stage-10-zero.png",
+          "role": "boss",
+          "value": 0.0,
+          "capacity": 50,
+          "expected": 0,
+          "actual": 0,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 760.0,
+            "y": 168.77418518066406,
+            "width": 280.0,
+            "height": 36.0
+          },
+          "pixels": {
+            "bright": 0,
+            "fill": 0
+          },
+          "expectedBrightPixels": 0,
+          "rasterMatches": true,
+          "brightPixelColumns": 0,
+          "filledColumnsMatch": true
+        },
+        {
+          "file": "v2-hp-1280x720-stage-10-tiny.png",
+          "role": "boss",
+          "value": 9.999999974752427e-07,
+          "capacity": 50,
+          "expected": 1,
+          "actual": 1,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 760.0,
+            "y": 168.77418518066406,
+            "width": 280.0,
+            "height": 36.0
+          },
+          "pixels": {
+            "bright": 16,
+            "fill": 64
+          },
+          "expectedBrightPixels": 16,
+          "rasterMatches": true,
+          "brightPixelColumns": 4,
+          "filledColumnsMatch": true
+        },
+        {
+          "file": "v2-hp-1280x720-stage-10-25.png",
+          "role": "boss",
+          "value": 0.25,
+          "capacity": 50,
+          "expected": 13,
+          "actual": 13,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 760.0,
+            "y": 168.77418518066406,
+            "width": 280.0,
+            "height": 36.0
+          },
+          "pixels": {
+            "bright": 208,
+            "fill": 832
+          },
+          "expectedBrightPixels": 208,
+          "rasterMatches": true,
+          "brightPixelColumns": 52,
+          "filledColumnsMatch": true
+        },
+        {
+          "file": "v2-hp-1280x720-stage-10-50.png",
+          "role": "boss",
+          "value": 0.5,
+          "capacity": 50,
+          "expected": 25,
+          "actual": 25,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 760.0,
+            "y": 168.77418518066406,
+            "width": 280.0,
+            "height": 36.0
+          },
+          "pixels": {
+            "bright": 400,
+            "fill": 1600
+          },
+          "expectedBrightPixels": 400,
+          "rasterMatches": true,
+          "brightPixelColumns": 100,
+          "filledColumnsMatch": true
+        },
+        {
+          "file": "v2-hp-1280x720-stage-10-100.png",
+          "role": "boss",
+          "value": 1.0,
+          "capacity": 50,
+          "expected": 50,
+          "actual": 50,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 760.0,
+            "y": 168.77418518066406,
+            "width": 280.0,
+            "height": 36.0
+          },
+          "pixels": {
+            "bright": 800,
+            "fill": 3200
+          },
+          "expectedBrightPixels": 800,
+          "rasterMatches": true,
+          "brightPixelColumns": 200,
+          "filledColumnsMatch": true
+        }
+      ],
+      "hpRasterAllMatch": true,
+      "hpFilledColumnsAllMatch": true
+    },
+    {
+      "case": "v2-640x360",
+      "automaticPassed": true,
+      "errors": [],
+      "indexedPngs": 673,
+      "allHashesMatch": true,
+      "segments": [
+        {
+          "scenario": "idle",
+          "frames": 83,
+          "renderFrameGaps": 0,
+          "duration": 1.380744457244873,
+          "meanCaptureRate": 59.3882521633454,
+          "maxGapMs": 29.875516891479492,
+          "p95GapMs": 16.958236694335938,
+          "observedClipFrames": {
+            "Idle": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          },
+          "sheet": "v2-640x360-idle.png"
+        },
+        {
+          "scenario": "attack-stage-01",
+          "frames": 48,
+          "renderFrameGaps": 0,
+          "duration": 0.8109474182128906,
+          "meanCaptureRate": 57.95690194510431,
+          "maxGapMs": 37.19329833984375,
+          "p95GapMs": 20.033836364746094,
+          "observedClipFrames": {
+            "Idle": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "Attack": [
+              0,
+              1,
+              3,
+              4,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ]
+          },
+          "sheet": "v2-640x360-attack-stage-01.png"
+        },
+        {
+          "scenario": "attack-stage-10",
+          "frames": 50,
+          "renderFrameGaps": 0,
+          "duration": 0.8254833221435547,
+          "meanCaptureRate": 59.35916412309868,
+          "maxGapMs": 33.61797332763672,
+          "p95GapMs": 16.9830322265625,
+          "observedClipFrames": {
+            "Idle": [
+              0,
+              1,
+              2
+            ],
+            "Attack": [
+              0,
+              1,
+              3,
+              4,
+              5,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ]
+          },
+          "sheet": "v2-640x360-attack-stage-10.png"
+        },
+        {
+          "scenario": "defense-DodgeUp",
+          "frames": 84,
+          "renderFrameGaps": 0,
+          "duration": 1.4125556945800781,
+          "meanCaptureRate": 58.75874510185178,
+          "maxGapMs": 36.96632385253906,
+          "p95GapMs": 17.052650451660156,
+          "observedClipFrames": {
+            "Idle": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "DodgeUp": [
+              3,
+              5,
+              6,
+              7
+            ]
+          },
+          "sheet": "v2-640x360-defense-DodgeUp.png"
+        },
+        {
+          "scenario": "defense-DodgeBack",
+          "frames": 84,
+          "renderFrameGaps": 0,
+          "duration": 1.4063606262207031,
+          "meanCaptureRate": 59.017579454741245,
+          "maxGapMs": 34.648895263671875,
+          "p95GapMs": 17.358779907226562,
+          "observedClipFrames": {
+            "Idle": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "DodgeBack": [
+              3,
+              4,
+              6,
+              7
+            ]
+          },
+          "sheet": "v2-640x360-defense-DodgeBack.png"
+        },
+        {
+          "scenario": "defense-DodgeDown",
+          "frames": 85,
+          "renderFrameGaps": 0,
+          "duration": 1.4260730743408203,
+          "meanCaptureRate": 58.903012413180626,
+          "maxGapMs": 35.45570373535156,
+          "p95GapMs": 17.282485961914062,
+          "observedClipFrames": {
+            "Idle": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "DodgeDown": [
+              2,
+              4,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ]
+          },
+          "sheet": "v2-640x360-defense-DodgeDown.png"
+        },
+        {
+          "scenario": "defeat-travel-arrival",
+          "frames": 239,
+          "renderFrameGaps": 0,
+          "duration": 4.014570236206055,
+          "meanCaptureRate": 59.28405433128515,
+          "maxGapMs": 37.975311279296875,
+          "p95GapMs": 17.38739013671875,
+          "observedClipFrames": {
+            "Idle": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "Attack": [
+              0,
+              1,
+              3,
+              4,
+              5,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "Run": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          },
+          "sheet": "v2-640x360-defeat-travel-arrival.png"
+        }
+      ],
+      "hpRaster": [
+        {
+          "file": "v2-hp-640x360-stage-1-zero.png",
+          "role": "player",
+          "value": 0.0,
+          "capacity": 26,
+          "expected": 0,
+          "actual": 0,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 210.0,
+            "y": 84.38709259033203,
+            "width": 80.0,
+            "height": 18.0
+          },
+          "pixels": {
+            "bright": 0,
+            "fill": 0
+          },
+          "expectedBrightPixels": 0,
+          "rasterMatches": true,
+          "brightPixelColumns": 0,
+          "filledColumnsMatch": true
+        },
+        {
+          "file": "v2-hp-640x360-stage-1-zero.png",
+          "role": "enemy",
+          "value": 0.0,
+          "capacity": 31,
+          "expected": 0,
+          "actual": 0,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 404.0,
+            "y": 84.38709259033203,
+            "width": 92.0,
+            "height": 18.0
+          },
+          "pixels": {
+            "bright": 0,
+            "fill": 0
+          },
+          "expectedBrightPixels": 0,
+          "rasterMatches": true,
+          "brightPixelColumns": 0,
+          "filledColumnsMatch": true
+        },
+        {
+          "file": "v2-hp-640x360-stage-1-tiny.png",
+          "role": "player",
+          "value": 9.999999974752427e-07,
+          "capacity": 26,
+          "expected": 1,
+          "actual": 1,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 210.0,
+            "y": 84.38709259033203,
+            "width": 80.0,
+            "height": 18.0
+          },
+          "pixels": {
+            "bright": 2,
+            "fill": 14
+          },
+          "expectedBrightPixels": 4,
+          "rasterMatches": false,
+          "brightPixelColumns": 2,
+          "filledColumnsMatch": true
+        },
+        {
+          "file": "v2-hp-640x360-stage-1-tiny.png",
+          "role": "enemy",
+          "value": 9.999999974752427e-07,
+          "capacity": 31,
+          "expected": 1,
+          "actual": 1,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 404.0,
+            "y": 84.38709259033203,
+            "width": 92.0,
+            "height": 18.0
+          },
+          "pixels": {
+            "bright": 2,
+            "fill": 14
+          },
+          "expectedBrightPixels": 4,
+          "rasterMatches": false,
+          "brightPixelColumns": 2,
+          "filledColumnsMatch": true
+        },
+        {
+          "file": "v2-hp-640x360-stage-1-25.png",
+          "role": "player",
+          "value": 0.25,
+          "capacity": 26,
+          "expected": 7,
+          "actual": 7,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 210.0,
+            "y": 84.38709259033203,
+            "width": 80.0,
+            "height": 18.0
+          },
+          "pixels": {
+            "bright": 14,
+            "fill": 98
+          },
+          "expectedBrightPixels": 28,
+          "rasterMatches": false,
+          "brightPixelColumns": 14,
+          "filledColumnsMatch": true
+        },
+        {
+          "file": "v2-hp-640x360-stage-1-25.png",
+          "role": "enemy",
+          "value": 0.25,
+          "capacity": 31,
+          "expected": 8,
+          "actual": 8,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 404.0,
+            "y": 84.38709259033203,
+            "width": 92.0,
+            "height": 18.0
+          },
+          "pixels": {
+            "bright": 16,
+            "fill": 112
+          },
+          "expectedBrightPixels": 32,
+          "rasterMatches": false,
+          "brightPixelColumns": 16,
+          "filledColumnsMatch": true
+        },
+        {
+          "file": "v2-hp-640x360-stage-1-50.png",
+          "role": "player",
+          "value": 0.5,
+          "capacity": 26,
+          "expected": 13,
+          "actual": 13,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 210.0,
+            "y": 84.38709259033203,
+            "width": 80.0,
+            "height": 18.0
+          },
+          "pixels": {
+            "bright": 26,
+            "fill": 182
+          },
+          "expectedBrightPixels": 52,
+          "rasterMatches": false,
+          "brightPixelColumns": 26,
+          "filledColumnsMatch": true
+        },
+        {
+          "file": "v2-hp-640x360-stage-1-50.png",
+          "role": "enemy",
+          "value": 0.5,
+          "capacity": 31,
+          "expected": 16,
+          "actual": 16,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 404.0,
+            "y": 84.38709259033203,
+            "width": 92.0,
+            "height": 18.0
+          },
+          "pixels": {
+            "bright": 32,
+            "fill": 224
+          },
+          "expectedBrightPixels": 64,
+          "rasterMatches": false,
+          "brightPixelColumns": 32,
+          "filledColumnsMatch": true
+        },
+        {
+          "file": "v2-hp-640x360-stage-1-100.png",
+          "role": "player",
+          "value": 1.0,
+          "capacity": 26,
+          "expected": 26,
+          "actual": 26,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 210.0,
+            "y": 84.38709259033203,
+            "width": 80.0,
+            "height": 18.0
+          },
+          "pixels": {
+            "bright": 52,
+            "fill": 364
+          },
+          "expectedBrightPixels": 104,
+          "rasterMatches": false,
+          "brightPixelColumns": 52,
+          "filledColumnsMatch": true
+        },
+        {
+          "file": "v2-hp-640x360-stage-1-100.png",
+          "role": "enemy",
+          "value": 1.0,
+          "capacity": 31,
+          "expected": 31,
+          "actual": 31,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 404.0,
+            "y": 84.38709259033203,
+            "width": 92.0,
+            "height": 18.0
+          },
+          "pixels": {
+            "bright": 62,
+            "fill": 434
+          },
+          "expectedBrightPixels": 124,
+          "rasterMatches": false,
+          "brightPixelColumns": 62,
+          "filledColumnsMatch": true
+        },
+        {
+          "file": "v2-hp-640x360-stage-10-zero.png",
+          "role": "boss",
+          "value": 0.0,
+          "capacity": 50,
+          "expected": 0,
+          "actual": 0,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 380.0,
+            "y": 84.38709259033203,
+            "width": 140.0,
+            "height": 18.0
+          },
+          "pixels": {
+            "bright": 0,
+            "fill": 0
+          },
+          "expectedBrightPixels": 0,
+          "rasterMatches": true,
+          "brightPixelColumns": 0,
+          "filledColumnsMatch": true
+        },
+        {
+          "file": "v2-hp-640x360-stage-10-tiny.png",
+          "role": "boss",
+          "value": 9.999999974752427e-07,
+          "capacity": 50,
+          "expected": 1,
+          "actual": 1,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 380.0,
+            "y": 84.38709259033203,
+            "width": 140.0,
+            "height": 18.0
+          },
+          "pixels": {
+            "bright": 2,
+            "fill": 14
+          },
+          "expectedBrightPixels": 4,
+          "rasterMatches": false,
+          "brightPixelColumns": 2,
+          "filledColumnsMatch": true
+        },
+        {
+          "file": "v2-hp-640x360-stage-10-25.png",
+          "role": "boss",
+          "value": 0.25,
+          "capacity": 50,
+          "expected": 13,
+          "actual": 13,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 380.0,
+            "y": 84.38709259033203,
+            "width": 140.0,
+            "height": 18.0
+          },
+          "pixels": {
+            "bright": 26,
+            "fill": 182
+          },
+          "expectedBrightPixels": 52,
+          "rasterMatches": false,
+          "brightPixelColumns": 26,
+          "filledColumnsMatch": true
+        },
+        {
+          "file": "v2-hp-640x360-stage-10-50.png",
+          "role": "boss",
+          "value": 0.5,
+          "capacity": 50,
+          "expected": 25,
+          "actual": 25,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 380.0,
+            "y": 84.38709259033203,
+            "width": 140.0,
+            "height": 18.0
+          },
+          "pixels": {
+            "bright": 50,
+            "fill": 350
+          },
+          "expectedBrightPixels": 100,
+          "rasterMatches": false,
+          "brightPixelColumns": 50,
+          "filledColumnsMatch": true
+        },
+        {
+          "file": "v2-hp-640x360-stage-10-100.png",
+          "role": "boss",
+          "value": 1.0,
+          "capacity": 50,
+          "expected": 50,
+          "actual": 50,
+          "bounds": {
+            "serializedVersion": "2",
+            "x": 380.0,
+            "y": 84.38709259033203,
+            "width": 140.0,
+            "height": 18.0
+          },
+          "pixels": {
+            "bright": 100,
+            "fill": 700
+          },
+          "expectedBrightPixels": 200,
+          "rasterMatches": false,
+          "brightPixelColumns": 100,
+          "filledColumnsMatch": true
+        }
+      ],
+      "hpRasterAllMatch": false,
+      "hpFilledColumnsAllMatch": true
+    }
+  ]
+}

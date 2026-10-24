@@ -22,14 +22,23 @@ class CatalogExportTests(unittest.TestCase):
     def test_current_source_and_mvp_totals(self):
         catalog.validate(self.data)
         e = self.data["economy"]
-        self.assertEqual(sum(e["upgradeCosts"]), 42297564)
-        self.assertEqual(sum(g * (5 if s % 10 == 0 else 3 if s % 5 == 0 else 1) for s, g in enumerate(e["normalGoldPerStage"]) if s), 172833824)
+        self.assertEqual(sum(e["upgradeCosts"]), 4178943264)
+        self.assertEqual(sum(g * (5 if s % 10 == 0 else 3 if s % 5 == 0 else 1) for s, g in enumerate(e["normalGoldPerStage"]) if s), 3971419624)
         self.assertEqual(5 * (e["minibossFragments"] + e["bossFragments"]), 20)
-        self.assertEqual(self.data["stages"][9]["maxHp"], 706)
-        self.assertEqual(self.data["stages"][10]["enemyId"], "chain_thrall")
+        self.assertEqual(self.data["stages"][9]["maxHp"], 865)
+        self.assertEqual(self.data["stages"][10]["enemyId"], "sewer_rat")
+        self.assertEqual(self.data["stages"][9]["enemyId"], "bell_knight")
+        self.assertEqual(self.data["stages"][19]["enemyId"], "chain_jailer")
 
     def test_duplicate_relic_id(self):
         self.reject(lambda d: d["relics"][1].update(id=d["relics"][0]["id"]), "duplicate ID")
+
+    def test_duplicate_playable_enemy(self):
+        self.reject(lambda d: d["stages"][3].update(enemyId=d["stages"][0]["enemyId"]), "distinct enemies")
+
+    def test_renaming_duplicate_art_does_not_bypass_roster_rule(self):
+        first_art = next(e["artId"] for e in self.data["enemies"] if e["id"] == self.data["stages"][0]["enemyId"])
+        self.reject(lambda d: next(e for e in d["enemies"] if e["id"] == "red_fox").update(artId=first_art), "distinct enemy art")
 
     def test_current_presentation_timing_and_story_are_exported(self):
         self.assertEqual(self.data["combat"]["attackWindupMs"], 200)
@@ -37,19 +46,59 @@ class CatalogExportTests(unittest.TestCase):
         self.assertEqual(t["enemyDefeatMs"] + t["travelMs"] + t["arrivalMs"], 3250)
         self.assertEqual(t["deathMs"], 1800)
         self.assertEqual([t["minibossIntroMs"], t["bossIntroMs"]], [1800, 2200])
-        self.assertEqual(self.data["stories"][0]["stage"], 10)
-        self.assertEqual(self.data["stories"][0]["lines"][0]["text"], "문은… 안에서 잠갔다.")
+        boss=next(s for s in self.data["stories"] if s["stage"]==10)
+        self.assertEqual(boss["lines"][0]["text"], "와, 큰엄니도 물리쳤네! 이제 숲으로 갈 수 있겠다.")
 
     def test_invalid_transition_duration(self):
         self.reject(lambda d: d["transitions"].update(travelMs=0), "duration must be positive")
 
-    def test_story_cannot_reference_miniboss_or_unknown_character(self):
-        self.reject(lambda d: d["stories"][0].update(stage=5), "MVP story")
+    def test_boss_story_cannot_change_to_unbound_stage_or_unknown_character(self):
+        self.reject(lambda d: next(s for s in d["stories"] if s["stage"]==10).update(stage=5), "invalid scene stages")
         self.setUp()
-        self.reject(lambda d: d["stories"][0]["lines"][2]["responses"][0].update(characterId="unknown"), "invalid character")
+        self.reject(lambda d: d["stories"][0]["lines"][2]["responses"].append({"characterId": "unknown", "text": "반응"}), "invalid response")
+
+    def test_dialogue_portraits_and_player_replies_are_complete(self):
+        self.reject(lambda d: d["stories"][0]["lines"][0].update(portraitId="missing"), "invalid portrait")
+        self.setUp()
+        self.reject(lambda d: next(s for s in d["stories"] if s["stage"]==10)["lines"][2]["responses"].pop(), "all player responses")
+        self.setUp()
+        self.reject(lambda d: next(s for s in d["stories"] if s["stage"]==10)["lines"][2].update(portraitId="on"), "invalid portrait/player")
+
+    def test_encounter_stages_are_distinct_and_tori_reveals_identity(self):
+        encounter=next(s for s in self.data["stories"] if s["stage"]==2)
+        self.assertEqual(encounter["lines"][0]["speaker"],"???")
+        self.assertEqual(encounter["lines"][0]["portraitId"],"unknown")
+        self.assertEqual(encounter["lines"][1]["portraitId"],"tori")
+        self.assertEqual(encounter["bossId"],"")
+        self.reject(lambda d: d["stories"].append(copy.deepcopy(d["stories"][-1])), "invalid scene stages")
+
+    def test_adventure_scope_and_legacy_scenes(self):
+        self.assertEqual(sorted(s["stage"] for s in self.data["stories"]), [2,10,12,20])
+        self.assertEqual(sorted(s["stage"] for s in self.data["plannedStories"]), [22,32,42])
+        self.assertEqual(sorted(s["stage"] for s in self.data["legacyStories"]), [2,7,10,15,20])
+        self.assertEqual(self.data["mvpLastStage"],20)
+        self.assertEqual([c["stars"][4] for c in self.data["characters"]],[3,4,2])
+        self.reject(lambda d:d["plannedStories"][0].update(stage=21),"invalid scene stages")
+
+    def test_companion_mismatch_and_duplicate(self):
+        self.reject(lambda d:d["companions"][0].update(periodMs=6180),"invalid timing")
+        self.setUp()
+        self.reject(lambda d:d["companions"][1].update(id="tori"),"distinct stable IDs")
 
     def test_unknown_enemy_reference(self):
         self.reject(lambda d: d["stages"][0].update(enemyId="not_in_catalog"), "unknown enemy")
+
+    def test_playable_character_cannot_lose_its_skill(self):
+        self.reject(lambda d: d["skills"].pop(), "every available character")
+
+    def test_skill_cannot_duplicate_owner_or_create_permanent_shield(self):
+        self.reject(lambda d: d["skills"][1].update(characterId="on"), "one skill per known character")
+        self.setUp()
+        self.reject(lambda d: d["skills"][1].update(shieldDurationMs=0), "shield amount and duration")
+
+    def test_single_pattern_exception_is_only_for_stage11_dash(self):
+        catalog.validate(self.data)
+        self.reject(lambda d: d["stages"][0].update(randomPatterns=["frontal_dash"]), "invalid random pattern pool")
 
     def test_stage_gap(self):
         self.reject(lambda d: d["stages"][8].update(number=10), "ordered unique floors")
@@ -115,6 +164,17 @@ class CatalogExportTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "missing or stale"):
                 catalog.export(source, output, check=True)
             self.assertEqual(output.read_bytes(), b"previous output")
+
+    def test_independent_skill_contact_and_companion_growth_are_validated(self):
+        self.reject(lambda d: d["skills"][0].update(contactDelayMs=0), "independent 200ms")
+        self.reject(lambda d: d["skills"][0].update(cooldownMs=10000), "20000ms cooldown")
+        self.reject(lambda d: d["adventure"].update(companionSkillChanceCapPercent=100), "expected 45")
+        self.reject(lambda d: d["adventure"].update(companionPeriodFloorPercent=50), "expected 70")
+
+    def test_companion_special_effects_cannot_silently_drift(self):
+        self.reject(lambda d: d["companions"][1].update(skillStaggerGain=80), "invalid skill")
+        self.reject(lambda d: d["companions"][4].update(skillHealMaxHpPercent=20), "invalid skill")
+        self.reject(lambda d: d["companions"][2].update(skillId="companion_tori_double_shot"), "invalid skill")
 
     def test_duplicate_json_key_rejected(self):
         with tempfile.TemporaryDirectory(prefix="lastbell-catalog-", dir=Path(__file__).parent) as folder:

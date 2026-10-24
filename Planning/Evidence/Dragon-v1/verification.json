@@ -1,0 +1,197 @@
+{
+  "date": "2026-10-24",
+  "writtenUtc": "2026-10-24T07:24:27.976824+00:00",
+  "version": "0.9.0",
+  "dataVersion": "mvp1.14.0",
+  "status": "PASS_WITH_EXPLICIT_SCOPE",
+  "scope": "Observed Windows automatic campaign and representative visual review, plus eight corrected test expectations.",
+  "osInput": "DEFERRED_BY_USER",
+  "mobile": "NOT_RUN",
+  "candidates": [
+    {
+      "id": "candidate-01",
+      "passed": true,
+      "runs": [
+        {
+          "name": "full-1280x720",
+          "passed": true,
+          "exitCode": 0,
+          "timedOut": false
+        },
+        {
+          "name": "layout-960x540",
+          "passed": true,
+          "exitCode": 0,
+          "timedOut": false
+        },
+        {
+          "name": "layout-640x360",
+          "passed": true,
+          "exitCode": 0,
+          "timedOut": false
+        },
+        {
+          "name": "resume-1280x720",
+          "passed": true,
+          "exitCode": 0,
+          "timedOut": false
+        }
+      ],
+      "settingsRestored": true,
+      "buildManifest": "candidate-01/candidate-manifest.json"
+    },
+    {
+      "id": "candidate-02-targeted",
+      "passed": true,
+      "runs": [
+        {
+          "name": "review-1280x720",
+          "passed": true,
+          "exitCode": 0,
+          "timedOut": false
+        },
+        {
+          "name": "review-640x360",
+          "passed": true,
+          "exitCode": 0,
+          "timedOut": false
+        }
+      ],
+      "settingsRestored": true,
+      "buildManifest": "candidate-02-targeted/candidate-manifest.json"
+    },
+    {
+      "id": "candidate-03-cards",
+      "passed": true,
+      "runs": [
+        {
+          "name": "cards-1280x720",
+          "passed": true,
+          "exitCode": 0,
+          "timedOut": false
+        },
+        {
+          "name": "cards-640x360",
+          "passed": true,
+          "exitCode": 0,
+          "timedOut": false
+        }
+      ],
+      "settingsRestored": true,
+      "buildManifest": "candidate-03-cards/candidate-manifest.json"
+    }
+  ],
+  "tests": {
+    "editmode": {
+      "initialStatus": "failed",
+      "initialCompleted": 186,
+      "initialFailures": [
+        {
+          "full_name": "LastBell.Tests.FeedbackV6Tests.DuplicateEnemyAndDuplicateDesignAreRejected",
+          "message": "  Expected: <System.InvalidOperationException>\r\n  But was:  null\r\n"
+        },
+        {
+          "full_name": "LastBell.Tests.GameSessionTests.StoryIsOncePerCharacterAndSkipNeverChoosesRelic",
+          "message": "  Expected string length 29 but was 13. Strings differ at index 0.\r\n  Expected: \"문은 내가 열겠다.\\n안에 남은 사람들을 되찾아 오지.\"\r\n  But was:  \"좋아. 아직 해도 높네.\"\r\n  -----------^\r\n"
+        }
+      ],
+      "initialResultPayloadPresent": false,
+      "targetedStatus": "succeeded",
+      "targetedSummary": {
+        "total": 2,
+        "passed": 2,
+        "failed": 0,
+        "skipped": 0,
+        "durationSeconds": 0.6231671,
+        "resultState": "Passed"
+      }
+    },
+    "playmode": {
+      "initialStatus": "failed",
+      "initialCompleted": 26,
+      "initialFailures": [
+        {
+          "full_name": "LastBell.Tests.CombatPresentationTests.BossTenRemainsForDialogueThenRewardContinuesAndTwentyClears",
+          "message": "  Expected: String containing \"주민들을 가두고\"\r\n  But was:  \"용은 저 봉우리에 있어.\"\r\n"
+        },
+        {
+          "full_name": "LastBell.Tests.CombatPresentationTests.EnemyWaitsInIdleUntilAttackAndPauses",
+          "message": "  early telegraph must not pin attack frame zero at stage 1\r\n  Expected: Idle\r\n  But was:  AttackLow\r\n"
+        },
+        {
+          "full_name": "LastBell.Tests.CombatPresentationTests.HighContactFrameAcceptsDownButtonAndStaysAtHome",
+          "message": "  Expected: AttackUp\r\n  But was:  DodgeDown\r\n"
+        },
+        {
+          "full_name": "LastBell.Tests.CombatPresentationTests.LobbyPortraitPlaysIdleAndRefreshDoesNotResetIt",
+          "message": "  Expected: <05 (UnityEngine.Sprite)>\r\n  But was:  <03 (UnityEngine.Sprite)>\r\n"
+        },
+        {
+          "full_name": "LastBell.Tests.CombatPresentationTests.ReviewedEnemyKeepsItsAuthoredHoldsAndContactsOnTheCombatBeat",
+          "message": "  Expected string length 8 but was 18. Strings differ at index 0.\r\n  Expected: \"wild_dog\"\r\n  But was:  \"dragon_trail_slime\"\r\n  -----------^\r\n"
+        },
+        {
+          "full_name": "LastBell.Tests.CombatPresentationTests.SelectedPreviewPosesMatchBack08AndSlashSequence",
+          "message": "  Expected: 8\r\n  But was:  7\r\n"
+        }
+      ],
+      "initialResultPayloadPresent": false,
+      "targetedStatus": "succeeded",
+      "targetedSummary": {
+        "total": 6,
+        "passed": 6,
+        "failed": 0,
+        "skipped": 0,
+        "durationSeconds": 5.8481447,
+        "resultState": "Passed"
+      }
+    }
+  },
+  "defects": [
+    {
+      "id": "DQA-001",
+      "problem": "Reward button face obscured sibling icon and title",
+      "status": "CLOSED",
+      "verifiedIn": "candidate-02-targeted"
+    },
+    {
+      "id": "DQA-002",
+      "problem": "Reward title overlapped narrow card border",
+      "status": "CLOSED",
+      "verifiedIn": "candidate-03-cards"
+    }
+  ],
+  "editorReturned": "candidate-02-targeted/unity-tests/editor-return.json",
+  "editorSettingsRestored": true,
+  "normalReleaseBuild": {
+    "status": "BUILD_AND_PACKAGE_VERIFIED",
+    "buildOptions": "None",
+    "builtAtUtc": "2026-10-24T07:23:55Z",
+    "builtAtKst": "2026-10-24T16:23:55+09:00",
+    "fileCount": 165,
+    "archive": {
+      "path": "Builds/Dragon-v1-Windows-0.9.0.zip",
+      "bytes": 46152662,
+      "sha256": "1f382ca4717789af67861de1e7a5254f12aaacf9f1276a6f9037c75f49b6e742"
+    },
+    "runtimeAssembly": {
+      "path": "Builds/Dragon-v1/LastBellMvp_Data/Managed/LastBell.Runtime.dll",
+      "bytes": 216576,
+      "sha256": "f4d4dfbd5f90619ae4dfee86249f3139e787d77d820af0114657c8ebfeca038b"
+    },
+    "zipIntegrity": "pass",
+    "dragonQaProbeExcluded": true,
+    "pixelLabDragonLicenseIncluded": true,
+    "zipAndRuntimeHashesRecheckedByQa": true,
+    "separatelyExecuted": false,
+    "executionEvidence": "Development candidate01 plus targeted candidates02/03; release artifact verified, not separately executed",
+    "releaseManifest": "../../Production/dragon-v1-release.json"
+  },
+  "limits": [
+    "Synthetic UI input is not OS keyboard/mouse testing.",
+    "Initial motion PNG numbering overwrote part of the first observation interval; CSV remained continuous. Fixed in QA probe; whole motion campaign was not repeated.",
+    "No mobile performance, asymmetric safe-area, exhaustive legacy-save/relic combinations, listening, or uninterrupted 18-second prologue verification.",
+    "Historical intermittent native shutdown QA-003 is not closed by these successful exits."
+  ],
+  "report": "../../QA/dragon-v1-result-20261024.md"
+}

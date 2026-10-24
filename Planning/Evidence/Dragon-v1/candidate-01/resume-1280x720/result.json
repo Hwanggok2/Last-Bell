@@ -1,0 +1,27 @@
+{
+    "passed": true,
+    "completed": true,
+    "osInput": false,
+    "testCase": "resume",
+    "version": "0.9.0",
+    "dataVersion": "mvp1.14.0",
+    "graphics": "Direct3D 12 [level 12.2]",
+    "savePath": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v1\\candidate-01\\resume-1280x720\\profiles\\boot\\last-bell-save.json",
+    "error": "",
+    "width": 1280,
+    "height": 720,
+    "checks": [
+        "PASS saved scene bootstrap initialized",
+        "PASS bootstrap uses required isolated save path",
+        "PASS saved Dragon UI and meadow references",
+        "PASS saved Dragon player art",
+        "PASS twenty stages and 0/4 special currency retained",
+        "PASS bootstrap resumes the isolated paused battle",
+        "PASS saved wallet growth and relics survive restart",
+        "PASS UI button ready: Resume",
+        "PASS UI raycast reaches Resume",
+        "PASS saved resume button continues battle"
+    ],
+    "errors": [],
+    "limits": "Synthetic UI events; accelerated route plus explicitly marked real-frame fixtures. Not OS input, mobile performance, or full acceptance."
+}

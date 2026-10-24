@@ -1,0 +1,22 @@
+diff --git a/Planning/Evidence/Dragon-v3/story-restore-source-fix-20261024-01/before/DragonThemeSmokeProbe.cs b/Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.cs
+index f1cfc87..a9f3a14 100644
+--- a/Planning/Evidence/Dragon-v3/story-restore-source-fix-20261024-01/before/DragonThemeSmokeProbe.cs
++++ b/Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.cs
+@@ -57,7 +57,7 @@ namespace LastBell
+                 string dest=Absolute(Argument(args,"-dragon-theme-smoke",true));
+                 string save=Absolute(Argument(args,"-lastbell-save-dir",true));
+                 string mode=Argument(args,"-dragon-theme-case",false)??"full";
+-                if(mode!="full"&&mode!="layout"&&mode!="resume"&&mode!="review"&&mode!="cards"&&mode!="v2"&&mode!="v2-hp"&&mode!="v3"&&mode!="v3-resume")throw new ArgumentException("Unknown Dragon QA case.");
++                if(mode!="full"&&mode!="layout"&&mode!="resume"&&mode!="review"&&mode!="cards"&&mode!="v2"&&mode!="v2-hp"&&mode!="v3"&&mode!="v3-resume"&&mode!="v3-story")throw new ArgumentException("Unknown Dragon QA case.");
+                 if(!Inside(save,dest))throw new ArgumentException("QA save directory must be a strict child of the output directory.");
+                 string user=Path.GetFullPath(Application.persistentDataPath);
+                 if(Same(dest,user)||Inside(dest,user)||Inside(user,dest))throw new ArgumentException("QA output overlaps the default user-save directory.");
+@@ -145,7 +145,7 @@ namespace LastBell
+             Require(p.View.Dragon&&p.Presentation.World.DragonTheme,"saved Dragon UI and meadow references");
+             Require(p.PlayerActor.ArtId=="dragon_hero_on","saved Dragon player art");
+             Require(catalog.mvpLastStage==20&&catalog.economy.minibossFragments==0&&catalog.economy.bossFragments==4,"twenty stages and 0/4 special currency retained");
+-            if(caseName=="v3"||caseName=="v3-resume") {yield return DragonV3(caseName=="v3-resume");yield break;}
++            if(caseName=="v3"||caseName=="v3-resume"||caseName=="v3-story") {yield return DragonV3(caseName=="v3-resume",caseName=="v3-story");yield break;}
+             if(caseName=="v2"||caseName=="v2-hp") {yield return PlayerV2(caseName=="v2-hp");yield break;}
+             if(caseName=="resume") {yield return Resume();yield break;}
+             if(caseName=="review"||caseName=="cards") {yield return Review();yield break;}

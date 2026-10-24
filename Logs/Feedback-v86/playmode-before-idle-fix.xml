@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="22" result="Passed" total="22" passed="22" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-23 15:35:30Z" end-time="2026-10-23 15:35:38Z" duration="8.5873001">
+  <test-suite type="TestSuite" id="1028" name="Last Bell MVP" fullname="Last Bell MVP" runstate="Runnable" testcasecount="22" result="Passed" start-time="2026-10-23 15:35:30Z" end-time="2026-10-23 15:35:38Z" duration="8.587300" total="22" passed="22" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1024" name="LastBell.Presentation.Tests.dll" fullname="C:/Github/Test2/Client/Library/ScriptAssemblies/LastBell.Presentation.Tests.dll" runstate="Runnable" testcasecount="22" result="Passed" start-time="2026-10-23 15:35:30Z" end-time="2026-10-23 15:35:38Z" duration="8.575384" total="22" passed="22" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="12840" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1025" name="LastBell" fullname="LastBell" runstate="Runnable" testcasecount="22" result="Passed" start-time="2026-10-23 15:35:30Z" end-time="2026-10-23 15:35:38Z" duration="8.574700" total="22" passed="22" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1026" name="Tests" fullname="LastBell.Tests" runstate="Runnable" testcasecount="22" result="Passed" start-time="2026-10-23 15:35:30Z" end-time="2026-10-23 15:35:38Z" duration="8.574336" total="22" passed="22" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1001" name="CombatPresentationTests" fullname="LastBell.Tests.CombatPresentationTests" classname="LastBell.Tests.CombatPresentationTests" runstate="Runnable" testcasecount="22" result="Passed" start-time="2026-10-23 15:35:30Z" end-time="2026-10-23 15:35:38Z" duration="8.572653" total="22" passed="22" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1002" name="AcceptedDodgeAndPerfectDodgePlayAirOnceWithoutBell" fullname="LastBell.Tests.CombatPresentationTests.AcceptedDodgeAndPerfectDodgePlayAirOnceWithoutBell" methodname="AcceptedDodgeAndPerfectDodgePlayAirOnceWithoutBell" classname="LastBell.Tests.CombatPresentationTests" runstate="Runnable" seed="709088564" result="Passed" start-time="2026-10-23 15:35:30Z" end-time="2026-10-23 15:35:31Z" duration="0.751785" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1011" name="ApprovedRunKeepsScaleAndRootAcrossAllFramesBothFacingsAndIdleTransitions" fullname="LastBell.Tests.CombatPresentationTests.ApprovedRunKeepsScaleAndRootAcrossAllFramesBothFacingsAndIdleTransitions" methodname="ApprovedRunKeepsScaleAndRootAcrossAllFramesBothFacingsAndIdleTransitions" classname="LastBell.Tests.CombatPresentationTests" runstate="Runnable" seed="763114056" result="Passed" start-time="2026-10-23 15:35:31Z" end-time="2026-10-23 15:35:31Z" duration="0.037223" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1010" name="ApprovedRunPreservesAuthoredRhythmAndTravels1920PixelsInTwoSeconds" fullname="LastBell.Tests.CombatPresentationTests.ApprovedRunPreservesAuthoredRhythmAndTravels1920PixelsInTwoSeconds" methodname="ApprovedRunPreservesAuthoredRhythmAndTravels1920PixelsInTwoSeconds" classname="LastBell.Tests.CombatPresentationTests" runstate="Runnable" seed="1632274240" result="Passed" start-time="2026-10-23 15:35:31Z" end-time="2026-10-23 15:35:31Z" duration="0.068595" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1016" name="AttackApproachesAndContactsOnceAt200MsThenReturns" fullname="LastBell.Tests.CombatPresentationTests.AttackApproachesAndContactsOnceAt200MsThenReturns" methodname="AttackApproachesAndContactsOnceAt200MsThenReturns" classname="LastBell.Tests.CombatPresentationTests" runstate="Runnable" seed="356700415" result="Passed" start-time="2026-10-23 15:35:31Z" end-time="2026-10-23 15:35:31Z" duration="0.048017" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1015" name="BossTenRemainsForDialogueThenRewardContinuesAndTwentyClears" fullname="LastBell.Tests.CombatPresentationTests.BossTenRemainsForDialogueThenRewardContinuesAndTwentyClears" methodname="BossTenRemainsForDialogueThenRewardContinuesAndTwentyClears" classname="LastBell.Tests.CombatPresentationTests" runstate="Runnable" seed="93403329" result="Passed" start-time="2026-10-23 15:35:31Z" end-time="2026-10-23 15:35:31Z" duration="0.277823" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1019" name="BossZoomHoldsThenRestoresBeforeAnyCueOrDamage" fullname="LastBell.Tests.CombatPresentationTests.BossZoomHoldsThenRestoresBeforeAnyCueOrDamage" methodname="BossZoomHoldsThenRestoresBeforeAnyCueOrDamage" classname="LastBell.Tests.CombatPresentationTests" runstate="Runnable" seed="64275582" result="Passed" start-time="2026-10-23 15:35:31Z" end-time="2026-10-23 15:35:31Z" duration="0.042733" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1020" name="DeathShowsResultAfterLanternAndRetryStartsAtCheckpoint" fullname="LastBell.Tests.CombatPresentationTests.DeathShowsResultAfterLanternAndRetryStartsAtCheckpoint" methodname="DeathShowsResultAfterLanternAndRetryStartsAtCheckpoint" classname="LastBell.Tests.CombatPresentationTests" runstate="Runnable" seed="591293868" result="Passed" start-time="2026-10-23 15:35:31Z" end-time="2026-10-23 15:35:31Z" duration="0.056093" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1022" name="EnemyFlashPreservesAttackClockAndLethalHitFreezesPoseWithoutDeathClip" fullname="LastBell.Tests.CombatPresentationTests.EnemyFlashPreservesAttackClockAndLethalHitFreezesPoseWithoutDeathClip" methodname="EnemyFlashPreservesAttackClockAndLethalHitFreezesPoseWithoutDeathClip" classname="LastBell.Tests.CombatPresentationTests" runstate="Runnable" seed="6163414" result="Passed" start-time="2026-10-23 15:35:31Z" end-time="2026-10-23 15:35:31Z" duration="0.397832" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1004" name="EnemyWaitsInIdleUntilAuthoredAnticipationAndPauses" fullname="LastBell.Tests.CombatPresentationTests.EnemyWaitsInIdleUntilAuthoredAnticipationAndPauses" methodname="EnemyWaitsInIdleUntilAuthoredAnticipationAndPauses" classname="LastBell.Tests.CombatPresentationTests" runstate="Runnable" seed="242207561" result="Passed" start-time="2026-10-23 15:35:31Z" end-time="2026-10-23 15:35:33Z" duration="1.182847" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1008" name="GoldWarningsReplaceGaugeTextAndAnswerHighlights" fullname="LastBell.Tests.CombatPresentationTests.GoldWarningsReplaceGaugeTextAndAnswerHighlights" methodname="GoldWarningsReplaceGaugeTextAndAnswerHighlights" classname="LastBell.Tests.CombatPresentationTests" runstate="Runnable" seed="173426158" result="Passed" start-time="2026-10-23 15:35:33Z" end-time="2026-10-23 15:35:33Z" duration="0.046203" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1005" name="HighContactFrameAcceptsDownButtonAndStaysAtHome" fullname="LastBell.Tests.CombatPresentationTests.HighContactFrameAcceptsDownButtonAndStaysAtHome" methodname="HighContactFrameAcceptsDownButtonAndStaysAtHome" classname="LastBell.Tests.CombatPresentationTests" runstate="Runnable" seed="1413045272" result="Passed" start-time="2026-10-23 15:35:33Z" end-time="2026-10-23 15:35:34Z" duration="0.936277" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1014" name="KillingPopupAndShakeSurviveStagePreparedThenExpire" fullname="LastBell.Tests.CombatPresentationTests.KillingPopupAndShakeSurviveStagePreparedThenExpire" methodname="KillingPopupAndShakeSurviveStagePreparedThenExpire" classname="LastBell.Tests.CombatPresentationTests" runstate="Runnable" seed="1287809854" result="Passed" start-time="2026-10-23 15:35:34Z" end-time="2026-10-23 15:35:34Z" duration="0.744177" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1003" name="LobbyPortraitPlaysIdleAndRefreshDoesNotResetIt" fullname="LastBell.Tests.CombatPresentationTests.LobbyPortraitPlaysIdleAndRefreshDoesNotResetIt" methodname="LobbyPortraitPlaysIdleAndRefreshDoesNotResetIt" classname="LastBell.Tests.CombatPresentationTests" runstate="Runnable" seed="555018698" result="Passed" start-time="2026-10-23 15:35:34Z" end-time="2026-10-23 15:35:35Z" duration="0.639761" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1018" name="MinibossPaysOnlyGoldAndContinuesWithoutRewardOrStoryPanel" fullname="LastBell.Tests.CombatPresentationTests.MinibossPaysOnlyGoldAndContinuesWithoutRewardOrStoryPanel" methodname="MinibossPaysOnlyGoldAndContinuesWithoutRewardOrStoryPanel" classname="LastBell.Tests.CombatPresentationTests" runstate="Runnable" seed="1469596884" result="Passed" start-time="2026-10-23 15:35:35Z" end-time="2026-10-23 15:35:35Z" duration="0.036878" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1017" name="PauseFreezesTransitionActorAndPopupUntilResume" fullname="LastBell.Tests.CombatPresentationTests.PauseFreezesTransitionActorAndPopupUntilResume" methodname="PauseFreezesTransitionActorAndPopupUntilResume" classname="LastBell.Tests.CombatPresentationTests" runstate="Runnable" seed="191349336" result="Passed" start-time="2026-10-23 15:35:35Z" end-time="2026-10-23 15:35:35Z" duration="0.193457" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1009" name="PerfectWaveUsesViewportAndCounterSnapsOnlyOnAcceptedAttack" fullname="LastBell.Tests.CombatPresentationTests.PerfectWaveUsesViewportAndCounterSnapsOnlyOnAcceptedAttack" methodname="PerfectWaveUsesViewportAndCounterSnapsOnlyOnAcceptedAttack" classname="LastBell.Tests.CombatPresentationTests" runstate="Runnable" seed="824802547" result="Passed" start-time="2026-10-23 15:35:35Z" end-time="2026-10-23 15:35:35Z" duration="0.237889" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1023" name="ReducedMotionKeepsPopupStationaryWithoutWorldShake" fullname="LastBell.Tests.CombatPresentationTests.ReducedMotionKeepsPopupStationaryWithoutWorldShake" methodname="ReducedMotionKeepsPopupStationaryWithoutWorldShake" classname="LastBell.Tests.CombatPresentationTests" runstate="Runnable" seed="1726878542" result="Passed" start-time="2026-10-23 15:35:35Z" end-time="2026-10-23 15:35:36Z" duration="0.749957" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1021" name="ReviewedEnemyKeepsItsAuthoredHoldsAndContactsOnTheCombatBeat" fullname="LastBell.Tests.CombatPresentationTests.ReviewedEnemyKeepsItsAuthoredHoldsAndContactsOnTheCombatBeat" methodname="ReviewedEnemyKeepsItsAuthoredHoldsAndContactsOnTheCombatBeat" classname="LastBell.Tests.CombatPresentationTests" runstate="Runnable" seed="1243385998" result="Passed" start-time="2026-10-23 15:35:36Z" end-time="2026-10-23 15:35:36Z" duration="0.043862" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1007" name="SelectedPreviewPosesMatchBack08AndSlashSequence" fullname="LastBell.Tests.CombatPresentationTests.SelectedPreviewPosesMatchBack08AndSlashSequence" methodname="SelectedPreviewPosesMatchBack08AndSlashSequence" classname="LastBell.Tests.CombatPresentationTests" runstate="Runnable" seed="1341581738" result="Passed" start-time="2026-10-23 15:35:36Z" end-time="2026-10-23 15:35:36Z" duration="0.045245" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1006" name="TimingCirclesUseFullViewportAndPauseWithTheSameClock" fullname="LastBell.Tests.CombatPresentationTests.TimingCirclesUseFullViewportAndPauseWithTheSameClock" methodname="TimingCirclesUseFullViewportAndPauseWithTheSameClock" classname="LastBell.Tests.CombatPresentationTests" runstate="Runnable" seed="2142682255" result="Passed" start-time="2026-10-23 15:35:36Z" end-time="2026-10-23 15:35:36Z" duration="0.138058" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1012" name="VisibleImpactFrameAcceptsPointerDownBeforeResolution" fullname="LastBell.Tests.CombatPresentationTests.VisibleImpactFrameAcceptsPointerDownBeforeResolution" methodname="VisibleImpactFrameAcceptsPointerDownBeforeResolution" classname="LastBell.Tests.CombatPresentationTests" runstate="Runnable" seed="1991142713" result="Passed" start-time="2026-10-23 15:35:36Z" end-time="2026-10-23 15:35:37Z" duration="0.943090" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1013" name="VisibleImpactWithoutInputStillDealsDamage" fullname="LastBell.Tests.CombatPresentationTests.VisibleImpactWithoutInputStillDealsDamage" methodname="VisibleImpactWithoutInputStillDealsDamage" classname="LastBell.Tests.CombatPresentationTests" runstate="Runnable" seed="151602438" result="Passed" start-time="2026-10-23 15:35:37Z" end-time="2026-10-23 15:35:38Z" duration="0.934309" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[<b><color=#2EA3FF>MCP-FOR-UNITY</color></b>: [TestRunnerNoThrottle] Restored Interaction Mode after test run.
+Saving results to: C:/Github/Test2/Logs/Feedback-v86/playmode.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

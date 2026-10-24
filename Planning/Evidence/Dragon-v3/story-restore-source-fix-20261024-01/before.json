@@ -1,0 +1,34 @@
+{
+  "files": [
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.cs",
+      "sha256": "0de955c3bc480dc7abfc8157cd9a20857c0703d51d13de3f7f4f2b17140d2a3f"
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V3.cs",
+      "sha256": "46854150acef28bf659a3e5877b069ebb3b4f866097e460c493cbf3a15165a8e"
+    },
+    {
+      "path": "Tools/QA/Dragon-v3/run-campaign.ps1",
+      "sha256": "6ac1b67763d48bf563f98a3fc44ffc8220bae0384003d4e083bc14f6283b3a67"
+    }
+  ],
+  "integration": {
+    "Client/Assets/Game/Scenes/Mvp.unity": "5b625b81f71629a45fbfef98e0bc0ec854c2696b6af6ea79ef3e12cb78afbbcb",
+    "Client/Assets/Game/Prefabs/GameView.prefab": "8d9ac12dfbf6f45b841aeaf6ed9dba235bdabd12bb2b928347812bb8944c1d72",
+    "Client/Assets/Game/Prefabs/PresentationWorld.prefab": "edde02292bd70dbcb0448fdb90b3ba68ee078088655224626084ef13c70ea3ff",
+    "Client/Assets/Game/Art/Presentation/manifest.json": "4645c690bc5035554705ef0f8ac22da33881688b390b654d90af6f9662d9e2ee",
+    "Client/Assets/Game/Art/Presentation/PresentationArtCatalog.asset": "017074ef1467c7067d325b667fbea2a747f370ad128c51c0246c677d042194b8",
+    "Client/Assets/Game/Data/Generated/mvp-catalog.json": "f4134073e3adc6ad187f183b34f0e853e218bf873470dc7eb6818bbb4ddefe8f",
+    "Client/Assets/Game/Runtime/Bootstrap/GameBootstrap.cs": "2723bac11f7aeed2f3e78421217720ebbee491cea438b0fe3c5eec17fc08237a",
+    "Client/Assets/Game/Runtime/Bootstrap/SaveDirectorySelector.cs": "ffd27b9f260604f7b2afdbeba92ca5b1280b4f62e8565d2803ddfde6ded04295",
+    "Client/Assets/Game/Runtime/Presentation/ParallaxWorld.cs": "2d5f1dce9336e1d604689aaafbfdf231a05e5f1e6ca97420d297db5b32875dd2",
+    "Client/Assets/Game/Runtime/Presentation/ActorView.cs": "17f8272841a9e7d08450ddb2a6edf66e4bd491d00db3eca57352c6fbc8508b85",
+    "Client/Assets/Game/Runtime/Presentation/BattlePresentation.cs": "3a983ef5add418f683e431a967e6a2f5ee5833fea946387103481416ac994028",
+    "Client/Assets/Game/Runtime/Presentation/EnemyAttackEffects.cs": "ff673abeb26398c30e2578aa41f9e84dae67c7b07c5615dbc13a9e923437d9cd",
+    "Client/Assets/Game/Runtime/Presentation/EnemyEffectBurst.cs": "c7f2184b9785a6f0545f916e9265f4b8f5165eaff3db06d21066597b8d75470b",
+    "Client/Assets/Game/Editor/DragonWorldMigration.cs": "cfae891aa38d5b6224a9281c7b4629887687593bff2b99e26cdc2109734e5975",
+    "Client/Assets/Game/Editor/DragonThemeMigration.cs": "fbaa5aa8f5eb27a7e34aed6d22e6c3d15d37d78ecd4c75c2a0d0b0cc1a2af277"
+  },
+  "recordedAtUtc": "2026-10-24T11:02:20.1454363Z"
+}

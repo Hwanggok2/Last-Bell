@@ -1,0 +1,30 @@
+{
+    "scope": "v0.9.3 changed-scope observation",
+    "visualReview": "NOT_RUN",
+    "audioListening": "NOT_RUN",
+    "osInput": "DEFERRED",
+    "userDefaultProfile": "NOT_ACCESSED",
+    "coreTests": "Client-owned; reuse handed-over results, not rerun by this probe",
+    "audioLimits": "Session trigger events and audio bindings are observed. Source-filter PCM is optional engine output, not device loopback. Exact PlayOneShot voice count is not exposed by the current API; hashes/events do not certify listening or no overlap.",
+    "events": [],
+    "audio": [],
+    "restoredDurations": [
+        {
+            "label": "native cooldown",
+            "expectedMs": 19800.0,
+            "actualMs": 19800.0,
+            "deltaMs": 0.0,
+            "toleranceMs": 0.000001,
+            "passed": true
+        },
+        {
+            "label": "native shield",
+            "expectedMs": 3000.0,
+            "actualMs": 3000.0,
+            "deltaMs": 0.0,
+            "toleranceMs": 0.000001,
+            "passed": true
+        }
+    ],
+    "dashes": []
+}

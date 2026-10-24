@@ -11,13 +11,13 @@ namespace LastBell.Tests
         [SetUp] public void Setup(){catalog=UnityEngine.JsonUtility.FromJson<GameCatalog>(File.ReadAllText(Path.Combine(UnityEngine.Application.dataPath,"Game/Data/Generated/mvp-catalog.json")));}
         GameSession Playing(int stage=1,int stagger=0,bool immune=false)
         {
-            var save=new GameSession(catalog).ExportSave();save.tutorialStep=2;save.phase=SessionPhase.Lobby;save.run=null;
+            var save=new GameSession(catalog).ExportSave();save.tutorialStep=2;save.prologueSeen=true;save.comboHintSeen=true;save.comboPracticeCompleted=true;save.phase=SessionPhase.Lobby;save.run=null;
             var s=new GameSession(catalog,save);s.StartRun();save=s.ExportSave();save.phase=SessionPhase.Combat;save.run.transition=null;
-            save.run.stage=stage;save.run.stagger=stagger;save.run.immunityUntilMs=immune?100000:-1;
+            save.run.stage=stage;save.run.randomSequence=catalog.GetStage(stage).patternSteps.Select(x=>x.danger).ToArray();save.run.sequenceCursor=0;save.run.stagger=stagger;save.run.immunityUntilMs=immune?100000:-1;
             save.run.enemyHpMilli=save.run.enemyMaxHpMilli=catalog.GetStage(stage).maxHp*1000;
             s=new GameSession(catalog,save);s.SetPaused(false);return s;
         }
-        static void Perfect(GameSession s){s.Tick(s.EnemyIntent.SecondsToHit-.05f);Assert.That(s.EnemyThreats[0].RequiresParry?s.Attack():s.Dodge(s.EnemyIntent.Direction),Is.True);s.Tick(.05f);}
+        static void Perfect(GameSession s){s.Tick(s.EnemyIntent.SecondsToHit-.05f);Assert.That(s.Dodge(s.EnemyIntent.Direction),Is.True);s.Tick(.050001f);}
         [TestCase("low_sweep",DodgeDirection.Up)] [TestCase("thrust",DodgeDirection.Back)]
         [TestCase("outer_arc",DodgeDirection.Forward)]
         public void SharedFootprintHasExactlyOneSafeDodge(string pattern,DodgeDirection safe)
@@ -25,7 +25,7 @@ namespace LastBell.Tests
             var box=CombatGeometry.Threat(pattern);Assert.That(box.Overlaps(CombatGeometry.Body(safe,false)),Is.True);
             foreach(DodgeDirection d in Enum.GetValues(typeof(DodgeDirection)))Assert.That(box.Overlaps(CombatGeometry.Body(d,true)),Is.EqualTo(d!=safe),pattern+" / "+d);
         }
-        [TestCase(1,450,540)] [TestCase(11,400,480)]
+        [TestCase(1,780,900)] [TestCase(2,780,900)]
         public void SingleHitsOnTheFourthBeatAfterThreeBlinks(int stage,int release,int impact)
         {
             var s=Playing(stage);var t=s.EnemyThreats.Single();Assert.That(t.CueAtMs,Is.Zero);Assert.That(t.CueEndMs,Is.EqualTo(impact));
@@ -35,7 +35,7 @@ namespace LastBell.Tests
             Assert.That(s.PlayerHp,Is.EqualTo(100));s.Tick(.001f);Assert.That(s.PlayerHp,Is.LessThan(100));
             Assert.That(events.Last(e=>e.Kind==SessionEventKind.PlayerDamaged).TimeMs,Is.EqualTo(impact));
         }
-        [TestCase(5,540,1080,1440)] [TestCase(9,480,960,1280)]
+        [TestCase(5,900,1800,2550)] [TestCase(10,900,1800,2550)]
         public void FullQueuePrecedesBothHitsAndNeverCuesAgainBetweenHits(int stage,int cue,int hit1,int hit2)
         {
             var s=Playing(stage,0,true);var ts=s.EnemyThreats;
@@ -58,35 +58,35 @@ namespace LastBell.Tests
         }
         [Test] public void CounterCannotRefundCooldownAndRejectedInputRetainsOpportunity()
         {
-            var s=Playing();s.Tick(.29f);s.Attack();s.Tick(.2f);s.Dodge(DodgeDirection.Up);s.Tick(.05f);
+            var s=Playing();s.Tick(.65f);s.Attack();s.Tick(.2f);s.Dodge(DodgeDirection.Up);s.Tick(.05f);
             Assert.That(s.CanPerfectCounter,Is.True);Assert.That(s.Attack(),Is.False);Assert.That(s.CanPerfectCounter,Is.True);
             s.Tick(.25f);Assert.That(s.Attack(),Is.True);Assert.That(s.CanPerfectCounter,Is.False);
         }
         [Test] public void CounterExpiresClearsOnNewDodgeAndNeverCancelsTheNextThreat()
         {
             var s=Playing(5);Perfect(s);double next=s.EnemyThreats[0].ImpactAtMs;s.Attack();
-            Assert.That(s.EnemyThreats[0].ImpactAtMs,Is.EqualTo(next));s.Tick(.36f);Assert.That(s.PlayerHp,Is.EqualTo(100-catalog.GetStage(5).damage));
-            s=Playing();Perfect(s);s.Tick(.501f);Assert.That(s.CanPerfectCounter,Is.False);
-            s=Playing();Perfect(s);s.Tick(.21f);s.Dodge(DodgeDirection.Back);Assert.That(s.CanPerfectCounter,Is.False);
+            Assert.That(s.EnemyThreats[0].ImpactAtMs,Is.EqualTo(next));s.Tick(.75f);Assert.That(s.PlayerHp,Is.EqualTo(100-catalog.GetStage(5).damage));
+            s=Playing();Perfect(s);s.Tick(1.201f);Assert.That(s.CanPerfectCounter,Is.False);
+            s=Playing();Perfect(s);s.Tick(.31f);s.Dodge(DodgeDirection.Back);Assert.That(s.CanPerfectCounter,Is.False);
         }
         [Test] public void StunCancelsRestOfComboAndRestoredFollowupReplaysFullWarning()
         {
-            var s=Playing(9,80);Perfect(s);Assert.That(s.IsEnemyStunned,Is.True);Assert.That(s.EnemyThreats,Is.Empty);
+            var s=Playing(5,80);Perfect(s);Assert.That(s.IsStunReady,Is.True);Assert.That(s.EnemyThreats.Length,Is.EqualTo(1));s.Attack();s.Tick(.2f);Assert.That(s.IsEnemyStunned,Is.True);Assert.That(s.EnemyThreats,Is.Empty);
             float hp=s.PlayerHp;s.Tick(.4f);Assert.That(s.PlayerHp,Is.EqualTo(hp));
-            s=Playing(9);Perfect(s);var saved=s.ExportSave();s=new GameSession(catalog,saved);
-            Assert.That(s.IsPaused,Is.True);Assert.That(s.CanPerfectCounter,Is.False);Assert.That(s.EnemyThreats.Length,Is.EqualTo(2));
-            Assert.That(s.EnemyThreats[0].PatternId,Is.EqualTo("thrust"));Assert.That(s.EnemyIntent.SecondsToHit,Is.EqualTo(.96f).Within(.001));
+            s=Playing(5);Perfect(s);var saved=s.ExportSave();s=new GameSession(catalog,saved);
+            Assert.That(s.IsPaused,Is.True);Assert.That(s.CanPerfectCounter,Is.False);Assert.That(s.EnemyThreats.Length,Is.EqualTo(1));
+            Assert.That(s.EnemyThreats[0].PatternId,Is.EqualTo("high_sweep"));Assert.That(s.EnemyIntent.SecondsToHit,Is.EqualTo(.9f).Within(.001));
         }
         [Test] public void PausedCueAndParticlesHaveNoExtraCoreEventsOnResume()
         {
-            var s=Playing(9);var events=new List<SessionEvent>();s.EventRaised+=events.Add;s.Tick(.48f);int count=events.Count;
-            s.SetPaused(true);s.Tick(10);Assert.That(s.ClockMs,Is.EqualTo(480).Within(.001));Assert.That(events.Count,Is.EqualTo(count));
+            var s=Playing(5);var events=new List<SessionEvent>();s.EventRaised+=events.Add;s.Tick(.9f);int count=events.Count;
+            s.SetPaused(true);s.Tick(10);Assert.That(s.ClockMs,Is.EqualTo(900).Within(.001));Assert.That(events.Count,Is.EqualTo(count));
             s.SetPaused(false);s.Tick(0);Assert.That(events.Count,Is.EqualTo(count));
-            s.Tick(.4f);Assert.That(events.Last().Kind,Is.EqualTo(SessionEventKind.EnemyReleased));Assert.That(events.Last().TimeMs,Is.EqualTo(880).Within(.001));
+            s.Tick(.78f);Assert.That(events.Last().Kind,Is.EqualTo(SessionEventKind.EnemyReleased));Assert.That(events.Last().TimeMs,Is.EqualTo(1680).Within(.001));
         }
         [Test] public void LeavingRearFootprintByAnAttackNeverCausesAnInvisibleDirectionFailure()
         {
-            var s=Playing(9);Perfect(s);s.Tick(.06f);s.Attack();s.Tick(.26f);
+            var s=Playing(6);Perfect(s);s.Tick(.22f);s.Attack();s.Tick(.26f);
             Assert.That(CombatGeometry.Threat("outer_arc").Overlaps(s.PlayerCombatBody),Is.False);
             Assert.That(s.PlayerHp,Is.EqualTo(100));Assert.That(s.Stagger,Is.EqualTo(40));
         }

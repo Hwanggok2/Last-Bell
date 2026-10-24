@@ -1,0 +1,26 @@
+{
+  "candidate": "dragon-v4-candidate-03",
+  "runtimeSha256": "BA7F4144C9936FE5306231BC298BBB3FEE13FBF91446C8FBC356C94AD537A234",
+  "automatedResult": "PASS",
+  "passChecks": 1037,
+  "failChecks": 0,
+  "consoleErrors": 0,
+  "continuousFrames": 699,
+  "missingRenderedFrames": 0,
+  "hashMismatches": 0,
+  "duplicateFiles": 0,
+  "missingStateCaptures": 0,
+  "issuesClosed": [
+    "DQA4-001",
+    "DQA4-002",
+    "DQA4-003"
+  ],
+  "visualReview": "PASS_WITH_RECORDED_SCOPE",
+  "audioListening": "NOT_RUN",
+  "voiceMultiplicity": "NOT_CERTIFIED",
+  "osInput": "DEFERRED",
+  "mobile": "DEFERRED",
+  "userDefaultProfile": "NOT_ACCESSED",
+  "scopedPlayerPrefsRestored": true,
+  "syntheticLegacyUnchanged": true
+}

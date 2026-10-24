@@ -1,0 +1,107 @@
+[
+  {
+    "path": "Client/Assets/Game/Scenes/Mvp.unity",
+    "expected": "5b625b81f71629a45fbfef98e0bc0ec854c2696b6af6ea79ef3e12cb78afbbcb",
+    "actual": "5b625b81f71629a45fbfef98e0bc0ec854c2696b6af6ea79ef3e12cb78afbbcb",
+    "matches": true,
+    "changedSince03": false
+  },
+  {
+    "path": "Client/Assets/Game/Prefabs/GameView.prefab",
+    "expected": "8d9ac12dfbf6f45b841aeaf6ed9dba235bdabd12bb2b928347812bb8944c1d72",
+    "actual": "8d9ac12dfbf6f45b841aeaf6ed9dba235bdabd12bb2b928347812bb8944c1d72",
+    "matches": true,
+    "changedSince03": false
+  },
+  {
+    "path": "Client/Assets/Game/Prefabs/PresentationWorld.prefab",
+    "expected": "edde02292bd70dbcb0448fdb90b3ba68ee078088655224626084ef13c70ea3ff",
+    "actual": "edde02292bd70dbcb0448fdb90b3ba68ee078088655224626084ef13c70ea3ff",
+    "matches": true,
+    "changedSince03": false
+  },
+  {
+    "path": "Client/Assets/Game/Art/Presentation/manifest.json",
+    "expected": "4645c690bc5035554705ef0f8ac22da33881688b390b654d90af6f9662d9e2ee",
+    "actual": "4645c690bc5035554705ef0f8ac22da33881688b390b654d90af6f9662d9e2ee",
+    "matches": true,
+    "changedSince03": false
+  },
+  {
+    "path": "Client/Assets/Game/Art/Presentation/PresentationArtCatalog.asset",
+    "expected": "017074ef1467c7067d325b667fbea2a747f370ad128c51c0246c677d042194b8",
+    "actual": "017074ef1467c7067d325b667fbea2a747f370ad128c51c0246c677d042194b8",
+    "matches": true,
+    "changedSince03": false
+  },
+  {
+    "path": "Client/Assets/Game/Data/Generated/mvp-catalog.json",
+    "expected": "f4134073e3adc6ad187f183b34f0e853e218bf873470dc7eb6818bbb4ddefe8f",
+    "actual": "f4134073e3adc6ad187f183b34f0e853e218bf873470dc7eb6818bbb4ddefe8f",
+    "matches": true,
+    "changedSince03": false
+  },
+  {
+    "path": "Client/Assets/Game/Runtime/Bootstrap/GameBootstrap.cs",
+    "expected": "2723bac11f7aeed2f3e78421217720ebbee491cea438b0fe3c5eec17fc08237a",
+    "actual": "2723bac11f7aeed2f3e78421217720ebbee491cea438b0fe3c5eec17fc08237a",
+    "matches": true,
+    "changedSince03": false
+  },
+  {
+    "path": "Client/Assets/Game/Runtime/Bootstrap/SaveDirectorySelector.cs",
+    "expected": "ffd27b9f260604f7b2afdbeba92ca5b1280b4f62e8565d2803ddfde6ded04295",
+    "actual": "ffd27b9f260604f7b2afdbeba92ca5b1280b4f62e8565d2803ddfde6ded04295",
+    "matches": true,
+    "changedSince03": false
+  },
+  {
+    "path": "Client/Assets/Game/Runtime/Presentation/ParallaxWorld.cs",
+    "expected": "2d5f1dce9336e1d604689aaafbfdf231a05e5f1e6ca97420d297db5b32875dd2",
+    "actual": "2d5f1dce9336e1d604689aaafbfdf231a05e5f1e6ca97420d297db5b32875dd2",
+    "matches": true,
+    "changedSince03": false
+  },
+  {
+    "path": "Client/Assets/Game/Runtime/Presentation/ActorView.cs",
+    "expected": "17f8272841a9e7d08450ddb2a6edf66e4bd491d00db3eca57352c6fbc8508b85",
+    "actual": "17f8272841a9e7d08450ddb2a6edf66e4bd491d00db3eca57352c6fbc8508b85",
+    "matches": true,
+    "changedSince03": false
+  },
+  {
+    "path": "Client/Assets/Game/Runtime/Presentation/BattlePresentation.cs",
+    "expected": "e7ad0f8a2e6ad2074c1096c683b05778a5f1117bc9e9c90627b800de0cece9ec",
+    "actual": "e7ad0f8a2e6ad2074c1096c683b05778a5f1117bc9e9c90627b800de0cece9ec",
+    "matches": true,
+    "changedSince03": true
+  },
+  {
+    "path": "Client/Assets/Game/Runtime/Presentation/EnemyAttackEffects.cs",
+    "expected": "ff673abeb26398c30e2578aa41f9e84dae67c7b07c5615dbc13a9e923437d9cd",
+    "actual": "ff673abeb26398c30e2578aa41f9e84dae67c7b07c5615dbc13a9e923437d9cd",
+    "matches": true,
+    "changedSince03": false
+  },
+  {
+    "path": "Client/Assets/Game/Runtime/Presentation/EnemyEffectBurst.cs",
+    "expected": "c7f2184b9785a6f0545f916e9265f4b8f5165eaff3db06d21066597b8d75470b",
+    "actual": "c7f2184b9785a6f0545f916e9265f4b8f5165eaff3db06d21066597b8d75470b",
+    "matches": true,
+    "changedSince03": false
+  },
+  {
+    "path": "Client/Assets/Game/Editor/DragonWorldMigration.cs",
+    "expected": "cfae891aa38d5b6224a9281c7b4629887687593bff2b99e26cdc2109734e5975",
+    "actual": "cfae891aa38d5b6224a9281c7b4629887687593bff2b99e26cdc2109734e5975",
+    "matches": true,
+    "changedSince03": false
+  },
+  {
+    "path": "Client/Assets/Game/Editor/DragonThemeMigration.cs",
+    "expected": "fbaa5aa8f5eb27a7e34aed6d22e6c3d15d37d78ecd4c75c2a0d0b0cc1a2af277",
+    "actual": "fbaa5aa8f5eb27a7e34aed6d22e6c3d15d37d78ecd4c75c2a0d0b0cc1a2af277",
+    "matches": true,
+    "changedSince03": false
+  }
+]

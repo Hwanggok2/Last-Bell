@@ -1,0 +1,929 @@
+{
+  "candidate": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-04",
+  "integrityPassed": true,
+  "errors": [],
+  "cases": [
+    {
+      "case": "1280x720\\fresh",
+      "probePassed": true,
+      "completed": true,
+      "error": "",
+      "checksPassed": 2470,
+      "checksFailed": [],
+      "consoleErrors": [],
+      "frames": 0,
+      "stateSamples": 38,
+      "staticCaptures": 38,
+      "inputEdges": 93,
+      "fixtures": [
+        "explicit-growth-preparation-continuous-stage1-to20-no-stage-jumps",
+        "explicit-native-checkpoint-pending"
+      ],
+      "pending": [
+        "manual PNG readability/overlap and boss lightning review",
+        "full numeric/corruption boundaries use Client evidence",
+        "all44/previous60 acceptance",
+        "physical input/mobile/audio/performance/long-duration leaks"
+      ],
+      "routeStages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "fileRoundtrips": [
+        "continuous-route-complete",
+        "native-checkpoint-pending"
+      ],
+      "continuationOf": "dragon-v6-candidate-03: completed visual/stun/concurrent/kill observations reused; route and native remain",
+      "popupChecks": [],
+      "stunActiveFrame": "",
+      "stunEndedFrame": "",
+      "dtoComparisons": [
+        {
+          "file": "fixtures\\continuous-route-complete\\companion-comparison.json",
+          "label": "continuous-route-complete-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\continuous-route-complete\\payload-comparison.json",
+          "label": "continuous-route-complete",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\native-checkpoint-pending\\companion-comparison.json",
+          "label": "native-checkpoint-pending-restored-companions",
+          "stringEqual": false,
+          "passed": true,
+          "differences": [
+            {
+              "path": "$.items[0].remainingMs",
+              "before": "149.99999925494194",
+              "after": "149.99999925494197",
+              "ulps": 1,
+              "accepted": true
+            }
+          ]
+        },
+        {
+          "file": "fixtures\\native-checkpoint-pending\\payload-comparison.json",
+          "label": "native-checkpoint-pending",
+          "stringEqual": false,
+          "passed": true,
+          "differences": [
+            {
+              "path": "$.run.companions[0].remainingMs",
+              "before": "149.99999925494194",
+              "after": "149.99999925494197",
+              "ulps": 1,
+              "accepted": true
+            },
+            {
+              "path": "$.run.skillContactRemainingMs",
+              "before": "149.99999925494194",
+              "after": "149.99999925494197",
+              "ulps": 1,
+              "accepted": true
+            },
+            {
+              "path": "$.run.skillCooldownRemainingMs",
+              "before": "19949.999999254942",
+              "after": "19949.999999254946",
+              "ulps": 1,
+              "accepted": true
+            }
+          ]
+        }
+      ],
+      "maximumActualParticles": 18
+    },
+    {
+      "case": "1280x720\\resume",
+      "probePassed": true,
+      "completed": true,
+      "error": "",
+      "checksPassed": 260,
+      "checksFailed": [],
+      "consoleErrors": [],
+      "frames": 33,
+      "stateSamples": 35,
+      "staticCaptures": 2,
+      "inputEdges": 1,
+      "fixtures": [],
+      "pending": [
+        "manual PNG readability/overlap and boss lightning review",
+        "full numeric/corruption boundaries use Client evidence",
+        "all44/previous60 acceptance",
+        "physical input/mobile/audio/performance/long-duration leaks"
+      ],
+      "routeStages": [],
+      "fileRoundtrips": [
+        "native-resume-final"
+      ],
+      "continuationOf": "",
+      "popupChecks": [],
+      "stunActiveFrame": "",
+      "stunEndedFrame": "",
+      "dtoComparisons": [
+        {
+          "file": "fixtures\\native-resume-final\\companion-comparison.json",
+          "label": "native-resume-final-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\native-resume-final\\payload-comparison.json",
+          "label": "native-resume-final",
+          "stringEqual": false,
+          "passed": true,
+          "differences": [
+            {
+              "path": "$.run.skillCooldownRemainingMs",
+              "before": "19344.389600679282",
+              "after": "19344.389600679278",
+              "ulps": 1,
+              "accepted": true
+            },
+            {
+              "path": "$.run.enemyHitAtMs",
+              "before": "950.00000074505806",
+              "after": "950.000000745058",
+              "ulps": 1,
+              "accepted": true
+            }
+          ]
+        },
+        {
+          "file": "native-companion-comparison.json",
+          "label": "native-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        }
+      ],
+      "maximumActualParticles": 88
+    },
+    {
+      "case": "640x360\\fresh",
+      "probePassed": true,
+      "completed": true,
+      "error": "",
+      "checksPassed": 7280,
+      "checksFailed": [],
+      "consoleErrors": [],
+      "frames": 1092,
+      "stateSamples": 1119,
+      "staticCaptures": 27,
+      "inputEdges": 74,
+      "fixtures": [
+        "future-rule-all-five-inn",
+        "explicit-level30-cap-inn-fixture",
+        "explicit-hp-bar-100",
+        "explicit-hp-bar-50",
+        "explicit-hp-bar-1",
+        "v6-skill-on",
+        "explicit-last100ms-CD-on",
+        "v6-skill-reverse-on",
+        "v6-skill-dam",
+        "explicit-last100ms-CD-dam",
+        "v6-skill-reverse-dam",
+        "v6-skill-rin",
+        "explicit-last100ms-CD-rin",
+        "v6-skill-reverse-rin",
+        "v6-companion-tori-basic-seed-fixture",
+        "v6-companion-tori-proc-seed-fixture",
+        "v6-companion-barun-basic-seed-fixture",
+        "v6-companion-barun-proc-seed-fixture",
+        "v6-companion-doto-basic-seed-fixture",
+        "v6-companion-doto-proc-seed-fixture",
+        "v6-companion-rina-basic-seed-fixture",
+        "v6-companion-rina-proc-seed-fixture",
+        "v6-companion-momo-basic-seed-fixture",
+        "v6-companion-momo-proc-seed-fixture",
+        "explicit-large-enemy-lightning-5",
+        "v6-boss-lightning-5",
+        "explicit-large-enemy-lightning-10",
+        "v6-boss-lightning-10",
+        "explicit-large-enemy-lightning-15",
+        "v6-boss-lightning-15",
+        "explicit-large-enemy-lightning-20",
+        "v6-boss-lightning-20",
+        "explicit-near-stun-threshold",
+        "explicit-future-three-slot-simultaneous-proc",
+        "explicit-rebind-clears-past-effects",
+        "explicit-one-HP-double-contact-on",
+        "explicit-one-HP-double-contact-dam",
+        "explicit-one-HP-double-contact-rin",
+        "explicit-native-checkpoint-post-contact"
+      ],
+      "pending": [
+        "manual PNG readability/overlap and boss lightning review",
+        "full numeric/corruption boundaries use Client evidence",
+        "all44/previous60 acceptance",
+        "physical input/mobile/audio/performance/long-duration leaks"
+      ],
+      "routeStages": [],
+      "fileRoundtrips": [
+        "inn-recovery",
+        "inn-tori",
+        "inn-barun",
+        "inn-doto",
+        "inn-rina",
+        "inn-momo",
+        "inn-level30-cap",
+        "player-on-idle",
+        "player-on-pending",
+        "player-on-after",
+        "player-dam-idle",
+        "player-dam-pending",
+        "player-dam-after",
+        "player-rin-idle",
+        "player-rin-pending",
+        "player-rin-after",
+        "v6-companion-tori-basic-reserved",
+        "v6-companion-tori-basic-after",
+        "v6-companion-tori-proc-reserved",
+        "v6-companion-tori-proc-after",
+        "v6-companion-barun-basic-reserved",
+        "v6-companion-barun-basic-after",
+        "v6-companion-barun-proc-reserved",
+        "v6-companion-barun-proc-after",
+        "v6-companion-doto-basic-reserved",
+        "v6-companion-doto-basic-after",
+        "v6-companion-doto-proc-reserved",
+        "v6-companion-doto-proc-after",
+        "v6-companion-rina-basic-reserved",
+        "v6-companion-rina-basic-after",
+        "v6-companion-rina-proc-reserved",
+        "v6-companion-rina-proc-after",
+        "v6-companion-momo-basic-reserved",
+        "v6-companion-momo-basic-after",
+        "v6-companion-momo-proc-reserved",
+        "v6-companion-momo-proc-after",
+        "native-checkpoint-post"
+      ],
+      "continuationOf": "",
+      "popupChecks": [
+        {
+          "file": "v3-frame-v6-three-companion-plus-player-contact-000880.png",
+          "fixture": "explicit-future-three-slot-simultaneous-proc",
+          "companionTotalMilli": 15760,
+          "popupCount": 3,
+          "popups": [
+            {
+              "name": "Damage0",
+              "digits": "13",
+              "critical": false,
+              "companion": false,
+              "overlapsStaggerRect": false,
+              "lane": 1,
+              "damageMilli": 13000,
+              "bounds": {
+                "serializedVersion": "2",
+                "x": 372.0,
+                "y": 157.0,
+                "width": 132.0,
+                "height": 32.0
+              },
+              "alpha": 1.0,
+              "remainingLife": 0.8500000238418579,
+              "configuredColor": {
+                "r": 1.0,
+                "g": 0.7699999809265137,
+                "b": 0.3199999928474426,
+                "a": 1.0
+              },
+              "expectedGlyphTint": {
+                "r": 1.0,
+                "g": 0.9764705896377563,
+                "b": 0.9137254953384399,
+                "a": 1.0
+              }
+            },
+            {
+              "name": "Damage1",
+              "digits": "10",
+              "critical": false,
+              "companion": false,
+              "overlapsStaggerRect": false,
+              "lane": 0,
+              "damageMilli": 10000,
+              "bounds": {
+                "serializedVersion": "2",
+                "x": 384.0,
+                "y": 126.0,
+                "width": 132.0,
+                "height": 32.0
+              },
+              "alpha": 1.0,
+              "remainingLife": 0.8500000238418579,
+              "configuredColor": {
+                "r": 1.0,
+                "g": 0.7699999809265137,
+                "b": 0.3199999928474426,
+                "a": 1.0
+              },
+              "expectedGlyphTint": {
+                "r": 1.0,
+                "g": 0.9764705896377563,
+                "b": 0.9137254953384399,
+                "a": 1.0
+              }
+            },
+            {
+              "name": "Damage2",
+              "digits": "16",
+              "critical": false,
+              "companion": true,
+              "overlapsStaggerRect": false,
+              "lane": 2,
+              "damageMilli": 15760,
+              "bounds": {
+                "serializedVersion": "2",
+                "x": 396.0,
+                "y": 188.0,
+                "width": 132.0,
+                "height": 32.0
+              },
+              "alpha": 1.0,
+              "remainingLife": 0.8500000238418579,
+              "configuredColor": {
+                "r": 1.0,
+                "g": 0.7699999809265137,
+                "b": 0.3199999928474426,
+                "a": 1.0
+              },
+              "expectedGlyphTint": {
+                "r": 0.4470588266849518,
+                "g": 0.8705882430076599,
+                "b": 1.0,
+                "a": 1.0
+              }
+            }
+          ]
+        }
+      ],
+      "stunActiveFrame": "v3-frame-v6-actual-stun-000827.png",
+      "stunEndedFrame": "v3-frame-v6-stun-ended-000869.png",
+      "dtoComparisons": [
+        {
+          "file": "fixtures\\inn-barun\\payload-comparison.json",
+          "label": "inn-barun",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\inn-doto\\payload-comparison.json",
+          "label": "inn-doto",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\inn-level30-cap\\payload-comparison.json",
+          "label": "inn-level30-cap",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\inn-momo\\payload-comparison.json",
+          "label": "inn-momo",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\inn-recovery\\payload-comparison.json",
+          "label": "inn-recovery",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\inn-rina\\payload-comparison.json",
+          "label": "inn-rina",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\inn-tori\\payload-comparison.json",
+          "label": "inn-tori",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\native-checkpoint-post\\companion-comparison.json",
+          "label": "native-checkpoint-post-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\native-checkpoint-post\\payload-comparison.json",
+          "label": "native-checkpoint-post",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\player-dam-after\\companion-comparison.json",
+          "label": "player-dam-after-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\player-dam-after\\payload-comparison.json",
+          "label": "player-dam-after",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\player-dam-idle\\companion-comparison.json",
+          "label": "player-dam-idle-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\player-dam-idle\\payload-comparison.json",
+          "label": "player-dam-idle",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\player-dam-pending\\companion-comparison.json",
+          "label": "player-dam-pending-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\player-dam-pending\\payload-comparison.json",
+          "label": "player-dam-pending",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\player-on-after\\companion-comparison.json",
+          "label": "player-on-after-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\player-on-after\\payload-comparison.json",
+          "label": "player-on-after",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\player-on-idle\\companion-comparison.json",
+          "label": "player-on-idle-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\player-on-idle\\payload-comparison.json",
+          "label": "player-on-idle",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\player-on-pending\\companion-comparison.json",
+          "label": "player-on-pending-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\player-on-pending\\payload-comparison.json",
+          "label": "player-on-pending",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\player-rin-after\\companion-comparison.json",
+          "label": "player-rin-after-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\player-rin-after\\payload-comparison.json",
+          "label": "player-rin-after",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\player-rin-idle\\companion-comparison.json",
+          "label": "player-rin-idle-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\player-rin-idle\\payload-comparison.json",
+          "label": "player-rin-idle",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\player-rin-pending\\companion-comparison.json",
+          "label": "player-rin-pending-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\player-rin-pending\\payload-comparison.json",
+          "label": "player-rin-pending",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-barun-basic-after\\companion-comparison.json",
+          "label": "v6-companion-barun-basic-after-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-barun-basic-after\\payload-comparison.json",
+          "label": "v6-companion-barun-basic-after",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-barun-basic-reserved\\companion-comparison.json",
+          "label": "v6-companion-barun-basic-reserved-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-barun-basic-reserved\\payload-comparison.json",
+          "label": "v6-companion-barun-basic-reserved",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-barun-proc-after\\companion-comparison.json",
+          "label": "v6-companion-barun-proc-after-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-barun-proc-after\\payload-comparison.json",
+          "label": "v6-companion-barun-proc-after",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-barun-proc-reserved\\companion-comparison.json",
+          "label": "v6-companion-barun-proc-reserved-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-barun-proc-reserved\\payload-comparison.json",
+          "label": "v6-companion-barun-proc-reserved",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-doto-basic-after\\companion-comparison.json",
+          "label": "v6-companion-doto-basic-after-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-doto-basic-after\\payload-comparison.json",
+          "label": "v6-companion-doto-basic-after",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-doto-basic-reserved\\companion-comparison.json",
+          "label": "v6-companion-doto-basic-reserved-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-doto-basic-reserved\\payload-comparison.json",
+          "label": "v6-companion-doto-basic-reserved",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-doto-proc-after\\companion-comparison.json",
+          "label": "v6-companion-doto-proc-after-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-doto-proc-after\\payload-comparison.json",
+          "label": "v6-companion-doto-proc-after",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-doto-proc-reserved\\companion-comparison.json",
+          "label": "v6-companion-doto-proc-reserved-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-doto-proc-reserved\\payload-comparison.json",
+          "label": "v6-companion-doto-proc-reserved",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-momo-basic-after\\companion-comparison.json",
+          "label": "v6-companion-momo-basic-after-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-momo-basic-after\\payload-comparison.json",
+          "label": "v6-companion-momo-basic-after",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-momo-basic-reserved\\companion-comparison.json",
+          "label": "v6-companion-momo-basic-reserved-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-momo-basic-reserved\\payload-comparison.json",
+          "label": "v6-companion-momo-basic-reserved",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-momo-proc-after\\companion-comparison.json",
+          "label": "v6-companion-momo-proc-after-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-momo-proc-after\\payload-comparison.json",
+          "label": "v6-companion-momo-proc-after",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-momo-proc-reserved\\companion-comparison.json",
+          "label": "v6-companion-momo-proc-reserved-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-momo-proc-reserved\\payload-comparison.json",
+          "label": "v6-companion-momo-proc-reserved",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-rina-basic-after\\companion-comparison.json",
+          "label": "v6-companion-rina-basic-after-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-rina-basic-after\\payload-comparison.json",
+          "label": "v6-companion-rina-basic-after",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-rina-basic-reserved\\companion-comparison.json",
+          "label": "v6-companion-rina-basic-reserved-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-rina-basic-reserved\\payload-comparison.json",
+          "label": "v6-companion-rina-basic-reserved",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-rina-proc-after\\companion-comparison.json",
+          "label": "v6-companion-rina-proc-after-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-rina-proc-after\\payload-comparison.json",
+          "label": "v6-companion-rina-proc-after",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-rina-proc-reserved\\companion-comparison.json",
+          "label": "v6-companion-rina-proc-reserved-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-rina-proc-reserved\\payload-comparison.json",
+          "label": "v6-companion-rina-proc-reserved",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-tori-basic-after\\companion-comparison.json",
+          "label": "v6-companion-tori-basic-after-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-tori-basic-after\\payload-comparison.json",
+          "label": "v6-companion-tori-basic-after",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-tori-basic-reserved\\companion-comparison.json",
+          "label": "v6-companion-tori-basic-reserved-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-tori-basic-reserved\\payload-comparison.json",
+          "label": "v6-companion-tori-basic-reserved",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-tori-proc-after\\companion-comparison.json",
+          "label": "v6-companion-tori-proc-after-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-tori-proc-after\\payload-comparison.json",
+          "label": "v6-companion-tori-proc-after",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-tori-proc-reserved\\companion-comparison.json",
+          "label": "v6-companion-tori-proc-reserved-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-tori-proc-reserved\\payload-comparison.json",
+          "label": "v6-companion-tori-proc-reserved",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        }
+      ],
+      "maximumActualParticles": 231
+    },
+    {
+      "case": "640x360\\resume",
+      "probePassed": true,
+      "completed": true,
+      "error": "",
+      "checksPassed": 264,
+      "checksFailed": [],
+      "consoleErrors": [],
+      "frames": 34,
+      "stateSamples": 36,
+      "staticCaptures": 2,
+      "inputEdges": 1,
+      "fixtures": [],
+      "pending": [
+        "manual PNG readability/overlap and boss lightning review",
+        "full numeric/corruption boundaries use Client evidence",
+        "all44/previous60 acceptance",
+        "physical input/mobile/audio/performance/long-duration leaks"
+      ],
+      "routeStages": [],
+      "fileRoundtrips": [
+        "native-resume-final"
+      ],
+      "continuationOf": "",
+      "popupChecks": [],
+      "stunActiveFrame": "",
+      "stunEndedFrame": "",
+      "dtoComparisons": [
+        {
+          "file": "fixtures\\native-resume-final\\companion-comparison.json",
+          "label": "native-resume-final-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\native-resume-final\\payload-comparison.json",
+          "label": "native-resume-final",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "native-companion-comparison.json",
+          "label": "native-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        }
+      ],
+      "maximumActualParticles": 4
+    }
+  ],
+  "visualWarnings": [],
+  "continuation": {
+    "rawFiles": 597,
+    "scope": "1280 route-only retry with correct reward confirmation, then pending/native. Prior visual/stun/concurrent/kill observations reused. All640 cases remain unrun.",
+    "candidate": "dragon-v6-candidate-03",
+    "resultSha256": "FC2ED23768213F8DABEBB2BA712C652AA895823EFB9B2EB65BED19808D741ABA"
+  },
+  "observationPassed": true,
+  "acceptance": "NOT_CERTIFIED",
+  "visualReview": "NOT_RUN",
+  "audioListening": "NOT_RUN",
+  "osInput": "DEFERRED",
+  "userDefaultProfile": "NOT_ACCESSED",
+  "limits": "Metadata and hash integrity only. Open original PNGs for visual review; inspect exact fixture scopes and manual clock gaps."
+}

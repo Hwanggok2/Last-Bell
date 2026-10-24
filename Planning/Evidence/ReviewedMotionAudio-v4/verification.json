@@ -1,0 +1,187 @@
+{
+  "date": "2026-10-22",
+  "status": "applied-and-validated",
+  "userAuthorization": "일단 수정한 것들 게임에 적용 시켜봐",
+  "art": {
+    "source": "Planning/Story/MonsterMotionFresh-v3/delivery.json",
+    "review": "Planning/Story/MonsterMotion-v1/fresh-review.json",
+    "newActors": 10,
+    "preservedOriginalActors": 5,
+    "preservedHeroRun": {
+      "frames": 8,
+      "durationMs": 400
+    },
+    "newPngs": 156,
+    "pivot": [
+      78,
+      114
+    ],
+    "currentStageMapping": [
+      {
+        "stage": 1,
+        "enemyId": "gate_sentry",
+        "artId": "gate_sentry"
+      },
+      {
+        "stage": 2,
+        "enemyId": "bell_hound",
+        "artId": "bell_hound"
+      },
+      {
+        "stage": 3,
+        "enemyId": "cracked_blade",
+        "artId": "cracked_blade"
+      },
+      {
+        "stage": 4,
+        "enemyId": "gate_sentry",
+        "artId": "gate_sentry"
+      },
+      {
+        "stage": 5,
+        "enemyId": "gate_lock",
+        "artId": "gate_lock"
+      },
+      {
+        "stage": 6,
+        "enemyId": "gate_sentry",
+        "artId": "gate_sentry"
+      },
+      {
+        "stage": 7,
+        "enemyId": "bell_hound",
+        "artId": "bell_hound"
+      },
+      {
+        "stage": 8,
+        "enemyId": "cracked_blade",
+        "artId": "cracked_blade"
+      },
+      {
+        "stage": 9,
+        "enemyId": "cracked_blade",
+        "artId": "cracked_blade"
+      },
+      {
+        "stage": 10,
+        "enemyId": "bell_knight",
+        "artId": "bell_knight_concept"
+      }
+    ],
+    "expansionCatalogOnly": [
+      "chain_puppet",
+      "hook_hound",
+      "chain_dancer",
+      "pendulum_warden",
+      "chain_jailer"
+    ],
+    "hookHoundGround": "All 10 frames preserve the shared source/world pivot; runtime screenshots retained."
+  },
+  "audio": {
+    "version": "last-bell-audio-v4-clash1",
+    "activeFiles": [
+      {
+        "key": "sword-clash",
+        "sha256": "4d4db20e45d2dc715ff233b2b25fafc1e1f75a9489f20d88ffc10b3596280645"
+      },
+      {
+        "key": "hit-sharp",
+        "sha256": "e9e415b9715377b1cd3f310ee9e855be2f5b613194e33d259310019222c9bea8"
+      },
+      {
+        "key": "bell-low-long",
+        "sha256": "a4a61c8e0673205cd6a44c43c71aad3e8fe0ec6fdca8521905a9c8a9b99e3159"
+      },
+      {
+        "key": "cue-low",
+        "sha256": "d249f6fcc656a0ad545bb3a3db7bb7c3964992a10522619acd3d48a7f370e4d7"
+      },
+      {
+        "key": "dodge-air",
+        "sha256": "4b7ea6aa029708b5014b88cbc20125d84fab6a35bb410ffbb97f48dcb7b41033"
+      },
+      {
+        "key": "perfect-parry",
+        "sha256": "a4c00c30f29f64ea47586892bb6795095b1623ae53b8cae91204d017e7403df3"
+      },
+      {
+        "key": "footstep-stone",
+        "sha256": "28d616817fbc7834258f53b07f9c11c7827439397306080fd1d366f77de2d9c3"
+      },
+      {
+        "key": "lantern-warm",
+        "sha256": "59deebff269edfdf4d44781f6974b2b4af9df2b61c09f7af426b9cc654cb464d"
+      },
+      {
+        "key": "bgm-road",
+        "sha256": "2729a5a9ddf35dd15f64fc61d2f238440c53c3c55e7bffa3223e06d919e050e9"
+      },
+      {
+        "key": "bgm-sanctuary",
+        "sha256": "e9e73c1a7fc0b3a67be37c13b013a9c487c971708043b1122ce62b0a6812b5cf"
+      },
+      {
+        "key": "bgm-boss",
+        "sha256": "9e5cfce87b708dcdbbf067424e2de739effcd9b40819608c47824fb504dc6126"
+      },
+      {
+        "key": "bgm-quarter",
+        "sha256": "79aeccbe7f6f895a2d2185cc155d0dd3bf6461be8fa2a721eaf271786ef5bcca"
+      }
+    ],
+    "attackTrigger": "Confirmed EnemyDamaged event at 200ms; no pre-contact swing sound",
+    "bellTrigger": "Boss defeat once, 5.7169 second decay",
+    "music": "Stereo road / sanctuary / boss; quarter stored for future stages",
+    "sourceCredits": "Client/Assets/Game/Audio/Reviewed-v4/CREDITS.txt",
+    "listeningReview": "Transport and signal integrity verified; no subjective auditory assessment claimed."
+  },
+  "validation": {
+    "editMode": {
+      "passed": 140,
+      "failed": 0
+    },
+    "runtime": {
+      "passed": true,
+      "checks": 197,
+      "captures": 42,
+      "result": "runtime/result.json"
+    },
+    "balanceAndSaveContractUnchanged": true,
+    "windowsBuild": {
+      "succeeded": true,
+      "errors": 0,
+      "bytes": 208792877,
+      "path": "Builds/Windows/LastBellMvp.exe"
+    },
+    "playMode": {
+      "passed": 19,
+      "failed": 0
+    },
+    "originalArtManifestPreserved": true,
+    "webBuild": {
+      "succeeded": true,
+      "errors": 0,
+      "path": "Builds/WebGL",
+      "localUrl": "http://127.0.0.1:8876/",
+      "bytes": 23232583
+    },
+    "webBrowser": {
+      "passed": true,
+      "url": "http://127.0.0.1:8876/",
+      "checks": [
+        "Unity WebGL loads the rebuilt data and wasm",
+        "Stage 1 displays reviewed gate_sentry art",
+        "Up completes dodge tutorial",
+        "Space plays forward attack",
+        "Escape pauses and resumes"
+      ],
+      "consoleErrors": 0,
+      "knownWarning": "Existing Unity filesystem sync deprecation; gameplay unaffected",
+      "screenshot": "web-game.png"
+    }
+  },
+  "limits": [
+    "Current gameplay still ends at Stage 10; future actors are imported and exercised in the runtime probe.",
+    "Android APK and public website are not updated by this local integration."
+  ]
+}

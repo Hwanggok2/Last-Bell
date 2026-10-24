@@ -1,0 +1,170 @@
+{
+    "schemaVersion": 8,
+    "prologueSeen": true,
+    "comboHintSeen": true,
+    "gold": 12345,
+    "fragments": 0,
+    "unlockedSlots": 1,
+    "storageCapacity": 3,
+    "highestClearedStage": 0,
+    "walletVersion": 0,
+    "tutorialStep": 2,
+    "runSequence": 1,
+    "randomState": 17328719,
+    "selectedCharacterId": "on",
+    "phase": 3,
+    "characters": [
+        {
+            "id": "on",
+            "statLevels": [
+                0,
+                50,
+                0,
+                0
+            ],
+            "equippedRelicIds": [],
+            "checkpoint": 0,
+            "cycle": 0,
+            "highestStage": 0,
+            "seenStoryIds": [],
+            "seenBossIntros": []
+        },
+        {
+            "id": "dam",
+            "statLevels": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "equippedRelicIds": [],
+            "checkpoint": 0,
+            "cycle": 0,
+            "highestStage": 0,
+            "seenStoryIds": [],
+            "seenBossIntros": []
+        },
+        {
+            "id": "rin",
+            "statLevels": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "equippedRelicIds": [],
+            "checkpoint": 0,
+            "cycle": 0,
+            "highestStage": 0,
+            "seenStoryIds": [],
+            "seenBossIntros": []
+        }
+    ],
+    "relics": [],
+    "unlockedStoryIds": [],
+    "run": {
+        "characterId": "on",
+        "runId": 1,
+        "stage": 11,
+        "cycle": 0,
+        "statLevels": [
+            0,
+            50,
+            0,
+            0
+        ],
+        "equippedRelicIds": [],
+        "appliedRelicLevels": [],
+        "stats": {
+            "attack": 0.0,
+            "maxHpMilli": 0,
+            "critChance": 0.0,
+            "goldMultiplier": 0.0,
+            "stunDamageMultiplier": 0.0,
+            "normalStagger": 0.0,
+            "perfectStagger": 0.0,
+            "damageReduction": 0.0
+        },
+        "combatStats": {
+            "attack": 10,
+            "maxHp": 13647,
+            "critChancePercent": 5,
+            "goldBonusPercent": 0,
+            "stunDamagePercent": 140,
+            "normalStagger": 20,
+            "perfectStagger": 40,
+            "damageReductionPercent": 0
+        },
+        "earnedGold": 0,
+        "earnedFragments": 0,
+        "earningsSinceUpdate": false,
+        "playerHpMilli": 13647000,
+        "enemyHpMilli": 1200000,
+        "enemyMaxHpMilli": 1200000,
+        "clockMs": 0.0,
+        "dodgeStartMs": -1000000.0,
+        "dodgeDirection": 0,
+        "attackReadyAtMs": 0.0,
+        "attackHitAtMs": -1.0,
+        "enemyHitAtMs": 900.0,
+        "telegraphStartMs": 0.0,
+        "patternId": "low_sweep",
+        "patternIndex": 0,
+        "patternRandomState": -1124798902,
+        "perfectStreak": 0,
+        "hitCombo": 0,
+        "stunExtensionMs": 0,
+        "randomSequence": [
+            "low_sweep"
+        ],
+        "sequenceCursor": 0,
+        "previousPattern": "low_sweep",
+        "penultimatePattern": "",
+        "forceTwoHitSequence": false,
+        "attackSpeed": 1.0,
+        "defeatedGold": 0,
+        "patternStep": 0,
+        "stagger": 0.0,
+        "stunUntilMs": -1.0,
+        "immunityUntilMs": -1.0,
+        "stageRewardApplied": false,
+        "lastAppliedRewardId": "",
+        "offer": {
+            "legacyMidbossReward": false,
+            "rewardId": "",
+            "stage": 0,
+            "relicIds": [],
+            "offeredLevels": [],
+            "maxGold": 0
+        },
+        "pendingRewards": [],
+        "claimedRewards": [],
+        "ended": false,
+        "cleared": false,
+        "transition": {
+            "kind": 0,
+            "fromStage": 0,
+            "toStage": 0,
+            "elapsedMs": 0.0,
+            "durationMs": 0,
+            "isRepeat": false
+        },
+        "story": {
+            "sceneId": "",
+            "rewardId": "",
+            "lineIndex": 0
+        }
+    },
+    "exchange": {
+        "characterId": "",
+        "statIndex": 0,
+        "level": 0,
+        "upgradeCost": 0,
+        "fragments": 0,
+        "gold": 0,
+        "exchangeRate": 0,
+        "walletGold": 0,
+        "walletFragments": 0,
+        "walletVersion": 0
+    }
+}

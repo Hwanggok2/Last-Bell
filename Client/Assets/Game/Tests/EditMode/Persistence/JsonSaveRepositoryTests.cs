@@ -70,13 +70,15 @@ namespace LastBell.Tests
         {
             var original=new GameSaveData{schemaVersion=2,phase=SessionPhase.Transition,run=new RunStateData
             {
+                statLevels=new int[4],
                 transition=new TransitionData{kind=TransitionKind.EnemyDefeat,fromStage=10,toStage=11,elapsedMs=321.5,durationMs=550},
                 story=new StoryStateData{sceneId="story_boss_10",lineIndex=1,rewardId="1:0:10"}
             }};
             original.unlockedStoryIds.Add("story_boss_10");
-            original.characters.Add(new CharacterProgressData{id="on",seenBossIntros=new System.Collections.Generic.List<string>{"0:bell_knight"}});
+            original.characters.Add(new CharacterProgressData{id="on",statLevels=new int[4],seenBossIntros=new System.Collections.Generic.List<string>{"0:bell_knight"}});
             repository.Save(original);var restored=repository.Load(out _);
             Assert.AreEqual(2,restored.schemaVersion);
+            Assert.AreEqual(4,restored.run.statLevels.Length);Assert.AreEqual(4,restored.characters[0].statLevels.Length);
             Assert.AreEqual(SessionPhase.Transition,restored.phase);
             Assert.AreEqual(TransitionKind.EnemyDefeat,restored.run.transition.kind);
             Assert.AreEqual(321.5,restored.run.transition.elapsedMs);

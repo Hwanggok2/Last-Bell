@@ -1,0 +1,675 @@
+{
+  "candidate": "dragon-v3-candidate-05",
+  "cases": [
+    {
+      "resolution": "1280x720",
+      "passed": true,
+      "completed": true,
+      "passChecks": 168,
+      "failures": [],
+      "consoleErrors": [],
+      "writtenFrames": 607,
+      "indexedFrames": 607,
+      "segments": [
+        {
+          "name": "recheck-19-automatic-idle",
+          "clock": "real-frame-v3-static-session",
+          "frames": 98,
+          "missingRenderedFrames": 0,
+          "firstRealtime": 3.7566425800323486,
+          "lastRealtime": 5.8028764724731445,
+          "maxDelta": 0.10432729870080948,
+          "maxRealtimeGap": 0.05204296112060547,
+          "encodeSeconds": 13.317838668823242
+        },
+        {
+          "name": "recheck-19-actual-combo-recovery",
+          "clock": "real-frame-v3",
+          "frames": 154,
+          "missingRenderedFrames": 0,
+          "firstRealtime": 19.91085433959961,
+          "lastRealtime": 22.797260284423828,
+          "maxDelta": 0.04602409899234772,
+          "maxRealtimeGap": 0.04857444763183594,
+          "encodeSeconds": 14.897260665893555
+        },
+        {
+          "name": "recheck-20-automatic-idle",
+          "clock": "real-frame-v3-static-session",
+          "frames": 117,
+          "missingRenderedFrames": 0,
+          "firstRealtime": 38.77880096435547,
+          "lastRealtime": 40.815608978271484,
+          "maxDelta": 0.09359360486268997,
+          "maxRealtimeGap": 0.02663421630859375,
+          "encodeSeconds": 9.688880920410156
+        },
+        {
+          "name": "recheck-20-actual-combo-recovery",
+          "clock": "real-frame-v3",
+          "frames": 153,
+          "missingRenderedFrames": 0,
+          "firstRealtime": 51.269954681396484,
+          "lastRealtime": 54.15726852416992,
+          "maxDelta": 0.04679880291223526,
+          "maxRealtimeGap": 0.04907989501953125,
+          "encodeSeconds": 10.476665496826172
+        },
+        {
+          "name": "enemy-18-attack-hit",
+          "clock": "real-frame-v3",
+          "frames": 85,
+          "missingRenderedFrames": 0,
+          "firstRealtime": 65.5761947631836,
+          "lastRealtime": 67.13043212890625,
+          "maxDelta": 0.04077799618244171,
+          "maxRealtimeGap": 0.042266845703125,
+          "encodeSeconds": 6.4416046142578125
+        }
+      ],
+      "duplicateFiles": 0,
+      "missingRenderedFrames": 0,
+      "hashMismatches": [],
+      "maxRealtimeGap": 0.05204296112060547,
+      "maxGroundedPivotYErrorPx": {
+        "player": 0.0,
+        "enemy": 0.0
+      },
+      "actors": [
+        {
+          "stage": 19,
+          "idleMotion": [
+            "Idle"
+          ],
+          "idleFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "idleDurationSeconds": 2.046233892440796,
+          "idleCapturedFrames": 98,
+          "actualAttackFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "contactCount": 3,
+          "contacts": [
+            {
+              "contactMs": 2700.0,
+              "contactFile": "v3-frame-recheck-19-actual-combo-recovery-000130.png",
+              "nextFile": "v3-frame-recheck-19-actual-combo-recovery-000131.png",
+              "contactPoseFrameCount": 220,
+              "damageEventFrameCount": 221,
+              "firstCapturedAfterContactMs": 0.0,
+              "firstPostContactRootStepPx": 20.11853056933897,
+              "firstPostContactFrameGapMs": 39.40773010253906,
+              "firstPostContactFrames": [
+                4,
+                4
+              ],
+              "firstPostContactIsHome": false,
+              "recoveryFrames": 14,
+              "recoveryMonotonic": true,
+              "firstCapturedHomeAfterContactMs": 283.5124462842941,
+              "maxExisting280msSmoothReturnResidualPx": 0.0002019748401664856,
+              "recoveryClipFrames": [
+                4,
+                5,
+                6,
+                7
+              ]
+            },
+            {
+              "contactMs": 3450.0,
+              "contactFile": "v3-frame-recheck-19-actual-combo-recovery-000169.png",
+              "nextFile": "v3-frame-recheck-19-actual-combo-recovery-000170.png",
+              "contactPoseFrameCount": 259,
+              "damageEventFrameCount": 260,
+              "firstCapturedAfterContactMs": 0.0,
+              "firstPostContactRootStepPx": 13.415589668384357,
+              "firstPostContactFrameGapMs": 31.309127807617188,
+              "firstPostContactFrames": [
+                4,
+                4
+              ],
+              "firstPostContactIsHome": false,
+              "recoveryFrames": 14,
+              "recoveryMonotonic": true,
+              "firstCapturedHomeAfterContactMs": 290.69334752857685,
+              "maxExisting280msSmoothReturnResidualPx": 0.00018887513917320575,
+              "recoveryClipFrames": [
+                4,
+                5,
+                6,
+                7
+              ]
+            },
+            {
+              "contactMs": 4200.0,
+              "contactFile": "v3-frame-recheck-19-actual-combo-recovery-000207.png",
+              "nextFile": "v3-frame-recheck-19-actual-combo-recovery-000208.png",
+              "contactPoseFrameCount": 297,
+              "damageEventFrameCount": 298,
+              "firstCapturedAfterContactMs": 0.0,
+              "firstPostContactRootStepPx": 15.759094592343441,
+              "firstPostContactFrameGapMs": 26.472091674804688,
+              "firstPostContactFrames": [
+                4,
+                4
+              ],
+              "firstPostContactIsHome": false,
+              "recoveryFrames": 17,
+              "recoveryMonotonic": true,
+              "firstCapturedHomeAfterContactMs": 282.5122505426407,
+              "maxExisting280msSmoothReturnResidualPx": 0.00044850866851220417,
+              "recoveryClipFrames": [
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          ],
+          "sheets": [
+            "review\\1280x720-enemy-19-recovery.png",
+            "review\\1280x720-enemy-19-automatic-idle.png"
+          ]
+        },
+        {
+          "stage": 20,
+          "idleMotion": [
+            "Idle"
+          ],
+          "idleFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "idleDurationSeconds": 2.0368080139160156,
+          "idleCapturedFrames": 117,
+          "actualAttackFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "contactCount": 3,
+          "contacts": [
+            {
+              "contactMs": 2700.0,
+              "contactFile": "v3-frame-recheck-20-actual-combo-recovery-000402.png",
+              "nextFile": "v3-frame-recheck-20-actual-combo-recovery-000403.png",
+              "contactPoseFrameCount": 578,
+              "damageEventFrameCount": 579,
+              "firstCapturedAfterContactMs": 0.0,
+              "firstPostContactRootStepPx": 19.537107238065264,
+              "firstPostContactFrameGapMs": 38.997650146484375,
+              "firstPostContactFrames": [
+                4,
+                4
+              ],
+              "firstPostContactIsHome": false,
+              "recoveryFrames": 14,
+              "recoveryMonotonic": true,
+              "firstCapturedHomeAfterContactMs": 296.8510568141937,
+              "maxExisting280msSmoothReturnResidualPx": 0.0001776136066808931,
+              "recoveryClipFrames": [
+                4,
+                5
+              ]
+            },
+            {
+              "contactMs": 3450.0,
+              "contactFile": "v3-frame-recheck-20-actual-combo-recovery-000439.png",
+              "nextFile": "v3-frame-recheck-20-actual-combo-recovery-000440.png",
+              "contactPoseFrameCount": 615,
+              "damageEventFrameCount": 616,
+              "firstCapturedAfterContactMs": 0.0,
+              "firstPostContactRootStepPx": 14.041201961923475,
+              "firstPostContactFrameGapMs": 38.616180419921875,
+              "firstPostContactFrames": [
+                4,
+                4
+              ],
+              "firstPostContactIsHome": false,
+              "recoveryFrames": 15,
+              "recoveryMonotonic": true,
+              "firstCapturedHomeAfterContactMs": 293.6812575906515,
+              "maxExisting280msSmoothReturnResidualPx": 0.00015186403288680594,
+              "recoveryClipFrames": [
+                4,
+                5
+              ]
+            },
+            {
+              "contactMs": 4200.0,
+              "contactFile": "v3-frame-recheck-20-actual-combo-recovery-000478.png",
+              "nextFile": "v3-frame-recheck-20-actual-combo-recovery-000479.png",
+              "contactPoseFrameCount": 654,
+              "damageEventFrameCount": 655,
+              "firstCapturedAfterContactMs": 0.0,
+              "firstPostContactRootStepPx": 15.604794890028273,
+              "firstPostContactFrameGapMs": 29.84619140625,
+              "firstPostContactFrames": [
+                4,
+                4
+              ],
+              "firstPostContactIsHome": false,
+              "recoveryFrames": 16,
+              "recoveryMonotonic": true,
+              "firstCapturedHomeAfterContactMs": 292.68445558845997,
+              "maxExisting280msSmoothReturnResidualPx": 0.00036554241742692284,
+              "recoveryClipFrames": [
+                4,
+                5
+              ]
+            }
+          ],
+          "sheets": [
+            "review\\1280x720-enemy-20-recovery.png",
+            "review\\1280x720-enemy-20-automatic-idle.png"
+          ]
+        }
+      ],
+      "stage18RegressionSheet": "review\\1280x720-enemy-18-regression.png",
+      "visualReview": "PASS_OBSERVED_CHANGED_SCOPE: see direct-visual-review.json"
+    },
+    {
+      "resolution": "640x360",
+      "passed": true,
+      "completed": true,
+      "passChecks": 168,
+      "failures": [],
+      "consoleErrors": [],
+      "writtenFrames": 680,
+      "indexedFrames": 680,
+      "segments": [
+        {
+          "name": "recheck-19-automatic-idle",
+          "clock": "real-frame-v3-static-session",
+          "frames": 124,
+          "missingRenderedFrames": 0,
+          "firstRealtime": 3.7142467498779297,
+          "lastRealtime": 5.771282196044922,
+          "maxDelta": 0.05781799927353859,
+          "maxRealtimeGap": 0.022974491119384766,
+          "encodeSeconds": 2.5699520111083984
+        },
+        {
+          "name": "recheck-19-actual-combo-recovery",
+          "clock": "real-frame-v3",
+          "frames": 171,
+          "missingRenderedFrames": 0,
+          "firstRealtime": 9.094125747680664,
+          "lastRealtime": 11.996225357055664,
+          "maxDelta": 0.032990604639053345,
+          "maxRealtimeGap": 0.03880023956298828,
+          "encodeSeconds": 3.5816574096679688
+        },
+        {
+          "name": "recheck-20-automatic-idle",
+          "clock": "real-frame-v3-static-session",
+          "frames": 124,
+          "missingRenderedFrames": 0,
+          "firstRealtime": 16.46286392211914,
+          "lastRealtime": 18.513206481933594,
+          "maxDelta": 0.02800530008971691,
+          "maxRealtimeGap": 0.017580032348632812,
+          "encodeSeconds": 2.5902347564697266
+        },
+        {
+          "name": "recheck-20-actual-combo-recovery",
+          "clock": "real-frame-v3",
+          "frames": 169,
+          "missingRenderedFrames": 0,
+          "firstRealtime": 21.853187561035156,
+          "lastRealtime": 24.742887496948242,
+          "maxDelta": 0.035091597586870193,
+          "maxRealtimeGap": 0.03879356384277344,
+          "encodeSeconds": 3.5385570526123047
+        },
+        {
+          "name": "enemy-18-attack-hit",
+          "clock": "real-frame-v3",
+          "frames": 92,
+          "missingRenderedFrames": 0,
+          "firstRealtime": 29.128524780273438,
+          "lastRealtime": 30.682310104370117,
+          "maxDelta": 0.029118098318576813,
+          "maxRealtimeGap": 0.03201866149902344,
+          "encodeSeconds": 2.05145263671875
+        }
+      ],
+      "duplicateFiles": 0,
+      "missingRenderedFrames": 0,
+      "hashMismatches": [],
+      "maxRealtimeGap": 0.03880023956298828,
+      "maxGroundedPivotYErrorPx": {
+        "player": 0.0,
+        "enemy": 0.0
+      },
+      "actors": [
+        {
+          "stage": 19,
+          "idleMotion": [
+            "Idle"
+          ],
+          "idleFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "idleDurationSeconds": 2.057035446166992,
+          "idleCapturedFrames": 124,
+          "actualAttackFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "contactCount": 3,
+          "contacts": [
+            {
+              "contactMs": 2700.0,
+              "contactFile": "v3-frame-recheck-19-actual-combo-recovery-000161.png",
+              "nextFile": "v3-frame-recheck-19-actual-combo-recovery-000162.png",
+              "contactPoseFrameCount": 251,
+              "damageEventFrameCount": 252,
+              "firstCapturedAfterContactMs": 0.0,
+              "firstPostContactRootStepPx": 2.2778928980640565,
+              "firstPostContactFrameGapMs": 30.591964721679688,
+              "firstPostContactFrames": [
+                4,
+                4
+              ],
+              "firstPostContactIsHome": false,
+              "recoveryFrames": 17,
+              "recoveryMonotonic": true,
+              "firstCapturedHomeAfterContactMs": 283.6629629135132,
+              "maxExisting280msSmoothReturnResidualPx": 0.00012394449638009064,
+              "recoveryClipFrames": [
+                4,
+                5,
+                6,
+                7
+              ]
+            },
+            {
+              "contactMs": 3450.0,
+              "contactFile": "v3-frame-recheck-19-actual-combo-recovery-000205.png",
+              "nextFile": "v3-frame-recheck-19-actual-combo-recovery-000206.png",
+              "contactPoseFrameCount": 295,
+              "damageEventFrameCount": 296,
+              "firstCapturedAfterContactMs": 0.0,
+              "firstPostContactRootStepPx": 3.6732793022980013,
+              "firstPostContactFrameGapMs": 25.603294372558594,
+              "firstPostContactFrames": [
+                4,
+                4
+              ],
+              "firstPostContactIsHome": false,
+              "recoveryFrames": 17,
+              "recoveryMonotonic": true,
+              "firstCapturedHomeAfterContactMs": 289.83556032180786,
+              "maxExisting280msSmoothReturnResidualPx": 0.00013493323891111686,
+              "recoveryClipFrames": [
+                4,
+                5,
+                6,
+                7
+              ]
+            },
+            {
+              "contactMs": 4200.0,
+              "contactFile": "v3-frame-recheck-19-actual-combo-recovery-000248.png",
+              "nextFile": "v3-frame-recheck-19-actual-combo-recovery-000249.png",
+              "contactPoseFrameCount": 338,
+              "damageEventFrameCount": 339,
+              "firstCapturedAfterContactMs": 0.0,
+              "firstPostContactRootStepPx": 1.9276431122946927,
+              "firstPostContactFrameGapMs": 23.197174072265625,
+              "firstPostContactFrames": [
+                4,
+                4
+              ],
+              "firstPostContactIsHome": false,
+              "recoveryFrames": 18,
+              "recoveryMonotonic": true,
+              "firstCapturedHomeAfterContactMs": 291.13706313073635,
+              "maxExisting280msSmoothReturnResidualPx": 0.00029042487825137187,
+              "recoveryClipFrames": [
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          ],
+          "sheets": [
+            "review\\640x360-enemy-19-recovery.png",
+            "review\\640x360-enemy-19-automatic-idle.png"
+          ]
+        },
+        {
+          "stage": 20,
+          "idleMotion": [
+            "Idle"
+          ],
+          "idleFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "idleDurationSeconds": 2.050342559814453,
+          "idleCapturedFrames": 124,
+          "actualAttackFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "contactCount": 3,
+          "contacts": [
+            {
+              "contactMs": 2700.0,
+              "contactFile": "v3-frame-recheck-20-actual-combo-recovery-000457.png",
+              "nextFile": "v3-frame-recheck-20-actual-combo-recovery-000458.png",
+              "contactPoseFrameCount": 636,
+              "damageEventFrameCount": 637,
+              "firstCapturedAfterContactMs": 0.0,
+              "firstPostContactRootStepPx": 3.917541162968948,
+              "firstPostContactFrameGapMs": 29.35028076171875,
+              "firstPostContactFrames": [
+                4,
+                4
+              ],
+              "firstPostContactIsHome": false,
+              "recoveryFrames": 17,
+              "recoveryMonotonic": true,
+              "firstCapturedHomeAfterContactMs": 293.7650468200445,
+              "maxExisting280msSmoothReturnResidualPx": 6.982122927468026E-05,
+              "recoveryClipFrames": [
+                4,
+                5
+              ]
+            },
+            {
+              "contactMs": 3450.0,
+              "contactFile": "v3-frame-recheck-20-actual-combo-recovery-000500.png",
+              "nextFile": "v3-frame-recheck-20-actual-combo-recovery-000501.png",
+              "contactPoseFrameCount": 679,
+              "damageEventFrameCount": 680,
+              "firstCapturedAfterContactMs": 0.0,
+              "firstPostContactRootStepPx": 3.274383761017823,
+              "firstPostContactFrameGapMs": 31.95953369140625,
+              "firstPostContactFrames": [
+                4,
+                4
+              ],
+              "firstPostContactIsHome": false,
+              "recoveryFrames": 17,
+              "recoveryMonotonic": true,
+              "firstCapturedHomeAfterContactMs": 281.96254670619965,
+              "maxExisting280msSmoothReturnResidualPx": 8.998669636639534E-05,
+              "recoveryClipFrames": [
+                4,
+                5
+              ]
+            },
+            {
+              "contactMs": 4200.0,
+              "contactFile": "v3-frame-recheck-20-actual-combo-recovery-000542.png",
+              "nextFile": "v3-frame-recheck-20-actual-combo-recovery-000543.png",
+              "contactPoseFrameCount": 721,
+              "damageEventFrameCount": 722,
+              "firstCapturedAfterContactMs": 0.0,
+              "firstPostContactRootStepPx": 1.1828005677746363,
+              "firstPostContactFrameGapMs": 24.671554565429688,
+              "firstPostContactFrames": [
+                4,
+                4
+              ],
+              "firstPostContactIsHome": false,
+              "recoveryFrames": 18,
+              "recoveryMonotonic": true,
+              "firstCapturedHomeAfterContactMs": 292.76265129446983,
+              "maxExisting280msSmoothReturnResidualPx": 0.0002093052514453575,
+              "recoveryClipFrames": [
+                4,
+                5
+              ]
+            }
+          ],
+          "sheets": [
+            "review\\640x360-enemy-20-recovery.png",
+            "review\\640x360-enemy-20-automatic-idle.png"
+          ]
+        }
+      ],
+      "stage18RegressionSheet": "review\\640x360-enemy-18-regression.png",
+      "visualReview": "PASS_OBSERVED_CHANGED_SCOPE: see direct-visual-review.json"
+    }
+  ],
+  "campaign": {
+    "storyOnly1280": false,
+    "recoveryOnly": true,
+    "userDefaultProfile": "NOT_ACCESSED",
+    "full1280MotionRun": false,
+    "expectedProcesses": 2,
+    "runs": [
+      {
+        "save": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-05\\1280x720\\fresh\\profiles\\boot",
+        "mode": "v3-recovery",
+        "output": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-05\\1280x720\\fresh",
+        "startedAt": "2026-10-24T20:34:10.73563+09:00",
+        "arguments": [
+          "-dragon-theme-smoke",
+          "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-05\\1280x720\\fresh\"",
+          "-dragon-theme-case",
+          "v3-recovery",
+          "-lastbell-save-dir",
+          "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-05\\1280x720\\fresh\\profiles\\boot\"",
+          "-screen-width",
+          "1280",
+          "-screen-height",
+          "720",
+          "-screen-fullscreen",
+          "0",
+          "-logFile",
+          "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-05\\1280x720\\fresh\\player.log\""
+        ],
+        "name": "v3-recovery-1280x720",
+        "endedAt": "2026-10-24T20:35:27.0324722+09:00",
+        "timedOut": false,
+        "passed": true,
+        "exitCode": 0,
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "save": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-05\\640x360\\fresh\\profiles\\boot",
+        "mode": "v3-recovery",
+        "output": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-05\\640x360\\fresh",
+        "startedAt": "2026-10-24T20:35:27.1037535+09:00",
+        "arguments": [
+          "-dragon-theme-smoke",
+          "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-05\\640x360\\fresh\"",
+          "-dragon-theme-case",
+          "v3-recovery",
+          "-lastbell-save-dir",
+          "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-05\\640x360\\fresh\\profiles\\boot\"",
+          "-screen-width",
+          "640",
+          "-screen-height",
+          "360",
+          "-screen-fullscreen",
+          "0",
+          "-logFile",
+          "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-05\\640x360\\fresh\\player.log\""
+        ],
+        "name": "v3-recovery-640x360",
+        "endedAt": "2026-10-24T20:36:02.180999+09:00",
+        "timedOut": false,
+        "passed": true,
+        "exitCode": 0,
+        "width": 640,
+        "height": 360
+      }
+    ],
+    "defaultSaveRuntime": "NOT_RUN",
+    "passed": true,
+    "error": null,
+    "osInput": false,
+    "limits": "Synthetic isolated profile campaign and legacy sentinel. RecoveryOnly runs two targeted processes without restart, separating automatic Arrival Idle from actual combo recovery. Attack asset inventory uses prior source/manifest evidence; actual combat frame coverage is recorded without forced sampling. With StoryOnly1280, prior motion evidence must be adopted separately after product identity review. Not a user-profile hash audit or complete visual acceptance.",
+    "visualReview": "NOT_RUN"
+  },
+  "prefs": [
+    {
+      "matches": true,
+      "path": "Software\\LastBellPrototype\\Last Bell MVP"
+    },
+    {
+      "matches": true,
+      "path": "Software\\Unity\\UnityEditor\\LastBellPrototype\\Last Bell MVP"
+    }
+  ],
+  "syntheticLegacyUnchanged": true,
+  "osInput": "DEFERRED",
+  "defaultProfile": "NOT_ACCESSED",
+  "normalSpeedPlayback": "NOT_RUN",
+  "limits": "Arrival Idle is a separate static-session presentation fixture. Actual combat uses automatic rendering; no forced Attack frames. Root movement excludes camera shake. Frame readback does not certify normal-speed performance."
+}

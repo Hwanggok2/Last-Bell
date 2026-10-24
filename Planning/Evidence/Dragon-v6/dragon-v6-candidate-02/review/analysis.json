@@ -1,0 +1,553 @@
+{
+  "candidate": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-02",
+  "integrityPassed": false,
+  "errors": [
+    {
+      "case": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-02\\1280x720\\fresh",
+      "continuousRouteIncomplete": []
+    },
+    {
+      "case": "1280x720\\resume",
+      "missing": [
+        "result.json",
+        "v6-evidence.json",
+        "v6-frame-evidence.json",
+        "v6-state.jsonl",
+        "v6-input.jsonl",
+        "frames.jsonl"
+      ]
+    },
+    {
+      "case": "640x360\\fresh",
+      "missing": [
+        "result.json",
+        "v6-evidence.json",
+        "v6-frame-evidence.json",
+        "v6-state.jsonl",
+        "v6-input.jsonl",
+        "frames.jsonl"
+      ]
+    },
+    {
+      "case": "640x360\\resume",
+      "missing": [
+        "result.json",
+        "v6-evidence.json",
+        "v6-frame-evidence.json",
+        "v6-state.jsonl",
+        "v6-input.jsonl",
+        "frames.jsonl"
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "case": "1280x720\\fresh",
+      "probePassed": false,
+      "completed": false,
+      "error": "System.InvalidOperationException: actual21particle stars and no old duplicate\r\n  at LastBell.DragonThemeSmokeProbe.Require (System.Boolean condition, System.String label) [0x00036] in C:\\Github\\Test2\\Client\\Assets\\Game\\Runtime\\Bootstrap\\DragonThemeSmokeProbe.cs:415 \r\n  at LastBell.DragonThemeSmokeProbe+<V6Stun>d__185.MoveNext () [0x001ae] in C:\\Github\\Test2\\Client\\Assets\\Game\\Runtime\\Bootstrap\\DragonThemeSmokeProbe.V6.cs:311 \r\n  at LastBell.DragonThemeSmokeProbe+<Start>d__220.MoveNext () [0x00120] in C:\\Github\\Test2\\Client\\Assets\\Game\\Runtime\\Bootstrap\\DragonThemeSmokeProbe.cs:117 ",
+      "checksPassed": 5167,
+      "checksFailed": [
+        "FAIL actual21particle stars and no old duplicate"
+      ],
+      "consoleErrors": [],
+      "frames": 784,
+      "stateSamples": 791,
+      "staticCaptures": 7,
+      "inputEdges": 44,
+      "fixtures": [
+        "v6-skill-on",
+        "explicit-last100ms-CD-on",
+        "v6-skill-reverse-on",
+        "v6-skill-dam",
+        "explicit-last100ms-CD-dam",
+        "v6-skill-reverse-dam",
+        "v6-skill-rin",
+        "explicit-last100ms-CD-rin",
+        "v6-skill-reverse-rin",
+        "v6-companion-tori-basic-seed-fixture",
+        "v6-companion-tori-proc-seed-fixture",
+        "v6-companion-barun-basic-seed-fixture",
+        "v6-companion-barun-proc-seed-fixture",
+        "v6-companion-doto-basic-seed-fixture",
+        "v6-companion-doto-proc-seed-fixture",
+        "v6-companion-rina-basic-seed-fixture",
+        "v6-companion-rina-proc-seed-fixture",
+        "v6-companion-momo-basic-seed-fixture",
+        "v6-companion-momo-proc-seed-fixture",
+        "explicit-large-enemy-lightning-5",
+        "v6-boss-lightning-5",
+        "explicit-large-enemy-lightning-10",
+        "v6-boss-lightning-10",
+        "explicit-large-enemy-lightning-15",
+        "v6-boss-lightning-15",
+        "explicit-large-enemy-lightning-20",
+        "v6-boss-lightning-20",
+        "explicit-near-stun-threshold"
+      ],
+      "pending": [
+        "manual PNG readability/overlap and boss lightning review",
+        "full numeric/corruption boundaries use Client evidence",
+        "all44/previous60 acceptance",
+        "physical input/mobile/audio/performance/long-duration leaks"
+      ],
+      "routeStages": [],
+      "fileRoundtrips": [
+        "player-on-idle",
+        "player-on-pending",
+        "player-on-after",
+        "player-dam-idle",
+        "player-dam-pending",
+        "player-dam-after",
+        "player-rin-idle",
+        "player-rin-pending",
+        "player-rin-after",
+        "v6-companion-tori-basic-reserved",
+        "v6-companion-tori-basic-after",
+        "v6-companion-tori-proc-reserved",
+        "v6-companion-tori-proc-after",
+        "v6-companion-barun-basic-reserved",
+        "v6-companion-barun-basic-after",
+        "v6-companion-barun-proc-reserved",
+        "v6-companion-barun-proc-after",
+        "v6-companion-doto-basic-reserved",
+        "v6-companion-doto-basic-after",
+        "v6-companion-doto-proc-reserved",
+        "v6-companion-doto-proc-after",
+        "v6-companion-rina-basic-reserved",
+        "v6-companion-rina-basic-after",
+        "v6-companion-rina-proc-reserved",
+        "v6-companion-rina-proc-after",
+        "v6-companion-momo-basic-reserved",
+        "v6-companion-momo-basic-after",
+        "v6-companion-momo-proc-reserved",
+        "v6-companion-momo-proc-after"
+      ],
+      "continuationOf": "dragon-v6-candidate-01: completed legacy/inn/HP observations reused",
+      "popupChecks": [],
+      "dtoComparisons": [
+        {
+          "file": "fixtures\\player-dam-after\\companion-comparison.json",
+          "label": "player-dam-after-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\player-dam-after\\payload-comparison.json",
+          "label": "player-dam-after",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\player-dam-idle\\companion-comparison.json",
+          "label": "player-dam-idle-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\player-dam-idle\\payload-comparison.json",
+          "label": "player-dam-idle",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\player-dam-pending\\companion-comparison.json",
+          "label": "player-dam-pending-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\player-dam-pending\\payload-comparison.json",
+          "label": "player-dam-pending",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\player-on-after\\companion-comparison.json",
+          "label": "player-on-after-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\player-on-after\\payload-comparison.json",
+          "label": "player-on-after",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\player-on-idle\\companion-comparison.json",
+          "label": "player-on-idle-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\player-on-idle\\payload-comparison.json",
+          "label": "player-on-idle",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\player-on-pending\\companion-comparison.json",
+          "label": "player-on-pending-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\player-on-pending\\payload-comparison.json",
+          "label": "player-on-pending",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\player-rin-after\\companion-comparison.json",
+          "label": "player-rin-after-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\player-rin-after\\payload-comparison.json",
+          "label": "player-rin-after",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\player-rin-idle\\companion-comparison.json",
+          "label": "player-rin-idle-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\player-rin-idle\\payload-comparison.json",
+          "label": "player-rin-idle",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\player-rin-pending\\companion-comparison.json",
+          "label": "player-rin-pending-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\player-rin-pending\\payload-comparison.json",
+          "label": "player-rin-pending",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-barun-basic-after\\companion-comparison.json",
+          "label": "v6-companion-barun-basic-after-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-barun-basic-after\\payload-comparison.json",
+          "label": "v6-companion-barun-basic-after",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-barun-basic-reserved\\companion-comparison.json",
+          "label": "v6-companion-barun-basic-reserved-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-barun-basic-reserved\\payload-comparison.json",
+          "label": "v6-companion-barun-basic-reserved",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-barun-proc-after\\companion-comparison.json",
+          "label": "v6-companion-barun-proc-after-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-barun-proc-after\\payload-comparison.json",
+          "label": "v6-companion-barun-proc-after",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-barun-proc-reserved\\companion-comparison.json",
+          "label": "v6-companion-barun-proc-reserved-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-barun-proc-reserved\\payload-comparison.json",
+          "label": "v6-companion-barun-proc-reserved",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-doto-basic-after\\companion-comparison.json",
+          "label": "v6-companion-doto-basic-after-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-doto-basic-after\\payload-comparison.json",
+          "label": "v6-companion-doto-basic-after",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-doto-basic-reserved\\companion-comparison.json",
+          "label": "v6-companion-doto-basic-reserved-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-doto-basic-reserved\\payload-comparison.json",
+          "label": "v6-companion-doto-basic-reserved",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-doto-proc-after\\companion-comparison.json",
+          "label": "v6-companion-doto-proc-after-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-doto-proc-after\\payload-comparison.json",
+          "label": "v6-companion-doto-proc-after",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-doto-proc-reserved\\companion-comparison.json",
+          "label": "v6-companion-doto-proc-reserved-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-doto-proc-reserved\\payload-comparison.json",
+          "label": "v6-companion-doto-proc-reserved",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-momo-basic-after\\companion-comparison.json",
+          "label": "v6-companion-momo-basic-after-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-momo-basic-after\\payload-comparison.json",
+          "label": "v6-companion-momo-basic-after",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-momo-basic-reserved\\companion-comparison.json",
+          "label": "v6-companion-momo-basic-reserved-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-momo-basic-reserved\\payload-comparison.json",
+          "label": "v6-companion-momo-basic-reserved",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-momo-proc-after\\companion-comparison.json",
+          "label": "v6-companion-momo-proc-after-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-momo-proc-after\\payload-comparison.json",
+          "label": "v6-companion-momo-proc-after",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-momo-proc-reserved\\companion-comparison.json",
+          "label": "v6-companion-momo-proc-reserved-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-momo-proc-reserved\\payload-comparison.json",
+          "label": "v6-companion-momo-proc-reserved",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-rina-basic-after\\companion-comparison.json",
+          "label": "v6-companion-rina-basic-after-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-rina-basic-after\\payload-comparison.json",
+          "label": "v6-companion-rina-basic-after",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-rina-basic-reserved\\companion-comparison.json",
+          "label": "v6-companion-rina-basic-reserved-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-rina-basic-reserved\\payload-comparison.json",
+          "label": "v6-companion-rina-basic-reserved",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-rina-proc-after\\companion-comparison.json",
+          "label": "v6-companion-rina-proc-after-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-rina-proc-after\\payload-comparison.json",
+          "label": "v6-companion-rina-proc-after",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-rina-proc-reserved\\companion-comparison.json",
+          "label": "v6-companion-rina-proc-reserved-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-rina-proc-reserved\\payload-comparison.json",
+          "label": "v6-companion-rina-proc-reserved",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-tori-basic-after\\companion-comparison.json",
+          "label": "v6-companion-tori-basic-after-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-tori-basic-after\\payload-comparison.json",
+          "label": "v6-companion-tori-basic-after",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-tori-basic-reserved\\companion-comparison.json",
+          "label": "v6-companion-tori-basic-reserved-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-tori-basic-reserved\\payload-comparison.json",
+          "label": "v6-companion-tori-basic-reserved",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-tori-proc-after\\companion-comparison.json",
+          "label": "v6-companion-tori-proc-after-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-tori-proc-after\\payload-comparison.json",
+          "label": "v6-companion-tori-proc-after",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-tori-proc-reserved\\companion-comparison.json",
+          "label": "v6-companion-tori-proc-reserved-restored-companions",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        },
+        {
+          "file": "fixtures\\v6-companion-tori-proc-reserved\\payload-comparison.json",
+          "label": "v6-companion-tori-proc-reserved",
+          "stringEqual": true,
+          "passed": true,
+          "differences": []
+        }
+      ],
+      "maximumActualParticles": 141
+    }
+  ],
+  "visualWarnings": [],
+  "continuation": {
+    "rawFiles": 146,
+    "resultSha256": "58743C5D2602E9C0A80DCDCD030A5E64F9649EBAF784D92EC0219AF11362F89E",
+    "scope": "1280 resumes at Luka skill/save regression; completed legacy/inn/HP observations reused. Remaining1280 and all640 cases run once.",
+    "candidate": "dragon-v6-candidate-01"
+  },
+  "observationPassed": false,
+  "acceptance": "NOT_CERTIFIED",
+  "visualReview": "NOT_RUN",
+  "audioListening": "NOT_RUN",
+  "osInput": "DEFERRED",
+  "userDefaultProfile": "NOT_ACCESSED",
+  "limits": "Metadata and hash integrity only. Open original PNGs for visual review; inspect exact fixture scopes and manual clock gaps."
+}

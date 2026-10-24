@@ -1,0 +1,54 @@
+{
+  "reason": "Largest HP bar clearly separates fixed green actual HP from receding orange trail; original1280 PNGs, no edits",
+  "fixture": "Boss20 art; explicit30HP fixture; real normal10HP contact; not authored boss balance",
+  "images": [
+    {
+      "point": "first",
+      "file": "1280x720/fresh/v3-frame-v6-hp-trail-boss-000151.png",
+      "sha256": "25fe40b00133425a7817da49748d9acc837179597e6896a39bfb3c65bd84895e",
+      "barCrop": [
+        360,
+        16,
+        920,
+        60
+      ],
+      "greenPixels": 4544,
+      "orangePixels": 2112,
+      "actual": 0.6666666865348816,
+      "trail": 1.0,
+      "visible": true
+    },
+    {
+      "point": "middle",
+      "file": "1280x720/fresh/v3-frame-v6-hp-trail-boss-000173.png",
+      "sha256": "60433c50c8ca99aea6feda3a704ee842982ca7ffd2da1e0ef15878051da90e89",
+      "barCrop": [
+        360,
+        16,
+        920,
+        60
+      ],
+      "greenPixels": 4544,
+      "orangePixels": 1152,
+      "actual": 0.6666666865348816,
+      "trail": 0.8438698649406433,
+      "visible": true
+    },
+    {
+      "point": "end",
+      "file": "1280x720/fresh/v3-frame-v6-hp-trail-boss-000191.png",
+      "sha256": "dbf0e6fce83c722be8af2926b8dc5e31318332c53b4e840a964f3a2681a1e62e",
+      "barCrop": [
+        360,
+        16,
+        920,
+        60
+      ],
+      "greenPixels": 4544,
+      "orangePixels": 0,
+      "actual": 0.6666666865348816,
+      "trail": 0.6666666865348816,
+      "visible": true
+    }
+  ]
+}

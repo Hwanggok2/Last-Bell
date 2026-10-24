@@ -1,0 +1,1125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="167" result="Passed" total="167" passed="167" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:53Z" duration="2.1520917">
+  <test-suite type="TestSuite" id="1000" name="Last Bell MVP" fullname="Last Bell MVP" runstate="Runnable" testcasecount="167" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:53Z" duration="2.152092" total="167" passed="167" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1185" name="LastBell.Core.Tests.dll" fullname="C:/Github/Test2/Client/Library/ScriptAssemblies/LastBell.Core.Tests.dll" runstate="Runnable" testcasecount="157" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:53Z" duration="2.039308" total="157" passed="157" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="23648" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1186" name="LastBell" fullname="LastBell" runstate="Runnable" testcasecount="157" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:53Z" duration="2.038827" total="157" passed="157" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1187" name="Tests" fullname="LastBell.Tests" runstate="Runnable" testcasecount="157" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:53Z" duration="2.038579" total="157" passed="157" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1001" name="ActorClipTimingTests" fullname="LastBell.Tests.ActorClipTimingTests" classname="LastBell.Tests.ActorClipTimingTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.036904" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1002" name="AuthoredHoldsSwitchAtEachBoundaryAndRepeatWithoutLosingLongPoses" fullname="LastBell.Tests.ActorClipTimingTests.AuthoredHoldsSwitchAtEachBoundaryAndRepeatWithoutLosingLongPoses" methodname="AuthoredHoldsSwitchAtEachBoundaryAndRepeatWithoutLosingLongPoses" classname="LastBell.Tests.ActorClipTimingTests" runstate="Runnable" seed="1399875965" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.018161" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1003" name="ExplicitDurationScalesHoldsAndNonLoopClampsAtLastPose" fullname="LastBell.Tests.ActorClipTimingTests.ExplicitDurationScalesHoldsAndNonLoopClampsAtLastPose" methodname="ExplicitDurationScalesHoldsAndNonLoopClampsAtLastPose" classname="LastBell.Tests.ActorClipTimingTests" runstate="Runnable" seed="1514040822" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.000379" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1005" name="LegacyUniformFramesAndAttackContactTimingAreUnchanged" fullname="LastBell.Tests.ActorClipTimingTests.LegacyUniformFramesAndAttackContactTimingAreUnchanged" methodname="LegacyUniformFramesAndAttackContactTimingAreUnchanged" classname="LastBell.Tests.ActorClipTimingTests" runstate="Runnable" seed="945776120" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.000485" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1004" name="ReviewedAttackUsesAuthoredContactAndRecoveryHolds" fullname="LastBell.Tests.ActorClipTimingTests.ReviewedAttackUsesAuthoredContactAndRecoveryHolds" methodname="ReviewedAttackUsesAuthoredContactAndRecoveryHolds" classname="LastBell.Tests.ActorClipTimingTests" runstate="Runnable" seed="121983698" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.000694" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1006" name="BalanceV7Tests" fullname="LastBell.Tests.BalanceV7Tests" classname="LastBell.Tests.BalanceV7Tests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.278956" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1007" name="CostsJumpOnElevenAndAccelerateInsideEachTier" fullname="LastBell.Tests.BalanceV7Tests.CostsJumpOnElevenAndAccelerateInsideEachTier" methodname="CostsJumpOnElevenAndAccelerateInsideEachTier" classname="LastBell.Tests.BalanceV7Tests" runstate="Runnable" seed="87555793" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.025556" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1008" name="EveryStarAndEveryUpgradeHasAWholeObservableGain" fullname="LastBell.Tests.BalanceV7Tests.EveryStarAndEveryUpgradeHasAWholeObservableGain" methodname="EveryStarAndEveryUpgradeHasAWholeObservableGain" classname="LastBell.Tests.BalanceV7Tests" runstate="Runnable" seed="1895708577" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.243993" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1010" name="LargeTotalUpgradeCostDoesNotOverflowAndDebitsOnce" fullname="LastBell.Tests.BalanceV7Tests.LargeTotalUpgradeCostDoesNotOverflowAndDebitsOnce" methodname="LargeTotalUpgradeCostDoesNotOverflowAndDebitsOnce" classname="LastBell.Tests.BalanceV7Tests" runstate="Runnable" seed="334513990" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.003296" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1009" name="UpgradedHeroStillNeedsMoreHitsAndHasFewerMistakesLate" fullname="LastBell.Tests.BalanceV7Tests.UpgradedHeroStillNeedsMoreHitsAndHasFewerMistakesLate" methodname="UpgradedHeroStillNeedsMoreHitsAndHasFewerMistakesLate" classname="LastBell.Tests.BalanceV7Tests" runstate="Runnable" seed="1813417084" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.003759" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1011" name="CombatV55Tests" fullname="LastBell.Tests.CombatV55Tests" classname="LastBell.Tests.CombatV55Tests" runstate="Runnable" testcasecount="13" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.058523" total="13" passed="13" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1023" name="CounterCannotRefundCooldownAndRejectedInputRetainsOpportunity" fullname="LastBell.Tests.CombatV55Tests.CounterCannotRefundCooldownAndRejectedInputRetainsOpportunity" methodname="CounterCannotRefundCooldownAndRejectedInputRetainsOpportunity" classname="LastBell.Tests.CombatV55Tests" runstate="Runnable" seed="804648323" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.011054" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1022" name="CounterConsumesAcceptedInputButPreservesBothCooldownsAndContactDeadline" fullname="LastBell.Tests.CombatV55Tests.CounterConsumesAcceptedInputButPreservesBothCooldownsAndContactDeadline" methodname="CounterConsumesAcceptedInputButPreservesBothCooldownsAndContactDeadline" classname="LastBell.Tests.CombatV55Tests" runstate="Runnable" seed="1626312818" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.005094" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1024" name="CounterExpiresClearsOnNewDodgeAndNeverCancelsTheNextThreat" fullname="LastBell.Tests.CombatV55Tests.CounterExpiresClearsOnNewDodgeAndNeverCancelsTheNextThreat" methodname="CounterExpiresClearsOnNewDodgeAndNeverCancelsTheNextThreat" classname="LastBell.Tests.CombatV55Tests" runstate="Runnable" seed="1730880219" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.007287" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1021" name="FullQueuePrecedesBothHitsAndNeverCuesAgainBetweenHits" fullname="LastBell.Tests.CombatV55Tests.FullQueuePrecedesBothHitsAndNeverCuesAgainBetweenHits" classname="LastBell.Tests.CombatV55Tests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.009520" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1019" name="FullQueuePrecedesBothHitsAndNeverCuesAgainBetweenHits(5,720,1440,1920)" fullname="LastBell.Tests.CombatV55Tests.FullQueuePrecedesBothHitsAndNeverCuesAgainBetweenHits(5,720,1440,1920)" methodname="FullQueuePrecedesBothHitsAndNeverCuesAgainBetweenHits" classname="LastBell.Tests.CombatV55Tests" runstate="Runnable" seed="2028894519" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.007031" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1020" name="FullQueuePrecedesBothHitsAndNeverCuesAgainBetweenHits(10,720,1440,1920)" fullname="LastBell.Tests.CombatV55Tests.FullQueuePrecedesBothHitsAndNeverCuesAgainBetweenHits(10,720,1440,1920)" methodname="FullQueuePrecedesBothHitsAndNeverCuesAgainBetweenHits" classname="LastBell.Tests.CombatV55Tests" runstate="Runnable" seed="1136694659" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.001772" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1027" name="LeavingRearFootprintByAnAttackNeverCausesAnInvisibleDirectionFailure" fullname="LastBell.Tests.CombatV55Tests.LeavingRearFootprintByAnAttackNeverCausesAnInvisibleDirectionFailure" methodname="LeavingRearFootprintByAnAttackNeverCausesAnInvisibleDirectionFailure" classname="LastBell.Tests.CombatV55Tests" runstate="Runnable" seed="412067542" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.001846" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1026" name="PausedCueAndParticlesHaveNoExtraCoreEventsOnResume" fullname="LastBell.Tests.CombatV55Tests.PausedCueAndParticlesHaveNoExtraCoreEventsOnResume" methodname="PausedCueAndParticlesHaveNoExtraCoreEventsOnResume" classname="LastBell.Tests.CombatV55Tests" runstate="Runnable" seed="709465547" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.002636" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1015" name="SharedFootprintHasExactlyOneSafeDodge" fullname="LastBell.Tests.CombatV55Tests.SharedFootprintHasExactlyOneSafeDodge" classname="LastBell.Tests.CombatV55Tests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.005176" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1012" name="SharedFootprintHasExactlyOneSafeDodge(&quot;low_sweep&quot;,Up)" fullname="LastBell.Tests.CombatV55Tests.SharedFootprintHasExactlyOneSafeDodge(&quot;low_sweep&quot;,Up)" methodname="SharedFootprintHasExactlyOneSafeDodge" classname="LastBell.Tests.CombatV55Tests" runstate="Runnable" seed="1841543682" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.002371" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1013" name="SharedFootprintHasExactlyOneSafeDodge(&quot;thrust&quot;,Back)" fullname="LastBell.Tests.CombatV55Tests.SharedFootprintHasExactlyOneSafeDodge(&quot;thrust&quot;,Back)" methodname="SharedFootprintHasExactlyOneSafeDodge" classname="LastBell.Tests.CombatV55Tests" runstate="Runnable" seed="1258797602" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.001142" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1014" name="SharedFootprintHasExactlyOneSafeDodge(&quot;outer_arc&quot;,Forward)" fullname="LastBell.Tests.CombatV55Tests.SharedFootprintHasExactlyOneSafeDodge(&quot;outer_arc&quot;,Forward)" methodname="SharedFootprintHasExactlyOneSafeDodge" classname="LastBell.Tests.CombatV55Tests" runstate="Runnable" seed="553964141" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.001029" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="ParameterizedMethod" id="1018" name="SingleHitsOnTheFourthBeatAfterThreeBlinks" fullname="LastBell.Tests.CombatV55Tests.SingleHitsOnTheFourthBeatAfterThreeBlinks" classname="LastBell.Tests.CombatV55Tests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.010155" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1016" name="SingleHitsOnTheFourthBeatAfterThreeBlinks(1,600,720)" fullname="LastBell.Tests.CombatV55Tests.SingleHitsOnTheFourthBeatAfterThreeBlinks(1,600,720)" methodname="SingleHitsOnTheFourthBeatAfterThreeBlinks" classname="LastBell.Tests.CombatV55Tests" runstate="Runnable" seed="1023775231" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.004642" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1017" name="SingleHitsOnTheFourthBeatAfterThreeBlinks(2,600,720)" fullname="LastBell.Tests.CombatV55Tests.SingleHitsOnTheFourthBeatAfterThreeBlinks(2,600,720)" methodname="SingleHitsOnTheFourthBeatAfterThreeBlinks" classname="LastBell.Tests.CombatV55Tests" runstate="Runnable" seed="541949642" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.005046" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1025" name="StunCancelsRestOfComboAndRestoredFollowupReplaysFullWarning" fullname="LastBell.Tests.CombatV55Tests.StunCancelsRestOfComboAndRestoredFollowupReplaysFullWarning" methodname="StunCancelsRestOfComboAndRestoredFollowupReplaysFullWarning" classname="LastBell.Tests.CombatV55Tests" runstate="Runnable" seed="217958349" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.003697" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1028" name="CombatV59Tests" fullname="LastBell.Tests.CombatV59Tests" classname="LastBell.Tests.CombatV59Tests" runstate="Runnable" testcasecount="17" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.054532" total="17" passed="17" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1045" name="AttackButtonNeverBecomesAParryAtHighContact" fullname="LastBell.Tests.CombatV59Tests.AttackButtonNeverBecomesAParryAtHighContact" methodname="AttackButtonNeverBecomesAParryAtHighContact" classname="LastBell.Tests.CombatV59Tests" runstate="Runnable" seed="535642886" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.003286" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1043" name="DodgeBodyMatchesEntryHoldAndReturnAndAttackMoves165Pixels" fullname="LastBell.Tests.CombatV59Tests.DodgeBodyMatchesEntryHoldAndReturnAndAttackMoves165Pixels" methodname="DodgeBodyMatchesEntryHoldAndReturnAndAttackMoves165Pixels" classname="LastBell.Tests.CombatV59Tests" runstate="Runnable" seed="1392079641" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.002257" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1041" name="DoubleParryAndMixedDefensesKeepTwoBeatReuseAndQueue" fullname="LastBell.Tests.CombatV59Tests.DoubleParryAndMixedDefensesKeepTwoBeatReuseAndQueue" methodname="DoubleParryAndMixedDefensesKeepTwoBeatReuseAndQueue" classname="LastBell.Tests.CombatV59Tests" runstate="Runnable" seed="1951258249" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.004238" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1047" name="DownCannotParryALowAttackOrCancelItsQueue" fullname="LastBell.Tests.CombatV59Tests.DownCannotParryALowAttackOrCancelItsQueue" methodname="DownCannotParryALowAttackOrCancelItsQueue" classname="LastBell.Tests.CombatV59Tests" runstate="Runnable" seed="1995296308" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.001909" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1034" name="DownParryUsesIndependentDefenseWindowAndDealsNoDamage" fullname="LastBell.Tests.CombatV59Tests.DownParryUsesIndependentDefenseWindowAndDealsNoDamage" classname="LastBell.Tests.CombatV59Tests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.016244" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1029" name="DownParryUsesIndependentDefenseWindowAndDealsNoDamage(0,True,True)" fullname="LastBell.Tests.CombatV59Tests.DownParryUsesIndependentDefenseWindowAndDealsNoDamage(0,True,True)" methodname="DownParryUsesIndependentDefenseWindowAndDealsNoDamage" classname="LastBell.Tests.CombatV59Tests" runstate="Runnable" seed="455904335" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.006113" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1030" name="DownParryUsesIndependentDefenseWindowAndDealsNoDamage(60,True,True)" fullname="LastBell.Tests.CombatV59Tests.DownParryUsesIndependentDefenseWindowAndDealsNoDamage(60,True,True)" methodname="DownParryUsesIndependentDefenseWindowAndDealsNoDamage" classname="LastBell.Tests.CombatV59Tests" runstate="Runnable" seed="1246574064" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.004749" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1031" name="DownParryUsesIndependentDefenseWindowAndDealsNoDamage(61,True,False)" fullname="LastBell.Tests.CombatV59Tests.DownParryUsesIndependentDefenseWindowAndDealsNoDamage(61,True,False)" methodname="DownParryUsesIndependentDefenseWindowAndDealsNoDamage" classname="LastBell.Tests.CombatV59Tests" runstate="Runnable" seed="1821120545" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.001594" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1032" name="DownParryUsesIndependentDefenseWindowAndDealsNoDamage(160,True,False)" fullname="LastBell.Tests.CombatV59Tests.DownParryUsesIndependentDefenseWindowAndDealsNoDamage(160,True,False)" methodname="DownParryUsesIndependentDefenseWindowAndDealsNoDamage" classname="LastBell.Tests.CombatV59Tests" runstate="Runnable" seed="2128171009" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.001480" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1033" name="DownParryUsesIndependentDefenseWindowAndDealsNoDamage(161,False,False)" fullname="LastBell.Tests.CombatV59Tests.DownParryUsesIndependentDefenseWindowAndDealsNoDamage(161,False,False)" methodname="DownParryUsesIndependentDefenseWindowAndDealsNoDamage" classname="LastBell.Tests.CombatV59Tests" runstate="Runnable" seed="156569368" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.001489" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1046" name="EarlyDownSpendsDefenseReuseAndNeverCrouchesOrDealsDamage" fullname="LastBell.Tests.CombatV59Tests.EarlyDownSpendsDefenseReuseAndNeverCrouchesOrDealsDamage" methodname="EarlyDownSpendsDefenseReuseAndNeverCrouchesOrDealsDamage" classname="LastBell.Tests.CombatV59Tests" runstate="Runnable" seed="271718065" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.001936" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1040" name="HighAttackCannotBeEvadedByTheThreeAvailableDodges" fullname="LastBell.Tests.CombatV59Tests.HighAttackCannotBeEvadedByTheThreeAvailableDodges" classname="LastBell.Tests.CombatV59Tests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.005471" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1037" name="HighAttackCannotBeEvadedByTheThreeAvailableDodges(Up)" fullname="LastBell.Tests.CombatV59Tests.HighAttackCannotBeEvadedByTheThreeAvailableDodges(Up)" methodname="HighAttackCannotBeEvadedByTheThreeAvailableDodges" classname="LastBell.Tests.CombatV59Tests" runstate="Runnable" seed="1768756517" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.001941" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1038" name="HighAttackCannotBeEvadedByTheThreeAvailableDodges(Back)" fullname="LastBell.Tests.CombatV59Tests.HighAttackCannotBeEvadedByTheThreeAvailableDodges(Back)" methodname="HighAttackCannotBeEvadedByTheThreeAvailableDodges" classname="LastBell.Tests.CombatV59Tests" runstate="Runnable" seed="619865061" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.001479" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1039" name="HighAttackCannotBeEvadedByTheThreeAvailableDodges(Forward)" fullname="LastBell.Tests.CombatV59Tests.HighAttackCannotBeEvadedByTheThreeAvailableDodges(Forward)" methodname="HighAttackCannotBeEvadedByTheThreeAvailableDodges" classname="LastBell.Tests.CombatV59Tests" runstate="Runnable" seed="668098570" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.001433" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1035" name="ParryInterruptsPendingAttackWithoutRefundingItsCooldown" fullname="LastBell.Tests.CombatV59Tests.ParryInterruptsPendingAttackWithoutRefundingItsCooldown" methodname="ParryInterruptsPendingAttackWithoutRefundingItsCooldown" classname="LastBell.Tests.CombatV59Tests" runstate="Runnable" seed="1068250063" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.005245" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1036" name="ParryPreservesAnAlreadyLandedAttackAndCannotRepeatOnHeldInput" fullname="LastBell.Tests.CombatV59Tests.ParryPreservesAnAlreadyLandedAttackAndCannotRepeatOnHeldInput" methodname="ParryPreservesAnAlreadyLandedAttackAndCannotRepeatOnHeldInput" classname="LastBell.Tests.CombatV59Tests" runstate="Runnable" seed="1426008238" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.005137" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1044" name="PauseAndRestoreNeverReplayAStaleParry" fullname="LastBell.Tests.CombatV59Tests.PauseAndRestoreNeverReplayAStaleParry" methodname="PauseAndRestoreNeverReplayAStaleParry" classname="LastBell.Tests.CombatV59Tests" runstate="Runnable" seed="841037724" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.002258" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1042" name="RhythmUsesThreeBlinksThenContactAndEqualVisibleWaveSpeed" fullname="LastBell.Tests.CombatV59Tests.RhythmUsesThreeBlinksThenContactAndEqualVisibleWaveSpeed" methodname="RhythmUsesThreeBlinksThenContactAndEqualVisibleWaveSpeed" classname="LastBell.Tests.CombatV59Tests" runstate="Runnable" seed="452951152" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.004453" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1048" name="FeedbackV6Tests" fullname="LastBell.Tests.FeedbackV6Tests" classname="LastBell.Tests.FeedbackV6Tests" runstate="Runnable" testcasecount="23" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:52Z" duration="1.283011" total="23" passed="23" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1049" name="AllFifteenActorsHavePlayableAssignmentsAndTwentyHasBossStats" fullname="LastBell.Tests.FeedbackV6Tests.AllFifteenActorsHavePlayableAssignmentsAndTwentyHasBossStats" methodname="AllFifteenActorsHavePlayableAssignmentsAndTwentyHasBossStats" classname="LastBell.Tests.FeedbackV6Tests" runstate="Runnable" seed="222010522" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.002917" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1069" name="BossResistanceAndConsecutivePerfectBonusAreApplied" fullname="LastBell.Tests.FeedbackV6Tests.BossResistanceAndConsecutivePerfectBonusAreApplied" classname="LastBell.Tests.FeedbackV6Tests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.012284" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1066" name="BossResistanceAndConsecutivePerfectBonusAreApplied(1,40.0d,48.0d)" fullname="LastBell.Tests.FeedbackV6Tests.BossResistanceAndConsecutivePerfectBonusAreApplied(1,40.0d,48.0d)" methodname="BossResistanceAndConsecutivePerfectBonusAreApplied" classname="LastBell.Tests.FeedbackV6Tests" runstate="Runnable" seed="328707755" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.004237" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1067" name="BossResistanceAndConsecutivePerfectBonusAreApplied(5,24.0d,28.8d)" fullname="LastBell.Tests.FeedbackV6Tests.BossResistanceAndConsecutivePerfectBonusAreApplied(5,24.0d,28.8d)" methodname="BossResistanceAndConsecutivePerfectBonusAreApplied" classname="LastBell.Tests.FeedbackV6Tests" runstate="Runnable" seed="399654168" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.005394" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1068" name="BossResistanceAndConsecutivePerfectBonusAreApplied(10,16.0d,19.2d)" fullname="LastBell.Tests.FeedbackV6Tests.BossResistanceAndConsecutivePerfectBonusAreApplied(10,16.0d,19.2d)" methodname="BossResistanceAndConsecutivePerfectBonusAreApplied" classname="LastBell.Tests.FeedbackV6Tests" runstate="Runnable" seed="1875136635" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.001933" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1073" name="BossTenTalksBeforeDissolveAndRewardsRemainOnceAcrossReload" fullname="LastBell.Tests.FeedbackV6Tests.BossTenTalksBeforeDissolveAndRewardsRemainOnceAcrossReload" methodname="BossTenTalksBeforeDissolveAndRewardsRemainOnceAcrossReload" classname="LastBell.Tests.FeedbackV6Tests" runstate="Runnable" seed="2093538663" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.007605" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1072" name="DamageResetsComboAndPerfectStreakButStageTravelPreservesHitCombo" fullname="LastBell.Tests.FeedbackV6Tests.DamageResetsComboAndPerfectStreakButStageTravelPreservesHitCombo" methodname="DamageResetsComboAndPerfectStreakButStageTravelPreservesHitCombo" classname="LastBell.Tests.FeedbackV6Tests" runstate="Runnable" seed="582428586" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.003102" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1056" name="DotAccountingFinishesInOnePointTwoSecondsWithoutOverflow" fullname="LastBell.Tests.FeedbackV6Tests.DotAccountingFinishesInOnePointTwoSecondsWithoutOverflow" classname="LastBell.Tests.FeedbackV6Tests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.013391" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1050" name="DotAccountingFinishesInOnePointTwoSecondsWithoutOverflow(0L)" fullname="LastBell.Tests.FeedbackV6Tests.DotAccountingFinishesInOnePointTwoSecondsWithoutOverflow(0L)" methodname="DotAccountingFinishesInOnePointTwoSecondsWithoutOverflow" classname="LastBell.Tests.FeedbackV6Tests" runstate="Runnable" seed="1099552115" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.002300" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1051" name="DotAccountingFinishesInOnePointTwoSecondsWithoutOverflow(1L)" fullname="LastBell.Tests.FeedbackV6Tests.DotAccountingFinishesInOnePointTwoSecondsWithoutOverflow(1L)" methodname="DotAccountingFinishesInOnePointTwoSecondsWithoutOverflow" classname="LastBell.Tests.FeedbackV6Tests" runstate="Runnable" seed="1093729086" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.001538" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1052" name="DotAccountingFinishesInOnePointTwoSecondsWithoutOverflow(42L)" fullname="LastBell.Tests.FeedbackV6Tests.DotAccountingFinishesInOnePointTwoSecondsWithoutOverflow(42L)" methodname="DotAccountingFinishesInOnePointTwoSecondsWithoutOverflow" classname="LastBell.Tests.FeedbackV6Tests" runstate="Runnable" seed="1314857266" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.001443" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1053" name="DotAccountingFinishesInOnePointTwoSecondsWithoutOverflow(750L)" fullname="LastBell.Tests.FeedbackV6Tests.DotAccountingFinishesInOnePointTwoSecondsWithoutOverflow(750L)" methodname="DotAccountingFinishesInOnePointTwoSecondsWithoutOverflow" classname="LastBell.Tests.FeedbackV6Tests" runstate="Runnable" seed="1210009228" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.001338" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1054" name="DotAccountingFinishesInOnePointTwoSecondsWithoutOverflow(1000000000L)" fullname="LastBell.Tests.FeedbackV6Tests.DotAccountingFinishesInOnePointTwoSecondsWithoutOverflow(1000000000L)" methodname="DotAccountingFinishesInOnePointTwoSecondsWithoutOverflow" classname="LastBell.Tests.FeedbackV6Tests" runstate="Runnable" seed="1103764772" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.001274" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1055" name="DotAccountingFinishesInOnePointTwoSecondsWithoutOverflow(long.MaxValue)" fullname="LastBell.Tests.FeedbackV6Tests.DotAccountingFinishesInOnePointTwoSecondsWithoutOverflow(long.MaxValue)" methodname="DotAccountingFinishesInOnePointTwoSecondsWithoutOverflow" classname="LastBell.Tests.FeedbackV6Tests" runstate="Runnable" seed="1440054126" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:51Z" duration="0.004553" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1059" name="EarlyNormalEnemiesNeverComboAndThreeHitAttacksBeginAtFifteen" fullname="LastBell.Tests.FeedbackV6Tests.EarlyNormalEnemiesNeverComboAndThreeHitAttacksBeginAtFifteen" methodname="EarlyNormalEnemiesNeverComboAndThreeHitAttacksBeginAtFifteen" classname="LastBell.Tests.FeedbackV6Tests" runstate="Runnable" seed="1506215389" result="Passed" start-time="2026-10-23 02:40:51Z" end-time="2026-10-23 02:40:52Z" duration="1.207854" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1071" name="ExactStunEndExpiresBeforeHitAndLethalHitDoesNotExtend" fullname="LastBell.Tests.FeedbackV6Tests.ExactStunEndExpiresBeforeHitAndLethalHitDoesNotExtend" methodname="ExactStunEndExpiresBeforeHitAndLethalHitDoesNotExtend" classname="LastBell.Tests.FeedbackV6Tests" runstate="Runnable" seed="655184306" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.002977" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1063" name="ExistingQueuedAttacksRespectTheUpdatedStageOnResume" fullname="LastBell.Tests.FeedbackV6Tests.ExistingQueuedAttacksRespectTheUpdatedStageOnResume" classname="LastBell.Tests.FeedbackV6Tests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.010209" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1060" name="ExistingQueuedAttacksRespectTheUpdatedStageOnResume(6,1)" fullname="LastBell.Tests.FeedbackV6Tests.ExistingQueuedAttacksRespectTheUpdatedStageOnResume(6,1)" methodname="ExistingQueuedAttacksRespectTheUpdatedStageOnResume" classname="LastBell.Tests.FeedbackV6Tests" runstate="Runnable" seed="63198611" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.002500" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1061" name="ExistingQueuedAttacksRespectTheUpdatedStageOnResume(9,1)" fullname="LastBell.Tests.FeedbackV6Tests.ExistingQueuedAttacksRespectTheUpdatedStageOnResume(9,1)" methodname="ExistingQueuedAttacksRespectTheUpdatedStageOnResume" classname="LastBell.Tests.FeedbackV6Tests" runstate="Runnable" seed="426726266" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.001816" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1062" name="ExistingQueuedAttacksRespectTheUpdatedStageOnResume(10,2)" fullname="LastBell.Tests.FeedbackV6Tests.ExistingQueuedAttacksRespectTheUpdatedStageOnResume(10,2)" methodname="ExistingQueuedAttacksRespectTheUpdatedStageOnResume" classname="LastBell.Tests.FeedbackV6Tests" runstate="Runnable" seed="533888954" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.004868" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1058" name="GateWardenIsTheFifthStageMinibossAndGateLockMovesToNine" fullname="LastBell.Tests.FeedbackV6Tests.GateWardenIsTheFifthStageMinibossAndGateLockMovesToNine" methodname="GateWardenIsTheFifthStageMinibossAndGateLockMovesToNine" classname="LastBell.Tests.FeedbackV6Tests" runstate="Runnable" seed="1937120884" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.004733" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1057" name="HigherRewardsIncreaseDensityAndRenderedDotsRemainBounded" fullname="LastBell.Tests.FeedbackV6Tests.HigherRewardsIncreaseDensityAndRenderedDotsRemainBounded" methodname="HigherRewardsIncreaseDensityAndRenderedDotsRemainBounded" classname="LastBell.Tests.FeedbackV6Tests" runstate="Runnable" seed="586418758" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.001431" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1065" name="PatternRandomDoesNotConsumeRewardRandomAndNeverTriplesDirections" fullname="LastBell.Tests.FeedbackV6Tests.PatternRandomDoesNotConsumeRewardRandomAndNeverTriplesDirections" methodname="PatternRandomDoesNotConsumeRewardRandomAndNeverTriplesDirections" classname="LastBell.Tests.FeedbackV6Tests" runstate="Runnable" seed="1849303559" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.004905" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1064" name="RandomQueueFreezesAndResumeKeepsOnlyUnresolvedDirections" fullname="LastBell.Tests.FeedbackV6Tests.RandomQueueFreezesAndResumeKeepsOnlyUnresolvedDirections" methodname="RandomQueueFreezesAndResumeKeepsOnlyUnresolvedDirections" classname="LastBell.Tests.FeedbackV6Tests" runstate="Runnable" seed="1325579727" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.003800" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1070" name="StunnedAttackSnapshotsSpeedAndExtendsOnlyUpToThreeHundredMs" fullname="LastBell.Tests.FeedbackV6Tests.StunnedAttackSnapshotsSpeedAndExtendsOnlyUpToThreeHundredMs" methodname="StunnedAttackSnapshotsSpeedAndExtendsOnlyUpToThreeHundredMs" classname="LastBell.Tests.FeedbackV6Tests" runstate="Runnable" seed="1306904184" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.002157" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1074" name="TwentyCompletesAndOldCompletedTenSaveReturnsToLobby" fullname="LastBell.Tests.FeedbackV6Tests.TwentyCompletesAndOldCompletedTenSaveReturnsToLobby" methodname="TwentyCompletesAndOldCompletedTenSaveReturnsToLobby" classname="LastBell.Tests.FeedbackV6Tests" runstate="Runnable" seed="2044351475" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.002709" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1075" name="GameSessionTests" fullname="LastBell.Tests.GameSessionTests" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" testcasecount="91" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:53Z" duration="0.305901" total="91" passed="91" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="ParameterizedMethod" id="1156" name="AnEmptyRecordNeverSatisfiesAPhaseThatRequiresPendingState" fullname="LastBell.Tests.GameSessionTests.AnEmptyRecordNeverSatisfiesAPhaseThatRequiresPendingState" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.014691" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1153" name="AnEmptyRecordNeverSatisfiesAPhaseThatRequiresPendingState(RewardChoice)" fullname="LastBell.Tests.GameSessionTests.AnEmptyRecordNeverSatisfiesAPhaseThatRequiresPendingState(RewardChoice)" methodname="AnEmptyRecordNeverSatisfiesAPhaseThatRequiresPendingState" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="146100322" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.004189" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1154" name="AnEmptyRecordNeverSatisfiesAPhaseThatRequiresPendingState(StoryDialogue)" fullname="LastBell.Tests.GameSessionTests.AnEmptyRecordNeverSatisfiesAPhaseThatRequiresPendingState(StoryDialogue)" methodname="AnEmptyRecordNeverSatisfiesAPhaseThatRequiresPendingState" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1318156562" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.008054" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1155" name="AnEmptyRecordNeverSatisfiesAPhaseThatRequiresPendingState(Transition)" fullname="LastBell.Tests.GameSessionTests.AnEmptyRecordNeverSatisfiesAPhaseThatRequiresPendingState(Transition)" methodname="AnEmptyRecordNeverSatisfiesAPhaseThatRequiresPendingState" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1585960630" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.001872" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="ParameterizedMethod" id="1133" name="BossIntroBlocksAllCombatAndMarksSeenOnlyAtCompletion" fullname="LastBell.Tests.GameSessionTests.BossIntroBlocksAllCombatAndMarksSeenOnlyAtCompletion" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.007349" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1131" name="BossIntroBlocksAllCombatAndMarksSeenOnlyAtCompletion(5,1.8f,1.0f)" fullname="LastBell.Tests.GameSessionTests.BossIntroBlocksAllCombatAndMarksSeenOnlyAtCompletion(5,1.8f,1.0f)" methodname="BossIntroBlocksAllCombatAndMarksSeenOnlyAtCompletion" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1104552550" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.004354" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1132" name="BossIntroBlocksAllCombatAndMarksSeenOnlyAtCompletion(10,2.2f,1.2f)" fullname="LastBell.Tests.GameSessionTests.BossIntroBlocksAllCombatAndMarksSeenOnlyAtCompletion(10,2.2f,1.2f)" methodname="BossIntroBlocksAllCombatAndMarksSeenOnlyAtCompletion" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="495514231" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.002492" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1134" name="BossRewardIsFixedBeforeCollapseThenStoryResumesBeforeRelicChoice" fullname="LastBell.Tests.GameSessionTests.BossRewardIsFixedBeforeCollapseThenStoryResumesBeforeRelicChoice" methodname="BossRewardIsFixedBeforeCollapseThenStoryResumesBeforeRelicChoice" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1244411297" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.006524" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1113" name="BossWarnsAllThreeAreasBeforeAttackingAt480MsIntervals" fullname="LastBell.Tests.GameSessionTests.BossWarnsAllThreeAreasBeforeAttackingAt480MsIntervals" methodname="BossWarnsAllThreeAreasBeforeAttackingAt480MsIntervals" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1631694287" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.006115" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1158" name="CancelInsufficientAndStaleExchangeNeverSpend" fullname="LastBell.Tests.GameSessionTests.CancelInsufficientAndStaleExchangeNeverSpend" methodname="CancelInsufficientAndStaleExchangeNeverSpend" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1504455638" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.002869" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1092" name="CompletedCueDoesNotExtendAnEarlierDodge" fullname="LastBell.Tests.GameSessionTests.CompletedCueDoesNotExtendAnEarlierDodge" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.008005" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1088" name="CompletedCueDoesNotExtendAnEarlierDodge(161,False,False)" fullname="LastBell.Tests.GameSessionTests.CompletedCueDoesNotExtendAnEarlierDodge(161,False,False)" methodname="CompletedCueDoesNotExtendAnEarlierDodge" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1574457561" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.002155" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1089" name="CompletedCueDoesNotExtendAnEarlierDodge(160,True,False)" fullname="LastBell.Tests.GameSessionTests.CompletedCueDoesNotExtendAnEarlierDodge(160,True,False)" methodname="CompletedCueDoesNotExtendAnEarlierDodge" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1298747264" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.001632" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1090" name="CompletedCueDoesNotExtendAnEarlierDodge(61,True,False)" fullname="LastBell.Tests.GameSessionTests.CompletedCueDoesNotExtendAnEarlierDodge(61,True,False)" methodname="CompletedCueDoesNotExtendAnEarlierDodge" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1407894330" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.001691" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1091" name="CompletedCueDoesNotExtendAnEarlierDodge(60,True,True)" fullname="LastBell.Tests.GameSessionTests.CompletedCueDoesNotExtendAnEarlierDodge(60,True,True)" methodname="CompletedCueDoesNotExtendAnEarlierDodge" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="181568046" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.001703" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1106" name="CompletedCuePreservesSimultaneousLethalEnemyPriority" fullname="LastBell.Tests.GameSessionTests.CompletedCuePreservesSimultaneousLethalEnemyPriority" methodname="CompletedCuePreservesSimultaneousLethalEnemyPriority" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="518731055" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.002518" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1098" name="CompletedCueRequiresTheCorrectDirection" fullname="LastBell.Tests.GameSessionTests.CompletedCueRequiresTheCorrectDirection" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.014893" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1094" name="CompletedCueRequiresTheCorrectDirection(1,Up)" fullname="LastBell.Tests.GameSessionTests.CompletedCueRequiresTheCorrectDirection(1,Up)" methodname="CompletedCueRequiresTheCorrectDirection" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1871445351" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.005314" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1095" name="CompletedCueRequiresTheCorrectDirection(2,Back)" fullname="LastBell.Tests.GameSessionTests.CompletedCueRequiresTheCorrectDirection(2,Back)" methodname="CompletedCueRequiresTheCorrectDirection" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="511958003" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.005097" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1096" name="CompletedCueRequiresTheCorrectDirection(3,Down)" fullname="LastBell.Tests.GameSessionTests.CompletedCueRequiresTheCorrectDirection(3,Down)" methodname="CompletedCueRequiresTheCorrectDirection" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="40112384" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.001724" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1097" name="CompletedCueRequiresTheCorrectDirection(4,Forward)" fullname="LastBell.Tests.GameSessionTests.CompletedCueRequiresTheCorrectDirection(4,Forward)" methodname="CompletedCueRequiresTheCorrectDirection" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1320108984" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.001998" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1093" name="CompletedCueWithoutInputDealsDamageOnTheNextInputFrame" fullname="LastBell.Tests.GameSessionTests.CompletedCueWithoutInputDealsDamageOnTheNextInputFrame" methodname="CompletedCueWithoutInputDealsDamageOnTheNextInputFrame" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="413023261" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.002157" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1099" name="CompletionFrameDoesNotBypassDodgeReuse" fullname="LastBell.Tests.GameSessionTests.CompletionFrameDoesNotBypassDodgeReuse" methodname="CompletionFrameDoesNotBypassDodgeReuse" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="759670323" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.002074" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1104" name="CompletionFrameIsNotCarriedIntoANewRun" fullname="LastBell.Tests.GameSessionTests.CompletionFrameIsNotCarriedIntoANewRun" methodname="CompletionFrameIsNotCarriedIntoANewRun" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1350170995" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.002086" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1101" name="CompletionFramePreservesFullyWarnedBossCombo" fullname="LastBell.Tests.GameSessionTests.CompletionFramePreservesFullyWarnedBossCombo" methodname="CompletionFramePreservesFullyWarnedBossCombo" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1967615641" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.002175" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1087" name="CompletionInputOpportunityDoesNotDependOnDisplayRate" fullname="LastBell.Tests.GameSessionTests.CompletionInputOpportunityDoesNotDependOnDisplayRate" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.009572" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1084" name="CompletionInputOpportunityDoesNotDependOnDisplayRate(30)" fullname="LastBell.Tests.GameSessionTests.CompletionInputOpportunityDoesNotDependOnDisplayRate(30)" methodname="CompletionInputOpportunityDoesNotDependOnDisplayRate" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="438076293" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.005549" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1085" name="CompletionInputOpportunityDoesNotDependOnDisplayRate(60)" fullname="LastBell.Tests.GameSessionTests.CompletionInputOpportunityDoesNotDependOnDisplayRate(60)" methodname="CompletionInputOpportunityDoesNotDependOnDisplayRate" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1341684260" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.001606" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1086" name="CompletionInputOpportunityDoesNotDependOnDisplayRate(144)" fullname="LastBell.Tests.GameSessionTests.CompletionInputOpportunityDoesNotDependOnDisplayRate(144)" methodname="CompletionInputOpportunityDoesNotDependOnDisplayRate" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="103980183" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.001732" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1157" name="ConfirmExchangeOnlyGrantsGoldThenUpgradeRequiresAnotherPress" fullname="LastBell.Tests.GameSessionTests.ConfirmExchangeOnlyGrantsGoldThenUpgradeRequiresAnotherPress" methodname="ConfirmExchangeOnlyGrantsGoldThenUpgradeRequiresAnotherPress" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="947702457" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.002210" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1120" name="CriticalAndStunMultipliersApplyExactlyOnce" fullname="LastBell.Tests.GameSessionTests.CriticalAndStunMultipliersApplyExactlyOnce" methodname="CriticalAndStunMultipliersApplyExactlyOnce" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="590559283" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.002217" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1127" name="DeathAtNineShowsResultAndRetriesFirstCheckpoint" fullname="LastBell.Tests.GameSessionTests.DeathAtNineShowsResultAndRetriesFirstCheckpoint" methodname="DeathAtNineShowsResultAndRetriesFirstCheckpoint" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="674772168" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.002417" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1140" name="DeathTransitionSurvivesRestoreAndUnlocksResultOnlyAfterLantern" fullname="LastBell.Tests.GameSessionTests.DeathTransitionSurvivesRestoreAndUnlocksResultOnlyAfterLantern" methodname="DeathTransitionSurvivesRestoreAndUnlocksResultOnlyAfterLantern" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="293739137" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.002631" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1116" name="DodgeCancelsWindupWithoutRefundingAttackInterval" fullname="LastBell.Tests.GameSessionTests.DodgeCancelsWindupWithoutRefundingAttackInterval" methodname="DodgeCancelsWindupWithoutRefundingAttackInterval" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1283210950" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.005405" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1115" name="DodgeReuseIs260MsAndAttackIsAllowedAfter160Ms" fullname="LastBell.Tests.GameSessionTests.DodgeReuseIs260MsAndAttackIsAllowedAfter160Ms" methodname="DodgeReuseIs260MsAndAttackIsAllowedAfter160Ms" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1879900747" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.001940" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1082" name="DodgeWindowsUseTimeNotFrameCount" fullname="LastBell.Tests.GameSessionTests.DodgeWindowsUseTimeNotFrameCount" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.009796" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1077" name="DodgeWindowsUseTimeNotFrameCount(59,True,True)" fullname="LastBell.Tests.GameSessionTests.DodgeWindowsUseTimeNotFrameCount(59,True,True)" methodname="DodgeWindowsUseTimeNotFrameCount" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1145222193" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.002546" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1078" name="DodgeWindowsUseTimeNotFrameCount(60,True,True)" fullname="LastBell.Tests.GameSessionTests.DodgeWindowsUseTimeNotFrameCount(60,True,True)" methodname="DodgeWindowsUseTimeNotFrameCount" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="712421032" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.001619" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1079" name="DodgeWindowsUseTimeNotFrameCount(61,True,False)" fullname="LastBell.Tests.GameSessionTests.DodgeWindowsUseTimeNotFrameCount(61,True,False)" methodname="DodgeWindowsUseTimeNotFrameCount" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="2063510445" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.001590" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1080" name="DodgeWindowsUseTimeNotFrameCount(160,True,False)" fullname="LastBell.Tests.GameSessionTests.DodgeWindowsUseTimeNotFrameCount(160,True,False)" methodname="DodgeWindowsUseTimeNotFrameCount" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1539938381" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.001565" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1081" name="DodgeWindowsUseTimeNotFrameCount(161,False,False)" fullname="LastBell.Tests.GameSessionTests.DodgeWindowsUseTimeNotFrameCount(161,False,False)" methodname="DodgeWindowsUseTimeNotFrameCount" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1519812006" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.001547" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1159" name="EconomyMigrationPreservesWalletGrowthAndPromisedMaxReward" fullname="LastBell.Tests.GameSessionTests.EconomyMigrationPreservesWalletGrowthAndPromisedMaxReward" methodname="EconomyMigrationPreservesWalletGrowthAndPromisedMaxReward" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="982097457" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.010196" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1125" name="EquippedHpGrowthAndBossFullHealApplyOnce" fullname="LastBell.Tests.GameSessionTests.EquippedHpGrowthAndBossFullHealApplyOnce" methodname="EquippedHpGrowthAndBossFullHealApplyOnce" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="302777541" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.004093" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1139" name="EveryNormalTransitionRoundTripsWithoutDuplicateRewardOrLostElapsed" fullname="LastBell.Tests.GameSessionTests.EveryNormalTransitionRoundTripsWithoutDuplicateRewardOrLostElapsed" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.007241" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1136" name="EveryNormalTransitionRoundTripsWithoutDuplicateRewardOrLostElapsed(0.2f,EnemyDefeat)" fullname="LastBell.Tests.GameSessionTests.EveryNormalTransitionRoundTripsWithoutDuplicateRewardOrLostElapsed(0.2f,EnemyDefeat)" methodname="EveryNormalTransitionRoundTripsWithoutDuplicateRewardOrLostElapsed" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="517877064" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.002598" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1137" name="EveryNormalTransitionRoundTripsWithoutDuplicateRewardOrLostElapsed(1.0f,Travel)" fullname="LastBell.Tests.GameSessionTests.EveryNormalTransitionRoundTripsWithoutDuplicateRewardOrLostElapsed(1.0f,Travel)" methodname="EveryNormalTransitionRoundTripsWithoutDuplicateRewardOrLostElapsed" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="637232349" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.001995" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1138" name="EveryNormalTransitionRoundTripsWithoutDuplicateRewardOrLostElapsed(2.9f,Arrival)" fullname="LastBell.Tests.GameSessionTests.EveryNormalTransitionRoundTripsWithoutDuplicateRewardOrLostElapsed(2.9f,Arrival)" methodname="EveryNormalTransitionRoundTripsWithoutDuplicateRewardOrLostElapsed" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1425715324" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.001935" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="ParameterizedMethod" id="1168" name="ExchangeTierUsesHighestCompletedStage" fullname="LastBell.Tests.GameSessionTests.ExchangeTierUsesHighestCompletedStage" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.019906" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1160" name="ExchangeTierUsesHighestCompletedStage(0,100)" fullname="LastBell.Tests.GameSessionTests.ExchangeTierUsesHighestCompletedStage(0,100)" methodname="ExchangeTierUsesHighestCompletedStage" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1288698729" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.001850" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1161" name="ExchangeTierUsesHighestCompletedStage(9,100)" fullname="LastBell.Tests.GameSessionTests.ExchangeTierUsesHighestCompletedStage(9,100)" methodname="ExchangeTierUsesHighestCompletedStage" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1654654432" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.001450" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1162" name="ExchangeTierUsesHighestCompletedStage(10,150)" fullname="LastBell.Tests.GameSessionTests.ExchangeTierUsesHighestCompletedStage(10,150)" methodname="ExchangeTierUsesHighestCompletedStage" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="989005612" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.007678" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1163" name="ExchangeTierUsesHighestCompletedStage(19,150)" fullname="LastBell.Tests.GameSessionTests.ExchangeTierUsesHighestCompletedStage(19,150)" methodname="ExchangeTierUsesHighestCompletedStage" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1255054377" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.001776" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1164" name="ExchangeTierUsesHighestCompletedStage(20,1920)" fullname="LastBell.Tests.GameSessionTests.ExchangeTierUsesHighestCompletedStage(20,1920)" methodname="ExchangeTierUsesHighestCompletedStage" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="283516936" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.001408" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1165" name="ExchangeTierUsesHighestCompletedStage(30,75047)" fullname="LastBell.Tests.GameSessionTests.ExchangeTierUsesHighestCompletedStage(30,75047)" methodname="ExchangeTierUsesHighestCompletedStage" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1319883772" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.001497" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1166" name="ExchangeTierUsesHighestCompletedStage(40,5168490)" fullname="LastBell.Tests.GameSessionTests.ExchangeTierUsesHighestCompletedStage(40,5168490)" methodname="ExchangeTierUsesHighestCompletedStage" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1216461019" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.001631" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1167" name="ExchangeTierUsesHighestCompletedStage(50,5168490)" fullname="LastBell.Tests.GameSessionTests.ExchangeTierUsesHighestCompletedStage(50,5168490)" methodname="ExchangeTierUsesHighestCompletedStage" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1378036373" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.001427" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="ParameterizedMethod" id="1112" name="FirstFourStagesIntroduceThreeDodgesAndAttackParry" fullname="LastBell.Tests.GameSessionTests.FirstFourStagesIntroduceThreeDodgesAndAttackParry" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.014876" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1108" name="FirstFourStagesIntroduceThreeDodgesAndAttackParry(1,Up)" fullname="LastBell.Tests.GameSessionTests.FirstFourStagesIntroduceThreeDodgesAndAttackParry(1,Up)" methodname="FirstFourStagesIntroduceThreeDodgesAndAttackParry" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1397134097" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.002132" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1109" name="FirstFourStagesIntroduceThreeDodgesAndAttackParry(2,Back)" fullname="LastBell.Tests.GameSessionTests.FirstFourStagesIntroduceThreeDodgesAndAttackParry(2,Back)" methodname="FirstFourStagesIntroduceThreeDodgesAndAttackParry" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1766168905" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.001713" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1110" name="FirstFourStagesIntroduceThreeDodgesAndAttackParry(3,Down)" fullname="LastBell.Tests.GameSessionTests.FirstFourStagesIntroduceThreeDodgesAndAttackParry(3,Down)" methodname="FirstFourStagesIntroduceThreeDodgesAndAttackParry" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1166430670" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.001825" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1111" name="FirstFourStagesIntroduceThreeDodgesAndAttackParry(4,Forward)" fullname="LastBell.Tests.GameSessionTests.FirstFourStagesIntroduceThreeDodgesAndAttackParry(4,Forward)" methodname="FirstFourStagesIntroduceThreeDodgesAndAttackParry" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1681635192" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.008254" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1076" name="FirstLaunchRequiresCorrectDodgeThenActualAttack" fullname="LastBell.Tests.GameSessionTests.FirstLaunchRequiresCorrectDodgeThenActualAttack" methodname="FirstLaunchRequiresCorrectDodgeThenActualAttack" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="2125258707" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.002232" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1083" name="InputFrameShowsFullCueAndAcceptsDodgeAtTheDisplayedDeadline" fullname="LastBell.Tests.GameSessionTests.InputFrameShowsFullCueAndAcceptsDodgeAtTheDisplayedDeadline" methodname="InputFrameShowsFullCueAndAcceptsDodgeAtTheDisplayedDeadline" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="356121746" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.002427" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1174" name="IntegerStatsUseTheSameValuesForDisplayAndDamage" fullname="LastBell.Tests.GameSessionTests.IntegerStatsUseTheSameValuesForDisplayAndDamage" methodname="IntegerStatsUseTheSameValuesForDisplayAndDamage" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="987821410" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.002736" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1147" name="InvalidTransitionSavesAreRejected" fullname="LastBell.Tests.GameSessionTests.InvalidTransitionSavesAreRejected" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.012285" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1143" name="InvalidTransitionSavesAreRejected(&quot;negative&quot;)" fullname="LastBell.Tests.GameSessionTests.InvalidTransitionSavesAreRejected(&quot;negative&quot;)" methodname="InvalidTransitionSavesAreRejected" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1717136210" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.002436" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1144" name="InvalidTransitionSavesAreRejected(&quot;nan&quot;)" fullname="LastBell.Tests.GameSessionTests.InvalidTransitionSavesAreRejected(&quot;nan&quot;)" methodname="InvalidTransitionSavesAreRejected" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1461632283" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.002113" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1145" name="InvalidTransitionSavesAreRejected(&quot;missing&quot;)" fullname="LastBell.Tests.GameSessionTests.InvalidTransitionSavesAreRejected(&quot;missing&quot;)" methodname="InvalidTransitionSavesAreRejected" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1676569703" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.001928" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1146" name="InvalidTransitionSavesAreRejected(&quot;wrong-stage&quot;)" fullname="LastBell.Tests.GameSessionTests.InvalidTransitionSavesAreRejected(&quot;wrong-stage&quot;)" methodname="InvalidTransitionSavesAreRejected" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="617241470" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.005066" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1148" name="JsonUtilityEmptyOptionalRecordsNormalizeWithoutMutatingTheInputSnapshot" fullname="LastBell.Tests.GameSessionTests.JsonUtilityEmptyOptionalRecordsNormalizeWithoutMutatingTheInputSnapshot" methodname="JsonUtilityEmptyOptionalRecordsNormalizeWithoutMutatingTheInputSnapshot" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="480460701" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.007615" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1117" name="LargeAndSmallTicksGiveSameScheduledResults" fullname="LastBell.Tests.GameSessionTests.LargeAndSmallTicksGiveSameScheduledResults" methodname="LargeAndSmallTicksGiveSameScheduledResults" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="438924675" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:52Z" duration="0.002551" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1100" name="LargeInputFrameKeepsRemainderAndExposesEachImpactBeforeDamage" fullname="LastBell.Tests.GameSessionTests.LargeInputFrameKeepsRemainderAndExposesEachImpactBeforeDamage" methodname="LargeInputFrameKeepsRemainderAndExposesEachImpactBeforeDamage" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1734849136" result="Passed" start-time="2026-10-23 02:40:52Z" end-time="2026-10-23 02:40:53Z" duration="0.002239" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1169" name="LargeWalletAndFreshQuoteRoundTripWithoutTruncation" fullname="LastBell.Tests.GameSessionTests.LargeWalletAndFreshQuoteRoundTripWithoutTruncation" methodname="LargeWalletAndFreshQuoteRoundTripWithoutTruncation" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1947413613" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.002221" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1175" name="LegacyFractionalRunMigratesWithoutLosingWalletOrProgress" fullname="LastBell.Tests.GameSessionTests.LegacyFractionalRunMigratesWithoutLosingWalletOrProgress" methodname="LegacyFractionalRunMigratesWithoutLosingWalletOrProgress" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1493168121" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.002688" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1123" name="MinibossPaysCurrencyWithoutRelicStoryOrCheckpointAndResumesTravel" fullname="LastBell.Tests.GameSessionTests.MinibossPaysCurrencyWithoutRelicStoryOrCheckpointAndResumesTravel" methodname="MinibossPaysCurrencyWithoutRelicStoryOrCheckpointAndResumesTravel" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="571316395" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.002812" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1105" name="NewStageNeedsItsOwnCompletedCue" fullname="LastBell.Tests.GameSessionTests.NewStageNeedsItsOwnCompletedCue" methodname="NewStageNeedsItsOwnCompletedCue" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1051613899" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.005694" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1130" name="NormalKillFreezesCombatClockThenPreparesAndOpensTheNextCueOnce" fullname="LastBell.Tests.GameSessionTests.NormalKillFreezesCombatClockThenPreparesAndOpensTheNextCueOnce" methodname="NormalKillFreezesCombatClockThenPreparesAndOpensTheNextCueOnce" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1014218134" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.003011" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1129" name="OldBoundarySaveReturnsToLobbyWithoutLosingProgress" fullname="LastBell.Tests.GameSessionTests.OldBoundarySaveReturnsToLobbyWithoutLosingProgress" methodname="OldBoundarySaveReturnsToLobbyWithoutLosingProgress" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="2026747435" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.002638" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1124" name="OrdinaryDuplicateLevelsWithoutGoldAndMaxOnlyConvertsGold" fullname="LastBell.Tests.GameSessionTests.OrdinaryDuplicateLevelsWithoutGoldAndMaxOnlyConvertsGold" methodname="OrdinaryDuplicateLevelsWithoutGoldAndMaxOnlyConvertsGold" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1799759026" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.002686" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1152" name="PartiallyPopulatedOptionalRecordsAreNotSilentlyDiscarded" fullname="LastBell.Tests.GameSessionTests.PartiallyPopulatedOptionalRecordsAreNotSilentlyDiscarded" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.006847" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1149" name="PartiallyPopulatedOptionalRecordsAreNotSilentlyDiscarded(&quot;offer&quot;)" fullname="LastBell.Tests.GameSessionTests.PartiallyPopulatedOptionalRecordsAreNotSilentlyDiscarded(&quot;offer&quot;)" methodname="PartiallyPopulatedOptionalRecordsAreNotSilentlyDiscarded" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1888000880" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.002362" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1150" name="PartiallyPopulatedOptionalRecordsAreNotSilentlyDiscarded(&quot;story&quot;)" fullname="LastBell.Tests.GameSessionTests.PartiallyPopulatedOptionalRecordsAreNotSilentlyDiscarded(&quot;story&quot;)" methodname="PartiallyPopulatedOptionalRecordsAreNotSilentlyDiscarded" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="304079906" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.001814" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1151" name="PartiallyPopulatedOptionalRecordsAreNotSilentlyDiscarded(&quot;transition&quot;)" fullname="LastBell.Tests.GameSessionTests.PartiallyPopulatedOptionalRecordsAreNotSilentlyDiscarded(&quot;transition&quot;)" methodname="PartiallyPopulatedOptionalRecordsAreNotSilentlyDiscarded" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="450752712" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.001871" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1102" name="PausedCompletionFrameIsDisplayedAgainBeforeResumeDamage" fullname="LastBell.Tests.GameSessionTests.PausedCompletionFrameIsDisplayedAgainBeforeResumeDamage" methodname="PausedCompletionFrameIsDisplayedAgainBeforeResumeDamage" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1528142165" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.007608" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1122" name="PausedOrRestoredCombatDoesNotDamageOrReroll" fullname="LastBell.Tests.GameSessionTests.PausedOrRestoredCombatDoesNotDamageOrReroll" methodname="PausedOrRestoredCombatDoesNotDamageOrReroll" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1507358720" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.011098" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1173" name="PerfectEventReportsOnlyActualStaggerGainAtImpact" fullname="LastBell.Tests.GameSessionTests.PerfectEventReportsOnlyActualStaggerGainAtImpact" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.007150" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1170" name="PerfectEventReportsOnlyActualStaggerGainAtImpact(0,False,40)" fullname="LastBell.Tests.GameSessionTests.PerfectEventReportsOnlyActualStaggerGainAtImpact(0,False,40)" methodname="PerfectEventReportsOnlyActualStaggerGainAtImpact" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="65845597" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.002813" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1171" name="PerfectEventReportsOnlyActualStaggerGainAtImpact(80,False,20)" fullname="LastBell.Tests.GameSessionTests.PerfectEventReportsOnlyActualStaggerGainAtImpact(80,False,20)" methodname="PerfectEventReportsOnlyActualStaggerGainAtImpact" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="2112817450" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.001951" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1172" name="PerfectEventReportsOnlyActualStaggerGainAtImpact(80,True,0)" fullname="LastBell.Tests.GameSessionTests.PerfectEventReportsOnlyActualStaggerGainAtImpact(80,True,0)" methodname="PerfectEventReportsOnlyActualStaggerGainAtImpact" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="2119025719" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.001758" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1121" name="RelicDamageRoundsToWholePointsAndDetachedSnapshotSurvivesSerialization" fullname="LastBell.Tests.GameSessionTests.RelicDamageRoundsToWholePointsAndDetachedSnapshotSurvivesSerialization" methodname="RelicDamageRoundsToWholePointsAndDetachedSnapshotSurvivesSerialization" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="2086843026" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.002544" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1176" name="ResultEarningsExcludeStartingWalletAndSurviveReloadAndRetry" fullname="LastBell.Tests.GameSessionTests.ResultEarningsExcludeStartingWalletAndSurviveReloadAndRetry" methodname="ResultEarningsExcludeStartingWalletAndSurviveReloadAndRetry" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1471004296" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.003245" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1177" name="ResultIncludesMaxDuplicateGoldOnceAndLobbyDoesNotCreditAgain" fullname="LastBell.Tests.GameSessionTests.ResultIncludesMaxDuplicateGoldOnceAndLobbyDoesNotCreditAgain" methodname="ResultIncludesMaxDuplicateGoldOnceAndLobbyDoesNotCreditAgain" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1792624614" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.006002" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1103" name="SavedCompletionFrameRestoresAsAFreshPausedCue" fullname="LastBell.Tests.GameSessionTests.SavedCompletionFrameRestoresAsAFreshPausedCue" methodname="SavedCompletionFrameRestoresAsAFreshPausedCue" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="511489360" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.002527" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1141" name="SchemaOnePendingBossKeepsCandidatesAndRestoresFirstStory" fullname="LastBell.Tests.GameSessionTests.SchemaOnePendingBossKeepsCandidatesAndRestoresFirstStory" methodname="SchemaOnePendingBossKeepsCandidatesAndRestoresFirstStory" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="855541407" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.002567" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1142" name="SchemaOnePromisedMinibossChoiceIsGrandfatheredOnce" fullname="LastBell.Tests.GameSessionTests.SchemaOnePromisedMinibossChoiceIsGrandfatheredOnce" methodname="SchemaOnePromisedMinibossChoiceIsGrandfatheredOnce" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="781751568" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.002556" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1118" name="SimultaneousLethalEnemyHitCancelsPlayerStrike" fullname="LastBell.Tests.GameSessionTests.SimultaneousLethalEnemyHitCancelsPlayerStrike" methodname="SimultaneousLethalEnemyHitCancelsPlayerStrike" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1139011531" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.002076" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1178" name="SlotsAndInventoryAreSharedButEquipmentAndGrowthAreCharacterSpecific" fullname="LastBell.Tests.GameSessionTests.SlotsAndInventoryAreSharedButEquipmentAndGrowthAreCharacterSpecific" methodname="SlotsAndInventoryAreSharedButEquipmentAndGrowthAreCharacterSpecific" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1022034178" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.002997" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1135" name="StoryIsOncePerCharacterAndSkipNeverChoosesRelic" fullname="LastBell.Tests.GameSessionTests.StoryIsOncePerCharacterAndSkipNeverChoosesRelic" methodname="StoryIsOncePerCharacterAndSkipNeverChoosesRelic" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1118497756" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.006538" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1119" name="StunCancelsHitsAndBlocksGainForTwoSecondsAfterward" fullname="LastBell.Tests.GameSessionTests.StunCancelsHitsAndBlocksGainForTwoSecondsAfterward" methodname="StunCancelsHitsAndBlocksGainForTwoSecondsAfterward" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="472000372" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.002268" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1128" name="TransitionEventsKeepTheFloorWhereTheActionOccurred" fullname="LastBell.Tests.GameSessionTests.TransitionEventsKeepTheFloorWhereTheActionOccurred" methodname="TransitionEventsKeepTheFloorWhereTheActionOccurred" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="308781478" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.002975" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1114" name="TutorialAttackStepIsRestoredWithoutRepeatingTheDodge" fullname="LastBell.Tests.GameSessionTests.TutorialAttackStepIsRestoredWithoutRepeatingTheDodge" methodname="TutorialAttackStepIsRestoredWithoutRepeatingTheDodge" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1416681868" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.002096" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1126" name="TwentyChoiceCompletesPrototypeAndRetryKeepsProgressAtStageOne" fullname="LastBell.Tests.GameSessionTests.TwentyChoiceCompletesPrototypeAndRetryKeepsProgressAtStageOne" methodname="TwentyChoiceCompletesPrototypeAndRetryKeepsProgressAtStageOne" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="2127026904" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.003291" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1107" name="WrongDirectionInsidePerfectWindowStillHurts" fullname="LastBell.Tests.GameSessionTests.WrongDirectionInsidePerfectWindowStillHurts" methodname="WrongDirectionInsidePerfectWindowStillHurts" classname="LastBell.Tests.GameSessionTests" runstate="Runnable" seed="1243102220" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.001922" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1179" name="RouteOnboardingTests" fullname="LastBell.Tests.RouteOnboardingTests" classname="LastBell.Tests.RouteOnboardingTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.018151" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1180" name="FirstPrologueFreezesCombatAndPersistsOnlyOnCompletion" fullname="LastBell.Tests.RouteOnboardingTests.FirstPrologueFreezesCombatAndPersistsOnlyOnCompletion" methodname="FirstPrologueFreezesCombatAndPersistsOnlyOnCompletion" classname="LastBell.Tests.RouteOnboardingTests" runstate="Runnable" seed="755293881" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.005442" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1182" name="FiveShowsOneConfirmationAndStartsFullFreshCombo" fullname="LastBell.Tests.RouteOnboardingTests.FiveShowsOneConfirmationAndStartsFullFreshCombo" methodname="FiveShowsOneConfirmationAndStartsFullFreshCombo" classname="LastBell.Tests.RouteOnboardingTests" runstate="Runnable" seed="891549230" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.005778" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1181" name="ManualReadingAndSkipBothContinueExistingTutorial" fullname="LastBell.Tests.RouteOnboardingTests.ManualReadingAndSkipBothContinueExistingTutorial" methodname="ManualReadingAndSkipBothContinueExistingTutorial" classname="LastBell.Tests.RouteOnboardingTests" runstate="Runnable" seed="1767519803" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.002018" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1184" name="ReplayCanRestoreAndReturnWithoutStartingAnotherRun" fullname="LastBell.Tests.RouteOnboardingTests.ReplayCanRestoreAndReturnWithoutStartingAnotherRun" methodname="ReplayCanRestoreAndReturnWithoutStartingAnotherRun" classname="LastBell.Tests.RouteOnboardingTests" runstate="Runnable" seed="575846198" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.001911" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1183" name="VersionFourKeepsWalletAndDoesNotInterruptExistingPlayers" fullname="LastBell.Tests.RouteOnboardingTests.VersionFourKeepsWalletAndDoesNotInterruptExistingPlayers" methodname="VersionFourKeepsWalletAndDoesNotInterruptExistingPlayers" classname="LastBell.Tests.RouteOnboardingTests" runstate="Runnable" seed="1539167953" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.001653" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+    <test-suite type="Assembly" id="1199" name="LastBell.Persistence.Tests.dll" fullname="C:/Github/Test2/Client/Library/ScriptAssemblies/LastBell.Persistence.Tests.dll" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.100242" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="23648" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1200" name="LastBell" fullname="LastBell" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.099956" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1201" name="Tests" fullname="LastBell.Tests" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.099796" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1188" name="JsonSaveRepositoryTests" fullname="LastBell.Tests.JsonSaveRepositoryTests" classname="LastBell.Tests.JsonSaveRepositoryTests" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.099520" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1192" name="CorruptPrimaryUsesVerifiedPreviousSave" fullname="LastBell.Tests.JsonSaveRepositoryTests.CorruptPrimaryUsesVerifiedPreviousSave" methodname="CorruptPrimaryUsesVerifiedPreviousSave" classname="LastBell.Tests.JsonSaveRepositoryTests" runstate="Runnable" seed="1879471002" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.030823" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1189" name="FreshProfileHasNoSave" fullname="LastBell.Tests.JsonSaveRepositoryTests.FreshProfileHasNoSave" methodname="FreshProfileHasNoSave" classname="LastBell.Tests.JsonSaveRepositoryTests" runstate="Runnable" seed="1414512958" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.001827" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1197" name="InlineNullRecordsAreCanonicalizedInMemoryWithoutRewritingTheEnvelope" fullname="LastBell.Tests.JsonSaveRepositoryTests.InlineNullRecordsAreCanonicalizedInMemoryWithoutRewritingTheEnvelope" methodname="InlineNullRecordsAreCanonicalizedInMemoryWithoutRewritingTheEnvelope" classname="LastBell.Tests.JsonSaveRepositoryTests" runstate="Runnable" seed="1518990781" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.006400" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1191" name="InterruptedTemporaryWriteDoesNotReplacePrimary" fullname="LastBell.Tests.JsonSaveRepositoryTests.InterruptedTemporaryWriteDoesNotReplacePrimary" methodname="InterruptedTemporaryWriteDoesNotReplacePrimary" classname="LastBell.Tests.JsonSaveRepositoryTests" runstate="Runnable" seed="237050663" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.005835" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1193" name="InvalidSaveIsPreservedWhenBothCopiesFail" fullname="LastBell.Tests.JsonSaveRepositoryTests.InvalidSaveIsPreservedWhenBothCopiesFail" methodname="InvalidSaveIsPreservedWhenBothCopiesFail" classname="LastBell.Tests.JsonSaveRepositoryTests" runstate="Runnable" seed="1295336434" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.005351" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1198" name="PartiallyPopulatedInlineRecordsRemainAvailableForStrictCoreValidation" fullname="LastBell.Tests.JsonSaveRepositoryTests.PartiallyPopulatedInlineRecordsRemainAvailableForStrictCoreValidation" methodname="PartiallyPopulatedInlineRecordsRemainAvailableForStrictCoreValidation" classname="LastBell.Tests.JsonSaveRepositoryTests" runstate="Runnable" seed="1754492240" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.006557" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1190" name="RoundtripKeepsRewardOfferAndWallet" fullname="LastBell.Tests.JsonSaveRepositoryTests.RoundtripKeepsRewardOfferAndWallet" methodname="RoundtripKeepsRewardOfferAndWallet" classname="LastBell.Tests.JsonSaveRepositoryTests" runstate="Runnable" seed="2031746570" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.016983" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1194" name="UnsupportedVersionCannotOverwriteExistingSave" fullname="LastBell.Tests.JsonSaveRepositoryTests.UnsupportedVersionCannotOverwriteExistingSave" methodname="UnsupportedVersionCannotOverwriteExistingSave" classname="LastBell.Tests.JsonSaveRepositoryTests" runstate="Runnable" seed="245872166" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.006290" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1195" name="VersionOneStillLoadsForCoreMigration" fullname="LastBell.Tests.JsonSaveRepositoryTests.VersionOneStillLoadsForCoreMigration" methodname="VersionOneStillLoadsForCoreMigration" classname="LastBell.Tests.JsonSaveRepositoryTests" runstate="Runnable" seed="333666077" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.005660" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1196" name="VersionTwoTransitionAndStorySurviveJsonUtility" fullname="LastBell.Tests.JsonSaveRepositoryTests.VersionTwoTransitionAndStorySurviveJsonUtility" methodname="VersionTwoTransitionAndStorySurviveJsonUtility" classname="LastBell.Tests.JsonSaveRepositoryTests" runstate="Runnable" seed="8973790" result="Passed" start-time="2026-10-23 02:40:53Z" end-time="2026-10-23 02:40:53Z" duration="0.011031" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[<b><color=#2EA3FF>MCP-FOR-UNITY</color></b>: [TestRunnerNoThrottle] Restored Interaction Mode after test run.
+Saving results to: C:/Github/Test2/Planning/Evidence/Balance-v7/editmode-final.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

@@ -17,7 +17,7 @@ internal static class Program
     {
         var save = new GameSession(data).ExportSave();
         save.phase = SessionPhase.Lobby;
-        save.tutorialStep = 2;
+        save.tutorialStep = 2; save.prologueSeen=true; save.comboHintSeen=true;
         save.run = null;
         return save;
     }
@@ -47,7 +47,7 @@ internal static class Program
 
     private static void GrowthAndCosts()
     {
-        var data = Catalog(); var save = Lobby(data); save.gold = 3000000000L;
+        var data = Catalog(); var save = Lobby(data); save.gold = 20000000000L;
         var session = new GameSession(data, save);
         for (int stat = 0; stat < 4; stat++) for (int target = 1; target <= 50; target++)
         {
@@ -56,11 +56,11 @@ internal static class Program
             Check(session.Upgrade(stat) && session.GetStatLevel(stat) == target, "upgrade failed");
             Check(before - session.Gold == data.economy.upgradeCosts[target], "wrong debit");
         }
-        Check(session.Gold == 2830809744L, "all four stats must cost 169190256, without Int32 truncation");
+        Check(session.Gold == 3284226944L, "all four stats must cost 16715773056, without Int32 truncation");
         Check(!session.Upgrade(0), "Lv51 must not be bought");
         int[] levels = { 9, 10, 11, 20, 21, 30, 31, 40, 41, 50 };
-        int[] attacks = { 40, 43, 106, 175, 419, 577, 1366, 1728, 4066, 4897 };
-        int[] hp = { 298, 320, 616, 972, 1821, 2462, 4561, 5715, 10519, 12597 };
+        int[] attacks = { 46, 50, 130, 216, 541, 749, 1852, 2350, 5773, 6967 };
+        int[] hp = { 316, 340, 655, 1044, 1957, 2657, 4922, 6182, 11379, 13647 };
         for (int i = 0; i < levels.Length; i++)
         {
             save = Lobby(data); save.characters[0].statLevels = new[] { levels[i], levels[i], levels[i], levels[i] };
@@ -72,9 +72,9 @@ internal static class Program
 
     private static void ExchangeAndRestore()
     {
-        int[] balances = { 0, 86, 87, 186 };
-        int[] fragments = { 2, 2, 1, 1 };
-        int[] remaining = { 13, 99, 0, 99 };
+        int[] balances = { 0, 124, 125, 224 };
+        int[] fragments = { 3, 2, 1, 1 };
+        int[] remaining = { 75, 99, 0, 99 };
         for (int i = 0; i < balances.Length; i++)
         {
             var data = Catalog(); var save = Lobby(data);
@@ -99,7 +99,7 @@ internal static class Program
             if (scenario == 0) pending.gold = 1;
             if (scenario == 1) pending.fragments = 3;
             if (scenario == 2) pending.characters[0].statLevels[0] = 11;
-            if (scenario == 3) data.economy.upgradeCosts[11] = 188;
+            if (scenario == 3) data.economy.upgradeCosts[11] = 226;
             session = new GameSession(data, pending);
             Check(session.Phase == SessionPhase.Lobby && !session.ConfirmExchange(), "stale quote must be discarded " + scenario);
             Check(session.Gold == pending.gold && session.Fragments == pending.fragments, "stale quote spent currency");
@@ -118,7 +118,7 @@ internal static class Program
         Check(session.Gold == 268 && session.Fragments == 1 && session.CheckpointStartStage == 1, "first five floor totals");
         Check(session.RelicChoices.Count == 0 && session.ExportSave().relics.Count == 0, "miniboss must not offer relic");
         Reach(session, 10, SessionPhase.RewardChoice);
-        Check(session.Gold == 1374 && session.Fragments == 4 && session.CheckpointStartStage == 1, "boss prepayment/checkpoint timing");
+        Check(session.Gold == 1374 && session.Fragments == 4 && session.CheckpointStartStage == 11, "boss prepayment/checkpoint timing");
         string[] choices = session.RelicChoices.ToArray();
         Check(choices.Distinct().Count() == 3, "candidate duplication");
         session = new GameSession(Catalog(), RoundTrip(session.ExportSave()));
@@ -126,10 +126,15 @@ internal static class Program
         Check(!session.ReturnToLobby() && !session.StartRun(), "pending choice skipped");
         Check(session.ChooseRelic(choices[0]) && session.GetRelicLevel(choices[0]) == 1, "new relic was not granted");
         Check(!session.ChooseRelic(choices[0]) && session.Gold == 1374, "choice double applied");
-        Check(session.Stage == 11 && session.CheckpointStartStage == 11 && session.PlayerHp == session.PlayerMaxHp, "checkpoint/heal/auto11 failed");
+        Check(session.Stage == 11 && session.CheckpointStartStage == 11 && session.Phase == SessionPhase.Transition && session.PlayerHp == session.PlayerMaxHp, "prototype completion/heal failed");
+        Reach(session,20,SessionPhase.RewardChoice);
+        long totalTwenty=Enumerable.Range(1,20).Sum(n=>Catalog().GetBaseGold(Catalog().GetStage(n)));
+        Check(session.Gold==totalTwenty&&session.Fragments==8,"natural twenty-stage reward total");
+        Check(session.ChooseRelic(session.RelicChoices[0])&&session.Phase==SessionPhase.MvpComplete,"twenty-stage completion");
+        session=Fighter();Reach(session,10,SessionPhase.RewardChoice);session.ChooseRelic(session.RelicChoices[0]);
         session = new GameSession(Catalog(), RoundTrip(session.ExportSave()));
         Check(!session.ChooseRelic(choices[0]) && session.Gold == 1374 && session.Fragments == 4, "committed boss reward replayed");
-        Check(session.ReturnToLobby() && session.StartRun() && session.Stage == 11, "checkpoint restart failed");
+        Check(session.ReturnToLobby() && session.StartRun() && session.Stage == 11, "gate checkpoint restart failed");
 
         session = Fighter(); Reach(session, 6, SessionPhase.Combat);
         int runId=session.ExportSave().run.runId;
@@ -161,7 +166,7 @@ internal static class Program
         {
             catalogJson = File.ReadAllText("Client/Assets/Game/Data/Generated/mvp-catalog.json");
             GrowthAndCosts(); ExchangeAndRestore(); RewardsAndCheckpoints();
-            Console.WriteLine("PASS: independent catalog/session contract review; " + assertions + " assertions. Growth0..50, exchange/restore/stale quotes, natural1..10 rewards, MAX, repeat kills, death9/checkpoint11.");
+            Console.WriteLine("PASS: independent catalog/session contract review; " + assertions + " assertions. Growth0..50, exchange/restore/stale quotes, natural1..20 rewards, MAX, repeat kills, death9/restart1, story10/clear20/restart11.");
             return 0;
         }
         catch (Exception error) { Console.Error.WriteLine(error); return 1; }

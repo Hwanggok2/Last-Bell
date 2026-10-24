@@ -1,0 +1,58 @@
+PASS input inset: DodgeUp
+PASS input minimum 48px: DodgeUp
+PASS touch raycast reaches DodgeUp
+PASS input inset: DodgeBack
+PASS input minimum 48px: DodgeBack
+PASS touch raycast reaches DodgeBack
+PASS input inset: DodgeDown
+PASS input minimum 48px: DodgeDown
+PASS touch raycast reaches DodgeDown
+PASS input inset: DodgeForward
+PASS input minimum 48px: DodgeForward
+PASS touch raycast reaches DodgeForward
+PASS input inset: Attack
+PASS input minimum 48px: Attack
+PASS touch raycast reaches Attack
+PASS attack pointer produces damage
+PASS saved parchment and upper-left lamp
+PASS boss kill unlocks checkpoint before reward selection
+PASS opening retains original gate sprite and frame position
+PASS reward requires explicit selection
+PASS button has raycast hit: Receive
+PASS preview grants nothing
+PASS button has raycast hit: Receive
+PASS selection moves to another icon
+PASS description and confirm enabled
+PASS button has raycast hit: Confirm
+PASS only selected relic granted once
+PASS stage 10 to 11 starts with the same gate at the same position
+PASS gate moves left through travel
+PASS stage 11 breakthrough HP
+PASS stage 11 retains the same gate
+PASS death result advertises stage 11 checkpoint
+PASS button has raycast hit: ResultRetry
+PASS retry button starts stage 11 at full health with fresh run earnings
+PASS retry preserves wallet without duplicate rewards
+PASS lobby advertises checkpoint
+PASS save reload and lobby start retain checkpoint
+PASS gate remains visible at start of stage 11 to 12 travel
+PASS gate is gone after passing into stage 12
+PASS saved combat audio bindings use v7.2 clips
+PASS enemy releases and impacts retain separate clips from player body damage
+PASS runtime audio decodes with headroom: sword-fire
+PASS runtime audio decodes with headroom: player-body-hit
+PASS runtime audio decodes with headroom: dodge-whoosh
+PASS attack audio waits for confirmed contact
+PASS attack contact plays fire sword
+PASS pause stops one-shot audio
+PASS normal dodge plays whoosh
+PASS player damage plays body impact
+PASS perfect dodge retains bell alongside enemy attack effects
+PASS mute suppresses new attack audio
+PASS button has raycast hit: AudioCredits
+PASS credits show required attribution and original link
+PASS credits have original and license links
+PASS long credits scroll without truncation
+PASS credits overlay blocks lobby start button
+PASS button has raycast hit: Close
+PASS closing credits returns to unchanged lobby

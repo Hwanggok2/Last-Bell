@@ -1,0 +1,21 @@
+{
+  "status": "PREPARED_NOT_RUN",
+  "sourceState": "FROZEN",
+  "compile": "RECHECK_PENDING_AFTER_COORDINATOR_CS1501",
+  "compileByQa": "NOT_RUN",
+  "lastSourceCorrection": "Unity 6000.3 CanvasRenderer.GetMesh() returns the current renderer mesh; read without destroying it.",
+  "tests": "NOT_RUN",
+  "game": "NOT_RUN",
+  "build": "NOT_RUN",
+  "osInput": "DEFERRED_BY_USER",
+  "files": [
+    {"path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.cs", "sha256": "35f08c3129fd935c53c8767a76cd199eb549a915429bd22051616877a6a58a8b"},
+    {"path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V2.cs", "sha256": "6bd6400c41921ec70fe249ca0a9f44fc84d1da9ae50045ec02c5b976ce615602"},
+    {"path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V2.cs.meta", "sha256": "47bc613ce36f542b219b2240711593f52d48cbbbe0d3e8634da078dbfc838c28"},
+    {"path": "Client/Assets/Game/Tests/PlayMode/CombatPresentationTests.cs", "sha256": "4db2638d38813a7599ab33a1709327d282272103251aa8dda8c3c226a9b4ab5d"},
+    {"path": "Client/Assets/Game/Tests/PlayMode/DragonUiContractTests.cs", "sha256": "a311b24c49cdaae6a23ab950fd2bed964624a840d94db269fffb4c07d3f858c4"},
+    {"path": "Tools/QA/Dragon-v1/run-campaign.ps1", "sha256": "c52c6bfec1ed66ee8ef704884e3ec8b601775dcefb584d06ad6fed38665f0930"},
+    {"path": "Tools/QA/Dragon-v1/editor-prefs.ps1", "sha256": "6f1cbcc8b89372e0827bb34e8c0370357e2bfb1ddfeac53f5f931c837f94b44d"},
+    {"path": "Tools/QA/Dragon-v2/target-filters.json", "sha256": "c91bfe95c9df1fc63a060c663b37cc807a4cfff90f1168139c84ecb1d8f914ee"}
+  ]
+}

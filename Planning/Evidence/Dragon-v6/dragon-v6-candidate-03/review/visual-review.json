@@ -1,0 +1,154 @@
+{
+  "candidate": "dragon-v6-candidate-03",
+  "reviewedAtUtc": "2026-10-24T16:51:34.244633+00:00",
+  "status": "BOUNDED_VISUAL_RECHECK_PASS_PARTIAL_CAMPAIGN",
+  "acceptance": "NOT_CERTIFIED",
+  "inspection": {
+    "fullOriginals": 6,
+    "cropSheets": 7,
+    "sourceCrops": 21,
+    "distinctSourcePNGs": 21,
+    "totalCapturedPNGs": 530,
+    "allFramesReviewed": false,
+    "resolution": "1280x720 only"
+  },
+  "inspected": [
+    {
+      "file": "review/1280-lightning-normal.png",
+      "method": "view_image; unscaled source crops; exact bounds in crop-manifest-1280.json",
+      "sha256": "4fca30e477c4a2a8207f6e243f576f3b6de667023ed9ca2fafab77565a1f3e13",
+      "sources": [
+        "1280x720/fresh/v3-frame-v6-lightning-recheck-miel-000007.png",
+        "1280x720/fresh/v3-frame-v6-lightning-recheck-miel-000016.png",
+        "1280x720/fresh/v3-frame-v6-lightning-recheck-rina-000042.png",
+        "1280x720/fresh/v3-frame-v6-lightning-recheck-rina-000052.png"
+      ]
+    },
+    {
+      "file": "review/1280-boss-5.png",
+      "method": "view_image; unscaled source crops; exact bounds in crop-manifest-1280.json",
+      "sha256": "2aac3a8107d62da86d19d466ab48e320246a45be47f861c083620a1fdae7a1cd",
+      "sources": [
+        "1280x720/fresh/v3-frame-v6-boss-lightning-5-000078.png",
+        "1280x720/fresh/v3-frame-v6-boss-lightning-5-000088.png"
+      ]
+    },
+    {
+      "file": "review/1280-boss-10.png",
+      "method": "view_image; unscaled source crops; exact bounds in crop-manifest-1280.json",
+      "sha256": "b8993f3b28fdeac8b7559ac26c41f4a69f295a311fd6982eb7809ab635821b83",
+      "sources": [
+        "1280x720/fresh/v3-frame-v6-boss-lightning-10-000117.png",
+        "1280x720/fresh/v3-frame-v6-boss-lightning-10-000127.png"
+      ]
+    },
+    {
+      "file": "review/1280-boss-15.png",
+      "method": "view_image; unscaled source crops; exact bounds in crop-manifest-1280.json",
+      "sha256": "b5d84fe0e7c5f0d0fd20df8ff36f33092b604734946609a18d7cc538df3f9087",
+      "sources": [
+        "1280x720/fresh/v3-frame-v6-boss-lightning-15-000156.png",
+        "1280x720/fresh/v3-frame-v6-boss-lightning-15-000166.png"
+      ]
+    },
+    {
+      "file": "review/1280-boss-20.png",
+      "method": "view_image; unscaled source crops; exact bounds in crop-manifest-1280.json",
+      "sha256": "e2bda0025f5c80ac464bdd40b4b4384a905fd2a4621582192733c03004beff10",
+      "sources": [
+        "1280x720/fresh/v3-frame-v6-boss-lightning-20-000194.png",
+        "1280x720/fresh/v3-frame-v6-boss-lightning-20-000203.png"
+      ]
+    },
+    {
+      "file": "review/1280-stun.png",
+      "method": "view_image; unscaled source crops; exact bounds in crop-manifest-1280.json",
+      "sha256": "42995f8f4623e9e3403ff01be3f7d9728c64f5a2b1cfbbb18e276a8177bbcf56",
+      "sources": [
+        "1280x720/fresh/v3-frame-v6-actual-stun-000255.png",
+        "1280x720/fresh/v6-stun-late-no-hitflash.png",
+        "1280x720/fresh/v6-stun-paused.png",
+        "1280x720/fresh/v3-frame-v6-stun-ended-000296.png"
+      ]
+    },
+    {
+      "file": "review/1280-concurrent.png",
+      "method": "view_image; unscaled source crops; exact bounds in crop-manifest-1280.json",
+      "sha256": "01f773aa8da910044f6d1e19d08cf01c00cf8bfcfbeebd0fc594bb9b288022c2",
+      "sources": [
+        "1280x720/fresh/v3-frame-v6-three-companion-plus-player-contact-000306.png",
+        "1280x720/fresh/v3-frame-v6-three-companion-plus-player-contact-000317.png",
+        "1280x720/fresh/v3-frame-v6-three-companion-plus-player-contact-000331.png",
+        "1280x720/fresh/v3-frame-v6-three-companion-plus-player-contact-000341.png",
+        "1280x720/fresh/v3-frame-v6-three-companion-plus-player-contact-000353.png"
+      ]
+    },
+    {
+      "file": "1280x720/fresh/v3-frame-v6-lightning-recheck-miel-000007.png",
+      "method": "view_image; full original1280x720",
+      "sha256": "9c0e377b13807c997a1fc7ba43f22fee90701e0032121002b423e0c25458250e"
+    },
+    {
+      "file": "1280x720/fresh/v3-frame-v6-lightning-recheck-rina-000042.png",
+      "method": "view_image; full original1280x720",
+      "sha256": "199fd2e153ce2456361edf54a6e2b7ea4dcdbcc82594e559550a284423354aae"
+    },
+    {
+      "file": "1280x720/fresh/v3-frame-v6-boss-lightning-20-000194.png",
+      "method": "view_image; full original1280x720",
+      "sha256": "0772c890065e0866643100f7510c6b9f00578d0623a12772440812a2f8cd5948"
+    },
+    {
+      "file": "1280x720/fresh/v3-frame-v6-three-companion-plus-player-contact-000306.png",
+      "method": "view_image; full original1280x720",
+      "sha256": "fa92978a4f716a4220404b95b7eb23844fee66c2167fd298c3da49911e9c1d00"
+    },
+    {
+      "file": "1280x720/fresh/v3-frame-v6-three-companion-plus-player-contact-000331.png",
+      "method": "view_image; full original1280x720",
+      "sha256": "50ea0aa1b29c38a675785e29355b8c966ec02088f93a2e81c05a81c56c576315"
+    },
+    {
+      "file": "1280x720/fresh/v3-frame-v6-three-companion-plus-player-contact-000341.png",
+      "method": "view_image; full original1280x720",
+      "sha256": "d0d3c632443b8efac128cc79c581e6af100b80fadd0b63f7efca1a089ac04fed"
+    }
+  ],
+  "findings": [
+    {
+      "id": "DQA6-001",
+      "status": "FIX_CONFIRMED_1280_THREE_POPUPS",
+      "notes": "Three glyphs stay below stagger HUD. At contact/417ms effects partially occlude middle number; at655/842ms cyan16 and cream13/10 are separated and readable; old trio absent at1084ms. No all-duration unobscured claim."
+    },
+    {
+      "id": "DQA6-002",
+      "status": "FIX_CONFIRMED_1280",
+      "notes": "Miel/Rina normal-target lightning and bosses5/10/15/20 show continuous thick pixel silhouette at contact and later samples."
+    },
+    {
+      "id": "DQA6-003",
+      "status": "FIX_CONFIRMED_1280",
+      "notes": "Boss names at right are clear of direction glyph, HP bar and pause control across all4 bosses."
+    }
+  ],
+  "boundedChecks": [
+    {
+      "subject": "stun active/late/pause/end",
+      "verdict": "PASS_BOUNDED",
+      "notes": "Gold/cream outlined stars visible active and late; pause modal visible; ended frame shows no stars. Pause clock and21 particles require streaming metadata, not pixel counting."
+    }
+  ],
+  "campaign": {
+    "completed": false,
+    "operatorStopped": true,
+    "reason": "QA6-PROBE-003 reward selection lacked confirmation; no final report emitted",
+    "finalProbePassCount": null,
+    "routeAndNative": "NOT_COMPLETED"
+  },
+  "limits": [
+    "Partial streaming and PNG evidence only; no final probe PASS count",
+    "640 reviewed separately in candidate04",
+    "OS input deferred; mobile/audio/performance unverified",
+    "Raw evidence preserved"
+  ]
+}

@@ -1,0 +1,2450 @@
+{
+  "candidate": "dragon-v3-candidate-03",
+  "cases": [
+    {
+      "resolution": "1280x720",
+      "passed": true,
+      "completed": true,
+      "coverage": "story20-and-resume-preparation-only",
+      "passChecks": 35,
+      "failChecks": 0,
+      "consoleErrors": [],
+      "writtenFrames": 0,
+      "indexedFrames": 0,
+      "storyRestoreUi": [
+        "after Bind: active=False, interactable=True",
+        "after Rendered: active=True, interactable=True"
+      ],
+      "limits": "Targeted story/save tail only. No motion observations in this process."
+    },
+    {
+      "resolution": "640x360",
+      "passed": true,
+      "completed": true,
+      "passChecks": 1245,
+      "failChecks": 0,
+      "consoleErrors": [],
+      "writtenFrames": 5539,
+      "indexedFrames": 5539,
+      "segmentCount": 51,
+      "uniqueScenarioCount": 50,
+      "missingRenderedFrames": 0,
+      "maxRealtimeGap": 0.041748046875,
+      "hashMismatches": [],
+      "duplicateFiles": 0,
+      "coordinateMetrics": {
+        "playerGroundedPivotPx": {
+          "value": 0.0,
+          "file": "v3-frame-enemy-11-idle-000000.png",
+          "scenario": "enemy-11-idle"
+        },
+        "playerRootWorldUnits": {
+          "value": 0.0,
+          "file": "v3-frame-enemy-11-idle-000000.png",
+          "scenario": "enemy-11-idle"
+        },
+        "enemyGroundedPivotPx": {
+          "value": 0.0,
+          "file": "v3-frame-enemy-11-idle-000000.png",
+          "scenario": "enemy-11-idle"
+        },
+        "enemyRootWorldUnits": {
+          "value": 0.0,
+          "file": "v3-frame-enemy-11-idle-000000.png",
+          "scenario": "enemy-11-idle"
+        },
+        "intentionalUpLiftPx": {
+          "value": 71.5099868774414,
+          "file": "v3-frame-player-1-defense-0-003577.png",
+          "scenario": "player-1-defense-0"
+        }
+      },
+      "scenarios": [
+        {
+          "name": "enemy-11-idle",
+          "frames": 124,
+          "duration": 2.050197124481201,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            },
+            "enemy": {
+              "dragon_goblin_scout/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          },
+          "first": "v3-frame-enemy-11-idle-000000.png",
+          "last": "v3-frame-enemy-11-idle-000123.png"
+        },
+        {
+          "name": "enemy-11-attack-hit",
+          "frames": 206,
+          "duration": 190.28738594055176,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_hero_on/Hit/Hit": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            },
+            "enemy": {
+              "dragon_goblin_scout/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_goblin_scout/AttackLow/Attack": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          },
+          "first": "v3-frame-enemy-11-attack-hit-000124.png",
+          "last": "v3-frame-enemy-11-attack-hit-004385.png"
+        },
+        {
+          "name": "enemy-11-stun",
+          "frames": 129,
+          "duration": 2.1587982177734375,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_hero_on/Attack/Attack": [
+                0,
+                2,
+                3,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ]
+            },
+            "enemy": {
+              "dragon_goblin_scout/Idle/Idle": [
+                0,
+                1,
+                6,
+                7
+              ],
+              "dragon_goblin_scout/Stun/Stun": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          },
+          "first": "v3-frame-enemy-11-stun-000227.png",
+          "last": "v3-frame-enemy-11-stun-000355.png"
+        },
+        {
+          "name": "enemy-12-idle",
+          "frames": 124,
+          "duration": 2.050180435180664,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            },
+            "enemy": {
+              "dragon_goblin_slinger/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          },
+          "first": "v3-frame-enemy-12-idle-000356.png",
+          "last": "v3-frame-enemy-12-idle-000479.png"
+        },
+        {
+          "name": "enemy-12-attack-hit",
+          "frames": 83,
+          "duration": 1.3914146423339844,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_hero_on/Hit/Hit": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            },
+            "enemy": {
+              "dragon_goblin_slinger/Idle/Idle": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "dragon_goblin_slinger/AttackThrust/Attack": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            }
+          },
+          "first": "v3-frame-enemy-12-attack-hit-000480.png",
+          "last": "v3-frame-enemy-12-attack-hit-000562.png"
+        },
+        {
+          "name": "enemy-12-stun",
+          "frames": 129,
+          "duration": 2.1613502502441406,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_hero_on/Attack/Attack": [
+                0,
+                2,
+                3,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ]
+            },
+            "enemy": {
+              "dragon_goblin_slinger/Idle/Idle": [
+                0,
+                1,
+                6,
+                7
+              ],
+              "dragon_goblin_slinger/Stun/Stun": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          },
+          "first": "v3-frame-enemy-12-stun-000563.png",
+          "last": "v3-frame-enemy-12-stun-000691.png"
+        },
+        {
+          "name": "enemy-13-idle",
+          "frames": 124,
+          "duration": 2.049896240234375,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            },
+            "enemy": {
+              "dragon_forest_mushroom/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          },
+          "first": "v3-frame-enemy-13-idle-000692.png",
+          "last": "v3-frame-enemy-13-idle-000815.png"
+        },
+        {
+          "name": "enemy-13-attack-hit",
+          "frames": 102,
+          "duration": 1.7256355285644531,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_hero_on/Hit/Hit": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            },
+            "enemy": {
+              "dragon_forest_mushroom/Idle/Idle": [
+                0,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_forest_mushroom/AttackThrust/Attack": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_forest_mushroom/AttackHigh/Attack": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ]
+            }
+          },
+          "first": "v3-frame-enemy-13-attack-hit-000816.png",
+          "last": "v3-frame-enemy-13-attack-hit-000917.png"
+        },
+        {
+          "name": "enemy-13-stun",
+          "frames": 130,
+          "duration": 2.179248809814453,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_hero_on/Attack/Attack": [
+                0,
+                2,
+                3,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ]
+            },
+            "enemy": {
+              "dragon_forest_mushroom/Idle/Idle": [
+                0,
+                1,
+                6,
+                7
+              ],
+              "dragon_forest_mushroom/Stun/Stun": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          },
+          "first": "v3-frame-enemy-13-stun-000918.png",
+          "last": "v3-frame-enemy-13-stun-001047.png"
+        },
+        {
+          "name": "enemy-14-idle",
+          "frames": 124,
+          "duration": 2.0501976013183594,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            },
+            "enemy": {
+              "dragon_goblin_shield/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          },
+          "first": "v3-frame-enemy-14-idle-001048.png",
+          "last": "v3-frame-enemy-14-idle-001171.png"
+        },
+        {
+          "name": "enemy-14-attack-hit",
+          "frames": 104,
+          "duration": 1.7357902526855469,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_hero_on/Hit/Hit": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            },
+            "enemy": {
+              "dragon_goblin_shield/Idle/Idle": [
+                0,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_goblin_shield/AttackThrust/Attack": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          },
+          "first": "v3-frame-enemy-14-attack-hit-001172.png",
+          "last": "v3-frame-enemy-14-attack-hit-001275.png"
+        },
+        {
+          "name": "enemy-14-stun",
+          "frames": 130,
+          "duration": 2.1746826171875,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_hero_on/Attack/Attack": [
+                0,
+                1,
+                3,
+                4,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ]
+            },
+            "enemy": {
+              "dragon_goblin_shield/Idle/Idle": [
+                0,
+                1,
+                6,
+                7
+              ],
+              "dragon_goblin_shield/Stun/Stun": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          },
+          "first": "v3-frame-enemy-14-stun-001276.png",
+          "last": "v3-frame-enemy-14-stun-001405.png"
+        },
+        {
+          "name": "enemy-15-idle",
+          "frames": 124,
+          "duration": 2.0558395385742188,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            },
+            "enemy": {
+              "dragon_mushroom_captain/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          },
+          "first": "v3-frame-enemy-15-idle-001406.png",
+          "last": "v3-frame-enemy-15-idle-001529.png"
+        },
+        {
+          "name": "enemy-15-attack-hit",
+          "frames": 102,
+          "duration": 1.7306365966796875,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_hero_on/Hit/Hit": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            },
+            "enemy": {
+              "dragon_mushroom_captain/Idle/Idle": [
+                0,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_mushroom_captain/AttackHigh/Attack": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          },
+          "first": "v3-frame-enemy-15-attack-hit-001530.png",
+          "last": "v3-frame-enemy-15-attack-hit-001631.png"
+        },
+        {
+          "name": "enemy-15-stun",
+          "frames": 112,
+          "duration": 1.8736038208007812,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_hero_on/Attack/Attack": [
+                0,
+                1,
+                3,
+                4,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ]
+            },
+            "enemy": {
+              "dragon_mushroom_captain/Idle/Idle": [
+                0,
+                1,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_mushroom_captain/Stun/Stun": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          },
+          "first": "v3-frame-enemy-15-stun-001632.png",
+          "last": "v3-frame-enemy-15-stun-001743.png"
+        },
+        {
+          "name": "enemy-16-idle",
+          "frames": 124,
+          "duration": 2.051849365234375,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            },
+            "enemy": {
+              "dragon_goblin_spear/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          },
+          "first": "v3-frame-enemy-16-idle-001744.png",
+          "last": "v3-frame-enemy-16-idle-001867.png"
+        },
+        {
+          "name": "enemy-16-attack-hit",
+          "frames": 102,
+          "duration": 1.72186279296875,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_hero_on/Hit/Hit": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            },
+            "enemy": {
+              "dragon_goblin_spear/Idle/Idle": [
+                0,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_goblin_spear/AttackHigh/Attack": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_goblin_spear/AttackLow/Attack": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          },
+          "first": "v3-frame-enemy-16-attack-hit-001868.png",
+          "last": "v3-frame-enemy-16-attack-hit-001969.png"
+        },
+        {
+          "name": "enemy-16-stun",
+          "frames": 129,
+          "duration": 2.1649169921875,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_hero_on/Attack/Attack": [
+                0,
+                1,
+                2,
+                4,
+                5,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ]
+            },
+            "enemy": {
+              "dragon_goblin_spear/Idle/Idle": [
+                0,
+                1,
+                6,
+                7
+              ],
+              "dragon_goblin_spear/Stun/Stun": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          },
+          "first": "v3-frame-enemy-16-stun-001970.png",
+          "last": "v3-frame-enemy-16-stun-002098.png"
+        },
+        {
+          "name": "enemy-17-idle",
+          "frames": 124,
+          "duration": 2.0501022338867188,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            },
+            "enemy": {
+              "dragon_spore_mushroom/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          },
+          "first": "v3-frame-enemy-17-idle-002099.png",
+          "last": "v3-frame-enemy-17-idle-002222.png"
+        },
+        {
+          "name": "enemy-17-attack-hit",
+          "frames": 102,
+          "duration": 1.7362136840820312,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_hero_on/Hit/Hit": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            },
+            "enemy": {
+              "dragon_spore_mushroom/Idle/Idle": [
+                0,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_spore_mushroom/AttackThrust/Attack": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_spore_mushroom/AttackLow/Attack": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ]
+            }
+          },
+          "first": "v3-frame-enemy-17-attack-hit-002223.png",
+          "last": "v3-frame-enemy-17-attack-hit-002324.png"
+        },
+        {
+          "name": "enemy-17-stun",
+          "frames": 129,
+          "duration": 2.159149169921875,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_hero_on/Attack/Attack": [
+                0,
+                2,
+                3,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ]
+            },
+            "enemy": {
+              "dragon_spore_mushroom/Idle/Idle": [
+                0,
+                1,
+                6,
+                7
+              ],
+              "dragon_spore_mushroom/Stun/Stun": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          },
+          "first": "v3-frame-enemy-17-stun-002325.png",
+          "last": "v3-frame-enemy-17-stun-002453.png"
+        },
+        {
+          "name": "enemy-18-idle",
+          "frames": 124,
+          "duration": 2.0496826171875,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            },
+            "enemy": {
+              "dragon_moss_mushroom/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          },
+          "first": "v3-frame-enemy-18-idle-002454.png",
+          "last": "v3-frame-enemy-18-idle-002577.png"
+        },
+        {
+          "name": "enemy-18-attack-hit",
+          "frames": 92,
+          "duration": 1.5560302734375,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_hero_on/Hit/Hit": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            },
+            "enemy": {
+              "dragon_moss_mushroom/Idle/Idle": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_moss_mushroom/AttackHigh/Attack": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "dragon_moss_mushroom/AttackThrust/Attack": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ]
+            }
+          },
+          "first": "v3-frame-enemy-18-attack-hit-002578.png",
+          "last": "v3-frame-enemy-18-attack-hit-002669.png"
+        },
+        {
+          "name": "enemy-18-stun",
+          "frames": 129,
+          "duration": 2.1614303588867188,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_hero_on/Attack/Attack": [
+                0,
+                2,
+                3,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ]
+            },
+            "enemy": {
+              "dragon_moss_mushroom/Idle/Idle": [
+                0,
+                1,
+                6,
+                7
+              ],
+              "dragon_moss_mushroom/Stun/Stun": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          },
+          "first": "v3-frame-enemy-18-stun-002670.png",
+          "last": "v3-frame-enemy-18-stun-002798.png"
+        },
+        {
+          "name": "enemy-19-idle",
+          "frames": 123,
+          "duration": 2.047027587890625,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            },
+            "enemy": {
+              "dragon_goblin_guard/AttackThrust/Attack": [
+                0
+              ]
+            }
+          },
+          "first": "v3-frame-enemy-19-idle-002799.png",
+          "last": "v3-frame-enemy-19-idle-002921.png"
+        },
+        {
+          "name": "enemy-19-attack-hit",
+          "frames": 82,
+          "duration": 1.400390625,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_hero_on/Hit/Hit": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            },
+            "enemy": {
+              "dragon_goblin_guard/AttackThrust/Attack": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ]
+            }
+          },
+          "first": "v3-frame-enemy-19-attack-hit-002922.png",
+          "last": "v3-frame-enemy-19-attack-hit-003003.png"
+        },
+        {
+          "name": "enemy-19-stun",
+          "frames": 130,
+          "duration": 2.1802978515625,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_hero_on/Attack/Attack": [
+                0,
+                2,
+                3,
+                4,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ]
+            },
+            "enemy": {
+              "dragon_goblin_guard/AttackThrust/Attack": [
+                0
+              ],
+              "dragon_goblin_guard/Idle/Idle": [
+                1
+              ],
+              "dragon_goblin_guard/Stun/Stun": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_goblin_guard/AttackLow/Attack": [
+                0
+              ]
+            }
+          },
+          "first": "v3-frame-enemy-19-stun-003004.png",
+          "last": "v3-frame-enemy-19-stun-003133.png"
+        },
+        {
+          "name": "enemy-20-idle",
+          "frames": 124,
+          "duration": 2.0551300048828125,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            },
+            "enemy": {
+              "dragon_gib/AttackHigh/Attack": [
+                0
+              ]
+            }
+          },
+          "first": "v3-frame-enemy-20-idle-003134.png",
+          "last": "v3-frame-enemy-20-idle-003257.png"
+        },
+        {
+          "name": "enemy-20-attack-hit",
+          "frames": 82,
+          "duration": 1.402587890625,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_hero_on/Hit/Hit": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            },
+            "enemy": {
+              "dragon_gib/AttackHigh/Attack": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ]
+            }
+          },
+          "first": "v3-frame-enemy-20-attack-hit-003258.png",
+          "last": "v3-frame-enemy-20-attack-hit-003339.png"
+        },
+        {
+          "name": "enemy-20-stun",
+          "frames": 99,
+          "duration": 1.6687164306640625,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_hero_on/Attack/Attack": [
+                0,
+                2,
+                3,
+                4,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ]
+            },
+            "enemy": {
+              "dragon_gib/AttackHigh/Attack": [
+                0
+              ],
+              "dragon_gib/Idle/Idle": [
+                1
+              ],
+              "dragon_gib/Stun/Stun": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          },
+          "first": "v3-frame-enemy-20-stun-003340.png",
+          "last": "v3-frame-enemy-20-stun-003438.png"
+        },
+        {
+          "name": "player-1-idle",
+          "frames": 83,
+          "duration": 1.3686065673828125,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            },
+            "enemy": {
+              "dragon_trail_slime/AttackLow/Attack": [
+                0
+              ]
+            }
+          },
+          "first": "v3-frame-player-1-idle-003439.png",
+          "last": "v3-frame-player-1-idle-003521.png"
+        },
+        {
+          "name": "player-1-attack",
+          "frames": 49,
+          "duration": 0.8221435546875,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                5,
+                6,
+                7
+              ],
+              "dragon_hero_on/Attack/Attack": [
+                0,
+                1,
+                3,
+                4,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ]
+            },
+            "enemy": {
+              "dragon_trail_slime/AttackLow/Attack": [
+                0,
+                1
+              ]
+            }
+          },
+          "first": "v3-frame-player-1-attack-003522.png",
+          "last": "v3-frame-player-1-attack-003570.png"
+        },
+        {
+          "name": "player-1-defense-0",
+          "frames": 47,
+          "duration": 0.7863006591796875,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "dragon_hero_on/DodgeUp/DodgeUp": [
+                3,
+                6,
+                7
+              ]
+            },
+            "enemy": {
+              "dragon_trail_slime/AttackLow/Attack": [
+                0
+              ]
+            }
+          },
+          "first": "v3-frame-player-1-defense-0-003571.png",
+          "last": "v3-frame-player-1-defense-0-003617.png"
+        },
+        {
+          "name": "player-1-defense-1",
+          "frames": 46,
+          "duration": 0.7835540771484375,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "dragon_hero_on/DodgeBack/DodgeBack": [
+                3,
+                6,
+                7
+              ]
+            },
+            "enemy": {
+              "dragon_trail_slime/AttackLow/Attack": [
+                0
+              ]
+            }
+          },
+          "first": "v3-frame-player-1-defense-1-003618.png",
+          "last": "v3-frame-player-1-defense-1-003663.png"
+        },
+        {
+          "name": "player-1-defense-2",
+          "frames": 46,
+          "duration": 0.765045166015625,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                2,
+                3,
+                4,
+                5
+              ],
+              "dragon_hero_on/DodgeDown/DodgeDown": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ]
+            },
+            "enemy": {
+              "dragon_trail_slime/AttackLow/Attack": [
+                0
+              ]
+            }
+          },
+          "first": "v3-frame-player-1-defense-2-003664.png",
+          "last": "v3-frame-player-1-defense-2-003709.png"
+        },
+        {
+          "name": "enemy-1-attack-hit",
+          "frames": 103,
+          "duration": 1.7273712158203125,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_hero_on/Hit/Hit": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            },
+            "enemy": {
+              "dragon_trail_slime/AttackLow/Attack": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_trail_slime/Idle/Idle": [
+                0,
+                1,
+                2,
+                3
+              ]
+            }
+          },
+          "first": "v3-frame-enemy-1-attack-hit-003710.png",
+          "last": "v3-frame-enemy-1-attack-hit-003812.png"
+        },
+        {
+          "name": "travel-1-to-2",
+          "frames": 200,
+          "duration": 3.3324737548828125,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Attack/Attack": [
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ],
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_hero_on/Run/Run": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            },
+            "enemy": {
+              "dragon_trail_slime/AttackLow/Attack": [
+                0
+              ],
+              "dragon_grass_slime/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_grass_slime/AttackThrust/Attack": [
+                0
+              ]
+            }
+          },
+          "first": "v3-frame-travel-1-to-2-003813.png",
+          "last": "v3-frame-travel-1-to-2-004012.png"
+        },
+        {
+          "name": "player-11-idle",
+          "frames": 83,
+          "duration": 1.3671875,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            },
+            "enemy": {
+              "dragon_goblin_scout/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          },
+          "first": "v3-frame-player-11-idle-004013.png",
+          "last": "v3-frame-player-11-idle-004095.png"
+        },
+        {
+          "name": "player-11-attack",
+          "frames": 49,
+          "duration": 0.8161163330078125,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_hero_on/Attack/Attack": [
+                0,
+                1,
+                3,
+                4,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ]
+            },
+            "enemy": {
+              "dragon_goblin_scout/Idle/Idle": [
+                0,
+                1,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_goblin_scout/AttackLow/Attack": [
+                1,
+                2
+              ]
+            }
+          },
+          "first": "v3-frame-player-11-attack-004096.png",
+          "last": "v3-frame-player-11-attack-004144.png"
+        },
+        {
+          "name": "player-11-defense-0",
+          "frames": 46,
+          "duration": 0.7705078125,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "dragon_hero_on/DodgeUp/DodgeUp": [
+                3,
+                5,
+                6,
+                7
+              ]
+            },
+            "enemy": {
+              "dragon_goblin_scout/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                6,
+                7
+              ],
+              "dragon_goblin_scout/AttackLow/Attack": [
+                0
+              ]
+            }
+          },
+          "first": "v3-frame-player-11-defense-0-004145.png",
+          "last": "v3-frame-player-11-defense-0-004190.png"
+        },
+        {
+          "name": "player-11-defense-1",
+          "frames": 46,
+          "duration": 0.768035888671875,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_hero_on/DodgeBack/DodgeBack": [
+                3,
+                6,
+                7
+              ]
+            },
+            "enemy": {
+              "dragon_goblin_scout/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_goblin_scout/AttackLow/Attack": [
+                1
+              ]
+            }
+          },
+          "first": "v3-frame-player-11-defense-1-004191.png",
+          "last": "v3-frame-player-11-defense-1-004236.png"
+        },
+        {
+          "name": "player-11-defense-2",
+          "frames": 46,
+          "duration": 0.774871826171875,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                2,
+                3,
+                4,
+                5
+              ],
+              "dragon_hero_on/DodgeDown/DodgeDown": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ]
+            },
+            "enemy": {
+              "dragon_goblin_scout/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                5,
+                6,
+                7
+              ],
+              "dragon_goblin_scout/AttackLow/Attack": [
+                0
+              ]
+            }
+          },
+          "first": "v3-frame-player-11-defense-2-004237.png",
+          "last": "v3-frame-player-11-defense-2-004282.png"
+        },
+        {
+          "name": "travel-11-to-12",
+          "frames": 200,
+          "duration": 3.3315582275390625,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Attack/Attack": [
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ],
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_hero_on/Run/Run": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            },
+            "enemy": {
+              "dragon_goblin_scout/Idle/Idle": [
+                7
+              ],
+              "dragon_goblin_slinger/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          },
+          "first": "v3-frame-travel-11-to-12-004386.png",
+          "last": "v3-frame-travel-11-to-12-004585.png"
+        },
+        {
+          "name": "boss-15-intro",
+          "frames": 114,
+          "duration": 1.894195556640625,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            },
+            "enemy": {
+              "dragon_mushroom_captain/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_mushroom_captain/Roar/Attack": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          },
+          "first": "v3-frame-boss-15-intro-004586.png",
+          "last": "v3-frame-boss-15-intro-004699.png"
+        },
+        {
+          "name": "player-15-attack",
+          "frames": 50,
+          "duration": 0.82257080078125,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                6,
+                7
+              ],
+              "dragon_hero_on/Attack/Attack": [
+                0,
+                1,
+                3,
+                4,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ]
+            },
+            "enemy": {
+              "dragon_mushroom_captain/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          },
+          "first": "v3-frame-player-15-attack-004700.png",
+          "last": "v3-frame-player-15-attack-004749.png"
+        },
+        {
+          "name": "boss-20-intro",
+          "frames": 138,
+          "duration": 2.2952880859375,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            },
+            "enemy": {
+              "dragon_gib/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_gib/Roar/Attack": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "dragon_gib/AttackHigh/Attack": [
+                0
+              ]
+            }
+          },
+          "first": "v3-frame-boss-20-intro-004750.png",
+          "last": "v3-frame-boss-20-intro-004887.png"
+        },
+        {
+          "name": "player-20-attack",
+          "frames": 50,
+          "duration": 0.8277435302734375,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Idle/Idle": [
+                3,
+                4,
+                5,
+                6
+              ],
+              "dragon_hero_on/Attack/Attack": [
+                0,
+                1,
+                3,
+                4,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ]
+            },
+            "enemy": {
+              "dragon_gib/AttackHigh/Attack": [
+                0
+              ]
+            }
+          },
+          "first": "v3-frame-player-20-attack-004888.png",
+          "last": "v3-frame-player-20-attack-004937.png"
+        },
+        {
+          "name": "travel-10-to-11",
+          "frames": 201,
+          "duration": 3.3487548828125,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Attack/Attack": [
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ],
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_hero_on/Run/Run": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_hero_on/Hit/Hit": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            },
+            "enemy": {
+              "dragon_great_tusk/AttackThrust/Attack": [
+                0
+              ],
+              "dragon_goblin_scout/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_goblin_scout/AttackThrust/Attack": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ]
+            }
+          },
+          "first": "v3-frame-travel-10-to-11-004938.png",
+          "last": "v3-frame-travel-10-to-11-005138.png"
+        },
+        {
+          "name": "travel-14-to-15",
+          "frames": 200,
+          "duration": 3.330535888671875,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Attack/Attack": [
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ],
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_hero_on/Run/Run": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            },
+            "enemy": {
+              "dragon_goblin_shield/Idle/Idle": [
+                6
+              ],
+              "dragon_mushroom_captain/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          },
+          "first": "v3-frame-travel-14-to-15-005139.png",
+          "last": "v3-frame-travel-14-to-15-005338.png"
+        },
+        {
+          "name": "travel-15-to-16",
+          "frames": 200,
+          "duration": 3.3316650390625,
+          "motions": {
+            "player": {
+              "dragon_hero_on/Attack/Attack": [
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ],
+              "dragon_hero_on/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "dragon_hero_on/Run/Run": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            },
+            "enemy": {
+              "dragon_mushroom_captain/Idle/Idle": [
+                6
+              ],
+              "dragon_goblin_spear/Idle/Idle": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          },
+          "first": "v3-frame-travel-15-to-16-005339.png",
+          "last": "v3-frame-travel-15-to-16-005538.png"
+        }
+      ],
+      "sheets": [
+        "review\\640x360-enemy-11.png",
+        "review\\640x360-enemy-12.png",
+        "review\\640x360-enemy-13.png",
+        "review\\640x360-enemy-14.png",
+        "review\\640x360-enemy-15.png",
+        "review\\640x360-enemy-16.png",
+        "review\\640x360-enemy-17.png",
+        "review\\640x360-enemy-18.png",
+        "review\\640x360-enemy-19.png",
+        "review\\640x360-enemy-20.png",
+        "review\\640x360-player-1.png",
+        "review\\640x360-player-11.png",
+        "review\\640x360-boss-15.png",
+        "review\\640x360-boss-20.png",
+        "review\\640x360-travel-1.png",
+        "review\\640x360-travel-10.png",
+        "review\\640x360-travel-11.png",
+        "review\\640x360-travel-14.png",
+        "review\\640x360-travel-15.png"
+      ],
+      "visualReview": "PENDING_DIRECT_REVIEW",
+      "normalSpeedPlayback": "NOT_RUN",
+      "limits": "Pivot projection is distinct from the lowest opaque image pixel; intentional Up lift is excluded from grounded residual. Captures include rendering/readback overhead and do not certify 60fps."
+    }
+  ],
+  "scope": "Read-only analysis of existing native evidence; no Unity/player or OS input.",
+  "campaign": {
+    "limits": "Synthetic isolated profile campaign and legacy sentinel, same-path native restart, selector contract only for default path. With StoryOnly1280, prior motion evidence must be adopted separately after product identity review. Not a user-profile hash audit or complete visual acceptance.",
+    "passed": true,
+    "visualReview": "NOT_RUN",
+    "error": null,
+    "userDefaultProfile": "NOT_ACCESSED",
+    "storyOnly1280": true,
+    "runs": [
+      {
+        "width": 1280,
+        "mode": "v3-story",
+        "passed": true,
+        "timedOut": false,
+        "name": "v3-story-1280x720",
+        "startedAt": "2026-10-24T20:09:32.9328433+09:00",
+        "endedAt": "2026-10-24T20:09:40.2177298+09:00",
+        "exitCode": 0,
+        "arguments": [
+          "-dragon-theme-smoke",
+          "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-03\\1280x720\\fresh\"",
+          "-dragon-theme-case",
+          "v3-story",
+          "-lastbell-save-dir",
+          "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-03\\1280x720\\fresh\\profiles\\boot\"",
+          "-screen-width",
+          "1280",
+          "-screen-height",
+          "720",
+          "-screen-fullscreen",
+          "0",
+          "-logFile",
+          "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-03\\1280x720\\fresh\\player.log\""
+        ],
+        "output": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-03\\1280x720\\fresh",
+        "height": 720,
+        "save": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-03\\1280x720\\fresh\\profiles\\boot"
+      },
+      {
+        "width": 1280,
+        "mode": "v3-resume",
+        "passed": true,
+        "timedOut": false,
+        "name": "v3-resume-1280x720",
+        "startedAt": "2026-10-24T20:09:40.2437347+09:00",
+        "endedAt": "2026-10-24T20:09:45.2424255+09:00",
+        "exitCode": 0,
+        "arguments": [
+          "-dragon-theme-smoke",
+          "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-03\\1280x720\"",
+          "-dragon-theme-case",
+          "v3-resume",
+          "-lastbell-save-dir",
+          "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-03\\1280x720\\fresh\\profiles\\boot\"",
+          "-screen-width",
+          "1280",
+          "-screen-height",
+          "720",
+          "-screen-fullscreen",
+          "0",
+          "-logFile",
+          "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-03\\1280x720\\player.log\""
+        ],
+        "output": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-03\\1280x720",
+        "height": 720,
+        "save": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-03\\1280x720\\fresh\\profiles\\boot"
+      },
+      {
+        "width": 640,
+        "mode": "v3",
+        "passed": true,
+        "timedOut": false,
+        "name": "v3-640x360",
+        "startedAt": "2026-10-24T20:09:45.2759814+09:00",
+        "endedAt": "2026-10-24T20:14:00.8119635+09:00",
+        "exitCode": 0,
+        "arguments": [
+          "-dragon-theme-smoke",
+          "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-03\\640x360\\fresh\"",
+          "-dragon-theme-case",
+          "v3",
+          "-lastbell-save-dir",
+          "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-03\\640x360\\fresh\\profiles\\boot\"",
+          "-screen-width",
+          "640",
+          "-screen-height",
+          "360",
+          "-screen-fullscreen",
+          "0",
+          "-logFile",
+          "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-03\\640x360\\fresh\\player.log\""
+        ],
+        "output": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-03\\640x360\\fresh",
+        "height": 360,
+        "save": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-03\\640x360\\fresh\\profiles\\boot"
+      },
+      {
+        "width": 640,
+        "mode": "v3-resume",
+        "passed": true,
+        "timedOut": false,
+        "name": "v3-resume-640x360",
+        "startedAt": "2026-10-24T20:14:00.8376725+09:00",
+        "endedAt": "2026-10-24T20:14:05.8975623+09:00",
+        "exitCode": 0,
+        "arguments": [
+          "-dragon-theme-smoke",
+          "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-03\\640x360\"",
+          "-dragon-theme-case",
+          "v3-resume",
+          "-lastbell-save-dir",
+          "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-03\\640x360\\fresh\\profiles\\boot\"",
+          "-screen-width",
+          "640",
+          "-screen-height",
+          "360",
+          "-screen-fullscreen",
+          "0",
+          "-logFile",
+          "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-03\\640x360\\player.log\""
+        ],
+        "output": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-03\\640x360",
+        "height": 360,
+        "save": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-03\\640x360\\fresh\\profiles\\boot"
+      }
+    ],
+    "defaultSaveRuntime": "NOT_RUN",
+    "osInput": false,
+    "full1280MotionRun": false
+  }
+}

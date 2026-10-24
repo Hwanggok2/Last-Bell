@@ -1,0 +1,240 @@
+{
+    "kind": "companion-shield",
+    "save": {
+        "schemaVersion": 9,
+        "adventureNewAccount": true,
+        "comboPracticeCompleted": false,
+        "comboPracticeSkipped": true,
+        "companionSlots": 1,
+        "companions": [
+            {
+                "id": "tori",
+                "level": 1
+            },
+            {
+                "id": "barun",
+                "level": 1
+            },
+            {
+                "id": "doto",
+                "level": 1
+            },
+            {
+                "id": "rina",
+                "level": 1
+            },
+            {
+                "id": "momo",
+                "level": 1
+            }
+        ],
+        "prologueSeen": true,
+        "comboHintSeen": true,
+        "gold": 20000,
+        "fragments": 20,
+        "unlockedSlots": 1,
+        "storageCapacity": 3,
+        "highestClearedStage": 20,
+        "walletVersion": 0,
+        "tutorialStep": 2,
+        "runSequence": 1,
+        "randomState": -2073034353,
+        "selectedCharacterId": "dam",
+        "phase": 3,
+        "characters": [
+            {
+                "id": "on",
+                "statLevels": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "companionIds": [],
+                "reservations": [],
+                "weaponRank": 0,
+                "equippedRelicIds": [],
+                "checkpoint": 0,
+                "cycle": 0,
+                "highestStage": 0,
+                "seenStoryIds": [],
+                "seenBossIntros": []
+            },
+            {
+                "id": "dam",
+                "statLevels": [
+                    0,
+                    50,
+                    0,
+                    0,
+                    0
+                ],
+                "companionIds": [
+                    "tori"
+                ],
+                "reservations": [],
+                "weaponRank": 0,
+                "equippedRelicIds": [],
+                "checkpoint": 0,
+                "cycle": 0,
+                "highestStage": 0,
+                "seenStoryIds": [],
+                "seenBossIntros": []
+            },
+            {
+                "id": "rin",
+                "statLevels": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "companionIds": [],
+                "reservations": [],
+                "weaponRank": 0,
+                "equippedRelicIds": [],
+                "checkpoint": 0,
+                "cycle": 0,
+                "highestStage": 0,
+                "seenStoryIds": [],
+                "seenBossIntros": []
+            }
+        ],
+        "relics": [],
+        "unlockedStoryIds": [],
+        "run": {
+            "characterId": "dam",
+            "runId": 1,
+            "stage": 11,
+            "cycle": 0,
+            "statLevels": [
+                0,
+                50,
+                0,
+                0,
+                0
+            ],
+            "companions": [
+                {
+                    "id": "tori",
+                    "level": 1,
+                    "periodMs": 6000,
+                    "damageMilli": 2400,
+                    "remainingMs": 99.99999550636858,
+                    "windingUp": true
+                }
+            ],
+            "weaponRank": 0,
+            "teaRecovery": 0,
+            "blessing": false,
+            "guideApplied": true,
+            "comboPractice": 0,
+            "practiceRecoveryUntilMs": 0.0,
+            "equippedRelicIds": [],
+            "appliedRelicLevels": [],
+            "stats": {
+                "attack": 0.0,
+                "maxHpMilli": 0,
+                "critChance": 0.0,
+                "goldMultiplier": 0.0,
+                "stunDamageMultiplier": 0.0,
+                "normalStagger": 0.0,
+                "perfectStagger": 0.0,
+                "damageReduction": 0.0
+            },
+            "combatStats": {
+                "attack": 10,
+                "maxHp": 24761,
+                "critChancePercent": 5,
+                "goldBonusPercent": 3,
+                "stunDamagePercent": 140,
+                "normalStagger": 20,
+                "perfectStagger": 40,
+                "damageReductionPercent": 0,
+                "baseAttack": 10,
+                "recovery": 5
+            },
+            "earnedGold": 0,
+            "earnedFragments": 0,
+            "earningsSinceUpdate": false,
+            "playerHpMilli": 24761000,
+            "enemyHpMilli": 999988000,
+            "enemyMaxHpMilli": 1000000000,
+            "clockMs": 700.0000044936314,
+            "dodgeStartMs": -1000000.0,
+            "dodgeDirection": 0,
+            "attackReadyAtMs": 500.0,
+            "attackHitAtMs": -1.0,
+            "pendingSkillAttack": false,
+            "skillCooldownRemainingMs": 19299.99999550637,
+            "skillShieldRemainingMs": 2499.9999955063686,
+            "skillShieldMilli": 1981000,
+            "enemyHitAtMs": 900.0,
+            "telegraphStartMs": 0.0,
+            "patternId": "frontal_dash",
+            "patternIndex": 0,
+            "patternRandomState": -1124798902,
+            "perfectStreak": 0,
+            "hitCombo": 0,
+            "stunExtensionMs": 0,
+            "randomSequence": [
+                "frontal_dash"
+            ],
+            "sequenceCursor": 0,
+            "previousPattern": "frontal_dash",
+            "penultimatePattern": "",
+            "forceTwoHitSequence": false,
+            "attackSpeed": 1.0,
+            "defeatedGold": 0,
+            "patternStep": 0,
+            "stagger": 0.0,
+            "stunUntilMs": -1.0,
+            "immunityUntilMs": -1.0,
+            "stageRewardApplied": false,
+            "lastAppliedRewardId": "",
+            "offer": {
+                "legacyMidbossReward": false,
+                "rewardId": "",
+                "stage": 0,
+                "relicIds": [],
+                "offeredLevels": [],
+                "maxGold": 0
+            },
+            "pendingRewards": [],
+            "claimedRewards": [],
+            "ended": false,
+            "cleared": false,
+            "transition": {
+                "kind": 0,
+                "fromStage": 0,
+                "toStage": 0,
+                "elapsedMs": 0.0,
+                "durationMs": 0,
+                "isRepeat": false
+            },
+            "story": {
+                "sceneId": "",
+                "rewardId": "",
+                "lineIndex": 0,
+                "legacy": false,
+                "reunion": false,
+                "awaitingCompanionChoice": false
+            }
+        },
+        "exchange": {
+            "purchaseOnly": false,
+            "characterId": "",
+            "statIndex": 0,
+            "level": 0,
+            "upgradeCost": 0,
+            "fragments": 0,
+            "gold": 0,
+            "exchangeRate": 0,
+            "walletGold": 0,
+            "walletFragments": 0,
+            "walletVersion": 0
+        }
+    }
+}

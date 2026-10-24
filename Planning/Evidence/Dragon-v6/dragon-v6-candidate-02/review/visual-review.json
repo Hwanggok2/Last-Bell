@@ -1,0 +1,218 @@
+{
+  "candidate": "dragon-v6-candidate-02",
+  "reviewedAtUtc": "2026-10-24T16:37:46.718363+00:00",
+  "status": "BOUNDED_REVIEW_VISUAL_ISSUES",
+  "acceptance": "NOT_CERTIFIED",
+  "inspection": {
+    "fullOriginals": 6,
+    "cropSheets": 11,
+    "sourceCrops": 37,
+    "distinctSourcePNGs": 37,
+    "totalCapturedPNGs": 791,
+    "resolution": "1280x720 only",
+    "allFramesReviewed": false
+  },
+  "inspected": [
+    {
+      "file": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000010.png",
+      "method": "full original1280x720 via view_image",
+      "sha256": "b7db0e742aacb9ea9b977be7c971d6f5e1b28aea955834cb667fcab9ca04821e"
+    },
+    {
+      "file": "1280x720/fresh/v3-frame-v6-companion-tori-proc-contact-000240.png",
+      "method": "full original1280x720 via view_image",
+      "sha256": "7881a166822cc1fb7261b199aa5c758a8cbb7a23e41b42d4c6f16a771d49bc5a"
+    },
+    {
+      "file": "1280x720/fresh/v3-frame-v6-skill-rin-overlap-000139.png",
+      "method": "full original1280x720 via view_image",
+      "sha256": "d0afbe3d50919bceef6830f799a89b4e135da1ac46a97301fc98fbe53ab85cdd"
+    },
+    {
+      "file": "1280x720/fresh/v3-frame-v6-boss-lightning-20-000702.png",
+      "method": "full original1280x720 via view_image",
+      "sha256": "0c5a34d81b7862faa02a884e904ff6238b27f1c04c892873b7b6f2c82741518c"
+    },
+    {
+      "file": "1280x720/fresh/v3-frame-v6-boss-lightning-10-000622.png",
+      "method": "full original1280x720 via view_image",
+      "sha256": "47b2c63af9fd23ac5829bfe992cf948e558335ee62742f69eae6765ae0e2ed27"
+    },
+    {
+      "file": "1280x720/fresh/v3-frame-v6-actual-stun-000744.png",
+      "method": "full original1280x720 via view_image",
+      "sha256": "2c35898cff5d3f4b9bcd928edee1f12ba3ef9dc9a30892c0769d224a9b453d87"
+    },
+    {
+      "file": "review/boss-lightning-10.png",
+      "method": "unscaled source crops via view_image; bounds in crop-manifest.json",
+      "sha256": "8e8e364f29ded660e26d873aee283441e73eb85031cdfdf68f686505daa8b2e9",
+      "sources": [
+        "1280x720/fresh/v3-frame-v6-boss-lightning-10-000612.png",
+        "1280x720/fresh/v3-frame-v6-boss-lightning-10-000622.png"
+      ]
+    },
+    {
+      "file": "review/boss-lightning-15.png",
+      "method": "unscaled source crops via view_image; bounds in crop-manifest.json",
+      "sha256": "72b1132e05191b667711478a646758d38fe22b5cb4c896d086476ddf7cc6fcd4",
+      "sources": [
+        "1280x720/fresh/v3-frame-v6-boss-lightning-15-000652.png",
+        "1280x720/fresh/v3-frame-v6-boss-lightning-15-000662.png"
+      ]
+    },
+    {
+      "file": "review/boss-lightning-20.png",
+      "method": "unscaled source crops via view_image; bounds in crop-manifest.json",
+      "sha256": "6c0dc0ea003ca4d07783bad8d76a828c94e5964832aec07553b86254fc35d865",
+      "sources": [
+        "1280x720/fresh/v3-frame-v6-boss-lightning-20-000692.png",
+        "1280x720/fresh/v3-frame-v6-boss-lightning-20-000702.png"
+      ]
+    },
+    {
+      "file": "review/boss-lightning-5.png",
+      "method": "unscaled source crops via view_image; bounds in crop-manifest.json",
+      "sha256": "58f90d9225ac17fe1c197ec64224d45052bbd730b2357ca5424bdc83147dd3e4",
+      "sources": [
+        "1280x720/fresh/v3-frame-v6-boss-lightning-5-000572.png",
+        "1280x720/fresh/v3-frame-v6-boss-lightning-5-000581.png"
+      ]
+    },
+    {
+      "file": "review/companion-barun.png",
+      "method": "unscaled source crops via view_image; bounds in crop-manifest.json",
+      "sha256": "fcd4b41bbc083044c625766fa5a5aed4e101d31e8fbb6db23fc46f72cdd0239d",
+      "sources": [
+        "1280x720/fresh/v3-frame-v6-companion-barun-basic-contact-000277.png",
+        "1280x720/fresh/v3-frame-v6-companion-barun-basic-contact-000287.png",
+        "1280x720/fresh/v3-frame-v6-companion-barun-proc-contact-000314.png",
+        "1280x720/fresh/v3-frame-v6-companion-barun-proc-contact-000324.png"
+      ]
+    },
+    {
+      "file": "review/companion-doto.png",
+      "method": "unscaled source crops via view_image; bounds in crop-manifest.json",
+      "sha256": "498817f8047605d43000f081abf86099ead9c806331dddc13e575fc4848d0db6",
+      "sources": [
+        "1280x720/fresh/v3-frame-v6-companion-doto-basic-contact-000351.png",
+        "1280x720/fresh/v3-frame-v6-companion-doto-basic-contact-000361.png",
+        "1280x720/fresh/v3-frame-v6-companion-doto-proc-contact-000387.png",
+        "1280x720/fresh/v3-frame-v6-companion-doto-proc-contact-000397.png"
+      ]
+    },
+    {
+      "file": "review/companion-momo.png",
+      "method": "unscaled source crops via view_image; bounds in crop-manifest.json",
+      "sha256": "ea34879f5cdf9f57ba759b0b1d51a6084352022c668cdb964089f249907a5afb",
+      "sources": [
+        "1280x720/fresh/v3-frame-v6-companion-momo-basic-contact-000498.png",
+        "1280x720/fresh/v3-frame-v6-companion-momo-basic-contact-000508.png",
+        "1280x720/fresh/v3-frame-v6-companion-momo-proc-contact-000535.png",
+        "1280x720/fresh/v3-frame-v6-companion-momo-proc-contact-000545.png"
+      ]
+    },
+    {
+      "file": "review/companion-rina.png",
+      "method": "unscaled source crops via view_image; bounds in crop-manifest.json",
+      "sha256": "eec11c2f487b07e2e18cba7825815f677a5f1456178c241266690e1d80521cab",
+      "sources": [
+        "1280x720/fresh/v3-frame-v6-companion-rina-basic-contact-000424.png",
+        "1280x720/fresh/v3-frame-v6-companion-rina-basic-contact-000433.png",
+        "1280x720/fresh/v3-frame-v6-companion-rina-proc-contact-000461.png",
+        "1280x720/fresh/v3-frame-v6-companion-rina-proc-contact-000471.png"
+      ]
+    },
+    {
+      "file": "review/companion-tori.png",
+      "method": "unscaled source crops via view_image; bounds in crop-manifest.json",
+      "sha256": "ad592d8d0456065e5b24937d877a2365d386c2c1deba79971304172dadc5ecb7",
+      "sources": [
+        "1280x720/fresh/v3-frame-v6-companion-tori-basic-contact-000203.png",
+        "1280x720/fresh/v3-frame-v6-companion-tori-basic-contact-000213.png",
+        "1280x720/fresh/v3-frame-v6-companion-tori-proc-contact-000240.png",
+        "1280x720/fresh/v3-frame-v6-companion-tori-proc-contact-000250.png"
+      ]
+    },
+    {
+      "file": "review/player-skills.png",
+      "method": "unscaled source crops via view_image; bounds in crop-manifest.json",
+      "sha256": "5ef4ddff6b5a84f64054f76cb01da15dd905b051f4d371c4fce3cf32d83d4b70",
+      "sources": [
+        "1280x720/fresh/v3-frame-v6-skill-on-overlap-000010.png",
+        "1280x720/fresh/v3-frame-v6-skill-on-overlap-000020.png",
+        "1280x720/fresh/v3-frame-v6-skill-dam-overlap-000075.png",
+        "1280x720/fresh/v3-frame-v6-skill-dam-overlap-000085.png",
+        "1280x720/fresh/v3-frame-v6-skill-rin-overlap-000139.png",
+        "1280x720/fresh/v3-frame-v6-skill-rin-overlap-000149.png"
+      ]
+    },
+    {
+      "file": "review/stun-timing.png",
+      "method": "unscaled source crops via view_image; bounds in crop-manifest.json",
+      "sha256": "b92732375c27d37021ae42fa0fa1278a94b15c1e3cc4de4775e4ad9b8c89cc5f",
+      "sources": [
+        "1280x720/fresh/v3-frame-v6-actual-stun-000744.png",
+        "1280x720/fresh/v3-frame-v6-actual-stun-000749.png",
+        "1280x720/fresh/v3-frame-v6-actual-stun-000783.png"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "DQA6-001",
+      "status": "FIX_CONFIRMED_1280_TWO_HIT",
+      "notes": "Ordinary+independent numbers stay below stagger HUD in observed contact/late frames. Three-popup/640 remain NOT_RUN."
+    },
+    {
+      "id": "DQA6-002",
+      "status": "CONFIRMED_VISUAL_QUALITY_DEFECT",
+      "severity": "P2",
+      "notes": "Normal Miel/Rina and4 large-enemy contact/late samples show separated small colored squares, weak continuous lightning silhouette. Not missing contact or headroom fallback. Root width correction awaits new build;640 unrun.",
+      "sources": [
+        "1280x720/fresh/v3-frame-v6-skill-rin-overlap-000139.png",
+        "1280x720/fresh/v3-frame-v6-companion-rina-proc-contact-000471.png",
+        "1280x720/fresh/v3-frame-v6-boss-lightning-20-000702.png"
+      ]
+    },
+    {
+      "id": "DQA6-003",
+      "status": "CONFIRMED_VISUAL_DEFECT",
+      "severity": "P2",
+      "notes": "Yellow direction glyph overlaps boss name/level at top center. Root new name center900,84/440x40 pending visual recheck.",
+      "sources": [
+        "1280x720/fresh/v3-frame-v6-boss-lightning-10-000622.png",
+        "1280x720/fresh/v3-frame-v6-boss-lightning-20-000702.png"
+      ]
+    }
+  ],
+  "boundedChecks": [
+    {
+      "subject": "All5 companion basic/proc white hit and cyan numbers",
+      "verdict": "PASS_BOUNDED",
+      "notes": "Contact and180ms-later crops per basic/proc. Distinct proc motifs visible, except lightning quality recorded separately."
+    },
+    {
+      "subject": "Luka/Daren effects and player2-number display",
+      "verdict": "PASS_BOUNDED",
+      "notes": "Sampled contact/late; no all-duration or640 claim."
+    },
+    {
+      "subject": "Stun stars",
+      "verdict": "ACTIVE_VISUAL_CONFIRMED_TIMING_TEST_INVALID",
+      "notes": "Three gold/cream outlined stars visible at000744; stars absent at000749 after actual expiry. Capture timing defect prevents intended full-window/pause certification."
+    }
+  ],
+  "notRun": [
+    "concurrent5 contacts/3 popups",
+    "kill-boundary tail",
+    "continuous1-to20",
+    "1280 native restart",
+    "all640 cases"
+  ],
+  "limits": [
+    "No physical input/mobile/audio listening/performance certification",
+    "No full acceptance/release certification",
+    "Raw campaign/result unchanged"
+  ]
+}

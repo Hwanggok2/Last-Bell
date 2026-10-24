@@ -1,0 +1,118 @@
+{
+  "candidate": "dragon-v4-candidate-01",
+  "campaign": {
+    "passed": false,
+    "core": "Client evidence reused, not executed",
+    "visualReview": "NOT_RUN",
+    "userDefaultProfile": "NOT_ACCESSED",
+    "audioListening": "NOT_RUN",
+    "osInput": "DEFERRED",
+    "limits": "Synthetic pointer/raycast paths, isolated save fixtures and native resume. Optional source-filter PCM is not device loopback or listening. Manual visual and audio review are separate.",
+    "error": "V4 case failed: v4-1280x720; remaining cases not started",
+    "expectedProcesses": 4,
+    "runs": [
+      {
+        "mode": "v4",
+        "passed": false,
+        "save": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v4\\dragon-v4-candidate-01\\1280x720\\fresh\\profiles\\boot",
+        "width": 1280,
+        "startedAt": "2026-10-24T21:46:56.3466347+09:00",
+        "arguments": [
+          "-dragon-theme-smoke",
+          "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v4\\dragon-v4-candidate-01\\1280x720\\fresh\"",
+          "-dragon-theme-case",
+          "v4",
+          "-lastbell-save-dir",
+          "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v4\\dragon-v4-candidate-01\\1280x720\\fresh\\profiles\\boot\"",
+          "-screen-width",
+          "1280",
+          "-screen-height",
+          "720",
+          "-screen-fullscreen",
+          "0",
+          "-logFile",
+          "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v4\\dragon-v4-candidate-01\\1280x720\\fresh\\player.log\""
+        ],
+        "endedAt": "2026-10-24T21:47:12.2630622+09:00",
+        "name": "v4-1280x720",
+        "exitCode": 1,
+        "output": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v4\\dragon-v4-candidate-01\\1280x720\\fresh",
+        "height": 720,
+        "timedOut": false
+      }
+    ]
+  },
+  "cases": [
+    {
+      "case": "1280x720/fresh",
+      "nativeExit": 1,
+      "timedOut": false,
+      "passed": false,
+      "completed": false,
+      "passChecks": 65,
+      "failures": [
+        "FAIL file restore preserves selected skill clocks: dam"
+      ],
+      "consoleErrors": [],
+      "indexedFrames": 79,
+      "writtenFrames": 79,
+      "segments": [
+        {
+          "name": "v4-skill-on-ready-contact",
+          "clock": "real-frame-v3",
+          "frames": 39,
+          "missingRenderedFrames": 0,
+          "firstRealtime": 4.230917930603027,
+          "lastRealtime": 4.899601459503174,
+          "maxDelta": 0.0382407046854496,
+          "maxRealtimeGap": 0.03780412673950195,
+          "encodeSeconds": 2.903205394744873
+        },
+        {
+          "name": "v4-skill-dam-ready-contact",
+          "clock": "real-frame-v3",
+          "frames": 40,
+          "missingRenderedFrames": 0,
+          "firstRealtime": 9.268586158752441,
+          "lastRealtime": 9.929788589477539,
+          "maxDelta": 0.02919819951057434,
+          "maxRealtimeGap": 0.03232288360595703,
+          "encodeSeconds": 2.8743038177490234
+        }
+      ],
+      "missingRenderedFrames": 0,
+      "duplicateFiles": 0,
+      "hashMismatches": [],
+      "missingStateCaptures": [],
+      "stateRecords": 92,
+      "contacts": [],
+      "maxGroundedPivotYErrorPx": {
+        "player": 0.0,
+        "enemy": 0.0
+      },
+      "audio": [],
+      "waveforms": [],
+      "sheets": [
+        "1280x720-v4-skill-on-ready-contact.png",
+        "1280x720-v4-skill-dam-ready-contact.png"
+      ],
+      "visualReview": "NOT_RUN",
+      "audioListening": "NOT_RUN",
+      "voiceMultiplicity": "NOT_CERTIFIED"
+    }
+  ],
+  "prefs": [
+    {
+      "matches": true,
+      "path": "Software\\LastBellPrototype\\Last Bell MVP"
+    },
+    {
+      "matches": true,
+      "path": "Software\\Unity\\UnityEditor\\LastBellPrototype\\Last Bell MVP"
+    }
+  ],
+  "syntheticLegacyUnchanged": true,
+  "userDefaultProfile": "NOT_ACCESSED",
+  "osInput": "DEFERRED",
+  "limits": "Computed measurements and contact sheets are review aids. No automatic visual/audio acceptance; no normal-speed video/device performance claim. Core tests are reused from Client evidence."
+}

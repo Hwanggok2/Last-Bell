@@ -1,0 +1,52 @@
+{
+  "status": "SOURCE_FROZEN_WAITING_FOR_OBSERVED_REBUILD",
+  "files": [
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.cs",
+      "sha256": "88a6b29b3bfd6a22ec8477aa3d7d0285ec30e6e4206a3afe389341f4640795a2",
+      "bytes": 30815
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V3.cs",
+      "sha256": "9737f351ac7e0e32492211760629fc1f4b00d86c1f93e7f989db49148a2eb671",
+      "bytes": 35160
+    },
+    {
+      "path": "Tools/QA/Dragon-v3/run-campaign.ps1",
+      "sha256": "28672c8e396f88920e56337c12675e335171d4eeacf4dd836b0c5e0080f0d652",
+      "bytes": 9169
+    }
+  ],
+  "sourceCompile": [
+    {
+      "defines": "player",
+      "status": "PASS",
+      "errors": 0,
+      "warnings": 27
+    },
+    {
+      "defines": "editor",
+      "status": "PASS",
+      "errors": 0,
+      "warnings": 28
+    }
+  ],
+  "launcherSyntax": "PASS",
+  "productFixUnchanged": "e7ad0f8a2e6ad2074c1096c683b05778a5f1117bc9e9c90627b800de0cece9ec",
+  "nextCandidate": "dragon-v3-candidate-05",
+  "launcherSwitch": "-RecoveryOnly",
+  "processes": 2,
+  "forcedAttackSampling": "REMOVED",
+  "actualCombatCoverage": "Recorded without forced sampling",
+  "scenarios": [
+    "19 automatic Arrival Idle two cycles",
+    "19 actual queued combo through final recovery",
+    "20 automatic Arrival Idle two cycles",
+    "20 actual queued combo through final recovery",
+    "18 actual attack regression"
+  ],
+  "unityAccess": false,
+  "nativeRun": false,
+  "osInput": "DEFERRED",
+  "userDefaultProfile": "NOT_ACCESSED"
+}

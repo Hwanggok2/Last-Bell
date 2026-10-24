@@ -1,0 +1,40 @@
+{
+  "osInput": false,
+  "visualReview": "NOT_RUN",
+  "defaultSaveRuntime": "NOT_RUN",
+  "userDefaultProfile": "NOT_ACCESSED",
+  "error": "V3 case failed: v3-1280x720. Remaining cases were not started.",
+  "passed": false,
+  "runs": [
+    {
+      "arguments": [
+        "-dragon-theme-smoke",
+        "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-01\\1280x720\\fresh\"",
+        "-dragon-theme-case",
+        "v3",
+        "-lastbell-save-dir",
+        "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-01\\1280x720\\fresh\\profiles\\boot\"",
+        "-screen-width",
+        "1280",
+        "-screen-height",
+        "720",
+        "-screen-fullscreen",
+        "0",
+        "-logFile",
+        "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-01\\1280x720\\fresh\\player.log\""
+      ],
+      "endedAt": "2026-10-24T19:40:33.8326117+09:00",
+      "save": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-01\\1280x720\\fresh\\profiles\\boot",
+      "mode": "v3",
+      "passed": false,
+      "name": "v3-1280x720",
+      "width": 1280,
+      "exitCode": 1,
+      "height": 720,
+      "timedOut": false,
+      "startedAt": "2026-10-24T19:40:28.2836371+09:00",
+      "output": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-01\\1280x720\\fresh"
+    }
+  ],
+  "limits": "Synthetic isolated profile campaign and legacy sentinel, same-path native restart, selector contract only for default path. Not a user-profile hash audit or complete visual acceptance."
+}

@@ -1,0 +1,57 @@
+{
+  "revision": "gate-checkpoint-v7.1",
+  "date": "2026-10-23",
+  "scope": [
+    "same gate frame and raised portcullis",
+    "continuous stage 10 to 11 to 12 movement",
+    "per-character persistent stage 11 checkpoint"
+  ],
+  "editMode": {
+    "total": 173,
+    "passed": 173,
+    "failed": 0
+  },
+  "playMode": {
+    "total": 19,
+    "passed": 19,
+    "failed": 0
+  },
+  "windowsRuntime": {
+    "passed": true,
+    "checks": 39,
+    "width": 960,
+    "height": 540
+  },
+  "windowsBuild": {
+    "status": "Succeeded",
+    "errors": 0,
+    "bytes": 208870537
+  },
+  "webglBuild": {
+    "status": "Succeeded",
+    "errors": 0,
+    "bytes": 23266761,
+    "referencedFiles": {
+      "a6fc64c37d3dcc9adbf632869c65b788.data.unityweb": 17123886,
+      "cb7e6767b7d9eaaf5bdf68ea20cfee04.wasm.unityweb": 5944792,
+      "961a83cc2453ec6f39d9b56fc809abb5.loader.js": 117893,
+      "535f8005177c2269f16c55fc4e5e7676.framework.js.unityweb": 74481
+    },
+    "browserRuntimeTest": false
+  },
+  "publicDeployment": "not performed",
+  "audioReplacement": "pending user selection; existing audio preserved",
+  "commercialAudioSources": [
+    "https://kenney.nl/support",
+    "https://kenney.nl/assets/impact-sounds",
+    "https://freesound.org/help/faq/",
+    "https://pixabay.com/service/terms/"
+  ],
+  "visualReview": [
+    "08-stage10-closed",
+    "09-stage10-opening",
+    "07-stage11",
+    "12-death-at11"
+  ],
+  "savedGateBinding": "Mvp scene inherits GatePortcullis material through PresentationWorld prefab"
+}

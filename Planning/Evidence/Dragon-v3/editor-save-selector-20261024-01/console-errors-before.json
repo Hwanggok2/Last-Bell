@@ -1,0 +1,36 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"success\":true,\"message\":\"Retrieved 3 log entries.\",\"data\":[{\"type\":\"Error\",\"message\":\"Assets\\\\Game\\\\Runtime\\\\Bootstrap\\\\GameBootstrap.cs(36,34): error CS0103: The name 'SaveDirectorySelector' does not exist in the current context\\n\",\"file\":\"Assets\\\\Game\\\\Runtime\\\\Bootstrap\\\\GameBootstrap.cs\",\"line\":36,\"stackTrace\":null},{\"type\":\"Error\",\"message\":\"Assets\\\\Game\\\\Runtime\\\\Bootstrap\\\\DragonThemeSmokeProbe.cs(148,69): error CS0103: The name 'DragonV3' does not exist in the current context\\n\",\"file\":\"Assets\\\\Game\\\\Runtime\\\\Bootstrap\\\\DragonThemeSmokeProbe.cs\",\"line\":148,\"stackTrace\":null},{\"type\":\"Error\",\"message\":\"Assets\\\\Game\\\\Runtime\\\\Bootstrap\\\\DragonThemeSmokeProbe.cs(415,13): error CS0103: The name 'ReleaseV3Frames' does not exist in the current context\\n\",\"file\":\"Assets\\\\Game\\\\Runtime\\\\Bootstrap\\\\DragonThemeSmokeProbe.cs\",\"line\":415,\"stackTrace\":null}]}"
+    }
+  ],
+  "structuredContent": {
+    "success": true,
+    "message": "Retrieved 3 log entries.",
+    "data": [
+      {
+        "type": "Error",
+        "message": "Assets\\Game\\Runtime\\Bootstrap\\GameBootstrap.cs(36,34): error CS0103: The name 'SaveDirectorySelector' does not exist in the current context\n",
+        "file": "Assets\\Game\\Runtime\\Bootstrap\\GameBootstrap.cs",
+        "line": 36,
+        "stackTrace": null
+      },
+      {
+        "type": "Error",
+        "message": "Assets\\Game\\Runtime\\Bootstrap\\DragonThemeSmokeProbe.cs(148,69): error CS0103: The name 'DragonV3' does not exist in the current context\n",
+        "file": "Assets\\Game\\Runtime\\Bootstrap\\DragonThemeSmokeProbe.cs",
+        "line": 148,
+        "stackTrace": null
+      },
+      {
+        "type": "Error",
+        "message": "Assets\\Game\\Runtime\\Bootstrap\\DragonThemeSmokeProbe.cs(415,13): error CS0103: The name 'ReleaseV3Frames' does not exist in the current context\n",
+        "file": "Assets\\Game\\Runtime\\Bootstrap\\DragonThemeSmokeProbe.cs",
+        "line": 415,
+        "stackTrace": null
+      }
+    ]
+  },
+  "isError": false
+}

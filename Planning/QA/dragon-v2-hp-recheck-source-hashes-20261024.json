@@ -1,0 +1,15 @@
+{
+  "status": "VALIDATED_BY_CANDIDATE_02_HP_RECHECK",
+  "sourceState": "FROZEN",
+  "scope": "DQA2-001 HP-only raster recheck; preserve candidate01 motion and PlayMode evidence",
+  "compileByQa": "NOT_RUN",
+  "extraGameExecutions": 2,
+  "extraPlayModeRuns": 0,
+  "hpRasterStatesPassed": 30,
+  "defectStatus": "DQA2-001 CLOSED",
+  "files": [
+    {"path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.cs", "sha256": "1f04758cf4a75586fd796d2abba3a8fb03933dec756b6fd5ddd537f5152caca5"},
+    {"path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V2.cs", "sha256": "1f73b853464657fe815d0230a24815b1846bf332bb161b1f8dc3b31baa2ba465"},
+    {"path": "Tools/QA/Dragon-v1/run-campaign.ps1", "sha256": "dffc61fab1c863d9448bbce5b3811a002f1c37c6482ca6cc1ab539b58235a3c9"}
+  ]
+}

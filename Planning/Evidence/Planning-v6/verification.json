@@ -1,0 +1,36 @@
+{
+  "version": "planning-v6",
+  "date": "2026-10-22",
+  "scope": "document and planning-board validation only",
+  "passed": true,
+  "checks": [
+    "20 stages and 10 distinct fresh monsters",
+    "Each stage has multiple attack directions; weights total 100; first 10 HP/damage preserved",
+    "First stun needs 3 / 4 / 5 perfect defenses without growth",
+    "960x540 and 640x360 HUD boxes do not overlap",
+    "1086 runtime art/code/data/scene/prefab files unchanged"
+  ],
+  "runtimeChanged": false,
+  "runtimeFilesCompared": 1086,
+  "runtimeBaseline": "Temp/Planning-v6/runtime-before.json",
+  "browser": {
+    "checked": [
+      "monochrome wireframe",
+      "small color HUD",
+      "normal 3 / miniboss 4 / boss 5 perfect defenses",
+      "stun extension capped at 300ms",
+      "hit combo reset on player damage",
+      "random sequence examples",
+      "Gold +42 arrival: 1234 -> 1276",
+      "Reduced-motion gold +42: 1276 -> 1318",
+      "Browser console errors: 0"
+    ],
+    "pending": [],
+    "screenshot": "Planning/Evidence/Planning-v6/hud-plan.png"
+  },
+  "limits": [
+    "Not applied to game",
+    "No physical-device touch or actual combat balance test"
+  ],
+  "completedAt": "2026-10-22T10:31:27.382Z"
+}

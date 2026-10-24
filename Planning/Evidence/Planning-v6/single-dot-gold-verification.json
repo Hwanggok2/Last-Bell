@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-22",
+  "revision": "2026-10-22-single-dot-gold",
+  "scope": "planning-and-preview-only",
+  "passed": true,
+  "flightMs": 160,
+  "gapMs": 50,
+  "maxVisibleDots": 1,
+  "particleSizePx": 3,
+  "particleCounts": {
+    "normal": 4,
+    "miniboss": 6,
+    "boss": 8
+  },
+  "browser": {
+    "observedActiveCounts": [
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1
+    ],
+    "arrival": "1234 -> 1276",
+    "screenshot": "Planning/Evidence/Planning-v6/single-dot-gold.png"
+  },
+  "limits": [
+    "Actual game not changed"
+  ]
+}

@@ -1,0 +1,200 @@
+{
+    "save": {
+        "schemaVersion": 8,
+        "prologueSeen": true,
+        "comboHintSeen": true,
+        "gold": 21945,
+        "fragments": 4,
+        "unlockedSlots": 1,
+        "storageCapacity": 3,
+        "highestClearedStage": 20,
+        "walletVersion": 1,
+        "tutorialStep": 2,
+        "runSequence": 1,
+        "randomState": 1110419482,
+        "selectedCharacterId": "dam",
+        "phase": 8,
+        "characters": [
+            {
+                "id": "on",
+                "statLevels": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "equippedRelicIds": [],
+                "checkpoint": 0,
+                "cycle": 0,
+                "highestStage": 0,
+                "seenStoryIds": [],
+                "seenBossIntros": []
+            },
+            {
+                "id": "dam",
+                "statLevels": [
+                    0,
+                    50,
+                    0,
+                    0
+                ],
+                "equippedRelicIds": [],
+                "checkpoint": 10,
+                "cycle": 0,
+                "highestStage": 20,
+                "seenStoryIds": [],
+                "seenBossIntros": []
+            },
+            {
+                "id": "rin",
+                "statLevels": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "equippedRelicIds": [],
+                "checkpoint": 0,
+                "cycle": 0,
+                "highestStage": 0,
+                "seenStoryIds": [],
+                "seenBossIntros": []
+            }
+        ],
+        "relics": [],
+        "unlockedStoryIds": [
+            "story_boss_20"
+        ],
+        "run": {
+            "characterId": "dam",
+            "runId": 1,
+            "stage": 20,
+            "cycle": 0,
+            "statLevels": [
+                0,
+                50,
+                0,
+                0
+            ],
+            "equippedRelicIds": [],
+            "appliedRelicLevels": [],
+            "stats": {
+                "attack": 0.0,
+                "maxHpMilli": 0,
+                "critChance": 0.0,
+                "goldMultiplier": 0.0,
+                "stunDamageMultiplier": 0.0,
+                "normalStagger": 0.0,
+                "perfectStagger": 0.0,
+                "damageReduction": 0.0
+            },
+            "combatStats": {
+                "attack": 10,
+                "maxHp": 24761,
+                "critChancePercent": 5,
+                "goldBonusPercent": 0,
+                "stunDamagePercent": 140,
+                "normalStagger": 20,
+                "perfectStagger": 40,
+                "damageReductionPercent": 0
+            },
+            "earnedGold": 9600,
+            "earnedFragments": 4,
+            "earningsSinceUpdate": false,
+            "playerHpMilli": 24761000,
+            "enemyHpMilli": 0,
+            "enemyMaxHpMilli": 8652000,
+            "clockMs": 200.0,
+            "dodgeStartMs": -1000000.0,
+            "dodgeDirection": 0,
+            "attackReadyAtMs": 500.0,
+            "attackHitAtMs": -1.0,
+            "pendingSkillAttack": false,
+            "skillCooldownRemainingMs": 19800.0,
+            "skillShieldRemainingMs": 3000.0,
+            "skillShieldMilli": 1981000,
+            "enemyHitAtMs": -1.0,
+            "telegraphStartMs": 0.0,
+            "patternId": "high_sweep",
+            "patternIndex": 0,
+            "patternRandomState": 1095862707,
+            "perfectStreak": 0,
+            "hitCombo": 0,
+            "stunExtensionMs": 0,
+            "randomSequence": [
+                "high_sweep",
+                "high_sweep",
+                "low_sweep"
+            ],
+            "sequenceCursor": 0,
+            "previousPattern": "low_sweep",
+            "penultimatePattern": "high_sweep",
+            "forceTwoHitSequence": false,
+            "attackSpeed": 1.0,
+            "defeatedGold": 9600,
+            "patternStep": 0,
+            "stagger": 0.0,
+            "stunUntilMs": -1.0,
+            "immunityUntilMs": -1.0,
+            "stageRewardApplied": true,
+            "lastAppliedRewardId": "",
+            "offer": {
+                "legacyMidbossReward": false,
+                "rewardId": "",
+                "stage": 0,
+                "relicIds": [],
+                "offeredLevels": [],
+                "maxGold": 0
+            },
+            "pendingRewards": [
+                {
+                    "legacyMidbossReward": false,
+                    "rewardId": "1:0:20",
+                    "stage": 20,
+                    "relicIds": [
+                        "relic_40",
+                        "relic_25",
+                        "relic_10"
+                    ],
+                    "offeredLevels": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "maxGold": 2399
+                }
+            ],
+            "claimedRewards": [],
+            "ended": false,
+            "cleared": false,
+            "transition": {
+                "kind": 0,
+                "fromStage": 0,
+                "toStage": 0,
+                "elapsedMs": 0.0,
+                "durationMs": 0,
+                "isRepeat": false
+            },
+            "story": {
+                "sceneId": "story_boss_20",
+                "rewardId": "1:0:20",
+                "lineIndex": 4
+            }
+        },
+        "exchange": {
+            "characterId": "",
+            "statIndex": 0,
+            "level": 0,
+            "upgradeCost": 0,
+            "fragments": 0,
+            "gold": 0,
+            "exchangeRate": 0,
+            "walletGold": 0,
+            "walletFragments": 0,
+            "walletVersion": 0
+        }
+    },
+    "text": "이 갱도를 지나면 고개 아래야. 바닥이 고르지 않으니 조심해.",
+    "speaker": "도토",
+    "portraitId": "doto"
+}

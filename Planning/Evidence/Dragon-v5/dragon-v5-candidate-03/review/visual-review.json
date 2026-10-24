@@ -1,0 +1,212 @@
+{
+  "candidate": "dragon-v5-candidate-03",
+  "reviewedAt": "2026-10-24T15:19:25.317840+00:00",
+  "reviewer": "QA agent visual inspection of tool-rendered PNGs",
+  "scope": "Only DQA5-002 Stage12, three player IDs x two resolutions",
+  "visualReview": "COMPLETED_BOUNDED",
+  "visualVerdict": "TARGET_PASS",
+  "fullAcceptance": "NOT_CERTIFIED",
+  "osInput": "DEFERRED_BY_USER",
+  "audioListening": "NOT_RUN",
+  "userDefaultProfile": "NOT_ACCESSED",
+  "runtimeSha256": "590432e7d0dc586f55c4b9b50a48196648dc20a441f1e6e94b65af0799b3c572",
+  "reviewed": [
+    {
+      "reviewFile": "review/1280x720-on-dialogue.png",
+      "method": "Native-resolution lower half crop, five pages",
+      "sourceFiles": [
+        "1280x720/fresh/v5-story-on-12-page-00.png",
+        "1280x720/fresh/v5-story-on-12-page-01.png",
+        "1280x720/fresh/v5-story-on-12-page-02.png",
+        "1280x720/fresh/v5-story-on-12-page-03.png",
+        "1280x720/fresh/v5-story-on-12-page-04.png"
+      ],
+      "sha256": "d6fa993f8362137f8d13cf456af4a95f6029a7a2437fb553009f5f604a6fe8fd",
+      "judgment": "TARGET_PASS",
+      "notes": "All five pages inspected. First ??? line has Barun face, later name is Barun. Right portrait, text and choice buttons fit."
+    },
+    {
+      "reviewFile": "review/1280x720-dam-dialogue.png",
+      "method": "Native-resolution lower half crop, five pages",
+      "sourceFiles": [
+        "1280x720/fresh/v5-story-dam-12-page-00.png",
+        "1280x720/fresh/v5-story-dam-12-page-01.png",
+        "1280x720/fresh/v5-story-dam-12-page-02.png",
+        "1280x720/fresh/v5-story-dam-12-page-03.png",
+        "1280x720/fresh/v5-story-dam-12-page-04.png"
+      ],
+      "sha256": "8c47c162d723b306dfed65cc871c4b755b0e04e1c158cf21adddfd439cb15719",
+      "judgment": "TARGET_PASS",
+      "notes": "All five pages inspected. First ??? line has Barun face, later name is Barun. Right portrait, text and choice buttons fit."
+    },
+    {
+      "reviewFile": "review/1280x720-rin-dialogue.png",
+      "method": "Native-resolution lower half crop, five pages",
+      "sourceFiles": [
+        "1280x720/fresh/v5-story-rin-12-page-00.png",
+        "1280x720/fresh/v5-story-rin-12-page-01.png",
+        "1280x720/fresh/v5-story-rin-12-page-02.png",
+        "1280x720/fresh/v5-story-rin-12-page-03.png",
+        "1280x720/fresh/v5-story-rin-12-page-04.png"
+      ],
+      "sha256": "e18db60ee18e80f9db47a8d080ae7c7422369264e690b2c23193d2d1ac655b3e",
+      "judgment": "TARGET_PASS",
+      "notes": "All five pages inspected. First ??? line has Barun face, later name is Barun. Right portrait, text and choice buttons fit."
+    },
+    {
+      "reviewFile": "review/640x360-on-dialogue.png",
+      "method": "Native-resolution lower half crop, five pages",
+      "sourceFiles": [
+        "640x360/fresh/v5-story-on-12-page-00.png",
+        "640x360/fresh/v5-story-on-12-page-01.png",
+        "640x360/fresh/v5-story-on-12-page-02.png",
+        "640x360/fresh/v5-story-on-12-page-03.png",
+        "640x360/fresh/v5-story-on-12-page-04.png"
+      ],
+      "sha256": "601d3d48816152a4c3498ed2a17b7e4bd0780e9708712f07be237a99d4578707",
+      "judgment": "TARGET_PASS",
+      "notes": "All five pages inspected. First ??? line has Barun face, later name is Barun. Right portrait, text and choice buttons fit."
+    },
+    {
+      "reviewFile": "review/640x360-dam-dialogue.png",
+      "method": "Native-resolution lower half crop, five pages",
+      "sourceFiles": [
+        "640x360/fresh/v5-story-dam-12-page-00.png",
+        "640x360/fresh/v5-story-dam-12-page-01.png",
+        "640x360/fresh/v5-story-dam-12-page-02.png",
+        "640x360/fresh/v5-story-dam-12-page-03.png",
+        "640x360/fresh/v5-story-dam-12-page-04.png"
+      ],
+      "sha256": "4b0af1e635cb9bb9b0908b7d5f6629288836db150e203ef5cc8920e7afeae75f",
+      "judgment": "TARGET_PASS",
+      "notes": "All five pages inspected. First ??? line has Barun face, later name is Barun. Right portrait, text and choice buttons fit."
+    },
+    {
+      "reviewFile": "review/640x360-rin-dialogue.png",
+      "method": "Native-resolution lower half crop, five pages",
+      "sourceFiles": [
+        "640x360/fresh/v5-story-rin-12-page-00.png",
+        "640x360/fresh/v5-story-rin-12-page-01.png",
+        "640x360/fresh/v5-story-rin-12-page-02.png",
+        "640x360/fresh/v5-story-rin-12-page-03.png",
+        "640x360/fresh/v5-story-rin-12-page-04.png"
+      ],
+      "sha256": "e39daa10227f22b76bd372fcf1fbf4445f5cd5ec3ded3155350485b0f002fabf",
+      "judgment": "TARGET_PASS",
+      "notes": "All five pages inspected. First ??? line has Barun face, later name is Barun. Right portrait, text and choice buttons fit."
+    },
+    {
+      "reviewFile": "1280x720/fresh/v5-story-on-12-page-00.png",
+      "method": "full original PNG opened",
+      "sourceFiles": [
+        "1280x720/fresh/v5-story-on-12-page-00.png"
+      ],
+      "sha256": "3f1616df680e0f836918119ac97f34c91fd96dfd285c389728c15a9cb1ca7551",
+      "judgment": "TARGET_PASS",
+      "notes": "Whole frame inspected: Barun portrait, ??? name and complete first line visible; skip/next fit."
+    },
+    {
+      "reviewFile": "640x360/fresh/v5-story-rin-12-page-00.png",
+      "method": "full original PNG opened",
+      "sourceFiles": [
+        "640x360/fresh/v5-story-rin-12-page-00.png"
+      ],
+      "sha256": "bdbdd696436e97ce10110f40e7f5c4cbc1560fd241e921dab0109c02085243cd",
+      "judgment": "TARGET_PASS",
+      "notes": "Whole frame inspected: Barun portrait, ??? name and complete first line visible; skip/next fit."
+    }
+  ],
+  "catalogDelta": [
+    {
+      "path": "/plannedStories/0/lines/0/portraitId",
+      "before": "unknown",
+      "after": "doto"
+    },
+    {
+      "path": "/plannedStories/1/lines/0/portraitId",
+      "before": "unknown",
+      "after": "rina"
+    },
+    {
+      "path": "/plannedStories/2/lines/0/portraitId",
+      "before": "unknown",
+      "after": "momo"
+    },
+    {
+      "path": "/stories/2/lines/0/portraitId",
+      "before": "unknown",
+      "after": "barun"
+    },
+    {
+      "path": "/sourceSha256",
+      "before": "c54d3719dd060412488924af825d0760f2f4d4d1ac7eb0bc98dc4544af32f46b",
+      "after": "cca94086db8cd16b86eee2f9b2f63d3774977d99aeff21c34b5de5efc8f92510"
+    }
+  ],
+  "rawEvidenceUnmodified": [
+    {
+      "path": "campaign.json",
+      "sha256": "d256ba757d478475e808ec2b6c699dcf97b1f6379106221a59d5d00bc59fa3db"
+    },
+    {
+      "path": "1280x720/fresh/result.json",
+      "sha256": "86ee789782c451404b471f7f7575ebd1515c16f5ac16a8ba8966272749d76571"
+    },
+    {
+      "path": "640x360/fresh/result.json",
+      "sha256": "f6a60e393d593597be8c6ca0d8c9fe1cc47fcc4ec51d72d2a4d521ee54adb0c4"
+    }
+  ],
+  "issueResolution": {
+    "id": "DQA5-002",
+    "status": "CLOSED",
+    "criterion": "D07",
+    "automatedChecksPassed": 300,
+    "consoleErrors": 0,
+    "pngCount": 30,
+    "manualPagesReviewed": 30,
+    "futureStages22_32_42": "Data-only fix confirmed by diff; native gameplay NOT_RUN"
+  },
+  "adoptedCandidate02": {
+    "candidate": "dragon-v5-candidate-02",
+    "runtimeSha256": "4F4C66BCF7B6431E6E28DE6080B92527657BFAAA589026449964F0A9BDCE56C9",
+    "automatedAnalysis": "../dragon-v5-candidate-02/review/analysis.json",
+    "visualReview": "../dragon-v5-candidate-02/review/visual-review.json",
+    "scope": [
+      "Prior-QA schema8 migration and legacy page restoration",
+      "Inn recovery purchase, companion equip/upgrade/services and refund observations",
+      "Guided synthetic input and native guided resume",
+      "Stage3/10/20 recovery once and restore behavior",
+      "Three skills, shield and stun particles in recorded windows",
+      "Five companion timing/contact samples and native companion/shield resume",
+      "Unaffected dialogue Stage2/10/20 and legacy layout observations"
+    ],
+    "excluded": [
+      "Stage12 old first portrait is a historical FAIL and is superseded only by candidate03 target evidence",
+      "No claim that entire candidate02 campaign reran on new binary"
+    ],
+    "reason": "Frozen manifests differ only in two catalog copies and three QA probe/runner files. Catalog differences are four portraitId leaves and sourceSha256 metadata. Product Core/Presentation/assets otherwise identical.",
+    "sourceDifferences": {
+      "changed": [
+        "Client/Assets/Game/Data/Generated/mvp-catalog.json",
+        "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.cs",
+        "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V5.cs",
+        "GameData/mvp-catalog.json",
+        "Tools/QA/Dragon-v5/run-campaign.ps1"
+      ],
+      "added": [],
+      "removed": []
+    }
+  },
+  "releaseAssessment": {
+    "qaBlockingDefects": [],
+    "generalBuildPackaging": "MAY_PROCEED_WITH_RECORDED_LIMITS",
+    "normalReleaseBinaryExecutedByQa": false,
+    "meaning": "Bounded observed-build QA signoff only; Root owns normal build/package verification."
+  },
+  "limits": [
+    "Thirty target dialogue pages viewed as native-scale lower-half crops, plus two full originals.",
+    "Candidate02 stun particles are small/pale; distinctive star-shape and normal-speed prominence not certified.",
+    "No all60 acceptance, full economy/corruption/retreat coverage, physical input, mobile, listening or performance certification."
+  ]
+}

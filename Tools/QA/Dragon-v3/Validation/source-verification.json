@@ -1,0 +1,103 @@
+{
+  "finalInputPreflight": "PENDING_ART: dragon_goblin_scout absent from imported runtime manifest at check",
+  "selectorAndPathChecks": {
+    "result": "Tools/QA/Dragon-v3/Validation/self-test-617fa48a9e7a48258b788885b3633d7b/result.json",
+    "failed": 0,
+    "passed": 15
+  },
+  "userDefaultProfile": "NOT_ACCESSED",
+  "nativePlayerRun": false,
+  "sourceCompile": [
+    {
+      "status": "PASS",
+      "defines": "player",
+      "warnings": 27,
+      "errors": 0
+    },
+    {
+      "status": "PASS",
+      "defines": "editor",
+      "warnings": 28,
+      "errors": 0
+    }
+  ],
+  "files": [
+    {
+      "sha256": "e4f93276ebc966d18f033bd3270c86c4fdcf196d8de59ece1b6106809d5b7db2",
+      "bytes": 34298,
+      "path": "Planning/QA/dragon-v3-plan-20261024.md"
+    },
+    {
+      "sha256": "ba81ca968df7fb7b147c1d182c702d98583b48b5c41b5265f800d10d1419cf6a",
+      "bytes": 4227,
+      "path": "Planning/QA/dragon-v3-source-handoff-20261024.md"
+    },
+    {
+      "sha256": "0de955c3bc480dc7abfc8157cd9a20857c0703d51d13de3f7f4f2b17140d2a3f",
+      "bytes": 30684,
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.cs"
+    },
+    {
+      "sha256": "6d90e0c6be5da703e9768dc2b95851730a410d53474c33e2fb431c1732b8767a",
+      "bytes": 28705,
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V3.cs"
+    },
+    {
+      "sha256": "889eca3ec527aa4803a55019d201448c1471c4ff6aede41f1e7196dc7b1300df",
+      "bytes": 60,
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V3.cs.meta"
+    },
+    {
+      "sha256": "998aada226b62e1580a3dcb1fc1fb44413aa17ae5520d02f58b3a9e5fb62c8f0",
+      "bytes": 5279,
+      "path": "Tools/QA/Dragon-v3/common.ps1"
+    },
+    {
+      "sha256": "6ac1b67763d48bf563f98a3fc44ffc8220bae0384003d4e083bc14f6283b3a67",
+      "bytes": 8266,
+      "path": "Tools/QA/Dragon-v3/run-campaign.ps1"
+    },
+    {
+      "sha256": "b7da02c326ddf11247b2219dd1606ffd876c5b85bd96db202eb6d042c9968464",
+      "bytes": 1731,
+      "path": "Tools/QA/Dragon-v3/compile-source.ps1"
+    },
+    {
+      "sha256": "94f8a57e8f3c34b33a2898262896c048d4fb5794f20848c24a1936e7bcb1d62d",
+      "bytes": 3379,
+      "path": "Tools/QA/Dragon-v3/self-test.ps1"
+    },
+    {
+      "sha256": "e93d1008227c82292da11aaa6fc19742d33ebedffd5aec6929f25537597ec6eb",
+      "bytes": 683,
+      "path": "Tools/QA/Dragon-v3/target-filters.json"
+    },
+    {
+      "sha256": "adb7e03df26a6630c7a88cc8cdf5d02dda589d8bbce7f030a62a0ede75e6a31d",
+      "bytes": 6386,
+      "path": "Tools/QA/Dragon-v3/README.md"
+    },
+    {
+      "sha256": "636e0cadfc3cf4cee048cd785b3568738e98766fde67e2ac6386f3498507aa21",
+      "bytes": 493,
+      "path": "Tools/QA/Dragon-v3/SourceChecks/SourceChecks.csproj"
+    },
+    {
+      "sha256": "ac1a3e8431b5f83cdbb41a905304ec35c3745cac65a7ad4761474a221a783f19",
+      "bytes": 4035,
+      "path": "Tools/QA/Dragon-v3/SourceChecks/Program.cs"
+    }
+  ],
+  "mobile": "DEFERRED",
+  "plannedNativeProcesses": 4,
+  "osInput": "DEFERRED",
+  "unityRun": false,
+  "status": "SOURCE_FROZEN_WAITING_FOR_FINAL_ART_AND_EXECUTION_HANDOFF",
+  "plannedEditModeCases": 5,
+  "date": "2026-10-24 KST",
+  "sourceFixtureChecks": {
+    "command": "dotnet run --no-restore --project Tools/QA/Dragon-v3/SourceChecks/SourceChecks.csproj -- Client/Assets/Game/Data/Generated/mvp-catalog.json",
+    "failed": 0,
+    "passed": 55
+  }
+}

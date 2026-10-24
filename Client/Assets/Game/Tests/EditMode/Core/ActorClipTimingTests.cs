@@ -32,6 +32,19 @@ namespace LastBell.Tests
         }
 
         [Test]
+        public void ReviewedAttackUsesAuthoredContactAndRecoveryHolds()
+        {
+            var clip=new ActorClip{frames=new Sprite[10],contactFrame=6,
+                frameDurationsMs=new[]{80,90,100,55,45,45,70,65,70,100}};
+            Assert.That(clip.ContactTime,Is.EqualTo(.415f));Assert.That(clip.Duration,Is.EqualTo(.72f));
+            Assert.That(clip.FrameIndex(clip.ContactTime-.001f),Is.EqualTo(5));
+            Assert.That(clip.FrameIndex(clip.ContactTime),Is.EqualTo(6));
+            Assert.That(clip.FrameIndex(clip.ContactTime+.069f),Is.EqualTo(6));
+            Assert.That(clip.FrameIndex(clip.ContactTime+.070f),Is.EqualTo(7));
+            Assert.That(clip.FrameIndex(.719f),Is.EqualTo(9));
+        }
+
+        [Test]
         public void LegacyUniformFramesAndAttackContactTimingAreUnchanged()
         {
             var clip=new ActorClip{frames=new Sprite[8],fps=20,loop=true};

@@ -1,0 +1,869 @@
+{
+  "campaign": {
+    "limits": "Automated representative cases, not complete visual acceptance or OS input.",
+    "runs": [
+      {
+        "passed": true,
+        "case": "full",
+        "resultPresent": true,
+        "arguments": [
+          "-dragon-theme-smoke",
+          "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v1\\candidate-01\\full-1280x720\"",
+          "-dragon-theme-case",
+          "full",
+          "-lastbell-save-dir",
+          "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v1\\candidate-01\\full-1280x720\\profiles\\boot\"",
+          "-screen-width",
+          "1280",
+          "-screen-height",
+          "720",
+          "-screen-fullscreen",
+          "0",
+          "-logFile",
+          "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v1\\candidate-01\\full-1280x720\\player.log\""
+        ],
+        "startedAt": "2026-10-24T15:58:23.2124043+09:00",
+        "name": "full-1280x720",
+        "width": 1280,
+        "exe": "C:\\Github\\Test2\\Builds\\Dragon-v1-QA\\LastBellMvp.exe",
+        "endedAt": "2026-10-24T15:59:14.5243450+09:00",
+        "height": 720,
+        "exitCode": 0,
+        "timedOut": false
+      },
+      {
+        "passed": true,
+        "case": "layout",
+        "resultPresent": true,
+        "arguments": [
+          "-dragon-theme-smoke",
+          "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v1\\candidate-01\\layout-960x540\"",
+          "-dragon-theme-case",
+          "layout",
+          "-lastbell-save-dir",
+          "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v1\\candidate-01\\layout-960x540\\profiles\\boot\"",
+          "-screen-width",
+          "960",
+          "-screen-height",
+          "540",
+          "-screen-fullscreen",
+          "0",
+          "-logFile",
+          "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v1\\candidate-01\\layout-960x540\\player.log\""
+        ],
+        "startedAt": "2026-10-24T15:59:14.5354409+09:00",
+        "name": "layout-960x540",
+        "width": 960,
+        "exe": "C:\\Github\\Test2\\Builds\\Dragon-v1-QA\\LastBellMvp.exe",
+        "endedAt": "2026-10-24T15:59:20.5678870+09:00",
+        "height": 540,
+        "exitCode": 0,
+        "timedOut": false
+      },
+      {
+        "passed": true,
+        "case": "layout",
+        "resultPresent": true,
+        "arguments": [
+          "-dragon-theme-smoke",
+          "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v1\\candidate-01\\layout-640x360\"",
+          "-dragon-theme-case",
+          "layout",
+          "-lastbell-save-dir",
+          "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v1\\candidate-01\\layout-640x360\\profiles\\boot\"",
+          "-screen-width",
+          "640",
+          "-screen-height",
+          "360",
+          "-screen-fullscreen",
+          "0",
+          "-logFile",
+          "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v1\\candidate-01\\layout-640x360\\player.log\""
+        ],
+        "startedAt": "2026-10-24T15:59:20.5723166+09:00",
+        "name": "layout-640x360",
+        "width": 640,
+        "exe": "C:\\Github\\Test2\\Builds\\Dragon-v1-QA\\LastBellMvp.exe",
+        "endedAt": "2026-10-24T15:59:25.7415933+09:00",
+        "height": 360,
+        "exitCode": 0,
+        "timedOut": false
+      },
+      {
+        "passed": true,
+        "case": "resume",
+        "resultPresent": true,
+        "arguments": [
+          "-dragon-theme-smoke",
+          "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v1\\candidate-01\\resume-1280x720\"",
+          "-dragon-theme-case",
+          "resume",
+          "-lastbell-save-dir",
+          "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v1\\candidate-01\\resume-1280x720\\profiles\\boot\"",
+          "-screen-width",
+          "1280",
+          "-screen-height",
+          "720",
+          "-screen-fullscreen",
+          "0",
+          "-logFile",
+          "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v1\\candidate-01\\resume-1280x720\\player.log\""
+        ],
+        "startedAt": "2026-10-24T15:59:25.7675180+09:00",
+        "name": "resume-1280x720",
+        "width": 1280,
+        "exe": "C:\\Github\\Test2\\Builds\\Dragon-v1-QA\\LastBellMvp.exe",
+        "endedAt": "2026-10-24T15:59:30.7197992+09:00",
+        "height": 720,
+        "exitCode": 0,
+        "timedOut": false
+      }
+    ],
+    "passed": true,
+    "osInput": false
+  },
+  "motion": {
+    "fresh-route": {
+      "rows": 726,
+      "clockMode": "accelerated-route-6x50ms-per-frame",
+      "seconds": 17.2626,
+      "motions": {
+        "player": {
+          "Attack": [
+            1,
+            2,
+            3,
+            5,
+            6,
+            7
+          ],
+          "Idle": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "DodgeUp": [
+            3
+          ],
+          "Run": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "DodgeBack": [
+            3
+          ],
+          "DodgeDown": [
+            2
+          ]
+        },
+        "enemy": {
+          "AttackLow": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "Idle": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "Stun": [
+            0,
+            1,
+            2,
+            3,
+            7
+          ],
+          "AttackThrust": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "AttackHigh": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "Roar": [
+            0,
+            3,
+            4,
+            5,
+            7
+          ]
+        }
+      }
+    },
+    "motion-stage-1": {
+      "rows": 69,
+      "clockMode": "real-frame-fixture",
+      "seconds": 1.7142,
+      "motions": {
+        "player": {
+          "Idle": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "Hit": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "Attack": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "enemy": {
+          "AttackLow": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "Idle": [
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      }
+    },
+    "motion-stage-3": {
+      "rows": 72,
+      "clockMode": "real-frame-fixture",
+      "seconds": 1.7452,
+      "motions": {
+        "player": {
+          "Idle": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "Hit": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "Attack": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "enemy": {
+          "AttackHigh": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "Idle": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      }
+    },
+    "motion-stage-5": {
+      "rows": 72,
+      "clockMode": "real-frame-fixture",
+      "seconds": 1.7504,
+      "motions": {
+        "player": {
+          "Idle": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "Attack": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "enemy": {
+          "AttackLow": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      }
+    },
+    "motion-stage-6": {
+      "rows": 73,
+      "clockMode": "real-frame-fixture",
+      "seconds": 1.7948,
+      "motions": {
+        "player": {
+          "Idle": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "Hit": [
+            0,
+            1,
+            2,
+            3,
+            5
+          ],
+          "Attack": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "enemy": {
+          "AttackThrust": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "Idle": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      }
+    },
+    "motion-stage-10": {
+      "rows": 71,
+      "clockMode": "real-frame-fixture",
+      "seconds": 1.7733,
+      "motions": {
+        "player": {
+          "Idle": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "Attack": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "Hit": [
+            0
+          ]
+        },
+        "enemy": {
+          "AttackThrust": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      }
+    },
+    "defense-input-0": {
+      "rows": 17,
+      "clockMode": "real-frame-fixture",
+      "seconds": 0.4755,
+      "motions": {
+        "player": {
+          "DodgeUp": [
+            3,
+            6,
+            7
+          ],
+          "Idle": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "enemy": {
+          "AttackLow": [
+            0
+          ]
+        }
+      }
+    },
+    "defense-input-1": {
+      "rows": 16,
+      "clockMode": "real-frame-fixture",
+      "seconds": 0.4607,
+      "motions": {
+        "player": {
+          "DodgeBack": [
+            3,
+            6,
+            7
+          ],
+          "Idle": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "enemy": {
+          "AttackLow": [
+            0
+          ]
+        }
+      }
+    },
+    "defense-input-2": {
+      "rows": 17,
+      "clockMode": "real-frame-fixture",
+      "seconds": 0.4698,
+      "motions": {
+        "player": {
+          "DodgeDown": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "Idle": [
+            4,
+            5
+          ]
+        },
+        "enemy": {
+          "AttackLow": [
+            0
+          ]
+        }
+      }
+    },
+    "travel-from-1": {
+      "rows": 192,
+      "clockMode": "real-frame-fixture",
+      "seconds": 4.2066,
+      "motions": {
+        "player": {
+          "Attack": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "Idle": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "Run": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "enemy": {
+          "AttackLow": [
+            0
+          ],
+          "Idle": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "AttackThrust": [
+            0
+          ]
+        }
+      },
+      "travel": {
+        "pixelsFirst": 13.2874,
+        "pixelsLast": 1895.405,
+        "layer0Delta": -1.29657,
+        "layer1Delta": -16.20712,
+        "layerDeltaRatio": 0.08
+      }
+    },
+    "travel-from-4": {
+      "rows": 272,
+      "clockMode": "real-frame-fixture",
+      "seconds": 5.9682,
+      "motions": {
+        "player": {
+          "Attack": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "Idle": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "Run": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "enemy": {
+          "AttackLow": [
+            0
+          ],
+          "Idle": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "Roar": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      },
+      "travel": {
+        "pixelsFirst": 2.7489,
+        "pixelsLast": 1919.257,
+        "layer0Delta": -1.32026,
+        "layer1Delta": -16.50327,
+        "layerDeltaRatio": 0.08
+      }
+    },
+    "travel-from-9": {
+      "rows": 271,
+      "clockMode": "real-frame-fixture",
+      "seconds": 5.9618,
+      "motions": {
+        "player": {
+          "Attack": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "Idle": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "Run": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "enemy": {
+          "AttackLow": [
+            0
+          ],
+          "Idle": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "Roar": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "AttackThrust": [
+            0
+          ]
+        }
+      },
+      "travel": {
+        "pixelsFirst": 13.5544,
+        "pixelsLast": 1905.994,
+        "layer0Delta": -1.30368,
+        "layer1Delta": -16.296,
+        "layerDeltaRatio": 0.08
+      }
+    }
+  },
+  "cases": {
+    "full-1280x720": {
+      "passed": true,
+      "completed": true,
+      "errors": [],
+      "error": "",
+      "checks": 878,
+      "pngCount": 276,
+      "resolution": [
+        1280,
+        720
+      ]
+    },
+    "layout-640x360": {
+      "passed": true,
+      "completed": true,
+      "errors": [],
+      "error": "",
+      "checks": 85,
+      "pngCount": 17,
+      "resolution": [
+        640,
+        360
+      ]
+    },
+    "layout-960x540": {
+      "passed": true,
+      "completed": true,
+      "errors": [],
+      "error": "",
+      "checks": 85,
+      "pngCount": 17,
+      "resolution": [
+        960,
+        540
+      ]
+    },
+    "resume-1280x720": {
+      "passed": true,
+      "completed": true,
+      "errors": [],
+      "error": "",
+      "checks": 10,
+      "pngCount": 5,
+      "resolution": [
+        1280,
+        720
+      ]
+    }
+  },
+  "boundsOutsideScreen": [
+    {
+      "file": "full-1280x720\\layout-selection-layout.json",
+      "name": "Label",
+      "text": "이야기",
+      "bounds": {
+        "serializedVersion": "2",
+        "x": -17.874513626098633,
+        "y": 633.3333740234375,
+        "width": 168.0,
+        "height": 72.0
+      }
+    },
+    {
+      "file": "full-1280x720\\route-00-prologue-layout.json",
+      "name": "Paragraph2",
+      "text": "온은 첫 큰 의뢰를 들고 북쪽으로 출발했다.",
+      "bounds": {
+        "serializedVersion": "2",
+        "x": 304.0,
+        "y": -76.318115234375,
+        "width": 672.0,
+        "height": 160.0
+      }
+    },
+    {
+      "file": "full-1280x720\\route-01-selection-layout.json",
+      "name": "Label",
+      "text": "이야기",
+      "bounds": {
+        "serializedVersion": "2",
+        "x": -17.874513626098633,
+        "y": 633.3333740234375,
+        "width": 168.0,
+        "height": 72.0
+      }
+    },
+    {
+      "file": "layout-640x360\\layout-selection-layout.json",
+      "name": "Label",
+      "text": "이야기",
+      "bounds": {
+        "serializedVersion": "2",
+        "x": -8.937256813049316,
+        "y": 316.66668701171875,
+        "width": 84.0,
+        "height": 36.0
+      }
+    },
+    {
+      "file": "layout-960x540\\layout-selection-layout.json",
+      "name": "Label",
+      "text": "이야기",
+      "bounds": {
+        "serializedVersion": "2",
+        "x": -13.4058837890625,
+        "y": 475.0,
+        "width": 126.0,
+        "height": 54.0
+      }
+    }
+  ]
+}

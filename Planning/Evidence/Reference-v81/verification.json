@@ -1,0 +1,87 @@
+{
+  "createdAt": "2026-10-23T15:37:07.801227+09:00",
+  "version": "0.8.1",
+  "unityVersion": "6000.3.15f1",
+  "build": {
+    "platform": "Windows x64",
+    "passed": true,
+    "errors": 0,
+    "log": "Logs/Reference-v81/release-final.log"
+  },
+  "checks": {
+    "editMode": {
+      "result": "Passed",
+      "total": "172",
+      "passed": "172",
+      "failed": "0",
+      "skipped": "0"
+    },
+    "playMode": {
+      "result": "Passed",
+      "total": "19",
+      "passed": "19",
+      "failed": "0",
+      "skipped": "0"
+    },
+    "coreContract": {
+      "passed": true,
+      "checks": 51,
+      "log": "Logs/Reference-v81/core-contract.txt"
+    },
+    "runtime": [
+      {
+        "passed": true,
+        "checks": 213,
+        "width": 960,
+        "height": 540,
+        "evidence": "desktop/result.json"
+      },
+      {
+        "passed": true,
+        "checks": 213,
+        "width": 640,
+        "height": 360,
+        "evidence": "mobile-final/result.json"
+      },
+      {
+        "passed": true,
+        "checks": 213,
+        "width": 1600,
+        "height": 720,
+        "evidence": "wide/result.json"
+      }
+    ]
+  },
+  "files": {
+    "Builds/Windows/LastBellMvp.exe": {
+      "bytes": 667648,
+      "sha256": "04a137e8f3c105937a1cb13fc57300734117f5874292ee9c764bda7537d8aef2"
+    },
+    "Builds/Windows/LastBellMvp_Data/Managed/LastBell.Runtime.dll": {
+      "bytes": 306688,
+      "sha256": "9e8f0c5399a4c7a418576e02bff0c62027df4699ae46f6427bbaf5a1d8fb7b9f"
+    },
+    "Builds/LastBellMvp-Windows.zip": {
+      "bytes": 72991227,
+      "sha256": "abac0be28104ab1c9ebf827b07c0c70722723a0d3c57e656c3435b64dac79b0b"
+    },
+    "GameData/mvp-catalog.json": {
+      "bytes": 24139,
+      "sha256": "bbd0f125c1038a2a7ec6e506d0aac5ba5e1f79e36c4d9ce9f5111381b08cdfb4"
+    }
+  },
+  "font": {
+    "family": "NeoDunggeunmo Pro",
+    "version": "1.020",
+    "source": "https://github.com/neodgm/neodgm-pro/releases/download/v1.020/NeoDunggeunmoPro-Regular.ttf",
+    "officialPage": "https://neodgm.dalgona.dev/downloads/neodgm_pro.html",
+    "license": "SIL Open Font License 1.1",
+    "sha256": "e4b974b1a378ef1962e3c72dfbcb7b7bba09f54dd53bf57889af300b2531b155",
+    "changes": "None. Original TTF imported using Unity FontImporter; SimpleGame has a static TMP SDF asset of this font family."
+  },
+  "zipVerified": true,
+  "limitations": [
+    "640x360 validation was performed in the Windows player, not on physical mobile hardware.",
+    "This build does not update the public WebGL site."
+  ]
+}

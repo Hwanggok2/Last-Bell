@@ -1,0 +1,67 @@
+{
+  "sourceFrozen": true,
+  "scope": "QA route confirmation/failfast/route-only continuation; no product changes",
+  "frozenAtUtc": "2026-10-24T16:46:47.650889+00:00",
+  "version": "0.9.5",
+  "dataVersion": "mvp1.18.0",
+  "parentCandidate": "dragon-v6-candidate-03",
+  "runnerAdditionalSwitch": "-ContinueAfterCandidate03",
+  "qaExecution": "NOT_RUN",
+  "files": [
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.cs",
+      "sha256": "4CE66EB78D8B87C7169868AADFCA4CA26607CC4AF3C7BD1FB941B53F25E3D5B7"
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V6.cs",
+      "sha256": "F796D2E43728C3CC709B0FEA382F5A072CAFE6800687AB32F8BAFB8684E514F8"
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V6.cs.meta",
+      "sha256": "FB1C4724CD7756652F6D6207438A26599BE47851781B01867509CF9DE6DF2DD3"
+    },
+    {
+      "path": "Tools/QA/Dragon-v6/common.ps1",
+      "sha256": "4B4E26DAEE3A38B9C6F0FAEB87FF274F5240E3B9ECF77261116AB2C3B3F17849"
+    },
+    {
+      "path": "Tools/QA/Dragon-v6/run-campaign.ps1",
+      "sha256": "D9EAD9529830C7183DCDF3C361749B8949A7C352653224A688AAFE5DA7E35D80"
+    },
+    {
+      "path": "Tools/QA/Dragon-v6/analyze.py",
+      "sha256": "904EBBC5E389D7B9C41CEC25CEDDE0B902B9A2D25108927992138D4BB47A1997"
+    },
+    {
+      "path": "Tools/QA/Dragon-v6/README.md",
+      "sha256": "0507A2D09AD15060D2D1702C060CA692A75E554BE164DDB85BB3668AA07912EB"
+    }
+  ],
+  "readOnlyDependencies": [
+    {
+      "path": "Tools/QA/Dragon-v3/common.ps1",
+      "sha256": "998AADA226B62E1580A3DCB1FC1FB44413AA17AE5520D02F58B3A9E5FB62C8F0"
+    }
+  ],
+  "validation": {
+    "checkedAtUtc": "2026-10-24T16:46:23.4839641Z",
+    "csharpRuntimeFiles": 76,
+    "csharpErrors": 0,
+    "powershellAstErrors": 0,
+    "pythonAst": "PASS",
+    "dllEmit": false,
+    "unityRun": false
+  },
+  "remaining": [
+    "1280 route only with Receive->Rendered->RewardConfirm",
+    "1280 checkpoint/native",
+    "640 fresh",
+    "640 native"
+  ],
+  "reused": [
+    "candidate01 1280 inn/HP/legacy",
+    "candidate02 1280 players/companions",
+    "candidate03 1280 lightning/HUD/stun/concurrent/kill observations"
+  ],
+  "preservation": "candidate03 raw597 files and old QA source8 preserved; campaign stopped at Root request with scoped prefs restored"
+}

@@ -1,0 +1,82 @@
+{
+    "scope": "v0.9.5 representative changed-scope observations, not all44/previous60 criteria",
+    "visualReview": "NOT_RUN",
+    "osInput": "DEFERRED",
+    "audioListening": "NOT_RUN",
+    "userDefaultProfile": "NOT_ACCESSED",
+    "limits": "Synthetic saved-UI input, explicit DTO/seed fixtures and labelled manual-clock gaps. Core boundary tests are handed-over evidence. PNG inspection is separate. No full acceptance, physical input, listening or performance certification.",
+    "stateSamples": 35,
+    "staticCaptures": 2,
+    "inputEdges": 1,
+    "fixtures": [],
+    "events": [
+        {
+            "scenario": "v6-native-resume-first-window",
+            "fixture": "native-v6-pending",
+            "kind": "EnemyCueStarted",
+            "skill": "",
+            "companion": "",
+            "frame": 6,
+            "stage": 11,
+            "runId": 1,
+            "clockMs": 50.00000074505806,
+            "damageMilli": 0,
+            "recoveryMilli": 0,
+            "absorbedMilli": 0,
+            "gold": 20000,
+            "staggerBefore": 0.0,
+            "staggerGained": 0.0,
+            "critical": false
+        },
+        {
+            "scenario": "v6-native-resume-first-window",
+            "fixture": "native-v6-pending",
+            "kind": "PlayerSkillContact",
+            "skill": "skill_daren_iron_counter",
+            "companion": "",
+            "frame": 13,
+            "stage": 11,
+            "runId": 1,
+            "clockMs": 200.00000000000004,
+            "damageMilli": 12000,
+            "recoveryMilli": 0,
+            "absorbedMilli": 0,
+            "gold": 20000,
+            "staggerBefore": 0.0,
+            "staggerGained": 0.0,
+            "critical": false
+        },
+        {
+            "scenario": "v6-native-resume-first-window",
+            "fixture": "native-v6-pending",
+            "kind": "CompanionDamaged",
+            "skill": "companion_tori_double_shot",
+            "companion": "tori",
+            "frame": 13,
+            "stage": 11,
+            "runId": 1,
+            "clockMs": 200.00000000000004,
+            "damageMilli": 4320,
+            "recoveryMilli": 0,
+            "absorbedMilli": 0,
+            "gold": 20000,
+            "staggerBefore": 0.0,
+            "staggerGained": 0.0,
+            "critical": false
+        }
+    ],
+    "routeStages": [],
+    "fileRoundtrips": [
+        "native-resume-final"
+    ],
+    "continuationOf": "",
+    "stunActiveFrame": "",
+    "stunEndedFrame": "",
+    "popupChecks": [],
+    "pending": [
+        "manual PNG readability/overlap and boss lightning review",
+        "full numeric/corruption boundaries use Client evidence",
+        "all44/previous60 acceptance",
+        "physical input/mobile/audio/performance/long-duration leaks"
+    ]
+}

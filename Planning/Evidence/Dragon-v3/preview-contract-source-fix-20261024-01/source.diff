@@ -1,0 +1,34 @@
+diff --git a/Planning/Evidence/Dragon-v3/preview-contract-source-fix-20261024-01/before/DragonThemeSmokeProbe.V3.cs b/Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V3.cs
+index 4280df2..223639f 100644
+--- a/Planning/Evidence/Dragon-v3/preview-contract-source-fix-20261024-01/before/DragonThemeSmokeProbe.V3.cs
++++ b/Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V3.cs
+@@ -126,14 +126,25 @@ namespace LastBell
+             yield return Capture("v3-fresh-prologue");Click(p.View.Prologue.Skip);yield return Rendered();
+             string[] ids={"on","dam","rin"},names={"루카","다렌","미엘"};
+             Require(catalog.characters.Length==3&&catalog.defaultCharacterId=="on","stable character roster");
++            string selected=session.CurrentCharacterId;long gold=session.Gold;int fragments=session.Fragments;
++            Require(selected=="on"&&session.Phase==SessionPhase.Lobby,"fresh selection keeps Luka selected");
+             for(int i=0;i<3;i++)
+             {
+                 var ch=catalog.GetCharacter(ids[i]);
+-                Require(ch.displayName.Split('·')[0].Trim()==names[i]&&ch.availableInMvp==(i==0),"name and availability: "+ids[i]);
+-                Require(p.View.CharacterLabels[i].text.Contains(names[i])&&p.View.Characters[i].interactable==(i==0),"rendered character name and lock: "+ids[i]);
++                Require(catalog.characters[i].id==ids[i]&&ch.displayName.Split('·')[0].Trim()==names[i]&&ch.availableInMvp==(i==0),"name and availability: "+ids[i]);
++                Require(p.View.CharacterLabels[i].text==names[i]+(i==0?"":" (제작 중)"),"roster label: "+ids[i]+" = "+p.View.CharacterLabels[i].text);
++                // Roster buttons preview every character; StartRun owns selection availability.
++                Click(p.View.Characters[i]);yield return Capture("v3-character-preview-"+ids[i]);
++                Require(p.View.CharacterName.text==names[i],"preview name: "+ids[i]+" = "+p.View.CharacterName.text);
++                Require(p.View.StartRun.isActiveAndEnabled&&p.View.StartRun.interactable==(i==0),"preview selection availability: "+ids[i]+" = "+p.View.StartRun.interactable);
++                Require(p.View.StartLabel.text==(i==0?"선택":"제작 중")&&!p.View.Reference.UpgradeScreen,"preview selection label: "+ids[i]+" = "+p.View.StartLabel.text);
++                Require(session.CurrentCharacterId==selected&&session.Gold==gold&&session.Fragments==fragments&&session.Phase==SessionPhase.Lobby,"preview preserves selection/wallet/lobby: "+ids[i]+" = "+session.CurrentCharacterId+"/"+session.Gold+"/"+session.Fragments+"/"+session.Phase);
+             }
+-            long gold=session.Gold;Require(!session.SelectCharacter("dam")&&!session.SelectCharacter("rin")&&session.CurrentCharacterId=="on"&&session.Gold==gold,"locked characters cannot change selection or wallet");
+-            yield return Capture("v3-selection-names");Click(p.View.StartRun);yield return Capture("v3-upgrade-name");
++            Require(!session.SelectCharacter("dam")&&!session.SelectCharacter("rin")&&session.CurrentCharacterId==selected&&session.Gold==gold&&session.Fragments==fragments,"locked characters cannot change selection or wallet");
++            Click(p.View.Characters[0]);yield return Capture("v3-selection-names");
++            Require(p.View.CharacterName.text=="루카"&&p.View.StartRun.interactable&&p.View.StartLabel.text=="선택"&&!p.View.Reference.UpgradeScreen,"return to Luka preview enables selection");
++            Require(session.CurrentCharacterId==selected&&session.Gold==gold&&session.Fragments==fragments,"return to Luka preserves selection and wallet");
++            Click(p.View.StartRun);yield return Capture("v3-upgrade-name");
+             Require(p.View.CharacterName.text=="루카","upgrade shows Luka");Click(p.View.StartRun);yield return Rendered();
+             Require(session.Stage==1&&session.Phase==SessionPhase.TutorialDodge,"first departure is stage one tutorial");
+             Press(p.View.Dodge[0]);yield return Rendered();Press(p.View.Attack);session.Tick(.2f);yield return Capture("v3-first-stage-one");

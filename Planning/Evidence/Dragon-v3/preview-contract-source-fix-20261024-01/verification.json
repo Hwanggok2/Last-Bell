@@ -1,0 +1,170 @@
+{
+  "status": "SOURCE_FROZEN_WAITING_FOR_OBSERVED_REBUILD",
+  "recordedAtUtc": "2026-10-24T10:47:42.7753643Z",
+  "scope": "QA-only roster preview vs actual selection availability contract",
+  "sourceCompile": [
+    {
+      "defines": "player",
+      "status": "PASS",
+      "errors": 0,
+      "warnings": 27,
+      "log": "Planning/Evidence/Dragon-v3/preview-contract-source-fix-20261024-01/player.log"
+    },
+    {
+      "defines": "editor",
+      "status": "PASS",
+      "errors": 0,
+      "warnings": 28,
+      "log": "Planning/Evidence/Dragon-v3/preview-contract-source-fix-20261024-01/editor.log"
+    }
+  ],
+  "changedQaCode": [
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V3.cs",
+      "sha256": "46854150acef28bf659a3e5877b069ebb3b4f866097e460c493cbf3a15165a8e",
+      "bytes": 30313
+    }
+  ],
+  "qaCode": [
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.cs",
+      "sha256": "0de955c3bc480dc7abfc8157cd9a20857c0703d51d13de3f7f4f2b17140d2a3f",
+      "bytes": 30684
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V3.cs",
+      "sha256": "46854150acef28bf659a3e5877b069ebb3b4f866097e460c493cbf3a15165a8e",
+      "bytes": 30313
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V3.cs.meta",
+      "sha256": "889eca3ec527aa4803a55019d201448c1471c4ff6aede41f1e7196dc7b1300df",
+      "bytes": 60
+    },
+    {
+      "path": "Tools/QA/Dragon-v3/common.ps1",
+      "sha256": "998aada226b62e1580a3dcb1fc1fb44413aa17ae5520d02f58b3a9e5fb62c8f0",
+      "bytes": 5279
+    },
+    {
+      "path": "Tools/QA/Dragon-v3/run-campaign.ps1",
+      "sha256": "6ac1b67763d48bf563f98a3fc44ffc8220bae0384003d4e083bc14f6283b3a67",
+      "bytes": 8266
+    },
+    {
+      "path": "Tools/QA/Dragon-v3/compile-source.ps1",
+      "sha256": "b7da02c326ddf11247b2219dd1606ffd876c5b85bd96db202eb6d042c9968464",
+      "bytes": 1731
+    },
+    {
+      "path": "Tools/QA/Dragon-v3/self-test.ps1",
+      "sha256": "94f8a57e8f3c34b33a2898262896c048d4fb5794f20848c24a1936e7bcb1d62d",
+      "bytes": 3379
+    },
+    {
+      "path": "Tools/QA/Dragon-v3/target-filters.json",
+      "sha256": "e93d1008227c82292da11aaa6fc19742d33ebedffd5aec6929f25537597ec6eb",
+      "bytes": 683
+    },
+    {
+      "path": "Tools/QA/Dragon-v3/SourceChecks/SourceChecks.csproj",
+      "sha256": "636e0cadfc3cf4cee048cd785b3568738e98766fde67e2ac6386f3498507aa21",
+      "bytes": 493
+    },
+    {
+      "path": "Tools/QA/Dragon-v3/SourceChecks/Program.cs",
+      "sha256": "ac1a3e8431b5f83cdbb41a905304ec35c3745cac65a7ad4761474a221a783f19",
+      "bytes": 4035
+    }
+  ],
+  "protectedFiles": [
+    {
+      "path": "Client/Assets/Game/Runtime/Presentation/ReferenceLobbyView.cs",
+      "matches": true
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Core/GameSession.Economy.cs",
+      "matches": true
+    },
+    {
+      "path": "Planning/Evidence/Dragon-v3/dragon-v3-candidate-01/failure-triage.json",
+      "matches": true
+    },
+    {
+      "path": "Planning/Evidence/Dragon-v3/dragon-v3-candidate-01/campaign.json",
+      "matches": true
+    }
+  ],
+  "integrationFiles": [
+    {
+      "path": "Client/Assets/Game/Scenes/Mvp.unity",
+      "matches": true
+    },
+    {
+      "path": "Client/Assets/Game/Prefabs/GameView.prefab",
+      "matches": true
+    },
+    {
+      "path": "Client/Assets/Game/Prefabs/PresentationWorld.prefab",
+      "matches": true
+    },
+    {
+      "path": "Client/Assets/Game/Art/Presentation/manifest.json",
+      "matches": true
+    },
+    {
+      "path": "Client/Assets/Game/Art/Presentation/PresentationArtCatalog.asset",
+      "matches": true
+    },
+    {
+      "path": "Client/Assets/Game/Data/Generated/mvp-catalog.json",
+      "matches": true
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/GameBootstrap.cs",
+      "matches": true
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/SaveDirectorySelector.cs",
+      "matches": true
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Presentation/ParallaxWorld.cs",
+      "matches": true
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Presentation/ActorView.cs",
+      "matches": true
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Presentation/BattlePresentation.cs",
+      "matches": true
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Presentation/EnemyAttackEffects.cs",
+      "matches": true
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Presentation/EnemyEffectBurst.cs",
+      "matches": true
+    },
+    {
+      "path": "Client/Assets/Game/Editor/DragonWorldMigration.cs",
+      "matches": true
+    },
+    {
+      "path": "Client/Assets/Game/Editor/DragonThemeMigration.cs",
+      "matches": true
+    }
+  ],
+  "unityAccess": false,
+  "nativeProcessesStarted": 0,
+  "editModeRerun": false,
+  "playModeRerun": false,
+  "osInput": "DEFERRED_BY_USER",
+  "userDefaultProfile": "NOT_ACCESSED",
+  "runtimeValidation": "NOT_RUN: requires rebuilt observed candidate02",
+  "previousNativeCandidate": "dragon-v3-candidate-01 preserved: 21 PASS, 1 FAIL, native exit 1, no motion segments",
+  "nextCandidate": "dragon-v3-candidate-02",
+  "plannedNativeProcesses": 4
+}

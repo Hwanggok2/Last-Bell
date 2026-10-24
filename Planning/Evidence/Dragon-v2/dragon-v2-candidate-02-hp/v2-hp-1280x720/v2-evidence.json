@@ -1,0 +1,235 @@
+{
+    "visualReview": "NOT_RUN",
+    "osInput": "DEFERRED",
+    "capturePolicy": "Every rendered frame; PNG encoding happens after each segment. Use recorded realtime intervals for playback, never assume 60 fps.",
+    "writtenFrames": 0,
+    "clips": [],
+    "segments": [],
+    "hp": [
+        {
+            "file": "v2-hp-1280x720-stage-1-zero.png",
+            "role": "player",
+            "value": 0.0,
+            "capacity": 26,
+            "expected": 0,
+            "actual": 0,
+            "bounds": {
+                "serializedVersion": "2",
+                "x": 420.0,
+                "y": 169.0,
+                "width": 160.0,
+                "height": 36.0
+            }
+        },
+        {
+            "file": "v2-hp-1280x720-stage-1-zero.png",
+            "role": "enemy",
+            "value": 0.0,
+            "capacity": 31,
+            "expected": 0,
+            "actual": 0,
+            "bounds": {
+                "serializedVersion": "2",
+                "x": 808.0,
+                "y": 169.0,
+                "width": 184.0,
+                "height": 36.0
+            }
+        },
+        {
+            "file": "v2-hp-1280x720-stage-1-tiny.png",
+            "role": "player",
+            "value": 9.999999974752428e-7,
+            "capacity": 26,
+            "expected": 1,
+            "actual": 1,
+            "bounds": {
+                "serializedVersion": "2",
+                "x": 420.0,
+                "y": 169.0,
+                "width": 160.0,
+                "height": 36.0
+            }
+        },
+        {
+            "file": "v2-hp-1280x720-stage-1-tiny.png",
+            "role": "enemy",
+            "value": 9.999999974752428e-7,
+            "capacity": 31,
+            "expected": 1,
+            "actual": 1,
+            "bounds": {
+                "serializedVersion": "2",
+                "x": 808.0,
+                "y": 169.0,
+                "width": 184.0,
+                "height": 36.0
+            }
+        },
+        {
+            "file": "v2-hp-1280x720-stage-1-25.png",
+            "role": "player",
+            "value": 0.25,
+            "capacity": 26,
+            "expected": 7,
+            "actual": 7,
+            "bounds": {
+                "serializedVersion": "2",
+                "x": 420.0,
+                "y": 169.0,
+                "width": 160.0,
+                "height": 36.0
+            }
+        },
+        {
+            "file": "v2-hp-1280x720-stage-1-25.png",
+            "role": "enemy",
+            "value": 0.25,
+            "capacity": 31,
+            "expected": 8,
+            "actual": 8,
+            "bounds": {
+                "serializedVersion": "2",
+                "x": 808.0,
+                "y": 169.0,
+                "width": 184.0,
+                "height": 36.0
+            }
+        },
+        {
+            "file": "v2-hp-1280x720-stage-1-50.png",
+            "role": "player",
+            "value": 0.5,
+            "capacity": 26,
+            "expected": 13,
+            "actual": 13,
+            "bounds": {
+                "serializedVersion": "2",
+                "x": 420.0,
+                "y": 169.0,
+                "width": 160.0,
+                "height": 36.0
+            }
+        },
+        {
+            "file": "v2-hp-1280x720-stage-1-50.png",
+            "role": "enemy",
+            "value": 0.5,
+            "capacity": 31,
+            "expected": 16,
+            "actual": 16,
+            "bounds": {
+                "serializedVersion": "2",
+                "x": 808.0,
+                "y": 169.0,
+                "width": 184.0,
+                "height": 36.0
+            }
+        },
+        {
+            "file": "v2-hp-1280x720-stage-1-100.png",
+            "role": "player",
+            "value": 1.0,
+            "capacity": 26,
+            "expected": 26,
+            "actual": 26,
+            "bounds": {
+                "serializedVersion": "2",
+                "x": 420.0,
+                "y": 169.0,
+                "width": 160.0,
+                "height": 36.0
+            }
+        },
+        {
+            "file": "v2-hp-1280x720-stage-1-100.png",
+            "role": "enemy",
+            "value": 1.0,
+            "capacity": 31,
+            "expected": 31,
+            "actual": 31,
+            "bounds": {
+                "serializedVersion": "2",
+                "x": 808.0,
+                "y": 169.0,
+                "width": 184.0,
+                "height": 36.0
+            }
+        },
+        {
+            "file": "v2-hp-1280x720-stage-10-zero.png",
+            "role": "boss",
+            "value": 0.0,
+            "capacity": 50,
+            "expected": 0,
+            "actual": 0,
+            "bounds": {
+                "serializedVersion": "2",
+                "x": 760.0,
+                "y": 169.0,
+                "width": 280.0,
+                "height": 36.0
+            }
+        },
+        {
+            "file": "v2-hp-1280x720-stage-10-tiny.png",
+            "role": "boss",
+            "value": 9.999999974752428e-7,
+            "capacity": 50,
+            "expected": 1,
+            "actual": 1,
+            "bounds": {
+                "serializedVersion": "2",
+                "x": 760.0,
+                "y": 169.0,
+                "width": 280.0,
+                "height": 36.0
+            }
+        },
+        {
+            "file": "v2-hp-1280x720-stage-10-25.png",
+            "role": "boss",
+            "value": 0.25,
+            "capacity": 50,
+            "expected": 13,
+            "actual": 13,
+            "bounds": {
+                "serializedVersion": "2",
+                "x": 760.0,
+                "y": 169.0,
+                "width": 280.0,
+                "height": 36.0
+            }
+        },
+        {
+            "file": "v2-hp-1280x720-stage-10-50.png",
+            "role": "boss",
+            "value": 0.5,
+            "capacity": 50,
+            "expected": 25,
+            "actual": 25,
+            "bounds": {
+                "serializedVersion": "2",
+                "x": 760.0,
+                "y": 169.0,
+                "width": 280.0,
+                "height": 36.0
+            }
+        },
+        {
+            "file": "v2-hp-1280x720-stage-10-100.png",
+            "role": "boss",
+            "value": 1.0,
+            "capacity": 50,
+            "expected": 50,
+            "actual": 50,
+            "bounds": {
+                "serializedVersion": "2",
+                "x": 760.0,
+                "y": 169.0,
+                "width": 280.0,
+                "height": 36.0
+            }
+        }
+    ]
+}

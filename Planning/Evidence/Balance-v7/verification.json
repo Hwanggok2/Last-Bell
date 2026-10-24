@@ -1,0 +1,46 @@
+{
+  "version": "mvp1.9.0",
+  "date": "2026-10-23",
+  "unityEditMode": {
+    "total": 167,
+    "passed": 167
+  },
+  "unityPlayMode": {
+    "total": 19,
+    "passed": 19
+  },
+  "pythonExportTests": 19,
+  "independentCoreAssertions": 858,
+  "runtime": [
+    {
+      "passed": true,
+      "checks": 26,
+      "width": 640,
+      "height": 360
+    },
+    {
+      "passed": true,
+      "checks": 26,
+      "width": 1280,
+      "height": 540
+    }
+  ],
+  "windowsBuild": {
+    "succeeded": true,
+    "bytes": 208861833
+  },
+  "webBuild": {
+    "succeeded": true,
+    "bytes": 23262504,
+    "bundleFiles": [
+      "bb1029d2186f1877afac433e625ea222.loader.js",
+      "89d00a8d0c00bc01b1d408091383eba5.data.unityweb",
+      "535f8005177c2269f16c55fc4e5e7676.framework.js.unityweb",
+      "eb350f8f474f6aef7bb8134036264e7c.wasm.unityweb"
+    ],
+    "runtimeBrowserTest": false
+  },
+  "publicDeployment": "not performed",
+  "physicalMobileTouchTest": "not performed; desktop player validated at mobile-sized viewports",
+  "referenceLimit": "Exact Timing Hero stat/monster formulas were not verified; Last Bell values are authored and modeled."
+}

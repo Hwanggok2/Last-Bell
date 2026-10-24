@@ -1,0 +1,161 @@
+{
+  "status": "STATIC ANALYSIS PASS; post-fix Unity capture pending coordinator",
+  "editedProductFile": "Client/Assets/Game/Runtime/Presentation/BattlePresentation.cs",
+  "method": "SampleEnemy: actual authored attack first, previous recovery second, future ready pose last",
+  "observations": [
+    {
+      "stage": 19,
+      "actor": "dragon_goblin_guard",
+      "contactMs": 200,
+      "clipDurationMs": 500,
+      "recoveryMs": 300,
+      "rootReturnMs": 280,
+      "nextImpactGapMs": 750,
+      "nextAuthoredStartAfterImpactMs": 550,
+      "headroomAfterRecoveryMs": 250,
+      "firstPostImpactRecordedAgeMs": 26.681256666779518,
+      "oldSnapPx1280": 296,
+      "predictedReturnFirstStepPx1280": 7.55100602737187,
+      "samples": [
+        {
+          "ageAfterImpactMs": 0,
+          "branch": "recovery",
+          "clipFrame": 4
+        },
+        {
+          "ageAfterImpactMs": 26.681256666779518,
+          "branch": "recovery",
+          "clipFrame": 4
+        },
+        {
+          "ageAfterImpactMs": 60,
+          "branch": "recovery",
+          "clipFrame": 5
+        },
+        {
+          "ageAfterImpactMs": 120,
+          "branch": "recovery",
+          "clipFrame": 6
+        },
+        {
+          "ageAfterImpactMs": 200,
+          "branch": "recovery",
+          "clipFrame": 7
+        },
+        {
+          "ageAfterImpactMs": 279,
+          "branch": "recovery",
+          "clipFrame": 7
+        },
+        {
+          "ageAfterImpactMs": 280,
+          "branch": "recovery",
+          "clipFrame": 7
+        },
+        {
+          "ageAfterImpactMs": 299,
+          "branch": "recovery",
+          "clipFrame": 7
+        },
+        {
+          "ageAfterImpactMs": 300,
+          "branch": "ready",
+          "clipFrame": 0
+        },
+        {
+          "ageAfterImpactMs": 549,
+          "branch": "ready",
+          "clipFrame": 0
+        },
+        {
+          "ageAfterImpactMs": 550,
+          "branch": "active",
+          "clipFrame": 0
+        },
+        {
+          "ageAfterImpactMs": 750,
+          "branch": "active",
+          "clipFrame": 4
+        }
+      ]
+    },
+    {
+      "stage": 20,
+      "actor": "dragon_gib",
+      "contactMs": 200,
+      "clipDurationMs": 500,
+      "recoveryMs": 300,
+      "rootReturnMs": 280,
+      "nextImpactGapMs": 750,
+      "nextAuthoredStartAfterImpactMs": 550,
+      "headroomAfterRecoveryMs": 250,
+      "firstPostImpactRecordedAgeMs": 19.98525783419609,
+      "oldSnapPx1280": 211,
+      "predictedReturnFirstStepPx1280": 3.0713822153984225,
+      "samples": [
+        {
+          "ageAfterImpactMs": 0,
+          "branch": "recovery",
+          "clipFrame": 4
+        },
+        {
+          "ageAfterImpactMs": 19.98525783419609,
+          "branch": "recovery",
+          "clipFrame": 4
+        },
+        {
+          "ageAfterImpactMs": 60,
+          "branch": "recovery",
+          "clipFrame": 5
+        },
+        {
+          "ageAfterImpactMs": 120,
+          "branch": "recovery",
+          "clipFrame": 5
+        },
+        {
+          "ageAfterImpactMs": 200,
+          "branch": "recovery",
+          "clipFrame": 5
+        },
+        {
+          "ageAfterImpactMs": 279,
+          "branch": "recovery",
+          "clipFrame": 5
+        },
+        {
+          "ageAfterImpactMs": 280,
+          "branch": "recovery",
+          "clipFrame": 5
+        },
+        {
+          "ageAfterImpactMs": 299,
+          "branch": "recovery",
+          "clipFrame": 5
+        },
+        {
+          "ageAfterImpactMs": 300,
+          "branch": "ready",
+          "clipFrame": 0
+        },
+        {
+          "ageAfterImpactMs": 549,
+          "branch": "ready",
+          "clipFrame": 0
+        },
+        {
+          "ageAfterImpactMs": 550,
+          "branch": "active",
+          "clipFrame": 0
+        },
+        {
+          "ageAfterImpactMs": 750,
+          "branch": "active",
+          "clipFrame": 4
+        }
+      ]
+    }
+  ],
+  "qaSourceChanged": false,
+  "unityExecuted": false
+}

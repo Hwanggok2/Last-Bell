@@ -1,0 +1,510 @@
+[
+  {
+    "stage": 11,
+    "art": "dragon_goblin_scout",
+    "namedIdleActualMotions": [
+      "Idle"
+    ],
+    "clipFrameCoverageAcrossAllObservations": {
+      "Idle": {
+        "seen": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "expected": 8,
+        "missing": []
+      },
+      "Attack": {
+        "seen": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "expected": 8,
+        "missing": []
+      },
+      "Stun": {
+        "seen": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "expected": 8,
+        "missing": []
+      }
+    }
+  },
+  {
+    "stage": 12,
+    "art": "dragon_goblin_slinger",
+    "namedIdleActualMotions": [
+      "Idle"
+    ],
+    "clipFrameCoverageAcrossAllObservations": {
+      "Idle": {
+        "seen": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "expected": 8,
+        "missing": []
+      },
+      "Attack": {
+        "seen": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "expected": 6,
+        "missing": []
+      },
+      "Stun": {
+        "seen": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "expected": 8,
+        "missing": []
+      }
+    }
+  },
+  {
+    "stage": 13,
+    "art": "dragon_forest_mushroom",
+    "namedIdleActualMotions": [
+      "Idle"
+    ],
+    "clipFrameCoverageAcrossAllObservations": {
+      "Idle": {
+        "seen": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "expected": 8,
+        "missing": []
+      },
+      "Attack": {
+        "seen": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "expected": 8,
+        "missing": []
+      },
+      "Stun": {
+        "seen": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "expected": 8,
+        "missing": []
+      }
+    }
+  },
+  {
+    "stage": 14,
+    "art": "dragon_goblin_shield",
+    "namedIdleActualMotions": [
+      "Idle"
+    ],
+    "clipFrameCoverageAcrossAllObservations": {
+      "Idle": {
+        "seen": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "expected": 8,
+        "missing": []
+      },
+      "Attack": {
+        "seen": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "expected": 8,
+        "missing": []
+      },
+      "Stun": {
+        "seen": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "expected": 8,
+        "missing": []
+      }
+    }
+  },
+  {
+    "stage": 15,
+    "art": "dragon_mushroom_captain",
+    "namedIdleActualMotions": [
+      "Idle"
+    ],
+    "clipFrameCoverageAcrossAllObservations": {
+      "Idle": {
+        "seen": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "expected": 8,
+        "missing": []
+      },
+      "Attack": {
+        "seen": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "expected": 8,
+        "missing": []
+      },
+      "Stun": {
+        "seen": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "expected": 8,
+        "missing": []
+      }
+    }
+  },
+  {
+    "stage": 16,
+    "art": "dragon_goblin_spear",
+    "namedIdleActualMotions": [
+      "Idle"
+    ],
+    "clipFrameCoverageAcrossAllObservations": {
+      "Idle": {
+        "seen": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "expected": 8,
+        "missing": []
+      },
+      "Attack": {
+        "seen": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "expected": 8,
+        "missing": [
+          0
+        ]
+      },
+      "Stun": {
+        "seen": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "expected": 8,
+        "missing": []
+      }
+    }
+  },
+  {
+    "stage": 17,
+    "art": "dragon_spore_mushroom",
+    "namedIdleActualMotions": [
+      "Idle"
+    ],
+    "clipFrameCoverageAcrossAllObservations": {
+      "Idle": {
+        "seen": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "expected": 8,
+        "missing": []
+      },
+      "Attack": {
+        "seen": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "expected": 8,
+        "missing": []
+      },
+      "Stun": {
+        "seen": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "expected": 8,
+        "missing": []
+      }
+    }
+  },
+  {
+    "stage": 18,
+    "art": "dragon_moss_mushroom",
+    "namedIdleActualMotions": [
+      "Idle"
+    ],
+    "clipFrameCoverageAcrossAllObservations": {
+      "Idle": {
+        "seen": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "expected": 8,
+        "missing": []
+      },
+      "Attack": {
+        "seen": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "expected": 7,
+        "missing": []
+      },
+      "Stun": {
+        "seen": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "expected": 8,
+        "missing": []
+      }
+    }
+  },
+  {
+    "stage": 19,
+    "art": "dragon_goblin_guard",
+    "namedIdleActualMotions": [
+      "AttackThrust"
+    ],
+    "clipFrameCoverageAcrossAllObservations": {
+      "Idle": {
+        "seen": [
+          1
+        ],
+        "expected": 8,
+        "missing": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "Attack": {
+        "seen": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "expected": 8,
+        "missing": [
+          5,
+          6,
+          7
+        ]
+      },
+      "Stun": {
+        "seen": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "expected": 8,
+        "missing": []
+      }
+    }
+  },
+  {
+    "stage": 20,
+    "art": "dragon_gib",
+    "namedIdleActualMotions": [
+      "AttackHigh"
+    ],
+    "clipFrameCoverageAcrossAllObservations": {
+      "Idle": {
+        "seen": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "expected": 8,
+        "missing": []
+      },
+      "Attack": {
+        "seen": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "expected": 6,
+        "missing": []
+      },
+      "Stun": {
+        "seen": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "expected": 8,
+        "missing": []
+      }
+    }
+  }
+]

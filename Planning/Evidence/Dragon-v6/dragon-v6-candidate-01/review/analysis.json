@@ -1,0 +1,143 @@
+{
+  "candidate": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-01",
+  "integrityPassed": false,
+  "errors": [
+    {
+      "case": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-01\\1280x720\\fresh",
+      "missingCompanionContact": "v6-companion-tori-basic-seed-fixture"
+    },
+    {
+      "case": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-01\\1280x720\\fresh",
+      "missingCompanionContact": "v6-companion-tori-proc-seed-fixture"
+    },
+    {
+      "case": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-01\\1280x720\\fresh",
+      "missingCompanionContact": "v6-companion-barun-basic-seed-fixture"
+    },
+    {
+      "case": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-01\\1280x720\\fresh",
+      "missingCompanionContact": "v6-companion-barun-proc-seed-fixture"
+    },
+    {
+      "case": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-01\\1280x720\\fresh",
+      "missingCompanionContact": "v6-companion-doto-basic-seed-fixture"
+    },
+    {
+      "case": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-01\\1280x720\\fresh",
+      "missingCompanionContact": "v6-companion-doto-proc-seed-fixture"
+    },
+    {
+      "case": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-01\\1280x720\\fresh",
+      "missingCompanionContact": "v6-companion-rina-basic-seed-fixture"
+    },
+    {
+      "case": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-01\\1280x720\\fresh",
+      "missingCompanionContact": "v6-companion-rina-proc-seed-fixture"
+    },
+    {
+      "case": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-01\\1280x720\\fresh",
+      "missingCompanionContact": "v6-companion-momo-basic-seed-fixture"
+    },
+    {
+      "case": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-01\\1280x720\\fresh",
+      "missingCompanionContact": "v6-companion-momo-proc-seed-fixture"
+    },
+    {
+      "case": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-01\\1280x720\\fresh",
+      "missingIndependentSkill": "dam"
+    },
+    {
+      "case": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-01\\1280x720\\fresh",
+      "missingIndependentSkill": "rin"
+    },
+    {
+      "case": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-01\\1280x720\\fresh",
+      "continuousRouteIncomplete": []
+    },
+    {
+      "case": "1280x720\\resume",
+      "missing": [
+        "result.json",
+        "v6-evidence.json",
+        "v6-frame-evidence.json",
+        "v6-state.jsonl",
+        "v6-input.jsonl",
+        "frames.jsonl"
+      ]
+    },
+    {
+      "case": "640x360\\fresh",
+      "missing": [
+        "result.json",
+        "v6-evidence.json",
+        "v6-frame-evidence.json",
+        "v6-state.jsonl",
+        "v6-input.jsonl",
+        "frames.jsonl"
+      ]
+    },
+    {
+      "case": "640x360\\resume",
+      "missing": [
+        "result.json",
+        "v6-evidence.json",
+        "v6-frame-evidence.json",
+        "v6-state.jsonl",
+        "v6-input.jsonl",
+        "frames.jsonl"
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "case": "1280x720\\fresh",
+      "probePassed": false,
+      "completed": false,
+      "error": "System.InvalidOperationException: V6 repository payload roundtrip player-on-after\r\n  at LastBell.DragonThemeSmokeProbe.Require (System.Boolean condition, System.String label) [0x00036] in C:\\Github\\Test2\\Client\\Assets\\Game\\Runtime\\Bootstrap\\DragonThemeSmokeProbe.cs:415 \r\n  at LastBell.DragonThemeSmokeProbe.V6Roundtrip (System.String label) [0x00035] in C:\\Github\\Test2\\Client\\Assets\\Game\\Runtime\\Bootstrap\\DragonThemeSmokeProbe.V6.cs:148 \r\n  at LastBell.DragonThemeSmokeProbe+<V6PlayerSkill>d__171.MoveNext () [0x005b8] in C:\\Github\\Test2\\Client\\Assets\\Game\\Runtime\\Bootstrap\\DragonThemeSmokeProbe.V6.cs:211 \r\n  at LastBell.DragonThemeSmokeProbe+<Start>d__209.MoveNext () [0x00120] in C:\\Github\\Test2\\Client\\Assets\\Game\\Runtime\\Bootstrap\\DragonThemeSmokeProbe.cs:117 ",
+      "checksPassed": 693,
+      "checksFailed": [
+        "FAIL V6 repository payload roundtrip player-on-after"
+      ],
+      "consoleErrors": [],
+      "frames": 72,
+      "stateSamples": 91,
+      "staticCaptures": 19,
+      "inputEdges": 22,
+      "fixtures": [
+        "future-rule-all-five-inn",
+        "explicit-level30-cap-inn-fixture",
+        "explicit-hp-bar-100",
+        "explicit-hp-bar-50",
+        "explicit-hp-bar-1",
+        "v6-skill-on"
+      ],
+      "pending": [
+        "manual PNG readability/overlap and boss lightning review",
+        "full numeric/corruption boundaries use Client evidence",
+        "all44/previous60 acceptance",
+        "physical input/mobile/audio/performance/long-duration leaks"
+      ],
+      "routeStages": [],
+      "fileRoundtrips": [
+        "inn-recovery",
+        "inn-tori",
+        "inn-barun",
+        "inn-doto",
+        "inn-rina",
+        "inn-momo",
+        "inn-level30-cap",
+        "player-on-idle",
+        "player-on-pending"
+      ],
+      "maximumActualParticles": 78
+    }
+  ],
+  "visualWarnings": [],
+  "observationPassed": false,
+  "acceptance": "NOT_CERTIFIED",
+  "visualReview": "NOT_RUN",
+  "audioListening": "NOT_RUN",
+  "osInput": "DEFERRED",
+  "userDefaultProfile": "NOT_ACCESSED",
+  "limits": "Metadata and hash integrity only. Open original PNGs for visual review; inspect exact fixture scopes and manual clock gaps."
+}

@@ -1,0 +1,23 @@
+// Root-only read-only Unity evaluation. No scene/play/build/file mutation.
+// This body uses the production repository's private envelope type via reflection,
+// avoiding a new probe DTO or any change to frozen QA sources.
+string directory = @"C:\Github\Test2\Planning\Evidence\Dragon-v6\dragon-v6-candidate-01\1280x720\fresh\fixtures\player-on-after";
+string encoded = System.IO.File.ReadAllText(System.IO.Path.Combine(directory, "last-bell-save.json"));
+var envelopeType = typeof(LastBell.JsonSaveRepository).GetNestedType("Envelope", System.Reflection.BindingFlags.NonPublic);
+object envelope = UnityEngine.JsonUtility.FromJson(encoded, envelopeType);
+string originalPayload = (string)envelopeType.GetField("payload").GetValue(envelope);
+bool recovered;
+var loaded = new LastBell.JsonSaveRepository(directory).Load(out recovered);
+string loadedJson = UnityEngine.JsonUtility.ToJson(loaded);
+int firstDifference = 0;
+while (firstDifference < originalPayload.Length && firstDifference < loadedJson.Length && originalPayload[firstDifference] == loadedJson[firstDifference]) firstDifference++;
+int begin = System.Math.Max(0, firstDifference - 100);
+return new {
+    recovered,
+    equal = originalPayload == loadedJson,
+    firstDifference,
+    beforeContext = originalPayload.Substring(begin, System.Math.Min(250, originalPayload.Length - begin)),
+    afterContext = loadedJson.Substring(begin, System.Math.Min(250, loadedJson.Length - begin)),
+    originalPayload,
+    loadedJson
+};

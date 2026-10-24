@@ -1,0 +1,43 @@
+{
+  "status": "PASS_PLANNING_SCOPE_REVIEW",
+  "plannedStages": 50,
+  "implemented": 20,
+  "detailArtImplemented": 0,
+  "skillsStatus": "기획안 · 전용 스킬 미구현",
+  "selectable": [
+    "on"
+  ],
+  "proposedSkillIds": [
+    "skill_luka_gale_slash",
+    "skill_daren_iron_counter",
+    "skill_miel_star_seal"
+  ],
+  "proposedSkillIdHitsInRuntimeAndGenerated": [],
+  "limits": "Identifier absence is not a proof of all code behavior. Catalog protected-domain comparisons and unchanged integration hashes are separate evidence. Text/data review only; no HTML browser rendering or usability playtest.",
+  "files": [
+    {
+      "path": "Planning\\Story\\Dragon-v1\\stage-ground-v1.json",
+      "sha256": "c9b112df3e7876073b3827447e4279b71f9e3d79ec1d8cfe8930e88319a268ba"
+    },
+    {
+      "path": "Planning\\Story\\Dragon-v1\\stage-ground-section.html",
+      "sha256": "a8cc05272ca26a7510776e96920d4129dec72fdb81709e49889306b622e9adb0"
+    },
+    {
+      "path": "Planning\\Story\\Dragon-v1\\character-skills-v1.json",
+      "sha256": "2eb22cc9bbeda7c71b93cee4d48bd6905ee4426f917a9aa32e60f8708db233e1"
+    },
+    {
+      "path": "Planning\\Story\\Dragon-v1\\character-skills-v1.md",
+      "sha256": "e04bbfca3a600d334395abb9bc8c66fb820f77f6cee36aa6c8efbb4892959e6d"
+    },
+    {
+      "path": "Planning\\Story\\Dragon-v1\\dragon-identity-v1.md",
+      "sha256": "a964c371f0e3d873c45b4cb32db448d8ae6626f0743a13abb0793d793ab6f985"
+    },
+    {
+      "path": "Planning\\Story\\Dragon-v1\\dragon-v3-plan-review.md",
+      "sha256": "ef788c52acad7b1f572b4d6ec7ce6fe4875798d00aa071dbe1a91f7fe00ab83c"
+    }
+  ]
+}

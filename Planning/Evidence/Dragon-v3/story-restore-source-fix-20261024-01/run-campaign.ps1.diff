@@ -1,0 +1,39 @@
+diff --git a/Planning/Evidence/Dragon-v3/story-restore-source-fix-20261024-01/before/run-campaign.ps1 b/Tools/QA/Dragon-v3/run-campaign.ps1
+index 9a1ef14..5aabf9b 100644
+--- a/Planning/Evidence/Dragon-v3/story-restore-source-fix-20261024-01/before/run-campaign.ps1
++++ b/Tools/QA/Dragon-v3/run-campaign.ps1
+@@ -1,6 +1,7 @@
+ param(
+     [Parameter(Mandatory=$true)][string]$Executable,
+     [Parameter(Mandatory=$true)][ValidatePattern('^[A-Za-z0-9][A-Za-z0-9_.-]*$')][string]$CandidateId,
++    [switch]$StoryOnly1280,
+     [switch]$Run
+ )
+ $ErrorActionPreference='Stop'
+@@ -56,7 +57,7 @@ function Invoke-V3Case([string]$Label,[int]$Width,[int]$Height,[bool]$Resume){
+     }else{
+         Copy-Item -LiteralPath (Join-Path $fresh 'v3-resume-expected.json') -Destination (Join-Path $dest 'v3-resume-expected.json')
+     }
+-    $mode=if($Resume){'v3-resume'}else{'v3'}
++    $mode=if($Resume){'v3-resume'}elseif($StoryOnly1280 -and $Width -eq 1280){'v3-story'}else{'v3'}
+     $log=Join-Path $dest 'player.log'
+     $argsList=@('-dragon-theme-smoke',('"'+$dest+'"'),'-dragon-theme-case',$mode,'-lastbell-save-dir',('"'+$save+'"'),
+         '-screen-width',"$Width",'-screen-height',"$Height",'-screen-fullscreen','0','-logFile',('"'+$log+'"'))
+@@ -79,7 +80,8 @@ function Invoke-V3Case([string]$Label,[int]$Width,[int]$Height,[bool]$Resume){
+ $campaignError=$null;$restored=@()
+ try{
+     foreach($size in @(@(1280,720),@(640,360))){
+-        Invoke-V3Case "v3-$($size[0])x$($size[1])" $size[0] $size[1] $false
++        $label=if($StoryOnly1280 -and $size[0] -eq 1280){'v3-story-1280x720'}else{"v3-$($size[0])x$($size[1])"}
++        Invoke-V3Case $label $size[0] $size[1] $false
+         Invoke-V3Case "v3-resume-$($size[0])x$($size[1])" $size[0] $size[1] $true
+     }
+ }catch{$campaignError=$_.Exception.Message}
+@@ -106,6 +108,6 @@ finally{
+     try{Assert-ProtectedSaves 'final'}catch{$campaignError=$_.Exception.Message}
+     if($restored.matches -contains $false){$campaignError='Scoped PlayerPrefs restore mismatch'}
+     $passed=-not $campaignError -and $runs.Count -eq 4 -and @($runs|Where-Object {-not $_.passed}).Count -eq 0
+-    Write-V3Json (Join-Path $output 'campaign.json') @{passed=$passed;error=$campaignError;runs=$runs.ToArray();osInput=$false;visualReview='NOT_RUN';defaultSaveRuntime='NOT_RUN';userDefaultProfile='NOT_ACCESSED';limits='Synthetic isolated profile campaign and legacy sentinel, same-path native restart, selector contract only for default path. Not a user-profile hash audit or complete visual acceptance.'}
++    Write-V3Json (Join-Path $output 'campaign.json') @{passed=$passed;error=$campaignError;runs=$runs.ToArray();storyOnly1280=[bool]$StoryOnly1280;full1280MotionRun=(-not $StoryOnly1280);osInput=$false;visualReview='NOT_RUN';defaultSaveRuntime='NOT_RUN';userDefaultProfile='NOT_ACCESSED';limits='Synthetic isolated profile campaign and legacy sentinel, same-path native restart, selector contract only for default path. With StoryOnly1280, prior motion evidence must be adopted separately after product identity review. Not a user-profile hash audit or complete visual acceptance.'}
+ }
+ if(-not $passed){throw "V3 campaign failed: $campaignError"}

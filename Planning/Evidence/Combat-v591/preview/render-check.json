@@ -1,0 +1,112 @@
+{
+  "passed": true,
+  "method": "Offline native Canvas, not Unity player",
+  "cases": [
+    {
+      "kind": "thrust",
+      "impacts": [
+        720
+      ]
+    },
+    {
+      "kind": "low",
+      "impacts": [
+        720
+      ]
+    },
+    {
+      "kind": "high",
+      "impacts": [
+        720
+      ]
+    },
+    {
+      "kind": "rear",
+      "impacts": [
+        720
+      ]
+    },
+    {
+      "kind": "front-rear",
+      "impacts": [
+        1440,
+        1920
+      ]
+    },
+    {
+      "kind": "rear-front",
+      "impacts": [
+        1440,
+        1920
+      ]
+    },
+    {
+      "kind": "low-high",
+      "impacts": [
+        1440,
+        1920
+      ]
+    },
+    {
+      "kind": "high-low",
+      "impacts": [
+        1440,
+        1920
+      ]
+    },
+    {
+      "kind": "high-high",
+      "impacts": [
+        1440,
+        1920
+      ]
+    },
+    {
+      "kind": "triple",
+      "impacts": [
+        2160,
+        2640,
+        3120
+      ]
+    }
+  ],
+  "inputCases": [
+    {
+      "lead": 0,
+      "action": "down",
+      "result": "perfect"
+    },
+    {
+      "lead": 60,
+      "action": "down",
+      "result": "perfect"
+    },
+    {
+      "lead": 61,
+      "action": "down",
+      "result": "normal"
+    },
+    {
+      "lead": 160,
+      "action": "down",
+      "result": "normal"
+    },
+    {
+      "lead": 161,
+      "action": "down",
+      "result": "early"
+    },
+    {
+      "lead": 50,
+      "action": "up",
+      "result": "wrong"
+    },
+    {
+      "lead": 50,
+      "action": "attack",
+      "result": "wrong"
+    }
+  ],
+  "keyboardAndPointer": true,
+  "pausePixels": true
+}

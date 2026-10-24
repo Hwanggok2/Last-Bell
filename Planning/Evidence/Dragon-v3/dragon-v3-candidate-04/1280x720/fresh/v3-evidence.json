@@ -1,0 +1,43 @@
+{
+    "visualReview": "NOT_RUN",
+    "naturalMotionReview": "NOT_RUN",
+    "osInput": "DEFERRED",
+    "mobile": "DEFERRED",
+    "coverage": "recovery19-20-and-separate-presentation-clips-plus-stage18-regression",
+    "storyRestoreUi": [],
+    "defaultSaveRuntime": "NOT_RUN: observed launches use an explicit isolated override; selector contract checked separately",
+    "skillImplementation": "Source/planning review required; runtime probe does not certify absence of all skill code",
+    "writtenFrames": 158,
+    "playtestDefine": true,
+    "clips": [
+        "dragon_goblin_guard/Idle/dragon-v3-goblin_guard-Idle",
+        "dragon_goblin_guard/Attack/dragon-v3-goblin_guard-Attack",
+        "dragon_goblin_guard/Stun/dragon-v3-goblin_guard-Stun"
+    ],
+    "grounds": [],
+    "attackAliases": [],
+    "segments": [
+        {
+            "name": "recheck-19-automatic-idle",
+            "clock": "real-frame-v3-static-session",
+            "frames": 123,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 3.750943660736084,
+            "lastRealtime": 5.791441917419434,
+            "maxDelta": 0.10949809104204178,
+            "maxRealtimeGap": 0.01889634132385254,
+            "encodeSeconds": 9.057550430297852
+        },
+        {
+            "name": "recheck-19-asset-attack-80ms",
+            "clock": "real-frame-v3-static-session",
+            "frames": 35,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 14.974228858947754,
+            "lastRealtime": 15.53947639465332,
+            "maxDelta": 9.072463035583496,
+            "maxRealtimeGap": 0.01912975311279297,
+            "encodeSeconds": 2.5718154907226564
+        }
+    ]
+}

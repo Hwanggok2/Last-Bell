@@ -1,0 +1,49 @@
+diff --git a/Planning/Evidence/Dragon-v3/recovery-source-fix-20261024-01/before/run-campaign.ps1 b/Tools/QA/Dragon-v3/run-campaign.ps1
+index 5aabf9b..c67f6b0 100644
+--- a/Planning/Evidence/Dragon-v3/recovery-source-fix-20261024-01/before/run-campaign.ps1
++++ b/Tools/QA/Dragon-v3/run-campaign.ps1
+@@ -2,10 +2,12 @@ param(
+     [Parameter(Mandatory=$true)][string]$Executable,
+     [Parameter(Mandatory=$true)][ValidatePattern('^[A-Za-z0-9][A-Za-z0-9_.-]*$')][string]$CandidateId,
+     [switch]$StoryOnly1280,
++    [switch]$RecoveryOnly,
+     [switch]$Run
+ )
+ $ErrorActionPreference='Stop'
+ if(-not $Run){throw 'Prepared only. Do not execute before the coordinator hands over the completed V3 candidate and execution ownership.'}
++if($StoryOnly1280 -and $RecoveryOnly){throw 'Choose one targeted campaign scope'}
+ . (Join-Path $PSScriptRoot 'common.ps1')
+ $root=[IO.Path]::GetFullPath((Join-Path $PSScriptRoot '../../..'))
+ $allowedBuild=Join-Path $root 'Builds/Dragon-v3-QA'
+@@ -57,7 +59,7 @@ function Invoke-V3Case([string]$Label,[int]$Width,[int]$Height,[bool]$Resume){
+     }else{
+         Copy-Item -LiteralPath (Join-Path $fresh 'v3-resume-expected.json') -Destination (Join-Path $dest 'v3-resume-expected.json')
+     }
+-    $mode=if($Resume){'v3-resume'}elseif($StoryOnly1280 -and $Width -eq 1280){'v3-story'}else{'v3'}
++    $mode=if($Resume){'v3-resume'}elseif($RecoveryOnly){'v3-recovery'}elseif($StoryOnly1280 -and $Width -eq 1280){'v3-story'}else{'v3'}
+     $log=Join-Path $dest 'player.log'
+     $argsList=@('-dragon-theme-smoke',('"'+$dest+'"'),'-dragon-theme-case',$mode,'-lastbell-save-dir',('"'+$save+'"'),
+         '-screen-width',"$Width",'-screen-height',"$Height",'-screen-fullscreen','0','-logFile',('"'+$log+'"'))
+@@ -80,9 +82,9 @@ function Invoke-V3Case([string]$Label,[int]$Width,[int]$Height,[bool]$Resume){
+ $campaignError=$null;$restored=@()
+ try{
+     foreach($size in @(@(1280,720),@(640,360))){
+-        $label=if($StoryOnly1280 -and $size[0] -eq 1280){'v3-story-1280x720'}else{"v3-$($size[0])x$($size[1])"}
++        $label=if($RecoveryOnly){"v3-recovery-$($size[0])x$($size[1])"}elseif($StoryOnly1280 -and $size[0] -eq 1280){'v3-story-1280x720'}else{"v3-$($size[0])x$($size[1])"}
+         Invoke-V3Case $label $size[0] $size[1] $false
+-        Invoke-V3Case "v3-resume-$($size[0])x$($size[1])" $size[0] $size[1] $true
++        if(-not $RecoveryOnly){Invoke-V3Case "v3-resume-$($size[0])x$($size[1])" $size[0] $size[1] $true}
+     }
+ }catch{$campaignError=$_.Exception.Message}
+ finally{
+@@ -107,7 +109,8 @@ finally{
+     Write-V3Json (Join-Path $output 'playerprefs-restored.json') $restored
+     try{Assert-ProtectedSaves 'final'}catch{$campaignError=$_.Exception.Message}
+     if($restored.matches -contains $false){$campaignError='Scoped PlayerPrefs restore mismatch'}
+-    $passed=-not $campaignError -and $runs.Count -eq 4 -and @($runs|Where-Object {-not $_.passed}).Count -eq 0
+-    Write-V3Json (Join-Path $output 'campaign.json') @{passed=$passed;error=$campaignError;runs=$runs.ToArray();storyOnly1280=[bool]$StoryOnly1280;full1280MotionRun=(-not $StoryOnly1280);osInput=$false;visualReview='NOT_RUN';defaultSaveRuntime='NOT_RUN';userDefaultProfile='NOT_ACCESSED';limits='Synthetic isolated profile campaign and legacy sentinel, same-path native restart, selector contract only for default path. With StoryOnly1280, prior motion evidence must be adopted separately after product identity review. Not a user-profile hash audit or complete visual acceptance.'}
++    $expectedRuns=if($RecoveryOnly){2}else{4}
++    $passed=-not $campaignError -and $runs.Count -eq $expectedRuns -and @($runs|Where-Object {-not $_.passed}).Count -eq 0
++    Write-V3Json (Join-Path $output 'campaign.json') @{passed=$passed;error=$campaignError;runs=$runs.ToArray();storyOnly1280=[bool]$StoryOnly1280;recoveryOnly=[bool]$RecoveryOnly;expectedProcesses=$expectedRuns;full1280MotionRun=(-not $StoryOnly1280 -and -not $RecoveryOnly);osInput=$false;visualReview='NOT_RUN';defaultSaveRuntime='NOT_RUN';userDefaultProfile='NOT_ACCESSED';limits='Synthetic isolated profile campaign and legacy sentinel. RecoveryOnly runs two targeted processes without restart, and separates automatic Arrival Idle / explicit 80ms Attack asset sampling / actual combo recovery. With StoryOnly1280, prior motion evidence must be adopted separately after product identity review. Not a user-profile hash audit or complete visual acceptance.'}
+ }
+ if(-not $passed){throw "V3 campaign failed: $campaignError"}

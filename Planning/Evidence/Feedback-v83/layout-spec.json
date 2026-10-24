@@ -1,0 +1,13 @@
+{
+  "version": "v8.3",
+  "layoutOwner": "FeedbackLayout",
+  "savedPrefabMigration": "ReferenceV81Migration",
+  "worldFrame": [960, 540],
+  "safeAreaFrame": [1084, 540],
+  "playerHp": {"bounds": [312, 390, 126, 16], "color": "jade", "fixedDuringAttack": true},
+  "enemyHp": {"bounds": [603, 390, 144, 16], "color": "rust", "bossUsesSameSlot": true},
+  "killGold": {"safeAreaBounds": [382, 160, 320, 44], "fontSize": 32, "durationMs": 1100, "fadeStartMs": 750, "format": "+N0", "valueSource": "EnemyDefeated.GoldReward", "pausesWithCombat": true},
+  "retired": ["player hit combo", "bounty display wording"],
+  "retained": ["three dodge buttons", "attack button", "enemy sequence bells", "perfect dodge wave", "reference typography and lobby layout"],
+  "runtimeEvidence": ["desktop/result.json", "mobile/result.json"]
+}

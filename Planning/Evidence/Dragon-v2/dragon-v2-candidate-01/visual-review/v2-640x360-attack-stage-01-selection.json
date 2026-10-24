@@ -1,0 +1,686 @@
+[
+  {
+    "file": "v2-frame-640x360-attack-stage-01-Idle-000083.png",
+    "sha256": "2fd8f6652cbfc679856b7666def2d68a9df9f442558f2ba39f85634b03a37abf",
+    "scenario": "attack-stage-01",
+    "clock": "real-frame-v2",
+    "artId": "dragon_hero_on",
+    "motion": "Idle",
+    "sourceId": "dragon-v2-hero_on-Idle",
+    "phase": "Combat",
+    "transition": "",
+    "frameCount": 207,
+    "clipFrame": 1,
+    "sourceFrame": 1,
+    "realtime": 8.01821517944336,
+    "delta": 0.016666801646351814,
+    "transitionSeconds": 0.0,
+    "travel": 0.0,
+    "combatMs": 16.666801646351814,
+    "playerHp": 100.0,
+    "enemyHp": 120.0,
+    "playerBar": 1.0,
+    "enemyBar": 1.0,
+    "root": {
+      "x": -1.2055555582046509,
+      "y": -1.980555534362793,
+      "z": 0.0
+    },
+    "bodyOffset": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "bodyScale": {
+      "x": 6.027777671813965,
+      "y": 6.027777671813965,
+      "z": 1.0
+    }
+  },
+  {
+    "file": "v2-frame-640x360-attack-stage-01-Idle-000087.png",
+    "sha256": "83d421ccd44e61a3b023bcf7fb0fb1be5c0d155787ebf25b8983da0cb0c28140",
+    "scenario": "attack-stage-01",
+    "clock": "real-frame-v2",
+    "artId": "dragon_hero_on",
+    "motion": "Idle",
+    "sourceId": "dragon-v2-hero_on-Idle",
+    "phase": "Combat",
+    "transition": "",
+    "frameCount": 211,
+    "clipFrame": 2,
+    "sourceFrame": 2,
+    "realtime": 8.078197479248047,
+    "delta": 0.016666900366544724,
+    "transitionSeconds": 0.0,
+    "travel": 0.0,
+    "combatMs": 106.26750253140926,
+    "playerHp": 100.0,
+    "enemyHp": 120.0,
+    "playerBar": 1.0,
+    "enemyBar": 1.0,
+    "root": {
+      "x": -1.2055555582046509,
+      "y": -1.980555534362793,
+      "z": 0.0
+    },
+    "bodyOffset": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "bodyScale": {
+      "x": 6.027777671813965,
+      "y": 6.027777671813965,
+      "z": 1.0
+    }
+  },
+  {
+    "file": "v2-frame-640x360-attack-stage-01-Idle-000090.png",
+    "sha256": "320e5b0c8b96548f03bf5776490caee4da51b52a43c56d50b7e80cdbc5a280fb",
+    "scenario": "attack-stage-01",
+    "clock": "real-frame-v2",
+    "artId": "dragon_hero_on",
+    "motion": "Idle",
+    "sourceId": "dragon-v2-hero_on-Idle",
+    "phase": "Combat",
+    "transition": "",
+    "frameCount": 214,
+    "clipFrame": 2,
+    "sourceFrame": 2,
+    "realtime": 8.12967300415039,
+    "delta": 0.01666639745235443,
+    "transitionSeconds": 0.0,
+    "travel": 0.0,
+    "combatMs": 156.26779943704605,
+    "playerHp": 100.0,
+    "enemyHp": 120.0,
+    "playerBar": 1.0,
+    "enemyBar": 1.0,
+    "root": {
+      "x": -1.2055555582046509,
+      "y": -1.980555534362793,
+      "z": 0.0
+    },
+    "bodyOffset": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "bodyScale": {
+      "x": 6.027777671813965,
+      "y": 6.027777671813965,
+      "z": 1.0
+    }
+  },
+  {
+    "file": "v2-frame-640x360-attack-stage-01-Attack-000091.png",
+    "sha256": "f79c04c66a4b61ade96fd5900f5ce63645848dddd4de7063732ad864c4e799ac",
+    "scenario": "attack-stage-01",
+    "clock": "real-frame-v2",
+    "artId": "dragon_hero_on",
+    "motion": "Attack",
+    "sourceId": "dragon-v2-hero_on-Attack",
+    "phase": "Combat",
+    "transition": "",
+    "frameCount": 215,
+    "clipFrame": 0,
+    "sourceFrame": 0,
+    "realtime": 8.155278205871582,
+    "delta": 0.024490000680088997,
+    "transitionSeconds": 0.0,
+    "travel": 0.0,
+    "combatMs": 180.75780011713505,
+    "playerHp": 100.0,
+    "enemyHp": 120.0,
+    "playerBar": 1.0,
+    "enemyBar": 1.0,
+    "root": {
+      "x": -0.2662900984287262,
+      "y": -1.980555534362793,
+      "z": 0.0
+    },
+    "bodyOffset": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "bodyScale": {
+      "x": 6.027777671813965,
+      "y": 6.027777671813965,
+      "z": 1.0
+    }
+  },
+  {
+    "file": "v2-frame-640x360-attack-stage-01-Attack-000098.png",
+    "sha256": "bd54bfbd81a3078b22fcbc77f5f17849144dce51e17a90cdb312fa0491a554f2",
+    "scenario": "attack-stage-01",
+    "clock": "real-frame-v2",
+    "artId": "dragon_hero_on",
+    "motion": "Attack",
+    "sourceId": "dragon-v2-hero_on-Attack",
+    "phase": "Combat",
+    "transition": "",
+    "frameCount": 222,
+    "clipFrame": 1,
+    "sourceFrame": 1,
+    "realtime": 8.270200729370117,
+    "delta": 0.016666404902935028,
+    "transitionSeconds": 0.0,
+    "travel": 0.0,
+    "combatMs": 297.42600582540035,
+    "playerHp": 100.0,
+    "enemyHp": 120.0,
+    "playerBar": 1.0,
+    "enemyBar": 1.0,
+    "root": {
+      "x": 0.6888889074325562,
+      "y": -1.980555534362793,
+      "z": 0.0
+    },
+    "bodyOffset": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "bodyScale": {
+      "x": 6.027777671813965,
+      "y": 6.027777671813965,
+      "z": 1.0
+    }
+  },
+  {
+    "file": "v2-frame-640x360-attack-stage-01-Attack-000099.png",
+    "sha256": "04c8de2d8ffe72327311f85513eb2f480866660568357d5b2a1efb03f54fdb9c",
+    "scenario": "attack-stage-01",
+    "clock": "real-frame-v2",
+    "artId": "dragon_hero_on",
+    "motion": "Attack",
+    "sourceId": "dragon-v2-hero_on-Attack",
+    "phase": "Combat",
+    "transition": "",
+    "frameCount": 223,
+    "clipFrame": 3,
+    "sourceFrame": 3,
+    "realtime": 8.287979125976562,
+    "delta": 0.016666900366544724,
+    "transitionSeconds": 0.0,
+    "travel": 0.0,
+    "combatMs": 314.0929061919451,
+    "playerHp": 100.0,
+    "enemyHp": 120.0,
+    "playerBar": 1.0,
+    "enemyBar": 1.0,
+    "root": {
+      "x": 0.6888889074325562,
+      "y": -1.980555534362793,
+      "z": 0.0
+    },
+    "bodyOffset": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "bodyScale": {
+      "x": 6.027777671813965,
+      "y": 6.027777671813965,
+      "z": 1.0
+    }
+  },
+  {
+    "file": "v2-frame-640x360-attack-stage-01-Attack-000100.png",
+    "sha256": "7c1f4b0ff8a8bebe90c3667f448d39e5f14cc6ba63388b81ec46d1c864a63587",
+    "scenario": "attack-stage-01",
+    "clock": "real-frame-v2",
+    "artId": "dragon_hero_on",
+    "motion": "Attack",
+    "sourceId": "dragon-v2-hero_on-Attack",
+    "phase": "Combat",
+    "transition": "",
+    "frameCount": 224,
+    "clipFrame": 4,
+    "sourceFrame": 4,
+    "realtime": 8.304381370544434,
+    "delta": 0.016666695475578308,
+    "transitionSeconds": 0.0,
+    "travel": 0.0,
+    "combatMs": 330.7596016675234,
+    "playerHp": 100.0,
+    "enemyHp": 120.0,
+    "playerBar": 1.0,
+    "enemyBar": 1.0,
+    "root": {
+      "x": 0.6888889074325562,
+      "y": -1.980555534362793,
+      "z": 0.0
+    },
+    "bodyOffset": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "bodyScale": {
+      "x": 6.027777671813965,
+      "y": 6.027777671813965,
+      "z": 1.0
+    }
+  },
+  {
+    "file": "v2-frame-640x360-attack-stage-01-Attack-000101.png",
+    "sha256": "98c7c8f466487a6ac1daff0bc2dc0cd34fcbd156ae81cd1a8aac11e2e18425a1",
+    "scenario": "attack-stage-01",
+    "clock": "real-frame-v2",
+    "artId": "dragon_hero_on",
+    "motion": "Attack",
+    "sourceId": "dragon-v2-hero_on-Attack",
+    "phase": "Combat",
+    "transition": "",
+    "frameCount": 225,
+    "clipFrame": 6,
+    "sourceFrame": 6,
+    "realtime": 8.32441520690918,
+    "delta": 0.016666702926158905,
+    "transitionSeconds": 0.0,
+    "travel": 0.0,
+    "combatMs": 347.4263045936823,
+    "playerHp": 100.0,
+    "enemyHp": 120.0,
+    "playerBar": 1.0,
+    "enemyBar": 1.0,
+    "root": {
+      "x": 0.6888889074325562,
+      "y": -1.980555534362793,
+      "z": 0.0
+    },
+    "bodyOffset": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "bodyScale": {
+      "x": 6.027777671813965,
+      "y": 6.027777671813965,
+      "z": 1.0
+    }
+  },
+  {
+    "file": "v2-frame-640x360-attack-stage-01-Attack-000102.png",
+    "sha256": "484edbe27e9184fbfbd95a83ff2e8eb352ecfb52bea6994b04fcaebc28f6c694",
+    "scenario": "attack-stage-01",
+    "clock": "real-frame-v2",
+    "artId": "dragon_hero_on",
+    "motion": "Attack",
+    "sourceId": "dragon-v2-hero_on-Attack",
+    "phase": "Combat",
+    "transition": "",
+    "frameCount": 226,
+    "clipFrame": 7,
+    "sourceFrame": 7,
+    "realtime": 8.357855796813965,
+    "delta": 0.016666900366544724,
+    "transitionSeconds": 0.0,
+    "travel": 0.0,
+    "combatMs": 364.093204960227,
+    "playerHp": 100.0,
+    "enemyHp": 110.0,
+    "playerBar": 1.0,
+    "enemyBar": 0.9166666865348816,
+    "root": {
+      "x": 0.6888889074325562,
+      "y": -1.980555534362793,
+      "z": 0.0
+    },
+    "bodyOffset": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "bodyScale": {
+      "x": 6.027777671813965,
+      "y": 6.027777671813965,
+      "z": 1.0
+    }
+  },
+  {
+    "file": "v2-frame-640x360-attack-stage-01-Attack-000104.png",
+    "sha256": "ed8440d4fa1e03b8953f62e6533ff9b5383129d732cc50d3dd45edf5acee43f0",
+    "scenario": "attack-stage-01",
+    "clock": "real-frame-v2",
+    "artId": "dragon_hero_on",
+    "motion": "Attack",
+    "sourceId": "dragon-v2-hero_on-Attack",
+    "phase": "Combat",
+    "transition": "",
+    "frameCount": 228,
+    "clipFrame": 8,
+    "sourceFrame": 8,
+    "realtime": 8.384371757507324,
+    "delta": 0.016667800024151802,
+    "transitionSeconds": 0.0,
+    "travel": 0.0,
+    "combatMs": 409.78200174868107,
+    "playerHp": 100.0,
+    "enemyHp": 110.0,
+    "playerBar": 1.0,
+    "enemyBar": 0.9166666865348816,
+    "root": {
+      "x": 0.23578383028507233,
+      "y": -1.980555534362793,
+      "z": 0.0
+    },
+    "bodyOffset": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "bodyScale": {
+      "x": 6.027777671813965,
+      "y": 6.027777671813965,
+      "z": 1.0
+    }
+  },
+  {
+    "file": "v2-frame-640x360-attack-stage-01-Attack-000106.png",
+    "sha256": "fbd4e0f934e14894e2eaacbbf80a280f3f2a4517cb4aae9954345e7e422ffedc",
+    "scenario": "attack-stage-01",
+    "clock": "real-frame-v2",
+    "artId": "dragon_hero_on",
+    "motion": "Attack",
+    "sourceId": "dragon-v2-hero_on-Attack",
+    "phase": "Combat",
+    "transition": "",
+    "frameCount": 230,
+    "clipFrame": 9,
+    "sourceFrame": 9,
+    "realtime": 8.417856216430664,
+    "delta": 0.016666702926158905,
+    "transitionSeconds": 0.0,
+    "travel": 0.0,
+    "combatMs": 443.1153070181608,
+    "playerHp": 100.0,
+    "enemyHp": 110.0,
+    "playerBar": 1.0,
+    "enemyBar": 0.9166666865348816,
+    "root": {
+      "x": -0.2734569013118744,
+      "y": -1.980555534362793,
+      "z": 0.0
+    },
+    "bodyOffset": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "bodyScale": {
+      "x": 6.027777671813965,
+      "y": 6.027777671813965,
+      "z": 1.0
+    }
+  },
+  {
+    "file": "v2-frame-640x360-attack-stage-01-Attack-000109.png",
+    "sha256": "19bc3894dde26157d990ba68be6de17a8fb0875b70b71694875b38f2701ebed9",
+    "scenario": "attack-stage-01",
+    "clock": "real-frame-v2",
+    "artId": "dragon_hero_on",
+    "motion": "Attack",
+    "sourceId": "dragon-v2-hero_on-Attack",
+    "phase": "Combat",
+    "transition": "",
+    "frameCount": 233,
+    "clipFrame": 10,
+    "sourceFrame": 10,
+    "realtime": 8.467796325683594,
+    "delta": 0.016666404902935028,
+    "transitionSeconds": 0.0,
+    "travel": 0.0,
+    "combatMs": 493.1155052036047,
+    "playerHp": 100.0,
+    "enemyHp": 110.0,
+    "playerBar": 1.0,
+    "enemyBar": 0.9166666865348816,
+    "root": {
+      "x": -0.7875613570213318,
+      "y": -1.980555534362793,
+      "z": 0.0
+    },
+    "bodyOffset": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "bodyScale": {
+      "x": 6.027777671813965,
+      "y": 6.027777671813965,
+      "z": 1.0
+    }
+  },
+  {
+    "file": "v2-frame-640x360-attack-stage-01-Attack-000112.png",
+    "sha256": "1eb7d02023b28db1d6029eb7799bc6ad218227561e7508e2066460a86330b3d4",
+    "scenario": "attack-stage-01",
+    "clock": "real-frame-v2",
+    "artId": "dragon_hero_on",
+    "motion": "Attack",
+    "sourceId": "dragon-v2-hero_on-Attack",
+    "phase": "Combat",
+    "transition": "",
+    "frameCount": 236,
+    "clipFrame": 11,
+    "sourceFrame": 11,
+    "realtime": 8.517763137817383,
+    "delta": 0.016666198149323463,
+    "transitionSeconds": 0.0,
+    "travel": 0.0,
+    "combatMs": 543.1154053658247,
+    "playerHp": 100.0,
+    "enemyHp": 110.0,
+    "playerBar": 1.0,
+    "enemyBar": 0.9166666865348816,
+    "root": {
+      "x": -1.0661174058914185,
+      "y": -1.980555534362793,
+      "z": 0.0
+    },
+    "bodyOffset": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "bodyScale": {
+      "x": 6.027777671813965,
+      "y": 6.027777671813965,
+      "z": 1.0
+    }
+  },
+  {
+    "file": "v2-frame-640x360-attack-stage-01-Attack-000114.png",
+    "sha256": "5e0a35f2e8193cacca6adb109bc8c9a77f8259a93e490a6d94d777ab25a08ee0",
+    "scenario": "attack-stage-01",
+    "clock": "real-frame-v2",
+    "artId": "dragon_hero_on",
+    "motion": "Attack",
+    "sourceId": "dragon-v2-hero_on-Attack",
+    "phase": "Combat",
+    "transition": "",
+    "frameCount": 238,
+    "clipFrame": 12,
+    "sourceFrame": 12,
+    "realtime": 8.550684928894043,
+    "delta": 0.016666801646351814,
+    "transitionSeconds": 0.0,
+    "travel": 0.0,
+    "combatMs": 576.4492060989141,
+    "playerHp": 100.0,
+    "enemyHp": 110.0,
+    "playerBar": 1.0,
+    "enemyBar": 0.9166666865348816,
+    "root": {
+      "x": -1.1566110849380493,
+      "y": -1.980555534362793,
+      "z": 0.0
+    },
+    "bodyOffset": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "bodyScale": {
+      "x": 6.027777671813965,
+      "y": 6.027777671813965,
+      "z": 1.0
+    }
+  },
+  {
+    "file": "v2-frame-640x360-attack-stage-01-Attack-000117.png",
+    "sha256": "6b5e8ce25616d5b1c3c3efbb24893337e79d96fddad957708c77401d7e36333c",
+    "scenario": "attack-stage-01",
+    "clock": "real-frame-v2",
+    "artId": "dragon_hero_on",
+    "motion": "Attack",
+    "sourceId": "dragon-v2-hero_on-Attack",
+    "phase": "Combat",
+    "transition": "",
+    "frameCount": 241,
+    "clipFrame": 13,
+    "sourceFrame": 13,
+    "realtime": 8.600737571716309,
+    "delta": 0.016666900366544724,
+    "transitionSeconds": 0.0,
+    "travel": 0.0,
+    "combatMs": 626.4499016106129,
+    "playerHp": 100.0,
+    "enemyHp": 110.0,
+    "playerBar": 1.0,
+    "enemyBar": 0.9166666865348816,
+    "root": {
+      "x": -1.2030041217803955,
+      "y": -1.980555534362793,
+      "z": 0.0
+    },
+    "bodyOffset": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "bodyScale": {
+      "x": 6.027777671813965,
+      "y": 6.027777671813965,
+      "z": 1.0
+    }
+  },
+  {
+    "file": "v2-frame-640x360-attack-stage-01-Attack-000118.png",
+    "sha256": "cc6c8ce08c051e44990bd734ba23e9003c9265e16ec1709de553748a6790b8e2",
+    "scenario": "attack-stage-01",
+    "clock": "real-frame-v2",
+    "artId": "dragon_hero_on",
+    "motion": "Attack",
+    "sourceId": "dragon-v2-hero_on-Attack",
+    "phase": "Combat",
+    "transition": "",
+    "frameCount": 242,
+    "clipFrame": 13,
+    "sourceFrame": 13,
+    "realtime": 8.617323875427246,
+    "delta": 0.016666602343320847,
+    "transitionSeconds": 0.0,
+    "travel": 0.0,
+    "combatMs": 643.1165039539337,
+    "playerHp": 100.0,
+    "enemyHp": 110.0,
+    "playerBar": 1.0,
+    "enemyBar": 0.9166666865348816,
+    "root": {
+      "x": -1.2053366899490356,
+      "y": -1.980555534362793,
+      "z": 0.0
+    },
+    "bodyOffset": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "bodyScale": {
+      "x": 6.027777671813965,
+      "y": 6.027777671813965,
+      "z": 1.0
+    }
+  },
+  {
+    "file": "v2-frame-640x360-attack-stage-01-Idle-000119.png",
+    "sha256": "d9e06641375d9bd9f0f18cf4835f24f7be4a7766c0b891785a743fd79165ae52",
+    "scenario": "attack-stage-01",
+    "clock": "real-frame-v2",
+    "artId": "dragon_hero_on",
+    "motion": "Idle",
+    "sourceId": "dragon-v2-hero_on-Idle",
+    "phase": "Combat",
+    "transition": "",
+    "frameCount": 243,
+    "clipFrame": 0,
+    "sourceFrame": 0,
+    "realtime": 8.633980751037598,
+    "delta": 0.016666801646351814,
+    "transitionSeconds": 0.0,
+    "travel": 0.0,
+    "combatMs": 659.7833056002855,
+    "playerHp": 100.0,
+    "enemyHp": 110.0,
+    "playerBar": 1.0,
+    "enemyBar": 0.9166666865348816,
+    "root": {
+      "x": -1.2055555582046509,
+      "y": -1.980555534362793,
+      "z": 0.0
+    },
+    "bodyOffset": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "bodyScale": {
+      "x": 6.027777671813965,
+      "y": 6.027777671813965,
+      "z": 1.0
+    }
+  },
+  {
+    "file": "v2-frame-640x360-attack-stage-01-Idle-000130.png",
+    "sha256": "e501ac69f38bb255522e8300401327f0c95ffc4cbb638fb5f3ad91882e87adc6",
+    "scenario": "attack-stage-01",
+    "clock": "real-frame-v2",
+    "artId": "dragon_hero_on",
+    "motion": "Idle",
+    "sourceId": "dragon-v2-hero_on-Idle",
+    "phase": "Combat",
+    "transition": "",
+    "frameCount": 254,
+    "clipFrame": 3,
+    "sourceFrame": 3,
+    "realtime": 8.82916259765625,
+    "delta": 0.01670980080962181,
+    "transitionSeconds": 0.0,
+    "travel": 0.0,
+    "combatMs": 855.5838037282228,
+    "playerHp": 100.0,
+    "enemyHp": 110.0,
+    "playerBar": 1.0,
+    "enemyBar": 0.9166666865348816,
+    "root": {
+      "x": -1.2055555582046509,
+      "y": -1.980555534362793,
+      "z": 0.0
+    },
+    "bodyOffset": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "bodyScale": {
+      "x": 6.027777671813965,
+      "y": 6.027777671813965,
+      "z": 1.0
+    }
+  }
+]

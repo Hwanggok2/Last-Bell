@@ -5,7 +5,7 @@ using NUnit.Framework;
 
 namespace LastBell.Tests
 {
-    public sealed class GameSessionTests
+    public sealed partial class GameSessionTests
     {
         private GameCatalog catalog;
 
@@ -37,9 +37,22 @@ namespace LastBell.Tests
         {
             var save = new GameSession(catalog).ExportSave();
             save.phase = SessionPhase.Lobby;
-            save.tutorialStep = 2;
+            save.tutorialStep = 2; save.prologueSeen=true; save.comboHintSeen=true; save.comboPracticeCompleted=true;
             save.run = null;
             save.randomState = 0x12345678;
+            return save;
+        }
+
+        private static GameSaveData AsLegacySave(GameSaveData save, int schemaVersion)
+        {
+            save.schemaVersion = schemaVersion;
+            foreach (var character in save.characters) Array.Resize(ref character.statLevels, 4);
+            save.comboPracticeCompleted = save.comboPracticeSkipped = false;
+            if (save.run != null)
+            {
+                Array.Resize(ref save.run.statLevels, 4);
+                if (save.run.combatStats != null) save.run.combatStats.baseAttack = save.run.combatStats.recovery = 0;
+            }
             return save;
         }
 
@@ -52,6 +65,7 @@ namespace LastBell.Tests
             save.run.transition = null;
             save.run.stage = stage;
             save.run.patternStep = 0;
+            save.run.randomSequence=catalog.GetStage(stage).patternSteps.Select(x=>x.danger).ToArray();save.run.sequenceCursor=0;
             save.run.enemyHpMilli = weakEnemy ? 1000 : catalog.GetStage(stage).maxHp * 1000L;
             save.run.enemyMaxHpMilli = save.run.enemyHpMilli;
             session = new GameSession(catalog, save);
@@ -66,7 +80,16 @@ namespace LastBell.Tests
             session.Tick(.1f);
             session.Tick(.1f);
             FinishTransitions(session);
-            if (session.Phase == SessionPhase.StoryDialogue) session.SkipStory();
+            if (session.Phase == SessionPhase.StoryDialogue)
+            {
+                session.SkipStory();
+                if (session.Story != null && session.Story.AwaitingCompanionChoice)
+                    Assert.That(session.ChooseCompanionJoin(false), Is.True);
+                FinishTransitions(session);
+            }
+            if(session.Phase==SessionPhase.Combat)session.ReturnToLobby();
+            if(session.Phase==SessionPhase.RunEnd)session.ContinueSettlement();
+            if(session.Phase==SessionPhase.RewardAnnouncement)session.ContinueSettlement();
             Assert.That(session.Phase, Is.EqualTo(SessionPhase.RewardChoice));
             return session;
         }
@@ -74,19 +97,33 @@ namespace LastBell.Tests
         private static void FinishTransitions(GameSession session)
         {
             for (int i = 0; i < 8 && session.Phase == SessionPhase.Transition; i++) session.Tick(10);
+            if(session.Phase==SessionPhase.RunEnd&&session.PendingRewardCount==0)session.ContinueSettlement();
+        }
+
+        private static void Settle(GameSession s)
+        {
+            while(s.Phase==SessionPhase.RunEnd||s.Phase==SessionPhase.RewardAnnouncement||s.Phase==SessionPhase.RewardChoice)
+            {if(s.Phase==SessionPhase.RewardChoice)s.ChooseRelic(s.RelicChoices[0]);else s.ContinueSettlement();}
+        }
+        private static bool Home(GameSession s)
+        {
+            bool result=s.ReturnToLobby();
+            if(s.Phase==SessionPhase.RunEnd){Settle(s);s.ReturnToLobby();}
+            return result;
         }
 
         private static void EvadeNext(GameSession session, float leadMs = 30)
         {
             session.Tick(Math.Max(0, session.EnemyIntent.SecondsToHit - leadMs / 1000f));
-            Assert.That(session.EnemyThreats[0].RequiresParry?session.Attack():session.Dodge(session.EnemyIntent.Direction), Is.True);
-            session.Tick(leadMs / 1000f);
+            Assert.That(session.Dodge(session.EnemyIntent.Direction), Is.True);
+            session.Tick(leadMs / 1000f + .000001f);
         }
 
         [Test]
         public void FirstLaunchRequiresCorrectDodgeThenActualAttack()
         {
             var session = new GameSession(catalog);
+            session.FinishPrologue();session.StartRun();
             Assert.That(session.Phase, Is.EqualTo(SessionPhase.TutorialDodge));
             session.Tick(100);
             Assert.That(session.PlayerHp, Is.EqualTo(100));
@@ -104,10 +141,10 @@ namespace LastBell.Tests
         }
 
         [TestCase(59, true, true)]
-        [TestCase(60, true, true)]
-        [TestCase(61, true, false)]
-        [TestCase(160, true, false)]
-        [TestCase(161, false, false)]
+        [TestCase(90, true, true)]
+        [TestCase(91, true, false)]
+        [TestCase(240, true, false)]
+        [TestCase(241, false, false)]
         public void DodgeWindowsUseTimeNotFrameCount(int leadMs, bool success, bool perfect)
         {
             var session = PlayingAt();
@@ -123,9 +160,9 @@ namespace LastBell.Tests
         public void InputFrameShowsFullCueAndAcceptsDodgeAtTheDisplayedDeadline()
         {
             var session = PlayingAt();
-            session.TickInputFrame(.54f);
+            session.TickInputFrame(.9f);
             Assert.That(session.IsEnemyImpactPending, Is.True);
-            Assert.That(session.ClockMs, Is.EqualTo(540).Within(.001));
+            Assert.That(session.ClockMs, Is.EqualTo(900).Within(.001));
             Assert.That(session.EnemyIntent.Visible, Is.True);
             Assert.That(session.EnemyIntent.Progress, Is.EqualTo(1));
             Assert.That(session.PlayerHp, Is.EqualTo(100));
@@ -160,14 +197,14 @@ namespace LastBell.Tests
             Assert.That(session.ClockMs, Is.EqualTo((frames + 1) * (double)frame * 1000).Within(.001));
         }
 
-        [TestCase(161, false, false)]
-        [TestCase(160, true, false)]
-        [TestCase(61, true, false)]
-        [TestCase(60, true, true)]
+        [TestCase(241, false, false)]
+        [TestCase(240, true, false)]
+        [TestCase(91, true, false)]
+        [TestCase(90, true, true)]
         public void CompletedCueDoesNotExtendAnEarlierDodge(int leadMs, bool success, bool perfect)
         {
             var session = PlayingAt();
-            session.TickInputFrame((540 - leadMs) / 1000f);
+            session.TickInputFrame((900 - leadMs) / 1000f);
             session.Dodge(DodgeDirection.Up);
             session.TickInputFrame(leadMs / 1000f);
             Assert.That(session.IsEnemyImpactPending, Is.True);
@@ -180,7 +217,7 @@ namespace LastBell.Tests
         public void CompletedCueWithoutInputDealsDamageOnTheNextInputFrame()
         {
             var session = PlayingAt();
-            session.TickInputFrame(.54f);
+            session.TickInputFrame(.9f);
             Assert.That(session.PlayerHp, Is.EqualTo(100));
             session.TickInputFrame(0);
             Assert.That(session.PlayerHp, Is.EqualTo(92));
@@ -192,11 +229,11 @@ namespace LastBell.Tests
         [TestCase(1, DodgeDirection.Up)]
         [TestCase(2, DodgeDirection.Back)]
         [TestCase(3, DodgeDirection.Down)]
-        [TestCase(4, DodgeDirection.Forward)]
+        [TestCase(4, DodgeDirection.Up)]
         public void CompletedCueRequiresTheCorrectDirection(int stage, DodgeDirection correct)
         {
             var session = PlayingAt(stage);
-            session.TickInputFrame(.54f);
+            session.TickInputFrame(.9f);
             Assert.That(session.EnemyIntent.Direction, Is.EqualTo(correct));
             var wrong = correct == DodgeDirection.Up ? DodgeDirection.Back : DodgeDirection.Up;
             Assert.That(session.Dodge(wrong), Is.True);
@@ -209,8 +246,8 @@ namespace LastBell.Tests
         public void CompletionFrameDoesNotBypassDodgeReuse()
         {
             var session = PlayingAt();
-            session.TickInputFrame(.44f);
-            Assert.That(session.Dodge(DodgeDirection.Forward), Is.True);
+            session.TickInputFrame(.8f);
+            Assert.That(session.Dodge(DodgeDirection.Back), Is.True);
             session.TickInputFrame(.1f);
             Assert.That(session.IsEnemyImpactPending, Is.True);
             Assert.That(session.Dodge(DodgeDirection.Up), Is.False);
@@ -221,43 +258,34 @@ namespace LastBell.Tests
         [Test]
         public void LargeInputFrameKeepsRemainderAndExposesEachImpactBeforeDamage()
         {
-            var session = PlayingAt();
-            session.TickInputFrame(3);
-            Assert.That(session.ClockMs, Is.EqualTo(540));
-            Assert.That(session.PlayerHp, Is.EqualTo(100));
-            session.Dodge(DodgeDirection.Up);
-            session.TickInputFrame(0);
-            Assert.That(session.ClockMs, Is.EqualTo(2340));
-            Assert.That(session.IsEnemyImpactPending, Is.True);
-            Assert.That(session.PlayerHp, Is.EqualTo(100));
-            Assert.That(session.Stagger, Is.EqualTo(40));
-            session.TickInputFrame(0);
-            Assert.That(session.ClockMs, Is.EqualTo(3000));
-            Assert.That(session.PlayerHp, Is.EqualTo(92));
-            Assert.That(session.IsEnemyImpactPending, Is.False);
+            var session=PlayingAt(10);session.TickInputFrame(3);
+            Assert.That(session.ClockMs,Is.EqualTo(1800));Assert.That(session.PlayerHp,Is.EqualTo(100));
+            session.Dodge(session.EnemyIntent.Direction);session.TickInputFrame(0);
+            Assert.That(session.ClockMs,Is.EqualTo(2550));Assert.That(session.IsEnemyImpactPending,Is.True);Assert.That(session.PlayerHp,Is.EqualTo(100));
+            session.TickInputFrame(0);Assert.That(session.ClockMs,Is.EqualTo(3000));Assert.That(session.PlayerHp,Is.EqualTo(56));Assert.That(session.IsEnemyImpactPending,Is.False);
         }
 
         [Test]
         public void CompletionFramePreservesFullyWarnedBossCombo()
         {
             var session=PlayingAt(10);
-            session.TickInputFrame(1.44f);Assert.That(session.IsEnemyImpactPending,Is.True);
-            session.Dodge(DodgeDirection.Up);session.TickInputFrame(0);
-            Assert.That(session.EnemyIntent.SecondsToHit,Is.EqualTo(.32f).Within(.001));
+            session.TickInputFrame(1.8f);Assert.That(session.IsEnemyImpactPending,Is.True);
+            session.Dodge(session.EnemyIntent.Direction);session.TickInputFrame(0);
+            Assert.That(session.EnemyIntent.SecondsToHit,Is.EqualTo(.75f).Within(.001));
             Assert.That(session.EnemyIntent.Visible,Is.True);
-            session.TickInputFrame(.32f);Assert.That(session.IsEnemyImpactPending,Is.True);
-            session.Attack();session.TickInputFrame(0);
-            Assert.That(session.PlayerHp,Is.EqualTo(100));Assert.That(session.Stagger,Is.EqualTo(80));
+            session.TickInputFrame(.75f);Assert.That(session.IsEnemyImpactPending,Is.True);
+            session.Dodge(session.EnemyIntent.Direction);session.TickInputFrame(0);
+            Assert.That(session.PlayerHp,Is.EqualTo(100));Assert.That(session.Stagger,Is.EqualTo(35.2f).Within(.001));
         }
 
         [Test]
         public void PausedCompletionFrameIsDisplayedAgainBeforeResumeDamage()
         {
             var session = PlayingAt();
-            session.TickInputFrame(.54f);
+            session.TickInputFrame(.9f);
             session.SetPaused(true);
             session.TickInputFrame(5);
-            Assert.That(session.ClockMs, Is.EqualTo(540).Within(.001));
+            Assert.That(session.ClockMs, Is.EqualTo(900).Within(.001));
             session.SetPaused(false);
             session.TickInputFrame(.1f);
             Assert.That(session.IsEnemyImpactPending, Is.True);
@@ -267,19 +295,19 @@ namespace LastBell.Tests
             session.TickInputFrame(0);
             Assert.That(session.PlayerHp, Is.EqualTo(100));
             Assert.That(session.Stagger, Is.EqualTo(40));
-            Assert.That(session.ClockMs, Is.EqualTo(640).Within(.001));
+            Assert.That(session.ClockMs, Is.EqualTo(1000).Within(.001));
         }
 
         [Test]
         public void SavedCompletionFrameRestoresAsAFreshPausedCue()
         {
             var session = PlayingAt();
-            session.TickInputFrame(.54f);
+            session.TickInputFrame(.9f);
             var restored = new GameSession(catalog, RoundTrip(session.ExportSave()));
             Assert.That(restored.IsPaused, Is.True);
             Assert.That(restored.IsEnemyImpactPending, Is.False);
             Assert.That(restored.EnemyIntent.Progress, Is.Zero);
-            Assert.That(restored.EnemyIntent.SecondsToHit, Is.EqualTo(.54f).Within(.001));
+            Assert.That(restored.EnemyIntent.SecondsToHit, Is.EqualTo(.9f).Within(.001));
             restored.SetPaused(false);
             restored.TickInputFrame(.01f);
             Assert.That(restored.PlayerHp, Is.EqualTo(100));
@@ -291,7 +319,7 @@ namespace LastBell.Tests
         {
             var session = PlayingAt();
             session.TickInputFrame(3);
-            Assert.That(session.ReturnToLobby(), Is.True);
+            Assert.That(Home(session), Is.True);
             Assert.That(session.IsEnemyImpactPending, Is.False);
             Assert.That(session.StartRun(), Is.True);
             FinishTransitions(session);
@@ -305,27 +333,27 @@ namespace LastBell.Tests
         public void NewStageNeedsItsOwnCompletedCue()
         {
             var session = PlayingAt(weakEnemy: true);
-            session.TickInputFrame(.54f);
+            session.TickInputFrame(.9f);
             session.Attack();
             session.TickInputFrame(catalog.combat.attackWindupMs / 1000f);
             FinishTransitions(session);
             Assert.That(session.Stage, Is.EqualTo(2));
             Assert.That(session.IsEnemyImpactPending, Is.False);
             float hp = session.PlayerHp;
-            session.TickInputFrame(.54f);
+            session.TickInputFrame(.9f);
             Assert.That(session.IsEnemyImpactPending, Is.True);
             Assert.That(session.EnemyIntent.Direction, Is.EqualTo(DodgeDirection.Back));
             Assert.That(session.PlayerHp, Is.EqualTo(hp));
         }
 
         [Test]
-        public void CompletedCuePreservesSimultaneousLethalEnemyPriority()
+        public void CompletedCueResolvesBothHitsAndUsesDeathResult()
         {
             var save = PlayingAt(weakEnemy: true).ExportSave();
             save.run.playerHpMilli = 1000;
             var session = new GameSession(catalog, save);
             session.SetPaused(false);
-            session.TickInputFrame((540 - catalog.combat.attackWindupMs) / 1000f);
+            session.TickInputFrame((900 - catalog.combat.attackWindupMs) / 1000f);
             session.Attack();
             session.TickInputFrame(catalog.combat.attackWindupMs / 1000f);
             Assert.That(session.IsEnemyImpactPending, Is.True);
@@ -335,16 +363,16 @@ namespace LastBell.Tests
             Assert.That(session.Transition.Kind, Is.EqualTo(TransitionKind.Death));
             FinishTransitions(session);
             Assert.That(session.Phase, Is.EqualTo(SessionPhase.DeathResult));
-            Assert.That(session.EnemyHp, Is.EqualTo(1));
-            Assert.That(session.Gold, Is.Zero);
+            Assert.That(session.EnemyHp, Is.Zero);
+            Assert.That(session.Gold, Is.EqualTo(20));
         }
 
         [Test]
         public void WrongDirectionInsidePerfectWindowStillHurts()
         {
             var session = PlayingAt();
-            session.Tick(.51f);
-            session.Dodge(DodgeDirection.Forward);
+            session.Tick(.87f);
+            session.Dodge(DodgeDirection.Back);
             session.Tick(.03f);
             Assert.That(session.PlayerHp, Is.EqualTo(92));
             Assert.That(session.Stagger, Is.Zero);
@@ -353,7 +381,7 @@ namespace LastBell.Tests
         [TestCase(1, DodgeDirection.Up)]
         [TestCase(2, DodgeDirection.Back)]
         [TestCase(3, DodgeDirection.Down)]
-        [TestCase(4, DodgeDirection.Forward)]
+        [TestCase(4, DodgeDirection.Up)]
         public void FirstFourStagesIntroduceThreeDodgesAndAttackParry(int stage, DodgeDirection expected)
         {
             var session = PlayingAt(stage);
@@ -364,21 +392,22 @@ namespace LastBell.Tests
         }
 
         [Test]
-        public void BossWarnsAllThreeAreasBeforeAttackingAt320MsIntervals()
+        public void BossWarnsAllThreeAreasBeforeAttackingAt750MsIntervals()
         {
-            var session=PlayingAt(10);var queue=session.EnemyThreats;
+            var session=PlayingAt(20);var queue=session.EnemyThreats;
             Assert.That(queue.Length,Is.EqualTo(3));
-            Assert.That(queue.Select(t=>t.CueAtMs),Is.EqualTo(new double[]{0,480,960}));
-            Assert.That(queue.Select(t=>t.ImpactAtMs),Is.EqualTo(new double[]{1440,1760,2080}));
+            Assert.That(queue.Select(t=>t.CueAtMs),Is.EqualTo(new double[]{0,900,1800}));
+            Assert.That(queue.Select(t=>t.ImpactAtMs),Is.EqualTo(new double[]{2700,3450,4200}));
             EvadeNext(session);Assert.That(session.EnemyIntent.Visible,Is.True);
-            Assert.That(session.EnemyIntent.SecondsToHit,Is.EqualTo(.32f).Within(.001));
-            EvadeNext(session);Assert.That(session.Stagger,Is.EqualTo(80));Assert.That(session.PlayerHp,Is.EqualTo(100));
+            Assert.That(session.EnemyIntent.SecondsToHit,Is.EqualTo(.75f).Within(.001));
+            EvadeNext(session);Assert.That(session.Stagger,Is.EqualTo(35.2f).Within(.001));Assert.That(session.PlayerHp,Is.EqualTo(100));
         }
 
         [Test]
         public void TutorialAttackStepIsRestoredWithoutRepeatingTheDodge()
         {
             var session = new GameSession(catalog);
+            session.FinishPrologue();session.StartRun();
             session.Dodge(DodgeDirection.Up);
             var restored = new GameSession(catalog, RoundTrip(session.ExportSave()));
             Assert.That(restored.Phase, Is.EqualTo(SessionPhase.TutorialAttack));
@@ -388,15 +417,15 @@ namespace LastBell.Tests
         }
 
         [Test]
-        public void DodgeReuseIs260MsAndAttackIsAllowedAfter160Ms()
+        public void DodgeReuseIs360MsAndAttackIsAllowedAfter240Ms()
         {
             var session = PlayingAt();
             Assert.That(session.Dodge(DodgeDirection.Up), Is.True);
-            session.Tick(.159f);
+            session.Tick(.239f);
             Assert.That(session.Attack(), Is.False);
             session.Tick(.001f);
             Assert.That(session.Attack(), Is.True);
-            session.Tick(.099f);
+            session.Tick(.119f);
             Assert.That(session.Dodge(DodgeDirection.Up), Is.False);
             session.Tick(.001f);
             Assert.That(session.Dodge(DodgeDirection.Up), Is.True);
@@ -432,7 +461,7 @@ namespace LastBell.Tests
         }
 
         [Test]
-        public void SimultaneousLethalEnemyHitCancelsPlayerStrike()
+        public void SimultaneousLethalPlayerDamageStillResolvesPlayerStrike()
         {
             var save = PlayingAt().ExportSave();
             save.run.playerHpMilli = 1000;
@@ -444,7 +473,7 @@ namespace LastBell.Tests
             Assert.That(session.Transition.Kind, Is.EqualTo(TransitionKind.Death));
             FinishTransitions(session);
             Assert.That(session.Phase, Is.EqualTo(SessionPhase.DeathResult));
-            Assert.That(session.EnemyHp, Is.EqualTo(120));
+            Assert.That(session.EnemyHp, Is.EqualTo(110));
             Assert.That(session.Gold, Is.Zero);
         }
 
@@ -453,6 +482,8 @@ namespace LastBell.Tests
         {
             var session = PlayingAt();
             EvadeNext(session); EvadeNext(session); EvadeNext(session);
+            Assert.That(session.IsStunReady, Is.True); Assert.That(session.IsEnemyStunned, Is.False);
+            session.Attack(); session.Tick(.2f);
             Assert.That(session.IsEnemyStunned, Is.True);
             Assert.That(session.Stagger, Is.Zero);
             session.Tick(1.5f);
@@ -460,7 +491,7 @@ namespace LastBell.Tests
             EvadeNext(session);
             Assert.That(session.Stagger, Is.Zero);
             EvadeNext(session);
-            Assert.That(session.Stagger, Is.EqualTo(40));
+            Assert.That(session.Stagger, Is.EqualTo(72));
             Assert.That(session.PlayerHp, Is.EqualTo(100));
         }
 
@@ -510,7 +541,7 @@ namespace LastBell.Tests
             Assert.That(session.Attack(), Is.False);
             Assert.That(session.ClockMs, Is.EqualTo(before.run.clockMs));
             var restored = new GameSession(catalog, RoundTrip(before));
-            Assert.That(restored.EnemyIntent.SecondsToHit, Is.EqualTo(.54f).Within(.001f));
+            Assert.That(restored.EnemyIntent.SecondsToHit, Is.EqualTo(.9f).Within(.001f));
             Assert.That(restored.ExportSave().randomState, Is.EqualTo(before.randomState));
         }
 
@@ -521,7 +552,7 @@ namespace LastBell.Tests
             session.Attack(); session.Tick(.2f);
             Assert.That(session.Phase, Is.EqualTo(SessionPhase.Transition));
             Assert.That(session.Transition.Kind, Is.EqualTo(TransitionKind.EnemyDefeat));
-            Assert.That(session.Fragments, Is.EqualTo(1));
+            Assert.That(session.Fragments, Is.EqualTo(0));
             Assert.That(session.Gold, Is.EqualTo(150));
             Assert.That(session.RelicChoices.Count, Is.Zero);
             Assert.That(session.ExportSave().run.story, Is.Null);
@@ -542,7 +573,7 @@ namespace LastBell.Tests
             foreach (int level in new[] { 2, 5 })
             {
                 var lobby = LobbySave();
-                foreach (var relic in catalog.relics) lobby.relics.Add(new OwnedRelicData { id = relic.id, level = level });
+                lobby.storageCapacity=10; foreach (var relic in catalog.relics) lobby.relics.Add(new OwnedRelicData { id = relic.id, level = level });
                 var session = KillBoss(10, lobby);
                 string id = session.RelicChoices[0];
                 session.ChooseRelic(id);
@@ -554,42 +585,74 @@ namespace LastBell.Tests
         [Test]
         public void EquippedHpGrowthAndBossFullHealApplyOnce()
         {
-            var lobby = LobbySave();
-            lobby.relics.Add(new OwnedRelicData { id = "relic_10", level = 1 });
-            lobby.characters[0].equippedRelicIds = new[] { "relic_10" };
-            var save = KillBoss(10, lobby).ExportSave();
-            save.run.playerHpMilli = 50000;
-            save.run.offer.relicIds = new[] { "relic_10", "relic_05", "relic_15" };
-            save.run.offer.offeredLevels = new[] { 1, 0, 0 };
-            var session = new GameSession(catalog, RoundTrip(save));
-            session.ChooseRelic("relic_10");
-            Assert.That(session.PlayerMaxHp, Is.EqualTo(108));
-            Assert.That(session.PlayerHp, Is.EqualTo(108));
-            var restored = new GameSession(catalog, RoundTrip(session.ExportSave()));
-            Assert.That(restored.PlayerHp, Is.EqualTo(108));
-            Assert.That(restored.ChooseRelic("relic_10"), Is.False);
-            Assert.That(restored.PlayerHp, Is.EqualTo(108));
+            var lobby=LobbySave();lobby.relics.Add(new OwnedRelicData{id="relic_10",level=1});lobby.characters[0].equippedRelicIds=new[]{"relic_10"};
+            var s=KillBoss(10,lobby);Assert.That(s.PlayerHp,Is.EqualTo(106));
+            var save=s.ExportSave();save.run.offer.relicIds=new[]{"relic_10","relic_05","relic_15"};save.run.offer.offeredLevels=new[]{1,0,0};
+            save.run.pendingRewards[0].relicIds=(string[])save.run.offer.relicIds.Clone();s=new GameSession(catalog,RoundTrip(save));
+            Assert.That(s.ChooseRelic("relic_10"),Is.True);Assert.That(s.PlayerHp,Is.EqualTo(106));Assert.That(s.PlayerMaxHp,Is.EqualTo(106));
+            s=new GameSession(catalog,RoundTrip(s.ExportSave()));Assert.That(s.ChooseRelic("relic_10"),Is.False);
+            Assert.That(s.RetryRun(),Is.True);Assert.That(s.PlayerMaxHp,Is.EqualTo(108));Assert.That(s.PlayerHp,Is.EqualTo(108));
         }
 
         [Test]
-        public void TenChoiceCommitsCheckpointHealsAndAutomaticallyEntersEleven()
+        public void TwentyChoiceCompletesPrototypeAndRetryKeepsProgressAtStageEleven()
         {
-            var save = KillBoss(10).ExportSave();
+            var save = KillBoss(20).ExportSave();
             save.run.playerHpMilli = 30000;
-            Assert.That(save.characters[0].checkpoint, Is.Zero);
+            Assert.That(save.characters[0].checkpoint, Is.EqualTo(10));
             var session = new GameSession(catalog, RoundTrip(save));
-            Assert.That(session.Fragments, Is.EqualTo(3));
-            Assert.That(session.ReturnToLobby(), Is.False);
+            Assert.That(session.Fragments, Is.EqualTo(4));
+            Assert.That(Home(session), Is.False);
             session.ChooseRelic(session.RelicChoices[0]);
-            Assert.That(session.Transition.Kind, Is.EqualTo(TransitionKind.Travel));
-            FinishTransitions(session);
-            Assert.That(session.Phase, Is.EqualTo(SessionPhase.Combat));
-            Assert.That(session.Stage, Is.EqualTo(11));
-            Assert.That(session.PlayerHp, Is.EqualTo(session.PlayerMaxHp));
-            Assert.That(session.CheckpointStartStage, Is.EqualTo(11));
-            Assert.That(session.ExportSave().characters[0].checkpoint, Is.EqualTo(10));
-            session.ReturnToLobby(); session.StartRun();
-            Assert.That(session.Stage, Is.EqualTo(11));
+            Assert.That(session.Transition,Is.Null);
+            Assert.That(session.Phase,Is.EqualTo(SessionPhase.MvpComplete));
+            Assert.That(session.Stage,Is.EqualTo(20));Assert.That(session.Result.Cleared,Is.True);
+            Assert.That(session.PlayerHp,Is.EqualTo(30));Assert.That(session.CheckpointStartStage,Is.EqualTo(11));
+            long gold=session.Gold;int fragments=session.Fragments;var relics=session.ExportSave().relics.Count;
+            session.Tick(100);Assert.That(session.Stage,Is.EqualTo(20));Assert.That(session.EnemyThreats,Is.Empty);
+            session=new GameSession(catalog,RoundTrip(session.ExportSave()));Assert.That(session.Result.Cleared,Is.True);
+            Assert.That(session.RetryRun(),Is.True);Assert.That(session.Stage,Is.EqualTo(11));
+            Assert.That(session.Gold,Is.EqualTo(gold));Assert.That(session.Fragments,Is.EqualTo(fragments));
+            Assert.That(session.ExportSave().relics.Count,Is.EqualTo(relics));
+            Home(session);session.StartRun();Assert.That(session.Stage,Is.EqualTo(11));
+        }
+
+        [Test]
+        public void GateCheckpointUnlocksOnKillAndSurvivesDeathRetryAndLobby()
+        {
+            var s=PlayingAt(10,weakEnemy:true);s.Attack();s.Tick(.2f);
+            Assert.That(s.CheckpointStartStage,Is.EqualTo(11));
+            Assert.That(s.ExportSave().characters[0].checkpoint,Is.EqualTo(10));
+            long wallet=s.Gold;int fragments=s.Fragments;
+            s=new GameSession(catalog,RoundTrip(s.ExportSave()));
+            Assert.That(s.CheckpointStartStage,Is.EqualTo(11));
+            Assert.That(s.Gold,Is.EqualTo(wallet));Assert.That(s.Fragments,Is.EqualTo(fragments));
+            Assert.That(Home(s),Is.False,"Pending boss reward must not be skipped.");
+            s.SkipStory();FinishTransitions(s);
+            var save=s.ExportSave();save.run.playerHpMilli=1000;
+            s=new GameSession(catalog,RoundTrip(save));s.SetPaused(false);
+            s.Tick(s.EnemyIntent.SecondsToHit);FinishTransitions(s);Settle(s);
+            Assert.That(s.Phase,Is.EqualTo(SessionPhase.DeathResult));
+            Assert.That(s.Result.DefeatedStage,Is.EqualTo(11));Assert.That(s.Result.RetryStage,Is.EqualTo(11));
+            s=new GameSession(catalog,RoundTrip(s.ExportSave()));
+            Assert.That(s.RetryRun(),Is.True);Assert.That(s.Stage,Is.EqualTo(11));
+            Assert.That(s.PlayerHp,Is.EqualTo(s.PlayerMaxHp));Assert.That(s.ExportSave().run.earnedGold,Is.Zero);
+            Assert.That(s.Gold,Is.EqualTo(wallet));Assert.That(s.Fragments,Is.EqualTo(fragments));
+            Assert.That(Home(s),Is.True);Assert.That(s.Stage,Is.EqualTo(11));
+            s=new GameSession(catalog,RoundTrip(s.ExportSave()));s.StartRun();Assert.That(s.Stage,Is.EqualTo(11));
+        }
+
+        [TestCase(9,0,1)] [TestCase(10,0,11)] [TestCase(20,0,11)] [TestCase(0,10,11)] [TestCase(20,20,11)]
+        public void PriorSavesRecoverOnlyTheirCharacterCheckpoint(int cleared,int checkpoint,int start)
+        {
+            var save=LobbySave();save.characters[0].highestStage=cleared;save.characters[0].checkpoint=checkpoint;
+            save.highestClearedStage=20;save.gold=1234;save.fragments=7;
+            catalog.GetCharacter("dam").availableInMvp=true;
+            var s=new GameSession(catalog,RoundTrip(save));
+            Assert.That(s.CheckpointStartStage,Is.EqualTo(start));s.StartRun();Assert.That(s.Stage,Is.EqualTo(start));
+            Home(s);Assert.That(s.SelectCharacter("dam"),Is.True);
+            Assert.That(s.CheckpointStartStage,Is.EqualTo(1),"Shared progress must not unlock another character's checkpoint.");
+            Assert.That(s.Gold,Is.EqualTo(1234));Assert.That(s.Fragments,Is.EqualTo(7));
         }
 
         [Test]
@@ -632,16 +695,16 @@ namespace LastBell.Tests
         }
 
         [Test]
-        public void BoundaryCompletionIsMvpCompleteNotFakeFiftyClear()
+        public void OldBoundarySaveReturnsToLobbyWithoutLosingProgress()
         {
-            var session = PlayingAt(11, weakEnemy: true);
-            session.Attack(); session.Tick(.2f);
-            FinishTransitions(session);
-            Assert.That(session.Phase, Is.EqualTo(SessionPhase.MvpComplete));
-            Assert.That(session.Cycle, Is.Zero);
-            Assert.That(session.Stage, Is.EqualTo(11));
-            Assert.That(session.ExportSave().highestClearedStage, Is.EqualTo(11));
-            Assert.That(session.LastMessage, Does.Contain("MVP"));
+            var save=AsLegacySave(PlayingAt().ExportSave(),5);save.run.stage=11;save.characters[0].checkpoint=10;
+            save.characters[0].statLevels[0]=4;save.gold=1234;save.fragments=4;
+            save.relics.Add(new OwnedRelicData{id=catalog.relics[0].id,level=1});
+            var session=new GameSession(catalog,RoundTrip(save));
+            Assert.That(session.Phase,Is.EqualTo(SessionPhase.Lobby));Assert.That(session.Stage,Is.EqualTo(11));
+            Assert.That(session.Gold,Is.EqualTo(1234));Assert.That(session.Fragments,Is.EqualTo(4));
+            Assert.That(session.GetStatLevel(0),Is.EqualTo(4));Assert.That(session.GetRelicLevel(catalog.relics[0].id),Is.EqualTo(1));
+            Assert.That(session.StartRun(),Is.True);Assert.That(session.Stage,Is.EqualTo(11));
         }
 
         [Test]
@@ -676,7 +739,7 @@ namespace LastBell.Tests
             Assert.That(session.ClockMs, Is.EqualTo(clock));
             Assert.That(ready, Is.EqualTo(1));
             Assert.That(session.EnemyIntent.Progress, Is.Zero);
-            Assert.That(session.EnemyIntent.SecondsToHit, Is.EqualTo(.54f).Within(.001));
+            Assert.That(session.EnemyIntent.SecondsToHit, Is.EqualTo(.9f).Within(.001));
             Assert.That(session.Attack(), Is.True, "Next encounter starts ready, not with a frozen cooldown remainder.");
         }
 
@@ -712,45 +775,19 @@ namespace LastBell.Tests
         [Test]
         public void BossRewardIsFixedBeforeCollapseThenStoryResumesBeforeRelicChoice()
         {
-            var session = PlayingAt(10, weakEnemy: true);
-            session.Attack(); session.Tick(.2f);
-            string[] choices = session.RelicChoices.ToArray();
-            Assert.That(choices.Distinct().Count(), Is.EqualTo(3));
-            Assert.That(session.Gold, Is.EqualTo(750));
-            Assert.That(session.Fragments, Is.EqualTo(3));
-            Assert.That(session.CheckpointStartStage, Is.EqualTo(1));
-            Assert.That(session.ExportSave().unlockedStoryIds, Does.Contain("story_boss_10"));
-            Assert.That(session.ChooseRelic(choices[0]), Is.False);
-            session.Tick(.2f);
-            session = new GameSession(catalog, RoundTrip(session.ExportSave()));
-            Assert.That(session.Transition.ElapsedSeconds, Is.EqualTo(.2f).Within(.001));
-            session.Tick(.35f);
-            Assert.That(session.Phase, Is.EqualTo(SessionPhase.StoryDialogue));
-            Assert.That(session.Story.SceneId, Is.EqualTo("story_boss_10"));
-            Assert.That(session.Story.Text, Is.EqualTo("문은… 안에서 잠갔다."));
-            Assert.That(session.ChooseRelic(choices[0]), Is.False);
-            Assert.That(session.ReturnToLobby(), Is.False);
-            session.AdvanceStory();
-            session = new GameSession(catalog, RoundTrip(session.ExportSave()));
-            Assert.That(session.Story.LineIndex, Is.EqualTo(1));
-            CollectionAssert.AreEqual(choices, session.RelicChoices);
-            session.Tick(100);
-            Assert.That(session.Story.LineIndex, Is.EqualTo(1), "Dialogue never advances by time.");
-            session.AdvanceStory();
-            Assert.That(session.Story.Speaker, Is.EqualTo(catalog.GetCharacter("on").displayName));
-            session.AdvanceStory();
-            Assert.That(session.Phase, Is.EqualTo(SessionPhase.RewardChoice));
-            Assert.That(session.CheckpointStartStage, Is.EqualTo(1));
-            Assert.That(session.ExportSave().characters[0].seenStoryIds, Does.Contain("story_boss_10"));
-            Assert.That(session.AdvanceStory(), Is.False);
-            Assert.That(session.ChooseRelic(choices[0]), Is.True);
-            Assert.That(session.CheckpointStartStage, Is.EqualTo(11));
-            Assert.That(session.Transition.Kind, Is.EqualTo(TransitionKind.Travel));
-            var committed = new GameSession(catalog, RoundTrip(session.ExportSave()));
-            Assert.That(committed.ChooseRelic(choices[0]), Is.False);
-            Assert.That(committed.GetRelicLevel(choices[0]), Is.EqualTo(1));
-            Assert.That(committed.Gold, Is.EqualTo(750));
-            Assert.That(committed.Fragments, Is.EqualTo(3));
+            var session=PlayingAt(10,weakEnemy:true);session.Attack();session.Tick(.2f);
+            var choices=session.ExportSave().run.pendingRewards[0].relicIds;
+            Assert.That(choices.Distinct().Count(),Is.EqualTo(3));Assert.That(session.RelicChoices,Is.Empty);
+            Assert.That(session.Gold,Is.EqualTo(750));Assert.That(session.Fragments,Is.EqualTo(4));Assert.That(session.CheckpointStartStage,Is.EqualTo(11));
+            session=new GameSession(catalog,RoundTrip(session.ExportSave()));Assert.That(session.Phase,Is.EqualTo(SessionPhase.StoryDialogue));
+            session.AdvanceStory();session=new GameSession(catalog,RoundTrip(session.ExportSave()));Assert.That(session.Story.LineIndex,Is.EqualTo(1));
+            CollectionAssert.AreEqual(choices,session.ExportSave().run.pendingRewards[0].relicIds);
+            session.Tick(100);Assert.That(session.Story.LineIndex,Is.EqualTo(1));session.SkipStory();FinishTransitions(session);
+            Assert.That(session.Stage,Is.EqualTo(11));Assert.That(session.Phase,Is.EqualTo(SessionPhase.Combat));Assert.That(session.ChooseRelic(choices[0]),Is.False);
+            session.ReturnToLobby();session.ContinueSettlement();session.ContinueSettlement();
+            CollectionAssert.AreEqual(choices,session.RelicChoices);Assert.That(session.ChooseRelic(choices[0]),Is.True);
+            var committed=new GameSession(catalog,RoundTrip(session.ExportSave()));Assert.That(committed.ChooseRelic(choices[0]),Is.False);
+            Assert.That(committed.GetRelicLevel(choices[0]),Is.EqualTo(1));Assert.That(committed.Gold,Is.EqualTo(750));Assert.That(committed.Fragments,Is.EqualTo(4));
         }
 
         [Test]
@@ -759,17 +796,18 @@ namespace LastBell.Tests
             var first = KillBoss(10);
             var lobby = first.ExportSave(); lobby.phase = SessionPhase.Lobby; lobby.run = null;
             var replay = PlayingAt(10, lobby, true); replay.Attack(); replay.Tick(.2f); FinishTransitions(replay);
-            Assert.That(replay.Phase, Is.EqualTo(SessionPhase.RewardChoice));
+            Assert.That(replay.Phase, Is.EqualTo(SessionPhase.Combat));Assert.That(replay.PendingRewardCount,Is.EqualTo(1));
             Assert.That(replay.Story, Is.Null);
             catalog.GetCharacter("dam").availableInMvp = true;
             lobby.selectedCharacterId = "dam";
             var other = PlayingAt(10, lobby, true); other.Attack(); other.Tick(.2f); FinishTransitions(other);
             Assert.That(other.Phase, Is.EqualTo(SessionPhase.StoryDialogue));
             other.AdvanceStory(); other.AdvanceStory();
-            Assert.That(other.Story.Text, Is.EqualTo("내가 지키던 문도… 안에서 잠겼어."));
-            Assert.That(other.SkipStory(), Is.True);
-            Assert.That(other.Phase, Is.EqualTo(SessionPhase.RewardChoice));
-            Assert.That(other.CheckpointStartStage, Is.EqualTo(1));
+            Assert.That(other.Story.Text, Is.EqualTo("하하, 그 정도야 쉽지. 길 안내는 부탁한다!"));
+            Assert.That(other.Story.PortraitId, Is.EqualTo("dam"));
+            Assert.That(other.SkipStory(), Is.True);FinishTransitions(other);
+            Assert.That(other.Phase, Is.EqualTo(SessionPhase.Combat));Assert.That(other.PendingRewardCount,Is.EqualTo(1));
+            Assert.That(other.CheckpointStartStage, Is.EqualTo(11));
             Assert.That(other.ExportSave().relics, Is.Empty);
         }
 
@@ -805,6 +843,7 @@ namespace LastBell.Tests
             session.Tick(.999f);
             Assert.That(session.Phase, Is.EqualTo(SessionPhase.Transition));
             session.Tick(.001f);
+            Assert.That(session.Phase, Is.EqualTo(SessionPhase.RunEnd));session.ContinueSettlement();
             Assert.That(session.Phase, Is.EqualTo(SessionPhase.DeathResult));
             Assert.That(session.StartRun(), Is.False);
             Assert.That(session.RetryRun(), Is.True);
@@ -816,20 +855,23 @@ namespace LastBell.Tests
         public void SchemaOnePendingBossKeepsCandidatesAndRestoresFirstStory()
         {
             var old = KillBoss(10).ExportSave();
-            old.schemaVersion = 1; old.characters[0].seenStoryIds.Clear(); old.unlockedStoryIds.Clear();
+            old.run.stage=10;old.run.stageRewardApplied=true;old.run.enemyHpMilli=0;old.run.ended=false;old.run.pendingRewards.Clear();
+            AsLegacySave(old,1); old.characters[0].seenStoryIds.Clear(); old.unlockedStoryIds.Clear();
             var session = new GameSession(catalog, RoundTrip(old));
-            Assert.That(session.ExportSave().schemaVersion, Is.EqualTo(4));
+            Assert.That(session.ExportSave().schemaVersion, Is.EqualTo(9));
             Assert.That(session.Phase, Is.EqualTo(SessionPhase.StoryDialogue));
-            CollectionAssert.AreEqual(old.run.offer.relicIds, session.RelicChoices);
+            CollectionAssert.AreEqual(old.run.offer.relicIds, session.ExportSave().run.pendingRewards[0].relicIds);
             Assert.That(session.Gold, Is.EqualTo(old.gold));
-            Assert.That(session.CheckpointStartStage, Is.EqualTo(1));
+            Assert.That(session.CheckpointStartStage, Is.EqualTo(11));
         }
 
         [Test]
         public void SchemaOnePromisedMinibossChoiceIsGrandfatheredOnce()
         {
             var old = KillBoss(10).ExportSave();
-            old.schemaVersion = 1; old.run.stage = 5; old.run.offer.stage = 5;
+            old.run.pendingRewards.Clear();old.run.ended=false;old.run.stageRewardApplied=true;old.run.enemyHpMilli=0;
+            AsLegacySave(old,1); old.run.stage = 5; old.run.offer.stage = 5;
+            old.characters[0].highestStage=5;old.characters[0].checkpoint=0;
             old.run.offer.rewardId = old.run.runId + ":0:5";
             var session = new GameSession(catalog, RoundTrip(old));
             Assert.That(session.ExportSave().run.offer.legacyMidbossReward, Is.True);
@@ -838,7 +880,7 @@ namespace LastBell.Tests
             Assert.That(session.ChooseRelic(id), Is.True);
             Assert.That(session.ChooseRelic(id), Is.False);
             Assert.That(session.CheckpointStartStage, Is.EqualTo(1));
-            Assert.That(session.Stage, Is.EqualTo(6));
+            Assert.That(session.Stage, Is.EqualTo(5));
         }
 
         [TestCase("negative")]
@@ -908,21 +950,21 @@ namespace LastBell.Tests
         {
             var save = LobbySave();
             save.characters[0].statLevels[0] = 10;
-            save.fragments = 2;
+            save.fragments = 3;
             var session = new GameSession(catalog, save);
             session.Upgrade(0);
             Assert.That(session.Phase, Is.EqualTo(SessionPhase.ExchangeConfirmation));
-            Assert.That(session.PendingExchange.fragments, Is.EqualTo(2));
-            Assert.That(session.PendingExchange.gold, Is.EqualTo(200));
+            Assert.That(session.PendingExchange.fragments, Is.EqualTo(3));
+            Assert.That(session.PendingExchange.gold, Is.EqualTo(300));
             Assert.That(session.GetStatLevel(0), Is.EqualTo(10));
             Assert.That(session.ConfirmExchange(), Is.True);
-            Assert.That(session.Gold, Is.EqualTo(200));
+            Assert.That(session.Gold, Is.EqualTo(300));
             Assert.That(session.Fragments, Is.Zero);
             Assert.That(session.GetStatLevel(0), Is.EqualTo(10));
             Assert.That(session.ConfirmExchange(), Is.False);
             Assert.That(session.Upgrade(0), Is.True);
             Assert.That(session.GetStatLevel(0), Is.EqualTo(11));
-            Assert.That(session.Gold, Is.EqualTo(13));
+            Assert.That(session.Gold, Is.EqualTo(75));
         }
 
         [Test]
@@ -951,19 +993,19 @@ namespace LastBell.Tests
         [Test]
         public void EconomyMigrationPreservesWalletGrowthAndPromisedMaxReward()
         {
-            var save=LobbySave();save.schemaVersion=2;save.gold=2147483647;save.characters[0].statLevels[0]=30;save.characters[0].checkpoint=10;
+            var save=AsLegacySave(LobbySave(),2);save.gold=2147483647;save.characters[0].statLevels[0]=30;save.characters[0].checkpoint=10;
             var restored=new GameSession(catalog,RoundTrip(save));
             Assert.That(restored.Gold,Is.EqualTo(2147483647L));Assert.That(restored.GetStatLevel(0),Is.EqualTo(30));
-            Assert.That(restored.ExchangeRate,Is.EqualTo(150));Assert.That(restored.ExportSave().schemaVersion,Is.EqualTo(4));
-            save=LobbySave();foreach(var r in catalog.relics)save.relics.Add(new OwnedRelicData{id=r.id,level=5});
-            var old=KillBoss(10,save).ExportSave();old.schemaVersion=2;old.run.offer.maxGold=20;
+            Assert.That(restored.ExchangeRate,Is.EqualTo(150));Assert.That(restored.ExportSave().schemaVersion,Is.EqualTo(9));
+            save=LobbySave();save.storageCapacity=10;foreach(var r in catalog.relics)save.relics.Add(new OwnedRelicData{id=r.id,level=5});
+            var old=AsLegacySave(KillBoss(10,save).ExportSave(),2);old.run.stage=10;old.run.stageRewardApplied=true;old.run.pendingRewards.Clear();old.run.offer.maxGold=20;
             restored=new GameSession(catalog,RoundTrip(old));long before=restored.Gold;
             Assert.That(restored.PendingMaxRelicGold,Is.EqualTo(20));
             restored.ChooseRelic(restored.RelicChoices[0]);Assert.That(restored.Gold,Is.EqualTo(before+20));
         }
 
         [TestCase(0,100)] [TestCase(9,100)] [TestCase(10,150)] [TestCase(19,150)]
-        [TestCase(20,2776)] [TestCase(30,51700)] [TestCase(40,962966)] [TestCase(50,962966)]
+        [TestCase(20,1920)] [TestCase(30,75047)] [TestCase(40,5168490)] [TestCase(50,5168490)]
         public void ExchangeTierUsesHighestCompletedStage(int completed,long expected)
         {
             var save=LobbySave();save.highestClearedStage=completed;
@@ -975,8 +1017,31 @@ namespace LastBell.Tests
         {
             var save=LobbySave();save.gold=3000000000L;save.characters[0].statLevels[0]=49;
             var session=new GameSession(catalog,RoundTrip(save));session.Upgrade(0);
-            Assert.That(session.Gold,Is.EqualTo(2991031689L));
-            session=new GameSession(catalog,RoundTrip(session.ExportSave()));Assert.That(session.Gold,Is.EqualTo(2991031689L));
+            Assert.That(session.Gold,Is.EqualTo(1681991581L));
+            session=new GameSession(catalog,RoundTrip(session.ExportSave()));Assert.That(session.Gold,Is.EqualTo(1681991581L));
+        }
+
+        [TestCase(8)] [TestCase(9)]
+        public void EmptyLobbyRunSurvivesJsonUtilityWithoutInventingCombat(int schema)
+        {
+            var save=LobbySave();save.gold=3000000000L;
+            if(schema==8)AsLegacySave(save,8);
+            var session=new GameSession(catalog,RoundTrip(save));
+            Assert.That(session.Phase,Is.EqualTo(SessionPhase.Lobby));Assert.That(session.Gold,Is.EqualTo(3000000000L));
+            Assert.That(session.ExportSave().run,Is.Null);Assert.That(session.ExportSave().schemaVersion,Is.EqualTo(9));
+            CollectionAssert.AreEqual(new int[5],session.ExportSave().characters[0].statLevels);
+        }
+
+        [TestCase("hp")] [TestCase("money")] [TestCase("skill")] [TestCase("recovery")] [TestCase("stat")]
+        public void PartiallyPopulatedLobbyRunIsRejectedInsteadOfDiscarded(string field)
+        {
+            var save=LobbySave();save.run=new RunStateData();
+            if(field=="hp")save.run.playerHpMilli=1000;
+            if(field=="money")save.run.earnedGold=1;
+            if(field=="skill")save.run.skillCooldownRemainingMs=1;
+            if(field=="recovery")save.run.combatStats.recovery=1;
+            if(field=="stat")save.run.statLevels[4]=1;
+            Assert.Throws<InvalidOperationException>(()=>new GameSession(catalog,RoundTrip(save)));
         }
 
         [TestCase(0,false,40)] [TestCase(80,false,20)] [TestCase(80,true,0)]
@@ -985,8 +1050,8 @@ namespace LastBell.Tests
             var save=PlayingAt().ExportSave();save.run.stagger=before;save.run.immunityUntilMs=immune?10000:-1;
             var session=new GameSession(catalog,save);session.SetPaused(false);SessionEvent result=null;
             session.EventRaised+=e=>{if(e.Kind==SessionEventKind.PerfectDodge)result=e;};
-            Assert.That(session.EnemyIntent.TelegraphMs,Is.EqualTo(540));
-            session.Tick(.49f);session.Dodge(DodgeDirection.Up);Assert.That(result,Is.Null);
+            Assert.That(session.EnemyIntent.TelegraphMs,Is.EqualTo(900));
+            session.Tick(.85f);session.Dodge(DodgeDirection.Up);Assert.That(result,Is.Null);
             session.Tick(.05f);Assert.That(result,Is.Not.Null);
             Assert.That(result.StaggerBefore,Is.EqualTo(before));Assert.That(result.StaggerGained,Is.EqualTo(gain));
         }
@@ -994,9 +1059,9 @@ namespace LastBell.Tests
         [Test]
         public void IntegerStatsUseTheSameValuesForDisplayAndDamage()
         {
-            var lobby=LobbySave();lobby.characters[0].statLevels=new[]{9,9,9,9};
+            var lobby=LobbySave();lobby.characters[0].statLevels=new[]{9,9,9,9,0};
             var session=PlayingAt(1,lobby);var stats=session.PlayerStats;
-            Assert.That(stats.attack,Is.EqualTo(40));Assert.That(stats.maxHp,Is.EqualTo(298));
+            Assert.That(stats.attack,Is.EqualTo(46));Assert.That(stats.maxHp,Is.EqualTo(316));
             Assert.That(stats.critChance,Is.EqualTo(stats.critChancePercent/100d));
             Assert.That(stats.goldMultiplier,Is.EqualTo(1+stats.goldBonusPercent/100d));
             Assert.That(typeof(CombatStatsData).GetFields().All(f=>f.FieldType==typeof(int)),Is.True);
@@ -1009,13 +1074,15 @@ namespace LastBell.Tests
         [Test]
         public void LegacyFractionalRunMigratesWithoutLosingWalletOrProgress()
         {
-            var save=PlayingAt(9).ExportSave();save.schemaVersion=3;save.gold=3000000000L;
+            var save=AsLegacySave(PlayingAt(9).ExportSave(),3);save.gold=3000000000L;
             save.run.statLevels=new[]{9,9,9,9};save.run.stats=new LegacyCombatStatsData{attack=39.7,maxHpMilli=298000};
             save.run.combatStats=null;save.run.playerHpMilli=82550;save.run.enemyHpMilli=99450;
             var session=new GameSession(catalog,RoundTrip(save));
-            Assert.That(session.PlayerStats.attack,Is.EqualTo(40));Assert.That(session.PlayerHp,Is.EqualTo(83));
+            Assert.That(session.PlayerStats.attack,Is.EqualTo(46));Assert.That(session.PlayerHp,Is.EqualTo(83));
             Assert.That(session.EnemyHp,Is.EqualTo(99));Assert.That(session.Gold,Is.EqualTo(3000000000L));
-            Assert.That(session.Stage,Is.EqualTo(9));Assert.That(session.ExportSave().schemaVersion,Is.EqualTo(4));
+            Assert.That(session.Stage,Is.EqualTo(9));Assert.That(session.ExportSave().schemaVersion,Is.EqualTo(9));
+            CollectionAssert.AreEqual(new[]{9,9,9,9,0},session.ExportSave().run.statLevels);
+            Assert.That(session.PlayerStats.recovery,Is.EqualTo(5));
             Assert.That(session.ExportSave().run.earningsSinceUpdate,Is.True);
             Assert.That(session.ExportSave().run.earnedGold,Is.Zero);
         }
@@ -1026,7 +1093,7 @@ namespace LastBell.Tests
             var lobby=LobbySave();lobby.gold=3000000000L;lobby.fragments=7;
             var session=PlayingAt(5,lobby,true);session.Attack();session.Tick(.2f);FinishTransitions(session);
             var save=session.ExportSave();long earned=session.Gold-lobby.gold;int fragments=session.Fragments-lobby.fragments;
-            Assert.That(earned,Is.EqualTo(150));Assert.That(fragments,Is.EqualTo(1));
+            Assert.That(earned,Is.EqualTo(150));Assert.That(fragments,Is.EqualTo(0));
             save.run.playerHpMilli=1000;session=new GameSession(catalog,RoundTrip(save));session.SetPaused(false);
             session.Tick(session.EnemyIntent.SecondsToHit);FinishTransitions(session);
             Assert.That(session.Result.DefeatedStage,Is.EqualTo(6));Assert.That(session.Result.RetryStage,Is.EqualTo(1));
@@ -1044,19 +1111,18 @@ namespace LastBell.Tests
         [Test]
         public void ResultIncludesMaxDuplicateGoldOnceAndLobbyDoesNotCreditAgain()
         {
-            var lobby=LobbySave();lobby.gold=500;foreach(var r in catalog.relics)lobby.relics.Add(new OwnedRelicData{id=r.id,level=5});
-            var session=KillBoss(10,lobby);string relic=session.RelicChoices[0];session.ChooseRelic(relic);session.ChooseRelic(relic);FinishTransitions(session);
-            var save=session.ExportSave();save.run.playerHpMilli=1000;session=new GameSession(catalog,save);session.SetPaused(false);
-            session.Tick(session.EnemyIntent.SecondsToHit);FinishTransitions(session);
-            Assert.That(session.Result.Gold,Is.EqualTo(825));Assert.That(session.Result.Fragments,Is.EqualTo(3));
+            var lobby=LobbySave();lobby.gold=500;lobby.storageCapacity=10;foreach(var r in catalog.relics)lobby.relics.Add(new OwnedRelicData{id=r.id,level=5});
+            var session=KillBoss(20,lobby);string relic=session.RelicChoices[0];session.ChooseRelic(relic);session.ChooseRelic(relic);FinishTransitions(session);
+            session=new GameSession(catalog,session.ExportSave());Assert.That(session.Result.Cleared,Is.True);
+            Assert.That(session.Result.Gold,Is.EqualTo(catalog.GetBaseGold(catalog.GetStage(20))+catalog.GetMaxRelicGold(20)));Assert.That(session.Result.Fragments,Is.EqualTo(4));
             Assert.That(session.Result.RetryStage,Is.EqualTo(11));long wallet=session.Gold;
-            Assert.That(session.ReturnToLobby(),Is.True);Assert.That(session.ReturnToLobby(),Is.False);
+            Assert.That(Home(session),Is.True);Assert.That(Home(session),Is.False);
             Assert.That(session.Phase,Is.EqualTo(SessionPhase.Lobby));Assert.That(session.Gold,Is.EqualTo(wallet));
             Assert.That(session.Result,Is.Null);
         }
 
         [Test]
-        public void SlotsAndInventoryAreSharedButEquipmentAndGrowthAreCharacterSpecific()
+        public void StorageAndAutomaticRelicsAreSharedButGrowthIsCharacterSpecific()
         {
             catalog.GetCharacter("dam").availableInMvp = true;
             var save = LobbySave();
@@ -1066,12 +1132,12 @@ namespace LastBell.Tests
             save.relics.Add(new OwnedRelicData { id = "relic_05", level = 1 });
             var session = new GameSession(catalog, save);
             Assert.That(session.BuyNextSlot(), Is.True);
-            session.EquipRelic("relic_05");
+            Assert.That(session.EquipRelic("relic_05"), Is.False);
             session.Upgrade(0);
             session.SelectCharacter("dam");
-            Assert.That(session.UnlockedSlots, Is.EqualTo(2));
+            Assert.That(session.StorageCapacity, Is.EqualTo(4));
             Assert.That(session.GetRelicLevel("relic_05"), Is.EqualTo(1));
-            Assert.That(session.EquippedRelicIds.Count, Is.Zero);
+            Assert.That(session.EquippedRelicIds.Count, Is.EqualTo(1));
             Assert.That(session.GetStatLevel(0), Is.Zero);
             session.SelectCharacter("on");
             Assert.That(session.GetStatLevel(0), Is.EqualTo(1));

@@ -1,0 +1,39 @@
+{
+  "scope": "QA-owned probe and tools only; not final product/build freeze",
+  "frozenAtUtc": "2026-10-24T14:49:03.1272020+00:00",
+  "sourceFrozen": true,
+  "version": "0.9.4",
+  "dataVersion": "mvp1.17.0",
+  "unityCompile": "NOT_RUN",
+  "qaExecution": "NOT_RUN",
+  "files": [
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.cs",
+      "sha256": "D9C7BDFFA4C10822337B51E39BBB31E1CEED7BFFC574571D8587C61232599837"
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V5.cs",
+      "sha256": "4F53B8AFE7A935C2CA6703F5954B9B630337CFC0AD7F10A238FAB31653A18A7E"
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V5.cs.meta",
+      "sha256": "0716433BB89EB7F37A29E842F5144F196D649E379D620207D909B250423AEB5C"
+    },
+    {
+      "path": "Tools/QA/Dragon-v5/common.ps1",
+      "sha256": "87C5FA3B2A3EFBB813D5AC77AFB94F9ECF1CAF600238AD88653E7981151F7C93"
+    },
+    {
+      "path": "Tools/QA/Dragon-v5/run-campaign.ps1",
+      "sha256": "5AA24DE0416270C46A384460D5F3499E39232BB2F7B978769B44D8DF841AC2CD"
+    },
+    {
+      "path": "Tools/QA/Dragon-v5/analyze.py",
+      "sha256": "A0A030154352CF8F6F83FBD5DBF1FD39BF8D35485B5AE735B6F83EABF560443D"
+    },
+    {
+      "path": "Tools/QA/Dragon-v5/README.md",
+      "sha256": "FA952A42D43D3D47A3AF477E0CDF9B99720B2974E6FECB2D4F669616A98A4737"
+    }
+  ]
+}

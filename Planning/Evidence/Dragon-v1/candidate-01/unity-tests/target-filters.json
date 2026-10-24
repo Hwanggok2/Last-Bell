@@ -1,0 +1,14 @@
+{
+  "PlayMode": [
+    "LastBell.Tests.CombatPresentationTests.BossTenRemainsForDialogueThenRewardContinuesAndTwentyClears",
+    "LastBell.Tests.CombatPresentationTests.EnemyCuePoseAndIdleRespectPause",
+    "LastBell.Tests.CombatPresentationTests.HighContactFrameAcceptsDownButtonAndStaysAtHome",
+    "LastBell.Tests.CombatPresentationTests.LobbyPortraitPlaysIdleAndRefreshDoesNotResetIt",
+    "LastBell.Tests.CombatPresentationTests.ReviewedEnemyKeepsItsAuthoredHoldsAndContactsOnTheCombatBeat",
+    "LastBell.Tests.CombatPresentationTests.SelectedNativeDodgeAndAttackFollowAcceptedTiming"
+  ],
+  "EditMode": [
+    "LastBell.Tests.FeedbackV6Tests.DuplicateEnemyAndDuplicateDesignAreRejected",
+    "LastBell.Tests.GameSessionTests.StoryIsOncePerCharacterAndSkipNeverChoosesRelic"
+  ]
+}

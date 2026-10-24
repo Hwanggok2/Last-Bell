@@ -1,0 +1,1216 @@
+{
+  "manifestSha256": "46e0803e5ee6c49fa87faa711b3fdd8d47f9bb6d83d83ed9db3211a756d1c880",
+  "sourceSnapshot": "Existing integrated v2 player and Dragon assets; new v3/forest art is pending external integration.",
+  "planContactY": 590,
+  "sourceContactRow": 634,
+  "sourceGrassFringeStart": 602,
+  "worldContactY": -1.9805555555555556,
+  "camera": {
+    "y": -1.04,
+    "orthographicSize": 3.1
+  },
+  "groundedGeometryToleranceWorld": 1e-05,
+  "groundedRasterTolerancePhysicalPx": 1,
+  "intentionalMotion": "Run frames 2/6 and DodgeUp source lift plus accepted dodge root offsets are preserved; airborne poses are not assessed as grounded errors.",
+  "actors": [
+    {
+      "id": "dragon_hero_on",
+      "clips": [
+        {
+          "motion": "Run",
+          "frames": [
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Run/00.png",
+              "opaqueBottom": 29,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Run/01.png",
+              "opaqueBottom": 29,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Run/02.png",
+              "opaqueBottom": 27,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": -2
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Run/03.png",
+              "opaqueBottom": 29,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Run/04.png",
+              "opaqueBottom": 29,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Run/05.png",
+              "opaqueBottom": 29,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Run/06.png",
+              "opaqueBottom": 27,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": -2
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Run/07.png",
+              "opaqueBottom": 29,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": 0
+            }
+          ]
+        },
+        {
+          "motion": "Idle",
+          "frames": [
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Idle/00.png",
+              "opaqueBottom": 29,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Idle/01.png",
+              "opaqueBottom": 29,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Idle/02.png",
+              "opaqueBottom": 29,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Idle/03.png",
+              "opaqueBottom": 29,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Idle/04.png",
+              "opaqueBottom": 29,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Idle/05.png",
+              "opaqueBottom": 29,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Idle/06.png",
+              "opaqueBottom": 29,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Idle/07.png",
+              "opaqueBottom": 29,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": 0
+            }
+          ]
+        },
+        {
+          "motion": "Attack",
+          "frames": [
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Attack/00.png",
+              "opaqueBottom": 30,
+              "authoredPivotY": 30,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Attack/01.png",
+              "opaqueBottom": 30,
+              "authoredPivotY": 30,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Attack/02.png",
+              "opaqueBottom": 30,
+              "authoredPivotY": 30,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Attack/03.png",
+              "opaqueBottom": 30,
+              "authoredPivotY": 30,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Attack/04.png",
+              "opaqueBottom": 30,
+              "authoredPivotY": 30,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Attack/05.png",
+              "opaqueBottom": 30,
+              "authoredPivotY": 30,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Attack/06.png",
+              "opaqueBottom": 30,
+              "authoredPivotY": 30,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Attack/07.png",
+              "opaqueBottom": 30,
+              "authoredPivotY": 30,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Attack/08.png",
+              "opaqueBottom": 30,
+              "authoredPivotY": 30,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Attack/09.png",
+              "opaqueBottom": 30,
+              "authoredPivotY": 30,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Attack/10.png",
+              "opaqueBottom": 30,
+              "authoredPivotY": 30,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Attack/11.png",
+              "opaqueBottom": 30,
+              "authoredPivotY": 30,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Attack/12.png",
+              "opaqueBottom": 30,
+              "authoredPivotY": 30,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Attack/13.png",
+              "opaqueBottom": 30,
+              "authoredPivotY": 30,
+              "bottomMinusPivotNativePx": 0
+            }
+          ]
+        },
+        {
+          "motion": "DodgeUp",
+          "frames": [
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/DodgeUp/00.png",
+              "opaqueBottom": 29,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/DodgeUp/01.png",
+              "opaqueBottom": 28,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": -1
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/DodgeUp/02.png",
+              "opaqueBottom": 27,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": -2
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/DodgeUp/03.png",
+              "opaqueBottom": 26,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": -3
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/DodgeUp/04.png",
+              "opaqueBottom": 27,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": -2
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/DodgeUp/05.png",
+              "opaqueBottom": 28,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": -1
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/DodgeUp/06.png",
+              "opaqueBottom": 29,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/DodgeUp/07.png",
+              "opaqueBottom": 29,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": 0
+            }
+          ]
+        },
+        {
+          "motion": "DodgeBack",
+          "frames": [
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/DodgeBack/00.png",
+              "opaqueBottom": 29,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/DodgeBack/01.png",
+              "opaqueBottom": 29,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/DodgeBack/02.png",
+              "opaqueBottom": 29,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/DodgeBack/03.png",
+              "opaqueBottom": 29,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/DodgeBack/04.png",
+              "opaqueBottom": 29,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/DodgeBack/05.png",
+              "opaqueBottom": 29,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/DodgeBack/06.png",
+              "opaqueBottom": 29,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/DodgeBack/07.png",
+              "opaqueBottom": 29,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": 0
+            }
+          ]
+        },
+        {
+          "motion": "DodgeDown",
+          "frames": [
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/DodgeDown/00.png",
+              "opaqueBottom": 30,
+              "authoredPivotY": 30,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/DodgeDown/01.png",
+              "opaqueBottom": 30,
+              "authoredPivotY": 30,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/DodgeDown/02.png",
+              "opaqueBottom": 30,
+              "authoredPivotY": 30,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/DodgeDown/03.png",
+              "opaqueBottom": 30,
+              "authoredPivotY": 30,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/DodgeDown/04.png",
+              "opaqueBottom": 30,
+              "authoredPivotY": 30,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/DodgeDown/05.png",
+              "opaqueBottom": 30,
+              "authoredPivotY": 30,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/DodgeDown/06.png",
+              "opaqueBottom": 30,
+              "authoredPivotY": 30,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/DodgeDown/07.png",
+              "opaqueBottom": 30,
+              "authoredPivotY": 30,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/DodgeDown/08.png",
+              "opaqueBottom": 30,
+              "authoredPivotY": 30,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/DodgeDown/09.png",
+              "opaqueBottom": 30,
+              "authoredPivotY": 30,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/DodgeDown/10.png",
+              "opaqueBottom": 30,
+              "authoredPivotY": 30,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/DodgeDown/11.png",
+              "opaqueBottom": 30,
+              "authoredPivotY": 30,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/DodgeDown/12.png",
+              "opaqueBottom": 30,
+              "authoredPivotY": 30,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/DodgeDown/13.png",
+              "opaqueBottom": 30,
+              "authoredPivotY": 30,
+              "bottomMinusPivotNativePx": 0
+            }
+          ]
+        },
+        {
+          "motion": "Hit",
+          "frames": [
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Hit/00.png",
+              "opaqueBottom": 29,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Hit/01.png",
+              "opaqueBottom": 29,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Hit/02.png",
+              "opaqueBottom": 29,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Hit/03.png",
+              "opaqueBottom": 29,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Hit/04.png",
+              "opaqueBottom": 29,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v2/hero_on/Hit/05.png",
+              "opaqueBottom": 29,
+              "authoredPivotY": 29,
+              "bottomMinusPivotNativePx": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dragon_trail_slime",
+      "clips": [
+        {
+          "motion": "Idle",
+          "frames": [
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/slime/Idle/00.png",
+              "opaqueBottom": 24,
+              "authoredPivotY": 24,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/slime/Idle/01.png",
+              "opaqueBottom": 24,
+              "authoredPivotY": 24,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/slime/Idle/02.png",
+              "opaqueBottom": 24,
+              "authoredPivotY": 24,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/slime/Idle/03.png",
+              "opaqueBottom": 24,
+              "authoredPivotY": 24,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/slime/Idle/04.png",
+              "opaqueBottom": 24,
+              "authoredPivotY": 24,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/slime/Idle/05.png",
+              "opaqueBottom": 24,
+              "authoredPivotY": 24,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/slime/Idle/06.png",
+              "opaqueBottom": 24,
+              "authoredPivotY": 24,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/slime/Idle/07.png",
+              "opaqueBottom": 24,
+              "authoredPivotY": 24,
+              "bottomMinusPivotNativePx": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dragon_grass_slime",
+      "clips": [
+        {
+          "motion": "Idle",
+          "frames": [
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/slime/Idle/00.png",
+              "opaqueBottom": 24,
+              "authoredPivotY": 24,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/slime/Idle/01.png",
+              "opaqueBottom": 24,
+              "authoredPivotY": 24,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/slime/Idle/02.png",
+              "opaqueBottom": 24,
+              "authoredPivotY": 24,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/slime/Idle/03.png",
+              "opaqueBottom": 24,
+              "authoredPivotY": 24,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/slime/Idle/04.png",
+              "opaqueBottom": 24,
+              "authoredPivotY": 24,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/slime/Idle/05.png",
+              "opaqueBottom": 24,
+              "authoredPivotY": 24,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/slime/Idle/06.png",
+              "opaqueBottom": 24,
+              "authoredPivotY": 24,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/slime/Idle/07.png",
+              "opaqueBottom": 24,
+              "authoredPivotY": 24,
+              "bottomMinusPivotNativePx": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dragon_horn_rabbit",
+      "clips": [
+        {
+          "motion": "Idle",
+          "frames": [
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/horn_rabbit/Idle/00.png",
+              "opaqueBottom": 28,
+              "authoredPivotY": 28,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/horn_rabbit/Idle/01.png",
+              "opaqueBottom": 28,
+              "authoredPivotY": 28,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/horn_rabbit/Idle/02.png",
+              "opaqueBottom": 28,
+              "authoredPivotY": 28,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/horn_rabbit/Idle/03.png",
+              "opaqueBottom": 28,
+              "authoredPivotY": 28,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/horn_rabbit/Idle/04.png",
+              "opaqueBottom": 28,
+              "authoredPivotY": 28,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/horn_rabbit/Idle/05.png",
+              "opaqueBottom": 28,
+              "authoredPivotY": 28,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/horn_rabbit/Idle/06.png",
+              "opaqueBottom": 28,
+              "authoredPivotY": 28,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/horn_rabbit/Idle/07.png",
+              "opaqueBottom": 28,
+              "authoredPivotY": 28,
+              "bottomMinusPivotNativePx": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dragon_pebble_slime",
+      "clips": [
+        {
+          "motion": "Idle",
+          "frames": [
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/slime/Idle/00.png",
+              "opaqueBottom": 24,
+              "authoredPivotY": 24,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/slime/Idle/01.png",
+              "opaqueBottom": 24,
+              "authoredPivotY": 24,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/slime/Idle/02.png",
+              "opaqueBottom": 24,
+              "authoredPivotY": 24,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/slime/Idle/03.png",
+              "opaqueBottom": 24,
+              "authoredPivotY": 24,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/slime/Idle/04.png",
+              "opaqueBottom": 24,
+              "authoredPivotY": 24,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/slime/Idle/05.png",
+              "opaqueBottom": 24,
+              "authoredPivotY": 24,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/slime/Idle/06.png",
+              "opaqueBottom": 24,
+              "authoredPivotY": 24,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/slime/Idle/07.png",
+              "opaqueBottom": 24,
+              "authoredPivotY": 24,
+              "bottomMinusPivotNativePx": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dragon_great_horn_rabbit",
+      "clips": [
+        {
+          "motion": "Idle",
+          "frames": [
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/great_horn_rabbit/Idle/00.png",
+              "opaqueBottom": 40,
+              "authoredPivotY": 40,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/great_horn_rabbit/Idle/01.png",
+              "opaqueBottom": 40,
+              "authoredPivotY": 40,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/great_horn_rabbit/Idle/02.png",
+              "opaqueBottom": 40,
+              "authoredPivotY": 40,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/great_horn_rabbit/Idle/03.png",
+              "opaqueBottom": 40,
+              "authoredPivotY": 40,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/great_horn_rabbit/Idle/04.png",
+              "opaqueBottom": 40,
+              "authoredPivotY": 40,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/great_horn_rabbit/Idle/05.png",
+              "opaqueBottom": 40,
+              "authoredPivotY": 40,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/great_horn_rabbit/Idle/06.png",
+              "opaqueBottom": 40,
+              "authoredPivotY": 40,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/great_horn_rabbit/Idle/07.png",
+              "opaqueBottom": 40,
+              "authoredPivotY": 40,
+              "bottomMinusPivotNativePx": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dragon_young_boar",
+      "clips": [
+        {
+          "motion": "Idle",
+          "frames": [
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/boar/Idle/00.png",
+              "opaqueBottom": 32,
+              "authoredPivotY": 32,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/boar/Idle/01.png",
+              "opaqueBottom": 32,
+              "authoredPivotY": 32,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/boar/Idle/02.png",
+              "opaqueBottom": 32,
+              "authoredPivotY": 32,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/boar/Idle/03.png",
+              "opaqueBottom": 32,
+              "authoredPivotY": 32,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/boar/Idle/04.png",
+              "opaqueBottom": 32,
+              "authoredPivotY": 32,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/boar/Idle/05.png",
+              "opaqueBottom": 32,
+              "authoredPivotY": 32,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/boar/Idle/06.png",
+              "opaqueBottom": 32,
+              "authoredPivotY": 32,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/boar/Idle/07.png",
+              "opaqueBottom": 32,
+              "authoredPivotY": 32,
+              "bottomMinusPivotNativePx": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dragon_puddle_slime",
+      "clips": [
+        {
+          "motion": "Idle",
+          "frames": [
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/slime/Idle/00.png",
+              "opaqueBottom": 24,
+              "authoredPivotY": 24,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/slime/Idle/01.png",
+              "opaqueBottom": 24,
+              "authoredPivotY": 24,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/slime/Idle/02.png",
+              "opaqueBottom": 24,
+              "authoredPivotY": 24,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/slime/Idle/03.png",
+              "opaqueBottom": 24,
+              "authoredPivotY": 24,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/slime/Idle/04.png",
+              "opaqueBottom": 24,
+              "authoredPivotY": 24,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/slime/Idle/05.png",
+              "opaqueBottom": 24,
+              "authoredPivotY": 24,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/slime/Idle/06.png",
+              "opaqueBottom": 24,
+              "authoredPivotY": 24,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/slime/Idle/07.png",
+              "opaqueBottom": 24,
+              "authoredPivotY": 24,
+              "bottomMinusPivotNativePx": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dragon_stone_throw_rabbit",
+      "clips": [
+        {
+          "motion": "Idle",
+          "frames": [
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/horn_rabbit/Idle/00.png",
+              "opaqueBottom": 28,
+              "authoredPivotY": 28,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/horn_rabbit/Idle/01.png",
+              "opaqueBottom": 28,
+              "authoredPivotY": 28,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/horn_rabbit/Idle/02.png",
+              "opaqueBottom": 28,
+              "authoredPivotY": 28,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/horn_rabbit/Idle/03.png",
+              "opaqueBottom": 28,
+              "authoredPivotY": 28,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/horn_rabbit/Idle/04.png",
+              "opaqueBottom": 28,
+              "authoredPivotY": 28,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/horn_rabbit/Idle/05.png",
+              "opaqueBottom": 28,
+              "authoredPivotY": 28,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/horn_rabbit/Idle/06.png",
+              "opaqueBottom": 28,
+              "authoredPivotY": 28,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/horn_rabbit/Idle/07.png",
+              "opaqueBottom": 28,
+              "authoredPivotY": 28,
+              "bottomMinusPivotNativePx": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dragon_ridge_boar",
+      "clips": [
+        {
+          "motion": "Idle",
+          "frames": [
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/boar/Idle/00.png",
+              "opaqueBottom": 32,
+              "authoredPivotY": 32,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/boar/Idle/01.png",
+              "opaqueBottom": 32,
+              "authoredPivotY": 32,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/boar/Idle/02.png",
+              "opaqueBottom": 32,
+              "authoredPivotY": 32,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/boar/Idle/03.png",
+              "opaqueBottom": 32,
+              "authoredPivotY": 32,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/boar/Idle/04.png",
+              "opaqueBottom": 32,
+              "authoredPivotY": 32,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/boar/Idle/05.png",
+              "opaqueBottom": 32,
+              "authoredPivotY": 32,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/boar/Idle/06.png",
+              "opaqueBottom": 32,
+              "authoredPivotY": 32,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/boar/Idle/07.png",
+              "opaqueBottom": 32,
+              "authoredPivotY": 32,
+              "bottomMinusPivotNativePx": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dragon_great_tusk",
+      "clips": [
+        {
+          "motion": "Idle",
+          "frames": [
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/great_tusk/Idle/00.png",
+              "opaqueBottom": 40,
+              "authoredPivotY": 40,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/great_tusk/Idle/01.png",
+              "opaqueBottom": 40,
+              "authoredPivotY": 40,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/great_tusk/Idle/02.png",
+              "opaqueBottom": 40,
+              "authoredPivotY": 40,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/great_tusk/Idle/03.png",
+              "opaqueBottom": 40,
+              "authoredPivotY": 40,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/great_tusk/Idle/04.png",
+              "opaqueBottom": 40,
+              "authoredPivotY": 40,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/great_tusk/Idle/05.png",
+              "opaqueBottom": 40,
+              "authoredPivotY": 40,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/great_tusk/Idle/06.png",
+              "opaqueBottom": 40,
+              "authoredPivotY": 40,
+              "bottomMinusPivotNativePx": 0
+            },
+            {
+              "file": "Assets/Game/Art/Presentation/Clips/Dragon-v1/great_tusk/Idle/07.png",
+              "opaqueBottom": 40,
+              "authoredPivotY": 40,
+              "bottomMinusPivotNativePx": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "actualExistingRasterSamples": [
+    {
+      "file": "Planning\\Evidence\\Dragon-v2\\dragon-v2-candidate-01\\v2-1280x720\\v2-hp-1280x720-stage-1-100.png",
+      "cameraGroundTopPixel": 469.2258064516129,
+      "sampleRows": [
+        {
+          "yTop": 466,
+          "solidFootOutlinePixels": 66,
+          "shoeInteriorSample": [
+            32,
+            45,
+            56
+          ],
+          "terrainOnlySample": [
+            66,
+            101,
+            77
+          ]
+        },
+        {
+          "yTop": 467,
+          "solidFootOutlinePixels": 66,
+          "shoeInteriorSample": [
+            32,
+            45,
+            56
+          ],
+          "terrainOnlySample": [
+            68,
+            101,
+            75
+          ]
+        },
+        {
+          "yTop": 468,
+          "solidFootOutlinePixels": 66,
+          "shoeInteriorSample": [
+            32,
+            45,
+            56
+          ],
+          "terrainOnlySample": [
+            67,
+            101,
+            76
+          ]
+        },
+        {
+          "yTop": 469,
+          "solidFootOutlinePixels": 0,
+          "shoeInteriorSample": [
+            138,
+            135,
+            85
+          ],
+          "terrainOnlySample": [
+            135,
+            130,
+            86
+          ]
+        },
+        {
+          "yTop": 470,
+          "solidFootOutlinePixels": 0,
+          "shoeInteriorSample": [
+            227,
+            162,
+            91
+          ],
+          "terrainOnlySample": [
+            227,
+            167,
+            96
+          ]
+        },
+        {
+          "yTop": 471,
+          "solidFootOutlinePixels": 0,
+          "shoeInteriorSample": [
+            204,
+            152,
+            90
+          ],
+          "terrainOnlySample": [
+            204,
+            153,
+            92
+          ]
+        }
+      ]
+    },
+    {
+      "file": "Planning\\Evidence\\Dragon-v2\\dragon-v2-candidate-01\\v2-640x360\\v2-hp-640x360-stage-1-100.png",
+      "cameraGroundTopPixel": 234.61290322580646,
+      "sampleRows": [
+        {
+          "yTop": 231,
+          "solidFootOutlinePixels": 36,
+          "shoeInteriorSample": [
+            32,
+            45,
+            56
+          ],
+          "terrainOnlySample": [
+            68,
+            103,
+            79
+          ]
+        },
+        {
+          "yTop": 232,
+          "solidFootOutlinePixels": 36,
+          "shoeInteriorSample": [
+            32,
+            45,
+            56
+          ],
+          "terrainOnlySample": [
+            68,
+            101,
+            78
+          ]
+        },
+        {
+          "yTop": 233,
+          "solidFootOutlinePixels": 36,
+          "shoeInteriorSample": [
+            32,
+            45,
+            56
+          ],
+          "terrainOnlySample": [
+            68,
+            101,
+            75
+          ]
+        },
+        {
+          "yTop": 234,
+          "solidFootOutlinePixels": 0,
+          "shoeInteriorSample": [
+            70,
+            114,
+            75
+          ],
+          "terrainOnlySample": [
+            57,
+            99,
+            75
+          ]
+        },
+        {
+          "yTop": 235,
+          "solidFootOutlinePixels": 0,
+          "shoeInteriorSample": [
+            203,
+            152,
+            90
+          ],
+          "terrainOnlySample": [
+            204,
+            153,
+            92
+          ]
+        },
+        {
+          "yTop": 236,
+          "solidFootOutlinePixels": 0,
+          "shoeInteriorSample": [
+            208,
+            155,
+            91
+          ],
+          "terrainOnlySample": [
+            208,
+            156,
+            93
+          ]
+        }
+      ]
+    }
+  ],
+  "newUnityRenderPerformed": false
+}

@@ -1,0 +1,129 @@
+{
+  "date": "2026-10-22T21:14:08.306272+09:00",
+  "scope": "Approved complete feedback v6 applied to local Windows and WebGL builds",
+  "catalog": {
+    "dataVersion": "mvp1.8.0",
+    "sourceFileSha256": "056c0dc4ba654c86aa7b02c310387583d67eab56e3ff63812fef5a7a1957b571",
+    "playableStages": 20,
+    "distinctActorArtIds": 15,
+    "saveSchema": 6
+  },
+  "tests": {
+    "editMode": {
+      "jobId": "16f14f58967b456d8e519ec176acd44f",
+      "total": 158,
+      "passed": 158,
+      "failed": 0,
+      "skipped": 0,
+      "durationSeconds": 3.6697592,
+      "resultState": "Passed"
+    },
+    "playMode": {
+      "jobId": "574da602d8ed4c87a6bae80199a05935",
+      "total": 19,
+      "passed": 19,
+      "failed": 0,
+      "skipped": 0,
+      "durationSeconds": 6.2359858,
+      "resultState": "Passed"
+    },
+    "finalGoldAndV6Regression": {
+      "jobId": "db3dd77eba0a45d29cf8731531a965a9",
+      "total": 18,
+      "passed": 18,
+      "failed": 0,
+      "skipped": 0,
+      "durationSeconds": 0.8141846,
+      "resultState": "Passed"
+    },
+    "pythonCatalog": {
+      "passed": 19,
+      "failed": 0
+    },
+    "independentSessionContract": {
+      "passedAssertions": 853
+    }
+  },
+  "native": [
+    {
+      "passed": true,
+      "checks": 74,
+      "width": 960,
+      "height": 540,
+      "evidenceDirectory": "960"
+    },
+    {
+      "passed": true,
+      "checks": 74,
+      "width": 640,
+      "height": 360,
+      "evidenceDirectory": "640"
+    }
+  ],
+  "builds": {
+    "windows": {
+      "result": "Succeeded",
+      "bytes": 208830485,
+      "errors": 0
+    },
+    "webGL": {
+      "result": "Succeeded",
+      "bytes": 23263165,
+      "errors": 0
+    }
+  },
+  "artifacts": [
+    {
+      "path": "Builds/Windows/LastBellMvp_Data/Managed/LastBell.Runtime.dll",
+      "bytes": 256000,
+      "sha256": "ef162c183e7f8241858f6879653e020cd0f0297d9abf9b8313549796805cc0fa"
+    },
+    {
+      "path": "Builds/WebGL/Build/ee27a1a7bfe773ee35b3457f2848a22d.wasm.unityweb",
+      "bytes": 5948296,
+      "sha256": "6e3859192b453e53407339a51a7344df78a8d06e67c61b6b6ae853fb6e8f1b51"
+    },
+    {
+      "path": "Builds/WebGL/Build/cdb1e0dd4e42218115a049d961e03a78.data.unityweb",
+      "bytes": 17116793,
+      "sha256": "befb258fe288dfaf1815c9b2908e50ed52e3c81ba354a7785f80caf6b1ed8e98"
+    }
+  ],
+  "gold": {
+    "goldPerDotInPlayableStages": 1,
+    "countsVerified": [
+      20,
+      750,
+      13880
+    ],
+    "totalSeconds": 1.2,
+    "emissionSeconds": 0.84,
+    "flightSeconds": 0.36,
+    "futureRewardSafetyCap": 32768,
+    "maxConcurrentVerticesBelow": 65000,
+    "sizesPx": {
+      "upTo150": 3,
+      "upTo2000": 2,
+      "above2000": 1
+    },
+    "sound": "Original 85ms pickup; minimum 75ms trigger spacing"
+  },
+  "visualInspection": [
+    "Names and boss HP at 960x540 and 640x360",
+    "15 actor assignments across all 20 stages",
+    "Stage 10 boss stays visible for all three revised lines; skip clear of wallet",
+    "Separate straight gold pixels for 20,750,13880 rewards",
+    "Hook hound and stage20 attacks",
+    "Stage11 continuation and stage20 result"
+  ],
+  "web": {
+    "url": "http://127.0.0.1:8876/",
+    "screenshot": "web-game.png",
+    "consoleErrors": 0
+  },
+  "limitations": [
+    "Local builds only; no public site or Android deployment",
+    "No physical mobile-device test",
+    "Existing background art reused for stages11–20; separate residential-area art is follow-up work"
+  ]
+}

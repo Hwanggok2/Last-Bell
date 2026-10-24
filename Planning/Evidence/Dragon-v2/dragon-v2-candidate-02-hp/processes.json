@@ -1,0 +1,60 @@
+[
+  {
+    "arguments": [
+      "-dragon-theme-smoke",
+      "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v2\\dragon-v2-candidate-02-hp\\v2-hp-1280x720\"",
+      "-dragon-theme-case",
+      "v2-hp",
+      "-lastbell-save-dir",
+      "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v2\\dragon-v2-candidate-02-hp\\v2-hp-1280x720\\profiles\\boot\"",
+      "-screen-width",
+      "1280",
+      "-screen-height",
+      "720",
+      "-screen-fullscreen",
+      "0",
+      "-logFile",
+      "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v2\\dragon-v2-candidate-02-hp\\v2-hp-1280x720\\player.log\""
+    ],
+    "resultPresent": true,
+    "height": 720,
+    "startedAt": "2026-10-24T18:35:01.4195249+09:00",
+    "name": "v2-hp-1280x720",
+    "timedOut": false,
+    "width": 1280,
+    "case": "v2-hp",
+    "exitCode": 0,
+    "passed": true,
+    "exe": "C:\\Github\\Test2\\Builds\\Dragon-v2-QA\\LastBellMvp.exe",
+    "endedAt": "2026-10-24T18:35:10.1911673+09:00"
+  },
+  {
+    "arguments": [
+      "-dragon-theme-smoke",
+      "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v2\\dragon-v2-candidate-02-hp\\v2-hp-640x360\"",
+      "-dragon-theme-case",
+      "v2-hp",
+      "-lastbell-save-dir",
+      "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v2\\dragon-v2-candidate-02-hp\\v2-hp-640x360\\profiles\\boot\"",
+      "-screen-width",
+      "640",
+      "-screen-height",
+      "360",
+      "-screen-fullscreen",
+      "0",
+      "-logFile",
+      "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v2\\dragon-v2-candidate-02-hp\\v2-hp-640x360\\player.log\""
+    ],
+    "resultPresent": true,
+    "height": 360,
+    "startedAt": "2026-10-24T18:35:10.2039570+09:00",
+    "name": "v2-hp-640x360",
+    "timedOut": false,
+    "width": 640,
+    "case": "v2-hp",
+    "exitCode": 0,
+    "passed": true,
+    "exe": "C:\\Github\\Test2\\Builds\\Dragon-v2-QA\\LastBellMvp.exe",
+    "endedAt": "2026-10-24T18:35:17.6004153+09:00"
+  }
+]

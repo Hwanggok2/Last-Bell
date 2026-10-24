@@ -1,0 +1,1082 @@
+{
+    "visualReview": "NOT_RUN",
+    "osInput": "DEFERRED",
+    "capturePolicy": "Every rendered frame; PNG encoding happens after each segment. Use recorded realtime intervals for playback, never assume 60 fps.",
+    "writtenFrames": 661,
+    "clips": [
+        {
+            "artId": "dragon_hero_on",
+            "motion": "Idle",
+            "sourceId": "dragon-v2-hero_on-Idle",
+            "contactFrame": -1,
+            "duration": 0.6660000085830689,
+            "referenceHeight": 0.0,
+            "holds": [
+                83,
+                83,
+                84,
+                83,
+                83,
+                84,
+                83,
+                83
+            ],
+            "sourceFrames": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ],
+            "sprites": [
+                "00",
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07"
+            ],
+            "pivots": [
+                {
+                    "x": 16.0,
+                    "y": 3.0
+                },
+                {
+                    "x": 16.0,
+                    "y": 3.0
+                },
+                {
+                    "x": 16.0,
+                    "y": 3.0
+                },
+                {
+                    "x": 16.0,
+                    "y": 3.0
+                },
+                {
+                    "x": 16.0,
+                    "y": 3.0
+                },
+                {
+                    "x": 16.0,
+                    "y": 3.0
+                },
+                {
+                    "x": 16.0,
+                    "y": 3.0
+                },
+                {
+                    "x": 16.0,
+                    "y": 3.0
+                }
+            ],
+            "sizes": [
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                }
+            ]
+        },
+        {
+            "artId": "dragon_hero_on",
+            "motion": "Run",
+            "sourceId": "dragon-v2-hero_on-Run",
+            "contactFrame": -1,
+            "duration": 0.4000000059604645,
+            "referenceHeight": 0.0,
+            "holds": [
+                40,
+                40,
+                60,
+                60,
+                40,
+                40,
+                60,
+                60
+            ],
+            "sourceFrames": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ],
+            "sprites": [
+                "00",
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07"
+            ],
+            "pivots": [
+                {
+                    "x": 18.0,
+                    "y": 3.0
+                },
+                {
+                    "x": 18.0,
+                    "y": 3.0
+                },
+                {
+                    "x": 18.0,
+                    "y": 3.0
+                },
+                {
+                    "x": 18.0,
+                    "y": 3.0
+                },
+                {
+                    "x": 18.0,
+                    "y": 3.0
+                },
+                {
+                    "x": 18.0,
+                    "y": 3.0
+                },
+                {
+                    "x": 18.0,
+                    "y": 3.0
+                },
+                {
+                    "x": 18.0,
+                    "y": 3.0
+                }
+            ],
+            "sizes": [
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                }
+            ]
+        },
+        {
+            "artId": "dragon_hero_on",
+            "motion": "Attack",
+            "sourceId": "dragon-v2-hero_on-Attack",
+            "contactFrame": 7,
+            "duration": 0.5,
+            "referenceHeight": 0.0,
+            "holds": [
+                132,
+                11,
+                11,
+                11,
+                12,
+                11,
+                12,
+                43,
+                43,
+                43,
+                43,
+                43,
+                43,
+                42
+            ],
+            "sourceFrames": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+            ],
+            "sprites": [
+                "00",
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12",
+                "13"
+            ],
+            "pivots": [
+                {
+                    "x": 17.0,
+                    "y": 2.0
+                },
+                {
+                    "x": 17.0,
+                    "y": 2.0
+                },
+                {
+                    "x": 17.0,
+                    "y": 2.0
+                },
+                {
+                    "x": 17.0,
+                    "y": 2.0
+                },
+                {
+                    "x": 17.0,
+                    "y": 2.0
+                },
+                {
+                    "x": 17.0,
+                    "y": 2.0
+                },
+                {
+                    "x": 17.0,
+                    "y": 2.0
+                },
+                {
+                    "x": 17.0,
+                    "y": 2.0
+                },
+                {
+                    "x": 17.0,
+                    "y": 2.0
+                },
+                {
+                    "x": 17.0,
+                    "y": 2.0
+                },
+                {
+                    "x": 17.0,
+                    "y": 2.0
+                },
+                {
+                    "x": 17.0,
+                    "y": 2.0
+                },
+                {
+                    "x": 17.0,
+                    "y": 2.0
+                },
+                {
+                    "x": 17.0,
+                    "y": 2.0
+                }
+            ],
+            "sizes": [
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                }
+            ]
+        },
+        {
+            "artId": "dragon_hero_on",
+            "motion": "DodgeUp",
+            "sourceId": "dragon-v2-hero_on-DodgeUp",
+            "contactFrame": 3,
+            "duration": 0.33399999141693118,
+            "referenceHeight": 0.0,
+            "holds": [
+                42,
+                42,
+                41,
+                42,
+                42,
+                41,
+                42,
+                42
+            ],
+            "sourceFrames": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ],
+            "sprites": [
+                "00",
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07"
+            ],
+            "pivots": [
+                {
+                    "x": 16.0,
+                    "y": 3.0
+                },
+                {
+                    "x": 16.0,
+                    "y": 3.0
+                },
+                {
+                    "x": 16.0,
+                    "y": 3.0
+                },
+                {
+                    "x": 16.0,
+                    "y": 3.0
+                },
+                {
+                    "x": 16.0,
+                    "y": 3.0
+                },
+                {
+                    "x": 16.0,
+                    "y": 3.0
+                },
+                {
+                    "x": 16.0,
+                    "y": 3.0
+                },
+                {
+                    "x": 16.0,
+                    "y": 3.0
+                }
+            ],
+            "sizes": [
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                }
+            ]
+        },
+        {
+            "artId": "dragon_hero_on",
+            "motion": "DodgeBack",
+            "sourceId": "dragon-v2-hero_on-DodgeBack",
+            "contactFrame": 3,
+            "duration": 0.33399999141693118,
+            "referenceHeight": 0.0,
+            "holds": [
+                42,
+                42,
+                41,
+                42,
+                42,
+                41,
+                42,
+                42
+            ],
+            "sourceFrames": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ],
+            "sprites": [
+                "00",
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07"
+            ],
+            "pivots": [
+                {
+                    "x": 16.0,
+                    "y": 3.0
+                },
+                {
+                    "x": 16.0,
+                    "y": 3.0
+                },
+                {
+                    "x": 16.0,
+                    "y": 3.0
+                },
+                {
+                    "x": 16.0,
+                    "y": 3.0
+                },
+                {
+                    "x": 16.0,
+                    "y": 3.0
+                },
+                {
+                    "x": 16.0,
+                    "y": 3.0
+                },
+                {
+                    "x": 16.0,
+                    "y": 3.0
+                },
+                {
+                    "x": 16.0,
+                    "y": 3.0
+                }
+            ],
+            "sizes": [
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                }
+            ]
+        },
+        {
+            "artId": "dragon_hero_on",
+            "motion": "DodgeDown",
+            "sourceId": "dragon-v2-hero_on-DodgeDown",
+            "contactFrame": 7,
+            "duration": 0.5,
+            "referenceHeight": 0.0,
+            "holds": [
+                132,
+                11,
+                11,
+                11,
+                12,
+                11,
+                12,
+                43,
+                43,
+                43,
+                43,
+                43,
+                43,
+                42
+            ],
+            "sourceFrames": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+            ],
+            "sprites": [
+                "00",
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12",
+                "13"
+            ],
+            "pivots": [
+                {
+                    "x": 17.0,
+                    "y": 2.0
+                },
+                {
+                    "x": 17.0,
+                    "y": 2.0
+                },
+                {
+                    "x": 17.0,
+                    "y": 2.0
+                },
+                {
+                    "x": 17.0,
+                    "y": 2.0
+                },
+                {
+                    "x": 17.0,
+                    "y": 2.0
+                },
+                {
+                    "x": 17.0,
+                    "y": 2.0
+                },
+                {
+                    "x": 17.0,
+                    "y": 2.0
+                },
+                {
+                    "x": 17.0,
+                    "y": 2.0
+                },
+                {
+                    "x": 17.0,
+                    "y": 2.0
+                },
+                {
+                    "x": 17.0,
+                    "y": 2.0
+                },
+                {
+                    "x": 17.0,
+                    "y": 2.0
+                },
+                {
+                    "x": 17.0,
+                    "y": 2.0
+                },
+                {
+                    "x": 17.0,
+                    "y": 2.0
+                },
+                {
+                    "x": 17.0,
+                    "y": 2.0
+                }
+            ],
+            "sizes": [
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                },
+                {
+                    "x": 32.0,
+                    "y": 32.0
+                }
+            ]
+        }
+    ],
+    "segments": [
+        {
+            "name": "idle",
+            "clock": "real-frame-idle-static-session",
+            "frames": 82,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 3.8449156284332277,
+            "lastRealtime": 5.217344760894775,
+            "maxDelta": 0.037664201110601428,
+            "maxRealtimeGap": 0.037700653076171878,
+            "encodeSeconds": 5.983677387237549
+        },
+        {
+            "name": "attack-stage-01",
+            "clock": "real-frame-v2",
+            "frames": 46,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 12.271135330200196,
+            "lastRealtime": 13.079035758972168,
+            "maxDelta": 0.04385840520262718,
+            "maxRealtimeGap": 0.03850841522216797,
+            "encodeSeconds": 3.375643730163574
+        },
+        {
+            "name": "attack-stage-10",
+            "clock": "real-frame-v2",
+            "frames": 48,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 17.506628036499025,
+            "lastRealtime": 18.314857482910158,
+            "maxDelta": 0.03605270013213158,
+            "maxRealtimeGap": 0.03198814392089844,
+            "encodeSeconds": 3.148456573486328
+        },
+        {
+            "name": "defense-DodgeUp",
+            "clock": "real-frame-v2",
+            "frames": 83,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 22.508703231811525,
+            "lastRealtime": 23.925275802612306,
+            "maxDelta": 0.0304827019572258,
+            "maxRealtimeGap": 0.03253364562988281,
+            "encodeSeconds": 6.018302917480469
+        },
+        {
+            "name": "defense-DodgeBack",
+            "clock": "real-frame-v2",
+            "frames": 82,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 30.991621017456056,
+            "lastRealtime": 32.40228271484375,
+            "maxDelta": 0.033677294850349429,
+            "maxRealtimeGap": 0.03703117370605469,
+            "encodeSeconds": 5.91973876953125
+        },
+        {
+            "name": "defense-DodgeDown",
+            "clock": "real-frame-v2",
+            "frames": 83,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 39.36857986450195,
+            "lastRealtime": 40.781856536865237,
+            "maxDelta": 0.030566701665520669,
+            "maxRealtimeGap": 0.032657623291015628,
+            "encodeSeconds": 5.969341278076172
+        },
+        {
+            "name": "defeat-travel-arrival",
+            "clock": "real-frame-v2",
+            "frames": 237,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 47.80455780029297,
+            "lastRealtime": 51.80911636352539,
+            "maxDelta": 0.03635070100426674,
+            "maxRealtimeGap": 0.033138275146484378,
+            "encodeSeconds": 17.291297912597658
+        }
+    ],
+    "hp": [
+        {
+            "file": "v2-hp-1280x720-stage-1-zero.png",
+            "role": "player",
+            "value": 0.0,
+            "capacity": 26,
+            "expected": 0,
+            "actual": 0,
+            "bounds": {
+                "serializedVersion": "2",
+                "x": 420.0,
+                "y": 168.77418518066407,
+                "width": 160.0,
+                "height": 36.0
+            }
+        },
+        {
+            "file": "v2-hp-1280x720-stage-1-zero.png",
+            "role": "enemy",
+            "value": 0.0,
+            "capacity": 31,
+            "expected": 0,
+            "actual": 0,
+            "bounds": {
+                "serializedVersion": "2",
+                "x": 808.0,
+                "y": 168.77418518066407,
+                "width": 184.0,
+                "height": 36.0
+            }
+        },
+        {
+            "file": "v2-hp-1280x720-stage-1-tiny.png",
+            "role": "player",
+            "value": 9.999999974752428e-7,
+            "capacity": 26,
+            "expected": 1,
+            "actual": 1,
+            "bounds": {
+                "serializedVersion": "2",
+                "x": 420.0,
+                "y": 168.77418518066407,
+                "width": 160.0,
+                "height": 36.0
+            }
+        },
+        {
+            "file": "v2-hp-1280x720-stage-1-tiny.png",
+            "role": "enemy",
+            "value": 9.999999974752428e-7,
+            "capacity": 31,
+            "expected": 1,
+            "actual": 1,
+            "bounds": {
+                "serializedVersion": "2",
+                "x": 808.0,
+                "y": 168.77418518066407,
+                "width": 184.0,
+                "height": 36.0
+            }
+        },
+        {
+            "file": "v2-hp-1280x720-stage-1-25.png",
+            "role": "player",
+            "value": 0.25,
+            "capacity": 26,
+            "expected": 7,
+            "actual": 7,
+            "bounds": {
+                "serializedVersion": "2",
+                "x": 420.0,
+                "y": 168.77418518066407,
+                "width": 160.0,
+                "height": 36.0
+            }
+        },
+        {
+            "file": "v2-hp-1280x720-stage-1-25.png",
+            "role": "enemy",
+            "value": 0.25,
+            "capacity": 31,
+            "expected": 8,
+            "actual": 8,
+            "bounds": {
+                "serializedVersion": "2",
+                "x": 808.0,
+                "y": 168.77418518066407,
+                "width": 184.0,
+                "height": 36.0
+            }
+        },
+        {
+            "file": "v2-hp-1280x720-stage-1-50.png",
+            "role": "player",
+            "value": 0.5,
+            "capacity": 26,
+            "expected": 13,
+            "actual": 13,
+            "bounds": {
+                "serializedVersion": "2",
+                "x": 420.0,
+                "y": 168.77418518066407,
+                "width": 160.0,
+                "height": 36.0
+            }
+        },
+        {
+            "file": "v2-hp-1280x720-stage-1-50.png",
+            "role": "enemy",
+            "value": 0.5,
+            "capacity": 31,
+            "expected": 16,
+            "actual": 16,
+            "bounds": {
+                "serializedVersion": "2",
+                "x": 808.0,
+                "y": 168.77418518066407,
+                "width": 184.0,
+                "height": 36.0
+            }
+        },
+        {
+            "file": "v2-hp-1280x720-stage-1-100.png",
+            "role": "player",
+            "value": 1.0,
+            "capacity": 26,
+            "expected": 26,
+            "actual": 26,
+            "bounds": {
+                "serializedVersion": "2",
+                "x": 420.0,
+                "y": 168.77418518066407,
+                "width": 160.0,
+                "height": 36.0
+            }
+        },
+        {
+            "file": "v2-hp-1280x720-stage-1-100.png",
+            "role": "enemy",
+            "value": 1.0,
+            "capacity": 31,
+            "expected": 31,
+            "actual": 31,
+            "bounds": {
+                "serializedVersion": "2",
+                "x": 808.0,
+                "y": 168.77418518066407,
+                "width": 184.0,
+                "height": 36.0
+            }
+        },
+        {
+            "file": "v2-hp-1280x720-stage-10-zero.png",
+            "role": "boss",
+            "value": 0.0,
+            "capacity": 50,
+            "expected": 0,
+            "actual": 0,
+            "bounds": {
+                "serializedVersion": "2",
+                "x": 760.0,
+                "y": 168.77418518066407,
+                "width": 280.0,
+                "height": 36.0
+            }
+        },
+        {
+            "file": "v2-hp-1280x720-stage-10-tiny.png",
+            "role": "boss",
+            "value": 9.999999974752428e-7,
+            "capacity": 50,
+            "expected": 1,
+            "actual": 1,
+            "bounds": {
+                "serializedVersion": "2",
+                "x": 760.0,
+                "y": 168.77418518066407,
+                "width": 280.0,
+                "height": 36.0
+            }
+        },
+        {
+            "file": "v2-hp-1280x720-stage-10-25.png",
+            "role": "boss",
+            "value": 0.25,
+            "capacity": 50,
+            "expected": 13,
+            "actual": 13,
+            "bounds": {
+                "serializedVersion": "2",
+                "x": 760.0,
+                "y": 168.77418518066407,
+                "width": 280.0,
+                "height": 36.0
+            }
+        },
+        {
+            "file": "v2-hp-1280x720-stage-10-50.png",
+            "role": "boss",
+            "value": 0.5,
+            "capacity": 50,
+            "expected": 25,
+            "actual": 25,
+            "bounds": {
+                "serializedVersion": "2",
+                "x": 760.0,
+                "y": 168.77418518066407,
+                "width": 280.0,
+                "height": 36.0
+            }
+        },
+        {
+            "file": "v2-hp-1280x720-stage-10-100.png",
+            "role": "boss",
+            "value": 1.0,
+            "capacity": 50,
+            "expected": 50,
+            "actual": 50,
+            "bounds": {
+                "serializedVersion": "2",
+                "x": 760.0,
+                "y": 168.77418518066407,
+                "width": 280.0,
+                "height": 36.0
+            }
+        }
+    ]
+}

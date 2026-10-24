@@ -1,0 +1,208 @@
+[
+  {
+    "parent": "/GameView/SafeArea/RewardChoice/CompactDialog/Reward1",
+    "children": [
+      {
+        "name": "Name",
+        "index": 0
+      },
+      {
+        "name": "Level",
+        "index": 1
+      },
+      {
+        "name": "Before",
+        "index": 2
+      },
+      {
+        "name": "After",
+        "index": 3
+      },
+      {
+        "name": "Equipment",
+        "index": 4
+      },
+      {
+        "name": "Selection",
+        "index": 5
+      },
+      {
+        "name": "RelicIcon",
+        "index": 6
+      },
+      {
+        "name": "Receive",
+        "index": 7
+      }
+    ]
+  },
+  {
+    "parent": "/GameView/SafeArea/Lobby/ReferenceSelection/PortraitPanel",
+    "children": [
+      {
+        "name": "ReferenceFrame",
+        "index": 0
+      },
+      {
+        "name": "IdlePortrait",
+        "index": 1
+      },
+      {
+        "name": "CharacterName",
+        "index": 2
+      },
+      {
+        "name": "Cycle",
+        "index": 3
+      }
+    ]
+  },
+  {
+    "parent": "/GameView/SafeArea/Lobby/ReferenceUpgrade/UpgradeDetail",
+    "children": [
+      {
+        "name": "ReferenceFrame",
+        "index": 0
+      },
+      {
+        "name": "StatTitle",
+        "index": 1
+      },
+      {
+        "name": "Level",
+        "index": 2
+      },
+      {
+        "name": "Before",
+        "index": 3
+      },
+      {
+        "name": "After",
+        "index": 4
+      },
+      {
+        "name": "Price",
+        "index": 5
+      },
+      {
+        "name": "Note",
+        "index": 6
+      },
+      {
+        "name": "Portrait",
+        "index": 7
+      },
+      {
+        "name": "OneLevel",
+        "index": 8
+      },
+      {
+        "name": "Maximum",
+        "index": 9
+      },
+      {
+        "name": "UpgradeWallet",
+        "index": 10
+      }
+    ]
+  },
+  {
+    "parent": "/GameView/SafeArea/RewardChoice/CompactDialog/Reward0",
+    "children": [
+      {
+        "name": "Name",
+        "index": 0
+      },
+      {
+        "name": "Level",
+        "index": 1
+      },
+      {
+        "name": "Before",
+        "index": 2
+      },
+      {
+        "name": "After",
+        "index": 3
+      },
+      {
+        "name": "Equipment",
+        "index": 4
+      },
+      {
+        "name": "Selection",
+        "index": 5
+      },
+      {
+        "name": "RelicIcon",
+        "index": 6
+      },
+      {
+        "name": "Receive",
+        "index": 7
+      }
+    ]
+  },
+  {
+    "parent": "/GameView/SafeArea/Lobby/ReferenceSelection",
+    "children": [
+      {
+        "name": "Roster",
+        "index": 0
+      },
+      {
+        "name": "PortraitPanel",
+        "index": 1
+      },
+      {
+        "name": "Stats",
+        "index": 2
+      },
+      {
+        "name": "Summary",
+        "index": 3
+      },
+      {
+        "name": "SelectionStats",
+        "index": 4
+      }
+    ]
+  },
+  {
+    "parent": "/GameView/SafeArea/RewardChoice/CompactDialog/Reward2",
+    "children": [
+      {
+        "name": "Name",
+        "index": 0
+      },
+      {
+        "name": "Level",
+        "index": 1
+      },
+      {
+        "name": "Before",
+        "index": 2
+      },
+      {
+        "name": "After",
+        "index": 3
+      },
+      {
+        "name": "Equipment",
+        "index": 4
+      },
+      {
+        "name": "Selection",
+        "index": 5
+      },
+      {
+        "name": "RelicIcon",
+        "index": 6
+      },
+      {
+        "name": "Receive",
+        "index": 7
+      }
+    ]
+  }
+]

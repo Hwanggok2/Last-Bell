@@ -1,0 +1,70 @@
+{
+  "_meta": {
+    "fastmcp": {
+      "wrap_result": true
+    }
+  },
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"success\":true,\"message\":\"Test job status retrieved.\",\"error\":null,\"data\":{\"job_id\":\"656f1a8914b0420bbcf0e26990f15d0d\",\"status\":\"failed\",\"mode\":\"PlayMode\",\"started_unix_ms\":1792825453894,\"finished_unix_ms\":1792825465314,\"last_update_unix_ms\":1792825465314,\"progress\":{\"completed\":26,\"total\":26,\"current_test_full_name\":null,\"current_test_started_unix_ms\":1792825465312,\"last_finished_test_full_name\":\"LastBell.Tests.DragonUiContractTests.HealthSkinCannotShowALivingEnemyAsEmpty(1.0f,38)\",\"last_finished_unix_ms\":1792825465312,\"stuck_suspected\":false,\"editor_is_focused\":false,\"blocked_reason\":null,\"failures_so_far\":[{\"full_name\":\"LastBell.Tests.CombatPresentationTests.BossTenRemainsForDialogueThenRewardContinuesAndTwentyClears\",\"message\":\"  Expected: String containing \\\"주민들을 가두고\\\"\\r\\n  But was:  \\\"용은 저 봉우리에 있어.\\\"\\r\\n\"},{\"full_name\":\"LastBell.Tests.CombatPresentationTests.EnemyWaitsInIdleUntilAttackAndPauses\",\"message\":\"  early telegraph must not pin attack frame zero at stage 1\\r\\n  Expected: Idle\\r\\n  But was:  AttackLow\\r\\n\"},{\"full_name\":\"LastBell.Tests.CombatPresentationTests.HighContactFrameAcceptsDownButtonAndStaysAtHome\",\"message\":\"  Expected: AttackUp\\r\\n  But was:  DodgeDown\\r\\n\"},{\"full_name\":\"LastBell.Tests.CombatPresentationTests.LobbyPortraitPlaysIdleAndRefreshDoesNotResetIt\",\"message\":\"  Expected: <05 (UnityEngine.Sprite)>\\r\\n  But was:  <03 (UnityEngine.Sprite)>\\r\\n\"},{\"full_name\":\"LastBell.Tests.CombatPresentationTests.ReviewedEnemyKeepsItsAuthoredHoldsAndContactsOnTheCombatBeat\",\"message\":\"  Expected string length 8 but was 18. Strings differ at index 0.\\r\\n  Expected: \\\"wild_dog\\\"\\r\\n  But was:  \\\"dragon_trail_slime\\\"\\r\\n  -----------^\\r\\n\"},{\"full_name\":\"LastBell.Tests.CombatPresentationTests.SelectedPreviewPosesMatchBack08AndSlashSequence\",\"message\":\"  Expected: 8\\r\\n  But was:  7\\r\\n\"}],\"failures_capped\":false},\"error\":null,\"result\":null},\"hint\":null}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "success": true,
+      "message": "Test job status retrieved.",
+      "error": null,
+      "data": {
+        "job_id": "656f1a8914b0420bbcf0e26990f15d0d",
+        "status": "failed",
+        "mode": "PlayMode",
+        "started_unix_ms": 1792825453894,
+        "finished_unix_ms": 1792825465314,
+        "last_update_unix_ms": 1792825465314,
+        "progress": {
+          "completed": 26,
+          "total": 26,
+          "current_test_full_name": null,
+          "current_test_started_unix_ms": 1792825465312,
+          "last_finished_test_full_name": "LastBell.Tests.DragonUiContractTests.HealthSkinCannotShowALivingEnemyAsEmpty(1.0f,38)",
+          "last_finished_unix_ms": 1792825465312,
+          "stuck_suspected": false,
+          "editor_is_focused": false,
+          "blocked_reason": null,
+          "failures_so_far": [
+            {
+              "full_name": "LastBell.Tests.CombatPresentationTests.BossTenRemainsForDialogueThenRewardContinuesAndTwentyClears",
+              "message": "  Expected: String containing \"주민들을 가두고\"\r\n  But was:  \"용은 저 봉우리에 있어.\"\r\n"
+            },
+            {
+              "full_name": "LastBell.Tests.CombatPresentationTests.EnemyWaitsInIdleUntilAttackAndPauses",
+              "message": "  early telegraph must not pin attack frame zero at stage 1\r\n  Expected: Idle\r\n  But was:  AttackLow\r\n"
+            },
+            {
+              "full_name": "LastBell.Tests.CombatPresentationTests.HighContactFrameAcceptsDownButtonAndStaysAtHome",
+              "message": "  Expected: AttackUp\r\n  But was:  DodgeDown\r\n"
+            },
+            {
+              "full_name": "LastBell.Tests.CombatPresentationTests.LobbyPortraitPlaysIdleAndRefreshDoesNotResetIt",
+              "message": "  Expected: <05 (UnityEngine.Sprite)>\r\n  But was:  <03 (UnityEngine.Sprite)>\r\n"
+            },
+            {
+              "full_name": "LastBell.Tests.CombatPresentationTests.ReviewedEnemyKeepsItsAuthoredHoldsAndContactsOnTheCombatBeat",
+              "message": "  Expected string length 8 but was 18. Strings differ at index 0.\r\n  Expected: \"wild_dog\"\r\n  But was:  \"dragon_trail_slime\"\r\n  -----------^\r\n"
+            },
+            {
+              "full_name": "LastBell.Tests.CombatPresentationTests.SelectedPreviewPosesMatchBack08AndSlashSequence",
+              "message": "  Expected: 8\r\n  But was:  7\r\n"
+            }
+          ],
+          "failures_capped": false
+        },
+        "error": null,
+        "result": null
+      },
+      "hint": null
+    }
+  },
+  "isError": false
+}

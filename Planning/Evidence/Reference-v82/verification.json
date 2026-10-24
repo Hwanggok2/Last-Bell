@@ -1,0 +1,96 @@
+{
+  "version": "0.8.2",
+  "createdAt": "2026-10-23T16:15:30.329126+09:00",
+  "build": {
+    "passed": true,
+    "errors": 0,
+    "log": "Logs/Reference-v82/build-release.log"
+  },
+  "runtime": [
+    {
+      "passed": true,
+      "checks": 219,
+      "width": 1084,
+      "height": 540,
+      "path": "reference/result.json"
+    },
+    {
+      "passed": true,
+      "checks": 219,
+      "width": 960,
+      "height": 540,
+      "path": "desktop/result.json"
+    },
+    {
+      "passed": true,
+      "checks": 219,
+      "width": 640,
+      "height": 360,
+      "path": "mobile/result.json"
+    }
+  ],
+  "playMode": {
+    "result": "Passed",
+    "total": "19",
+    "passed": "19",
+    "failed": "0",
+    "skipped": "0"
+  },
+  "playModeLog": "Logs/Reference-v82/playmode-final.xml",
+  "catalogUnchangedFromV81": true,
+  "glyphComparison": {
+    "source": "menus/00067.000.jpg (crop x44..1128)",
+    "capture": "reference/01-selection.png",
+    "referenceTitleInkBounds": [
+      472,
+      25,
+      611,
+      59
+    ],
+    "gameTitleInkBounds": [
+      473,
+      25,
+      610,
+      59
+    ],
+    "titleMaxEdgeDifferencePx": 1,
+    "referenceBodyLineStarts": [
+      254,
+      283,
+      312,
+      341,
+      371
+    ],
+    "gameBodyLineStarts": [
+      254,
+      283,
+      312,
+      341,
+      370
+    ],
+    "referenceBodyInkHeightRange": [
+      17,
+      20
+    ],
+    "gameBodyInkHeight": 19
+  },
+  "files": {
+    "Builds/Windows/LastBellMvp.exe": {
+      "bytes": 667648,
+      "sha256": "04a137e8f3c105937a1cb13fc57300734117f5874292ee9c764bda7537d8aef2"
+    },
+    "Builds/Windows/LastBellMvp_Data/Managed/LastBell.Runtime.dll": {
+      "bytes": 311296,
+      "sha256": "4c4d9c0a05a4067e74bc25f4406b27e0b7d1e61fc27e55ea26b7fef47eedb8bc"
+    },
+    "Builds/LastBellMvp-Windows.zip": {
+      "bytes": 72996248,
+      "sha256": "63aa6d676fa4fe4c0a72aadfb46705c8df9cd5fc8d8ed8622855aa8e46b4dc22"
+    }
+  },
+  "zipVerified": true,
+  "limitations": [
+    "Small-screen checks use a Windows player, not physical mobile hardware.",
+    "Game-specific names, values, art, bell mechanics, inventory equip and retry actions remain. Reference-only ad/shop functions are not added."
+  ]
+}

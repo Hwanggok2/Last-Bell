@@ -1,0 +1,357 @@
+PASS selection reference typography: Wallet
+PASS selection text fits: Wallet
+PASS selection reference typography: Label
+PASS selection text fits: Label
+PASS selection reference typography: Label
+PASS selection text fits: Label
+PASS selection reference typography: Label
+PASS selection text fits: Label
+PASS selection reference typography: Label
+PASS selection text fits: Label
+PASS selection reference typography: Label
+PASS selection text fits: Label
+PASS selection reference typography: Label
+PASS selection text fits: Label
+PASS selection reference typography: Label
+PASS selection text fits: Label
+PASS selection reference typography: Summary
+PASS selection text fits: Summary
+PASS selection reference typography: SelectionStats
+PASS selection text fits: SelectionStats
+PASS selection reference typography: ReferenceHeading
+PASS selection text fits: ReferenceHeading
+PASS selection reference typography: RelicCount
+PASS selection text fits: RelicCount
+PASS measured heading and body typography
+PASS reference selection copy with live game values
+PASS separate selection screen
+PASS button has raycast hit: Character1
+PASS inspect unavailable hero without selecting
+PASS button has raycast hit: Character0
+PASS button has raycast hit: Start
+PASS upgrade reference typography: Wallet
+PASS upgrade text fits: Wallet
+PASS upgrade reference typography: Label
+PASS upgrade text fits: Label
+PASS upgrade reference typography: Label
+PASS upgrade text fits: Label
+PASS upgrade reference typography: StartStage
+PASS upgrade text fits: StartStage
+PASS upgrade reference typography: StatTitle
+PASS upgrade text fits: StatTitle
+PASS upgrade reference typography: Before
+PASS upgrade text fits: Before
+PASS upgrade reference typography: After
+PASS upgrade text fits: After
+PASS upgrade reference typography: Price
+PASS upgrade text fits: Price
+PASS upgrade reference typography: Caption
+PASS upgrade text fits: Caption
+PASS upgrade reference typography: Caption
+PASS upgrade text fits: Caption
+PASS upgrade reference typography: UpgradeWallet
+PASS upgrade text fits: UpgradeWallet
+PASS upgrade reference typography: Caption
+PASS upgrade text fits: Caption
+PASS upgrade reference typography: Caption
+PASS upgrade text fits: Caption
+PASS upgrade reference typography: Rating
+PASS upgrade text fits: Rating
+PASS upgrade reference typography: Caption
+PASS upgrade text fits: Caption
+PASS upgrade reference typography: Rating
+PASS upgrade text fits: Rating
+PASS upgrade reference typography: Caption
+PASS upgrade text fits: Caption
+PASS upgrade reference typography: Rating
+PASS upgrade text fits: Rating
+PASS upgrade reference typography: Caption
+PASS upgrade text fits: Caption
+PASS upgrade reference typography: Rating
+PASS upgrade text fits: Rating
+PASS upgrade reference typography: ReferenceHeading
+PASS upgrade text fits: ReferenceHeading
+PASS upgrade reference typography: Caption
+PASS upgrade text fits: Caption
+PASS reference upgrade copy and single detail panel
+PASS selection opens separate upgrade
+PASS button has raycast hit: Maximum
+PASS button has raycast hit: Purchase
+PASS MAX pointer buys exact sequence to level 20
+PASS button has raycast hit: SelectStat2
+PASS luck reference typography: Wallet
+PASS luck text fits: Wallet
+PASS luck reference typography: Label
+PASS luck text fits: Label
+PASS luck reference typography: Label
+PASS luck text fits: Label
+PASS luck reference typography: StartStage
+PASS luck text fits: StartStage
+PASS luck reference typography: StatTitle
+PASS luck text fits: StatTitle
+PASS luck reference typography: Before
+PASS luck text fits: Before
+PASS luck reference typography: After
+PASS luck text fits: After
+PASS luck reference typography: Price
+PASS luck text fits: Price
+PASS luck reference typography: Note
+PASS luck text fits: Note
+PASS luck reference typography: Caption
+PASS luck text fits: Caption
+PASS luck reference typography: Caption
+PASS luck text fits: Caption
+PASS luck reference typography: UpgradeWallet
+PASS luck text fits: UpgradeWallet
+PASS luck reference typography: Caption
+PASS luck text fits: Caption
+PASS luck reference typography: Caption
+PASS luck text fits: Caption
+PASS luck reference typography: Rating
+PASS luck text fits: Rating
+PASS luck reference typography: Caption
+PASS luck text fits: Caption
+PASS luck reference typography: Rating
+PASS luck text fits: Rating
+PASS luck reference typography: Caption
+PASS luck text fits: Caption
+PASS luck reference typography: Rating
+PASS luck text fits: Rating
+PASS luck reference typography: Caption
+PASS luck text fits: Caption
+PASS luck reference typography: Rating
+PASS luck text fits: Rating
+PASS luck reference typography: ReferenceHeading
+PASS luck text fits: ReferenceHeading
+PASS luck reference typography: Caption
+PASS luck text fits: Caption
+PASS button has raycast hit: Relics
+PASS collection reference typography: Label
+PASS collection text fits: Label
+PASS collection reference typography: Slots
+PASS collection text fits: Slots
+PASS collection reference typography: Effect
+PASS collection text fits: Effect
+PASS collection reference typography: ReferenceRelicHeading
+PASS collection text fits: ReferenceRelicHeading
+PASS collection reference typography: Label
+PASS collection text fits: Label
+PASS button has raycast hit: Back
+PASS button has raycast hit: SelectionBack
+PASS button has raycast hit: ReplayPrologue
+PASS prologue reference typography: Title
+PASS prologue text fits: Title
+PASS prologue reference typography: Paragraph0
+PASS prologue text fits: Paragraph0
+PASS prologue reference typography: Paragraph1
+PASS prologue text fits: Paragraph1
+PASS prologue reference typography: Paragraph2
+PASS prologue text fits: Paragraph2
+PASS prologue reference typography: Paragraph3
+PASS prologue text fits: Paragraph3
+PASS prologue reference typography: Label
+PASS prologue text fits: Label
+PASS prologue has only skip control
+PASS button has raycast hit: Skip
+PASS combat reference typography: Label
+PASS combat text fits: Label
+PASS combat reference typography: EnemyName
+PASS combat text fits: EnemyName
+PASS combat reference typography: BattleGold
+PASS combat text fits: BattleGold
+PASS pause label remains on one line
+PASS only three dodge controls visible
+PASS reference control anchor 0
+PASS 48px minimum touch size 0
+PASS safe-area bounds 0
+PASS reference control anchor 1
+PASS 48px minimum touch size 1
+PASS safe-area bounds 1
+PASS reference control anchor 2
+PASS 48px minimum touch size 2
+PASS safe-area bounds 2
+PASS HP anchor does not follow lunge
+PASS attack pointer damages enemy
+PASS two fixed bells show double attack
+PASS perfect counter and spent bell slot retained
+PASS boss uses lower HP with level and name
+PASS boss kill continues to 11 with queued reward
+PASS button has raycast hit: SettlementContinue
+PASS clear announcement prevents skipping rewards
+PASS button has raycast hit: SettlementContinue
+PASS relic must be selected before confirming
+PASS JsonUtility/file round trip preserves ended run reward
+PASS button has raycast hit: Receive
+PASS reward reference typography: Note
+PASS reward text fits: Note
+PASS reward reference typography: Name
+PASS reward text fits: Name
+PASS reward reference typography: Name
+PASS reward text fits: Name
+PASS reward reference typography: Name
+PASS reward text fits: Name
+PASS reward reference typography: Description
+PASS reward text fits: Description
+PASS reward reference typography: Label
+PASS reward text fits: Label
+PASS button has raycast hit: Confirm
+PASS confirm grants chosen relic and opens final result
+PASS button has raycast hit: ResultLobby
+PASS button has raycast hit: Relics
+PASS owned relic reference typography: Label
+PASS owned relic text fits: Label
+PASS owned relic reference typography: Slots
+PASS owned relic text fits: Slots
+PASS owned relic reference typography: Label
+PASS owned relic text fits: Label
+PASS owned relic reference typography: Level
+PASS owned relic text fits: Level
+PASS owned relic reference typography: Effect
+PASS owned relic text fits: Effect
+PASS owned relic reference typography: Next
+PASS owned relic text fits: Next
+PASS owned relic reference typography: ReferenceRelicHeading
+PASS owned relic text fits: ReferenceRelicHeading
+PASS owned relic reference typography: Label
+PASS owned relic text fits: Label
+PASS button has raycast hit: Back
+PASS button has raycast hit: AudioCredits
+PASS font attribution and distributed OFL present
+PASS saved framed health bars stage 1
+PASS health mesh reads actual HP stage 1
+PASS authored contact frame matches impact stage 1
+PASS reviewed contact point reaches player home stage 1
+PASS saved framed health bars stage 2
+PASS health mesh reads actual HP stage 2
+PASS authored contact frame matches impact stage 2
+PASS reviewed contact point reaches player home stage 2
+PASS saved framed health bars stage 3
+PASS health mesh reads actual HP stage 3
+PASS authored contact frame matches impact stage 3
+PASS reviewed contact point reaches player home stage 3
+PASS saved framed health bars stage 11
+PASS health mesh reads actual HP stage 11
+PASS authored contact frame matches impact stage 11
+PASS reviewed contact point reaches player home stage 11
+PASS saved framed health bars stage 12
+PASS health mesh reads actual HP stage 12
+PASS authored contact frame matches impact stage 12
+PASS reviewed contact point reaches player home stage 12
+PASS saved framed health bars stage 13
+PASS health mesh reads actual HP stage 13
+PASS authored contact frame matches impact stage 13
+PASS reviewed contact point reaches player home stage 13
+PASS saved framed health bars stage 10
+PASS health mesh reads actual HP stage 10
+PASS saved framed health bars stage 20
+PASS health mesh reads actual HP stage 20
+PASS kill popup uses exact granted gold once
+PASS central positive gold popup
+PASS player hit combo removed after confirmed hit
+PASS reward presentation pauses and cannot grant again
+PASS reward popup expires
+PASS new run binding clears previous popup
+PASS stun ready reference typography: Label
+PASS stun ready text fits: Label
+PASS stun ready reference typography: EnemyName
+PASS stun ready text fits: EnemyName
+PASS stun ready reference typography: StunReady
+PASS stun ready text fits: StunReady
+PASS stun ready reference typography: BattleGold
+PASS stun ready text fits: BattleGold
+PASS full stack displays ready while enemy attacks continue
+PASS attack press/windup cannot prematurely stun
+PASS confirmed hit consumes stack and cancels remaining attacks once
+PASS story 10 reference typography: Label
+PASS story 10 text fits: Label
+PASS story 10 reference typography: EnemyName
+PASS story 10 text fits: EnemyName
+PASS story 10 reference typography: StorySpeaker
+PASS story 10 text fits: StorySpeaker
+PASS story 10 reference typography: StoryText
+PASS story 10 text fits: StoryText
+PASS story 10 reference typography: Label
+PASS story 10 text fits: Label
+PASS story 10 reference typography: Label
+PASS story 10 text fits: Label
+PASS story 10 reference typography: BattleGold
+PASS story 10 text fits: BattleGold
+PASS updated boss dialogue opens 10
+PASS story 20 reference typography: Label
+PASS story 20 text fits: Label
+PASS story 20 reference typography: EnemyName
+PASS story 20 text fits: EnemyName
+PASS story 20 reference typography: DefeatedGold
+PASS story 20 text fits: DefeatedGold
+PASS story 20 reference typography: StorySpeaker
+PASS story 20 text fits: StorySpeaker
+PASS story 20 reference typography: StoryText
+PASS story 20 text fits: StoryText
+PASS story 20 reference typography: Label
+PASS story 20 text fits: Label
+PASS story 20 reference typography: Label
+PASS story 20 text fits: Label
+PASS story 20 reference typography: BattleGold
+PASS story 20 text fits: BattleGold
+PASS updated boss dialogue opens 20
+PASS button has raycast hit: Receive
+PASS storage full reference typography: Note
+PASS storage full text fits: Note
+PASS storage full reference typography: Name
+PASS storage full text fits: Name
+PASS storage full reference typography: Name
+PASS storage full text fits: Name
+PASS storage full reference typography: Name
+PASS storage full text fits: Name
+PASS storage full reference typography: Description
+PASS storage full text fits: Description
+PASS storage full reference typography: Label
+PASS storage full text fits: Label
+PASS storage full reference typography: Caption
+PASS storage full text fits: Caption
+PASS full storage explicitly quotes expansion cost and gold alternative
+PASS button has raycast hit: Confirm
+PASS pointer confirms expansion and acquisition together
+PASS button has raycast hit: ResultLobby
+PASS button has raycast hit: Relics
+PASS automatic relics reference typography: Label
+PASS automatic relics text fits: Label
+PASS automatic relics reference typography: Slots
+PASS automatic relics text fits: Slots
+PASS automatic relics reference typography: Label
+PASS automatic relics text fits: Label
+PASS automatic relics reference typography: Label
+PASS automatic relics text fits: Label
+PASS automatic relics reference typography: Label
+PASS automatic relics text fits: Label
+PASS automatic relics reference typography: Label
+PASS automatic relics text fits: Label
+PASS automatic relics reference typography: Level
+PASS automatic relics text fits: Level
+PASS automatic relics reference typography: Effect
+PASS automatic relics text fits: Effect
+PASS automatic relics reference typography: Next
+PASS automatic relics text fits: Next
+PASS automatic relics reference typography: ReferenceRelicHeading
+PASS automatic relics text fits: ReferenceRelicHeading
+PASS automatic relics reference typography: Label
+PASS automatic relics text fits: Label
+PASS collection displays automatic application and owned capacity
+PASS button has raycast hit: Receive
+PASS storage short reference typography: Note
+PASS storage short text fits: Note
+PASS storage short reference typography: Name
+PASS storage short text fits: Name
+PASS storage short reference typography: Name
+PASS storage short text fits: Name
+PASS storage short reference typography: Name
+PASS storage short text fits: Name
+PASS storage short reference typography: Description
+PASS storage short text fits: Description
+PASS storage short reference typography: Label
+PASS storage short text fits: Label
+PASS storage short reference typography: Caption
+PASS storage short text fits: Caption
+PASS insufficient fragments keeps reward and offers a working alternative
+PASS button has raycast hit: RewardGold
+PASS explicit gold choice cannot buy storage or silently equip candidate

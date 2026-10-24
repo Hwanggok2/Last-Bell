@@ -1,0 +1,130 @@
+{
+  "date": "2026-10-22T21:55:32.689544+09:00",
+  "scope": "Stage5/9 swap, early combo restrictions, original stage10 combat sprite through dialogue/fade, quieter perfect-defense bell; all previous v6 changes included in public deployment.",
+  "catalog": {
+    "dataVersion": "mvp1.8.1",
+    "sourceFileSha256": "affc66dcc6b1b438f84c8fc96dcb62b8dbad42dcac49cfe78492be3bd145b1c6",
+    "playableStages": 20,
+    "distinctActorArtIds": 15,
+    "saveSchema": 6
+  },
+  "tests": {
+    "editMode": {
+      "result": "Passed",
+      "total": "163",
+      "passed": "163",
+      "failed": "0",
+      "skipped": "0",
+      "duration": "1.8459193"
+    },
+    "playMode": {
+      "result": "Passed",
+      "total": "19",
+      "passed": "19",
+      "failed": "0",
+      "skipped": "0",
+      "duration": "5.5980567"
+    },
+    "pythonCatalog": {
+      "passed": 19,
+      "failed": 0
+    },
+    "independentSessionContract": {
+      "passedAssertions": 853
+    }
+  },
+  "native": [
+    {
+      "passed": true,
+      "checks": 77,
+      "width": 960,
+      "height": 540,
+      "evidenceDirectory": "960"
+    },
+    {
+      "passed": true,
+      "checks": 77,
+      "width": 640,
+      "height": 360,
+      "evidenceDirectory": "640"
+    }
+  ],
+  "builds": {
+    "windows": {
+      "result": "Succeeded",
+      "bytes": 208828565,
+      "errors": 0
+    },
+    "webGL": {
+      "result": "Succeeded",
+      "bytes": 23264465,
+      "errors": 0
+    }
+  },
+  "artifacts": [
+    {
+      "path": "Builds/Windows/LastBellMvp_Data/Managed/LastBell.Runtime.dll",
+      "bytes": 257024,
+      "sha256": "ae6cc943b612ea833953b7b657e008f23ae9c3607e4af36e54fa8f09da1594bc"
+    },
+    {
+      "path": "Builds/WebGL/Build/2fa6eb4e91c73b8089f064c175943d93.framework.js.unityweb",
+      "bytes": 74474,
+      "sha256": "6f15675ebe97cba10dd8be6140f026c4e9ee007ca1831971a5c7d225b47535e4"
+    },
+    {
+      "path": "Builds/WebGL/Build/4902b7fc3d5d542e77c98713a5c9ee01.wasm.unityweb",
+      "bytes": 5956724,
+      "sha256": "b04e81c720757ac14899e2fec80617e05b1a146a6615d0db0b608bf194b932b3"
+    },
+    {
+      "path": "Builds/WebGL/Build/617b8f446e95d0e68c6bf32158cd9313.loader.js",
+      "bytes": 117893,
+      "sha256": "841c0f43edf78463cf8386dfbd0feee4b31be727e6e0695e3a2d5fe593cc82de"
+    },
+    {
+      "path": "Builds/WebGL/Build/ecd20cf610d585627e2349247723b9f0.data.unityweb",
+      "bytes": 17109665,
+      "sha256": "286fad163621ccd5db238a1db204398e18445ef7cb4934b613930369af934a6b"
+    }
+  ],
+  "perfectBell": {
+    "previousAmplitude": 0.55,
+    "amplitude": 0.38,
+    "reductionPercent": 30.91,
+    "crossfadeMs": 40,
+    "clipUnchanged": true
+  },
+  "visualInspection": [
+    "Stage5 gate_warden miniboss / stage9 gate_lock normal",
+    "Stage10 same original combat sprite before defeat, during three dialogue lines, and during fade",
+    "HUD at 960x540 and 640x360; all20 stages and rewards"
+  ],
+  "deployment": {
+    "id": "appgdep_6ada07474d0c8191b1f9d7ed5894de02",
+    "project_id": "appgprj_6ad8dbc209e081919502db2689477d99",
+    "title": "마지막 종지기 · 20스테이지 플레이테스트",
+    "version_id": "appgprj_6ad8dbc209e081919502db2689477d99~appgver_5b189e805c0c8191877203e55ac3b735",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://last-bell-playtest.nugunagame1.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ad8dbc209e081919502db2689477d99",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-10-22T12:53:47.793692+00:00",
+    "commit_sha": "3c5cbbf14f65342d8c620e9be863ea115c632a68",
+    "access_mode": "public"
+  },
+  "web": {
+    "url": "https://last-bell-playtest.nugunagame1.chatgpt.site",
+    "screenshot": "web-game.png",
+    "consoleErrors": 0
+  },
+  "limitations": [
+    "No physical mobile-device test",
+    "Android APK not rebuilt",
+    "Stages11–20 reuse existing background art"
+  ]
+}

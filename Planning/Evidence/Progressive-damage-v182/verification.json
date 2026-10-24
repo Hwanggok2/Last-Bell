@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-22T22:10:19.608102+09:00",
+  "dataVersion": "mvp1.8.2",
+  "perStageDamage": [
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17,
+    20,
+    21,
+    22,
+    23,
+    24,
+    27,
+    28,
+    29,
+    30,
+    31,
+    35
+  ],
+  "sourceSha256": "1b1587ff035d9818b497adf3cccb157eab8e7b65afda85d0811f87ddf7620fe9",
+  "tests": {
+    "editMode": {
+      "result": "Passed",
+      "total": "163",
+      "passed": "163",
+      "failed": "0"
+    },
+    "pythonCatalog": {
+      "passed": 19
+    },
+    "catalogSmoke": "Passed",
+    "independentSessionContractAssertions": 853
+  },
+  "native": {
+    "passed": true,
+    "checks": 77,
+    "width": 960,
+    "height": 540
+  },
+  "builds": {
+    "windows": {
+      "result": "Succeeded",
+      "bytes": 208827072,
+      "errors": 0
+    },
+    "web": {
+      "result": "Succeeded",
+      "bytes": 23264186,
+      "errors": 0
+    }
+  },
+  "deployment": {
+    "id": "appgdep_6ada0adab12481919f2afa3c0614b3c1",
+    "project_id": "appgprj_6ad8dbc209e081919502db2689477d99",
+    "title": "마지막 종지기 · 20스테이지 플레이테스트",
+    "version_id": "appgprj_6ad8dbc209e081919502db2689477d99~appgver_2564d27fc7fc8191adf1d2a1a6e55bfa",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://last-bell-playtest.nugunagame1.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ad8dbc209e081919502db2689477d99",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-10-22T13:09:02.043937+00:00",
+    "commit_sha": "adb954c062e341c995d5bf77d8ca173f4abff2a0",
+    "access_mode": "public"
+  },
+  "web": {
+    "consoleErrors": 0,
+    "screenshot": "web-game.png"
+  },
+  "scope": "Configuration-only damage progression; existing combat damage resolution reads current stage damage for every landed hit, including resumed runs."
+}

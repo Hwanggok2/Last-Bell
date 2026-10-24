@@ -1,0 +1,32 @@
+# Dragon-v6 observed-build QA
+
+Prepared, not executed. Run only after Root hands over the final observed build, full source freeze and execution ownership. The development-only V6 partial calls reusable frame/raycast/DTO helpers; it does not run the V5 campaign or edit V5 evidence.
+
+`run-campaign.ps1` requires `-Executable`, a new `-CandidateId` matching `dragon-v6-*`, `-ExpectedRuntimeSha256`, `-FreezeManifest`, `-CoreEvidence`, `-IntegrationEvidence`, `-LegacySave`, and explicit `-Run`. The executable must be inside `Builds/Dragon-v6-QA`; legacy input must be a valid schema9 envelope inside `Planning/Evidence/Dragon-v5`. Never pass a user profile. Scoped game/Editor PlayerPrefs are backed up/restored. Use the authorized registry-capable execution context; do not remove this guard after an access failure.
+
+The freeze JSON requires `sourceFrozen:true`, `version:0.9.5`, `dataVersion:mvp1.18.0`, `runtimeSha256`, and `files:[{path,sha256}]` relative to the repository. It must include entry/V6 partial/generated catalog and this runner/analyzer. Every listed source is hashed before launch. Build inventory and handed-over inputs are copied into the new candidate. Existing candidate directories are rejected.
+
+One campaign, four sequential processes:
+
+1.1280 fresh using prior-QA schema9 native boot, changed UI/skills/companion/effect observations, continuous1→20 route, pending checkpoint.
+2.1280 native restart from a separate checkpoint copy: Daren independent pending+Tori reserved proc.
+3.640 fresh changed-scope observations, post-contact Miel/Tori checkpoint. No second full route claim.
+4.640 native restart proving previous contacts/bursts do not replay.
+
+Native modes are `v6-legacy`, `v6`, `v6-resume`. Each process has a1800s in-game deadline and1830s runner deadline. First failed process stops remaining cases. No automatic retry, input-device control, Unity call or build is included.
+
+The probe records `v6-evidence.json` events/fixtures/file roundtrips, `v6-state.jsonl` serialized live snapshots/actual particles/RT/HP/popups/actor flash/large-enemy headroom, `v6-input.jsonl` synthetic UI edges, original PNGs and `frames.jsonl` with frame SHA. The reused collector retains `v3-frame-*` filenames, but these are V6 observations. Maximum4 systems/376 particles, stun21 particles. Boss HUD final center(640,38), name(640,84) is the visual contract.
+
+Five companions each have a deterministic basic and proc observation. Seed selection queries real Core in a detached valid DTO fixture; it never changes catalog probability or injects a false contact. Three player skills use Attack→Skill and Skill→Attack, with file roundtrip pending/after and pause. CD boundary uses a labelled final100ms fixture; full timing/numeric/composition/corruption boundaries reuse Client evidence. Period arithmetic is not claimed from a full multi-cycle runtime campaign for each companion.
+
+Explicit high-HP, near-stun, shortened initial companion timer, max-level and future-three-slot fixtures are identified. Three slots use a detached highestClearedStage30 rule fixture but never play stages21–50. The continuous1280 route starts stage1 and never injects a later stage; initial attack30/HP50/recovery20 is labelled and is not a balance/difficulty test. Long gaps and route ticks are manual; contact windows are real-render observations. Two native checkpoints do not certify every possible character/state restoration.
+
+After execution, `python Tools/QA/Dragon-v6/analyze.py <candidate>` is read-only and prints JSON. It checks counts, hashes, required contact traces and route coverage, but never gives visual PASS. `visualWarnings` identifies boss lightning headroom below48UI units for manual inspection. Review original PNGs for sky bolt shape, white-hit visibility, HP pixels, large popup overlap and final boss HUD. A contact-only fallback is a visual defect if it fails the requested sky lightning, even when automatic damage/particle assertions pass.
+
+Keep raw campaign/result fields unchanged. Put actual inspected files, methods, judgments and limits in a separate manual-review JSON. Retain `acceptance=NOT_CERTIFIED`, physical input/mobile deferred and listening/performance untested. Actual product defects get narrow new-candidate rechecks after handoff; no whole project/campaign loop.
+
+Candidate01 continuation: add `-ContinueAfterCandidate01`. The runner requires the exact preserved stop point and checks all146 recorded raw candidate01 files before/after processes. The1280 first process uses `v6-continue`, skips completed legacy/inn/HP observations, and starts at Luka's skill/save regression before completing remaining coverage. Other three processes remain necessary. Old raw files are never rewritten; candidate01 QA sources are archived under its review/frozen-qa-source directory.
+
+Repository comparison now preserves before/loaded/restored JSON plus typed field differences. The comparator first obtains Unity's serialized DTO shape (including null-string/optional-inline representation); strings, integers, booleans, enums and list order remain exact. Original in-memory floating values are compared with loaded values, must be finite and may differ by at most4ULP. No gameplay timer is changed. Restored/native companion doubles use the same comparison; existing actual-contact count/deadline/CD assertions remain. Root's readonly diagnosis found only1ULP in candidate01's cooldown, documented in DragonV095ClientValidation/roundtrip-readonly-result.json.
+
+Popup observations use read-only reflection of renderer digits and BattleEffects raw-milli/life/lane arrays. No field is written. Concurrent contact requires3 visible popups: separate ordinary and independent-skill amounts, plus one companion raw-milli sum rounded once. The1.15s frame window includes original lifetime cleanup. Color fields distinguish configured color from expected glyph palette; actual cyan/readability/HUD clearance must still be judged from original PNGs. Conservative popup-rectangle/stagger intersections produce analyzer warnings, not automatic visual failure or PASS.

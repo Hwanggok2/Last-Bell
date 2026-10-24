@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-22",
+  "scope": "planning-only",
+  "revision": "2026-10-22-linear-gold-enemy-hud-stage-effects",
+  "passed": true,
+  "scriptSyntax": true,
+  "stages": 20,
+  "distinctMonsterIds": 15,
+  "newMonsterIds": 10,
+  "rosterAndCombatStatsUnchanged": true,
+  "hudNonOverlap": [
+    "960x540",
+    "640x360"
+  ],
+  "hudOrder": [
+    "enemyName",
+    "stagger",
+    "bossHp",
+    "bells"
+  ],
+  "effectTierCoverage": 20,
+  "runtimeFilesCompared": 1086,
+  "runtimeFilesChanged": 0,
+  "browser": {
+    "passed": true,
+    "checks": [
+      "960 monochrome boss header",
+      "640 color normal name with boss HP hidden",
+      "640 miniboss HP visible",
+      "640 boss header with name above stagger above HP",
+      "Straight path guide targets gold text",
+      "Gold +42 arrival 1234 -> 1276",
+      "All 10 fresh coverage rows and 5 effect tiers rendered",
+      "Console errors 0"
+    ],
+    "screenshot": "Planning/Evidence/Planning-v6/hud-linear-gold.png"
+  },
+  "limits": [
+    "Planning board only; no game implementation or device combat test",
+    "New stage effects are proposed assets, not produced effects"
+  ]
+}

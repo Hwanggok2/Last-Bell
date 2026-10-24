@@ -1,0 +1,31 @@
+{
+  "status": "complete-files-stable",
+  "committed": false,
+  "pushed": false,
+  "summary": "v5.9.1: all patterns blink0/240/480 -> hit720; four direction dodges restored; Down/S high dodge uses stationary sword parry, never Attack input. Preview, stored prefab, Windows build and ZIP updated.",
+  "validation": {
+    "EditMode": 134,
+    "PlayMode": 18,
+    "Python": 19,
+    "independentAssertions": 808,
+    "viewports": [
+      [
+        960,
+        540
+      ],
+      [
+        640,
+        360
+      ],
+      [
+        1280,
+        540
+      ]
+    ],
+    "fullFlow": true,
+    "restartResume": true
+  },
+  "localLinksChecked": 22,
+  "verification": "verification.json",
+  "sourceSha256": "ea352ca8d7d0822d5aac3ed3dd89aed4b79eafc7167c236396e44b9721742e39"
+}

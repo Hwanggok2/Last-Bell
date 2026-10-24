@@ -8,7 +8,7 @@
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="../../Client/Assets/Game/Runtime/Data/GameCatalog.cs" Link="GameCatalog.cs" />
+    <Compile Include="../../Client/Assets/Game/Runtime/Data/*.cs" Link="GameCatalog.cs" />
     <Compile Include="CatalogSmoke.cs" />
   </ItemGroup>
 </Project>

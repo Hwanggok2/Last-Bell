@@ -1,0 +1,42 @@
+{
+  "cases": [
+    {
+      "resolution": "1280x720",
+      "passed": true,
+      "completed": true,
+      "checksPassed": 150,
+      "checksFailed": [],
+      "errors": [],
+      "pngs": 15,
+      "states": 15,
+      "inputEdges": 18
+    },
+    {
+      "resolution": "640x360",
+      "passed": true,
+      "completed": true,
+      "checksPassed": 150,
+      "checksFailed": [],
+      "errors": [],
+      "pngs": 15,
+      "states": 15,
+      "inputEdges": 18
+    }
+  ],
+  "sourceDifferencesFromCandidate02": {
+    "changed": [
+      "Client/Assets/Game/Data/Generated/mvp-catalog.json",
+      "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.cs",
+      "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V5.cs",
+      "GameData/mvp-catalog.json",
+      "Tools/QA/Dragon-v5/run-campaign.ps1"
+    ],
+    "added": [],
+    "removed": []
+  },
+  "playerPrefsRestored": true,
+  "protectedQaEvidenceUnchanged": true,
+  "userDefaultProfile": "NOT_ACCESSED",
+  "acceptance": "NOT_CERTIFIED",
+  "visualReview": "NOT_RUN"
+}

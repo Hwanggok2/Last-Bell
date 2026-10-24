@@ -1,0 +1,9 @@
+Python exporter tests: 28 passed.
+mvp1.17.0 export --check passed.
+sourceSha256 cca94086db8cd16b86eee2f9b2f63d3774977d99aeff21c34b5de5efc8f92510
+No Unity, scene/prefab Apply, product build or QA capture by this client.
+2026-10-24 inline-null save repair: 217 standalone Core assertions passed; Core/Data/JsonSaveRepository compile passed.
+Root Unity EditMode191/13 failures classified as12 runtime inline-null run normalization errors and1 incorrect stage20 invitation expectation. Patches complete; root Unity rerun pending.
+Root final Unity EditMode198/198 passed before the following data-only correction; evidence unity-editmode-fixed.json.
+2026-10-25 NPC portraits: Stage12 barun; planned22 doto,32 rina,42 momo. Exactly four portraitId changes. Tori2 unknown and all legacyStories unchanged.
+After portrait correction: export and --check passed; existing28 data tests passed. Runtime/test/exporter code unchanged; targeted root dialogue QA pending.

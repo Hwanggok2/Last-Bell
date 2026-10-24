@@ -1,0 +1,39 @@
+{
+  "sourcePointers": [
+    "Client/Assets/Game/Runtime/Presentation/ReferenceLobbyView.cs:31",
+    "Client/Assets/Game/Runtime/Presentation/ReferenceLobbyView.cs:64",
+    "Client/Assets/Game/Runtime/Presentation/ReferenceLobbyView.cs:79",
+    "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V3.cs:133"
+  ],
+  "expectedFromSource": {
+    "startRunInteractable": false,
+    "damLabel": "다렌 (제작 중)",
+    "selectedPlayableId": "on",
+    "rosterPreviewInteractable": true
+  },
+  "candidate": "dragon-v3-candidate-01",
+  "timedOut": false,
+  "passedChecks": 21,
+  "processesStarted": 1,
+  "userDefaultProfile": "NOT_ACCESSED",
+  "syntheticLegacySentinelUnchanged": true,
+  "classification": "QA assertion mismatch; source-traced, failing label/interactable values were not logged individually",
+  "failure": "rendered character name and lock: dam",
+  "remainingProcessesStarted": 0,
+  "next": "Wait for coordinator scope decision. Proposed QA-only fix targets names/preview and the actual StartRun selection lock, preserves product UI.",
+  "runtime": [
+    {
+      "bytes": 435712,
+      "path": "LastBellMvp_Data\\Managed\\LastBell.Runtime.dll",
+      "sha256": "9D113D6038480504F62C9FAC4328784CF2850FCD9EA583A6ED5D337CC829AD00"
+    }
+  ],
+  "nativeExitCode": 1,
+  "failedChecks": 1,
+  "scopedPrefsRestored": true,
+  "cause": "Probe treats the roster preview button as the locked character selection action. ReferenceLobbyView enables roster preview for all three; StartRun is disabled when the inspected character is unavailable.",
+  "qaCodeChanged": false,
+  "status": "STOPPED_QA_ASSERTION_MISMATCH",
+  "editorTouched": false,
+  "consoleErrors": 0
+}

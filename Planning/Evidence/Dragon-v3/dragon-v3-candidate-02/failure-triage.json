@@ -1,0 +1,29 @@
+{
+  "status": "STOPPED_QA_RENDER_ORDER",
+  "failure": "UI button ready: StoryNext",
+  "passedChecks": 1232,
+  "failedChecks": 1,
+  "consoleErrors": 0,
+  "processesStarted": 1,
+  "remainingProcessesStarted": 0,
+  "nativeExitCode": 1,
+  "timedOut": false,
+  "sourceCause": "V3Bind calls Presenter.Bind -> BattlePresentation.Bind -> Overlay.Hide. Next LateUpdate/TickVisuals restores ShowStory. QA clicks in the same coroutine step before that render.",
+  "limits": "Cause source-traced; candidate03 records active state before/after rendered restore for runtime confirmation.",
+  "writtenFrames": 5416,
+  "segments": 51,
+  "frameHashMismatches": 0,
+  "missingRenderedFrames": 0,
+  "scopedPrefsRestored": true,
+  "syntheticLegacySentinelUnchanged": true,
+  "userDefaultProfile": "NOT_ACCESSED",
+  "resolution": "1280x720",
+  "unrun": [
+    "story page2 and completion/skip/settlement after restore",
+    "same-path native restart",
+    "all 640 observations"
+  ],
+  "fix": "Wait via Capture after restore; check restored speaker/text; then synthesize next click",
+  "productCodeChanged": false,
+  "uniqueScenarioNames": 50
+}

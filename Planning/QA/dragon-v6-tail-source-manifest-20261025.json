@@ -1,0 +1,98 @@
+{
+  "scope": "QA tail only; final product/build freeze required",
+  "sourceFrozen": true,
+  "frozenAtUtc": "2026-10-24T16:37:48.766495+00:00",
+  "version": "0.9.5",
+  "dataVersion": "mvp1.18.0",
+  "parentCandidate": "dragon-v6-candidate-02",
+  "runnerAdditionalSwitch": "-ContinueAfterCandidate02",
+  "qaExecution": "NOT_RUN",
+  "files": [
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.cs",
+      "sha256": "115E03E47C3F78A1131C015EF7FD63A02AFDB0326B3A56C8F6BBD7638DEAF5EA"
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V6.cs",
+      "sha256": "55D141954452729479E97C1C61E68742E6E6489EDCA765233BF9D623F5F646C3"
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V6.cs.meta",
+      "sha256": "FB1C4724CD7756652F6D6207438A26599BE47851781B01867509CF9DE6DF2DD3"
+    },
+    {
+      "path": "Tools/QA/Dragon-v6/common.ps1",
+      "sha256": "4B4E26DAEE3A38B9C6F0FAEB87FF274F5240E3B9ECF77261116AB2C3B3F17849"
+    },
+    {
+      "path": "Tools/QA/Dragon-v6/run-campaign.ps1",
+      "sha256": "9265FF098303690C279E3C756392C4A3ED149893FCB332B6F73E79265891C7C2"
+    },
+    {
+      "path": "Tools/QA/Dragon-v6/analyze.py",
+      "sha256": "B68508D3C575E17BA544FB9003CDC2BEF4EFCF9414C58F679AAEC9A26F5E0E00"
+    },
+    {
+      "path": "Tools/QA/Dragon-v6/README.md",
+      "sha256": "6AC39BBAFCC444596F9E887E1A1FF243C881E5A42B447CF0851897D8CBFBACF8"
+    }
+  ],
+  "readOnlyDependencies": [
+    {
+      "path": "Tools/QA/Dragon-v3/common.ps1",
+      "sha256": "998AADA226B62E1580A3DCB1FC1FB44413AA17AE5520D02F58B3A9E5FB62C8F0"
+    }
+  ],
+  "validation": {
+    "checkedAtUtc": "2026-10-24T16:35:14.3084531Z",
+    "csharpRuntimeFiles": 76,
+    "csharpErrors": 0,
+    "powershellAstErrors": 0,
+    "pythonAst": "PASS",
+    "dllEmit": false,
+    "unityRun": false
+  },
+  "scopeRemaining": [
+    "normal Miel/Rina lightning width targets",
+    "boss5/10/15/20 lightning and name HUD targets",
+    "active21/ended0 stun",
+    "unrun concurrent5 contacts/3 popups",
+    "unrun kill/route/native",
+    "all640 unrun"
+  ],
+  "preservation": {
+    "candidate02RawFiles": 1000,
+    "candidate02RawChanged": [],
+    "candidate01RawChanged": [],
+    "originalQAArchiveMatches": true,
+    "scopedPrefsRestored": [
+      {
+        "matches": true,
+        "path": "Software\\LastBellPrototype\\Last Bell MVP"
+      },
+      {
+        "matches": true,
+        "path": "Software\\Unity\\UnityEditor\\LastBellPrototype\\Last Bell MVP"
+      }
+    ],
+    "protected": {
+      "priorQaSourceUnchanged": true,
+      "priorCandidateRawUnchanged": true,
+      "manifest": {
+        "directory": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-02\\protected-synthetic-fixture",
+        "files": [
+          {
+            "path": "last-bell-save.json",
+            "lastWriteUtc": "2026-10-24T16:27:32.5045228Z",
+            "sha256": "83BFA416458C847D85CC6D7619FD79CC3F2F037ECD1FB4B9662BF9EF6ADCC5B8",
+            "bytes": 46
+          }
+        ],
+        "exists": true
+      },
+      "userDefaultProfile": "NOT_ACCESSED",
+      "matches": true
+    },
+    "userDefaultProfile": "NOT_ACCESSED"
+  }
+}

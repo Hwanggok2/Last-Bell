@@ -1,0 +1,81 @@
+{
+    "visualReview": "NOT_RUN",
+    "naturalMotionReview": "NOT_RUN",
+    "osInput": "DEFERRED",
+    "mobile": "DEFERRED",
+    "coverage": "recovery19-20-and-automatic-arrival-idle-plus-stage18-regression",
+    "storyRestoreUi": [],
+    "defaultSaveRuntime": "NOT_RUN: observed launches use an explicit isolated override; selector contract checked separately",
+    "skillImplementation": "Source/planning review required; runtime probe does not certify absence of all skill code",
+    "writtenFrames": 680,
+    "playtestDefine": true,
+    "clips": [
+        "dragon_goblin_guard/Idle/dragon-v3-goblin_guard-Idle",
+        "dragon_goblin_guard/Attack/dragon-v3-goblin_guard-Attack",
+        "dragon_goblin_guard/Stun/dragon-v3-goblin_guard-Stun",
+        "actual combo Attack frames stage 19: 0,1,2,3,4,5,6,7 / expected asset frames 8",
+        "dragon_gib/Idle/dragon-v3-gib-Idle",
+        "dragon_gib/Attack/dragon-v3-gib-Attack",
+        "dragon_gib/Stun/dragon-v3-gib-Stun",
+        "actual combo Attack frames stage 20: 0,1,2,3,4,5 / expected asset frames 6"
+    ],
+    "grounds": [],
+    "attackAliases": [],
+    "segments": [
+        {
+            "name": "recheck-19-automatic-idle",
+            "clock": "real-frame-v3-static-session",
+            "frames": 124,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 3.7142467498779299,
+            "lastRealtime": 5.771282196044922,
+            "maxDelta": 0.05781799927353859,
+            "maxRealtimeGap": 0.022974491119384767,
+            "encodeSeconds": 2.5699520111083986
+        },
+        {
+            "name": "recheck-19-actual-combo-recovery",
+            "clock": "real-frame-v3",
+            "frames": 171,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 9.094125747680664,
+            "lastRealtime": 11.996225357055664,
+            "maxDelta": 0.032990604639053348,
+            "maxRealtimeGap": 0.03880023956298828,
+            "encodeSeconds": 3.5816574096679689
+        },
+        {
+            "name": "recheck-20-automatic-idle",
+            "clock": "real-frame-v3-static-session",
+            "frames": 124,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 16.46286392211914,
+            "lastRealtime": 18.513206481933595,
+            "maxDelta": 0.02800530008971691,
+            "maxRealtimeGap": 0.017580032348632814,
+            "encodeSeconds": 2.5902347564697267
+        },
+        {
+            "name": "recheck-20-actual-combo-recovery",
+            "clock": "real-frame-v3",
+            "frames": 169,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 21.853187561035158,
+            "lastRealtime": 24.742887496948243,
+            "maxDelta": 0.035091597586870196,
+            "maxRealtimeGap": 0.03879356384277344,
+            "encodeSeconds": 3.5385570526123049
+        },
+        {
+            "name": "enemy-18-attack-hit",
+            "clock": "real-frame-v3",
+            "frames": 92,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 29.128524780273439,
+            "lastRealtime": 30.682310104370118,
+            "maxDelta": 0.029118098318576814,
+            "maxRealtimeGap": 0.03201866149902344,
+            "encodeSeconds": 2.05145263671875
+        }
+    ]
+}

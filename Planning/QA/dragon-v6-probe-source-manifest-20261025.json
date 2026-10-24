@@ -1,0 +1,66 @@
+{
+  "scope": "QA-owned probe and tools only; not final product/build freeze",
+  "sourceFrozen": true,
+  "frozenAtUtc": "2026-10-24T16:06:27.669041+00:00",
+  "version": "0.9.5",
+  "dataVersion": "mvp1.18.0",
+  "qaExecution": "NOT_RUN",
+  "unityExecutionByQA": "NOT_RUN",
+  "defaultUserProfile": "NOT_ACCESSED",
+  "physicalInput": "DEFERRED",
+  "staticValidation": {
+    "roslyn": {
+      "runtimeFiles": 76,
+      "errors": 0,
+      "checkedAtUtc": "2026-10-24T15:58:29.3863805Z",
+      "dllEmitted": false,
+      "unityExecuted": false
+    },
+    "powershellAst": {
+      "files": 2,
+      "errors": 0
+    },
+    "pythonAst": "PASS"
+  },
+  "files": [
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.cs",
+      "sha256": "7B0347E89E53F6169A957EE74A703BDAF8E3BDAD89BD43668EC209C9FD114684"
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V6.cs",
+      "sha256": "12B7BF54AE4D7425429432B3815DB86CE92B69251F98ECA3A912A6D53CDA9FA7"
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V6.cs.meta",
+      "sha256": "FB1C4724CD7756652F6D6207438A26599BE47851781B01867509CF9DE6DF2DD3"
+    },
+    {
+      "path": "Tools/QA/Dragon-v6/common.ps1",
+      "sha256": "4B4E26DAEE3A38B9C6F0FAEB87FF274F5240E3B9ECF77261116AB2C3B3F17849"
+    },
+    {
+      "path": "Tools/QA/Dragon-v6/run-campaign.ps1",
+      "sha256": "B9FA9F8D0859A81576D511C8A9E3944C997569FA85E130077509ED602E1B1FEF"
+    },
+    {
+      "path": "Tools/QA/Dragon-v6/analyze.py",
+      "sha256": "EBAF0EDEC564DC068831A348ED667D517DE3BD09C31CDA772F8ADA2428599CAE"
+    },
+    {
+      "path": "Tools/QA/Dragon-v6/README.md",
+      "sha256": "3FCF11A0995A35CD9AAB18FB2EC4FBC3E3F5C86493C3523061038EA71077243E"
+    }
+  ],
+  "readOnlyDependencies": [
+    {
+      "path": "Tools/QA/Dragon-v3/common.ps1",
+      "sha256": "998AADA226B62E1580A3DCB1FC1FB44413AA17AE5520D02F58B3A9E5FB62C8F0"
+    }
+  ],
+  "executionPrerequisites": [
+    "Root final observed build and full source freeze including Tools/QA/Dragon-v3/common.ps1",
+    "Root execution ownership handoff; four sequential processes once",
+    "New candidate; prior-QA schema9 seed only; scoped PlayerPrefs backup/restore"
+  ]
+}

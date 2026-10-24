@@ -1,0 +1,73 @@
+{
+  "revision": "combat-audio-v7.2",
+  "date": "2026-10-23",
+  "sourceManifest": "../../Story/Audio-v72/manifest.json",
+  "audioAssets": {
+    "files": 3,
+    "sha256Matched": true,
+    "pcm16Stereo44100": true,
+    "clippedFiles": 0,
+    "downloadKind": "Public HQ MP3 previews, not original lossless sources"
+  },
+  "windowsBuild": {
+    "status": "Succeeded",
+    "errors": 0,
+    "bytes": 209163217
+  },
+  "webglBuild": {
+    "status": "Succeeded",
+    "errors": 0,
+    "bytes": 23344475,
+    "licenseFiles": [
+      "CC-BY-4.0.txt",
+      "CC0-1.0.txt",
+      "CREDITS.txt",
+      "impact-LICENSE.txt",
+      "manifest.json",
+      "rpg-LICENSE.txt",
+      "UI_CREDITS.txt"
+    ],
+    "landingCreditsLink": true,
+    "nonemptyBuildFiles": 4,
+    "browserRuntimeTest": false
+  },
+  "runtime": {
+    "mobile": {
+      "passed": true,
+      "checks": 58,
+      "width": 640,
+      "height": 360
+    },
+    "desktop": {
+      "passed": true,
+      "checks": 58,
+      "width": 960,
+      "height": 540
+    }
+  },
+  "licenseFilesInWindows": [
+    "CC-BY-4.0.txt",
+    "CC0-1.0.txt",
+    "CREDITS.txt",
+    "impact-LICENSE.txt",
+    "manifest.json",
+    "rpg-LICENSE.txt",
+    "UI_CREDITS.txt"
+  ],
+  "visualReview": [
+    "mobile/18-audio-credits.png",
+    "desktop/17-audio-credits-button.png"
+  ],
+  "physicalMobileDeviceTest": false,
+  "publicDeployment": "not performed",
+  "playModeTests": {
+    "suite": "LastBell.Tests.CombatPresentationTests",
+    "result": "Passed",
+    "total": 19,
+    "passed": 19,
+    "failed": 0,
+    "evidence": "Planning/Evidence/Audio-v72/playmode.xml",
+    "startTime": "2026-10-23 04:04:23Z",
+    "endTime": "2026-10-23 04:04:29Z"
+  }
+}

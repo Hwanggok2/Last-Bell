@@ -1,0 +1,73 @@
+{
+  "storyOnly1280": false,
+  "recoveryOnly": true,
+  "userDefaultProfile": "NOT_ACCESSED",
+  "full1280MotionRun": false,
+  "expectedProcesses": 2,
+  "runs": [
+    {
+      "save": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-05\\1280x720\\fresh\\profiles\\boot",
+      "mode": "v3-recovery",
+      "output": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-05\\1280x720\\fresh",
+      "startedAt": "2026-10-24T20:34:10.7356300+09:00",
+      "arguments": [
+        "-dragon-theme-smoke",
+        "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-05\\1280x720\\fresh\"",
+        "-dragon-theme-case",
+        "v3-recovery",
+        "-lastbell-save-dir",
+        "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-05\\1280x720\\fresh\\profiles\\boot\"",
+        "-screen-width",
+        "1280",
+        "-screen-height",
+        "720",
+        "-screen-fullscreen",
+        "0",
+        "-logFile",
+        "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-05\\1280x720\\fresh\\player.log\""
+      ],
+      "name": "v3-recovery-1280x720",
+      "endedAt": "2026-10-24T20:35:27.0324722+09:00",
+      "timedOut": false,
+      "passed": true,
+      "exitCode": 0,
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "save": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-05\\640x360\\fresh\\profiles\\boot",
+      "mode": "v3-recovery",
+      "output": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-05\\640x360\\fresh",
+      "startedAt": "2026-10-24T20:35:27.1037535+09:00",
+      "arguments": [
+        "-dragon-theme-smoke",
+        "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-05\\640x360\\fresh\"",
+        "-dragon-theme-case",
+        "v3-recovery",
+        "-lastbell-save-dir",
+        "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-05\\640x360\\fresh\\profiles\\boot\"",
+        "-screen-width",
+        "640",
+        "-screen-height",
+        "360",
+        "-screen-fullscreen",
+        "0",
+        "-logFile",
+        "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v3\\dragon-v3-candidate-05\\640x360\\fresh\\player.log\""
+      ],
+      "name": "v3-recovery-640x360",
+      "endedAt": "2026-10-24T20:36:02.1809990+09:00",
+      "timedOut": false,
+      "passed": true,
+      "exitCode": 0,
+      "width": 640,
+      "height": 360
+    }
+  ],
+  "defaultSaveRuntime": "NOT_RUN",
+  "passed": true,
+  "error": null,
+  "osInput": false,
+  "limits": "Synthetic isolated profile campaign and legacy sentinel. RecoveryOnly runs two targeted processes without restart, separating automatic Arrival Idle from actual combo recovery. Attack asset inventory uses prior source/manifest evidence; actual combat frame coverage is recorded without forced sampling. With StoryOnly1280, prior motion evidence must be adopted separately after product identity review. Not a user-profile hash audit or complete visual acceptance.",
+  "visualReview": "NOT_RUN"
+}

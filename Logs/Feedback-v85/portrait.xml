@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Passed" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-23 13:53:10Z" end-time="2026-10-23 13:53:17Z" duration="6.4673963">
+  <test-suite type="TestSuite" id="1027" name="Last Bell MVP" fullname="Last Bell MVP" runstate="Runnable" testcasecount="21" result="Passed" start-time="2026-10-23 13:53:10Z" end-time="2026-10-23 13:53:17Z" duration="6.467396" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1023" name="LastBell.Presentation.Tests.dll" fullname="C:/Github/Test2/Client/Library/ScriptAssemblies/LastBell.Presentation.Tests.dll" runstate="Runnable" testcasecount="21" result="Passed" start-time="2026-10-23 13:53:10Z" end-time="2026-10-23 13:53:17Z" duration="6.453656" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="10808" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1024" name="LastBell" fullname="LastBell" runstate="Runnable" testcasecount="21" result="Passed" start-time="2026-10-23 13:53:10Z" end-time="2026-10-23 13:53:17Z" duration="6.452258" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1025" name="Tests" fullname="LastBell.Tests" runstate="Runnable" testcasecount="21" result="Passed" start-time="2026-10-23 13:53:10Z" end-time="2026-10-23 13:53:17Z" duration="6.451587" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1001" name="CombatPresentationTests" fullname="LastBell.Tests.CombatPresentationTests" classname="LastBell.Tests.CombatPresentationTests" runstate="Runnable" testcasecount="21" result="Passed" start-time="2026-10-23 13:53:10Z" end-time="2026-10-23 13:53:17Z" duration="6.449571" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1002" name="LobbyPortraitPlaysIdleAndRefreshDoesNotResetIt" fullname="LastBell.Tests.CombatPresentationTests.LobbyPortraitPlaysIdleAndRefreshDoesNotResetIt" methodname="LobbyPortraitPlaysIdleAndRefreshDoesNotResetIt" classname="LastBell.Tests.CombatPresentationTests" runstate="Runnable" seed="1730434892" result="Passed" start-time="2026-10-23 13:53:10Z" end-time="2026-10-23 13:53:17Z" duration="6.427257" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[<b><color=#2EA3FF>MCP-FOR-UNITY</color></b>: [TestRunnerNoThrottle] Restored Interaction Mode after test run.
+Saving results to: C:/Github/Test2/Logs/Feedback-v85/portrait.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

@@ -1,0 +1,67 @@
+{
+  "checkedAtUtc": "2026-10-24T16:55:01.930735+00:00",
+  "rawFileCount": 1613,
+  "priorCandidates": [
+    {
+      "candidate": "dragon-v6-candidate-01",
+      "files": 146,
+      "changed": []
+    },
+    {
+      "candidate": "dragon-v6-candidate-02",
+      "files": 1000,
+      "changed": []
+    },
+    {
+      "candidate": "dragon-v6-candidate-03",
+      "files": 597,
+      "changed": []
+    }
+  ],
+  "qaSources": [
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.cs",
+      "matches": true
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V6.cs",
+      "matches": true
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V6.cs.meta",
+      "matches": true
+    },
+    {
+      "path": "Tools/QA/Dragon-v6/common.ps1",
+      "matches": true
+    },
+    {
+      "path": "Tools/QA/Dragon-v6/run-campaign.ps1",
+      "matches": true
+    },
+    {
+      "path": "Tools/QA/Dragon-v6/analyze.py",
+      "matches": true
+    },
+    {
+      "path": "Tools/QA/Dragon-v6/README.md",
+      "matches": true
+    },
+    {
+      "path": "Tools/QA/Dragon-v3/common.ps1",
+      "matches": true
+    }
+  ],
+  "runtimeSha256": "ae0a525b5378b20624d4250122ea84a993fbf3f9897a072ce3997e1b642d9d09",
+  "playerPrefsRestored": [
+    {
+      "matches": true,
+      "path": "Software\\LastBellPrototype\\Last Bell MVP"
+    },
+    {
+      "matches": true,
+      "path": "Software\\Unity\\UnityEditor\\LastBellPrototype\\Last Bell MVP"
+    }
+  ],
+  "userDefaultProfile": "NOT_ACCESSED"
+}

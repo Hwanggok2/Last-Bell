@@ -1,0 +1,26 @@
+{
+  "status": "QA_FORCED_SAMPLE_START_GAP",
+  "passes": 81,
+  "failures": 1,
+  "nativeExit": 1,
+  "consoleErrors": 0,
+  "remainingProcessesStarted": 0,
+  "actualProductRecoveryTest": "NOT_RUN",
+  "automaticIdle19": "PASS all8frames two cycles",
+  "forcedAttackObservedFrames": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "cause": "First forced capture arrived after the first 80ms slot; the wall-clock sampler selected frame1. Recorded motion remains Attack, so no evidence of LateUpdate overwriting the forced pose.",
+  "scopedPrefsRestored": true,
+  "syntheticLegacyUnchanged": true,
+  "userDefaultProfile": "NOT_ACCESSED",
+  "productChangedByQa": false,
+  "resolution": "1280x720",
+  "remediation": "Remove forced asset sampler; preserve source/manifest inventory evidence; record actual combat frame coverage"
+}

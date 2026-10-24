@@ -1,0 +1,49 @@
+{
+  "limits": "Representative v6 changed-scope observations. Seed/high-HP/future-three-slot fixtures and manual clock gaps are labelled. Only1280 includes continuous1-to20; native restore covers two selected checkpoints. No full acceptance, normal-speed performance, physical input or listening claim.",
+  "osInput": "DEFERRED",
+  "runs": [
+    {
+      "name": "v6-continue-1280x720",
+      "save": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-02\\1280x720\\fresh\\profiles\\boot",
+      "endedAt": "2026-10-25T01:28:51.0802555+09:00",
+      "output": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-02\\1280x720\\fresh",
+      "arguments": [
+        "-dragon-theme-smoke",
+        "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-02\\1280x720\\fresh\"",
+        "-dragon-theme-case",
+        "v6-continue",
+        "-lastbell-save-dir",
+        "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-02\\1280x720\\fresh\\profiles\\boot\"",
+        "-screen-width",
+        "1280",
+        "-screen-height",
+        "720",
+        "-screen-fullscreen",
+        "0",
+        "-logFile",
+        "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-02\\1280x720\\fresh\\player.log\""
+      ],
+      "startedAt": "2026-10-25T01:27:33.5156934+09:00",
+      "width": 1280,
+      "passed": false,
+      "timedOut": false,
+      "mode": "v6-continue",
+      "height": 720,
+      "exitCode": 1
+    }
+  ],
+  "core": "Handed-over evidence reused",
+  "continuation": {
+    "rawFiles": 146,
+    "resultSha256": "58743C5D2602E9C0A80DCDCD030A5E64F9649EBAF784D92EC0219AF11362F89E",
+    "scope": "1280 resumes at Luka skill/save regression; completed legacy/inn/HP observations reused. Remaining1280 and all640 cases run once.",
+    "candidate": "dragon-v6-candidate-01"
+  },
+  "userDefaultProfile": "NOT_ACCESSED",
+  "observationPassed": false,
+  "expectedProcesses": 4,
+  "visualReview": "NOT_RUN",
+  "error": "V6 observation failed: v6-continue-1280x720; remaining cases not started",
+  "audioListening": "NOT_RUN",
+  "acceptance": "NOT_CERTIFIED"
+}

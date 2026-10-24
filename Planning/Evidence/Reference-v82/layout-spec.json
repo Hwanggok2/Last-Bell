@@ -1,0 +1,155 @@
+{
+  "version": "0.8.2",
+  "sourceVideo": "C:/Users/JW/Videos/LastBell/Screen_Recording_20261023_130328_TimingHero.mp4",
+  "referenceCrop": {
+    "frame": [
+      1200,
+      540
+    ],
+    "x": 44,
+    "y": 0,
+    "width": 1084,
+    "height": 540
+  },
+  "mapping": "x and width multiply by SafeAreaWidth/1084; y and height multiply by SafeAreaHeight/540. Font sizes use Canvas reference scale. Typography scale is min(SafeAreaWidth/1084, SafeAreaHeight/540); heading text uses 0.75 horizontal scale to match the reference ink width.",
+  "font": "NeoDunggeunmo Pro",
+  "typePixels": {
+    "headingFont": 44,
+    "headingHorizontalScale": 0.75,
+    "bodyFont": 24,
+    "backFont": 20,
+    "auxiliaryFont": 18,
+    "ratingFont": 16,
+    "startFont": 30,
+    "resultFont": 84,
+    "measuredHeadingInkHeight": 35,
+    "measuredBodyInkHeight": 20
+  },
+  "rectangles": {
+    "heading": [
+      304,
+      17,
+      476,
+      54
+    ],
+    "leftPanel": [
+      16,
+      100,
+      272,
+      340
+    ],
+    "rightPanel": [
+      304,
+      100,
+      764,
+      340
+    ],
+    "back": [
+      4,
+      12,
+      104,
+      52
+    ],
+    "fragments": [
+      930,
+      12,
+      138,
+      38
+    ],
+    "selectionSummary": [
+      338,
+      135,
+      680,
+      92
+    ],
+    "selectionStats": [
+      348,
+      252,
+      640,
+      156
+    ],
+    "upgradeBuy": [
+      472,
+      466,
+      140,
+      54
+    ],
+    "startBattle": [
+      832,
+      452,
+      236,
+      76
+    ],
+    "earnedGold": [
+      16,
+      78,
+      440,
+      38
+    ],
+    "rewardDialog": [
+      206,
+      54,
+      672,
+      354
+    ]
+  },
+  "referenceFrames": [
+    {
+      "screen": "용사 선택",
+      "file": "menus/00067.000.jpg",
+      "capture": "01-selection.png"
+    },
+    {
+      "screen": "업그레이드",
+      "file": "upgrades/00682.000.jpg",
+      "capture": "03-upgrade.png"
+    },
+    {
+      "screen": "전투 HUD",
+      "file": "normal12/00294.000.jpg",
+      "capture": "08-combat.png"
+    },
+    {
+      "screen": "유물 목록",
+      "file": "menus/00083.000.jpg",
+      "capture": "18-owned-relic.png"
+    },
+    {
+      "screen": "유물 선택",
+      "file": "overview/00660.000.jpg",
+      "capture": "15-relic-selected.png"
+    },
+    {
+      "screen": "도전 결과",
+      "file": "overview/00678.000.jpg",
+      "capture": "16-final-result.png"
+    }
+  ],
+  "preserved": [
+    "Actual game names, values, save and combat balance",
+    "NeoDunggeunmo font and Last Bell palette/art",
+    "Bell and timing-wave mechanics"
+  ],
+  "copyAdaptations": [
+    "현상금 is a display label for existing Gold, not a new currency.",
+    "Rating is the sum of four existing star ratings, explicitly displayed out of 20.",
+    "Absent shop/ad systems are not presented as working buttons.",
+    "Current relic equipment and retry/lobby actions remain available."
+  ],
+  "measuredBeforeCorrection": {
+    "referenceTitleInk": [
+      472,
+      25,
+      611,
+      59
+    ],
+    "previousTitleInk": [
+      466,
+      25,
+      616,
+      53
+    ],
+    "referenceBodyInkHeight": 20,
+    "previousBodyInkHeight": 16
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "sourceFrozen": true,
+  "scope": "DQA5-002 Stage12 only; two processes, three player IDs per resolution",
+  "frozenAt": "2026-10-24T15:13:10.867736+00:00",
+  "files": [
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.cs",
+      "sha256": "48dc08aec3ee3d9a4efe4ab606d2b17557a1c5ed195dd4853b7637681df141ae"
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V5.cs",
+      "sha256": "ddc582a2d66737bb3234b5d9ed02dedbf87c59d31a1dca2bf99b6927ade23540"
+    },
+    {
+      "path": "Tools/QA/Dragon-v5/run-campaign.ps1",
+      "sha256": "aa8f5ed56bb1c5fccfc5822480563c7a03ace01fef4ff4976e7e4790bf8f186f"
+    }
+  ],
+  "staticValidation": {
+    "runtimeSources": 74,
+    "csharpErrors": 0,
+    "powerShellErrors": 0,
+    "emittedDll": false,
+    "unityStarted": false
+  },
+  "nativeExecution": "NOT_RUN",
+  "requiredMode": "v5-story12",
+  "runnerSwitch": "-Story12Only",
+  "expectedProcesses": 2,
+  "originalQaSourceSnapshot": "Planning/Evidence/Dragon-v5/dragon-v5-candidate-02/review/original-qa-source",
+  "priorEvidence": "candidate02 raw evidence unchanged; adopt unaffected observations separately"
+}

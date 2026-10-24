@@ -1,0 +1,102 @@
+{
+  "_meta": {
+    "fastmcp": {
+      "wrap_result": true
+    }
+  },
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"success\":true,\"message\":\"Test job status retrieved.\",\"error\":null,\"data\":{\"job_id\":\"d08fb707b8654142875fa82d936f98d7\",\"status\":\"succeeded\",\"mode\":\"EditMode\",\"started_unix_ms\":1792837175275,\"finished_unix_ms\":1792837179761,\"last_update_unix_ms\":1792837179761,\"progress\":{\"completed\":5,\"total\":5,\"current_test_full_name\":null,\"current_test_started_unix_ms\":1792837179635,\"last_finished_test_full_name\":\"LastBell.Tests.SaveDirectorySelectorTests.ReopeningTheSamePlaytestPreservesItsCheckpointAndWallet\",\"last_finished_unix_ms\":1792837179645,\"stuck_suspected\":false,\"editor_is_focused\":false,\"blocked_reason\":null,\"failures_so_far\":[],\"failures_capped\":false},\"error\":null,\"result\":{\"mode\":\"EditMode\",\"summary\":{\"total\":5,\"passed\":5,\"failed\":0,\"skipped\":0,\"durationSeconds\":0.7612274,\"resultState\":\"Passed\"},\"results\":[{\"name\":\"ExplicitDirectoryHasPriority(False)\",\"fullName\":\"LastBell.Tests.SaveDirectorySelectorTests.ExplicitDirectoryHasPriority(False)\",\"state\":\"Passed\",\"durationSeconds\":0.0242031,\"message\":null,\"stackTrace\":null,\"output\":\"\"},{\"name\":\"ExplicitDirectoryHasPriority(True)\",\"fullName\":\"LastBell.Tests.SaveDirectorySelectorTests.ExplicitDirectoryHasPriority(True)\",\"state\":\"Passed\",\"durationSeconds\":0.0019182,\"message\":null,\"stackTrace\":null,\"output\":\"\"},{\"name\":\"FirstPlaytestStartsStageOneWithoutChangingLegacyPrimaryOrBackup\",\"fullName\":\"LastBell.Tests.SaveDirectorySelectorTests.FirstPlaytestStartsStageOneWithoutChangingLegacyPrimaryOrBackup\",\"state\":\"Passed\",\"durationSeconds\":0.0727051,\"message\":null,\"stackTrace\":null,\"output\":\"\"},{\"name\":\"ProductionKeepsExistingNamespaceAndSelectionCreatesNothing\",\"fullName\":\"LastBell.Tests.SaveDirectorySelectorTests.ProductionKeepsExistingNamespaceAndSelectionCreatesNothing\",\"state\":\"Passed\",\"durationSeconds\":0.0015182,\"message\":null,\"stackTrace\":null,\"output\":\"\"},{\"name\":\"ReopeningTheSamePlaytestPreservesItsCheckpointAndWallet\",\"fullName\":\"LastBell.Tests.SaveDirectorySelectorTests.ReopeningTheSamePlaytestPreservesItsCheckpointAndWallet\",\"state\":\"Passed\",\"durationSeconds\":0.0088797,\"message\":null,\"stackTrace\":null,\"output\":\"\"}]}},\"hint\":null}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "success": true,
+      "message": "Test job status retrieved.",
+      "error": null,
+      "data": {
+        "job_id": "d08fb707b8654142875fa82d936f98d7",
+        "status": "succeeded",
+        "mode": "EditMode",
+        "started_unix_ms": 1792837175275,
+        "finished_unix_ms": 1792837179761,
+        "last_update_unix_ms": 1792837179761,
+        "progress": {
+          "completed": 5,
+          "total": 5,
+          "current_test_full_name": null,
+          "current_test_started_unix_ms": 1792837179635,
+          "last_finished_test_full_name": "LastBell.Tests.SaveDirectorySelectorTests.ReopeningTheSamePlaytestPreservesItsCheckpointAndWallet",
+          "last_finished_unix_ms": 1792837179645,
+          "stuck_suspected": false,
+          "editor_is_focused": false,
+          "blocked_reason": null,
+          "failures_so_far": [],
+          "failures_capped": false
+        },
+        "error": null,
+        "result": {
+          "mode": "EditMode",
+          "summary": {
+            "total": 5,
+            "passed": 5,
+            "failed": 0,
+            "skipped": 0,
+            "durationSeconds": 0.7612274,
+            "resultState": "Passed"
+          },
+          "results": [
+            {
+              "name": "ExplicitDirectoryHasPriority(False)",
+              "fullName": "LastBell.Tests.SaveDirectorySelectorTests.ExplicitDirectoryHasPriority(False)",
+              "state": "Passed",
+              "durationSeconds": 0.0242031,
+              "message": null,
+              "stackTrace": null,
+              "output": ""
+            },
+            {
+              "name": "ExplicitDirectoryHasPriority(True)",
+              "fullName": "LastBell.Tests.SaveDirectorySelectorTests.ExplicitDirectoryHasPriority(True)",
+              "state": "Passed",
+              "durationSeconds": 0.0019182,
+              "message": null,
+              "stackTrace": null,
+              "output": ""
+            },
+            {
+              "name": "FirstPlaytestStartsStageOneWithoutChangingLegacyPrimaryOrBackup",
+              "fullName": "LastBell.Tests.SaveDirectorySelectorTests.FirstPlaytestStartsStageOneWithoutChangingLegacyPrimaryOrBackup",
+              "state": "Passed",
+              "durationSeconds": 0.0727051,
+              "message": null,
+              "stackTrace": null,
+              "output": ""
+            },
+            {
+              "name": "ProductionKeepsExistingNamespaceAndSelectionCreatesNothing",
+              "fullName": "LastBell.Tests.SaveDirectorySelectorTests.ProductionKeepsExistingNamespaceAndSelectionCreatesNothing",
+              "state": "Passed",
+              "durationSeconds": 0.0015182,
+              "message": null,
+              "stackTrace": null,
+              "output": ""
+            },
+            {
+              "name": "ReopeningTheSamePlaytestPreservesItsCheckpointAndWallet",
+              "fullName": "LastBell.Tests.SaveDirectorySelectorTests.ReopeningTheSamePlaytestPreservesItsCheckpointAndWallet",
+              "state": "Passed",
+              "durationSeconds": 0.0088797,
+              "message": null,
+              "stackTrace": null,
+              "output": ""
+            }
+          ]
+        }
+      },
+      "hint": null
+    }
+  },
+  "isError": false
+}

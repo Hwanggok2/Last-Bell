@@ -1,0 +1,50 @@
+{
+  "editmode": {
+    "total": "172",
+    "passed": "172",
+    "failed": "0",
+    "result": "Passed"
+  },
+  "playmode": {
+    "total": "19",
+    "passed": "19",
+    "failed": "0",
+    "result": "Passed"
+  },
+  "desktop": {
+    "passed": true,
+    "checks": 241,
+    "width": 960,
+    "height": 540
+  },
+  "mobile": {
+    "passed": true,
+    "checks": 241,
+    "width": 640,
+    "height": 360
+  },
+  "build": "Succeeded; 220653882 bytes; 0 errors",
+  "preserved": [
+    "all previous actor definitions and selected texture hashes",
+    "approved player run",
+    "Stage 10 and 20 bosses",
+    "HP, damage, upgrade costs, rewards, combat timings",
+    "save schema 7 and checkpoint 11"
+  ],
+  "dataVersion": "mvp1.11.0",
+  "bundleVersion": "0.8.3",
+  "limitations": [
+    "Automated Windows renders at 960x540 and 640x360; no physical phone touch test.",
+    "Game-feel proposals in the report are not balance/input implementations."
+  ],
+  "sourceSha256": "1ab906fe6458220d2e1327e0e9374f9bef6cdad951d392eaff6ebc8b6faad871",
+  "artManifestSha256": "fe19432e0272b249b85ddc15b5fe8ade4450f639ce2ffbf8f3a97a00b46ee523",
+  "Builds/Windows/LastBellMvp_Data/Managed/LastBell.Runtime.dll": {
+    "bytes": 317440,
+    "sha256": "2bb0a91f9f4459c29054d27939a50e93825eda17bc34ba3cd8c152c40c400a7b"
+  },
+  "Builds/LastBellMvp-Windows.zip": {
+    "bytes": 74947152,
+    "sha256": "f2896adc94da15ee14db9b0b8a0d3396dca4eb5adc28d0d4cb58914b580c9321"
+  }
+}

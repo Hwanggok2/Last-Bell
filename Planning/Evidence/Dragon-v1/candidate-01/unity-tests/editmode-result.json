@@ -1,0 +1,54 @@
+{
+  "_meta": {
+    "fastmcp": {
+      "wrap_result": true
+    }
+  },
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"success\":true,\"message\":\"Test job status retrieved.\",\"error\":null,\"data\":{\"job_id\":\"a386f66c4e784665a16aea311fe05daa\",\"status\":\"failed\",\"mode\":\"EditMode\",\"started_unix_ms\":1792825303219,\"finished_unix_ms\":1792825311837,\"last_update_unix_ms\":1792825311837,\"progress\":{\"completed\":186,\"total\":186,\"current_test_full_name\":null,\"current_test_started_unix_ms\":1792825311708,\"last_finished_test_full_name\":\"LastBell.Tests.JsonSaveRepositoryTests.VersionTwoTransitionAndStorySurviveJsonUtility\",\"last_finished_unix_ms\":1792825311727,\"stuck_suspected\":false,\"editor_is_focused\":false,\"blocked_reason\":null,\"failures_so_far\":[{\"full_name\":\"LastBell.Tests.FeedbackV6Tests.DuplicateEnemyAndDuplicateDesignAreRejected\",\"message\":\"  Expected: <System.InvalidOperationException>\\r\\n  But was:  null\\r\\n\"},{\"full_name\":\"LastBell.Tests.GameSessionTests.StoryIsOncePerCharacterAndSkipNeverChoosesRelic\",\"message\":\"  Expected string length 29 but was 13. Strings differ at index 0.\\r\\n  Expected: \\\"문은 내가 열겠다.\\\\n안에 남은 사람들을 되찾아 오지.\\\"\\r\\n  But was:  \\\"좋아. 아직 해도 높네.\\\"\\r\\n  -----------^\\r\\n\"}],\"failures_capped\":false},\"error\":null,\"result\":null},\"hint\":null}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "success": true,
+      "message": "Test job status retrieved.",
+      "error": null,
+      "data": {
+        "job_id": "a386f66c4e784665a16aea311fe05daa",
+        "status": "failed",
+        "mode": "EditMode",
+        "started_unix_ms": 1792825303219,
+        "finished_unix_ms": 1792825311837,
+        "last_update_unix_ms": 1792825311837,
+        "progress": {
+          "completed": 186,
+          "total": 186,
+          "current_test_full_name": null,
+          "current_test_started_unix_ms": 1792825311708,
+          "last_finished_test_full_name": "LastBell.Tests.JsonSaveRepositoryTests.VersionTwoTransitionAndStorySurviveJsonUtility",
+          "last_finished_unix_ms": 1792825311727,
+          "stuck_suspected": false,
+          "editor_is_focused": false,
+          "blocked_reason": null,
+          "failures_so_far": [
+            {
+              "full_name": "LastBell.Tests.FeedbackV6Tests.DuplicateEnemyAndDuplicateDesignAreRejected",
+              "message": "  Expected: <System.InvalidOperationException>\r\n  But was:  null\r\n"
+            },
+            {
+              "full_name": "LastBell.Tests.GameSessionTests.StoryIsOncePerCharacterAndSkipNeverChoosesRelic",
+              "message": "  Expected string length 29 but was 13. Strings differ at index 0.\r\n  Expected: \"문은 내가 열겠다.\\n안에 남은 사람들을 되찾아 오지.\"\r\n  But was:  \"좋아. 아직 해도 높네.\"\r\n  -----------^\r\n"
+            }
+          ],
+          "failures_capped": false
+        },
+        "error": null,
+        "result": null
+      },
+      "hint": null
+    }
+  },
+  "isError": false
+}

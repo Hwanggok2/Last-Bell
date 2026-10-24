@@ -1,0 +1,49 @@
+{
+  "userDefaultProfile": "NOT_ACCESSED",
+  "expectedProcesses": 4,
+  "continuation": {
+    "rawFiles": 1000,
+    "resultSha256": "508033E018C44F880D7DC81BE8901D896C56B31E6F19E82A3240F89B75C00336",
+    "candidate": "dragon-v6-candidate-02",
+    "scope": "1280 only: normal/boss lightning recheck, active/end stun, unrun concurrent/kill/route/native. Completed player/companion cases reused. All640 cases remain unrun."
+  },
+  "runs": [
+    {
+      "save": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-03\\1280x720\\fresh\\profiles\\boot",
+      "mode": "v6-tail",
+      "name": "v6-tail-1280x720",
+      "output": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-03\\1280x720\\fresh",
+      "endedAt": "2026-10-25T01:43:55.7232316+09:00",
+      "timedOut": false,
+      "width": 1280,
+      "exitCode": -1,
+      "passed": false,
+      "height": 720,
+      "startedAt": "2026-10-25T01:39:02.2516976+09:00",
+      "arguments": [
+        "-dragon-theme-smoke",
+        "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-03\\1280x720\\fresh\"",
+        "-dragon-theme-case",
+        "v6-tail",
+        "-lastbell-save-dir",
+        "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-03\\1280x720\\fresh\\profiles\\boot\"",
+        "-screen-width",
+        "1280",
+        "-screen-height",
+        "720",
+        "-screen-fullscreen",
+        "0",
+        "-logFile",
+        "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-03\\1280x720\\fresh\\player.log\""
+      ]
+    }
+  ],
+  "acceptance": "NOT_CERTIFIED",
+  "error": "V6 observation failed: v6-tail-1280x720; remaining cases not started",
+  "osInput": "DEFERRED",
+  "observationPassed": false,
+  "core": "Handed-over evidence reused",
+  "audioListening": "NOT_RUN",
+  "limits": "Representative v6 changed-scope observations. Seed/high-HP/future-three-slot fixtures and manual clock gaps are labelled. Only1280 includes continuous1-to20; native restore covers two selected checkpoints. No full acceptance, normal-speed performance, physical input or listening claim.",
+  "visualReview": "NOT_RUN"
+}

@@ -1,0 +1,43 @@
+{
+  "status": "PASS_WITH_EXPLICIT_SCOPE",
+  "dateKst": "2026-10-24",
+  "candidate": "dragon-v2-candidate-02-hp",
+  "preservedMotionAndTestCandidate": "dragon-v2-candidate-01",
+  "version": "0.9.1",
+  "dataVersion": "mvp1.14.0",
+  "observedRuntimeSha256": "41fe0fbffacaa8798db29bbea9353559459af12ea58e9acdc210b7c577236a2b",
+  "candidate01RuntimeSha256": "7c151285e5431b3de798fb2efd802acb3c81797f0ec723cf5835e4f770079b4a",
+  "observedCases": [
+    {"candidate": "dragon-v2-candidate-01", "mode": "v2", "resolution": "1280x720", "passed": true, "checks": 130, "errors": 0, "nativeExit": 0, "motionPngs": 661, "hpPngs": 10},
+    {"candidate": "dragon-v2-candidate-01", "mode": "v2", "resolution": "640x360", "passed": true, "checks": 130, "errors": 0, "nativeExit": 0, "motionPngs": 673, "hpPngs": 10},
+    {"candidate": "dragon-v2-candidate-02-hp", "mode": "v2-hp", "resolution": "1280x720", "passed": true, "checks": 70, "errors": 0, "nativeExit": 0, "motionPngs": 0, "hpPngs": 10},
+    {"candidate": "dragon-v2-candidate-02-hp", "mode": "v2-hp", "resolution": "640x360", "passed": true, "checks": 70, "errors": 0, "nativeExit": 0, "motionPngs": 0, "hpPngs": 10}
+  ],
+  "playMode": {"requestedMethods": 7, "total": 11, "passed": 11, "failed": 0, "skipped": 0, "jobId": "37055933fa604cc0af0a873496eef4d7"},
+  "frames": {"count": 1334, "pathDuplicates": 0, "withinSegmentFrameCountGaps": 0, "allSha256Match": true},
+  "visual": {
+    "method": "Original PNGs, ordered distinct rendered poses and transition boundaries, recorded timestamps",
+    "playerFrameReview": "NO_ADDITIONAL_DEFECT_FOUND_IN_INSPECTED_RENDERED_POSES",
+    "normalSpeedVideoPlayback": "NOT_PERFORMED",
+    "smoothnessOr60FpsCertified": false,
+    "hpStates": 30,
+    "hpFilledColumnsAllMatch": true,
+    "hp1280StrictRaster": "PASS",
+    "hp640StrictRaster": "PASS_AFTER_DQA2_001_FIX",
+    "finalHpRasterStatesPassed": 30,
+    "finalHpMixedPixels": 0,
+    "finalHpBoundsInteger": true,
+    "finalHpSizePreserved": true,
+    "finalHpY1280": 169,
+    "finalHpY640": 84,
+    "hpRasterEvidence": "dragon-v2-candidate-02-hp/hp-raster-verification.json",
+    "unrenderedSourcePoses": "Some short attack-preparation/dodge-onset source poses were not present in individual real-frame runs; this is not a frameCount capture gap."
+  },
+  "defects": [{"id": "DQA2-001", "status": "CLOSED", "scope": "640 HP horizontal boundaries contained blended pixels", "fix": "Snap the two HP Rect lower-left screen edges to integer physical pixels without changing size or HP rules", "originalEvidence": "dragon-v2-candidate-01/hp640-raster-observation.json", "closureEvidence": "dragon-v2-candidate-02-hp/hp-raster-verification.json"}],
+  "isolation": {"savePathsUnderNewEvidence": true, "userSaveCopied": false, "observedPlayerPrefsRestored": true, "editorPlayerPrefsRestored": true, "hpRecheckPlayerPrefsRestored": true},
+  "editorReturn": {"instance": "Client@65e60f79bc76ded9", "port": 8093, "scene": "Assets/Game/Scenes/Mvp.unity", "playing": false, "dirty": false, "testsRunning": false, "ownershipReturned": true},
+  "osInput": "DEFERRED_BY_USER",
+  "hpRecheck": {"mode": "v2-hp", "launcherSwitch": "-V2HpOnly", "status": "COMPLETE", "scope": "HP30 states only; no motion or PlayMode rerun", "unityTouched": false},
+  "normalRelease": {"reportedByCoordinator": "FINAL_HP_BUILD_REGENERATION_IN_PROGRESS", "verifiedByQa": false, "separatelyExecutedByQa": false},
+  "finalReport": "Planning/QA/dragon-v2-result-20261024.md"
+}

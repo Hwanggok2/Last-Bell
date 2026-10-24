@@ -1,0 +1,111 @@
+{
+  "status": "SOURCE_FROZEN_WAITING_FOR_OBSERVED_REBUILD",
+  "recordedAtUtc": "2026-10-24T11:03:41.5805125Z",
+  "files": [
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.cs",
+      "sha256": "b9cbd8ff412b0aa677cd6f17681f22d9c1d952294c67ae043accc9f7e76c7397",
+      "bytes": 30745
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V3.cs",
+      "sha256": "33e3e66e9feb0432cd60e05152301f89855c0427b617b2d82d1965c44d6df24e",
+      "bytes": 31590
+    },
+    {
+      "path": "Tools/QA/Dragon-v3/run-campaign.ps1",
+      "sha256": "ce6efff08cf0e547df08eed65f0b90309c5b204a8d6f5ffa334de9983d786033",
+      "bytes": 8614
+    }
+  ],
+  "sourceCompile": [
+    {
+      "defines": "player",
+      "status": "PASS",
+      "errors": 0,
+      "warnings": 27
+    },
+    {
+      "defines": "editor",
+      "status": "PASS",
+      "errors": 0,
+      "warnings": 28
+    }
+  ],
+  "launcherSyntax": "PASS",
+  "integrationFiles": [
+    {
+      "path": "Client/Assets/Game/Scenes/Mvp.unity",
+      "matches": true
+    },
+    {
+      "path": "Client/Assets/Game/Prefabs/GameView.prefab",
+      "matches": true
+    },
+    {
+      "path": "Client/Assets/Game/Prefabs/PresentationWorld.prefab",
+      "matches": true
+    },
+    {
+      "path": "Client/Assets/Game/Art/Presentation/manifest.json",
+      "matches": true
+    },
+    {
+      "path": "Client/Assets/Game/Art/Presentation/PresentationArtCatalog.asset",
+      "matches": true
+    },
+    {
+      "path": "Client/Assets/Game/Data/Generated/mvp-catalog.json",
+      "matches": true
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/GameBootstrap.cs",
+      "matches": true
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/SaveDirectorySelector.cs",
+      "matches": true
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Presentation/ParallaxWorld.cs",
+      "matches": true
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Presentation/ActorView.cs",
+      "matches": true
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Presentation/BattlePresentation.cs",
+      "matches": true
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Presentation/EnemyAttackEffects.cs",
+      "matches": true
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Presentation/EnemyEffectBurst.cs",
+      "matches": true
+    },
+    {
+      "path": "Client/Assets/Game/Editor/DragonWorldMigration.cs",
+      "matches": true
+    },
+    {
+      "path": "Client/Assets/Game/Editor/DragonThemeMigration.cs",
+      "matches": true
+    }
+  ],
+  "nativeRun": false,
+  "unityAccess": false,
+  "osInput": "DEFERRED_BY_USER",
+  "userDefaultProfile": "NOT_ACCESSED",
+  "plannedNextCandidate": "dragon-v3-candidate-03",
+  "launcherSwitch": "-StoryOnly1280",
+  "plannedProcesses": [
+    "1280 v3-story: story20 and save setup only",
+    "1280 v3-resume: same exact isolated save path",
+    "640 v3: full previously unrun observations",
+    "640 v3-resume: same exact isolated save path"
+  ],
+  "reuse": "Candidate02 1280 fresh/forest/player/boss/travel observations only; story after restored page1 and restart were not completed"
+}

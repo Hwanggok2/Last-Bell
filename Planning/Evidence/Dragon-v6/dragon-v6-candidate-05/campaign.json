@@ -1,0 +1,78 @@
+{
+  "observationPassed": true,
+  "expectedProcesses": 2,
+  "error": null,
+  "userDefaultProfile": "NOT_ACCESSED",
+  "visualReview": "NOT_RUN",
+  "audioListening": "NOT_RUN",
+  "continuation": {
+    "rawFiles": 1613,
+    "resultSha256": "19ACABDD32A8BE84B06CE30DA64A88A12CF5695CB68486CEE7128F47201B5D0B",
+    "scope": "0.9.6 HP-only addendum: actual player/normal/boss contact and trail at1280/640. Completed0.9.5 candidate04 reused; no campaign replay.",
+    "candidate": "dragon-v6-candidate-04"
+  },
+  "runs": [
+    {
+      "height": 720,
+      "exitCode": 0,
+      "name": "v6-hp-only-1280x720",
+      "arguments": [
+        "-dragon-theme-smoke",
+        "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-05\\1280x720\\fresh\"",
+        "-dragon-theme-case",
+        "v6-hp-only",
+        "-lastbell-save-dir",
+        "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-05\\1280x720\\fresh\\profiles\\boot\"",
+        "-screen-width",
+        "1280",
+        "-screen-height",
+        "720",
+        "-screen-fullscreen",
+        "0",
+        "-logFile",
+        "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-05\\1280x720\\fresh\\player.log\""
+      ],
+      "timedOut": false,
+      "width": 1280,
+      "output": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-05\\1280x720\\fresh",
+      "endedAt": "2026-10-25T02:05:44.1523718+09:00",
+      "startedAt": "2026-10-25T02:05:19.2445094+09:00",
+      "mode": "v6-hp-only",
+      "save": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-05\\1280x720\\fresh\\profiles\\boot",
+      "passed": true
+    },
+    {
+      "height": 360,
+      "exitCode": 0,
+      "name": "v6-hp-only-640x360",
+      "arguments": [
+        "-dragon-theme-smoke",
+        "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-05\\640x360\\fresh\"",
+        "-dragon-theme-case",
+        "v6-hp-only",
+        "-lastbell-save-dir",
+        "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-05\\640x360\\fresh\\profiles\\boot\"",
+        "-screen-width",
+        "640",
+        "-screen-height",
+        "360",
+        "-screen-fullscreen",
+        "0",
+        "-logFile",
+        "\"C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-05\\640x360\\fresh\\player.log\""
+      ],
+      "timedOut": false,
+      "width": 640,
+      "output": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-05\\640x360\\fresh",
+      "endedAt": "2026-10-25T02:06:01.9526806+09:00",
+      "startedAt": "2026-10-25T02:05:48.3723655+09:00",
+      "mode": "v6-hp-only",
+      "save": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-05\\640x360\\fresh\\profiles\\boot",
+      "passed": true
+    }
+  ],
+  "osInput": "DEFERRED",
+  "core": "Handed-over evidence reused",
+  "limits": "0.9.6 healthbar-only integration: actual player/normal/boss damage, explicit HP fixtures and frame-clock trail; Core held after first contact. Prior0.9.5 campaign reused. Boundary/heal/reset/multi-hit/pause use Root unit evidence. No full acceptance, normal-speed performance, physical input or listening claim.",
+  "acceptance": "NOT_CERTIFIED"
+}

@@ -1,0 +1,586 @@
+[
+  {
+    "path": "1280x720/fresh/events.csv",
+    "sha256": "0d360f20c8b4782c3585817da124662e3b8aef150cfac23625a86022414306f7"
+  },
+  {
+    "path": "1280x720/fresh/expected-catalog.json",
+    "sha256": "5b862b5a23c48af20631fee578040a876740c30b894026443852313955ef4546"
+  },
+  {
+    "path": "1280x720/fresh/fixtures/inn-barun/last-bell-save.json",
+    "sha256": "994e7f745f7fb932667a70c8c2f399f096a18314623dc7c2889406a766c49089"
+  },
+  {
+    "path": "1280x720/fresh/fixtures/inn-doto/last-bell-save.json",
+    "sha256": "81dca5e03c6e76c80a5612311292428cea1f358a65aaf073eb68b053b847f0a8"
+  },
+  {
+    "path": "1280x720/fresh/fixtures/inn-level30-cap/last-bell-save.json",
+    "sha256": "a2c46893fd30907f4cac8864231caa6e4474d8ae13a1813b49911d00a75ec993"
+  },
+  {
+    "path": "1280x720/fresh/fixtures/inn-momo/last-bell-save.json",
+    "sha256": "0b9ce3091466ddb85156c73560b41d4e742070ad3b0d80ed1b9958ce722fff95"
+  },
+  {
+    "path": "1280x720/fresh/fixtures/inn-recovery/last-bell-save.json",
+    "sha256": "193ae2a884ba9f2011f53af7c5ffa6487a6b7b6caf1ff106bf7da470df8d0cdc"
+  },
+  {
+    "path": "1280x720/fresh/fixtures/inn-rina/last-bell-save.json",
+    "sha256": "2cc4817ba05278d68a5da9327e1a72a3d5a8b672e739a4f2c9de8961acd0199c"
+  },
+  {
+    "path": "1280x720/fresh/fixtures/inn-tori/last-bell-save.json",
+    "sha256": "63198ef436df7c57ed2770ae7fcedc6b3ed0c12bf64014e24c9e9e973d548c3a"
+  },
+  {
+    "path": "1280x720/fresh/fixtures/player-on-after/last-bell-save.json",
+    "sha256": "46ae530d051b0f9b722baf08d8fbc624cecc09f556ad5158d3dd85cabbd700e8"
+  },
+  {
+    "path": "1280x720/fresh/fixtures/player-on-idle/last-bell-save.json",
+    "sha256": "c8c611c76963ab781495750a560e2af69d8319b94d0f3b100c774040a224f8f7"
+  },
+  {
+    "path": "1280x720/fresh/fixtures/player-on-pending/last-bell-save.json",
+    "sha256": "43d783b6a351d251814f58235361fe3208c32dcffad837d7ea837f1b52682d6d"
+  },
+  {
+    "path": "1280x720/fresh/frames.jsonl",
+    "sha256": "4468978e40400ccad8c25a6beb89c44532a3c3d2ecf89c6695d2847c822ceeb9"
+  },
+  {
+    "path": "1280x720/fresh/legacy-source/last-bell-save.json",
+    "sha256": "7997ea182444150bf4c501982adf6536adbd8f560a4f9187fae62c586a1fdac2"
+  },
+  {
+    "path": "1280x720/fresh/player.log",
+    "sha256": "bc06eb236db2e0490e5edb9c7a55a4063e38ce7e2b02291c4e5f2f59b8ab92ee"
+  },
+  {
+    "path": "1280x720/fresh/profiles/boot/last-bell-save.json",
+    "sha256": "34bdfe798aa7d73ddeca8b32296f998882f9e3053de0d166f864e68e8caf2d5f"
+  },
+  {
+    "path": "1280x720/fresh/profiles/boot/last-bell-save.json.bak",
+    "sha256": "3dec9112e1df6befc41a0af7c7a480631aafc313a98b874b74ece6daf75fec7c"
+  },
+  {
+    "path": "1280x720/fresh/result.json",
+    "sha256": "58743c5d2602e9c0a80dcdcd030a5e64f9649ebaf784d92ec0219af11362f89e"
+  },
+  {
+    "path": "1280x720/fresh/timeline.csv",
+    "sha256": "e87d529d7263ad60c849c7c7454afa2f3b41b1e58dd785bc4b2e29730e214d99"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000000.png",
+    "sha256": "91dc0bf8d2c5817ebd64eb2c39284750a8ea357837de9411581a087e0ae06124"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000001.png",
+    "sha256": "6aabe88ea3643c496e6517ecfa754079949d3ba47b8f8a1f787689784b3c12b3"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000002.png",
+    "sha256": "2908bb517fc8678f93b07dff377e758d585176d593ac998f6023200655b93c93"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000003.png",
+    "sha256": "3e23a903c4ab6dd220462de13e8322da7e59692278ef91ac03e9a97a7d72b11d"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000004.png",
+    "sha256": "424ff4e5344b7c50506d9ac2f7f38727a5f407326243c186a2f97ebf783a0202"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000005.png",
+    "sha256": "3b56a69b514360158891d4cdb70ad5a2f0ce3c2f89de8943b19311a9e8bdc81d"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000006.png",
+    "sha256": "2dabf462bb13c2ce1a5c5944a67d98e95143d525ec84a6e6f5e056f2779b20e0"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000007.png",
+    "sha256": "e37ac2207d53e351129fd95d851e8fccbe764cc0c5ba9d460e2661c4c57b770c"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000008.png",
+    "sha256": "3c8a71ea2839b4ff3679e703f9f21f90c3f149b18d82cd390f5acef3974f4cab"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000009.png",
+    "sha256": "357db90f89b1d768ef57ea27c866c0dfa62df8860828fafcce9bee99d79c7d8e"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000010.png",
+    "sha256": "6df9ea75450372018d5e82c6d2485e8e9b32e0751ced6e389374c7678e78d36e"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000011.png",
+    "sha256": "9d467b2cfffa1177284658659b1a086f94ec051f1f7ec9ffebd2930e08f475d8"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000012.png",
+    "sha256": "5c844779143ee8b9cc765c19dd0e63a3b94830f494bdf46d7e1a5fedf98018a3"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000013.png",
+    "sha256": "33b400244292c142e342aefef802d60be2369ada8e30c154904e2f9f898254d6"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000014.png",
+    "sha256": "c554fdb1f11c25f8bc0d051edd808eebcd6e9397e77356cb8ebf14fa033675b7"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000015.png",
+    "sha256": "7a1bc32584fda003c02302c8c488ed88f6747798363f5bb84f6ca978ecc7606a"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000016.png",
+    "sha256": "6d61a408d6b0e5a7c1d020bb5418058205d8af25a6e283c7cacc7f065406efb3"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000017.png",
+    "sha256": "631feba03a9f106ddc79709ec38077df67509044676bda501d9da883add19260"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000018.png",
+    "sha256": "c6ce5a851de61504d433030ca418d1ad9cf63ecae6717e3082bb026b1afab67c"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000019.png",
+    "sha256": "d7a4825b07be43181fbf8823faa76d774f4be99c991f24504306290428611175"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000020.png",
+    "sha256": "df7197192c06833c6f115fffbe5d8596584c754d9e69d3baa78fae237a6a7194"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000021.png",
+    "sha256": "145621eb0be2308035e95e6f101c3a1eef90b9d1346c7e59b7da10432ef016a2"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000022.png",
+    "sha256": "6a9dabc5e3f697d0dfa218dadb3a09decd900208508149966b1f222ba20c69ab"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000023.png",
+    "sha256": "8178c4e865b653dea2428bee7d7a7691dc056107a10b57c6ed2ed4e352db6a50"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000024.png",
+    "sha256": "6e472d202a8f6e271a985652989c5590f0f71c93f677337e72f0896162094f1e"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000025.png",
+    "sha256": "e4dc05a71b5be594657a67a39312a7975625fba755c80f433060d9d0bcce5777"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000026.png",
+    "sha256": "fd6c6e6aef2eaab165ddc8a4ebf44d37595f4b15b7ccdf8e55e5a99b5906f204"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000027.png",
+    "sha256": "aa0c7565b958b8fb248d36b985bfabca526de61ccf9ac039b3a57c0a4a9be0ef"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000028.png",
+    "sha256": "a7e1a843548db214ceaefb0070046f1c72a1ec12bd65a4cd471ccf2f1e58c140"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000029.png",
+    "sha256": "43e34a516b3a73371cf51bd66efd220f6e30ab7724c75277153ef2f572a152a4"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000030.png",
+    "sha256": "33d0c11ecda839255569be8c54acc2d9fe9694b37450f36320fea54432c1c5f9"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000031.png",
+    "sha256": "366a9a8565e3eb9de6ecefe1af24bd268a5efbc8989c9998d9772d8334815c84"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000032.png",
+    "sha256": "3202cecb6347ec3290139639056bfe5d624e3ada6bf67eba0cd91291d7f854ec"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000033.png",
+    "sha256": "d5b48e881739522a773accab8f5afe35876b0898fa3e58568b1020296fa42097"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000034.png",
+    "sha256": "25e45c060dd307943f8cd6f93a1f29aceab2823ec3f130a35e7d07784d463542"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000035.png",
+    "sha256": "213b2e0a4c52946e07c3a445e1b95cc3b5ae3f8bb8ac7f7b22e0b985d609b757"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000036.png",
+    "sha256": "33ee30e4ec8d8c01b9aa27bbf32bbf182fe5b0791ddeb2e05dfcab84f1df8980"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000037.png",
+    "sha256": "e8941e57256d0673d3285b20d28152420a9ae9764a9706ba6d238c3b12518b37"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000038.png",
+    "sha256": "ce1efd765d6242d123583c6096fe99169eafbd03543c75a76551bdd9db835183"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000039.png",
+    "sha256": "9afcb147bb134d282b3b16ef2d960a35d6887ec9c4f5971c325b97854c54c6bd"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000040.png",
+    "sha256": "2bd019fe2a9d7e11cc9068788a38b1f4a2646710abc2bfbdc046d126bcca68f3"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000041.png",
+    "sha256": "5f4879080ece8fdc3bca727c983d8f220300379c3856f775fef6ba9863406747"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000042.png",
+    "sha256": "96a53a4a4b5dcf676704ac375c3fc702b9dc8a75bd7142012e252e8a0bbe2d31"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000043.png",
+    "sha256": "c346430c95e7c63dcdc12435f4f61412b69f341824e282f48881070741f56840"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000044.png",
+    "sha256": "10159dfb645c7d1a189693a94092b4e432b56f71b731bb4c1e48eb35533c16d5"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000045.png",
+    "sha256": "4f488b92c568224bff756748878381608fdbc49cbacae29b9bb6eccb085b750b"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000046.png",
+    "sha256": "6d7a8222c535c3fb6def5fee646587a701b88dad389d9e45e709a59903a7f9a1"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000047.png",
+    "sha256": "c607c709d8abf70c9d8b0fb04950843345113bec5f58ec178f77659d91ebc50a"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000048.png",
+    "sha256": "0dc1a7b8e361338dccc90eee7964844b59202ddf9f62d9f0689a5c91eefff58c"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000049.png",
+    "sha256": "ac852ccf297c82eed82d2b90dade1651d91e9ccf60b10545a56592a86a05bfec"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000050.png",
+    "sha256": "75f4e2391ee2f46a8fd208bc838274355eff61c3a1a905f3869882c94193f5ad"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000051.png",
+    "sha256": "4576455970e3e35a82631146f2adef3f9fb1354ba4aae7eb7a69918470d8c8bb"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000052.png",
+    "sha256": "9e403b8eb53448e235707fc55d484f108ca2b24c47a166d4237e5e31635b1cc7"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000053.png",
+    "sha256": "8630e66c82d5ba63f348faa8f63fd853e4ba3248cfaf80ac729eb946e38f2833"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000054.png",
+    "sha256": "872579c82d243693705ef5d305850c84db27f8be04b69fdd5259e02e026bf777"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000055.png",
+    "sha256": "f75bc1cd981a1d4d6d05b92c6e94ae16b840afaabcde420ab7137fb24688a33c"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000056.png",
+    "sha256": "3e1346579b754121abb1e3d3e48fdd3488be578b1f87b4acc7fff694dc744a2b"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000057.png",
+    "sha256": "47e3be7f68ca5d6a68f2b87cd89286e49e038e2c3d4297e91ab3d244269dae44"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000058.png",
+    "sha256": "2c2ede5625089db0392982563405d56dd5aec1fa7a744a66631f6f8b30035b89"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000059.png",
+    "sha256": "2301f7934ee8631f74f3a0c357a2232a19de53dc5500291563a603614177abfe"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000060.png",
+    "sha256": "80d7bf2a1645f4b8037a883c943101d405176e5875a2cc1af7f05772ea99932d"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000061.png",
+    "sha256": "41c788fa3e4634e900b52ebb4b994b54aa505b2f36c64ed00fe20931312d6c0d"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000062.png",
+    "sha256": "105e248a57287cfd97958747d4f0a7ad37792ca9b54b60451bd3e8f42c0cfd17"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000063.png",
+    "sha256": "5f411b0af51d86d0131b31ac7b1e8943fb200e9ae17107749c1cc7ef29bb0bb3"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000064.png",
+    "sha256": "ad50d225cf639ebd30341cc37492d4b4c69c19e5d01de0b29ea8f94a5ce89f29"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000065.png",
+    "sha256": "e9a5331d7b9374503326fb526626ed4f56ff7207154bf29c0477c63c60f4fe2f"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000066.png",
+    "sha256": "4cff38aebc3161b8a9dd098b769c41bcbf6b9eae77909a2539e5a88ba2151f11"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000067.png",
+    "sha256": "45ae44a5870a2e8dc897b67ac82a54c4ba483b8ee093145b246981f690d065a2"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000068.png",
+    "sha256": "cf289439d1027ca41ef3855ef3665267f42144de8f2559d8b619b6c34ced6c5a"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000069.png",
+    "sha256": "cd76cca4a3fc3149367a55569517a6bc58bb1f9c142efc942ec5116ab682d3e9"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000070.png",
+    "sha256": "0175a6cc6881fea9c7d28f59d9ece96c1062fea03cda147d7030a086eb398fd6"
+  },
+  {
+    "path": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000071.png",
+    "sha256": "d9b8d32f6a6024a0e5cf8fdf1adc929106b25a58143a46d823c7af9c496b2cc3"
+  },
+  {
+    "path": "1280x720/fresh/v6-evidence.json",
+    "sha256": "8155cbb2b6c1277575a394af0090d4997cdcf402033617f23bf0268442c82b92"
+  },
+  {
+    "path": "1280x720/fresh/v6-frame-evidence.json",
+    "sha256": "69ebb086ceff8672a4a10043fdc39249eb9a9956a782b999a37b25f7c363f7d8"
+  },
+  {
+    "path": "1280x720/fresh/v6-hp-1-layout.json",
+    "sha256": "71afe332e463fed21c0d4c365cf339aa2b5ea62cf046b018da2731d45eb5fdc7"
+  },
+  {
+    "path": "1280x720/fresh/v6-hp-1.png",
+    "sha256": "7fbb1bfba833714e548893c8855ac11c997b84a136327ef229eccfe403789d52"
+  },
+  {
+    "path": "1280x720/fresh/v6-hp-100-layout.json",
+    "sha256": "7e301d4f2acc279d7439d6cccec40df92b7c47b7f1b7c7b7384e04ec2d15f7c4"
+  },
+  {
+    "path": "1280x720/fresh/v6-hp-100.png",
+    "sha256": "b779c12df0cff997f37f7b39c7b0760e03d70ef6fcace4a8df6c07fac85166d6"
+  },
+  {
+    "path": "1280x720/fresh/v6-hp-50-layout.json",
+    "sha256": "af9b34b9a540334a7fa45aa6eabf6f78f9d1e7a5f9e7fd1d0c4b2f5eb3a55959"
+  },
+  {
+    "path": "1280x720/fresh/v6-hp-50.png",
+    "sha256": "e0f9353a9dfa5e70e832bba5e75663c2d1dbbe2336b613043417c9f34452621f"
+  },
+  {
+    "path": "1280x720/fresh/v6-inn-barun-after-layout.json",
+    "sha256": "382d2361da0f7b5fe70f184c007d5583880f7fd1cdfbe3a9fcaecf1338f58178"
+  },
+  {
+    "path": "1280x720/fresh/v6-inn-barun-after.png",
+    "sha256": "3c9f0ffdebb719bb3abc91a5372320cefdb937f0f262c831adf1ae3a9fe8a9a1"
+  },
+  {
+    "path": "1280x720/fresh/v6-inn-barun-before-layout.json",
+    "sha256": "5001e71dd7952b2a257e10e9723e018dd110f150905ecc511169969132838eed"
+  },
+  {
+    "path": "1280x720/fresh/v6-inn-barun-before.png",
+    "sha256": "e712a43e859b2e3b0ca9ccdcab789b57312bb8b2fcaf50618b9bd4b09609c9cc"
+  },
+  {
+    "path": "1280x720/fresh/v6-inn-doto-after-layout.json",
+    "sha256": "7724f560200f915aa4a8e8bcbc97854e8ed668c4f07ab602dd3dfd2522c9df7a"
+  },
+  {
+    "path": "1280x720/fresh/v6-inn-doto-after.png",
+    "sha256": "6920450b63da717cc80c2c65c9d518a470c8545a8f5a9ca87e709ac80392f8b7"
+  },
+  {
+    "path": "1280x720/fresh/v6-inn-doto-before-layout.json",
+    "sha256": "5016d6be609565fdaf2d1d700000ad575cfe72865c8bd6059859a07e4abed61f"
+  },
+  {
+    "path": "1280x720/fresh/v6-inn-doto-before.png",
+    "sha256": "3177e0ff19a6eaf737c871543b8a37c4b0bda7ab0de8c39237aabb14cb56bdc5"
+  },
+  {
+    "path": "1280x720/fresh/v6-inn-level30-cap-layout.json",
+    "sha256": "23e269e47cf9ff753b0710d047cff937235c78eef75c7e04058e958795386f59"
+  },
+  {
+    "path": "1280x720/fresh/v6-inn-level30-cap.png",
+    "sha256": "79304cd8c6ca33f4ae267a643f32d8694f771d902622c5d8d55ee016ee51e05e"
+  },
+  {
+    "path": "1280x720/fresh/v6-inn-momo-after-layout.json",
+    "sha256": "b54033dd77b2c16d390b84624cac8ff226834fc531f816d5053e6f23da74b220"
+  },
+  {
+    "path": "1280x720/fresh/v6-inn-momo-after.png",
+    "sha256": "4d0003c6d47fd1942f7f20eb6f60d5e90a81117422d6c8c31b78cd9c5ed2a1a6"
+  },
+  {
+    "path": "1280x720/fresh/v6-inn-momo-before-layout.json",
+    "sha256": "b81339918ea20d167c22c53a7d5d78b18147062e960d5343711a43d859b1b0cc"
+  },
+  {
+    "path": "1280x720/fresh/v6-inn-momo-before.png",
+    "sha256": "afe75ba4acef702152ab8e1fb3229f4972c1390d82a3aabf95bf177cd6a87f18"
+  },
+  {
+    "path": "1280x720/fresh/v6-inn-recovery-after-layout.json",
+    "sha256": "db8d10491c6d8fe47780a9360d0fb440606492d77e82da5ea13ad1a8aa94d043"
+  },
+  {
+    "path": "1280x720/fresh/v6-inn-recovery-after.png",
+    "sha256": "cd0bae1dc07bdcd8357beae61b8424521d42b33cef5e5b540e75998a2d5d50fb"
+  },
+  {
+    "path": "1280x720/fresh/v6-inn-recovery-before-layout.json",
+    "sha256": "ed5b02f02becfe7557825d1e1bd9d1e6273033b6591fcee04767eb4b80f557c2"
+  },
+  {
+    "path": "1280x720/fresh/v6-inn-recovery-before.png",
+    "sha256": "7a6b760c3179fd96d372948dd85f197265276f690def00db0e2c5745dc333064"
+  },
+  {
+    "path": "1280x720/fresh/v6-inn-rina-after-layout.json",
+    "sha256": "679d305a94ecb1e0b5ae0d2c65726877210d0d5e26d00643873b1a3f4ee0d4e2"
+  },
+  {
+    "path": "1280x720/fresh/v6-inn-rina-after.png",
+    "sha256": "82936aba7290787ddf079c359520f36067610e48f0d2cbff4d173832424e27cf"
+  },
+  {
+    "path": "1280x720/fresh/v6-inn-rina-before-layout.json",
+    "sha256": "edaf3c5a2f61102a86f221ca0138e633078f08e78880bc46c9c8af8493985f9c"
+  },
+  {
+    "path": "1280x720/fresh/v6-inn-rina-before.png",
+    "sha256": "bb20e1b0e3dd0d0177d37cb37c8a38b8f88829423423243fa583876b93d29bf6"
+  },
+  {
+    "path": "1280x720/fresh/v6-inn-selection-layout.json",
+    "sha256": "9bfd8481fa8a3b650726c14f1d070d45711d716892dca390a22a51755836bd59"
+  },
+  {
+    "path": "1280x720/fresh/v6-inn-selection.png",
+    "sha256": "4052f2168ecb8e68614d1a0aff7623da00c4f962c5512e7910d81cff181b38b0"
+  },
+  {
+    "path": "1280x720/fresh/v6-inn-tori-after-layout.json",
+    "sha256": "77f3312fd3bb91e90be61be22a2f0f9c4dcb1b67e33805b0b76753b9dfd71947"
+  },
+  {
+    "path": "1280x720/fresh/v6-inn-tori-after.png",
+    "sha256": "c209c562ae0e143ae54fb676e0bcaa71c2aafbf44c42ba1e8e1bba902dc85a78"
+  },
+  {
+    "path": "1280x720/fresh/v6-inn-tori-before-layout.json",
+    "sha256": "70e29f31557039543beef0fdcf0935fe1478cba97455263a88a4f6b4d357bca3"
+  },
+  {
+    "path": "1280x720/fresh/v6-inn-tori-before.png",
+    "sha256": "0dca54fd5147f22f2112cceb9dbbd804af65a82c31df0fcea1db08e5beccf9e9"
+  },
+  {
+    "path": "1280x720/fresh/v6-input.jsonl",
+    "sha256": "13e29db62be87066f2a03b54aec0de5dee2acc9e08f35e54923617794f9a6b18"
+  },
+  {
+    "path": "1280x720/fresh/v6-native-legacy-layout.json",
+    "sha256": "fb815c130f60355d4ac970bc1abb22e39b29ceb0fe249544efd6ba3235b68da8"
+  },
+  {
+    "path": "1280x720/fresh/v6-native-legacy.png",
+    "sha256": "95da67d626c6e046ad11f7ce41b89c0daf39794fa5550a34a1ddb95550ef75c5"
+  },
+  {
+    "path": "1280x720/fresh/v6-skill-on-paused-layout.json",
+    "sha256": "888bf28ceb657579f2b5a20900329ea1a05fa54413b38858ee0ac6bac14a73ec"
+  },
+  {
+    "path": "1280x720/fresh/v6-skill-on-paused.png",
+    "sha256": "0dc49b63c4e64a1209f70fb786bea3982c0b18a6c55265bea5fbde70f8b0ae64"
+  },
+  {
+    "path": "1280x720/fresh/v6-state.jsonl",
+    "sha256": "930742fd1ac578301870b096ae8593ec0c3aab4fbf52d8f866cee87fc2149601"
+  },
+  {
+    "path": "campaign.json",
+    "sha256": "091e56db13912eee0af5ab83266d4a66b7f7ad5fa208c68a3658b7b35badbceb"
+  },
+  {
+    "path": "candidate-manifest.json",
+    "sha256": "4bf0b26e3466fef72d8b3c0beb65e310606055e94477a4664c14301bd487aea6"
+  },
+  {
+    "path": "core.md",
+    "sha256": "2e24a4040b87ff8bb6b63bad60149cf2ce97e3c670aa8599cf58b5b26e414f1e"
+  },
+  {
+    "path": "freeze.json",
+    "sha256": "fea444225a57712ab4a7dbc14948ae75333a73444092c31e9557f56abe3ca736"
+  },
+  {
+    "path": "integration.json",
+    "sha256": "f2dbac25bf4aa3ab9f8e9b7c660115e888ec771ba41b6177e2ec5aacd2571699"
+  },
+  {
+    "path": "playerprefs-before.json",
+    "sha256": "9234daac3be316812cb15f863d39cd0f087338374f824265506b09792309ea78"
+  },
+  {
+    "path": "playerprefs-restored.json",
+    "sha256": "f6483a8114d59b2cc799d2087fde98234665c28dbc15b70d6b3a4825112bffdd"
+  },
+  {
+    "path": "processes.json",
+    "sha256": "674201457beca8ef959ffdcab4e377fbe5a55bd30320e9c464d938d6446fa012"
+  },
+  {
+    "path": "protected-saves-after-v6-legacy-1280x720.json",
+    "sha256": "23114838eb5d300502a2c416b21f056d2c8bcca17061d015a67aff5e7770bf40"
+  },
+  {
+    "path": "protected-saves-before-v6-legacy-1280x720.json",
+    "sha256": "23114838eb5d300502a2c416b21f056d2c8bcca17061d015a67aff5e7770bf40"
+  },
+  {
+    "path": "protected-saves-before.json",
+    "sha256": "c51d67d24d7a0527ab03c74a923147bdb726cf2d670c123f4d90defd42031604"
+  },
+  {
+    "path": "protected-saves-final.json",
+    "sha256": "23114838eb5d300502a2c416b21f056d2c8bcca17061d015a67aff5e7770bf40"
+  },
+  {
+    "path": "protected-synthetic-fixture/last-bell-save.json",
+    "sha256": "83bfa416458c847d85cc6d7619fd79cc3f2f037ecd1fb4b9662bf9ef6adcc5b8"
+  }
+]

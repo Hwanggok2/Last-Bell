@@ -1,0 +1,50 @@
+[
+  {
+    "file": "pixel-touch.wav",
+    "sampleRate": 44100,
+    "channels": 1,
+    "samples": 1733,
+    "durationSeconds": 0.03929705215419501,
+    "peak": 0.251190185546875,
+    "rms": 0.05716977389572394,
+    "envelope10ms": [
+      0.251190185546875,
+      0.227386474609375,
+      0.0953369140625,
+      0.09600830078125
+    ],
+    "listening": "NOT_RUN",
+    "limits": "Original WAV sample measurements only; not playback, runtime trigger count, device mute, voice overlap or direct listening.",
+    "path": "Client/Assets/Game/Audio/Dragon-v4/pixel-touch.wav",
+    "sha256": "03bac4e93b6ee1e687885922f2679f04f7021384b7a4fceb0676eb16ac1fdf5b",
+    "evidenceType": "source WAV asset only; not runtime/device capture"
+  },
+  {
+    "file": "pixel-hit.wav",
+    "sampleRate": 44100,
+    "channels": 1,
+    "samples": 5015,
+    "durationSeconds": 0.113718820861678,
+    "peak": 0.50115966796875,
+    "rms": 0.2522738178082651,
+    "envelope10ms": [
+      0.50115966796875,
+      0.490966796875,
+      0.39801025390625,
+      0.413970947265625,
+      0.328216552734375,
+      0.208984375,
+      0.2806396484375,
+      0.26544189453125,
+      0.197418212890625,
+      0.214111328125,
+      0.19036865234375,
+      0.085723876953125
+    ],
+    "listening": "NOT_RUN",
+    "limits": "Original WAV sample measurements only; not playback, runtime trigger count, device mute, voice overlap or direct listening.",
+    "path": "Client/Assets/Game/Audio/Dragon-v4/pixel-hit.wav",
+    "sha256": "2a35a808d94a56267f8e2b1b59b90a040c09abb21f34fa34ad212ed1f80e2627",
+    "evidenceType": "source WAV asset only; not runtime/device capture"
+  }
+]

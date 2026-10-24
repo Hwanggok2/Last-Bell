@@ -1,0 +1,119 @@
+{
+  "version": "mvp-1.5.0",
+  "date": "2026-10-22",
+  "stageLimit": 10,
+  "restartStage": 1,
+  "tests": {
+    "EditMode": 134,
+    "PlayMode": 18
+  },
+  "Python": 19,
+  "independentContractAssertions": 808,
+  "fullFlow": {
+    "passed": true,
+    "tutorial": true,
+    "bossRewards": 1,
+    "storyLines": 3,
+    "minibossCurrencyOnly": true,
+    "travel": true,
+    "stageBanner": true,
+    "bossIntro": true,
+    "deathLantern": true,
+    "perfectDodges": 56,
+    "normalDodges": 1,
+    "criticalHits": 11,
+    "playerHits": 13,
+    "checkpoint": 1,
+    "attackLevel": 14,
+    "equippedRelics": 1
+  },
+  "restartResume": {
+    "passed": true,
+    "stage": 1,
+    "attackLevel": 14,
+    "equippedRelics": 1
+  },
+  "webBuild": {
+    "dataVersion": "mvp-1.5.0",
+    "stageLimit": 10,
+    "restartStage": 1,
+    "save": "browser-local PlayerPrefs with checksummed primary/backup",
+    "files": [
+      {
+        "path": "index.html",
+        "bytes": 5709,
+        "sha256": "9cd6499c62ead390aec9879cc9b3a5cc8efe061641d50f4502aefe2da31db48c"
+      },
+      {
+        "path": "Build/0d2ed8a8ecfd503910a2cf05bf5ea08b.wasm.unityweb",
+        "bytes": 5924822,
+        "sha256": "48a74e5914919e7479c4fff8a7262fc041f2cb62ccd3af989d03e0feeb708a10"
+      },
+      {
+        "path": "Build/2fa2d3ff7a5574e22ce43de1ec6c4169.data.unityweb",
+        "bytes": 7395649,
+        "sha256": "3de8011fce72c31d6f2888eac43ed0b8d8cc454fc755ea50128311872e76699c"
+      },
+      {
+        "path": "Build/ad33d91512c9f22703c4c0b77f11be4d.loader.js",
+        "bytes": 117893,
+        "sha256": "3598f9e6539dd7e65368fb3783d766f9e1c5378280dbbaa5d77f62b4cae2d45d"
+      },
+      {
+        "path": "Build/c57636f25fb0f4723902d222a83434f5.framework.js.unityweb",
+        "bytes": 74498,
+        "sha256": "19c3e04c02a47eb7a64e8b417e7fbf5a585011e303158d5adcc27d68ca98922b"
+      }
+    ],
+    "totalBytes": 13518571
+  },
+  "deployment": {
+    "id": "appgdep_6ad8e0c20c4c819188cd9c2f86ce7f0a",
+    "project_id": "appgprj_6ad8dbc209e081919502db2689477d99",
+    "title": "마지막 종지기 · 10스테이지 프로토타입",
+    "version_id": "appgprj_6ad8dbc209e081919502db2689477d99~appgver_2cd6a4dd81a081919ae92a1fae2d6667",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://last-bell-playtest.nugunagame1.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ad8dbc209e081919502db2689477d99",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-10-21T15:57:20.305061+00:00",
+    "commit_sha": "826e3dc2e7c7e6e979eb2004071b683af368fd36",
+    "access_mode": "public"
+  },
+  "sourceSha256": "e0c46d1fa7599b48999b94f8820ef5ce052716a7907c29197c0d36fda2bff1e3",
+  "behavior": [
+    "Stage10 story and reward -> clear result; no Stage11 travel",
+    "Clear retry/death retry/lobby start -> Stage1; wallet/levels/relics preserved",
+    "Old Stage11 save -> lobby; permanent progress preserved",
+    "In-range interrupted run still resumes paused",
+    "Web saves are browser-local with primary/backup checksum"
+  ],
+  "limitations": [
+    "No physical Android/iOS device testing",
+    "Existing Android APK is an earlier version"
+  ],
+  "browser": {
+    "date": "2026-10-22",
+    "url": "https://last-bell-playtest.nugunagame1.chatgpt.site",
+    "passed": true,
+    "browser": "Codex in-app browser",
+    "checks": [
+      "Public HTTPS page loads and starts Unity WebGL without an authentication prompt",
+      "Brotli fallback assets load successfully from the deployed static host",
+      "Directional keyboard input advances the tutorial to its attack step",
+      "Space input plays the forward sword attack on the deployed site",
+      "Canvas attack button and Escape pause work in localhost build",
+      "Browser reload retained completed dodge tutorial step",
+      "Death result offers Retry and Lobby; Retry reaches Stage 1"
+    ],
+    "evidence": "public-web-game.png",
+    "limits": [
+      "No physical mobile-device test",
+      "Full Stage 1-10 completion verified in Windows smoke flow and automated core/UI tests, not manually repeated in browser"
+    ]
+  }
+}

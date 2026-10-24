@@ -1,0 +1,34 @@
+{
+  "dataVersion": "mvp-1.5.0",
+  "stageLimit": 10,
+  "restartStage": 1,
+  "save": "browser-local PlayerPrefs with checksummed primary/backup",
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 5709,
+      "sha256": "9cd6499c62ead390aec9879cc9b3a5cc8efe061641d50f4502aefe2da31db48c"
+    },
+    {
+      "path": "Build/0d2ed8a8ecfd503910a2cf05bf5ea08b.wasm.unityweb",
+      "bytes": 5924822,
+      "sha256": "48a74e5914919e7479c4fff8a7262fc041f2cb62ccd3af989d03e0feeb708a10"
+    },
+    {
+      "path": "Build/2fa2d3ff7a5574e22ce43de1ec6c4169.data.unityweb",
+      "bytes": 7395649,
+      "sha256": "3de8011fce72c31d6f2888eac43ed0b8d8cc454fc755ea50128311872e76699c"
+    },
+    {
+      "path": "Build/ad33d91512c9f22703c4c0b77f11be4d.loader.js",
+      "bytes": 117893,
+      "sha256": "3598f9e6539dd7e65368fb3783d766f9e1c5378280dbbaa5d77f62b4cae2d45d"
+    },
+    {
+      "path": "Build/c57636f25fb0f4723902d222a83434f5.framework.js.unityweb",
+      "bytes": 74498,
+      "sha256": "19c3e04c02a47eb7a64e8b417e7fbf5a585011e303158d5adcc27d68ca98922b"
+    }
+  ],
+  "totalBytes": 13518571
+}

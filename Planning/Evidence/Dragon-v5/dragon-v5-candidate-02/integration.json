@@ -1,0 +1,60 @@
+{
+  "version": "0.9.4",
+  "dataVersion": "mvp1.17.0",
+  "status": "saved-assets-applied-observed-build-ready",
+  "qaStatus": "PENDING",
+  "playableStages": [
+    1,
+    20
+  ],
+  "saveSchema": 9,
+  "profile": "persistentDataPath/Playtests/dragon-0.9.2",
+  "migration": "LastBell.Editor.DragonAdventureMigration",
+  "observedBuild": "Planning/Production/dragon-v5-observed-build.json",
+  "coreEvidence": "Planning/Production/dragon-v094-client-handoff.md",
+  "coreAssertions": 217,
+  "dataTests": 28,
+  "unityEditModePassed": 198,
+  "changes": [
+    "Detached speaker badge; player portrait left, NPC right; revised Miel 24px portrait",
+    "Five-stat inn including per-clear recovery; no boss full heal",
+    "Companion encounters, formation, upgrade, services and actual support attacks",
+    "Five companions with 98 authored Idle/Run/Attack frames",
+    "Enemy retreat/hold/advance tied to actual impact; sequential Stage5 input tutorial",
+    "Four saved ParticleSystems for skill contact, shield, actual stun, support/recovery",
+    "Skill and companion effects follow confirmed events and authoritative clocks"
+  ],
+  "limits": [
+    "Stages21-50 remain future content",
+    "Physical OS input deferred",
+    "Mobile device performance/touch not run",
+    "Direct audio listening not run"
+  ],
+  "artImport": {
+    "status": "validated",
+    "applied": true,
+    "actorIds": [
+      "companion_barun",
+      "companion_doto",
+      "companion_momo",
+      "companion_rina",
+      "companion_tori"
+    ],
+    "frames": 98,
+    "portraits": 10,
+    "sourceSha256": "e623207e1aa84896ad382b8fb825315ed02132b6ee62a4b334cb63ae0c091d97",
+    "portraitHashes": {
+      "on": "e6f8673ff9302983c9a5617520d66fbc151bf3c9242afe648c19df7fd86abc5a",
+      "dam": "9b180dcc144a24a4b958f0c580179cd82653d495425dc1fc02e4687ed4ce6bd1",
+      "rin": "e0939a8f302afa6b0e0fc2dc42238243c1d99f7aa9244e28630b6a8be5419778",
+      "tori": "73e25d0fcfcb432f08b06a50791912c01a99c4351cd1155088977abef9e51675",
+      "rina": "500a6ecb8681bd7669f2d848c9d414b6800ecfed44ae0279b53d2e0a3e83c840",
+      "barun": "8d13d1f6cb519b1f340da7bc1dd68c075124d7a9b12c3040f8304bd555c22516",
+      "doto": "31eaa821dba9dc19641eb5f9fe0ba7cb0c0024f809bb5e297b597436f0e3ff93",
+      "gib": "4636de924d1b536488528abc3606766666a7046d7e27630b9cbdf9802fb50115",
+      "unknown": "95a574abdca950700494da91d1bc2b0216a940bd10e3fbb645e32109134ac920",
+      "momo": "a372ef9e8d457d4323142268bc20276d8f640330d16950bd545b07978b28323f"
+    },
+    "manifestSha256": "d38813c8571ba94e9b1ea7fc083bb482e243af4b252065cacf370ef7bde15f22"
+  }
+}

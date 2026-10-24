@@ -1,0 +1,72 @@
+{
+  "status": "SOURCE_FROZEN_READY_FOR_ROOT_REFRESH_APPLY_OBSERVED_BUILD",
+  "files": [
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.cs",
+      "sha256": "8b6d8777e6040373e60e205fdcab228e795a6a1f080f6a64678084199b6902aa",
+      "bytes": 31356
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V4.cs",
+      "sha256": "025b741e94d3f5f0f0cc8b798595ed1a2f7149074149a8379073ccee89d96150",
+      "bytes": 31268
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V4.cs.meta",
+      "sha256": "287474ac1d64e7ae34f099590841c35eb2b2b90321ec22db13f2f738753a8fd8",
+      "bytes": 60
+    },
+    {
+      "path": "Tools/QA/Dragon-v4/common.ps1",
+      "sha256": "c80c8b4eff19422f402b547ec25e8e6ed3cc05ffe59af96c2288dd7b7956c450",
+      "bytes": 2366
+    },
+    {
+      "path": "Tools/QA/Dragon-v4/run-campaign.ps1",
+      "sha256": "9141b96db49c68ceaa8fed1227849bc3a1d74acb0b8e603a03d95928d36303ff",
+      "bytes": 8644
+    },
+    {
+      "path": "Tools/QA/Dragon-v4/analyze.py",
+      "sha256": "205fa9130f3557fcf1d5a9b45dd71fc8c02a48fc7e193d6e00049cf95ffb7945",
+      "bytes": 8284
+    },
+    {
+      "path": "Tools/QA/Dragon-v4/compile-source.ps1",
+      "sha256": "b7da02c326ddf11247b2219dd1606ffd876c5b85bd96db202eb6d042c9968464",
+      "bytes": 1731
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V3.cs",
+      "sha256": "9737f351ac7e0e32492211760629fc1f4b00d86c1f93e7f989db49148a2eb671"
+    },
+    {
+      "path": "Tools/QA/Dragon-v3/common.ps1",
+      "sha256": "998aada226b62e1580a3dcb1fc1fb44413aa17ae5520d02f58b3a9e5fb62c8f0"
+    },
+    {
+      "path": "Planning/Production/DragonV093ClientValidation/core-tests.txt",
+      "sha256": "33b6c85a38d033995af7408e905d9b963f29836c748d0da6835af302b2d7453d"
+    }
+  ],
+  "runtimeSourceCompile": {
+    "status": "PASS",
+    "defines": "DEVELOPMENT_BUILD,UNITY_STANDALONE_WIN,LASTBELL_PLAYTEST_092",
+    "errors": 0,
+    "warnings": 27,
+    "runs": 1
+  },
+  "powerShellSyntax": "PASS",
+  "pythonAst": "PASS",
+  "clientCore": "REUSED PASS246, not rerun",
+  "expectedNativeProcesses": 4,
+  "nativeQa": "NOT_RUN",
+  "unity": "NOT_RUN",
+  "observedBuild": "ROOT_PENDING",
+  "osInput": "DEFERRED",
+  "userDefaultProfile": "NOT_ACCESSED",
+  "audioListening": "NOT_RUN",
+  "audioVoiceMultiplicity": "NOT_CERTIFIED"
+}

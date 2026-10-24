@@ -1,0 +1,333 @@
+{
+  "candidate": "dragon-v6-candidate-04",
+  "reviewedAtUtc": "2026-10-24T16:55:53.174553+00:00",
+  "status": "PASS_BOUNDED_WITH_VISUAL_NOTES",
+  "acceptance": "NOT_CERTIFIED",
+  "inspection": {
+    "fullOriginal1280": 3,
+    "full640OriginalsInSheets": 82,
+    "unscaledSheets": 21,
+    "distinctSourcePNGs": 85,
+    "totalCapturedPNGs": 1228,
+    "allFramesReviewed": false
+  },
+  "inspected": [
+    {
+      "file": "review/640-inn-01.png",
+      "sha256": "b3f6a6ad4816871211f214e46fff9109232e771152e769e1635611494a965681",
+      "method": "view_image; full640x360 images pasted without scaling; bounds in crop-manifest.json",
+      "sources": [
+        "640x360/fresh/v6-inn-selection.png",
+        "640x360/fresh/v6-inn-recovery-before.png",
+        "640x360/fresh/v6-inn-recovery-after.png",
+        "640x360/fresh/v6-inn-level30-cap.png"
+      ]
+    },
+    {
+      "file": "review/640-inn-02.png",
+      "sha256": "54ee7a683d6c82ee7adc791a7091bf727ea8967a67167fa0404e1ed0321ec96c",
+      "method": "view_image; full640x360 images pasted without scaling; bounds in crop-manifest.json",
+      "sources": [
+        "640x360/fresh/v6-inn-tori-before.png",
+        "640x360/fresh/v6-inn-tori-after.png",
+        "640x360/fresh/v6-inn-barun-before.png",
+        "640x360/fresh/v6-inn-barun-after.png"
+      ]
+    },
+    {
+      "file": "review/640-inn-03.png",
+      "sha256": "caff64543d2e5663350d1917f17060a76a0a5028e92e19356d9bd6ac645d47b4",
+      "method": "view_image; full640x360 images pasted without scaling; bounds in crop-manifest.json",
+      "sources": [
+        "640x360/fresh/v6-inn-doto-before.png",
+        "640x360/fresh/v6-inn-doto-after.png",
+        "640x360/fresh/v6-inn-rina-before.png",
+        "640x360/fresh/v6-inn-rina-after.png"
+      ]
+    },
+    {
+      "file": "review/640-inn-04.png",
+      "sha256": "4ceb4ff5bd0c6b4b1f35260ff3c1aabf99eea91a4a349d60beee7a9d7e812922",
+      "method": "view_image; full640x360 images pasted without scaling; bounds in crop-manifest.json",
+      "sources": [
+        "640x360/fresh/v6-inn-momo-before.png",
+        "640x360/fresh/v6-inn-momo-after.png",
+        "640x360/fresh/v6-hp-100.png",
+        "640x360/fresh/v6-hp-50.png"
+      ]
+    },
+    {
+      "file": "review/640-hp-pause.png",
+      "sha256": "64c8112ab02b02c0b430ad7366272965b8e31792724e9e37a73208af56e1a9bf",
+      "method": "view_image; full640x360 images pasted without scaling; bounds in crop-manifest.json",
+      "sources": [
+        "640x360/fresh/v6-hp-1.png",
+        "640x360/fresh/v6-skill-on-paused.png",
+        "640x360/fresh/v6-skill-dam-paused.png",
+        "640x360/fresh/v6-skill-rin-paused.png"
+      ]
+    },
+    {
+      "file": "review/640-companion-tori.png",
+      "sha256": "b9c07248f0f372e101e7db10bd40e2696a7ec9be5313f25d8f8e0e3427267309",
+      "method": "view_image; full640x360 images pasted without scaling; bounds in crop-manifest.json",
+      "sources": [
+        "640x360/fresh/v3-frame-v6-companion-tori-basic-contact-000255.png",
+        "640x360/fresh/v3-frame-v6-companion-tori-basic-contact-000265.png",
+        "640x360/fresh/v3-frame-v6-companion-tori-proc-contact-000294.png",
+        "640x360/fresh/v3-frame-v6-companion-tori-proc-contact-000304.png"
+      ]
+    },
+    {
+      "file": "review/640-companion-barun.png",
+      "sha256": "7219bd76fc73ec3285872cbb06bf81aadf936eb38222e35fd9b1622f6e7c0b00",
+      "method": "view_image; full640x360 images pasted without scaling; bounds in crop-manifest.json",
+      "sources": [
+        "640x360/fresh/v3-frame-v6-companion-barun-basic-contact-000332.png",
+        "640x360/fresh/v3-frame-v6-companion-barun-basic-contact-000342.png",
+        "640x360/fresh/v3-frame-v6-companion-barun-proc-contact-000370.png",
+        "640x360/fresh/v3-frame-v6-companion-barun-proc-contact-000380.png"
+      ]
+    },
+    {
+      "file": "review/640-companion-doto.png",
+      "sha256": "c936d62e6e88283bd86c70b95b0d8925633b62a2ba575a922cc400cca4fbd583",
+      "method": "view_image; full640x360 images pasted without scaling; bounds in crop-manifest.json",
+      "sources": [
+        "640x360/fresh/v3-frame-v6-companion-doto-basic-contact-000408.png",
+        "640x360/fresh/v3-frame-v6-companion-doto-basic-contact-000418.png",
+        "640x360/fresh/v3-frame-v6-companion-doto-proc-contact-000447.png",
+        "640x360/fresh/v3-frame-v6-companion-doto-proc-contact-000457.png"
+      ]
+    },
+    {
+      "file": "review/640-companion-rina.png",
+      "sha256": "ad0503021d8d10a01a39276c2c26d6077bf4f386a8010b22e49aade9d4a69685",
+      "method": "view_image; full640x360 images pasted without scaling; bounds in crop-manifest.json",
+      "sources": [
+        "640x360/fresh/v3-frame-v6-companion-rina-basic-contact-000485.png",
+        "640x360/fresh/v3-frame-v6-companion-rina-basic-contact-000495.png",
+        "640x360/fresh/v3-frame-v6-companion-rina-proc-contact-000524.png",
+        "640x360/fresh/v3-frame-v6-companion-rina-proc-contact-000534.png"
+      ]
+    },
+    {
+      "file": "review/640-companion-momo.png",
+      "sha256": "0028cd8c40e7b13445fdc856faf05a765bce318ff2e4ec936180114ef0c7e626",
+      "method": "view_image; full640x360 images pasted without scaling; bounds in crop-manifest.json",
+      "sources": [
+        "640x360/fresh/v3-frame-v6-companion-momo-basic-contact-000562.png",
+        "640x360/fresh/v3-frame-v6-companion-momo-basic-contact-000572.png",
+        "640x360/fresh/v3-frame-v6-companion-momo-proc-contact-000600.png",
+        "640x360/fresh/v3-frame-v6-companion-momo-proc-contact-000610.png"
+      ]
+    },
+    {
+      "file": "review/640-player-on.png",
+      "sha256": "a4f3d436bf3cc02627ca3da7d4a1b21d5b14fb67a0a3f818d3c3ff15a7d58de9",
+      "method": "view_image; full640x360 images pasted without scaling; bounds in crop-manifest.json",
+      "sources": [
+        "640x360/fresh/v3-frame-v6-skill-on-overlap-000052.png",
+        "640x360/fresh/v3-frame-v6-skill-on-overlap-000062.png",
+        "640x360/fresh/v3-frame-v6-skill-on-reverse-000090.png",
+        "640x360/fresh/v3-frame-v6-skill-on-reverse-000100.png"
+      ]
+    },
+    {
+      "file": "review/640-player-dam.png",
+      "sha256": "5a3c421da9c7ee9a6f2d3af66cf7df4194263a22c9cfafe1423812128c8b6012",
+      "method": "view_image; full640x360 images pasted without scaling; bounds in crop-manifest.json",
+      "sources": [
+        "640x360/fresh/v3-frame-v6-skill-dam-overlap-000120.png",
+        "640x360/fresh/v3-frame-v6-skill-dam-overlap-000130.png",
+        "640x360/fresh/v3-frame-v6-skill-dam-reverse-000158.png",
+        "640x360/fresh/v3-frame-v6-skill-dam-reverse-000168.png"
+      ]
+    },
+    {
+      "file": "review/640-player-rin.png",
+      "sha256": "cc350bed9f1d8cffaf319e10915d61cc384ad83cc4be7d808ef8f21b7fb53f51",
+      "method": "view_image; full640x360 images pasted without scaling; bounds in crop-manifest.json",
+      "sources": [
+        "640x360/fresh/v3-frame-v6-skill-rin-overlap-000188.png",
+        "640x360/fresh/v3-frame-v6-skill-rin-overlap-000198.png",
+        "640x360/fresh/v3-frame-v6-skill-rin-reverse-000226.png",
+        "640x360/fresh/v3-frame-v6-skill-rin-reverse-000236.png"
+      ]
+    },
+    {
+      "file": "review/640-boss-5-10.png",
+      "sha256": "154568f05d54fafc8ff833872c60253bf88aedc73ae04c0f4f0caa53e43c0ded",
+      "method": "view_image; full640x360 images pasted without scaling; bounds in crop-manifest.json",
+      "sources": [
+        "640x360/fresh/v3-frame-v6-boss-lightning-5-000639.png",
+        "640x360/fresh/v3-frame-v6-boss-lightning-5-000649.png",
+        "640x360/fresh/v3-frame-v6-boss-lightning-10-000681.png",
+        "640x360/fresh/v3-frame-v6-boss-lightning-10-000691.png"
+      ]
+    },
+    {
+      "file": "review/640-boss-15-20.png",
+      "sha256": "95240a5e39afbc453389a4929b7b92c3170017473600e13c302614fd8b6c3724",
+      "method": "view_image; full640x360 images pasted without scaling; bounds in crop-manifest.json",
+      "sources": [
+        "640x360/fresh/v3-frame-v6-boss-lightning-15-000722.png",
+        "640x360/fresh/v3-frame-v6-boss-lightning-15-000732.png",
+        "640x360/fresh/v3-frame-v6-boss-lightning-20-000764.png",
+        "640x360/fresh/v3-frame-v6-boss-lightning-20-000774.png"
+      ]
+    },
+    {
+      "file": "review/640-stun.png",
+      "sha256": "8d0899a0cd14491d8c5bb5ffa5784512b0de207f467a76b8d90387fb9fc9987e",
+      "method": "view_image; full640x360 images pasted without scaling; bounds in crop-manifest.json",
+      "sources": [
+        "640x360/fresh/v3-frame-v6-actual-stun-000827.png",
+        "640x360/fresh/v6-stun-late-no-hitflash.png",
+        "640x360/fresh/v6-stun-paused.png",
+        "640x360/fresh/v3-frame-v6-stun-ended-000863.png"
+      ]
+    },
+    {
+      "file": "review/640-concurrent.png",
+      "sha256": "5bf688ed777ee0c4bee35cf987a14c70f6745521d013a70ab8e7b0f1a6b05c72",
+      "method": "view_image; full640x360 images pasted without scaling; bounds in crop-manifest.json",
+      "sources": [
+        "640x360/fresh/v3-frame-v6-three-companion-plus-player-contact-000880.png",
+        "640x360/fresh/v3-frame-v6-three-companion-plus-player-contact-000904.png",
+        "640x360/fresh/v3-frame-v6-three-companion-plus-player-contact-000914.png",
+        "640x360/fresh/v3-frame-v6-three-companion-plus-player-contact-000926.png"
+      ]
+    },
+    {
+      "file": "review/640-native.png",
+      "sha256": "09bf9613494de6ad61aa8e316b7f06e1a9c94a432891b16b3cb844b236739723",
+      "method": "view_image; full640x360 images pasted without scaling; bounds in crop-manifest.json",
+      "sources": [
+        "640x360/fresh/v6-checkpoint-post-contact.png",
+        "640x360/resume/v6-native-resume-initial.png",
+        "640x360/resume/v6-native-resume-final.png",
+        "640x360/resume/v3-frame-v6-native-resume-first-window-000000.png"
+      ]
+    },
+    {
+      "file": "review/640-zero-and-kill.png",
+      "sha256": "b70ece4f7cd9c7d8e0dad51d1ba350c291721213b258061190abb099a584c3cc",
+      "method": "view_image; full640x360 images pasted without scaling; bounds in crop-manifest.json",
+      "sources": [
+        "640x360/fresh/v3-frame-v6-hp-zero-on-defeat-000040.png",
+        "640x360/fresh/v3-frame-v6-double-contact-kill-on-000992.png",
+        "640x360/fresh/v3-frame-v6-double-contact-kill-dam-001028.png",
+        "640x360/fresh/v3-frame-v6-double-contact-kill-rin-001064.png"
+      ]
+    },
+    {
+      "file": "review/640-late-player.png",
+      "sha256": "eed494d6b99b670364f9917bb450290d210262232b4544def44cb0c077ee145d",
+      "method": "view_image; full640x360 images pasted without scaling; bounds in crop-manifest.json",
+      "sources": [
+        "640x360/fresh/v3-frame-v6-skill-on-overlap-000078.png",
+        "640x360/fresh/v3-frame-v6-skill-dam-overlap-000146.png",
+        "640x360/fresh/v3-frame-v6-skill-rin-overlap-000214.png"
+      ]
+    },
+    {
+      "file": "review/640-late-companion.png",
+      "sha256": "0d925d731a7bd95f35416c89693042721a3ce0f2141ff8b5dd51ea30e73c202d",
+      "method": "view_image; full640x360 images pasted without scaling; bounds in crop-manifest.json",
+      "sources": [
+        "640x360/fresh/v3-frame-v6-companion-barun-proc-contact-000397.png",
+        "640x360/fresh/v3-frame-v6-companion-doto-proc-contact-000474.png",
+        "640x360/fresh/v3-frame-v6-companion-rina-proc-contact-000551.png"
+      ]
+    },
+    {
+      "file": "1280x720/fresh/v6-route-mvp-complete.png",
+      "sha256": "3bb6f09279c01c21dc22931e39f92d23ce4f7b599ddd999efb71fd9e113fa3d8",
+      "method": "view_image; full original1280x720"
+    },
+    {
+      "file": "1280x720/resume/v6-native-resume-initial.png",
+      "sha256": "0dc49b63c4e64a1209f70fb786bea3982c0b18a6c55265bea5fbde70f8b0ae64",
+      "method": "view_image; full original1280x720"
+    },
+    {
+      "file": "1280x720/resume/v6-native-resume-final.png",
+      "sha256": "df349beac87b078218f43ce5e28a2aa958a233d8d79d4eaa57d99dcec264a602",
+      "method": "view_image; full original1280x720"
+    }
+  ],
+  "findings": [
+    {
+      "id": "DQA6-001",
+      "status": "FIX_CONFIRMED_BOUNDED",
+      "evidence": "candidate03 1280 three popups; candidate04 640 player/three-popup contact and late frames",
+      "notes": "Popups remain below stagger HUD. Contact effects can occlude glyphs temporarily; post-effect13/10 and cyan16 readable and separated. Original trio absent after lifetime."
+    },
+    {
+      "id": "DQA6-002",
+      "status": "FIX_CONFIRMED_BOUNDED",
+      "evidence": "candidate03 1280 normal and4 bosses; candidate04 640 Miel/Rina normal and4 bosses",
+      "notes": "Continuous thick lightning silhouette at contact/later samples."
+    },
+    {
+      "id": "DQA6-003",
+      "status": "FIX_CONFIRMED_BOUNDED",
+      "evidence": "candidate03/04 all4 bosses at1280/640",
+      "notes": "Boss name clear of direction glyph, HP and pause."
+    }
+  ],
+  "boundedChecks": [
+    {
+      "subject": "640 inn and companion displays",
+      "verdict": "PASS_WITH_VISUAL_NOTE",
+      "notes": "Selection/recovery,5 companion upgrade before/after values and L30 cap readable. Purchase sparkle can briefly cross upgrade-button lettering; no uninterrupted feedback readability claim."
+    },
+    {
+      "subject": "640 HP100/50/min-positive and defeat",
+      "verdict": "PASS_BOUNDED",
+      "notes": "Fill levels distinguishable, enemy bar hidden on defeat. These captures precede requested orange HP trail change."
+    },
+    {
+      "subject": "640 all3 player skills and5 companion basic/proc",
+      "verdict": "PASS_BOUNDED",
+      "notes": "Contact white flash and distinct effects visible; skill/normal popups separated; effect occlusion at contact noted, later visible."
+    },
+    {
+      "subject": "640 stun active/late/pause/end",
+      "verdict": "PASS_BOUNDED",
+      "notes": "Gold stars visible active/late and absent after expiry.21 actual particles and pause clock verified by probe, not pixel count."
+    },
+    {
+      "subject": "1280 route/native and640 native",
+      "verdict": "PASS_BOUNDED",
+      "notes": "MVP stage20 completion and both native paused-start/resumed renders reviewed; route event sequence1..20 verified.640 continuous route not part of this run."
+    }
+  ],
+  "adoptedPriorEvidence": [
+    {
+      "candidate": "01",
+      "scope": "1280 legacy/inn/HP;33 distinct PNGs reviewed"
+    },
+    {
+      "candidate": "02",
+      "scope": "1280 three players/five companions and save/pause;37 distinct PNGs reviewed; old lightning/HUD defects superseded by03/04"
+    },
+    {
+      "candidate": "03",
+      "scope": "1280 lightning/HUD/stun/concurrent/kill streaming observations;21 distinct PNGs reviewed; operator-stopped campaign has no final PASS count"
+    }
+  ],
+  "packaging": {
+    "priorScope": "NO_NEW_BLOCKING_QA_FINDING",
+    "newHpTrail": "PENDING_SEPARATE_FROZEN_BUILD_AND_TARGETED_QA",
+    "releaseCertification": "NOT_CERTIFIED"
+  },
+  "limits": [
+    "Physical input deferred by user",
+    "No mobile/audio listening/performance/long-duration leak certification",
+    "Synthetic UI EventSystem/raycast, seeds/highHP/future-three-slot fixtures and manual time gaps",
+    "Only1280 continuous1..20; two selected native checkpoints; no all44/previous60 acceptance claim",
+    "Raw campaign/result remain unchanged; their visualReview=NOT_RUN is original automatic result, supplemented here"
+  ]
+}

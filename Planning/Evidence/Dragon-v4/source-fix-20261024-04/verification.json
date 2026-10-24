@@ -1,0 +1,31 @@
+{
+  "status": "SOURCE_FROZEN_READY_FOR_ROOT_FINAL_OBSERVED_BUILD",
+  "pythonAST": "PASS",
+  "powerShellSyntax": "PASS",
+  "compile": "NOT_REPEATED",
+  "issues": [
+    "DQA4-002",
+    "DQA4-003"
+  ],
+  "unity": "ROOT_OWNED",
+  "scope": "1280 Stage11 dash target,1280 resume from candidate02,640 fresh/resume only",
+  "sources": [
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V4.cs",
+      "sha256": "19EB04E32B402C606B2EEB61E5707D578AA128ACA5D46D22A00ACC0115E630B8"
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.cs",
+      "sha256": "ECFF2C16875B7A2E8C8DE71249C9A7A94E5F8677061B8C87639796A9AE478B0F"
+    },
+    {
+      "path": "Tools/QA/Dragon-v4/run-campaign.ps1",
+      "sha256": "F4BD4DC2061D1FA38BB8F461F21C0AE127B1D8B6FD7451E2920A724C8E0B4EB2"
+    },
+    {
+      "path": "Tools/QA/Dragon-v4/analyze.py",
+      "sha256": "6B6EEAD300FAA2EF4638443820D5F9FAC4FE622882E2DEC35C7AC46DD072B74B"
+    }
+  ],
+  "nativeRerun": "NOT_STARTED"
+}

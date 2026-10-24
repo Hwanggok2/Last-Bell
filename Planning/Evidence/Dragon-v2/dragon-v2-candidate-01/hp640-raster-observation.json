@@ -1,0 +1,112 @@
+{
+  "id": "DQA2-001",
+  "status": "OPEN_COORDINATOR_FIX_PENDING",
+  "automaticRules": "PASS",
+  "finding": "640 HP horizontal boundaries contain blended colors; integer 2px highlight raster is not preserved. Filled column counts are correct.",
+  "attribution": "Observed in QA camera/Canvas capture; exact rendering cause not determined by QA.",
+  "additionalExecution": "WAITING_FOR_TARGETED_HANDOFF",
+  "cases": [
+    {
+      "case": "v2-1280x720",
+      "png": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v2\\dragon-v2-candidate-01\\v2-1280x720\\v2-hp-1280x720-stage-1-100.png",
+      "boundsBottomLeft": {
+        "serializedVersion": "2",
+        "x": 420.0,
+        "y": 168.77418518066406,
+        "width": 160.0,
+        "height": 36.0
+      },
+      "topEdgeFloat": 515.2258148193359,
+      "pixelCoordinateOrigin": "PNG top-left",
+      "samples": [
+        {
+          "x": 436,
+          "y": 523,
+          "rgb": [
+            114,
+            185,
+            155
+          ]
+        },
+        {
+          "x": 436,
+          "y": 524,
+          "rgb": [
+            114,
+            185,
+            155
+          ]
+        },
+        {
+          "x": 436,
+          "y": 525,
+          "rgb": [
+            114,
+            185,
+            155
+          ]
+        },
+        {
+          "x": 436,
+          "y": 526,
+          "rgb": [
+            114,
+            185,
+            155
+          ]
+        }
+      ]
+    },
+    {
+      "case": "v2-640x360",
+      "png": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v2\\dragon-v2-candidate-01\\v2-640x360\\v2-hp-640x360-stage-1-100.png",
+      "boundsBottomLeft": {
+        "serializedVersion": "2",
+        "x": 210.0,
+        "y": 84.38709259033203,
+        "width": 80.0,
+        "height": 18.0
+      },
+      "topEdgeFloat": 257.61290740966797,
+      "pixelCoordinateOrigin": "PNG top-left",
+      "samples": [
+        {
+          "x": 218,
+          "y": 261,
+          "rgb": [
+            126,
+            165,
+            146
+          ]
+        },
+        {
+          "x": 218,
+          "y": 262,
+          "rgb": [
+            114,
+            185,
+            155
+          ]
+        },
+        {
+          "x": 218,
+          "y": 263,
+          "rgb": [
+            75,
+            151,
+            132
+          ]
+        },
+        {
+          "x": 218,
+          "y": 271,
+          "rgb": [
+            37,
+            89,
+            89
+          ]
+        }
+      ]
+    }
+  ]
+}

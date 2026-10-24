@@ -1,0 +1,967 @@
+{
+    "visualReview": "NOT_RUN",
+    "naturalMotionReview": "NOT_RUN",
+    "osInput": "DEFERRED",
+    "mobile": "DEFERRED",
+    "defaultSaveRuntime": "NOT_RUN: observed launches use an explicit isolated override; selector contract checked separately",
+    "skillImplementation": "Source/planning review required; runtime probe does not certify absence of all skill code",
+    "writtenFrames": 5416,
+    "playtestDefine": true,
+    "clips": [
+        "dragon_goblin_scout/Idle/dragon-v3-goblin_scout-Idle",
+        "dragon_goblin_scout/Attack/dragon-v3-goblin_scout-Attack",
+        "dragon_goblin_scout/Stun/dragon-v3-goblin_scout-Stun",
+        "dragon_goblin_slinger/Idle/dragon-v3-goblin_slinger-Idle",
+        "dragon_goblin_slinger/Attack/dragon-v3-goblin_slinger-Attack",
+        "dragon_goblin_slinger/Stun/dragon-v3-goblin_slinger-Stun",
+        "dragon_forest_mushroom/Idle/dragon-v3-forest_mushroom-Idle",
+        "dragon_forest_mushroom/Attack/dragon-v3-forest_mushroom-Attack",
+        "dragon_forest_mushroom/Stun/dragon-v3-forest_mushroom-Stun",
+        "dragon_goblin_shield/Idle/dragon-v3-goblin_shield-Idle",
+        "dragon_goblin_shield/Attack/dragon-v3-goblin_shield-Attack",
+        "dragon_goblin_shield/Stun/dragon-v3-goblin_shield-Stun",
+        "dragon_mushroom_captain/Idle/dragon-v3-mushroom_captain-Idle",
+        "dragon_mushroom_captain/Attack/dragon-v3-mushroom_captain-Attack",
+        "dragon_mushroom_captain/Stun/dragon-v3-mushroom_captain-Stun",
+        "dragon_goblin_spear/Idle/dragon-v3-goblin_spear-Idle",
+        "dragon_goblin_spear/Attack/dragon-v3-goblin_spear-Attack",
+        "dragon_goblin_spear/Stun/dragon-v3-goblin_spear-Stun",
+        "dragon_spore_mushroom/Idle/dragon-v3-spore_mushroom-Idle",
+        "dragon_spore_mushroom/Attack/dragon-v3-spore_mushroom-Attack",
+        "dragon_spore_mushroom/Stun/dragon-v3-spore_mushroom-Stun",
+        "dragon_moss_mushroom/Idle/dragon-v3-moss_mushroom-Idle",
+        "dragon_moss_mushroom/Attack/dragon-v3-moss_mushroom-Attack",
+        "dragon_moss_mushroom/Stun/dragon-v3-moss_mushroom-Stun",
+        "dragon_goblin_guard/Idle/dragon-v3-goblin_guard-Idle",
+        "dragon_goblin_guard/Attack/dragon-v3-goblin_guard-Attack",
+        "dragon_goblin_guard/Stun/dragon-v3-goblin_guard-Stun",
+        "dragon_gib/Idle/dragon-v3-gib-Idle",
+        "dragon_gib/Attack/dragon-v3-gib-Attack",
+        "dragon_gib/Stun/dragon-v3-gib-Stun",
+        "dragon_hero_on/Run/dragon-v3-hero_on-Run",
+        "dragon_hero_on/Idle/dragon-v3-hero_on-Idle",
+        "dragon_hero_on/Attack/dragon-v3-hero_on-Attack",
+        "dragon_hero_on/DodgeUp/dragon-v3-hero_on-DodgeUp",
+        "dragon_hero_on/DodgeBack/dragon-v3-hero_on-DodgeBack",
+        "dragon_hero_on/DodgeDown/dragon-v3-hero_on-DodgeDown",
+        "dragon_hero_on/Hit/dragon-v3-hero_on-Hit",
+        "dragon_hero_on/Run/dragon-v3-hero_on-Run",
+        "dragon_hero_on/Idle/dragon-v3-hero_on-Idle",
+        "dragon_hero_on/Attack/dragon-v3-hero_on-Attack",
+        "dragon_hero_on/DodgeUp/dragon-v3-hero_on-DodgeUp",
+        "dragon_hero_on/DodgeBack/dragon-v3-hero_on-DodgeBack",
+        "dragon_hero_on/DodgeDown/dragon-v3-hero_on-DodgeDown",
+        "dragon_hero_on/Hit/dragon-v3-hero_on-Hit"
+    ],
+    "grounds": [
+        {
+            "stage": 1,
+            "region": "meadow",
+            "kind": "Meadow",
+            "planY": 590.0,
+            "playerHome": {
+                "x": -1.2055555582046509,
+                "y": -1.980555534362793,
+                "z": 0.0
+            },
+            "enemyHome": {
+                "x": 2.238888740539551,
+                "y": -1.980555534362793,
+                "z": 0.0
+            }
+        },
+        {
+            "stage": 2,
+            "region": "meadow",
+            "kind": "Meadow",
+            "planY": 590.0,
+            "playerHome": {
+                "x": -1.2055555582046509,
+                "y": -1.980555534362793,
+                "z": 0.0
+            },
+            "enemyHome": {
+                "x": 2.238888740539551,
+                "y": -1.980555534362793,
+                "z": 0.0
+            }
+        },
+        {
+            "stage": 3,
+            "region": "meadow",
+            "kind": "Meadow",
+            "planY": 590.0,
+            "playerHome": {
+                "x": -1.2055555582046509,
+                "y": -1.980555534362793,
+                "z": 0.0
+            },
+            "enemyHome": {
+                "x": 2.238888740539551,
+                "y": -1.980555534362793,
+                "z": 0.0
+            }
+        },
+        {
+            "stage": 4,
+            "region": "meadow",
+            "kind": "Meadow",
+            "planY": 590.0,
+            "playerHome": {
+                "x": -1.2055555582046509,
+                "y": -1.980555534362793,
+                "z": 0.0
+            },
+            "enemyHome": {
+                "x": 2.238888740539551,
+                "y": -1.980555534362793,
+                "z": 0.0
+            }
+        },
+        {
+            "stage": 5,
+            "region": "meadow",
+            "kind": "Meadow",
+            "planY": 590.0,
+            "playerHome": {
+                "x": -1.2055555582046509,
+                "y": -1.980555534362793,
+                "z": 0.0
+            },
+            "enemyHome": {
+                "x": 2.238888740539551,
+                "y": -1.980555534362793,
+                "z": 0.0
+            }
+        },
+        {
+            "stage": 6,
+            "region": "meadow",
+            "kind": "Meadow",
+            "planY": 590.0,
+            "playerHome": {
+                "x": -1.2055555582046509,
+                "y": -1.980555534362793,
+                "z": 0.0
+            },
+            "enemyHome": {
+                "x": 2.238888740539551,
+                "y": -1.980555534362793,
+                "z": 0.0
+            }
+        },
+        {
+            "stage": 7,
+            "region": "meadow",
+            "kind": "Meadow",
+            "planY": 590.0,
+            "playerHome": {
+                "x": -1.2055555582046509,
+                "y": -1.980555534362793,
+                "z": 0.0
+            },
+            "enemyHome": {
+                "x": 2.238888740539551,
+                "y": -1.980555534362793,
+                "z": 0.0
+            }
+        },
+        {
+            "stage": 8,
+            "region": "meadow",
+            "kind": "Meadow",
+            "planY": 590.0,
+            "playerHome": {
+                "x": -1.2055555582046509,
+                "y": -1.980555534362793,
+                "z": 0.0
+            },
+            "enemyHome": {
+                "x": 2.238888740539551,
+                "y": -1.980555534362793,
+                "z": 0.0
+            }
+        },
+        {
+            "stage": 9,
+            "region": "meadow",
+            "kind": "Meadow",
+            "planY": 590.0,
+            "playerHome": {
+                "x": -1.2055555582046509,
+                "y": -1.980555534362793,
+                "z": 0.0
+            },
+            "enemyHome": {
+                "x": 2.238888740539551,
+                "y": -1.980555534362793,
+                "z": 0.0
+            }
+        },
+        {
+            "stage": 10,
+            "region": "meadow",
+            "kind": "Meadow",
+            "planY": 590.0,
+            "playerHome": {
+                "x": -1.2055555582046509,
+                "y": -1.980555534362793,
+                "z": 0.0
+            },
+            "enemyHome": {
+                "x": 2.238888740539551,
+                "y": -1.980555534362793,
+                "z": 0.0
+            }
+        },
+        {
+            "stage": 11,
+            "region": "forest",
+            "kind": "Forest",
+            "planY": 590.0,
+            "playerHome": {
+                "x": -1.2055555582046509,
+                "y": -1.980555534362793,
+                "z": 0.0
+            },
+            "enemyHome": {
+                "x": 2.238888740539551,
+                "y": -1.980555534362793,
+                "z": 0.0
+            }
+        },
+        {
+            "stage": 12,
+            "region": "forest",
+            "kind": "Forest",
+            "planY": 590.0,
+            "playerHome": {
+                "x": -1.2055555582046509,
+                "y": -1.980555534362793,
+                "z": 0.0
+            },
+            "enemyHome": {
+                "x": 2.238888740539551,
+                "y": -1.980555534362793,
+                "z": 0.0
+            }
+        },
+        {
+            "stage": 13,
+            "region": "forest",
+            "kind": "Forest",
+            "planY": 590.0,
+            "playerHome": {
+                "x": -1.2055555582046509,
+                "y": -1.980555534362793,
+                "z": 0.0
+            },
+            "enemyHome": {
+                "x": 2.238888740539551,
+                "y": -1.980555534362793,
+                "z": 0.0
+            }
+        },
+        {
+            "stage": 14,
+            "region": "forest",
+            "kind": "Forest",
+            "planY": 590.0,
+            "playerHome": {
+                "x": -1.2055555582046509,
+                "y": -1.980555534362793,
+                "z": 0.0
+            },
+            "enemyHome": {
+                "x": 2.238888740539551,
+                "y": -1.980555534362793,
+                "z": 0.0
+            }
+        },
+        {
+            "stage": 15,
+            "region": "forest",
+            "kind": "Forest",
+            "planY": 590.0,
+            "playerHome": {
+                "x": -1.2055555582046509,
+                "y": -1.980555534362793,
+                "z": 0.0
+            },
+            "enemyHome": {
+                "x": 2.238888740539551,
+                "y": -1.980555534362793,
+                "z": 0.0
+            }
+        },
+        {
+            "stage": 16,
+            "region": "forest",
+            "kind": "Forest",
+            "planY": 590.0,
+            "playerHome": {
+                "x": -1.2055555582046509,
+                "y": -1.980555534362793,
+                "z": 0.0
+            },
+            "enemyHome": {
+                "x": 2.238888740539551,
+                "y": -1.980555534362793,
+                "z": 0.0
+            }
+        },
+        {
+            "stage": 17,
+            "region": "forest",
+            "kind": "Forest",
+            "planY": 590.0,
+            "playerHome": {
+                "x": -1.2055555582046509,
+                "y": -1.980555534362793,
+                "z": 0.0
+            },
+            "enemyHome": {
+                "x": 2.238888740539551,
+                "y": -1.980555534362793,
+                "z": 0.0
+            }
+        },
+        {
+            "stage": 18,
+            "region": "forest",
+            "kind": "Forest",
+            "planY": 590.0,
+            "playerHome": {
+                "x": -1.2055555582046509,
+                "y": -1.980555534362793,
+                "z": 0.0
+            },
+            "enemyHome": {
+                "x": 2.238888740539551,
+                "y": -1.980555534362793,
+                "z": 0.0
+            }
+        },
+        {
+            "stage": 19,
+            "region": "forest",
+            "kind": "Forest",
+            "planY": 590.0,
+            "playerHome": {
+                "x": -1.2055555582046509,
+                "y": -1.980555534362793,
+                "z": 0.0
+            },
+            "enemyHome": {
+                "x": 2.238888740539551,
+                "y": -1.980555534362793,
+                "z": 0.0
+            }
+        },
+        {
+            "stage": 20,
+            "region": "forest",
+            "kind": "Forest",
+            "planY": 590.0,
+            "playerHome": {
+                "x": -1.2055555582046509,
+                "y": -1.980555534362793,
+                "z": 0.0
+            },
+            "enemyHome": {
+                "x": 2.238888740539551,
+                "y": -1.980555534362793,
+                "z": 0.0
+            }
+        }
+    ],
+    "attackAliases": [
+        "11/thrust/AttackThrust -> Attack/dragon-v3-goblin_scout-Attack",
+        "11/low_sweep/AttackLow -> Attack/dragon-v3-goblin_scout-Attack",
+        "12/thrust/AttackThrust -> Attack/dragon-v3-goblin_slinger-Attack",
+        "12/high_sweep/AttackHigh -> Attack/dragon-v3-goblin_slinger-Attack",
+        "13/thrust/AttackThrust -> Attack/dragon-v3-forest_mushroom-Attack",
+        "13/high_sweep/AttackHigh -> Attack/dragon-v3-forest_mushroom-Attack",
+        "13/low_sweep/AttackLow -> Attack/dragon-v3-forest_mushroom-Attack",
+        "14/thrust/AttackThrust -> Attack/dragon-v3-goblin_shield-Attack",
+        "14/low_sweep/AttackLow -> Attack/dragon-v3-goblin_shield-Attack",
+        "15/thrust/AttackThrust -> Attack/dragon-v3-mushroom_captain-Attack",
+        "15/high_sweep/AttackHigh -> Attack/dragon-v3-mushroom_captain-Attack",
+        "16/thrust/AttackThrust -> Attack/dragon-v3-goblin_spear-Attack",
+        "16/high_sweep/AttackHigh -> Attack/dragon-v3-goblin_spear-Attack",
+        "16/low_sweep/AttackLow -> Attack/dragon-v3-goblin_spear-Attack",
+        "17/thrust/AttackThrust -> Attack/dragon-v3-spore_mushroom-Attack",
+        "17/low_sweep/AttackLow -> Attack/dragon-v3-spore_mushroom-Attack",
+        "18/thrust/AttackThrust -> Attack/dragon-v3-moss_mushroom-Attack",
+        "18/high_sweep/AttackHigh -> Attack/dragon-v3-moss_mushroom-Attack",
+        "19/thrust/AttackThrust -> Attack/dragon-v3-goblin_guard-Attack",
+        "19/high_sweep/AttackHigh -> Attack/dragon-v3-goblin_guard-Attack",
+        "19/low_sweep/AttackLow -> Attack/dragon-v3-goblin_guard-Attack",
+        "20/thrust/AttackThrust -> Attack/dragon-v3-gib-Attack",
+        "20/high_sweep/AttackHigh -> Attack/dragon-v3-gib-Attack",
+        "20/low_sweep/AttackLow -> Attack/dragon-v3-gib-Attack"
+    ],
+    "segments": [
+        {
+            "name": "enemy-11-idle",
+            "clock": "real-frame-v3-static-session",
+            "frames": 123,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 7.25551176071167,
+            "lastRealtime": 9.302722930908204,
+            "maxDelta": 0.08708510547876358,
+            "maxRealtimeGap": 0.021519184112548829,
+            "encodeSeconds": 8.950332641601563
+        },
+        {
+            "name": "enemy-11-attack-hit",
+            "clock": "real-frame-v3",
+            "frames": 99,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 19.017677307128908,
+            "lastRealtime": 20.74002456665039,
+            "maxDelta": 0.037629805505275729,
+            "maxRealtimeGap": 0.04056739807128906,
+            "encodeSeconds": 7.129844665527344
+        },
+        {
+            "name": "enemy-11-stun",
+            "clock": "real-frame-v3",
+            "frames": 128,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 28.654518127441408,
+            "lastRealtime": 30.820755004882814,
+            "maxDelta": 0.05388379469513893,
+            "maxRealtimeGap": 0.03872108459472656,
+            "encodeSeconds": 9.280324935913086
+        },
+        {
+            "name": "enemy-12-idle",
+            "clock": "real-frame-v3-static-session",
+            "frames": 124,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 40.93410110473633,
+            "lastRealtime": 42.987098693847659,
+            "maxDelta": 0.08487270027399063,
+            "maxRealtimeGap": 0.0195159912109375,
+            "encodeSeconds": 9.088874816894532
+        },
+        {
+            "name": "enemy-12-attack-hit",
+            "clock": "real-frame-v3",
+            "frames": 81,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 52.84242248535156,
+            "lastRealtime": 54.22813034057617,
+            "maxDelta": 0.035145897418260577,
+            "maxRealtimeGap": 0.038394927978515628,
+            "encodeSeconds": 5.808135986328125
+        },
+        {
+            "name": "enemy-12-stun",
+            "clock": "real-frame-v3",
+            "frames": 128,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 60.82350540161133,
+            "lastRealtime": 62.98788070678711,
+            "maxDelta": 0.04666920378804207,
+            "maxRealtimeGap": 0.036106109619140628,
+            "encodeSeconds": 9.303524017333985
+        },
+        {
+            "name": "enemy-13-idle",
+            "clock": "real-frame-v3-static-session",
+            "frames": 123,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 73.12464141845703,
+            "lastRealtime": 75.16073608398438,
+            "maxDelta": 0.08301950246095658,
+            "maxRealtimeGap": 0.01860809326171875,
+            "encodeSeconds": 8.926651000976563
+        },
+        {
+            "name": "enemy-13-attack-hit",
+            "clock": "real-frame-v3",
+            "frames": 98,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 84.85734558105469,
+            "lastRealtime": 86.59468841552735,
+            "maxDelta": 0.03785870224237442,
+            "maxRealtimeGap": 0.03824615478515625,
+            "encodeSeconds": 7.202392578125
+        },
+        {
+            "name": "enemy-13-stun",
+            "clock": "real-frame-v3",
+            "frames": 128,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 94.58206176757813,
+            "lastRealtime": 96.7431640625,
+            "maxDelta": 0.053528498858213428,
+            "maxRealtimeGap": 0.0345458984375,
+            "encodeSeconds": 9.471458435058594
+        },
+        {
+            "name": "enemy-14-idle",
+            "clock": "real-frame-v3-static-session",
+            "frames": 123,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 107.04702758789063,
+            "lastRealtime": 109.08582305908203,
+            "maxDelta": 0.08255639672279358,
+            "maxRealtimeGap": 0.02190399169921875,
+            "encodeSeconds": 8.848396301269532
+        },
+        {
+            "name": "enemy-14-attack-hit",
+            "clock": "real-frame-v3",
+            "frames": 99,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 118.70137786865235,
+            "lastRealtime": 120.42497253417969,
+            "maxDelta": 0.030243799090385438,
+            "maxRealtimeGap": 0.032501220703125,
+            "encodeSeconds": 7.105865478515625
+        },
+        {
+            "name": "enemy-14-stun",
+            "clock": "real-frame-v3",
+            "frames": 128,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 128.31588745117188,
+            "lastRealtime": 130.48150634765626,
+            "maxDelta": 0.049859996885061267,
+            "maxRealtimeGap": 0.04058837890625,
+            "encodeSeconds": 9.425994873046875
+        },
+        {
+            "name": "enemy-15-idle",
+            "clock": "real-frame-v3-static-session",
+            "frames": 123,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 140.74533081054688,
+            "lastRealtime": 142.78778076171876,
+            "maxDelta": 0.0800338014960289,
+            "maxRealtimeGap": 0.0233001708984375,
+            "encodeSeconds": 8.5322265625
+        },
+        {
+            "name": "enemy-15-attack-hit",
+            "clock": "real-frame-v3",
+            "frames": 98,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 152.08229064941407,
+            "lastRealtime": 153.81057739257813,
+            "maxDelta": 0.037083595991134647,
+            "maxRealtimeGap": 0.0390472412109375,
+            "encodeSeconds": 6.9721832275390629
+        },
+        {
+            "name": "enemy-15-stun",
+            "clock": "real-frame-v3",
+            "frames": 110,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 161.57127380371095,
+            "lastRealtime": 163.43580627441407,
+            "maxDelta": 0.050570905208587649,
+            "maxRealtimeGap": 0.0362091064453125,
+            "encodeSeconds": 7.7986297607421879
+        },
+        {
+            "name": "enemy-16-idle",
+            "clock": "real-frame-v3-static-session",
+            "frames": 124,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 172.07220458984376,
+            "lastRealtime": 174.1244354248047,
+            "maxDelta": 0.09044170379638672,
+            "maxRealtimeGap": 0.0184326171875,
+            "encodeSeconds": 9.289413452148438
+        },
+        {
+            "name": "enemy-16-attack-hit",
+            "clock": "real-frame-v3",
+            "frames": 98,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 184.1708221435547,
+            "lastRealtime": 185.892578125,
+            "maxDelta": 0.034414201974868777,
+            "maxRealtimeGap": 0.0355987548828125,
+            "encodeSeconds": 7.2869873046875
+        },
+        {
+            "name": "enemy-16-stun",
+            "clock": "real-frame-v3",
+            "frames": 127,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 193.97079467773438,
+            "lastRealtime": 196.12684631347657,
+            "maxDelta": 0.05054830014705658,
+            "maxRealtimeGap": 0.0395660400390625,
+            "encodeSeconds": 9.17779541015625
+        },
+        {
+            "name": "enemy-17-idle",
+            "clock": "real-frame-v3-static-session",
+            "frames": 123,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 206.15089416503907,
+            "lastRealtime": 208.20242309570313,
+            "maxDelta": 0.08393800258636475,
+            "maxRealtimeGap": 0.0218658447265625,
+            "encodeSeconds": 8.903228759765625
+        },
+        {
+            "name": "enemy-17-attack-hit",
+            "clock": "real-frame-v3",
+            "frames": 95,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 217.8612518310547,
+            "lastRealtime": 219.59121704101563,
+            "maxDelta": 0.03426830470561981,
+            "maxRealtimeGap": 0.035736083984375,
+            "encodeSeconds": 6.8795623779296879
+        },
+        {
+            "name": "enemy-17-stun",
+            "clock": "real-frame-v3",
+            "frames": 127,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 227.26513671875,
+            "lastRealtime": 229.42742919921876,
+            "maxDelta": 0.052191197872161868,
+            "maxRealtimeGap": 0.0408172607421875,
+            "encodeSeconds": 9.283203125
+        },
+        {
+            "name": "enemy-18-idle",
+            "clock": "real-frame-v3-static-session",
+            "frames": 123,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 239.54161071777345,
+            "lastRealtime": 241.58387756347657,
+            "maxDelta": 0.07998959720134735,
+            "maxRealtimeGap": 0.0190277099609375,
+            "encodeSeconds": 8.7745361328125
+        },
+        {
+            "name": "enemy-18-attack-hit",
+            "clock": "real-frame-v3",
+            "frames": 88,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 251.13011169433595,
+            "lastRealtime": 252.689208984375,
+            "maxDelta": 0.03453649953007698,
+            "maxRealtimeGap": 0.03692626953125,
+            "encodeSeconds": 6.3636016845703129
+        },
+        {
+            "name": "enemy-18-stun",
+            "clock": "real-frame-v3",
+            "frames": 128,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 259.8390808105469,
+            "lastRealtime": 262.0073547363281,
+            "maxDelta": 0.047829896211624148,
+            "maxRealtimeGap": 0.041290283203125,
+            "encodeSeconds": 9.205291748046875
+        },
+        {
+            "name": "enemy-19-idle",
+            "clock": "real-frame-v3-static-session",
+            "frames": 122,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 272.05517578125,
+            "lastRealtime": 274.09368896484377,
+            "maxDelta": 0.07982209324836731,
+            "maxRealtimeGap": 0.033843994140625,
+            "encodeSeconds": 8.59393310546875
+        },
+        {
+            "name": "enemy-19-attack-hit",
+            "clock": "real-frame-v3",
+            "frames": 78,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 283.4432678222656,
+            "lastRealtime": 284.84912109375,
+            "maxDelta": 0.03658740222454071,
+            "maxRealtimeGap": 0.037017822265625,
+            "encodeSeconds": 5.585418701171875
+        },
+        {
+            "name": "enemy-19-stun",
+            "clock": "real-frame-v3",
+            "frames": 128,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 291.2176818847656,
+            "lastRealtime": 293.3866271972656,
+            "maxDelta": 0.04873700439929962,
+            "maxRealtimeGap": 0.0380859375,
+            "encodeSeconds": 9.23797607421875
+        },
+        {
+            "name": "enemy-20-idle",
+            "clock": "real-frame-v3-static-session",
+            "frames": 123,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 303.4683532714844,
+            "lastRealtime": 305.50775146484377,
+            "maxDelta": 0.07989869266748429,
+            "maxRealtimeGap": 0.01885986328125,
+            "encodeSeconds": 8.4697265625
+        },
+        {
+            "name": "enemy-20-attack-hit",
+            "clock": "real-frame-v3",
+            "frames": 76,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 314.7330322265625,
+            "lastRealtime": 316.1419982910156,
+            "maxDelta": 0.04133249819278717,
+            "maxRealtimeGap": 0.04620361328125,
+            "encodeSeconds": 5.31646728515625
+        },
+        {
+            "name": "enemy-20-stun",
+            "clock": "real-frame-v3",
+            "frames": 96,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 322.260009765625,
+            "lastRealtime": 323.90802001953127,
+            "maxDelta": 0.05852330103516579,
+            "maxRealtimeGap": 0.05230712890625,
+            "encodeSeconds": 6.6912841796875
+        },
+        {
+            "name": "player-1-idle",
+            "clock": "real-frame-v3-static-session",
+            "frames": 83,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 331.36322021484377,
+            "lastRealtime": 332.7314453125,
+            "maxDelta": 0.017126403748989106,
+            "maxRealtimeGap": 0.017303466796875,
+            "encodeSeconds": 5.988861083984375
+        },
+        {
+            "name": "player-1-attack",
+            "clock": "real-frame-v3",
+            "frames": 46,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 339.4956359863281,
+            "lastRealtime": 340.31024169921877,
+            "maxDelta": 0.037056200206279758,
+            "maxRealtimeGap": 0.039337158203125,
+            "encodeSeconds": 3.312255859375
+        },
+        {
+            "name": "player-1-defense-0",
+            "clock": "real-frame-v3",
+            "frames": 44,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 344.40936279296877,
+            "lastRealtime": 345.17584228515627,
+            "maxDelta": 0.04053279384970665,
+            "maxRealtimeGap": 0.037322998046875,
+            "encodeSeconds": 3.160369873046875
+        },
+        {
+            "name": "player-1-defense-1",
+            "clock": "real-frame-v3",
+            "frames": 45,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 349.13140869140627,
+            "lastRealtime": 349.92633056640627,
+            "maxDelta": 0.03733430430293083,
+            "maxRealtimeGap": 0.05096435546875,
+            "encodeSeconds": 3.326934814453125
+        },
+        {
+            "name": "player-1-defense-2",
+            "clock": "real-frame-v3",
+            "frames": 43,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 354.0469055175781,
+            "lastRealtime": 354.80877685546877,
+            "maxDelta": 0.04701260104775429,
+            "maxRealtimeGap": 0.04022216796875,
+            "encodeSeconds": 3.13299560546875
+        },
+        {
+            "name": "enemy-1-attack-hit",
+            "clock": "real-frame-v3",
+            "frames": 100,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 358.7080383300781,
+            "lastRealtime": 360.42767333984377,
+            "maxDelta": 0.043070897459983829,
+            "maxRealtimeGap": 0.04595947265625,
+            "encodeSeconds": 7.244293212890625
+        },
+        {
+            "name": "travel-1-to-2",
+            "clock": "real-frame-v3",
+            "frames": 197,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 368.4678649902344,
+            "lastRealtime": 371.7943420410156,
+            "maxDelta": 0.03253670036792755,
+            "maxRealtimeGap": 0.037322998046875,
+            "encodeSeconds": 14.387908935546875
+        },
+        {
+            "name": "player-11-idle",
+            "clock": "real-frame-v3-static-session",
+            "frames": 83,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 387.1353454589844,
+            "lastRealtime": 388.5034484863281,
+            "maxDelta": 0.017349503934383394,
+            "maxRealtimeGap": 0.01763916015625,
+            "encodeSeconds": 6.082122802734375
+        },
+        {
+            "name": "player-11-attack",
+            "clock": "real-frame-v3",
+            "frames": 44,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 395.36712646484377,
+            "lastRealtime": 396.17578125,
+            "maxDelta": 0.05968870595097542,
+            "maxRealtimeGap": 0.05914306640625,
+            "encodeSeconds": 3.19732666015625
+        },
+        {
+            "name": "player-11-defense-0",
+            "clock": "real-frame-v3",
+            "frames": 45,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 400.1527404785156,
+            "lastRealtime": 400.9350891113281,
+            "maxDelta": 0.04080129787325859,
+            "maxRealtimeGap": 0.0411376953125,
+            "encodeSeconds": 3.24029541015625
+        },
+        {
+            "name": "player-11-defense-1",
+            "clock": "real-frame-v3",
+            "frames": 45,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 404.94775390625,
+            "lastRealtime": 405.7270812988281,
+            "maxDelta": 0.0361282043159008,
+            "maxRealtimeGap": 0.039337158203125,
+            "encodeSeconds": 3.31134033203125
+        },
+        {
+            "name": "player-11-defense-2",
+            "clock": "real-frame-v3",
+            "frames": 45,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 409.8217468261719,
+            "lastRealtime": 410.5979309082031,
+            "maxDelta": 0.037763696163892749,
+            "maxRealtimeGap": 0.03936767578125,
+            "encodeSeconds": 3.254241943359375
+        },
+        {
+            "name": "enemy-11-attack-hit",
+            "clock": "real-frame-v3",
+            "frames": 102,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 414.6130065917969,
+            "lastRealtime": 416.3382568359375,
+            "maxDelta": 0.037293799221515658,
+            "maxRealtimeGap": 0.040679931640625,
+            "encodeSeconds": 7.392822265625
+        },
+        {
+            "name": "travel-11-to-12",
+            "clock": "real-frame-v3",
+            "frames": 196,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 424.5248718261719,
+            "lastRealtime": 427.856201171875,
+            "maxDelta": 0.03541569411754608,
+            "maxRealtimeGap": 0.0401611328125,
+            "encodeSeconds": 14.228851318359375
+        },
+        {
+            "name": "boss-15-intro",
+            "clock": "real-frame-v3",
+            "frames": 111,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 443.0623779296875,
+            "lastRealtime": 444.93829345703127,
+            "maxDelta": 0.034571003168821338,
+            "maxRealtimeGap": 0.04022216796875,
+            "encodeSeconds": 8.0518798828125
+        },
+        {
+            "name": "player-15-attack",
+            "clock": "real-frame-v3",
+            "frames": 48,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 453.7521667480469,
+            "lastRealtime": 454.56353759765627,
+            "maxDelta": 0.033972300589084628,
+            "maxRealtimeGap": 0.032562255859375,
+            "encodeSeconds": 3.347381591796875
+        },
+        {
+            "name": "boss-20-intro",
+            "clock": "real-frame-v3",
+            "frames": 135,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 458.6894226074219,
+            "lastRealtime": 460.9751281738281,
+            "maxDelta": 0.03576970100402832,
+            "maxRealtimeGap": 0.040435791015625,
+            "encodeSeconds": 9.0977783203125
+        },
+        {
+            "name": "player-20-attack",
+            "clock": "real-frame-v3",
+            "frames": 48,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 470.850830078125,
+            "lastRealtime": 471.670166015625,
+            "maxDelta": 0.04186150059103966,
+            "maxRealtimeGap": 0.03173828125,
+            "encodeSeconds": 3.2823486328125
+        },
+        {
+            "name": "travel-10-to-11",
+            "clock": "real-frame-v3",
+            "frames": 194,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 475.8572692871094,
+            "lastRealtime": 479.1888122558594,
+            "maxDelta": 0.0942654088139534,
+            "maxRealtimeGap": 0.04595947265625,
+            "encodeSeconds": 13.95001220703125
+        },
+        {
+            "name": "travel-14-to-15",
+            "clock": "real-frame-v3",
+            "frames": 197,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 494.1215515136719,
+            "lastRealtime": 497.4485168457031,
+            "maxDelta": 0.03879599645733833,
+            "maxRealtimeGap": 0.044525146484375,
+            "encodeSeconds": 14.271087646484375
+        },
+        {
+            "name": "travel-15-to-16",
+            "clock": "real-frame-v3",
+            "frames": 196,
+            "missingRenderedFrames": 0,
+            "firstRealtime": 512.7301635742188,
+            "lastRealtime": 516.0545654296875,
+            "maxDelta": 0.03533169627189636,
+            "maxRealtimeGap": 0.036376953125,
+            "encodeSeconds": 14.47308349609375
+        }
+    ]
+}

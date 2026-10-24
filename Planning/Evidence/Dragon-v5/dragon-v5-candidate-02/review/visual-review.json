@@ -1,0 +1,606 @@
+{
+  "candidate": "dragon-v5-candidate-02",
+  "reviewedAt": "2026-10-24T15:16:07.008695+00:00",
+  "reviewer": "QA agent visual inspection of tool-rendered PNGs",
+  "visualReview": "COMPLETED_BOUNDED_WITH_DEFECT",
+  "visualVerdict": "FAIL_DQA5_002",
+  "fullAcceptance": "NOT_CERTIFIED",
+  "osInput": "DEFERRED_BY_USER",
+  "audioListening": "NOT_RUN",
+  "userDefaultProfile": "NOT_ACCESSED",
+  "runtimeSha256": "4F4C66BCF7B6431E6E28DE6080B92527657BFAAA589026449964F0A9BDCE56C9",
+  "rawEvidenceUnmodified": [
+    {
+      "path": "campaign.json",
+      "sha256": "6e8644b0bd7c07e977de122338626205b0efdeecab64ba7e2132595eeb2bcc0b"
+    },
+    {
+      "path": "1280x720/fresh/result.json",
+      "sha256": "2ae83906daa6dbe17ff1d5d7bbb29b2f23755d2aa7c9a5a6fbc94468a6e22b3c"
+    },
+    {
+      "path": "1280x720/resume/result.json",
+      "sha256": "e74eae0ac9160709c3ad699d5ee15a7f58205c6b458e3466057c8b142a344eb1"
+    },
+    {
+      "path": "640x360/fresh/result.json",
+      "sha256": "b1b05fb99b729a248d67f3086d3576d136f6d528cad7db7cf5f212939fc07f55"
+    },
+    {
+      "path": "640x360/resume/result.json",
+      "sha256": "d902b7874fc0d6604b08fabcb716c0bccd2361afa793b7cb5c01b4f8db37c204"
+    }
+  ],
+  "reviewed": [
+    {
+      "reviewFile": "review/1280-dialogue-01.png",
+      "method": "dialogue-native-resolution-lower360px",
+      "sourceFiles": [
+        "1280x720/fresh/v5-native-legacy.png",
+        "1280x720/fresh/v5-story-dam-10-page-00.png",
+        "1280x720/fresh/v5-story-dam-10-page-01.png",
+        "1280x720/fresh/v5-story-dam-10-page-02.png"
+      ],
+      "judgment": "BOUNDED_PASS",
+      "notes": "No visible text clipping/button overlap in reviewed dialogue crops.",
+      "sha256": "b0e483a8a56d0b166e86d06bde90f5d41f9ffdae7272829e9bb6ff7bd96ecc21"
+    },
+    {
+      "reviewFile": "review/1280-dialogue-02.png",
+      "method": "dialogue-native-resolution-lower360px",
+      "sourceFiles": [
+        "1280x720/fresh/v5-story-dam-12-page-00.png",
+        "1280x720/fresh/v5-story-dam-12-page-01.png",
+        "1280x720/fresh/v5-story-dam-12-page-02.png",
+        "1280x720/fresh/v5-story-dam-12-page-03.png"
+      ],
+      "judgment": "FAIL_DQA5_002",
+      "notes": "Barun first unnamed page uses fox silhouette.",
+      "sha256": "02ee3c5f10d92af8726e14d25d22347bf32edc260d59fddd5a1f7d95df224fb8"
+    },
+    {
+      "reviewFile": "review/1280-dialogue-03.png",
+      "method": "dialogue-native-resolution-lower360px",
+      "sourceFiles": [
+        "1280x720/fresh/v5-story-dam-12-page-04.png",
+        "1280x720/fresh/v5-story-dam-2-page-00.png",
+        "1280x720/fresh/v5-story-dam-2-page-01.png",
+        "1280x720/fresh/v5-story-dam-2-page-02.png"
+      ],
+      "judgment": "BOUNDED_PASS",
+      "notes": "No visible text clipping/button overlap in reviewed dialogue crops.",
+      "sha256": "0c646c40d4f6498fbcc048155b6b8b14b7c7afa7598d4507474bb457628c51a3"
+    },
+    {
+      "reviewFile": "review/1280-dialogue-04.png",
+      "method": "dialogue-native-resolution-lower360px",
+      "sourceFiles": [
+        "1280x720/fresh/v5-story-dam-2-page-03.png",
+        "1280x720/fresh/v5-story-dam-20-page-00.png",
+        "1280x720/fresh/v5-story-dam-20-page-01.png",
+        "1280x720/fresh/v5-story-dam-20-page-02.png"
+      ],
+      "judgment": "BOUNDED_PASS",
+      "notes": "No visible text clipping/button overlap in reviewed dialogue crops.",
+      "sha256": "5625e1cb7772f1e053be9c664d673f99078b599a34bca92da6bc743d35b6ed9f"
+    },
+    {
+      "reviewFile": "review/1280-dialogue-05.png",
+      "method": "dialogue-native-resolution-lower360px",
+      "sourceFiles": [
+        "1280x720/fresh/v5-story-dam-20-page-03.png",
+        "1280x720/fresh/v5-story-on-10-page-00.png",
+        "1280x720/fresh/v5-story-on-10-page-01.png",
+        "1280x720/fresh/v5-story-on-10-page-02.png"
+      ],
+      "judgment": "BOUNDED_PASS",
+      "notes": "No visible text clipping/button overlap in reviewed dialogue crops.",
+      "sha256": "5c9923bd91cbcba874daf9255b9f98f6ec787fe367ab374efe48f1b23d5bb520"
+    },
+    {
+      "reviewFile": "review/1280-dialogue-06.png",
+      "method": "dialogue-native-resolution-lower360px",
+      "sourceFiles": [
+        "1280x720/fresh/v5-story-on-12-page-00.png",
+        "1280x720/fresh/v5-story-on-12-page-01.png",
+        "1280x720/fresh/v5-story-on-12-page-02.png",
+        "1280x720/fresh/v5-story-on-12-page-03.png"
+      ],
+      "judgment": "FAIL_DQA5_002",
+      "notes": "Barun first unnamed page uses fox silhouette.",
+      "sha256": "00928d85f7aacf91cd4ca03b814ff593453c0da4f660b324b095cb291dbec3b3"
+    },
+    {
+      "reviewFile": "review/1280-dialogue-07.png",
+      "method": "dialogue-native-resolution-lower360px",
+      "sourceFiles": [
+        "1280x720/fresh/v5-story-on-12-page-04.png",
+        "1280x720/fresh/v5-story-on-2-page-00.png",
+        "1280x720/fresh/v5-story-on-2-page-01.png",
+        "1280x720/fresh/v5-story-on-2-page-02.png"
+      ],
+      "judgment": "BOUNDED_PASS",
+      "notes": "No visible text clipping/button overlap in reviewed dialogue crops.",
+      "sha256": "a093768e93818af7d96b79e48be048e3cb26e757c16ea239d086fae105fea2ab"
+    },
+    {
+      "reviewFile": "review/1280-dialogue-08.png",
+      "method": "dialogue-native-resolution-lower360px",
+      "sourceFiles": [
+        "1280x720/fresh/v5-story-on-2-page-03.png",
+        "1280x720/fresh/v5-story-on-20-page-00.png",
+        "1280x720/fresh/v5-story-on-20-page-01.png",
+        "1280x720/fresh/v5-story-on-20-page-02.png"
+      ],
+      "judgment": "BOUNDED_PASS",
+      "notes": "No visible text clipping/button overlap in reviewed dialogue crops.",
+      "sha256": "bf10b579a2f6586f69c5e1aa857fde42dcd0981bb1b459683b8575779e45971f"
+    },
+    {
+      "reviewFile": "review/1280-dialogue-09.png",
+      "method": "dialogue-native-resolution-lower360px",
+      "sourceFiles": [
+        "1280x720/fresh/v5-story-on-20-page-03.png",
+        "1280x720/fresh/v5-story-rin-10-page-00.png",
+        "1280x720/fresh/v5-story-rin-10-page-01.png",
+        "1280x720/fresh/v5-story-rin-10-page-02.png"
+      ],
+      "judgment": "BOUNDED_PASS",
+      "notes": "No visible text clipping/button overlap in reviewed dialogue crops.",
+      "sha256": "f928b932fb29d739116608d19465cc383ff0c770c3320b71d0294cdf9fc248bc"
+    },
+    {
+      "reviewFile": "review/1280-dialogue-10.png",
+      "method": "dialogue-native-resolution-lower360px",
+      "sourceFiles": [
+        "1280x720/fresh/v5-story-rin-12-page-00.png",
+        "1280x720/fresh/v5-story-rin-12-page-01.png",
+        "1280x720/fresh/v5-story-rin-12-page-02.png",
+        "1280x720/fresh/v5-story-rin-12-page-03.png"
+      ],
+      "judgment": "FAIL_DQA5_002",
+      "notes": "Barun first unnamed page uses fox silhouette.",
+      "sha256": "b7aece3d3355ca8b493784481c9ca575c83ffb6c2be79402e28b36a0ab9786ff"
+    },
+    {
+      "reviewFile": "review/1280-dialogue-11.png",
+      "method": "dialogue-native-resolution-lower360px",
+      "sourceFiles": [
+        "1280x720/fresh/v5-story-rin-12-page-04.png",
+        "1280x720/fresh/v5-story-rin-2-page-00.png",
+        "1280x720/fresh/v5-story-rin-2-page-01.png",
+        "1280x720/fresh/v5-story-rin-2-page-02.png"
+      ],
+      "judgment": "BOUNDED_PASS",
+      "notes": "No visible text clipping/button overlap in reviewed dialogue crops.",
+      "sha256": "070d01d9b535b76ca9e2ce899f0c5471915027ef72f6c06b0a52a94c6248a4df"
+    },
+    {
+      "reviewFile": "review/1280-dialogue-12.png",
+      "method": "dialogue-native-resolution-lower360px",
+      "sourceFiles": [
+        "1280x720/fresh/v5-story-rin-2-page-03.png",
+        "1280x720/fresh/v5-story-rin-20-page-00.png",
+        "1280x720/fresh/v5-story-rin-20-page-01.png",
+        "1280x720/fresh/v5-story-rin-20-page-02.png"
+      ],
+      "judgment": "BOUNDED_PASS",
+      "notes": "No visible text clipping/button overlap in reviewed dialogue crops.",
+      "sha256": "57a8f79a27b2b3c347cd2c0a4e86ed7f8538bafc50f5b4e8352a423506e8a600"
+    },
+    {
+      "reviewFile": "review/1280-dialogue-13.png",
+      "method": "dialogue-native-resolution-lower360px",
+      "sourceFiles": [
+        "1280x720/fresh/v5-story-rin-20-page-03.png",
+        "1280x720/fresh/v5-synthetic-legacy-15-page-00.png",
+        "1280x720/fresh/v5-synthetic-legacy-15-page-01.png",
+        "1280x720/fresh/v5-synthetic-legacy-15-page-02.png"
+      ],
+      "judgment": "BOUNDED_PASS",
+      "notes": "No visible text clipping/button overlap in reviewed dialogue crops.",
+      "sha256": "6be7518bd492c3942f248280ec9a184183a8b371a80a67eacdfa992e004a7242"
+    },
+    {
+      "reviewFile": "review/1280-dialogue-14.png",
+      "method": "dialogue-native-resolution-lower360px",
+      "sourceFiles": [
+        "1280x720/fresh/v5-synthetic-legacy-15-page-03.png",
+        "1280x720/fresh/v5-synthetic-legacy-15-page-04.png",
+        "1280x720/fresh/v5-synthetic-legacy-20-page-00.png",
+        "1280x720/fresh/v5-synthetic-legacy-20-page-01.png"
+      ],
+      "judgment": "BOUNDED_PASS",
+      "notes": "No visible text clipping/button overlap in reviewed dialogue crops.",
+      "sha256": "bd05df72ff42c8a5748f5ebe47057c9b157a3eaad3d296e0a4a66bae765d5bea"
+    },
+    {
+      "reviewFile": "review/1280-dialogue-15.png",
+      "method": "dialogue-native-resolution-lower360px",
+      "sourceFiles": [
+        "1280x720/fresh/v5-synthetic-legacy-20-page-02.png",
+        "1280x720/fresh/v5-synthetic-legacy-20-page-03.png",
+        "1280x720/fresh/v5-synthetic-legacy-20-page-04.png",
+        "1280x720/fresh/v5-synthetic-legacy-20-page-05.png"
+      ],
+      "judgment": "BOUNDED_PASS",
+      "notes": "No visible text clipping/button overlap in reviewed dialogue crops.",
+      "sha256": "147ac1577aa346222f569ef52c14a2e942a093c94d66e46537361cfa77fe66a9"
+    },
+    {
+      "reviewFile": "review/1280-dialogue-16.png",
+      "method": "dialogue-native-resolution-lower360px",
+      "sourceFiles": [
+        "1280x720/fresh/v5-synthetic-legacy-7-page-00.png",
+        "1280x720/fresh/v5-synthetic-legacy-7-page-01.png",
+        "1280x720/fresh/v5-synthetic-legacy-7-page-02.png",
+        "1280x720/fresh/v5-synthetic-legacy-7-page-03.png"
+      ],
+      "judgment": "BOUNDED_PASS",
+      "notes": "No visible text clipping/button overlap in reviewed dialogue crops.",
+      "sha256": "b96d55b7dd1e42ec5233915b8f6d73800ed5651e71bd0dbe5d884117567594b8"
+    },
+    {
+      "reviewFile": "review/1280-dialogue-17.png",
+      "method": "dialogue-native-resolution-lower360px",
+      "sourceFiles": [
+        "1280x720/fresh/v5-synthetic-legacy-7-page-04.png"
+      ],
+      "judgment": "BOUNDED_PASS",
+      "notes": "No visible text clipping/button overlap in reviewed dialogue crops.",
+      "sha256": "d091b205fc2e2f184d42cc00ac503bfbb4fae690ab1436e557880bae57cb17a9"
+    },
+    {
+      "reviewFile": "review/1280-companion-tori.png",
+      "method": "companion-first-contact-three-frames-half-size",
+      "sourceFiles": [
+        "1280x720/fresh/v3-frame-v5-companion-tori-hit-0-000687.png",
+        "1280x720/fresh/v3-frame-v5-companion-tori-hit-0-000702.png",
+        "1280x720/fresh/v3-frame-v5-companion-tori-hit-0-000731.png"
+      ],
+      "judgment": "BOUNDED_PASS",
+      "notes": "Three sampled frames show distinct companion actor, contact and return; no smooth-motion claim.",
+      "sha256": "864ed643a4ca0ce6d6946aaa53b4dca151a040b2103afaba5e0b389b05ff939f"
+    },
+    {
+      "reviewFile": "review/1280-companion-barun.png",
+      "method": "companion-first-contact-three-frames-half-size",
+      "sourceFiles": [
+        "1280x720/fresh/v3-frame-v5-companion-barun-hit-0-000821.png",
+        "1280x720/fresh/v3-frame-v5-companion-barun-hit-0-000835.png",
+        "1280x720/fresh/v3-frame-v5-companion-barun-hit-0-000866.png"
+      ],
+      "judgment": "BOUNDED_PASS",
+      "notes": "Three sampled frames show distinct companion actor, contact and return; no smooth-motion claim.",
+      "sha256": "e1a26535e647cdd041767e9a02969649fcfbdeea6ab463da462bad5eb20f4fe2"
+    },
+    {
+      "reviewFile": "review/1280-companion-doto.png",
+      "method": "companion-first-contact-three-frames-half-size",
+      "sourceFiles": [
+        "1280x720/fresh/v3-frame-v5-companion-doto-hit-0-000958.png",
+        "1280x720/fresh/v3-frame-v5-companion-doto-hit-0-000972.png",
+        "1280x720/fresh/v3-frame-v5-companion-doto-hit-0-001004.png"
+      ],
+      "judgment": "BOUNDED_PASS",
+      "notes": "Three sampled frames show distinct companion actor, contact and return; no smooth-motion claim.",
+      "sha256": "bb5b8e61344daef00ccc51c54cb8b41291c839a01743f8246daaf2d8cd728a6d"
+    },
+    {
+      "reviewFile": "review/1280-companion-rina.png",
+      "method": "companion-first-contact-three-frames-half-size",
+      "sourceFiles": [
+        "1280x720/fresh/v3-frame-v5-companion-rina-hit-0-001096.png",
+        "1280x720/fresh/v3-frame-v5-companion-rina-hit-0-001111.png",
+        "1280x720/fresh/v3-frame-v5-companion-rina-hit-0-001141.png"
+      ],
+      "judgment": "BOUNDED_PASS",
+      "notes": "Three sampled frames show distinct companion actor, contact and return; no smooth-motion claim.",
+      "sha256": "708f778c4b60338975ffe2bf1b1db8c7a0a107e5475eaf9f71151f39ca72f67f"
+    },
+    {
+      "reviewFile": "review/1280-companion-momo.png",
+      "method": "companion-first-contact-three-frames-half-size",
+      "sourceFiles": [
+        "1280x720/fresh/v3-frame-v5-companion-momo-hit-0-001236.png",
+        "1280x720/fresh/v3-frame-v5-companion-momo-hit-0-001250.png",
+        "1280x720/fresh/v3-frame-v5-companion-momo-hit-0-001280.png"
+      ],
+      "judgment": "BOUNDED_PASS",
+      "notes": "Three sampled frames show distinct companion actor, contact and return; no smooth-motion claim.",
+      "sha256": "36f3bd2b3c708f99d30b3f27e181b42186e2fe3c27a6dfdf3310f4f5d04e587b"
+    },
+    {
+      "reviewFile": "review/640-dialogue-01.png",
+      "method": "native-resolution lower180px; two columns of 640px crops",
+      "sourceFiles": [
+        "640x360/fresh/v5-story-dam-10-page-00.png",
+        "640x360/fresh/v5-story-dam-10-page-01.png",
+        "640x360/fresh/v5-story-dam-10-page-02.png",
+        "640x360/fresh/v5-story-dam-12-page-00.png",
+        "640x360/fresh/v5-story-dam-12-page-01.png",
+        "640x360/fresh/v5-story-dam-12-page-02.png",
+        "640x360/fresh/v5-story-dam-12-page-03.png",
+        "640x360/fresh/v5-story-dam-12-page-04.png"
+      ],
+      "judgment": "FAIL_DQA5_002",
+      "notes": "Stage12 first Barun page uses fox silhouette; other sampled text fits.",
+      "sha256": "e6002c60f741281ef1f6f58ecd61a61a6eda63a2940c655def86b1a8ee5f4ef2"
+    },
+    {
+      "reviewFile": "review/640-dialogue-02.png",
+      "method": "native-resolution lower180px; two columns of 640px crops",
+      "sourceFiles": [
+        "640x360/fresh/v5-story-dam-2-page-00.png",
+        "640x360/fresh/v5-story-dam-2-page-01.png",
+        "640x360/fresh/v5-story-dam-2-page-02.png",
+        "640x360/fresh/v5-story-dam-2-page-03.png",
+        "640x360/fresh/v5-story-dam-20-page-00.png",
+        "640x360/fresh/v5-story-dam-20-page-01.png",
+        "640x360/fresh/v5-story-dam-20-page-02.png",
+        "640x360/fresh/v5-story-dam-20-page-03.png"
+      ],
+      "judgment": "BOUNDED_PASS",
+      "notes": "No visible text clipping/button overlap; player/NPC side is consistent.",
+      "sha256": "dfbf447dc1b5f897df66b0e58d57e219fd5fd2d6d200e7459ba11f867f0b52f9"
+    },
+    {
+      "reviewFile": "review/640-dialogue-03.png",
+      "method": "native-resolution lower180px; two columns of 640px crops",
+      "sourceFiles": [
+        "640x360/fresh/v5-story-on-10-page-00.png",
+        "640x360/fresh/v5-story-on-10-page-01.png",
+        "640x360/fresh/v5-story-on-10-page-02.png",
+        "640x360/fresh/v5-story-on-12-page-00.png",
+        "640x360/fresh/v5-story-on-12-page-01.png",
+        "640x360/fresh/v5-story-on-12-page-02.png",
+        "640x360/fresh/v5-story-on-12-page-03.png",
+        "640x360/fresh/v5-story-on-12-page-04.png"
+      ],
+      "judgment": "FAIL_DQA5_002",
+      "notes": "Stage12 first Barun page uses fox silhouette; other sampled text fits.",
+      "sha256": "22721b358b7a0b5e8fcb8b4d4922ba9672f911063b252ca44af759535c4b39da"
+    },
+    {
+      "reviewFile": "review/640-dialogue-04.png",
+      "method": "native-resolution lower180px; two columns of 640px crops",
+      "sourceFiles": [
+        "640x360/fresh/v5-story-on-2-page-00.png",
+        "640x360/fresh/v5-story-on-2-page-01.png",
+        "640x360/fresh/v5-story-on-2-page-02.png",
+        "640x360/fresh/v5-story-on-2-page-03.png",
+        "640x360/fresh/v5-story-on-20-page-00.png",
+        "640x360/fresh/v5-story-on-20-page-01.png",
+        "640x360/fresh/v5-story-on-20-page-02.png",
+        "640x360/fresh/v5-story-on-20-page-03.png"
+      ],
+      "judgment": "BOUNDED_PASS",
+      "notes": "No visible text clipping/button overlap; player/NPC side is consistent.",
+      "sha256": "982286de65b67d9dc409d0b122ff794e5ced7625cff60978b21be8f9d3c35882"
+    },
+    {
+      "reviewFile": "review/640-dialogue-05.png",
+      "method": "native-resolution lower180px; two columns of 640px crops",
+      "sourceFiles": [
+        "640x360/fresh/v5-story-rin-10-page-00.png",
+        "640x360/fresh/v5-story-rin-10-page-01.png",
+        "640x360/fresh/v5-story-rin-10-page-02.png",
+        "640x360/fresh/v5-story-rin-12-page-00.png",
+        "640x360/fresh/v5-story-rin-12-page-01.png",
+        "640x360/fresh/v5-story-rin-12-page-02.png",
+        "640x360/fresh/v5-story-rin-12-page-03.png",
+        "640x360/fresh/v5-story-rin-12-page-04.png"
+      ],
+      "judgment": "FAIL_DQA5_002",
+      "notes": "Stage12 first Barun page uses fox silhouette; other sampled text fits.",
+      "sha256": "44f3808c1b848f928788bbc315144a24b2fe2dfc81d18b85f5380be25a9a164b"
+    },
+    {
+      "reviewFile": "review/640-dialogue-06.png",
+      "method": "native-resolution lower180px; two columns of 640px crops",
+      "sourceFiles": [
+        "640x360/fresh/v5-story-rin-2-page-00.png",
+        "640x360/fresh/v5-story-rin-2-page-01.png",
+        "640x360/fresh/v5-story-rin-2-page-02.png",
+        "640x360/fresh/v5-story-rin-2-page-03.png",
+        "640x360/fresh/v5-story-rin-20-page-00.png",
+        "640x360/fresh/v5-story-rin-20-page-01.png",
+        "640x360/fresh/v5-story-rin-20-page-02.png",
+        "640x360/fresh/v5-story-rin-20-page-03.png"
+      ],
+      "judgment": "BOUNDED_PASS",
+      "notes": "No visible text clipping/button overlap; player/NPC side is consistent.",
+      "sha256": "7663ce89d23019ce9303880bd905d4f517d59e481dae89c731c212cadc3493ab"
+    },
+    {
+      "reviewFile": "review/640-dialogue-07.png",
+      "method": "native-resolution lower180px; two columns of 640px crops",
+      "sourceFiles": [
+        "640x360/fresh/v5-synthetic-legacy-15-page-00.png",
+        "640x360/fresh/v5-synthetic-legacy-15-page-01.png",
+        "640x360/fresh/v5-synthetic-legacy-15-page-02.png",
+        "640x360/fresh/v5-synthetic-legacy-15-page-03.png",
+        "640x360/fresh/v5-synthetic-legacy-15-page-04.png",
+        "640x360/fresh/v5-synthetic-legacy-20-page-00.png",
+        "640x360/fresh/v5-synthetic-legacy-20-page-01.png",
+        "640x360/fresh/v5-synthetic-legacy-20-page-02.png"
+      ],
+      "judgment": "BOUNDED_PASS",
+      "notes": "No visible text clipping/button overlap; player/NPC side is consistent.",
+      "sha256": "30a533cb4efb9db6f722c14648a7181952ce0e6ea3dbe61b9c2bb428c1ed8ffd"
+    },
+    {
+      "reviewFile": "review/640-dialogue-08.png",
+      "method": "native-resolution lower180px; two columns of 640px crops",
+      "sourceFiles": [
+        "640x360/fresh/v5-synthetic-legacy-20-page-03.png",
+        "640x360/fresh/v5-synthetic-legacy-20-page-04.png",
+        "640x360/fresh/v5-synthetic-legacy-20-page-05.png",
+        "640x360/fresh/v5-synthetic-legacy-7-page-00.png",
+        "640x360/fresh/v5-synthetic-legacy-7-page-01.png",
+        "640x360/fresh/v5-synthetic-legacy-7-page-02.png",
+        "640x360/fresh/v5-synthetic-legacy-7-page-03.png",
+        "640x360/fresh/v5-synthetic-legacy-7-page-04.png"
+      ],
+      "judgment": "BOUNDED_PASS",
+      "notes": "No visible text clipping/button overlap; player/NPC side is consistent.",
+      "sha256": "65979902219ad2062b014b49e7c20309622722b90404cefa5da406ffb57fc53c"
+    },
+    {
+      "reviewFile": "1280x720/fresh/v5-native-legacy.png",
+      "method": "full original PNG opened",
+      "sourceFiles": [
+        "1280x720/fresh/v5-native-legacy.png"
+      ],
+      "judgment": "BOUNDED_PASS",
+      "notes": "Doto portrait and whole dialogue fit.",
+      "sha256": "09f9685b11fc0311e318f17741338dd1443c4aa9c2eb612de149236bac675b06"
+    },
+    {
+      "reviewFile": "1280x720/fresh/v5-inn-growth.png",
+      "method": "full original PNG opened",
+      "sourceFiles": [
+        "1280x720/fresh/v5-inn-growth.png"
+      ],
+      "judgment": "BOUNDED_PASS",
+      "notes": "Five growth rows and recovery detail readable.",
+      "sha256": "c6ea0d7f1181fdbad99647707fc3e3b4589d5d2fb54488fe37752c300242838e"
+    },
+    {
+      "reviewFile": "1280x720/fresh/v5-inn-equipped.png",
+      "method": "full original PNG opened",
+      "sourceFiles": [
+        "1280x720/fresh/v5-inn-equipped.png"
+      ],
+      "judgment": "BOUNDED_PASS",
+      "notes": "Companion roster, service and equipped slot visible.",
+      "sha256": "ec1f4810c3fe35d1c3de8a05f6a2fd3ff218eafe9ae2a2e884d0498f4cb3e108"
+    },
+    {
+      "reviewFile": "1280x720/fresh/v3-frame-v5-skill-on-contact-000326.png",
+      "method": "full original PNG opened",
+      "sourceFiles": [
+        "1280x720/fresh/v3-frame-v5-skill-on-contact-000326.png"
+      ],
+      "judgment": "BOUNDED_PASS",
+      "notes": "Gold pixel slash/contact; HUD visible.",
+      "sha256": "c8c537d43b8205bb75e03a2979574c7add4ac7fce37bbc78dbe75130eeb39b38"
+    },
+    {
+      "reviewFile": "1280x720/fresh/v3-frame-v5-skill-dam-contact-000375.png",
+      "method": "full original PNG opened",
+      "sourceFiles": [
+        "1280x720/fresh/v3-frame-v5-skill-dam-contact-000375.png"
+      ],
+      "judgment": "BOUNDED_PASS",
+      "notes": "Blue shield/contact; HUD visible.",
+      "sha256": "1bc31216ac75863e5abf0ed093cc6f4725078cacaa41558a858dd98baea07325"
+    },
+    {
+      "reviewFile": "1280x720/fresh/v3-frame-v5-skill-rin-contact-000598.png",
+      "method": "full original PNG opened",
+      "sourceFiles": [
+        "1280x720/fresh/v3-frame-v5-skill-rin-contact-000598.png"
+      ],
+      "judgment": "BOUNDED_PASS",
+      "notes": "Mint contact and ready indication.",
+      "sha256": "8967f4acd4af6fff3be55583c666e2cfbe5e5088991a8f9ff52ce7c174ef0563"
+    },
+    {
+      "reviewFile": "1280x720/fresh/v3-frame-v5-skill-rin-stunned-000647.png",
+      "method": "full original PNG opened",
+      "sourceFiles": [
+        "1280x720/fresh/v3-frame-v5-skill-rin-stunned-000647.png"
+      ],
+      "judgment": "OBSERVED_WITH_LIMITS",
+      "notes": "Hit flash overlaps stars; not sufficient alone to judge stun clarity.",
+      "sha256": "3fbee95b88d351691e62087b3054ae1a212860359670011f78a3941fd8cdc28e"
+    },
+    {
+      "reviewFile": "1280x720/fresh/v3-frame-v5-skill-rin-stunned-000669.png",
+      "method": "full original PNG opened",
+      "sourceFiles": [
+        "1280x720/fresh/v3-frame-v5-skill-rin-stunned-000669.png"
+      ],
+      "judgment": "OBSERVED_WITH_LIMITS",
+      "notes": "After hit flash, tiny mint/cream dots remain near enemy forehead; subtle.",
+      "sha256": "c11f3f92b20215483be9338f8d36d0bd9726a602ff52a2b9ba141a39a36bfef0"
+    },
+    {
+      "reviewFile": "640x360/fresh/v3-frame-v5-skill-rin-stunned-000702.png",
+      "method": "full original PNG opened",
+      "sourceFiles": [
+        "640x360/fresh/v3-frame-v5-skill-rin-stunned-000702.png"
+      ],
+      "judgment": "OBSERVED_WITH_LIMITS",
+      "notes": "After hit flash, tiny pale mint/cream dots visible at forehead; subtle, star shape not distinctly readable at this size.",
+      "sha256": "a69626742fd829b61c58ec9a42cf92ba8c38ec22ea3c617bdf34b63cb28edfff"
+    },
+    {
+      "reviewFile": "640x360/fresh/v3-frame-v5-skill-dam-contact-000407.png",
+      "method": "full original PNG opened",
+      "sourceFiles": [
+        "640x360/fresh/v3-frame-v5-skill-dam-contact-000407.png"
+      ],
+      "judgment": "BOUNDED_PASS",
+      "notes": "Blue particle outline and shield icon visible with contact flash; input/HUD readable.",
+      "sha256": "3684b0d0b0508dd96c519798c2fabf2e55c43fa3074c1bd17275c9709fdd2b59"
+    },
+    {
+      "reviewFile": "640x360/fresh/v3-frame-v5-shield-absorbed-000491.png",
+      "method": "full original PNG opened",
+      "sourceFiles": [
+        "640x360/fresh/v3-frame-v5-shield-absorbed-000491.png"
+      ],
+      "judgment": "BOUNDED_PASS",
+      "notes": "Blue particle outline and shield icon visible; HUD unobstructed.",
+      "sha256": "3e41bf3160b72d2c55d6e524f709b0ecfe4c4a93a878e53c3a7bec02e6c45e06"
+    },
+    {
+      "reviewFile": "640x360/fresh/v5-inn-growth.png",
+      "method": "full original PNG opened",
+      "sourceFiles": [
+        "640x360/fresh/v5-inn-growth.png"
+      ],
+      "judgment": "BOUNDED_PASS",
+      "notes": "Five growth rows, recovery price and action readable.",
+      "sha256": "b38076706ef34901a7b3e1b0e252ab7949ff1467a25256050be2391f57f54bcd"
+    },
+    {
+      "reviewFile": "640x360/fresh/v5-inn-equipped.png",
+      "method": "full original PNG opened",
+      "sourceFiles": [
+        "640x360/fresh/v5-inn-equipped.png"
+      ],
+      "judgment": "BOUNDED_PASS",
+      "notes": "Roster, service text and three lower actions fit.",
+      "sha256": "d29bdc9cac330204f76f5266d25aef1793e5a5213189820d91259814d555469a"
+    },
+    {
+      "reviewFile": "640x360/resume/v5-native-resume-initial.png",
+      "method": "full original PNG opened",
+      "sourceFiles": [
+        "640x360/resume/v5-native-resume-initial.png"
+      ],
+      "judgment": "OBSERVED_WITH_LIMITS",
+      "notes": "Paused native restore overlay fits. This screenshot alone does not visually prove shield behind modal.",
+      "sha256": "1ec4d2b5022d89ae332f1795171edc6f87d0e3c92ebc93903105f048dfbc0553"
+    }
+  ],
+  "findings": [
+    {
+      "id": "DQA5-002",
+      "severity": "P2",
+      "criterion": "D07",
+      "status": "OPEN_PENDING_TARGET_RETEST",
+      "description": "Stage12 first unnamed Barun line shows Tori fox silhouette for all three player IDs in both resolutions. Saved catalog used unknown portrait."
+    }
+  ],
+  "limits": [
+    "129 dialogue crops inspected at native scale; these omit upper half of gameplay frame.",
+    "Companion review is 15 selected frames shown at half scale, not all continuous frames.",
+    "Stun particles exist and remain after hit flash, but are small and pale; star shape and normal-speed prominence not certified.",
+    "No all60 acceptance claim; no physical pointer, keyboard, mobile, audio listening or normal-speed performance test.",
+    "Candidate02 automatic PASS remains observation-only. Targeted new-build evidence must separately close DQA5-002."
+  ]
+}

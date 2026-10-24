@@ -1,0 +1,25 @@
+{
+  "status": "complete-files-stable",
+  "mainRepositoryCommitted": false,
+  "mainRepositoryPushed": false,
+  "siteSourcePushed": true,
+  "deployment": {
+    "id": "appgdep_6ad8e0c20c4c819188cd9c2f86ce7f0a",
+    "project_id": "appgprj_6ad8dbc209e081919502db2689477d99",
+    "title": "마지막 종지기 · 10스테이지 프로토타입",
+    "version_id": "appgprj_6ad8dbc209e081919502db2689477d99~appgver_2cd6a4dd81a081919ae92a1fae2d6667",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://last-bell-playtest.nugunagame1.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ad8dbc209e081919502db2689477d99",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-10-21T15:57:20.305061+00:00",
+    "commit_sha": "826e3dc2e7c7e6e979eb2004071b683af368fd36",
+    "access_mode": "public"
+  },
+  "verification": "verification.json",
+  "summary": "10-stage prototype; all new runs start1; old11 saves migrate safely; browser-local saves; WebGL deployed publicly with shareable URL."
+}

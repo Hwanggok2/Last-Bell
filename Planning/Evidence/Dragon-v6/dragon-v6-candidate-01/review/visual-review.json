@@ -1,0 +1,201 @@
+{
+  "candidate": "dragon-v6-candidate-01",
+  "reviewedAtUtc": "2026-10-24T16:14:03.248726+00:00",
+  "status": "BOUNDED_REVIEW_VISUAL_ISSUE",
+  "acceptance": "NOT_CERTIFIED",
+  "inspection": {
+    "fullOriginals": 10,
+    "cropSheets": 8,
+    "unscaledCrops": 27,
+    "distinctSourcePNGs": 33,
+    "totalCapturedPNGs": 91,
+    "allCapturedFramesReviewed": false,
+    "scope": "1280 only; all19 static sources plus14 sampled continuous-frame sources. Crop review covers only listed rectangles."
+  },
+  "inspected": [
+    {
+      "file": "1280x720/fresh/v6-inn-selection.png",
+      "method": "opened full original 1280x720 with view_image",
+      "sha256": "4052f2168ecb8e68614d1a0aff7623da00c4f962c5512e7910d81cff181b38b0"
+    },
+    {
+      "file": "1280x720/fresh/v6-inn-recovery-before.png",
+      "method": "opened full original 1280x720 with view_image",
+      "sha256": "7a6b760c3179fd96d372948dd85f197265276f690def00db0e2c5745dc333064"
+    },
+    {
+      "file": "1280x720/fresh/v6-inn-tori-after.png",
+      "method": "opened full original 1280x720 with view_image",
+      "sha256": "c209c562ae0e143ae54fb676e0bcaa71c2aafbf44c42ba1e8e1bba902dc85a78"
+    },
+    {
+      "file": "1280x720/fresh/v6-hp-50.png",
+      "method": "opened full original 1280x720 with view_image",
+      "sha256": "e0f9353a9dfa5e70e832bba5e75663c2d1dbbe2336b613043417c9f34452621f"
+    },
+    {
+      "file": "1280x720/fresh/v6-native-legacy.png",
+      "method": "opened full original 1280x720 with view_image",
+      "sha256": "95da67d626c6e046ad11f7ce41b89c0daf39794fa5550a34a1ddb95550ef75c5"
+    },
+    {
+      "file": "1280x720/fresh/v6-inn-level30-cap.png",
+      "method": "opened full original 1280x720 with view_image",
+      "sha256": "79304cd8c6ca33f4ae267a643f32d8694f771d902622c5d8d55ee016ee51e05e"
+    },
+    {
+      "file": "1280x720/fresh/v6-inn-recovery-after.png",
+      "method": "opened full original 1280x720 with view_image",
+      "sha256": "cd0bae1dc07bdcd8357beae61b8424521d42b33cef5e5b540e75998a2d5d50fb"
+    },
+    {
+      "file": "1280x720/fresh/v6-skill-on-paused.png",
+      "method": "opened full original 1280x720 with view_image",
+      "sha256": "0dc49b63c4e64a1209f70fb786bea3982c0b18a6c55265bea5fbde70f8b0ae64"
+    },
+    {
+      "file": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000048.png",
+      "method": "opened full original 1280x720 with view_image",
+      "sha256": "0dc1a7b8e361338dccc90eee7964844b59202ddf9f62d9f0689a5c91eefff58c"
+    },
+    {
+      "file": "1280x720/fresh/v3-frame-v6-skill-on-overlap-000063.png",
+      "method": "opened full original 1280x720 with view_image",
+      "sha256": "5f411b0af51d86d0131b31ac7b1e8943fb200e9ae17107749c1cc7ef29bb0bb3"
+    },
+    {
+      "file": "review/hp-comparison.png",
+      "method": "opened unscaled source crops with view_image; geometry and source SHA in crop-manifest.json",
+      "sha256": "665fa814cbadf54de5aedfd6902f1e62f31116dcc07224b6f7176f0c1640a021",
+      "sources": [
+        "1280x720/fresh/v6-hp-100.png",
+        "1280x720/fresh/v6-hp-50.png",
+        "1280x720/fresh/v6-hp-1.png"
+      ]
+    },
+    {
+      "file": "review/inn-barun.png",
+      "method": "opened unscaled source crops with view_image; geometry and source SHA in crop-manifest.json",
+      "sha256": "e02181042db8943e323447cab19f938fbe7f92d831ad5dedf6a8ec1327ce7a9a",
+      "sources": [
+        "1280x720/fresh/v6-inn-barun-before.png",
+        "1280x720/fresh/v6-inn-barun-after.png"
+      ]
+    },
+    {
+      "file": "review/inn-doto.png",
+      "method": "opened unscaled source crops with view_image; geometry and source SHA in crop-manifest.json",
+      "sha256": "fa676278dc362434ac3e7ad31e7c62225304e65f83449a99681528598cedebe1",
+      "sources": [
+        "1280x720/fresh/v6-inn-doto-before.png",
+        "1280x720/fresh/v6-inn-doto-after.png"
+      ]
+    },
+    {
+      "file": "review/inn-momo.png",
+      "method": "opened unscaled source crops with view_image; geometry and source SHA in crop-manifest.json",
+      "sha256": "0222d0bb15707ebbb98a3443cc907d97298bc6fbaedf7087f09e77c92746a121",
+      "sources": [
+        "1280x720/fresh/v6-inn-momo-before.png",
+        "1280x720/fresh/v6-inn-momo-after.png"
+      ]
+    },
+    {
+      "file": "review/inn-rina.png",
+      "method": "opened unscaled source crops with view_image; geometry and source SHA in crop-manifest.json",
+      "sha256": "82faffa1c27ad702eecad1fdaecafe39998c4256c8c1d86092f35e57cf489c30",
+      "sources": [
+        "1280x720/fresh/v6-inn-rina-before.png",
+        "1280x720/fresh/v6-inn-rina-after.png"
+      ]
+    },
+    {
+      "file": "review/inn-tori.png",
+      "method": "opened unscaled source crops with view_image; geometry and source SHA in crop-manifest.json",
+      "sha256": "67c466d67eb004bf2d9ae36eb09e17af6afdea580221f223c7035171e61d3b74",
+      "sources": [
+        "1280x720/fresh/v6-inn-tori-before.png",
+        "1280x720/fresh/v6-inn-tori-after.png"
+      ]
+    },
+    {
+      "file": "review/lethal-contact.png",
+      "method": "opened unscaled source crops with view_image; geometry and source SHA in crop-manifest.json",
+      "sha256": "2b3106280a4d9cc545b96c18debb34ebced7b0ce9a04f637d39394cf106c6923",
+      "sources": [
+        "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000000.png",
+        "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000006.png",
+        "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000012.png",
+        "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000018.png",
+        "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000030.png",
+        "1280x720/fresh/v3-frame-v6-hp-zero-on-defeat-000036.png"
+      ]
+    },
+    {
+      "file": "review/luka-contact.png",
+      "method": "opened unscaled source crops with view_image; geometry and source SHA in crop-manifest.json",
+      "sha256": "d09b8eb91aad83a36490b1e6bac6dbcf4f77036de358389cad009b78f5cceebc",
+      "sources": [
+        "1280x720/fresh/v3-frame-v6-skill-on-overlap-000038.png",
+        "1280x720/fresh/v3-frame-v6-skill-on-overlap-000047.png",
+        "1280x720/fresh/v3-frame-v6-skill-on-overlap-000048.png",
+        "1280x720/fresh/v3-frame-v6-skill-on-overlap-000050.png",
+        "1280x720/fresh/v3-frame-v6-skill-on-overlap-000053.png",
+        "1280x720/fresh/v3-frame-v6-skill-on-overlap-000058.png",
+        "1280x720/fresh/v3-frame-v6-skill-on-overlap-000063.png",
+        "1280x720/fresh/v3-frame-v6-skill-on-overlap-000071.png"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "DQA6-001",
+      "status": "CONFIRMED_VISUAL_DEFECT",
+      "severity": "P2",
+      "title": "Independent skill popup overlaps stagger meter",
+      "sources": [
+        "1280x720/fresh/v3-frame-v6-skill-on-overlap-000048.png",
+        "1280x720/fresh/v3-frame-v6-skill-on-overlap-000063.png"
+      ],
+      "observation": "During ordinary attack plus Luka independent skill, damage16 intersects the dark horizontal stagger meter near x850-885/y162-178 in1280 screenshots. The two damage numbers10/16 are separate, but the upper number enters a HUD region.",
+      "sourceInference": "MvpPresenter clamps base number.y before BattleEffects adds lane*62 and upward travel; final position is not clamped again. This is source interpretation, separate from observed PNG overlap."
+    }
+  ],
+  "boundedChecks": [
+    {
+      "subject": "Restored inn/recovery/upper-right entry at1280",
+      "verdict": "PASS_BOUNDED",
+      "notes": "5 growth rows, recovery detail before/after and upper-right companion button visible. Purchase feedback transiently crosses purchase label; not a claim of all transaction states."
+    },
+    {
+      "subject": "5 companion skill panels and growth previews",
+      "verdict": "PASS_BOUNDED",
+      "notes": "All5 before/after detail crops readable; chance12->13 then13->14, shorter period and increasing DPS; L30 Tori full screen shows41percent and4.26s/max-level button. Other L30 details not visually opened."
+    },
+    {
+      "subject": "HP pixel bars at1280",
+      "verdict": "PASS_BOUNDED",
+      "notes": "Full/half/minimum positive fills visually distinct; minimum retains a narrow colored cell. Lethal frames show enemy bar removal; not all boss/small-screen states."
+    },
+    {
+      "subject": "Luka slash and hit response",
+      "verdict": "PASS_BOUNDED_WITH_DQA6_001",
+      "notes": "Preparation/contact/white flash/late disappearance visible in sampled crops; full originals show distinct10/16 numbers and their HUD overlap."
+    }
+  ],
+  "notReviewed": [
+    "640 layout/readability",
+    "Daren/Miel skills",
+    "all5 companion battle contacts and white flash",
+    "large-boss sky lightning",
+    "actual stun stars",
+    "maximum5-contact popup lanes",
+    "1-to20 route",
+    "native restarts"
+  ],
+  "limits": [
+    "No physical input/mobile/audio listening/performance certification",
+    "No complete acceptance or all44/previous60 certification",
+    "Raw campaign/result remain unchanged"
+  ]
+}

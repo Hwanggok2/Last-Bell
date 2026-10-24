@@ -1,0 +1,165 @@
+{
+  "candidate": "C:\\Github\\Test2\\Planning\\Evidence\\Dragon-v6\\dragon-v6-candidate-05",
+  "integrityPassed": true,
+  "errors": [],
+  "cases": [
+    {
+      "case": "1280x720\\fresh",
+      "probePassed": true,
+      "completed": true,
+      "error": "",
+      "checksPassed": 1512,
+      "checksFailed": [],
+      "consoleErrors": [],
+      "frames": 211,
+      "stateSamples": 211,
+      "staticCaptures": 0,
+      "inputEdges": 2,
+      "fixtures": [
+        "explicit-healthbar-player-HP-fixture-real-contact",
+        "explicit-healthbar-normal-HP-fixture-real-contact",
+        "explicit-healthbar-boss-HP-fixture-real-contact"
+      ],
+      "pending": [
+        "manual HP start/middle/end PNG review",
+        "Root boundary/heal/reset/multi-hit/pause unit evidence",
+        "physical input/mobile/audio/performance; full acceptance"
+      ],
+      "routeStages": [],
+      "fileRoundtrips": [],
+      "continuationOf": "",
+      "popupChecks": [],
+      "stunActiveFrame": "",
+      "stunEndedFrame": "",
+      "healthCases": [
+        {
+          "target": "player",
+          "first": "v3-frame-v6-hp-trail-player-000002.png",
+          "middle": "v3-frame-v6-hp-trail-player-000024.png",
+          "end": "v3-frame-v6-hp-trail-player-000042.png",
+          "stage": 11,
+          "damageMilli": 180000,
+          "maxHpMilli": 360000,
+          "actual": 0.5,
+          "firstTrail": 1.0,
+          "middleTrail": 0.7610217332839966,
+          "endTrail": 0.5
+        },
+        {
+          "target": "normal",
+          "first": "v3-frame-v6-hp-trail-normal-000079.png",
+          "middle": "v3-frame-v6-hp-trail-normal-000101.png",
+          "end": "v3-frame-v6-hp-trail-normal-000119.png",
+          "stage": 11,
+          "damageMilli": 10000,
+          "maxHpMilli": 30000,
+          "actual": 0.6666666865348816,
+          "firstTrail": 1.0,
+          "middleTrail": 0.8424944877624512,
+          "endTrail": 0.6666666865348816
+        },
+        {
+          "target": "boss",
+          "first": "v3-frame-v6-hp-trail-boss-000151.png",
+          "middle": "v3-frame-v6-hp-trail-boss-000173.png",
+          "end": "v3-frame-v6-hp-trail-boss-000191.png",
+          "stage": 20,
+          "damageMilli": 10000,
+          "maxHpMilli": 30000,
+          "actual": 0.6666666865348816,
+          "firstTrail": 1.0,
+          "middleTrail": 0.8438698649406433,
+          "endTrail": 0.6666666865348816
+        }
+      ],
+      "dtoComparisons": [],
+      "maximumActualParticles": 0
+    },
+    {
+      "case": "640x360\\fresh",
+      "probePassed": true,
+      "completed": true,
+      "error": "",
+      "checksPassed": 1524,
+      "checksFailed": [],
+      "consoleErrors": [],
+      "frames": 213,
+      "stateSamples": 213,
+      "staticCaptures": 0,
+      "inputEdges": 2,
+      "fixtures": [
+        "explicit-healthbar-player-HP-fixture-real-contact",
+        "explicit-healthbar-normal-HP-fixture-real-contact",
+        "explicit-healthbar-boss-HP-fixture-real-contact"
+      ],
+      "pending": [
+        "manual HP start/middle/end PNG review",
+        "Root boundary/heal/reset/multi-hit/pause unit evidence",
+        "physical input/mobile/audio/performance; full acceptance"
+      ],
+      "routeStages": [],
+      "fileRoundtrips": [],
+      "continuationOf": "",
+      "popupChecks": [],
+      "stunActiveFrame": "",
+      "stunEndedFrame": "",
+      "healthCases": [
+        {
+          "target": "player",
+          "first": "v3-frame-v6-hp-trail-player-000003.png",
+          "middle": "v3-frame-v6-hp-trail-player-000025.png",
+          "end": "v3-frame-v6-hp-trail-player-000043.png",
+          "stage": 11,
+          "damageMilli": 180000,
+          "maxHpMilli": 360000,
+          "actual": 0.5,
+          "firstTrail": 1.0,
+          "middleTrail": 0.764998197555542,
+          "endTrail": 0.5
+        },
+        {
+          "target": "normal",
+          "first": "v3-frame-v6-hp-trail-normal-000082.png",
+          "middle": "v3-frame-v6-hp-trail-normal-000104.png",
+          "end": "v3-frame-v6-hp-trail-normal-000122.png",
+          "stage": 11,
+          "damageMilli": 10000,
+          "maxHpMilli": 30000,
+          "actual": 0.6666666865348816,
+          "firstTrail": 1.0,
+          "middleTrail": 0.8409393429756165,
+          "endTrail": 0.6666666865348816
+        },
+        {
+          "target": "boss",
+          "first": "v3-frame-v6-hp-trail-boss-000153.png",
+          "middle": "v3-frame-v6-hp-trail-boss-000175.png",
+          "end": "v3-frame-v6-hp-trail-boss-000193.png",
+          "stage": 20,
+          "damageMilli": 10000,
+          "maxHpMilli": 30000,
+          "actual": 0.6666666865348816,
+          "firstTrail": 1.0,
+          "middleTrail": 0.844586968421936,
+          "endTrail": 0.6666666865348816
+        }
+      ],
+      "dtoComparisons": [],
+      "maximumActualParticles": 0
+    }
+  ],
+  "visualWarnings": [],
+  "continuation": {
+    "rawFiles": 1613,
+    "resultSha256": "19ACABDD32A8BE84B06CE30DA64A88A12CF5695CB68486CEE7128F47201B5D0B",
+    "scope": "0.9.6 HP-only addendum: actual player/normal/boss contact and trail at1280/640. Completed0.9.5 candidate04 reused; no campaign replay.",
+    "candidate": "dragon-v6-candidate-04"
+  },
+  "observationPassed": true,
+  "acceptance": "NOT_CERTIFIED",
+  "visualReview": "NOT_RUN",
+  "audioListening": "NOT_RUN",
+  "osInput": "DEFERRED",
+  "userDefaultProfile": "NOT_ACCESSED",
+  "limits": "Metadata and hash integrity only. Open original PNGs for visual review; inspect exact fixture scopes and manual clock gaps."
+}

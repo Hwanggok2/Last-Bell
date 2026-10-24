@@ -1,0 +1,61 @@
+{
+  "checkedAtUtc": "2026-10-24T17:08:35.646337+00:00",
+  "rawFiles": 466,
+  "priorCandidate": "dragon-v6-candidate-04",
+  "priorRawFiles": 1613,
+  "priorChanges": [],
+  "qaSources": [
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.cs",
+      "sha256": "afc5b489041ab17c94a40036b10ce139c244f3b19a224db80e5a8302c36aec5e",
+      "matchesFreeze": true
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V6.cs",
+      "sha256": "5d57fd05c8b2872900ca23868f9fe9fe35572abf317212c2f32eeea27806fb35",
+      "matchesFreeze": true
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V6.cs.meta",
+      "sha256": "fb1c4724cd7756652f6d6207438a26599be47851781b01867509cf9de6df2dd3",
+      "matchesFreeze": true
+    },
+    {
+      "path": "Tools/QA/Dragon-v6/common.ps1",
+      "sha256": "3e5905542f0ef4e183c39b48b1cbc882462d740ae59eb9283eb82e3b355dd334",
+      "matchesFreeze": true
+    },
+    {
+      "path": "Tools/QA/Dragon-v6/run-campaign.ps1",
+      "sha256": "8212bedd7a180fa1a9d0e007bca6b02c85405442f40cec0877c0cb96535775f0",
+      "matchesFreeze": true
+    },
+    {
+      "path": "Tools/QA/Dragon-v6/analyze.py",
+      "sha256": "ad7a97827f39b58fadfc3bc635a1f8c48569d891fd7835faccd86ad27d11fa3c",
+      "matchesFreeze": true
+    },
+    {
+      "path": "Tools/QA/Dragon-v6/README.md",
+      "sha256": "49e48ce7c1fe383d0e7bf281a52c45ad186644ae71d740a5b4c2b77f5f652272",
+      "matchesFreeze": true
+    },
+    {
+      "path": "Tools/QA/Dragon-v3/common.ps1",
+      "sha256": "998aada226b62e1580a3dcb1fc1fb44413aa17ae5520d02f58b3a9e5fb62c8f0",
+      "matchesFreeze": true
+    }
+  ],
+  "runtimeSha256": "405774c10578e9c81c82d335558747e7a91b61039b4b61e85db4245106a2925f",
+  "playerPrefsRestored": [
+    {
+      "path": "Software\\LastBellPrototype\\Last Bell MVP",
+      "matches": true
+    },
+    {
+      "path": "Software\\Unity\\UnityEditor\\LastBellPrototype\\Last Bell MVP",
+      "matches": true
+    }
+  ],
+  "userDefaultProfile": "NOT_ACCESSED"
+}

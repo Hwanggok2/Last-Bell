@@ -1,0 +1,66 @@
+{
+  "status": "PASS_WITH_EXPLICIT_UNTESTED_LIMITS",
+  "reviewer": "QA assistant direct image inspection",
+  "dialogue": {
+    "pagesReviewed": 75,
+    "resolution": "640x360",
+    "method": "All15 dialogue-native sheets with native-size dialogue crops",
+    "result": "No observed clipping/overlap, selected speaker/portrait substitutions and scene-specific unknown policy retained"
+  },
+  "static": {
+    "imagesReviewed": 39,
+    "sheets": [
+      "static-1.png",
+      "static-2.png",
+      "static-3.png",
+      "static-4.png"
+    ],
+    "result": "Skill button distinct/lower-centre; shield active/restored vs consumed/expired; cooldown states; stagger states; warning boundaries; character selection/departure"
+  },
+  "motion": {
+    "representativeSheetsReviewed": [
+      "1280x720-v4-enemy-11-combo.png",
+      "1280x720-v4-enemy-11-repeat.png",
+      "640x360-v4-dam-shield-absorption.png",
+      "640x360-v4-enemy-11-combo.png",
+      "640x360-v4-enemy-11-repeat.png",
+      "640x360-v4-enemy-19-combo.png",
+      "640x360-v4-enemy-20-combo.png",
+      "640x360-v4-skill-dam-ready-contact.png",
+      "640x360-v4-skill-on-ready-contact.png",
+      "640x360-v4-skill-rin-ready-contact.png"
+    ],
+    "directNative1280Dash": [
+      "v3-frame-v4-enemy-11-combo-000000.png",
+      "v3-frame-v4-enemy-11-combo-000017.png",
+      "v3-frame-v4-enemy-11-combo-000024.png",
+      "v3-frame-v4-enemy-11-combo-000053.png",
+      "v3-frame-v4-enemy-11-repeat-000073.png",
+      "v3-frame-v4-enemy-11-repeat-000080.png"
+    ],
+    "directNative640Dash": [
+      "v3-frame-v4-enemy-11-combo-000200.png",
+      "v3-frame-v4-enemy-11-combo-000208.png",
+      "v3-frame-v4-enemy-11-combo-000238.png"
+    ],
+    "result": "Stage11 faces player, visibly advances to contact and returns via intermediate positions, stays grounded.19/20 combo contact and recovery samples retained."
+  },
+  "resume": {
+    "directNativeImages": [
+      "1280x720/v4-native-resume.png",
+      "640x360/v4-native-resume.png"
+    ],
+    "result": "Daren/Miel mid-stage20 story resumes to Doto page4, correct body/portrait/text; native state assertions passed"
+  },
+  "audio": {
+    "sourceFileMetrics": "Planning/Evidence/Dragon-v4/dragon-v4-candidate-02/review/asset-audio-analysis.json",
+    "runtimeTriggerEvidence": "640x360/fresh/v4-evidence.json",
+    "pcm": "PCM_CAPTURE_UNAVAILABLE_MULTIPLE_AUDIO_SOURCES",
+    "listening": "NOT_RUN",
+    "voiceMultiplicity": "NOT_CERTIFIED"
+  },
+  "osInput": "DEFERRED",
+  "mobile": "DEFERRED",
+  "userDefaultProfile": "NOT_ACCESSED",
+  "limits": "All75 dialogue pages read here, prior1280 all75 pages separately recorded. Representative motion sheets and listed native PNGs directly inspected; not every continuous PNG opened independently at full resolution. No normal-speed video/performance/device-audio certification."
+}

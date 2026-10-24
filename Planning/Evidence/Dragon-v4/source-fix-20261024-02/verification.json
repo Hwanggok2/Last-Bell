@@ -1,0 +1,42 @@
+{
+  "status": "SOURCE_FROZEN_READY_FOR_ROOT_OBSERVED_REBUILD",
+  "issue": "DQA4-001",
+  "files": [
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.cs",
+      "sha256": "47d6fa1006cc317d0de9d6b265316166dd25756aafb77551b205a4806729f8bb",
+      "bytes": 31713
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V4.cs",
+      "sha256": "b4ef0db8f2d875758ad63ad2a4b4a6e85196808ff2f6d237f8340c35dc2f35f2",
+      "bytes": 34285
+    },
+    {
+      "path": "Tools/QA/Dragon-v4/run-campaign.ps1",
+      "sha256": "5c9bc471b6a448b7b461f13cd24485cc4a1c48e48d3c1dc70b8f30e0e9e977b3",
+      "bytes": 10924
+    }
+  ],
+  "serializedDurationToleranceMs": 1E-06,
+  "diagnostics": "expectedMs,actualMs,deltaMs,toleranceMs,passed",
+  "sameInstanceFreeze": "EXACT",
+  "integerState": "EXACT",
+  "newMode": "v4-tail",
+  "runnerSwitch": "-Continue1280From",
+  "continuationSource": "Planning/Evidence/Dragon-v4/dragon-v4-candidate-01",
+  "processes": [
+    "1280 v4-tail",
+    "1280 v4-resume",
+    "640 v4",
+    "640 v4-resume"
+  ],
+  "skipped": "Passed Luka full segment and on/dam selection",
+  "productChangedByQa": false,
+  "runnerSyntax": "PASS",
+  "sourceRecompile": "NOT_RUN; root observed rebuild pending",
+  "nativeRun": false,
+  "unity": false,
+  "osInput": "DEFERRED",
+  "userDefaultProfile": "NOT_ACCESSED"
+}

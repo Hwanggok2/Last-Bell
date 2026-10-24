@@ -1,0 +1,235 @@
+{
+  "editmode": {
+    "total": "186",
+    "passed": "186",
+    "failed": "0",
+    "result": "Passed"
+  },
+  "playmode": {
+    "total": "22",
+    "passed": "22",
+    "failed": "0",
+    "result": "Passed"
+  },
+  "desktop": {
+    "passed": true,
+    "checks": 440,
+    "width": 960,
+    "height": 540
+  },
+  "mobile": {
+    "passed": true,
+    "checks": 440,
+    "width": 640,
+    "height": 360
+  },
+  "build": "Succeeded; 237367145 bytes; 0 errors",
+  "bundleVersion": "0.8.6",
+  "roster": [
+    {
+      "stage": 1,
+      "enemyId": "wild_dog",
+      "artId": "wild_dog",
+      "name": "들개",
+      "idleFrames": 9
+    },
+    {
+      "stage": 2,
+      "enemyId": "grey_wolf",
+      "artId": "grey_wolf",
+      "name": "회색 늑대",
+      "idleFrames": 8
+    },
+    {
+      "stage": 3,
+      "enemyId": "brown_bear",
+      "artId": "brown_bear",
+      "name": "불곰",
+      "idleFrames": 8
+    },
+    {
+      "stage": 4,
+      "enemyId": "red_fox",
+      "artId": "red_fox",
+      "name": "붉은 여우",
+      "idleFrames": 8
+    },
+    {
+      "stage": 5,
+      "enemyId": "wild_boar",
+      "artId": "wild_boar",
+      "name": "성난 멧돼지",
+      "idleFrames": 8
+    },
+    {
+      "stage": 6,
+      "enemyId": "badger",
+      "artId": "badger",
+      "name": "굴 오소리",
+      "idleFrames": 6
+    },
+    {
+      "stage": 7,
+      "enemyId": "lynx",
+      "artId": "lynx",
+      "name": "숲 스라소니",
+      "idleFrames": 8
+    },
+    {
+      "stage": 8,
+      "enemyId": "mountain_goat",
+      "artId": "mountain_goat",
+      "name": "바위 산양",
+      "idleFrames": 8
+    },
+    {
+      "stage": 9,
+      "enemyId": "great_stag",
+      "artId": "great_stag",
+      "name": "큰뿔 사슴",
+      "idleFrames": 8
+    },
+    {
+      "stage": 10,
+      "enemyId": "bell_knight",
+      "artId": "bell_knight_concept",
+      "name": "종의 기사",
+      "idleFrames": 8
+    },
+    {
+      "stage": 11,
+      "enemyId": "sewer_rat",
+      "artId": "sewer_rat",
+      "name": "하수구 거대쥐",
+      "idleFrames": 9
+    },
+    {
+      "stage": 12,
+      "enemyId": "drowned_resident",
+      "artId": "drowned_resident",
+      "name": "침수된 잔상",
+      "idleFrames": 9
+    },
+    {
+      "stage": 13,
+      "enemyId": "water_wraith",
+      "artId": "water_wraith",
+      "name": "물안개 망령",
+      "idleFrames": 8
+    },
+    {
+      "stage": 14,
+      "enemyId": "ash_wisp",
+      "artId": "ash_wisp",
+      "name": "재의 불씨",
+      "idleFrames": 8
+    },
+    {
+      "stage": 15,
+      "enemyId": "chain_thrall",
+      "artId": "chain_thrall",
+      "name": "사슬 망령",
+      "idleFrames": 8
+    },
+    {
+      "stage": 16,
+      "enemyId": "hook_hound",
+      "artId": "hook_hound",
+      "name": "배수로 갈고리개",
+      "idleFrames": 4
+    },
+    {
+      "stage": 17,
+      "enemyId": "chain_puppet",
+      "artId": "chain_puppet",
+      "name": "문패 꼭두각시",
+      "idleFrames": 4
+    },
+    {
+      "stage": 18,
+      "enemyId": "cracked_blade",
+      "artId": "cracked_blade",
+      "name": "금 간 검기사",
+      "idleFrames": 8
+    },
+    {
+      "stage": 19,
+      "enemyId": "chain_dancer",
+      "artId": "chain_dancer",
+      "name": "사슬 무희",
+      "idleFrames": 8
+    },
+    {
+      "stage": 20,
+      "enemyId": "chain_jailer",
+      "artId": "chain_jailer",
+      "name": "매달린 집행관",
+      "idleFrames": 8
+    }
+  ],
+  "audio": [
+    {
+      "file": "bgm-lobby.ogg",
+      "durationSeconds": 21.3362358276644,
+      "peakDbfs": -3.542426109313965,
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "bgm-road.ogg",
+      "durationSeconds": 41.145759637188206,
+      "peakDbfs": -5.222089767456055,
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "bgm-quarter.ogg",
+      "durationSeconds": 56.105215419501135,
+      "peakDbfs": -5.821564674377441,
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "bgm-boss.ogg",
+      "durationSeconds": 71.72643990929706,
+      "peakDbfs": -5.300388813018799,
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "sword-strike.wav",
+      "durationSeconds": 0.28,
+      "peakDbfs": -3.0,
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "dodge-air.wav",
+      "durationSeconds": 0.2700226757369614,
+      "peakDbfs": -5.124001979827881,
+      "license": "CC0-1.0"
+    }
+  ],
+  "preserved": [
+    "Combat/economy/timing/checkpoint/save rules",
+    "Every original non-Idle clip and texture",
+    "Existing UI layout, hero art, character selection Idle",
+    "Both boss designs and animations"
+  ],
+  "changed": [
+    "20 unique enemies across 20 playable stages",
+    "Six additional animals, six restored residents with new Idle",
+    "Immediate accepted-input dodge sound including perfect dodge and down-key parry",
+    "Short CC0 blade impact, four CC0 chiptune tracks",
+    "Bell playback removed; both serialized bell sources disabled"
+  ],
+  "limitations": [
+    "Desktop and mobile-sized Windows renders, no physical phone test",
+    "No web hosting update",
+    "Local HTML browser automation unavailable; source frames and Unity renders reviewed"
+  ],
+  "artManifestSha256": "a8003136cb1e57287a1e389bfd0d5f1ba5df80944b4bfa2e1d1511d459805467",
+  "Builds/Windows/LastBellMvp_Data/Managed/LastBell.Runtime.dll": {
+    "bytes": 328192,
+    "sha256": "769e6676b21bdfe3718094af999b93e37301ca86bd3db482805503a19191db06"
+  },
+  "Builds/LastBellMvp-Windows.zip": {
+    "bytes": 73213351,
+    "sha256": "6a7fa644bfd4c254609e29828e650894a4d8b0b9e44dbd123cd06695927c1df2"
+  }
+}

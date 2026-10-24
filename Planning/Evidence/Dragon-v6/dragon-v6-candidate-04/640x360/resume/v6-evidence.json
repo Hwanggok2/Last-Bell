@@ -1,0 +1,46 @@
+{
+    "scope": "v0.9.5 representative changed-scope observations, not all44/previous60 criteria",
+    "visualReview": "NOT_RUN",
+    "osInput": "DEFERRED",
+    "audioListening": "NOT_RUN",
+    "userDefaultProfile": "NOT_ACCESSED",
+    "limits": "Synthetic saved-UI input, explicit DTO/seed fixtures and labelled manual-clock gaps. Core boundary tests are handed-over evidence. PNG inspection is separate. No full acceptance, physical input, listening or performance certification.",
+    "stateSamples": 36,
+    "staticCaptures": 2,
+    "inputEdges": 1,
+    "fixtures": [],
+    "events": [
+        {
+            "scenario": "v6-native-resume-first-window",
+            "fixture": "native-v6-post-contact",
+            "kind": "EnemyCueStarted",
+            "skill": "",
+            "companion": "",
+            "frame": 6,
+            "stage": 11,
+            "runId": 1,
+            "clockMs": 490.6136021018028,
+            "damageMilli": 0,
+            "recoveryMilli": 0,
+            "absorbedMilli": 0,
+            "gold": 20000,
+            "staggerBefore": 0.0,
+            "staggerGained": 0.0,
+            "critical": false
+        }
+    ],
+    "routeStages": [],
+    "fileRoundtrips": [
+        "native-resume-final"
+    ],
+    "continuationOf": "",
+    "stunActiveFrame": "",
+    "stunEndedFrame": "",
+    "popupChecks": [],
+    "pending": [
+        "manual PNG readability/overlap and boss lightning review",
+        "full numeric/corruption boundaries use Client evidence",
+        "all44/previous60 acceptance",
+        "physical input/mobile/audio/performance/long-duration leaks"
+    ]
+}

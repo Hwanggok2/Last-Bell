@@ -1,0 +1,83 @@
+{
+  "compileRecovery": "Registered three missing C# assets individually, requested scripts compile, then applied coordinator-authorized all/force refresh. Console errors cleared without source edits.",
+  "editorReturn": {
+    "consoleErrors": 0,
+    "scopedPlayerPrefsUnchanged": true,
+    "testsRunning": false,
+    "playing": false,
+    "dirty": false,
+    "scene": "Assets/Game/Scenes/Mvp.unity",
+    "ownership": "RETURNED_TO_COORDINATOR"
+  },
+  "nativeCampaign": "NOT_RUN_WAITING_FOR_SEPARATE_HANDOFF",
+  "startedAtKst": "2026-10-24T19:19:35.2750000+09:00",
+  "saveFixtures": "Path.GetTempPath()/lastbell-profile-test-<GUID>, setup/teardown owned by each test",
+  "status": "PASS_TARGETED_EDITMODE_ONLY",
+  "mode": "EditMode",
+  "jobId": "d08fb707b8654142875fa82d936f98d7",
+  "PlayMode": "NOT_RUN",
+  "userDefaultProfile": "NOT_ACCESSED",
+  "mobile": "DEFERRED",
+  "project": "C:/Github/Test2/Client",
+  "summary": {
+    "total": 5,
+    "passed": 5,
+    "failed": 0,
+    "skipped": 0,
+    "durationSeconds": 0.7612274,
+    "resultState": "Passed"
+  },
+  "date": "2026-10-24 KST",
+  "sourceUnchanged": true,
+  "tests": [
+    {
+      "name": "ExplicitDirectoryHasPriority(False)",
+      "fullName": "LastBell.Tests.SaveDirectorySelectorTests.ExplicitDirectoryHasPriority(False)",
+      "state": "Passed",
+      "durationSeconds": 0.0242031,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "ExplicitDirectoryHasPriority(True)",
+      "fullName": "LastBell.Tests.SaveDirectorySelectorTests.ExplicitDirectoryHasPriority(True)",
+      "state": "Passed",
+      "durationSeconds": 0.0019182,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "FirstPlaytestStartsStageOneWithoutChangingLegacyPrimaryOrBackup",
+      "fullName": "LastBell.Tests.SaveDirectorySelectorTests.FirstPlaytestStartsStageOneWithoutChangingLegacyPrimaryOrBackup",
+      "state": "Passed",
+      "durationSeconds": 0.0727051,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "ProductionKeepsExistingNamespaceAndSelectionCreatesNothing",
+      "fullName": "LastBell.Tests.SaveDirectorySelectorTests.ProductionKeepsExistingNamespaceAndSelectionCreatesNothing",
+      "state": "Passed",
+      "durationSeconds": 0.0015182,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    },
+    {
+      "name": "ReopeningTheSamePlaytestPreservesItsCheckpointAndWallet",
+      "fullName": "LastBell.Tests.SaveDirectorySelectorTests.ReopeningTheSamePlaytestPreservesItsCheckpointAndWallet",
+      "state": "Passed",
+      "durationSeconds": 0.0088797,
+      "message": null,
+      "stackTrace": null,
+      "output": ""
+    }
+  ],
+  "finishedAtKst": "2026-10-24T19:19:39.7610000+09:00",
+  "instance": "Client@65e60f79bc76ded9",
+  "report": "Planning/QA/dragon-v3-save-selector-result-20261024.md",
+  "osInput": "DEFERRED"
+}

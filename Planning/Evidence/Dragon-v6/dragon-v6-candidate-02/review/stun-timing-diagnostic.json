@@ -1,0 +1,39 @@
+{
+  "id": "QA6-PROBE-002",
+  "classification": "OBSERVATION_TIMING_FALSE_FAILURE",
+  "previousClockMs": 403.4708961844444,
+  "firstClockMs": 2007.8041777014732,
+  "firstFrame": "v3-frame-v6-actual-stun-000744.png",
+  "firstStunned": true,
+  "firstSealParticles": 21,
+  "stunUntilMs": 2103.4708961844444,
+  "firstExpiredFrame": "v3-frame-v6-actual-stun-000749.png",
+  "lastClockMs": 2706.1637695878744,
+  "lastStunned": false,
+  "segments": [
+    {
+      "name": "v6-miel-ready",
+      "clock": "real-frame-v3",
+      "frames": 22,
+      "missingRenderedFrames": 0,
+      "firstRealtime": 69.51057434082031,
+      "lastRealtime": 69.88408660888672,
+      "maxDelta": 0.035209205001592636,
+      "maxRealtimeGap": 0.03521728515625,
+      "encodeSeconds": 1.571990966796875
+    },
+    {
+      "name": "v6-actual-stun",
+      "clock": "real-frame-v3",
+      "frames": 40,
+      "missingRenderedFrames": 0,
+      "firstRealtime": 71.51533508300781,
+      "lastRealtime": 72.18446350097656,
+      "maxDelta": 1.6043332815170288,
+      "maxRealtimeGap": 0.03673553466796875,
+      "encodeSeconds": 2.8503875732421875
+    }
+  ],
+  "rootCause": "Blocking PNG encoding leaves large Time.unscaledDeltaTime for next enabled MvpPresenter tick. End-of-window active21 assertion is invalid after expiry.",
+  "authorizedFix": "V6 post-encode Rendered drain with TickSession=false, active-snapshot21 and separate ended0 checks. No gameplay timer changes."
+}

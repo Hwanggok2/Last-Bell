@@ -1,0 +1,213 @@
+PASS selection common font: Wallet
+PASS selection text fits: Wallet
+PASS selection common font: Label
+PASS selection text fits: Label
+PASS selection common font: Label
+PASS selection text fits: Label
+PASS selection common font: Label
+PASS selection text fits: Label
+PASS selection common font: Label
+PASS selection text fits: Label
+PASS selection common font: Label
+PASS selection text fits: Label
+PASS selection common font: Label
+PASS selection text fits: Label
+PASS selection common font: Label
+PASS selection text fits: Label
+PASS selection common font: CharacterName
+PASS selection text fits: CharacterName
+PASS selection common font: Title
+PASS selection text fits: Title
+PASS selection common font: Value
+PASS selection text fits: Value
+PASS selection common font: Title
+PASS selection text fits: Title
+PASS selection common font: Value
+PASS selection text fits: Value
+PASS selection common font: Title
+PASS selection text fits: Title
+PASS selection common font: Value
+PASS selection text fits: Value
+PASS selection common font: Title
+PASS selection text fits: Title
+PASS selection common font: Value
+PASS selection text fits: Value
+PASS selection common font: Summary
+PASS selection text fits: Summary
+PASS selection common font: ReferenceHeading
+PASS selection text fits: ReferenceHeading
+PASS separate selection screen
+PASS button has raycast hit: Character1
+PASS inspect unavailable hero without selecting
+PASS button has raycast hit: Character0
+PASS button has raycast hit: Start
+PASS upgrade common font: Wallet
+PASS upgrade text fits: Wallet
+PASS upgrade common font: Label
+PASS upgrade text fits: Label
+PASS upgrade common font: Label
+PASS upgrade text fits: Label
+PASS upgrade common font: Label
+PASS upgrade text fits: Label
+PASS upgrade common font: StatTitle
+PASS upgrade text fits: StatTitle
+PASS upgrade common font: Level
+PASS upgrade text fits: Level
+PASS upgrade common font: Before
+PASS upgrade text fits: Before
+PASS upgrade common font: After
+PASS upgrade text fits: After
+PASS upgrade common font: Price
+PASS upgrade text fits: Price
+PASS upgrade common font: Note
+PASS upgrade text fits: Note
+PASS upgrade common font: Caption
+PASS upgrade text fits: Caption
+PASS upgrade common font: Caption
+PASS upgrade text fits: Caption
+PASS upgrade common font: Caption
+PASS upgrade text fits: Caption
+PASS upgrade common font: Caption
+PASS upgrade text fits: Caption
+PASS upgrade common font: Caption
+PASS upgrade text fits: Caption
+PASS upgrade common font: Caption
+PASS upgrade text fits: Caption
+PASS upgrade common font: Caption
+PASS upgrade text fits: Caption
+PASS upgrade common font: ReferenceHeading
+PASS upgrade text fits: ReferenceHeading
+PASS upgrade common font: Caption
+PASS upgrade text fits: Caption
+PASS selection opens separate upgrade
+PASS button has raycast hit: Maximum
+PASS button has raycast hit: Purchase
+PASS MAX pointer buys exact sequence to level 20
+PASS button has raycast hit: SelectStat2
+PASS luck common font: Wallet
+PASS luck text fits: Wallet
+PASS luck common font: Label
+PASS luck text fits: Label
+PASS luck common font: Label
+PASS luck text fits: Label
+PASS luck common font: Label
+PASS luck text fits: Label
+PASS luck common font: StatTitle
+PASS luck text fits: StatTitle
+PASS luck common font: Level
+PASS luck text fits: Level
+PASS luck common font: Before
+PASS luck text fits: Before
+PASS luck common font: After
+PASS luck text fits: After
+PASS luck common font: Price
+PASS luck text fits: Price
+PASS luck common font: Note
+PASS luck text fits: Note
+PASS luck common font: Caption
+PASS luck text fits: Caption
+PASS luck common font: Caption
+PASS luck text fits: Caption
+PASS luck common font: Caption
+PASS luck text fits: Caption
+PASS luck common font: Caption
+PASS luck text fits: Caption
+PASS luck common font: Caption
+PASS luck text fits: Caption
+PASS luck common font: Caption
+PASS luck text fits: Caption
+PASS luck common font: Caption
+PASS luck text fits: Caption
+PASS luck common font: ReferenceHeading
+PASS luck text fits: ReferenceHeading
+PASS luck common font: Caption
+PASS luck text fits: Caption
+PASS button has raycast hit: Relics
+PASS collection common font: Title
+PASS collection text fits: Title
+PASS collection common font: Label
+PASS collection text fits: Label
+PASS collection common font: Slots
+PASS collection text fits: Slots
+PASS collection common font: Name
+PASS collection text fits: Name
+PASS collection common font: Effect
+PASS collection text fits: Effect
+PASS collection common font: Label
+PASS collection text fits: Label
+PASS collection common font: Label
+PASS collection text fits: Label
+PASS button has raycast hit: Back
+PASS button has raycast hit: SelectionBack
+PASS button has raycast hit: ReplayPrologue
+PASS prologue common font: Title
+PASS prologue text fits: Title
+PASS prologue common font: Paragraph0
+PASS prologue text fits: Paragraph0
+PASS prologue common font: Paragraph1
+PASS prologue text fits: Paragraph1
+PASS prologue common font: Paragraph2
+PASS prologue text fits: Paragraph2
+PASS prologue common font: Paragraph3
+PASS prologue text fits: Paragraph3
+PASS prologue common font: Label
+PASS prologue text fits: Label
+PASS prologue has only skip control
+PASS button has raycast hit: Skip
+PASS combat common font: Stage
+PASS combat text fits: Stage
+PASS combat common font: Label
+PASS combat text fits: Label
+PASS combat common font: EnemyName
+PASS combat text fits: EnemyName
+PASS combat common font: PlayerHealthValue
+PASS combat text fits: PlayerHealthValue
+PASS combat common font: EnemyHealthValue
+PASS combat text fits: EnemyHealthValue
+PASS combat common font: PlayerName
+PASS combat text fits: PlayerName
+PASS combat common font: EarnedFragments
+PASS combat text fits: EarnedFragments
+PASS combat common font: BattleGold
+PASS combat text fits: BattleGold
+PASS only three dodge controls visible
+PASS reference control anchor 0
+PASS 48px minimum touch size 0
+PASS safe-area bounds 0
+PASS reference control anchor 1
+PASS 48px minimum touch size 1
+PASS safe-area bounds 1
+PASS reference control anchor 2
+PASS 48px minimum touch size 2
+PASS safe-area bounds 2
+PASS HP anchor does not follow lunge
+PASS attack pointer damages enemy
+PASS two fixed bells show double attack
+PASS perfect counter and spent bell slot retained
+PASS boss uses lower HP with level and name
+PASS boss kill continues to 11 with queued reward
+PASS button has raycast hit: SettlementContinue
+PASS clear announcement prevents skipping rewards
+PASS button has raycast hit: SettlementContinue
+PASS relic must be selected before confirming
+PASS JsonUtility/file round trip preserves ended run reward
+PASS button has raycast hit: Receive
+PASS reward common font: BattleGold
+PASS reward text fits: BattleGold
+PASS reward common font: Note
+PASS reward text fits: Note
+PASS reward common font: Name
+PASS reward text fits: Name
+PASS reward common font: Name
+PASS reward text fits: Name
+PASS reward common font: Name
+PASS reward text fits: Name
+PASS reward common font: Description
+PASS reward text fits: Description
+PASS reward common font: Label
+PASS reward text fits: Label
+PASS button has raycast hit: Confirm
+PASS confirm grants chosen relic and opens final result
+PASS button has raycast hit: ResultLobby
+PASS button has raycast hit: AudioCredits
+PASS font attribution and distributed OFL present

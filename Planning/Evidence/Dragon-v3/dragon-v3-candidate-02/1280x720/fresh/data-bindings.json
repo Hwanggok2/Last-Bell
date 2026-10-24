@@ -1,0 +1,86 @@
+{
+  "scope": "Stage11–20 forest art/display and adventurer names/story; unchanged gameplay and IDs",
+  "mapping": [
+    {
+      "stage": 11,
+      "stableEnemyId": "sewer_rat",
+      "displayName": "숲길 고블린",
+      "artId": "dragon_goblin_scout"
+    },
+    {
+      "stage": 12,
+      "stableEnemyId": "drowned_resident",
+      "displayName": "돌팔매 고블린",
+      "artId": "dragon_goblin_slinger"
+    },
+    {
+      "stage": 13,
+      "stableEnemyId": "water_wraith",
+      "displayName": "숲송이",
+      "artId": "dragon_forest_mushroom"
+    },
+    {
+      "stage": 14,
+      "stableEnemyId": "ash_wisp",
+      "displayName": "방패 고블린",
+      "artId": "dragon_goblin_shield"
+    },
+    {
+      "stage": 15,
+      "stableEnemyId": "chain_thrall",
+      "displayName": "숲송이 대장",
+      "artId": "dragon_mushroom_captain"
+    },
+    {
+      "stage": 16,
+      "stableEnemyId": "hook_hound",
+      "displayName": "창 고블린",
+      "artId": "dragon_goblin_spear"
+    },
+    {
+      "stage": 17,
+      "stableEnemyId": "chain_puppet",
+      "displayName": "포자 숲송이",
+      "artId": "dragon_spore_mushroom"
+    },
+    {
+      "stage": 18,
+      "stableEnemyId": "cracked_blade",
+      "displayName": "이끼 숲송이",
+      "artId": "dragon_moss_mushroom"
+    },
+    {
+      "stage": 19,
+      "stableEnemyId": "chain_dancer",
+      "displayName": "기블의 문지기",
+      "artId": "dragon_goblin_guard"
+    },
+    {
+      "stage": 20,
+      "stableEnemyId": "chain_jailer",
+      "displayName": "기블",
+      "artId": "dragon_gib"
+    }
+  ],
+  "characters": {
+    "on": "루카 · 검사",
+    "dam": "다렌 · 수호기사",
+    "rin": "미엘 · 마법사"
+  },
+  "protectedDomains": [
+    "schemaVersion",
+    "defaultCharacterId",
+    "mvpLastStage",
+    "boundaryStage",
+    "combat",
+    "growth",
+    "economy",
+    "relicRules",
+    "stages",
+    "transitions",
+    "relics"
+  ],
+  "protectedSha256": "05a3c0cddb9fa46187d41539ee772aef64fff41ad2f1b0d5e54480a073548444",
+  "skillsImplemented": false,
+  "playableStages": 20
+}

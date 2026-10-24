@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-22",
+  "revision": "2026-10-22-immediate-gold-story10",
+  "scope": "planning-and-preview-only",
+  "passed": true,
+  "scriptSyntax": true,
+  "gold": {
+    "fallMs": 0,
+    "gatherMs": 0,
+    "launchDelay": 0,
+    "latestArrivalMs": 730,
+    "browserArrival": "1234 -> 1276",
+    "observedFlight": "Particles above enemy torso on direct line; no floor launch"
+  },
+  "story10": {
+    "newLines": [
+      {
+        "speaker": "종의 기사",
+        "text": "이 문은 적을 막는 문이 아니었다.\n주민들이 밖으로 나가지 못하게 잠근 거다."
+      },
+      {
+        "speaker": "종의 기사",
+        "text": "주민들은 저 문 너머에 있다.\n집집마다 이어진 사슬을 따라가라."
+      },
+      {
+        "speaker": "온",
+        "text": "문 너머로 가겠어.\n사람들이 왜 갇혔는지 알아봐야 해."
+      }
+    ],
+    "bossVisibleDuringDialogue": true,
+    "dissolveAfterDialogue": true,
+    "automaticBellSound": false
+  },
+  "runtimeFilesCompared": 1086,
+  "runtimeFilesChanged": 0,
+  "browser": {
+    "consoleErrors": 0,
+    "dialogueCardsVisible": 3,
+    "screenshot": "Planning/Evidence/Planning-v6/story10-dialogue.png"
+  },
+  "limits": [
+    "Game not changed",
+    "Boss lifecycle sequence is specified in planning, not runtime-tested"
+  ]
+}

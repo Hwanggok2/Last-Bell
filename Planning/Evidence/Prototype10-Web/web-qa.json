@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-22",
+  "url": "https://last-bell-playtest.nugunagame1.chatgpt.site",
+  "passed": true,
+  "browser": "Codex in-app browser",
+  "checks": [
+    "Public HTTPS page loads and starts Unity WebGL without an authentication prompt",
+    "Brotli fallback assets load successfully from the deployed static host",
+    "Directional keyboard input advances the tutorial to its attack step",
+    "Space input plays the forward sword attack on the deployed site",
+    "Canvas attack button and Escape pause work in localhost build",
+    "Browser reload retained completed dodge tutorial step",
+    "Death result offers Retry and Lobby; Retry reaches Stage 1"
+  ],
+  "evidence": "public-web-game.png",
+  "limits": [
+    "No physical mobile-device test",
+    "Full Stage 1-10 completion verified in Windows smoke flow and automated core/UI tests, not manually repeated in browser"
+  ]
+}

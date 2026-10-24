@@ -1,0 +1,72 @@
+{
+  "sourceFrozen": true,
+  "frozenAtUtc": "2026-10-24T17:02:40.368166+00:00",
+  "scope": "QA-only healthbar integration addendum; product and balance untouched by QA",
+  "version": "0.9.6",
+  "dataVersion": "mvp1.18.0",
+  "parentCandidate": "dragon-v6-candidate-04",
+  "candidate": "dragon-v6-candidate-05",
+  "runnerAdditionalSwitch": "-HealthBarOnly",
+  "nativeMode": "v6-hp-only",
+  "expectedProcesses": 2,
+  "qaExecution": "NOT_RUN",
+  "files": [
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.cs",
+      "sha256": "AFC5B489041AB17C94A40036B10CE139C244F3B19A224DB80E5A8302C36AEC5E"
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V6.cs",
+      "sha256": "5D57FD05C8B2872900CA23868F9FE9FE35572ABF317212C2F32EEEA27806FB35"
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V6.cs.meta",
+      "sha256": "FB1C4724CD7756652F6D6207438A26599BE47851781B01867509CF9DE6DF2DD3"
+    },
+    {
+      "path": "Tools/QA/Dragon-v6/common.ps1",
+      "sha256": "3E5905542F0EF4E183C39B48B1CBC882462D740AE59EB9283EB82E3B355DD334"
+    },
+    {
+      "path": "Tools/QA/Dragon-v6/run-campaign.ps1",
+      "sha256": "8212BEDD7A180FA1A9D0E007BCA6B02C85405442F40CEC0877C0CB96535775F0"
+    },
+    {
+      "path": "Tools/QA/Dragon-v6/analyze.py",
+      "sha256": "AD7A97827F39B58FADFC3BC635A1F8C48569D891FD7835FACCD86AD27D11FA3C"
+    },
+    {
+      "path": "Tools/QA/Dragon-v6/README.md",
+      "sha256": "49E48CE7C1FE383D0E7BF281A52C45AD186644AE71D740A5B4C2B77F5F652272"
+    }
+  ],
+  "readOnlyDependencies": [
+    {
+      "path": "Tools/QA/Dragon-v3/common.ps1",
+      "sha256": "998AADA226B62E1580A3DCB1FC1FB44413AA17AE5520D02F58B3A9E5FB62C8F0"
+    }
+  ],
+  "validation": {
+    "csharpRuntimeFiles": 76,
+    "csharpErrors": 0,
+    "powershellAstErrors": 0,
+    "pythonAst": "PASS",
+    "dllEmit": false,
+    "unityRun": false
+  },
+  "completionConditions": [
+    "Both1280x720 and640x360 fresh processes exit0; no resume/full-campaign replay",
+    "Per resolution real PlayerDamaged, normal EnemyDamaged and boss EnemyDamaged occur once each",
+    "Immediate actual HP and first active trail; rendered intermediate trail; end equals actual",
+    "first/middle/end PNG and actual/trail/active/visible state saved for each target",
+    "Manual original PNG inspection after read-only frame/hash analysis",
+    "Prior candidate04 raw1613 unchanged and scoped PlayerPrefs restored"
+  ],
+  "fixtures": [
+    "player stage11 maxHP=2*catalog damage, no defense:50percent real hit",
+    "normal11/boss20 maxHP=3*player attack, no critical: exact-third real normal hit",
+    "Core ticking held after single contact; real presenter time animates trail; no graphics mutation"
+  ],
+  "reused": "candidate04 existing scope and Root boundary/heal/reset/multi-hit/pause unit tests",
+  "executionRequires": "new Root observed build RuntimeSHA/full freeze and explicit execution handoff"
+}

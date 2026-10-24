@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "checks": [
+    "playtest selects separate namespace",
+    "selector creates no directory or save",
+    "legacy/Editor path remains unchanged",
+    "explicit override wins for playtest",
+    "explicit override wins for legacy",
+    "reselecting namespace neither resets nor changes new file",
+    "synthetic legacy primary and backup preserved",
+    "normal descendant accepted",
+    "non-child path rejected: C:\\Github\\Test2\\Tools\\QA\\Dragon-v3\\Validation\\self-test-617fa48a9e7a48258b788885b3633d7b\\safe\\..\\escape",
+    "non-child path rejected: C:\\Github\\Test2\\Tools\\QA\\Dragon-v3\\Validation\\self-test-617fa48a9e7a48258b788885b3633d7b\\safe-sibling\\file",
+    "non-child path rejected: C:\\Github\\Test2\\Tools\\QA\\Dragon-v3\\Validation\\self-test-617fa48a9e7a48258b788885b3633d7b\\safe",
+    "PowerShell parse: common.ps1",
+    "PowerShell parse: compile-source.ps1",
+    "PowerShell parse: run-campaign.ps1",
+    "PowerShell parse: self-test.ps1"
+  ],
+  "userDefaultProfile": "NOT_ACCESSED",
+  "limits": "Source-level selector and path guards; native progress restoration is NOT_RUN",
+  "playerRun": false,
+  "unityRun": false
+}

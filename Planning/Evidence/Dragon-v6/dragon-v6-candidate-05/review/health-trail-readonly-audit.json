@@ -1,0 +1,356 @@
+[
+  {
+    "resolution": "1280x720",
+    "target": "player",
+    "samplesThroughEnd": 41,
+    "renderElapsedSeconds": 0.6828780956566334,
+    "maxLinearError": 1.5842643641406084e-07,
+    "linearTolerance": 1e-05,
+    "linearPassed": true,
+    "images": [
+      {
+        "point": "first",
+        "file": "1280x720/fresh/v3-frame-v6-hp-trail-player-000002.png",
+        "sha256": "7c84a9b9ce366d6300c0bc3eca7a51e1c909b1b0a6a6751928680dff2ff30287",
+        "barCrop": [
+          396,
+          511,
+          604,
+          555
+        ],
+        "greenPixels": 1216,
+        "orangePixels": 896,
+        "actual": 0.5,
+        "trail": 1.0,
+        "visible": true
+      },
+      {
+        "point": "middle",
+        "file": "1280x720/fresh/v3-frame-v6-hp-trail-player-000024.png",
+        "sha256": "adaee7bb22e8f2ba84f1bc2d01b0cd6fabe1025c059b340d1ce20d229b2dd542",
+        "barCrop": [
+          396,
+          511,
+          604,
+          555
+        ],
+        "greenPixels": 1216,
+        "orangePixels": 512,
+        "actual": 0.5,
+        "trail": 0.7610217332839966,
+        "visible": true
+      },
+      {
+        "point": "end",
+        "file": "1280x720/fresh/v3-frame-v6-hp-trail-player-000042.png",
+        "sha256": "8d9be59238c762f87710cf180d6459cefccabee19bb2e6380984eea3376c77c8",
+        "barCrop": [
+          396,
+          511,
+          604,
+          555
+        ],
+        "greenPixels": 1216,
+        "orangePixels": 0,
+        "actual": 0.5,
+        "trail": 0.5,
+        "visible": true
+      }
+    ]
+  },
+  {
+    "resolution": "1280x720",
+    "target": "normal",
+    "samplesThroughEnd": 41,
+    "renderElapsedSeconds": 0.6828410010784864,
+    "maxLinearError": 4.0159077507873064e-08,
+    "linearTolerance": 1e-05,
+    "linearPassed": true,
+    "images": [
+      {
+        "point": "first",
+        "file": "1280x720/fresh/v3-frame-v6-hp-trail-normal-000079.png",
+        "sha256": "f6a158d58362b5cc07b07f22810d1cee1d9bb5903ad661c8682ebd3951becd3d",
+        "barCrop": [
+          788,
+          511,
+          1012,
+          555
+        ],
+        "greenPixels": 1664,
+        "orangePixels": 640,
+        "actual": 0.6666666865348816,
+        "trail": 1.0,
+        "visible": true
+      },
+      {
+        "point": "middle",
+        "file": "1280x720/fresh/v3-frame-v6-hp-trail-normal-000101.png",
+        "sha256": "ad7abf4f98e08285df6846659773d0a369c432734e1bb3a0446cd617b87ec040",
+        "barCrop": [
+          788,
+          511,
+          1012,
+          555
+        ],
+        "greenPixels": 1664,
+        "orangePixels": 320,
+        "actual": 0.6666666865348816,
+        "trail": 0.8424944877624512,
+        "visible": true
+      },
+      {
+        "point": "end",
+        "file": "1280x720/fresh/v3-frame-v6-hp-trail-normal-000119.png",
+        "sha256": "f86842d1d77a55ae781cb9202c8502f6fe827e3e0570cff2d5e15dd40f8a0a18",
+        "barCrop": [
+          788,
+          511,
+          1012,
+          555
+        ],
+        "greenPixels": 1664,
+        "orangePixels": 0,
+        "actual": 0.6666666865348816,
+        "trail": 0.6666666865348816,
+        "visible": true
+      }
+    ]
+  },
+  {
+    "resolution": "1280x720",
+    "target": "boss",
+    "samplesThroughEnd": 41,
+    "renderElapsedSeconds": 0.6777481008321047,
+    "maxLinearError": 3.6932641611642225e-08,
+    "linearTolerance": 1e-05,
+    "linearPassed": true,
+    "images": [
+      {
+        "point": "first",
+        "file": "1280x720/fresh/v3-frame-v6-hp-trail-boss-000151.png",
+        "sha256": "25fe40b00133425a7817da49748d9acc837179597e6896a39bfb3c65bd84895e",
+        "barCrop": [
+          360,
+          16,
+          920,
+          60
+        ],
+        "greenPixels": 4544,
+        "orangePixels": 2112,
+        "actual": 0.6666666865348816,
+        "trail": 1.0,
+        "visible": true
+      },
+      {
+        "point": "middle",
+        "file": "1280x720/fresh/v3-frame-v6-hp-trail-boss-000173.png",
+        "sha256": "60433c50c8ca99aea6feda3a704ee842982ca7ffd2da1e0ef15878051da90e89",
+        "barCrop": [
+          360,
+          16,
+          920,
+          60
+        ],
+        "greenPixels": 4544,
+        "orangePixels": 1152,
+        "actual": 0.6666666865348816,
+        "trail": 0.8438698649406433,
+        "visible": true
+      },
+      {
+        "point": "end",
+        "file": "1280x720/fresh/v3-frame-v6-hp-trail-boss-000191.png",
+        "sha256": "dbf0e6fce83c722be8af2926b8dc5e31318332c53b4e840a964f3a2681a1e62e",
+        "barCrop": [
+          360,
+          16,
+          920,
+          60
+        ],
+        "greenPixels": 4544,
+        "orangePixels": 0,
+        "actual": 0.6666666865348816,
+        "trail": 0.6666666865348816,
+        "visible": true
+      }
+    ]
+  },
+  {
+    "resolution": "640x360",
+    "target": "player",
+    "samplesThroughEnd": 41,
+    "renderElapsedSeconds": 0.6785044930875301,
+    "maxLinearError": 4.768371586472142e-08,
+    "linearTolerance": 1e-05,
+    "linearPassed": true,
+    "images": [
+      {
+        "point": "first",
+        "file": "640x360/fresh/v3-frame-v6-hp-trail-player-000003.png",
+        "sha256": "87c355c86ca30b4964a2211aae48f43428f035304371cfd19dbfe147b5eef9b0",
+        "barCrop": [
+          198,
+          256,
+          302,
+          278
+        ],
+        "greenPixels": 304,
+        "orangePixels": 224,
+        "actual": 0.5,
+        "trail": 1.0,
+        "visible": true
+      },
+      {
+        "point": "middle",
+        "file": "640x360/fresh/v3-frame-v6-hp-trail-player-000025.png",
+        "sha256": "e66c5d2778a5ce0264ba2f3d96c956d90ba0614e744714b54b04147f0e90d158",
+        "barCrop": [
+          198,
+          256,
+          302,
+          278
+        ],
+        "greenPixels": 304,
+        "orangePixels": 128,
+        "actual": 0.5,
+        "trail": 0.764998197555542,
+        "visible": true
+      },
+      {
+        "point": "end",
+        "file": "640x360/fresh/v3-frame-v6-hp-trail-player-000043.png",
+        "sha256": "07123aecacbff78d965ebca9886c68af706363045c3aaf3c2538942abe1e1208",
+        "barCrop": [
+          198,
+          256,
+          302,
+          278
+        ],
+        "greenPixels": 304,
+        "orangePixels": 0,
+        "actual": 0.5,
+        "trail": 0.5,
+        "visible": true
+      }
+    ]
+  },
+  {
+    "resolution": "640x360",
+    "target": "normal",
+    "samplesThroughEnd": 41,
+    "renderElapsedSeconds": 0.6824903935194016,
+    "maxLinearError": 7.763481502109926e-08,
+    "linearTolerance": 1e-05,
+    "linearPassed": true,
+    "images": [
+      {
+        "point": "first",
+        "file": "640x360/fresh/v3-frame-v6-hp-trail-normal-000082.png",
+        "sha256": "6e1d1a2fa3d3e2dfafa938bc0c9dba8965caa3202a7d4eefe4a2cee560e969b7",
+        "barCrop": [
+          394,
+          256,
+          506,
+          278
+        ],
+        "greenPixels": 416,
+        "orangePixels": 160,
+        "actual": 0.6666666865348816,
+        "trail": 1.0,
+        "visible": true
+      },
+      {
+        "point": "middle",
+        "file": "640x360/fresh/v3-frame-v6-hp-trail-normal-000104.png",
+        "sha256": "d26fd3ad6859c5f3f875c97dc6d983c6b84869ce5eb0605d1c7fe1ff7f6948ea",
+        "barCrop": [
+          394,
+          256,
+          506,
+          278
+        ],
+        "greenPixels": 416,
+        "orangePixels": 80,
+        "actual": 0.6666666865348816,
+        "trail": 0.8409393429756165,
+        "visible": true
+      },
+      {
+        "point": "end",
+        "file": "640x360/fresh/v3-frame-v6-hp-trail-normal-000122.png",
+        "sha256": "f2081bb5fb82ee07c8344fb3c04be5a95ec300087fa78e4c24676a5c85802c87",
+        "barCrop": [
+          394,
+          256,
+          506,
+          278
+        ],
+        "greenPixels": 416,
+        "orangePixels": 0,
+        "actual": 0.6666666865348816,
+        "trail": 0.6666666865348816,
+        "visible": true
+      }
+    ]
+  },
+  {
+    "resolution": "640x360",
+    "target": "boss",
+    "samplesThroughEnd": 41,
+    "renderElapsedSeconds": 0.6764335948973894,
+    "maxLinearError": 7.124624812337998e-08,
+    "linearTolerance": 1e-05,
+    "linearPassed": true,
+    "images": [
+      {
+        "point": "first",
+        "file": "640x360/fresh/v3-frame-v6-hp-trail-boss-000153.png",
+        "sha256": "2893d1af63009b2b9b1b1800c3175f67485c64271ccf19f6a80c3cfff8b75700",
+        "barCrop": [
+          180,
+          8,
+          460,
+          30
+        ],
+        "greenPixels": 1136,
+        "orangePixels": 528,
+        "actual": 0.6666666865348816,
+        "trail": 1.0,
+        "visible": true
+      },
+      {
+        "point": "middle",
+        "file": "640x360/fresh/v3-frame-v6-hp-trail-boss-000175.png",
+        "sha256": "2a9d3f128fd15d58573a36d16e8ca9612c314ba201cbcbf482b1d69c6ad17bfc",
+        "barCrop": [
+          180,
+          8,
+          460,
+          30
+        ],
+        "greenPixels": 1136,
+        "orangePixels": 288,
+        "actual": 0.6666666865348816,
+        "trail": 0.844586968421936,
+        "visible": true
+      },
+      {
+        "point": "end",
+        "file": "640x360/fresh/v3-frame-v6-hp-trail-boss-000193.png",
+        "sha256": "133f5dc4a6f6ccbe1cf303c4691fdad2a630b59a4542fa50bc61916ef79e08b4",
+        "barCrop": [
+          180,
+          8,
+          460,
+          30
+        ],
+        "greenPixels": 1136,
+        "orangePixels": 0,
+        "actual": 0.6666666865348816,
+        "trail": 0.6666666865348816,
+        "visible": true
+      }
+    ]
+  }
+]

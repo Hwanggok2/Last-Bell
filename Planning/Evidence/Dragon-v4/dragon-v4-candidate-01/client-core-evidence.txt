@@ -1,0 +1,9 @@
+PASS EffectsAndAcceptance
+PASS Shield
+PASS Stagger
+PASS TimersAndRestore
+PASS Story
+PASS FrontalDash
+PASS 246 assertions; catalog=mvp1.16.0
+Executed: dotnet run --project GameData/tests/DragonV093/DragonV093.csproj -- GameData/mvp-catalog.json
+No Unity launch or saved-scene/prefab mutation.

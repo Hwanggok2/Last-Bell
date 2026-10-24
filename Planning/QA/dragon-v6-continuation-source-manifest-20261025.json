@@ -1,0 +1,68 @@
+{
+  "scope": "QA continuation only; final product/build freeze required",
+  "sourceFrozen": true,
+  "frozenAtUtc": "2026-10-24T16:25:27.111765+00:00",
+  "version": "0.9.5",
+  "dataVersion": "mvp1.18.0",
+  "qaExecution": "NOT_RUN",
+  "parentCandidate": "dragon-v6-candidate-01",
+  "runnerAdditionalSwitch": "-ContinueAfterCandidate01",
+  "files": [
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.cs",
+      "sha256": "902C9A0432A5A94EF7EA9CEBD5740E27600EC57229D7376828B6CEA256D48916"
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V6.cs",
+      "sha256": "A8605AFD08B3CD053381EA30F979E2AFE9B5EA9F1B6F6797F7AC5EADD9965378"
+    },
+    {
+      "path": "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V6.cs.meta",
+      "sha256": "FB1C4724CD7756652F6D6207438A26599BE47851781B01867509CF9DE6DF2DD3"
+    },
+    {
+      "path": "Tools/QA/Dragon-v6/common.ps1",
+      "sha256": "4B4E26DAEE3A38B9C6F0FAEB87FF274F5240E3B9ECF77261116AB2C3B3F17849"
+    },
+    {
+      "path": "Tools/QA/Dragon-v6/run-campaign.ps1",
+      "sha256": "7EE320ADEBF519DF717AA125B8192247BAD4C95A718F275C08DA6832C70B775E"
+    },
+    {
+      "path": "Tools/QA/Dragon-v6/analyze.py",
+      "sha256": "E612FC78A3E553891866068CA3885E16D1AC95F4F69470372DFD3DB0A329C8A8"
+    },
+    {
+      "path": "Tools/QA/Dragon-v6/README.md",
+      "sha256": "DC4E76964F39C1902765481C394D862D73830C2FBBB6FA5E3C34E96CF3044D90"
+    }
+  ],
+  "readOnlyDependencies": [
+    {
+      "path": "Tools/QA/Dragon-v3/common.ps1",
+      "sha256": "998AADA226B62E1580A3DCB1FC1FB44413AA17AE5520D02F58B3A9E5FB62C8F0"
+    }
+  ],
+  "validation": {
+    "checkedAtUtc": "2026-10-24T16:24:11.6473351Z",
+    "csharpRuntimeFiles": 76,
+    "csharpErrors": 0,
+    "powershellAstErrors": 0,
+    "pythonAst": "PASS",
+    "dllEmit": false,
+    "unityRun": false
+  },
+  "diagnosis": {
+    "path": "Planning/Production/DragonV095ClientValidation/roundtrip-readonly-result.json",
+    "sha256": "9216FABA83C860CDB5D06954801426AC92717C7CE4528689F885BCB430A8F259",
+    "changedField": "$.run.skillCooldownRemainingMs",
+    "doubleUlps": 1,
+    "owner": "Root Unity readonly diagnostic; independently parsed by QA"
+  },
+  "limits": [
+    "No native retry before new build/execution handoff",
+    "PNG review required for actual color and HUD clearance",
+    "4ULP applies only finite float/double serialized fields; no timer changes",
+    "Raw candidate01 evidence preserved"
+  ]
+}

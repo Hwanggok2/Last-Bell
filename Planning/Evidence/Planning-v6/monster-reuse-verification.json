@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-22",
+  "scope": "planning-only",
+  "passed": true,
+  "stageCount": 20,
+  "distinctEnemyIds": 15,
+  "distinctArtIds": 15,
+  "preservedFreshAppearances": 10,
+  "reusedOriginalAppearances": 5,
+  "replacedStages": [
+    4,
+    6,
+    9,
+    14,
+    19
+  ],
+  "unchangedBossStages": [
+    5,
+    10,
+    15,
+    20
+  ],
+  "stageStatsRewardsKindsWeightsUnchanged": true,
+  "runtimeFilesCompared": 1086,
+  "runtimeFilesChanged": 0,
+  "browser": {
+    "passed": true,
+    "placementRowsVisible": 5,
+    "originalSpritesRendered": 5,
+    "consoleErrors": 0,
+    "screenshot": "Planning/Evidence/Planning-v6/original-monster-placement.png"
+  }
+}
