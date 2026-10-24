@@ -13,15 +13,42 @@ namespace LastBell
         public BattleAudio Audio;
         public EnemyTelegraphGraphic Telegraphs;
         public EnemyAttackEffects EnemyEffects;
+        public SkillPixelEffects SkillEffects;
+        public CompanionBattleView Companions;
         MvpPresenter owner;
         GameSession session;
         double attackAt=-10000,dodgeAt=-10000,parryAt=-10000,parryHitAt=-10000;
         float visualTime,dodgeVisualAt,enemyImpactAt=-10000,successfulDodgeAt=-10000;
-        float completedTravel,deathAttackAge;
+        float completedTravel,deathAttackAge,attackSpeed=1,activeTravelPixels=1920;
         int variant=-1,dodgeDirection,impactRegion;
         int lastPhase=-1,lastKind=-1,lastStep=-1;
-        bool critical,roared,lanternPlayed,swingPlayed;
+        bool critical,roared,lanternPlayed,skillAttack;
+        string enemyImpactPattern;
+        ActorMotion defeatedEnemyMotion;
+        Vector3 defeatedEnemyPosition;
+        int defeatedEnemyFrame;
         readonly System.Random visualRandom=new System.Random();
+        sealed class PracticeVisualState
+        {
+            public double Attack,Dodge,Parry,ParryHit;
+            public float Time,DodgeTime,EnemyImpact,SuccessfulDodge,Speed;
+            public int Variant,Direction,Region;
+            public bool Critical,Skill;
+            public string Pattern;
+        }
+        PracticeVisualState practiceVisual;
+        public void SavePracticeVisual()
+        {
+            practiceVisual=new PracticeVisualState{Attack=attackAt,Dodge=dodgeAt,Parry=parryAt,ParryHit=parryHitAt,Time=visualTime,DodgeTime=dodgeVisualAt,
+                EnemyImpact=enemyImpactAt,SuccessfulDodge=successfulDodgeAt,Speed=attackSpeed,Variant=variant,Direction=dodgeDirection,Region=impactRegion,Critical=critical,Skill=skillAttack,Pattern=enemyImpactPattern};
+        }
+        public void RestorePracticeVisual()
+        {
+            var p=practiceVisual;if(p==null)return;
+            attackAt=p.Attack;dodgeAt=p.Dodge;parryAt=p.Parry;parryHitAt=p.ParryHit;visualTime=p.Time;dodgeVisualAt=p.DodgeTime;
+            enemyImpactAt=p.EnemyImpact;successfulDodgeAt=p.SuccessfulDodge;attackSpeed=p.Speed;variant=p.Variant;dodgeDirection=p.Direction;impactRegion=p.Region;
+            critical=p.Critical;skillAttack=p.Skill;enemyImpactPattern=p.Pattern;practiceVisual=null;
+        }
         public bool Reduced => owner&&owner.Effects&&owner.Effects.ReducedShake;
         public int SlashVariant => variant;
         public float TravelPixels => World?World.TravelPixels:0;
@@ -29,8 +56,13 @@ namespace LastBell
         public void Bind(MvpPresenter presenter)
         {
             owner=presenter;session=presenter.Session;
+            practiceVisual=null;
             if(EnemyEffects)EnemyEffects.Bind(owner);
+            if(SkillEffects)SkillEffects.Initialize(owner);
+            if(Companions)Companions.Bind(owner);
             visualTime=completedTravel=0;attackAt=dodgeAt=parryAt=parryHitAt=-10000;enemyImpactAt=successfulDodgeAt=-10000;
+            enemyImpactPattern=null;skillAttack=false;
+            defeatedEnemyMotion=ActorMotion.Idle;defeatedEnemyFrame=0;
             lastPhase=lastKind=lastStep=-1;roared=lanternPlayed=false;
             owner.PlayerActor.ResetVisuals();owner.EnemyActor.ResetVisuals();ResetCamera();
             if(World)World.ShowTravel(0,Reduced);
@@ -43,7 +75,7 @@ namespace LastBell
         }
         public bool ShowsBattle(GameSession state)
         {
-            if(state.Phase==SessionPhase.Combat||state.Phase==SessionPhase.TutorialDodge||state.Phase==SessionPhase.TutorialAttack||state.Phase==SessionPhase.StoryDialogue)return true;
+            if(state.Phase==SessionPhase.Combat||state.Phase==SessionPhase.TutorialDodge||state.Phase==SessionPhase.TutorialAttack||state.Phase==SessionPhase.StoryDialogue||state.Phase==SessionPhase.ComboHint)return true;
             return state.Phase==SessionPhase.Transition&&(state.Transition.Kind!=TransitionKind.Death||state.Transition.ElapsedSeconds<.85f);
         }
         public bool ShowsLargeStage => session!=null&&session.Transition!=null&&session.Transition.Kind==TransitionKind.Arrival&&session.Transition.ElapsedSeconds>=.2f;
@@ -55,27 +87,52 @@ namespace LastBell
             if(EnemyEffects)EnemyEffects.OnEvent(e);
             if(e.Kind==SessionEventKind.AttackStarted)
             {
-                int next=visualRandom.Next(2);variant=variant<0?visualRandom.Next(3):(variant+1+next)%3;
+                int next=visualRandom.Next(5);variant=variant<0?visualRandom.Next(6):(variant+1+next)%6;
                 parryAt=-10000;dodgeAt=successfulDodgeAt=-10000;
-                attackAt=session.ClockMs;critical=false;swingPlayed=false;
-                if(e.PerfectCounter){dodgeAt=successfulDodgeAt=-10000;owner.PlayerActor.transform.localPosition=ParallaxWorld.PlanPoint(500,590);owner.PlayerActor.EndSample();}
+                attackAt=session.ClockMs;attackSpeed=(float)session.AttackSpeed;critical=false;
+                skillAttack=!string.IsNullOrEmpty(e.SkillId);
+                if(e.PerfectCounter){dodgeAt=successfulDodgeAt=-10000;owner.PlayerActor.transform.localPosition=GroundPoint(500);owner.PlayerActor.EndSample();}
             }
-            if(e.Kind==SessionEventKind.ParryStarted){parryAt=session.ClockMs;parryHitAt=session.EnemyThreats[0].ImpactAtMs;attackAt=dodgeAt=successfulDodgeAt=-10000;owner.PlayerActor.transform.localPosition=ParallaxWorld.PlanPoint(500,590);}
+            if(e.Kind==SessionEventKind.ParryStarted)
+            {
+                if(Audio)Audio.PlayDodge();
+                parryAt=session.ClockMs;var threats=session.EnemyThreats;
+                parryHitAt=session.IsParryWindow?threats[0].ImpactAtMs:parryAt+session.Catalog.combat.dodgeActiveMs;
+                attackAt=dodgeAt=successfulDodgeAt=-10000;owner.PlayerActor.transform.localPosition=GroundPoint(500);
+            }
             if(e.Kind==SessionEventKind.DodgeStarted)
             {
+                if(Audio)Audio.PlayDodge();
                 parryAt=-10000;dodgeAt=session.ClockMs;dodgeVisualAt=visualTime;successfulDodgeAt=-10000;dodgeDirection=(int)e.Direction;
                 // Accepted dodge cancels the visual lead only while the scheduled hit is unconfirmed.
                 attackAt=-10000;
             }
-            if(e.Kind==SessionEventKind.EnemyDamaged){critical=e.Critical;if(Audio)Audio.Play(e.Critical?Audio.Critical:Audio.Hit,.75f);}
-            if(e.Kind==SessionEventKind.PlayerDamaged||e.Kind==SessionEventKind.Dodged||e.Kind==SessionEventKind.PerfectDodge||e.Kind==SessionEventKind.Parried||e.Kind==SessionEventKind.PerfectParry)
+            if(e.Kind==SessionEventKind.EnemyDamaged)
+            {
+                critical=e.Critical;
+                // Short blade/impact sound starts only on confirmed contact.
+                if(Audio)Audio.Play(Audio.Swing,.75f);
+            }
+            // Independent skill/party contacts do not start or replace the player's slash pose.
+            if(e.Kind==SessionEventKind.PlayerSkillStarted&&Audio)Audio.PlayAttackTouch();
+            if(e.Kind==SessionEventKind.PlayerSkillContact&&Audio)Audio.Play(Audio.Hit,.7f);
+            if(e.Kind==SessionEventKind.CompanionDamaged&&Audio)Audio.Play(Audio.Hit,string.IsNullOrEmpty(e.SkillId)?.38f:.6f);
+            if(e.Kind==SessionEventKind.PlayerDamaged||e.Kind==SessionEventKind.SkillShieldAbsorbed||e.Kind==SessionEventKind.Dodged||e.Kind==SessionEventKind.PerfectDodge||e.Kind==SessionEventKind.Parried||e.Kind==SessionEventKind.PerfectParry)
             {
                 enemyImpactAt=(float)(e.TimeMs/1000);impactRegion=Region(e.Direction);
-                if(e.Kind!=SessionEventKind.PlayerDamaged){successfulDodgeAt=(float)(e.TimeMs/1000);dodgeDirection=(int)e.Direction;if(Audio)Audio.Play((e.Kind==SessionEventKind.PerfectDodge||e.Kind==SessionEventKind.PerfectParry)?Audio.PerfectDodge:Audio.Dodge,(e.Kind==SessionEventKind.PerfectDodge||e.Kind==SessionEventKind.PerfectParry)?.65f:.3f);}
-                else if(Audio)Audio.Play(Audio.Hit,.65f);
+                enemyImpactPattern=e.PatternId;
+                // Dodge audio already played on accepted input, including perfect dodges.
+                if(e.Kind!=SessionEventKind.PlayerDamaged&&e.Kind!=SessionEventKind.SkillShieldAbsorbed){successfulDodgeAt=(float)(e.TimeMs/1000);dodgeDirection=(int)e.Direction;}
+                else if(e.Kind==SessionEventKind.PlayerDamaged&&Audio)Audio.Play(Audio.Hit,.6f);
 
             }
-            if(e.Kind==SessionEventKind.EnemyDefeated)deathAttackAge=(float)((session.ClockMs-attackAt)/1000);
+            if(e.Kind==SessionEventKind.EnemyDefeated)
+            {
+                deathAttackAge=(float)((session.ClockMs-attackAt)/1000);
+                defeatedEnemyMotion=owner.EnemyActor.CurrentMotion;defeatedEnemyFrame=owner.EnemyActor.CurrentFrame;
+                defeatedEnemyPosition=owner.EnemyActor.transform.localPosition;
+                if(owner.View.GoldPickup)owner.View.GoldPickup.Begin(e.GoldReward,Point(owner.EnemyActor.Body.bounds.center),session.Stage==10&&session.Phase==SessionPhase.StoryDialogue);
+            }
             if(e.Kind==SessionEventKind.PlayerDefeated){attackAt=-10000;owner.PlayerActor.SampleMotion(ActorMotion.Death,0,.55f);}
             if(e.Kind==SessionEventKind.StagePrepared)
             {
@@ -83,13 +140,17 @@ namespace LastBell
                 attackAt=dodgeAt=parryAt=parryHitAt=-10000;enemyImpactAt=successfulDodgeAt=-10000;lastStep=-1;
             }
             if(e.Kind==SessionEventKind.StageStarted){ResetCamera();owner.PlayerActor.SetDissolve(0);owner.EnemyActor.SetDissolve(0);}
+            if(SkillEffects)SkillEffects.OnEvent(e,variant);
+            if(Companions)Companions.OnEvent(e);
         }
         public void TickVisuals(float deltaSeconds)
         {
             if(!owner||session==null)return;
-            ApplyPause(session.IsPaused);if(!session.IsPaused)visualTime+=deltaSeconds;
+            if(practiceVisual!=null&&!session.ComboPractice.IsReplay)RestorePracticeVisual();
+            ApplyPause(session.CombatSuspended);if(!session.CombatSuspended)visualTime+=deltaSeconds;
             var tr=session.Transition;int kind=tr==null?-1:(int)tr.Kind;
-            if(lastKind==(int)TransitionKind.Travel&&kind!=lastKind)completedTravel+=1920;
+            if(lastKind==(int)TransitionKind.Travel&&kind!=lastKind)completedTravel+=activeTravelPixels;
+            if(kind==(int)TransitionKind.Travel)activeTravelPixels=ParallaxWorld.TravelDistance(tr);
             if(lastPhase!=(int)session.Phase||lastKind!=kind)
             {
                 roared=lanternPlayed=false;lastStep=-1;
@@ -98,12 +159,13 @@ namespace LastBell
                 lastPhase=(int)session.Phase;lastKind=kind;
             }
             bool battle=ShowsBattle(session);
-            owner.PlayerActor.transform.localPosition=ParallaxWorld.PlanPoint(500,590);
-            owner.EnemyActor.transform.localPosition=ParallaxWorld.PlanPoint(900,590);
+            owner.PlayerActor.transform.localPosition=GroundPoint(500);
+            owner.EnemyActor.transform.localPosition=GroundPoint(900);
             owner.PlayerActor.SetRunning(false);ResetCamera();
             if(Vfx)Vfx.ClearEffects(true);if(Banner)Banner.Show(session.Stage,-1,Reduced);if(Overlay)Overlay.Hide();if(ImpactDanger)ImpactDanger.Hide();
             if(World)World.ShowTravel(completedTravel,Reduced);
-            if(Audio)Audio.SetMood(!battle||session.Phase==SessionPhase.StoryDialogue?MusicMood.Lobby:session.Catalog.GetStage(session.Stage).kind=="boss"?MusicMood.Boss:MusicMood.Battle);
+            if(World)World.ShowStage(session.Stage,tr,session.EnemyHp<=0&&session.Phase!=SessionPhase.StoryDialogue,Reduced);
+            if(Audio){Audio.ResidentialArea=session.Stage>=11;Audio.SetMood(!battle||session.Phase==SessionPhase.StoryDialogue?MusicMood.Lobby:session.Catalog.GetStage(session.Stage).kind!="normal"?MusicMood.Boss:MusicMood.Battle);}
 
             if(tr!=null)
             {
@@ -111,20 +173,21 @@ namespace LastBell
                 switch(tr.Kind)
                 {
                     case TransitionKind.EnemyDefeat:
+                        owner.EnemyActor.transform.localPosition=defeatedEnemyPosition;
                         SampleAttack(deathAttackAge+t);
-                        owner.EnemyActor.SampleMotion(ActorMotion.Death,t,.55f);
+                        owner.EnemyActor.SampleClipFrame(defeatedEnemyMotion,defeatedEnemyFrame);
                         owner.EnemyActor.SetDissolve(t/.55f);
-                        if(Vfx)Vfx.SetDissolve(Point(owner.EnemyActor.transform.position),BodySize(owner.EnemyActor),t/.55f,Reduced);
+                        // Gold pixels leave immediately; no falling debris precedes collection.
                         break;
                     case TransitionKind.Travel:
                         owner.EnemyActor.SetDissolve(0);
                         if(!Reduced)owner.PlayerActor.SampleMotion(ActorMotion.Run,t);
-                        if(World)World.ShowTravel(completedTravel+1920*tr.Progress,Reduced);
-                        owner.EnemyActor.transform.localPosition=ParallaxWorld.PlanPoint(Reduced?900:2820-1920*tr.Progress,590);
+                        if(World)World.ShowTravel(completedTravel+activeTravelPixels*tr.Progress,Reduced);
+                        owner.EnemyActor.transform.localPosition=GroundPoint(Reduced?900:900+activeTravelPixels*(1-tr.Progress));
                         if(Reduced)owner.EnemyActor.SetDissolve(1-tr.Progress);
                         // Approved 400ms loop contacts at 0ms and 200ms.
                         int step=Mathf.FloorToInt(t*5);
-                        if(step!=lastStep&&!session.IsPaused){lastStep=step;if(Audio&&!Reduced)Audio.Play(Audio.Footstep,.24f);}
+                        if(step!=lastStep&&!session.IsPaused){lastStep=step;if(Audio&&!Reduced)Audio.Play(Audio.Footstep,.22f);}
                         break;
                     case TransitionKind.Arrival:
                         owner.EnemyActor.SetDissolve(0);if(Banner)Banner.Show(session.Stage,t-.2f,Reduced);break;
@@ -134,41 +197,55 @@ namespace LastBell
                         owner.PlayerActor.SetDissolve(Mathf.Clamp01((t-.2f)/.35f));
                         if(t<.55f&&Vfx)Vfx.SetDissolve(Point(owner.PlayerActor.transform.position),BodySize(owner.PlayerActor),Mathf.Clamp01((t-.2f)/.35f),Reduced);
                         if(Overlay)Overlay.ShowDeath(t);
-                        if(t>=.85f&&!lanternPlayed){lanternPlayed=true;if(Audio){Audio.SetMood(MusicMood.Lobby);Audio.Play(Audio.Lantern,.7f);}}
+                        if(t>=.85f&&!lanternPlayed){lanternPlayed=true;if(Audio){Audio.SetMood(MusicMood.Lobby);Audio.Play(Audio.Lantern,.38f);}}
                         break;
                 }
             }
             else if(session.Phase==SessionPhase.StoryDialogue)
             {
-                owner.EnemyActor.SetDissolve(1);
-                var story=session.Story;if(story!=null&&Overlay)Overlay.ShowStory(story.Speaker,story.Text);
+                if(session.Stage==10){owner.EnemyActor.SetDissolve(0);owner.EnemyActor.SampleClipFrame(defeatedEnemyMotion,defeatedEnemyFrame);}
+                else owner.EnemyActor.SetDissolve(1);
+                var story=session.Story;if(story!=null&&Overlay){Overlay.ShowStory(story.Speaker,story.Text,story.PortraitId);Overlay.ShowCompanionChoice(story.AwaitingCompanionChoice);}
+
                 if(Audio)Audio.SetMood(MusicMood.Lobby);
             }
             else if(battle)
             {
                 float attackAge=(float)((session.ClockMs-attackAt)/1000);
-                SampleAttack(attackAge);SampleDodge();SampleParry();SampleEnemy();
+                SampleEnemy();SampleAttack(attackAge);SampleDodge();SampleParry();
             }
             if(Telegraphs)Telegraphs.Sample(session,Reduced);
             if(EnemyEffects)EnemyEffects.Sample();
-            owner.PlayerActor.SetPlaybackPaused(session.IsPaused);owner.EnemyActor.SetPlaybackPaused(session.IsPaused);
+            if(Companions)Companions.Sample(session);
+            if(SkillEffects)SkillEffects.Render(session);
+            owner.PlayerActor.SetPlaybackPaused(session.CombatSuspended);owner.EnemyActor.SetPlaybackPaused(session.CombatSuspended);
         }
         void SampleAttack(float age)
         {
+            age*=attackSpeed;
             if(age<0||age>=.5f||attackAt<0)return;
             float strikeX=720;
             float x=CombatGeometry.AttackX(session.Catalog.GetStage(session.Stage).kind,age*1000)/.75f;
-            owner.PlayerActor.transform.localPosition=ParallaxWorld.PlanPoint(x,590);
+            owner.PlayerActor.transform.localPosition=GroundPoint(x);
             int frame=age<.12f?0:age<.2f?Mathf.Min(6,Mathf.FloorToInt((age-.12f)/.08f*7)):Mathf.Min(13,7+Mathf.FloorToInt((age-.2f)/.3f*7));
-            owner.PlayerActor.SampleClipFrame(ActorMotion.AttackUp,frame);
-            if(age>=.175f&&!swingPlayed){swingPlayed=true;if(Audio)Audio.Play(Audio.Swing,.65f);}
+            // Keep the approved approach pose for 120ms, then the authored slash
+            // reaches its contact pose on the existing 200ms gameplay hit.
+            if(IsDragonPlayer)owner.PlayerActor.SampleMotion(ActorMotion.Attack,Mathf.Max(0,age-.12f),.38f,.08f);
+            else owner.PlayerActor.SampleClipFrame(ActorMotion.AttackUp,frame);
             if(Vfx)
             {
                 bool up=variant<3;float hitY=up?(strikeX==680?330:strikeX==690?380:460):(strikeX==680||strikeX==690?545:530);
                 Vector2 from=PlanPoint(strikeX+(up?45:8),up?545:460),hit=PlanPoint(strikeX<700?875:900,hitY);
+                if(IsNewCreature(owner.EnemyActor.ArtId))hit=Point(owner.EnemyActor.CanonicalBodyPoint(.5f));
                 float angle=((variant%3)-1)*7*Mathf.Deg2Rad;Vector2 d=hit-from;
                 hit=from+new Vector2(d.x*Mathf.Cos(angle)-d.y*Mathf.Sin(angle),d.x*Mathf.Sin(angle)+d.y*Mathf.Cos(angle));
-                Vfx.SetSlash(from,hit,variant,age,critical);
+                Vfx.SetSlash(from,hit,variant,age,critical||skillAttack);
+                if(Vfx.SlashSprite)
+                {
+                    Vfx.SlashSprite.color=!skillAttack?Color.white:session.CurrentCharacterId=="dam"?new Color32(146,211,255,255):
+                        session.CurrentCharacterId=="rin"?new Color32(158,247,195,255):new Color32(255,219,123,255);
+                    if(skillAttack)Vfx.SlashSprite.rectTransform.sizeDelta*=1.2f;
+                }
             }
         }
         void SampleDodge()
@@ -176,39 +253,97 @@ namespace LastBell
             float age=session.Phase==SessionPhase.TutorialAttack?visualTime-dodgeVisualAt:(float)((session.ClockMs-dodgeAt)/1000);
             float move=session.Phase==SessionPhase.TutorialAttack?CombatGeometry.DodgeAmount(age*1000,50,150):session.DodgeVisualAmount;
             if(age<0||move<=0)return;
-            var pos=ParallaxWorld.PlanPoint(500,590);
+            var pos=GroundPoint(500);
             pos.x+=CombatGeometry.DodgeX((DodgeDirection)dodgeDirection)*ParallaxWorld.UnitsPerPixel/.75f*move;
             pos.y-=CombatGeometry.DodgeY((DodgeDirection)dodgeDirection)*ParallaxWorld.UnitsPerPixel/.75f*move;
             owner.PlayerActor.transform.localPosition=pos;
-            if(move<=.25f)owner.PlayerActor.SampleMotion(ActorMotion.Idle,0);
+            if(IsDragonPlayer)
+            {
+                // Follow the accepted dodge's actual travel/hold/recovery, including
+                // an immediate contact-frame dodge. Presentation never extends safety.
+                var motion=dodgeDirection==1?ActorMotion.DodgeBack:dodgeDirection==0?ActorMotion.DodgeUp:ActorMotion.DodgeForward;
+                var clip=owner.PlayerActor.GetClip(motion);
+                int last=clip.frames.Length-1,hold=clip.contactFrame>=0?clip.contactFrame:last/2;
+                int pose=move>=.999f?hold:age<.05f?Mathf.Min(hold,Mathf.FloorToInt(move*(hold+1))):Mathf.Min(last,hold+1+Mathf.FloorToInt((1-move)*(last-hold)));
+                owner.PlayerActor.SampleClipFrame(motion,pose);
+            }
+            else if(move<=.25f)owner.PlayerActor.SampleMotion(ActorMotion.Idle,0);
             else owner.PlayerActor.SampleSourceFrame(dodgeDirection==1?ActorMotion.DodgeBack:dodgeDirection==0?ActorMotion.DodgeUp:ActorMotion.DodgeForward,dodgeDirection==1?8:4);
         }
         void SampleParry()
         {
             double age=session.ClockMs-parryAt,hitAge=session.ClockMs-parryHitAt;
             if(age<0||hitAge>=180||parryAt<0)return;
-            owner.PlayerActor.transform.localPosition=ParallaxWorld.PlanPoint(500,590);
+            owner.PlayerActor.transform.localPosition=GroundPoint(500);
             int frame=hitAge<0?Mathf.FloorToInt((float)(age/System.Math.Max(1,parryHitAt-parryAt))*7):Mathf.Min(13,7+Mathf.FloorToInt((float)hitAge/180*7));
-            owner.PlayerActor.SampleClipFrame(ActorMotion.AttackUp,frame);
+            if(IsDragonPlayer)owner.PlayerActor.SampleMotion(ActorMotion.DodgeDown,(float)age/1000,(float)(parryHitAt-parryAt+180)/1000,(float)(parryHitAt-parryAt)/1000);
+            else owner.PlayerActor.SampleClipFrame(ActorMotion.AttackUp,frame);
         }
+        bool IsDragonPlayer => owner.PlayerActor.ArtId=="dragon_hero_on"||owner.PlayerActor.ArtId=="player_dragon_daren"||owner.PlayerActor.ArtId=="player_dragon_miel";
         void SampleEnemy()
         {
-            float impactAge=(float)(session.ClockMs/1000)-enemyImpactAt;
-            if(!session.IsEnemyStunned)
+            if(session.Phase==SessionPhase.ComboHint||session.IsEnemyStunned)return;
+            var pending=session.EnemyThreats;
+            EnemyThreatView next=null;
+            foreach(var threat in pending)
+                if(!threat.Resolved&&session.ClockMs>=threat.CueAtMs&&session.ClockMs<=threat.ImpactAtMs
+                    &&(next==null||threat.ImpactAtMs<next.ImpactAtMs))next=threat;
+            // The actual impact clock is the one source of truth. The following cue
+            // may already be visible, but cannot replace this attack or its return.
+            if(next!=null)
             {
-                if(impactAge>=0&&impactAge<.24f)owner.EnemyActor.SampleMotion(ActorMotion.Attack,.1f+impactAge,.34f,.1f);
-                else
+                bool follow=next.SequenceIndex>0;
+                float before=(float)(next.ImpactAtMs-session.ClockMs)/1000;
+                float lead=follow?.37f:.5f;
+                if(before<=lead)
                 {
-                    var ts=session.EnemyThreats;
-                    foreach(var t in ts)
+                    var motion=EnemyMotion(next.PatternId);var clip=owner.EnemyActor.GetClip(motion);
+                    if(clip==null)return;
+                    float contact=Mathf.Max(0,clip.ContactTime);
+                    float retreat=RetreatDistance(follow);
+                    float reach=AttackReach(clip),x,pose;
+                    if(before>.25f)
                     {
-                        if(session.ClockMs>=t.ReleaseAtMs&&session.ClockMs<=t.ImpactAtMs)
-                        {owner.EnemyActor.SampleMotion(ActorMotion.Attack,.02f+(float)((session.ClockMs-t.ReleaseAtMs)/(t.ImpactAtMs-t.ReleaseAtMs))*.08f,.34f,.1f);break;}
-                        if(session.ClockMs>=t.CueAtMs&&session.ClockMs<t.CueEndMs)
-                        {float q=(float)((session.ClockMs-t.CueAtMs)/(t.CueEndMs-t.CueAtMs));owner.EnemyActor.SampleMotion(ActorMotion.Attack,.08f*q*q,.34f,.1f);}
+                        float q=Smooth((lead-before)/(lead-.25f));
+                        x=900+retreat*q;pose=contact*.65f*q;
                     }
+                    else if(before>.16f){x=900+retreat;pose=contact*.65f;}
+                    else
+                    {
+                        float q=Smooth(1-before/.16f);
+                        x=Mathf.Lerp(900+retreat,900-reach,q);pose=Mathf.Lerp(contact*.65f,contact,q);
+                    }
+                    owner.EnemyActor.transform.localPosition=GroundPoint(x);
+                    owner.EnemyActor.SampleMotion(motion,pose);return;
                 }
             }
+            float since=(float)(session.ClockMs/1000)-enemyImpactAt;
+            if(since>=0&&since<.28f)
+            {
+                var motion=EnemyMotion(enemyImpactPattern);var clip=owner.EnemyActor.GetClip(motion);
+                if(clip!=null)
+                {
+                    float q=Smooth(since/.28f);
+                    owner.EnemyActor.transform.localPosition=GroundPoint(900-AttackReach(clip)*(1-q));
+                    owner.EnemyActor.SampleMotion(motion,Mathf.Lerp(Mathf.Max(0,clip.ContactTime),clip.Duration-.001f,q));return;
+                }
+            }
+            if(next!=null)owner.EnemyActor.SampleClipFrame(EnemyMotion(next.PatternId),0);
+        }
+        float RetreatDistance(bool follow)
+        {
+            string kind=session.Catalog.GetStage(session.Stage).kind;
+            float distance=follow?12:kind=="boss"?24:kind=="miniboss"?32:48;
+            float extent=owner.EnemyActor.Body?Mathf.Max(0,(owner.EnemyActor.Body.bounds.max.x-owner.EnemyActor.transform.position.x)/ParallaxWorld.UnitsPerPixel):0;
+            return Mathf.Min(distance,Mathf.Max(0,1264-900-extent));
+        }
+        float AttackReach(ActorClip clip)=>Mathf.Clamp(400+owner.EnemyActor.ContactOffsetX(clip)/ParallaxWorld.UnitsPerPixel,0,400);
+        public static bool IsNewCreature(string id)=>(id!=null&&id.StartsWith("dragon_"))||id=="wild_dog"||id=="grey_wolf"||id=="brown_bear"||id=="sewer_rat"||id=="drowned_resident"||id=="water_wraith"
+            ||id=="red_fox"||id=="wild_boar"||id=="badger"||id=="lynx"||id=="mountain_goat"||id=="great_stag";
+        public static ActorMotion EnemyMotion(string pattern)
+        {
+            switch(pattern){case "low_sweep":return ActorMotion.AttackLow;case "high_sweep":return ActorMotion.AttackHigh;
+                case "thrust":case "frontal_dash":return ActorMotion.AttackThrust;case "outer_arc":return ActorMotion.AttackRear;default:return ActorMotion.Attack;}
         }
         void ShowBoss(TransitionView tr)
         {
@@ -221,7 +356,7 @@ namespace LastBell
             if(Reduced)amount=0;
             float zoom=Mathf.Lerp(1,boss?1.6f:1.45f,amount);owner.WorldCamera.orthographicSize=3.1f/zoom;
             Vector3 focus=ParallaxWorld.PlanPoint(boss?880:900,boss?270:330),screen=ParallaxWorld.PlanPoint(boss?800:820,350);
-            var cameraPos=Vector3.Lerp(Vector3.zero,focus-screen/zoom,amount);cameraPos.z=-10;owner.WorldCamera.transform.position=cameraPos;
+            var cameraPos=Vector3.Lerp(new Vector3(0,-1.04f,0),focus-screen/zoom,amount);cameraPos.z=-10;owner.WorldCamera.transform.position=cameraPos;
             if(t>=enter&&t<enter+hold)
             {
                 float p=(t-enter)/hold;
@@ -231,7 +366,8 @@ namespace LastBell
             }
             if(Audio)Audio.SetMood(boss?MusicMood.Boss:MusicMood.Battle,t>=enter&&t<enter+hold);
         }
-        void ResetCamera(){if(owner&&owner.WorldCamera){owner.WorldCamera.orthographicSize=3.1f;owner.WorldCamera.transform.position=new Vector3(0,0,-10);}}
+        void ResetCamera(){if(owner&&owner.WorldCamera){owner.WorldCamera.orthographicSize=3.1f;owner.WorldCamera.transform.position=new Vector3(0,-1.04f,-10);}}
+        Vector3 GroundPoint(float x)=>ParallaxWorld.GroundPoint(x,session.Stage);
         Vector2 Point(Vector3 world)=>owner.ScreenPoint(world-owner.Effects.WorldOffset);
         Vector2 PlanPoint(float x,float y)=>Point(owner.WorldRoot.TransformPoint(ParallaxWorld.PlanPoint(x,y)));
         Vector2 BodySize(ActorView actor)

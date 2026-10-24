@@ -17,7 +17,24 @@ namespace LastBell
         public float HitFlashAmount { get; private set; }
         public float DissolveAmount { get; private set; }
         public bool PlaybackPaused => paused;
+        public string ArtId => art?.id;
+        // Imported sprite origin is its authored feet pivot. Do not normalize each
+        // frame's opaque bounds: airborne poses and squash must retain their motion.
+        public Vector3 FeetWorldPosition=>Body?Body.transform.TransformPoint(Vector3.zero):transform.position;
+        // Canonical opaque body height excludes transparent padding in the 128px cell.
+        public Vector3 CanonicalBodyPoint(float heightFraction)=>transform.TransformPoint(SpriteOffset+Vector3.up*(art==null?1:art.height)*heightFraction);
         public bool IsHitPlaying => transient && transientMotion == ActorMotion.Hit;
+        public ActorClip GetClip(ActorMotion motion) => ResolveClip(motion);
+        // Authored contact point is in source pixels, measured from the top-left.
+        // Use the canonical body scale so padding never changes the approach distance.
+        public float ContactOffsetX(ActorClip clip)
+        {
+            if (art == null || clip == null || clip.contactFrame < 0 || clip.contactFrame >= clip.frames.Length) return 0;
+            var sprite = clip.frames[clip.contactFrame];
+            float reference = clip.referenceHeightPixels > 0 ? clip.referenceHeightPixels : art.referenceHeightPixels;
+            float offset = (clip.effectOrigin.x - sprite.pivot.x) * art.height / Mathf.Max(1, reference);
+            return SpriteOffset.x + (Body.flipX ? -offset : offset);
+        }
 
         static readonly int FlashId = Shader.PropertyToID("_Flash");
         static readonly int DissolveId = Shader.PropertyToID("_Dissolve");
@@ -55,8 +72,10 @@ namespace LastBell
             => Play(rising ? ActorMotion.AttackUp : ActorMotion.AttackDown, duration, contactTime);
         public void PlayHit()
         {
-            flashAge = 0; Play(ActorMotion.Hit, .18f); ApplyMaterialProperties();
+            Play(ActorMotion.Hit, .18f); FlashHit();
         }
+        // Enemy damage changes only the shader, preserving its current attack pose.
+        public void FlashHit() { flashAge = 0; ApplyMaterialProperties(); }
         public void PlayDodge(int direction) => Play(DodgeMotion(direction), .28f);
         public void SetStunned(bool value) { stunned = value; }
         public void SetRunning(bool value) { running = value; }
@@ -147,7 +166,8 @@ namespace LastBell
             if (art == null) return null;
             var clip = art.FindClip(motion);
             if (clip != null && clip.frames.Length > 0) return clip;
-            if (motion == ActorMotion.AttackUp || motion == ActorMotion.AttackDown || motion == ActorMotion.Roar)
+            if (motion == ActorMotion.AttackUp || motion == ActorMotion.AttackDown || motion == ActorMotion.Roar ||
+                motion == ActorMotion.AttackLow || motion == ActorMotion.AttackHigh || motion == ActorMotion.AttackThrust || motion == ActorMotion.AttackRear)
                 return art.FindClip(ActorMotion.Attack);
             return null;
         }

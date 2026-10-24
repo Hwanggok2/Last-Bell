@@ -2,6 +2,7 @@ using UnityEngine;
 namespace LastBell
 {
     public enum EnemyEffectKind { Windup, Release, Impact, Counter }
+    public enum EnemyEffectStyle { Metal, Claw, Wood, Water }
     // Authored pool instances. Manual simulation follows Core time, including pause.
     public sealed class EnemyEffectBurst : MonoBehaviour
     {
@@ -14,22 +15,24 @@ namespace LastBell
         public string Pattern {get;private set;}
         public float Lifetime {get;private set;}
         public bool Active {get;private set;}
-        float simulatedAge,trailProgress;Transform world;
+        float simulatedAge,trailProgress;int effectTier;bool quarter;Transform world;EnemyEffectStyle style;
         readonly Vector3[] trailPoints=new Vector3[24];
         static readonly Color Gold=new Color32(233,184,90,255),Cream=new Color32(255,242,202,255),Mint=new Color32(158,227,212,255);
-        public static Vector3 Position(Transform root,float x,float y)=>root.TransformPoint(ParallaxWorld.PlanPoint(x/.75f,(y-CombatGeometry.HomeY)/.75f+590));
+        public static Vector3 Position(Transform root,float x,float y)=>root.TransformPoint(ParallaxWorld.PlanPoint(x/.75f,(y-CombatGeometry.HomeY)/.75f+ParallaxWorld.GroundPlanY));
         public void Clear(){Active=false;if(Particles)Particles.Stop(true,ParticleSystemStopBehavior.StopEmittingAndClear);foreach(var trail in Trails){trail.emitting=false;trail.Clear();trail.enabled=false;}foreach(var ribbon in WeaponRibbons)ribbon.enabled=false;}
-        public void StartBurst(Transform worldRoot,string pattern,double timeMs,float lifetime,bool parried=false)
+        public void StartBurst(Transform worldRoot,string pattern,double timeMs,float lifetime,bool parried=false,int particleCount=-1,int tier=0,bool residential=false,EnemyEffectStyle effectStyle=EnemyEffectStyle.Metal)
         {
+            effectTier=tier;quarter=residential;style=effectStyle;
+            foreach(var trail in Trails){trail.time=new[]{.06f,.1f,.14f,.16f,.18f}[tier];trail.widthMultiplier=.045f;trail.startColor=new Color(.9f,.8f,.55f,.35f);trail.endColor=new Color(.9f,.8f,.55f,0);}
             Clear();world=worldRoot;Pattern=pattern;StartedMs=timeMs;Lifetime=lifetime;simulatedAge=0;trailProgress=-1;Active=true;
             var at=parried?new Vector2(420,332):Contact(pattern);var source=Source(pattern);
             transform.position=Kind==EnemyEffectKind.Windup?Position(world,source.x,source.y):Position(world,at.x,at.y);
             var main=Particles.main;main.simulationSpace=ParticleSystemSimulationSpace.World;
             Particles.randomSeed=73;Particles.useAutoRandomSeed=false;
-            for(int i=0;i<Capacity;i++)
+            for(int i=0;i<Mathf.Min(Capacity,particleCount<0?Capacity:particleCount);i++)
             {
                 float angle=i*2.399963f,speed=110+i%5*34;Vector2 d=new Vector2(Mathf.Cos(angle),Mathf.Sin(angle));
-                Vector2 p=at,v=d*speed;float life=.26f,size=3+i%3;Color tint=i%3==0?Cream:Gold;
+                Vector2 p=at,v=d*speed;float life=.22f,size=3+i%3;Color tint=i%3==0?Cream:quarter?Mint:Gold;
                 if(Kind==EnemyEffectKind.Windup){p=source+d*(18+i*3);v=-d*(18+i*3)/lifetime;life=lifetime;size=1.8f;}
                 if(Kind==EnemyEffectKind.Release){p=Vector2.Lerp(source,at,i/(float)Capacity);v=new Vector2(-80,-4);life=lifetime;size=1.5f;}
                 if(Kind==EnemyEffectKind.Counter){p=new Vector2(375,388)+d*10;v=d*35;life=.12f;size=3;tint=Mint;}
@@ -40,6 +43,13 @@ namespace LastBell
                     else if(i>=18){p=new Vector2(at.x+(i-22)*3,438);v=new Vector2(d.x*45,-18-i%3*15);life=.34f;size=7+i%4;tint=new Color(.78f,.65f,.42f,.35f);}
                     else if(pattern=="outer_arc")v=new Vector2(d.x*70,-60-i*10);
                 }
+                if(style!=EnemyEffectStyle.Metal&&Kind!=EnemyEffectKind.Counter&&!parried)
+                {
+                    tint=style==EnemyEffectStyle.Water?new Color(.42f,.83f,.84f,.75f):style==EnemyEffectStyle.Wood?new Color(.7f,.49f,.28f,.75f):new Color(.77f,.73f,.60f,.65f);
+                    if(Kind==EnemyEffectKind.Windup){p=new Vector2(source.x,438)+d*10;v=new Vector2(d.x*8,-12);size=2;}
+                    if(Kind==EnemyEffectKind.Release&&style==EnemyEffectStyle.Claw){p=at+d*10;v=d*30;size=2;}
+                    if(Kind==EnemyEffectKind.Impact){size=i==0?12:2+i%3;v=d*(style==EnemyEffectStyle.Water?80:45);if(i==0)tint=Cream;}
+                }
                 var ep=new ParticleSystem.EmitParams{position=Position(world,p.x,p.y),velocity=new Vector3(v.x,-v.y,0)*(ParallaxWorld.UnitsPerPixel/.75f),
                     startLifetime=life,startSize=size*(ParallaxWorld.UnitsPerPixel/.75f),startColor=tint,rotation=i*37,applyShapeToPosition=false};
                 Particles.Emit(ep,1);
@@ -49,15 +59,17 @@ namespace LastBell
         public void Sample(double clock,bool reduced)
         {
             if(!Active)return;float age=(float)((clock-StartedMs)/1000);
-            if(reduced||age>=Lifetime||age<0){Clear();return;}
+            if((reduced&&Kind!=EnemyEffectKind.Impact)||age>=Lifetime||age<0){Clear();return;}
             if(age>simulatedAge){Particles.Simulate(age-simulatedAge,true,false,false);simulatedAge=age;}
-            if(Kind!=EnemyEffectKind.Release)return;
+            if(Kind!=EnemyEffectKind.Release||style==EnemyEffectStyle.Claw||style==EnemyEffectStyle.Wood)return;
             float p=Mathf.Clamp01(age/Lifetime);p*=p;
             if(p<=trailProgress)return;
             for(int i=0;i<Trails.Length;i++)
             {
+                if(i>=(effectTier>=3?2:1))continue;
                 var trail=Trails[i];var head=Path(Pattern,p,i);
                 trail.transform.position=Position(world,head.x,head.y);trail.enabled=true;trail.emitting=true;
+                if(style==EnemyEffectStyle.Water){trail.startColor=new Color(.35f,.85f,.9f,.4f);trail.endColor=new Color(.35f,.85f,.9f,0);}
                 if(trailProgress<0)trail.AddPosition(trail.transform.position);
                 else
                 {
@@ -69,7 +81,8 @@ namespace LastBell
                 // supplies the motion history behind its head.
                 if(i<WeaponRibbons.Length)
                 {
-                    var ribbon=WeaponRibbons[i];ribbon.enabled=true;
+                    var ribbon=WeaponRibbons[i];ribbon.enabled=true;ribbon.widthMultiplier=.045f;ribbon.startColor=new Color(.9f,.8f,.55f,.1f);ribbon.endColor=new Color(.9f,.8f,.55f,.35f);
+                    if(style==EnemyEffectStyle.Water){ribbon.startColor=new Color(.35f,.85f,.9f,.08f);ribbon.endColor=new Color(.35f,.85f,.9f,.35f);}
                     for(int j=0;j<trailPoints.Length;j++){float q=Mathf.Lerp(Mathf.Max(0,p-.55f),p,j/23f);var a=Path(Pattern,q,i);trailPoints[j]=Position(world,a.x,a.y);}
                     ribbon.SetPositions(trailPoints);
                 }

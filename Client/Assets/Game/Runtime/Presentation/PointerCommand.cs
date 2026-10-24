@@ -9,14 +9,16 @@ namespace LastBell
         public bool Interactable = true;
         public event Action Pressed;
         public RectTransform PressVisual;
+        public bool PixelPress;
+        public bool IsPressed {get;private set;}
         public void OnPointerDown(PointerEventData e)
         {
             if (Interactable && e.button == PointerEventData.InputButton.Left)
-            {if(PressVisual)PressVisual.localScale=Vector3.one*.9f;Pressed?.Invoke();}
+            {IsPressed=true;if(PressVisual&&!PixelPress)PressVisual.localScale=Vector3.one*.9f;Pressed?.Invoke();}
         }
         public void OnPointerUp(PointerEventData e){Release();}
         public void OnPointerExit(PointerEventData e){Release();}
         void OnDisable(){Release();}
-        void Release(){if(PressVisual)PressVisual.localScale=Vector3.one;}
+        void Release(){IsPressed=false;if(PressVisual)PressVisual.localScale=Vector3.one;}
     }
 }

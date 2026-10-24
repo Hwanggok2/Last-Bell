@@ -3,26 +3,53 @@ using UnityEngine.UI;
 
 namespace LastBell
 {
-    public enum UiSymbol { Up, Back, Down, Forward, Sword, Bell, Star }
+    public enum UiSymbol { Up, Back, Down, Forward, Sword, Bell, Star, Shield, Pause, Coin, Gem, Heart, Plus, Bag, Check, Cross }
 
     public sealed class SymbolGraphic : MaskableGraphic
     {
         public UiSymbol Symbol;
         public bool Filled = true;
+        public Sprite NormalSprite,PressedSprite,DisabledSprite;
+        public PointerCommand Command;
+        public DragonButtonFeedback ButtonFeedback;
+        Sprite lastSprite;
+        Sprite CurrentSprite=>!Filled||Command&&!Command.Interactable||ButtonFeedback&&ButtonFeedback.Button&&!ButtonFeedback.Button.IsInteractable()?DisabledSprite:
+            Command&&Command.IsPressed||ButtonFeedback&&ButtonFeedback.IsPressed?PressedSprite:NormalSprite;
+        public override Texture mainTexture=>NormalSprite&&CurrentSprite?CurrentSprite.texture:base.mainTexture;
+        void LateUpdate()
+        {
+            var sprite=CurrentSprite;if(sprite==lastSprite)return;lastSprite=sprite;SetVerticesDirty();SetMaterialDirty();
+        }
 
         protected override void OnPopulateMesh(VertexHelper vh)
         {
             vh.Clear();
             var r = GetPixelAdjustedRect();
+            if(NormalSprite&&CurrentSprite)
+            {
+                var sprite=CurrentSprite;float scale=Mathf.Min(r.width/sprite.rect.width,r.height/sprite.rect.height);
+                var size=sprite.rect.size*scale;var min=r.center-size*.5f;var max=min+size;
+                var uv=UnityEngine.Sprites.DataUtility.GetOuterUV(sprite);
+                var tint=new Color(1,1,1,color.a);
+                vh.AddVert(new Vector3(min.x,min.y),tint,new Vector2(uv.x,uv.y));
+                vh.AddVert(new Vector3(min.x,max.y),tint,new Vector2(uv.x,uv.w));
+                vh.AddVert(new Vector3(max.x,max.y),tint,new Vector2(uv.z,uv.w));
+                vh.AddVert(new Vector3(max.x,min.y),tint,new Vector2(uv.z,uv.y));
+                vh.AddTriangle(0,1,2);vh.AddTriangle(0,2,3);return;
+            }
             var c = r.center;
             float s = Mathf.Min(r.width, r.height) * .45f;
             if ((int)Symbol <= (int)UiSymbol.Forward)
             {
-                Vector2[] points = { new Vector2(0, 1), new Vector2(-1, -1), new Vector2(1, -1) };
-                float angle = Symbol == UiSymbol.Back ? 90 : Symbol == UiSymbol.Down ? 180 : Symbol == UiSymbol.Forward ? -90 : 0;
-                var q = Quaternion.Euler(0, 0, angle);
-                Triangle(vh, c + (Vector2)(q * points[0]) * (s+3), c + (Vector2)(q * points[1]) * (s+3), c + (Vector2)(q * points[2]) * (s+3),new Color32(8,18,29,255));
-                Triangle(vh, c + (Vector2)(q * points[0]) * s, c + (Vector2)(q * points[1]) * s, c + (Vector2)(q * points[2]) * s);
+                float angle=Symbol==UiSymbol.Back?90:Symbol==UiSymbol.Down?180:Symbol==UiSymbol.Forward?-90:0;
+                var q=Quaternion.Euler(0,0,angle);
+                foreach(float offset in new[]{.28f,-.30f})
+                {
+                    Vector2 left=c+(Vector2)(q*new Vector2(-.78f,-.25f+offset))*s;
+                    Vector2 tip=c+(Vector2)(q*new Vector2(0,.5f+offset))*s;
+                    Vector2 right=c+(Vector2)(q*new Vector2(.78f,-.25f+offset))*s;
+                    PixelVfxMesh.Line(vh,left,tip,3,color);PixelVfxMesh.Line(vh,tip,right,3,color);
+                }
                 return;
             }
             if (Symbol == UiSymbol.Star)

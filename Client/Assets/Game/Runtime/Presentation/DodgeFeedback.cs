@@ -7,6 +7,7 @@ namespace LastBell
     {
         public Text Label;
         public Image StaggerGain;
+        public bool DragonTheme;
         readonly double[] starts={-10000,-10000};
         string resultLabel="";
         Color resultColor;
@@ -19,8 +20,8 @@ namespace LastBell
         {
             clock=e.TimeMs;gainAt=clock;reduced=reducedMotion;
             if((e.Kind==SessionEventKind.PerfectDodge||e.Kind==SessionEventKind.PerfectParry)){starts[starts[0]<=starts[1]?0:1]=clock;labelAt=clock;resultLabel=e.Kind==SessionEventKind.PerfectParry?"완벽 쳐내기":"완벽";Label.text=resultLabel;Label.color=Mint;}
-            resultColor=Mint;
-            if(e.Kind==SessionEventKind.Parried){labelAt=clock;resultLabel="쳐냄";resultColor=Cream;}
+            resultColor=DragonTheme?DragonUiPalette.Success:Mint;
+            if(e.Kind==SessionEventKind.Parried){labelAt=clock;resultLabel="쳐냄";resultColor=DragonTheme?DragonUiPalette.Ink:Cream;}
             if(StaggerGain)
             {
                 var r=StaggerGain.rectTransform;r.anchorMin=new Vector2((float)e.StaggerBefore/threshold,0);r.anchorMax=new Vector2((float)(e.StaggerBefore+e.StaggerGained)/threshold,1);
@@ -41,6 +42,11 @@ namespace LastBell
             foreach(double start in starts)
             {
                 float age=(float)(clock-start);if(age<0||age>=420)continue;
+                if(DragonTheme)
+                {
+                    float p=age/420,radius=reduced?36:Mathf.Lerp(12/PixelScale,MaximumRadius,1-(1-p)*(1-p));
+                    DragonUiPalette.Ring(vh,rectTransform.rect,WaveCenter,radius,rectTransform.rect.height/180,PixelVfxMesh.Alpha(DragonUiPalette.Success,1-p*.8f));continue;
+                }
                 if(reduced){Ring(vh,WaveCenter,36,2,PixelVfxMesh.Alpha(Mint,1-age/420));continue;}
                 for(int i=0;i<2;i++)
                 {
