@@ -1,0 +1,33 @@
+{
+  "tool": "transfer_outfit",
+  "request": {
+    "frame_urls": [
+      "https://api.pixellab.ai/mcp/images/6d204d8a-93d6-4003-b8ef-fccfe4be043a/download",
+      "https://api.pixellab.ai/mcp/images/9fc5df72-a283-409e-8e5b-057ce42f24f9/download",
+      "https://api.pixellab.ai/mcp/images/7bff3f48-2cc6-46ab-963a-9bf081e689ff/download"
+    ],
+    "reference_image_url": "https://api.pixellab.ai/mcp/images/b6bef6dc-cd96-4909-85f4-64941281b01c/download",
+    "width": 32,
+    "height": 32,
+    "no_background": true,
+    "max_colors": 10,
+    "palette": [
+      "#202D38",
+      "#6B3F2A",
+      "#AB6C37",
+      "#F3BD83",
+      "#2D735D",
+      "#6DAF69",
+      "#C9433E",
+      "#8B2F35",
+      "#E8D9AD",
+      "#B7D3D0"
+    ],
+    "palette_name": "Coarse adventure ten-color palette",
+    "seed": 24102455,
+    "additional_instructions": "KEEP each of these THREE DIFFERENT source run poses and leg angles exactly: contact / stretched flight / opposite contact. Source images are poses only: replace every cream hood, gold/bell/dark outfit with the same new adventurer outfit from reference. Brown SHORT HAIR and visible warm FACE, red SHORT scarf, green tunic, fixed SMALL3x4 travel bag with cream roll, brown boots. Keep head/torso tilting strongly FORWARD as source. DO NOT stand upright or copy reference idle pose. Keep sword near hand at waist held forward/down-right, constant short blade length and unbroken hilt. No gold glow or painted effects. Whole reference character height22pixels at rest, same head6px and body proportions in all poses; common fixed ground at y28, feet may rise only in flight. Remove gray background to full transparency. Use flat large pixel blocks, not microtexture. No hood, bell, extra sword or cape."
+  },
+  "result": [
+    "id: 26494134-f50a-44c6-be05-4174bcba2165\njob_id: 26494134-f50a-44c6-be05-4174bcba2165\nframes: 3\nsize: 32x32px\ntransparent: True\ninstructions: KEEP each of these THREE DIFFERENT source run poses and leg angles exactly: contact / stretched flight / opposite contact. Source images are poses only: replace every cream hood, gold/bell/dark outfit with the same new adventurer outfit from reference. Brown SHORT HAIR and visible warm FACE, red SHORT scarf, green tunic, fixed SMALL3x4 travel bag with cream roll, brown boots. Keep head/torso tilting strongly FORWARD as source. DO NOT stand upright or copy reference idle pose. Keep sword near hand at waist held forward/down-right, constant short blade length and unbroken hilt. No gold glow or painted effects. Whole reference character height22pixels at rest, same head6px and body proportions in all poses; common fixed ground at y28, feet may rise only in flight. Remove gray background to full transparency. Use flat large pixel blocks, not microtexture. No hood, bell, extra sword or cape.\nseed: 24102455\nasset_id: 33c72701-9271-5c6f-8421-76e15d01df60\nasset_status: pending (saved when generation completes)\ncost: ~10 generations\nstatus: processing (~1-2 min)\n\nhint: get_image(job_id=\"26494134-f50a-44c6-be05-4174bcba2165\")"
+  ]
+}

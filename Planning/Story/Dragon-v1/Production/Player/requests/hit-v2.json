@@ -1,0 +1,16 @@
+{
+  "id": "hit-v2",
+  "tool": "animate_image",
+  "reason": "First hit result added bright VFX despite instructions; reject it and generate body-only flinch.",
+  "request": {
+    "first_frame_url": "https://api.pixellab.ai/mcp/images/b521d718-274a-47bb-9271-02911e0f8e7a/download",
+    "last_frame_url": "https://api.pixellab.ai/mcp/images/b521d718-274a-47bb-9271-02911e0f8e7a/download",
+    "frame_count": 6,
+    "no_background": true,
+    "seed": 24102422,
+    "action": "A SMALL BACKWARD FLINCH only, then return. The hooded figure briefly bends both knees and pulls shoulders/head LEFT away from the front, keeping the same short sword held close in the right hand. Six poses of this simple bodily reaction, not an attack. No other object enters the frame. Empty transparent space surrounding the sprite remains completely empty. No flash, glow, sparks, light shapes, magic, dust, particles, starburst or trails anywhere. Same cream hood/short tunic, navy face/limbs, ONE amber eye, ochre scarf, brown boots, ONE short steel sword with ochre hilt. Keep clothing, palette, proportions and right-facing silhouette identical. No bell/cape/extra limb/extra weapon/VFX. Fixed48canvas, native pixels, fixed root/scale."
+  },
+  "result": [
+    "id: 9c658da7-cd0c-4f2d-8b91-261594a350fe\njob_id: 9c658da7-cd0c-4f2d-8b91-261594a350fe\naction: A SMALL BACKWARD FLINCH only, then return. The hooded figure briefly bends both knees and pulls shoulders/head LEFT away from the front, keeping the same short sword held close in the right hand. Six poses of this simple bodily reaction, not an attack. No other object enters the frame. Empty transparent space surrounding the sprite remains completely empty. No flash, glow, sparks, light shapes, magic, dust, particles, starburst or trails anywhere. Same cream hood/short tunic, navy face/limbs, ONE amber eye, ochre scarf, brown boots, ONE short steel sword with ochre hilt. Keep clothing, palette, proportions and right-facing silhouette identical. No bell/cape/extra limb/extra weapon/VFX. Fixed48canvas, native pixels, fixed root/scale.\nframes: 6\nsize: 48x48px\ntransparent: True\nlast_frame: yes (interpolating to it)\nseed: 24102422\nasset_id: 263d6f85-4e49-5393-b4bc-28d2378f28b0\nasset_status: pending (saved when generation completes)\ncost: 1 generation\nstatus: processing (~30-180s)\n\nhint: get_image(job_id=\"9c658da7-cd0c-4f2d-8b91-261594a350fe\")"
+  ]
+}

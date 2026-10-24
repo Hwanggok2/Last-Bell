@@ -1,0 +1,51 @@
+{
+  "entry": "Lobby only, AudioCredits button",
+  "close": "Close button or Escape; no game/save mutation",
+  "modal": "Full-screen input blocker, centered scroll panel; saved prefab, layout owned by FeedbackLayout",
+  "640x360": {
+    "entry": [
+      100,
+      4,
+      76,
+      48
+    ],
+    "dialog": [
+      16,
+      16,
+      608,
+      328
+    ],
+    "scroll": [
+      36,
+      70,
+      568,
+      196
+    ],
+    "buttonsY": 280,
+    "buttonHeight": 48
+  },
+  "960x540": {
+    "entry": [
+      120,
+      8,
+      76,
+      48
+    ],
+    "dialog": [
+      100,
+      30,
+      760,
+      480
+    ],
+    "scroll": [
+      120,
+      84,
+      720,
+      348
+    ],
+    "buttonsY": 446,
+    "buttonHeight": 48
+  },
+  "sourceLink": "https://freesound.org/people/SonoFxAudio/sounds/649361/",
+  "licenseLink": "https://creativecommons.org/licenses/by/4.0/"
+}

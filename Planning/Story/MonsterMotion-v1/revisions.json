@@ -1,0 +1,19 @@
+[
+  {
+    "id": "bell_hound",
+    "motion": "AttackLow",
+    "accepted": true,
+    "previewOnly": true,
+    "loop": false,
+    "jobId": "633380b7-2ad0-46db-b4c0-26216ec02082",
+    "cleanupJobId": "d63635d6-7966-43f2-97bd-671265e99a8e",
+    "totalFrames": 9,
+    "frameDirectory": "Revisions/bell-hound-low-clean",
+    "contactFrame": 4,
+    "action": "One physical low pounce and bite, then recover to the starting stance. This is a four-legged armored DOG with a closed jaw, not a weapon or machine. The whole body crouches, hind legs push, front paws reach forward to the LEFT, jaw opens and closes once near ground height, all four paws land, body returns to start. Show clear leg articulation and weight transfer. Keep the existing character identity, four legs, armor, tail and LEFT-facing side view in every frame. Camera locked, character fully inside 128x128 frame. No beams, rings, projectiles, muzzle flash, glowing circles, smoke, duplicate heads, extra legs, or magic effects. One continuous motion; final pose matches input.",
+    "cleanupRecord": "id: d63635d6-7966-43f2-97bd-671265e99a8e\njob_id: d63635d6-7966-43f2-97bd-671265e99a8e\nmode: text\nframes: 3\nsize: 128x128px\ntransparent: True\nedit: Erase only the disconnected white curved streak, white ring and white floating dots in empty transparent space to the LEFT of the dog's nose in ALL three input frames. Replace those effect pixels with full transparency. Keep the dog and all its armor, limbs, tail, black outline, pose, position, scale, original colored pixels and pixel-art style absolutely unchanged. Do not add anything. This is technical cleanup removing an unwanted projectile/magic effect, not a redesign.\nseed: 102204\nasset_id: fe21b22d-1715-5fb8-940c-0895e60ae564\nasset_status: pending (saved when generation completes)\ncost: ~10 generations\nstatus: processing (~30-90s)\n\nhint: get_image(job_id=\"d63635d6-7966-43f2-97bd-671265e99a8e\")",
+    "review": "Removed disconnected ring effects from frames 3/4/5 via PixelLab edit. Four-legged crouch and open-jaw bite return to the original stance. Original five runtime monsters unchanged.",
+    "download": "https://api.pixellab.ai/mcp/images/633380b7-2ad0-46db-b4c0-26216ec02082/download",
+    "cleanupDownload": "https://api.pixellab.ai/mcp/images/d63635d6-7966-43f2-97bd-671265e99a8e/download"
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "tool": "pixelart_workbench edit",
+  "source": "gallery:825f390d-c2ae-5e79-90cc-5da6bf0ac4f9",
+  "changes": [
+    {
+      "operation": "copy_region",
+      "layer": "image",
+      "frames": [
+        4,
+        5,
+        6
+      ],
+      "source_layer": "image",
+      "source_frame": 3,
+      "region": [
+        26,
+        8,
+        36,
+        39
+      ],
+      "at": [
+        26,
+        8
+      ],
+      "reason": "Frames4-6 should hold the upright sword but generation overlaid bright external VFX. The inspected clean guard in frame3 has the same wrist position. Restore only the sword/guard rectangle including transparency; preserve body motion outside it."
+    }
+  ],
+  "result": [
+    "image_id: 644d6460-80f1-43af-82de-903d0d8d0a11\ncanvas: 48x48, 9 frame(s)\n1. copy_region: 247 px changed, 1056 matched\nsheet rows: frames [4, 5, 6]\npalette (18): #182b32ff x1283, #f7e4b0ff x721, #263f51ff x265, #795039ff x213, #a1a9a2ff x195, #e4aa41ff x140, #996a3bff x54, #1f3543ff x15, #ca9034ff x3, #3a484fff x2, #31352dff x1, #716f6cff x1, #7b6c5bff x1, #808080ff x1, #d0993eff x1, #6f5323ff x1, … +2 more\ndownload https://api.pixellab.ai/mcp/pixel-tools/644d6460-80f1-43af-82de-903d0d8d0a11/: frames.png, animation.gif\nnext: edit 644d6460-80f1-43af-82de-903d0d8d0a11 --changes […]"
+  ]
+}

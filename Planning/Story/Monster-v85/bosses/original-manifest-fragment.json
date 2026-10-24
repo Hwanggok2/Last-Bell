@@ -1,0 +1,269 @@
+{
+  "actors": [
+    {
+      "id": "bell_knight_concept",
+      "facesRight": false,
+      "height": 4,
+      "referenceHeightPixels": 92,
+      "clips": [
+        {
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "legacyStun": false,
+          "referenceHeightPixels": 0,
+          "motion": "Idle",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Inputs/bell_knight.png"
+          ],
+          "sourceFrames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true,
+          "contactFrame": -1,
+          "staticFallback": true,
+          "sourceId": "bell_knight-fresh-v3-idle"
+        },
+        {
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "legacyStun": false,
+          "referenceHeightPixels": 0,
+          "motion": "Attack",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/bell_knight/Attack/frame-000.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/bell_knight/Attack/frame-001.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/bell_knight/Attack/frame-002.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/bell_knight/Attack/frame-003.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/bell_knight/Attack/frame-004.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/bell_knight/Attack/frame-005.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/bell_knight/Attack/frame-006.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/bell_knight/Attack/frame-007.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/bell_knight/Attack/frame-008.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/bell_knight/Attack/frame-009.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/bell_knight/Attack/frame-010.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/bell_knight/Attack/frame-011.png"
+          ],
+          "frameDurationsMs": [
+            80,
+            70,
+            85,
+            100,
+            100,
+            50,
+            80,
+            60,
+            70,
+            80,
+            75,
+            90
+          ],
+          "contactFrame": 6,
+          "loop": false,
+          "sourceFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "sourceId": "bell_knight-fresh-v3-attack",
+          "fps": 12.76595744680851,
+          "staticFallback": false
+        },
+        {
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "legacyStun": false,
+          "referenceHeightPixels": 0,
+          "motion": "Stun",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/bell_knight/Stun/frame-000.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/bell_knight/Stun/frame-001.png"
+          ],
+          "frameDurationsMs": [
+            350,
+            350
+          ],
+          "contactFrame": -1,
+          "loop": true,
+          "sourceFrames": [
+            0,
+            1
+          ],
+          "sourceId": "bell_knight-fresh-v3-stun",
+          "fps": 2.857142857142857,
+          "staticFallback": false
+        }
+      ]
+    },
+    {
+      "id": "chain_jailer",
+      "facesRight": false,
+      "height": 4,
+      "referenceHeightPixels": 92,
+      "clips": [
+        {
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "legacyStun": false,
+          "referenceHeightPixels": 0,
+          "motion": "Idle",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Inputs/chain_jailer.png"
+          ],
+          "sourceFrames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true,
+          "contactFrame": -1,
+          "staticFallback": true,
+          "sourceId": "chain_jailer-fresh-v3-idle"
+        },
+        {
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "legacyStun": false,
+          "referenceHeightPixels": 0,
+          "motion": "Attack",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/chain_jailer/Attack/frame-000.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/chain_jailer/Attack/frame-001.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/chain_jailer/Attack/frame-002.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/chain_jailer/Attack/frame-003.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/chain_jailer/Attack/frame-004.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/chain_jailer/Attack/frame-005.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/chain_jailer/Attack/frame-006.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/chain_jailer/Attack/frame-007.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/chain_jailer/Attack/frame-008.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/chain_jailer/Attack/frame-009.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/chain_jailer/Attack/frame-010.png"
+          ],
+          "frameDurationsMs": [
+            80,
+            90,
+            100,
+            90,
+            70,
+            60,
+            60,
+            80,
+            80,
+            70,
+            100
+          ],
+          "contactFrame": 4,
+          "loop": false,
+          "sourceFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "sourceId": "chain_jailer-fresh-v3-attack",
+          "fps": 12.5,
+          "staticFallback": false
+        },
+        {
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "legacyStun": false,
+          "referenceHeightPixels": 0,
+          "motion": "Stun",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/chain_jailer/Stun/frame-000.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/chain_jailer/Stun/frame-001.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/chain_jailer/Stun/frame-002.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/chain_jailer/Stun/frame-003.png"
+          ],
+          "frameDurationsMs": [
+            230,
+            200,
+            230,
+            200
+          ],
+          "contactFrame": -1,
+          "loop": true,
+          "sourceFrames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "sourceId": "chain_jailer-fresh-v3-stun",
+          "fps": 4.651162790697675,
+          "staticFallback": false
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Inputs/bell_knight.png",
+      "source": "Planning/Story/MonsterMotionFresh-v3/Inputs/bell_knight.png",
+      "sha256": "d7a37b5f28e5426f761dfa016bf6c4936bef819641abdcd3bc6785c6bd20ba34",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Inputs/chain_jailer.png",
+      "source": "Planning/Story/MonsterMotionFresh-v3/Inputs/chain_jailer.png",
+      "sha256": "280c628de0874b7f32f72fed0ccef80a20b8e5fc69416c27c11abd8cd8b3dbb5",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    }
+  ]
+}

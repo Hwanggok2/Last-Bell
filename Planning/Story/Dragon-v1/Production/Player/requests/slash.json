@@ -1,0 +1,15 @@
+{
+  "id": "slash",
+  "tool": "animate_image",
+  "request": {
+    "first_frame_url": "https://api.pixellab.ai/mcp/images/b521d718-274a-47bb-9271-02911e0f8e7a/download",
+    "last_frame_url": "https://api.pixellab.ai/mcp/images/b521d718-274a-47bb-9271-02911e0f8e7a/download",
+    "frame_count": 8,
+    "no_background": true,
+    "seed": 24102412,
+    "action": "A SINGLE decisive DIAGONAL SWORD SLASH then recovery, in place facing RIGHT. Frame1-2 anticipate by rotating sword hand UP and BACK above shoulder; frame3-4 rotate the arm in a broad downward cutting arc across the FRONT to lower-right; frame5 follow through with torso twist and bent knees; frames6-8 recover to starting guard. The blade cuts with its EDGE through a sweeping arc, NEVER thrusts forward or pokes. No dash across canvas: runtime moves actor. Same single short sword stays connected to same hand, same blade length. No sword trail or magic effect; separate runtime VFX handles the slash. Preserve the EXACT small cream hood, dark navy face with one amber eye, cream short tunic, ochre neck scarf, navy arms/leggings, brown boots and ONE short steel sword with ochre hilt in every frame. No bell, new clothing, cape, extra limb, extra weapon, particles or background. Keep native coarse pixels, same body size and right-facing side view. Fixed 48x48 camera and fixed root; no camera shake or global travel."
+  },
+  "result": [
+    "1 validation error for call[animate_image]\naction\n  String should have at most 1000 characters [type=string_too_long, input_value='A SINGLE decisive DIAGON...shake or global travel.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+  ]
+}

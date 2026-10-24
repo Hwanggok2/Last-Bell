@@ -1,0 +1,512 @@
+{
+  "version": 3,
+  "status": "complete",
+  "actorCount": 10,
+  "selectedFrameCount": 146,
+  "visualReview": {
+    "method": "Full contact sheets and selected frames; browser playback sampled at 1x and 0.5x; paused attack contact poses and loop boundaries. This is sprite-level review, not Unity runtime QA.",
+    "actors": [
+      {
+        "id": "gate_sentry",
+        "passed": true,
+        "notes": "1×/0.5× 재생 화면과 전체 프레임을 검수. 창을 세워 준비한 뒤 5번 프레임에서 수평으로 한 번 찌르며 앞무릎이 굽고 뒷발이 버틴다. 창끝-자루-양손 연결이 유지되고 8~11번에서 회수해 기본 자세로 복귀한다. 기절은 무릎이 접히고 창이 바닥에 내려간 4프레임 왕복 루프이며 공격과 실루엣이 다르다. Hit은 찌르는 현재 자세에서 흰색으로 변한 뒤 같은 자세와 색으로 돌아오는 것을 브라우저에서 확인했다.",
+        "selectionRecord": "Review/gate_sentry-selection.json",
+        "clips": [
+          {
+            "motion": "Attack",
+            "frameCount": 13,
+            "durationMs": 870,
+            "contactFrame": 5,
+            "contactTimeMs": 395,
+            "loop": false
+          },
+          {
+            "motion": "Stun",
+            "frameCount": 4,
+            "durationMs": 770,
+            "contactFrame": -1,
+            "contactTimeMs": null,
+            "loop": true
+          },
+          {
+            "motion": "Hit",
+            "frameCount": 0,
+            "durationMs": 120,
+            "contactFrame": null,
+            "contactTimeMs": null,
+            "loop": false
+          }
+        ]
+      },
+      {
+        "id": "bell_hound",
+        "passed": true,
+        "notes": "전체 프레임과 1×/0.5× 재생 화면 검수. 선택 1~2에서 다리가 압축되고 3번에서 원통 머리가 왼쪽으로 최대 전진하며 뒷다리가 몸을 민다. 한 번의 접촉 뒤 4~8에서 고개와 다리를 회수한다. 원통 머리·네 다리·꼬리 종의 연결과 접지선이 유지된다. 기절은 앞다리와 몸통이 바닥으로 내려가고 원통 머리가 낮게 놓인 자세이며 작은 꼬리 흔들림만 남는다.",
+        "selectionRecord": "Review/bell_hound-selection.json",
+        "clips": [
+          {
+            "motion": "Attack",
+            "frameCount": 10,
+            "durationMs": 715,
+            "contactFrame": 3,
+            "contactTimeMs": 260,
+            "loop": false
+          },
+          {
+            "motion": "Stun",
+            "frameCount": 4,
+            "durationMs": 750,
+            "contactFrame": -1,
+            "contactTimeMs": null,
+            "loop": true
+          },
+          {
+            "motion": "Hit",
+            "frameCount": 0,
+            "durationMs": 120,
+            "contactFrame": null,
+            "contactTimeMs": null,
+            "loop": false
+          }
+        ]
+      },
+      {
+        "id": "gate_lock",
+        "passed": true,
+        "notes": "컨택트 시트 및 1×/0.5× 재생에서 몸을 뒤로 틀어 주먹을 당긴 준비, 4번의 큰 주먹 전방 타격, 주먹 회수를 확인. 앞주먹은 어깨-팔꿈치와 연결되어 있고 등 가로대도 몸에 붙어 함께 기운다. 발 기준선은 유지된다. 기절은 무릎과 몸통이 낮게 접혀 큰 주먹이 바닥에 놓이는 별도 실루엣이며 005~007 왕복에서 부품 연결을 확인했다.",
+        "selectionRecord": "Review/gate_lock-selection.json",
+        "clips": [
+          {
+            "motion": "Attack",
+            "frameCount": 9,
+            "durationMs": 710,
+            "contactFrame": 4,
+            "contactTimeMs": 340,
+            "loop": false
+          },
+          {
+            "motion": "Stun",
+            "frameCount": 4,
+            "durationMs": 870,
+            "contactFrame": -1,
+            "contactTimeMs": null,
+            "loop": true
+          },
+          {
+            "motion": "Hit",
+            "frameCount": 0,
+            "durationMs": 120,
+            "contactFrame": null,
+            "contactTimeMs": null,
+            "loop": false
+          }
+        ]
+      },
+      {
+        "id": "cracked_blade",
+        "passed": true,
+        "notes": "1×/0.5× 및 접촉 정지 화면에서 검을 머리 위로 든 준비, 몸통과 앞무릎이 내려가는 단일 내려치기, 검을 다시 세우는 회수 확인. 선택 4번이 실제 접촉. 검날-손잡이-손 연결과 투구 외형 유지. 기절은 몸을 앞으로 숙이고 무릎을 굽힌 채 검 끝을 낮게 늘어뜨린다. 1×와 0.5× 재생 및 4프레임 시트에서 검·손·투구 연결과 숙인 자세의 작은 흔들림 확인. 공격의 머리 위 준비 자세와 뚜렷이 구별됨. Hit은 현재 자세의 알파를 보존하는 공통 45ms 흰색 유지/75ms 복귀 효과.",
+        "selectionRecord": "Review/cracked_blade-selection.json",
+        "clips": [
+          {
+            "motion": "Attack",
+            "frameCount": 11,
+            "durationMs": 755,
+            "contactFrame": 4,
+            "contactTimeMs": 325,
+            "loop": false
+          },
+          {
+            "motion": "Stun",
+            "frameCount": 4,
+            "durationMs": 860,
+            "contactFrame": -1,
+            "contactTimeMs": null,
+            "loop": true
+          },
+          {
+            "motion": "Hit",
+            "frameCount": 0,
+            "durationMs": 120,
+            "contactFrame": null,
+            "contactTimeMs": null,
+            "loop": false
+          }
+        ]
+      },
+      {
+        "id": "bell_knight",
+        "passed": true,
+        "notes": "1×/0.5× 및 접촉 정지 화면에서 도끼를 어깨 뒤로 들고 방패로 몸을 지탱한 뒤 한 번 내려치는 동작 확인. 선택 6번에 도끼가 낮게 닿고 앞무릎이 굽는다. 도끼·방패의 손 연결과 발 기준 유지. 기절은 한쪽 무릎을 꿇고 투구를 숙인 채 도끼 자루를 지탱하고 방패를 바닥에 눕힌다. 1×와 0.5×에서 두 프레임의 작은 흔들림만 반복. 도끼 바깥 검은 곡선이 생긴 원본002~003은 제외. Hit은 현재 자세의 알파를 보존하는 공통 45ms 흰색 유지/75ms 복귀 효과.",
+        "selectionRecord": "Review/bell_knight-selection.json",
+        "clips": [
+          {
+            "motion": "Attack",
+            "frameCount": 12,
+            "durationMs": 940,
+            "contactFrame": 6,
+            "contactTimeMs": 485,
+            "loop": false
+          },
+          {
+            "motion": "Stun",
+            "frameCount": 2,
+            "durationMs": 700,
+            "contactFrame": -1,
+            "contactTimeMs": null,
+            "loop": true
+          },
+          {
+            "motion": "Hit",
+            "frameCount": 0,
+            "durationMs": 120,
+            "contactFrame": null,
+            "contactTimeMs": null,
+            "loop": false
+          }
+        ]
+      },
+      {
+        "id": "chain_jailer",
+        "passed": true,
+        "notes": "1×/0.5× 및 접촉 정지 화면에서 갈고리를 당긴 준비 후 몸과 위쪽 사슬이 함께 기울며 한 번 왼쪽으로 뻗는 동작 확인. 선택 4번이 접촉. 두 갈고리와 마스크가 유지되고 회수 후 기본 매달린 자세로 복귀. 기절은 고개와 어깨가 아래로 처지고 두 갈고리가 낮게 늘어진 매달린 자세. 1×와 0.5×, 루프 끝 정지 자세에서 마스크·두 위쪽 사슬·두 갈고리 유지와 작은 좌우 흔들림 확인. 세 번째 갈고리가 생겼던 이전 후보는 사용하지 않음. Hit은 현재 자세의 알파를 보존하는 공통 45ms 흰색 유지/75ms 복귀 효과.",
+        "selectionRecord": "Review/chain_jailer-selection.json",
+        "clips": [
+          {
+            "motion": "Attack",
+            "frameCount": 11,
+            "durationMs": 880,
+            "contactFrame": 4,
+            "contactTimeMs": 360,
+            "loop": false
+          },
+          {
+            "motion": "Stun",
+            "frameCount": 4,
+            "durationMs": 860,
+            "contactFrame": -1,
+            "contactTimeMs": null,
+            "loop": true
+          },
+          {
+            "motion": "Hit",
+            "frameCount": 0,
+            "durationMs": 120,
+            "contactFrame": null,
+            "contactTimeMs": null,
+            "loop": false
+          }
+        ]
+      },
+      {
+        "id": "chain_dancer",
+        "passed": true,
+        "notes": "1×/0.5× 재생 및 타격 정지 화면 확인. 오른팔 뒤로 사슬을 세워 준비하고 보폭을 넓히며 몸을 왼쪽으로 돌려 한 번 낮게 내리친다. 선택5에서 사슬 끝이 가장 낮은 전방 접촉 위치. 두 팔·손과 사슬 연결, 후드와 허리장식 유지. 회수 후 제공 기본 자세로 복귀. 1×/0.5×에서 후드를 깊게 숙이고 두 팔과 사슬이 낮게 처진 상태 유지. 루프는 사슬 끝만 작은 왕복으로 움직이며 몸이 다시 서거나 공격하지 않음. Hit은 현재 자세 알파를 보존하는 공통 흰색 점멸.",
+        "selectionRecord": "Review/chain_dancer-selection.json",
+        "clips": [
+          {
+            "motion": "Attack",
+            "frameCount": 11,
+            "durationMs": 825,
+            "contactFrame": 5,
+            "contactTimeMs": 405,
+            "loop": false
+          },
+          {
+            "motion": "Stun",
+            "frameCount": 4,
+            "durationMs": 860,
+            "contactFrame": -1,
+            "contactTimeMs": null,
+            "loop": true
+          },
+          {
+            "motion": "Hit",
+            "frameCount": 0,
+            "durationMs": 120,
+            "contactFrame": null,
+            "contactTimeMs": null,
+            "loop": false
+          }
+        ]
+      },
+      {
+        "id": "chain_puppet",
+        "passed": true,
+        "notes": "1×/0.5× 및 접촉 정지 화면에서 오른쪽 사슬팔을 당기고 몸을 돌린 뒤 왼쪽으로 추를 한 번 뻗는 동작 확인. 선택 6번에서 사슬이 곧게 펴지고 무릎/보폭이 함께 바뀐다. 두 팔과 두 추, 사슬 연결이 유지됨. 1×/0.5×와 두 프레임 정지 화면에서 머리가 왼쪽 아래로 처지고 무릎을 굽힌 탈진 자세 확인. 두 사슬팔과 직사각형 추 두 개는 고정되며, 머리만1px 아래로 움직였다 복귀. PixelLab 정확 픽셀 편집으로 머리 크기·목 연결을 보존했고 추가 추/연기/머리 확대 후보는 모두 제외. Hit은 현재 자세를 보존하는 흰색 효과.",
+        "selectionRecord": "Review/chain_puppet-selection.json",
+        "clips": [
+          {
+            "motion": "Attack",
+            "frameCount": 13,
+            "durationMs": 950,
+            "contactFrame": 6,
+            "contactTimeMs": 450,
+            "loop": false
+          },
+          {
+            "motion": "Stun",
+            "frameCount": 2,
+            "durationMs": 840,
+            "contactFrame": -1,
+            "contactTimeMs": null,
+            "loop": true
+          },
+          {
+            "motion": "Hit",
+            "frameCount": 0,
+            "durationMs": 120,
+            "contactFrame": null,
+            "contactTimeMs": null,
+            "loop": false
+          }
+        ]
+      },
+      {
+        "id": "pendulum_warden",
+        "passed": true,
+        "notes": "1×/0.5× 및 타격 정지에서 방패를 안쪽으로 모은 준비 후 몸통과 앞다리에 체중을 실어 왼쪽으로 한 번 미는 방패 공격 확인. 선택6에서 방패가 가장 전방에 있고 팔이 방패를 지탱함. 원형 진자·상단 고리·시계 몸체 유지, 기본 자세 복귀. 큰 원호가 생긴009 제외. 1×/0.5× 및 정지 화면에서 시계 몸통이 오른쪽 방패에 기대어 내려앉고 왼팔이 낮게 늘어진 자세 확인. 원래 작은 주먹과 원형 진자 크기 유지. 루프 전체가 기운 상태를 유지하며 공격이나 일어서기 동작 없이 작은 흔들림만 있음. Hit은 현재 자세의 알파를 유지하는 공통 흰색 점멸.",
+        "selectionRecord": "Review/pendulum_warden-selection.json",
+        "clips": [
+          {
+            "motion": "Attack",
+            "frameCount": 12,
+            "durationMs": 970,
+            "contactFrame": 6,
+            "contactTimeMs": 500,
+            "loop": false
+          },
+          {
+            "motion": "Stun",
+            "frameCount": 4,
+            "durationMs": 890,
+            "contactFrame": -1,
+            "contactTimeMs": null,
+            "loop": true
+          },
+          {
+            "motion": "Hit",
+            "frameCount": 0,
+            "durationMs": 120,
+            "contactFrame": null,
+            "contactTimeMs": null,
+            "loop": false
+          }
+        ]
+      },
+      {
+        "id": "hook_hound",
+        "passed": true,
+        "notes": "전체 프레임 접지선과 원본 대비 픽셀 보존 검사 통과. 모든 지지발 하단 y113. 앞으로 파고드는 x 이동과 접촉 프레임6 유지. 스테이지12에서 1×/0.5× 반복 재생 및 기절 전환 확인. 1×/0.5× 및 두 프레임 확대 화면에서 네 다리를 접어 몸을 낮추고 꼬리를 떨어뜨린 기절 자세 확인. 세로로 굽은 부리와 닫힌 꼬리 고리 형태 유지. 발은 고정된 채 상체만1px 왕복하며 공격의 돌진/내려치기와 구별된다. 남은 꼬리 외곽선은 영역 수정 후 재검수해 제거 확인. 선택6 타격 자세에서 Hit 전환 후 흰색으로 변하고 같은 자세로 원래 색에 복귀하는 것을 0.25× 상세 재생에서 확인.",
+        "selectionRecord": "Review/hook_hound-selection.json",
+        "clips": [
+          {
+            "motion": "Attack",
+            "frameCount": 10,
+            "durationMs": 720,
+            "contactFrame": 6,
+            "contactTimeMs": 415,
+            "loop": false
+          },
+          {
+            "motion": "Stun",
+            "frameCount": 2,
+            "durationMs": 800,
+            "contactFrame": -1,
+            "contactTimeMs": null,
+            "loop": true
+          },
+          {
+            "motion": "Hit",
+            "frameCount": 0,
+            "durationMs": 120,
+            "contactFrame": null,
+            "contactTimeMs": null,
+            "loop": false
+          }
+        ]
+      }
+    ]
+  },
+  "hitReview": {
+    "effect": "whiteFlash",
+    "holdMs": 45,
+    "fadeMs": 75,
+    "alpha": "preserved",
+    "geometry": "current pose, no generated Hit frames",
+    "browserEvidence": "gate_sentry attack pose and hook_hound attack contact pose were whitened and returned to the same colored pose; hook_hound additionally inspected at 0.25x."
+  },
+  "technicalReview": {
+    "passed": true,
+    "record": "Review/technical-checks.json",
+    "scope": "Input hashes; state/pivot/timing/contact contracts; PNG dimensions, transparency and clipping; exact base endpoints. This does not establish visual quality."
+  },
+  "production": {
+    "tool": "PixelLab",
+    "jobCount": 58,
+    "rejectedJobs": [
+      {
+        "actor": "gate_sentry",
+        "motion": "Stun",
+        "attempt": 1,
+        "jobId": "a710cd75-c2ee-4cfc-931e-73528f6e4182",
+        "reason": "몸과 무릎이 거의 내려가지 않아 평상시 자세와 구별되지 않음. 후반 일부 떠 있는 잔여 픽셀도 관찰됨."
+      },
+      {
+        "actor": "cracked_blade",
+        "motion": "Stun",
+        "attempt": 1,
+        "jobId": "9bc66e74-8aee-461d-8eeb-860834af86ef",
+        "reason": "검만 낮아지고 무릎/몸통의 무력한 자세 변화가 부족함."
+      },
+      {
+        "actor": "bell_knight",
+        "motion": "Stun",
+        "attempt": 1,
+        "jobId": "b4f01009-20f8-4e45-821f-38569932f1d2",
+        "reason": "낮춘 도끼 날이 원본과 다르게 양쪽으로 벌어지는 형태가 나타남. 더 낮은 기절 자세 필요."
+      },
+      {
+        "actor": "chain_puppet",
+        "motion": "Stun",
+        "attempt": 1,
+        "jobId": "d24e7e48-05a2-4c31-a208-af06c6b26cea",
+        "reason": "사슬 무릎이 충분히 접히지 않아 평상시와 구분 부족."
+      },
+      {
+        "actor": "hook_hound",
+        "motion": "Attack",
+        "attempt": 1,
+        "jobId": "7a31b559-8146-47b8-9f02-34ecef274d54",
+        "reason": "실제 타격 구간 007~008에 거대한 참격 이펙트가 생겨 부리와 발을 가린다. 이 구간을 제거하면 분명한 공격이 남지 않아 전체 재생성."
+      },
+      {
+        "actor": "hook_hound",
+        "motion": "Stun",
+        "attempt": 1,
+        "jobId": "49853188-dbf2-439b-a633-680b6ce26ac6",
+        "reason": "확대 재생에서 숙인 부리가 길고 납작한 칼날처럼 변하는 점 확인. 원래 세로로 굽은 갈고리 형태를 유지하는 엎드린 자세로 재제작."
+      },
+      {
+        "actor": "chain_dancer",
+        "motion": "Attack",
+        "attempt": 1,
+        "jobId": "de0a3292-395d-4131-8543-a197eba952aa",
+        "reason": "큰 원호 효과가 발생하고 펼친 사슬이 캔버스 상단에 닿음. 작은 물리적 사슬 타격으로 재생성."
+      },
+      {
+        "actor": "pendulum_warden",
+        "motion": "Attack",
+        "attempt": 1,
+        "jobId": "95a9612a-2c4b-4645-b3c0-67479a54392e",
+        "reason": "상단의 원형 장식을 팔처럼 늘려 공격함. 원본 부품 연결을 유지하는 방패 밀기로 재생성."
+      },
+      {
+        "actor": "pendulum_warden",
+        "motion": "Stun",
+        "attempt": 1,
+        "jobId": "5f47fb31-ede8-41c5-99cd-b8b9a1b29791",
+        "reason": "원형 가슴 진자가 후반에서 막대/작은 조각으로 변형됨."
+      },
+      {
+        "actor": "chain_jailer",
+        "motion": "Stun",
+        "attempt": 1,
+        "jobId": "ba69937b-0abe-4262-bc47-6afe959eb2d7",
+        "reason": "원본에 없는 독립된 세 번째 사슬과 갈고리가 추가됨."
+      },
+      {
+        "actor": "hook_hound",
+        "motion": "Attack",
+        "attempt": 2,
+        "jobId": "864aeb2f-89a7-48c0-8523-7127aa99bf1d",
+        "reason": "부리/꼬리 고리 변형과 흰색 점멸·발사 효과가 생겨 물리 공격 요구에 맞지 않음."
+      },
+      {
+        "actor": "chain_puppet",
+        "motion": "Stun",
+        "attempt": 2,
+        "jobId": "78ff11f2-a9c5-44d2-a33c-a4757788ddd7",
+        "reason": "단일 자세 후보에서도 무릎과 중심이 충분히 내려가지 않아 기본 자세와 구별이 부족함."
+      },
+      {
+        "actor": "pendulum_warden",
+        "motion": "Stun",
+        "attempt": 2,
+        "jobId": "1b8b5070-4a5e-4eff-9dca-39134ef0809c",
+        "reason": "단일 자세 후보에서도 무릎과 중심이 충분히 내려가지 않아 기본 자세와 구별이 부족함."
+      },
+      {
+        "actor": "pendulum_warden",
+        "motion": "Stun",
+        "attempt": 3,
+        "jobId": "8f5fbc14-178b-4a86-9265-3a77021b8a8c",
+        "reason": "확대 재생에서 왼손 주먹이 기본 그림보다 과하게 커진 점 확인. 시계 본체 낮아짐도 충분하지 않아 기절 자세 재설계."
+      },
+      {
+        "actor": "chain_puppet",
+        "motion": "Stun",
+        "attempt": 4,
+        "jobId": "96969307-436a-490f-86d2-b581507a8560",
+        "reason": "원본001~003에서 왼손의 추 위에 분리된 세 번째 직사각형 추가 생성됨. 두 팔/두 추 유지 기준 위반."
+      },
+      {
+        "actor": "pendulum_warden",
+        "motion": "Stun",
+        "attempt": 4,
+        "jobId": "541610ae-cf08-4588-a2a7-96ec8a049123",
+        "reason": "확대 재생에서 왼손 주먹이 기본 그림보다 과하게 커진 점 확인. 시계 본체 낮아짐도 충분하지 않아 기절 자세 재설계."
+      },
+      {
+        "actor": "chain_puppet",
+        "motion": "Stun",
+        "attempt": 5,
+        "jobId": "d36bbe1e-7e3b-4d8f-b081-373f8cec5d4e",
+        "reason": "001~003에 흰색 연기/기호가 추가되어 탈락. 오른손 추 모양도 흔들림. 새로 만든 기절 원본 자세에서 작은 머리 자세 변형을 직접 생성하는 방식으로 변경."
+      },
+      {
+        "actor": "chain_puppet",
+        "motion": "Stun",
+        "attempt": 6,
+        "jobId": "20c90d8e-6228-4ebd-bae8-4a16f7f95b48",
+        "reason": "인접 자세 생성 결과 머리 크기가 약 1.5배로 커짐. 원래 크기를 보존하는 PixelLab exact pixel edit로 대체."
+      },
+      {
+        "actor": "hook_hound",
+        "motion": "Stun",
+        "attempt": 3,
+        "jobId": "b0d06721-bebb-43dc-b1f3-5f744a6e2f47",
+        "reason": "확대 화면에서 x125~126에 원래 꼬리 외곽선 일부가 남아 있음. 상체 복사 영역을 캔버스 우측 끝까지 확장하여 수정."
+      },
+      {
+        "actor": "hook_hound",
+        "motion": "Stun",
+        "attempt": 4,
+        "jobId": "9fc897a5-258f-454a-9f07-7da9e1bd084f",
+        "reason": "확대 화면에서 x125~126에 원래 꼬리 외곽선 일부가 남아 있음. 상체 복사 영역을 캔버스 우측 끝까지 확장하여 수정."
+      }
+    ],
+    "record": "production-jobs.json"
+  },
+  "integration": {
+    "manifest": "delivery.json",
+    "preview": "preview.html",
+    "overview": "overview.png",
+    "canvas": [
+      128,
+      128
+    ],
+    "pivotTopLeft": [
+      78,
+      114
+    ],
+    "referenceHeightPixels": 92,
+    "staticBaseBetweenActions": true,
+    "providedStates": [
+      "Attack",
+      "Hit",
+      "Stun"
+    ],
+    "gameAppliedByThisTask": false
+  }
+}

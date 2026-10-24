@@ -1,0 +1,248 @@
+{
+  "version": "v0.8.5",
+  "date": "2026-10-23",
+  "provider": "PixelLab",
+  "terms": "https://pixellab.ai/termsofservice",
+  "license": "AI generated project assets under service account terms; not CC0 stock.",
+  "originalHeroReference": "Client/Assets/Game/Art/Presentation/Clips/hero-v5-idle/01.png",
+  "heroProxyUsed": false,
+  "jobs": [
+    {
+      "id": "sewer_rat",
+      "base": "f9eb5957-a9d5-4cf2-ac43-bda311ca7aed",
+      "args": {
+        "description": "A hostile sewer rat enemy of a flooded medieval town. Chunky compact game-character proportions, a big blunt angular snout and big square hunched body, SHORT thick legs and block-shaped paws, ONE big triangular ear, short heavy triangular tooth, a simple thick bare pink tail with two angular bends, tiny brass collar. NOT realistic, NOT furry, NOT cute round; threatening but graphically simple. No individual hairs or whiskers. Body plus tail about90 pixels wide and58 pixels tall. Strict side view facing LEFT, one single full body static ready pose. Copy the ORIGINAL provided hero sprite's visual language exactly: chunky 2-3 pixel deep-navy outer outline, large clean squared pixel clusters, simplified bold shapes, short strong proportions, only TWO flat shade levels per material. No gradients, no painterly detail, no line hatching, no fur texture, no anti-aliasing, no tiny realistic anatomy. Native128x128 transparent canvas with at least16px clear border, ground line around y=110. Entire silhouette within the border, no ground/shadow/text/UI.",
+        "width": 128,
+        "height": 128,
+        "no_background": true,
+        "max_colors": 16,
+        "palette": [
+          "#081820",
+          "#17303d",
+          "#34505b",
+          "#58747b",
+          "#8fa7a2",
+          "#c9d6c0",
+          "#f4e4bd",
+          "#d4a04a",
+          "#966338",
+          "#5b3d2e",
+          "#352a2b",
+          "#59445b",
+          "#8a6674",
+          "#42665a",
+          "#649685",
+          "#b6be69"
+        ],
+        "style_image_base64": "ORIGINAL hero-v5-idle/01.png (128x128) bytes",
+        "style_copy": [
+          "outline",
+          "detail",
+          "shading"
+        ],
+        "reference_images": [
+          {
+            "path": "Client/Assets/Game/Art/Presentation/Clips/hero-v5-idle/01.png",
+            "usage": "The ORIGINAL in-game hero: match its chunky proportions, thick navy outline and coarse blocky pixel shapes; do not copy its clothing, weapon or humanoid identity onto the creature."
+          }
+        ]
+      },
+      "selectedCandidate": 1,
+      "basePaletteJob": "a1ce87eb-9bb3-438e-9317-a0e7c5135d21",
+      "clips": {
+        "idle": {
+          "job": "08a20fbe-f053-4416-9a89-e52614c7ff5d",
+          "folder": "idle",
+          "count": 9,
+          "prompt": "The rat stays exactly in place in its ready stance. One slow subtle breath expands the upper back by one or two pixels and lowers it. Its nose makes a tiny sniff and only the tip of its tail twitches. All four feet remain planted at exactly the same pixel coordinates. Do not walk, bob up and down, turn, attack, or change pose. Seamless gentle loop returning to the identical starting pose. Preserve the same thick outline, coarse pixel clusters and flat colors."
+        },
+        "attack": {
+          "job": "a3734618-d8c2-4eed-b749-3c7c201aea48",
+          "folder": "attack",
+          "count": 17,
+          "prompt": "The rat crouches slightly, draws its muzzle back, then makes ONE forceful short bite to the LEFT. Open the jaw, snap the teeth at full reach, land the forepaws and recoil to the same ready stance. No spit, no projectile, no white slash, no extra effects, no turn, no run cycle. Preserve the compact body and thick feet. Preserve the same thick outline, coarse pixel clusters and flat colors."
+        },
+        "stunPose": {
+          "job": "1378d05a-9d6e-48bd-98d4-1d1132e974e9",
+          "folder": "stunPose",
+          "count": 1,
+          "prompt": "The rat is clearly stunned and weak: front legs buckle and chin drops close to the ground. Keep the hind feet at the same ground line and the tail limp behind. Preserve the exact body size, compact proportions, dark outline and original colors; no symbols or particles."
+        },
+        "stun": {
+          "job": "9a3280d1-1d1d-40cd-90ae-766a626d84a7",
+          "folder": "stun",
+          "count": 9,
+          "prompt": "Held weakened pose with small exhausted tremble; no upright idle."
+        }
+      },
+      "baseCleanupJob": "1c902c40-73ef-4c7e-9d33-52aed9c5fc6f",
+      "rejectedContactCleanup": {
+        "job": "35066cb7-1f05-4381-b0e4-002db31a6e34",
+        "file": "rat-contact-rejected.png",
+        "reason": "Projectile removed, but added fur shading broke the approved flat block style. Use original source8 instead."
+      }
+    },
+    {
+      "id": "drowned_resident",
+      "base": "8f5588ef-407a-4a18-9427-061ec6d6cc1e",
+      "args": {
+        "description": "A flood echo of an absent medieval resident, wearing a ragged teal hooded coat and brown trousers and wielding ONE short thick broken wooden door plank. Same squat sturdy game-character proportions as the reference: OVERSIZED squared hood takes one third of full height, broad compact torso, short THICK arms and block hands, short sturdy legs and chunky boots. Hollow dark face with one small amber eye. Body height about84 pixels. Coat has only TWO large jagged tears, no fine tatters or stitches. Both hands hold the simple plank diagonally down toward LEFT. Not a realistic thin adult, not a corpse, no gore. Strict side view facing LEFT, one single full body static ready pose. Copy the ORIGINAL provided hero sprite's visual language exactly: chunky 2-3 pixel deep-navy outer outline, large clean squared pixel clusters, simplified bold shapes, short strong proportions, only TWO flat shade levels per material. No gradients, no painterly detail, no line hatching, no fur texture, no anti-aliasing, no tiny realistic anatomy. Native128x128 transparent canvas with at least16px clear border, ground line around y=110. Entire silhouette within the border, no ground/shadow/text/UI.",
+        "width": 128,
+        "height": 128,
+        "no_background": true,
+        "max_colors": 16,
+        "palette": [
+          "#081820",
+          "#17303d",
+          "#34505b",
+          "#58747b",
+          "#8fa7a2",
+          "#c9d6c0",
+          "#f4e4bd",
+          "#d4a04a",
+          "#966338",
+          "#5b3d2e",
+          "#352a2b",
+          "#59445b",
+          "#8a6674",
+          "#42665a",
+          "#649685",
+          "#b6be69"
+        ],
+        "style_image_base64": "ORIGINAL hero-v5-idle/01.png (128x128) bytes",
+        "style_copy": [
+          "outline",
+          "detail",
+          "shading"
+        ],
+        "reference_images": [
+          {
+            "path": "Client/Assets/Game/Art/Presentation/Clips/hero-v5-idle/01.png",
+            "usage": "The ORIGINAL in-game hero: match its chunky proportions, thick navy outline and coarse blocky pixel shapes; do not copy its clothing, weapon or humanoid identity onto the creature."
+          }
+        ]
+      },
+      "selectedCandidate": 0,
+      "basePaletteJob": "b397a80e-d55d-4347-b300-a5e6e69be6aa",
+      "clips": {
+        "idle": {
+          "job": "3443bca9-e728-4d1d-a71f-b32f0d41523e",
+          "folder": "idle",
+          "count": 9,
+          "prompt": "The cloaked figure remains in the exact ready stance, breathing slowly and subtly. Only the shoulders rise and fall by one or two pixels and the loose bottom coat corner flutters slightly. Both boots are anchored to exactly the same pixels. The plank and holding hand stay steady. No body translation, no head turning, no walking, no attack. Seamless quiet loop ending in the exact starting pose. Preserve the same thick outline, coarse pixel clusters and flat colors."
+        },
+        "attack": {
+          "job": "16a9b343-79d6-420a-bfc7-bb246ae94a65",
+          "folder": "attack",
+          "count": 17,
+          "prompt": "The figure grips its single wooden door plank firmly, draws that plank back up behind the right shoulder, then makes ONE strong diagonal downward strike to the LEFT with a small forward torso lean. Both boots stay grounded. The same plank tip reaches far left at contact, then returns to the original ready stance. Keep the large hood and short solid limbs; no weapon replacement, spinning, duplicate limbs, particles or turn. Preserve the same thick outline, coarse pixel clusters and flat colors."
+        },
+        "stunPose": {
+          "job": "ea9780f0-1533-48c6-a2aa-00035e16fb81",
+          "folder": "stunPose-v2",
+          "count": 1,
+          "reason": "First pose dropped and detached the plank; retry keeps weapon in hand."
+        },
+        "stun": {
+          "job": "19e0fdd6-e21b-4372-a8b3-5b5e08e4d4a2",
+          "folder": "stun",
+          "count": 9,
+          "prompt": "Held bowed-head stunned pose; weapon held and feet planted."
+        }
+      },
+      "rejectedStunPose": {
+        "job": "b16292e6-0f86-4c27-91bc-56c04bd27f1f",
+        "folder": "stunPose",
+        "count": 1,
+        "prompt": "Make a clearly weakened stunned pose: head and shoulders bowed down toward LEFT, both knees bent, weapon arm and the same plank hanging weakly toward the ground. Keep both boots at the original ground line. Preserve the big hood, short solid limbs, chunky dark outline and exactly the same character colors. No new symbols or effects."
+      },
+      "unusedContactCleanup": {
+        "job": "a6f06af5-1770-4fc5-9e94-c44357b0a1fc",
+        "file": "resident-contact-not-selected.png",
+        "reason": "Native source10 preserves the intended weapon contact and original style. Cleanup changed plank length unnecessarily."
+      }
+    },
+    {
+      "id": "water_wraith",
+      "base": "5d1dd4cc-d257-4e5b-b818-d165fe18030f",
+      "args": {
+        "description": "A hostile water-mist wraith formed from stolen time in a flooded medieval district. Chunky compact game-character design with an OVERSIZED angular hood, broad short torso and two SHORT THICK claw arms, three simple broad jagged water ribbons instead of legs. Hollow deep navy face with one amber eye, a BIG simple square brass house lantern at the chest. Overall body height about88 pixels. Hood and torso are solid flat teal blocks with ONLY two tone shading. The three lower water ribbons have wide stepped edges, no thin filaments or frilly edges. Not a thin realistic ghost, no smooth curves, no translucency glow. Strict side view facing LEFT, one single full body static ready pose. Copy the ORIGINAL provided hero sprite's visual language exactly: chunky 2-3 pixel deep-navy outer outline, large clean squared pixel clusters, simplified bold shapes, short strong proportions, only TWO flat shade levels per material. No gradients, no painterly detail, no line hatching, no fur texture, no anti-aliasing, no tiny realistic anatomy. Native128x128 transparent canvas with at least16px clear border, ground line around y=110. Entire silhouette within the border, no ground/shadow/text/UI.",
+        "width": 128,
+        "height": 128,
+        "no_background": true,
+        "max_colors": 16,
+        "palette": [
+          "#081820",
+          "#17303d",
+          "#34505b",
+          "#58747b",
+          "#8fa7a2",
+          "#c9d6c0",
+          "#f4e4bd",
+          "#d4a04a",
+          "#966338",
+          "#5b3d2e",
+          "#352a2b",
+          "#59445b",
+          "#8a6674",
+          "#42665a",
+          "#649685",
+          "#b6be69"
+        ],
+        "style_image_base64": "ORIGINAL hero-v5-idle/01.png (128x128) bytes",
+        "style_copy": [
+          "outline",
+          "detail",
+          "shading"
+        ],
+        "reference_images": [
+          {
+            "path": "Client/Assets/Game/Art/Presentation/Clips/hero-v5-idle/01.png",
+            "usage": "The ORIGINAL in-game hero: match its chunky proportions, thick navy outline and coarse blocky pixel shapes; do not copy its clothing, weapon or humanoid identity onto the creature."
+          }
+        ]
+      },
+      "selectedCandidate": 1,
+      "basePaletteJob": "f7961f81-88e1-4f38-ac94-9cde1dd2b600",
+      "clips": {
+        "idle": {
+          "job": "1eae842c-b95f-4d7c-b8a5-d139796279d4",
+          "folder": "idle-v2",
+          "count": 9,
+          "prompt": "Fixed pointed hood/core/lantern; only broad water-ribbon tips ripple slightly."
+        },
+        "stunPose": {
+          "job": "8cbb1b1d-f545-43dd-aac3-297e1b8143c9",
+          "folder": "stunPose",
+          "count": 1,
+          "prompt": "Make a clearly weakened stunned pose: big hood bows down toward LEFT, thick arms hang limply and the broad water ribbons sag underneath the body. Keep the lantern at the chest and lowest ribbon at the original ground line. Preserve the same chunky proportions, large pixel shapes, dark outline, colors and character size. No symbols or particles."
+        },
+        "attack": {
+          "job": "86dae94c-62aa-4746-95a4-193d2eb45fc5",
+          "folder": "attack",
+          "count": 17,
+          "prompt": "The wraith draws both thick claw arms toward its lantern, then makes ONE sharp claw thrust to the LEFT with a short forward torso lean. Keep its big hood and chunky proportions. Its broad water ribbons trail behind, then arms and torso recover to the exact original hover pose. No turn, no teleport, no body stretching into a thin sheet, no added effects or new legs. Preserve the same thick outline, coarse pixel clusters and flat colors."
+        },
+        "stun": {
+          "job": "e12d95e7-cfad-4191-8251-d82da985b688",
+          "folder": "stun-registered",
+          "count": 9,
+          "prompt": "Held weakened pose with small exhausted tremble; no upright idle.",
+          "registration": {
+            "rawFolder": "stun",
+            "dx": 0,
+            "dy": -6,
+            "reason": "Trail baseline136 -> common130. Native pixels and dimensions unchanged."
+          }
+        }
+      },
+      "rejectedIdle": {
+        "job": "4a150a35-c491-4375-90cb-2d8f878543f9",
+        "folder": "idle",
+        "count": 9,
+        "prompt": "The wraith holds the same hovering position and facing. Its chest and hood make a tiny slow breathing-like swell while only the ends of the three broad water ribbons ripple gently. Keep the lantern attached and nearly still, keep the core torso at the identical pixel location. No travel, bobbing, turning, attack, stretching or new particles. Seamless quiet loop back to the exact start. Preserve the same thick outline, coarse pixel clusters and flat colors.",
+        "reason": "Middle frames rounded/morphed the approved pointed hood, so rejected even though the loop moved."
+      }
+    }
+  ]
+}

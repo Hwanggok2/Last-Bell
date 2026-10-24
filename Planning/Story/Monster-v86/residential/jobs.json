@@ -1,0 +1,58 @@
+{
+  "version": "v86",
+  "provider": "PixelLab",
+  "terms": "https://pixellab.ai/termsofservice",
+  "assetOrigin": "Existing project artwork preserved. Only six Idle animations are newly generated through the project's PixelLab account; not CC0 stock.",
+  "unintegratedPuppetRetry": {"jobId":"f95933aa-3eea-4de7-9e04-bff1e0c89c61","requestedFrames":4,"reason":"First job had unwanted golden effects in2..6. Clean first-job frames1/7/8 were approved for shipping before retry completed. This retry is not referenced by the manifest."},
+  "source": "Current approved runtime monster bases. Attacks and stuns preserved.",
+  "jobs": [
+    {
+      "id": "chain_thrall",
+      "stage": 15,
+      "concept": "사슬 집행자",
+      "description": "A very quiet held ready stance. Only the chest rises and settles by one pixel with a slow breath. The hanging chain and iron ball sway at most one pixel. Both feet stay planted at exactly the same pixels. Keep the head, hood contour, limb lengths and weapon unchanged. No step, body translation, attack or turning. End in the same starting pose.",
+      "jobId": "1fc3ff17-2297-4376-a429-b5f8786d1bc1",
+      "status": "id: 1fc3ff17-2297-4376-a429-b5f8786d1bc1\njob_id: 1fc3ff17-2297-4376-a429-b5f8786d1bc1\ndescription: A very quiet held ready stance. Only the chest rises and settles by one pixel with a slow breath. The hanging chain and iron ball sway at most one pixel. Both feet stay planted at exactly the same pixels. Keep the head, hood contour, limb lengths and weapon unchanged. No step, body translation, attack or turning. End in the same starting pose. Preserve the existing exact coarse pixel style, flat colors and navy outline. No added effects.\nframes: 8\nsize: 128x128px\ntransparent: True\nlast_frame: yes (animating toward it)\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"1fc3ff17-2297-4376-a429-b5f8786d1bc1\")\nasset_id: b5e3d6e4-eaf9-50bf-b63c-7010d1eb2e59\nasset_status: pending (saved to your gallery when generation completes)"
+    },
+    {
+      "id": "ash_wisp",
+      "stage": 14,
+      "concept": "떠도는 등불",
+      "description": "The small floating figure stays at the identical position. Only the pointed lower cloth tips and the tiny ember tip flicker gently by one pixel. The pointed hat, face, eye, shoulders, arm and core silhouette remain completely still and unchanged. No bobbing, scaling, turning or transforming. End in the same starting pose.",
+      "jobId": "b098894e-0e6f-454d-96eb-421d1720569e",
+      "status": "id: b098894e-0e6f-454d-96eb-421d1720569e\njob_id: b098894e-0e6f-454d-96eb-421d1720569e\ndescription: The small floating figure stays at the identical position. Only the pointed lower cloth tips and the tiny ember tip flicker gently by one pixel. The pointed hat, face, eye, shoulders, arm and core silhouette remain completely still and unchanged. No bobbing, scaling, turning or transforming. End in the same starting pose. Preserve the existing exact coarse pixel style, flat colors and navy outline. No added effects.\nframes: 8\nsize: 128x128px\ntransparent: True\nlast_frame: yes (animating toward it)\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"b098894e-0e6f-454d-96eb-421d1720569e\")\nasset_id: 4db71a82-9602-53cf-9fa4-95b67a254e36\nasset_status: pending (saved to your gallery when generation completes)"
+    },
+    {
+      "id": "cracked_blade",
+      "stage": 18,
+      "concept": "주거구 경비의 잔상",
+      "description": "The armored guard holds its sword vertically and breathes very slightly. Only the shoulders and chest rise and fall by one pixel. Keep BOTH boots fixed to exactly the same pixels, keep sword blade and tip in the identical position, head unchanged. No walking, sword swing, new armor or turning. End in the exact starting pose.",
+      "jobId": "97a999c2-bd72-4b1f-ab7d-161bfbaab6d9",
+      "status": "id: 97a999c2-bd72-4b1f-ab7d-161bfbaab6d9\njob_id: 97a999c2-bd72-4b1f-ab7d-161bfbaab6d9\ndescription: The armored guard holds its sword vertically and breathes very slightly. Only the shoulders and chest rise and fall by one pixel. Keep BOTH boots fixed to exactly the same pixels, keep sword blade and tip in the identical position, head unchanged. No walking, sword swing, new armor or turning. End in the exact starting pose. Preserve the existing exact coarse pixel style, flat colors and navy outline. No added effects.\nframes: 8\nsize: 128x128px\ntransparent: True\nlast_frame: yes (animating toward it)\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"97a999c2-bd72-4b1f-ab7d-161bfbaab6d9\")\nasset_id: 803ead34-ebae-5501-88e7-410ee124bfa5\nasset_status: pending (saved to your gallery when generation completes)"
+    },
+    {
+      "id": "chain_dancer",
+      "stage": 19,
+      "concept": "광장의 사슬 조종자",
+      "description": "Hold the exact poised stance with a very small breath and tiny gentle sway of the lower hanging tassel tips. The chain ring above the head, both hands, head and upper silhouette remain completely still. Do not rotate the ring, lift arms, step, bob or transform. Keep the same anchor point and all chain links. End in the same starting pose.",
+      "jobId": "be5f6464-aa5d-4b62-8945-a57589650029",
+      "status": "id: be5f6464-aa5d-4b62-8945-a57589650029\njob_id: be5f6464-aa5d-4b62-8945-a57589650029\ndescription: Hold the exact poised stance with a very small breath and tiny gentle sway of the lower hanging tassel tips. The chain ring above the head, both hands, head and upper silhouette remain completely still. Do not rotate the ring, lift arms, step, bob or transform. Keep the same anchor point and all chain links. End in the same starting pose. Preserve the existing exact coarse pixel style, flat colors and navy outline. No added effects.\nframes: 8\nsize: 128x128px\ntransparent: True\nlast_frame: yes (animating toward it)\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"be5f6464-aa5d-4b62-8945-a57589650029\")\nasset_id: 7812bbbb-b958-586e-88ea-7701230d61e0\nasset_status: pending (saved to your gallery when generation completes)"
+    },
+    {
+      "id": "chain_puppet",
+      "stage": 17,
+      "concept": "거리 순찰 인형",
+      "description": "A very subtle held mechanical idle. The torso makes a tiny one-pixel settling motion and loose chain links sway very slightly. Both feet and head remain anchored at exactly the same pixel positions. Keep its thin chain arms, block hands and all proportions unchanged. No walking, big body sway, arm lifting or new body parts. End in the same starting pose.",
+      "jobId": "de494d50-e013-466b-994a-9ad2552ce640",
+      "status": "id: de494d50-e013-466b-994a-9ad2552ce640\njob_id: de494d50-e013-466b-994a-9ad2552ce640\ndescription: A very subtle held mechanical idle. The torso makes a tiny one-pixel settling motion and loose chain links sway very slightly. Both feet and head remain anchored at exactly the same pixel positions. Keep its thin chain arms, block hands and all proportions unchanged. No walking, big body sway, arm lifting or new body parts. End in the same starting pose. Preserve the existing exact coarse pixel style, flat colors and navy outline. No added effects.\nframes: 8\nsize: 128x128px\ntransparent: True\nlast_frame: yes (animating toward it)\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"de494d50-e013-466b-994a-9ad2552ce640\")\nasset_id: e9ed6d34-5011-5a41-b238-a3bf523c5bd9\nasset_status: pending (saved to your gallery when generation completes)"
+    },
+    {
+      "id": "hook_hound",
+      "stage": 16,
+      "concept": "사슬 순찰견",
+      "description": "The mechanical hound remains standing in its exact ready stance. Tiny one-pixel chest motion and a subtle twitch ONLY of the last tail ring. All four paws stay fixed at the same pixels and ground line. Keep the beak, eye, armor plates, tail chain shape and proportions unchanged. No steps, stretching, attack, turn or whole-body translation. End in the same starting pose.",
+      "jobId": "fbf07008-8fcf-41cf-9bb3-93e8a8382cc4",
+      "status": "id: fbf07008-8fcf-41cf-9bb3-93e8a8382cc4\njob_id: fbf07008-8fcf-41cf-9bb3-93e8a8382cc4\ndescription: The mechanical hound remains standing in its exact ready stance. Tiny one-pixel chest motion and a subtle twitch ONLY of the last tail ring. All four paws stay fixed at the same pixels and ground line. Keep the beak, eye, armor plates, tail chain shape and proportions unchanged. No steps, stretching, attack, turn or whole-body translation. End in the same starting pose. Preserve the existing exact coarse pixel style, flat colors and navy outline. No added effects.\nframes: 8\nsize: 128x128px\ntransparent: True\nlast_frame: yes (animating toward it)\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"fbf07008-8fcf-41cf-9bb3-93e8a8382cc4\")\nasset_id: 7e2edefe-61ef-56b7-94a7-3cc47a9d0aea\nasset_status: pending (saved to your gallery when generation completes)"
+    }
+  ]
+}

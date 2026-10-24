@@ -1,0 +1,302 @@
+[
+  {
+    "id": "daren",
+    "motion": "Run",
+    "ref": "b21a44de-de06-4c02-b2b7-2d6ee02ad302",
+    "palette": [
+      "#202D38",
+      "#6B3F2A",
+      "#F3BD83",
+      "#E8D9AD",
+      "#B7D3D0",
+      "#668185",
+      "#355D82",
+      "#AB6C37"
+    ],
+    "prompt": "DAREN guardian knight: short brown hair, steel browband and shoulders, cream and blue tabard, small blue shield in left hand, short steel sword in right hand. No backpack or red scarf. Transfer this full new class costume and equipment consistently across all frames of Run. EXACTLY preserve each source pose, body lean, arm/leg limb gesture, foot contact and air phase, foot baseline and canvas registration: do not recenter, rescale, enlarge, shorten legs, freeze motion, merge frames, add VFX. Input pivot is x18,y29; keep the SAME foot locations from each source frame. Chest and head must lean and arms swing during Run. For Attack preserve actual overhead diagonal SWING arc (not thrust), weapon attached to the SAME right hand in every frame; for mage staff follows that exact arc as magic staff slash. Whole blade/staff tip visible, no cropping. Background transparent. Flat solid palette, hard pixel edges, one-pixel navy outlines. Whole character fits32x32. Frame count exact.",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "id: e307e49c-4020-4dae-8eaf-da43b0a20fe4\njob_id: e307e49c-4020-4dae-8eaf-da43b0a20fe4\nframes: 8\nsize: 32x32px\ntransparent: True\ninstructions: DAREN guardian knight: short brown hair, steel browband and shoulders, cream and blue tabard, small blue shield in left hand, short steel sword in right hand. No backpack or red scarf. Transfer this full new class costume and equipment consistently across all frames of Run. EXACTLY preserve each source pose, body lean, arm/leg limb gesture, foot contact and air phase, foot baseline and canvas registration: do not recenter, rescale, enlarge, shorten legs, freeze motion, merge frames, add VFX. Input pivot is x18,y29; keep the SAME foot locations from each source frame. Chest and head must lean and arms swing during Run. For Attack preserve actual overhead diagonal SWING arc (not thrust), weapon attached to the SAME right hand in every frame; for mage staff follows that exact arc as magic staff slash. Whole blade/staff tip visible, no cropping. Background transparent. Flat solid palette, hard pixel edges, one-pixel navy outlines. Whole character fits32x32. Frame count exact.\nseed: 243094\nasset_id: d68117c4-84b4-545d-8811-9f49ce8dca07\nasset_status: pending (saved when generation completes)\ncost: ~10 generations\nstatus: processing (~1-2 min)\n\nhint: get_image(job_id=\"e307e49c-4020-4dae-8eaf-da43b0a20fe4\")"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "id": "daren",
+    "motion": "Idle",
+    "ref": "b21a44de-de06-4c02-b2b7-2d6ee02ad302",
+    "palette": [
+      "#202D38",
+      "#6B3F2A",
+      "#F3BD83",
+      "#E8D9AD",
+      "#B7D3D0",
+      "#668185",
+      "#355D82",
+      "#AB6C37"
+    ],
+    "prompt": "DAREN guardian knight: short brown hair, steel browband and shoulders, cream and blue tabard, small blue shield in left hand, short steel sword in right hand. No backpack or red scarf. Transfer this full new class costume and equipment consistently across all frames of Idle. EXACTLY preserve each source pose, body lean, arm/leg limb gesture, foot contact and air phase, foot baseline and canvas registration: do not recenter, rescale, enlarge, shorten legs, freeze motion, merge frames, add VFX. Input pivot is x16,y29; keep the SAME foot locations from each source frame. Chest and head must lean and arms swing during Run. For Attack preserve actual overhead diagonal SWING arc (not thrust), weapon attached to the SAME right hand in every frame; for mage staff follows that exact arc as magic staff slash. Whole blade/staff tip visible, no cropping. Background transparent. Flat solid palette, hard pixel edges, one-pixel navy outlines. Whole character fits32x32. Frame count exact.",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "id: 9fb4d922-6acb-4e93-9481-db98a022394b\njob_id: 9fb4d922-6acb-4e93-9481-db98a022394b\nframes: 8\nsize: 32x32px\ntransparent: True\ninstructions: DAREN guardian knight: short brown hair, steel browband and shoulders, cream and blue tabard, small blue shield in left hand, short steel sword in right hand. No backpack or red scarf. Transfer this full new class costume and equipment consistently across all frames of Idle. EXACTLY preserve each source pose, body lean, arm/leg limb gesture, foot contact and air phase, foot baseline and canvas registration: do not recenter, rescale, enlarge, shorten legs, freeze motion, merge frames, add VFX. Input pivot is x16,y29; keep the SAME foot locations from each source frame. Chest and head must lean and arms swing during Run. For Attack preserve actual overhead diagonal SWING arc (not thrust), weapon attached to the SAME right hand in every frame; for mage staff follows that exact arc as magic staff slash. Whole blade/staff tip visible, no cropping. Background transparent. Flat solid palette, hard pixel edges, one-pixel navy outlines. Whole character fits32x32. Frame count exact.\nseed: 243094\nasset_id: 3a874c46-c426-5cad-87a8-a976368585d8\nasset_status: pending (saved when generation completes)\ncost: ~10 generations\nstatus: processing (~1-2 min)\n\nhint: get_image(job_id=\"9fb4d922-6acb-4e93-9481-db98a022394b\")"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "id": "daren",
+    "motion": "Attack",
+    "ref": "b21a44de-de06-4c02-b2b7-2d6ee02ad302",
+    "palette": [
+      "#202D38",
+      "#6B3F2A",
+      "#F3BD83",
+      "#E8D9AD",
+      "#B7D3D0",
+      "#668185",
+      "#355D82",
+      "#AB6C37"
+    ],
+    "prompt": "DAREN guardian knight: short brown hair, steel browband and shoulders, cream and blue tabard, small blue shield in left hand, short steel sword in right hand. No backpack or red scarf. Transfer this full new class costume and equipment consistently across all frames of Attack. EXACTLY preserve each source pose, body lean, arm/leg limb gesture, foot contact and air phase, foot baseline and canvas registration: do not recenter, rescale, enlarge, shorten legs, freeze motion, merge frames, add VFX. Input pivot is x17,y30; keep the SAME foot locations from each source frame. Chest and head must lean and arms swing during Run. For Attack preserve actual overhead diagonal SWING arc (not thrust), weapon attached to the SAME right hand in every frame; for mage staff follows that exact arc as magic staff slash. Whole blade/staff tip visible, no cropping. Background transparent. Flat solid palette, hard pixel edges, one-pixel navy outlines. Whole character fits32x32. Frame count exact.",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "id: a8e8df21-b679-4d2e-b20b-3fd59f08dae9\njob_id: a8e8df21-b679-4d2e-b20b-3fd59f08dae9\nframes: 14\nsize: 32x32px\ntransparent: True\ninstructions: DAREN guardian knight: short brown hair, steel browband and shoulders, cream and blue tabard, small blue shield in left hand, short steel sword in right hand. No backpack or red scarf. Transfer this full new class costume and equipment consistently across all frames of Attack. EXACTLY preserve each source pose, body lean, arm/leg limb gesture, foot contact and air phase, foot baseline and canvas registration: do not recenter, rescale, enlarge, shorten legs, freeze motion, merge frames, add VFX. Input pivot is x17,y30; keep the SAME foot locations from each source frame. Chest and head must lean and arms swing during Run. For Attack preserve actual overhead diagonal SWING arc (not thrust), weapon attached to the SAME right hand in every frame; for mage staff follows that exact arc as magic staff slash. Whole blade/staff tip visible, no cropping. Background transparent. Flat solid palette, hard pixel edges, one-pixel navy outlines. Whole character fits32x32. Frame count exact.\nseed: 243094\nasset_id: ca1e97f0-9851-5255-afd9-c104a1d50590\nasset_status: pending (saved when generation completes)\ncost: ~10 generations\nstatus: processing (~1-2 min)\n\nhint: get_image(job_id=\"a8e8df21-b679-4d2e-b20b-3fd59f08dae9\")"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "id": "daren",
+    "motion": "DodgeUp",
+    "ref": "b21a44de-de06-4c02-b2b7-2d6ee02ad302",
+    "palette": [
+      "#202D38",
+      "#6B3F2A",
+      "#F3BD83",
+      "#E8D9AD",
+      "#B7D3D0",
+      "#668185",
+      "#355D82",
+      "#AB6C37"
+    ],
+    "prompt": "DAREN guardian knight: short brown hair, steel browband and shoulders, cream and blue tabard, small blue shield in left hand, short steel sword in right hand. No backpack or red scarf. Transfer this full new class costume and equipment consistently across all frames of DodgeUp. EXACTLY preserve each source pose, body lean, arm/leg limb gesture, foot contact and air phase, foot baseline and canvas registration: do not recenter, rescale, enlarge, shorten legs, freeze motion, merge frames, add VFX. Input pivot is x16,y29; keep the SAME foot locations from each source frame. Chest and head must lean and arms swing during Run. For Attack preserve actual overhead diagonal SWING arc (not thrust), weapon attached to the SAME right hand in every frame; for mage staff follows that exact arc as magic staff slash. Whole blade/staff tip visible, no cropping. Background transparent. Flat solid palette, hard pixel edges, one-pixel navy outlines. Whole character fits32x32. Frame count exact.",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "id: 912aa7a1-60ef-4a6c-866b-c57b5b4053dc\njob_id: 912aa7a1-60ef-4a6c-866b-c57b5b4053dc\nframes: 8\nsize: 32x32px\ntransparent: True\ninstructions: DAREN guardian knight: short brown hair, steel browband and shoulders, cream and blue tabard, small blue shield in left hand, short steel sword in right hand. No backpack or red scarf. Transfer this full new class costume and equipment consistently across all frames of DodgeUp. EXACTLY preserve each source pose, body lean, arm/leg limb gesture, foot contact and air phase, foot baseline and canvas registration: do not recenter, rescale, enlarge, shorten legs, freeze motion, merge frames, add VFX. Input pivot is x16,y29; keep the SAME foot locations from each source frame. Chest and head must lean and arms swing during Run. For Attack preserve actual overhead diagonal SWING arc (not thrust), weapon attached to the SAME right hand in every frame; for mage staff follows that exact arc as magic staff slash. Whole blade/staff tip visible, no cropping. Background transparent. Flat solid palette, hard pixel edges, one-pixel navy outlines. Whole character fits32x32. Frame count exact.\nseed: 243094\nasset_id: 26d54979-8b4b-50d5-99b2-2ef7c011291b\nasset_status: pending (saved when generation completes)\ncost: ~10 generations\nstatus: processing (~1-2 min)\n\nhint: get_image(job_id=\"912aa7a1-60ef-4a6c-866b-c57b5b4053dc\")"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "id": "daren",
+    "motion": "DodgeBack",
+    "ref": "b21a44de-de06-4c02-b2b7-2d6ee02ad302",
+    "palette": [
+      "#202D38",
+      "#6B3F2A",
+      "#F3BD83",
+      "#E8D9AD",
+      "#B7D3D0",
+      "#668185",
+      "#355D82",
+      "#AB6C37"
+    ],
+    "prompt": "DAREN guardian knight: short brown hair, steel browband and shoulders, cream and blue tabard, small blue shield in left hand, short steel sword in right hand. No backpack or red scarf. Transfer this full new class costume and equipment consistently across all frames of DodgeBack. EXACTLY preserve each source pose, body lean, arm/leg limb gesture, foot contact and air phase, foot baseline and canvas registration: do not recenter, rescale, enlarge, shorten legs, freeze motion, merge frames, add VFX. Input pivot is x16,y29; keep the SAME foot locations from each source frame. Chest and head must lean and arms swing during Run. For Attack preserve actual overhead diagonal SWING arc (not thrust), weapon attached to the SAME right hand in every frame; for mage staff follows that exact arc as magic staff slash. Whole blade/staff tip visible, no cropping. Background transparent. Flat solid palette, hard pixel edges, one-pixel navy outlines. Whole character fits32x32. Frame count exact.",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "id: 0e8543bc-e1c7-401e-a103-5a450420cec0\njob_id: 0e8543bc-e1c7-401e-a103-5a450420cec0\nframes: 8\nsize: 32x32px\ntransparent: True\ninstructions: DAREN guardian knight: short brown hair, steel browband and shoulders, cream and blue tabard, small blue shield in left hand, short steel sword in right hand. No backpack or red scarf. Transfer this full new class costume and equipment consistently across all frames of DodgeBack. EXACTLY preserve each source pose, body lean, arm/leg limb gesture, foot contact and air phase, foot baseline and canvas registration: do not recenter, rescale, enlarge, shorten legs, freeze motion, merge frames, add VFX. Input pivot is x16,y29; keep the SAME foot locations from each source frame. Chest and head must lean and arms swing during Run. For Attack preserve actual overhead diagonal SWING arc (not thrust), weapon attached to the SAME right hand in every frame; for mage staff follows that exact arc as magic staff slash. Whole blade/staff tip visible, no cropping. Background transparent. Flat solid palette, hard pixel edges, one-pixel navy outlines. Whole character fits32x32. Frame count exact.\nseed: 243094\nasset_id: 4c767fc0-647c-55f6-b60b-854bf4951cec\nasset_status: pending (saved when generation completes)\ncost: ~10 generations\nstatus: processing (~1-2 min)\n\nhint: get_image(job_id=\"0e8543bc-e1c7-401e-a103-5a450420cec0\")"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "id": "daren",
+    "motion": "Hit",
+    "ref": "b21a44de-de06-4c02-b2b7-2d6ee02ad302",
+    "palette": [
+      "#202D38",
+      "#6B3F2A",
+      "#F3BD83",
+      "#E8D9AD",
+      "#B7D3D0",
+      "#668185",
+      "#355D82",
+      "#AB6C37"
+    ],
+    "prompt": "DAREN guardian knight: short brown hair, steel browband and shoulders, cream and blue tabard, small blue shield in left hand, short steel sword in right hand. No backpack or red scarf. Transfer this full new class costume and equipment consistently across all frames of Hit. EXACTLY preserve each source pose, body lean, arm/leg limb gesture, foot contact and air phase, foot baseline and canvas registration: do not recenter, rescale, enlarge, shorten legs, freeze motion, merge frames, add VFX. Input pivot is x16,y29; keep the SAME foot locations from each source frame. Chest and head must lean and arms swing during Run. For Attack preserve actual overhead diagonal SWING arc (not thrust), weapon attached to the SAME right hand in every frame; for mage staff follows that exact arc as magic staff slash. Whole blade/staff tip visible, no cropping. Background transparent. Flat solid palette, hard pixel edges, one-pixel navy outlines. Whole character fits32x32. Frame count exact.",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "id: a5030c7b-2d83-48b9-8029-d83a83d37399\njob_id: a5030c7b-2d83-48b9-8029-d83a83d37399\nframes: 6\nsize: 32x32px\ntransparent: True\ninstructions: DAREN guardian knight: short brown hair, steel browband and shoulders, cream and blue tabard, small blue shield in left hand, short steel sword in right hand. No backpack or red scarf. Transfer this full new class costume and equipment consistently across all frames of Hit. EXACTLY preserve each source pose, body lean, arm/leg limb gesture, foot contact and air phase, foot baseline and canvas registration: do not recenter, rescale, enlarge, shorten legs, freeze motion, merge frames, add VFX. Input pivot is x16,y29; keep the SAME foot locations from each source frame. Chest and head must lean and arms swing during Run. For Attack preserve actual overhead diagonal SWING arc (not thrust), weapon attached to the SAME right hand in every frame; for mage staff follows that exact arc as magic staff slash. Whole blade/staff tip visible, no cropping. Background transparent. Flat solid palette, hard pixel edges, one-pixel navy outlines. Whole character fits32x32. Frame count exact.\nseed: 243094\nasset_id: 17e68c13-3dff-570d-99e7-b18bab79f309\nasset_status: pending (saved when generation completes)\ncost: ~10 generations\nstatus: processing (~1-2 min)\n\nhint: get_image(job_id=\"a5030c7b-2d83-48b9-8029-d83a83d37399\")"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "id": "miel",
+    "motion": "Run",
+    "ref": "210833ed-7efb-4466-809d-86cb20459df0",
+    "palette": [
+      "#202D38",
+      "#6B3F2A",
+      "#F3BD83",
+      "#E8D9AD",
+      "#287780",
+      "#745184",
+      "#E4AA41",
+      "#B7D3D0"
+    ],
+    "prompt": "MIEL agile battle mage: blonde hair, short teal pointed cap and teal short coat with cream hem and plum sash, one short brown crystal staff in right hand. No sword, no backpack or red scarf. Transfer this full new class costume and equipment consistently across all frames of Run. EXACTLY preserve each source pose, body lean, arm/leg limb gesture, foot contact and air phase, foot baseline and canvas registration: do not recenter, rescale, enlarge, shorten legs, freeze motion, merge frames, add VFX. Input pivot is x18,y29; keep the SAME foot locations from each source frame. Chest and head must lean and arms swing during Run. For Attack preserve actual overhead diagonal SWING arc (not thrust), weapon attached to the SAME right hand in every frame; for mage staff follows that exact arc as magic staff slash. Whole blade/staff tip visible, no cropping. Background transparent. Flat solid palette, hard pixel edges, one-pixel navy outlines. Whole character fits32x32. Frame count exact.",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "id: 4df44b3e-54c5-476f-8867-fc277c39f14b\njob_id: 4df44b3e-54c5-476f-8867-fc277c39f14b\nframes: 8\nsize: 32x32px\ntransparent: True\ninstructions: MIEL agile battle mage: blonde hair, short teal pointed cap and teal short coat with cream hem and plum sash, one short brown crystal staff in right hand. No sword, no backpack or red scarf. Transfer this full new class costume and equipment consistently across all frames of Run. EXACTLY preserve each source pose, body lean, arm/leg limb gesture, foot contact and air phase, foot baseline and canvas registration: do not recenter, rescale, enlarge, shorten legs, freeze motion, merge frames, add VFX. Input pivot is x18,y29; keep the SAME foot locations from each source frame. Chest and head must lean and arms swing during Run. For Attack preserve actual overhead diagonal SWING arc (not thrust), weapon attached to the SAME right hand in every frame; for mage staff follows that exact arc as magic staff slash. Whole blade/staff tip visible, no cropping. Background transparent. Flat solid palette, hard pixel edges, one-pixel navy outlines. Whole character fits32x32. Frame count exact.\nseed: 243094\nasset_id: 931220d0-22c2-5ced-a280-80b701f78f30\nasset_status: pending (saved when generation completes)\ncost: ~10 generations\nstatus: processing (~1-2 min)\n\nhint: get_image(job_id=\"4df44b3e-54c5-476f-8867-fc277c39f14b\")"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "id": "miel",
+    "motion": "Idle",
+    "ref": "210833ed-7efb-4466-809d-86cb20459df0",
+    "palette": [
+      "#202D38",
+      "#6B3F2A",
+      "#F3BD83",
+      "#E8D9AD",
+      "#287780",
+      "#745184",
+      "#E4AA41",
+      "#B7D3D0"
+    ],
+    "prompt": "MIEL agile battle mage: blonde hair, short teal pointed cap and teal short coat with cream hem and plum sash, one short brown crystal staff in right hand. No sword, no backpack or red scarf. Transfer this full new class costume and equipment consistently across all frames of Idle. EXACTLY preserve each source pose, body lean, arm/leg limb gesture, foot contact and air phase, foot baseline and canvas registration: do not recenter, rescale, enlarge, shorten legs, freeze motion, merge frames, add VFX. Input pivot is x16,y29; keep the SAME foot locations from each source frame. Chest and head must lean and arms swing during Run. For Attack preserve actual overhead diagonal SWING arc (not thrust), weapon attached to the SAME right hand in every frame; for mage staff follows that exact arc as magic staff slash. Whole blade/staff tip visible, no cropping. Background transparent. Flat solid palette, hard pixel edges, one-pixel navy outlines. Whole character fits32x32. Frame count exact.",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "id: 7238b39c-306a-4c90-b378-c925b734aeb1\njob_id: 7238b39c-306a-4c90-b378-c925b734aeb1\nframes: 8\nsize: 32x32px\ntransparent: True\ninstructions: MIEL agile battle mage: blonde hair, short teal pointed cap and teal short coat with cream hem and plum sash, one short brown crystal staff in right hand. No sword, no backpack or red scarf. Transfer this full new class costume and equipment consistently across all frames of Idle. EXACTLY preserve each source pose, body lean, arm/leg limb gesture, foot contact and air phase, foot baseline and canvas registration: do not recenter, rescale, enlarge, shorten legs, freeze motion, merge frames, add VFX. Input pivot is x16,y29; keep the SAME foot locations from each source frame. Chest and head must lean and arms swing during Run. For Attack preserve actual overhead diagonal SWING arc (not thrust), weapon attached to the SAME right hand in every frame; for mage staff follows that exact arc as magic staff slash. Whole blade/staff tip visible, no cropping. Background transparent. Flat solid palette, hard pixel edges, one-pixel navy outlines. Whole character fits32x32. Frame count exact.\nseed: 243094\nasset_id: 85aec78f-0357-5095-8f16-0913a1e8e019\nasset_status: pending (saved when generation completes)\ncost: ~10 generations\nstatus: processing (~1-2 min)\n\nhint: get_image(job_id=\"7238b39c-306a-4c90-b378-c925b734aeb1\")"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "id": "miel",
+    "motion": "Attack",
+    "ref": "210833ed-7efb-4466-809d-86cb20459df0",
+    "palette": [
+      "#202D38",
+      "#6B3F2A",
+      "#F3BD83",
+      "#E8D9AD",
+      "#287780",
+      "#745184",
+      "#E4AA41",
+      "#B7D3D0"
+    ],
+    "prompt": "MIEL agile battle mage: blonde hair, short teal pointed cap and teal short coat with cream hem and plum sash, one short brown crystal staff in right hand. No sword, no backpack or red scarf. Transfer this full new class costume and equipment consistently across all frames of Attack. EXACTLY preserve each source pose, body lean, arm/leg limb gesture, foot contact and air phase, foot baseline and canvas registration: do not recenter, rescale, enlarge, shorten legs, freeze motion, merge frames, add VFX. Input pivot is x17,y30; keep the SAME foot locations from each source frame. Chest and head must lean and arms swing during Run. For Attack preserve actual overhead diagonal SWING arc (not thrust), weapon attached to the SAME right hand in every frame; for mage staff follows that exact arc as magic staff slash. Whole blade/staff tip visible, no cropping. Background transparent. Flat solid palette, hard pixel edges, one-pixel navy outlines. Whole character fits32x32. Frame count exact.",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "id: 6f483908-963d-4510-80bb-6b825a56ba7e\njob_id: 6f483908-963d-4510-80bb-6b825a56ba7e\nframes: 14\nsize: 32x32px\ntransparent: True\ninstructions: MIEL agile battle mage: blonde hair, short teal pointed cap and teal short coat with cream hem and plum sash, one short brown crystal staff in right hand. No sword, no backpack or red scarf. Transfer this full new class costume and equipment consistently across all frames of Attack. EXACTLY preserve each source pose, body lean, arm/leg limb gesture, foot contact and air phase, foot baseline and canvas registration: do not recenter, rescale, enlarge, shorten legs, freeze motion, merge frames, add VFX. Input pivot is x17,y30; keep the SAME foot locations from each source frame. Chest and head must lean and arms swing during Run. For Attack preserve actual overhead diagonal SWING arc (not thrust), weapon attached to the SAME right hand in every frame; for mage staff follows that exact arc as magic staff slash. Whole blade/staff tip visible, no cropping. Background transparent. Flat solid palette, hard pixel edges, one-pixel navy outlines. Whole character fits32x32. Frame count exact.\nseed: 243094\nasset_id: b43358ee-8781-58f4-aadd-47c8949f8147\nasset_status: pending (saved when generation completes)\ncost: ~10 generations\nstatus: processing (~1-2 min)\n\nhint: get_image(job_id=\"6f483908-963d-4510-80bb-6b825a56ba7e\")"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "id": "miel",
+    "motion": "DodgeUp",
+    "ref": "210833ed-7efb-4466-809d-86cb20459df0",
+    "palette": [
+      "#202D38",
+      "#6B3F2A",
+      "#F3BD83",
+      "#E8D9AD",
+      "#287780",
+      "#745184",
+      "#E4AA41",
+      "#B7D3D0"
+    ],
+    "prompt": "MIEL agile battle mage: blonde hair, short teal pointed cap and teal short coat with cream hem and plum sash, one short brown crystal staff in right hand. No sword, no backpack or red scarf. Transfer this full new class costume and equipment consistently across all frames of DodgeUp. EXACTLY preserve each source pose, body lean, arm/leg limb gesture, foot contact and air phase, foot baseline and canvas registration: do not recenter, rescale, enlarge, shorten legs, freeze motion, merge frames, add VFX. Input pivot is x16,y29; keep the SAME foot locations from each source frame. Chest and head must lean and arms swing during Run. For Attack preserve actual overhead diagonal SWING arc (not thrust), weapon attached to the SAME right hand in every frame; for mage staff follows that exact arc as magic staff slash. Whole blade/staff tip visible, no cropping. Background transparent. Flat solid palette, hard pixel edges, one-pixel navy outlines. Whole character fits32x32. Frame count exact.",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "id: ebb0b3de-920a-4537-82d8-7ec03b5893e2\njob_id: ebb0b3de-920a-4537-82d8-7ec03b5893e2\nframes: 8\nsize: 32x32px\ntransparent: True\ninstructions: MIEL agile battle mage: blonde hair, short teal pointed cap and teal short coat with cream hem and plum sash, one short brown crystal staff in right hand. No sword, no backpack or red scarf. Transfer this full new class costume and equipment consistently across all frames of DodgeUp. EXACTLY preserve each source pose, body lean, arm/leg limb gesture, foot contact and air phase, foot baseline and canvas registration: do not recenter, rescale, enlarge, shorten legs, freeze motion, merge frames, add VFX. Input pivot is x16,y29; keep the SAME foot locations from each source frame. Chest and head must lean and arms swing during Run. For Attack preserve actual overhead diagonal SWING arc (not thrust), weapon attached to the SAME right hand in every frame; for mage staff follows that exact arc as magic staff slash. Whole blade/staff tip visible, no cropping. Background transparent. Flat solid palette, hard pixel edges, one-pixel navy outlines. Whole character fits32x32. Frame count exact.\nseed: 243094\nasset_id: c226779a-3b85-5be8-9156-0daac0a28d2d\nasset_status: pending (saved when generation completes)\ncost: ~10 generations\nstatus: processing (~1-2 min)\n\nhint: get_image(job_id=\"ebb0b3de-920a-4537-82d8-7ec03b5893e2\")"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "id": "miel",
+    "motion": "DodgeBack",
+    "ref": "210833ed-7efb-4466-809d-86cb20459df0",
+    "palette": [
+      "#202D38",
+      "#6B3F2A",
+      "#F3BD83",
+      "#E8D9AD",
+      "#287780",
+      "#745184",
+      "#E4AA41",
+      "#B7D3D0"
+    ],
+    "prompt": "MIEL agile battle mage: blonde hair, short teal pointed cap and teal short coat with cream hem and plum sash, one short brown crystal staff in right hand. No sword, no backpack or red scarf. Transfer this full new class costume and equipment consistently across all frames of DodgeBack. EXACTLY preserve each source pose, body lean, arm/leg limb gesture, foot contact and air phase, foot baseline and canvas registration: do not recenter, rescale, enlarge, shorten legs, freeze motion, merge frames, add VFX. Input pivot is x16,y29; keep the SAME foot locations from each source frame. Chest and head must lean and arms swing during Run. For Attack preserve actual overhead diagonal SWING arc (not thrust), weapon attached to the SAME right hand in every frame; for mage staff follows that exact arc as magic staff slash. Whole blade/staff tip visible, no cropping. Background transparent. Flat solid palette, hard pixel edges, one-pixel navy outlines. Whole character fits32x32. Frame count exact.",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "id: 74189251-7247-49ed-8187-75c625db0ee3\njob_id: 74189251-7247-49ed-8187-75c625db0ee3\nframes: 8\nsize: 32x32px\ntransparent: True\ninstructions: MIEL agile battle mage: blonde hair, short teal pointed cap and teal short coat with cream hem and plum sash, one short brown crystal staff in right hand. No sword, no backpack or red scarf. Transfer this full new class costume and equipment consistently across all frames of DodgeBack. EXACTLY preserve each source pose, body lean, arm/leg limb gesture, foot contact and air phase, foot baseline and canvas registration: do not recenter, rescale, enlarge, shorten legs, freeze motion, merge frames, add VFX. Input pivot is x16,y29; keep the SAME foot locations from each source frame. Chest and head must lean and arms swing during Run. For Attack preserve actual overhead diagonal SWING arc (not thrust), weapon attached to the SAME right hand in every frame; for mage staff follows that exact arc as magic staff slash. Whole blade/staff tip visible, no cropping. Background transparent. Flat solid palette, hard pixel edges, one-pixel navy outlines. Whole character fits32x32. Frame count exact.\nseed: 243094\nasset_id: a01b0b91-7c56-5649-9d4c-861499684786\nasset_status: pending (saved when generation completes)\ncost: ~10 generations\nstatus: processing (~1-2 min)\n\nhint: get_image(job_id=\"74189251-7247-49ed-8187-75c625db0ee3\")"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "id": "miel",
+    "motion": "Hit",
+    "ref": "210833ed-7efb-4466-809d-86cb20459df0",
+    "palette": [
+      "#202D38",
+      "#6B3F2A",
+      "#F3BD83",
+      "#E8D9AD",
+      "#287780",
+      "#745184",
+      "#E4AA41",
+      "#B7D3D0"
+    ],
+    "prompt": "MIEL agile battle mage: blonde hair, short teal pointed cap and teal short coat with cream hem and plum sash, one short brown crystal staff in right hand. No sword, no backpack or red scarf. Transfer this full new class costume and equipment consistently across all frames of Hit. EXACTLY preserve each source pose, body lean, arm/leg limb gesture, foot contact and air phase, foot baseline and canvas registration: do not recenter, rescale, enlarge, shorten legs, freeze motion, merge frames, add VFX. Input pivot is x16,y29; keep the SAME foot locations from each source frame. Chest and head must lean and arms swing during Run. For Attack preserve actual overhead diagonal SWING arc (not thrust), weapon attached to the SAME right hand in every frame; for mage staff follows that exact arc as magic staff slash. Whole blade/staff tip visible, no cropping. Background transparent. Flat solid palette, hard pixel edges, one-pixel navy outlines. Whole character fits32x32. Frame count exact.",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "id: 582b908c-28d3-4a98-bd0f-11bd8bf80c8a\njob_id: 582b908c-28d3-4a98-bd0f-11bd8bf80c8a\nframes: 6\nsize: 32x32px\ntransparent: True\ninstructions: MIEL agile battle mage: blonde hair, short teal pointed cap and teal short coat with cream hem and plum sash, one short brown crystal staff in right hand. No sword, no backpack or red scarf. Transfer this full new class costume and equipment consistently across all frames of Hit. EXACTLY preserve each source pose, body lean, arm/leg limb gesture, foot contact and air phase, foot baseline and canvas registration: do not recenter, rescale, enlarge, shorten legs, freeze motion, merge frames, add VFX. Input pivot is x16,y29; keep the SAME foot locations from each source frame. Chest and head must lean and arms swing during Run. For Attack preserve actual overhead diagonal SWING arc (not thrust), weapon attached to the SAME right hand in every frame; for mage staff follows that exact arc as magic staff slash. Whole blade/staff tip visible, no cropping. Background transparent. Flat solid palette, hard pixel edges, one-pixel navy outlines. Whole character fits32x32. Frame count exact.\nseed: 243094\nasset_id: 0d67b89f-44e3-5c35-9bdd-d4a042529a64\nasset_status: pending (saved when generation completes)\ncost: ~10 generations\nstatus: processing (~1-2 min)\n\nhint: get_image(job_id=\"582b908c-28d3-4a98-bd0f-11bd8bf80c8a\")"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

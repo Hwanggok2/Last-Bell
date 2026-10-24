@@ -1,0 +1,632 @@
+[
+  {
+    "actor": "forest_mushroom",
+    "motion": "Attack",
+    "jobId": "354f7a7a-1d02-46a3-b3f5-fd5db1051553",
+    "width": 32,
+    "height": 32,
+    "count": 9,
+    "changes": [
+      {
+        "operation": "patch_pixels",
+        "layer": "image",
+        "frames": [
+          7
+        ],
+        "pixels": [
+          [
+            8,
+            27,
+            "#f4d99bff",
+            "#18272b00"
+          ],
+          [
+            8,
+            28,
+            "#f4d99bff",
+            "#18272b00"
+          ],
+          [
+            23,
+            28,
+            "#f4d99bff",
+            "#18272b00"
+          ]
+        ],
+        "reason": "Remove only visually inspected disconnected generated dust/rock fragments around the connected mushroom body. Preserve every connected body pixel, limbs and original pose."
+      },
+      {
+        "operation": "patch_pixels",
+        "layer": "image",
+        "frames": [
+          8
+        ],
+        "pixels": [
+          [
+            7,
+            23,
+            "#fffffdff",
+            "#18272b00"
+          ],
+          [
+            7,
+            24,
+            "#fffffdff",
+            "#18272b00"
+          ],
+          [
+            24,
+            23,
+            "#fffffdff",
+            "#18272b00"
+          ],
+          [
+            6,
+            26,
+            "#7e8184ff",
+            "#18272b00"
+          ],
+          [
+            7,
+            27,
+            "#7e8184ff",
+            "#18272b00"
+          ],
+          [
+            6,
+            28,
+            "#7e8184ff",
+            "#18272b00"
+          ],
+          [
+            5,
+            29,
+            "#7e8184ff",
+            "#18272b00"
+          ],
+          [
+            4,
+            28,
+            "#7e8184ff",
+            "#18272b00"
+          ],
+          [
+            5,
+            28,
+            "#fffffdff",
+            "#18272b00"
+          ],
+          [
+            6,
+            27,
+            "#fffffdff",
+            "#18272b00"
+          ]
+        ],
+        "reason": "Remove only visually inspected disconnected generated dust/rock fragments around the connected mushroom body. Preserve every connected body pixel, limbs and original pose."
+      },
+      {
+        "operation": "patch_pixels",
+        "layer": "image",
+        "frames": [
+          9
+        ],
+        "pixels": [
+          [
+            3,
+            28,
+            "#f4d99bff",
+            "#18272b00"
+          ]
+        ],
+        "reason": "Remove only visually inspected disconnected generated dust/rock fragments around the connected mushroom body. Preserve every connected body pixel, limbs and original pose."
+      },
+      {
+        "operation": "map_colors",
+        "layer": "image",
+        "frames": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "region": [
+          0,
+          0,
+          31,
+          31
+        ],
+        "colors": {
+          "#663d36": "#18272b"
+        },
+        "reason": "Uniform darkest navy contour matches canonical/Idle/Stun exact material mapping."
+      }
+    ],
+    "workbenchId": "2fe0a408-edec-4731-b95d-7830861a1bf0",
+    "assetId": "802e0d42-732f-46dd-8182-d73a8a4a7d86",
+    "result": "image_id: 2fe0a408-edec-4731-b95d-7830861a1bf0\ncanvas: 32x32, 9 frame(s)\n1. patch_pixels: 3 px changed\n2. patch_pixels: 10 px changed\n3. patch_pixels: 1 px changed\n4. map_colors: 870 px changed\nsheet rows: frames [3, 4, 5]\n9 frames changed, in 1,1,29,31; see every one: inspect 2fe0a408-edec-4731-b95d-7830861a1bf0 --frames 1,2,3,4,5,6,7,8,9 --region 1,1,29,31\npalette (5): #18272bff x870, #f4d99bff x823, #ad4f3fff x801, #e18b57ff x277, #8c623cff x151\ndownload https://api.pixellab.ai/mcp/pixel-tools/2fe0a408-edec-4731-b95d-7830861a1bf0/: frames.png, animation.gif\nnext: edit 2fe0a408-edec-4731-b95d-7830861a1bf0 --changes […]",
+    "saved": "added: gallery:802e0d42-732f-46dd-8182-d73a8a4a7d86 (image, 9 frames, 32x32) — in the Creator gallery\nreplace it later with target=\"gallery:802e0d42-732f-46dd-8182-d73a8a4a7d86\"\nnext: pixelart_workbench(argv=[\"inspect\", \"gallery:802e0d42-732f-46dd-8182-d73a8a4a7d86\"])"
+  },
+  {
+    "actor": "spore_mushroom",
+    "motion": "Attack",
+    "jobId": "5d27f9df-c92c-402e-af2a-5ff71256fb5a",
+    "width": 32,
+    "height": 32,
+    "count": 9,
+    "changes": [
+      {
+        "operation": "patch_pixels",
+        "layer": "image",
+        "frames": [
+          5
+        ],
+        "pixels": [
+          [
+            6,
+            20,
+            "#e18b57ff",
+            "#18272b00"
+          ]
+        ],
+        "reason": "Remove only visually inspected disconnected generated dust/rock fragments around the connected mushroom body. Preserve every connected body pixel, limbs and original pose."
+      },
+      {
+        "operation": "patch_pixels",
+        "layer": "image",
+        "frames": [
+          6
+        ],
+        "pixels": [
+          [
+            5,
+            19,
+            "#663d36ff",
+            "#18272b00"
+          ],
+          [
+            4,
+            22,
+            "#8c623cff",
+            "#18272b00"
+          ]
+        ],
+        "reason": "Remove only visually inspected disconnected generated dust/rock fragments around the connected mushroom body. Preserve every connected body pixel, limbs and original pose."
+      },
+      {
+        "operation": "map_colors",
+        "layer": "image",
+        "frames": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "region": [
+          0,
+          0,
+          31,
+          31
+        ],
+        "colors": {
+          "#663d36": "#18272b"
+        },
+        "reason": "Uniform darkest navy contour matches canonical/Idle/Stun exact material mapping."
+      }
+    ],
+    "workbenchId": "b86a97eb-ea7e-468e-a819-5fd7409bf3d0",
+    "assetId": "e063b5e1-34a4-4869-b136-16b4eeaade67",
+    "result": "image_id: b86a97eb-ea7e-468e-a819-5fd7409bf3d0\ncanvas: 32x32, 9 frame(s)\n1. patch_pixels: 1 px changed\n2. patch_pixels: 2 px changed\n3. map_colors: 891 px changed\nsheet rows: frames [3, 4, 5]\n9 frames changed, in 2,0,26,31; see every one: inspect b86a97eb-ea7e-468e-a819-5fd7409bf3d0 --frames 1,2,3,4,5,6,7,8,9 --region 2,0,26,31\npalette (6): #18272bff x891, #e18b57ff x575, #f4d99bff x503, #b38a55ff x152, #ad4f3fff x107, #8c623cff x38\ndownload https://api.pixellab.ai/mcp/pixel-tools/b86a97eb-ea7e-468e-a819-5fd7409bf3d0/: frames.png, animation.gif\nnext: edit b86a97eb-ea7e-468e-a819-5fd7409bf3d0 --changes […]",
+    "saved": "added: gallery:e063b5e1-34a4-4869-b136-16b4eeaade67 (image, 9 frames, 32x32) — in the Creator gallery\nreplace it later with target=\"gallery:e063b5e1-34a4-4869-b136-16b4eeaade67\"\nnext: pixelart_workbench(argv=[\"inspect\", \"gallery:e063b5e1-34a4-4869-b136-16b4eeaade67\"])"
+  },
+  {
+    "actor": "moss_mushroom",
+    "motion": "Attack",
+    "jobId": "4f34fd34-dcf5-4364-b318-40a0b3830ee2",
+    "width": 32,
+    "height": 32,
+    "count": 9,
+    "changes": [
+      {
+        "operation": "patch_pixels",
+        "layer": "image",
+        "frames": [
+          2
+        ],
+        "pixels": [
+          [
+            31,
+            20,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            31,
+            21,
+            "#5e3f2dff",
+            "#18272b00"
+          ],
+          [
+            31,
+            22,
+            "#a87442ff",
+            "#18272b00"
+          ],
+          [
+            31,
+            23,
+            "#a87442ff",
+            "#18272b00"
+          ],
+          [
+            31,
+            24,
+            "#a87442ff",
+            "#18272b00"
+          ],
+          [
+            31,
+            25,
+            "#a87442ff",
+            "#18272b00"
+          ],
+          [
+            31,
+            26,
+            "#5e3f2dff",
+            "#18272b00"
+          ],
+          [
+            30,
+            26,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            29,
+            26,
+            "#a87442ff",
+            "#18272b00"
+          ],
+          [
+            28,
+            26,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            28,
+            25,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            29,
+            24,
+            "#a87442ff",
+            "#18272b00"
+          ],
+          [
+            29,
+            23,
+            "#a87442ff",
+            "#18272b00"
+          ],
+          [
+            29,
+            22,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            28,
+            22,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            27,
+            23,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            28,
+            23,
+            "#a87442ff",
+            "#18272b00"
+          ],
+          [
+            28,
+            24,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            29,
+            25,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            30,
+            25,
+            "#a87442ff",
+            "#18272b00"
+          ],
+          [
+            30,
+            24,
+            "#a87442ff",
+            "#18272b00"
+          ],
+          [
+            30,
+            23,
+            "#a87442ff",
+            "#18272b00"
+          ],
+          [
+            30,
+            22,
+            "#a87442ff",
+            "#18272b00"
+          ],
+          [
+            30,
+            21,
+            "#18272bff",
+            "#18272b00"
+          ]
+        ],
+        "reason": "Remove only visually inspected disconnected generated dust/rock fragments around the connected mushroom body. Preserve every connected body pixel, limbs and original pose."
+      },
+      {
+        "operation": "patch_pixels",
+        "layer": "image",
+        "frames": [
+          3
+        ],
+        "pixels": [
+          [
+            30,
+            19,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            31,
+            20,
+            "#5e3f2dff",
+            "#18272b00"
+          ],
+          [
+            31,
+            21,
+            "#79a34aff",
+            "#18272b00"
+          ],
+          [
+            31,
+            22,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            31,
+            23,
+            "#a87442ff",
+            "#18272b00"
+          ],
+          [
+            31,
+            24,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            31,
+            25,
+            "#a87442ff",
+            "#18272b00"
+          ],
+          [
+            31,
+            26,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            30,
+            26,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            29,
+            26,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            28,
+            25,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            29,
+            25,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            30,
+            25,
+            "#a87442ff",
+            "#18272b00"
+          ],
+          [
+            30,
+            24,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            30,
+            23,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            29,
+            22,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            29,
+            21,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            30,
+            22,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            30,
+            21,
+            "#79a34aff",
+            "#18272b00"
+          ],
+          [
+            30,
+            20,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            31,
+            19,
+            "#18272bff",
+            "#18272b00"
+          ]
+        ],
+        "reason": "Remove only visually inspected disconnected generated dust/rock fragments around the connected mushroom body. Preserve every connected body pixel, limbs and original pose."
+      },
+      {
+        "operation": "patch_pixels",
+        "layer": "image",
+        "frames": [
+          4
+        ],
+        "pixels": [
+          [
+            15,
+            6,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            16,
+            6,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            31,
+            18,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            30,
+            20,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            31,
+            21,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            31,
+            22,
+            "#5e3f2dff",
+            "#18272b00"
+          ],
+          [
+            29,
+            24,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            30,
+            25,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            31,
+            25,
+            "#18272bff",
+            "#18272b00"
+          ]
+        ],
+        "reason": "Remove only visually inspected disconnected generated dust/rock fragments around the connected mushroom body. Preserve every connected body pixel, limbs and original pose."
+      },
+      {
+        "operation": "patch_pixels",
+        "layer": "image",
+        "frames": [
+          5
+        ],
+        "pixels": [
+          [
+            30,
+            25,
+            "#18272bff",
+            "#18272b00"
+          ]
+        ],
+        "reason": "Remove only visually inspected disconnected generated dust/rock fragments around the connected mushroom body. Preserve every connected body pixel, limbs and original pose."
+      },
+      {
+        "operation": "patch_pixels",
+        "layer": "image",
+        "frames": [
+          6
+        ],
+        "pixels": [
+          [
+            30,
+            26,
+            "#18272bff",
+            "#18272b00"
+          ]
+        ],
+        "reason": "Remove only visually inspected disconnected generated dust/rock fragments around the connected mushroom body. Preserve every connected body pixel, limbs and original pose."
+      }
+    ],
+    "workbenchId": "8d1e701a-6f98-4cf8-b4c1-15a18d6758c1",
+    "assetId": "58a8036d-26e8-4aad-adab-cf8af09c9e78",
+    "result": "image_id: 8d1e701a-6f98-4cf8-b4c1-15a18d6758c1\ncanvas: 32x32, 9 frame(s)\n1. patch_pixels: 24 px changed\n2. patch_pixels: 21 px changed\n3. patch_pixels: 9 px changed\n4. patch_pixels: 1 px changed\n5. patch_pixels: 1 px changed\nsheet rows: frames [2, 3, 4]\n5 frames changed, in 13,4,31,28; see every one: inspect 8d1e701a-6f98-4cf8-b4c1-15a18d6758c1 --frames 2,3,4,5,6 --region 13,4,31,28\npalette (7): #18272bff x813, #36573aff x694, #a87442ff x422, #e7a867ff x377, #b5cc71ff x306, #5e3f2dff x266, #79a34aff x29\ndownload https://api.pixellab.ai/mcp/pixel-tools/8d1e701a-6f98-4cf8-b4c1-15a18d6758c1/: frames.png, animation.gif\nnext: edit 8d1e701a-6f98-4cf8-b4c1-15a18d6758c1 --changes […]",
+    "saved": "added: gallery:58a8036d-26e8-4aad-adab-cf8af09c9e78 (image, 9 frames, 32x32) — in the Creator gallery\nreplace it later with target=\"gallery:58a8036d-26e8-4aad-adab-cf8af09c9e78\"\nnext: pixelart_workbench(argv=[\"inspect\", \"gallery:58a8036d-26e8-4aad-adab-cf8af09c9e78\"])"
+  }
+]

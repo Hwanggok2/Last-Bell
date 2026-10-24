@@ -1,0 +1,23 @@
+"""Download completed PixelLab Idle source frames; preserve existing game art."""
+import concurrent.futures,json,pathlib,urllib.request,time,sys
+P=pathlib.Path(__file__).resolve().parents[1]/'Planning/Story/Monster-v86/residential'
+jobs=json.loads((P/'jobs.json').read_text(encoding='utf-8'))['jobs']
+def fetch(task):
+    url,path=task
+    if path.exists():return
+    path.parent.mkdir(parents=True,exist_ok=True)
+    for attempt in range(3):
+        try:
+            data=urllib.request.urlopen(url,timeout=30).read()
+            if not data.startswith(b'\x89PNG\r\n\x1a\n'):raise ValueError('Invalid PNG')
+            path.write_bytes(data);return
+        except Exception:
+            if attempt==2:raise
+            time.sleep(1)
+tasks=[]
+for j in jobs:
+    if len(sys.argv)>1 and j['id'] not in sys.argv[1:]:continue
+    for i in range(j.get('count',9)):
+        tasks.append((f'https://api.pixellab.ai/mcp/images/{j["jobId"]}/download?index={i}',P/j['id']/j.get('folder','idle')/f'{i:02}.png'))
+with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:list(pool.map(fetch,tasks))
+print(f'Downloaded {len(tasks)} source frames.')

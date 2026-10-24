@@ -1,0 +1,113 @@
+{
+  "date": "2026-10-25",
+  "status": "pass",
+  "scope": "static document links, published evidence hashes, speaker-specific layout contracts, portrait pixel/alpha metadata; no Unity execution by this validator",
+  "localReferencesChecked": 220,
+  "portraits": [
+    {
+      "id": "on",
+      "size": [
+        24,
+        24
+      ],
+      "colors": 6,
+      "binaryAlpha": true
+    },
+    {
+      "id": "dam",
+      "size": [
+        24,
+        24
+      ],
+      "colors": 6,
+      "binaryAlpha": true
+    },
+    {
+      "id": "rin",
+      "size": [
+        24,
+        24
+      ],
+      "colors": 7,
+      "binaryAlpha": true
+    },
+    {
+      "id": "tori",
+      "size": [
+        24,
+        24
+      ],
+      "colors": 5,
+      "binaryAlpha": true
+    },
+    {
+      "id": "rina",
+      "size": [
+        24,
+        24
+      ],
+      "colors": 5,
+      "binaryAlpha": true
+    },
+    {
+      "id": "barun",
+      "size": [
+        24,
+        24
+      ],
+      "colors": 5,
+      "binaryAlpha": true
+    },
+    {
+      "id": "doto",
+      "size": [
+        24,
+        24
+      ],
+      "colors": 6,
+      "binaryAlpha": true
+    },
+    {
+      "id": "gib",
+      "size": [
+        24,
+        24
+      ],
+      "colors": 8,
+      "binaryAlpha": true
+    },
+    {
+      "id": "unknown",
+      "size": [
+        24,
+        24
+      ],
+      "colors": 1,
+      "binaryAlpha": true
+    },
+    {
+      "id": "momo",
+      "size": [
+        24,
+        24
+      ],
+      "colors": 7,
+      "binaryAlpha": true
+    }
+  ],
+  "encounters": [
+    2,
+    12,
+    22,
+    32,
+    42
+  ],
+  "dialoguePages": 20,
+  "implementationStatus": "v0.9.4 Unity1~20 적용 · 후속21~50 설계 보존 · QA는 연결된 최종 보고서 범위만",
+  "errors": [],
+  "notPerformed": [
+    "browser layout/interaction check",
+    "Unity runtime QA or build execution by this static validator; see linked independent QA report",
+    "mobile safe area/touch test"
+  ]
+}

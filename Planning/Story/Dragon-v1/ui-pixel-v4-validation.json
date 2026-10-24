@@ -1,0 +1,18 @@
+{
+  "status": "pass",
+  "date": "2026-10-24",
+  "scope": "static PNG and reference placement checks only",
+  "assets": 45,
+  "opaqueIconPixels": 71376,
+  "checks": [
+    "45 icon PNGs binary alpha and uniform4px cells",
+    "reference-position direction and attack hit areas insideframe and nonoverlapping",
+    "four battleviews1280x720"
+  ],
+  "notPerformed": [
+    "Unity runtime",
+    "browser layout",
+    "OS input",
+    "mobile Safe Area"
+  ]
+}

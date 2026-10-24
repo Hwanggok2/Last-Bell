@@ -1,0 +1,15 @@
+{
+  "id": "parry",
+  "tool": "animate_image",
+  "request": {
+    "first_frame_url": "https://api.pixellab.ai/mcp/images/b521d718-274a-47bb-9271-02911e0f8e7a/download",
+    "last_frame_url": "https://api.pixellab.ai/mcp/images/b521d718-274a-47bb-9271-02911e0f8e7a/download",
+    "frame_count": 8,
+    "no_background": true,
+    "seed": 24102423,
+    "action": "Raise the EXISTING SHORT SWORD into a firm upright guard directly in front of face and chest, hold, then lower to original stance. F1-2 bend knees and bring sword wrist upward; F3-5 blade nearly vertical in front while free hand braces near sword wrist; F6-8 relax to original guard. The held sword stays the same length and attached to its hand. This is a defensive BODY POSE, not an attack. Do not create a shield or any external object. No sparks, trails, flashes, magic or effects; empty surrounding pixels stay empty. Same cream hood/short tunic, navy face/limbs, ONE amber eye, ochre scarf, brown boots, ONE short steel sword with ochre hilt. Keep clothing, palette, proportions and right-facing silhouette identical. No bell/cape/extra limb/extra weapon/VFX. Fixed48canvas, native pixels, fixed root/scale."
+  },
+  "result": [
+    "id: afaa9143-25ae-42bf-b1bc-e1e3538669ba\njob_id: afaa9143-25ae-42bf-b1bc-e1e3538669ba\naction: Raise the EXISTING SHORT SWORD into a firm upright guard directly in front of face and chest, hold, then lower to original stance. F1-2 bend knees and bring sword wrist upward; F3-5 blade nearly vertical in front while free hand braces near sword wrist; F6-8 relax to original guard. The held sword stays the same length and attached to its hand. This is a defensive BODY POSE, not an attack. Do not create a shield or any external object. No sparks, trails, flashes, magic or effects; empty surrounding pixels stay empty. Same cream hood/short tunic, navy face/limbs, ONE amber eye, ochre scarf, brown boots, ONE short steel sword with ochre hilt. Keep clothing, palette, proportions and right-facing silhouette identical. No bell/cape/extra limb/extra weapon/VFX. Fixed48canvas, native pixels, fixed root/scale.\nframes: 8\nsize: 48x48px\ntransparent: True\nlast_frame: yes (interpolating to it)\nseed: 24102423\nasset_id: 825f390d-c2ae-5e79-90cc-5da6bf0ac4f9\nasset_status: pending (saved when generation completes)\ncost: 1 generation\nstatus: processing (~30-180s)\n\nhint: get_image(job_id=\"afaa9143-25ae-42bf-b1bc-e1e3538669ba\")"
+  ]
+}

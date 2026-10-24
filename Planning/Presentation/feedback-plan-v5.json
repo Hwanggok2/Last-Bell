@@ -1,17 +1,17 @@
 {
-  "version": "planning-v5.9",
-  "date": "2026-10-21",
+  "version": "planning-v5.9.1",
+  "date": "2026-10-22",
   "status": "applied-and-verified-Windows",
   "preview": "hitbox-preview-v59.html",
-  "evidence": "../Evidence/Combat-v59/verification.json",
+  "evidence": "../Evidence/Combat-v591/verification.json",
   "story": "../Story/story-world-v1.html",
   "timing": {
-    "beatMs": 180,
-    "fastBeatMs": 160,
-    "singleImpactMs": 540,
-    "fastImpactMs": 480,
-    "comboGapMs": 360,
-    "fastComboGapMs": 320,
+    "beatMs": 240,
+    "fastBeatMs": 240,
+    "singleImpactMs": 720,
+    "fastImpactMs": 720,
+    "comboGapMs": 480,
+    "fastComboGapMs": 480,
     "normalWindowMs": 160,
     "perfectWindowMs": 60,
     "defenseReuseMs": 260,
@@ -29,9 +29,14 @@
     "enemy effects"
   ],
   "runtimeSource": "../../GameData/mvp-catalog.json",
-  "runtimeDataVersion": "mvp-1.4.0",
+  "runtimeDataVersion": "mvp-1.4.1",
+  "input": {
+    "parry": "Down dodge button / S / DownArrow",
+    "attack": "Attack button / Space: ordinary attack or perfect counter",
+    "crouch": false
+  },
   "verification": {
-    "EditMode": 131,
+    "EditMode": 134,
     "PlayMode": 18,
     "Python": 19,
     "independentAssertions": 808,

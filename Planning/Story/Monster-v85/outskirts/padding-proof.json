@@ -1,0 +1,104 @@
+{
+  "wild_dog": {
+    "animation-input.png": {
+      "source": "base.png",
+      "sourceBounds": [
+        0,
+        2,
+        64,
+        64
+      ],
+      "offset": [
+        32,
+        16
+      ],
+      "pixelPreserving": true,
+      "referenceHeight": 62,
+      "sha256": "6d0909a4382da12302537312d8d1fa1bc2535816977c2f59d63a54504db134aa"
+    },
+    "stun-input.png": {
+      "source": "stun-pose.png",
+      "sourceBounds": [
+        1,
+        17,
+        63,
+        64
+      ],
+      "offset": [
+        32,
+        16
+      ],
+      "pixelPreserving": true,
+      "referenceHeight": 47,
+      "sha256": "9b7987543bca5e18f60de83e3ba220a19f5e6e8b3fd0236a0b011ef08e353753"
+    }
+  },
+  "grey_wolf": {
+    "animation-input.png": {
+      "source": "base.png",
+      "sourceBounds": [
+        2,
+        18,
+        64,
+        64
+      ],
+      "offset": [
+        32,
+        16
+      ],
+      "pixelPreserving": true,
+      "referenceHeight": 46,
+      "sha256": "103761290f66f5bb3c09099f4bae6f2f5f99de8efb8f232f393a71bc89e3f35d"
+    },
+    "stun-input.png": {
+      "source": "stun-pose.png",
+      "sourceBounds": [
+        2,
+        24,
+        64,
+        64
+      ],
+      "offset": [
+        32,
+        16
+      ],
+      "pixelPreserving": true,
+      "referenceHeight": 40,
+      "sha256": "3346636d205dde97bc809773df768b61bd87c17a252a1b682cab711fa2b9c4b2"
+    }
+  },
+  "brown_bear": {
+    "animation-input.png": {
+      "source": "base.png",
+      "sourceBounds": [
+        0,
+        4,
+        64,
+        64
+      ],
+      "offset": [
+        32,
+        16
+      ],
+      "pixelPreserving": true,
+      "referenceHeight": 60,
+      "sha256": "3c687da41cb1c654fca4aadd1925bcdcec0183dff41fbc50be451bda499b586b"
+    },
+    "stun-input.png": {
+      "source": "stun-pose.png",
+      "sourceBounds": [
+        0,
+        12,
+        62,
+        64
+      ],
+      "offset": [
+        32,
+        16
+      ],
+      "pixelPreserving": true,
+      "referenceHeight": 52,
+      "sha256": "0f75d7eb6f733591b069e8b73a42b63e8eeccd14f2001e907ba21598ed7c4bad"
+    }
+  }
+}

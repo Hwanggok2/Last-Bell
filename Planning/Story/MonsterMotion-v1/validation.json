@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "runtimeEnemies": 5,
+  "candidates": 10,
+  "reviewedCandidates": 0,
+  "preservedOriginalPngs": 125,
+  "previewStates": 45,
+  "previewFrameReferences": 131,
+  "statesPerMonster": [
+    "Attack",
+    "Hit",
+    "Stun"
+  ],
+  "idleAnimations": 0,
+  "hitFlashMs": 120,
+  "enemyDeathClips": 0,
+  "heroRunPreserved": true,
+  "prototypeLastStage": 10,
+  "previewVerification": "static references and pure playback logic; not a browser render"
+}

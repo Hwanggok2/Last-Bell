@@ -1,0 +1,106 @@
+[
+  {
+    "id": "great_horn_rabbit",
+    "width": 48,
+    "height": 48,
+    "seed": 202610281,
+    "source": "6b3c3d79-72c2-528f-8aab-682c96e875a4",
+    "palette": [
+      "#18272B",
+      "#61432F",
+      "#A46B3E",
+      "#CB8D51",
+      "#EDB56B",
+      "#C16D59",
+      "#F4C7A1",
+      "#FFF0CA",
+      "#C8D3AE"
+    ],
+    "description": "One Great Horn Rabbit miniboss for the same very simple side-view pixel action game as the reference. Strict LEFT-facing profile. Same tan rabbit species, cream muzzle/chest/tail, two long block ears with muted coral inside, ONE much longer thick ivory horn pointing up-left, broad mature barrel torso, heavier hindquarters and short thick grounded feet. The oversized horn and broad low body distinguish this boss from the small rabbit, not just color. Native48x48 transparent canvas, all ears and horn visible inside4px margin; soles around y42. Use only large flat pixel clusters, one-pixel dark contour and at most9 flat colors. No fur strands, no gradients, no texture, no shadows, no effects, no scenery or letters. Only one complete animal.",
+    "request": {
+      "description": "One Great Horn Rabbit miniboss for the same very simple side-view pixel action game as the reference. Strict LEFT-facing profile. Same tan rabbit species, cream muzzle/chest/tail, two long block ears with muted coral inside, ONE much longer thick ivory horn pointing up-left, broad mature barrel torso, heavier hindquarters and short thick grounded feet. The oversized horn and broad low body distinguish this boss from the small rabbit, not just color. Native48x48 transparent canvas, all ears and horn visible inside4px margin; soles around y42. Use only large flat pixel clusters, one-pixel dark contour and at most9 flat colors. No fur strands, no gradients, no texture, no shadows, no effects, no scenery or letters. Only one complete animal.",
+      "width": 48,
+      "height": 48,
+      "max_colors": 9,
+      "no_background": true,
+      "palette": [
+        "#18272B",
+        "#61432F",
+        "#A46B3E",
+        "#CB8D51",
+        "#EDB56B",
+        "#C16D59",
+        "#F4C7A1",
+        "#FFF0CA",
+        "#C8D3AE"
+      ],
+      "palette_name": "Last Bell Dragon native flat palette",
+      "seed": 202610281,
+      "style_image": {
+        "source_image_id": "6b3c3d79-72c2-528f-8aab-682c96e875a4",
+        "usage_description": "Keep the exact simple flat-pixel style and colors. Draw its larger boss variant with a different broader body and larger signature weapon, facing left."
+      },
+      "style_options": {
+        "color_palette": true,
+        "outline": true,
+        "detail": true,
+        "shading": true
+      }
+    },
+    "response": "{\n  \"background_job_id\": \"4473ba56-0d75-4b42-8217-662a2653f156\",\n  \"image_id\": \"ee1d9610-a2a9-57af-8f94-755efcda902b\",\n  \"status\": \"processing\",\n  \"source_image_id\": \"ee1d9610-a2a9-57af-8f94-755efcda902b\",\n  \"job_id\": \"4473ba56-0d75-4b42-8217-662a2653f156\",\n  \"description\": \"One Great Horn Rabbit miniboss for the same very simple side-view pixel action game as the reference. Strict LEFT-facing profile. Same tan rabbit species, cream muzzle/chest/tail, two long block ears with muted coral inside, ONE much longer thick ivory horn pointing up-left, broad mature barrel torso, heavier hindquarters and short thick grounded feet. The oversized horn and broad low body distinguish this boss from the small rabbit, not just color. Native48x48 transparent canvas, all ears and horn visible inside4px margin; soles around y42. Use only large flat pixel clusters, one-pixel dark contour and at most9 flat colors. No fur strands, no gradients, no texture, no shadows, no effects, no scenery or letters. Only one complete animal.\",\n  \"seed\": 202610281,\n  \"image_size\": {\n    \"width\": 48,\n    \"height\": 48\n  },\n  \"output_count\": 1,\n  \"estimated_generations\": 5,\n  \"pricing_provisional\": true,\n  \"poll_tool\": \"get_image\",\n  \"download_path\": \"/mcp/images/4473ba56-0d75-4b42-8217-662a2653f156/download\"\n}\nPoll get_image(job_id=\"4473ba56-0d75-4b42-8217-662a2653f156\"). The source_image_id is usable after completion; it is an image ID, not a character/object ID. Actual usage is reported on completion. cancel_job(job_id=...) cancels unfinished work.",
+    "jobId": "4473ba56-0d75-4b42-8217-662a2653f156",
+    "sourceImageId": "ee1d9610-a2a9-57af-8f94-755efcda902b"
+  },
+  {
+    "id": "great_tusk",
+    "width": 64,
+    "height": 48,
+    "seed": 202610282,
+    "source": "9067ebb3-5a3e-5b94-8287-3434950f99d6",
+    "palette": [
+      "#18272B",
+      "#4E3428",
+      "#75492F",
+      "#97613A",
+      "#B67B43",
+      "#923B2D",
+      "#BD5339",
+      "#CE7F65",
+      "#FFF0CA"
+    ],
+    "description": "One Great Tusk boar boss for the same very simple side-view pixel action game as the reference. Strict LEFT-facing profile. Keep the same blocky brown wild boar species, blunt muted coral snout, small square eye, short rust-red stepped dorsal ridge. Make the mature boar massive and broad with raised powerful shoulders, thick short legs, and TWO very large distinct ivory tusks curling out ahead of the muzzle. Larger body and giant tusks distinguish this boss from a normal boar, not color alone. Native64x48 transparent canvas, complete body and tusks inside4px empty margin, soles near y42. Coarse flat pixel clusters only, single-pixel dark silhouette contour, maximum9 flat colors. No tiny fur, stippling, wrinkles, gradients, texture, glow, shadows, extra weapons, scenery or letters.",
+    "request": {
+      "description": "One Great Tusk boar boss for the same very simple side-view pixel action game as the reference. Strict LEFT-facing profile. Keep the same blocky brown wild boar species, blunt muted coral snout, small square eye, short rust-red stepped dorsal ridge. Make the mature boar massive and broad with raised powerful shoulders, thick short legs, and TWO very large distinct ivory tusks curling out ahead of the muzzle. Larger body and giant tusks distinguish this boss from a normal boar, not color alone. Native64x48 transparent canvas, complete body and tusks inside4px empty margin, soles near y42. Coarse flat pixel clusters only, single-pixel dark silhouette contour, maximum9 flat colors. No tiny fur, stippling, wrinkles, gradients, texture, glow, shadows, extra weapons, scenery or letters.",
+      "width": 64,
+      "height": 48,
+      "max_colors": 9,
+      "no_background": true,
+      "palette": [
+        "#18272B",
+        "#4E3428",
+        "#75492F",
+        "#97613A",
+        "#B67B43",
+        "#923B2D",
+        "#BD5339",
+        "#CE7F65",
+        "#FFF0CA"
+      ],
+      "palette_name": "Last Bell Dragon native flat palette",
+      "seed": 202610282,
+      "style_image": {
+        "source_image_id": "9067ebb3-5a3e-5b94-8287-3434950f99d6",
+        "usage_description": "Keep the exact simple flat-pixel style and colors. Draw its larger boss variant with a different broader body and larger signature weapon, facing left."
+      },
+      "style_options": {
+        "color_palette": true,
+        "outline": true,
+        "detail": true,
+        "shading": true
+      }
+    },
+    "response": "{\n  \"background_job_id\": \"58d990a6-5c20-444d-9804-ba4c6ffb470a\",\n  \"image_id\": \"b0af66a4-4c59-57cc-b0d9-a4eaf753f0f5\",\n  \"status\": \"processing\",\n  \"source_image_id\": \"b0af66a4-4c59-57cc-b0d9-a4eaf753f0f5\",\n  \"job_id\": \"58d990a6-5c20-444d-9804-ba4c6ffb470a\",\n  \"description\": \"One Great Tusk boar boss for the same very simple side-view pixel action game as the reference. Strict LEFT-facing profile. Keep the same blocky brown wild boar species, blunt muted coral snout, small square eye, short rust-red stepped dorsal ridge. Make the mature boar massive and broad with raised powerful shoulders, thick short legs, and TWO very large distinct ivory tusks curling out ahead of the muzzle. Larger body and giant tusks distinguish this boss from a normal boar, not color alone. Native64x48 transparent canvas, complete body and tusks inside4px empty margin, soles near y42. Coarse flat pixel clusters only, single-pixel dark silhouette contour, maximum9 flat colors. No tiny fur, stippling, wrinkles, gradients, texture, glow, shadows, extra weapons, scenery or letters.\",\n  \"seed\": 202610282,\n  \"image_size\": {\n    \"width\": 64,\n    \"height\": 48\n  },\n  \"output_count\": 1,\n  \"estimated_generations\": 5,\n  \"pricing_provisional\": true,\n  \"poll_tool\": \"get_image\",\n  \"download_path\": \"/mcp/images/58d990a6-5c20-444d-9804-ba4c6ffb470a/download\"\n}\nPoll get_image(job_id=\"58d990a6-5c20-444d-9804-ba4c6ffb470a\"). The source_image_id is usable after completion; it is an image ID, not a character/object ID. Actual usage is reported on completion. cancel_job(job_id=...) cancels unfinished work.",
+    "jobId": "58d990a6-5c20-444d-9804-ba4c6ffb470a",
+    "sourceImageId": "b0af66a4-4c59-57cc-b0d9-a4eaf753f0f5"
+  }
+]

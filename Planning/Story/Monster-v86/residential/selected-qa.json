@@ -1,0 +1,220 @@
+{
+  "chain_thrall": {
+    "idleSourceFrames": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "idleUniqueFrames": 8,
+    "idleUniqueSilhouettes": 8,
+    "idleTotalMs": 1600,
+    "dimensions": [
+      128,
+      128
+    ],
+    "pivot": {
+      "x": 78,
+      "y": 114
+    },
+    "floorY": 113,
+    "floorAlphaChangesFromFirstSelectedFrame": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "loopSeamAlphaChanges": 109,
+    "binaryAlpha": true,
+    "edgeClipping": false,
+    "attackAndStunUnchanged": true,
+    "legacyStunPreserved": true
+  },
+  "ash_wisp": {
+    "idleSourceFrames": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "idleUniqueFrames": 8,
+    "idleUniqueSilhouettes": 8,
+    "idleTotalMs": 1600,
+    "dimensions": [
+      128,
+      128
+    ],
+    "pivot": {
+      "x": 76,
+      "y": 114
+    },
+    "floorY": 113,
+    "floorAlphaChangesFromFirstSelectedFrame": [
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "loopSeamAlphaChanges": 186,
+    "binaryAlpha": true,
+    "edgeClipping": false,
+    "attackAndStunUnchanged": true,
+    "legacyStunPreserved": true
+  },
+  "cracked_blade": {
+    "idleSourceFrames": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "idleUniqueFrames": 8,
+    "idleUniqueSilhouettes": 8,
+    "idleTotalMs": 1600,
+    "dimensions": [
+      128,
+      128
+    ],
+    "pivot": {
+      "x": 78,
+      "y": 114
+    },
+    "floorY": 113,
+    "floorAlphaChangesFromFirstSelectedFrame": [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "loopSeamAlphaChanges": 7,
+    "binaryAlpha": true,
+    "edgeClipping": false,
+    "attackAndStunUnchanged": true,
+    "legacyStunPreserved": false
+  },
+  "chain_dancer": {
+    "idleSourceFrames": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "idleUniqueFrames": 8,
+    "idleUniqueSilhouettes": 8,
+    "idleTotalMs": 1600,
+    "dimensions": [
+      128,
+      128
+    ],
+    "pivot": {
+      "x": 78,
+      "y": 114
+    },
+    "floorY": 113,
+    "floorAlphaChangesFromFirstSelectedFrame": [
+      0,
+      2,
+      2,
+      2,
+      4,
+      2,
+      2,
+      2
+    ],
+    "loopSeamAlphaChanges": 137,
+    "binaryAlpha": true,
+    "edgeClipping": false,
+    "attackAndStunUnchanged": true,
+    "legacyStunPreserved": false
+  },
+  "chain_puppet": {
+    "idleSourceFrames": [
+      1,
+      7,
+      8,
+      7
+    ],
+    "idleUniqueFrames": 3,
+    "idleUniqueSilhouettes": 3,
+    "idleTotalMs": 1600,
+    "dimensions": [
+      128,
+      128
+    ],
+    "pivot": {
+      "x": 78,
+      "y": 114
+    },
+    "floorY": 113,
+    "floorAlphaChangesFromFirstSelectedFrame": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "loopSeamAlphaChanges": 59,
+    "binaryAlpha": true,
+    "edgeClipping": false,
+    "attackAndStunUnchanged": true,
+    "legacyStunPreserved": false
+  },
+  "hook_hound": {
+    "idleSourceFrames": [
+      5,
+      7,
+      8,
+      7
+    ],
+    "idleUniqueFrames": 3,
+    "idleUniqueSilhouettes": 3,
+    "idleTotalMs": 1600,
+    "dimensions": [
+      128,
+      128
+    ],
+    "pivot": {
+      "x": 78,
+      "y": 114
+    },
+    "floorY": 113,
+    "floorAlphaChangesFromFirstSelectedFrame": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "loopSeamAlphaChanges": 301,
+    "binaryAlpha": true,
+    "edgeClipping": false,
+    "attackAndStunUnchanged": true,
+    "legacyStunPreserved": false
+  }
+}

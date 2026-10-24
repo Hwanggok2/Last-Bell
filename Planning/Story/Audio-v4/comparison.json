@@ -1,0 +1,28 @@
+{
+  "swordClash": {
+    "before": {
+      "seconds": 0.6093,
+      "powerCentroidHz": 5326.8,
+      "dominantHz": 4298.2
+    },
+    "after": {
+      "seconds": 0.65,
+      "powerCentroidHz": 5246.7,
+      "dominantHz": 4136.9
+    }
+  },
+  "bell": {
+    "before": {
+      "seconds": 0.5,
+      "powerCentroidHz": 723.3,
+      "dominantHz": 660.0
+    },
+    "after": {
+      "seconds": 5.7169,
+      "powerCentroidHz": 571.5,
+      "dominantHz": 361.0
+    }
+  },
+  "attackSource": "Sabre Norse Sword Blade on Blade.wav \u2014 Ben Jaszczak and Brian Nelson; single 0.65s blade collision, original pitch and metallic decay. Timbre suitability requires user audition.",
+  "bellLowerAndLonger": true
+}

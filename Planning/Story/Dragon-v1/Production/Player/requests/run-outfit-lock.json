@@ -1,0 +1,36 @@
+{
+  "tool": "transfer_outfit",
+  "reason": "Explicit skeleton improved lean but weapon became inconsistent. Restore canonical outfit and visible connected sword without changing source poses.",
+  "request": {
+    "frame_urls": [
+      "https://api.pixellab.ai/mcp/images/57eb3d33-41e1-4754-87ed-a5b2abc3b6c2/download?index=0",
+      "https://api.pixellab.ai/mcp/images/57eb3d33-41e1-4754-87ed-a5b2abc3b6c2/download?index=1",
+      "https://api.pixellab.ai/mcp/images/57eb3d33-41e1-4754-87ed-a5b2abc3b6c2/download?index=2",
+      "https://api.pixellab.ai/mcp/images/57eb3d33-41e1-4754-87ed-a5b2abc3b6c2/download?index=3",
+      "https://api.pixellab.ai/mcp/images/57eb3d33-41e1-4754-87ed-a5b2abc3b6c2/download?index=4",
+      "https://api.pixellab.ai/mcp/images/57eb3d33-41e1-4754-87ed-a5b2abc3b6c2/download?index=5",
+      "https://api.pixellab.ai/mcp/images/57eb3d33-41e1-4754-87ed-a5b2abc3b6c2/download?index=6",
+      "https://api.pixellab.ai/mcp/images/57eb3d33-41e1-4754-87ed-a5b2abc3b6c2/download?index=7"
+    ],
+    "reference_image_url": "https://api.pixellab.ai/mcp/images/b521d718-274a-47bb-9271-02911e0f8e7a/download",
+    "width": 48,
+    "height": 48,
+    "no_background": true,
+    "palette": [
+      "#182B32",
+      "#F7E4B0",
+      "#263F51",
+      "#795039",
+      "#A1A9A2",
+      "#E4AA41",
+      "#996A3B"
+    ],
+    "palette_name": "On original seven colors",
+    "max_colors": 7,
+    "seed": 24102424,
+    "additional_instructions": "Keep ALL eight running poses, the forward-leaning torso, alternating legs, moving arms, foot contacts and fixed root EXACTLY as source frames. Restore the reference's identical cream pointed hood, ONE amber eye in navy face, short cream tunic, short ochre neck scarf, navy limbs, brown boots. Crucial: the ONE short steel sword with ochre hilt must remain clearly visible and connected to the SAME near/right wrist in EVERY frame, pointing diagonally down/back beside that forearm. No sword disappearing, changing length, replacing arm or floating above head. No outfit/scale/proportion redesign, bell, long cape, extra limb or effects. Reference is the same character in idle; use outfit only, do NOT turn run poses back into idle."
+  },
+  "result": [
+    "id: 88893f10-5235-4335-8430-1373fb93b04b\njob_id: 88893f10-5235-4335-8430-1373fb93b04b\nframes: 8\nsize: 48x48px\ntransparent: True\ninstructions: Keep ALL eight running poses, the forward-leaning torso, alternating legs, moving arms, foot contacts and fixed root EXACTLY as source frames. Restore the reference's identical cream pointed hood, ONE amber eye in navy face, short cream tunic, short ochre neck scarf, navy limbs, brown boots. Crucial: the ONE short steel sword with ochre hilt must remain clearly visible and connected to the SAME near/right wrist in EVERY frame, pointing diagonally down/back beside that forearm. No sword disappearing, changing length, replacing arm or floating above head. No outfit/scale/proportion redesign, bell, long cape, extra limb or effects. Reference is the same character in idle; use outfit only, do NOT turn run poses back into idle.\nseed: 24102424\nasset_id: cc5dd69a-e2d4-5410-ae5f-c98165503958\nasset_status: pending (saved when generation completes)\ncost: ~10 generations\nstatus: processing (~1-2 min)\n\nhint: get_image(job_id=\"88893f10-5235-4335-8430-1373fb93b04b\")"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "canonicalRequest": {
+    "description": "ONE tiny side-view fantasy adventurer facing RIGHT, entire body only18-19 native pixels tall, in a24x24 transparent square. Hair top at y3, boots at y22. Low-res friendly game sprite: BROWN short hair block, visible peach face one dark eye pixel, SHORT RED scarf2pixels, GREEN tunic solid block, dark pants, brown boots. SMALL brown bag3x3 with cream roll3x1 on back. ONE small steel sword held securely in near right hand pointing diagonally up-right. Super simple flat handheld-game pixel art, only7-8 colors, bold square color clusters. NOT a portrait. No hood, no cape, no bell, no stitch/buckle/button detail, no anti-alias, gradient or dithering. Character alone full body separated legs, sword andfeet fit insidecanvas.",
+    "width": 24,
+    "height": 24,
+    "no_background": true,
+    "max_colors": 10,
+    "palette": [
+      "#202D38",
+      "#6B3F2A",
+      "#AB6C37",
+      "#F3BD83",
+      "#2D735D",
+      "#6DAF69",
+      "#C9433E",
+      "#8B2F35",
+      "#E8D9AD",
+      "#B7D3D0"
+    ],
+    "palette_name": "Bright low-resolution adventurer ten colors",
+    "seed": 24102454
+  },
+  "results": [
+    {
+      "item": 0,
+      "status": "fulfilled",
+      "result": [
+        {
+          "type": "text",
+          "text": "{\n  \"background_job_id\": \"1431b2c7-6213-4e88-9f71-539cd392599d\",\n  \"image_id\": \"48fedef8-087e-52a0-94e2-3941caa6f651\",\n  \"status\": \"processing\",\n  \"source_image_id\": \"48fedef8-087e-52a0-94e2-3941caa6f651\",\n  \"job_id\": \"1431b2c7-6213-4e88-9f71-539cd392599d\",\n  \"description\": \"ONE tiny side-view fantasy adventurer facing RIGHT, entire body only18-19 native pixels tall, in a24x24 transparent square. Hair top at y3, boots at y22. Low-res friendly game sprite: BROWN short hair block, visible peach face one dark eye pixel, SHORT RED scarf2pixels, GREEN tunic solid block, dark pants, brown boots. SMALL brown bag3x3 with cream roll3x1 on back. ONE small steel sword held securely in near right hand pointing diagonally up-right. Super simple flat handheld-game pixel art, only7-8 colors, bold square color clusters. NOT a portrait. No hood, no cape, no bell, no stitch/buckle/button detail, no anti-alias, gradient or dithering. Character alone full body separated legs, sword andfeet fit insidecanvas.\",\n  \"seed\": 24102454,\n  \"image_size\": {\n    \"width\": 24,\n    \"height\": 24\n  },\n  \"output_count\": 1,\n  \"estimated_generations\": 5,\n  \"pricing_provisional\": true,\n  \"poll_tool\": \"get_image\",\n  \"download_path\": \"/mcp/images/1431b2c7-6213-4e88-9f71-539cd392599d/download\"\n}\nPoll get_image(job_id=\"1431b2c7-6213-4e88-9f71-539cd392599d\"). The source_image_id is usable after completion; it is an image ID, not a character/object ID. Actual usage is reported on completion. cancel_job(job_id=...) cancels unfinished work."
+        }
+      ]
+    },
+    {
+      "item": 1,
+      "status": "fulfilled",
+      "result": [
+        {
+          "type": "text",
+          "text": "id: 6d204d8a-93d6-4003-b8ef-fccfe4be043a\njob_id: 6d204d8a-93d6-4003-b8ef-fccfe4be043a\nsource: 128x128px\noutput: 32x32px\nfaithful: True\ninit_image_strength: 250\nseed: 24102500\nasset_id: 45312edc-72f7-51cb-9598-b1b3ba710a23\nasset_status: pending (saved when generation completes)\ncost: 1 generation\nstatus: processing (~20-60s)\n\nhint: get_image(job_id=\"6d204d8a-93d6-4003-b8ef-fccfe4be043a\")"
+        }
+      ]
+    },
+    {
+      "item": 2,
+      "status": "fulfilled",
+      "result": [
+        {
+          "type": "text",
+          "text": "id: 9fc5df72-a283-409e-8e5b-057ce42f24f9\njob_id: 9fc5df72-a283-409e-8e5b-057ce42f24f9\nsource: 128x128px\noutput: 32x32px\nfaithful: True\ninit_image_strength: 250\nseed: 24102501\nasset_id: b9cf5dca-2a24-5c0e-9613-86788c7f198e\nasset_status: pending (saved when generation completes)\ncost: 1 generation\nstatus: processing (~20-60s)\n\nhint: get_image(job_id=\"9fc5df72-a283-409e-8e5b-057ce42f24f9\")"
+        }
+      ]
+    },
+    {
+      "item": 3,
+      "status": "fulfilled",
+      "result": [
+        {
+          "type": "text",
+          "text": "id: 7bff3f48-2cc6-46ab-963a-9bf081e689ff\njob_id: 7bff3f48-2cc6-46ab-963a-9bf081e689ff\nsource: 128x128px\noutput: 32x32px\nfaithful: True\ninit_image_strength: 250\nseed: 24102502\nasset_id: 2b1370ac-5791-51d8-b6b0-63d9deac1e20\nasset_status: pending (saved when generation completes)\ncost: 1 generation\nstatus: processing (~20-60s)\n\nhint: get_image(job_id=\"7bff3f48-2cc6-46ab-963a-9bf081e689ff\")"
+        }
+      ]
+    }
+  ],
+  "poseConversion": {
+    "sourceLocalIndices": [
+      0,
+      2,
+      4
+    ],
+    "faithful": true,
+    "init_image_strength": 250,
+    "output_width": 32,
+    "output_height": 32,
+    "seedStart": 24102500,
+    "reason": "transfer_outfit does not downscale; preserve existing poses through official PixelLab native conversion first."
+  }
+}

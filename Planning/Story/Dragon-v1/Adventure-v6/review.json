@@ -1,0 +1,30 @@
+{
+  "scope": "planning-diagrams-only; not a Unity screenshot or runtime QA",
+  "status": "author-reviewed",
+  "date": "2026-10-25",
+  "reviewer": "dragon_playable_art_v4",
+  "files": [
+    {
+      "file": "growth-layout.png",
+      "sha256": "3357d6a57eba0e5bfc67a2c058951b0ea2df5a94b08a0218c8bb05303e580471"
+    },
+    {
+      "file": "companions-layout.png",
+      "sha256": "bba885adb123b119fe7d3264c8e89465dd1ed6f62f731330752cb64a453f03af"
+    },
+    {
+      "file": "hud-spec.png",
+      "sha256": "0a392b174c74e4a98f3784e3dbbfeed1f58cbb332c4aa83c131c9059f7414b7c"
+    }
+  ],
+  "observations": [
+    "1280x720 PNG diagrams visually inspected; panels, buttons, Korean text and existing pixel art readable.",
+    "Missing star/arrow font glyphs corrected with pixel stars and ASCII arrow.",
+    "HP/damage diagram clearly labels visual specification rather than game capture.",
+    "Final Client catalog names and root boss HP/name coordinates match plan.json."
+  ],
+  "limitations": [
+    "No browser or Unity execution performed by this planning task.",
+    "640/mobile rendering, real interaction and effect visibility belong to root integration QA."
+  ]
+}

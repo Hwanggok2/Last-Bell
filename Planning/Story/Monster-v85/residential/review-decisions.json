@@ -1,0 +1,345 @@
+{
+  "sewer_rat": {
+    "accepted": true,
+    "worldHeight": 0.8,
+    "idle": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "holdsMs": [
+        180,
+        180,
+        180,
+        180,
+        180,
+        180,
+        180,
+        180,
+        180
+      ]
+    },
+    "attack": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        13,
+        14,
+        15,
+        16
+      ],
+      "holdsMs": [
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        100,
+        70,
+        70,
+        70,
+        70
+      ],
+      "contactFrame": 8,
+      "contactPoint": {
+        "x": 33,
+        "y": 103
+      },
+      "excludedFrames": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "exclusionReason": "Unrequested white spit projectile and detached trailing pixels, including canvas-edge clipping.",
+      "contactAtMs": 320
+    },
+    "stun": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "holdsMs": [
+        110,
+        110,
+        110,
+        110,
+        110,
+        110,
+        110,
+        110,
+        110
+      ]
+    },
+    "notes": [
+      "Bite contact is the mouth, not the long bare tail.",
+      "Stun keeps lowered forequarters, slack tail and exposed incisors."
+    ],
+    "canvas": {
+      "width": 192,
+      "height": 160,
+      "pivot": {
+        "x": 96,
+        "y": 130
+      }
+    },
+    "heroReference": "Client/Assets/Game/Art/Presentation/Clips/hero-v5-idle/01.png",
+    "whiteHitMs": 120,
+    "deathAnimation": false
+  },
+  "drowned_resident": {
+    "accepted": true,
+    "worldHeight": 1.28,
+    "idle": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "holdsMs": [
+        180,
+        180,
+        180,
+        180,
+        180,
+        180,
+        180,
+        180,
+        180
+      ]
+    },
+    "attack": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "holdsMs": [
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        60,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40
+      ],
+      "contactFrame": 10,
+      "contactPoint": {
+        "x": 37,
+        "y": 123
+      },
+      "contactAtMs": 400
+    },
+    "stun": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "holdsMs": [
+        110,
+        110,
+        110,
+        110,
+        110,
+        110,
+        110,
+        110,
+        110
+      ]
+    },
+    "notes": [
+      "Large hood, short boots and one held plank; this is a flood echo, not a dead resident.",
+      "Stun keeps the original plank in hand. Rejected first pose dropped the weapon."
+    ],
+    "canvas": {
+      "width": 192,
+      "height": 160,
+      "pivot": {
+        "x": 96,
+        "y": 130
+      }
+    },
+    "heroReference": "Client/Assets/Game/Art/Presentation/Clips/hero-v5-idle/01.png",
+    "whiteHitMs": 120,
+    "deathAnimation": false
+  },
+  "water_wraith": {
+    "accepted": true,
+    "worldHeight": 1.4,
+    "idle": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        1,
+        0,
+        8,
+        7,
+        8
+      ],
+      "holdsMs": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "excludedFrames": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "exclusionReason": "Even second generated idle rounded the pointed hood in these frames. Curated forward/reverse native frames preserve the approved silhouette."
+    },
+    "attack": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "holdsMs": [
+        80,
+        80,
+        40,
+        60,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        20,
+        20,
+        20,
+        20
+      ],
+      "contactFrame": 3,
+      "contactPoint": {
+        "x": 30,
+        "y": 82
+      },
+      "contactAtMs": 200
+    },
+    "stun": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "holdsMs": [
+        110,
+        110,
+        110,
+        110,
+        110,
+        110,
+        110,
+        110,
+        110
+      ]
+    },
+    "notes": [
+      "Only five unique native Idle images are used, ordered into an eight-frame1.6s loop; this is disclosed, not nine unique poses.",
+      "Stun source frames uniformly registered -6px vertically; no resampling or content edits."
+    ],
+    "canvas": {
+      "width": 192,
+      "height": 160,
+      "pivot": {
+        "x": 96,
+        "y": 130
+      }
+    },
+    "heroReference": "Client/Assets/Game/Art/Presentation/Clips/hero-v5-idle/01.png",
+    "whiteHitMs": 120,
+    "deathAnimation": false
+  }
+}

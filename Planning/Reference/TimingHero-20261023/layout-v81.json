@@ -1,0 +1,1408 @@
+[
+  {
+    "name": "selection-960",
+    "w": 960,
+    "h": 540,
+    "bounds": [
+      {
+        "x": 24,
+        "y": 104,
+        "w": 220,
+        "h": 64,
+        "action": "character-0",
+        "enabled": true
+      },
+      {
+        "x": 24,
+        "y": 184,
+        "w": 220,
+        "h": 64,
+        "action": "character-1",
+        "enabled": true
+      },
+      {
+        "x": 24,
+        "y": 264,
+        "w": 220,
+        "h": 64,
+        "action": "character-2",
+        "enabled": true
+      },
+      {
+        "x": 24,
+        "y": 476,
+        "w": 190,
+        "h": 48,
+        "action": "collection",
+        "enabled": true
+      },
+      {
+        "x": 736,
+        "y": 476,
+        "w": 200,
+        "h": 48,
+        "action": "select-character",
+        "enabled": true
+      }
+    ],
+    "regions": [
+      {
+        "x": 16,
+        "y": 92,
+        "w": 236,
+        "h": 370,
+        "name": "CHARACTER LIST"
+      },
+      {
+        "x": 268,
+        "y": 92,
+        "w": 668,
+        "h": 370,
+        "name": "CHARACTER DETAIL"
+      }
+    ]
+  },
+  {
+    "name": "selection-640",
+    "w": 640,
+    "h": 360,
+    "bounds": [
+      {
+        "x": 24,
+        "y": 84,
+        "w": 154,
+        "h": 48,
+        "action": "character-0",
+        "enabled": true
+      },
+      {
+        "x": 24,
+        "y": 140,
+        "w": 154,
+        "h": 48,
+        "action": "character-1",
+        "enabled": true
+      },
+      {
+        "x": 24,
+        "y": 196,
+        "w": 154,
+        "h": 48,
+        "action": "character-2",
+        "enabled": true
+      },
+      {
+        "x": 24,
+        "y": 296,
+        "w": 144,
+        "h": 48,
+        "action": "collection",
+        "enabled": true
+      },
+      {
+        "x": 452,
+        "y": 296,
+        "w": 164,
+        "h": 48,
+        "action": "select-character",
+        "enabled": true
+      }
+    ],
+    "regions": [
+      {
+        "x": 16,
+        "y": 72,
+        "w": 170,
+        "h": 210,
+        "name": "CHARACTER LIST"
+      },
+      {
+        "x": 202,
+        "y": 72,
+        "w": 414,
+        "h": 210,
+        "name": "CHARACTER DETAIL"
+      }
+    ]
+  },
+  {
+    "name": "upgrade-960",
+    "w": 960,
+    "h": 540,
+    "bounds": [
+      {
+        "x": 16,
+        "y": 12,
+        "w": 154,
+        "h": 48,
+        "action": "selection",
+        "enabled": true
+      },
+      {
+        "x": 24,
+        "y": 102,
+        "w": 220,
+        "h": 60,
+        "action": "stat-0",
+        "enabled": true
+      },
+      {
+        "x": 24,
+        "y": 170,
+        "w": 220,
+        "h": 60,
+        "action": "stat-1",
+        "enabled": true
+      },
+      {
+        "x": 24,
+        "y": 238,
+        "w": 220,
+        "h": 60,
+        "action": "stat-2",
+        "enabled": true
+      },
+      {
+        "x": 24,
+        "y": 306,
+        "w": 220,
+        "h": 60,
+        "action": "stat-3",
+        "enabled": true
+      },
+      {
+        "x": 768,
+        "y": 104,
+        "w": 72,
+        "h": 48,
+        "action": "mode-one",
+        "enabled": true
+      },
+      {
+        "x": 852,
+        "y": 104,
+        "w": 80,
+        "h": 48,
+        "action": "mode-max",
+        "enabled": true
+      },
+      {
+        "x": 24,
+        "y": 476,
+        "w": 168,
+        "h": 48,
+        "action": "collection",
+        "enabled": true
+      },
+      {
+        "x": 380,
+        "y": 476,
+        "w": 200,
+        "h": 48,
+        "action": "buy",
+        "enabled": true
+      },
+      {
+        "x": 736,
+        "y": 476,
+        "w": 200,
+        "h": 48,
+        "action": "battle",
+        "enabled": true
+      }
+    ],
+    "regions": [
+      {
+        "x": 16,
+        "y": 92,
+        "w": 236,
+        "h": 370,
+        "name": "STAT LIST"
+      },
+      {
+        "x": 268,
+        "y": 92,
+        "w": 668,
+        "h": 370,
+        "name": "UPGRADE DETAIL"
+      }
+    ]
+  },
+  {
+    "name": "upgrade-640",
+    "w": 640,
+    "h": 360,
+    "bounds": [
+      {
+        "x": 16,
+        "y": 12,
+        "w": 108,
+        "h": 48,
+        "action": "selection",
+        "enabled": true
+      },
+      {
+        "x": 24,
+        "y": 82,
+        "w": 154,
+        "h": 48,
+        "action": "stat-0",
+        "enabled": true
+      },
+      {
+        "x": 24,
+        "y": 130,
+        "w": 154,
+        "h": 48,
+        "action": "stat-1",
+        "enabled": true
+      },
+      {
+        "x": 24,
+        "y": 178,
+        "w": 154,
+        "h": 48,
+        "action": "stat-2",
+        "enabled": true
+      },
+      {
+        "x": 24,
+        "y": 226,
+        "w": 154,
+        "h": 48,
+        "action": "stat-3",
+        "enabled": true
+      },
+      {
+        "x": 492,
+        "y": 84,
+        "w": 56,
+        "h": 48,
+        "action": "mode-one",
+        "enabled": true
+      },
+      {
+        "x": 554,
+        "y": 84,
+        "w": 56,
+        "h": 48,
+        "action": "mode-max",
+        "enabled": true
+      },
+      {
+        "x": 24,
+        "y": 296,
+        "w": 112,
+        "h": 48,
+        "action": "collection",
+        "enabled": true
+      },
+      {
+        "x": 245,
+        "y": 296,
+        "w": 150,
+        "h": 48,
+        "action": "buy",
+        "enabled": true
+      },
+      {
+        "x": 460,
+        "y": 296,
+        "w": 156,
+        "h": 48,
+        "action": "battle",
+        "enabled": true
+      }
+    ],
+    "regions": [
+      {
+        "x": 16,
+        "y": 72,
+        "w": 170,
+        "h": 210,
+        "name": "STAT LIST"
+      },
+      {
+        "x": 202,
+        "y": 72,
+        "w": 414,
+        "h": 210,
+        "name": "UPGRADE DETAIL"
+      }
+    ]
+  },
+  {
+    "name": "prologue-960",
+    "w": 960,
+    "h": 540,
+    "bounds": [
+      {
+        "x": 752,
+        "y": 476,
+        "w": 184,
+        "h": 48,
+        "action": "skip",
+        "enabled": true
+      }
+    ],
+    "regions": [
+      {
+        "x": 170,
+        "y": 40,
+        "w": 620,
+        "h": 384,
+        "name": "AUTO SCROLL"
+      }
+    ]
+  },
+  {
+    "name": "prologue-640",
+    "w": 640,
+    "h": 360,
+    "bounds": [
+      {
+        "x": 472,
+        "y": 296,
+        "w": 144,
+        "h": 48,
+        "action": "skip",
+        "enabled": true
+      }
+    ],
+    "regions": [
+      {
+        "x": 101,
+        "y": 22,
+        "w": 438,
+        "h": 252,
+        "name": "AUTO SCROLL"
+      }
+    ]
+  },
+  {
+    "name": "battle-960",
+    "w": 960,
+    "h": 540,
+    "bounds": [
+      {
+        "x": 888,
+        "y": 14,
+        "w": 48,
+        "h": 48,
+        "action": "pause-battle",
+        "enabled": true
+      },
+      {
+        "x": 108,
+        "y": 334,
+        "w": 68,
+        "h": 68,
+        "action": "dodge-up",
+        "enabled": true
+      },
+      {
+        "x": 40,
+        "y": 418,
+        "w": 68,
+        "h": 68,
+        "action": "dodge-back",
+        "enabled": true
+      },
+      {
+        "x": 176,
+        "y": 418,
+        "w": 68,
+        "h": 68,
+        "action": "dodge-down",
+        "enabled": true
+      },
+      {
+        "x": 784,
+        "y": 402,
+        "w": 116,
+        "h": 104,
+        "action": "attack",
+        "enabled": true
+      }
+    ],
+    "regions": [
+      {
+        "x": 0,
+        "y": 0,
+        "w": 960,
+        "h": 78,
+        "name": "GOLD / PAUSE"
+      },
+      {
+        "x": 400,
+        "y": 78,
+        "w": 160,
+        "h": 72,
+        "name": "BELLS"
+      },
+      {
+        "x": 210,
+        "y": 368,
+        "w": 559.9680000000001,
+        "h": 70,
+        "name": "HP / LEVEL / NAME"
+      }
+    ]
+  },
+  {
+    "name": "battle-640",
+    "w": 640,
+    "h": 360,
+    "bounds": [
+      {
+        "x": 568,
+        "y": 14,
+        "w": 48,
+        "h": 48,
+        "action": "pause-battle",
+        "enabled": true
+      },
+      {
+        "x": 92,
+        "y": 204,
+        "w": 56,
+        "h": 56,
+        "action": "dodge-up",
+        "enabled": true
+      },
+      {
+        "x": 36,
+        "y": 276,
+        "w": 56,
+        "h": 56,
+        "action": "dodge-back",
+        "enabled": true
+      },
+      {
+        "x": 148,
+        "y": 276,
+        "w": 56,
+        "h": 56,
+        "action": "dodge-down",
+        "enabled": true
+      },
+      {
+        "x": 520,
+        "y": 270,
+        "w": 88,
+        "h": 76,
+        "action": "attack",
+        "enabled": true
+      }
+    ],
+    "regions": [
+      {
+        "x": 0,
+        "y": 0,
+        "w": 640,
+        "h": 78,
+        "name": "GOLD / PAUSE"
+      },
+      {
+        "x": 240,
+        "y": 60,
+        "w": 160,
+        "h": 72,
+        "name": "BELLS"
+      },
+      {
+        "x": 134,
+        "y": 236,
+        "w": 394,
+        "h": 70,
+        "name": "HP / LEVEL / NAME"
+      }
+    ]
+  },
+  {
+    "name": "run-end-960",
+    "w": 960,
+    "h": 540,
+    "bounds": [
+      {
+        "x": 385,
+        "y": 389,
+        "w": 190,
+        "h": 48,
+        "action": "settle-next",
+        "enabled": true
+      }
+    ],
+    "regions": [
+      {
+        "x": 180,
+        "y": 87,
+        "w": 600,
+        "h": 366,
+        "name": "RUN REWARDS"
+      }
+    ]
+  },
+  {
+    "name": "run-end-640",
+    "w": 640,
+    "h": 360,
+    "bounds": [
+      {
+        "x": 225,
+        "y": 258,
+        "w": 190,
+        "h": 48,
+        "action": "settle-next",
+        "enabled": true
+      }
+    ],
+    "regions": [
+      {
+        "x": 80,
+        "y": 38,
+        "w": 480,
+        "h": 284,
+        "name": "RUN REWARDS"
+      }
+    ]
+  },
+  {
+    "name": "milestone-960",
+    "w": 960,
+    "h": 540,
+    "bounds": [
+      {
+        "x": 385,
+        "y": 389,
+        "w": 190,
+        "h": 48,
+        "action": "open-relic",
+        "enabled": true
+      }
+    ],
+    "regions": [
+      {
+        "x": 180,
+        "y": 87,
+        "w": 600,
+        "h": 366,
+        "name": "RUN REWARDS"
+      }
+    ]
+  },
+  {
+    "name": "milestone-640",
+    "w": 640,
+    "h": 360,
+    "bounds": [
+      {
+        "x": 225,
+        "y": 258,
+        "w": 190,
+        "h": 48,
+        "action": "open-relic",
+        "enabled": true
+      }
+    ],
+    "regions": [
+      {
+        "x": 80,
+        "y": 38,
+        "w": 480,
+        "h": 284,
+        "name": "RUN REWARDS"
+      }
+    ]
+  },
+  {
+    "name": "relics-960",
+    "w": 960,
+    "h": 540,
+    "bounds": [
+      {
+        "x": 216,
+        "y": 135,
+        "w": 168,
+        "h": 126,
+        "action": "relic-relic_25",
+        "enabled": true
+      },
+      {
+        "x": 396,
+        "y": 135,
+        "w": 168,
+        "h": 126,
+        "action": "relic-relic_20",
+        "enabled": true
+      },
+      {
+        "x": 576,
+        "y": 135,
+        "w": 168,
+        "h": 126,
+        "action": "relic-relic_05",
+        "enabled": true
+      },
+      {
+        "x": 390,
+        "y": 393,
+        "w": 180,
+        "h": 48,
+        "action": "confirm-relic",
+        "enabled": true
+      }
+    ],
+    "regions": [
+      {
+        "x": 180,
+        "y": 87,
+        "w": 600,
+        "h": 366,
+        "name": "RUN REWARDS"
+      }
+    ]
+  },
+  {
+    "name": "relics-640",
+    "w": 640,
+    "h": 360,
+    "bounds": [
+      {
+        "x": 104,
+        "y": 86,
+        "w": 136,
+        "h": 94,
+        "action": "relic-relic_25",
+        "enabled": true
+      },
+      {
+        "x": 252,
+        "y": 86,
+        "w": 136,
+        "h": 94,
+        "action": "relic-relic_20",
+        "enabled": true
+      },
+      {
+        "x": 400,
+        "y": 86,
+        "w": 136,
+        "h": 94,
+        "action": "relic-relic_05",
+        "enabled": true
+      },
+      {
+        "x": 230,
+        "y": 262,
+        "w": 180,
+        "h": 48,
+        "action": "confirm-relic",
+        "enabled": true
+      }
+    ],
+    "regions": [
+      {
+        "x": 80,
+        "y": 38,
+        "w": 480,
+        "h": 284,
+        "name": "RUN REWARDS"
+      }
+    ]
+  },
+  {
+    "name": "result-960",
+    "w": 960,
+    "h": 540,
+    "bounds": [
+      {
+        "x": 200,
+        "y": 385,
+        "w": 272,
+        "h": 52,
+        "action": "retry",
+        "enabled": true
+      },
+      {
+        "x": 488,
+        "y": 385,
+        "w": 272,
+        "h": 52,
+        "action": "selection",
+        "enabled": true
+      }
+    ],
+    "regions": [
+      {
+        "x": 180,
+        "y": 87,
+        "w": 600,
+        "h": 366,
+        "name": "RUN REWARDS"
+      }
+    ]
+  },
+  {
+    "name": "result-640",
+    "w": 640,
+    "h": 360,
+    "bounds": [
+      {
+        "x": 100,
+        "y": 254,
+        "w": 212,
+        "h": 52,
+        "action": "retry",
+        "enabled": true
+      },
+      {
+        "x": 328,
+        "y": 254,
+        "w": 212,
+        "h": 52,
+        "action": "selection",
+        "enabled": true
+      }
+    ],
+    "regions": [
+      {
+        "x": 80,
+        "y": 38,
+        "w": 480,
+        "h": 284,
+        "name": "RUN REWARDS"
+      }
+    ]
+  },
+  {
+    "name": "upgrade-max",
+    "w": 960,
+    "h": 540,
+    "bounds": [
+      {
+        "x": 16,
+        "y": 12,
+        "w": 154,
+        "h": 48,
+        "action": "selection",
+        "enabled": true
+      },
+      {
+        "x": 24,
+        "y": 102,
+        "w": 220,
+        "h": 60,
+        "action": "stat-0",
+        "enabled": true
+      },
+      {
+        "x": 24,
+        "y": 170,
+        "w": 220,
+        "h": 60,
+        "action": "stat-1",
+        "enabled": true
+      },
+      {
+        "x": 24,
+        "y": 238,
+        "w": 220,
+        "h": 60,
+        "action": "stat-2",
+        "enabled": true
+      },
+      {
+        "x": 24,
+        "y": 306,
+        "w": 220,
+        "h": 60,
+        "action": "stat-3",
+        "enabled": true
+      },
+      {
+        "x": 768,
+        "y": 104,
+        "w": 72,
+        "h": 48,
+        "action": "mode-one",
+        "enabled": true
+      },
+      {
+        "x": 852,
+        "y": 104,
+        "w": 80,
+        "h": 48,
+        "action": "mode-max",
+        "enabled": true
+      },
+      {
+        "x": 24,
+        "y": 476,
+        "w": 168,
+        "h": 48,
+        "action": "collection",
+        "enabled": true
+      },
+      {
+        "x": 380,
+        "y": 476,
+        "w": 200,
+        "h": 48,
+        "action": "buy",
+        "enabled": true
+      },
+      {
+        "x": 736,
+        "y": 476,
+        "w": 200,
+        "h": 48,
+        "action": "battle",
+        "enabled": true
+      }
+    ],
+    "regions": [
+      {
+        "x": 16,
+        "y": 92,
+        "w": 236,
+        "h": 370,
+        "name": "STAT LIST"
+      },
+      {
+        "x": 268,
+        "y": 92,
+        "w": 668,
+        "h": 370,
+        "name": "UPGRADE DETAIL"
+      }
+    ]
+  },
+  {
+    "name": "upgrade-broke",
+    "w": 960,
+    "h": 540,
+    "bounds": [
+      {
+        "x": 16,
+        "y": 12,
+        "w": 154,
+        "h": 48,
+        "action": "selection",
+        "enabled": true
+      },
+      {
+        "x": 24,
+        "y": 102,
+        "w": 220,
+        "h": 60,
+        "action": "stat-0",
+        "enabled": true
+      },
+      {
+        "x": 24,
+        "y": 170,
+        "w": 220,
+        "h": 60,
+        "action": "stat-1",
+        "enabled": true
+      },
+      {
+        "x": 24,
+        "y": 238,
+        "w": 220,
+        "h": 60,
+        "action": "stat-2",
+        "enabled": true
+      },
+      {
+        "x": 24,
+        "y": 306,
+        "w": 220,
+        "h": 60,
+        "action": "stat-3",
+        "enabled": true
+      },
+      {
+        "x": 768,
+        "y": 104,
+        "w": 72,
+        "h": 48,
+        "action": "mode-one",
+        "enabled": true
+      },
+      {
+        "x": 852,
+        "y": 104,
+        "w": 80,
+        "h": 48,
+        "action": "mode-max",
+        "enabled": true
+      },
+      {
+        "x": 24,
+        "y": 476,
+        "w": 168,
+        "h": 48,
+        "action": "collection",
+        "enabled": true
+      },
+      {
+        "x": 380,
+        "y": 476,
+        "w": 200,
+        "h": 48,
+        "action": "buy",
+        "enabled": true
+      },
+      {
+        "x": 736,
+        "y": 476,
+        "w": 200,
+        "h": 48,
+        "action": "battle",
+        "enabled": true
+      }
+    ],
+    "regions": [
+      {
+        "x": 16,
+        "y": 92,
+        "w": 236,
+        "h": 370,
+        "name": "STAT LIST"
+      },
+      {
+        "x": 268,
+        "y": 92,
+        "w": 668,
+        "h": 370,
+        "name": "UPGRADE DETAIL"
+      }
+    ]
+  },
+  {
+    "name": "upgrade-level50",
+    "w": 960,
+    "h": 540,
+    "bounds": [
+      {
+        "x": 16,
+        "y": 12,
+        "w": 154,
+        "h": 48,
+        "action": "selection",
+        "enabled": true
+      },
+      {
+        "x": 24,
+        "y": 102,
+        "w": 220,
+        "h": 60,
+        "action": "stat-0",
+        "enabled": true
+      },
+      {
+        "x": 24,
+        "y": 170,
+        "w": 220,
+        "h": 60,
+        "action": "stat-1",
+        "enabled": true
+      },
+      {
+        "x": 24,
+        "y": 238,
+        "w": 220,
+        "h": 60,
+        "action": "stat-2",
+        "enabled": true
+      },
+      {
+        "x": 24,
+        "y": 306,
+        "w": 220,
+        "h": 60,
+        "action": "stat-3",
+        "enabled": true
+      },
+      {
+        "x": 768,
+        "y": 104,
+        "w": 72,
+        "h": 48,
+        "action": "mode-one",
+        "enabled": true
+      },
+      {
+        "x": 852,
+        "y": 104,
+        "w": 80,
+        "h": 48,
+        "action": "mode-max",
+        "enabled": true
+      },
+      {
+        "x": 24,
+        "y": 476,
+        "w": 168,
+        "h": 48,
+        "action": "collection",
+        "enabled": true
+      },
+      {
+        "x": 380,
+        "y": 476,
+        "w": 200,
+        "h": 48,
+        "action": "buy",
+        "enabled": false
+      },
+      {
+        "x": 736,
+        "y": 476,
+        "w": 200,
+        "h": 48,
+        "action": "battle",
+        "enabled": true
+      }
+    ],
+    "regions": [
+      {
+        "x": 16,
+        "y": 92,
+        "w": 236,
+        "h": 370,
+        "name": "STAT LIST"
+      },
+      {
+        "x": 268,
+        "y": 92,
+        "w": 668,
+        "h": 370,
+        "name": "UPGRADE DETAIL"
+      }
+    ]
+  },
+  {
+    "name": "selection-locked",
+    "w": 960,
+    "h": 540,
+    "bounds": [
+      {
+        "x": 24,
+        "y": 104,
+        "w": 220,
+        "h": 64,
+        "action": "character-0",
+        "enabled": true
+      },
+      {
+        "x": 24,
+        "y": 184,
+        "w": 220,
+        "h": 64,
+        "action": "character-1",
+        "enabled": true
+      },
+      {
+        "x": 24,
+        "y": 264,
+        "w": 220,
+        "h": 64,
+        "action": "character-2",
+        "enabled": true
+      },
+      {
+        "x": 24,
+        "y": 476,
+        "w": 190,
+        "h": 48,
+        "action": "collection",
+        "enabled": true
+      },
+      {
+        "x": 736,
+        "y": 476,
+        "w": 200,
+        "h": 48,
+        "action": "select-character",
+        "enabled": false
+      }
+    ],
+    "regions": [
+      {
+        "x": 16,
+        "y": 92,
+        "w": 236,
+        "h": 370,
+        "name": "CHARACTER LIST"
+      },
+      {
+        "x": 268,
+        "y": 92,
+        "w": 668,
+        "h": 370,
+        "name": "CHARACTER DETAIL"
+      }
+    ]
+  },
+  {
+    "name": "battle-normal",
+    "w": 960,
+    "h": 540,
+    "bounds": [
+      {
+        "x": 888,
+        "y": 14,
+        "w": 48,
+        "h": 48,
+        "action": "pause-battle",
+        "enabled": true
+      },
+      {
+        "x": 108,
+        "y": 334,
+        "w": 68,
+        "h": 68,
+        "action": "dodge-up",
+        "enabled": true
+      },
+      {
+        "x": 40,
+        "y": 418,
+        "w": 68,
+        "h": 68,
+        "action": "dodge-back",
+        "enabled": true
+      },
+      {
+        "x": 176,
+        "y": 418,
+        "w": 68,
+        "h": 68,
+        "action": "dodge-down",
+        "enabled": true
+      },
+      {
+        "x": 784,
+        "y": 402,
+        "w": 116,
+        "h": 104,
+        "action": "attack",
+        "enabled": true
+      }
+    ],
+    "regions": [
+      {
+        "x": 0,
+        "y": 0,
+        "w": 960,
+        "h": 78,
+        "name": "GOLD / PAUSE"
+      },
+      {
+        "x": 400,
+        "y": 78,
+        "w": 160,
+        "h": 72,
+        "name": "BELLS"
+      },
+      {
+        "x": 210,
+        "y": 368,
+        "w": 559.9680000000001,
+        "h": 70,
+        "name": "HP / LEVEL / NAME"
+      }
+    ]
+  },
+  {
+    "name": "battle-parry",
+    "w": 960,
+    "h": 540,
+    "bounds": [
+      {
+        "x": 888,
+        "y": 14,
+        "w": 48,
+        "h": 48,
+        "action": "pause-battle",
+        "enabled": true
+      },
+      {
+        "x": 108,
+        "y": 334,
+        "w": 68,
+        "h": 68,
+        "action": "dodge-up",
+        "enabled": true
+      },
+      {
+        "x": 40,
+        "y": 418,
+        "w": 68,
+        "h": 68,
+        "action": "dodge-back",
+        "enabled": true
+      },
+      {
+        "x": 176,
+        "y": 418,
+        "w": 68,
+        "h": 68,
+        "action": "dodge-down",
+        "enabled": true
+      },
+      {
+        "x": 784,
+        "y": 402,
+        "w": 116,
+        "h": 104,
+        "action": "attack",
+        "enabled": true
+      }
+    ],
+    "regions": [
+      {
+        "x": 0,
+        "y": 0,
+        "w": 960,
+        "h": 78,
+        "name": "GOLD / PAUSE"
+      },
+      {
+        "x": 400,
+        "y": 78,
+        "w": 160,
+        "h": 72,
+        "name": "BELLS"
+      },
+      {
+        "x": 210,
+        "y": 368,
+        "w": 559.9680000000001,
+        "h": 70,
+        "name": "HP / LEVEL / NAME"
+      }
+    ]
+  },
+  {
+    "name": "battle-wide",
+    "w": 1200,
+    "h": 540,
+    "bounds": [
+      {
+        "x": 1128,
+        "y": 14,
+        "w": 48,
+        "h": 48,
+        "action": "pause-battle",
+        "enabled": true
+      },
+      {
+        "x": 108,
+        "y": 334,
+        "w": 68,
+        "h": 68,
+        "action": "dodge-up",
+        "enabled": true
+      },
+      {
+        "x": 40,
+        "y": 418,
+        "w": 68,
+        "h": 68,
+        "action": "dodge-back",
+        "enabled": true
+      },
+      {
+        "x": 176,
+        "y": 418,
+        "w": 68,
+        "h": 68,
+        "action": "dodge-down",
+        "enabled": true
+      },
+      {
+        "x": 1024,
+        "y": 402,
+        "w": 116,
+        "h": 104,
+        "action": "attack",
+        "enabled": true
+      }
+    ],
+    "regions": [
+      {
+        "x": 0,
+        "y": 0,
+        "w": 1200,
+        "h": 78,
+        "name": "GOLD / PAUSE"
+      },
+      {
+        "x": 520,
+        "y": 78,
+        "w": 160,
+        "h": 72,
+        "name": "BELLS"
+      },
+      {
+        "x": 285,
+        "y": 368,
+        "w": 654.96,
+        "h": 70,
+        "name": "HP / LEVEL / NAME"
+      }
+    ]
+  },
+  {
+    "name": "relic-unselected",
+    "w": 960,
+    "h": 540,
+    "bounds": [
+      {
+        "x": 216,
+        "y": 135,
+        "w": 168,
+        "h": 126,
+        "action": "relic-relic_25",
+        "enabled": true
+      },
+      {
+        "x": 396,
+        "y": 135,
+        "w": 168,
+        "h": 126,
+        "action": "relic-relic_20",
+        "enabled": true
+      },
+      {
+        "x": 576,
+        "y": 135,
+        "w": 168,
+        "h": 126,
+        "action": "relic-relic_05",
+        "enabled": true
+      },
+      {
+        "x": 390,
+        "y": 393,
+        "w": 180,
+        "h": 48,
+        "action": "confirm-relic",
+        "enabled": false
+      }
+    ],
+    "regions": [
+      {
+        "x": 180,
+        "y": 87,
+        "w": 600,
+        "h": 366,
+        "name": "RUN REWARDS"
+      }
+    ]
+  }
+]

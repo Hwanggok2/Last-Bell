@@ -1,0 +1,765 @@
+{
+  "schemaVersion": 1,
+  "package": "Dragon-v4-playable-characters",
+  "status": "reviewed-ready-for-integration",
+  "coordinateConvention": "Native source pixels; top-left; fixed clip pivot. Feet exactly match corresponding accepted Luka frames; no per-frame recentering.",
+  "pixelImport": {
+    "filter": "Point",
+    "compression": "None",
+    "mipmaps": false,
+    "alphaIsTransparency": true,
+    "meshType": "FullRect",
+    "perFrameTrim": false
+  },
+  "actors": [
+    {
+      "id": "player_dragon_daren",
+      "characterId": "dam",
+      "displayName": "다렌",
+      "canonical": "Planning/Story/Dragon-v1/Production/Player-v4/daren/canonical.png",
+      "width": 32,
+      "height": 32,
+      "pivotTopLeft": [
+        16,
+        29
+      ],
+      "referenceHeight": 22,
+      "recommendedIntegerScale": 7,
+      "recommendedDisplayHeight": 154,
+      "facing": "east",
+      "palette": [
+        "#202D38",
+        "#355D82",
+        "#668185",
+        "#6B3F2A",
+        "#AB6C37",
+        "#B7D3D0",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "clips": {
+        "Idle": {
+          "fps": 12,
+          "loop": true,
+          "contactFrame": -1,
+          "effectOriginTopLeft": null,
+          "pivotTopLeft": [
+            16,
+            29
+          ],
+          "frameDurationsMs": [
+            83,
+            83,
+            84,
+            83,
+            83,
+            84,
+            83,
+            83
+          ],
+          "status": "ready",
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Idle/00.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Idle/01.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Idle/02.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Idle/03.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Idle/04.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Idle/05.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Idle/06.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Idle/07.png"
+          ],
+          "sourceIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "sourceJobId": "9fb4d922-6acb-4e93-9481-db98a022394b",
+          "sourceTool": "PixelLab transfer_outfit",
+          "review": "Planning/Story/Dragon-v1/Production/Player-v4/reviews/daren-Idle.png"
+        },
+        "Run": {
+          "fps": 20,
+          "loop": true,
+          "contactFrame": -1,
+          "effectOriginTopLeft": null,
+          "pivotTopLeft": [
+            18,
+            29
+          ],
+          "frameDurationsMs": [
+            40,
+            40,
+            60,
+            60,
+            40,
+            40,
+            60,
+            60
+          ],
+          "status": "ready",
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Run/00.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Run/01.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Run/02.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Run/03.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Run/04.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Run/05.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Run/06.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Run/07.png"
+          ],
+          "sourceIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "sourceJobId": "e307e49c-4020-4dae-8eaf-da43b0a20fe4",
+          "sourceTool": "PixelLab transfer_outfit",
+          "review": "Planning/Story/Dragon-v1/Production/Player-v4/reviews/daren-Run.png"
+        },
+        "Attack": {
+          "fps": 60,
+          "loop": false,
+          "contactFrame": 7,
+          "effectOriginTopLeft": [
+            25,
+            15
+          ],
+          "pivotTopLeft": [
+            17,
+            30
+          ],
+          "frameDurationsMs": [
+            132,
+            11,
+            11,
+            11,
+            12,
+            11,
+            12,
+            43,
+            43,
+            43,
+            43,
+            43,
+            43,
+            42
+          ],
+          "status": "ready",
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Attack/00.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Attack/01.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Attack/02.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Attack/03.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Attack/04.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Attack/05.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Attack/06.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Attack/07.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Attack/08.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Attack/09.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Attack/10.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Attack/11.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Attack/12.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Attack/13.png"
+          ],
+          "sourceIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "sourceJobId": "a8e8df21-b679-4d2e-b20b-3fd59f08dae9",
+          "sourceTool": "PixelLab transfer_outfit",
+          "review": "Planning/Story/Dragon-v1/Production/Player-v4/reviews/daren-Attack.png"
+        },
+        "DodgeUp": {
+          "fps": 24,
+          "loop": false,
+          "contactFrame": 3,
+          "effectOriginTopLeft": null,
+          "pivotTopLeft": [
+            16,
+            29
+          ],
+          "frameDurationsMs": [
+            42,
+            42,
+            41,
+            42,
+            42,
+            41,
+            42,
+            42
+          ],
+          "status": "ready",
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/DodgeUp/00.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/DodgeUp/01.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/DodgeUp/02.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/DodgeUp/03.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/DodgeUp/04.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/DodgeUp/05.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/DodgeUp/06.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/DodgeUp/07.png"
+          ],
+          "sourceIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "sourceJobId": "912aa7a1-60ef-4a6c-866b-c57b5b4053dc",
+          "sourceTool": "PixelLab transfer_outfit",
+          "review": "Planning/Story/Dragon-v1/Production/Player-v4/reviews/daren-DodgeUp.png"
+        },
+        "DodgeBack": {
+          "fps": 24,
+          "loop": false,
+          "contactFrame": 3,
+          "effectOriginTopLeft": null,
+          "pivotTopLeft": [
+            16,
+            29
+          ],
+          "frameDurationsMs": [
+            42,
+            42,
+            41,
+            42,
+            42,
+            41,
+            42,
+            42
+          ],
+          "status": "ready",
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/DodgeBack/00.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/DodgeBack/01.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/DodgeBack/02.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/DodgeBack/03.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/DodgeBack/04.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/DodgeBack/05.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/DodgeBack/06.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/DodgeBack/07.png"
+          ],
+          "sourceIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "sourceJobId": "0e8543bc-e1c7-401e-a103-5a450420cec0",
+          "sourceTool": "PixelLab transfer_outfit",
+          "review": "Planning/Story/Dragon-v1/Production/Player-v4/reviews/daren-DodgeBack.png"
+        },
+        "Hit": {
+          "fps": 24,
+          "loop": false,
+          "contactFrame": -1,
+          "effectOriginTopLeft": null,
+          "pivotTopLeft": [
+            16,
+            29
+          ],
+          "frameDurationsMs": [
+            42,
+            42,
+            41,
+            42,
+            42,
+            41
+          ],
+          "status": "ready",
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Hit/00.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Hit/01.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Hit/02.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Hit/03.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Hit/04.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Hit/05.png"
+          ],
+          "sourceIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "sourceJobId": "a5030c7b-2d83-48b9-8029-d83a83d37399",
+          "sourceTool": "PixelLab transfer_outfit",
+          "review": "Planning/Story/Dragon-v1/Production/Player-v4/reviews/daren-Hit.png"
+        },
+        "DodgeDown": {
+          "fps": 60,
+          "loop": false,
+          "contactFrame": 7,
+          "effectOriginTopLeft": [
+            25,
+            15
+          ],
+          "pivotTopLeft": [
+            17,
+            30
+          ],
+          "frameDurationsMs": [
+            132,
+            11,
+            11,
+            11,
+            12,
+            11,
+            12,
+            43,
+            43,
+            43,
+            43,
+            43,
+            43,
+            42
+          ],
+          "status": "ready",
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Attack/00.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Attack/01.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Attack/02.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Attack/03.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Attack/04.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Attack/05.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Attack/06.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Attack/07.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Attack/08.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Attack/09.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Attack/10.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Attack/11.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Attack/12.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/daren/clips/Attack/13.png"
+          ],
+          "sourceIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "sourceJobId": "a8e8df21-b679-4d2e-b20b-3fd59f08dae9",
+          "sourceTool": "PixelLab transfer_outfit",
+          "review": "Planning/Story/Dragon-v1/Production/Player-v4/reviews/daren-Attack.png",
+          "reuse": "Attack14; existing parry timing remains runtime-owned."
+        }
+      }
+    },
+    {
+      "id": "player_dragon_miel",
+      "characterId": "rin",
+      "displayName": "미엘",
+      "canonical": "Planning/Story/Dragon-v1/Production/Player-v4/miel/canonical.png",
+      "width": 32,
+      "height": 32,
+      "pivotTopLeft": [
+        16,
+        29
+      ],
+      "referenceHeight": 24,
+      "recommendedIntegerScale": 7,
+      "recommendedDisplayHeight": 168,
+      "facing": "east",
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#745184",
+        "#B7D3D0",
+        "#E4AA41",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "clips": {
+        "Idle": {
+          "fps": 12,
+          "loop": true,
+          "contactFrame": -1,
+          "effectOriginTopLeft": null,
+          "pivotTopLeft": [
+            16,
+            29
+          ],
+          "frameDurationsMs": [
+            83,
+            83,
+            84,
+            83,
+            83,
+            84,
+            83,
+            83
+          ],
+          "status": "ready",
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Idle/00.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Idle/01.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Idle/02.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Idle/03.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Idle/04.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Idle/05.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Idle/06.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Idle/07.png"
+          ],
+          "sourceIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "sourceJobId": "7238b39c-306a-4c90-b378-c925b734aeb1",
+          "sourceTool": "PixelLab transfer_outfit",
+          "review": "Planning/Story/Dragon-v1/Production/Player-v4/reviews/miel-Idle.png"
+        },
+        "Run": {
+          "fps": 20,
+          "loop": true,
+          "contactFrame": -1,
+          "effectOriginTopLeft": null,
+          "pivotTopLeft": [
+            18,
+            29
+          ],
+          "frameDurationsMs": [
+            40,
+            40,
+            60,
+            60,
+            40,
+            40,
+            60,
+            60
+          ],
+          "status": "ready",
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Run/00.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Run/01.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Run/02.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Run/03.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Run/04.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Run/05.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Run/06.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Run/07.png"
+          ],
+          "sourceIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "sourceJobId": "4df44b3e-54c5-476f-8867-fc277c39f14b",
+          "sourceTool": "PixelLab transfer_outfit",
+          "review": "Planning/Story/Dragon-v1/Production/Player-v4/reviews/miel-Run.png"
+        },
+        "Attack": {
+          "fps": 60,
+          "loop": false,
+          "contactFrame": 7,
+          "effectOriginTopLeft": [
+            25,
+            15
+          ],
+          "pivotTopLeft": [
+            17,
+            30
+          ],
+          "frameDurationsMs": [
+            132,
+            11,
+            11,
+            11,
+            12,
+            11,
+            12,
+            43,
+            43,
+            43,
+            43,
+            43,
+            43,
+            42
+          ],
+          "status": "ready",
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Attack/00.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Attack/01.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Attack/02.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Attack/03.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Attack/04.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Attack/05.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Attack/06.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Attack/07.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Attack/08.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Attack/09.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Attack/10.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Attack/11.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Attack/12.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Attack/13.png"
+          ],
+          "sourceIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "sourceJobId": "6f483908-963d-4510-80bb-6b825a56ba7e",
+          "sourceTool": "PixelLab transfer_outfit",
+          "review": "Planning/Story/Dragon-v1/Production/Player-v4/reviews/miel-Attack.png"
+        },
+        "DodgeUp": {
+          "fps": 24,
+          "loop": false,
+          "contactFrame": 3,
+          "effectOriginTopLeft": null,
+          "pivotTopLeft": [
+            16,
+            29
+          ],
+          "frameDurationsMs": [
+            42,
+            42,
+            41,
+            42,
+            42,
+            41,
+            42,
+            42
+          ],
+          "status": "ready",
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/DodgeUp/00.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/DodgeUp/01.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/DodgeUp/02.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/DodgeUp/03.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/DodgeUp/04.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/DodgeUp/05.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/DodgeUp/06.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/DodgeUp/07.png"
+          ],
+          "sourceIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "sourceJobId": "ebb0b3de-920a-4537-82d8-7ec03b5893e2",
+          "sourceTool": "PixelLab transfer_outfit",
+          "review": "Planning/Story/Dragon-v1/Production/Player-v4/reviews/miel-DodgeUp.png"
+        },
+        "DodgeBack": {
+          "fps": 24,
+          "loop": false,
+          "contactFrame": 3,
+          "effectOriginTopLeft": null,
+          "pivotTopLeft": [
+            16,
+            29
+          ],
+          "frameDurationsMs": [
+            42,
+            42,
+            41,
+            42,
+            42,
+            41,
+            42,
+            42
+          ],
+          "status": "ready",
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/DodgeBack/00.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/DodgeBack/01.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/DodgeBack/02.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/DodgeBack/03.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/DodgeBack/04.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/DodgeBack/05.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/DodgeBack/06.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/DodgeBack/07.png"
+          ],
+          "sourceIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "sourceJobId": "74189251-7247-49ed-8187-75c625db0ee3",
+          "sourceTool": "PixelLab transfer_outfit",
+          "review": "Planning/Story/Dragon-v1/Production/Player-v4/reviews/miel-DodgeBack.png"
+        },
+        "Hit": {
+          "fps": 24,
+          "loop": false,
+          "contactFrame": -1,
+          "effectOriginTopLeft": null,
+          "pivotTopLeft": [
+            16,
+            29
+          ],
+          "frameDurationsMs": [
+            42,
+            42,
+            41,
+            42,
+            42,
+            41
+          ],
+          "status": "ready",
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Hit/00.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Hit/01.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Hit/02.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Hit/03.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Hit/04.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Hit/05.png"
+          ],
+          "sourceIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "sourceJobId": "582b908c-28d3-4a98-bd0f-11bd8bf80c8a",
+          "sourceTool": "PixelLab transfer_outfit",
+          "review": "Planning/Story/Dragon-v1/Production/Player-v4/reviews/miel-Hit.png"
+        },
+        "DodgeDown": {
+          "fps": 60,
+          "loop": false,
+          "contactFrame": 7,
+          "effectOriginTopLeft": [
+            25,
+            15
+          ],
+          "pivotTopLeft": [
+            17,
+            30
+          ],
+          "frameDurationsMs": [
+            132,
+            11,
+            11,
+            11,
+            12,
+            11,
+            12,
+            43,
+            43,
+            43,
+            43,
+            43,
+            43,
+            42
+          ],
+          "status": "ready",
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Attack/00.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Attack/01.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Attack/02.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Attack/03.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Attack/04.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Attack/05.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Attack/06.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Attack/07.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Attack/08.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Attack/09.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Attack/10.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Attack/11.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Attack/12.png",
+            "Planning/Story/Dragon-v1/Production/Player-v4/miel/clips/Attack/13.png"
+          ],
+          "sourceIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "sourceJobId": "6f483908-963d-4510-80bb-6b825a56ba7e",
+          "sourceTool": "PixelLab transfer_outfit",
+          "review": "Planning/Story/Dragon-v1/Production/Player-v4/reviews/miel-Attack.png",
+          "reuse": "Attack14; existing parry timing remains runtime-owned."
+        }
+      }
+    }
+  ],
+  "license": "license.json",
+  "review": "visual-review.md",
+  "sourceMotion": "Planning/Story/Dragon-v1/Production/Player-v3/manifest.json"
+}

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>종과 등불 · 동선 / 프롤로그 / 첫 연속 공격 미리보기</title>
+<style>
+[hidden]{display:none!important}
+@font-face{font-family:Nanum;src:url('../../Client/Assets/Game/Art/Fonts/NanumGothic-Regular.ttf');font-display:swap}
+:root{color-scheme:dark;--bg:#101923;--panel:#192b3a;--gold:#edc57f;--text:#eee3cd;--mint:#a6ded1}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.7 Nanum,system-ui,sans-serif}main{max-width:1100px;margin:auto;padding:28px 20px}h1{font-size:clamp(25px,4vw,40px);line-height:1.35;margin:8px 0 14px}h2{font-size:23px;margin-top:36px}p{margin:8px 0 16px}a{color:var(--gold)}button,select,input{font:inherit}button,select{background:#23394a;color:var(--text);border:1px solid #627487;padding:10px 16px;min-height:48px;border-radius:4px;cursor:pointer}button:disabled{opacity:.38;cursor:default}button[aria-pressed=true],.primary{border-color:var(--gold);background:#655032;color:#fff4df}button:focus-visible,a:focus-visible,canvas:focus-visible,input:focus-visible{outline:3px solid var(--mint);outline-offset:4px}.eyebrow{color:var(--gold);font-size:12px;letter-spacing:1.8px}.muted{font-size:13px;color:#b5c2cf}.tabs,.controls,.answers,.dpad{display:flex;gap:9px;flex-wrap:wrap;align-items:center}.tabs{margin:20px 0 14px}.tabs button{flex:1}.viewport{border:1px solid #526779;background:#0b1522;position:relative}canvas{width:100%;height:auto;display:block;aspect-ratio:16/9;touch-action:manipulation}#mode-status{padding:8px 14px;background:#1e3242;font-size:14px;color:var(--mint)}.panel{padding:20px;background:var(--panel);border:1px solid #384e61;border-top:0}.panel[hidden]{display:none}.controls{margin-top:12px}label{display:inline-flex;gap:10px;align-items:center}input[type=range]{width:min(420px,60vw);accent-color:var(--gold)}#stage-caption{min-height:52px}.instruction{font-size:18px;color:var(--gold)}.feedback{min-height:30px;color:var(--mint)}.dpad button{min-width:60px;font-size:20px}.dpad{margin:18px 0 8px}.dpad-label{font-size:13px;color:#b5c2cf}.legend{font-size:13px;color:#9db1c4}.board{width:100%;height:auto;border:1px solid #526779;display:block}.card-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.card{padding:18px;border:1px solid #405668;background:#172735}.badge{display:inline-block;border:1px solid #5c746d;color:var(--mint);font-size:12px;padding:4px 9px;margin-left:8px}summary{cursor:pointer;color:var(--gold);padding:12px 0;min-height:48px}.stage-jumps{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.stage-jumps button{font-size:13px}table{width:100%;border-collapse:collapse;font-size:14px}td,th{padding:11px;border-bottom:1px solid #354d60;text-align:left;vertical-align:top}th{color:var(--gold)}.scroll{overflow:auto}footer{margin-top:35px;border-top:1px solid #405668;padding-top:20px}@media(max-width:650px){main{padding:18px 12px}.tabs button{font-size:14px;padding-inline:9px}.panel{padding:16px}.card-grid{grid-template-columns:1fr}.dpad button{min-width:55px}.instruction{font-size:16px}}
+</style>
+</head>
+<body><main>
+<div class="eyebrow">LAST BELL · PLANNING PREVIEW v3</div>
+<h1>종으로 향하는 길,<br>첫 두 번의 공격을 읽는 순간.</h1>
+<p>기획 검토용 미리보기입니다. <b>게임과 공개 웹 빌드는 변경하지 않았습니다.</b></p>
+<nav class="tabs" aria-label="미리보기 선택">
+<button type="button" data-mode="prologue" aria-pressed="true">① 프롤로그</button>
+<button type="button" data-mode="route" aria-pressed="false">② 스테이지 동선</button>
+<button type="button" data-mode="tutorial" aria-pressed="false">③ 5스테이지 연습</button>
+</nav>
+<div class="viewport"><canvas id="preview" width="960" height="540" tabindex="0" aria-label="종과 등불 동선 및 연속 공격 연습 미리보기"></canvas><div id="mode-status" role="status">프롤로그 · 재생을 누르면 글이 위로 흐릅니다.</div></div>
+<section class="panel" id="prologue-panel">
+<p>처음 게임을 시작할 때 자동으로 나오는 글입니다. 이 미리보기에서는 재생 버튼으로 시작합니다.</p>
+<div class="controls"><button type="button" id="prologue-play" class="primary">프롤로그 재생</button><button type="button" id="prologue-reset">처음부터</button><button type="button" id="prologue-skip">건너뛰고 1스테이지</button></div>
+<div class="controls"><label><input type="checkbox" id="reading-mode"> 움직임 줄이기 · 문단별 읽기</label><button type="button" id="next-stanza" hidden>다음 문단</button><span id="prologue-progress" class="muted">0 / 28초</span></div>
+<details><summary>프롤로그 전문 읽기</summary><div id="prologue-copy"></div></details>
+</section>
+<section class="panel" id="route-panel" hidden>
+<p id="stage-caption"></p><div class="controls"><button type="button" id="stage-prev">이전</button><label>Stage <input id="stage-range" type="range" min="1" max="20" value="1"><output id="stage-number">1</output></label><button type="button" id="stage-next">다음으로 이동</button></div>
+<div class="stage-jumps"><button type="button" data-stage="1">1 · 출발</button><button type="button" data-stage="5">5 · 검문소</button><button type="button" data-stage="10">10 · 성문 앞</button><button type="button" data-stage="11">11 · 성문 안</button><button type="button" data-stage="12">12 · 주거구</button><button type="button" data-stage="20">20 · 집행관</button></div>
+<p class="muted">“다음으로 이동” 또는 “5 · 검문소”로 처음 도착하면 이동을 멈추고 종 튜토리얼로 연결됩니다. 슬라이더는 배경만 살펴보는 기능입니다. 미리보기의 완료 상태는 이 페이지를 새로 열면 초기화됩니다.</p>
+<p class="muted">10 → 11에서 성문이 오른쪽에서 왼쪽으로 넘어갑니다. 11 → 12에서는 성문이 왼쪽 화면 밖으로 빠집니다. 11~20은 확장 구간의 배치 확인이며 실제 프로토타입은 10에서 끝납니다.</p>
+</section>
+<section class="panel" id="tutorial-panel" hidden>
+<p id="tutorial-copy" class="instruction"></p><div class="answers" id="count-answers"><button type="button" data-count="1">1회</button><button type="button" data-count="2">2회</button><button type="button" data-count="3">3회</button></div>
+<div id="practice-buttons" class="controls"><button type="button" id="practice-start" class="primary" disabled>연습하기</button><button type="button" id="practice-demo">자동 시연 보기</button><button type="button" id="practice-pause" disabled>일시정지</button><button type="button" id="practice-continue" hidden>전투 계속</button><button type="button" id="practice-reset">설명부터 다시</button></div>
+<div class="dpad" aria-label="회피 입력"><button type="button" data-dodge="left" disabled aria-label="왼쪽 회피">◀</button><button type="button" data-dodge="up" disabled aria-label="위 회피">▲</button><button type="button" data-dodge="down" disabled aria-label="아래 회피, 검 쳐내기">▼</button><button type="button" data-dodge="right" disabled aria-label="오른쪽 회피">▶</button><span class="dpad-label">방향키 / WASD · 아래는 검 쳐내기</span></div>
+<p id="practice-feedback" class="feedback" role="status" aria-live="polite"></p>
+<p class="legend">연습은 체력 소모가 없습니다. 두 타를 모두 직접 막아야 완료됩니다. 자동 시연은 완료로 세지 않습니다. “전투 계속” 뒤에는 Stage 5 일반 전투의 첫 예고로 돌아갑니다.</p>
+<details><summary>타이밍 명세</summary><p>하단 예고 0·240·480ms → 상단 예고 720·960·1200ms → 타격 1440·1920ms. 두 방향을 모두 예고한 뒤 순서대로 공격합니다. 일반 160ms / 완벽 60ms / 재사용 260ms.</p></details>
+</section>
+<p class="muted">동선과 튜토리얼은 도형으로 만든 연출 모형입니다. 온은 기존 스프라이트를 사용하며, 새 적의 최종 외형은 아래 디자인 시트를 참고해 주세요.</p>
+<section id="monsters"><h2>성문 밖 · 1~10스테이지</h2><img class="board" src="Concepts/gate-road-v3.png" alt="빗장 초병, 종추 사냥개, 검기사, 검문쇠 거인, 성문 가디언 외형과 공격 준비 시안"><p class="muted">1 빗장 초병 / 2 종추 사냥개 / 3 금 간 검기사 / 4 검문쇠 거인 / 5 성문 가디언. 숫자는 디자인 번호이며 스테이지 번호가 아닙니다.</p>
+<h2>성문 안 · 11~20스테이지 <span class="badge">확장 기획</span></h2><img class="board" src="Concepts/chain-quarter-v3.png" alt="문패 꼭두각시, 배수로 갈고리개, 사슬 무희, 수문 추지기, 매달린 집행관 시안"><p class="muted">6 문패 꼭두각시 / 7 배수로 갈고리개 / 8 사슬 무희 / 9 수문 추지기 / 10 매달린 집행관. AI 콘셉트 시트이며 완성 스프라이트·애니메이션이 아닙니다.</p>
+<div id="monster-briefs" class="card-grid"></div></section>
+<section><h2>1~20 배치</h2><div class="scroll"><table><thead><tr><th>Stage</th><th>장소 / 적</th><th>배경 연결</th></tr></thead><tbody id="route-table"></tbody></table></div></section>
+<footer><a href="story-world-v2.html">전체 스토리 기획</a> · <a href="route-onboarding-v3.json">세부 명세</a> · <a href="Concepts/generation-v3.json">이미지 생성 프롬프트와 기록</a><p class="muted">브라우저에서만 움직이는 독립 미리보기입니다. 게임 저장·진행·재화에는 접근하지 않습니다.</p></footer>
+</main><script src="route-onboarding-v3-data.js"></script><script src="route-preview-core.js"></script><script src="route-prologue-tutorial-v3.js"></script></body></html>

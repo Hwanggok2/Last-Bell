@@ -1,0 +1,39 @@
+{
+  "prompt": "Native24x24 chunky pixel-art dialogue BUST portrait of MIEL, friendly YOUNG BLONDE MAGE. FACE FRONT toward viewer, both small navy eyes visible symmetrically at the SAME height, complete peach face unobscured, two simple blonde side locks. A LARGE TEAL WIZARD HAT dominates the top half: clean continuous triangular pointed crown with tip gently bent ONE step left, wide straight horizontal brim from x2 to21, simple navy outer outline, no jagged floppy branches or broken shape. Hat brim entirely ABOVE eyebrows, does not cross eyes. Blonde forehead visible beneath it. Teal cloak shoulders atbottom, one cream V-shaped collar. Simple round-to-square youthful face, tiny friendly smile, no long pointed nose. Same original game mage identity: blonde hair, teal broad-brim hat and teal cloak; not purple-hat Rina. Extremely COARSE old8bit sprite: big solid square clusters, each eye1pixel, no eye whites, no hair strands, no shading gradients, no antialiasing. ONLY7specified flat colors. Head and shoulders, NOT full body. Entire hat tip and both brim ends visible within24x24 with1pixeltransparentmargin. Transparent background cutout, NO square backdrop, border, portrait frame, icon box, text, spell particles, staff or decoration.",
+  "palette": [
+    "#202D38",
+    "#287780",
+    "#355D82",
+    "#E4AA41",
+    "#F3BD83",
+    "#E8D9AD",
+    "#6B3F2A"
+  ],
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"background_job_id\": \"a1d9ff79-9145-4dce-8c70-2e1379d08a32\",\n  \"image_id\": \"4d23709f-1aa4-573b-b02f-1ab74031c561\",\n  \"status\": \"processing\",\n  \"source_image_id\": \"4d23709f-1aa4-573b-b02f-1ab74031c561\",\n  \"job_id\": \"a1d9ff79-9145-4dce-8c70-2e1379d08a32\",\n  \"description\": \"Native24x24 chunky pixel-art dialogue BUST portrait of MIEL, friendly YOUNG BLONDE MAGE. FACE FRONT toward viewer, both small navy eyes visible symmetrically at the SAME height, complete peach face unobscured, two simple blonde side locks. A LARGE TEAL WIZARD HAT dominates the top half: clean continuous triangular pointed crown with tip gently bent ONE step left, wide straight horizontal brim from x2 to21, simple navy outer outline, no jagged floppy branches or broken shape. Hat brim entirely ABOVE eyebrows, does not cross eyes. Blonde forehead visible beneath it. Teal cloak shoulders atbottom, one cream V-shaped collar. Simple round-to-square youthful face, tiny friendly smile, no long pointed nose. Same original game mage identity: blonde hair, teal broad-brim hat and teal cloak; not purple-hat Rina. Extremely COARSE old8bit sprite: big solid square clusters, each eye1pixel, no eye whites, no hair strands, no shading gradients, no antialiasing. ONLY7specified flat colors. Head and shoulders, NOT full body. Entire hat tip and both brim ends visible within24x24 with1pixeltransparentmargin. Transparent background cutout, NO square backdrop, border, portrait frame, icon box, text, spell particles, staff or decoration.\",\n  \"seed\": 243601,\n  \"image_size\": {\n    \"width\": 24,\n    \"height\": 24\n  },\n  \"output_count\": 1,\n  \"estimated_generations\": 5,\n  \"pricing_provisional\": true,\n  \"poll_tool\": \"get_image\",\n  \"download_path\": \"/mcp/images/a1d9ff79-9145-4dce-8c70-2e1379d08a32/download\"\n}\nPoll get_image(job_id=\"a1d9ff79-9145-4dce-8c70-2e1379d08a32\"). The source_image_id is usable after completion; it is an image ID, not a character/object ID. Actual usage is reported on completion. cancel_job(job_id=...) cancels unfinished work."
+      }
+    ],
+    "structuredContent": {
+      "background_job_id": "a1d9ff79-9145-4dce-8c70-2e1379d08a32",
+      "image_id": "4d23709f-1aa4-573b-b02f-1ab74031c561",
+      "status": "processing",
+      "source_image_id": "4d23709f-1aa4-573b-b02f-1ab74031c561",
+      "job_id": "a1d9ff79-9145-4dce-8c70-2e1379d08a32",
+      "description": "Native24x24 chunky pixel-art dialogue BUST portrait of MIEL, friendly YOUNG BLONDE MAGE. FACE FRONT toward viewer, both small navy eyes visible symmetrically at the SAME height, complete peach face unobscured, two simple blonde side locks. A LARGE TEAL WIZARD HAT dominates the top half: clean continuous triangular pointed crown with tip gently bent ONE step left, wide straight horizontal brim from x2 to21, simple navy outer outline, no jagged floppy branches or broken shape. Hat brim entirely ABOVE eyebrows, does not cross eyes. Blonde forehead visible beneath it. Teal cloak shoulders atbottom, one cream V-shaped collar. Simple round-to-square youthful face, tiny friendly smile, no long pointed nose. Same original game mage identity: blonde hair, teal broad-brim hat and teal cloak; not purple-hat Rina. Extremely COARSE old8bit sprite: big solid square clusters, each eye1pixel, no eye whites, no hair strands, no shading gradients, no antialiasing. ONLY7specified flat colors. Head and shoulders, NOT full body. Entire hat tip and both brim ends visible within24x24 with1pixeltransparentmargin. Transparent background cutout, NO square backdrop, border, portrait frame, icon box, text, spell particles, staff or decoration.",
+      "seed": 243601,
+      "image_size": {
+        "width": 24,
+        "height": 24
+      },
+      "output_count": 1,
+      "estimated_generations": 5,
+      "pricing_provisional": true,
+      "poll_tool": "get_image",
+      "download_path": "/mcp/images/a1d9ff79-9145-4dce-8c70-2e1379d08a32/download"
+    },
+    "isError": false
+  }
+}

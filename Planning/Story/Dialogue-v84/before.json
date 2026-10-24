@@ -1,0 +1,72 @@
+{
+  "onboarding": {
+    "prologueTitle": "마지막 불씨",
+    "prologueDurationMs": 18000,
+    "prologueParagraphs": [
+      "종소리가 멎자,\n마을의 등불이 꺼졌습니다.",
+      "어둠 속에 잠든 사람들은\n아침을 기다리고 있습니다.",
+      "당신은 마지막 불씨를 지닌 종지기.\n꺼진 등불을 밝히고 다섯 종을 깨우세요.",
+      "성문 너머, 첫 번째 종이 있습니다.\n이제 당신의 여정이 시작됩니다."
+    ],
+    "comboHint": "적들은 가끔 연속 공격을 합니다.\n종의 개수를 살피세요!"
+  },
+  "stories": [
+    {
+      "id": "story_boss_10",
+      "stage": 10,
+      "bossId": "bell_knight",
+      "lines": [
+        {
+          "speaker": "종의 기사",
+          "text": "이 문은 적을 막는 문이 아니었다.\n주민들이 밖으로 나가지 못하게 잠근 거다.",
+          "responses": []
+        },
+        {
+          "speaker": "종의 기사",
+          "text": "주민들은 저 문 너머에 있다.\n집집마다 이어진 사슬을 따라가라.",
+          "responses": []
+        },
+        {
+          "speaker": "선택한 종지기",
+          "text": "문 너머로 가겠어.\n사람들이 왜 갇혔는지 알아봐야 해.",
+          "responses": [
+            {
+              "characterId": "on",
+              "text": "문 너머로 가겠어.\n사람들이 왜 갇혔는지 알아봐야 해."
+            },
+            {
+              "characterId": "dam",
+              "text": "문을 열겠다.\n안에 있는 사람들을 데리고 나오지."
+            },
+            {
+              "characterId": "rin",
+              "text": "사슬을 따라가 볼게.\n주민들을 가둔 이유부터 찾아야겠어."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "story_boss_20",
+      "stage": 20,
+      "bossId": "chain_jailer",
+      "lines": [
+        {
+          "speaker": "매달린 집행관",
+          "text": "사슬을 끊어도 종이 울리면 다시 묶인다.",
+          "responses": []
+        },
+        {
+          "speaker": "매달린 집행관",
+          "text": "주민들을 풀어주려면 종탑의 추를 멈춰라.",
+          "responses": []
+        },
+        {
+          "speaker": "선택한 종지기",
+          "text": "종탑으로 가겠다.\n이번에는 끝까지 멈추겠어.",
+          "responses": []
+        }
+      ]
+    }
+  ]
+}

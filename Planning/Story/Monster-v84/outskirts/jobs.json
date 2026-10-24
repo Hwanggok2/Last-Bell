@@ -1,0 +1,356 @@
+{
+  "version": "v84",
+  "date": "2026-10-23",
+  "provider": "PixelLab",
+  "license": "AI-generated project assets. PixelLab service account terms apply; not CC0 stock.",
+  "style": {
+    "canvas": [
+      64,
+      64
+    ],
+    "palette": [
+      "#081820",
+      "#17303d",
+      "#34505b",
+      "#58747b",
+      "#8fa7a2",
+      "#c9d6c0",
+      "#f4e4bd",
+      "#d4a04a",
+      "#966338",
+      "#5b3d2e",
+      "#352a2b",
+      "#59445b",
+      "#8a6674",
+      "#42665a",
+      "#649685",
+      "#b6be69"
+    ],
+    "reference": "hero-v5-idle/01.png",
+    "styleProxyJob": "f9d4227f-d9fc-46c7-b420-1a4d3a104bae",
+    "notes": "Style proxy only; never installed as replacement hero. Native 64-pixel grid, flat 2-3 shade clusters, navy outline."
+  },
+  "jobs": [
+    {
+      "id": "wild_dog",
+      "name": "들개",
+      "height": 0.92,
+      "base": "Lean feral stray DOG with a long narrow angular muzzle, one torn FLOPPY EAR, thin legs, thin tail kinked downward, rough tawny-brown fur, dark back and ochre face. Four legged adult threatening animal; silhouette has a sharp low spine and bony shoulder. NOT a wolf or fox; no upright triangular ears, no bushy tail. Facing LEFT in wary ready stance.",
+      "attack": "One short vicious biting attack to the LEFT: crouch slightly and pull the muzzle back in anticipation, snap open jaws left with a short forward head-and-shoulder lunge, jaws close at full extension, then recoil and plant all four paws back in the initial pose. Remain a quadruped throughout. The thin tail trails without turning. Fixed camera, no new effects, no transformations.",
+      "stun": "Stagger stunned in place: forelegs buckle slightly and head drops below the shoulders, the body trembles weakly once, then steadies back to initial stance. All four paws stay close to the ground. No attack, no running, no effects, no new objects.",
+      "baseJob": "cea68d09-53ec-4893-b918-eb3c0d25d44c",
+      "sourceImageId": "7c5c3b15-7b04-51ec-ba0a-6ae1b1c235c8",
+      "request": {
+        "width": 64,
+        "height": 64,
+        "no_background": true,
+        "max_colors": 16,
+        "palette": [
+          "#081820",
+          "#17303d",
+          "#34505b",
+          "#58747b",
+          "#8fa7a2",
+          "#c9d6c0",
+          "#f4e4bd",
+          "#d4a04a",
+          "#966338",
+          "#5b3d2e",
+          "#352a2b",
+          "#59445b",
+          "#8a6674",
+          "#42665a",
+          "#649685",
+          "#b6be69"
+        ],
+        "palette_name": "Last Bell shared 16-colour dark navy / muted amber / blue-grey",
+        "style_image": {
+          "source_image_id": "c070ad07-4acb-52bc-a515-288b12877117",
+          "usage_description": "Copy ONLY the large angular pixel clusters, dark navy outline and flat sparse shading of this tiny game sprite, NOT the anatomy or pose or its background. Draw the monster much larger, 44-48 pixels wide on this 64 canvas."
+        },
+        "style_options": {
+          "color_palette": true,
+          "detail": true,
+          "outline": true,
+          "shading": true
+        },
+        "description": "Lean feral stray DOG with a long narrow angular muzzle, one torn FLOPPY EAR, thin legs, thin tail kinked downward, rough tawny-brown fur, dark back and ochre face. Four legged adult threatening animal; silhouette has a sharp low spine and bony shoulder. NOT a wolf or fox; no upright triangular ears, no bushy tail. Facing LEFT in wary ready stance. Single full-body SIDE VIEW enemy sprite, transparent isolated background. Hand-placed-looking NATIVE 64x64 PIXEL ART: angular staircase contours and large solid pixel clusters, 1px deep navy outline, only 2-3 flat shades per material, minimal tiny texture. Full silhouette 44-48px wide, centered x=34 with paws near y=54, minimum 8px transparent margin. Palette-limited. Crisp discrete pixel edges. No anti-aliasing, no soft shading, no smooth gradients, no painterly detail, no cute round chibi anatomy, no shadow, no ground, no text, no UI."
+      },
+      "attackRequest": {
+        "description": "One short vicious biting attack to the LEFT: crouch slightly and pull the muzzle back in anticipation, snap open jaws left with a short forward head-and-shoulder lunge, jaws close at full extension, then recoil and plant all four paws back in the initial pose. Remain a quadruped throughout. The thin tail trails without turning. Fixed camera, no new effects, no transformations. Preserve exact angular pixel style and flat color clusters.",
+        "direction": "west",
+        "frame_count": 16,
+        "no_background": true,
+        "view": "side",
+        "enhance_prompt": false,
+        "initial_pose": "A quadruped ready stance facing left, paws on the ground.",
+        "subject_description": "A lean tawny stray dog with thin legs, floppy ears and a thin tail, dark navy outline, chunky pixel art."
+      },
+      "attackOutputFrames": 17,
+      "stunRequest": {
+        "description": "Loop a small dazed wobble while REMAINING in this deeply slumped, weak stunned crouch. The head hangs down, front knees stay buckled, shoulders sway slightly with faint heavy breathing; paws remain planted. Never stand back up into an alert pose. No attack, no walking, no new symbols, no particles. Preserve exact pixel blocks and colors.",
+        "frame_count": 8,
+        "no_background": true,
+        "direction": "west",
+        "view": "side",
+        "enhance_prompt": false,
+        "initial_pose": "A deeply slumped stunned quadruped facing left, hanging head and buckled front knees.",
+        "subject_description": "A tawny stray dog with thin legs, dark back, floppy ears and a thin limp tail."
+      },
+      "stunOutputFrames": 9,
+      "attackJob": "276a5a09-77d2-45b1-8425-5088d2086708",
+      "stunJob": "a3678ae4-2d05-42f6-a1a4-cca4b840c183",
+      "rejectedStun": {
+        "job": "0bfdb580-529c-4fc2-a4d6-d84931e7d643",
+        "sourceDir": "stun",
+        "reason": "Standing pose wobble was too close to Idle. Replaced with dedicated buckled-knee, hanging-head dazed pose."
+      },
+      "stunDir": "stun-final",
+      "stunPoseJob": "87606503-5a43-467a-be88-74046a41457f",
+      "stunPoseRequest": {
+        "source_image_id": "7c5c3b15-7b04-51ec-ba0a-6ae1b1c235c8",
+        "description": "The same tawny stray dog in a clearly STUNNED pose, facing LEFT: deep buckled front knees, chest sagging close to ground, head hanging low below shoulder, floppy ears drooping, rear paws stay planted, thin tail limp. Dazed weak crouch, not attacking, not lying on side and not dead. Change pose only. Preserve EXACT large angular pixel clusters, dark navy outline, flat limited palette, character markings and body scale. Keep whole animal inside64x64. Transparent background. No stars, no particles, no new objects, no text, no shadow.",
+        "no_background": true,
+        "use_color_palette_correction": true,
+        "method": "text"
+      },
+      "attackNativeJob": "4b5a7e6a-610d-4098-ad09-3bcd393ada24",
+      "attackPaletteRequest": {
+        "image_urls": [
+          "https://api.pixellab.ai/mcp/images/4b5a7e6a-610d-4098-ad09-3bcd393ada24/download?index=0",
+          "https://api.pixellab.ai/mcp/images/4b5a7e6a-610d-4098-ad09-3bcd393ada24/download?index=1",
+          "https://api.pixellab.ai/mcp/images/4b5a7e6a-610d-4098-ad09-3bcd393ada24/download?index=2",
+          "https://api.pixellab.ai/mcp/images/4b5a7e6a-610d-4098-ad09-3bcd393ada24/download?index=3",
+          "https://api.pixellab.ai/mcp/images/4b5a7e6a-610d-4098-ad09-3bcd393ada24/download?index=4",
+          "https://api.pixellab.ai/mcp/images/4b5a7e6a-610d-4098-ad09-3bcd393ada24/download?index=5",
+          "https://api.pixellab.ai/mcp/images/4b5a7e6a-610d-4098-ad09-3bcd393ada24/download?index=6",
+          "https://api.pixellab.ai/mcp/images/4b5a7e6a-610d-4098-ad09-3bcd393ada24/download?index=7",
+          "https://api.pixellab.ai/mcp/images/4b5a7e6a-610d-4098-ad09-3bcd393ada24/download?index=8",
+          "https://api.pixellab.ai/mcp/images/4b5a7e6a-610d-4098-ad09-3bcd393ada24/download?index=9",
+          "https://api.pixellab.ai/mcp/images/4b5a7e6a-610d-4098-ad09-3bcd393ada24/download?index=10",
+          "https://api.pixellab.ai/mcp/images/4b5a7e6a-610d-4098-ad09-3bcd393ada24/download?index=11",
+          "https://api.pixellab.ai/mcp/images/4b5a7e6a-610d-4098-ad09-3bcd393ada24/download?index=12",
+          "https://api.pixellab.ai/mcp/images/4b5a7e6a-610d-4098-ad09-3bcd393ada24/download?index=13",
+          "https://api.pixellab.ai/mcp/images/4b5a7e6a-610d-4098-ad09-3bcd393ada24/download?index=14",
+          "https://api.pixellab.ai/mcp/images/4b5a7e6a-610d-4098-ad09-3bcd393ada24/download?index=15",
+          "https://api.pixellab.ai/mcp/images/4b5a7e6a-610d-4098-ad09-3bcd393ada24/download?index=16"
+        ],
+        "dithering": "none"
+      },
+      "attackDir": "attack-final",
+      "stunNativeJob": "e8c94f8a-b333-4bd9-a9d2-8393c9ac10d1",
+      "stunPaletteRequest": {
+        "image_urls": [
+          "https://api.pixellab.ai/mcp/images/e8c94f8a-b333-4bd9-a9d2-8393c9ac10d1/download?index=0",
+          "https://api.pixellab.ai/mcp/images/e8c94f8a-b333-4bd9-a9d2-8393c9ac10d1/download?index=1",
+          "https://api.pixellab.ai/mcp/images/e8c94f8a-b333-4bd9-a9d2-8393c9ac10d1/download?index=2",
+          "https://api.pixellab.ai/mcp/images/e8c94f8a-b333-4bd9-a9d2-8393c9ac10d1/download?index=3",
+          "https://api.pixellab.ai/mcp/images/e8c94f8a-b333-4bd9-a9d2-8393c9ac10d1/download?index=4",
+          "https://api.pixellab.ai/mcp/images/e8c94f8a-b333-4bd9-a9d2-8393c9ac10d1/download?index=5",
+          "https://api.pixellab.ai/mcp/images/e8c94f8a-b333-4bd9-a9d2-8393c9ac10d1/download?index=6",
+          "https://api.pixellab.ai/mcp/images/e8c94f8a-b333-4bd9-a9d2-8393c9ac10d1/download?index=7",
+          "https://api.pixellab.ai/mcp/images/e8c94f8a-b333-4bd9-a9d2-8393c9ac10d1/download?index=8"
+        ],
+        "dithering": "none"
+      }
+    },
+    {
+      "id": "grey_wolf",
+      "name": "회색 늑대",
+      "height": 1.2,
+      "base": "Large adult GREY WOLF with long pointed muzzle, two sharp triangular ears, angular spiky pale-grey neck ruff, charcoal-grey back, muscular lean legs and thick BUSHY TAIL trailing RIGHT. Four legged predator, lowered hunting stance. Sharp silhouette and fierce mature proportions; not cute, not round. Facing LEFT in ready stance.",
+      "attack": "One predatory pounce bite to the LEFT: sink onto hind legs and draw head back, spring left with both forelegs extended and jaws opened, close jaws at the farthest lunge, then land and return to the starting quadruped stance. The bushy tail remains recognizable. A clear anticipation, sharp contact, and recovery; no turning, no camera movement, no effects.",
+      "stun": "Stunned weak wobble in place: lower the head and triangular ears, buckle forelegs slightly, the spine sags and the tail droops, then slowly steady into the initial stance. Stay facing LEFT, keep four legs and bushy tail consistent. No attack, no walking, no effects.",
+      "baseJob": "95e999fa-736e-46d4-a43b-66f0a6314ef6",
+      "sourceImageId": "69e3c3a8-a383-5e2d-aff8-0f095a17140d",
+      "request": {
+        "width": 64,
+        "height": 64,
+        "no_background": true,
+        "max_colors": 16,
+        "palette": [
+          "#081820",
+          "#17303d",
+          "#34505b",
+          "#58747b",
+          "#8fa7a2",
+          "#c9d6c0",
+          "#f4e4bd",
+          "#d4a04a",
+          "#966338",
+          "#5b3d2e",
+          "#352a2b",
+          "#59445b",
+          "#8a6674",
+          "#42665a",
+          "#649685",
+          "#b6be69"
+        ],
+        "palette_name": "Last Bell shared 16-colour dark navy / muted amber / blue-grey",
+        "style_image": {
+          "source_image_id": "c070ad07-4acb-52bc-a515-288b12877117",
+          "usage_description": "Copy ONLY the large angular pixel clusters, dark navy outline and flat sparse shading of this tiny game sprite, NOT the anatomy or pose or its background. Draw the monster much larger, 44-48 pixels wide on this 64 canvas."
+        },
+        "style_options": {
+          "color_palette": true,
+          "detail": true,
+          "outline": true,
+          "shading": true
+        },
+        "description": "Large adult GREY WOLF with long pointed muzzle, two sharp triangular ears, angular spiky pale-grey neck ruff, charcoal-grey back, muscular lean legs and thick BUSHY TAIL trailing RIGHT. Four legged predator, lowered hunting stance. Sharp silhouette and fierce mature proportions; not cute, not round. Facing LEFT in ready stance. Single full-body SIDE VIEW enemy sprite, transparent isolated background. Hand-placed-looking NATIVE 64x64 PIXEL ART: angular staircase contours and large solid pixel clusters, 1px deep navy outline, only 2-3 flat shades per material, minimal tiny texture. Full silhouette 44-48px wide, centered x=34 with paws near y=54, minimum 8px transparent margin. Palette-limited. Crisp discrete pixel edges. No anti-aliasing, no soft shading, no smooth gradients, no painterly detail, no cute round chibi anatomy, no shadow, no ground, no text, no UI."
+      },
+      "attackRequest": {
+        "description": "One predatory pounce bite to the LEFT: sink onto hind legs and draw head back, spring left with both forelegs extended and jaws opened, close jaws at the farthest lunge, then land and return to the starting quadruped stance. The bushy tail remains recognizable. A clear anticipation, sharp contact, and recovery; no turning, no camera movement, no effects. Preserve exact angular pixel style and flat color clusters.",
+        "direction": "west",
+        "frame_count": 16,
+        "no_background": true,
+        "view": "side",
+        "enhance_prompt": false,
+        "initial_pose": "A quadruped ready stance facing left, paws on the ground.",
+        "subject_description": "A large grey wolf with pointed ears, white angular neck ruff and bushy tail, chunky pixel art."
+      },
+      "attackOutputFrames": 17,
+      "stunRequest": {
+        "description": "Loop a small dazed wobble while REMAINING in this deeply slumped, weak stunned crouch. The head hangs down, front knees stay buckled, shoulders sway slightly with faint heavy breathing; paws remain planted. Never stand back up into an alert pose. No attack, no walking, no new symbols, no particles. Preserve exact pixel blocks and colors.",
+        "frame_count": 8,
+        "no_background": true,
+        "direction": "west",
+        "view": "side",
+        "enhance_prompt": false,
+        "initial_pose": "A deeply slumped stunned quadruped facing left, hanging head and buckled front knees.",
+        "subject_description": "A grey wolf with white neck ruff, triangular ears and thick bushy tail."
+      },
+      "stunOutputFrames": 9,
+      "attackJob": "77da4b52-d8c1-4f8f-8f29-817ac03ccd80",
+      "stunJob": "1cffe1dd-9f4c-4aa1-9a51-58a7fb546d43",
+      "rejectedStun": {
+        "job": "a2bbdfa1-e6f4-43ce-b605-65f5136b1137",
+        "sourceDir": "stun",
+        "reason": "Standing pose wobble was too close to Idle. Replaced with dedicated buckled-knee, hanging-head dazed pose."
+      },
+      "stunDir": "stun-final",
+      "stunPoseJob": "e6e0714f-8af7-43b9-a819-b29798b672fb",
+      "stunPoseRequest": {
+        "source_image_id": "69e3c3a8-a383-5e2d-aff8-0f095a17140d",
+        "description": "Change ONLY the pose to a clearly STUNNED grey wolf still facing LEFT: its front knees buckle deeply, chest sinks close to the ground, head droops much lower than its shoulder with muzzle hanging downward, triangular ears tilt back, hind legs remain planted, bushy tail hangs limply down. A weak dazed crouch, NOT attacking and NOT dead or lying on its side. Maintain the exact same wolf anatomy, large blocky pixel clusters, dark navy outline and existing flat 10-colour palette. Full animal inside the canvas. No stars, no particles, no shadow, no background, no text.",
+        "no_background": true,
+        "use_color_palette_correction": true,
+        "method": "text"
+      },
+      "stunNativeJob": "70c05a45-18c5-4916-8a0f-078270ed3cc5",
+      "stunPaletteRequest": {
+        "image_urls": [
+          "https://api.pixellab.ai/mcp/images/70c05a45-18c5-4916-8a0f-078270ed3cc5/download?index=0",
+          "https://api.pixellab.ai/mcp/images/70c05a45-18c5-4916-8a0f-078270ed3cc5/download?index=1",
+          "https://api.pixellab.ai/mcp/images/70c05a45-18c5-4916-8a0f-078270ed3cc5/download?index=2",
+          "https://api.pixellab.ai/mcp/images/70c05a45-18c5-4916-8a0f-078270ed3cc5/download?index=3",
+          "https://api.pixellab.ai/mcp/images/70c05a45-18c5-4916-8a0f-078270ed3cc5/download?index=4",
+          "https://api.pixellab.ai/mcp/images/70c05a45-18c5-4916-8a0f-078270ed3cc5/download?index=5",
+          "https://api.pixellab.ai/mcp/images/70c05a45-18c5-4916-8a0f-078270ed3cc5/download?index=6",
+          "https://api.pixellab.ai/mcp/images/70c05a45-18c5-4916-8a0f-078270ed3cc5/download?index=7",
+          "https://api.pixellab.ai/mcp/images/70c05a45-18c5-4916-8a0f-078270ed3cc5/download?index=8"
+        ],
+        "dithering": "none"
+      }
+    },
+    {
+      "id": "brown_bear",
+      "name": "불곰",
+      "height": 1.85,
+      "base": "Huge adult BROWN BEAR with blocky massive shoulder hump, broad angular torso, heavy forelegs and thick square paws with pale claws, small squarish ears and a short tan muzzle. Sturdy quadruped silhouette, dark brown back, ochre flat highlights. NOT cute, no rounded teddy bear shape, no furry speckled textures. Facing LEFT in threatening ready stance.",
+      "attack": "One heavy forward claw swipe LEFT: brace with hind legs, raise the NEAR front paw high while shifting the shoulders back, then drive the paw forcefully down and LEFT with a clear extended claw strike. The weight follows through, then the forepaw returns to the ground and the bear recovers its initial four-legged stance. Keep the big blocky body, no full upright standing, no spinning, no camera motion, no effects.",
+      "stun": "A massive bear stunned in place: its big shoulders slump, head drops and forelegs buckle under its weight, rocking once weakly before it steadies to the initial stance. Remain quadruped and LEFT-facing, no falling dead, no attack, no effects.",
+      "baseJob": "1a2d4129-eebf-416e-9c6c-1fddd2ac8520",
+      "sourceImageId": "13ec5780-f462-57a8-8c43-d02234f7d5a9",
+      "request": {
+        "width": 64,
+        "height": 64,
+        "no_background": true,
+        "max_colors": 16,
+        "palette": [
+          "#081820",
+          "#17303d",
+          "#34505b",
+          "#58747b",
+          "#8fa7a2",
+          "#c9d6c0",
+          "#f4e4bd",
+          "#d4a04a",
+          "#966338",
+          "#5b3d2e",
+          "#352a2b",
+          "#59445b",
+          "#8a6674",
+          "#42665a",
+          "#649685",
+          "#b6be69"
+        ],
+        "palette_name": "Last Bell shared 16-colour dark navy / muted amber / blue-grey",
+        "style_image": {
+          "source_image_id": "c070ad07-4acb-52bc-a515-288b12877117",
+          "usage_description": "Copy ONLY the large angular pixel clusters, dark navy outline and flat sparse shading of this tiny game sprite, NOT the anatomy or pose or its background. Draw the monster much larger, 44-48 pixels wide on this 64 canvas."
+        },
+        "style_options": {
+          "color_palette": true,
+          "detail": true,
+          "outline": true,
+          "shading": true
+        },
+        "description": "Huge adult BROWN BEAR with blocky massive shoulder hump, broad angular torso, heavy forelegs and thick square paws with pale claws, small squarish ears and a short tan muzzle. Sturdy quadruped silhouette, dark brown back, ochre flat highlights. NOT cute, no rounded teddy bear shape, no furry speckled textures. Facing LEFT in threatening ready stance. Single full-body SIDE VIEW enemy sprite, transparent isolated background. Hand-placed-looking NATIVE 64x64 PIXEL ART: angular staircase contours and large solid pixel clusters, 1px deep navy outline, only 2-3 flat shades per material, minimal tiny texture. Full silhouette 44-48px wide, centered x=34 with paws near y=54, minimum 8px transparent margin. Palette-limited. Crisp discrete pixel edges. No anti-aliasing, no soft shading, no smooth gradients, no painterly detail, no cute round chibi anatomy, no shadow, no ground, no text, no UI."
+      },
+      "attackRequest": {
+        "description": "One heavy forward claw swipe LEFT: brace with hind legs, raise the NEAR front paw high while shifting the shoulders back, then drive the paw forcefully down and LEFT with a clear extended claw strike. The weight follows through, then the forepaw returns to the ground and the bear recovers its initial four-legged stance. Keep the big blocky body, no full upright standing, no spinning, no camera motion, no effects. Preserve exact angular pixel style and flat color clusters.",
+        "direction": "west",
+        "frame_count": 16,
+        "no_background": true,
+        "view": "side",
+        "enhance_prompt": false,
+        "initial_pose": "A quadruped ready stance facing left, paws on the ground.",
+        "subject_description": "A massive brown bear with blocky shoulders, heavy forelegs and pale claws, chunky pixel art."
+      },
+      "attackOutputFrames": 17,
+      "stunRequest": {
+        "description": "Loop a small dazed wobble while REMAINING in this deeply slumped, weak stunned crouch. The head hangs down, front knees stay buckled, shoulders sway slightly with faint heavy breathing; paws remain planted. Never stand back up into an alert pose. No attack, no walking, no new symbols, no particles. Preserve exact pixel blocks and colors.",
+        "frame_count": 8,
+        "no_background": true,
+        "direction": "west",
+        "view": "side",
+        "enhance_prompt": false,
+        "initial_pose": "A deeply slumped stunned quadruped facing left, hanging head and buckled front knees.",
+        "subject_description": "A massive brown bear with blocky heavy shoulders, thick paws and a tan muzzle."
+      },
+      "stunOutputFrames": 9,
+      "attackJob": "70936a09-3fa2-4278-ba01-697b874cfe23",
+      "stunJob": "51fbba94-46c4-41fd-91a1-38e7478c3456",
+      "rejectedStun": {
+        "job": "5ba4a962-ce42-448c-bdfd-6897ac400a69",
+        "sourceDir": "stun",
+        "reason": "Standing pose wobble was too close to Idle. Replaced with dedicated buckled-knee, hanging-head dazed pose."
+      },
+      "stunDir": "stun-final",
+      "stunPoseJob": "ce90fd7d-8034-4649-8336-f4e74b25dafd",
+      "stunPoseRequest": {
+        "source_image_id": "13ec5780-f462-57a8-8c43-d02234f7d5a9",
+        "description": "The same massive brown bear in a clearly STUNNED pose, facing LEFT: thick forelegs buckle deeply under its weight, heavy shoulders sag, head hangs much lower toward the ground, hind paws remain planted. A weak slumped quadruped crouch, NOT an attack windup, NOT asleep or lying down, NOT dead. Change pose only. Preserve EXACT large angular pixel clusters, dark navy outline, flat limited palette, character markings and body scale. Keep whole animal inside64x64. Transparent background. No stars, no particles, no new objects, no text, no shadow.",
+        "no_background": true,
+        "use_color_palette_correction": true,
+        "method": "text"
+      },
+      "stunNativeJob": "ba700ba2-3b14-4a3c-bf70-94954733b129",
+      "stunPaletteRequest": {
+        "image_urls": [
+          "https://api.pixellab.ai/mcp/images/ba700ba2-3b14-4a3c-bf70-94954733b129/download?index=0",
+          "https://api.pixellab.ai/mcp/images/ba700ba2-3b14-4a3c-bf70-94954733b129/download?index=1",
+          "https://api.pixellab.ai/mcp/images/ba700ba2-3b14-4a3c-bf70-94954733b129/download?index=2",
+          "https://api.pixellab.ai/mcp/images/ba700ba2-3b14-4a3c-bf70-94954733b129/download?index=3",
+          "https://api.pixellab.ai/mcp/images/ba700ba2-3b14-4a3c-bf70-94954733b129/download?index=4",
+          "https://api.pixellab.ai/mcp/images/ba700ba2-3b14-4a3c-bf70-94954733b129/download?index=5",
+          "https://api.pixellab.ai/mcp/images/ba700ba2-3b14-4a3c-bf70-94954733b129/download?index=6",
+          "https://api.pixellab.ai/mcp/images/ba700ba2-3b14-4a3c-bf70-94954733b129/download?index=7",
+          "https://api.pixellab.ai/mcp/images/ba700ba2-3b14-4a3c-bf70-94954733b129/download?index=8"
+        ],
+        "dithering": "none"
+      }
+    }
+  ]
+}

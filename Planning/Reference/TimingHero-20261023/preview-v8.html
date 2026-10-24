@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Last Bell · 영상 분석 적용 미리보기</title><link rel="stylesheet" href="report.css"></head>
+<body class="preview-page"><header><a href="analysis-v8.html">← 분석·기획서</a><span>LAST BELL / REFERENCE STUDY 08</span><h1>v8 미리보기 · 이전 기획</h1><p>현재 게임 아트를 사용한 기획 시뮬레이션입니다. 게임 저장·전투 판정·재화에는 영향을 주지 않습니다.</p></header>
+<main><div class="toolbar">
+<label>화면 <select id="screen"><option value="lobby">캐릭터 · 강화</option><option value="prologue">프롤로그</option><option value="relics">유물 선택</option><option value="collection">유물 도감</option><option value="battle">전투 · 연속 공격</option><option value="result">결과</option><option value="current">현재 게임 캡처</option></select></label>
+<label>화면 크기 <select id="viewport"><option value="960,540">960 × 540</option><option value="640,360">640 × 360 · 작은 모바일</option><option value="1200,540">1200 × 540 · 넓은 모바일</option></select></label>
+<button id="reset">샘플 초기화</button></div>
+<div class="toolbar" id="lobby-options"><label>성장 적성 <select id="star"><option>1</option><option>2</option><option selected>3</option><option>4</option><option>5</option></select>성</label><label>강화 레벨 <input id="level" type="number" min="0" max="50" value="10"></label><label>골드 <input id="gold" type="number" min="0" max="99999999999" value="12345"></label><button id="broke">골드 부족 보기</button><button id="maxed">MAX 보기</button></div>
+<div class="toolbar" id="battle-options" hidden><label>공격 횟수 <select id="count"><option>1</option><option selected>2</option><option>3</option></select></label><label>연출 <select id="outcome"><option value="perfect">완벽 회피 · 반격</option><option value="normal">일반 회피</option><option value="fail">피격</option></select></label><label>파동 <select id="revision"><option value="proposed">변경안 · 모두 480ms</option><option value="current">현재 · 모두 600ms</option></select></label><button id="play">일시정지</button><button id="restart">다시 보기</button><label>속도 <select id="speed"><option value="1">1배속</option><option value="0.5">0.5배속</option><option value="0.25">0.25배속</option></select></label></div>
+<div class="toolbar" id="relic-options" hidden><label><input id="relic-max" type="checkbox"> 최대 레벨 중복 보상</label><button id="new-relic">다시 선택</button></div>
+<div class="toolbar" id="current-options" hidden><label>현재 화면 <select id="capture"><option value="currentLobby">로비</option><option value="currentPrologue">프롤로그</option><option value="currentRelic">유물 선택</option><option value="currentBattle">전투 조작부</option></select></label></div>
+<div id="stage" class="stage" aria-label="변경안 화면"></div>
+<div id="timeline" hidden><input id="scrub" type="range" min="0" max="3000" value="0" step="1" aria-label="전투 시간"><output id="clock">0 ms</output><p id="beats"></p></div>
+<p id="status" role="status" aria-live="polite"></p><p id="context" class="callout"></p>
+<div class="grid"><article><h2>직접 확인할 수 있는 것</h2><p>강화 버튼으로 골드와 정수 능력치가 바뀝니다. 별·레벨 변경은 비교용 조건이며 실제 캐릭터의 별을 바꾸는 기능이 아닙니다. 유물은 선택 → 설명 → 확정을 거칩니다. 프롤로그는 자동 재생, 일시정지, 다음 문단, 건너뛰기를 지원합니다.</p></article><article><h2>전투 미리보기의 범위</h2><p>동작·파동은 자동 연출입니다. 방향 버튼 또는 방향키를 누르면 다음 타격에 대한 타이밍 표본을 계산합니다. 전투 결과나 HP를 시뮬레이션하지 않습니다. 아래 버튼은 상단 공격을 쳐내는 입력입니다. 일시정지 중에는 입력 표본을 받지 않습니다.</p></article></div>
+<p class="muted">실제 판정 검증과 모바일 터치 검수는 Unity 적용 단계에서 진행해야 합니다. 이 페이지의 비교 대상은 Audio-v7.2 저장 캡처입니다.</p></main>
+<script src="report-data.js"></script><script src="assets.js"></script><script src="preview-model.js"></script><script src="preview.js"></script></body></html>

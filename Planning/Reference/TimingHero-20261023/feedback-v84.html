@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ko">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Last Bell v8.4 · 도트 통일 · 기절 타격 · 자동 유물</title>
+<style>
+@font-face{font-family:neo;src:url('../../../Client/Assets/Game/Art/Fonts/NeoDunggeunmoPro-Regular.ttf')}
+*{box-sizing:border-box}body{margin:0;background:#0d1821;color:#e6dfce;font:16px/1.8 system-ui,sans-serif}main{max-width:1160px;margin:auto;padding:42px 24px 100px}h1,h2,h3{line-height:1.4}h1{font:38px/1.4 neo}h2{margin-top:56px;color:#f1c574;font-size:27px}h3{font-size:20px;margin-top:0}p{max-width:980px}.muted,small{color:#a3b2ba}.tag{display:inline-block;padding:4px 12px;background:#274c46;color:#b6e5ca;border-radius:4px;margin-right:8px}.pending{background:#493e29;color:#edcc8e}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}.card{padding:22px;background:#172631;border:1px solid #34434b;border-radius:8px}.card p:last-child{margin-bottom:0}.step{font:28px neo;color:#f1c574;margin:0 0 12px}.callout{border-left:4px solid #84cfb6;padding:18px 24px;background:#18312f}.attention{border-color:#e6bd74;background:#302c22}a{color:#8cd5db}nav{display:flex;gap:20px;flex-wrap:wrap;margin:28px 0}table{width:100%;border-collapse:collapse;margin:18px 0;font-size:15px}td,th{text-align:left;padding:12px;border-bottom:1px solid #35444c;vertical-align:top}th{color:#eec781;background:#1b2d38}.scroll{overflow-x:auto}figure{margin:0}figcaption{color:#a3b2ba;padding:10px 0}.screen-frame{position:relative;min-height:180px;aspect-ratio:16/9;background:#101f2a;border:1px solid #3e5661;display:grid;place-items:center;text-align:center;padding:22px}.screen-frame.loaded{padding:0;min-height:0}.screen-frame img{width:100%;height:auto;display:block;image-rendering:pixelated}.screen-frame img[hidden]{display:none}.screen-placeholder{max-width:420px;font:20px/1.7 neo;color:#91a7b0}.screen-placeholder small{display:block;font:13px/1.6 system-ui;word-break:break-all;margin-top:10px}.preview-placeholder{border:1px dashed #6d7f80;padding:18px;color:#b5c4c7;background:#15252c}.preview-placeholder code{display:block;font-size:12px;color:#8babae;overflow-wrap:anywhere}.flow{display:flex;gap:12px;align-items:stretch;margin:24px 0}.flow>div{flex:1;border:1px solid #3d5a61;background:#172a33;padding:18px}.flow b{font:22px neo;color:#f0c87d;display:block;margin-bottom:10px}.flow .arrow{flex:0;align-self:center;border:0;padding:0;background:transparent;color:#d1b979;font-size:28px}.copy{font-family:neo;font-size:22px;color:#f2dfb4}.rule{color:#afd7cd}.small{font-size:14px}.badges{display:flex;flex-wrap:wrap;gap:8px}.badges span{border:1px solid #496166;padding:5px 10px;color:#bed5d1}.scope{margin:22px 0}.costs td:not(:first-child),.costs th:not(:first-child){text-align:right}.state-list li{margin:8px 0}details{border:1px solid #374b54;padding:16px 20px;margin-top:20px}summary{cursor:pointer;color:#bfd9dc}code{font-size:13px}.verification{border:1px solid #716347;background:#29291f;padding:22px;margin-top:22px}.verification h3{color:#edca83}.gallery{margin-top:22px}.status-note{font-size:14px;color:#d4bb8a}.download{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}.download a{padding:10px 18px;background:#203a42;border:1px solid #5a8287;text-decoration:none}.ready{color:#a4d8bb}.future{color:#d4bc8e}
+@media(max-width:740px){main{padding:26px 16px 70px}h1{font-size:30px}h2{font-size:24px}.flow{flex-direction:column}.flow .arrow{transform:rotate(90deg)}.card{padding:18px}.copy{font-size:20px}}
+</style>
+<main>
+  <span class="tag">Last Bell v0.8.4</span><span id="verification-state" class="tag">게임 적용 · 검증 완료</span><span class="muted">2026.10.23</span>
+  <h1>같은 도트 세계 안에서,<br>피한 뒤의 한 방을 분명하게</h1>
+  <p>이번 변경은 <b>몬스터 그림체 통일, 공격으로 발동하는 기절, 보유 유물 자동 적용과 보관함 확장, 기존 이야기의 대사 보완</b>이다. 아래는 최종 반영 내용을 확인하기 위한 리뷰 페이지다.</p>
+  <p id="integration-status" class="status-note">Windows v0.8.4에 적용했습니다. Unity 테스트 204개와 960×540·640×360의 실행 검증 각 357개를 통과했습니다. 아래에서 실제 게임 캡처와 6종 모션을 확인할 수 있습니다.</p>
+  <nav><a href="#art">몬스터와 모션</a><a href="#stun">기절 흐름</a><a href="#relics">유물과 보관함</a><a href="#story">대사와 스토리</a><a href="#verification">검수·실행 파일</a></nav>
+
+  <h2 id="art">여섯 몬스터의 도트 규격을 맞춘다</h2>
+  <p>성 밖의 들개·회색 늑대·불곰, 주거구의 거대쥐·주민형 잔상·물안개 망령을 같은 픽셀 밀도와 명암 기준으로 맞춘다. 매끈한 둥근 면과 흐린 경계 대신, 작은 화면에서도 몸의 덩어리가 읽히는 외곽선과 단단한 색면을 사용한다. <b>10층 종의 기사와 20층 매달린 집행관은 기존 보스를 보존한다.</b></p>
+  <div class="grid">
+    <article class="card"><h3>1~9 · 성 밖</h3><p>들개는 야윈 몸과 꺾인 귀, 늑대는 각진 목갈기와 긴 꼬리, 불곰은 큰 어깨와 두꺼운 앞발로 구별한다. 같은 그림체로 맞추면서 체형과 무게감은 남긴다.</p><div class="badges"><span>들개 · 물기</span><span>늑대 · 도약 물기</span><span>불곰 · 앞발 강타</span></div></article>
+    <article class="card"><h3>11~19 · 물에 잠긴 사슬 주거구</h3><p>하수구 거대쥐, 젖은 외투와 문짝을 든 잔상, 가슴에 등불이 비치는 물안개 망령을 구분한다. 물과 천의 인상을 내더라도 가장자리를 흐리게 처리하지 않는다.</p><div class="badges"><span>거대쥐 · 앞니 돌진</span><span>주민형 잔상 · 문짝 강타</span><span>망령 · 물결 발톱</span></div></article>
+  </div>
+  <div class="scroll"><table><thead><tr><th>상태</th><th>이번 구성</th><th>검수 기준</th></tr></thead><tbody>
+    <tr><td>기본 모습</td><td>Idle 애니메이션 없이 정지 이미지 1장</td><td>과한 들썩임 없이 실루엣·눈·무기가 분명하게 보인다.</td></tr>
+    <tr><td>공격</td><td>몬스터별 대표 공격 모션 1개</td><td>준비 → 실제 접촉 → 회복이 읽힌다. 접촉 프레임과 게임의 타격 시점을 맞춘다.</td></tr>
+    <tr><td>피격</td><td>현재 자세에서 흰색 플래시 후 원래 색으로 복귀</td><td>실제 피해를 받은 순간에만 반응한다. 별도 피격 자세 때문에 공격 동작이 끊기지 않는다.</td></tr>
+    <tr><td>기절</td><td>기절 전용 모션</td><td>준비 상태와 실제 무력화 상태를 구별한다. 팔다리·무기·얼굴의 형태가 프레임마다 바뀌지 않는다.</td></tr>
+    <tr><td>사망</td><td>새 사망 애니메이션 없음</td><td>기존 처치·소멸·보상 흐름을 유지한다.</td></tr>
+  </tbody></table></div>
+  <div class="grid" id="monster-review-links">
+    <a class="card" href="../../Story/Monster-v84/outskirts/index.html"><b>성 밖 몬스터 · 공격/기절/피격 재생</b><p>들개 · 회색 늑대 · 불곰</p></a>
+    <a class="card" href="../../Story/Monster-v84/residential/preview.html"><b>주거구 몬스터 · 공격/기절/피격 재생</b><p>하수구 거대쥐 · 침수된 잔상 · 물안개 망령</p></a>
+  </div>
+  <p class="note small">검수 자료에는 원본 프레임과 공격·기절 재생을 함께 연결한다. 제작 프레임의 모양 확인과 실제 인게임 타격 시점 확인은 따로 수행한다.</p>
+
+<details><summary>실제 게임에서의 6종 도트 스타일</summary><div class="grid gallery"><figure><img style="width:100%;image-rendering:pixelated" src="../../Evidence/Feedback-v84/desktop/v83-stage-01.png" alt="들개 실제 게임 화면"><figcaption>들개 · Stage 1</figcaption></figure><figure><img style="width:100%;image-rendering:pixelated" src="../../Evidence/Feedback-v84/desktop/v83-stage-02.png" alt="회색 늑대 실제 게임 화면"><figcaption>회색 늑대 · Stage 2</figcaption></figure><figure><img style="width:100%;image-rendering:pixelated" src="../../Evidence/Feedback-v84/desktop/v83-stage-03.png" alt="불곰 실제 게임 화면"><figcaption>불곰 · Stage 3</figcaption></figure><figure><img style="width:100%;image-rendering:pixelated" src="../../Evidence/Feedback-v84/desktop/v83-stage-11.png" alt="하수구 거대쥐 실제 게임 화면"><figcaption>하수구 거대쥐 · Stage 11</figcaption></figure><figure><img style="width:100%;image-rendering:pixelated" src="../../Evidence/Feedback-v84/desktop/v83-stage-12.png" alt="침수된 잔상 실제 게임 화면"><figcaption>침수된 잔상 · Stage 12</figcaption></figure><figure><img style="width:100%;image-rendering:pixelated" src="../../Evidence/Feedback-v84/desktop/v83-stage-13.png" alt="물안개 망령 실제 게임 화면"><figcaption>물안개 망령 · Stage 13</figcaption></figure></div></details>
+  <h2 id="stun">스택을 채운 뒤, 공격을 명중시켜 기절시킨다</h2>
+  <div class="flow" aria-label="기절 상태 진행">
+    <div><b>1 · 회피로 충전</b>회피 성공으로 기절 스택을 쌓는다.</div><span class="arrow" aria-hidden="true">→</span>
+    <div><b>2 · 100에서 준비</b>스택 100을 유지한다. 적은 아직 공격할 수 있다.</div><span class="arrow" aria-hidden="true">→</span>
+    <div><b>3 · 명중으로 발동</b>다음 공격이 실제로 맞으면 적이 기절한다.</div>
+  </div>
+  <div class="callout"><b>100을 채우는 순간에는 연속 공격이 멈추지 않는다.</b><p>남은 적 공격을 읽으면서 공격할 틈을 고른다. 준비 상태에서 공격이 명중하면 그때 남은 적 공격을 취소하고 기절시킨다. 버튼을 누른 것만으로 발동시키지 않는다.</p></div>
+  <div class="grid scope">
+    <article class="card"><h3>기절을 일으킨 첫 타격</h3><p>스택을 소비해 기절을 발동한다. 이 타격에는 <b>기절 피해 배율을 추가하지 않는다.</b> 기절 전에 맞은 타격이기 때문이다.</p></article>
+    <article class="card"><h3>기절한 뒤의 후속 타격</h3><p>이후 기절 상태인 적에게 명중한 공격부터 기존 기절 피해 배율을 적용한다. 충전, 발동, 공격 기회의 순서가 분명해진다.</p></article>
+  </div>
+  <div class="grid gallery">
+    <figure><div class="screen-frame loaded"><img src="../../Evidence/Feedback-v84/desktop/v84-stun-ready.png" alt="스택 100 · 기절 준비 실제 게임 화면"></div><figcaption>준비 상태. 스택이 완성되어도 적의 남은 공격은 계속된다.</figcaption></figure>
+    <figure><div class="screen-frame loaded"><img src="../../Evidence/Feedback-v84/desktop/v84-stun-hit.png" alt="공격 명중 · 기절 발동 실제 게임 화면"></div><figcaption>공격이 맞는 순간 기절이 시작되고, 남은 연속 공격이 취소된다.</figcaption></figure>
+  </div>
+
+  <h2 id="relics">보유한 유물은 모두 자동 적용</h2>
+  <p>유물을 획득하면 자동으로 효과가 적용된다. 장착할 유물을 따로 골라 넣는 대신, <b>서로 다른 유물을 얼마나 보관할 수 있는지</b>에 한도를 둔다. 기본 3종으로 시작하며 종 파편으로 최대 10종까지 늘린다.</p>
+  <div class="grid">
+    <article class="card"><h3>보관한 종류 수를 센다</h3><p>새 종류를 얻을 때 한 칸을 사용한다. 이미 가진 유물을 다시 얻어 레벨을 높일 때는 칸을 추가로 차지하지 않는다. 보관함이 가득 찼더라도 중복 유물의 레벨업은 가능하다.</p></article>
+    <article class="card"><h3>기존 보유 내역을 보존한다</h3><p>저장돼 있는 모든 소유 유물과 과거 슬롯 구매 내역을 유지한다. 기존 유물을 버리게 하거나, 이미 늘린 보관함을 다시 구매하게 만들지 않는다.</p></article>
+  </div>
+  <div class="scroll"><table class="costs"><thead><tr><th>보관 한도</th><th>이번 확장 비용</th><th>3종부터 누적 비용</th></tr></thead><tbody>
+    <tr><td>3종 → 4종</td><td>종 파편 4개</td><td>4개</td></tr>
+    <tr><td>4종 → 5종</td><td>종 파편 8개</td><td>12개</td></tr>
+    <tr><td>5종 → 6종</td><td>종 파편 12개</td><td>24개</td></tr>
+    <tr><td>6종 → 7종</td><td>종 파편 18개</td><td>42개</td></tr>
+    <tr><td>7종 → 8종</td><td>종 파편 26개</td><td>68개</td></tr>
+    <tr><td>8종 → 9종</td><td>종 파편 36개</td><td>104개</td></tr>
+    <tr><td>9종 → 10종</td><td>종 파편 48개</td><td>152개</td></tr>
+  </tbody></table></div>
+  <div class="callout attention"><b>보관함이 가득 찼을 때는 선택을 받는다.</b><p>새 유물을 선택하면 필요한 확장 비용을 보여주고, <span class="copy">확장 후 획득 · 파편 N</span> 버튼으로 확장과 획득을 함께 확정한다. 파편이 부족하면 부족한 수량을 표시하고 해당 버튼을 비활성화한다.</p><p>유물 대신 골드를 받으려면 <span class="copy">대신 N 골드</span>를 직접 선택한다. 보관함이 가득 찼다는 이유로 유물을 자동으로 골드로 바꾸지 않는다. 화면의 N은 실제 가격과 실제 대체 보상으로 표시한다.</p></div>
+  <div class="grid gallery">
+    <figure><div class="screen-frame loaded"><img src="../../Evidence/Feedback-v84/desktop/v84-storage-full.png" alt="새 유물 · 보관함 가득 참 실제 게임 화면"></div><figcaption>확장 비용을 확인한 뒤 유물 획득 또는 골드 대체를 선택한다.</figcaption></figure>
+    <figure><div class="screen-frame loaded"><img src="../../Evidence/Feedback-v84/desktop/v84-storage-short.png" alt="확장에 필요한 파편 부족 실제 게임 화면"></div><figcaption>부족한 파편을 명시한다. 비용을 지불할 수 없을 때 확장 버튼으로 획득되지 않는다.</figcaption></figure>
+    <figure><div class="screen-frame loaded"><img src="../../Evidence/Feedback-v84/desktop/v84-auto-relics.png" alt="보유 유물 · 모두 자동 적용 실제 게임 화면"></div><figcaption>보관한 유물의 효과가 모두 적용되며, 별도 장착 선택은 필요 없다.</figcaption></figure>
+  </div>
+
+  <h2 id="story">기존 이야기를 이어가는 자연스러운 대사</h2>
+  <p>줄거리는 <b>불씨를 이어받아 등불을 밝히고, 종을 울려 잠든 마을의 아침을 되찾는 여정</b>을 유지한다. 프롤로그는 첫 목적지인 성문을 짧게 안내한다. 10층에서는 주민을 지킨다던 문이 사실은 주민을 가둔 문이었다는 사실을 드러낸다. 20층에서는 빼앗긴 시간이 탑에 남아 있다는 것을 알고, 종을 울려 그 시간을 집으로 돌려보내려 한다.</p>
+  <div class="grid">
+    <article class="card"><h3>종의 기사 · 성문의 반전</h3><p class="copy">나는 마을을 지키는 줄 알았다.<br>그런데 이 문은 주민들을 가두고 있었지.</p><p class="muted">기사의 책임을 짧은 고백으로 드러내고, 문 너머의 사슬 주거구로 이어간다.</p></article>
+    <article class="card"><h3>매달린 집행관 · 반환의 목적</h3><p class="copy">사슬로 거둔 시간이 탑에 남아 있다.<br>이제 종을 울려, 집으로 돌려보내라.</p><p class="muted">종을 멈추라는 목표로 뒤집지 않는다. 지금까지 켠 등불이 구원의 일부였다는 의미를 이어간다.</p></article>
+  </div>
+  <p>프롤로그는 4문단과 기존 18초 스크롤, 건너뛰기를 유지한다. 10·20층 대사는 각각 3페이지이며, 온·담·린의 말투를 나눴다. 새 대사 이벤트나 21층 이후 플레이를 추가하는 변경은 아니다.</p>
+  <p><a href="../../Story/Dialogue-v84/index.html">대사 전후 비교·선택 주인공별 응답 보기</a> · <a href="../../Story/Dialogue-v84/dialogue-patch.json">반영용 문구 데이터</a></p>
+  <figure class="gallery"><div class="screen-frame loaded"><img src="../../Evidence/Feedback-v84/desktop/07-prologue.png" alt="두루마리 프롤로그 · 마지막 불씨 실제 게임 화면"></div><figcaption>기존 화면과 자동 스크롤을 유지하면서 첫 여정의 목적을 분명하게 다듬는다.</figcaption></figure>
+
+  <h2 id="verification">검수와 실행 파일</h2>
+  <div id="verification-summary" class="verification">
+    <h3>통합 검증 완료</h3>
+    <p>편집 모드 185/185, 플레이 모드 19/19, Windows 실행 검증 960×540·640×360 각각 357/357을 통과했다. 161장 최종 선택 이미지의 원본 해시·이진 알파·팔레트·잘림도 확인했다. 실제 휴대폰 터치 검증은 이번 범위에 포함하지 않았다.</p>
+    <ul class="state-list">
+      <li>6종의 도트 밀도·외곽선·공격과 기절 프레임의 형태 유지. 기존 10·20층 보스 보존.</li>
+      <li>스택 100 직후 적이 기절하지 않고 준비 상태를 유지하는지, 실제 명중 시 남은 공격이 취소되는지.</li>
+      <li>기절 발동 타격과 후속 타격에 적용되는 피해 배율이 구분되는지.</li>
+      <li>보유 유물 전체 효과, 중복 레벨업, 신규 종류 획득, 파편 부족, 골드 대체의 명시적 선택.</li>
+      <li>구 저장의 소유 유물과 슬롯 구매 내역 보존, 확장·획득 비용과 보상 중복 지급 방지.</li>
+      <li>960×540·640×360의 한국어 문구, 버튼, 체력·기절 HUD와 스토리 화면의 가독성.</li>
+    </ul>
+  </div>
+  <details><summary>이번 변경 범위와 기록</summary><p>원래 게임의 공격 타이밍과 스테이지 구성을 유지하면서 기절 발동 조건, 유물 적용·보관 규칙, 몬스터 아트와 대사를 수정한다. 몬스터의 별도 사망 클립이나 새 플레이 구간은 추가하지 않는다.</p><p>몬스터 두 제작 담당자가 프레임을 자체·교차 검수했고, 통합 담당자가 접촉 시점과 접근 거리를 실제 Windows 화면에서 다시 확인했다. 대사 자체 검수 결과는 <a href="../../Story/Dialogue-v84/review.json">별도 기록</a>으로 확인할 수 있다.</p></details>
+  <p id="build-status" class="status-note">Windows v0.8.4 빌드 완료. 실행 파일은 아래 경로이며, 공유할 때는 ZIP 전체를 압축 해제해 실행하세요. <a href="../../Evidence/Feedback-v84/verification.json">최종 검증 기록</a></p>
+  <div class="download"><a href="../../../Builds/Windows/LastBellMvp.exe">Windows 실행 파일</a><a href="../../../Builds/LastBellMvp-Windows.zip">Windows 공유용 ZIP</a></div>
+  <p class="muted small"><a href="feedback-v83.html">이전 v8.3 변경·재미 분석</a> · <a href="plan-v81.html">기존 레퍼런스 UI 계획</a></p>
+</main>
+
+</html>

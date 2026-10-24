@@ -1,0 +1,15 @@
+{
+  "provider": "PixelLab",
+  "termsUrl": "https://www.pixellab.ai/termsofservice",
+  "termsEvidence": "../Player-v3/license.json",
+  "recordDate": "2026-10-24",
+  "summary": "Generated under the project's PixelLab account. Existing project license record documents user ownership and commercial use permission subject to provider terms and referenced Open RAIL-M. This is source provenance, not a third-party clearance guarantee.",
+  "inputs": [
+    "Project-owned Player-v3 canonical-a-outline.png used for native pixel style only",
+    "Project-owned actors-pixel-v3 NPC identities",
+    "Adventure-v5 companions-plan.json Momo design"
+  ],
+  "method": "Native32px PixelLab ProFlash canonical generation; PixMiniMax Idle4 and Attack8; same canonical palette per actor through PixelLab reduce_colors; guarded PixelLab removal of detached projectile pixels; padded48x32 melee attack regeneration. Momo portrait native24px ProFlash. PixMiniMax generates eight new in-place Run poses per NPC from the same canonical image; PixelLab reduce_colors locks each full cycle to that canonical palette. Existing Idle/Attack PNGs are hash-protected. Tori first Run rejected for bow edge clipping and regenerated.",
+  "provenance": "requests/*.json; Run: requests/run.json, run-quantize.json, run-tori-rework.json and run-existing-frames-sha256.json",
+  "modification": "Python scripts only assemble reviews, mechanically add transparent canvas padding, validate and package actual tool-produced pixels. No generated motion is a two-frame recolor loop."
+}

@@ -1,0 +1,71 @@
+[
+  {
+    "id": "slime",
+    "tool": "create_image_pro_flash",
+    "request": {
+      "description": "One tiny green meadow slime enemy for a very low-resolution side-view pixel action game. Facing LEFT, eyes shifted toward left side. Squat rounded stepped blob with a slightly raised left head, two tiny dark square eyes, one simple cream stepped highlight at upper left, no mouth, no legs. Preserve the design of a classic plain round green slime. Native 32x32 transparent canvas; body about 22px wide and 17px tall, bottom contact at y28, fully visible with empty margins. Extremely simple chunky pixel clusters, solid one-pixel dark silhouette outline, only flat green base/shadow/highlight plus cream and dark ink, no gradients, no texture, no dithering, no tiny speckles, no glow, no ground shadow. One individual only, no lettering or scenery.",
+      "width": 32,
+      "height": 32,
+      "max_colors": 6,
+      "no_background": true,
+      "palette": [
+        "#17282D",
+        "#356633",
+        "#5C9B3E",
+        "#8BC34A",
+        "#C5DE83",
+        "#FFF0CA"
+      ],
+      "palette_name": "Last Bell Dragon meadow slime six flat colors",
+      "seed": 202610241
+    }
+  },
+  {
+    "id": "horn_rabbit",
+    "tool": "create_image_pro_flash",
+    "request": {
+      "description": "One tan horn rabbit enemy for a very low-resolution side-view pixel action game. Strict LEFT-facing profile. Compact rabbit body on four tiny grounded feet, two tall upright block ears with muted coral inside, ONE short ivory forehead horn pointing up-left, small ivory muzzle/chest patch and small ivory tail at right, one dark square eye. Preserve a natural rabbit silhouette, not humanoid, no clothes, no smile. Native32x32 transparent canvas, whole body/ears/horn inside with2px empty margin, lowest soles y29. Extremely simple chunky pixel clusters, solid one-pixel dark outline, tan body only two flat tones. No fur strands, no texture, no gradients, no dithering, no detached pixels, no shadow, no scenery. Readable silhouette like a simple retro monster sprite.",
+      "width": 32,
+      "height": 32,
+      "max_colors": 9,
+      "no_background": true,
+      "palette": [
+        "#18272B",
+        "#61432F",
+        "#A46B3E",
+        "#CB8D51",
+        "#EDB56B",
+        "#C16D59",
+        "#F4C7A1",
+        "#FFF0CA",
+        "#C8D3AE"
+      ],
+      "palette_name": "Last Bell tan horn rabbit nine flat colors",
+      "seed": 202610242
+    }
+  },
+  {
+    "id": "boar",
+    "tool": "create_image_pro_flash",
+    "request": {
+      "description": "One stocky wild boar enemy for a very low-resolution side-view pixel action game. Strict LEFT-facing profile, wide low brown block body, blunt left snout with muted coral nose, small dark square eye, TWO clearly readable small ivory tusks by the muzzle, short rust-red stepped ridge along its back, four short grounded block legs and tiny tail at right. Native48x40 transparent canvas; whole animal with generous4px margin on every side, soles at y35. Body uses two large flat brown tones only. Preserve broad boar silhouette, no clothing or armor. Single-pixel dark contour, 8-10 flat colors total, coarse square clusters. No fur strands, no stippling, no wrinkles, no gradients, no antialiasing, no ground shadow, no effects or scenery. Not a baby pig.",
+      "width": 48,
+      "height": 40,
+      "max_colors": 9,
+      "no_background": true,
+      "palette": [
+        "#18272B",
+        "#4E3428",
+        "#75492F",
+        "#97613A",
+        "#B67B43",
+        "#923B2D",
+        "#BD5339",
+        "#CE7F65",
+        "#FFF0CA"
+      ],
+      "palette_name": "Last Bell wild boar nine flat colors",
+      "seed": 202610243
+    }
+  }
+]

@@ -1,0 +1,48 @@
+{
+  "status": "applied-to-unity-windows-and-local-web-validated",
+  "sourceManifest": "delivery.json",
+  "targetComponent": "LastBell.BattleAudio",
+  "slots": {
+    "Swing": "Audio/sword-clash.wav",
+    "Hit": "Audio/hit-sharp.wav",
+    "Windup": "Audio/cue-low.wav",
+    "Critical": "Audio/cue-low.wav",
+    "Dodge": "Audio/dodge-air.wav",
+    "PerfectDodge": "Audio/perfect-parry.wav",
+    "Footstep": "Audio/footstep-stone.wav",
+    "Lantern": "Audio/lantern-warm.wav",
+    "BattleMusic": "Audio/bgm-road.ogg",
+    "BossMusic": "Audio/bgm-boss.ogg",
+    "LobbyMusic": "Audio/bgm-sanctuary.ogg"
+  },
+  "additionalCues": [
+    {
+      "event": "story-bell-or-stage-clear",
+      "file": "Audio/bell-low-long.wav",
+      "maxVoices": 1,
+      "note": "Needs a dedicated story bell slot/event. Do not attach the full 5.7s bell to every rapid critical hit."
+    },
+    {
+      "event": "future-stages-11-19",
+      "file": "Audio/bgm-quarter.ogg",
+      "note": "Future expansion ambience; current runtime ends at stage 10."
+    }
+  ],
+  "musicCrossfadeSeconds": 0.7,
+  "maxSameSfxVoices": 3,
+  "preserveCombatTiming": true,
+  "credits": "CREDITS.txt",
+  "notes": "Applied to saved Unity scene and prefab. Arrow/MiniRoar/BossRoar/Spike preserved. Current runtime ends at Stage 10.",
+  "swordChoice": "Latest sword-clash.wav applied for user in-game trial.",
+  "swordTrigger": "Contact frame/event, not a pre-contact swing cue.",
+  "preserveExistingSlots": [
+    "Arrow",
+    "MiniRoar",
+    "BossRoar",
+    "Spike"
+  ],
+  "appliedOn": "2026-10-22",
+  "authorization": "일단 수정한 것들 게임에 적용 시켜봐",
+  "runtimeEvidence": "../../Evidence/ReviewedMotionAudio-v4/verification.json",
+  "runtimeMusicTransition": "Existing BattleAudio fade-in retained; preview crossfade configuration is not a runtime requirement."
+}

@@ -1,0 +1,15 @@
+{
+  "id": "hit",
+  "tool": "animate_image",
+  "request": {
+    "first_frame_url": "https://api.pixellab.ai/mcp/images/b521d718-274a-47bb-9271-02911e0f8e7a/download",
+    "last_frame_url": "https://api.pixellab.ai/mcp/images/b521d718-274a-47bb-9271-02911e0f8e7a/download",
+    "frame_count": 6,
+    "no_background": true,
+    "seed": 24102418,
+    "action": "One quick HIT RECOIL then recover. F1 braces; F2-3 shoulders/head recoil LEFT a few pixels, knees bend and free arm flinches; F4-6 settle back to original guard. Same sword remains attached to hand, no dropping. No white flash, sparks, damage number or body breakup; runtime does those. No traveling or facing change. Same cream hood/short tunic, navy face/limbs, ONE amber eye, ochre scarf, brown boots, ONE short steel sword with ochre hilt. Keep clothing, palette, proportions and right-facing silhouette identical. No bell/cape/extra limb/extra weapon/VFX. Fixed48canvas, native pixels, fixed root/scale."
+  },
+  "result": [
+    "id: dddce48e-587e-4ac9-b010-749ec0638074\njob_id: dddce48e-587e-4ac9-b010-749ec0638074\naction: One quick HIT RECOIL then recover. F1 braces; F2-3 shoulders/head recoil LEFT a few pixels, knees bend and free arm flinches; F4-6 settle back to original guard. Same sword remains attached to hand, no dropping. No white flash, sparks, damage number or body breakup; runtime does those. No traveling or facing change. Same cream hood/short tunic, navy face/limbs, ONE amber eye, ochre scarf, brown boots, ONE short steel sword with ochre hilt. Keep clothing, palette, proportions and right-facing silhouette identical. No bell/cape/extra limb/extra weapon/VFX. Fixed48canvas, native pixels, fixed root/scale.\nframes: 6\nsize: 48x48px\ntransparent: True\nlast_frame: yes (interpolating to it)\nseed: 24102418\nasset_id: 70e7c4bc-3384-517c-a827-aeb0d0718753\nasset_status: pending (saved when generation completes)\ncost: 1 generation\nstatus: processing (~30-180s)\n\nhint: get_image(job_id=\"dddce48e-587e-4ac9-b010-749ec0638074\")"
+  ]
+}

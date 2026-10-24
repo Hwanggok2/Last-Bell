@@ -1,0 +1,27 @@
+{
+  "tool": "create_image_pro_flash",
+  "request": {
+    "description": "ONE very tiny RIGHT-facing side-view game sprite. Total character silhouette exactly 19 pixels high, from hair y=9 to boot soles y=28, centered in transparent 32x32 canvas. Friendly young fantasy adventurer going to defeat a dragon. Short BROWN hair as a 5x3 pixel mass, visible warm FACE as a 4x4 mass with ONE dark eye pixel. RED SHORT scarf as 2-3 pixels, GREEN short tunic as one bold simple color block, dark leggings and brown boots. Small brown travel bag on back only 3x4 pixels, cream roll only 3x1 pixels. ONE short steel sword with brown hilt in near/right hand points up-right; hand/hilt/blade form one continuous shape. Native ultra-simple low-resolution game pixel art, 7-8 flat colors, big connected square blocks and stair-step diagonal. Minimum visual information like classic Game Boy action sprites but with warm colors. No hood, helmet, bell, cape, buttons, stitches, leather straps, facial details, shading gradients, AA, dithering, outlines inside body, separate tiny decorations, glow, ground, text or panels. Entire body with feet, no portrait. A real 19-pixel character, NOT a detailed 32-pixel character.",
+    "width": 32,
+    "height": 32,
+    "no_background": true,
+    "max_colors": 10,
+    "palette": [
+      "#202D38",
+      "#6B3F2A",
+      "#AB6C37",
+      "#F3BD83",
+      "#2D735D",
+      "#6DAF69",
+      "#C9433E",
+      "#8B2F35",
+      "#E8D9AD",
+      "#B7D3D0"
+    ],
+    "palette_name": "Bright low-resolution adventurer ten colors",
+    "seed": 24102452
+  },
+  "result": [
+    "{\n  \"background_job_id\": \"b6bef6dc-cd96-4909-85f4-64941281b01c\",\n  \"image_id\": \"9b63a3e5-2973-5a18-bde9-65f29f042407\",\n  \"status\": \"processing\",\n  \"source_image_id\": \"9b63a3e5-2973-5a18-bde9-65f29f042407\",\n  \"job_id\": \"b6bef6dc-cd96-4909-85f4-64941281b01c\",\n  \"description\": \"ONE very tiny RIGHT-facing side-view game sprite. Total character silhouette exactly 19 pixels high, from hair y=9 to boot soles y=28, centered in transparent 32x32 canvas. Friendly young fantasy adventurer going to defeat a dragon. Short BROWN hair as a 5x3 pixel mass, visible warm FACE as a 4x4 mass with ONE dark eye pixel. RED SHORT scarf as 2-3 pixels, GREEN short tunic as one bold simple color block, dark leggings and brown boots. Small brown travel bag on back only 3x4 pixels, cream roll only 3x1 pixels. ONE short steel sword with brown hilt in near/right hand points up-right; hand/hilt/blade form one continuous shape. Native ultra-simple low-resolution game pixel art, 7-8 flat colors, big connected square blocks and stair-step diagonal. Minimum visual information like classic Game Boy action sprites but with warm colors. No hood, helmet, bell, cape, buttons, stitches, leather straps, facial details, shading gradients, AA, dithering, outlines inside body, separate tiny decorations, glow, ground, text or panels. Entire body with feet, no portrait. A real 19-pixel character, NOT a detailed 32-pixel character.\",\n  \"seed\": 24102452,\n  \"image_size\": {\n    \"width\": 32,\n    \"height\": 32\n  },\n  \"output_count\": 1,\n  \"estimated_generations\": 5,\n  \"pricing_provisional\": true,\n  \"poll_tool\": \"get_image\",\n  \"download_path\": \"/mcp/images/b6bef6dc-cd96-4909-85f4-64941281b01c/download\"\n}\nPoll get_image(job_id=\"b6bef6dc-cd96-4909-85f4-64941281b01c\"). The source_image_id is usable after completion; it is an image ID, not a character/object ID. Actual usage is reported on completion. cancel_job(job_id=...) cancels unfinished work."
+  ]
+}

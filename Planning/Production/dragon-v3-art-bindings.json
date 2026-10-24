@@ -1,0 +1,512 @@
+{
+  "packages": [
+    {
+      "path": "Planning/Story/Dragon-v1/Production/Player-v3/manifest.json",
+      "sha256": "0a15ac9c103aa8f785dd6e47eb660fd1ab16c455e98cd7878a27a5288ddf4fc4"
+    },
+    {
+      "path": "Planning/Story/Dragon-v1/Production/Forest-v1/manifest.json",
+      "sha256": "9f33fbb9118cbcccfb1513e5d3c8f9fe7e2ed18da3581e552ca36338faccdc94"
+    }
+  ],
+  "actors": [
+    {
+      "id": "dragon_hero_on",
+      "referenceHeight": 22,
+      "scale720p": 7,
+      "height720p": 154,
+      "clips": [
+        {
+          "motion": "Run",
+          "frames": 8,
+          "uniquePixelFrames": 8,
+          "colors": 8,
+          "pivotTopLeft": [
+            18,
+            29
+          ],
+          "contactFrame": -1
+        },
+        {
+          "motion": "Idle",
+          "frames": 8,
+          "uniquePixelFrames": 7,
+          "colors": 8,
+          "pivotTopLeft": [
+            16,
+            29
+          ],
+          "contactFrame": -1
+        },
+        {
+          "motion": "Attack",
+          "frames": 14,
+          "uniquePixelFrames": 14,
+          "colors": 8,
+          "pivotTopLeft": [
+            17,
+            30
+          ],
+          "contactFrame": 7
+        },
+        {
+          "motion": "DodgeUp",
+          "frames": 8,
+          "uniquePixelFrames": 8,
+          "colors": 8,
+          "pivotTopLeft": [
+            16,
+            29
+          ],
+          "contactFrame": 3
+        },
+        {
+          "motion": "DodgeBack",
+          "frames": 8,
+          "uniquePixelFrames": 8,
+          "colors": 8,
+          "pivotTopLeft": [
+            16,
+            29
+          ],
+          "contactFrame": 3
+        },
+        {
+          "motion": "DodgeDown",
+          "frames": 14,
+          "uniquePixelFrames": 14,
+          "colors": 8,
+          "pivotTopLeft": [
+            17,
+            30
+          ],
+          "contactFrame": 7
+        },
+        {
+          "motion": "Hit",
+          "frames": 6,
+          "uniquePixelFrames": 6,
+          "colors": 8,
+          "pivotTopLeft": [
+            16,
+            29
+          ],
+          "contactFrame": -1
+        }
+      ]
+    },
+    {
+      "id": "dragon_goblin_scout",
+      "referenceHeight": 23,
+      "scale720p": 8,
+      "height720p": 184,
+      "clips": [
+        {
+          "motion": "Idle",
+          "frames": 8,
+          "uniquePixelFrames": 6,
+          "colors": 8,
+          "pivotTopLeft": [
+            16,
+            30
+          ],
+          "contactFrame": -1
+        },
+        {
+          "motion": "Attack",
+          "frames": 8,
+          "uniquePixelFrames": 8,
+          "colors": 8,
+          "pivotTopLeft": [
+            16,
+            30
+          ],
+          "contactFrame": 4
+        },
+        {
+          "motion": "Stun",
+          "frames": 8,
+          "uniquePixelFrames": 4,
+          "colors": 8,
+          "pivotTopLeft": [
+            16,
+            30
+          ],
+          "contactFrame": -1
+        }
+      ]
+    },
+    {
+      "id": "dragon_goblin_slinger",
+      "referenceHeight": 25,
+      "scale720p": 8,
+      "height720p": 200,
+      "clips": [
+        {
+          "motion": "Idle",
+          "frames": 8,
+          "uniquePixelFrames": 7,
+          "colors": 8,
+          "pivotTopLeft": [
+            16,
+            30
+          ],
+          "contactFrame": -1
+        },
+        {
+          "motion": "Attack",
+          "frames": 6,
+          "uniquePixelFrames": 6,
+          "colors": 8,
+          "pivotTopLeft": [
+            16,
+            30
+          ],
+          "contactFrame": 3
+        },
+        {
+          "motion": "Stun",
+          "frames": 8,
+          "uniquePixelFrames": 8,
+          "colors": 8,
+          "pivotTopLeft": [
+            16,
+            30
+          ],
+          "contactFrame": -1
+        }
+      ]
+    },
+    {
+      "id": "dragon_forest_mushroom",
+      "referenceHeight": 22,
+      "scale720p": 8,
+      "height720p": 176,
+      "clips": [
+        {
+          "motion": "Idle",
+          "frames": 8,
+          "uniquePixelFrames": 7,
+          "colors": 5,
+          "pivotTopLeft": [
+            16,
+            29
+          ],
+          "contactFrame": -1
+        },
+        {
+          "motion": "Attack",
+          "frames": 8,
+          "uniquePixelFrames": 8,
+          "colors": 5,
+          "pivotTopLeft": [
+            16,
+            29
+          ],
+          "contactFrame": 3
+        },
+        {
+          "motion": "Stun",
+          "frames": 8,
+          "uniquePixelFrames": 8,
+          "colors": 5,
+          "pivotTopLeft": [
+            16,
+            29
+          ],
+          "contactFrame": -1
+        }
+      ]
+    },
+    {
+      "id": "dragon_goblin_shield",
+      "referenceHeight": 25,
+      "scale720p": 8,
+      "height720p": 200,
+      "clips": [
+        {
+          "motion": "Idle",
+          "frames": 8,
+          "uniquePixelFrames": 8,
+          "colors": 7,
+          "pivotTopLeft": [
+            16,
+            30
+          ],
+          "contactFrame": -1
+        },
+        {
+          "motion": "Attack",
+          "frames": 8,
+          "uniquePixelFrames": 8,
+          "colors": 7,
+          "pivotTopLeft": [
+            16,
+            30
+          ],
+          "contactFrame": 3
+        },
+        {
+          "motion": "Stun",
+          "frames": 8,
+          "uniquePixelFrames": 7,
+          "colors": 7,
+          "pivotTopLeft": [
+            16,
+            30
+          ],
+          "contactFrame": -1
+        }
+      ]
+    },
+    {
+      "id": "dragon_mushroom_captain",
+      "referenceHeight": 31,
+      "scale720p": 10,
+      "height720p": 310,
+      "clips": [
+        {
+          "motion": "Idle",
+          "frames": 8,
+          "uniquePixelFrames": 7,
+          "colors": 6,
+          "pivotTopLeft": [
+            24,
+            39
+          ],
+          "contactFrame": -1
+        },
+        {
+          "motion": "Attack",
+          "frames": 8,
+          "uniquePixelFrames": 7,
+          "colors": 6,
+          "pivotTopLeft": [
+            24,
+            39
+          ],
+          "contactFrame": 3
+        },
+        {
+          "motion": "Stun",
+          "frames": 8,
+          "uniquePixelFrames": 6,
+          "colors": 6,
+          "pivotTopLeft": [
+            24,
+            39
+          ],
+          "contactFrame": -1
+        }
+      ]
+    },
+    {
+      "id": "dragon_goblin_spear",
+      "referenceHeight": 25,
+      "scale720p": 8,
+      "height720p": 200,
+      "clips": [
+        {
+          "motion": "Idle",
+          "frames": 8,
+          "uniquePixelFrames": 4,
+          "colors": 7,
+          "pivotTopLeft": [
+            24,
+            30
+          ],
+          "contactFrame": -1
+        },
+        {
+          "motion": "Attack",
+          "frames": 8,
+          "uniquePixelFrames": 7,
+          "colors": 7,
+          "pivotTopLeft": [
+            24,
+            30
+          ],
+          "contactFrame": 5
+        },
+        {
+          "motion": "Stun",
+          "frames": 8,
+          "uniquePixelFrames": 5,
+          "colors": 7,
+          "pivotTopLeft": [
+            24,
+            30
+          ],
+          "contactFrame": -1
+        }
+      ]
+    },
+    {
+      "id": "dragon_spore_mushroom",
+      "referenceHeight": 30,
+      "scale720p": 7,
+      "height720p": 210,
+      "clips": [
+        {
+          "motion": "Idle",
+          "frames": 8,
+          "uniquePixelFrames": 8,
+          "colors": 6,
+          "pivotTopLeft": [
+            16,
+            31
+          ],
+          "contactFrame": -1
+        },
+        {
+          "motion": "Attack",
+          "frames": 8,
+          "uniquePixelFrames": 7,
+          "colors": 6,
+          "pivotTopLeft": [
+            16,
+            31
+          ],
+          "contactFrame": 3
+        },
+        {
+          "motion": "Stun",
+          "frames": 8,
+          "uniquePixelFrames": 8,
+          "colors": 6,
+          "pivotTopLeft": [
+            16,
+            31
+          ],
+          "contactFrame": -1
+        }
+      ]
+    },
+    {
+      "id": "dragon_moss_mushroom",
+      "referenceHeight": 21,
+      "scale720p": 8,
+      "height720p": 168,
+      "clips": [
+        {
+          "motion": "Idle",
+          "frames": 8,
+          "uniquePixelFrames": 8,
+          "colors": 7,
+          "pivotTopLeft": [
+            16,
+            28
+          ],
+          "contactFrame": -1
+        },
+        {
+          "motion": "Attack",
+          "frames": 7,
+          "uniquePixelFrames": 7,
+          "colors": 7,
+          "pivotTopLeft": [
+            16,
+            28
+          ],
+          "contactFrame": 3
+        },
+        {
+          "motion": "Stun",
+          "frames": 8,
+          "uniquePixelFrames": 8,
+          "colors": 7,
+          "pivotTopLeft": [
+            16,
+            28
+          ],
+          "contactFrame": -1
+        }
+      ]
+    },
+    {
+      "id": "dragon_goblin_guard",
+      "referenceHeight": 25,
+      "scale720p": 8,
+      "height720p": 200,
+      "clips": [
+        {
+          "motion": "Idle",
+          "frames": 8,
+          "uniquePixelFrames": 8,
+          "colors": 8,
+          "pivotTopLeft": [
+            16,
+            28
+          ],
+          "contactFrame": -1
+        },
+        {
+          "motion": "Attack",
+          "frames": 8,
+          "uniquePixelFrames": 6,
+          "colors": 8,
+          "pivotTopLeft": [
+            16,
+            28
+          ],
+          "contactFrame": 4
+        },
+        {
+          "motion": "Stun",
+          "frames": 8,
+          "uniquePixelFrames": 7,
+          "colors": 8,
+          "pivotTopLeft": [
+            16,
+            28
+          ],
+          "contactFrame": -1
+        }
+      ]
+    },
+    {
+      "id": "dragon_gib",
+      "referenceHeight": 42,
+      "scale720p": 9,
+      "height720p": 378,
+      "clips": [
+        {
+          "motion": "Idle",
+          "frames": 8,
+          "uniquePixelFrames": 7,
+          "colors": 7,
+          "pivotTopLeft": [
+            24,
+            45
+          ],
+          "contactFrame": -1
+        },
+        {
+          "motion": "Attack",
+          "frames": 6,
+          "uniquePixelFrames": 4,
+          "colors": 7,
+          "pivotTopLeft": [
+            24,
+            45
+          ],
+          "contactFrame": 4
+        },
+        {
+          "motion": "Stun",
+          "frames": 8,
+          "uniquePixelFrames": 7,
+          "colors": 7,
+          "pivotTopLeft": [
+            24,
+            45
+          ],
+          "contactFrame": -1
+        }
+      ]
+    }
+  ],
+  "textureReferences": 301,
+  "preservedOtherActors": 38,
+  "manifestSha256": "4645c690bc5035554705ef0f8ac22da33881688b390b654d90af6f9662d9e2ee"
+}

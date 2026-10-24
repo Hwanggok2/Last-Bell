@@ -1,0 +1,37 @@
+{
+  "version": "dragon-cast-concept-v1",
+  "created": "2026-10-24",
+  "mode": "built-in image_gen",
+  "intent": "generate",
+  "asset": "Planning/Story/Dragon-v1/images/cast-concept.png",
+  "source": "C:/Users/JW/.codex/generated_images/01a16983-851b-7712-a673-d6b1cb97069b/exec-06891422-8524-4052-a46d-9138c3ec0eb4.png",
+  "prompt": "Use case: stylized-concept\nAsset type: initial pixel-art fantasy game character design lineup; a planning concept sheet, not a finished sprite atlas.\nPrimary request: Create one clear, appealing low-resolution pixel-art cast sheet for a lighthearted fantasy adventure whose goal is to defeat a large dragon. Cheerful and familiar heroic fantasy, capable fighters, readable silhouettes; no horror and no toy-like final boss.\nScene/backdrop: flat warm cream #FFF2D8 background. No environment, no scenery, no card borders, no labels, no letters, no watermark.\nComposition: wide landscape sheet with TWO distinct horizontal rows and generous empty space between subjects. Top row exactly FIVE full-body adventurer/NPC designs, evenly spaced, left to right: On, Tori, Rina, Barun, Doto. Bottom row exactly THREE full-body boss designs, left to right: Gib, Dolmun, Brak. All heads, feet, weapons, ears, tails and wing tips fully visible with safe margins. No overlap. On, Tori, Rina, Barun, Doto approximately similar display sizes in their row; Barun broader and taller, Doto shorter. Lower row gives the dragon the rightmost 45 percent of sheet width and the largest visual mass. This is a design lineup with independent row scale, not a strict scale chart.\nSubjects:\n1. On: small human swordsman, large CREAM hood over a deep NAVY shadowed face, cream short tunic, deep navy arms and leggings, OCHRE short scarf, brown ankle boots, one short straight gold-steel sword held low to the right. Face mostly hidden with one tiny warm eye glint. Compact confident ready stance. No bell ornaments.\n2. Tori: fox beastfolk archer, ORANGE fox ears, orange fluffy tail with cream tip, small fox muzzle, TEAL short cloak over brown leather tunic, simple short bow clearly held in one hand, small quiver on back. Friendly alert stance. Clearly anthropomorphic fox, not a human with a fox pet.\n3. Rina: human mage, large PLUM purple pointed hat with broad brim, cream robe with purple hem, a short wooden staff topped by a single pale mint crystal. One hand on staff, curious friendly expression, no floating spell clutter.\n4. Barun: human barbarian, broad muscular shoulders, RUST RED scarf and waist sash, simple brown leather bracers and boots, short dark hair, one large blunt-tipped iron greatsword held diagonally down at side. Heroic sturdy stance, friendly square face, no exposed wounds, no skulls.\n5. Doto: short dwarf blacksmith, blocky golden-yellow beard, BLUE work apron over tan shirt, sturdy boots, one large dark iron hammer carried at shoulder with visible wooden handle and hand grip. Cheerful practical stance.\n6. Gib: green goblin captain, GREEN skin, compact body, feathered dull-steel helmet, oversized RECTANGULAR wooden shield on left arm and short simple spear in right hand. Slightly smug but charming, broad readable equipment silhouette.\n7. Dolmun: large stone golem, chunky SQUARE sandstone shoulders and forearms, separated blocky legs, a small MINT crystal at chest, two simple teal eye squares, weathered warm gray stone with only a few moss pixels. Calm heavy stance, no bell, no metal chains.\n8. Brak: LARGE RED dragon final boss, four sturdy legs, long substantial tail curled within its allocated area, large rounded muzzle, two short IVORY horns, ORANGE belly plates, broad bat-like red wings spread upward and outward, heavy claws, slightly proud challenging expression. A real formidable dragon, adult proportions, not a baby dragon, not a plush toy. Broad strong torso and wings, no armor, no skull decoration, no gore.\nStyle/medium: crisp chunky hand-placed-looking pixel art inspired by readable 2D side-view fantasy action games. Clearly visible square pixel clusters; restrained 18–24-color palette, 2–3 tones per material, dark navy outlines, simple cell-like shading, no gradients, no anti-aliasing, no soft brushwork, no fine noise, no glossy 3D. The drawing should look low-resolution even when displayed large.\nLighting/mood: warm daylight palette and gently humorous heroic spirit. Distinguish the five friendly travelers from the three imposing yet approachable bosses through silhouettes and posture.\nConstraints: exactly eight characters, exactly the specified order, one weapon per specified wielder, no duplicate characters, full bodies, no incidental pets or props, no textual annotation. Preserve On's cream hood/navy silhouette but remove every bell motif.",
+  "castOrder": {
+    "top": [
+      "온",
+      "토리",
+      "리나",
+      "바룬",
+      "도토"
+    ],
+    "bottom": [
+      "깁",
+      "돌문",
+      "브라크"
+    ]
+  },
+  "usage": "게임 세계관 및 캐릭터 외형 초안 검토. 정식 스프라이트·애니메이션·런타임 아틀라스 아님.",
+  "inspection": {
+    "count": 8,
+    "fullBodies": true,
+    "noText": true,
+    "noBellMotifs": true,
+    "identity": "온의 크림 후드·남색 얼굴과 팔다리·황토 스카프를 유지. 여우 수인, 마법사, 바바리안, 드워프, 고블린, 골렘, 용이 장비·체형으로 구분됨.",
+    "dragon": "넓은 날개·강한 네 발 체형·큰 주황색 배로 최종보스 실루엣을 확보.",
+    "limitations": [
+      "행별 표시 배율이 달라 이 이미지 자체를 실제 게임 체급 측정표로 쓰지 않는다.",
+      "세부 픽셀·명암 색이 런타임 목표보다 많다. 게임 제작 시 별도의 저해상도 정리와 방향별 프레임 제작이 필요하다.",
+      "크림 배경이 포함된 원화이다. 투명 PNG 스프라이트로 바로 잘라 쓰지 않는다."
+    ]
+  }
+}

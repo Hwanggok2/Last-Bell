@@ -1,0 +1,101 @@
+{
+  "status": "pass",
+  "scope": "planning-static-only; no browser or Unity execution",
+  "checkedUtc": "2026-10-24T17:10:53.242970+00:00",
+  "checkCount": 22,
+  "checks": [
+    {
+      "name": "all template tokens expanded",
+      "pass": true
+    },
+    {
+      "name": "unique HTML IDs",
+      "pass": true
+    },
+    {
+      "name": "local HTML and source links resolve",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "CSS and SVG font assets resolve",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "growth-layout SVG/PNG at1280×720",
+      "pass": true
+    },
+    {
+      "name": "companions-layout SVG/PNG at1280×720",
+      "pass": true
+    },
+    {
+      "name": "hud-spec SVG/PNG at1280×720",
+      "pass": true
+    },
+    {
+      "name": "restored growth layout and upper-right companions",
+      "pass": true
+    },
+    {
+      "name": "companion current→next layout",
+      "pass": true
+    },
+    {
+      "name": "1280 minimum96 /640 minimum48 touch bounds",
+      "pass": true
+    },
+    {
+      "name": "primary growth buttons do not overlap",
+      "pass": true
+    },
+    {
+      "name": "root HP dimensions and rhythm-bar clearance",
+      "pass": true
+    },
+    {
+      "name": "root damage grid/lifetime/lanes",
+      "pass": true
+    },
+    {
+      "name": "independent player skill200ms/20s",
+      "pass": true
+    },
+    {
+      "name": "player multipliers match Client contract",
+      "pass": true
+    },
+    {
+      "name": "final Client catalog skill names/stableIDs/data version",
+      "pass": true
+    },
+    {
+      "name": "companion skill multipliers match Client contract",
+      "pass": true
+    },
+    {
+      "name": "growth milestone table matches structured formulas",
+      "pass": true
+    },
+    {
+      "name": "24% expectedDPS cap /one replacement hit",
+      "pass": true
+    },
+    {
+      "name": "one-hit HP trail timing/colors / no aggregation",
+      "pass": true
+    },
+    {
+      "name": "published status has actual captures and a bounded QA report",
+      "pass": true
+    },
+    {
+      "name": "existing v5 source and evidence hashes unchanged",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "failures": [],
+  "visualReview": "PNG diagrams must also be inspected by the author; static checks do not prove game rendering."
+}

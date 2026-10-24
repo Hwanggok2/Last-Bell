@@ -1,0 +1,639 @@
+{
+  "version": "route-onboarding-v3",
+  "date": "2026-10-22",
+  "status": "planning and interactive mockup only; no Unity or public build changes",
+  "prototypeLastStage": 10,
+  "restartStage": 1,
+  "preview": "route-prologue-tutorial-v3.html",
+  "scope": "1~20의 동선과 몬스터 디자인을 구체화한다. 11~20은 확장 미리보기이며 현재 프로토타입의 10스테이지 제한은 유지한다.",
+  "continuity": [
+    "항상 왼쪽에서 들어와 오른쪽으로 전진한다. 플레이어와 적의 좌우 방향을 뒤집지 않는다.",
+    "1~9의 성문은 진행 방향 오른쪽에서 점점 가까워진다. 실제 통과는 10 보스 처치 후에만 일어난다.",
+    "10은 성문 앞 보스전이다. 가디언 뒤 오른쪽에 닫힌 성문과 첫 구역 종이 있다.",
+    "11은 성문을 통과한 직후다. 열린 성문의 안쪽 면이 왼쪽에 보이고 오른쪽으로 주거구가 이어진다.",
+    "11→12 이동에서 성문이 화면 왼쪽 밖으로 빠진다. 12 이후 배경에 성문을 다시 반복 배치하지 않는다.",
+    "11 진입부터 문패·사슬·배수로를 점진적으로 늘리고, 12 이후에는 주거구가 화면을 차지한다."
+  ],
+  "prologue": {
+    "title": "마지막 불씨",
+    "durationMs": 28000,
+    "fadeMs": 500,
+    "scroll": "아래에서 위로 자동 스크롤. 960×540 기준 중앙 읽기 영역 x=180, y=90, w=600, h=340. 본문 26px, 행간 40px, 문단 간격 24px. 화면 높이에 맞춰 시작·종료 위치를 계산한다.",
+    "stanzas": [
+      [
+        "그 마을의 아침은",
+        "종소리와 함께 찾아왔다."
+      ],
+      [
+        "종이 울리면 등불이 켜지고,",
+        "사람들은 하루를 시작했다."
+      ],
+      [
+        "그러나 마지막 종소리가 멎은 밤,",
+        "아침은 돌아오지 않았다."
+      ],
+      [
+        "사람들은 어둠 속에 잠들고,",
+        "등불은 하나씩 빛을 잃었다."
+      ],
+      [
+        "성문 밖,",
+        "아직 꺼지지 않은 등불 하나."
+      ],
+      [
+        "작은 종지기는",
+        "그 안에 남은 불씨를 이어 받았다."
+      ],
+      [
+        "꺼진 등불을 밝히고,",
+        "잠든 다섯 종을 깨우기 위해."
+      ],
+      [
+        "마지막 종이 울릴 때,",
+        "이 마을에 다시 아침이 오도록."
+      ]
+    ],
+    "presentation": "먹빛 하늘과 아주 약한 등불을 고정 배경으로 사용한다. 얼굴·새 사건·새 인물·반전 설명은 넣지 않는다. 글은 서서히 위로 흐르고 위아래에서 부드럽게 사라진다.",
+    "controls": [
+      "일시정지 / 계속",
+      "건너뛰기",
+      "움직임 줄이기에서는 정지 문단 읽기와 다음 문단 버튼"
+    ],
+    "playback": "새 저장의 첫 게임 시작에 한 번 자동 재생한다. 끝까지 읽거나 건너뛰면 prologueSeen을 저장하고 Stage 1로 들어간다. 사망 후 다시하기와 로비 재출전에는 반복하지 않는다. 다시 보기는 별도 제공한다.",
+    "interruption": "완료·건너뛰기 전 종료하면 seen을 기록하지 않는다. 다음 실행에서 처음부터 재생하며 언제든 건너뛸 수 있다.",
+    "after": "검은 여백이 걷히며 성문 밖 등불과 온의 손안 불씨로 연결한다. Stage 1의 기존 회피·공격 튜토리얼로 이어진다. 전투시계는 이때부터 시작한다."
+  },
+  "tutorial5": {
+    "trigger": "현재 저장에서 최초 Stage 5 진입, 적 배치가 끝난 뒤 첫 예고를 시작하기 직전. 캐릭터별로 중복하지 않는다.",
+    "flag": "comboTutorialCompleted (저장 단위, 실제 두 타 대응 성공 후에만 true)",
+    "pause": "설명 동안 적 AI·공격 예고·파동·전투시계·쿨타임·피해를 모두 멈춘다. 상단 중앙의 종 두 개만 또렷하게 강조한다.",
+    "steps": [
+      [
+        "1. 확인",
+        "“종은 다음 공격이 몇 번 이어지는지 알려줘요.” 두 개의 종을 보이고 1회 / 2회 / 3회 중 2회를 확인한다."
+      ],
+      [
+        "2. 연습 안내",
+        "“금빛 영역을 순서대로 기억하세요. 파동이 맞닿을 때마다 대응하면 됩니다.” 연습하기를 누르면 시작한다."
+      ],
+      [
+        "3. 직접 대응",
+        "하단→상단 순서의 두 예고를 전부 보여준 뒤 두 번 공격한다. 위 회피→아래 회피(검 쳐내기)로 직접 대응한다. 예고 도중 정답 방향을 텍스트나 버튼 강조로 미리 알려주지 않는다."
+      ],
+      [
+        "4. 계속",
+        "두 타를 모두 일반 또는 완벽 판정으로 막으면 완료. 종이 2→1→0으로 줄어든 것을 확인하고 “전투 계속”을 누르면 Stage 5 일반 전투를 시작한다."
+      ]
+    ],
+    "timing": {
+      "beatMs": 240,
+      "cueSlotMs": 720,
+      "comboGapMs": 480,
+      "normalWindowMs": 160,
+      "perfectWindowMs": 60,
+      "reuseMs": 260,
+      "cues": [
+        [
+          "low",
+          [
+            0,
+            240,
+            480
+          ]
+        ],
+        [
+          "high",
+          [
+            720,
+            960,
+            1200
+          ]
+        ]
+      ],
+      "impacts": [
+        1440,
+        1920
+      ]
+    },
+    "failure": "틀린 방향·너무 이른 입력·타이밍 놓침은 해당 타 결과로 보여준다. 연습에서는 HP와 재화가 줄지 않는다. 두 타가 끝난 뒤 다시 연습한다. 피격을 일부러 받아야 완료되는 조건은 없다.",
+    "success": "두 타 모두 성공해야 완료한다. 자동 시연은 설명용일 뿐 완료로 세지 않는다. 성공·실패 어느 쪽도 전투 보상이나 적 HP 변화를 만들지 않는다.",
+    "resume": "진입 전 HP·적 HP·강화·재화 그대로, 입력을 떼고 “전투 계속”으로 일반 Stage 5 전투에 복귀한다. 완전한 첫 예고부터 시작하며 연습의 두 번째 공격을 이어받지 않는다.",
+    "interruption": "연습 중 종료하면 완료 플래그를 남기지 않는다. 저장된 Stage 5로 복구할 때 설명부터 다시 시작한다. 이미 완료한 저장은 Stage 5에서 다시 멈추지 않는다.",
+    "priorStages": "1~4는 단발로 네 대응을 먼저 경험하게 한다. 5가 첫 의무 연속 공격 학습이며 6부터 본격적으로 2연타를 섞는다. 이 배치는 향후 적용 제안이며 현재 카탈로그는 변경하지 않는다."
+  },
+  "art": {
+    "style": "기존 남색·금색의 읽기 쉬운 실루엣을 유지한다. 외곽에는 석재·철판·빗장, 주거구에는 목재 문패·열쇠·청록빛 사슬을 쓴다. 주민이 괴물로 바뀐 설정은 추가하지 않는다.",
+    "boards": [
+      "Concepts/gate-road-v3.png",
+      "Concepts/chain-quarter-v3.png"
+    ],
+    "status": "AI 외형 콘셉트 시트. 완성 스프라이트·프레임 애니메이션이 아니다. 게임용 제작 시 표면의 미세 장식을 줄이고 큰 도트 덩어리로 다시 정리한다.",
+    "previewActors": "동선·연습 미리보기의 적은 형태를 확인하는 도형 대역, 온은 기존 스프라이트다. 새 몬스터 완성 모션으로 표시하지 않는다."
+  },
+  "stages": [
+    {
+      "stage": 1,
+      "name": "등불의 길",
+      "enemyId": "gate_sentry",
+      "enemyName": "빗장 초병",
+      "sequence": [
+        "low"
+      ],
+      "space": "성문 실루엣이 오른쪽 먼 배경. 첫 적 뒤 작은 등불이 켜짐.",
+      "kind": "normal",
+      "gate": "right-closed",
+      "expansion": false
+    },
+    {
+      "stage": 2,
+      "name": "바깥 돌길",
+      "enemyId": "bell_hound",
+      "enemyName": "종추 사냥개",
+      "sequence": [
+        "thrust"
+      ],
+      "space": "드문 돌기둥과 끊어진 경비 사슬. 성문은 멀리 유지.",
+      "kind": "normal",
+      "gate": "right-closed",
+      "expansion": false
+    },
+    {
+      "stage": 3,
+      "name": "무너진 초소",
+      "enemyId": "cracked_blade",
+      "enemyName": "금 간 검기사",
+      "sequence": [
+        "high"
+      ],
+      "space": "폐초소와 버려진 검. 상단 공격을 아래 회피로 쳐내는 단발 경험.",
+      "kind": "normal",
+      "gate": "right-closed",
+      "expansion": false
+    },
+    {
+      "stage": 4,
+      "name": "경비 순찰로",
+      "enemyId": "gate_sentry",
+      "enemyName": "빗장 초병",
+      "sequence": [
+        "rear"
+      ],
+      "space": "성벽이 점점 커진다. 성문은 아직 오른쪽.",
+      "kind": "normal",
+      "gate": "right-closed",
+      "expansion": false
+    },
+    {
+      "stage": 5,
+      "name": "중간 검문소",
+      "enemyId": "gate_lock",
+      "enemyName": "검문쇠 거인",
+      "sequence": [
+        "low",
+        "high"
+      ],
+      "space": "성문이 아닌 이동식 바리케이드. 첫 종 개수·2연타 튜토리얼.",
+      "kind": "miniboss",
+      "gate": "right-closed",
+      "expansion": false
+    },
+    {
+      "stage": 6,
+      "name": "성벽 바깥길",
+      "enemyId": "gate_sentry",
+      "enemyName": "빗장 초병",
+      "sequence": [
+        "thrust",
+        "rear"
+      ],
+      "space": "벽을 따라 오른쪽으로 달린다. 켜진 등불이 뒤에 남음.",
+      "kind": "normal",
+      "gate": "right-closed",
+      "expansion": false
+    },
+    {
+      "stage": 7,
+      "name": "성문 대교 앞",
+      "enemyId": "bell_hound",
+      "enemyName": "종추 사냥개",
+      "sequence": [
+        "low",
+        "thrust"
+      ],
+      "space": "낮은 돌다리와 경비 사슬. 수면은 장식이며 지형 피해 없음.",
+      "kind": "normal",
+      "gate": "right-closed",
+      "expansion": false
+    },
+    {
+      "stage": 8,
+      "name": "성문 광장 접근",
+      "enemyId": "cracked_blade",
+      "enemyName": "금 간 검기사",
+      "sequence": [
+        "high",
+        "thrust"
+      ],
+      "space": "성문과 종이 선명해진다. 배경 군더더기를 줄여 전투 공간 확보.",
+      "kind": "normal",
+      "gate": "right-closed",
+      "expansion": false
+    },
+    {
+      "stage": 9,
+      "name": "마지막 검문선",
+      "enemyId": "cracked_blade",
+      "enemyName": "금 간 검기사",
+      "sequence": [
+        "low",
+        "high"
+      ],
+      "space": "닫힌 성문을 가까이 보며 마지막 외곽 수호자를 상대한다.",
+      "kind": "normal",
+      "gate": "right-closed",
+      "expansion": false
+    },
+    {
+      "stage": 10,
+      "name": "성문 가디언",
+      "enemyId": "bell_knight",
+      "enemyName": "종의 기사 · 성문 가디언",
+      "sequence": [
+        "thrust",
+        "rear",
+        "high"
+      ],
+      "space": "가디언 뒤 오른쪽에 닫힌 성문. 처치 후 첫 종·등불·문 개방.",
+      "kind": "boss",
+      "gate": "right-closed",
+      "expansion": false
+    },
+    {
+      "stage": 11,
+      "name": "성문 안 진입",
+      "enemyId": "chain_puppet",
+      "enemyName": "문패 꼭두각시",
+      "sequence": [
+        "thrust"
+      ],
+      "space": "열린 성문의 안쪽이 왼쪽. 오른쪽은 첫 문패와 사슬 주거구.",
+      "kind": "normal",
+      "gate": "left-inside",
+      "expansion": true
+    },
+    {
+      "stage": 12,
+      "name": "배수 골목",
+      "enemyId": "hook_hound",
+      "enemyName": "배수로 갈고리개",
+      "sequence": [
+        "rear",
+        "low"
+      ],
+      "space": "성문은 완전히 화면 밖. 좁은 집 벽과 배수로·낮은 사슬.",
+      "kind": "normal",
+      "gate": "absent",
+      "expansion": true
+    },
+    {
+      "stage": 13,
+      "name": "열쇠 골목",
+      "enemyId": "chain_dancer",
+      "enemyName": "사슬 무희",
+      "sequence": [
+        "high",
+        "low"
+      ],
+      "space": "문마다 다른 열쇠. 창문과 문패의 수가 늘어난다.",
+      "kind": "normal",
+      "gate": "absent",
+      "expansion": true
+    },
+    {
+      "stage": 14,
+      "name": "문패 거리",
+      "enemyId": "chain_puppet",
+      "enemyName": "문패 꼭두각시",
+      "sequence": [
+        "thrust",
+        "high"
+      ],
+      "space": "집과 사슬 고리의 같은 이름이 보이는 구간.",
+      "kind": "normal",
+      "gate": "absent",
+      "expansion": true
+    },
+    {
+      "stage": 15,
+      "name": "잠긴 수문",
+      "enemyId": "pendulum_warden",
+      "enemyName": "수문 추지기",
+      "sequence": [
+        "rear",
+        "low",
+        "high"
+      ],
+      "space": "주거구 안 수문 장치. 성문 가디언과 다른 추·물길 실루엣.",
+      "kind": "miniboss",
+      "gate": "absent",
+      "expansion": true
+    },
+    {
+      "stage": 16,
+      "name": "침수된 돌길",
+      "enemyId": "hook_hound",
+      "enemyName": "배수로 갈고리개",
+      "sequence": [
+        "low",
+        "rear"
+      ],
+      "space": "얕은 물에 창문이 비친다. 전투 발판은 항상 평평하다.",
+      "kind": "normal",
+      "gate": "absent",
+      "expansion": true
+    },
+    {
+      "stage": 17,
+      "name": "사슬 중정",
+      "enemyId": "chain_dancer",
+      "enemyName": "사슬 무희",
+      "sequence": [
+        "high",
+        "high"
+      ],
+      "space": "천장에서 내려오는 사슬과 각 집의 열쇠들.",
+      "kind": "normal",
+      "gate": "absent",
+      "expansion": true
+    },
+    {
+      "stage": 18,
+      "name": "집행관 통로",
+      "enemyId": "chain_puppet",
+      "enemyName": "문패 꼭두각시",
+      "sequence": [
+        "thrust",
+        "high",
+        "rear"
+      ],
+      "space": "집집마다 위로 모이는 사슬. 주거구 종이 멀리 보인다.",
+      "kind": "normal",
+      "gate": "absent",
+      "expansion": true
+    },
+    {
+      "stage": 19,
+      "name": "주거구 종 앞",
+      "enemyId": "chain_dancer",
+      "enemyName": "사슬 무희",
+      "sequence": [
+        "low",
+        "high",
+        "low"
+      ],
+      "space": "사슬과 문패가 가장 조밀해진다. 종 앞 전투 공간은 비운다.",
+      "kind": "normal",
+      "gate": "absent",
+      "expansion": true
+    },
+    {
+      "stage": 20,
+      "name": "매달린 집행관",
+      "enemyId": "chain_jailer",
+      "enemyName": "매달린 집행관",
+      "sequence": [
+        "high",
+        "low",
+        "rear"
+      ],
+      "space": "주거구 종을 가둔 집행관. 두 번째 종을 울려 창문과 물길을 밝힌다.",
+      "kind": "boss",
+      "gate": "absent",
+      "expansion": true
+    }
+  ],
+  "monsters": [
+    {
+      "id": "gate_sentry",
+      "boardNumber": 1,
+      "name": "빗장 초병",
+      "stages": [
+        1,
+        4,
+        6
+      ],
+      "silhouette": "가늘고 긴 창, 속이 빈 철제 투구, 허리에 열쇠 하나.",
+      "telegraph": "창끝보다 긴 자루를 먼저 읽게 한다. 낮은 쓸기·몸통 찌르기·뒤로 도는 갈고리의 준비 높이를 구분.",
+      "defeat": "무릎이 접히고 창이 바닥에 떨어진 뒤 열쇠 쪽에서 빛이 풀림."
+    },
+    {
+      "id": "bell_hound",
+      "boardNumber": 2,
+      "name": "종추 사냥개",
+      "stages": [
+        2,
+        7
+      ],
+      "silhouette": "낮은 네 발과 종추 머리. 짧은 경비 사슬 꼬리.",
+      "telegraph": "낮게 웅크리는 동작과 몸통을 앞으로 겨누는 동작을 크게 구분. 성문의 큰 사슬과 혼동되지 않는 길이.",
+      "defeat": "몸통의 종추와 다리가 분리되고 발치의 빛이 가까운 등불로 흐름."
+    },
+    {
+      "id": "cracked_blade",
+      "boardNumber": 3,
+      "name": "금 간 검기사",
+      "stages": [
+        3,
+        8,
+        9
+      ],
+      "silhouette": "초병보다 좁고 높은 실루엣. 세로 균열이 난 흉갑과 긴 검.",
+      "telegraph": "검을 높이 세우는 상단, 가슴 앞 찌르기, 발목 높이 쓸기를 서로 다른 자세로 준비.",
+      "defeat": "투구 속 빈 공간을 보여주며 금 간 갑옷이 열림."
+    },
+    {
+      "id": "gate_lock",
+      "boardNumber": 4,
+      "name": "검문쇠 거인",
+      "stages": [
+        5
+      ],
+      "silhouette": "가로로 넓고 낮은 바리케이드 몸통. 두 팔은 분리된 검문 빗장.",
+      "telegraph": "Stage 5에서 첫 팔은 발목을 쓸고 다음 팔은 위에서 내려친다. 두 팔의 형태·높이가 다르다. 성문 자체처럼 보이는 완성 아치는 금지.",
+      "defeat": "가로 빗장이 풀리고 검문선이 열림. 뒤의 진짜 성문은 아직 닫혀 있음."
+    },
+    {
+      "id": "bell_knight",
+      "boardNumber": 5,
+      "name": "종의 기사 · 성문 가디언",
+      "stages": [
+        10
+      ],
+      "silhouette": "가장 큰 아치형 투구와 철창 방패. 종 문장·장병기가 성문과 맞물린다.",
+      "telegraph": "검문쇠 거인보다 높은 세로 덩어리. 찌르기·후방 원호·상단의 준비 자세를 큰 무기로 표시. 문과 몸이 겹치지 않게 배치.",
+      "defeat": "방패의 걸쇠가 깨져 성문 봉인이 함께 풀림. 종을 울린 뒤 안쪽 빗장과 열린 길을 보임."
+    },
+    {
+      "id": "chain_puppet",
+      "boardNumber": 6,
+      "name": "문패 꼭두각시",
+      "stages": [
+        11,
+        14,
+        18
+      ],
+      "silhouette": "집 번호 목패로 만든 몸통, 빈 머리틀, 긴 사슬 팔.",
+      "telegraph": "11에서 새 구역 첫 적으로 단발부터 다시 읽게 한다. 주민 몸이 아니며 문패는 파괴 대상이 아님.",
+      "defeat": "사슬만 끊기고 온전한 문패가 바닥에 남음."
+    },
+    {
+      "id": "hook_hound",
+      "boardNumber": 7,
+      "name": "배수로 갈고리개",
+      "stages": [
+        12,
+        16
+      ],
+      "silhouette": "배수관 몸통과 갈고리 머리. 외곽 사냥개보다 길고 낮다.",
+      "telegraph": "후방으로 넘어오는 갈고리와 바닥 쓸기. 경비 사냥개의 직선 돌진과 역할을 구분.",
+      "defeat": "갈고리가 풀리고 배수관 안의 작은 빛이 흐름."
+    },
+    {
+      "id": "chain_dancer",
+      "boardNumber": 8,
+      "name": "사슬 무희",
+      "stages": [
+        13,
+        17,
+        19
+      ],
+      "silhouette": "열쇠 치마와 얇은 사슬 고리. 발 대신 매달린 중심축.",
+      "telegraph": "몸통은 작게, 실제 공격 높이를 만드는 열쇠 고리는 크게. 위·아래 회전 준비를 구분.",
+      "defeat": "회전이 멎고 열쇠가 각 집 쪽을 향함."
+    },
+    {
+      "id": "pendulum_warden",
+      "boardNumber": 9,
+      "name": "수문 추지기",
+      "stages": [
+        15
+      ],
+      "silhouette": "수문 철창에 노출된 큰 추. 무거운 다리와 한쪽 수문판.",
+      "telegraph": "성문 가디언의 장병기와 달리 추의 진자 궤적을 강조. 물보라는 예고를 가리지 않는 낮은 장식.",
+      "defeat": "추가 멎고 수문이 열려 빛이 마을 쪽으로 흐름."
+    },
+    {
+      "id": "chain_jailer",
+      "boardNumber": 10,
+      "name": "매달린 집행관",
+      "stages": [
+        20
+      ],
+      "silhouette": "두 사슬에 매달린 큰 가면과 양손의 갈고리. 가면은 주민 명부 모양.",
+      "telegraph": "가면보다 두 팔의 높이 차가 먼저 읽힌다. 연속 공격의 각 방향을 차례로 준비.",
+      "defeat": "사슬이 가면의 족쇄를 풀고 문패 빛들이 집으로 갈라짐."
+    }
+  ],
+  "layout": {
+    "reference": "960×540 가로 전투 화면. 미리보기 조작 버튼은 캔버스 아래에 분리한다. 브라우저 문서는 좁은 화면에서 버튼을 줄바꿈한다.",
+    "priority": [
+      "상단 중앙 종 개수",
+      "금빛 공격 범위와 중앙 접촉 파동",
+      "캐릭터의 대응",
+      "캔버스 아래 연습 안내·입력 버튼"
+    ],
+    "bounds": {
+      "prologueReading": [
+        180,
+        90,
+        600,
+        340
+      ],
+      "bellSpotlight": [
+        411,
+        91,
+        138,
+        87
+      ],
+      "bellCenters": [
+        [
+          458,
+          132
+        ],
+        [
+          502,
+          132
+        ]
+      ],
+      "playerFeet": [
+        320,
+        442
+      ],
+      "enemyFeet": [
+        674,
+        442
+      ],
+      "waveOrigins": [
+        [
+          -160,
+          270
+        ],
+        [
+          1120,
+          270
+        ]
+      ],
+      "waveContact": [
+        480,
+        270
+      ],
+      "lowRange": [
+        285,
+        403,
+        435,
+        35
+      ],
+      "highRange": [
+        285,
+        318,
+        435,
+        57
+      ]
+    },
+    "controls": "브라우저 버튼 최소 높이 48 CSS px. 방향 버튼은 캔버스 아래에 두어 예고를 가리지 않는다. 연습 시작 후 캔버스에 초점이 있을 때 방향키/WASD를 받는다.",
+    "motion": "타격마다 화면 밖 양쪽에서 큰 원호가 중앙으로 모인다. 완벽 대응은 화면 정중앙에서 바깥으로 퍼지는 원형 파동. 모션 감소 설정에서는 이동 전환을 생략하고 프롤로그를 정지 문단으로 읽는다.",
+    "copy": [
+      [
+        "tutorial5.question",
+        "종은 다음 공격이 몇 번 이어지는지 알려줘요. 다음 공격은 몇 번일까요?",
+        "설명 정지 상태",
+        "캔버스 아래, 가변 높이 2~3줄"
+      ],
+      [
+        "tutorial5.practice",
+        "두 방향의 금빛 영역을 순서대로 기억하세요. 파동이 중앙에 맞닿을 때마다 대응해 보세요.",
+        "정답 2회 확인 후",
+        "캔버스 아래, 가변 높이"
+      ],
+      [
+        "tutorial5.success",
+        "두 번 모두 막았어요. 이제 5스테이지 전투를 계속합니다.",
+        "실제 두 타 성공 후",
+        "캔버스 아래"
+      ],
+      [
+        "tutorial5.retry",
+        "다시 해볼 수 있어요. 두 타를 모두 막으면 연습이 끝납니다.",
+        "실패 후",
+        "캔버스 아래, 실패 원인은 별도 상태 문구"
+      ],
+      [
+        "tutorial5.continue",
+        "전투 계속",
+        "실제 연습 성공 후에만 표시",
+        "48px 이상 버튼"
+      ]
+    ],
+    "qaLimit": "정적 문서·상태 전이·타이밍 검증용이며 실제 기기 터치 검증과 브라우저 시각 검수는 별도 필요하다."
+  }
+}

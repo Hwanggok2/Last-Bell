@@ -1,0 +1,774 @@
+{
+  "version": "planning-v6",
+  "date": "2026-10-22",
+  "status": "implemented-verified-public-progressive-damage",
+  "spec": "design-spec-v6.md",
+  "board": "feedback-plan-v6.html",
+  "route": "../Story/route-onboarding-v5.json",
+  "runtimeBaseline": "../Evidence/ReviewedMotionAudio-v4/verification.json",
+  "decisions": {
+    "stageCap": 20,
+    "restartStage": 1,
+    "newMonsters": 10,
+    "perfectDefenseBellOnly": true,
+    "randomEnemySequences": true,
+    "hitComboHud": true,
+    "goldAbsorption": true,
+    "reusedOriginalMonsters": 5,
+    "totalDistinctMonsterAppearances": 15
+  },
+  "draftValues": [
+    "stunExtension",
+    "enemyStaggerMultipliers",
+    "perfectStreakBonus",
+    "sequenceWeights",
+    "newStageStats",
+    "vfxTiming"
+  ],
+  "audio": {
+    "bellEvents": [
+      "PerfectDodge",
+      "PerfectParry"
+    ],
+    "silentBellEvents": [
+      "Windup",
+      "Dodged",
+      "Parried",
+      "EnemyDamaged",
+      "Critical",
+      "PlayerDamaged",
+      "EnemyStunned",
+      "EnemyDefeated",
+      "BossDefeated",
+      "StoryDialogue",
+      "StageTransition"
+    ],
+    "source": "../Story/Audio-v4/Audio/bell-low-long.wav",
+    "fadePreviousMs": 40,
+    "sustainedVoices": 1,
+    "pauseTail": true,
+    "telegraphSound": "silent",
+    "goldSound": "Original gold-pickup.wav; 85ms, maximum one trigger per75ms, volume0.26, mute/pause respected.",
+    "musicReview": "No standalone bell strike that can be confused with perfect-defense feedback",
+    "perfectBellVolume": 0.38,
+    "previousPerfectBellVolume": 0.55,
+    "volumeRevision": "2026-10-22: amplitude reduced by 30.9%; original low pitch and long tail preserved."
+  },
+  "timing": {
+    "telegraphMs": 720,
+    "blinkMs": [
+      0,
+      240,
+      480
+    ],
+    "flightMs": 120,
+    "comboGapMs": 480,
+    "normalDodgeMs": 160,
+    "perfectDodgeMs": 60,
+    "defenseReuseMs": 260,
+    "minimumNextFirstHitMs": 1800,
+    "perfectCounterWindowMs": 500
+  },
+  "randomPatterns": {
+    "selection": "Choose count, then each direction before the complete warning begins; freeze chosen sequence.",
+    "weights": [
+      {
+        "stages": [
+          1,
+          4
+        ],
+        "counts": [
+          100,
+          0,
+          0
+        ]
+      },
+      {
+        "stages": [
+          5,
+          5
+        ],
+        "counts": [
+          30,
+          70,
+          0
+        ]
+      },
+      {
+        "stages": [
+          6,
+          9
+        ],
+        "counts": [
+          100,
+          0,
+          0
+        ]
+      },
+      {
+        "stages": [
+          10,
+          10
+        ],
+        "counts": [
+          0,
+          100,
+          0
+        ]
+      },
+      {
+        "stages": [
+          11,
+          11
+        ],
+        "counts": [
+          60,
+          40,
+          0
+        ]
+      },
+      {
+        "stages": [
+          12,
+          14
+        ],
+        "counts": [
+          30,
+          70,
+          0
+        ]
+      },
+      {
+        "stages": [
+          15,
+          15
+        ],
+        "counts": [
+          0,
+          50,
+          50
+        ]
+      },
+      {
+        "stages": [
+          16,
+          19
+        ],
+        "counts": [
+          20,
+          50,
+          30
+        ]
+      },
+      {
+        "stages": [
+          20,
+          20
+        ],
+        "counts": [
+          0,
+          25,
+          75
+        ]
+      }
+    ],
+    "pools": [
+      {
+        "id": "gate_sentry",
+        "name": "빗장 초병",
+        "directions": [
+          "low",
+          "rear",
+          "thrust"
+        ]
+      },
+      {
+        "id": "bell_hound",
+        "name": "종추 사냥개",
+        "directions": [
+          "thrust",
+          "low"
+        ]
+      },
+      {
+        "id": "cracked_blade",
+        "name": "금 간 검기사",
+        "directions": [
+          "high",
+          "thrust",
+          "low"
+        ]
+      },
+      {
+        "id": "gate_lock",
+        "name": "검문쇠 거인",
+        "directions": [
+          "low",
+          "high"
+        ]
+      },
+      {
+        "id": "bell_knight",
+        "name": "종의 기사 · 성문 가디언",
+        "directions": [
+          "thrust",
+          "rear",
+          "high"
+        ]
+      },
+      {
+        "id": "chain_puppet",
+        "name": "문패 꼭두각시",
+        "directions": [
+          "thrust",
+          "high",
+          "rear"
+        ]
+      },
+      {
+        "id": "hook_hound",
+        "name": "배수로 갈고리개",
+        "directions": [
+          "rear",
+          "low"
+        ]
+      },
+      {
+        "id": "chain_dancer",
+        "name": "사슬 무희",
+        "directions": [
+          "high",
+          "low"
+        ]
+      },
+      {
+        "id": "pendulum_warden",
+        "name": "수문 추지기",
+        "directions": [
+          "rear",
+          "low",
+          "high"
+        ]
+      },
+      {
+        "id": "chain_jailer",
+        "name": "매달린 집행관",
+        "directions": [
+          "high",
+          "low",
+          "rear"
+        ]
+      },
+      {
+        "id": "gate_sentinel",
+        "name": "성문 파수병",
+        "directions": [
+          "low",
+          "rear",
+          "thrust"
+        ]
+      },
+      {
+        "id": "ash_wisp",
+        "name": "재의 불씨",
+        "directions": [
+          "high",
+          "low",
+          "thrust"
+        ]
+      },
+      {
+        "id": "gate_warden",
+        "name": "성문 수문장",
+        "directions": [
+          "low",
+          "high",
+          "rear"
+        ]
+      },
+      {
+        "id": "chain_thrall",
+        "name": "사슬 망령",
+        "directions": [
+          "thrust",
+          "low",
+          "rear"
+        ]
+      },
+      {
+        "id": "faded_bell_knight",
+        "name": "빛바랜 종기사",
+        "directions": [
+          "high",
+          "low",
+          "thrust"
+        ]
+      }
+    ],
+    "maxSameDirectionInARow": 2,
+    "exceptions": [
+      "First scripted dodge/attack tutorial",
+      "First Stage 5 sequence after combo hint: 2 hits, randomized directions"
+    ],
+    "resume": "Keep selected sequence and resolved cursor; replay full cues for unresolved hits only; preserve RNG and last two directions; do not reroll."
+  },
+  "stun": {
+    "threshold": 100,
+    "baseNormalGain": 20,
+    "basePerfectGain": 40,
+    "enemyMultipliers": {
+      "normal": 1,
+      "miniboss": 0.6,
+      "boss": 0.4
+    },
+    "perfectStreakStep": 0.2,
+    "perfectStreakMaxSteps": 4,
+    "baseDurationMs": {
+      "normal": 1500,
+      "miniboss": 1200,
+      "boss": 1000
+    },
+    "attackSpeedMultiplier": 1.2,
+    "normalAttack": {
+      "approachEndMs": 120,
+      "contactMs": 200,
+      "returnStartMs": 230,
+      "endMs": 500
+    },
+    "extensionPerHitMs": 50,
+    "maxExtensionPerStunMs": 300,
+    "immunityAfterFinalEndMs": 2000,
+    "damageGaugePenalty": 20,
+    "speedSnapshot": "At attack acceptance, fixed for the entire attack.",
+    "extensionRule": "Positive nonlethal confirmed damage at time strictly before stun end.",
+    "perfectStreakReset": [
+      "non-perfect resolved enemy strike",
+      "enemy change",
+      "new run",
+      "death",
+      "retreat"
+    ],
+    "perfectStreakPreserve": [
+      "stun",
+      "immunity",
+      "pause",
+      "save/resume"
+    ],
+    "immunity": "Perfect streak and bell recognized; gauge gain zero."
+  },
+  "hitCombo": {
+    "increment": "One positive EnemyDamaged result per accepted attack, including critical/counter/stunned/lethal hits.",
+    "reset": [
+      "positive player HP damage",
+      "new run",
+      "death",
+      "retreat",
+      "Stage20 complete"
+    ],
+    "preserve": [
+      "enemy change",
+      "stage change",
+      "Stage10 story/reward",
+      "pause",
+      "save/resume"
+    ],
+    "label": "{count} COMBO",
+    "hideZero": true,
+    "displayCap": 9999,
+    "extraDamageOrGoldBonus": false
+  },
+  "gold": {
+    "rewardCommit": "Exactly once at defeat before visual delivery.",
+    "display": "Arrival weights affect displayed wallet only; no reward calls from UI.",
+    "particleCount": "min(rewardGold, 32768); one gold per dot until cap, quotient/remainder weights above cap",
+    "particleGlobalMax": 32768,
+    "particleSizePx": [
+      3,
+      3
+    ],
+    "fallMs": 0,
+    "gatherEndMs": 0,
+    "finishByMs": 1200,
+    "emissionMs": 840,
+    "travelMs": 360,
+    "path": "Independent square dots start across the defeated torso at regular intervals and fly directly to the gold text; no fall, trail, connecting line or stretch.",
+    "trajectory": "launch(i)=840*i/(N-1); position=lerp(origin[i],target,age/360); hide before launch and at arrival",
+    "target": "Rightmost gold digit center, captured once for the batch.",
+    "pause": "Freeze visual time and count; wallet is already committed.",
+    "interrupt": "Flush display on lobby, scene exit, resize or reload; never regrant.",
+    "reducedMotionMs": 120,
+    "arrivalFeedback": "85ms original pickup tick, rate limited to one every 75ms, independent of the bell.",
+    "origin": "Saved torso position plus deterministic small per-dot offsets; no waiting cluster.",
+    "story10Exception": "Hold visual gold until dialogue completes or skips; then begin alongside dissolve.",
+    "future": "Multiple lanes can be added later for very large rewards; currently cap mesh at 32768 weighted dots.",
+    "dotSizeByCount": {
+      "upTo150": 3,
+      "upTo2000": 2,
+      "above2000": 1
+    }
+  },
+  "hud": {
+    "reference": [
+      960,
+      540
+    ],
+    "small": [
+      640,
+      360
+    ],
+    "safeArea": true,
+    "layout": {
+      "stage": {
+        "anchor": "top-left",
+        "normal": [
+          20,
+          16,
+          160,
+          32
+        ],
+        "small": [
+          12,
+          12,
+          104,
+          28
+        ]
+      },
+      "gold": {
+        "anchor": "top-right",
+        "normal": [
+          704,
+          16,
+          176,
+          28
+        ],
+        "small": [
+          430,
+          12,
+          146,
+          24
+        ]
+      },
+      "hitCombo": {
+        "anchor": "top-right",
+        "normal": [
+          704,
+          48,
+          176,
+          28
+        ],
+        "small": [
+          430,
+          38,
+          146,
+          24
+        ]
+      },
+      "pause": {
+        "anchor": "top-right",
+        "normal": [
+          896,
+          16,
+          48,
+          48
+        ],
+        "small": [
+          580,
+          12,
+          48,
+          48
+        ]
+      },
+      "bossHp": {
+        "anchor": "top-center",
+        "normal": [
+          270,
+          76,
+          420,
+          16
+        ],
+        "small": [
+          160,
+          64,
+          248,
+          12
+        ]
+      },
+      "stagger": {
+        "anchor": "top-center",
+        "normal": [
+          270,
+          50,
+          420,
+          14
+        ],
+        "small": [
+          160,
+          44,
+          248,
+          10
+        ]
+      },
+      "bells": {
+        "anchor": "top-center",
+        "normal": [
+          428,
+          104,
+          104,
+          32
+        ],
+        "small": [
+          284,
+          88,
+          72,
+          24
+        ]
+      },
+      "attack": {
+        "anchor": "bottom-right",
+        "normal": [
+          840,
+          410,
+          104,
+          114
+        ],
+        "small": [
+          548,
+          268,
+          80,
+          80
+        ]
+      },
+      "dodgeArea": {
+        "anchor": "bottom-left",
+        "normal": [
+          16,
+          326,
+          196,
+          198
+        ],
+        "small": [
+          12,
+          238,
+          144,
+          110
+        ]
+      },
+      "enemyName": {
+        "anchor": "top-center",
+        "normal": [
+          270,
+          16,
+          420,
+          28
+        ],
+        "small": [
+          142,
+          10,
+          272,
+          26
+        ]
+      }
+    },
+    "copy": [
+      {
+        "id": "battle.gold",
+        "text": "{gold}"
+      },
+      {
+        "id": "battle.hit_combo",
+        "text": "{count} COMBO"
+      },
+      {
+        "id": "battle.pause.a11y",
+        "text": "일시정지"
+      },
+      {
+        "id": "result.clear20",
+        "text": "20스테이지 클리어"
+      },
+      {
+        "id": "battle.enemy_name",
+        "text": "{enemyName}"
+      },
+      {
+        "id": "battle.boss_hp.a11y",
+        "text": "{enemyName} 체력 {hp}/{maxHp}"
+      }
+    ],
+    "enemyHeader": {
+      "order": [
+        "enemyName",
+        "stagger",
+        "bossHp",
+        "bells"
+      ],
+      "nameVisibility": "All enemies while present; fade on death and swap on spawn, hidden during travel and story. Pause keeps the current name.",
+      "hpVisibility": "Only kind miniboss/boss (stages 5,10,15,20). Stage 9 and 19 remain normal. Normal enemies leave the HP slot empty; do not move the name/stagger/bells.",
+      "nameFontPx": {
+        "normal": 22,
+        "small": 16
+      },
+      "nameOverflow": "One centered line. Use short display names; ellipsis only for future overflow and retain full accessible name. No wrapped text or shrinking below 16px.",
+      "hpStyle": "Red filled bar with outline and HP accessible label; gold stagger bar separated by 12px (small 10px). Health comes from combat state.",
+      "staggerStyle": "Existing 0..100 stagger state; no additional invented counter."
+    }
+  },
+  "implementationStatus": {
+    "clientChanged": true,
+    "gameDataChanged": true,
+    "buildChanged": true,
+    "validation": "mvp1.8.2: EditMode163/163; native960x540 77 checks; catalog and independent session checks passed; Windows/WebGL and public browser launch verified.",
+    "evidence": "../Evidence/Progressive-damage-v182/verification.json",
+    "publicUrl": "https://last-bell-playtest.nugunagame1.chatgpt.site"
+  },
+  "revision": "2026-10-22-progressive-damage",
+  "monsterRoster": {
+    "source": "../Story/route-onboarding-v5.json",
+    "freshCount": 10,
+    "reusedOriginalCount": 5,
+    "totalDistinctEnemyIds": 15,
+    "totalDistinctArtIds": 15,
+    "replacementStages": [
+      4,
+      5,
+      6,
+      14,
+      19
+    ],
+    "bossStagesUnchanged": [
+      5,
+      10,
+      15,
+      20
+    ],
+    "status": "implemented-15-actors-20-playable-stages"
+  },
+  "stageEffects": {
+    "status": "implemented-tiered-existing-effect-pools",
+    "scope": [
+      1,
+      20
+    ],
+    "tiers": [
+      {
+        "id": 1,
+        "stages": [
+          1,
+          4
+        ],
+        "name": "기본 실루엣",
+        "trailMs": 60,
+        "impactParticles": 0,
+        "description": "기존 공격선과 짧은 접촉 반응만 사용한다."
+      },
+      {
+        "id": 2,
+        "stages": [
+          5,
+          9
+        ],
+        "name": "약한 잔상",
+        "trailMs": 100,
+        "impactParticles": 6,
+        "description": "무기 끝 잔상과 작은 금속·재 파편을 더한다."
+      },
+      {
+        "id": 3,
+        "stages": [
+          10,
+          14
+        ],
+        "name": "구역 색 강화",
+        "trailMs": 140,
+        "impactParticles": 10,
+        "description": "성문은 청동, 주거구는 청록 계열의 공격 궤적·접촉 파편을 쓴다."
+      },
+      {
+        "id": 4,
+        "stages": [
+          15,
+          19
+        ],
+        "name": "강화된 재등장",
+        "trailMs": 160,
+        "impactParticles": 14,
+        "description": "짧은 잔상 두 겹과 사슬·문패·무기별 파편으로 후반 적을 구별한다."
+      },
+      {
+        "id": 5,
+        "stages": [
+          20,
+          20
+        ],
+        "name": "집행관 절정",
+        "trailMs": 180,
+        "impactParticles": 18,
+        "description": "두 갈고리의 짧은 잔상과 접촉 순간 사슬 파편을 가장 강하게 보여준다."
+      }
+    ],
+    "bossAccent": {
+      "stages": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "extraParticles": 6,
+      "crestFadeMs": 220,
+      "description": "접촉이 확정된 순간 적 발밑 문양을 짧게 보여준다. 종소리와 화면 전체 번쩍임은 추가하지 않는다."
+    },
+    "limits": {
+      "maxParticlesPerImpact": 24,
+      "enemyParticleGlobalMax": 48,
+      "particleLifetimeMs": 220,
+      "trailOpacityMax": 0.35,
+      "maxTrailWidthPxAt960": 6,
+      "decorativeRadiusPxAt960": 96
+    },
+    "readability": "Decorations stay behind actors and cues, clipped to the combat area. HUD/name/stagger/HP/bells/directional warnings remain unobscured. No new attacks, hitboxes, timing, damage, status, stagger resistance or rewards; cancel trails with cancelled attacks.",
+    "reducedEffects": "Disable duplicate afterimages and floor crests; cap decorative impact particles at 4. Preserve every gameplay cue. Do not change timing.",
+    "audio": "No extra bells from enemy effects. Gold pickup tick is a separate reward event."
+  },
+  "story10": {
+    "source": "../Story/route-onboarding-v5.json#story10",
+    "bossVisibleUntil": "dialogue complete or skip",
+    "rewardCommit": "at defeat exactly once",
+    "visualGoldRelease": "after dialogue, same frame as dissolve",
+    "automaticBellSound": false
+  },
+  "stageRevision": {
+    "swap": {
+      "stage5": "gate_warden",
+      "stage9": "gate_lock"
+    },
+    "firstThreeHitStage": 15,
+    "boss10Defeat": "Preserve actual combat frame through dialogue and fade afterward."
+  },
+  "enemyDamageProgression": {
+    "unit": "HP per landed hit before damage reduction",
+    "perStage": [
+      8,
+      9,
+      10,
+      11,
+      13,
+      14,
+      15,
+      16,
+      17,
+      20,
+      21,
+      22,
+      23,
+      24,
+      27,
+      28,
+      29,
+      30,
+      31,
+      35
+    ],
+    "policy": "Strictly increasing every playable stage, including the first normal enemy after each boss. Larger increases on stages5/10/15/20; combos apply the stage damage on each hit.",
+    "boundaryStage21": 36
+  }
+}

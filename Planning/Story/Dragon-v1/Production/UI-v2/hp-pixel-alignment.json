@@ -1,0 +1,607 @@
+{
+  "source": "Actual candidate-01 Unity HP bounds; expected snapping arithmetic only, no new Unity render.",
+  "perAxisMaxTranslation": 0.38709259033203125,
+  "cases": [
+    {
+      "file": "v2-hp-1280x720-stage-1-zero.png",
+      "role": "player",
+      "beforeBottomLeft": [
+        420.0,
+        168.77418518066406
+      ],
+      "expectedAfterBottomLeft": [
+        420,
+        169
+      ],
+      "screenPixelTranslation": [
+        0.0,
+        0.2258148193359375
+      ],
+      "sizeUnchanged": [
+        160.0,
+        36.0
+      ]
+    },
+    {
+      "file": "v2-hp-1280x720-stage-1-zero.png",
+      "role": "enemy",
+      "beforeBottomLeft": [
+        808.0,
+        168.77418518066406
+      ],
+      "expectedAfterBottomLeft": [
+        808,
+        169
+      ],
+      "screenPixelTranslation": [
+        0.0,
+        0.2258148193359375
+      ],
+      "sizeUnchanged": [
+        184.0,
+        36.0
+      ]
+    },
+    {
+      "file": "v2-hp-1280x720-stage-1-tiny.png",
+      "role": "player",
+      "beforeBottomLeft": [
+        420.0,
+        168.77418518066406
+      ],
+      "expectedAfterBottomLeft": [
+        420,
+        169
+      ],
+      "screenPixelTranslation": [
+        0.0,
+        0.2258148193359375
+      ],
+      "sizeUnchanged": [
+        160.0,
+        36.0
+      ]
+    },
+    {
+      "file": "v2-hp-1280x720-stage-1-tiny.png",
+      "role": "enemy",
+      "beforeBottomLeft": [
+        808.0,
+        168.77418518066406
+      ],
+      "expectedAfterBottomLeft": [
+        808,
+        169
+      ],
+      "screenPixelTranslation": [
+        0.0,
+        0.2258148193359375
+      ],
+      "sizeUnchanged": [
+        184.0,
+        36.0
+      ]
+    },
+    {
+      "file": "v2-hp-1280x720-stage-1-25.png",
+      "role": "player",
+      "beforeBottomLeft": [
+        420.0,
+        168.77418518066406
+      ],
+      "expectedAfterBottomLeft": [
+        420,
+        169
+      ],
+      "screenPixelTranslation": [
+        0.0,
+        0.2258148193359375
+      ],
+      "sizeUnchanged": [
+        160.0,
+        36.0
+      ]
+    },
+    {
+      "file": "v2-hp-1280x720-stage-1-25.png",
+      "role": "enemy",
+      "beforeBottomLeft": [
+        808.0,
+        168.77418518066406
+      ],
+      "expectedAfterBottomLeft": [
+        808,
+        169
+      ],
+      "screenPixelTranslation": [
+        0.0,
+        0.2258148193359375
+      ],
+      "sizeUnchanged": [
+        184.0,
+        36.0
+      ]
+    },
+    {
+      "file": "v2-hp-1280x720-stage-1-50.png",
+      "role": "player",
+      "beforeBottomLeft": [
+        420.0,
+        168.77418518066406
+      ],
+      "expectedAfterBottomLeft": [
+        420,
+        169
+      ],
+      "screenPixelTranslation": [
+        0.0,
+        0.2258148193359375
+      ],
+      "sizeUnchanged": [
+        160.0,
+        36.0
+      ]
+    },
+    {
+      "file": "v2-hp-1280x720-stage-1-50.png",
+      "role": "enemy",
+      "beforeBottomLeft": [
+        808.0,
+        168.77418518066406
+      ],
+      "expectedAfterBottomLeft": [
+        808,
+        169
+      ],
+      "screenPixelTranslation": [
+        0.0,
+        0.2258148193359375
+      ],
+      "sizeUnchanged": [
+        184.0,
+        36.0
+      ]
+    },
+    {
+      "file": "v2-hp-1280x720-stage-1-100.png",
+      "role": "player",
+      "beforeBottomLeft": [
+        420.0,
+        168.77418518066406
+      ],
+      "expectedAfterBottomLeft": [
+        420,
+        169
+      ],
+      "screenPixelTranslation": [
+        0.0,
+        0.2258148193359375
+      ],
+      "sizeUnchanged": [
+        160.0,
+        36.0
+      ]
+    },
+    {
+      "file": "v2-hp-1280x720-stage-1-100.png",
+      "role": "enemy",
+      "beforeBottomLeft": [
+        808.0,
+        168.77418518066406
+      ],
+      "expectedAfterBottomLeft": [
+        808,
+        169
+      ],
+      "screenPixelTranslation": [
+        0.0,
+        0.2258148193359375
+      ],
+      "sizeUnchanged": [
+        184.0,
+        36.0
+      ]
+    },
+    {
+      "file": "v2-hp-1280x720-stage-10-zero.png",
+      "role": "boss",
+      "beforeBottomLeft": [
+        760.0,
+        168.77418518066406
+      ],
+      "expectedAfterBottomLeft": [
+        760,
+        169
+      ],
+      "screenPixelTranslation": [
+        0.0,
+        0.2258148193359375
+      ],
+      "sizeUnchanged": [
+        280.0,
+        36.0
+      ]
+    },
+    {
+      "file": "v2-hp-1280x720-stage-10-tiny.png",
+      "role": "boss",
+      "beforeBottomLeft": [
+        760.0,
+        168.77418518066406
+      ],
+      "expectedAfterBottomLeft": [
+        760,
+        169
+      ],
+      "screenPixelTranslation": [
+        0.0,
+        0.2258148193359375
+      ],
+      "sizeUnchanged": [
+        280.0,
+        36.0
+      ]
+    },
+    {
+      "file": "v2-hp-1280x720-stage-10-25.png",
+      "role": "boss",
+      "beforeBottomLeft": [
+        760.0,
+        168.77418518066406
+      ],
+      "expectedAfterBottomLeft": [
+        760,
+        169
+      ],
+      "screenPixelTranslation": [
+        0.0,
+        0.2258148193359375
+      ],
+      "sizeUnchanged": [
+        280.0,
+        36.0
+      ]
+    },
+    {
+      "file": "v2-hp-1280x720-stage-10-50.png",
+      "role": "boss",
+      "beforeBottomLeft": [
+        760.0,
+        168.77418518066406
+      ],
+      "expectedAfterBottomLeft": [
+        760,
+        169
+      ],
+      "screenPixelTranslation": [
+        0.0,
+        0.2258148193359375
+      ],
+      "sizeUnchanged": [
+        280.0,
+        36.0
+      ]
+    },
+    {
+      "file": "v2-hp-1280x720-stage-10-100.png",
+      "role": "boss",
+      "beforeBottomLeft": [
+        760.0,
+        168.77418518066406
+      ],
+      "expectedAfterBottomLeft": [
+        760,
+        169
+      ],
+      "screenPixelTranslation": [
+        0.0,
+        0.2258148193359375
+      ],
+      "sizeUnchanged": [
+        280.0,
+        36.0
+      ]
+    },
+    {
+      "file": "v2-hp-640x360-stage-1-zero.png",
+      "role": "player",
+      "beforeBottomLeft": [
+        210.0,
+        84.38709259033203
+      ],
+      "expectedAfterBottomLeft": [
+        210,
+        84
+      ],
+      "screenPixelTranslation": [
+        0.0,
+        -0.38709259033203125
+      ],
+      "sizeUnchanged": [
+        80.0,
+        18.0
+      ]
+    },
+    {
+      "file": "v2-hp-640x360-stage-1-zero.png",
+      "role": "enemy",
+      "beforeBottomLeft": [
+        404.0,
+        84.38709259033203
+      ],
+      "expectedAfterBottomLeft": [
+        404,
+        84
+      ],
+      "screenPixelTranslation": [
+        0.0,
+        -0.38709259033203125
+      ],
+      "sizeUnchanged": [
+        92.0,
+        18.0
+      ]
+    },
+    {
+      "file": "v2-hp-640x360-stage-1-tiny.png",
+      "role": "player",
+      "beforeBottomLeft": [
+        210.0,
+        84.38709259033203
+      ],
+      "expectedAfterBottomLeft": [
+        210,
+        84
+      ],
+      "screenPixelTranslation": [
+        0.0,
+        -0.38709259033203125
+      ],
+      "sizeUnchanged": [
+        80.0,
+        18.0
+      ]
+    },
+    {
+      "file": "v2-hp-640x360-stage-1-tiny.png",
+      "role": "enemy",
+      "beforeBottomLeft": [
+        404.0,
+        84.38709259033203
+      ],
+      "expectedAfterBottomLeft": [
+        404,
+        84
+      ],
+      "screenPixelTranslation": [
+        0.0,
+        -0.38709259033203125
+      ],
+      "sizeUnchanged": [
+        92.0,
+        18.0
+      ]
+    },
+    {
+      "file": "v2-hp-640x360-stage-1-25.png",
+      "role": "player",
+      "beforeBottomLeft": [
+        210.0,
+        84.38709259033203
+      ],
+      "expectedAfterBottomLeft": [
+        210,
+        84
+      ],
+      "screenPixelTranslation": [
+        0.0,
+        -0.38709259033203125
+      ],
+      "sizeUnchanged": [
+        80.0,
+        18.0
+      ]
+    },
+    {
+      "file": "v2-hp-640x360-stage-1-25.png",
+      "role": "enemy",
+      "beforeBottomLeft": [
+        404.0,
+        84.38709259033203
+      ],
+      "expectedAfterBottomLeft": [
+        404,
+        84
+      ],
+      "screenPixelTranslation": [
+        0.0,
+        -0.38709259033203125
+      ],
+      "sizeUnchanged": [
+        92.0,
+        18.0
+      ]
+    },
+    {
+      "file": "v2-hp-640x360-stage-1-50.png",
+      "role": "player",
+      "beforeBottomLeft": [
+        210.0,
+        84.38709259033203
+      ],
+      "expectedAfterBottomLeft": [
+        210,
+        84
+      ],
+      "screenPixelTranslation": [
+        0.0,
+        -0.38709259033203125
+      ],
+      "sizeUnchanged": [
+        80.0,
+        18.0
+      ]
+    },
+    {
+      "file": "v2-hp-640x360-stage-1-50.png",
+      "role": "enemy",
+      "beforeBottomLeft": [
+        404.0,
+        84.38709259033203
+      ],
+      "expectedAfterBottomLeft": [
+        404,
+        84
+      ],
+      "screenPixelTranslation": [
+        0.0,
+        -0.38709259033203125
+      ],
+      "sizeUnchanged": [
+        92.0,
+        18.0
+      ]
+    },
+    {
+      "file": "v2-hp-640x360-stage-1-100.png",
+      "role": "player",
+      "beforeBottomLeft": [
+        210.0,
+        84.38709259033203
+      ],
+      "expectedAfterBottomLeft": [
+        210,
+        84
+      ],
+      "screenPixelTranslation": [
+        0.0,
+        -0.38709259033203125
+      ],
+      "sizeUnchanged": [
+        80.0,
+        18.0
+      ]
+    },
+    {
+      "file": "v2-hp-640x360-stage-1-100.png",
+      "role": "enemy",
+      "beforeBottomLeft": [
+        404.0,
+        84.38709259033203
+      ],
+      "expectedAfterBottomLeft": [
+        404,
+        84
+      ],
+      "screenPixelTranslation": [
+        0.0,
+        -0.38709259033203125
+      ],
+      "sizeUnchanged": [
+        92.0,
+        18.0
+      ]
+    },
+    {
+      "file": "v2-hp-640x360-stage-10-zero.png",
+      "role": "boss",
+      "beforeBottomLeft": [
+        380.0,
+        84.38709259033203
+      ],
+      "expectedAfterBottomLeft": [
+        380,
+        84
+      ],
+      "screenPixelTranslation": [
+        0.0,
+        -0.38709259033203125
+      ],
+      "sizeUnchanged": [
+        140.0,
+        18.0
+      ]
+    },
+    {
+      "file": "v2-hp-640x360-stage-10-tiny.png",
+      "role": "boss",
+      "beforeBottomLeft": [
+        380.0,
+        84.38709259033203
+      ],
+      "expectedAfterBottomLeft": [
+        380,
+        84
+      ],
+      "screenPixelTranslation": [
+        0.0,
+        -0.38709259033203125
+      ],
+      "sizeUnchanged": [
+        140.0,
+        18.0
+      ]
+    },
+    {
+      "file": "v2-hp-640x360-stage-10-25.png",
+      "role": "boss",
+      "beforeBottomLeft": [
+        380.0,
+        84.38709259033203
+      ],
+      "expectedAfterBottomLeft": [
+        380,
+        84
+      ],
+      "screenPixelTranslation": [
+        0.0,
+        -0.38709259033203125
+      ],
+      "sizeUnchanged": [
+        140.0,
+        18.0
+      ]
+    },
+    {
+      "file": "v2-hp-640x360-stage-10-50.png",
+      "role": "boss",
+      "beforeBottomLeft": [
+        380.0,
+        84.38709259033203
+      ],
+      "expectedAfterBottomLeft": [
+        380,
+        84
+      ],
+      "screenPixelTranslation": [
+        0.0,
+        -0.38709259033203125
+      ],
+      "sizeUnchanged": [
+        140.0,
+        18.0
+      ]
+    },
+    {
+      "file": "v2-hp-640x360-stage-10-100.png",
+      "role": "boss",
+      "beforeBottomLeft": [
+        380.0,
+        84.38709259033203
+      ],
+      "expectedAfterBottomLeft": [
+        380,
+        84
+      ],
+      "screenPixelTranslation": [
+        0.0,
+        -0.38709259033203125
+      ],
+      "sizeUnchanged": [
+        140.0,
+        18.0
+      ]
+    }
+  ],
+  "unityExecuted": false
+}

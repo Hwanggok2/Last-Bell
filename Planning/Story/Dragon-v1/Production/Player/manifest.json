@@ -1,0 +1,2147 @@
+{
+  "schemaVersion": 1,
+  "package": "Dragon-v1-hero-on",
+  "date": "2026-10-24",
+  "status": "ready",
+  "generatedWith": "PixelLab ProFlash, PixMiniMax, explicit skeleton v3, outfit transfer and deterministic PixelLab workbench cleanup",
+  "coordinateConvention": "PNG top-left origin; integer pixel pivots; bottom exclusive. Unity normalized pivot=(x/width,1-y/height). Clip pivot overrides actor pivot.",
+  "pixelImport": {
+    "filter": "Point",
+    "compression": "None",
+    "mipmaps": false,
+    "alphaIsTransparency": true,
+    "meshType": "FullRect",
+    "perFrameTrim": false
+  },
+  "license": "license.json",
+  "audit": "frame-audit.json",
+  "review": "visual-review.md",
+  "actors": [
+    {
+      "id": "hero_on",
+      "displayName": "온",
+      "canonical": "Planning/Story/Dragon-v1/Production/Player/canonical.png",
+      "canonicalSourceJobId": "b521d718-274a-47bb-9271-02911e0f8e7a",
+      "width": 48,
+      "height": 48,
+      "pivotTopLeft": [
+        21,
+        38
+      ],
+      "referenceHeight": 26,
+      "worldHeight": 1.3433333333333335,
+      "recommendedDisplayHeight": 156,
+      "recommendedIntegerScale": 6,
+      "facing": "east",
+      "faceAnchorTopLeft": [
+        24,
+        20
+      ],
+      "palette": [
+        "#182B32",
+        "#F7E4B0",
+        "#263F51",
+        "#795039",
+        "#A1A9A2",
+        "#E4AA41",
+        "#996A3B"
+      ],
+      "clips": {
+        "Idle": {
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Player/clips/idle/00.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/idle/01.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/idle/02.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/idle/03.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/idle/04.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/idle/05.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/idle/06.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/idle/07.png"
+          ],
+          "fps": 10,
+          "loop": true,
+          "contactFrame": -1,
+          "effectOriginTopLeft": null,
+          "sourceJobId": "b12684c2-d25d-469a-8132-da78611a1b8d",
+          "sourceIndices": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "processedJobId": "99d716f5-5228-4d03-9002-4fcf126e4bf3",
+          "processedIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "processedAssetId": "b152ab65-da65-58b2-a37e-f3fde6c3e995",
+          "inputFrameIncluded": false,
+          "pivotTopLeft": [
+            21,
+            38
+          ],
+          "referenceHeight": 26,
+          "contactFrameIsVisualOnly": true,
+          "review": "Planning/Story/Dragon-v1/Production/Player/idle-review.png",
+          "uniquePixelFrames": 8,
+          "records": [
+            {
+              "frame": 0,
+              "sourceIndex": 1,
+              "sourceJobId": "b12684c2-d25d-469a-8132-da78611a1b8d",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/99d716f5-5228-4d03-9002-4fcf126e4bf3/download?index=0",
+              "sha256": "20fe659db7c3975a46c6e43ac35c692afe6eeed009fb30c2737b80718065a367",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                11,
+                12,
+                33,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "4efc14420a27a6461d6e480bb7368f260ca9407367cce8de17143e42cf6345ff"
+            },
+            {
+              "frame": 1,
+              "sourceIndex": 2,
+              "sourceJobId": "b12684c2-d25d-469a-8132-da78611a1b8d",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/99d716f5-5228-4d03-9002-4fcf126e4bf3/download?index=1",
+              "sha256": "34b36de42c62dc92162218b4513998f539ec29951a451eac79c3b1f7c0f7c02a",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                12,
+                12,
+                34,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "7a0291122e5e40d1836116ddd7cb3c154198a561a819107a7b265385dabf3f1f"
+            },
+            {
+              "frame": 2,
+              "sourceIndex": 3,
+              "sourceJobId": "b12684c2-d25d-469a-8132-da78611a1b8d",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/99d716f5-5228-4d03-9002-4fcf126e4bf3/download?index=2",
+              "sha256": "d66427fe356aac06b4e0ad51b69e3ff472c3fbe9ceea0f981e12552c5d62416e",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                10,
+                11,
+                36,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "f6d8cb32a325f86e4f83c9c1e5ea063ea20419244c140909202702ebe742e6d9"
+            },
+            {
+              "frame": 3,
+              "sourceIndex": 4,
+              "sourceJobId": "b12684c2-d25d-469a-8132-da78611a1b8d",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/99d716f5-5228-4d03-9002-4fcf126e4bf3/download?index=3",
+              "sha256": "ddef62e4539889f2bd08d4155cabf75c4108cd218380c72f7397d381782f75b3",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                9,
+                11,
+                34,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "e5b363818003a5f4d59e739401342f81ca265573f42798e2192003a7ed80cc10"
+            },
+            {
+              "frame": 4,
+              "sourceIndex": 5,
+              "sourceJobId": "b12684c2-d25d-469a-8132-da78611a1b8d",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/99d716f5-5228-4d03-9002-4fcf126e4bf3/download?index=4",
+              "sha256": "0f45bc4c89be5b811018030a4f0a1155b33c513c20fbd74308cdf40e810b8cdc",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                9,
+                11,
+                34,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "281e1d85024b630415abea89969191858fb32f3fa011349f7c28f1af4bd7078d"
+            },
+            {
+              "frame": 5,
+              "sourceIndex": 6,
+              "sourceJobId": "b12684c2-d25d-469a-8132-da78611a1b8d",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/99d716f5-5228-4d03-9002-4fcf126e4bf3/download?index=5",
+              "sha256": "b8e8a5ce493b30ca6c148dc767e106e8cfc1b4ff5feb24d6e5a7fe1b918a1173",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                10,
+                11,
+                36,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "7e7cd51352a27682386e36480e1a2274b0edf2fd27387f291a01a0814ecef43f"
+            },
+            {
+              "frame": 6,
+              "sourceIndex": 7,
+              "sourceJobId": "b12684c2-d25d-469a-8132-da78611a1b8d",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/99d716f5-5228-4d03-9002-4fcf126e4bf3/download?index=6",
+              "sha256": "b56932b9581d7a232c2720022202a2482bea6e7996614015eb8cfa1e0d5e7bbc",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                11,
+                12,
+                36,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "2cb2f3ad00d592296fc77b72a98138f401fbeaaf3aab6af5ae0c68e4410a97fb"
+            },
+            {
+              "frame": 7,
+              "sourceIndex": 8,
+              "sourceJobId": "b12684c2-d25d-469a-8132-da78611a1b8d",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/99d716f5-5228-4d03-9002-4fcf126e4bf3/download?index=7",
+              "sha256": "7b52525af3fe016c88af5a59472673acb1a609fc81b20d6f72ac7f1a11ed72be",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                11,
+                12,
+                34,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "8eae11386af9bd8e07f46aadf0d93ab53317be73854cd5ffdf76ef1aac2e2fb8"
+            }
+          ],
+          "contactSourceIndex": null
+        },
+        "Run": {
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Player/clips/run/00.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/run/01.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/run/02.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/run/03.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/run/04.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/run/05.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/run/06.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/run/07.png"
+          ],
+          "fps": 20,
+          "loop": true,
+          "contactFrame": -1,
+          "effectOriginTopLeft": null,
+          "sourceJobId": "88893f10-5235-4335-8430-1373fb93b04b",
+          "sourceJobIds": [
+            "4a7388f1-b9c6-4a37-a159-20ce68d3447e",
+            "57eb3d33-41e1-4754-87ed-a5b2abc3b6c2",
+            "88893f10-5235-4335-8430-1373fb93b04b"
+          ],
+          "sourceIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "processedJobId": null,
+          "processedIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "processedAssetId": "cc5dd69a-e2d4-5410-ae5f-c98165503958",
+          "inputFrameIncluded": false,
+          "pivotTopLeft": [
+            21,
+            40
+          ],
+          "referenceHeight": 26,
+          "contactFrameIsVisualOnly": true,
+          "review": "Planning/Story/Dragon-v1/Production/Player/reviews/run.png",
+          "cycleMs": 400,
+          "sourceTimingMsPerFrame": 100,
+          "playbackNote": "Source frames are poses; 20 fps retains the existing approved 400 ms run cycle. Do not apply another 1.5x multiplier. All frames share pivot y=40; two airborne poses end at y=38.",
+          "uniquePixelFrames": 8,
+          "records": [
+            {
+              "frame": 0,
+              "sourceIndex": 0,
+              "sourceJobId": "88893f10-5235-4335-8430-1373fb93b04b",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/88893f10-5235-4335-8430-1373fb93b04b/download?index=0",
+              "sha256": "404c06bf7c9632c0fefc988045f41cf0d39b308f472ea3a1f4ffebae9035439d",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                8,
+                11,
+                33,
+                40
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "b8042447a5c2506e03be51d29ec02c28a1a8860c7de609eaa3b33dc7991a004b"
+            },
+            {
+              "frame": 1,
+              "sourceIndex": 1,
+              "sourceJobId": "88893f10-5235-4335-8430-1373fb93b04b",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/88893f10-5235-4335-8430-1373fb93b04b/download?index=1",
+              "sha256": "1df0c4bd66ebe7abbecd95aaa6faa0c691945fd8160eebb8586004671779b666",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                10,
+                11,
+                32,
+                40
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "212b0083ed31c806552c136963e388fc52c789938402de47600d73aab904a732"
+            },
+            {
+              "frame": 2,
+              "sourceIndex": 2,
+              "sourceJobId": "88893f10-5235-4335-8430-1373fb93b04b",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/88893f10-5235-4335-8430-1373fb93b04b/download?index=2",
+              "sha256": "c2f3b626ec77609115e5b71a4a7871ff4fc5cac9bc8654dd0825a43405d6308d",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                16,
+                11,
+                32,
+                40
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "8f8244c64e65ea36a9a1f9db0f46682ab471b748f258db0cf34704afb2fe1881"
+            },
+            {
+              "frame": 3,
+              "sourceIndex": 3,
+              "sourceJobId": "88893f10-5235-4335-8430-1373fb93b04b",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/88893f10-5235-4335-8430-1373fb93b04b/download?index=3",
+              "sha256": "e8de06de4706b91e6ba605e1cc655a182a21ec84b778da661ab1bb18a1b970bd",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                10,
+                11,
+                34,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "ffd5e5509986970e24da4abe72a5f663bbea72e8ad45a22e6a0f74e80c2a403e"
+            },
+            {
+              "frame": 4,
+              "sourceIndex": 4,
+              "sourceJobId": "88893f10-5235-4335-8430-1373fb93b04b",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/88893f10-5235-4335-8430-1373fb93b04b/download?index=4",
+              "sha256": "a9883aba167bfbd8ff3c6cc2b119a2ff55ba6b735959db155fd5353aa3c75dc6",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                8,
+                11,
+                33,
+                40
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "9b2cf1f3eb3c875a157692ace173892550e1cc4f8c9ec47f21e03b55cebcdf3d"
+            },
+            {
+              "frame": 5,
+              "sourceIndex": 5,
+              "sourceJobId": "88893f10-5235-4335-8430-1373fb93b04b",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/88893f10-5235-4335-8430-1373fb93b04b/download?index=5",
+              "sha256": "c5e9dbce30d681566fe5a875098287f0c202650bbd601920a6f44ad1f0c6fbe7",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                12,
+                11,
+                32,
+                40
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "db2e1d73f9ab0eac42d91b03a9b21a00796c35dab9ab592e4bf007de6241bd08"
+            },
+            {
+              "frame": 6,
+              "sourceIndex": 6,
+              "sourceJobId": "88893f10-5235-4335-8430-1373fb93b04b",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/88893f10-5235-4335-8430-1373fb93b04b/download?index=6",
+              "sha256": "dcaf6b402976dad7415d4e05d46ded8f207e38d42f023e3ea5cd62e47cac6786",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                15,
+                11,
+                32,
+                40
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "cae705caba1e8adbbd7c9a7657f3dd78dafc60548b4ec29e7714a99b31848df8"
+            },
+            {
+              "frame": 7,
+              "sourceIndex": 7,
+              "sourceJobId": "88893f10-5235-4335-8430-1373fb93b04b",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/88893f10-5235-4335-8430-1373fb93b04b/download?index=7",
+              "sha256": "a816a2b8cf439418ed0850ca1edb3474f050c16a44e3e79274e4a72b03224641",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                11,
+                11,
+                34,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "a3e4433f8a152ca2abb0123e15f2cd3425eeb2ae6205deef05b9e51a66ae4d26"
+            }
+          ],
+          "contactSourceIndex": null
+        },
+        "Attack": {
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Player/clips/slash/00.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/slash/01.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/slash/02.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/slash/03.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/slash/04.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/slash/05.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/slash/06.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/slash/07.png"
+          ],
+          "fps": 24,
+          "loop": false,
+          "contactFrame": 5,
+          "effectOriginTopLeft": [
+            36,
+            33
+          ],
+          "sourceJobId": "249f75ff-7c6a-4b6d-9a5b-b4eb256851d5",
+          "sourceIndices": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "processedJobId": "ab27ff59-9683-4704-b0d3-39919b26bddf",
+          "processedIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "processedAssetId": "0805601e-6982-5e2d-93e5-de91317a361e",
+          "inputFrameIncluded": false,
+          "pivotTopLeft": [
+            21,
+            38
+          ],
+          "referenceHeight": 26,
+          "contactFrameIsVisualOnly": true,
+          "review": "Planning/Story/Dragon-v1/Production/Player/reviews/slash.png",
+          "uniquePixelFrames": 8,
+          "records": [
+            {
+              "frame": 0,
+              "sourceIndex": 1,
+              "sourceJobId": "249f75ff-7c6a-4b6d-9a5b-b4eb256851d5",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/ab27ff59-9683-4704-b0d3-39919b26bddf/download?index=0",
+              "sha256": "16e705a28c1bbe2e3d4b84562fb4e59defc162d286730727127d549b7688364f",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                11,
+                12,
+                30,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "16065ae10678ada549aea69b386b13b3274794b8b75361608f8b1057ee3dd8c8"
+            },
+            {
+              "frame": 1,
+              "sourceIndex": 2,
+              "sourceJobId": "249f75ff-7c6a-4b6d-9a5b-b4eb256851d5",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/ab27ff59-9683-4704-b0d3-39919b26bddf/download?index=1",
+              "sha256": "06c3e5110e52bfda6c48cd8a8412f687c07402796e00143d0cca90fcb216d8a4",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                11,
+                11,
+                29,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "2e9734a72902eb1a0db48be693153a5702132fd848d5558c030f857db38dd9e7"
+            },
+            {
+              "frame": 2,
+              "sourceIndex": 3,
+              "sourceJobId": "249f75ff-7c6a-4b6d-9a5b-b4eb256851d5",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/ab27ff59-9683-4704-b0d3-39919b26bddf/download?index=2",
+              "sha256": "9835f69a07f5ffe55935ecf55d3743fbda4fe89758f4df881d2c0cd8fc900405",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                10,
+                10,
+                26,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "cf88d2c118063f95a4624ac1abd891710487e0bb55cb451b16c332acbab24824"
+            },
+            {
+              "frame": 3,
+              "sourceIndex": 4,
+              "sourceJobId": "249f75ff-7c6a-4b6d-9a5b-b4eb256851d5",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/ab27ff59-9683-4704-b0d3-39919b26bddf/download?index=3",
+              "sha256": "ac54670a5b48cd18f188aacaa5cb277dc9cde18c6a0c57425075c7e43606645b",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                10,
+                10,
+                26,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "485af9cb3c9d2f3e33a184e9024fde5eb1678922234d7fa621248e66d6726c09"
+            },
+            {
+              "frame": 4,
+              "sourceIndex": 5,
+              "sourceJobId": "249f75ff-7c6a-4b6d-9a5b-b4eb256851d5",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/ab27ff59-9683-4704-b0d3-39919b26bddf/download?index=4",
+              "sha256": "2331adaf033427ae1193262ac24ba4aba6118f3fae001a0a3b20118b67dd1aaf",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                10,
+                10,
+                28,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "3e33d979897fbc11d3cd9cc3d467f77b942c928618c4fffdd1ba3f10850b85a5"
+            },
+            {
+              "frame": 5,
+              "sourceIndex": 6,
+              "sourceJobId": "249f75ff-7c6a-4b6d-9a5b-b4eb256851d5",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/ab27ff59-9683-4704-b0d3-39919b26bddf/download?index=5",
+              "sha256": "407c0a86158e724ea320ffc576dd11b2823ca3a14549a8eec17757edca313984",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                10,
+                12,
+                38,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "120016f10edd73ab4f0178fae61b84bf324d40715cd05198f69ba037d5a5b165"
+            },
+            {
+              "frame": 6,
+              "sourceIndex": 7,
+              "sourceJobId": "249f75ff-7c6a-4b6d-9a5b-b4eb256851d5",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/ab27ff59-9683-4704-b0d3-39919b26bddf/download?index=6",
+              "sha256": "566d2293fba67a58db6a782afec9ec18880a4a23160c3af393f19aec32fc8dc7",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                11,
+                12,
+                38,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "6580fb8193c53d9247a541c1dfca8f3ba2f09df5e57ababc7fc88fa148edf1eb"
+            },
+            {
+              "frame": 7,
+              "sourceIndex": 8,
+              "sourceJobId": "249f75ff-7c6a-4b6d-9a5b-b4eb256851d5",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/ab27ff59-9683-4704-b0d3-39919b26bddf/download?index=7",
+              "sha256": "1c80e7ff42edfb8f115141656d407240085af0c6882aaf22d5e462aebcb2e0f1",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                11,
+                12,
+                34,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "5c5155539bc2be89f156177e7f1945431da4d2fdfbedf4adccd18d52128bac7a"
+            }
+          ],
+          "contactSourceIndex": 6
+        },
+        "DodgeUp": {
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Player/clips/dodge-jump/00.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/dodge-jump/01.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/dodge-jump/02.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/dodge-jump/03.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/dodge-jump/04.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/dodge-jump/05.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/dodge-jump/06.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/dodge-jump/07.png"
+          ],
+          "fps": 24,
+          "loop": false,
+          "contactFrame": 2,
+          "effectOriginTopLeft": null,
+          "sourceJobId": "0d980ca7-c6b1-4a64-a181-ddc60e79a017",
+          "sourceIndices": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "processedJobId": "0f50123d-804f-4947-bbc9-8fc5e883c11b",
+          "processedIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "processedAssetId": "ffea4986-00dd-5356-b0fc-c978beea1d8b",
+          "inputFrameIncluded": false,
+          "pivotTopLeft": [
+            21,
+            38
+          ],
+          "referenceHeight": 26,
+          "contactFrameIsVisualOnly": true,
+          "review": "Planning/Story/Dragon-v1/Production/Player/reviews/jump.png",
+          "uniquePixelFrames": 8,
+          "records": [
+            {
+              "frame": 0,
+              "sourceIndex": 1,
+              "sourceJobId": "0d980ca7-c6b1-4a64-a181-ddc60e79a017",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/0f50123d-804f-4947-bbc9-8fc5e883c11b/download?index=0",
+              "sha256": "c618fc0eadfcd0880335a5783e7356a2394b15ced368a6a06e6ff6c4ce50a23e",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                12,
+                12,
+                33,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "7bb8f22b2000db15d8322cb7d5cb9f21a556021d58fc2cf08bcf4d80b6ef8d2c"
+            },
+            {
+              "frame": 1,
+              "sourceIndex": 2,
+              "sourceJobId": "0d980ca7-c6b1-4a64-a181-ddc60e79a017",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/0f50123d-804f-4947-bbc9-8fc5e883c11b/download?index=1",
+              "sha256": "55620e82b49767f1726e2909b39034ea6d7a007e62bc4f6f5f647c33fe049e1b",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                12,
+                11,
+                33,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "4c9de1586e23d8383e9a08c515a27dd415139fe533542ecfd005c1b30cf16576"
+            },
+            {
+              "frame": 2,
+              "sourceIndex": 3,
+              "sourceJobId": "0d980ca7-c6b1-4a64-a181-ddc60e79a017",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/0f50123d-804f-4947-bbc9-8fc5e883c11b/download?index=2",
+              "sha256": "d466d540c001eaeb911cb97ec6c6f71969b24624aeedb6d5fca90ace69697c62",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                12,
+                9,
+                33,
+                35
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "8fc763b89eaa43e20de06bc5dc787a652b904a9c85ff379e128cfefadad2c0a5"
+            },
+            {
+              "frame": 3,
+              "sourceIndex": 4,
+              "sourceJobId": "0d980ca7-c6b1-4a64-a181-ddc60e79a017",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/0f50123d-804f-4947-bbc9-8fc5e883c11b/download?index=3",
+              "sha256": "354a6979ad0724eb714a428e0850fc7ec6d0cba6bc972fb51aaed33ca72c3301",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                12,
+                10,
+                32,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "50dcd966685b546672a162f43c431426b812cd03fd7ccd03c741ad0a78b13020"
+            },
+            {
+              "frame": 4,
+              "sourceIndex": 5,
+              "sourceJobId": "0d980ca7-c6b1-4a64-a181-ddc60e79a017",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/0f50123d-804f-4947-bbc9-8fc5e883c11b/download?index=4",
+              "sha256": "87e0e3e869545ef26a57f327e0daea860a18907fc3180e053f86564630772fc4",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                12,
+                10,
+                31,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "881d8e61720fe7074c30a50e7046082887dbd18b424334da342ccf6c9379968f"
+            },
+            {
+              "frame": 5,
+              "sourceIndex": 6,
+              "sourceJobId": "0d980ca7-c6b1-4a64-a181-ddc60e79a017",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/0f50123d-804f-4947-bbc9-8fc5e883c11b/download?index=5",
+              "sha256": "d8231e337e5764612267ff753be1d059e137cce7c6f39b7491641621209806db",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                11,
+                12,
+                31,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "5685ef690e6c611fa59a509866fceb875c63e44efcd379c1a41597ad4a7331e3"
+            },
+            {
+              "frame": 6,
+              "sourceIndex": 7,
+              "sourceJobId": "0d980ca7-c6b1-4a64-a181-ddc60e79a017",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/0f50123d-804f-4947-bbc9-8fc5e883c11b/download?index=6",
+              "sha256": "c26d650f51d9d86b8ac402dc75e1fb797932cf422734a706aca3dc3ea72adf2c",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                10,
+                13,
+                34,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "f417468d81dfb5d32dd26bd2c47227c8c73c66e8df51178fdc47be26875420d8"
+            },
+            {
+              "frame": 7,
+              "sourceIndex": 8,
+              "sourceJobId": "0d980ca7-c6b1-4a64-a181-ddc60e79a017",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/0f50123d-804f-4947-bbc9-8fc5e883c11b/download?index=7",
+              "sha256": "095bded5cabd212b51ea8db8b17a5ee9d44266215692c4ef58d7224ad58496e7",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                11,
+                12,
+                34,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "f6e589a990982a3c22a19b79e1424a1a72d23398447f12757798da0984e282ae"
+            }
+          ],
+          "contactSourceIndex": 3
+        },
+        "DodgeBack": {
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Player/clips/dodge-back/00.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/dodge-back/01.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/dodge-back/02.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/dodge-back/03.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/dodge-back/04.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/dodge-back/05.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/dodge-back/06.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/dodge-back/07.png"
+          ],
+          "fps": 24,
+          "loop": false,
+          "contactFrame": 3,
+          "effectOriginTopLeft": null,
+          "sourceJobId": "0750b284-3ede-41d4-a29e-e984f44c96d8",
+          "sourceIndices": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "processedJobId": "6036a1e2-d320-4c9d-a4ae-99ea4310294b",
+          "processedIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "processedAssetId": "631d9041-dfdc-5ebd-af48-8e8d26ad9e0b",
+          "inputFrameIncluded": false,
+          "pivotTopLeft": [
+            21,
+            38
+          ],
+          "referenceHeight": 26,
+          "contactFrameIsVisualOnly": true,
+          "review": "Planning/Story/Dragon-v1/Production/Player/reviews/back.png",
+          "uniquePixelFrames": 8,
+          "records": [
+            {
+              "frame": 0,
+              "sourceIndex": 1,
+              "sourceJobId": "0750b284-3ede-41d4-a29e-e984f44c96d8",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/6036a1e2-d320-4c9d-a4ae-99ea4310294b/download?index=0",
+              "sha256": "acca67e2ac348d921b85d2b92124c2e84a1d4fbfb78d9118728ec128b5c89eea",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                12,
+                12,
+                36,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "36354bc5edf30f186299ae44dd28a0357eb82225978d0f809f3b9f9a7307fcfb"
+            },
+            {
+              "frame": 1,
+              "sourceIndex": 2,
+              "sourceJobId": "0750b284-3ede-41d4-a29e-e984f44c96d8",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/6036a1e2-d320-4c9d-a4ae-99ea4310294b/download?index=1",
+              "sha256": "a606b91ffbeaad52e89d4664b69f62c19ad4ce80f4e81805c3db7dc029cf6e74",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                10,
+                12,
+                36,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "6a171f3541af70209a31fe1a59e06c4ef38b15a2c7687a17af1f59c4565c7b5d"
+            },
+            {
+              "frame": 2,
+              "sourceIndex": 3,
+              "sourceJobId": "0750b284-3ede-41d4-a29e-e984f44c96d8",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/6036a1e2-d320-4c9d-a4ae-99ea4310294b/download?index=2",
+              "sha256": "1801ff083ac8e8cdbea38b607b700273e2436354a01df0712bd26d1a9047af53",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                9,
+                12,
+                36,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "357917ca6db8bdce3a34d07e97f037f557bc5653da8719de3401eeea0d218c92"
+            },
+            {
+              "frame": 3,
+              "sourceIndex": 4,
+              "sourceJobId": "0750b284-3ede-41d4-a29e-e984f44c96d8",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/6036a1e2-d320-4c9d-a4ae-99ea4310294b/download?index=3",
+              "sha256": "f4a43d841217e4fb2a503a397a478c4ccd0e08b851379e85c5d2bceca5382a86",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                7,
+                12,
+                32,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "a24b7600f9fcb24d3c56d5d24b85ce1e177aad1b8880105460ad65342cdfb6d3"
+            },
+            {
+              "frame": 4,
+              "sourceIndex": 5,
+              "sourceJobId": "0750b284-3ede-41d4-a29e-e984f44c96d8",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/6036a1e2-d320-4c9d-a4ae-99ea4310294b/download?index=4",
+              "sha256": "3448c33809816f86df012f00b3357e21029811d88a2df06485deada5bd8b4c92",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                9,
+                12,
+                36,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "076b448c1b28655c9160700a85af9369b535d2de686749ca9c1da154bfa576ed"
+            },
+            {
+              "frame": 5,
+              "sourceIndex": 6,
+              "sourceJobId": "0750b284-3ede-41d4-a29e-e984f44c96d8",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/6036a1e2-d320-4c9d-a4ae-99ea4310294b/download?index=5",
+              "sha256": "b472283add15bd065a477198bcb71fbdd8ba0cea8261f740038e6ee9310709c3",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                10,
+                12,
+                36,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "058b51ba5c0f5720df6ddd90f3bab70c0383635e89777ab14143b3a7dd1e39ae"
+            },
+            {
+              "frame": 6,
+              "sourceIndex": 7,
+              "sourceJobId": "0750b284-3ede-41d4-a29e-e984f44c96d8",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/6036a1e2-d320-4c9d-a4ae-99ea4310294b/download?index=6",
+              "sha256": "615371affd16f88a75488e3f511c74678ef4de645e65179dfea4ebcc3c665eb9",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                10,
+                12,
+                36,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "021f11fc4b2165bc1528aabf6b6af790829cf6e5cf2d8969ee7a507fae51c394"
+            },
+            {
+              "frame": 7,
+              "sourceIndex": 8,
+              "sourceJobId": "0750b284-3ede-41d4-a29e-e984f44c96d8",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/6036a1e2-d320-4c9d-a4ae-99ea4310294b/download?index=7",
+              "sha256": "1eb1a357e1910af4ca1865aab372004aa79dd5b077af01d794f6e747c31ad8aa",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                11,
+                12,
+                34,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "17b0aa47517f3fbface10751a480969b27c89ce884393852e996a774a4915abb"
+            }
+          ],
+          "contactSourceIndex": 4
+        },
+        "DodgeForward": {
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Player/clips/dodge-forward/00.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/dodge-forward/01.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/dodge-forward/02.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/dodge-forward/03.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/dodge-forward/04.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/dodge-forward/05.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/dodge-forward/06.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/dodge-forward/07.png"
+          ],
+          "fps": 24,
+          "loop": false,
+          "contactFrame": 3,
+          "effectOriginTopLeft": null,
+          "sourceJobId": "89569ae5-908a-4df8-a89f-50a42a38056f",
+          "sourceIndices": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "processedJobId": "ddb0989d-1f53-4c5b-9d2f-0153d48acae6",
+          "processedIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "processedAssetId": "b7f675e7-3345-5a8e-aef1-adbc713502ca",
+          "inputFrameIncluded": false,
+          "pivotTopLeft": [
+            21,
+            38
+          ],
+          "referenceHeight": 26,
+          "contactFrameIsVisualOnly": true,
+          "review": "Planning/Story/Dragon-v1/Production/Player/reviews/forward.png",
+          "uniquePixelFrames": 8,
+          "records": [
+            {
+              "frame": 0,
+              "sourceIndex": 1,
+              "sourceJobId": "89569ae5-908a-4df8-a89f-50a42a38056f",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/ddb0989d-1f53-4c5b-9d2f-0153d48acae6/download?index=0",
+              "sha256": "5635fd4e0989a5b13a724058e79a2c93ced2f7292668b26cd5a8462e38159500",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                11,
+                12,
+                35,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "dd85594f30b9988e4309ccd0451daf3d22241cbc5f7fe31f495d63c98f9d9769"
+            },
+            {
+              "frame": 1,
+              "sourceIndex": 2,
+              "sourceJobId": "89569ae5-908a-4df8-a89f-50a42a38056f",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/ddb0989d-1f53-4c5b-9d2f-0153d48acae6/download?index=1",
+              "sha256": "a135842844da5ff01dee85cfa2fc3a24749e2ac13df170bc33b64e4b7f015581",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                12,
+                13,
+                36,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "17dde8f04a288a579eac08e5b2b3c3ac229750347c2a1ea3ac83ab518ae6c650"
+            },
+            {
+              "frame": 2,
+              "sourceIndex": 3,
+              "sourceJobId": "89569ae5-908a-4df8-a89f-50a42a38056f",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/ddb0989d-1f53-4c5b-9d2f-0153d48acae6/download?index=2",
+              "sha256": "5878514e16f9c10c8ab32e51c633f71f337b3ba5416142e22ae8e97a4c77a595",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                11,
+                14,
+                36,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "1c0ae3921d24321d43a09ca68c1d7426c6a672c61b64182f0826ad01f02732e4"
+            },
+            {
+              "frame": 3,
+              "sourceIndex": 4,
+              "sourceJobId": "89569ae5-908a-4df8-a89f-50a42a38056f",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/ddb0989d-1f53-4c5b-9d2f-0153d48acae6/download?index=3",
+              "sha256": "7e3398fa6edd6dccbfd1f4cb0618f452641b47a4e6bb7e7d98266583d9120db7",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                11,
+                15,
+                34,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "20dffc318ab6fa5b81b3bf249a79823c56c026e40a1995b5e6060811bf8d4095"
+            },
+            {
+              "frame": 4,
+              "sourceIndex": 5,
+              "sourceJobId": "89569ae5-908a-4df8-a89f-50a42a38056f",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/ddb0989d-1f53-4c5b-9d2f-0153d48acae6/download?index=4",
+              "sha256": "9f6eeff2310b907c3ace3ee6a8c515695abe7ef0accf931f4b1ad036f8a9247d",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                11,
+                14,
+                36,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "acb06cd92e5c65839ed913ea7d2d751071d72a4ad8ec722ca0c8c4f1328e468e"
+            },
+            {
+              "frame": 5,
+              "sourceIndex": 6,
+              "sourceJobId": "89569ae5-908a-4df8-a89f-50a42a38056f",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/ddb0989d-1f53-4c5b-9d2f-0153d48acae6/download?index=5",
+              "sha256": "e8d44f7fa68f8c2d7a9841b2dcaa6d825ce9100faa238725807b08f395a35b2d",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                11,
+                13,
+                37,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "6f2ed53b0b84a60a0baf08c227a7ed14d27821a22b563c3d59adf70abc5623e4"
+            },
+            {
+              "frame": 6,
+              "sourceIndex": 7,
+              "sourceJobId": "89569ae5-908a-4df8-a89f-50a42a38056f",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/ddb0989d-1f53-4c5b-9d2f-0153d48acae6/download?index=6",
+              "sha256": "b44d308af18d89b597b1c6cbc71d098e873088012e66a59900365ecd5fd7c9a4",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                11,
+                12,
+                36,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "c81fbf9e4679e450c8e90b844a91b1495b2de012a76103e8abec453a6ad0c289"
+            },
+            {
+              "frame": 7,
+              "sourceIndex": 8,
+              "sourceJobId": "89569ae5-908a-4df8-a89f-50a42a38056f",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/ddb0989d-1f53-4c5b-9d2f-0153d48acae6/download?index=7",
+              "sha256": "2f49a9587019b55dac0174d1cbbd38ced268d8eb1a5cf8e4911b9dd9eef4a1b3",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                11,
+                12,
+                34,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "b2d1164c161b356a1f40ef20a25646cecaa7c8a1e6e6472ddee08ee01646d325"
+            }
+          ],
+          "contactSourceIndex": 4
+        },
+        "DodgeDown": {
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Player/clips/parry/00.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/parry/01.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/parry/02.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/parry/03.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/parry/04.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/parry/05.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/parry/06.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/parry/07.png"
+          ],
+          "fps": 24,
+          "loop": false,
+          "contactFrame": 2,
+          "effectOriginTopLeft": [
+            28,
+            20
+          ],
+          "sourceJobId": "afaa9143-25ae-42bf-b1bc-e1e3538669ba",
+          "sourceIndices": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "processedJobId": "70c4b2ce-e3bb-4b62-aa9f-540710b10f2a",
+          "processedIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "processedAssetId": "ea2d49ad-9c55-5a43-b18b-480f3b6a9270",
+          "inputFrameIncluded": false,
+          "pivotTopLeft": [
+            21,
+            38
+          ],
+          "referenceHeight": 26,
+          "contactFrameIsVisualOnly": true,
+          "review": "Planning/Story/Dragon-v1/Production/Player/reviews/parry.png",
+          "cleanup": {
+            "workbenchImageId": "644d6460-80f1-43af-82de-903d0d8d0a11",
+            "galleryAssetId": "8ba3b82d-3f26-4c6e-953f-7f707315aba5",
+            "details": "Planning/Story/Dragon-v1/Production/Player/parry-cleanup-provenance.json"
+          },
+          "uniquePixelFrames": 8,
+          "records": [
+            {
+              "frame": 0,
+              "sourceIndex": 1,
+              "sourceJobId": "afaa9143-25ae-42bf-b1bc-e1e3538669ba",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/70c4b2ce-e3bb-4b62-aa9f-540710b10f2a/download?index=0",
+              "sha256": "c77d3e46de4023a62ae7dd86d98edf07a598c87be64fae02389ad356a96a595a",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                11,
+                12,
+                32,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "508ebcd64f6ec58e0ad6a82f7ece3ea1a16e9bf11468eb1544d727333dc99881"
+            },
+            {
+              "frame": 1,
+              "sourceIndex": 2,
+              "sourceJobId": "afaa9143-25ae-42bf-b1bc-e1e3538669ba",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/70c4b2ce-e3bb-4b62-aa9f-540710b10f2a/download?index=1",
+              "sha256": "ad80d7fab90b64699900970d991aedc8c0de15f68f8aa6a2d7bb712b1da94133",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                11,
+                12,
+                31,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "92a7c45ea3fa7a6785950bb039aef62d842b3560f840e6c782e7c40a498ae6f2"
+            },
+            {
+              "frame": 2,
+              "sourceIndex": 3,
+              "sourceJobId": "afaa9143-25ae-42bf-b1bc-e1e3538669ba",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/70c4b2ce-e3bb-4b62-aa9f-540710b10f2a/download?index=2",
+              "sha256": "73f2042f20ab47273d658bb561ea7b756d872230a5c0d52e2224203c34914838",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                11,
+                11,
+                31,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "0eecbbd8700442b7eef27cc59bb5cde06017a61b570ec8ddb0146a174178c0d0"
+            },
+            {
+              "frame": 3,
+              "sourceIndex": 4,
+              "sourceJobId": "afaa9143-25ae-42bf-b1bc-e1e3538669ba",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/70c4b2ce-e3bb-4b62-aa9f-540710b10f2a/download?index=3",
+              "sha256": "ed8ffb832aa5b92c28c3329a13c5d3021cbe13e331bb8fd593c1edc40eeb61d1",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                11,
+                11,
+                31,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "0456358a5aa9d06f8337f7c9cf6636a127830fa44aeb981026e9a102464f9038"
+            },
+            {
+              "frame": 4,
+              "sourceIndex": 5,
+              "sourceJobId": "afaa9143-25ae-42bf-b1bc-e1e3538669ba",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/70c4b2ce-e3bb-4b62-aa9f-540710b10f2a/download?index=4",
+              "sha256": "d4750d6bbb0d80faf05adba223454ff16b049d49a68785a9c5e517f0594c54c3",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                11,
+                11,
+                31,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "4ac5299047ea62975ddae9d49b788d5bb4c678ef154b45311769a1b62d2c7987"
+            },
+            {
+              "frame": 5,
+              "sourceIndex": 6,
+              "sourceJobId": "afaa9143-25ae-42bf-b1bc-e1e3538669ba",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/70c4b2ce-e3bb-4b62-aa9f-540710b10f2a/download?index=5",
+              "sha256": "71cef513fc09f9c16665b4c731c39b14e195442522bb886308947d73d21e7596",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                11,
+                11,
+                31,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "41f0c339f604f47532044819e49d333959b4da939b2390845008cb1133bef4db"
+            },
+            {
+              "frame": 6,
+              "sourceIndex": 7,
+              "sourceJobId": "afaa9143-25ae-42bf-b1bc-e1e3538669ba",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/70c4b2ce-e3bb-4b62-aa9f-540710b10f2a/download?index=6",
+              "sha256": "8a691e587cd14f879a79aadb0e088323f86f35ee0f8b4fa3cfeeebe6e0d941c7",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                11,
+                11,
+                33,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "223d7bf29846a7a6d9ed32cb6e2c4363e742160481c2fa22ef6cd3c771e32704"
+            },
+            {
+              "frame": 7,
+              "sourceIndex": 8,
+              "sourceJobId": "afaa9143-25ae-42bf-b1bc-e1e3538669ba",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/70c4b2ce-e3bb-4b62-aa9f-540710b10f2a/download?index=7",
+              "sha256": "f4517f06ffe949cafafb0610dcea8e950065945ed8781c0d80413e1e857c4b89",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                11,
+                12,
+                34,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "eb8b231b07d54c1fbdcf865f2cd06e987616ae5b68df699af96cc723c69fedb1"
+            }
+          ],
+          "contactSourceIndex": 3
+        },
+        "Hit": {
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Player/clips/hit/00.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/hit/01.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/hit/02.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/hit/03.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/hit/04.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/hit/05.png"
+          ],
+          "fps": 24,
+          "loop": false,
+          "contactFrame": -1,
+          "visualPeakFrame": 2,
+          "effectOriginTopLeft": null,
+          "sourceJobId": "9c658da7-cd0c-4f2d-8b91-261594a350fe",
+          "sourceIndices": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "processedJobId": "09807828-84e2-4ac5-b4cb-186f0fa893bf",
+          "processedIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "processedAssetId": "f42f8610-01f3-5d25-a1f1-478ee4b7800e",
+          "inputFrameIncluded": false,
+          "pivotTopLeft": [
+            21,
+            38
+          ],
+          "referenceHeight": 26,
+          "contactFrameIsVisualOnly": true,
+          "review": "Planning/Story/Dragon-v1/Production/Player/reviews/hit.png",
+          "uniquePixelFrames": 6,
+          "records": [
+            {
+              "frame": 0,
+              "sourceIndex": 1,
+              "sourceJobId": "9c658da7-cd0c-4f2d-8b91-261594a350fe",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/09807828-84e2-4ac5-b4cb-186f0fa893bf/download?index=0",
+              "sha256": "790e63672e31ad554def1f67b05323e09ccb9bee2f56ee8971df17bbc997ce57",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                11,
+                12,
+                33,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "9b1f8df5bef8a7ec9dece57f42da8e89ddf6799c7e8edf65536c48c6bb264af8"
+            },
+            {
+              "frame": 1,
+              "sourceIndex": 2,
+              "sourceJobId": "9c658da7-cd0c-4f2d-8b91-261594a350fe",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/09807828-84e2-4ac5-b4cb-186f0fa893bf/download?index=1",
+              "sha256": "d6ee67f19fa1c67278be40900214c9ef849be1296ab30726af3d5be24fcc6b18",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                9,
+                13,
+                32,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "41a4b94593d9144bb900e3c97d451c42fc9d8d019eb16a0ed0482b6436aeb171"
+            },
+            {
+              "frame": 2,
+              "sourceIndex": 3,
+              "sourceJobId": "9c658da7-cd0c-4f2d-8b91-261594a350fe",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/09807828-84e2-4ac5-b4cb-186f0fa893bf/download?index=2",
+              "sha256": "6b1be138acefbe1bb6b2b7b1b755c507b5d64b0b5d320778e18f1f55abd62292",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                9,
+                12,
+                32,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "6f279545206c351aa2b56e4dd6c92b96256764507215729c62822760f3fdb73f"
+            },
+            {
+              "frame": 3,
+              "sourceIndex": 4,
+              "sourceJobId": "9c658da7-cd0c-4f2d-8b91-261594a350fe",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/09807828-84e2-4ac5-b4cb-186f0fa893bf/download?index=3",
+              "sha256": "0477d27caf9535768928db91a23451fb87e945eab68e99f68a957a99daefefec",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                9,
+                12,
+                32,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "3afee88427705bb87861fbb821f4dac9585069b17d3f131d2fa9910aed50d2bb"
+            },
+            {
+              "frame": 4,
+              "sourceIndex": 5,
+              "sourceJobId": "9c658da7-cd0c-4f2d-8b91-261594a350fe",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/09807828-84e2-4ac5-b4cb-186f0fa893bf/download?index=4",
+              "sha256": "fa81cda6ee55cf074477816b47b4118468c4268767cde8048a31f22a02c7f99b",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                10,
+                12,
+                32,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "1e1d80478a9f52003cdc1c7833338f41793f8aafde6865bf704a28cc774f62c9"
+            },
+            {
+              "frame": 5,
+              "sourceIndex": 6,
+              "sourceJobId": "9c658da7-cd0c-4f2d-8b91-261594a350fe",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/09807828-84e2-4ac5-b4cb-186f0fa893bf/download?index=5",
+              "sha256": "80522d74dd32a77958c7d1e3ff014b61917a2221ac1aa75608922ae16a7eb0a0",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                11,
+                12,
+                34,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "85f9d3098712c000d311d75f9f0ae1b586062e154e98eae6bcbddb1e781b6ff2"
+            }
+          ],
+          "contactSourceIndex": null
+        },
+        "Stun": {
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Player/clips/stun/00.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/stun/01.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/stun/02.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/stun/03.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/stun/04.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/stun/05.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/stun/06.png",
+            "Planning/Story/Dragon-v1/Production/Player/clips/stun/07.png"
+          ],
+          "fps": 10,
+          "loop": true,
+          "contactFrame": -1,
+          "effectOriginTopLeft": null,
+          "sourceJobId": "bbc00cc6-891f-4168-8808-e906a3c54085",
+          "sourceIndices": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "processedJobId": "8f2b2ed3-b980-44d0-ac87-879285b35c53",
+          "processedIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "processedAssetId": "670cd4bb-931e-5460-b0c2-6ad3b8015c88",
+          "inputFrameIncluded": false,
+          "pivotTopLeft": [
+            21,
+            38
+          ],
+          "referenceHeight": 26,
+          "contactFrameIsVisualOnly": true,
+          "review": "Planning/Story/Dragon-v1/Production/Player/reviews/stun.png",
+          "uniquePixelFrames": 8,
+          "records": [
+            {
+              "frame": 0,
+              "sourceIndex": 1,
+              "sourceJobId": "bbc00cc6-891f-4168-8808-e906a3c54085",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/8f2b2ed3-b980-44d0-ac87-879285b35c53/download?index=0",
+              "sha256": "45f8a088086fde666da34fe0b409e7e0d815683b651c6e4b0638416ca0735928",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                12,
+                12,
+                32,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "951d0e1cb00e54498961652400f04d9c6526ab446cd16803428e2b821b91920c"
+            },
+            {
+              "frame": 1,
+              "sourceIndex": 2,
+              "sourceJobId": "bbc00cc6-891f-4168-8808-e906a3c54085",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/8f2b2ed3-b980-44d0-ac87-879285b35c53/download?index=1",
+              "sha256": "019ddd80efdf11a819509f91c1a468adbec3f99684448b01c657737a4667ba33",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                11,
+                12,
+                35,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "295599dd943043897ea6d687c06a9cdf19c7aa90ea48ec9793df27102b61fbbf"
+            },
+            {
+              "frame": 2,
+              "sourceIndex": 3,
+              "sourceJobId": "bbc00cc6-891f-4168-8808-e906a3c54085",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/8f2b2ed3-b980-44d0-ac87-879285b35c53/download?index=2",
+              "sha256": "7b0775b97e096ad9a93961b07c3af9ae2da7c6ce337e0dfe071177ea6af707c6",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                10,
+                12,
+                36,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "fe01a3a68933587ef72a22de7665b92fb0c58320bcd621262b4692bd184b979c"
+            },
+            {
+              "frame": 3,
+              "sourceIndex": 4,
+              "sourceJobId": "bbc00cc6-891f-4168-8808-e906a3c54085",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/8f2b2ed3-b980-44d0-ac87-879285b35c53/download?index=3",
+              "sha256": "6a6b0c29558069647ee7ffe75210c546319dc3954411f82fc334f6e2f7c98b80",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                10,
+                12,
+                35,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "d5a048f3ea2fe99126a9f789b50137846ae5f2692cfc28216b547967d4ca5ca1"
+            },
+            {
+              "frame": 4,
+              "sourceIndex": 5,
+              "sourceJobId": "bbc00cc6-891f-4168-8808-e906a3c54085",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/8f2b2ed3-b980-44d0-ac87-879285b35c53/download?index=4",
+              "sha256": "6bc75501c2ef64905b9661ded8e10ffa77c72602f15aa5bf1550de8bd11306cf",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                10,
+                12,
+                36,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "8d5fad5b51113398fd59f2797906f73a279f2b8432e2e5ddff016feef8f4828f"
+            },
+            {
+              "frame": 5,
+              "sourceIndex": 6,
+              "sourceJobId": "bbc00cc6-891f-4168-8808-e906a3c54085",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/8f2b2ed3-b980-44d0-ac87-879285b35c53/download?index=5",
+              "sha256": "a58e40a0161c286fd82206a33effb4e8543ee46536cd8cc2f43799c3e2b31e12",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                10,
+                12,
+                35,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "b90f6aa540ae91e35757eef898c9bf3bcfcd702db5f050bb1234020b2ff9e183"
+            },
+            {
+              "frame": 6,
+              "sourceIndex": 7,
+              "sourceJobId": "bbc00cc6-891f-4168-8808-e906a3c54085",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/8f2b2ed3-b980-44d0-ac87-879285b35c53/download?index=6",
+              "sha256": "c7c944854d7c24e45acec0bb3fc25a965f3b60d8d87a191a8d34c6e061413e86",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                11,
+                12,
+                36,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "919daa6ba0306c703c2157d949d37fbcaaaaad2a25f1c72fdb5a1d1f0f79fd11"
+            },
+            {
+              "frame": 7,
+              "sourceIndex": 8,
+              "sourceJobId": "bbc00cc6-891f-4168-8808-e906a3c54085",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/8f2b2ed3-b980-44d0-ac87-879285b35c53/download?index=7",
+              "sha256": "184cc37f2240eba116b883f81ef266e839c3126dc569fbc5eb4549ccffc52752",
+              "size": [
+                48,
+                48
+              ],
+              "bounds": [
+                11,
+                12,
+                34,
+                38
+              ],
+              "opaqueColors": 7,
+              "alphaValues": [
+                0,
+                255
+              ],
+              "pixelHash": "e87916ea954b17d3b156d191589efdbc297119391677032be55d7287f4dd958b"
+            }
+          ],
+          "contactSourceIndex": null
+        }
+      }
+    }
+  ],
+  "motionPolicy": "Art metadata describes poses only. Existing runtime owns world translation, invulnerability, damage and stun timing. Attack contactFrame=5 is visually aligned to runtime attack contact at 0.2 seconds; do not retime gameplay to raw fps.",
+  "controlPolicy": "DodgeDown is sword parry. DodgeForward art is delivered but control binding remains disabled until the user decides.",
+  "runtimeValidation": "Art files reviewed and audited. Unity import/playmode QA is owned by the integration session and is not claimed complete here.",
+  "excluded": {
+    "firstRunJobId": "ddf022cc-e12c-41e7-9e01-2cfecc7b74fb",
+    "firstRunReason": "Torso stood upright during cycle, fails forward lean requirement.",
+    "firstHitJobId": "dddce48e-587e-4ac9-b010-749ec0638074",
+    "firstHitReason": "Unrequested bright VFX in frames. Runtime owns flash/VFX.",
+    "rawSkeletonRunJobId": "57eb3d33-41e1-4754-87ed-a5b2abc3b6c2",
+    "rawSkeletonRunReason": "Weapon continuity inadequate; replaced by outfit-transfer result while keeping its skeleton motion."
+  }
+}

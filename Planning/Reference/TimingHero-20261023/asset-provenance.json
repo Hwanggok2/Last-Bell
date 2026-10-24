@@ -1,0 +1,33 @@
+{
+  "note": "Existing Last Bell art and actual v7.2 runtime captures only. No Timing Hero art is used in proposed game screens.",
+  "assets": {
+    "hero": {
+      "path": "Client/Assets/Game/Art/Presentation/Clips/hero-v5-idle/01.png",
+      "sha256": "70730ff409e0dcbe687edfcb90372d02248941f9a467bfb56ff8297110600f0f"
+    },
+    "slash": {
+      "path": "Client/Assets/Game/Art/Presentation/Clips/hero-v6-slash-down/03.png",
+      "sha256": "471052356763cb52dd5a186dad83b0f714fd7ed9d0ffdc80a6d50eb3e4ecc0eb"
+    },
+    "enemy": {
+      "path": "Client/Assets/Game/Art/Presentation/Clips/chain-idle/00.png",
+      "sha256": "c3a79abe93354bc91deaec11a2345a60db8309340d582d21d9887a0469b1f1cc"
+    },
+    "currentBattle": {
+      "path": "Planning/Evidence/Audio-v72/desktop/01-mobile-controls.png",
+      "sha256": "0e286774b53b146555dbcba211e9fdaa2dd6d4495c7e9b9946cad013d8fc2d4c"
+    },
+    "currentLobby": {
+      "path": "Planning/Evidence/Audio-v72/desktop/02-lobby.png",
+      "sha256": "6d7c418efdb92f1abef0c53c0ef0ec0cea08e2147886e55ae15125d3467422f0"
+    },
+    "currentPrologue": {
+      "path": "Planning/Evidence/Audio-v72/desktop/03-prologue-scroll.png",
+      "sha256": "62e73cc18fedcc62677b80c03cf04ec1f0d83520750a1c77707c2fa46b9c6e5c"
+    },
+    "currentRelic": {
+      "path": "Planning/Evidence/Audio-v72/desktop/06-relic-selected.png",
+      "sha256": "cb6ed834ede20dc7677911d883dbe3aea74522ede338f98bd985bfaf62b64ba2"
+    }
+  }
+}

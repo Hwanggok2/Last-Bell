@@ -1,0 +1,93 @@
+{
+  "passed": true,
+  "files": 12,
+  "decodedAll": true,
+  "clippedFiles": 0,
+  "unityModified": false,
+  "filesMeasured": [
+    {
+      "key": "sword-clash",
+      "durationSeconds": 0.65,
+      "peakDbfs": -2.16,
+      "rmsDbfs": -30.82
+    },
+    {
+      "key": "hit-sharp",
+      "durationSeconds": 0.1489,
+      "peakDbfs": -2.16,
+      "rmsDbfs": -18.23
+    },
+    {
+      "key": "bell-low-long",
+      "durationSeconds": 5.7169,
+      "peakDbfs": -2.16,
+      "rmsDbfs": -23.23
+    },
+    {
+      "key": "cue-low",
+      "durationSeconds": 1.15,
+      "peakDbfs": -2.16,
+      "rmsDbfs": -19.99
+    },
+    {
+      "key": "dodge-air",
+      "durationSeconds": 0.18,
+      "peakDbfs": -2.16,
+      "rmsDbfs": -17.59
+    },
+    {
+      "key": "perfect-parry",
+      "durationSeconds": 0.1418,
+      "peakDbfs": -2.16,
+      "rmsDbfs": -19.18
+    },
+    {
+      "key": "footstep-stone",
+      "durationSeconds": 0.15,
+      "peakDbfs": -2.16,
+      "rmsDbfs": -19.36
+    },
+    {
+      "key": "lantern-warm",
+      "durationSeconds": 1.3,
+      "peakDbfs": -2.16,
+      "rmsDbfs": -16.65
+    },
+    {
+      "key": "bgm-road",
+      "durationSeconds": 61.4618,
+      "peakDbfs": -3.15,
+      "rmsDbfs": -23.16
+    },
+    {
+      "key": "bgm-sanctuary",
+      "durationSeconds": 54.3724,
+      "peakDbfs": -3.6,
+      "rmsDbfs": -19.56
+    },
+    {
+      "key": "bgm-boss",
+      "durationSeconds": 123.4228,
+      "peakDbfs": -9.2,
+      "rmsDbfs": -19.62
+    },
+    {
+      "key": "bgm-quarter",
+      "durationSeconds": 202.6362,
+      "peakDbfs": -3.6,
+      "rmsDbfs": -25.71
+    }
+  ],
+  "revision": "last-bell-audio-v4-clash1",
+  "browser": {
+    "monsterPreview": "127.0.0.1:8874",
+    "sampleKey": "sword-clash",
+    "sampleButton": "검 충돌음 듣기",
+    "samplePlaysSingleClash": true,
+    "attackTiming": "contact frame (removed pre-contact swing offset)",
+    "bgmDisabledForAudition": true,
+    "consoleWarningsAndErrors": 0,
+    "screenshot": "preview-clash-controls.png"
+  },
+  "listeningReview": "Playback and decoding verified. No subjective audition claim; user judges the requested metallic clang."
+}

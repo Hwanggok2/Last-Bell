@@ -1,0 +1,15 @@
+{
+  "id": "idle",
+  "tool": "animate_image",
+  "request": {
+    "first_frame_url": "https://api.pixellab.ai/mcp/images/b521d718-274a-47bb-9271-02911e0f8e7a/download",
+    "last_frame_url": "https://api.pixellab.ai/mcp/images/b521d718-274a-47bb-9271-02911e0f8e7a/download",
+    "frame_count": 8,
+    "no_background": true,
+    "seed": 24102411,
+    "action": "One seamless quiet battle-ready breathing cycle in place, facing RIGHT. Eight real subtly different poses. Both boots stay planted at the same ground baseline; chest expands and settles by about one pixel, the short scarf tip sways slightly, weapon hand has a tiny natural counter motion while keeping blade/hand connected. No walk, bounce, turn, attack, wobble or clothing changes. Return to the exact opening stance. Preserve the EXACT small cream hood, dark navy face with one amber eye, cream short tunic, ochre neck scarf, navy arms/leggings, brown boots and ONE short steel sword with ochre hilt in every frame. No bell, new clothing, cape, extra limb, extra weapon, particles or background. Keep native coarse pixels, same body size and right-facing side view. Fixed 48x48 camera and fixed root; no camera shake or global travel."
+  },
+  "result": [
+    "id: b12684c2-d25d-469a-8132-da78611a1b8d\njob_id: b12684c2-d25d-469a-8132-da78611a1b8d\naction: One seamless quiet battle-ready breathing cycle in place, facing RIGHT. Eight real subtly different poses. Both boots stay planted at the same ground baseline; chest expands and settles by about one pixel, the short scarf tip sways slightly, weapon hand has a tiny natural counter motion while keeping blade/hand connected. No walk, bounce, turn, attack, wobble or clothing changes. Return to the exact opening stance. Preserve the EXACT small cream hood, dark navy face with one amber eye, cream short tunic, ochre neck scarf, navy arms/leggings, brown boots and ONE short steel sword with ochre hilt in every frame. No bell, new clothing, cape, extra limb, extra weapon, particles or background. Keep native coarse pixels, same body size and right-facing side view. Fixed 48x48 camera and fixed root; no camera shake or global travel.\nframes: 8\nsize: 48x48px\ntransparent: True\nlast_frame: yes (interpolating to it)\nseed: 24102411\nasset_id: 242f2fbd-5b8c-5f7f-a294-c6d14a23e0e3\nasset_status: pending (saved when generation completes)\ncost: 1 generation\nstatus: processing (~30-180s)\n\nhint: get_image(job_id=\"b12684c2-d25d-469a-8132-da78611a1b8d\")"
+  ]
+}

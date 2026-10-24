@@ -1,0 +1,33 @@
+{
+  "tool": "transfer_outfit",
+  "request": {
+    "reference_image_url": "https://api.pixellab.ai/mcp/images/b6bef6dc-cd96-4909-85f4-64941281b01c/download",
+    "width": 32,
+    "height": 32,
+    "no_background": true,
+    "max_colors": 10,
+    "palette": [
+      "#202D38",
+      "#6B3F2A",
+      "#AB6C37",
+      "#F3BD83",
+      "#2D735D",
+      "#6DAF69",
+      "#C9433E",
+      "#8B2F35",
+      "#E8D9AD",
+      "#B7D3D0"
+    ],
+    "palette_name": "Coarse adventure ten-color palette",
+    "frame_urls": [
+      "https://api.pixellab.ai/mcp/images/26494134-f50a-44c6-be05-4174bcba2165/download?index=0",
+      "https://api.pixellab.ai/mcp/images/26494134-f50a-44c6-be05-4174bcba2165/download?index=1",
+      "https://api.pixellab.ai/mcp/images/26494134-f50a-44c6-be05-4174bcba2165/download?index=2"
+    ],
+    "seed": 24102456,
+    "additional_instructions": "Same adventurer as reference, same3 running poses! ONLY restore outfit and weapon consistency; do not change any pose, arm or leg angle. Every frame MUST show a GREEN TUNIC across whole torso (green3x4pixel area), not navy shirt. Brown short hair, warm face, short red scarf, compact same brown bag/cream roll. Keep every run pose leaning forward. Crucial ONE STEEL SHORT SWORD visible in EVERY frame, blade5pixels long, connected to brown hilt held in near/right hand. Frame2 currently loses blade: restore it extending right/down from the near hand at the waist, not replace hand. Frame1/3 also keep the same short blade length. Sword arm stays forward/bent as source; opposite arm balances back. Fixed head proportions and bag size. NO second sword, no spear, no floating sword, no long hair, no cape, no hood, no effects. Same transparent32canvas and same source ground/center; do not stand upright or return to idle."
+  },
+  "result": [
+    "id: 9958b864-11f6-4276-9284-0e3236ce5951\njob_id: 9958b864-11f6-4276-9284-0e3236ce5951\nframes: 3\nsize: 32x32px\ntransparent: True\ninstructions: Same adventurer as reference, same3 running poses! ONLY restore outfit and weapon consistency; do not change any pose, arm or leg angle. Every frame MUST show a GREEN TUNIC across whole torso (green3x4pixel area), not navy shirt. Brown short hair, warm face, short red scarf, compact same brown bag/cream roll. Keep every run pose leaning forward. Crucial ONE STEEL SHORT SWORD visible in EVERY frame, blade5pixels long, connected to brown hilt held in near/right hand. Frame2 currently loses blade: restore it extending right/down from the near hand at the waist, not replace hand. Frame1/3 also keep the same short blade length. Sword arm stays forward/bent as source; opposite arm balances back. Fixed head proportions and bag size. NO second sword, no spear, no floating sword, no long hair, no cape, no hood, no effects. Same transparent32canvas and same source ground/center; do not stand upright or return to idle.\nseed: 24102456\nasset_id: 86f666f5-8b4a-5649-ad81-316f9f35369c\nasset_status: pending (saved when generation completes)\ncost: ~10 generations\nstatus: processing (~1-2 min)\n\nhint: get_image(job_id=\"9958b864-11f6-4276-9284-0e3236ce5951\")"
+  ]
+}

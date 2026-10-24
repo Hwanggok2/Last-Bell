@@ -1,0 +1,698 @@
+{
+  "version": "v86",
+  "date": "2026-10-23",
+  "provider": "PixelLab",
+  "license": "AI-generated project assets; PixelLab account service terms apply, not CC0 stock.",
+  "style": {
+    "reference": "Client/Assets/Game/Art/Presentation/Clips/hero-v5-idle/01.png",
+    "referenceSha256": "70730ff409e0dcbe687edfcb90372d02248941f9a467bfb56ff8297110600f0f",
+    "referenceUsage": "Original 128px hero bytes supplied directly to PixelLab style reference. Approved v85 grey_wolf base supplied as secondary block-shape reference. No hero proxy.",
+    "secondaryReference": "Planning/Story/Monster-v85/outskirts/grey_wolf/base.png",
+    "palette": [
+      "#061322",
+      "#17303d",
+      "#34505b",
+      "#58747b",
+      "#8fa7a2",
+      "#c9d6c0",
+      "#f9d296",
+      "#f4a00f",
+      "#966338",
+      "#5b3d2e",
+      "#352a2b",
+      "#59445b",
+      "#8a6674",
+      "#42665a",
+      "#649685",
+      "#b6be69"
+    ],
+    "canvas": [
+      64,
+      64
+    ],
+    "maxColors": 8,
+    "contract": "Original hero's bold 2px dark-navy outline, large connected pixel clusters, flat two-tone materials, short solid limbs and large clear head. Small rectangular eyes with the same dark/amber treatment; no white googly eyes. Side-view animal, transparent, complete silhouette, no fine fur, no gradient or AA."
+  },
+  "jobs": [
+    {
+      "id": "red_fox",
+      "name": "붉은 여우",
+      "stage": 4,
+      "height": 1,
+      "description": "A RED FOX wild animal enemy facing LEFT in side view. Bright russet-orange compact torso, large angular pointed muzzle, two large triangular ears, pale cream throat and chest, ONE broad bushy tail sweeping up behind with a large cream tip. Four short sturdy dark paws. Slightly sly but fierce tiny rectangular dark eye, never big cute eyes. Fox silhouette must read distinctly from a dog or wolf: broad fox tail and long pointed ear triangles, but no thin realistic legs or strands of fur.",
+      "baseJob": "76496177-2faf-426c-9489-358d43fd87e4",
+      "baseRequest": {
+        "description": "A RED FOX wild animal enemy facing LEFT in side view. Bright russet-orange compact torso, large angular pointed muzzle, two large triangular ears, pale cream throat and chest, ONE broad bushy tail sweeping up behind with a large cream tip. Four short sturdy dark paws. Slightly sly but fierce tiny rectangular dark eye, never big cute eyes. Fox silhouette must read distinctly from a dog or wolf: broad fox tail and long pointed ear triangles, but no thin realistic legs or strands of fur. Match the ORIGINAL HERO reference style, not realistic illustration: bold dark navy 2px outline, big flat block-shaped pixels, exactly two tones per material. Keep the entire silhouette comfortably inside the canvas, 6px transparent margin on all sides. One static natural standing pose, all four paws planted, no attack, no props, no floor shadow. COPY STYLE ONLY, not the reference species.",
+        "width": 64,
+        "height": 64,
+        "max_colors": 8,
+        "palette": [
+          "#061322",
+          "#17303d",
+          "#34505b",
+          "#58747b",
+          "#8fa7a2",
+          "#c9d6c0",
+          "#f9d296",
+          "#f4a00f",
+          "#966338",
+          "#5b3d2e",
+          "#352a2b",
+          "#59445b",
+          "#8a6674",
+          "#42665a",
+          "#649685",
+          "#b6be69"
+        ],
+        "palette_name": "Last Bell original hero and approved v85 animals",
+        "no_background": true,
+        "style_copy": [
+          "outline",
+          "detail",
+          "shading"
+        ],
+        "reference_images": [
+          {
+            "local": "Planning/Story/Monster-v85/outskirts/grey_wolf/base.png",
+            "usage": "Only match blocky pixel-cluster proportions, dark bold outline and small rectangular eye size; DO NOT copy wolf species."
+          }
+        ]
+      },
+      "candidates": 16,
+      "selectedCandidate": 0,
+      "facesRight": false,
+      "baseSelectedJob": "76496177-2faf-426c-9489-358d43fd87e4",
+      "baseSelectedIndex": 0,
+      "baseReview": {
+        "decision": "Selected after full candidate sheet comparison with original hero at actual game scale. Recognisable species silhouette, compact body, small eye, bold outline and complete anatomy."
+      },
+      "idleJob": "59e37b71-4a59-4a6b-986b-1048327eb23a",
+      "idleRequest": {
+        "description": "A near-motionless natural IDLE LOOP. Keep all four feet and lower legs fixed to exactly the same ground pixels. Only one subtle ear twitch and tiny tail-tip motion, with very slight ribcage breathing. Head height, head size, horns/antlers/tusks and fur markings remain fixed. NO stepping, sliding, crouching, walking, head turning or whole-body bob. First and last poses match. Preserve broad flat pixel clusters, original thick navy outline and simple body proportions. No smear trails, particles, white lines or separate effects.",
+        "direction": "west",
+        "frame_count": 8,
+        "view": "side",
+        "enhance_prompt": false,
+        "no_background": true,
+        "subject_description": "A RED FOX wild animal enemy facing LEFT in side view",
+        "initial_pose": "The animal stands quietly on four planted feet in the exact supplied pose."
+      },
+      "idleOutputFrames": 9,
+      "attackJob": "752a80dd-6d9c-4b55-86b6-c82b02adb030",
+      "attackRequest": {
+        "description": "Only the fox animal itself moves in a single physical bite. It crouches and draws its head back, opens its jaws, makes a short forward jaw snap with a clear extended closed-mouth contact, and returns to the supplied standing pose. Its solid body, four paws and broad tail remain complete and consistent. All visible pixels belong to the animal silhouette. Transparent empty surroundings.",
+        "frame_count": 16,
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "initial_pose": "The animal stands on four planted feet, matching the input exactly.",
+        "subject_description": "A RED FOX wild animal enemy facing LEFT in side view"
+      },
+      "attackOutputFrames": 17,
+      "stunPoseJob": "a2758ef6-755a-48e9-9c18-91b1d44ac1fa",
+      "stunPoseRequest": {
+        "method": "text",
+        "image_url": "https://api.pixellab.ai/mcp/images/76496177-2faf-426c-9489-358d43fd87e4/download?index=0",
+        "description": "Edit this SAME animal into a clearly STUNNED exhausted pose, keeping the exact original pixel style, palette, outline thickness and identity. Its front knees buckle a little, shoulders and head hang low, ears droop, neck loses tension. All four feet remain on the ground. Body stays upright, NOT lying down or dying. Preserve the tail, horns/antlers/tusks if present, same number and shape. Preserve facing direction. Tiny eyes retain the same color/size. No stars, symbols, sparkles, effects, shadows, blood or new objects. Transparent background, complete silhouette.",
+        "no_background": true,
+        "use_color_palette_correction": true
+      },
+      "stunJob": "17bba6d2-7044-4bba-a8fe-af41e3efb9cb",
+      "stunRequest": {
+        "description": "A weak, near-motionless STUNNED loop. Keep this exhausted lowered head and shoulder pose throughout. All four paws and lower legs stay fixed to the same ground pixels. Only an extremely small weak chest breath and a one-pixel head tremble. No steps, no walking, no return to alert stance, no collapse, no tail whipping or new effects. Horns, tusks or antlers keep the same exact shape. Preserve blocky pixel outlines and original palette.",
+        "frame_count": 8,
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "initial_pose": "The same animal is exhausted with head and shoulders drooping and four paws planted.",
+        "subject_description": "A RED FOX wild animal enemy facing LEFT in side view"
+      },
+      "stunOutputFrames": 9,
+      "attackRejected": {
+        "job": "33683797-c527-481c-ba1c-a0f4095597f6",
+        "directory": "attack",
+        "request": {
+          "description": "One quick fox BITE: small crouch and head pull-back, then a SHORT forward snap with jaws opening and closing at full reach, front paws land, return exactly to original standing pose. Keep the bushy tail attached behind, do not spin or turn. Preserve broad flat pixel clusters, original thick navy outline and simple body proportions. No smear trails, particles, white lines or separate effects.",
+          "direction": "west",
+          "frame_count": 16,
+          "view": "side",
+          "enhance_prompt": false,
+          "no_background": true,
+          "subject_description": "A RED FOX wild animal enemy facing LEFT in side view",
+          "initial_pose": "The animal stands quietly on four planted feet in the exact supplied pose."
+        },
+        "reason": "Original bite contact frames were overlaid with generated white speed lines."
+      },
+      "attackDir": "attack-retry"
+    },
+    {
+      "id": "wild_boar",
+      "name": "성 밖 멧돼지",
+      "stage": 5,
+      "height": 1.4,
+      "description": "A WILD BOAR miniboss facing LEFT in side view. Broad dark-brown low barrel torso, massive blunt block-shaped head and square snout held low, two short cream tusks with one prominent in side view, four very thick short legs and broad hooves, three large angular dark bristle tufts along the spine. Tiny amber rectangular eye in dark eye socket. A large heavy powerful beast, no armor or collar, no realistic fur strands, not a round cute pig. Distinct recognisable snout, tusk and bristled silhouette.",
+      "baseJob": "d9ee8010-5c7e-4115-b6c3-9e2ca39aaa45",
+      "baseRequest": {
+        "description": "A WILD BOAR miniboss facing LEFT in side view. Broad dark-brown low barrel torso, massive blunt block-shaped head and square snout held low, two short cream tusks with one prominent in side view, four very thick short legs and broad hooves, three large angular dark bristle tufts along the spine. Tiny amber rectangular eye in dark eye socket. A large heavy powerful beast, no armor or collar, no realistic fur strands, not a round cute pig. Distinct recognisable snout, tusk and bristled silhouette. Match the ORIGINAL HERO reference style, not realistic illustration: bold dark navy 2px outline, big flat block-shaped pixels, exactly two tones per material. Keep the entire silhouette comfortably inside the canvas, 6px transparent margin on all sides. One static natural standing pose, all four paws planted, no attack, no props, no floor shadow. COPY STYLE ONLY, not the reference species.",
+        "width": 64,
+        "height": 64,
+        "max_colors": 8,
+        "palette": [
+          "#061322",
+          "#17303d",
+          "#34505b",
+          "#58747b",
+          "#8fa7a2",
+          "#c9d6c0",
+          "#f9d296",
+          "#f4a00f",
+          "#966338",
+          "#5b3d2e",
+          "#352a2b",
+          "#59445b",
+          "#8a6674",
+          "#42665a",
+          "#649685",
+          "#b6be69"
+        ],
+        "palette_name": "Last Bell original hero and approved v85 animals",
+        "no_background": true,
+        "style_copy": [
+          "outline",
+          "detail",
+          "shading"
+        ],
+        "reference_images": [
+          {
+            "local": "Planning/Story/Monster-v85/outskirts/grey_wolf/base.png",
+            "usage": "Only match blocky pixel-cluster proportions, dark bold outline and small rectangular eye size; DO NOT copy wolf species."
+          }
+        ]
+      },
+      "candidates": 16,
+      "selectedCandidate": 6,
+      "facesRight": false,
+      "baseSelectedJob": "d9ee8010-5c7e-4115-b6c3-9e2ca39aaa45",
+      "baseSelectedIndex": 6,
+      "baseReview": {
+        "decision": "Selected after full candidate sheet comparison with original hero at actual game scale. Recognisable species silhouette, compact body, small eye, bold outline and complete anatomy."
+      },
+      "idleJob": "e99b6310-1bc2-4eae-a3e0-0461332f7cdd",
+      "idleRequest": {
+        "description": "A near-motionless natural IDLE LOOP. Keep all four feet and lower legs fixed to exactly the same ground pixels. Only one subtle ear twitch and tiny tail-tip motion, with very slight ribcage breathing. Head height, head size, horns/antlers/tusks and fur markings remain fixed. NO stepping, sliding, crouching, walking, head turning or whole-body bob. First and last poses match. Preserve broad flat pixel clusters, original thick navy outline and simple body proportions. No smear trails, particles, white lines or separate effects.",
+        "direction": "west",
+        "frame_count": 8,
+        "view": "side",
+        "enhance_prompt": false,
+        "no_background": true,
+        "subject_description": "A WILD BOAR miniboss facing LEFT in side view",
+        "initial_pose": "The animal stands quietly on four planted feet in the exact supplied pose."
+      },
+      "idleOutputFrames": 9,
+      "attackJob": "95c79b0e-da6d-4a0c-b28d-d168902bbf29",
+      "attackRequest": {
+        "description": "Only the boar animal itself moves in one physical snout-and-tusk thrust. It lowers the head clearly toward the front, compresses its rear legs, drives head and shoulders a short strong distance forward, then recovers to the supplied stance. Clear muscular preparation and body motion, one contact. All visible pixels belong to the animal silhouette. Transparent empty surroundings.",
+        "frame_count": 16,
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "initial_pose": "The animal stands on four planted feet, matching the input exactly.",
+        "subject_description": "A WILD BOAR miniboss facing LEFT in side view"
+      },
+      "attackOutputFrames": 17,
+      "stunPoseJob": "89aa6208-199b-4b8f-8c20-861197c8d9c8",
+      "stunPoseRequest": {
+        "method": "text",
+        "image_url": "https://api.pixellab.ai/mcp/images/d9ee8010-5c7e-4115-b6c3-9e2ca39aaa45/download?index=6",
+        "description": "Edit this SAME animal into a clearly STUNNED exhausted pose, keeping the exact original pixel style, palette, outline thickness and identity. Its front knees buckle a little, shoulders and head hang low, ears droop, neck loses tension. All four feet remain on the ground. Body stays upright, NOT lying down or dying. Preserve the tail, horns/antlers/tusks if present, same number and shape. Preserve facing direction. Tiny eyes retain the same color/size. No stars, symbols, sparkles, effects, shadows, blood or new objects. Transparent background, complete silhouette.",
+        "no_background": true,
+        "use_color_palette_correction": true
+      },
+      "stunJob": "2b3ba8b6-3220-49a3-9aac-7fcedd1ea95c",
+      "stunRequest": {
+        "description": "A weak, near-motionless STUNNED loop. Keep this exhausted lowered head and shoulder pose throughout. All four paws and lower legs stay fixed to the same ground pixels. Only an extremely small weak chest breath and a one-pixel head tremble. No steps, no walking, no return to alert stance, no collapse, no tail whipping or new effects. Horns, tusks or antlers keep the same exact shape. Preserve blocky pixel outlines and original palette.",
+        "frame_count": 8,
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "initial_pose": "The same animal is exhausted with head and shoulders drooping and four paws planted.",
+        "subject_description": "A WILD BOAR miniboss facing LEFT in side view"
+      },
+      "stunOutputFrames": 9,
+      "attackRejected": {
+        "job": "ee624df7-52fb-4478-ae90-9f16d1a6726e",
+        "directory": "attack",
+        "request": {
+          "description": "One heavy boar TUSK CHARGE in place: lower massive snout slightly, brace thick rear legs, drive head and shoulders a SHORT distance forward into a clear tusk contact, then recover to original planted stance. Do not run away across the canvas; no spinning, jumping or effects. Preserve broad flat pixel clusters, original thick navy outline and simple body proportions. No smear trails, particles, white lines or separate effects.",
+          "direction": "west",
+          "frame_count": 16,
+          "view": "side",
+          "enhance_prompt": false,
+          "no_background": true,
+          "subject_description": "A WILD BOAR miniboss facing LEFT in side view",
+          "initial_pose": "The animal stands quietly on four planted feet in the exact supplied pose."
+        },
+        "reason": "Original tusk contact frames were covered by a large generated white impact shape."
+      },
+      "attackDir": "attack-retry"
+    },
+    {
+      "id": "badger",
+      "name": "숲 오소리",
+      "stage": 6,
+      "height": 0.85,
+      "description": "A EUROPEAN BADGER wild enemy facing LEFT in side view. Very LOW squat dark-slate body, broad pale cream angular head with one bold black stripe crossing the visible tiny dark eye, short blunt snout, little ears, four short thick legs and wide squared digging paws, small short tail. Big simple black-and-cream facial mask is its identity, not a raccoon or skunk, no striped long tail. Compact tough burrowing animal, no fine fur texture, no circular cute proportions.",
+      "baseJob": "aa6f2b5b-0f2e-4832-a6e0-3b63bedc628c",
+      "baseRequest": {
+        "description": "A EUROPEAN BADGER wild enemy facing LEFT in side view. Very LOW squat dark-slate body, broad pale cream angular head with one bold black stripe crossing the visible tiny dark eye, short blunt snout, little ears, four short thick legs and wide squared digging paws, small short tail. Big simple black-and-cream facial mask is its identity, not a raccoon or skunk, no striped long tail. Compact tough burrowing animal, no fine fur texture, no circular cute proportions. Match the ORIGINAL HERO reference style, not realistic illustration: bold dark navy 2px outline, big flat block-shaped pixels, exactly two tones per material. Keep the entire silhouette comfortably inside the canvas, 6px transparent margin on all sides. One static natural standing pose, all four paws planted, no attack, no props, no floor shadow. COPY STYLE ONLY, not the reference species.",
+        "width": 64,
+        "height": 64,
+        "max_colors": 8,
+        "palette": [
+          "#061322",
+          "#17303d",
+          "#34505b",
+          "#58747b",
+          "#8fa7a2",
+          "#c9d6c0",
+          "#f9d296",
+          "#f4a00f",
+          "#966338",
+          "#5b3d2e",
+          "#352a2b",
+          "#59445b",
+          "#8a6674",
+          "#42665a",
+          "#649685",
+          "#b6be69"
+        ],
+        "palette_name": "Last Bell original hero and approved v85 animals",
+        "no_background": true,
+        "style_copy": [
+          "outline",
+          "detail",
+          "shading"
+        ],
+        "reference_images": [
+          {
+            "local": "Planning/Story/Monster-v85/outskirts/grey_wolf/base.png",
+            "usage": "Only match blocky pixel-cluster proportions, dark bold outline and small rectangular eye size; DO NOT copy wolf species."
+          }
+        ]
+      },
+      "candidates": 16,
+      "selectedCandidate": 13,
+      "facesRight": true,
+      "baseSelectedJob": "aa6f2b5b-0f2e-4832-a6e0-3b63bedc628c",
+      "baseSelectedIndex": 13,
+      "baseReview": {
+        "decision": "Selected after full candidate sheet comparison with original hero at actual game scale. Recognisable species silhouette, compact body, small eye, bold outline and complete anatomy."
+      },
+      "idleJob": "d92840b4-b4c6-4821-94ee-d608ae3431b5",
+      "idleRequest": {
+        "description": "A near-motionless natural IDLE LOOP. Keep all four feet and lower legs fixed to exactly the same ground pixels. Only one subtle ear twitch and tiny tail-tip motion, with very slight ribcage breathing. Head height, head size, horns/antlers/tusks and fur markings remain fixed. NO stepping, sliding, crouching, walking, head turning or whole-body bob. First and last poses match. Preserve broad flat pixel clusters, original thick navy outline and simple body proportions. No smear trails, particles, white lines or separate effects.",
+        "direction": "east",
+        "frame_count": 8,
+        "view": "side",
+        "enhance_prompt": false,
+        "no_background": true,
+        "subject_description": "A EUROPEAN BADGER wild enemy facing LEFT in side view",
+        "initial_pose": "The animal stands quietly on four planted feet in the exact supplied pose."
+      },
+      "idleOutputFrames": 9,
+      "attackJob": "aa48c41b-871c-468c-b105-84fed0e21662",
+      "attackRequest": {
+        "description": "One low badger CLAW RAKE: brace squat hindquarters, lift near front paw just ahead of chest, thrust that paw forward in a short sharp low claw swipe, return the paw to ground and original compact stance. Keep facial stripe and stubby body intact. Do not turn. Preserve broad flat pixel clusters, original thick navy outline and simple body proportions. No smear trails, particles, white lines or separate effects.",
+        "direction": "east",
+        "frame_count": 16,
+        "view": "side",
+        "enhance_prompt": false,
+        "no_background": true,
+        "subject_description": "A EUROPEAN BADGER wild enemy facing LEFT in side view",
+        "initial_pose": "The animal stands quietly on four planted feet in the exact supplied pose."
+      },
+      "attackOutputFrames": 17,
+      "stunPoseJob": "2c927e03-9f06-47af-932f-eac5da9d0779",
+      "stunPoseRequest": {
+        "method": "text",
+        "image_url": "https://api.pixellab.ai/mcp/images/aa6f2b5b-0f2e-4832-a6e0-3b63bedc628c/download?index=13",
+        "description": "Edit this SAME animal into a clearly STUNNED exhausted pose, keeping the exact original pixel style, palette, outline thickness and identity. Its front knees buckle a little, shoulders and head hang low, ears droop, neck loses tension. All four feet remain on the ground. Body stays upright, NOT lying down or dying. Preserve the tail, horns/antlers/tusks if present, same number and shape. Preserve facing direction. Tiny eyes retain the same color/size. No stars, symbols, sparkles, effects, shadows, blood or new objects. Transparent background, complete silhouette.",
+        "no_background": true,
+        "use_color_palette_correction": true
+      },
+      "stunJob": "b3fd8e57-eb7d-41a9-9aed-75a3637ade21",
+      "stunRequest": {
+        "description": "A weak, near-motionless STUNNED loop. Keep this exhausted lowered head and shoulder pose throughout. All four paws and lower legs stay fixed to the same ground pixels. Only an extremely small weak chest breath and a one-pixel head tremble. No steps, no walking, no return to alert stance, no collapse, no tail whipping or new effects. Horns, tusks or antlers keep the same exact shape. Preserve blocky pixel outlines and original palette.",
+        "frame_count": 8,
+        "direction": "east",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "initial_pose": "The same animal is exhausted with head and shoulders drooping and four paws planted.",
+        "subject_description": "A EUROPEAN BADGER wild enemy facing LEFT in side view"
+      },
+      "stunOutputFrames": 9
+    },
+    {
+      "id": "lynx",
+      "name": "산 스라소니",
+      "stage": 7,
+      "height": 1.15,
+      "description": "A MOUNTAIN LYNX wild feline enemy facing LEFT in side view. Compact tawny-gold sturdy cat torso, large angular feline head and two tall triangular ears with bold dark tuft tips, cream cheek ruff made of only two angular masses, four broad thick paws, short blunt bobtail with dark tip. Tiny amber rectangular eye, two or three large dark angular markings only. Distinct feline silhouette and bobtail, no dog muzzle, no long cat tail, no skinny realistic limbs or tiny spot texture.",
+      "baseJob": "39efefa1-964c-4966-abcd-88a0f65b4121",
+      "baseRequest": {
+        "description": "A MOUNTAIN LYNX wild feline enemy facing LEFT in side view. Compact tawny-gold sturdy cat torso, large angular feline head and two tall triangular ears with bold dark tuft tips, cream cheek ruff made of only two angular masses, four broad thick paws, short blunt bobtail with dark tip. Tiny amber rectangular eye, two or three large dark angular markings only. Distinct feline silhouette and bobtail, no dog muzzle, no long cat tail, no skinny realistic limbs or tiny spot texture. Match the ORIGINAL HERO reference style, not realistic illustration: bold dark navy 2px outline, big flat block-shaped pixels, exactly two tones per material. Keep the entire silhouette comfortably inside the canvas, 6px transparent margin on all sides. One static natural standing pose, all four paws planted, no attack, no props, no floor shadow. COPY STYLE ONLY, not the reference species.",
+        "width": 64,
+        "height": 64,
+        "max_colors": 8,
+        "palette": [
+          "#061322",
+          "#17303d",
+          "#34505b",
+          "#58747b",
+          "#8fa7a2",
+          "#c9d6c0",
+          "#f9d296",
+          "#f4a00f",
+          "#966338",
+          "#5b3d2e",
+          "#352a2b",
+          "#59445b",
+          "#8a6674",
+          "#42665a",
+          "#649685",
+          "#b6be69"
+        ],
+        "palette_name": "Last Bell original hero and approved v85 animals",
+        "no_background": true,
+        "style_copy": [
+          "outline",
+          "detail",
+          "shading"
+        ],
+        "reference_images": [
+          {
+            "local": "Planning/Story/Monster-v85/outskirts/grey_wolf/base.png",
+            "usage": "Only match blocky pixel-cluster proportions, dark bold outline and small rectangular eye size; DO NOT copy wolf species."
+          }
+        ]
+      },
+      "candidates": 16,
+      "selectedCandidate": 8,
+      "facesRight": false,
+      "baseSelectedJob": "6d3f8df9-a317-4e4e-a90e-5197ae2f0d3a",
+      "baseSelectedIndex": 0,
+      "baseReview": {
+        "decision": "Selected after full candidate sheet comparison with original hero at actual game scale. Recognisable species silhouette, compact body, small eye, bold outline and complete anatomy."
+      },
+      "paletteCorrection": {
+        "provider": "PixelLab.reduce_colors",
+        "palette": "cream-palette.png",
+        "dithering": "none",
+        "reason": "Match cheek/chest highlight to original hero cream; remove accidental olive fur tint without geometry changes."
+      },
+      "idleJob": "0762d8c0-3f5c-4724-9558-0bf0245e81a9",
+      "idleRequest": {
+        "description": "The lynx stands still and quietly breathes. Only the ear tips twitch subtly once and the short tail tip moves slightly, a small gentle chest breath. Keep the paws firmly planted, fixed head shape and position. The starting and ending stance are identical. Preserve exact original flat pixel blocks and palette.",
+        "frame_count": 4,
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "initial_pose": "A lynx stands on four planted paws.",
+        "subject_description": "A compact tawny lynx sprite."
+      },
+      "idleOutputFrames": 5,
+      "attackJob": "fa209724-fb3c-4b62-a722-618815b7fdc1",
+      "attackRequest": {
+        "description": "One feline PAW POUNCE: small compressed crouch, short forward spring extending one broad front paw and shoulders, single clear claw contact at maximum reach, land and return to original stance. Keep short bobtail and ear tufts, no long tail, no spinning. Preserve broad flat pixel clusters, original thick navy outline and simple body proportions. No smear trails, particles, white lines or separate effects.",
+        "direction": "west",
+        "frame_count": 16,
+        "view": "side",
+        "enhance_prompt": false,
+        "no_background": true,
+        "subject_description": "A MOUNTAIN LYNX wild feline enemy facing LEFT in side view",
+        "initial_pose": "The animal stands quietly on four planted feet in the exact supplied pose."
+      },
+      "attackOutputFrames": 17,
+      "stunPoseJob": "cc7854d9-f965-44ee-b98e-4baa36d205d9",
+      "stunPoseRequest": {
+        "method": "text",
+        "image_url": "https://api.pixellab.ai/mcp/images/6d3f8df9-a317-4e4e-a90e-5197ae2f0d3a/download?index=0",
+        "description": "Edit this SAME animal into a clearly STUNNED exhausted pose, keeping the exact original pixel style, palette, outline thickness and identity. Its front knees buckle a little, shoulders and head hang low, ears droop, neck loses tension. All four feet remain on the ground. Body stays upright, NOT lying down or dying. Preserve the tail, horns/antlers/tusks if present, same number and shape. Preserve facing direction. Tiny eyes retain the same color/size. No stars, symbols, sparkles, effects, shadows, blood or new objects. Transparent background, complete silhouette.",
+        "no_background": true,
+        "use_color_palette_correction": true
+      },
+      "stunJob": "3da5ad85-93cb-446d-8b57-e761937b6971",
+      "stunRequest": {
+        "description": "A weak, near-motionless STUNNED loop. Keep this exhausted lowered head and shoulder pose throughout. All four paws and lower legs stay fixed to the same ground pixels. Only an extremely small weak chest breath and a one-pixel head tremble. No steps, no walking, no return to alert stance, no collapse, no tail whipping or new effects. Horns, tusks or antlers keep the same exact shape. Preserve blocky pixel outlines and original palette.",
+        "frame_count": 8,
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "initial_pose": "The same animal is exhausted with head and shoulders drooping and four paws planted.",
+        "subject_description": "A MOUNTAIN LYNX wild feline enemy facing LEFT in side view"
+      },
+      "stunOutputFrames": 9,
+      "idleRejected": {
+        "job": "6daa0f8d-82ad-440b-a5e7-e6444aed0d73",
+        "directory": "idle",
+        "request": {
+          "description": "A near-motionless natural IDLE LOOP. Keep all four feet and lower legs fixed to exactly the same ground pixels. Only one subtle ear twitch and tiny tail-tip motion, with very slight ribcage breathing. Head height, head size, horns/antlers/tusks and fur markings remain fixed. NO stepping, sliding, crouching, walking, head turning or whole-body bob. First and last poses match. Preserve broad flat pixel clusters, original thick navy outline and simple body proportions. No smear trails, particles, white lines or separate effects.",
+          "direction": "west",
+          "frame_count": 8,
+          "view": "side",
+          "enhance_prompt": false,
+          "no_background": true,
+          "subject_description": "A MOUNTAIN LYNX wild feline enemy facing LEFT in side view",
+          "initial_pose": "The animal stands quietly on four planted feet in the exact supplied pose."
+        },
+        "reason": "Original Idle generated white contour fragments and changed foot pixels."
+      },
+      "idleDir": "idle-retry"
+    },
+    {
+      "id": "mountain_goat",
+      "name": "바위 산양",
+      "stage": 8,
+      "height": 1.35,
+      "description": "A MOUNTAIN GOAT wild enemy facing LEFT in side view. Stocky cream-grey compact body, short powerful legs and dark squared cloven hooves, large angular goat head with short square muzzle, a small blocky beard, two thick short backward-curving horns expressed as bold stepped dark bands, one visible amber rectangular eye. Distinctive sturdy horns and beard silhouette, NOT a thin deer or fluffy round sheep. No fine fleece, realistic muscles or long thin legs.",
+      "baseJob": "7267bf13-c9b3-437a-ba69-24a3c243f2ac",
+      "baseRequest": {
+        "description": "A MOUNTAIN GOAT wild enemy facing LEFT in side view. Stocky cream-grey compact body, short powerful legs and dark squared cloven hooves, large angular goat head with short square muzzle, a small blocky beard, two thick short backward-curving horns expressed as bold stepped dark bands, one visible amber rectangular eye. Distinctive sturdy horns and beard silhouette, NOT a thin deer or fluffy round sheep. No fine fleece, realistic muscles or long thin legs. Match the ORIGINAL HERO reference style, not realistic illustration: bold dark navy 2px outline, big flat block-shaped pixels, exactly two tones per material. Keep the entire silhouette comfortably inside the canvas, 6px transparent margin on all sides. One static natural standing pose, all four paws planted, no attack, no props, no floor shadow. COPY STYLE ONLY, not the reference species.",
+        "width": 64,
+        "height": 64,
+        "max_colors": 8,
+        "palette": [
+          "#061322",
+          "#17303d",
+          "#34505b",
+          "#58747b",
+          "#8fa7a2",
+          "#c9d6c0",
+          "#f9d296",
+          "#f4a00f",
+          "#966338",
+          "#5b3d2e",
+          "#352a2b",
+          "#59445b",
+          "#8a6674",
+          "#42665a",
+          "#649685",
+          "#b6be69"
+        ],
+        "palette_name": "Last Bell original hero and approved v85 animals",
+        "no_background": true,
+        "style_copy": [
+          "outline",
+          "detail",
+          "shading"
+        ],
+        "reference_images": [
+          {
+            "local": "Planning/Story/Monster-v85/outskirts/grey_wolf/base.png",
+            "usage": "Only match blocky pixel-cluster proportions, dark bold outline and small rectangular eye size; DO NOT copy wolf species."
+          }
+        ]
+      },
+      "candidates": 16,
+      "selectedCandidate": 6,
+      "facesRight": true,
+      "baseSelectedJob": "7267bf13-c9b3-437a-ba69-24a3c243f2ac",
+      "baseSelectedIndex": 6,
+      "baseReview": {
+        "decision": "Selected after full candidate sheet comparison with original hero at actual game scale. Recognisable species silhouette, compact body, small eye, bold outline and complete anatomy."
+      },
+      "idleJob": "72cb4f59-52fc-4fa6-a5eb-1012984f7748",
+      "idleRequest": {
+        "description": "A near-motionless natural IDLE LOOP. Keep all four feet and lower legs fixed to exactly the same ground pixels. Only one subtle ear twitch and tiny tail-tip motion, with very slight ribcage breathing. Head height, head size, horns/antlers/tusks and fur markings remain fixed. NO stepping, sliding, crouching, walking, head turning or whole-body bob. First and last poses match. Preserve broad flat pixel clusters, original thick navy outline and simple body proportions. No smear trails, particles, white lines or separate effects.",
+        "direction": "east",
+        "frame_count": 8,
+        "view": "side",
+        "enhance_prompt": false,
+        "no_background": true,
+        "subject_description": "A MOUNTAIN GOAT wild enemy facing LEFT in side view",
+        "initial_pose": "The animal stands quietly on four planted feet in the exact supplied pose."
+      },
+      "idleOutputFrames": 9,
+      "attackJob": "71523e7c-9129-4e4b-86ef-3ea8d44e02c2",
+      "attackRequest": {
+        "description": "One strong goat HEADBUTT: tilt head and curved horns down, brace hind hooves, short forceful forward horn thrust, then lift head and return to original stance. Keep the same two horns unchanged and attached, four hooves, no turning or extra horns. Preserve broad flat pixel clusters, original thick navy outline and simple body proportions. No smear trails, particles, white lines or separate effects.",
+        "direction": "east",
+        "frame_count": 16,
+        "view": "side",
+        "enhance_prompt": false,
+        "no_background": true,
+        "subject_description": "A MOUNTAIN GOAT wild enemy facing LEFT in side view",
+        "initial_pose": "The animal stands quietly on four planted feet in the exact supplied pose."
+      },
+      "attackOutputFrames": 17,
+      "stunPoseJob": "9c943d16-1956-4709-8c7f-60ca1fe73fbb",
+      "stunPoseRequest": {
+        "method": "text",
+        "image_url": "https://api.pixellab.ai/mcp/images/7267bf13-c9b3-437a-ba69-24a3c243f2ac/download?index=6",
+        "description": "Edit this SAME animal into a clearly STUNNED exhausted pose, keeping the exact original pixel style, palette, outline thickness and identity. Its front knees buckle a little, shoulders and head hang low, ears droop, neck loses tension. All four feet remain on the ground. Body stays upright, NOT lying down or dying. Preserve the tail, horns/antlers/tusks if present, same number and shape. Preserve facing direction. Tiny eyes retain the same color/size. No stars, symbols, sparkles, effects, shadows, blood or new objects. Transparent background, complete silhouette.",
+        "no_background": true,
+        "use_color_palette_correction": true
+      },
+      "stunJob": "ebf12f23-172e-4c8f-ae8e-0a35d4c9d90f",
+      "stunRequest": {
+        "description": "A weak, near-motionless STUNNED loop. Keep this exhausted lowered head and shoulder pose throughout. All four paws and lower legs stay fixed to the same ground pixels. Only an extremely small weak chest breath and a one-pixel head tremble. No steps, no walking, no return to alert stance, no collapse, no tail whipping or new effects. Horns, tusks or antlers keep the same exact shape. Preserve blocky pixel outlines and original palette.",
+        "frame_count": 8,
+        "direction": "east",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "initial_pose": "The same animal is exhausted with head and shoulders drooping and four paws planted.",
+        "subject_description": "A MOUNTAIN GOAT wild enemy facing LEFT in side view"
+      },
+      "stunOutputFrames": 9
+    },
+    {
+      "id": "great_stag",
+      "name": "큰 사슴",
+      "stage": 9,
+      "height": 1.75,
+      "description": "A GREAT STAG wild enemy facing LEFT in side view. Heavy broad warm-brown shoulder and short strong torso, thick neck and large angular deer muzzle, cream lower face/chest, four SHORT STURDY legs with dark broad hooves, small pointed tail. A magnificent pair of large wide antlers made of thick angular stepped branches with only three blunt points each, complete inside canvas. Tiny amber rectangular eye. Powerful compact game proportions, not realistic skinny long legs, no fine antler twigs or thin outlines. Distinct massive antler silhouette, no armor.",
+      "baseJob": "52bf3755-23a2-405c-81ca-922c389a6a6c",
+      "baseRequest": {
+        "description": "A GREAT STAG wild enemy facing LEFT in side view. Heavy broad warm-brown shoulder and short strong torso, thick neck and large angular deer muzzle, cream lower face/chest, four SHORT STURDY legs with dark broad hooves, small pointed tail. A magnificent pair of large wide antlers made of thick angular stepped branches with only three blunt points each, complete inside canvas. Tiny amber rectangular eye. Powerful compact game proportions, not realistic skinny long legs, no fine antler twigs or thin outlines. Distinct massive antler silhouette, no armor. Match the ORIGINAL HERO reference style, not realistic illustration: bold dark navy 2px outline, big flat block-shaped pixels, exactly two tones per material. Keep the entire silhouette comfortably inside the canvas, 6px transparent margin on all sides. One static natural standing pose, all four paws planted, no attack, no props, no floor shadow. COPY STYLE ONLY, not the reference species.",
+        "width": 64,
+        "height": 64,
+        "max_colors": 8,
+        "palette": [
+          "#061322",
+          "#17303d",
+          "#34505b",
+          "#58747b",
+          "#8fa7a2",
+          "#c9d6c0",
+          "#f9d296",
+          "#f4a00f",
+          "#966338",
+          "#5b3d2e",
+          "#352a2b",
+          "#59445b",
+          "#8a6674",
+          "#42665a",
+          "#649685",
+          "#b6be69"
+        ],
+        "palette_name": "Last Bell original hero and approved v85 animals",
+        "no_background": true,
+        "style_copy": [
+          "outline",
+          "detail",
+          "shading"
+        ],
+        "reference_images": [
+          {
+            "local": "Planning/Story/Monster-v85/outskirts/grey_wolf/base.png",
+            "usage": "Only match blocky pixel-cluster proportions, dark bold outline and small rectangular eye size; DO NOT copy wolf species."
+          }
+        ]
+      },
+      "candidates": 16,
+      "selectedCandidate": 6,
+      "facesRight": false,
+      "baseSelectedJob": "f5bfc792-8533-4d31-baa5-910a9fe79781",
+      "baseSelectedIndex": 0,
+      "baseReview": {
+        "decision": "Selected after full candidate sheet comparison with original hero at actual game scale. Recognisable species silhouette, compact body, small eye, bold outline and complete anatomy."
+      },
+      "paletteCorrection": {
+        "provider": "PixelLab.reduce_colors",
+        "palette": "cream-palette.png",
+        "dithering": "none",
+        "reason": "Match cheek/chest highlight to original hero cream; remove accidental olive fur tint without geometry changes."
+      },
+      "stunPoseJob": "7548e435-f435-4311-828f-10faa2fd8184",
+      "stunPoseRequest": {
+        "method": "text",
+        "image_url": "https://api.pixellab.ai/mcp/images/f5bfc792-8533-4d31-baa5-910a9fe79781/download?index=0",
+        "description": "Edit this SAME animal into a clearly STUNNED exhausted pose, keeping the exact original pixel style, palette, outline thickness and identity. Its front knees buckle a little, shoulders and head hang low, ears droop, neck loses tension. All four feet remain on the ground. Body stays upright, NOT lying down or dying. Preserve the tail, horns/antlers/tusks if present, same number and shape. Preserve facing direction. Tiny eyes retain the same color/size. No stars, symbols, sparkles, effects, shadows, blood or new objects. Transparent background, complete silhouette.",
+        "no_background": true,
+        "use_color_palette_correction": true
+      },
+      "idleJob": "6707e0aa-b9dd-4389-87a1-d8716eccba1b",
+      "idleRequest": {
+        "description": "The stag stands firmly in place. Only its small tail tip sways subtly and one ear twitches. Its large antlers, head, neck, torso and all four hoof positions stay motionless. A tiny natural resting loop of the living animal. Every visible pixel remains part of the solid animal silhouette. Transparent empty surroundings. First and last stance are identical.",
+        "frame_count": 4,
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "initial_pose": "A stag stands with its antlers held high and four hooves planted.",
+        "subject_description": "A compact brown stag with large angular antlers."
+      },
+      "idleOutputFrames": 5,
+      "attackJob": "2e696b5d-e7ec-4bd6-a7a5-84ef6aa3ccc5",
+      "attackRequest": {
+        "description": "One heavy stag ANTLER THRUST: lower head and broad antlers in a clear wind-up, drive antlers a short distance forward with shoulders, single clear contact, then return head and body to original standing pose. Keep the antler branches consistent, no new branches, no turning to face camera. Preserve broad flat pixel clusters, original thick navy outline and simple body proportions. No smear trails, particles, white lines or separate effects.",
+        "direction": "west",
+        "frame_count": 16,
+        "view": "side",
+        "enhance_prompt": false,
+        "no_background": true,
+        "subject_description": "A GREAT STAG wild enemy facing LEFT in side view",
+        "initial_pose": "The animal stands quietly on four planted feet in the exact supplied pose."
+      },
+      "attackOutputFrames": 17,
+      "stunJob": "a9f45e92-3206-4782-9414-e7a36e7b6304",
+      "stunRequest": {
+        "description": "A weak, near-motionless STUNNED loop. Keep this exhausted lowered head and shoulder pose throughout. All four paws and lower legs stay fixed to the same ground pixels. Only an extremely small weak chest breath and a one-pixel head tremble. No steps, no walking, no return to alert stance, no collapse, no tail whipping or new effects. Horns, tusks or antlers keep the same exact shape. Preserve blocky pixel outlines and original palette.",
+        "frame_count": 8,
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "initial_pose": "The same animal is exhausted with head and shoulders drooping and four paws planted.",
+        "subject_description": "A GREAT STAG wild enemy facing LEFT in side view"
+      },
+      "stunOutputFrames": 9,
+      "idleRejected": {
+        "job": "901cee29-b898-45cc-9c04-4284ee560063",
+        "directory": "idle",
+        "request": {
+          "description": "A near-motionless natural IDLE LOOP. Keep all four feet and lower legs fixed to exactly the same ground pixels. Only one subtle ear twitch and tiny tail-tip motion, with very slight ribcage breathing. Head height, head size, horns/antlers/tusks and fur markings remain fixed. NO stepping, sliding, crouching, walking, head turning or whole-body bob. First and last poses match. Preserve broad flat pixel clusters, original thick navy outline and simple body proportions. No smear trails, particles, white lines or separate effects.",
+          "direction": "west",
+          "frame_count": 8,
+          "view": "side",
+          "enhance_prompt": false,
+          "no_background": true,
+          "subject_description": "A GREAT STAG wild enemy facing LEFT in side view",
+          "initial_pose": "The animal stands quietly on four planted feet in the exact supplied pose."
+        },
+        "reason": "Original Idle generated white outlines on antlers, and only two clean foot-fixed poses remained."
+      },
+      "idleDir": "idle-retry"
+    }
+  ],
+  "completedDate": "2026-10-24",
+  "finalReview": "All bases and all source/selected motion frames reviewed; root cross-reviewed all four retries and contact-frame selection. No more generation required."
+}

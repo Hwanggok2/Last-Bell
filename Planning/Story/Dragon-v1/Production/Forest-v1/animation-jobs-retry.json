@@ -1,0 +1,142 @@
+[
+  {
+    "actor": "goblin_scout",
+    "motion": "AttackRetry",
+    "request": {
+      "description": "Slow weapon practice, body only. Facing LEFT at every moment: nose and eye continue pointing left. The sword hand draws the short blade from its low-left rest to above the LEFT shoulder, pauses, then moves the blade down-left in a compact diagonal arc IN FRONT of the face, then lowers it to rest. Back elbow moves behind torso without turning head. ONE gesture. Both boots anchored. Keep blade inside x2..29,y3..29 throughout. Draw only solid sword, hand and body, never broad arcs or speed streaks. Plain transparent background throughout. Keep original flat palette and pixel grid. No added lights, slash shapes, stars, smoke, projectiles, ground marks, dust, shards, motion blur, particles, shadows or scenery. All source equipment is retained; anatomy never multiplies.",
+      "first_frame_url": "https://api.pixellab.ai/mcp/images/1acb73dc-c9f2-421c-91ed-def1c0bc4d39/download?index=0",
+      "last_frame_url": "https://api.pixellab.ai/mcp/images/1acb73dc-c9f2-421c-91ed-def1c0bc4d39/download?index=0",
+      "frame_count": 8,
+      "subject_description": "Small green goblin scout with pointed ears, orange tunic, brown boots and one short steel sword.",
+      "initial_pose": "left-facing battle ready stance with both boots grounded and signature weapon held",
+      "direction": "west",
+      "view": "side",
+      "no_background": true,
+      "enhance_prompt": false,
+      "seed": 2026114111
+    },
+    "jobId": "b9c1d8ef-1860-427d-b65c-f0fd59f03e2e",
+    "response": "id: b9c1d8ef-1860-427d-b65c-f0fd59f03e2e\njob_id: b9c1d8ef-1860-427d-b65c-f0fd59f03e2e\ndescription: Slow weapon practice, body only. Facing LEFT at every moment: nose and eye continue pointing left. The sword hand draws the short blade from its low-left rest to above the LEFT shoulder, pauses, then moves the blade down-left in a compact diagonal arc IN FRONT of the face, then lowers it to rest. Back elbow moves behind torso without turning head. ONE gesture. Both boots anchored. Keep blade inside x2..29,y3..29 throughout. Draw only solid sword, hand and body, never broad arcs or speed streaks. Plain transparent background throughout. Keep original flat palette and pixel grid. No added lights, slash shapes, stars, smoke, projectiles, ground marks, dust, shards, motion blur, particles, shadows or scenery. All source equipment is retained; anatomy never multiplies.\nframes: 8\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 2026114111\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"b9c1d8ef-1860-427d-b65c-f0fd59f03e2e\")\nasset_id: 43be7e21-9694-545f-9d73-e424882f30cb\nasset_status: pending (saved to your gallery when generation completes)",
+    "replaces": "beba4f83-1010-4e07-9f90-a9b3ad3a9465"
+  },
+  {
+    "actor": "goblin_slinger",
+    "motion": "AttackRetry",
+    "request": {
+      "description": "Slow arm practice, body only. Facing LEFT at every moment. Draw the hand holding the SMALL FOLDED SLING beside the left shoulder, then extend that same hand left to point ahead of the nose at chest height, then retract and lower to original rest. The sling stays folded, short, and attached to the hand, no spinning wide loop overhead. Brown pouch fixed on hip, both boots anchored. Nothing leaves the hand, no floating stone. Keep every part within x3..28,y3..29. Plain transparent background throughout. Keep original flat palette and pixel grid. No added lights, slash shapes, stars, smoke, projectiles, ground marks, dust, shards, motion blur, particles, shadows or scenery. All source equipment is retained; anatomy never multiplies.",
+      "first_frame_url": "https://api.pixellab.ai/mcp/images/05be67d0-4efc-473b-a58d-c1317abb2105/download?index=0",
+      "last_frame_url": "https://api.pixellab.ai/mcp/images/05be67d0-4efc-473b-a58d-c1317abb2105/download?index=0",
+      "frame_count": 8,
+      "subject_description": "Small green goblin slinger in tan vest and red headband, brown stone pouch and short rope sling.",
+      "initial_pose": "left-facing battle ready stance with both boots grounded and signature weapon held",
+      "direction": "west",
+      "view": "side",
+      "no_background": true,
+      "enhance_prompt": false,
+      "seed": 2026114121
+    },
+    "jobId": "c7ed7809-1142-4848-96f4-fe6605ec16cc",
+    "response": "id: c7ed7809-1142-4848-96f4-fe6605ec16cc\njob_id: c7ed7809-1142-4848-96f4-fe6605ec16cc\ndescription: Slow arm practice, body only. Facing LEFT at every moment. Draw the hand holding the SMALL FOLDED SLING beside the left shoulder, then extend that same hand left to point ahead of the nose at chest height, then retract and lower to original rest. The sling stays folded, short, and attached to the hand, no spinning wide loop overhead. Brown pouch fixed on hip, both boots anchored. Nothing leaves the hand, no floating stone. Keep every part within x3..28,y3..29. Plain transparent background throughout. Keep original flat palette and pixel grid. No added lights, slash shapes, stars, smoke, projectiles, ground marks, dust, shards, motion blur, particles, shadows or scenery. All source equipment is retained; anatomy never multiplies.\nframes: 8\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 2026114121\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"c7ed7809-1142-4848-96f4-fe6605ec16cc\")\nasset_id: 5560b4b9-e3dc-5991-b9a3-93fcc9bfa23c\nasset_status: pending (saved to your gallery when generation completes)",
+    "replaces": "6119ae4f-cfcc-4041-8102-3313dd438ae5"
+  },
+  {
+    "actor": "forest_mushroom",
+    "motion": "AttackRetry",
+    "request": {
+      "description": "Body-only rooted gesture. The mushroom stays PLANTED on its two feet in the same spot at the bottom. Lower the wide cap2pixels by bending the stalk, stretch both attached root arms sideways slightly, then bring the arms down beside the body and return the cap to its initial height. One slow compressed-down then return cycle; never leap, rise or float. The two root feet always touch their original baseline. No change in cap design or proportions. Plain transparent background throughout. Keep original flat palette and pixel grid. No added lights, slash shapes, stars, smoke, projectiles, ground marks, dust, shards, motion blur, particles, shadows or scenery. All source equipment is retained; anatomy never multiplies.",
+      "first_frame_url": "https://api.pixellab.ai/mcp/images/ad641abd-a0e0-486c-b194-d31dfd1a6b88/download?index=0",
+      "last_frame_url": "https://api.pixellab.ai/mcp/images/ad641abd-a0e0-486c-b194-d31dfd1a6b88/download?index=0",
+      "frame_count": 8,
+      "subject_description": "Small cream-stalk mushroom with broad red cap, two cream spots, stubby root arms and feet.",
+      "initial_pose": "root feet planted, cap and stalk upright, facing left",
+      "direction": "west",
+      "view": "side",
+      "no_background": true,
+      "enhance_prompt": false,
+      "seed": 2026114131
+    },
+    "jobId": "354f7a7a-1d02-46a3-b3f5-fd5db1051553",
+    "response": "id: 354f7a7a-1d02-46a3-b3f5-fd5db1051553\njob_id: 354f7a7a-1d02-46a3-b3f5-fd5db1051553\ndescription: Body-only rooted gesture. The mushroom stays PLANTED on its two feet in the same spot at the bottom. Lower the wide cap2pixels by bending the stalk, stretch both attached root arms sideways slightly, then bring the arms down beside the body and return the cap to its initial height. One slow compressed-down then return cycle; never leap, rise or float. The two root feet always touch their original baseline. No change in cap design or proportions. Plain transparent background throughout. Keep original flat palette and pixel grid. No added lights, slash shapes, stars, smoke, projectiles, ground marks, dust, shards, motion blur, particles, shadows or scenery. All source equipment is retained; anatomy never multiplies.\nframes: 8\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 2026114131\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"354f7a7a-1d02-46a3-b3f5-fd5db1051553\")\nasset_id: 9a8fdc54-84bb-56ee-b87d-75b31b87c9de\nasset_status: pending (saved to your gallery when generation completes)",
+    "replaces": "acaedfe5-b56b-4597-8d7b-789b04b8e07b"
+  },
+  {
+    "actor": "spore_mushroom",
+    "motion": "AttackRetry",
+    "request": {
+      "description": "Body-only arm gesture. Tall mushroom remains facing LEFT and rooted at bottom. Bring the LEFT arm from the side to chest, extend the left forearm horizontally toward LEFT, then lower both arms. Cap stays at or below its starting height. One compact slow forward-point then return gesture. Nothing is thrown or released. Keep every existing anatomical part within the image. Both feet planted. No particles, dots, fire, cloud or flying objects. Plain transparent background throughout. Keep original flat palette and pixel grid. No added lights, slash shapes, stars, smoke, projectiles, ground marks, dust, shards, motion blur, particles, shadows or scenery. All source equipment is retained; anatomy never multiplies.",
+      "first_frame_url": "https://api.pixellab.ai/mcp/images/ad3a74bc-bc68-4121-8172-2057f79541fc/download?index=0",
+      "last_frame_url": "https://api.pixellab.ai/mcp/images/ad3a74bc-bc68-4121-8172-2057f79541fc/download?index=0",
+      "frame_count": 8,
+      "subject_description": "Tall thin cream mushroom with orange conical cap, one cream patch and root arms and feet.",
+      "initial_pose": "root feet planted, cap and stalk upright, facing left",
+      "direction": "west",
+      "view": "side",
+      "no_background": true,
+      "enhance_prompt": false,
+      "seed": 2026114171
+    },
+    "jobId": "5d27f9df-c92c-402e-af2a-5ff71256fb5a",
+    "response": "id: 5d27f9df-c92c-402e-af2a-5ff71256fb5a\njob_id: 5d27f9df-c92c-402e-af2a-5ff71256fb5a\ndescription: Body-only arm gesture. Tall mushroom remains facing LEFT and rooted at bottom. Bring the LEFT arm from the side to chest, extend the left forearm horizontally toward LEFT, then lower both arms. Cap stays at or below its starting height. One compact slow forward-point then return gesture. Nothing is thrown or released. Keep every existing anatomical part within the image. Both feet planted. No particles, dots, fire, cloud or flying objects. Plain transparent background throughout. Keep original flat palette and pixel grid. No added lights, slash shapes, stars, smoke, projectiles, ground marks, dust, shards, motion blur, particles, shadows or scenery. All source equipment is retained; anatomy never multiplies.\nframes: 8\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 2026114171\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"5d27f9df-c92c-402e-af2a-5ff71256fb5a\")\nasset_id: 23d4d0eb-49bc-51e4-ac7a-0c136e2090a9\nasset_status: pending (saved to your gallery when generation completes)",
+    "replaces": "6cffc862-6a3a-49d6-883d-cd66373c8d04"
+  },
+  {
+    "actor": "moss_mushroom",
+    "motion": "AttackRetry",
+    "request": {
+      "description": "Body-only rooted gesture. The broad green mushroom stays facing LEFT on its two stationary feet. Bend torso forward-left2pixels, lower the cap1pixel, extend the attached LEFT root fist in front of body by2pixels, then retract and straighten. Never lean or move right. One slow compact gesture. Full cap always inside x3..28. No jump, loose soil, roots, dust or disconnected dots. Plain transparent background throughout. Keep original flat palette and pixel grid. No added lights, slash shapes, stars, smoke, projectiles, ground marks, dust, shards, motion blur, particles, shadows or scenery. All source equipment is retained; anatomy never multiplies.",
+      "first_frame_url": "https://api.pixellab.ai/mcp/images/c03b5370-ef3d-4625-884e-fe11dd84b4ca/download?index=0",
+      "last_frame_url": "https://api.pixellab.ai/mcp/images/c03b5370-ef3d-4625-884e-fe11dd84b4ca/download?index=0",
+      "frame_count": 8,
+      "subject_description": "Broad squat tan mushroom with low green moss cap, two light moss patches and thick root feet.",
+      "initial_pose": "root feet planted, cap and stalk upright, facing left",
+      "direction": "west",
+      "view": "side",
+      "no_background": true,
+      "enhance_prompt": false,
+      "seed": 2026114181
+    },
+    "jobId": "4f34fd34-dcf5-4364-b318-40a0b3830ee2",
+    "response": "id: 4f34fd34-dcf5-4364-b318-40a0b3830ee2\njob_id: 4f34fd34-dcf5-4364-b318-40a0b3830ee2\ndescription: Body-only rooted gesture. The broad green mushroom stays facing LEFT on its two stationary feet. Bend torso forward-left2pixels, lower the cap1pixel, extend the attached LEFT root fist in front of body by2pixels, then retract and straighten. Never lean or move right. One slow compact gesture. Full cap always inside x3..28. No jump, loose soil, roots, dust or disconnected dots. Plain transparent background throughout. Keep original flat palette and pixel grid. No added lights, slash shapes, stars, smoke, projectiles, ground marks, dust, shards, motion blur, particles, shadows or scenery. All source equipment is retained; anatomy never multiplies.\nframes: 8\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 2026114181\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"4f34fd34-dcf5-4364-b318-40a0b3830ee2\")\nasset_id: 224d3cb0-3ea4-5a55-84b7-76d248f1b676\nasset_status: pending (saved to your gallery when generation completes)",
+    "replaces": "b2aac4da-1c57-4cfb-80f8-b695137ce1a0"
+  },
+  {
+    "actor": "goblin_guard",
+    "motion": "AttackRetry",
+    "request": {
+      "description": "Slow defensive arm gesture, BODY and EQUIPMENT ONLY. Keep nose and helmet facing LEFT, shield on the LEFT side in front of body throughout. Lower the sword in right/back hand near chest, then lift the same short sword diagonally UP-LEFT above the LEFT/front shoulder, then return behind the shield. One measured upward gesture, not a spin. Solid steel sword remains unchanged and attached to hand, no glow or streak. Both boots planted. Every pixel strictly inside canvas, swordtip y2 or lower. Plain transparent background throughout. Keep original flat palette and pixel grid. No added lights, slash shapes, stars, smoke, projectiles, ground marks, dust, shards, motion blur, particles, shadows or scenery. All source equipment is retained; anatomy never multiplies.",
+      "first_frame_url": "https://api.pixellab.ai/mcp/images/d923fb8d-2eee-44be-98b4-8e1d4d528a09/download?index=0",
+      "last_frame_url": "https://api.pixellab.ai/mcp/images/d923fb8d-2eee-44be-98b4-8e1d4d528a09/download?index=0",
+      "frame_count": 8,
+      "subject_description": "Green goblin guard with steel pot helmet, tall wooden shield bearing a cream square emblem and short steel sword.",
+      "initial_pose": "left-facing battle ready stance with both boots grounded and signature weapon held",
+      "direction": "west",
+      "view": "side",
+      "no_background": true,
+      "enhance_prompt": false,
+      "seed": 2026114191
+    },
+    "jobId": "e4856f0a-7f95-47c6-ba06-18e6df612502",
+    "response": "id: e4856f0a-7f95-47c6-ba06-18e6df612502\njob_id: e4856f0a-7f95-47c6-ba06-18e6df612502\ndescription: Slow defensive arm gesture, BODY and EQUIPMENT ONLY. Keep nose and helmet facing LEFT, shield on the LEFT side in front of body throughout. Lower the sword in right/back hand near chest, then lift the same short sword diagonally UP-LEFT above the LEFT/front shoulder, then return behind the shield. One measured upward gesture, not a spin. Solid steel sword remains unchanged and attached to hand, no glow or streak. Both boots planted. Every pixel strictly inside canvas, swordtip y2 or lower. Plain transparent background throughout. Keep original flat palette and pixel grid. No added lights, slash shapes, stars, smoke, projectiles, ground marks, dust, shards, motion blur, particles, shadows or scenery. All source equipment is retained; anatomy never multiplies.\nframes: 8\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 2026114191\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"e4856f0a-7f95-47c6-ba06-18e6df612502\")\nasset_id: 435c55ab-44e5-581e-9016-715b693c945c\nasset_status: pending (saved to your gallery when generation completes)",
+    "replaces": "bc25bb87-49c5-4667-a17b-d15ba6803d6d"
+  },
+  {
+    "actor": "gib",
+    "motion": "AttackRetry",
+    "request": {
+      "description": "Body-only guarded arm practice, strictly facing LEFT. The large wooden SHIELD remains on the LEFT, spear point always points LEFT. Slowly lower shoulders and bring shield toward chest by1pixel while retracting spear RIGHT, then extend spear hand LEFT to its ORIGINAL spearpoint position x1, stopping before canvas edge; return to ready. Keep huge shield, straight spear, feather helmet and green face unchanged. Do not switch spear point to right. One small leftward forearm extension followed by recovery, both feet anchored. Only solid equipment and body, no drawn impact or arc. Plain transparent background throughout. Keep original flat palette and pixel grid. No added lights, slash shapes, stars, smoke, projectiles, ground marks, dust, shards, motion blur, particles, shadows or scenery. All source equipment is retained; anatomy never multiplies.",
+      "first_frame_url": "https://api.pixellab.ai/mcp/images/5ec77f46-0d1d-414b-b767-72feb60bca20/download?index=0",
+      "last_frame_url": "https://api.pixellab.ai/mcp/images/5ec77f46-0d1d-414b-b767-72feb60bca20/download?index=0",
+      "frame_count": 8,
+      "subject_description": "Goblin captain Gible: green face, large steel helmet with orange feather, oversized rectangular wooden shield, short spear and brown boots.",
+      "initial_pose": "left-facing battle ready stance with both boots grounded and signature weapon held",
+      "direction": "west",
+      "view": "side",
+      "no_background": true,
+      "enhance_prompt": false,
+      "seed": 2026114201
+    },
+    "jobId": "09924bb9-7689-4b87-8060-8fdc3e617290",
+    "response": "id: 09924bb9-7689-4b87-8060-8fdc3e617290\njob_id: 09924bb9-7689-4b87-8060-8fdc3e617290\ndescription: Body-only guarded arm practice, strictly facing LEFT. The large wooden SHIELD remains on the LEFT, spear point always points LEFT. Slowly lower shoulders and bring shield toward chest by1pixel while retracting spear RIGHT, then extend spear hand LEFT to its ORIGINAL spearpoint position x1, stopping before canvas edge; return to ready. Keep huge shield, straight spear, feather helmet and green face unchanged. Do not switch spear point to right. One small leftward forearm extension followed by recovery, both feet anchored. Only solid equipment and body, no drawn impact or arc. Plain transparent background throughout. Keep original flat palette and pixel grid. No added lights, slash shapes, stars, smoke, projectiles, ground marks, dust, shards, motion blur, particles, shadows or scenery. All source equipment is retained; anatomy never multiplies.\nframes: 8\nsize: 48x48px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 2026114201\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"09924bb9-7689-4b87-8060-8fdc3e617290\")\nasset_id: 859c3bfd-afb7-59d5-944f-28a291dda532\nasset_status: pending (saved to your gallery when generation completes)",
+    "replaces": "62d0a6d9-cf25-4225-863d-73f4ef8e5791"
+  }
+]

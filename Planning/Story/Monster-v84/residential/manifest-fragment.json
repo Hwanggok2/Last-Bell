@@ -1,0 +1,1462 @@
+{
+  "version": "v84",
+  "status": "reviewed-source-fragment-not-yet-Unity-imported",
+  "ownership": "Root integration copies sources and merges actors; preserve all unrelated actors and stage10/20 bosses.",
+  "textures": [
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/idle.png",
+      "source": "Planning/Story/Monster-v84/residential/prepared/sewer_rat.png",
+      "sha256": "11b39a2a211297074f3a54c188f9be8813027d2ae0143bf6cdc7b659d1f93ae8",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 65
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/attack/00.png",
+      "source": "Planning/Story/Monster-v84/residential/sewer_rat/attack-palette/00.png",
+      "sha256": "6b3ad0c1c1c687bc0e342e64201609fab370073e6ce9f1672d877b07f82b259a",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 65
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/attack/01.png",
+      "source": "Planning/Story/Monster-v84/residential/sewer_rat/attack-palette/01.png",
+      "sha256": "7ec88334c831c61a56bc20f5d517544e42f75664133386e1a84d15965550b22e",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 65
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/attack/02.png",
+      "source": "Planning/Story/Monster-v84/residential/sewer_rat/attack-palette/02.png",
+      "sha256": "7f37385e566579f53c216dc6e55a2dd82667192287aa4a6f37c6bba1fffbefe3",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 65
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/attack/03.png",
+      "source": "Planning/Story/Monster-v84/residential/sewer_rat/attack-palette/03.png",
+      "sha256": "cf6fd46cbc1eee5252eee9f410422113eae8f615bf4cc1ba16023e806569cf82",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 65
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/attack/04.png",
+      "source": "Planning/Story/Monster-v84/residential/sewer_rat/attack-palette/04.png",
+      "sha256": "0385c1c7eee73d87a95339427e0234b564eb3f1405588490e18a235d2e617100",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 65
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/attack/05.png",
+      "source": "Planning/Story/Monster-v84/residential/sewer_rat/attack-palette/05.png",
+      "sha256": "9f9c7f7775eb61c6b147034b7c76b328530589fe502b83a52f8dfe702f7b143d",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 65
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/attack/06.png",
+      "source": "Planning/Story/Monster-v84/residential/sewer_rat/attack-palette/06.png",
+      "sha256": "256d9636b7bf0a639aaf925a0de8ce2fad9dc237143017c5bc1fa049a5cd1872",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 65
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/attack/08.png",
+      "source": "Planning/Story/Monster-v84/residential/sewer_rat/attack-palette/08.png",
+      "sha256": "60c52b79f1ce3682040a12083655449d04609996d13268c3252f9ba857295ace",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 65
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/attack/09.png",
+      "source": "Planning/Story/Monster-v84/residential/sewer_rat/attack-palette/09.png",
+      "sha256": "63351954d693ff6c99c3a628ddc43f29aadeee27166dd68fe3ae171285e024ab",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 65
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/attack/10.png",
+      "source": "Planning/Story/Monster-v84/residential/sewer_rat/attack-palette/10.png",
+      "sha256": "3e73813330f17fd571ae7779dd158d7aea6c3255c4ca8f897ee6912f4bf59ccb",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 65
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/attack/11.png",
+      "source": "Planning/Story/Monster-v84/residential/sewer_rat/attack-palette/11.png",
+      "sha256": "08ffb1c2a7cb1333a50a1d4f958806a18c411c762b0a273c0668e6d311c991e8",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 65
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/attack/12.png",
+      "source": "Planning/Story/Monster-v84/residential/sewer_rat/attack-palette/12.png",
+      "sha256": "43255118453c259d517034630b16ac6de38cc31416da0f1ea61bc9cb20d85f84",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 65
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/attack/13.png",
+      "source": "Planning/Story/Monster-v84/residential/sewer_rat/attack-palette/13.png",
+      "sha256": "ef9bddc13feaa9ac8a041b53420a2c5d97201eb7a13488c341a29b5798d7957e",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 65
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/attack/14.png",
+      "source": "Planning/Story/Monster-v84/residential/sewer_rat/attack-palette/14.png",
+      "sha256": "0717f7d354d24c712c456de30cd53ee02bfd0de0a0cda58ba19eb171f5c8d6a4",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 65
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/attack/15.png",
+      "source": "Planning/Story/Monster-v84/residential/sewer_rat/attack-palette/15.png",
+      "sha256": "d31d0bc24f8bdc10b50327c22482b7cf236e777741aebcaab58cd53068992ac7",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 65
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/attack/16.png",
+      "source": "Planning/Story/Monster-v84/residential/sewer_rat/attack-palette/16.png",
+      "sha256": "7743298d100330d3b6a5eefc41e71aa7324099fa10244bc9d03a8517b09ef812",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 65
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/stun/00.png",
+      "source": "Planning/Story/Monster-v84/residential/sewer_rat/stun-palette/00.png",
+      "sha256": "6a3a21f8647f5f6b4b897a5958bfead749cc12de85831da3439c0e331278a7c3",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 65
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/stun/01.png",
+      "source": "Planning/Story/Monster-v84/residential/sewer_rat/stun-palette/01.png",
+      "sha256": "ff7cfdd7ec0c50fb1203baeefa20ec1fc3c5a3010ac1baa663d574fec2711f29",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 65
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/stun/02.png",
+      "source": "Planning/Story/Monster-v84/residential/sewer_rat/stun-palette/02.png",
+      "sha256": "6302abbdf7752780e7107290261706370913082cedad7400c9033a08fb39e609",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 65
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/stun/03.png",
+      "source": "Planning/Story/Monster-v84/residential/sewer_rat/stun-palette/03.png",
+      "sha256": "6c25fedfdf8d97f3743635da6d043ea69e0b05db0ff7cfcab7952a4e52e3cebc",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 65
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/stun/04.png",
+      "source": "Planning/Story/Monster-v84/residential/sewer_rat/stun-palette/04.png",
+      "sha256": "bb9441274068af19a2bb4eb015ff11aa0a6bf6d958a3d19642873e53f15c3c5f",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 65
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/stun/05.png",
+      "source": "Planning/Story/Monster-v84/residential/sewer_rat/stun-palette/05.png",
+      "sha256": "8bbb1a91b5b22a9a1de13a954dbbd10521167bc39ee9fca8f7e476133433f4a4",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 65
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/stun/06.png",
+      "source": "Planning/Story/Monster-v84/residential/sewer_rat/stun-palette/06.png",
+      "sha256": "7b68265a3d924b34e720db8c592b9c5f0aee184b7cef1b0e79cc1651a6f77a27",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 65
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/stun/07.png",
+      "source": "Planning/Story/Monster-v84/residential/sewer_rat/stun-palette/07.png",
+      "sha256": "7b68265a3d924b34e720db8c592b9c5f0aee184b7cef1b0e79cc1651a6f77a27",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 65
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/stun/08.png",
+      "source": "Planning/Story/Monster-v84/residential/sewer_rat/stun-palette/08.png",
+      "sha256": "a7416868ddffa0d4dcd0ed7dd84cd13c88619ec08591550961d73562f06bf6a4",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 65
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/idle.png",
+      "source": "Planning/Story/Monster-v84/residential/prepared/drowned_resident.png",
+      "sha256": "e7eacb781190f356652789ab1ff29d478dfecd0b423d29a55d4a229e9bb76ee0",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 73
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/attack/00.png",
+      "source": "Planning/Story/Monster-v84/residential/drowned_resident/attack-palette/00.png",
+      "sha256": "eea545c8b1e7d086f010dff8a5ca008ae76904d2ea80d06c8cb3dce91b927617",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 73
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/attack/01.png",
+      "source": "Planning/Story/Monster-v84/residential/drowned_resident/attack-palette/01.png",
+      "sha256": "96511b59f74a4d602badb761220d82de03bad7aebc4bf262f74a55ba9d020ec0",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 73
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/attack/02.png",
+      "source": "Planning/Story/Monster-v84/residential/drowned_resident/attack-palette/02.png",
+      "sha256": "b25fcc06e9757e1f7223e1b84fb122e3f8fef1a6ffc68aca07e0529a46e386f0",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 73
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/attack/03.png",
+      "source": "Planning/Story/Monster-v84/residential/drowned_resident/attack-palette/03.png",
+      "sha256": "d5a0bef0337a26af57e472a1272994b8b93982c9c53a07606cb69b8390f3f2a5",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 73
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/attack/04.png",
+      "source": "Planning/Story/Monster-v84/residential/drowned_resident/attack-palette/04.png",
+      "sha256": "bfb35a132264072b8853a80b17745953d5851b5a56b9d63ccf59ba96331bcd55",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 73
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/attack/05.png",
+      "source": "Planning/Story/Monster-v84/residential/drowned_resident/attack-palette/05.png",
+      "sha256": "acd8c03e16ee594df184c9196e0e99903fb585e1cdb3c89e649ae71d76f3134c",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 73
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/attack/06.png",
+      "source": "Planning/Story/Monster-v84/residential/drowned_resident/attack-palette/06.png",
+      "sha256": "ce398489e73d0daffe835684c2333e7bed02d03c0cba7e66c4b9e4935cbcc413",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 73
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/attack/07.png",
+      "source": "Planning/Story/Monster-v84/residential/drowned_resident/attack-palette/07.png",
+      "sha256": "7dec33e4ec4cc1967c77ddc4832c2c423d558561ae4b97ad19e4fbb6ab5010b8",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 73
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/attack/08.png",
+      "source": "Planning/Story/Monster-v84/residential/drowned_resident/attack-palette/08.png",
+      "sha256": "14f04f238d0afdae5f918373a8f535aad537936e774aef2b635a08ce8667df8b",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 73
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/attack/09.png",
+      "source": "Planning/Story/Monster-v84/residential/drowned_resident/attack-palette/09.png",
+      "sha256": "3062c46799926139de63b76e019ef5b579e7a5a6359a2ddc8af4c095dbe20cbe",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 73
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/attack/10.png",
+      "source": "Planning/Story/Monster-v84/residential/drowned_resident/attack-palette/10.png",
+      "sha256": "66bc888924ee835b6c9c12baf4c342e7e830b49bd0430f3fe027237b7d2e4671",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 73
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/attack/11.png",
+      "source": "Planning/Story/Monster-v84/residential/drowned_resident/attack-palette/11.png",
+      "sha256": "e8e7d66a51e5357c212ce7a3de95eab60cbb051bdf634b1b3a92bf4659719b95",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 73
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/attack/12.png",
+      "source": "Planning/Story/Monster-v84/residential/drowned_resident/attack-palette/12.png",
+      "sha256": "81d11570b22575ca0b0f502a78d3f2bcb2571698a0c2ab41f4b2bfa21d6b69e8",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 73
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/attack/13.png",
+      "source": "Planning/Story/Monster-v84/residential/drowned_resident/attack-palette/13.png",
+      "sha256": "34606695e4be252bbc1cec629c391be7142089173ece4f06ffc2d0bd80427fdb",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 73
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/attack/14.png",
+      "source": "Planning/Story/Monster-v84/residential/drowned_resident/attack-palette/14.png",
+      "sha256": "7396e1b11eea58bf2b9dad7ddedf9016be8b7febb948c86c57e3b96f371d7ca1",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 73
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/attack/15.png",
+      "source": "Planning/Story/Monster-v84/residential/drowned_resident/attack-palette/15.png",
+      "sha256": "e3aa8c0c7aa394e79c722b0248d5582b152995df941c0f600498433b21d485af",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 73
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/attack/16.png",
+      "source": "Planning/Story/Monster-v84/residential/drowned_resident/attack-palette/16.png",
+      "sha256": "6f8251a7b02267d29bcdd9ba4c83ee8daccc694f71a5bc8fca12c25db8d1e033",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 73
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/stun/00.png",
+      "source": "Planning/Story/Monster-v84/residential/drowned_resident/stun-palette/00.png",
+      "sha256": "97e9892acc93a23c3c2d65024e099dc2426448db7f1aa3479da95ca431c38df9",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 73
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/stun/01.png",
+      "source": "Planning/Story/Monster-v84/residential/drowned_resident/stun-palette/01.png",
+      "sha256": "23cfffeb2014ca247c0ea6f2332663193907c30e10fa30bf38a1a21fbe1f3156",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 73
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/stun/02.png",
+      "source": "Planning/Story/Monster-v84/residential/drowned_resident/stun-palette/02.png",
+      "sha256": "fe2ccbddaf5656eb5b1cd71baa83190a17dc9f54e55bde9cc170304abc706fb4",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 73
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/stun/03.png",
+      "source": "Planning/Story/Monster-v84/residential/drowned_resident/stun-palette/03.png",
+      "sha256": "ecfb896748d02cf83dceb2610dbcaca63cd1345ab59f66abb1e33492ae15b8d5",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 73
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/stun/04.png",
+      "source": "Planning/Story/Monster-v84/residential/drowned_resident/stun-palette/04.png",
+      "sha256": "a5dfe4243a881bffff577ff68faad683e0ba425179f642804e5ec64ee868146a",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 73
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/stun/05.png",
+      "source": "Planning/Story/Monster-v84/residential/drowned_resident/stun-palette/05.png",
+      "sha256": "99fef1a9ca91612d5f1783578e29dd9aed15f2ed4c1d15c83b520ee57eed3549",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 73
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/stun/06.png",
+      "source": "Planning/Story/Monster-v84/residential/drowned_resident/stun-palette/06.png",
+      "sha256": "de46299b489b32a65f4e837f8395c7aeda777dddee8c3f5e67a704ef2673b7ac",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 73
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/stun/07.png",
+      "source": "Planning/Story/Monster-v84/residential/drowned_resident/stun-palette/07.png",
+      "sha256": "5a3c4935585bf0a116167c74c399c0d9445b6688f194155ff86fc21c1f7c4caf",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 73
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/stun/08.png",
+      "source": "Planning/Story/Monster-v84/residential/drowned_resident/stun-palette/08.png",
+      "sha256": "cfcce97c00b7c8f58156c731ad800a0949ff60b2903239e66fd590923ab2a864",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 73
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/idle.png",
+      "source": "Planning/Story/Monster-v84/residential/prepared/water_wraith.png",
+      "sha256": "2464c0b5bec8de4a7e662b644f214296915cf6a175b04d6cbb1d69621007d608",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 78
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/attack/00.png",
+      "source": "Planning/Story/Monster-v84/residential/water_wraith/attack-palette/00.png",
+      "sha256": "bd57748631ff739fac77e086ec1fec8197876fc8b2112e247f876fc2cea2f9c5",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 78
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/attack/01.png",
+      "source": "Planning/Story/Monster-v84/residential/water_wraith/attack-palette/01.png",
+      "sha256": "8e0e5c8069295e23a6c1840d0abeae3c367f709066804318581f7ffec54a4969",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 78
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/attack/02.png",
+      "source": "Planning/Story/Monster-v84/residential/water_wraith/attack-palette/02.png",
+      "sha256": "d2fa57ea6417f42009c9dd92055a3c635b5c66957fc76b4371d5a3a7533174cd",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 78
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/attack/03.png",
+      "source": "Planning/Story/Monster-v84/residential/water_wraith/attack-palette/03.png",
+      "sha256": "dba5ec29dc47db21f77ab0dd037a7c0271d1b82aa2552b88799cd8346ac91972",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 78
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/attack/04.png",
+      "source": "Planning/Story/Monster-v84/residential/water_wraith/attack-palette/04.png",
+      "sha256": "b003ea5f8359fdda32395c9048ff2e7474386e3c156953865d7caef89664b076",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 78
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/attack/05.png",
+      "source": "Planning/Story/Monster-v84/residential/water_wraith/attack-palette/05.png",
+      "sha256": "a3ee1f4257fa49900e6b61d187a9bd1effc7d43d4bd52907cc26650b48d4c644",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 78
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/attack/06.png",
+      "source": "Planning/Story/Monster-v84/residential/water_wraith/attack-palette/06.png",
+      "sha256": "ae60c1bdd029bcca90c05325bcb214544d0f877f62f0f3782d6573013f03bb39",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 78
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/attack/07.png",
+      "source": "Planning/Story/Monster-v84/residential/water_wraith/attack-palette/07.png",
+      "sha256": "5003e23e5c83bf7e8efd158353b2ba464f5e1ab2552f0a4d82adfa6368e1fcd8",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 78
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/attack/08.png",
+      "source": "Planning/Story/Monster-v84/residential/water_wraith/attack-palette/08.png",
+      "sha256": "4efa49df97790a690175c997b75f79eab3d53354a26e74bd93d771d819d19db0",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 78
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/attack/09.png",
+      "source": "Planning/Story/Monster-v84/residential/water_wraith/attack-palette/09.png",
+      "sha256": "5aa1af3dbe4571655139f60646b11e6cc9c8a0cb1217331deefb1bbcf76676e6",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 78
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/attack/10.png",
+      "source": "Planning/Story/Monster-v84/residential/water_wraith/attack-palette/10.png",
+      "sha256": "cce97576f7807bebff2c910054bc5775be2adc2755cb2500df3acaefea1bd2ab",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 78
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/attack/11.png",
+      "source": "Planning/Story/Monster-v84/residential/water_wraith/attack-palette/11.png",
+      "sha256": "84b8773729b70d5cd9ae98deb599df773fd34152eb8894bd6ad0cd6279398e59",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 78
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/attack/12.png",
+      "source": "Planning/Story/Monster-v84/residential/water_wraith/attack-palette/12.png",
+      "sha256": "e205b0786fdf78c259f7ce5dc4f18a71fdc7abb32d43df7de72e74e2583baa46",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 78
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/attack/13.png",
+      "source": "Planning/Story/Monster-v84/residential/water_wraith/attack-palette/13.png",
+      "sha256": "acaf98c4d8463e9555e02bedcd65cdeb1d67f7ff0041b247e304d6f7958f2ff9",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 78
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/attack/14.png",
+      "source": "Planning/Story/Monster-v84/residential/water_wraith/attack-palette/14.png",
+      "sha256": "b14beddf623cd9622be98b337fc79bf617f609f32f7c33eb139a3025a68cb442",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 78
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/attack/15.png",
+      "source": "Planning/Story/Monster-v84/residential/water_wraith/attack-palette/15.png",
+      "sha256": "50d85611217193b5b681a4ab112c132a2857ce36d0a88869a5336ac7d5ae4579",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 78
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/attack/16.png",
+      "source": "Planning/Story/Monster-v84/residential/water_wraith/attack-palette/16.png",
+      "sha256": "a1c83ab7f9d9ea471c5fca97adbdaae689c31f85eb25ae4fc09aa4b9d39c1b9e",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 78
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/stun/00.png",
+      "source": "Planning/Story/Monster-v84/residential/water_wraith/stun-palette/00.png",
+      "sha256": "5cd467f85bbcf2c13f370098982b0ac455750d0a2767083522670f32b2c4ab09",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 78
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/stun/01.png",
+      "source": "Planning/Story/Monster-v84/residential/water_wraith/stun-palette/01.png",
+      "sha256": "2be22bc51f8bdc440aecf7f48ad392700079a16dd4896a2e59933ae5af0e0ccb",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 78
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/stun/02.png",
+      "source": "Planning/Story/Monster-v84/residential/water_wraith/stun-palette/02.png",
+      "sha256": "beca5a9fdf62ce54a036d4c0c8f44d6bbabcb89150a390e83affa2ed26ee91e9",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 78
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/stun/03.png",
+      "source": "Planning/Story/Monster-v84/residential/water_wraith/stun-palette/03.png",
+      "sha256": "36b38f23766e4dae8f1e961644b80162478a5a8e4edc83decb55b830d94f437d",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 78
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/stun/04.png",
+      "source": "Planning/Story/Monster-v84/residential/water_wraith/stun-palette/04.png",
+      "sha256": "2e709bf1d92b1d14c33bce08b7edd68b87957f89693f5c49c9fe36bb9f48428f",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 78
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/stun/05.png",
+      "source": "Planning/Story/Monster-v84/residential/water_wraith/stun-palette/05.png",
+      "sha256": "277decc29ab8e9a49a27f595c37dd3678e3aa67799426d491683cee32c17f708",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 78
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/stun/06.png",
+      "source": "Planning/Story/Monster-v84/residential/water_wraith/stun-palette/06.png",
+      "sha256": "ed0b70c96ba3950630be285e71f7ced2b73d9ffb0639ea5f7b177a7d3b42fda2",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 78
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/stun/07.png",
+      "source": "Planning/Story/Monster-v84/residential/water_wraith/stun-palette/07.png",
+      "sha256": "1ff41cb992d46b202e825a1696d098afbd99f9d8f206c717d853b004a56ec7a1",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 78
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/stun/08.png",
+      "source": "Planning/Story/Monster-v84/residential/water_wraith/stun-palette/08.png",
+      "sha256": "effa2ece7a5a9c45065ba75b9854c2d60b04ea006cc12a1423f522018a0678b0",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 78
+      }
+    }
+  ],
+  "actors": [
+    {
+      "id": "sewer_rat",
+      "facesRight": false,
+      "height": 0.8,
+      "referenceHeightPixels": 30,
+      "clips": [
+        {
+          "motion": "Idle",
+          "sourceId": "v84-sewer_rat-idle",
+          "sourceJob": "31f568ba-15cf-4b16-8348-86f7396cd09f",
+          "note": "Native64 pixel clusters preserved on a padded128x96 transparent canvas. Reviewed selected PixelLab frames. Static Idle and shared white-flash Hit; no Death clip.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/idle.png"
+          ],
+          "sourceFrames": [
+            0
+          ],
+          "frameDurationsMs": [
+            1000
+          ],
+          "fps": 25,
+          "loop": true,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 37,
+            "y": 47.0
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Hit",
+          "sourceId": "v84-sewer_rat-hit",
+          "sourceJob": "31f568ba-15cf-4b16-8348-86f7396cd09f",
+          "note": "Native64 pixel clusters preserved on a padded128x96 transparent canvas. Reviewed selected PixelLab frames. Static Idle and shared white-flash Hit; no Death clip.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/idle.png"
+          ],
+          "sourceFrames": [
+            0
+          ],
+          "frameDurationsMs": [
+            120
+          ],
+          "fps": 25,
+          "loop": false,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 37,
+            "y": 47.0
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Attack",
+          "sourceId": "v84-sewer_rat-attack",
+          "sourceJob": "91c19736-7da1-45f8-bf9c-fbbe92302333",
+          "note": "Native64 pixel clusters preserved on a padded128x96 transparent canvas. Reviewed selected PixelLab frames. Static Idle and shared white-flash Hit; no Death clip.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/attack/00.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/attack/01.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/attack/02.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/attack/03.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/attack/04.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/attack/05.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/attack/06.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/attack/08.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/attack/09.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/attack/10.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/attack/11.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/attack/12.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/attack/13.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/attack/14.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/attack/15.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/attack/16.png"
+          ],
+          "sourceFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "frameDurationsMs": [
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            80,
+            60,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40
+          ],
+          "fps": 25,
+          "loop": false,
+          "contactFrame": 7,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 27,
+            "y": 46
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Stun",
+          "sourceId": "v84-sewer_rat-stun",
+          "sourceJob": "5dbb4d7a-7ad0-48af-b893-3314063b4f94",
+          "note": "Native64 pixel clusters preserved on a padded128x96 transparent canvas. Reviewed selected PixelLab frames. Static Idle and shared white-flash Hit; no Death clip.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/stun/00.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/stun/01.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/stun/02.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/stun/03.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/stun/04.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/stun/05.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/stun/06.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/stun/07.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/sewer_rat/stun/08.png"
+          ],
+          "sourceFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "frameDurationsMs": [
+            90,
+            90,
+            110,
+            120,
+            140,
+            120,
+            110,
+            90,
+            90
+          ],
+          "fps": 25,
+          "loop": true,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 37,
+            "y": 47.0
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        }
+      ]
+    },
+    {
+      "id": "drowned_resident",
+      "facesRight": false,
+      "height": 1.6,
+      "referenceHeightPixels": 45,
+      "clips": [
+        {
+          "motion": "Idle",
+          "sourceId": "v84-drowned_resident-idle",
+          "sourceJob": "59dbf7af-8f9f-4c1c-b0a3-8de89bf0e02d",
+          "note": "Native64 pixel clusters preserved on a padded128x96 transparent canvas. Reviewed selected PixelLab frames. Static Idle and shared white-flash Hit; no Death clip.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/idle.png"
+          ],
+          "sourceFrames": [
+            0
+          ],
+          "frameDurationsMs": [
+            1000
+          ],
+          "fps": 25,
+          "loop": true,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 44,
+            "y": 46.0
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Hit",
+          "sourceId": "v84-drowned_resident-hit",
+          "sourceJob": "59dbf7af-8f9f-4c1c-b0a3-8de89bf0e02d",
+          "note": "Native64 pixel clusters preserved on a padded128x96 transparent canvas. Reviewed selected PixelLab frames. Static Idle and shared white-flash Hit; no Death clip.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/idle.png"
+          ],
+          "sourceFrames": [
+            0
+          ],
+          "frameDurationsMs": [
+            120
+          ],
+          "fps": 25,
+          "loop": false,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 44,
+            "y": 46.0
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Attack",
+          "sourceId": "v84-drowned_resident-attack",
+          "sourceJob": "c21ae099-ffaa-4ba8-a176-7b273b99c861",
+          "note": "Native64 pixel clusters preserved on a padded128x96 transparent canvas. Reviewed selected PixelLab frames. Static Idle and shared white-flash Hit; no Death clip.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/attack/00.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/attack/01.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/attack/02.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/attack/03.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/attack/04.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/attack/05.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/attack/06.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/attack/07.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/attack/08.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/attack/09.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/attack/10.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/attack/11.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/attack/12.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/attack/13.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/attack/14.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/attack/15.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/attack/16.png"
+          ],
+          "sourceFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "frameDurationsMs": [
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            60,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40
+          ],
+          "fps": 25,
+          "loop": false,
+          "contactFrame": 8,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 27,
+            "y": 72
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Stun",
+          "sourceId": "v84-drowned_resident-stun",
+          "sourceJob": "0fef3d8d-bf2b-4408-b7b9-e4fd7d1768c6",
+          "note": "Native64 pixel clusters preserved on a padded128x96 transparent canvas. Reviewed selected PixelLab frames. Static Idle and shared white-flash Hit; no Death clip.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/stun/00.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/stun/01.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/stun/02.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/stun/03.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/stun/04.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/stun/05.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/stun/06.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/stun/07.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/drowned_resident/stun/08.png"
+          ],
+          "sourceFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "frameDurationsMs": [
+            90,
+            90,
+            110,
+            120,
+            140,
+            120,
+            110,
+            90,
+            90
+          ],
+          "fps": 25,
+          "loop": true,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 44,
+            "y": 46.0
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        }
+      ]
+    },
+    {
+      "id": "water_wraith",
+      "facesRight": false,
+      "height": 1.8,
+      "referenceHeightPixels": 59,
+      "clips": [
+        {
+          "motion": "Idle",
+          "sourceId": "v84-water_wraith-idle",
+          "sourceJob": "a3d663ab-8fa5-4c5b-aa16-1e1aeaa398d4",
+          "note": "Native64 pixel clusters preserved on a padded128x96 transparent canvas. Reviewed selected PixelLab frames. Static Idle and shared white-flash Hit; no Death clip.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/idle.png"
+          ],
+          "sourceFrames": [
+            0
+          ],
+          "frameDurationsMs": [
+            1000
+          ],
+          "fps": 25,
+          "loop": true,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 44,
+            "y": 42.6
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Hit",
+          "sourceId": "v84-water_wraith-hit",
+          "sourceJob": "a3d663ab-8fa5-4c5b-aa16-1e1aeaa398d4",
+          "note": "Native64 pixel clusters preserved on a padded128x96 transparent canvas. Reviewed selected PixelLab frames. Static Idle and shared white-flash Hit; no Death clip.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/idle.png"
+          ],
+          "sourceFrames": [
+            0
+          ],
+          "frameDurationsMs": [
+            120
+          ],
+          "fps": 25,
+          "loop": false,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 44,
+            "y": 42.6
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Attack",
+          "sourceId": "v84-water_wraith-attack",
+          "sourceJob": "7ee6f420-1181-487f-a228-292617a0e6aa",
+          "note": "Native64 pixel clusters preserved on a padded128x96 transparent canvas. Reviewed selected PixelLab frames. Static Idle and shared white-flash Hit; no Death clip.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/attack/00.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/attack/01.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/attack/02.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/attack/03.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/attack/04.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/attack/05.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/attack/06.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/attack/07.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/attack/08.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/attack/09.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/attack/10.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/attack/11.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/attack/12.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/attack/13.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/attack/14.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/attack/15.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/attack/16.png"
+          ],
+          "sourceFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "frameDurationsMs": [
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            60,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40,
+            40
+          ],
+          "fps": 25,
+          "loop": false,
+          "contactFrame": 7,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 23,
+            "y": 34
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Stun",
+          "sourceId": "v84-water_wraith-stun",
+          "sourceJob": "2d79f535-0e83-4697-8868-74fd695407e6",
+          "note": "Native64 pixel clusters preserved on a padded128x96 transparent canvas. Reviewed selected PixelLab frames. Static Idle and shared white-flash Hit; no Death clip.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/stun/00.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/stun/01.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/stun/02.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/stun/03.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/stun/04.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/stun/05.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/stun/06.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/stun/07.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v84/water_wraith/stun/08.png"
+          ],
+          "sourceFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "frameDurationsMs": [
+            90,
+            90,
+            110,
+            120,
+            140,
+            120,
+            110,
+            90,
+            90
+          ],
+          "fps": 25,
+          "loop": true,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 44,
+            "y": 42.6
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        }
+      ]
+    }
+  ]
+}

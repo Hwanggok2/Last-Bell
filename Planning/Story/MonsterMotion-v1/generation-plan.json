@@ -1,0 +1,572 @@
+{
+  "method": "PixelLab animate_image",
+  "sourcePreparation": "image_gen transparent starting strips, deterministic atlas slicing to 128x128",
+  "basePrompts": [
+    {
+      "key": "gate",
+      "file": "gate-road-v4-game-style.png",
+      "prompt": "Prepare the five APPROVED monster identities from the TOP ROW of the reference sheet as clean production starting sprites. Preserve the exact approved silhouettes, weapons, cream/gold/navy chunky pixel style and recognizable faces. This is extraction/redrawing to isolated starting poses, NOT a redesign. Remove all numbers, all lettering, the entire lower action row, and all background. Genuinely transparent canvas. Output a wide 1536x512 strip of EXACTLY FIVE evenly spaced isolated full-body sprites in one row, one per equal-width cell, all facing LEFT toward the player. Every weapon tip, foot, tail, and suspension chain fits inside its own cell with 24px transparent clearance; no inter-cell overlap. All soles/end of hovering robes share the same baseline around y=450. Each body uses large flat cream-lit planes, gold blocks and dark navy shadows, deliberate chunky square pixel edges, NO added surface detail, gradients, glows or shadows outside the silhouette. The largest enemy remains the final column. Give each figure a simple neutral ready stance appropriate for animating. Left to right: empty spear gate sentry; bell-clapper mechanical hound; cracked sword knight; squat barricade crossbar golem; tall bell-crowned gate guardian with barred shield and halberd. Preserve the marked height/shape differences."
+    },
+    {
+      "key": "housing",
+      "file": "chain-quarter-v4-game-style.png",
+      "prompt": "Prepare the five APPROVED monster identities from the TOP ROW of the reference sheet as clean production starting sprites. Preserve the exact approved silhouettes, weapons, cream/gold/navy chunky pixel style and recognizable faces. This is extraction/redrawing to isolated starting poses, NOT a redesign. Remove all numbers, all lettering, the entire lower action row, and all background. Genuinely transparent canvas. Output a wide 1536x512 strip of EXACTLY FIVE evenly spaced isolated full-body sprites in one row, one per equal-width cell, all facing LEFT toward the player. Every weapon tip, foot, tail, and suspension chain fits inside its own cell with 24px transparent clearance; no inter-cell overlap. All soles/end of hovering robes share the same baseline around y=450. Each body uses large flat cream-lit planes, gold blocks and dark navy shadows, deliberate chunky square pixel edges, NO added surface detail, gradients, glows or shadows outside the silhouette. The largest enemy remains the final column. Give each figure a simple neutral ready stance appropriate for animating. Left to right: address plaque chain puppet; pipe-bodied drain hook hound; key-chain dancer; floodgate pendulum warden; hanging jailer. The puppet has two or three large plaques, dancer has 3–4 large keys, jailer keeps the two short hanging chain attachments."
+    }
+  ],
+  "jobs": [
+    {
+      "id": "gate_sentry",
+      "motion": "Idle",
+      "frameCount": 4,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. empty armored spear sentry with one key tag and long spear. Subtle seamless idle loop. Knees or suspension relax and tense slightly; one small torso and head breath; held weapon, tail or chain lags gently. Feet or hanging anchor stay fixed. No attack, no big jump.",
+      "loop": true,
+      "lastFrame": true
+    },
+    {
+      "id": "gate_sentry",
+      "motion": "Hit",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. empty armored spear sentry with one key tag and long spear. ONE clear hit reaction to a blow from the LEFT. Torso snaps backward once, head follows, knees compress and held equipment lags. Maximum recoil in first quarter, then recover to original stance. Do not attack, no color flash.",
+      "loop": false,
+      "lastFrame": true
+    },
+    {
+      "id": "gate_sentry",
+      "motion": "Stun",
+      "frameCount": 4,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. empty armored spear sentry with one key tag and long spear. Seamless stunned loop. Slumped chest and bowed head sway weakly, knees stay bent; weapon or chain hangs heavy and trembles slightly. Feet or suspension anchor stay fixed. No attack and no falling off screen.",
+      "loop": true,
+      "lastFrame": false
+    },
+    {
+      "id": "gate_sentry",
+      "motion": "Death",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. empty armored spear sentry with one key tag and long spear. ONE defeat motion. Buckle, lose balance and collapse onto the floor or lower the hanging body limp into final collapsed pose. Weapon rests with body. End motionless, do not stand up. Keep all pieces connected or close to fallen body. No particles, no fade, no gore.",
+      "loop": false,
+      "lastFrame": false
+    },
+    {
+      "id": "gate_sentry",
+      "motion": "AttackLow",
+      "attackType": "low",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. empty armored spear sentry with one key tag and long spear. ONE powerful low sweeping attack toward the LEFT at ankle height. Lower the weapon or head, swing horizontally low across the floor with strong contact near the middle, follow through then recover to initial guard. Never strike overhead.",
+      "loop": false,
+      "lastFrame": true
+    },
+    {
+      "id": "gate_sentry",
+      "motion": "AttackRear",
+      "attackType": "rear",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. empty armored spear sentry with one key tag and long spear. ONE hooking attack with a wide return arc toward the LEFT, reaching behind the player's position. Pull the hook, chain or weapon back, cast or sweep it along a broad curved arc, reel or sweep it back to initial guard. Strongest attack pose near the middle. Keep the chain attached.",
+      "loop": false,
+      "lastFrame": true
+    },
+    {
+      "id": "gate_sentry",
+      "motion": "AttackThrust",
+      "attackType": "thrust",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. empty armored spear sentry with one key tag and long spear. ONE straight thrust or lunge toward the LEFT at torso height. Draw weapon or head back, drive it forward in a straight line, maximum extension near the middle, withdraw to initial guard. Body root stays on the spot; articulated motion, not whole-sprite translation.",
+      "loop": false,
+      "lastFrame": true
+    },
+    {
+      "id": "bell_hound",
+      "motion": "Idle",
+      "frameCount": 4,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. low four-legged mechanical bell-snouted hound with short bell chain tail. Subtle seamless idle loop. Knees or suspension relax and tense slightly; one small torso and head breath; held weapon, tail or chain lags gently. Feet or hanging anchor stay fixed. No attack, no big jump.",
+      "loop": true,
+      "lastFrame": true
+    },
+    {
+      "id": "bell_hound",
+      "motion": "Hit",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. low four-legged mechanical bell-snouted hound with short bell chain tail. ONE clear hit reaction to a blow from the LEFT. Torso snaps backward once, head follows, knees compress and held equipment lags. Maximum recoil in first quarter, then recover to original stance. Do not attack, no color flash.",
+      "loop": false,
+      "lastFrame": true
+    },
+    {
+      "id": "bell_hound",
+      "motion": "Stun",
+      "frameCount": 4,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. low four-legged mechanical bell-snouted hound with short bell chain tail. Seamless stunned loop. Slumped chest and bowed head sway weakly, knees stay bent; weapon or chain hangs heavy and trembles slightly. Feet or suspension anchor stay fixed. No attack and no falling off screen.",
+      "loop": true,
+      "lastFrame": false
+    },
+    {
+      "id": "bell_hound",
+      "motion": "Death",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. low four-legged mechanical bell-snouted hound with short bell chain tail. ONE defeat motion. Buckle, lose balance and collapse onto the floor or lower the hanging body limp into final collapsed pose. Weapon rests with body. End motionless, do not stand up. Keep all pieces connected or close to fallen body. No particles, no fade, no gore.",
+      "loop": false,
+      "lastFrame": false
+    },
+    {
+      "id": "bell_hound",
+      "motion": "AttackThrust",
+      "attackType": "thrust",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. low four-legged mechanical bell-snouted hound with short bell chain tail. ONE straight thrust or lunge toward the LEFT at torso height. Draw weapon or head back, drive it forward in a straight line, maximum extension near the middle, withdraw to initial guard. Body root stays on the spot; articulated motion, not whole-sprite translation.",
+      "loop": false,
+      "lastFrame": true
+    },
+    {
+      "id": "bell_hound",
+      "motion": "AttackLow",
+      "attackType": "low",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. low four-legged mechanical bell-snouted hound with short bell chain tail. ONE powerful low sweeping attack toward the LEFT at ankle height. Lower the weapon or head, swing horizontally low across the floor with strong contact near the middle, follow through then recover to initial guard. Never strike overhead.",
+      "loop": false,
+      "lastFrame": true
+    },
+    {
+      "id": "cracked_blade",
+      "motion": "Idle",
+      "frameCount": 4,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. empty compact knight with cracked helmet and long sword. Subtle seamless idle loop. Knees or suspension relax and tense slightly; one small torso and head breath; held weapon, tail or chain lags gently. Feet or hanging anchor stay fixed. No attack, no big jump.",
+      "loop": true,
+      "lastFrame": true
+    },
+    {
+      "id": "cracked_blade",
+      "motion": "Hit",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. empty compact knight with cracked helmet and long sword. ONE clear hit reaction to a blow from the LEFT. Torso snaps backward once, head follows, knees compress and held equipment lags. Maximum recoil in first quarter, then recover to original stance. Do not attack, no color flash.",
+      "loop": false,
+      "lastFrame": true
+    },
+    {
+      "id": "cracked_blade",
+      "motion": "Stun",
+      "frameCount": 4,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. empty compact knight with cracked helmet and long sword. Seamless stunned loop. Slumped chest and bowed head sway weakly, knees stay bent; weapon or chain hangs heavy and trembles slightly. Feet or suspension anchor stay fixed. No attack and no falling off screen.",
+      "loop": true,
+      "lastFrame": false
+    },
+    {
+      "id": "cracked_blade",
+      "motion": "Death",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. empty compact knight with cracked helmet and long sword. ONE defeat motion. Buckle, lose balance and collapse onto the floor or lower the hanging body limp into final collapsed pose. Weapon rests with body. End motionless, do not stand up. Keep all pieces connected or close to fallen body. No particles, no fade, no gore.",
+      "loop": false,
+      "lastFrame": false
+    },
+    {
+      "id": "cracked_blade",
+      "motion": "AttackHigh",
+      "attackType": "high",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. empty compact knight with cracked helmet and long sword. ONE overhead/upper-height attack toward the LEFT. Raise the weapon or striking arm high, clearly wind up, swing strongly down toward the player's upper body, strongest extension near the middle, follow through then recover. Show large readable raised preparation.",
+      "loop": false,
+      "lastFrame": true
+    },
+    {
+      "id": "cracked_blade",
+      "motion": "AttackThrust",
+      "attackType": "thrust",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. empty compact knight with cracked helmet and long sword. ONE straight thrust or lunge toward the LEFT at torso height. Draw weapon or head back, drive it forward in a straight line, maximum extension near the middle, withdraw to initial guard. Body root stays on the spot; articulated motion, not whole-sprite translation.",
+      "loop": false,
+      "lastFrame": true
+    },
+    {
+      "id": "cracked_blade",
+      "motion": "AttackLow",
+      "attackType": "low",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. empty compact knight with cracked helmet and long sword. ONE powerful low sweeping attack toward the LEFT at ankle height. Lower the weapon or head, swing horizontally low across the floor with strong contact near the middle, follow through then recover to initial guard. Never strike overhead.",
+      "loop": false,
+      "lastFrame": true
+    },
+    {
+      "id": "gate_lock",
+      "motion": "Idle",
+      "frameCount": 4,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. squat broad barricade golem, two crossbars held as striking arms. Subtle seamless idle loop. Knees or suspension relax and tense slightly; one small torso and head breath; held weapon, tail or chain lags gently. Feet or hanging anchor stay fixed. No attack, no big jump.",
+      "loop": true,
+      "lastFrame": true
+    },
+    {
+      "id": "gate_lock",
+      "motion": "Hit",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. squat broad barricade golem, two crossbars held as striking arms. ONE clear hit reaction to a blow from the LEFT. Torso snaps backward once, head follows, knees compress and held equipment lags. Maximum recoil in first quarter, then recover to original stance. Do not attack, no color flash.",
+      "loop": false,
+      "lastFrame": true
+    },
+    {
+      "id": "gate_lock",
+      "motion": "Stun",
+      "frameCount": 4,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. squat broad barricade golem, two crossbars held as striking arms. Seamless stunned loop. Slumped chest and bowed head sway weakly, knees stay bent; weapon or chain hangs heavy and trembles slightly. Feet or suspension anchor stay fixed. No attack and no falling off screen.",
+      "loop": true,
+      "lastFrame": false
+    },
+    {
+      "id": "gate_lock",
+      "motion": "Death",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. squat broad barricade golem, two crossbars held as striking arms. ONE defeat motion. Buckle, lose balance and collapse onto the floor or lower the hanging body limp into final collapsed pose. Weapon rests with body. End motionless, do not stand up. Keep all pieces connected or close to fallen body. No particles, no fade, no gore.",
+      "loop": false,
+      "lastFrame": false
+    },
+    {
+      "id": "gate_lock",
+      "motion": "AttackLow",
+      "attackType": "low",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. squat broad barricade golem, two crossbars held as striking arms. ONE powerful low sweeping attack toward the LEFT at ankle height. Lower the weapon or head, swing horizontally low across the floor with strong contact near the middle, follow through then recover to initial guard. Never strike overhead.",
+      "loop": false,
+      "lastFrame": true
+    },
+    {
+      "id": "gate_lock",
+      "motion": "AttackHigh",
+      "attackType": "high",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. squat broad barricade golem, two crossbars held as striking arms. ONE overhead/upper-height attack toward the LEFT. Raise the weapon or striking arm high, clearly wind up, swing strongly down toward the player's upper body, strongest extension near the middle, follow through then recover. Show large readable raised preparation.",
+      "loop": false,
+      "lastFrame": true
+    },
+    {
+      "id": "bell_knight",
+      "motion": "Idle",
+      "frameCount": 4,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. tall gate guardian, bell crest, barred shield and long halberd. Subtle seamless idle loop. Knees or suspension relax and tense slightly; one small torso and head breath; held weapon, tail or chain lags gently. Feet or hanging anchor stay fixed. No attack, no big jump.",
+      "loop": true,
+      "lastFrame": true
+    },
+    {
+      "id": "bell_knight",
+      "motion": "Hit",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. tall gate guardian, bell crest, barred shield and long halberd. ONE clear hit reaction to a blow from the LEFT. Torso snaps backward once, head follows, knees compress and held equipment lags. Maximum recoil in first quarter, then recover to original stance. Do not attack, no color flash.",
+      "loop": false,
+      "lastFrame": true
+    },
+    {
+      "id": "bell_knight",
+      "motion": "Stun",
+      "frameCount": 4,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. tall gate guardian, bell crest, barred shield and long halberd. Seamless stunned loop. Slumped chest and bowed head sway weakly, knees stay bent; weapon or chain hangs heavy and trembles slightly. Feet or suspension anchor stay fixed. No attack and no falling off screen.",
+      "loop": true,
+      "lastFrame": false
+    },
+    {
+      "id": "bell_knight",
+      "motion": "Death",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. tall gate guardian, bell crest, barred shield and long halberd. ONE defeat motion. Buckle, lose balance and collapse onto the floor or lower the hanging body limp into final collapsed pose. Weapon rests with body. End motionless, do not stand up. Keep all pieces connected or close to fallen body. No particles, no fade, no gore.",
+      "loop": false,
+      "lastFrame": false
+    },
+    {
+      "id": "bell_knight",
+      "motion": "AttackThrust",
+      "attackType": "thrust",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. tall gate guardian, bell crest, barred shield and long halberd. ONE straight thrust or lunge toward the LEFT at torso height. Draw weapon or head back, drive it forward in a straight line, maximum extension near the middle, withdraw to initial guard. Body root stays on the spot; articulated motion, not whole-sprite translation.",
+      "loop": false,
+      "lastFrame": true
+    },
+    {
+      "id": "bell_knight",
+      "motion": "AttackRear",
+      "attackType": "rear",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. tall gate guardian, bell crest, barred shield and long halberd. ONE hooking attack with a wide return arc toward the LEFT, reaching behind the player's position. Pull the hook, chain or weapon back, cast or sweep it along a broad curved arc, reel or sweep it back to initial guard. Strongest attack pose near the middle. Keep the chain attached.",
+      "loop": false,
+      "lastFrame": true
+    },
+    {
+      "id": "bell_knight",
+      "motion": "AttackHigh",
+      "attackType": "high",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. tall gate guardian, bell crest, barred shield and long halberd. ONE overhead/upper-height attack toward the LEFT. Raise the weapon or striking arm high, clearly wind up, swing strongly down toward the player's upper body, strongest extension near the middle, follow through then recover. Show large readable raised preparation.",
+      "loop": false,
+      "lastFrame": true
+    },
+    {
+      "id": "chain_puppet",
+      "motion": "Idle",
+      "frameCount": 4,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. chain-limbed puppet with rectangular address plaques and key-like hands. Subtle seamless idle loop. Knees or suspension relax and tense slightly; one small torso and head breath; held weapon, tail or chain lags gently. Feet or hanging anchor stay fixed. No attack, no big jump.",
+      "loop": true,
+      "lastFrame": true
+    },
+    {
+      "id": "chain_puppet",
+      "motion": "Hit",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. chain-limbed puppet with rectangular address plaques and key-like hands. ONE clear hit reaction to a blow from the LEFT. Torso snaps backward once, head follows, knees compress and held equipment lags. Maximum recoil in first quarter, then recover to original stance. Do not attack, no color flash.",
+      "loop": false,
+      "lastFrame": true
+    },
+    {
+      "id": "chain_puppet",
+      "motion": "Stun",
+      "frameCount": 4,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. chain-limbed puppet with rectangular address plaques and key-like hands. Seamless stunned loop. Slumped chest and bowed head sway weakly, knees stay bent; weapon or chain hangs heavy and trembles slightly. Feet or suspension anchor stay fixed. No attack and no falling off screen.",
+      "loop": true,
+      "lastFrame": false
+    },
+    {
+      "id": "chain_puppet",
+      "motion": "Death",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. chain-limbed puppet with rectangular address plaques and key-like hands. ONE defeat motion. Buckle, lose balance and collapse onto the floor or lower the hanging body limp into final collapsed pose. Weapon rests with body. End motionless, do not stand up. Keep all pieces connected or close to fallen body. No particles, no fade, no gore.",
+      "loop": false,
+      "lastFrame": false
+    },
+    {
+      "id": "chain_puppet",
+      "motion": "AttackThrust",
+      "attackType": "thrust",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. chain-limbed puppet with rectangular address plaques and key-like hands. ONE straight thrust or lunge toward the LEFT at torso height. Draw weapon or head back, drive it forward in a straight line, maximum extension near the middle, withdraw to initial guard. Body root stays on the spot; articulated motion, not whole-sprite translation.",
+      "loop": false,
+      "lastFrame": true
+    },
+    {
+      "id": "chain_puppet",
+      "motion": "AttackHigh",
+      "attackType": "high",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. chain-limbed puppet with rectangular address plaques and key-like hands. ONE overhead/upper-height attack toward the LEFT. Raise the weapon or striking arm high, clearly wind up, swing strongly down toward the player's upper body, strongest extension near the middle, follow through then recover. Show large readable raised preparation.",
+      "loop": false,
+      "lastFrame": true
+    },
+    {
+      "id": "chain_puppet",
+      "motion": "AttackRear",
+      "attackType": "rear",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. chain-limbed puppet with rectangular address plaques and key-like hands. ONE hooking attack with a wide return arc toward the LEFT, reaching behind the player's position. Pull the hook, chain or weapon back, cast or sweep it along a broad curved arc, reel or sweep it back to initial guard. Strongest attack pose near the middle. Keep the chain attached.",
+      "loop": false,
+      "lastFrame": true
+    },
+    {
+      "id": "hook_hound",
+      "motion": "Idle",
+      "frameCount": 4,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. low four-legged pipe-bodied hound with huge curved head hook. Subtle seamless idle loop. Knees or suspension relax and tense slightly; one small torso and head breath; held weapon, tail or chain lags gently. Feet or hanging anchor stay fixed. No attack, no big jump.",
+      "loop": true,
+      "lastFrame": true
+    },
+    {
+      "id": "hook_hound",
+      "motion": "Hit",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. low four-legged pipe-bodied hound with huge curved head hook. ONE clear hit reaction to a blow from the LEFT. Torso snaps backward once, head follows, knees compress and held equipment lags. Maximum recoil in first quarter, then recover to original stance. Do not attack, no color flash.",
+      "loop": false,
+      "lastFrame": true
+    },
+    {
+      "id": "hook_hound",
+      "motion": "Stun",
+      "frameCount": 4,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. low four-legged pipe-bodied hound with huge curved head hook. Seamless stunned loop. Slumped chest and bowed head sway weakly, knees stay bent; weapon or chain hangs heavy and trembles slightly. Feet or suspension anchor stay fixed. No attack and no falling off screen.",
+      "loop": true,
+      "lastFrame": false
+    },
+    {
+      "id": "hook_hound",
+      "motion": "Death",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. low four-legged pipe-bodied hound with huge curved head hook. ONE defeat motion. Buckle, lose balance and collapse onto the floor or lower the hanging body limp into final collapsed pose. Weapon rests with body. End motionless, do not stand up. Keep all pieces connected or close to fallen body. No particles, no fade, no gore.",
+      "loop": false,
+      "lastFrame": false
+    },
+    {
+      "id": "hook_hound",
+      "motion": "AttackRear",
+      "attackType": "rear",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. low four-legged pipe-bodied hound with huge curved head hook. ONE hooking attack with a wide return arc toward the LEFT, reaching behind the player's position. Pull the hook, chain or weapon back, cast or sweep it along a broad curved arc, reel or sweep it back to initial guard. Strongest attack pose near the middle. Keep the chain attached.",
+      "loop": false,
+      "lastFrame": true
+    },
+    {
+      "id": "hook_hound",
+      "motion": "AttackLow",
+      "attackType": "low",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. low four-legged pipe-bodied hound with huge curved head hook. ONE powerful low sweeping attack toward the LEFT at ankle height. Lower the weapon or head, swing horizontally low across the floor with strong contact near the middle, follow through then recover to initial guard. Never strike overhead.",
+      "loop": false,
+      "lastFrame": true
+    },
+    {
+      "id": "chain_dancer",
+      "motion": "Idle",
+      "frameCount": 4,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. suspended chain dancer doll with large keys for a skirt and one chain ring. Subtle seamless idle loop. Knees or suspension relax and tense slightly; one small torso and head breath; held weapon, tail or chain lags gently. Feet or hanging anchor stay fixed. No attack, no big jump.",
+      "loop": true,
+      "lastFrame": true
+    },
+    {
+      "id": "chain_dancer",
+      "motion": "Hit",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. suspended chain dancer doll with large keys for a skirt and one chain ring. ONE clear hit reaction to a blow from the LEFT. Torso snaps backward once, head follows, knees compress and held equipment lags. Maximum recoil in first quarter, then recover to original stance. Do not attack, no color flash.",
+      "loop": false,
+      "lastFrame": true
+    },
+    {
+      "id": "chain_dancer",
+      "motion": "Stun",
+      "frameCount": 4,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. suspended chain dancer doll with large keys for a skirt and one chain ring. Seamless stunned loop. Slumped chest and bowed head sway weakly, knees stay bent; weapon or chain hangs heavy and trembles slightly. Feet or suspension anchor stay fixed. No attack and no falling off screen.",
+      "loop": true,
+      "lastFrame": false
+    },
+    {
+      "id": "chain_dancer",
+      "motion": "Death",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. suspended chain dancer doll with large keys for a skirt and one chain ring. ONE defeat motion. Buckle, lose balance and collapse onto the floor or lower the hanging body limp into final collapsed pose. Weapon rests with body. End motionless, do not stand up. Keep all pieces connected or close to fallen body. No particles, no fade, no gore.",
+      "loop": false,
+      "lastFrame": false
+    },
+    {
+      "id": "chain_dancer",
+      "motion": "AttackHigh",
+      "attackType": "high",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. suspended chain dancer doll with large keys for a skirt and one chain ring. ONE overhead/upper-height attack toward the LEFT. Raise the weapon or striking arm high, clearly wind up, swing strongly down toward the player's upper body, strongest extension near the middle, follow through then recover. Show large readable raised preparation.",
+      "loop": false,
+      "lastFrame": true
+    },
+    {
+      "id": "chain_dancer",
+      "motion": "AttackLow",
+      "attackType": "low",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. suspended chain dancer doll with large keys for a skirt and one chain ring. ONE powerful low sweeping attack toward the LEFT at ankle height. Lower the weapon or head, swing horizontally low across the floor with strong contact near the middle, follow through then recover to initial guard. Never strike overhead.",
+      "loop": false,
+      "lastFrame": true
+    },
+    {
+      "id": "pendulum_warden",
+      "motion": "Idle",
+      "frameCount": 4,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. bulky floodgate robot with exposed heavy pendulum, shield and mechanical feet. Subtle seamless idle loop. Knees or suspension relax and tense slightly; one small torso and head breath; held weapon, tail or chain lags gently. Feet or hanging anchor stay fixed. No attack, no big jump.",
+      "loop": true,
+      "lastFrame": true
+    },
+    {
+      "id": "pendulum_warden",
+      "motion": "Hit",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. bulky floodgate robot with exposed heavy pendulum, shield and mechanical feet. ONE clear hit reaction to a blow from the LEFT. Torso snaps backward once, head follows, knees compress and held equipment lags. Maximum recoil in first quarter, then recover to original stance. Do not attack, no color flash.",
+      "loop": false,
+      "lastFrame": true
+    },
+    {
+      "id": "pendulum_warden",
+      "motion": "Stun",
+      "frameCount": 4,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. bulky floodgate robot with exposed heavy pendulum, shield and mechanical feet. Seamless stunned loop. Slumped chest and bowed head sway weakly, knees stay bent; weapon or chain hangs heavy and trembles slightly. Feet or suspension anchor stay fixed. No attack and no falling off screen.",
+      "loop": true,
+      "lastFrame": false
+    },
+    {
+      "id": "pendulum_warden",
+      "motion": "Death",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. bulky floodgate robot with exposed heavy pendulum, shield and mechanical feet. ONE defeat motion. Buckle, lose balance and collapse onto the floor or lower the hanging body limp into final collapsed pose. Weapon rests with body. End motionless, do not stand up. Keep all pieces connected or close to fallen body. No particles, no fade, no gore.",
+      "loop": false,
+      "lastFrame": false
+    },
+    {
+      "id": "pendulum_warden",
+      "motion": "AttackRear",
+      "attackType": "rear",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. bulky floodgate robot with exposed heavy pendulum, shield and mechanical feet. ONE hooking attack with a wide return arc toward the LEFT, reaching behind the player's position. Pull the hook, chain or weapon back, cast or sweep it along a broad curved arc, reel or sweep it back to initial guard. Strongest attack pose near the middle. Keep the chain attached.",
+      "loop": false,
+      "lastFrame": true
+    },
+    {
+      "id": "pendulum_warden",
+      "motion": "AttackLow",
+      "attackType": "low",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. bulky floodgate robot with exposed heavy pendulum, shield and mechanical feet. ONE powerful low sweeping attack toward the LEFT at ankle height. Lower the weapon or head, swing horizontally low across the floor with strong contact near the middle, follow through then recover to initial guard. Never strike overhead.",
+      "loop": false,
+      "lastFrame": true
+    },
+    {
+      "id": "pendulum_warden",
+      "motion": "AttackHigh",
+      "attackType": "high",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. bulky floodgate robot with exposed heavy pendulum, shield and mechanical feet. ONE overhead/upper-height attack toward the LEFT. Raise the weapon or striking arm high, clearly wind up, swing strongly down toward the player's upper body, strongest extension near the middle, follow through then recover. Show large readable raised preparation.",
+      "loop": false,
+      "lastFrame": true
+    },
+    {
+      "id": "chain_jailer",
+      "motion": "Idle",
+      "frameCount": 4,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. hanging masked jailer suspended by two chains and carrying two large chain hooks. Subtle seamless idle loop. Knees or suspension relax and tense slightly; one small torso and head breath; held weapon, tail or chain lags gently. Feet or hanging anchor stay fixed. No attack, no big jump.",
+      "loop": true,
+      "lastFrame": true
+    },
+    {
+      "id": "chain_jailer",
+      "motion": "Hit",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. hanging masked jailer suspended by two chains and carrying two large chain hooks. ONE clear hit reaction to a blow from the LEFT. Torso snaps backward once, head follows, knees compress and held equipment lags. Maximum recoil in first quarter, then recover to original stance. Do not attack, no color flash.",
+      "loop": false,
+      "lastFrame": true
+    },
+    {
+      "id": "chain_jailer",
+      "motion": "Stun",
+      "frameCount": 4,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. hanging masked jailer suspended by two chains and carrying two large chain hooks. Seamless stunned loop. Slumped chest and bowed head sway weakly, knees stay bent; weapon or chain hangs heavy and trembles slightly. Feet or suspension anchor stay fixed. No attack and no falling off screen.",
+      "loop": true,
+      "lastFrame": false
+    },
+    {
+      "id": "chain_jailer",
+      "motion": "Death",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. hanging masked jailer suspended by two chains and carrying two large chain hooks. ONE defeat motion. Buckle, lose balance and collapse onto the floor or lower the hanging body limp into final collapsed pose. Weapon rests with body. End motionless, do not stand up. Keep all pieces connected or close to fallen body. No particles, no fade, no gore.",
+      "loop": false,
+      "lastFrame": false
+    },
+    {
+      "id": "chain_jailer",
+      "motion": "AttackHigh",
+      "attackType": "high",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. hanging masked jailer suspended by two chains and carrying two large chain hooks. ONE overhead/upper-height attack toward the LEFT. Raise the weapon or striking arm high, clearly wind up, swing strongly down toward the player's upper body, strongest extension near the middle, follow through then recover. Show large readable raised preparation.",
+      "loop": false,
+      "lastFrame": true
+    },
+    {
+      "id": "chain_jailer",
+      "motion": "AttackLow",
+      "attackType": "low",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. hanging masked jailer suspended by two chains and carrying two large chain hooks. ONE powerful low sweeping attack toward the LEFT at ankle height. Lower the weapon or head, swing horizontally low across the floor with strong contact near the middle, follow through then recover to initial guard. Never strike overhead.",
+      "loop": false,
+      "lastFrame": true
+    },
+    {
+      "id": "chain_jailer",
+      "motion": "AttackRear",
+      "attackType": "rear",
+      "frameCount": 8,
+      "action": "Side-view game animation, facing LEFT throughout. Preserve the exact silhouette, weapon, cream/gold/navy colors and thick pixel clusters. Same 128x128 canvas, stable body/foot root near (78,114), no camera motion, no whole-canvas sliding, no resizing, no new parts, no text, no particles or effect overlays. Keep all body and weapon pixels inside the canvas. hanging masked jailer suspended by two chains and carrying two large chain hooks. ONE hooking attack with a wide return arc toward the LEFT, reaching behind the player's position. Pull the hook, chain or weapon back, cast or sweep it along a broad curved arc, reel or sweep it back to initial guard. Strongest attack pose near the middle. Keep the chain attached.",
+      "loop": false,
+      "lastFrame": true
+    }
+  ]
+}

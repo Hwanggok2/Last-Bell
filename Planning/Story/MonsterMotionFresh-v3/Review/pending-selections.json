@@ -1,0 +1,243 @@
+[
+  {
+    "id": "cracked_blade",
+    "Attack": {
+      "source": "Sources/cracked_blade/Attack-a1",
+      "selection": [
+        "base",
+        3,
+        4,
+        5,
+        7,
+        10,
+        11,
+        12,
+        13,
+        14,
+        "base"
+      ],
+      "durations": [
+        60,
+        70,
+        95,
+        100,
+        60,
+        45,
+        45,
+        70,
+        70,
+        65,
+        75
+      ],
+      "contactFrame": 4
+    },
+    "Stun": {
+      "source": "Sources/cracked_blade/Stun-a3",
+      "selection": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "durations": [
+        190,
+        220,
+        230,
+        220
+      ]
+    },
+    "selectionNotes": {
+      "Attack": "선행 별도 타격001~002와 불투명/큰 효과가 생긴006 제외. 준비003~005, 실제 내려치기007, 회수012~014를 연결."
+    },
+    "review": {
+      "passed": false,
+      "notes": "공격 후보만 검수 중. 기절은 별도 재생성 중이며 여기에 임시 정지 자세로 표시됩니다."
+    },
+    "attackReview": {
+      "passed": true,
+      "normalSpeed": 1,
+      "slowSpeed": 0.5,
+      "notes": "1×/0.5× 및 접촉 정지 화면에서 검을 머리 위로 든 준비, 몸통과 앞무릎이 내려가는 단일 내려치기, 검을 다시 세우는 회수 확인. 선택 4번이 실제 접촉. 검날-손잡이-손 연결과 투구 외형 유지."
+    }
+  },
+  {
+    "id": "bell_knight",
+    "Attack": {
+      "source": "Sources/bell_knight/Attack-a1",
+      "selection": [
+        "base",
+        1,
+        2,
+        3,
+        5,
+        7,
+        11,
+        13,
+        15,
+        16,
+        17,
+        "base"
+      ],
+      "durations": [
+        80,
+        70,
+        85,
+        100,
+        100,
+        50,
+        80,
+        60,
+        70,
+        80,
+        75,
+        90
+      ],
+      "contactFrame": 6
+    },
+    "Stun": {
+      "source": "Sources/bell_knight/Stun-a3",
+      "selection": [
+        0,
+        1
+      ],
+      "durations": [
+        350,
+        350
+      ]
+    },
+    "selectionNotes": {
+      "Attack": "008~010의 참격 원호/잔여 불꽃 제외. 도끼가 지면에 닿고 무릎이 굽은011을 접촉으로 지정. 중복 저자세 홀드 축약.",
+      "Stun": "도끼 바깥에 검은 곡선이 추가된002~003 제외. 무릎을 꿇고 방패를 내려놓은000↔001의 미세한 흔들림만 루프."
+    },
+    "review": {
+      "passed": false,
+      "notes": "공격 후보만 검수 중. 기절은 별도 재생성 중이며 여기에 임시 정지 자세로 표시됩니다."
+    },
+    "attackReview": {
+      "passed": true,
+      "normalSpeed": 1,
+      "slowSpeed": 0.5,
+      "notes": "1×/0.5× 및 접촉 정지 화면에서 도끼를 어깨 뒤로 들고 방패로 몸을 지탱한 뒤 한 번 내려치는 동작 확인. 선택 6번에 도끼가 낮게 닿고 앞무릎이 굽는다. 도끼·방패의 손 연결과 발 기준 유지."
+    }
+  },
+  {
+    "id": "chain_puppet",
+    "Attack": {
+      "source": "Sources/chain_puppet/Attack-a1",
+      "selection": [
+        "base",
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14,
+        "base"
+      ],
+      "durations": [
+        80,
+        90,
+        100,
+        70,
+        60,
+        50,
+        65,
+        60,
+        65,
+        70,
+        75,
+        75,
+        90
+      ],
+      "contactFrame": 6
+    },
+    "Stun": {
+      "source": "Sources/chain_puppet/Stun-a1",
+      "selection": [
+        0
+      ],
+      "durations": [
+        1000
+      ]
+    },
+    "selectionNotes": {
+      "Attack": "몸 오른쪽 사슬팔을 당긴 뒤 왼쪽으로 뻗는 단일 타격008 채택.009 중복 최대 신전과015~016 중복 종결 제외."
+    },
+    "review": {
+      "passed": false,
+      "notes": "공격 후보만 검수 중. 기절은 별도 재생성 중이며 여기에 임시 정지 자세로 표시됩니다."
+    },
+    "attackReview": {
+      "passed": true,
+      "normalSpeed": 1,
+      "slowSpeed": 0.5,
+      "notes": "1×/0.5× 및 접촉 정지 화면에서 오른쪽 사슬팔을 당기고 몸을 돌린 뒤 왼쪽으로 추를 한 번 뻗는 동작 확인. 선택 6번에서 사슬이 곧게 펴지고 무릎/보폭이 함께 바뀐다. 두 팔과 두 추, 사슬 연결이 유지됨."
+    }
+  },
+  {
+    "id": "chain_jailer",
+    "Attack": {
+      "source": "Sources/chain_jailer/Attack-a1",
+      "selection": [
+        "base",
+        5,
+        7,
+        9,
+        11,
+        13,
+        14,
+        16,
+        17,
+        18,
+        "base"
+      ],
+      "durations": [
+        80,
+        90,
+        100,
+        90,
+        70,
+        60,
+        60,
+        80,
+        80,
+        70,
+        100
+      ],
+      "contactFrame": 4
+    },
+    "Stun": {
+      "source": "Sources/chain_jailer/Stun-a3",
+      "selection": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "durations": [
+        230,
+        200,
+        230,
+        200
+      ]
+    },
+    "selectionNotes": {
+      "Attack": "004,010,015의 큰 불필요 효과 제외. 팔을 당긴005~009 뒤 갈고리가 전방으로 뻗은011을 단일 접촉으로 채택."
+    },
+    "review": {
+      "passed": false,
+      "notes": "공격 후보만 검수 중. 기절은 별도 재생성 중이며 여기에 임시 정지 자세로 표시됩니다."
+    },
+    "attackReview": {
+      "passed": true,
+      "normalSpeed": 1,
+      "slowSpeed": 0.5,
+      "notes": "1×/0.5× 및 접촉 정지 화면에서 갈고리를 당긴 준비 후 몸과 위쪽 사슬이 함께 기울며 한 번 왼쪽으로 뻗는 동작 확인. 선택 4번이 접촉. 두 갈고리와 마스크가 유지되고 회수 후 기본 매달린 자세로 복귀."
+    }
+  }
+]

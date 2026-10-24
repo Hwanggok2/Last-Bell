@@ -1,0 +1,480 @@
+{
+  "version": "v85-boss-idle",
+  "status": "reviewed-source-fragment-not-yet-Unity-imported",
+  "ownership": "Root integration copies native textures then replaces these actors. Only Idle differs from the original snapshot.",
+  "textures": [
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/bosses/bell_knight/idle/01.png",
+      "source": "Planning/Story/Monster-v85/bosses/bell_knight/raw/01.png",
+      "sha256": "ec95ce6d00a8e78a6bb4e28440bdee7178460822a571e9815bb9443bd6463618",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/bosses/bell_knight/idle/02.png",
+      "source": "Planning/Story/Monster-v85/bosses/bell_knight/raw/02.png",
+      "sha256": "f759e2538d972a067b72dbd4cdee3570bb240d3374ada12f8ad596187c4d6bcf",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/bosses/bell_knight/idle/03.png",
+      "source": "Planning/Story/Monster-v85/bosses/bell_knight/raw/03.png",
+      "sha256": "aa21f7268819b68370214d4b0feb0de7552a06c8830cbb2b6d1667eed1d94d6d",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/bosses/bell_knight/idle/04.png",
+      "source": "Planning/Story/Monster-v85/bosses/bell_knight/raw/04.png",
+      "sha256": "4663f569eb1275a7cedf33b66a3d47c601ac0c274ba725c8a63c5c1b0603b867",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/bosses/bell_knight/idle/05.png",
+      "source": "Planning/Story/Monster-v85/bosses/bell_knight/raw/05.png",
+      "sha256": "7dc2d27af0405de2ffbf71ce1a5c3f97cf3505d76d3f54d0474ba0d8b48d5b35",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/bosses/bell_knight/idle/06.png",
+      "source": "Planning/Story/Monster-v85/bosses/bell_knight/raw/06.png",
+      "sha256": "c54b919b403a0baabcc3fde79b3c0c0310345f989bda9bde6a3be2bbbf2fde79",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/bosses/bell_knight/idle/07.png",
+      "source": "Planning/Story/Monster-v85/bosses/bell_knight/raw/07.png",
+      "sha256": "85989bc31d25e18cb8ddaaa1851c06be455bc480a909da4e09b29cb9f1681dcb",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/bosses/bell_knight/idle/08.png",
+      "source": "Planning/Story/Monster-v85/bosses/bell_knight/raw/08.png",
+      "sha256": "4543e459089aaa71762dfdf5f69c4b2c87b25d9ceff2a4fd81043f75f9beac6b",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/bosses/chain_jailer/idle/01.png",
+      "source": "Planning/Story/Monster-v85/bosses/chain_jailer/raw/01.png",
+      "sha256": "8a5dd16c246b8d85d73bc6f088fc6933dd6c1aff32030fb10bdce3ed1ee1a480",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/bosses/chain_jailer/idle/02.png",
+      "source": "Planning/Story/Monster-v85/bosses/chain_jailer/raw/02.png",
+      "sha256": "1f34e6022281575c0e8337999b2dc8a0799afb770413d74679d918be9d9b32cf",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/bosses/chain_jailer/idle/03.png",
+      "source": "Planning/Story/Monster-v85/bosses/chain_jailer/raw/03.png",
+      "sha256": "65270421e64fdf91c6a41d5e7f4df82ab2d83dbc08fa3dcd013d5a4310ecc9d2",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/bosses/chain_jailer/idle/04.png",
+      "source": "Planning/Story/Monster-v85/bosses/chain_jailer/raw/04.png",
+      "sha256": "c23f9bbfa97800b419c9e7cea59f06b1adde3f122e8d018f8f8d0ec22399f28c",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 79,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/bosses/chain_jailer/idle/05.png",
+      "source": "Planning/Story/Monster-v85/bosses/chain_jailer/raw/05.png",
+      "sha256": "e9b36806e517f6d5ecdb3d6b6cf39513ccb2f20f24798ecfdee9a36b19c8914e",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 79,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/bosses/chain_jailer/idle/06.png",
+      "source": "Planning/Story/Monster-v85/bosses/chain_jailer/raw/06.png",
+      "sha256": "237169e16771e7d84d4ed90cd515edafcd1180fa304787664961910da37a2099",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 79,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/bosses/chain_jailer/idle/07.png",
+      "source": "Planning/Story/Monster-v85/bosses/chain_jailer/raw/07.png",
+      "sha256": "95aee1c23e34d94975ad8116efcd02212f2b3f63652e89bf7c40f8a2105755b2",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 79,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/bosses/chain_jailer/idle/08.png",
+      "source": "Planning/Story/Monster-v85/bosses/chain_jailer/raw/08.png",
+      "sha256": "44e95c7c779c2def18f86acbaf3d1609fe28cc7a248c0264fc6511094a9dda07",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    }
+  ],
+  "actors": [
+    {
+      "id": "bell_knight_concept",
+      "facesRight": false,
+      "height": 4,
+      "referenceHeightPixels": 92,
+      "clips": [
+        {
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "legacyStun": false,
+          "referenceHeightPixels": 0,
+          "motion": "Idle",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-v85/bosses/bell_knight/idle/01.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/bosses/bell_knight/idle/02.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/bosses/bell_knight/idle/03.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/bosses/bell_knight/idle/04.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/bosses/bell_knight/idle/05.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/bosses/bell_knight/idle/06.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/bosses/bell_knight/idle/07.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/bosses/bell_knight/idle/08.png"
+          ],
+          "sourceFrames": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "fps": 5.0,
+          "loop": true,
+          "contactFrame": -1,
+          "staticFallback": false,
+          "sourceId": "v85-bell_knight-idle",
+          "frameDurationsMs": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ],
+          "sourceJob": "165250f1-63fa-4141-be11-1e6be6134d3a",
+          "note": "Reviewed native PixelLab idle only. Original Attack/Stun, facing, actor height 4 and canonical height 92 remain unchanged. Baseline pivot (78,114); chain_jailer frames4-7 use pivot.x79 to cancel one-pixel global horizontal drift without editing PNGs. Small vertical float is intentional for the hanging boss."
+        },
+        {
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "legacyStun": false,
+          "referenceHeightPixels": 0,
+          "motion": "Attack",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/bell_knight/Attack/frame-000.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/bell_knight/Attack/frame-001.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/bell_knight/Attack/frame-002.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/bell_knight/Attack/frame-003.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/bell_knight/Attack/frame-004.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/bell_knight/Attack/frame-005.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/bell_knight/Attack/frame-006.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/bell_knight/Attack/frame-007.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/bell_knight/Attack/frame-008.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/bell_knight/Attack/frame-009.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/bell_knight/Attack/frame-010.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/bell_knight/Attack/frame-011.png"
+          ],
+          "frameDurationsMs": [
+            80,
+            70,
+            85,
+            100,
+            100,
+            50,
+            80,
+            60,
+            70,
+            80,
+            75,
+            90
+          ],
+          "contactFrame": 6,
+          "loop": false,
+          "sourceFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "sourceId": "bell_knight-fresh-v3-attack",
+          "fps": 12.76595744680851,
+          "staticFallback": false
+        },
+        {
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "legacyStun": false,
+          "referenceHeightPixels": 0,
+          "motion": "Stun",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/bell_knight/Stun/frame-000.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/bell_knight/Stun/frame-001.png"
+          ],
+          "frameDurationsMs": [
+            350,
+            350
+          ],
+          "contactFrame": -1,
+          "loop": true,
+          "sourceFrames": [
+            0,
+            1
+          ],
+          "sourceId": "bell_knight-fresh-v3-stun",
+          "fps": 2.857142857142857,
+          "staticFallback": false
+        }
+      ]
+    },
+    {
+      "id": "chain_jailer",
+      "facesRight": false,
+      "height": 4,
+      "referenceHeightPixels": 92,
+      "clips": [
+        {
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "legacyStun": false,
+          "referenceHeightPixels": 0,
+          "motion": "Idle",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-v85/bosses/chain_jailer/idle/01.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/bosses/chain_jailer/idle/02.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/bosses/chain_jailer/idle/03.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/bosses/chain_jailer/idle/04.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/bosses/chain_jailer/idle/05.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/bosses/chain_jailer/idle/06.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/bosses/chain_jailer/idle/07.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/bosses/chain_jailer/idle/08.png"
+          ],
+          "sourceFrames": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "fps": 5.0,
+          "loop": true,
+          "contactFrame": -1,
+          "staticFallback": false,
+          "sourceId": "v85-chain_jailer-idle",
+          "frameDurationsMs": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ],
+          "sourceJob": "066b3666-0330-4b69-91dc-e29bb19189af",
+          "note": "Reviewed native PixelLab idle only. Original Attack/Stun, facing, actor height 4 and canonical height 92 remain unchanged. Baseline pivot (78,114); chain_jailer frames4-7 use pivot.x79 to cancel one-pixel global horizontal drift without editing PNGs. Small vertical float is intentional for the hanging boss."
+        },
+        {
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "legacyStun": false,
+          "referenceHeightPixels": 0,
+          "motion": "Attack",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/chain_jailer/Attack/frame-000.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/chain_jailer/Attack/frame-001.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/chain_jailer/Attack/frame-002.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/chain_jailer/Attack/frame-003.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/chain_jailer/Attack/frame-004.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/chain_jailer/Attack/frame-005.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/chain_jailer/Attack/frame-006.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/chain_jailer/Attack/frame-007.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/chain_jailer/Attack/frame-008.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/chain_jailer/Attack/frame-009.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/chain_jailer/Attack/frame-010.png"
+          ],
+          "frameDurationsMs": [
+            80,
+            90,
+            100,
+            90,
+            70,
+            60,
+            60,
+            80,
+            80,
+            70,
+            100
+          ],
+          "contactFrame": 4,
+          "loop": false,
+          "sourceFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "sourceId": "chain_jailer-fresh-v3-attack",
+          "fps": 12.5,
+          "staticFallback": false
+        },
+        {
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "legacyStun": false,
+          "referenceHeightPixels": 0,
+          "motion": "Stun",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/chain_jailer/Stun/frame-000.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/chain_jailer/Stun/frame-001.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/chain_jailer/Stun/frame-002.png",
+            "Assets/Game/Art/Presentation/Clips/monster-fresh-v3/Actors/chain_jailer/Stun/frame-003.png"
+          ],
+          "frameDurationsMs": [
+            230,
+            200,
+            230,
+            200
+          ],
+          "contactFrame": -1,
+          "loop": true,
+          "sourceFrames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "sourceId": "chain_jailer-fresh-v3-stun",
+          "fps": 4.651162790697675,
+          "staticFallback": false
+        }
+      ]
+    }
+  ],
+  "qa": "review-decisions.json",
+  "provenance": "jobs.json"
+}

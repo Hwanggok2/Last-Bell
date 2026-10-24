@@ -1,0 +1,189 @@
+{
+  "actors": 11,
+  "nativeTemplates": 6,
+  "textures": 190,
+  "clips": [
+    {
+      "template": "slime",
+      "motion": "Idle",
+      "frames": 8,
+      "uniquePixelFrames": 4,
+      "contactFrame": -1
+    },
+    {
+      "template": "slime",
+      "motion": "Attack",
+      "frames": 8,
+      "uniquePixelFrames": 7,
+      "contactFrame": 2
+    },
+    {
+      "template": "slime",
+      "motion": "Stun",
+      "frames": 8,
+      "uniquePixelFrames": 8,
+      "contactFrame": -1
+    },
+    {
+      "template": "horn_rabbit",
+      "motion": "Idle",
+      "frames": 8,
+      "uniquePixelFrames": 7,
+      "contactFrame": -1
+    },
+    {
+      "template": "horn_rabbit",
+      "motion": "Attack",
+      "frames": 8,
+      "uniquePixelFrames": 5,
+      "contactFrame": 3
+    },
+    {
+      "template": "horn_rabbit",
+      "motion": "Stun",
+      "frames": 8,
+      "uniquePixelFrames": 6,
+      "contactFrame": -1
+    },
+    {
+      "template": "boar",
+      "motion": "Idle",
+      "frames": 8,
+      "uniquePixelFrames": 7,
+      "contactFrame": -1
+    },
+    {
+      "template": "boar",
+      "motion": "Attack",
+      "frames": 8,
+      "uniquePixelFrames": 7,
+      "contactFrame": 5
+    },
+    {
+      "template": "boar",
+      "motion": "Stun",
+      "frames": 8,
+      "uniquePixelFrames": 5,
+      "contactFrame": -1
+    },
+    {
+      "template": "great_horn_rabbit",
+      "motion": "Idle",
+      "frames": 8,
+      "uniquePixelFrames": 8,
+      "contactFrame": -1
+    },
+    {
+      "template": "great_horn_rabbit",
+      "motion": "Attack",
+      "frames": 8,
+      "uniquePixelFrames": 8,
+      "contactFrame": 4
+    },
+    {
+      "template": "great_horn_rabbit",
+      "motion": "Stun",
+      "frames": 8,
+      "uniquePixelFrames": 8,
+      "contactFrame": -1
+    },
+    {
+      "template": "great_tusk",
+      "motion": "Idle",
+      "frames": 8,
+      "uniquePixelFrames": 3,
+      "contactFrame": -1
+    },
+    {
+      "template": "great_tusk",
+      "motion": "Attack",
+      "frames": 8,
+      "uniquePixelFrames": 7,
+      "contactFrame": 5
+    },
+    {
+      "template": "great_tusk",
+      "motion": "Stun",
+      "frames": 8,
+      "uniquePixelFrames": 6,
+      "contactFrame": -1
+    },
+    {
+      "template": "hero_on",
+      "motion": "Idle",
+      "frames": 8,
+      "uniquePixelFrames": 8,
+      "contactFrame": -1
+    },
+    {
+      "template": "hero_on",
+      "motion": "Run",
+      "frames": 8,
+      "uniquePixelFrames": 8,
+      "contactFrame": -1
+    },
+    {
+      "template": "hero_on",
+      "motion": "Attack",
+      "frames": 8,
+      "uniquePixelFrames": 8,
+      "contactFrame": 5
+    },
+    {
+      "template": "hero_on",
+      "motion": "DodgeUp",
+      "frames": 8,
+      "uniquePixelFrames": 8,
+      "contactFrame": 2
+    },
+    {
+      "template": "hero_on",
+      "motion": "DodgeBack",
+      "frames": 8,
+      "uniquePixelFrames": 8,
+      "contactFrame": 3
+    },
+    {
+      "template": "hero_on",
+      "motion": "DodgeForward",
+      "frames": 8,
+      "uniquePixelFrames": 8,
+      "contactFrame": 3
+    },
+    {
+      "template": "hero_on",
+      "motion": "DodgeDown",
+      "frames": 8,
+      "uniquePixelFrames": 8,
+      "contactFrame": 2
+    },
+    {
+      "template": "hero_on",
+      "motion": "Hit",
+      "frames": 6,
+      "uniquePixelFrames": 6,
+      "contactFrame": -1
+    },
+    {
+      "template": "hero_on",
+      "motion": "Stun",
+      "frames": 8,
+      "uniquePixelFrames": 8,
+      "contactFrame": -1
+    }
+  ],
+  "stageTemplateReuse": {
+    "trail_slime": "slime",
+    "grass_slime": "slime",
+    "horn_rabbit": "horn_rabbit",
+    "pebble_slime": "slime",
+    "great_horn_rabbit": "great_horn_rabbit",
+    "young_boar": "boar",
+    "puddle_slime": "slime",
+    "stone_throw_rabbit": "horn_rabbit",
+    "ridge_boar": "boar",
+    "great_tusk": "great_tusk"
+  },
+  "preservedLegacyActors": 28,
+  "manifestSha256": "819498238a9724ab783ce726265c171be7c7f62edd1da9e70550e6798f9c2459"
+}

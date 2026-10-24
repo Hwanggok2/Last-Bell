@@ -1,0 +1,27 @@
+{
+  "tool": "create_image_pro_flash",
+  "request": {
+    "description": "ONE small friendly fantasy adventurer game sprite, strict RIGHT-facing side view, entire body only 26 pixels tall centered inside 48x48 transparent canvas, feet at y=38. Youthful brave traveler going to defeat a dragon. Visible warm face with one single dark pixel eye, short chestnut brown hair, NO hood and NO helmet. Short RED scarf at neck, bright TEAL GREEN short tunic, plain brown leather belt, navy dark leggings, small brown boots. A SMALL compact brown travel backpack, one cream rolled blanket fixed horizontally on its top, pack only 4 pixels wide and not a giant bag. ONE short steel one-handed sword with brown hilt in near/right hand, sword clearly connected to hand, blade points diagonally up-right. Friendly simple 1990s handheld RPG pixel sprite. Coarse deliberate square clusters, 8-10 colors total, flat broad color areas, only one shadow tone per material, crisp stair-step diagonal edges. Native low resolution, no anti-alias, no gradients, no dithering, no tiny decorative seams, no facial portrait detail, no glow, no ground shadow. Grounded neutral ready stance, separated legs, body lean slightly forward. No bell symbols. Exactly one character no text no panel.",
+    "width": 48,
+    "height": 48,
+    "no_background": true,
+    "max_colors": 10,
+    "palette": [
+      "#202D38",
+      "#6B3F2A",
+      "#AB6C37",
+      "#F3BD83",
+      "#2D735D",
+      "#6DAF69",
+      "#C9433E",
+      "#8B2F35",
+      "#E8D9AD",
+      "#B7D3D0"
+    ],
+    "palette_name": "Bright low-resolution adventurer ten colors",
+    "seed": 24102451
+  },
+  "result": [
+    "{\n  \"background_job_id\": \"be3a7962-cf10-4f77-b5bc-667b6b381628\",\n  \"image_id\": \"c6bd9e01-076a-5a50-87cc-c365bd0ca775\",\n  \"status\": \"processing\",\n  \"source_image_id\": \"c6bd9e01-076a-5a50-87cc-c365bd0ca775\",\n  \"job_id\": \"be3a7962-cf10-4f77-b5bc-667b6b381628\",\n  \"description\": \"ONE small friendly fantasy adventurer game sprite, strict RIGHT-facing side view, entire body only 26 pixels tall centered inside 48x48 transparent canvas, feet at y=38. Youthful brave traveler going to defeat a dragon. Visible warm face with one single dark pixel eye, short chestnut brown hair, NO hood and NO helmet. Short RED scarf at neck, bright TEAL GREEN short tunic, plain brown leather belt, navy dark leggings, small brown boots. A SMALL compact brown travel backpack, one cream rolled blanket fixed horizontally on its top, pack only 4 pixels wide and not a giant bag. ONE short steel one-handed sword with brown hilt in near/right hand, sword clearly connected to hand, blade points diagonally up-right. Friendly simple 1990s handheld RPG pixel sprite. Coarse deliberate square clusters, 8-10 colors total, flat broad color areas, only one shadow tone per material, crisp stair-step diagonal edges. Native low resolution, no anti-alias, no gradients, no dithering, no tiny decorative seams, no facial portrait detail, no glow, no ground shadow. Grounded neutral ready stance, separated legs, body lean slightly forward. No bell symbols. Exactly one character no text no panel.\",\n  \"seed\": 24102451,\n  \"image_size\": {\n    \"width\": 48,\n    \"height\": 48\n  },\n  \"output_count\": 1,\n  \"estimated_generations\": 5,\n  \"pricing_provisional\": true,\n  \"poll_tool\": \"get_image\",\n  \"download_path\": \"/mcp/images/be3a7962-cf10-4f77-b5bc-667b6b381628/download\"\n}\nPoll get_image(job_id=\"be3a7962-cf10-4f77-b5bc-667b6b381628\"). The source_image_id is usable after completion; it is an image ID, not a character/object ID. Actual usage is reported on completion. cancel_job(job_id=...) cancels unfinished work."
+  ]
+}

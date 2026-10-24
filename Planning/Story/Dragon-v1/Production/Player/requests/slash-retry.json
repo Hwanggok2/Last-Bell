@@ -1,0 +1,15 @@
+{
+  "id": "slash",
+  "tool": "animate_image",
+  "request": {
+    "first_frame_url": "https://api.pixellab.ai/mcp/images/b521d718-274a-47bb-9271-02911e0f8e7a/download",
+    "last_frame_url": "https://api.pixellab.ai/mcp/images/b521d718-274a-47bb-9271-02911e0f8e7a/download",
+    "frame_count": 8,
+    "no_background": true,
+    "seed": 24102414,
+    "action": "One decisive DIAGONAL SLASH, then guard. F1-2 rotate sword hand UP and BACK above shoulder; F3-4 swing in a broad downward CUTTING ARC across front to lower-right; F5 torso follow-through with bent knees; F6-8 recover. Edge leads the sweep, NEVER a thrust, poke or straight forward jab. One short sword stays attached to same hand at same length. No traveling dash or drawn trail: runtime supplies them. Same cream hood/short tunic, navy face/limbs, ONE amber eye, ochre scarf, brown boots, ONE short steel sword with ochre hilt. Keep clothing, palette, proportions and right-facing silhouette identical. No bell/cape/extra limb/extra weapon/VFX. Fixed48canvas, native pixels, fixed root/scale."
+  },
+  "result": [
+    "id: 249f75ff-7c6a-4b6d-9a5b-b4eb256851d5\njob_id: 249f75ff-7c6a-4b6d-9a5b-b4eb256851d5\naction: One decisive DIAGONAL SLASH, then guard. F1-2 rotate sword hand UP and BACK above shoulder; F3-4 swing in a broad downward CUTTING ARC across front to lower-right; F5 torso follow-through with bent knees; F6-8 recover. Edge leads the sweep, NEVER a thrust, poke or straight forward jab. One short sword stays attached to same hand at same length. No traveling dash or drawn trail: runtime supplies them. Same cream hood/short tunic, navy face/limbs, ONE amber eye, ochre scarf, brown boots, ONE short steel sword with ochre hilt. Keep clothing, palette, proportions and right-facing silhouette identical. No bell/cape/extra limb/extra weapon/VFX. Fixed48canvas, native pixels, fixed root/scale.\nframes: 8\nsize: 48x48px\ntransparent: True\nlast_frame: yes (interpolating to it)\nseed: 24102414\nasset_id: 6289a10f-a03f-5784-88eb-78d14aa15051\nasset_status: pending (saved when generation completes)\ncost: 1 generation\nstatus: processing (~30-180s)\n\nhint: get_image(job_id=\"249f75ff-7c6a-4b6d-9a5b-b4eb256851d5\")"
+  ]
+}

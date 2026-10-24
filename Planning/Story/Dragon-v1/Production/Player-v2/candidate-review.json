@@ -1,0 +1,102 @@
+{
+  "status": "ready-for-integration",
+  "selectedCanonical": "canonical-coarse.png",
+  "selectedCanonicalJob": "b6bef6dc-cd96-4909-85f4-64941281b01c",
+  "selectedCanvas": [
+    32,
+    32
+  ],
+  "selectedOpaqueBounds": [
+    8,
+    7,
+    26,
+    29
+  ],
+  "selectedOpaqueHeight": 22,
+  "selectedOpaqueColors": 8,
+  "canonicalAlternatives": [
+    {
+      "file": "canonical.png",
+      "job": "be3a7962-cf10-4f77-b5bc-667b6b381628",
+      "decision": "excluded",
+      "reason": "48 canvas / 26px silhouette is denser than the new coarse target."
+    },
+    {
+      "file": "canonical-native24.png",
+      "job": "1431b2c7-6213-4e88-9f71-539cd392599d",
+      "decision": "excluded",
+      "reason": "Still 22px silhouette; thicker outline and unnecessary shirt marks make it weaker than selected 32px canonical."
+    }
+  ],
+  "motionTests": [
+    {
+      "job": null,
+      "request": "requests/run-motion-test.json",
+      "decision": "pre-generation-validation-error",
+      "reason": "transfer_outfit cannot shrink128 input into32 output; crop risk rejected before generation."
+    },
+    {
+      "job": "26494134-f50a-44c6-be05-4174bcba2165",
+      "review": "reviews/run-transfer-test.png",
+      "decision": "rejected",
+      "reason": "Sword missing in flight; green tunic becomes navy; third pose loses forward lean."
+    },
+    {
+      "job": "9958b864-11f6-4276-9284-0e3236ce5951",
+      "review": "reviews/run-lock-test.png",
+      "decision": "rejected",
+      "reason": "Tunic partly restored but sword length changes and upright third pose remains."
+    },
+    {
+      "job": "f133a975-6afb-4dfb-9b2f-7947381d97bf",
+      "review": "reviews/attack-transfer-test.png",
+      "decision": "rejected",
+      "reason": "Independent review found first sword blade reduced to4px versus canonical10, and green tunic changed to an unapproved light green. Replaced by direct skeleton route."
+    },
+    {
+      "job": "b1876617-4af1-47b5-afba-f5a8f203c0a4",
+      "request": "requests/run-approved-skeleton-test.json",
+      "decision": "accepted-as-motion-test-only",
+      "reason": "Three poses retain outfit and lean. Full8 pose production adds canvas margin and clearer free-arm alternation; final run uses different job."
+    }
+  ],
+  "reviewers": [
+    "root",
+    "presentation_art_review"
+  ],
+  "finalManifest": "manifest.json",
+  "finalNativeAudit": "native-audit.json",
+  "finalDecisions": {
+    "Run": {
+      "job": "b705e0e2-7ccf-4fa5-95e5-7ac66effd51c",
+      "asset": "7bf99771-a4a7-48c0-94c8-86bcc260a475",
+      "decision": "accepted",
+      "notes": "8 poses400ms;6 boot-color pixels corrected"
+    },
+    "Attack": {
+      "job": "feeedc23-e9f2-4a5b-b24b-b16e42f711ff",
+      "asset": "f7c45455-222e-46b0-b265-d95777133d6b",
+      "decision": "accepted",
+      "notes": "14poses, blade-material/hair cleanup, common+1x,4 tip-spur pixels removed; shares Down"
+    },
+    "Idle": {
+      "job": "c2001b0f-c2ef-48c7-99c3-b2d771f42324",
+      "decision": "accepted",
+      "notes": "8 generated frames,7 unique"
+    },
+    "DodgeUp": {
+      "job": "2d26d5e7-8483-4d90-89cc-e278b8ff99b3",
+      "decision": "accepted"
+    },
+    "DodgeBack": {
+      "job": "2f3064bd-13bf-4c25-9515-e4c4869eab23",
+      "asset": "29ea16c4-3802-40bb-a19d-23611287923b",
+      "decision": "accepted",
+      "notes": "3 sole spur pixels removed"
+    },
+    "Hit": {
+      "job": "58f6155c-5594-487b-90f1-3eb51b13c9ff",
+      "decision": "accepted"
+    }
+  }
+}

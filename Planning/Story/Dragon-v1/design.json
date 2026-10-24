@@ -1,0 +1,344 @@
+{
+  "version": "dragon-design-v1",
+  "date": "2026-10-24",
+  "scope": "기획·이미지 초안. Unity·실제 게임 데이터·저장 파일에는 적용하지 않음.",
+  "workingTitle": "용 잡으러 갑니다",
+  "visualDirection": "가벼운 정통 판타지. 작은 후드 검사와 큰 용, 밝은 야외와 따뜻한 여관, 읽기 쉬운 장비 실루엣.",
+  "naming": [
+    {
+      "old": "마지막 종지기",
+      "new": "용 잡으러 갑니다",
+      "meaning": "게임 가칭. 저장소 이름 Last-Bell과 실행 프로젝트 이름은 아직 변경하지 않음."
+    },
+    {
+      "old": "종지기",
+      "new": "모험가",
+      "meaning": "플레이어의 역할. 여러 종족과 직업이 함께 사는 세계의 초보 검사."
+    },
+    {
+      "old": "종 파편",
+      "new": "보석",
+      "meaning": "특별 재화의 표시 이름. 지급량·교환량·보관함 확장 비용은 기존 수치 유지."
+    },
+    {
+      "old": "공명",
+      "new": "기세",
+      "meaning": "대응 후 반격의 힘을 나타내는 전용 성장 스탯. 현행 계산의 의미와 수치는 유지하며 기능을 새로 추가하지 않음."
+    },
+    {
+      "old": "종·등불 로비",
+      "new": "길가 여관",
+      "meaning": "지도·검·배낭이 놓인 밝은 휴식 장소. 넘어져도 쉬었다 다시 출발하는 분위기."
+    },
+    {
+      "old": "종 아이콘·황동 종 장식",
+      "new": "검·지도·방패·보석",
+      "meaning": "전투 박자는 작은 방패 접점과 파형, 진행은 지도 표식으로 표현."
+    },
+    {
+      "old": "재의 고리 / 새벽의 조각 / 사슬 종추",
+      "new": "전사의 반지 / 생명의 목걸이 / 바위 부적",
+      "meaning": "표시 이름·아이콘 교체 제안. 각 기존 공격·체력·기절 누적 효과를 유지. 전체 유물 데이터 이관은 후속 작업."
+    }
+  ],
+  "palette": [
+    {
+      "name": "양피지",
+      "color": "#FFF1D1"
+    },
+    {
+      "name": "먹색",
+      "color": "#273D45"
+    },
+    {
+      "name": "숲",
+      "color": "#4B806A"
+    },
+    {
+      "name": "성공",
+      "color": "#24766D"
+    },
+    {
+      "name": "위험",
+      "color": "#B84232"
+    },
+    {
+      "name": "장비",
+      "color": "#B77A35"
+    },
+    {
+      "name": "원경",
+      "color": "#99BF9B"
+    }
+  ],
+  "ui": {
+    "frame": [
+      1280,
+      720
+    ],
+    "orientation": "landscape",
+    "origin": "top-left; bounds [x,y,width,height]",
+    "safeArea": [
+      16,
+      16,
+      1248,
+      688
+    ],
+    "battle": {
+      "stage": {
+        "bounds": [
+          16,
+          16,
+          244,
+          104
+        ],
+        "anchor": "top-left",
+        "copy": "Stage 1 / 골드 120"
+      },
+      "pause": {
+        "bounds": [
+          1160,
+          16,
+          96,
+          96
+        ],
+        "anchor": "top-right"
+      },
+      "timingSignal": {
+        "bounds": [
+          320,
+          112,
+          640,
+          388
+        ],
+        "anchor": "world-center",
+        "style": "연속 원호·방패 접점. 종 아이콘 제거. 판정 타이밍 유지."
+      },
+      "worldFootY": 468,
+      "playerHp": {
+        "bounds": [
+          420,
+          524,
+          160,
+          16
+        ],
+        "anchor": "world-follow"
+      },
+      "enemyHp": {
+        "bounds": [
+          808,
+          524,
+          184,
+          16
+        ],
+        "anchor": "world-follow"
+      },
+      "jump": {
+        "bounds": [
+          96,
+          476,
+          104,
+          104
+        ],
+        "anchor": "bottom-left",
+        "copy": "▲"
+      },
+      "back": {
+        "bounds": [
+          12,
+          600,
+          104,
+          104
+        ],
+        "anchor": "bottom-left",
+        "copy": "◀"
+      },
+      "forward": {
+        "bounds": [
+          216,
+          600,
+          104,
+          104
+        ],
+        "anchor": "bottom-left",
+        "copy": "▶"
+      },
+      "attack": {
+        "bounds": [
+          1120,
+          564,
+          144,
+          144
+        ],
+        "anchor": "bottom-right",
+        "copy": "검 도형"
+      }
+    },
+    "lobby": {
+      "name": "여관",
+      "primary": "Stage {n}",
+      "stats": [
+        "공격력",
+        "체력",
+        "행운",
+        "기세"
+      ],
+      "wallet": [
+        "골드",
+        "보석"
+      ],
+      "flow": "모험가 선택 → 스탯 탭 → +1/최대 견적 선택 → 강화 버튼으로 실행",
+      "futureClassSlots": "마법사·바바리안·궁수는 후보이며 이번 MVP 플레이어는 검사 루카 한 명. NPC 출현이 해금이나 자동 동행을 뜻하지 않음."
+    },
+    "relic": {
+      "name": "유물",
+      "layout": "좌측 약1/3 목록, 우측 현재·다음레벨 효과",
+      "rule": "보유 자동 적용, 중복 레벨업, 보관함 확장",
+      "reward": "10단위 보스마다3개 중1개 선택. 중간보스는 기존 골드·특별재화만."
+    },
+    "dialogue": {
+      "bounds": [
+        24,
+        518,
+        1232,
+        178
+      ],
+      "anchor": "bottom",
+      "maxVisibleLines": 2,
+      "content": "한 번에 한 화자의 짧은 발화. 긴 문장은 최대2줄로 줄바꿈.",
+      "next": [
+        1096,
+        600,
+        160,
+        96
+      ],
+      "skip": [
+        1096,
+        410,
+        160,
+        96
+      ],
+      "transition": "전투 입력·HUD·데미지팝업을 정리한 뒤 대사. 장면을 읽거나 건너뛴 뒤 기존 보상 흐름."
+    },
+    "copyPolicy": "게임에는 행동·상태·가격·짧은 서사만. 설정 설명과 제작용 주석은 기획서에만 표시.",
+    "states": [
+      "첫 시작: 의뢰3문장과 기존튜토리얼",
+      "패배: 결과 후 여관에서 강화·재도전",
+      "잠긴직업: 준비중 또는잠금으로구분",
+      "재화부족: 보석소모·골드획득량확인",
+      "유물가득참: 기존보관확장/골드대체",
+      "일시정지:재개/설정/기존종료흐름",
+      "보스대사:다음/건너뛰기"
+    ]
+  },
+  "production": {
+    "now": [
+      "핵심캐릭터8명 정의",
+      "시작부터용격파까지서사",
+      "5구역·50스테이지배치",
+      "GPT 캐릭터·여정·초원 이미지 초안",
+      "종 관련 명칭·UI 테마 교체명세"
+    ],
+    "next": [
+      "승인된실루엣으로실제저해상도캐릭터제작",
+      "달리기·베기·3회피·쳐내기·피격·Idle프레임",
+      "캐릭터별크기·무기·성격유지검사",
+      "1~10최소자산팩부터Unity연결",
+      "배경5층분리·수평반복타일제작",
+      "게임전체유물/오디오/텍스트종모티프잔여검사",
+      "작업완료시한번에전용QA"
+    ],
+    "conceptLimit": "GPT이미지는 디자인과 분위기검토용. 균일한픽셀격자·애니메이션프레임·투명스프라이트·패럴랙스레이어를완성한것이아님.",
+    "rulesNotChanged": "타이밍과3회피+공격쳐내기,성장수치,50스테이지구조,유물획득조건과보관규칙을별도개편하지않음."
+  },
+  "monsterPixelRevision": {
+    "version": "v2",
+    "spec": "monster-pixel-v2.json",
+    "image": "images/monster-pixel-v2.png",
+    "priority": "몬스터 도트 밀도는 이 개정안을 우선. 이전 캐스트는 인물 정의 참고.",
+    "status": "기획 시안만; Unity 미적용"
+  },
+  "pixelWorldRevision": {
+    "version": "v3",
+    "priority": "플레이어·NPC·초원 배경·전투 화면은 v3 시안을 우선한다. 5구역 전체 원화는 구도와 색 참고로만 보존.",
+    "actors": "images/actors-pixel-v3.png",
+    "background": "images/meadow-pixel-v3.png",
+    "normalBattle": "images/battle-normal-clean-v3.png",
+    "bossBattle": "images/battle-boss-clean-v3.png",
+    "generation": "pixel-v3-generation.json",
+    "logicalTarget": "인물20~24px 높이, 큰 인물·모자 최대28px 목표. 원작 원본해상도 확인값이 아님.",
+    "status": "정적 기획 시안, Unity 미적용",
+    "uiOverrides": {
+      "playerHp": [
+        390,
+        524,
+        160,
+        16
+      ],
+      "normalEnemyHp": [
+        718,
+        524,
+        184,
+        16
+      ],
+      "bossEnemyHp": [
+        710,
+        524,
+        280,
+        16
+      ],
+      "reason": "합성에 사용한 장면의 실제 인물 위치를 따라 HP를 배치함. 3회피/공격쳐내기/재화·Stage·메뉴 좌표는 유지."
+    }
+  },
+  "pixelUiRevision": {
+    "version": "v4",
+    "spec": "ui-pixel-v4.json",
+    "priority": "전투 및 공통 UI의 최신 디자인. 캐릭터·배경은 v3 유지.",
+    "componentSheet": "images/ui-components-v4.png",
+    "normalBattle": "images/battle-normal-clean-v4.png",
+    "bossBattle": "images/battle-boss-clean-v4.png",
+    "status": "기획 시안·투명 UI 아이콘. Unity 미적용",
+    "hpOverride": {
+      "player": [
+        390,
+        520,
+        160,
+        24
+      ],
+      "normalEnemy": [
+        718,
+        520,
+        184,
+        24
+      ],
+      "bossEnemy": [
+        710,
+        520,
+        280,
+        24
+      ]
+    },
+    "reason": "HP중심보존16→24px도트테두리. 방향키만레퍼런스실측정규화위치로이동,터치크기유지.",
+    "directionLayout": "ui-pixel-v4.json referenceDirectionLayout: 위·뒤 회피 / 아래 쳐내기 중심 실측. 이전3회피 시안보다 런타임 계약 우선."
+  },
+  "runtimeInputContract": {
+    "basis": "2026-10-24 사용자 명시 확정: 현재 Unity 조작 유지(위·뒤 회피 + 아래 쳐내기). 방향키 위치만 레퍼런스에 맞춤.",
+    "up": "Up 회피 / W 또는 위 화살표",
+    "left": "Back 회피 / A 또는 왼쪽 화살표",
+    "down": "Down 쳐내기 / S 또는 아래 화살표",
+    "sword": "공격 / Space",
+    "forward": "비활성 유지"
+  },
+  "implementationContract": {
+    "date": "2026-10-24",
+    "priority": "Unity 제작판은 이 계약 우선. 나머지50스테이지 원화/서사 상세는 후속 계획.",
+    "combat": "Up/Back 회피 + Down 쳐내기, 공격은 검/Space. 사용자 명시 확정.",
+    "economy": "현행0/4 보석 유지. 예전기획의1/3은 이번 제작판에 적용하지 않음.",
+    "relics": "보스 후보를 큐에 보존, 도전 종료 정산에서3택1. 자동 적용 유지.",
+    "onboarding": "기존 프롤로그→선택/강화→출전/튜토리얼 흐름 유지.",
+    "story10": "기존3페이지: 토리2문장/루카1문장. NPC배우는 후속 범위.",
+    "scope": "1–20 새 판타지 몬스터와 플레이어 스타일 보정 제작.21–50은 후속 계획.",
+    "story20": "기블의 퇴장→도토의 광산 안내→루카 응답.3페이지 후 현MVP 경계 처리 유지.",
+    "characters": "루카/다렌/미엘, 안정적ID on/dam/rin 유지.다렌·미엘은 준비 중.전용스킬은기획만."
+  }
+}

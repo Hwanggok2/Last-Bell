@@ -1,0 +1,15 @@
+{
+  "id": "dodge-back",
+  "tool": "animate_image",
+  "request": {
+    "first_frame_url": "https://api.pixellab.ai/mcp/images/b521d718-274a-47bb-9271-02911e0f8e7a/download",
+    "last_frame_url": "https://api.pixellab.ai/mcp/images/b521d718-274a-47bb-9271-02911e0f8e7a/download",
+    "frame_count": 8,
+    "no_background": true,
+    "seed": 24102416,
+    "action": "A brisk BACKWARD EVADE while facing RIGHT, without traveling across canvas. F1-2 bend knees; F3-4 shoulders tilt LEFT away from opponent, front leg draws back while rear foot braces; F5-6 hold low guarded lean; F7-8 recover. Small torso translation at most2pixels. Arms counterbalance, short sword stays safely in same hand. Runtime supplies the backward dash. Do not turn left, walk or attack. Same cream hood/short tunic, navy face/limbs, ONE amber eye, ochre scarf, brown boots, ONE short steel sword with ochre hilt. Keep clothing, palette, proportions and right-facing silhouette identical. No bell/cape/extra limb/extra weapon/VFX. Fixed48canvas, native pixels, fixed root/scale."
+  },
+  "result": [
+    "id: 0750b284-3ede-41d4-a29e-e984f44c96d8\njob_id: 0750b284-3ede-41d4-a29e-e984f44c96d8\naction: A brisk BACKWARD EVADE while facing RIGHT, without traveling across canvas. F1-2 bend knees; F3-4 shoulders tilt LEFT away from opponent, front leg draws back while rear foot braces; F5-6 hold low guarded lean; F7-8 recover. Small torso translation at most2pixels. Arms counterbalance, short sword stays safely in same hand. Runtime supplies the backward dash. Do not turn left, walk or attack. Same cream hood/short tunic, navy face/limbs, ONE amber eye, ochre scarf, brown boots, ONE short steel sword with ochre hilt. Keep clothing, palette, proportions and right-facing silhouette identical. No bell/cape/extra limb/extra weapon/VFX. Fixed48canvas, native pixels, fixed root/scale.\nframes: 8\nsize: 48x48px\ntransparent: True\nlast_frame: yes (interpolating to it)\nseed: 24102416\nasset_id: 1b77f2ca-7c70-5ab6-b2fb-526d3975db76\nasset_status: pending (saved when generation completes)\ncost: 1 generation\nstatus: processing (~30-180s)\n\nhint: get_image(job_id=\"0750b284-3ede-41d4-a29e-e984f44c96d8\")"
+  ]
+}

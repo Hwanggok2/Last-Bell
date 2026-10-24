@@ -1,0 +1,152 @@
+[
+  {
+    "id": "tori",
+    "motion": "idle",
+    "prompt": "Quiet breathing in place: shoulders rise one pixel, lower one pixel; weapon hands move subtly with breathing. Four distinct smooth poses. Both boots remain absolutely planted, soles at same baseline; body x fixed. Tail or cape tip subtle one pixel sway if present. No step, no jump, no horizontal drift. Maintain exactly the same face, hat, costume and single weapon; no extra objects. End in identical starting pose.",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "id: 168ca30f-1a9c-431b-a0e1-d8f3b46c88d4\njob_id: 168ca30f-1a9c-431b-a0e1-d8f3b46c88d4\ndescription: Quiet breathing in place: shoulders rise one pixel, lower one pixel; weapon hands move subtly with breathing. Four distinct smooth poses. Both boots remain absolutely planted, soles at same baseline; body x fixed. Tail or cape tip subtle one pixel sway if present. No step, no jump, no horizontal drift. Maintain exactly the same face, hat, costume and single weapon; no extra objects. End in identical starting pose.\nframes: 4\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 243610\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"168ca30f-1a9c-431b-a0e1-d8f3b46c88d4\")\nasset_id: 8c6f3da4-eec6-5787-becc-6cf844306b3d\nasset_status: pending (saved to your gallery when generation completes)"
+        }
+      ],
+      "isError": false
+    },
+    "jobId": "168ca30f-1a9c-431b-a0e1-d8f3b46c88d4"
+  },
+  {
+    "id": "tori",
+    "motion": "attack",
+    "prompt": "Raises short bow toward right, draws string visibly back beside face, releases ONE arrow at the middle of the clip, right shoulder recoils one pixel, lowers bow and returns to exact initial idle pose. Four distinct phases: bowraise, stringdraw, release, recover. Hands stay attached to same bow. No running or stepping, no giant arrow or VFX. Both boots planted at fixed source positions; no step, no root translation. Eight clear poses from anticipation through one attack to recovery. Complete action and return to identical idle pose at end. Keep all limbs, costume, color clusters and the exact same single weapon. No projectiles or additional special effects.",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "id: aab0e4e2-8df0-487c-b199-ca11db7e4296\njob_id: aab0e4e2-8df0-487c-b199-ca11db7e4296\ndescription: Raises short bow toward right, draws string visibly back beside face, releases ONE arrow at the middle of the clip, right shoulder recoils one pixel, lowers bow and returns to exact initial idle pose. Four distinct phases: bowraise, stringdraw, release, recover. Hands stay attached to same bow. No running or stepping, no giant arrow or VFX. Both boots planted at fixed source positions; no step, no root translation. Eight clear poses from anticipation through one attack to recovery. Complete action and return to identical idle pose at end. Keep all limbs, costume, color clusters and the exact same single weapon. No projectiles or additional special effects.\nframes: 8\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 243611\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"aab0e4e2-8df0-487c-b199-ca11db7e4296\")\nasset_id: ae718198-ab68-5730-a663-85bda38a6edc\nasset_status: pending (saved to your gallery when generation completes)"
+        }
+      ],
+      "isError": false
+    },
+    "jobId": "aab0e4e2-8df0-487c-b199-ca11db7e4296"
+  },
+  {
+    "id": "barun",
+    "motion": "idle",
+    "prompt": "Quiet breathing in place: shoulders rise one pixel, lower one pixel; weapon hands move subtly with breathing. Four distinct smooth poses. Both boots remain absolutely planted, soles at same baseline; body x fixed. Tail or cape tip subtle one pixel sway if present. No step, no jump, no horizontal drift. Maintain exactly the same face, hat, costume and single weapon; no extra objects. End in identical starting pose.",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "id: 31d05014-979e-4596-b0bb-04f358e783e8\njob_id: 31d05014-979e-4596-b0bb-04f358e783e8\ndescription: Quiet breathing in place: shoulders rise one pixel, lower one pixel; weapon hands move subtly with breathing. Four distinct smooth poses. Both boots remain absolutely planted, soles at same baseline; body x fixed. Tail or cape tip subtle one pixel sway if present. No step, no jump, no horizontal drift. Maintain exactly the same face, hat, costume and single weapon; no extra objects. End in identical starting pose.\nframes: 4\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 243610\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"31d05014-979e-4596-b0bb-04f358e783e8\")\nasset_id: a5d7188d-9383-5b86-86a0-e751be841fd9\nasset_status: pending (saved to your gallery when generation completes)"
+        }
+      ],
+      "isError": false
+    },
+    "jobId": "31d05014-979e-4596-b0bb-04f358e783e8"
+  },
+  {
+    "id": "barun",
+    "motion": "attack",
+    "prompt": "Raises the same greatsword overhead in both hands, leans torso back slightly, performs ONE broad diagonal downward sword swing toRIGHT at middle of clip, visible followthrough, recovers to same low guard idle. Sword is attached to hands, full blade stays inside32pxcanvas. Feet planted, no running, no camera move, no VFX. Both boots planted at fixed source positions; no step, no root translation. Eight clear poses from anticipation through one attack to recovery. Complete action and return to identical idle pose at end. Keep all limbs, costume, color clusters and the exact same single weapon. No projectiles or additional special effects.",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "id: d7477c81-087d-43ea-b476-f89aa98d9b3e\njob_id: d7477c81-087d-43ea-b476-f89aa98d9b3e\ndescription: Raises the same greatsword overhead in both hands, leans torso back slightly, performs ONE broad diagonal downward sword swing toRIGHT at middle of clip, visible followthrough, recovers to same low guard idle. Sword is attached to hands, full blade stays inside32pxcanvas. Feet planted, no running, no camera move, no VFX. Both boots planted at fixed source positions; no step, no root translation. Eight clear poses from anticipation through one attack to recovery. Complete action and return to identical idle pose at end. Keep all limbs, costume, color clusters and the exact same single weapon. No projectiles or additional special effects.\nframes: 8\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 243611\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"d7477c81-087d-43ea-b476-f89aa98d9b3e\")\nasset_id: 5ad12016-6d70-5256-b00d-d9a1d8791f79\nasset_status: pending (saved to your gallery when generation completes)"
+        }
+      ],
+      "isError": false
+    },
+    "jobId": "d7477c81-087d-43ea-b476-f89aa98d9b3e"
+  },
+  {
+    "id": "doto",
+    "motion": "idle",
+    "prompt": "Quiet breathing in place: shoulders rise one pixel, lower one pixel; weapon hands move subtly with breathing. Four distinct smooth poses. Both boots remain absolutely planted, soles at same baseline; body x fixed. Tail or cape tip subtle one pixel sway if present. No step, no jump, no horizontal drift. Maintain exactly the same face, hat, costume and single weapon; no extra objects. End in identical starting pose.",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "id: e1cc3462-9ce1-494d-ab88-fa64e4b07f09\njob_id: e1cc3462-9ce1-494d-ab88-fa64e4b07f09\ndescription: Quiet breathing in place: shoulders rise one pixel, lower one pixel; weapon hands move subtly with breathing. Four distinct smooth poses. Both boots remain absolutely planted, soles at same baseline; body x fixed. Tail or cape tip subtle one pixel sway if present. No step, no jump, no horizontal drift. Maintain exactly the same face, hat, costume and single weapon; no extra objects. End in identical starting pose.\nframes: 4\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 243610\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"e1cc3462-9ce1-494d-ab88-fa64e4b07f09\")\nasset_id: c31134e1-8dda-5f2d-aed6-4c025cd3ac85\nasset_status: pending (saved to your gallery when generation completes)"
+        }
+      ],
+      "isError": false
+    },
+    "jobId": "e1cc3462-9ce1-494d-ab88-fa64e4b07f09"
+  },
+  {
+    "id": "doto",
+    "motion": "attack",
+    "prompt": "Lifts workhammer slightly above right shoulder, swings ONE heavy hammer strike down and towardRIGHT at middle of clip, body squashes one pixel with effort, hammer follows through, returns hammer to same shoulder rest. Keep hammer metalhead square and same size, handle connected to hands. Feet planted, no step, no VFX. Both boots planted at fixed source positions; no step, no root translation. Eight clear poses from anticipation through one attack to recovery. Complete action and return to identical idle pose at end. Keep all limbs, costume, color clusters and the exact same single weapon. No projectiles or additional special effects.",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "id: f2c6d1d1-1abb-467d-acc1-9430f1ef1279\njob_id: f2c6d1d1-1abb-467d-acc1-9430f1ef1279\ndescription: Lifts workhammer slightly above right shoulder, swings ONE heavy hammer strike down and towardRIGHT at middle of clip, body squashes one pixel with effort, hammer follows through, returns hammer to same shoulder rest. Keep hammer metalhead square and same size, handle connected to hands. Feet planted, no step, no VFX. Both boots planted at fixed source positions; no step, no root translation. Eight clear poses from anticipation through one attack to recovery. Complete action and return to identical idle pose at end. Keep all limbs, costume, color clusters and the exact same single weapon. No projectiles or additional special effects.\nframes: 8\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 243611\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"f2c6d1d1-1abb-467d-acc1-9430f1ef1279\")\nasset_id: 8ea56353-b8de-5b8a-a729-e401a4676e80\nasset_status: pending (saved to your gallery when generation completes)"
+        }
+      ],
+      "isError": false
+    },
+    "jobId": "f2c6d1d1-1abb-467d-acc1-9430f1ef1279"
+  },
+  {
+    "id": "rina",
+    "motion": "idle",
+    "prompt": "Quiet breathing in place: shoulders rise one pixel, lower one pixel; weapon hands move subtly with breathing. Four distinct smooth poses. Both boots remain absolutely planted, soles at same baseline; body x fixed. Tail or cape tip subtle one pixel sway if present. No step, no jump, no horizontal drift. Maintain exactly the same face, hat, costume and single weapon; no extra objects. End in identical starting pose.",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "id: 9f5ef9c1-035a-4cfd-a9ef-0c5801641d2b\njob_id: 9f5ef9c1-035a-4cfd-a9ef-0c5801641d2b\ndescription: Quiet breathing in place: shoulders rise one pixel, lower one pixel; weapon hands move subtly with breathing. Four distinct smooth poses. Both boots remain absolutely planted, soles at same baseline; body x fixed. Tail or cape tip subtle one pixel sway if present. No step, no jump, no horizontal drift. Maintain exactly the same face, hat, costume and single weapon; no extra objects. End in identical starting pose.\nframes: 4\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 243610\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"9f5ef9c1-035a-4cfd-a9ef-0c5801641d2b\")\nasset_id: 70c2ea86-65dd-5bc1-a199-1d2c75ac2414\nasset_status: pending (saved to your gallery when generation completes)"
+        }
+      ],
+      "isError": false
+    },
+    "jobId": "9f5ef9c1-035a-4cfd-a9ef-0c5801641d2b"
+  },
+  {
+    "id": "rina",
+    "motion": "attack",
+    "prompt": "Raises staff upward slightly, draws free hand to chest, extends staff and free palm towardRIGHT to release ONE small windbubble at middle of clip, holds clear casting pose briefly, returns to exact idle. Pose animation only: do NOT draw projectiles, glowing particles, light cloud or large magic ring. Hat/robe/staff identity stays fixed. Both feet planted. Both boots planted at fixed source positions; no step, no root translation. Eight clear poses from anticipation through one attack to recovery. Complete action and return to identical idle pose at end. Keep all limbs, costume, color clusters and the exact same single weapon. No projectiles or additional special effects.",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "id: 0e916799-8982-4ce1-965e-6d18d5dce916\njob_id: 0e916799-8982-4ce1-965e-6d18d5dce916\ndescription: Raises staff upward slightly, draws free hand to chest, extends staff and free palm towardRIGHT to release ONE small windbubble at middle of clip, holds clear casting pose briefly, returns to exact idle. Pose animation only: do NOT draw projectiles, glowing particles, light cloud or large magic ring. Hat/robe/staff identity stays fixed. Both feet planted. Both boots planted at fixed source positions; no step, no root translation. Eight clear poses from anticipation through one attack to recovery. Complete action and return to identical idle pose at end. Keep all limbs, costume, color clusters and the exact same single weapon. No projectiles or additional special effects.\nframes: 8\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 243611\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"0e916799-8982-4ce1-965e-6d18d5dce916\")\nasset_id: 774fd2af-0dc1-5c53-832b-be6ff601df47\nasset_status: pending (saved to your gallery when generation completes)"
+        }
+      ],
+      "isError": false
+    },
+    "jobId": "0e916799-8982-4ce1-965e-6d18d5dce916"
+  },
+  {
+    "id": "momo",
+    "motion": "idle",
+    "prompt": "Quiet breathing in place: shoulders rise one pixel, lower one pixel; weapon hands move subtly with breathing. Four distinct smooth poses. Both boots remain absolutely planted, soles at same baseline; body x fixed. Tail or cape tip subtle one pixel sway if present. No step, no jump, no horizontal drift. Maintain exactly the same face, hat, costume and single weapon; no extra objects. End in identical starting pose.",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "id: 500390d6-cb18-4ff7-b7bd-b0a3367652f9\njob_id: 500390d6-cb18-4ff7-b7bd-b0a3367652f9\ndescription: Quiet breathing in place: shoulders rise one pixel, lower one pixel; weapon hands move subtly with breathing. Four distinct smooth poses. Both boots remain absolutely planted, soles at same baseline; body x fixed. Tail or cape tip subtle one pixel sway if present. No step, no jump, no horizontal drift. Maintain exactly the same face, hat, costume and single weapon; no extra objects. End in identical starting pose.\nframes: 4\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 243610\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"500390d6-cb18-4ff7-b7bd-b0a3367652f9\")\nasset_id: 14f8864a-b7e3-5a74-98b6-888d7db94710\nasset_status: pending (saved to your gallery when generation completes)"
+        }
+      ],
+      "isError": false
+    },
+    "jobId": "500390d6-cb18-4ff7-b7bd-b0a3367652f9"
+  },
+  {
+    "id": "momo",
+    "motion": "attack",
+    "prompt": "Takes one tiny seedpouch in right hand from apron, winds throwing arm slightly backward, throws ONE seedpouch towardRIGHT at middle of clip with clear arm extension, arm follows through and returns to same relaxedidle. The seedpouch leaves hand onlyonce; do NOT draw thrown projectile or VFX in spriteframes. Leafbundle remains attached to back, creamkerchief remains on head. Feet planted, no stepping. Both boots planted at fixed source positions; no step, no root translation. Eight clear poses from anticipation through one attack to recovery. Complete action and return to identical idle pose at end. Keep all limbs, costume, color clusters and the exact same single weapon. No projectiles or additional special effects.",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "id: a6bfd2da-9d94-41a0-9974-2daa153a33be\njob_id: a6bfd2da-9d94-41a0-9974-2daa153a33be\ndescription: Takes one tiny seedpouch in right hand from apron, winds throwing arm slightly backward, throws ONE seedpouch towardRIGHT at middle of clip with clear arm extension, arm follows through and returns to same relaxedidle. The seedpouch leaves hand onlyonce; do NOT draw thrown projectile or VFX in spriteframes. Leafbundle remains attached to back, creamkerchief remains on head. Feet planted, no stepping. Both boots planted at fixed source positions; no step, no root translation. Eight clear poses from anticipation through one attack to recovery. Complete action and return to identical idle pose at end. Keep all limbs, costume, color clusters and the exact same single weapon. No projectiles or additional special effects.\nframes: 8\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 243611\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"a6bfd2da-9d94-41a0-9974-2daa153a33be\")\nasset_id: 2dd17f68-167a-56b7-890c-feb2e5a3f620\nasset_status: pending (saved to your gallery when generation completes)"
+        }
+      ],
+      "isError": false
+    },
+    "jobId": "a6bfd2da-9d94-41a0-9974-2daa153a33be"
+  }
+]

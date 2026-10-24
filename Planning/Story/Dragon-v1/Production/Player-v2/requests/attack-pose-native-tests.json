@@ -1,0 +1,30 @@
+{
+  "tool": "image_to_pixelart",
+  "sourceJobId": "7ecc3608-786d-48ae-9b51-f23de1d494c0",
+  "outputSize": [
+    32,
+    32
+  ],
+  "faithful": true,
+  "strength": 220,
+  "records": [
+    {
+      "sourceIndex": 0,
+      "result": [
+        "id: 1b9dd39c-c929-48d1-97fc-a0d702aa26a0\njob_id: 1b9dd39c-c929-48d1-97fc-a0d702aa26a0\nsource: 128x128px\noutput: 32x32px\nfaithful: True\ninit_image_strength: 220\nseed: 24102600\nasset_id: 566540ff-368d-5261-8921-67e6331da671\nasset_status: pending (saved when generation completes)\ncost: 1 generation\nstatus: processing (~20-60s)\n\nhint: get_image(job_id=\"1b9dd39c-c929-48d1-97fc-a0d702aa26a0\")"
+      ]
+    },
+    {
+      "sourceIndex": 6,
+      "result": [
+        "id: 1d9bcb70-65e1-4255-8a65-92ef6621f0b3\njob_id: 1d9bcb70-65e1-4255-8a65-92ef6621f0b3\nsource: 128x128px\noutput: 32x32px\nfaithful: True\ninit_image_strength: 220\nseed: 24102601\nasset_id: 8d2811b4-0eb3-5c2a-8810-8cf3fe83be2c\nasset_status: pending (saved when generation completes)\ncost: 1 generation\nstatus: processing (~20-60s)\n\nhint: get_image(job_id=\"1d9bcb70-65e1-4255-8a65-92ef6621f0b3\")"
+      ]
+    },
+    {
+      "sourceIndex": 8,
+      "result": [
+        "id: 8bb3d8c9-7ad1-44a5-91ac-10c32e5e0448\njob_id: 8bb3d8c9-7ad1-44a5-91ac-10c32e5e0448\nsource: 128x128px\noutput: 32x32px\nfaithful: True\ninit_image_strength: 220\nseed: 24102602\nasset_id: 7028eac5-167d-56b4-ba78-1027c5f1b015\nasset_status: pending (saved when generation completes)\ncost: 1 generation\nstatus: processing (~20-60s)\n\nhint: get_image(job_id=\"8bb3d8c9-7ad1-44a5-91ac-10c32e5e0448\")"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "chain_thrall": {
+    "sourceFrames": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "holdsMs": [
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200
+    ],
+    "accepted": true,
+    "excludedFrames": [
+      0
+    ],
+    "exclusionReason": "Frame0 is a direct copy of the original soft-alpha sprite. Native generated frames1..8 are binary-alpha and avoid a recurring alpha/color-edge seam.",
+    "displayName": "사슬 집행자",
+    "notes": [
+      "Foot support at y113 is identical across selected frames.",
+      "Breathing plus a restrained hanging-chain pendulum; original silhouette/weapon remain."
+    ]
+  },
+  "ash_wisp": {
+    "sourceFrames": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "holdsMs": [
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200
+    ],
+    "accepted": true,
+    "excludedFrames": [
+      0
+    ],
+    "exclusionReason": "Frame0 is a direct copy of the original soft-alpha sprite. Native generated frames1..8 are binary-alpha and avoid a recurring alpha/color-edge seam.",
+    "displayName": "떠도는 등불",
+    "notes": [
+      "Floating actor: cloth tips and ember gently flicker; hat, face and upper body retain their fixed position."
+    ]
+  },
+  "cracked_blade": {
+    "sourceFrames": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "holdsMs": [
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200
+    ],
+    "accepted": true,
+    "excludedFrames": [
+      0
+    ],
+    "exclusionReason": "Frame0 is a direct copy of the original soft-alpha sprite. Native generated frames1..8 are binary-alpha and avoid a recurring alpha/color-edge seam.",
+    "displayName": "금 간 검병",
+    "notes": [
+      "Subtle shoulder breathing, sword upright; boots retain their fixed ground row with one edge pixel changing at source3."
+    ]
+  },
+  "chain_dancer": {
+    "sourceFrames": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "holdsMs": [
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200
+    ],
+    "accepted": true,
+    "excludedFrames": [
+      0
+    ],
+    "exclusionReason": "Frame0 is a direct copy of the original soft-alpha sprite. Native generated frames1..8 are binary-alpha and avoid a recurring alpha/color-edge seam.",
+    "displayName": "사슬 무희",
+    "notes": [
+      "Floating dancer: head and upper chain ring are stable. Only lower hanging tip sways."
+    ]
+  },
+  "chain_puppet": {
+    "accepted": true,
+    "displayName": "사슬 인형",
+    "sourceFrames": [
+      1,
+      7,
+      8,
+      7
+    ],
+    "holdsMs": [
+      400,
+      400,
+      400,
+      400
+    ],
+    "excludedFrames": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "exclusionReason": "Source2..6 introduce unrequested detached golden objects and trails. Source0 uses original soft alpha. Clean native1/7/8 are played forward/backward.",
+    "notes": [
+      "Three unique source frames in a four-step restrained mechanical settling loop; no extra effects.",
+      "A four-frame rerun was registered but is not integrated unless separately reviewed as better."
+    ]
+  },
+  "hook_hound": {
+    "accepted": true,
+    "displayName": "갈고리 사냥개",
+    "sourceFrames": [
+      5,
+      7,
+      8,
+      7
+    ],
+    "holdsMs": [
+      400,
+      400,
+      400,
+      400
+    ],
+    "excludedFrames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6
+    ],
+    "exclusionReason": "Source1/3/6 have detached pixels below the fixed ground; source2 has muzzle texture noise; source4 has stray pixels. Original soft-alpha frame0 excluded.",
+    "notes": [
+      "Only clean5/7/8 reused in a four-step tail twitch loop. Core and all paws remain fixed.",
+      "Three unique source frames; original beak/armor/closed tail-ring shape preserved."
+    ]
+  }
+}

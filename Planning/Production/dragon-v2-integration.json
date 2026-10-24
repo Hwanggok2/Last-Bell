@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-24",
+  "status": "complete-targeted-QA-passed-normal-Windows-build-packaged",
+  "buildVersion": "0.9.1",
+  "dataVersion": "mvp1.14.0",
+  "scope": "Adventurer Player-v2 and coarse HP; existing controls/gameplay/content retained",
+  "art": {
+    "canvas": [
+      32,
+      32
+    ],
+    "canonicalOpaqueHeight": 22,
+    "paletteColors": 8,
+    "sourceFrames": 52,
+    "activeClips": 7,
+    "runtimeFrameReferences": 66,
+    "parry": "Attack14 reused with parry timing",
+    "runCycleMs": 400,
+    "displayScale720p": 7,
+    "canonicalBodyHeight720p": 154,
+    "preservedOtherActors": 38
+  },
+  "healthBar": {
+    "widths720p": [
+      160,
+      184,
+      280
+    ],
+    "height720p": 36,
+    "nativeRows": 9,
+    "cell720p": 4,
+    "drawableCapacities": [
+      26,
+      31,
+      50
+    ],
+    "centers": "Original home anchor; HP edge snapped to physical screen pixels with at most0.5px translation per axis"
+  },
+  "timing": {
+    "attackContactMs": 200,
+    "attackRecoverMs": 500,
+    "travelPixels": 1920,
+    "travelDurationSeconds": 2,
+    "controlContract": "Up/Back dodge, Down parry, Space/sword attack"
+  },
+  "observedBuild": "Builds/Dragon-v2-QA/LastBellMvp.exe",
+  "observedRuntimeSha256": "41fe0fbffacaa8798db29bbea9353559459af12ea58e9acdc210b7c577236a2b",
+  "files": {
+    "Client/Assets/Game/Scenes/Mvp.unity": "2d368a5fddbcee2a28c666fc3bba371cf57c9aa2ab07b0758c2e27bf31ee2834",
+    "Client/Assets/Game/Prefabs/GameView.prefab": "8d9ac12dfbf6f45b841aeaf6ed9dba235bdabd12bb2b928347812bb8944c1d72",
+    "Client/Assets/Game/Prefabs/PresentationWorld.prefab": "763be4f72e80cb1a803de944dd97be393b647889bb2e0d58c6d2b74de70ded13",
+    "Client/Assets/Game/Art/Presentation/manifest.json": "46e0803e5ee6c49fa87faa711b3fdd8d47f9bb6d83d83ed9db3211a756d1c880",
+    "Client/Assets/Game/Art/Presentation/PresentationArtCatalog.asset": "22a6abce5556c97d73e3fbf6a7d12be65cdcd96d6fbc3219db5f0080eb266454",
+    "Client/Assets/Game/Data/Generated/mvp-catalog.json": "a9b54f7c0234ebd5f92b0a3078446159830eb26e4b7d6fe7942a8a8f3e0c1ee3",
+    "Client/Assets/Game/Runtime/Presentation/HealthBarGraphic.cs": "4e8e3b9fff9e3a934cf66781823f9e1a302b569beab35420d643078b9e310dbe",
+    "Client/Assets/Game/Runtime/Presentation/DragonUiTheme.cs": "34c11ad85a6d537bdb38f59b6a2e25510eaa1583ce2566bc4254873517de3f6a",
+    "Client/Assets/Game/Runtime/Presentation/BattlePresentation.cs": "6ab83ed02e63d32fc3d8a22d9fe4dff4d294ae167d3265f1b7cd2ba207371c0d",
+    "Client/Assets/Game/Editor/PresentationArtImporter.cs": "cfd419fab47f5c7b780bac45351b136b59920a4a991b80344a4165e1dbb32a83",
+    "Client/Assets/Game/Editor/DragonThemeMigration.cs": "d34264f291ddcef23c7b601b6de04a51d94aa996ea3aa9487e7f2d0dba00649e"
+  },
+  "dataUnchangedFromV1": true,
+  "limits": [
+    "OS physical input and mobile device tests remain deferred",
+    "Visual review used actual captured frame sequences and timing records, not direct normal-speed video playback",
+    "Planning browser rendering not inspected: local file URL policy blocks access"
+  ],
+  "artBindings": "Planning/Production/dragon-v2-art-bindings.json",
+  "qaReport": "Planning/QA/dragon-v2-result-20261024.md",
+  "releaseManifest": "Planning/Production/dragon-v2-release.json",
+  "qa": {
+    "report": "Planning/QA/dragon-v2-result-20261024.md",
+    "targetedPlayMode": {
+      "passed": 11,
+      "failed": 0
+    },
+    "motionObservationResolutions": [
+      "1280x720",
+      "640x360"
+    ],
+    "finalHealthStatesPassed": 30,
+    "DQA2-001": "CLOSED"
+  }
+}

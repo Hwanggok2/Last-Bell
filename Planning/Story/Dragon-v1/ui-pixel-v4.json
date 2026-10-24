@@ -1,0 +1,256 @@
+{
+  "version": "pixel-ui-v4",
+  "date": "2026-10-24",
+  "scope": "기획서·정적 디자인 시안. Unity 씬·런타임 미적용.",
+  "renderer": "render-battle-v4.cjs",
+  "frame": [
+    1280,
+    720
+  ],
+  "worldArt": "v3 scene reused unchanged",
+  "origin": "top-left; component-local pixel grid",
+  "iconPixelSize": 4,
+  "iconGridRule": "4px 정사각형 셀; 회전은 인덱스 변환; 배경 없는 화살표. 비교 시트 일부만2/3px 축소.",
+  "text": {
+    "font": "NeoDunggeunmoPro-Regular.ttf",
+    "sourceSize": 16,
+    "scale": [
+      1,
+      2,
+      3
+    ],
+    "method": "alphabetic baseline 16; binary alpha then integer nearest-neighbor scaling",
+    "battleScale": 2
+  },
+  "palette": [
+    "#FFF1D1",
+    "#FFF9E9",
+    "#273D45",
+    "#71543F",
+    "#B77A35",
+    "#F4CD6C",
+    "#9E6942",
+    "#24766D",
+    "#72B99B",
+    "#B84232",
+    "#F18C67",
+    "#596463",
+    "#A4CED1",
+    "#89918A",
+    "#75628C",
+    "#DDD8C3"
+  ],
+  "visuals": {
+    "normal": "images/battle-normal-clean-v4.png",
+    "normalWarning": "images/battle-normal-telegraph-v4.png",
+    "boss": "images/battle-boss-clean-v4.png",
+    "bossWarning": "images/battle-boss-telegraph-v4.png",
+    "wireframe": "images/battle-wireframe-v4.png",
+    "components": "images/ui-components-v4.png"
+  },
+  "bounds": {
+    "playerHp": [
+      390,
+      520,
+      160,
+      24
+    ],
+    "normalEnemyHp": [
+      718,
+      520,
+      184,
+      24
+    ],
+    "bossHp": [
+      710,
+      520,
+      280,
+      24
+    ],
+    "stagePanel": [
+      16,
+      16,
+      244,
+      104
+    ],
+    "pause": [
+      1160,
+      16,
+      96,
+      96
+    ]
+  },
+  "touchAreas": {
+    "jump": [
+      92,
+      455,
+      104,
+      104
+    ],
+    "back": [
+      19,
+      561,
+      104,
+      104
+    ],
+    "attack": [
+      1120,
+      564,
+      144,
+      144
+    ],
+    "parry": [
+      138,
+      589,
+      104,
+      104
+    ]
+  },
+  "anchors": {
+    "hp": "world-follow",
+    "stagePanel": "top-left",
+    "pause": "top-right",
+    "direction": "bottom-left",
+    "attack": "bottom-right"
+  },
+  "health": {
+    "quantization": "4px, ceil, clamp to capacity",
+    "nonzeroMinimumCells": 1,
+    "zeroOnlyEmpty": true,
+    "emptyColor": "#596463",
+    "centerPreserved": true,
+    "visualHeightBefore": 16,
+    "visualHeightAfter": 24
+  },
+  "states": {
+    "normal": "청록 화살표·밝은 검·짙은 외곽선",
+    "pressed": "1셀(4px) 아래로 이동하고 내부 색면 변경; 입력 수락 여부와 잠금 상태는 런타임 소유자가 결정",
+    "disabled": "회색 윤곽+빈 면. 새로운 쿨다운을 추가하는 뜻이 아님.",
+    "selected": "체크와 모서리 장식 함께; 선택색만으로 구분하지 않음.",
+    "lowHp": "길이와 빈 영역으로 구분; 저체력 점멸 동작 미구현",
+    "critical": "일반 피해32px/치명타48px 도트 글리프, 별 형태 보조. 이동/진동 효과는 기존 기획 유지."
+  },
+  "scopeCoverage": [
+    "체력바",
+    "위·뒤 회피 / 아래 쳐내기",
+    "검 공격",
+    "Stage·일시정지 패널",
+    "방패 접점",
+    "계단형 타이밍 원호·위험 모서리",
+    "골드·보석",
+    "성장 별점·강화+",
+    "유물 가방·선택 테두리",
+    "확인·취소·비활성 패널",
+    "피해·치명타 숫자"
+  ],
+  "assetCount": 45,
+  "assets": [
+    "images/ui-pixel-v4/bag-disabled.png",
+    "images/ui-pixel-v4/bag-normal.png",
+    "images/ui-pixel-v4/bag-pressed.png",
+    "images/ui-pixel-v4/check-disabled.png",
+    "images/ui-pixel-v4/check-normal.png",
+    "images/ui-pixel-v4/check-pressed.png",
+    "images/ui-pixel-v4/coin-disabled.png",
+    "images/ui-pixel-v4/coin-normal.png",
+    "images/ui-pixel-v4/coin-pressed.png",
+    "images/ui-pixel-v4/cross-disabled.png",
+    "images/ui-pixel-v4/cross-normal.png",
+    "images/ui-pixel-v4/cross-pressed.png",
+    "images/ui-pixel-v4/down-disabled.png",
+    "images/ui-pixel-v4/down-normal.png",
+    "images/ui-pixel-v4/down-pressed.png",
+    "images/ui-pixel-v4/gem-disabled.png",
+    "images/ui-pixel-v4/gem-normal.png",
+    "images/ui-pixel-v4/gem-pressed.png",
+    "images/ui-pixel-v4/heart-disabled.png",
+    "images/ui-pixel-v4/heart-normal.png",
+    "images/ui-pixel-v4/heart-pressed.png",
+    "images/ui-pixel-v4/left-disabled.png",
+    "images/ui-pixel-v4/left-normal.png",
+    "images/ui-pixel-v4/left-pressed.png",
+    "images/ui-pixel-v4/pause-disabled.png",
+    "images/ui-pixel-v4/pause-normal.png",
+    "images/ui-pixel-v4/pause-pressed.png",
+    "images/ui-pixel-v4/plus-disabled.png",
+    "images/ui-pixel-v4/plus-normal.png",
+    "images/ui-pixel-v4/plus-pressed.png",
+    "images/ui-pixel-v4/right-disabled.png",
+    "images/ui-pixel-v4/right-normal.png",
+    "images/ui-pixel-v4/right-pressed.png",
+    "images/ui-pixel-v4/shield-disabled.png",
+    "images/ui-pixel-v4/shield-normal.png",
+    "images/ui-pixel-v4/shield-pressed.png",
+    "images/ui-pixel-v4/star-disabled.png",
+    "images/ui-pixel-v4/star-normal.png",
+    "images/ui-pixel-v4/star-pressed.png",
+    "images/ui-pixel-v4/sword-disabled.png",
+    "images/ui-pixel-v4/sword-normal.png",
+    "images/ui-pixel-v4/sword-pressed.png",
+    "images/ui-pixel-v4/up-disabled.png",
+    "images/ui-pixel-v4/up-normal.png",
+    "images/ui-pixel-v4/up-pressed.png"
+  ],
+  "unchanged": [
+    "전투 입력·판정 타이밍",
+    "성장·보상 수치",
+    "실제 HP 값",
+    "방향키 외 시안배치/기존104px터치크기"
+  ],
+  "remaining": [
+    "브라우저 실제 배치 및 모바일 Safe Area 검증",
+    "Unity Sprite·9-slice·상태 전환 연결",
+    "움직이는 예고·피해 팝업과 전투 동시 가독성 확인"
+  ],
+  "knownIssue": "이전 뒤로버튼의safe영역x12문제는이번배치에서x19로해소. 실제기기SafeArea검증은후속QA.",
+  "referenceDirectionLayout": {
+    "source": "../../Reference/TimingHero-20261023/boss10/00240.000.jpg",
+    "recordingSize": [
+      1200,
+      540
+    ],
+    "viewport": [
+      44,
+      0,
+      1084,
+      540
+    ],
+    "viewportCenters": {
+      "jump": [
+        122,
+        380
+      ],
+      "back": [
+        60,
+        460
+      ],
+      "parry": [
+        161,
+        481
+      ]
+    },
+    "normalizedRule": "viewport fraction, exclude system navigation; integer rounding only for static1280x720 PNG",
+    "previewCenters": {
+      "jump": [
+        144,
+        507
+      ],
+      "back": [
+        71,
+        613
+      ],
+      "parry": [
+        190,
+        641
+      ]
+    }
+  },
+  "runtimeInputContract": {
+    "basis": "2026-10-24 사용자 명시 확정: 현재 Unity 조작 유지(위·뒤 회피 + 아래 쳐내기). 방향키 위치만 레퍼런스에 맞춤.",
+    "up": "Up 회피 / W 또는 위 화살표",
+    "left": "Back 회피 / A 또는 왼쪽 화살표",
+    "down": "Down 쳐내기 / S 또는 아래 화살표",
+    "sword": "공격 / Space",
+    "forward": "비활성 유지"
+  }
+}

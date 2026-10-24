@@ -1,0 +1,21 @@
+{
+  "bell_knight": {
+    "verdict": "accept",
+    "reason": "원래 얼굴·방패·장병기·갑옷 비례가 유지된다. 발 바닥은 전 프레임 y=114로 고정되고 상체와 무기만 1~2px 움직인다. 원본 입력0번을 제외한 생성1~8번으로 색 처리 경계를 줄였다.",
+    "sourceFrames": [1, 2, 3, 4, 5, 6, 7, 8],
+    "holdsMs": [200, 200, 200, 200, 200, 200, 200, 200],
+    "pivots": {},
+    "preserved": ["Actor ID bell_knight_concept", "facesRight=false", "height=4", "referenceHeightPixels=92", "pivot (78,114)", "all Attack and Stun fields"],
+    "checks": {"feetFixed": true, "sameSilhouetteIdentity": true, "gearAndFaceStable": true, "noCanvasClipping": true, "noSpriteRepaintingOrScaling": true, "loopBoundaryReviewed": true}
+  },
+  "chain_jailer": {
+    "verdict": "accept",
+    "reason": "기존 가면·사슬·갈고리·찢어진 천의 형상이 유지된다. 부유형 보스의 최대3px 세로 호흡은 유지하고,4~7번의 전역 가로+1px 이동만 texture pivot.x=79로 상쇄했다. 원본 PNG는 수정하지 않았다. 생성1~8번의1.6초 루프를 채택한다.",
+    "sourceFrames": [1, 2, 3, 4, 5, 6, 7, 8],
+    "holdsMs": [200, 200, 200, 200, 200, 200, 200, 200],
+    "pivots": {"4": {"x": 79, "y": 114}, "5": {"x": 79, "y": 114}, "6": {"x": 79, "y": 114}, "7": {"x": 79, "y": 114}},
+    "preserved": ["Actor ID chain_jailer", "facesRight=false", "height=4", "referenceHeightPixels=92", "all Attack and Stun fields"],
+    "registration": {"baselinePivot": {"x": 78, "y": 114}, "horizontalDriftCorrectionFrames": [4, 5, 6, 7], "horizontalPixels": 1, "verticalMotion": "Intentional 0~3px floating breath; parent reviewed the contact sheet and accepted small vertical motion for this hanging boss."},
+    "checks": {"sameSilhouetteIdentity": true, "gearAndFaceStable": true, "noCanvasClipping": true, "noSpriteRepaintingOrScaling": true, "horizontalDriftCancelledByMetadata": true, "loopBoundaryReviewed": true}
+  }
+}

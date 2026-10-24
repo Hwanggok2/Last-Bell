@@ -1,0 +1,46 @@
+{
+  "version": "route-onboarding-v3",
+  "date": "2026-10-22",
+  "passed": true,
+  "checks": [
+    "All cue beats precede their combo impacts",
+    "Normal and perfect windows include the specified exact boundaries",
+    "Both correct responses required; bells decrease on impacts even on failure",
+    "260ms reuse gate and valid recovery from an early input",
+    "Gate stays ahead through 10, is behind at 11 and absent from 12 onward",
+    "Embedded data equals JSON source and all hero assets load",
+    "Prologue pause, completion, skip and reduced motion lead to Stage 1",
+    "First arrival at Stage 5 pauses the route and opens bell explanation",
+    "Route navigation reaches 10, 11, 12 and 20; expansion explicitly shown",
+    "Quiz gates manual practice and auto demonstration does not complete it",
+    "Misses return to retry; direct two-hit success enables fresh Stage 5 combat",
+    "Visibility loss pauses interaction and reset restores the initial explanation",
+    "Completed direct practice prevents a second automatic Stage 5 interruption",
+    "Original plot, characters, five zones and stages 21–50 preserved; proposed 1–20 encounters match monster moves",
+    "2 HTML documents: unique IDs, all local links/assets/anchors, UTF-8 and inline script syntax checked",
+    "Two generated concept sheets saved with PNG dimensions and full image_gen prompt record",
+    "Source runtime catalog retains pre-task SHA-256; generated catalog game fields match it (export metadata excluded)"
+  ],
+  "runtimeApplied": false,
+  "publicSiteChanged": false,
+  "browserVisualQA": "not performed: browser policy blocked file:// access; no alternate browser or proxy attempted; DOM checks use stubs and do not assess visual layout",
+  "conceptArtReview": "Generated images inspected inline; these are exterior concept boards, not finished sprites or animation frames.",
+  "art": [
+    {
+      "path": "Concepts/gate-road-v3.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "5103dbe8cb6a9b1f7ab82a2edbbf83681d86b392015e763fe389c8bdabaaf08e"
+    },
+    {
+      "path": "Concepts/chain-quarter-v3.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "a16fad0c430e0af5e80822dce12e8b950ce5a161051e931f8f5c5cd91b83f1a9"
+    }
+  ],
+  "sourceSha256": "90d97bc245438b68dd8c904af80ba049381965e62b645fdab4f52440c278d34d",
+  "previewSourceSha256": "2297115a5890f539c5848bd77d394ed9fe54e052edbf819affbdf4c0572f9851",
+  "runtimeCatalogSha256": "e0c46d1fa7599b48999b94f8820ef5ce052716a7907c29197c0d36fda2bff1e3",
+  "scopeNote": "Historical v3 verification; current proposal uses validation-v4.json. The v3 page entry redirects to v4; prior HTML is preserved in route-prologue-tutorial-v3-archive.html."
+}

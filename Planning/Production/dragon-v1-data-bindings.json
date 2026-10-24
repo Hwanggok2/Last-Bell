@@ -1,0 +1,79 @@
+{
+  "version": "dragon-v1",
+  "scope": "1–10 new art/theme; existing 11–20 content remains available",
+  "mapping": [
+    {
+      "stage": 1,
+      "stableEnemyId": "wild_dog",
+      "displayName": "오솔길 슬라임",
+      "artId": "dragon_trail_slime"
+    },
+    {
+      "stage": 2,
+      "stableEnemyId": "grey_wolf",
+      "displayName": "풀잎 슬라임",
+      "artId": "dragon_grass_slime"
+    },
+    {
+      "stage": 3,
+      "stableEnemyId": "brown_bear",
+      "displayName": "뿔토끼",
+      "artId": "dragon_horn_rabbit"
+    },
+    {
+      "stage": 4,
+      "stableEnemyId": "red_fox",
+      "displayName": "돌조각 슬라임",
+      "artId": "dragon_pebble_slime"
+    },
+    {
+      "stage": 5,
+      "stableEnemyId": "wild_boar",
+      "displayName": "큰뿔토끼",
+      "artId": "dragon_great_horn_rabbit"
+    },
+    {
+      "stage": 6,
+      "stableEnemyId": "badger",
+      "displayName": "산멧돼지",
+      "artId": "dragon_young_boar"
+    },
+    {
+      "stage": 7,
+      "stableEnemyId": "lynx",
+      "displayName": "물방울 슬라임",
+      "artId": "dragon_puddle_slime"
+    },
+    {
+      "stage": 8,
+      "stableEnemyId": "mountain_goat",
+      "displayName": "돌발 뿔토끼",
+      "artId": "dragon_stone_throw_rabbit"
+    },
+    {
+      "stage": 9,
+      "stableEnemyId": "great_stag",
+      "displayName": "붉은등 멧돼지",
+      "artId": "dragon_ridge_boar"
+    },
+    {
+      "stage": 10,
+      "stableEnemyId": "bell_knight",
+      "displayName": "큰엄니",
+      "artId": "dragon_great_tusk"
+    }
+  ],
+  "stableIdsPreserved": true,
+  "preservedDomains": [
+    "combat",
+    "growth",
+    "economy",
+    "relicRules",
+    "stages",
+    "transitions",
+    "mvpLastStage",
+    "boundaryStage"
+  ],
+  "preservedSha256": "09ed844465d85682b600b98903dcfcd6fd5915aa9fe6bfc4f6db327358912eb3",
+  "storyAdaptation": "Stage10 first approved Tori sentence split into two pages, same wording. Existing three-page protocol preserved."
+}

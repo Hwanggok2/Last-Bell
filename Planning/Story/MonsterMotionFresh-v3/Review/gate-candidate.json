@@ -1,0 +1,78 @@
+{
+  "version": 3,
+  "actors": [
+    {
+      "id": "gate_sentry",
+      "base": "Inputs/gate_sentry.png",
+      "pivot": [
+        78,
+        114
+      ],
+      "referenceHeightPixels": 92,
+      "clips": [
+        {
+          "motion": "Attack",
+          "frames": [
+            "Sources/gate_sentry/Attack-a1/000.png",
+            "Sources/gate_sentry/Attack-a1/001.png",
+            "Sources/gate_sentry/Attack-a1/002.png",
+            "Sources/gate_sentry/Attack-a1/003.png",
+            "Sources/gate_sentry/Attack-a1/004.png",
+            "Sources/gate_sentry/Attack-a1/006.png",
+            "Sources/gate_sentry/Attack-a1/009.png",
+            "Sources/gate_sentry/Attack-a1/011.png",
+            "Sources/gate_sentry/Attack-a1/012.png",
+            "Sources/gate_sentry/Attack-a1/013.png",
+            "Sources/gate_sentry/Attack-a1/014.png",
+            "Sources/gate_sentry/Attack-a1/015.png",
+            "Inputs/gate_sentry.png"
+          ],
+          "frameDurationsMs": [
+            80,
+            70,
+            70,
+            85,
+            90,
+            60,
+            40,
+            40,
+            60,
+            65,
+            65,
+            65,
+            80
+          ],
+          "contactFrame": 5,
+          "loop": false
+        },
+        {
+          "motion": "Stun",
+          "frames": [
+            "Sources/gate_sentry/Stun-a2/009.png",
+            "Sources/gate_sentry/Stun-a2/010.png",
+            "Sources/gate_sentry/Stun-a2/011.png",
+            "Sources/gate_sentry/Stun-a2/010.png"
+          ],
+          "frameDurationsMs": [
+            170,
+            190,
+            220,
+            190
+          ],
+          "contactFrame": -1,
+          "loop": true
+        },
+        {
+          "motion": "Hit",
+          "effect": "whiteFlash",
+          "holdMs": 45,
+          "fadeMs": 75
+        }
+      ],
+      "review": {
+        "passed": false,
+        "notes": "공격: 준비 후 수평 찌르기 1회, 5번에서 타격. 기절: 무릎이 접히고 창이 바닥으로 내려간 자세의 약한 흔들림. 검수 중."
+      }
+    }
+  ]
+}

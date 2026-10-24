@@ -1,0 +1,398 @@
+{
+  "version": "adventure-v5-plan-2-art",
+  "date": "2026-10-24",
+  "status": "v0.9.4 Unity1~20 적용 · 후속21~50 설계 보존 · QA는 연결된 최종 보고서 범위만",
+  "runtimeBaseline": "Unity v0.9.3 / mvp1.16.0 / playable stages 1–20",
+  "requestCoverage": [
+    "dialogue-portrait-position",
+    "coarse-portrait",
+    "speaker-nameplate",
+    "enemy-windup-retreat",
+    "combo-tutorial",
+    "npc-per-region",
+    "recovery-stat",
+    "inn-companions"
+  ],
+  "ui": {
+    "referenceSize": [
+      1280,
+      720
+    ],
+    "orientation": "landscape",
+    "coordinateOrigin": "safe-area top-left",
+    "dialogue": {
+      "panel": [
+        24,
+        488,
+        1232,
+        208
+      ],
+      "nameplate": [
+        48,
+        440,
+        176,
+        56
+      ],
+      "portrait": [
+        1056,
+        384,
+        144,
+        144
+      ],
+      "body": [
+        56,
+        532,
+        1008,
+        132
+      ],
+      "nextHit": [
+        1104,
+        568,
+        128,
+        96
+      ],
+      "skipHit": [
+        1104,
+        24,
+        152,
+        96
+      ],
+      "portraitNativeSize": [
+        24,
+        24
+      ],
+      "portraitBackground": false,
+      "portraitFrame": false,
+      "portraitFilter": "Point / nearest",
+      "textFontSize": 32,
+      "lineHeight": 44,
+      "maximumLines": 3,
+      "nameAnchor": "NPC: above panel left at48,440. Player: right of left portrait at216,440.",
+      "portraitAnchor": "Player: panel upper-left at48,384. NPC: panel upper-right at1056,384. Both overlap panel40px.",
+      "smallScreen": "640×360: portrait24px×3=72px, body16px/22px, next64×48, skip76×48. Safe Area insets take priority; keep3lines and paginate instead of shrinking text.",
+      "overflow": "Korean long lines wrap on words; beyond3lines create another page; speaker badge expands horizontally to fit full name; never ellipsize story or price.",
+      "states": [
+        "Unknown name uses ???; Tori off-screen call can use her silhouette. Other unnamed speakers use their own matching portrait, never reuse fox silhouette for unrelated NPCs.",
+        "speaker change swaps cutout, side and badge together",
+        "typing tap reveals page; next fresh press advances",
+        "skip exits scene once and grants unlock once",
+        "dialogue pauses combat, companion timers and input"
+      ],
+      "playerPortrait": [
+        48,
+        384,
+        144,
+        144
+      ],
+      "npcPortrait": [
+        1056,
+        384,
+        144,
+        144
+      ],
+      "playerNameplate": [
+        216,
+        440,
+        176,
+        56
+      ],
+      "npcNameplate": [
+        48,
+        440,
+        176,
+        56
+      ],
+      "speakerSideRule": "on/dam/rin are player speakers: left portrait, name to its right. NPC/unknown speakers: right portrait, name at panel left. Move portrait and badge atomically on speaker change."
+    },
+    "inn": {
+      "tabs": [
+        "성장",
+        "동료",
+        "유물"
+      ],
+      "listPanel": [
+        24,
+        208,
+        376,
+        488
+      ],
+      "detailPanel": [
+        424,
+        208,
+        832,
+        488
+      ],
+      "partySlots": [
+        [
+          48,
+          272,
+          96,
+          96
+        ],
+        [
+          160,
+          272,
+          96,
+          96
+        ],
+        [
+          272,
+          272,
+          96,
+          96
+        ]
+      ],
+      "listHitAreas": [
+        [
+          40,
+          384,
+          344,
+          96
+        ],
+        [
+          40,
+          484,
+          344,
+          96
+        ],
+        [
+          40,
+          584,
+          344,
+          96
+        ]
+      ],
+      "upgradeHit": [
+        456,
+        572,
+        264,
+        96
+      ],
+      "partyToggleHit": [
+        752,
+        572,
+        200,
+        96
+      ],
+      "departHit": [
+        984,
+        572,
+        240,
+        96
+      ],
+      "behavior": "Left scrollable roster with3visible rows and small party slots; right selected NPC art/service/attack/next upgrade/cost. Gold and gems at far upper-right. Departure label Stage N. Slots and rows never overlap touch bounds.",
+      "states": [
+        "unmet: silhouette + encounter stage, no spend button",
+        "empty slot: choose unlocked companion",
+        "full party: replace chosen slot explicitly",
+        "insufficient gold: optional gem-to-gold quote using existing exchange rate, exact shortfall/rate/amount then confirm; no auto spend",
+        "slot upgrade: show boss condition and exact gem price then confirm",
+        "max level: maximum instead of plus",
+        "same companion cannot occupy two slots",
+        "changes allowed only at inn, except first-time empty slot recruit"
+      ],
+      "serviceInteraction": {
+        "rowHit": [
+          456,
+          442,
+          768,
+          96
+        ],
+        "onTap": "Selected NPC service row opens detail modal with effect, duration, rank/condition, exact price and confirm/cancel. Tori passive displays active, no buy. Separate from companion level button.",
+        "detailAction": "Weapon: 제작/개량; mage: 축복 예약; herbalist: 차 준비; porter: 슬롯 확장. Current/next and shortage/max/locked states shown.",
+        "touchNote": "This hit area occupies service+stat-text region and does not overlap upgrade buttons at y572."
+      }
+    }
+  },
+  "enemyRhythm": {
+    "clock": "authoritative combat clock / ImpactAtMs",
+    "firstRetreatMs": 250,
+    "retreatDistancePlanPixels": {
+      "small": 48,
+      "large": 32,
+      "giantBoss": 24
+    },
+    "retreatCap": "min(nominal, space to safe right edge minus16px); widen framing on spawn if0space; never crop boss or change hit zone",
+    "approachBeforeImpactMs": 160,
+    "returnAfterImpactMs": 280,
+    "followupRetreatMs": 120,
+    "followupRetreatPixels": 12,
+    "singleExampleMs": {
+      "waitingPose": [
+        0,
+        400
+      ],
+      "retreat": [
+        400,
+        650
+      ],
+      "hold": [
+        650,
+        740
+      ],
+      "advance": [
+        740,
+        900
+      ],
+      "contact": 900,
+      "return": [
+        900,
+        1180
+      ]
+    },
+    "twoHitExampleMs": {
+      "cueOrder": [
+        [
+          0,
+          900
+        ],
+        [
+          900,
+          1800
+        ]
+      ],
+      "impacts": [
+        1800,
+        2550
+      ],
+      "firstRetreat": [
+        1300,
+        1550
+      ],
+      "firstHold": [
+        1550,
+        1640
+      ],
+      "firstAdvance": [
+        1640,
+        1800
+      ],
+      "firstReturn": [
+        1800,
+        2080
+      ],
+      "betweenHitWait": [
+        2080,
+        2180
+      ],
+      "secondRetreat": [
+        2180,
+        2300
+      ],
+      "secondHold": [
+        2300,
+        2390
+      ],
+      "secondAdvance": [
+        2390,
+        2550
+      ]
+    },
+    "telegraph": "The small upcoming direction queue reveals order on CueAt/CueEnd; it has no completion flash. Only the currently executable hit has a filling timing indicator ending at ImpactAt. The second hit timing indicator becomes active after first resolution and spans750ms. Last120ms uses high contrast. Current fill completion, body contact and hit VFX coincide.",
+    "variants": [
+      "Ground bipeds: rear foot step and grounded weight shift",
+      "Slime/quadruped: slide-hop backward + compressed pose without changing ground pivot",
+      "Floating enemy: backward drift with same shadow/ground reference",
+      "Large boss/dragon: shorter backward step, pronounced shoulders/head pullback; no scale squashing"
+    ],
+    "motionQuality": "4–6 distinct authored windup poses per body archetype, readable feet/weapon continuity, contact frame locked toImpactAt. No2frame bouncing or reversed run as final animation.",
+    "rules": [
+      "All enemy types visibly move backward before sequence start",
+      "Every combo followup uses a shorter rearward reset after prior return, without adding gameplay delay",
+      "One presentation owner writes enemy X/Y, no independent tween",
+      "HomeX-relative motion, groundedY, original danger bounds and dodge windows unchanged",
+      "Current attack > prior return > next windup priority",
+      "Ordinary hits do not cancel the enemy queue: show white flash/reaction without resetting windup/attack/return. Cancel motion and queue only when Core cancels for stun/death; no residual dash or duplicate damage",
+      "Player slash approach and effect endpoint follow retreating enemy; retreat grants no invulnerability",
+      "Audio off/reduced shake retains retreat, shape and timing cue"
+    ],
+    "firstRetreatStartBeforeImpactMs": 500,
+    "followupRetreatStartBeforeImpactMs": 370,
+    "holdAfterRetreatMs": 90,
+    "activePoseBinding": "Always bind pose and retreat to closest unresolved Impact, not the most recently revealed future direction cue. Cue order can preview future hits while active timing stays on current hit."
+  },
+  "comboTutorial": {
+    "id": "combo_practice_v2",
+    "trigger": "Stage5 first sequence after miniboss entrance/roar; old read-only comboHintSeen does not satisfy this new tutorial",
+    "scope": "account once; manual replay from help; new characters do not force repeat",
+    "fixedSequence": [
+      {
+        "pattern": "low_sweep",
+        "input": "up",
+        "impactMs": 1800,
+        "copy": "위로 피해!"
+      },
+      {
+        "pattern": "high_sweep",
+        "input": "down_parry",
+        "impactMs": 2550,
+        "copy": "한 번 더! 아래로 쳐내!"
+      }
+    ],
+    "steps": [
+      "Show short cue: 두 번 온다! and two direction icons",
+      "Freeze combat clock exactly at first impact; highlight up; wait for a new matching press edge",
+      "Run real dodge action and resolve exactly one practice hit as normal dodge, no perfect reward",
+      "Advance combat clock750ms; freeze at second impact; require a new down parry press edge",
+      "Resolve normal parry, persist completed, release combat input after recovery",
+      "Schedule same Up→Down sequence once at real timing; failure costs normal damage but does not force repetition; then normal random patterns"
+    ],
+    "inputRules": [
+      "Wrong/held/prebuffered input never completes; correct new input is required",
+      "Attack, skill and companion attacks are locked throughout guided practice; cooldown timers freeze on hold",
+      "Practice grants no damage to boss, stagger, heal, currency or perfect reward",
+      "Guided incoming hits are harmless; retain entry HP, no refill",
+      "Skip stores skipped separately and resumes normal combat; settings may replay",
+      "Interrupted practice restarts from first guided hit with saved HP/remaining skill cooldown; no duplicated rewards or completed flag",
+      "Same dodge active240+recovery120=360ms is shorter than750ms gap; no general dodge cooldown change",
+      "completed or skipped suppresses automatic entry; help replay uses a separate reward-free practice state and restores exact live run HP/cooldowns/progress on exit"
+    ]
+  },
+  "implementationOrder": [
+    "Saved dialogue prefab and24px portraits",
+    "Authoritative stage-clear Recovery and save migration",
+    "Enemy windup and cue/impact alignment",
+    "Stage5 action tutorial",
+    "Stage2/12 new encounters, inn and four existing NPC autoattacks/services for migrated saves; new saves meet onlyTori/Barun within1–20",
+    "Stage22/32/42 encounter scenes and newMomo after regions exist"
+  ],
+  "futureAcceptance": [
+    "1280×720 and640×360 dialogue: player portrait upper-left/name toitsright, NPC portrait upper-right/name upper-left, no portrait plate, no cut text, all hit areas at least48px at640",
+    "Stage9→10→11 HP carries with one Recovery tick per clear; no full refill at10",
+    "Recovery clamp, death priority, save/resume duplicate clear and checkpoint migration covered",
+    "First5combo tutorial requires2fresh correct inputs and blocks premature kill/stun; skip/interruption/replay defined",
+    "Each enemy body archetype retreats; feet contact, clipping, hit pose and ImpactAt align; combo next cue never cuts return",
+    "New NPC only in2/12/22/32/42; encounter skip still unlocks once; old save migration preserves already-met NPC",
+    "Party slots/prices/level upgrades persist once; each scheduled hit only once; timers pause during dialogue/intro/travel",
+    "Companion VFX do not cover enemy warning/player dodge or trigger player-perfect/stagger benefits",
+    "Full integrated implementation QA once after all above changes, targeted followup only for defects"
+  ],
+  "saveMigration": {
+    "completedScenes": "Union completed seenStoryIds across characters; Tori aliases story_encounter_2 OR story_boss_10, Rina7, Barun15, Doto20. Never use merely unlockedStoryIds. Unlock Lv1 once, no retroactive cost.",
+    "activeLegacyScene": "Retain legacy scene IDs and page text until any saved in-progress7/15/20 scene finishes or skips. Commit unlock once, then resume original saved stage continuation. Never rewind to new22/32 encounter, repay reward or heal on migration. Retain legacy definitions for backward saves; do not delete IDs still referenced by saves."
+  },
+  "artProduction": {
+    "status": "source-art-reviewed; Unity integration in progress",
+    "mielRework": "portraits/rework-rin/comparison.png",
+    "mielPortrait": "portraits/rin.png",
+    "companionManifest": "../Production/Companions-v5/manifest.json",
+    "companionReview": "../Production/Companions-v5/review.html",
+    "momoPortrait": "../Production/Companions-v5/portraits/momo.png",
+    "companions": 5,
+    "idleFramesPerActor": 4,
+    "attackFrames": {
+      "tori": 8,
+      "barun": 8,
+      "doto": 6,
+      "rina": 8,
+      "momo": 8
+    },
+    "nativeBodyHeight": 32,
+    "paletteMax": 8,
+    "groundY": 29,
+    "contactMs": 180,
+    "attackTotalMs": 600,
+    "runtimeQa": "pending root integration; source validation is not game QA"
+  },
+  "implementationRecord": "Planning/Production/dragon-v5-integration.json"
+}

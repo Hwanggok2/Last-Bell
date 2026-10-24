@@ -1,0 +1,1181 @@
+[
+  {
+    "name": "lobby-960",
+    "w": 960,
+    "h": 540,
+    "bounds": [
+      {
+        "action": "character-0",
+        "x": 16,
+        "y": 78,
+        "w": 172,
+        "h": 62,
+        "enabled": true
+      },
+      {
+        "action": "character-1",
+        "x": 16,
+        "y": 152,
+        "w": 172,
+        "h": 62,
+        "enabled": false
+      },
+      {
+        "action": "character-2",
+        "x": 16,
+        "y": 226,
+        "w": 172,
+        "h": 62,
+        "enabled": false
+      },
+      {
+        "action": "upgrade-0",
+        "x": 864,
+        "y": 88.5,
+        "w": 64,
+        "h": 48,
+        "enabled": true
+      },
+      {
+        "action": "upgrade-1",
+        "x": 864,
+        "y": 167.5,
+        "w": 64,
+        "h": 48,
+        "enabled": true
+      },
+      {
+        "action": "upgrade-2",
+        "x": 864,
+        "y": 246.5,
+        "w": 64,
+        "h": 48,
+        "enabled": true
+      },
+      {
+        "action": "upgrade-3",
+        "x": 864,
+        "y": 325.5,
+        "w": 64,
+        "h": 48,
+        "enabled": true
+      },
+      {
+        "action": "relics",
+        "x": 410,
+        "y": 476,
+        "w": 219.29999999999998,
+        "h": 48,
+        "enabled": true
+      },
+      {
+        "action": "battle",
+        "x": 645.3,
+        "y": 476,
+        "w": 290.7,
+        "h": 48,
+        "enabled": true
+      },
+      {
+        "action": "prologue",
+        "x": 220,
+        "y": 402,
+        "w": 164,
+        "h": 48,
+        "enabled": true
+      }
+    ]
+  },
+  {
+    "name": "lobby-640",
+    "w": 640,
+    "h": 360,
+    "bounds": [
+      {
+        "action": "character-0",
+        "x": 16,
+        "y": 62,
+        "w": 150,
+        "h": 48,
+        "enabled": true
+      },
+      {
+        "action": "character-1",
+        "x": 16,
+        "y": 116,
+        "w": 150,
+        "h": 48,
+        "enabled": false
+      },
+      {
+        "action": "character-2",
+        "x": 16,
+        "y": 170,
+        "w": 150,
+        "h": 48,
+        "enabled": false
+      },
+      {
+        "action": "upgrade-0",
+        "x": 544,
+        "y": 63,
+        "w": 64,
+        "h": 48,
+        "enabled": true
+      },
+      {
+        "action": "upgrade-1",
+        "x": 544,
+        "y": 118,
+        "w": 64,
+        "h": 48,
+        "enabled": true
+      },
+      {
+        "action": "upgrade-2",
+        "x": 544,
+        "y": 173,
+        "w": 64,
+        "h": 48,
+        "enabled": true
+      },
+      {
+        "action": "upgrade-3",
+        "x": 544,
+        "y": 228,
+        "w": 64,
+        "h": 48,
+        "enabled": true
+      },
+      {
+        "action": "relics",
+        "x": 194,
+        "y": 296,
+        "w": 174.57999999999998,
+        "h": 48,
+        "enabled": true
+      },
+      {
+        "action": "battle",
+        "x": 384.58,
+        "y": 296,
+        "w": 231.42,
+        "h": 48,
+        "enabled": true
+      }
+    ]
+  },
+  {
+    "name": "prologue-960",
+    "w": 960,
+    "h": 540,
+    "bounds": [
+      {
+        "action": "pause-prologue",
+        "x": 24,
+        "y": 478,
+        "w": 180,
+        "h": 48,
+        "enabled": true
+      },
+      {
+        "action": "next-paragraph",
+        "x": 380,
+        "y": 478,
+        "w": 200,
+        "h": 48,
+        "enabled": true
+      },
+      {
+        "action": "skip",
+        "x": 756,
+        "y": 478,
+        "w": 180,
+        "h": 48,
+        "enabled": true
+      }
+    ]
+  },
+  {
+    "name": "prologue-640",
+    "w": 640,
+    "h": 360,
+    "bounds": [
+      {
+        "action": "pause-prologue",
+        "x": 24,
+        "y": 298,
+        "w": 130,
+        "h": 48,
+        "enabled": true
+      },
+      {
+        "action": "next-paragraph",
+        "x": 240,
+        "y": 298,
+        "w": 160,
+        "h": 48,
+        "enabled": true
+      },
+      {
+        "action": "skip",
+        "x": 486,
+        "y": 298,
+        "w": 130,
+        "h": 48,
+        "enabled": true
+      }
+    ]
+  },
+  {
+    "name": "relics-960",
+    "w": 960,
+    "h": 540,
+    "bounds": [
+      {
+        "action": "relic-0",
+        "x": 230,
+        "y": 154,
+        "w": 156,
+        "h": 126,
+        "enabled": true
+      },
+      {
+        "action": "relic-1",
+        "x": 402,
+        "y": 154,
+        "w": 156,
+        "h": 126,
+        "enabled": true
+      },
+      {
+        "action": "relic-2",
+        "x": 574,
+        "y": 154,
+        "w": 156,
+        "h": 126,
+        "enabled": true
+      },
+      {
+        "action": "confirm",
+        "x": 390,
+        "y": 382,
+        "w": 180,
+        "h": 48,
+        "enabled": true
+      }
+    ]
+  },
+  {
+    "name": "relics-640",
+    "w": 640,
+    "h": 360,
+    "bounds": [
+      {
+        "action": "relic-0",
+        "x": 100,
+        "y": 87,
+        "w": 136,
+        "h": 98,
+        "enabled": true
+      },
+      {
+        "action": "relic-1",
+        "x": 252,
+        "y": 87,
+        "w": 136,
+        "h": 98,
+        "enabled": true
+      },
+      {
+        "action": "relic-2",
+        "x": 404,
+        "y": 87,
+        "w": 136,
+        "h": 98,
+        "enabled": true
+      },
+      {
+        "action": "confirm",
+        "x": 230,
+        "y": 261,
+        "w": 180,
+        "h": 48,
+        "enabled": true
+      }
+    ]
+  },
+  {
+    "name": "collection-960",
+    "w": 960,
+    "h": 540,
+    "bounds": [
+      {
+        "action": "book-0",
+        "x": 120,
+        "y": 114,
+        "w": 92,
+        "h": 92,
+        "enabled": true
+      },
+      {
+        "action": "book-1",
+        "x": 220,
+        "y": 114,
+        "w": 92,
+        "h": 92,
+        "enabled": true
+      },
+      {
+        "action": "book-2",
+        "x": 320,
+        "y": 114,
+        "w": 92,
+        "h": 92,
+        "enabled": true
+      },
+      {
+        "action": "book-3",
+        "x": 420,
+        "y": 114,
+        "w": 92,
+        "h": 92,
+        "enabled": true
+      },
+      {
+        "action": "book-4",
+        "x": 520,
+        "y": 114,
+        "w": 92,
+        "h": 92,
+        "enabled": true
+      },
+      {
+        "action": "book-5",
+        "x": 120,
+        "y": 216,
+        "w": 92,
+        "h": 92,
+        "enabled": true
+      },
+      {
+        "action": "book-6",
+        "x": 220,
+        "y": 216,
+        "w": 92,
+        "h": 92,
+        "enabled": true
+      },
+      {
+        "action": "book-7",
+        "x": 320,
+        "y": 216,
+        "w": 92,
+        "h": 92,
+        "enabled": true
+      },
+      {
+        "action": "book-8",
+        "x": 420,
+        "y": 216,
+        "w": 92,
+        "h": 92,
+        "enabled": true
+      },
+      {
+        "action": "book-9",
+        "x": 520,
+        "y": 216,
+        "w": 92,
+        "h": 92,
+        "enabled": true
+      },
+      {
+        "action": "equip",
+        "x": 650,
+        "y": 374,
+        "w": 180,
+        "h": 48,
+        "enabled": true
+      },
+      {
+        "action": "lobby",
+        "x": 736,
+        "y": 430,
+        "w": 104,
+        "h": 48,
+        "enabled": true
+      }
+    ]
+  },
+  {
+    "name": "collection-640",
+    "w": 640,
+    "h": 360,
+    "bounds": [
+      {
+        "action": "book-0",
+        "x": 40,
+        "y": 78,
+        "w": 72,
+        "h": 68,
+        "enabled": true
+      },
+      {
+        "action": "book-1",
+        "x": 120,
+        "y": 78,
+        "w": 72,
+        "h": 68,
+        "enabled": true
+      },
+      {
+        "action": "book-2",
+        "x": 200,
+        "y": 78,
+        "w": 72,
+        "h": 68,
+        "enabled": true
+      },
+      {
+        "action": "book-3",
+        "x": 280,
+        "y": 78,
+        "w": 72,
+        "h": 68,
+        "enabled": true
+      },
+      {
+        "action": "book-4",
+        "x": 360,
+        "y": 78,
+        "w": 72,
+        "h": 68,
+        "enabled": true
+      },
+      {
+        "action": "book-5",
+        "x": 40,
+        "y": 154,
+        "w": 72,
+        "h": 68,
+        "enabled": true
+      },
+      {
+        "action": "book-6",
+        "x": 120,
+        "y": 154,
+        "w": 72,
+        "h": 68,
+        "enabled": true
+      },
+      {
+        "action": "book-7",
+        "x": 200,
+        "y": 154,
+        "w": 72,
+        "h": 68,
+        "enabled": true
+      },
+      {
+        "action": "book-8",
+        "x": 280,
+        "y": 154,
+        "w": 72,
+        "h": 68,
+        "enabled": true
+      },
+      {
+        "action": "book-9",
+        "x": 360,
+        "y": 154,
+        "w": 72,
+        "h": 68,
+        "enabled": true
+      },
+      {
+        "action": "equip",
+        "x": 448,
+        "y": 230,
+        "w": 150,
+        "h": 48,
+        "enabled": true
+      },
+      {
+        "action": "lobby",
+        "x": 496,
+        "y": 286,
+        "w": 104,
+        "h": 48,
+        "enabled": true
+      }
+    ]
+  },
+  {
+    "name": "battle-960",
+    "w": 960,
+    "h": 540,
+    "bounds": [
+      {
+        "action": "pause-battle",
+        "x": 880,
+        "y": 14,
+        "w": 48,
+        "h": 48,
+        "enabled": true
+      },
+      {
+        "action": "dodge-up",
+        "x": 128,
+        "y": 278,
+        "w": 64,
+        "h": 64,
+        "enabled": true
+      },
+      {
+        "action": "dodge-back",
+        "x": 56,
+        "y": 350,
+        "w": 64,
+        "h": 64,
+        "enabled": true
+      },
+      {
+        "action": "dodge-down",
+        "x": 128,
+        "y": 422,
+        "w": 64,
+        "h": 64,
+        "enabled": true
+      },
+      {
+        "action": "dodge-forward",
+        "x": 200,
+        "y": 350,
+        "w": 64,
+        "h": 64,
+        "enabled": true
+      },
+      {
+        "action": "attack",
+        "x": 768,
+        "y": 360,
+        "w": 112,
+        "h": 112,
+        "enabled": true
+      }
+    ]
+  },
+  {
+    "name": "battle-640",
+    "w": 640,
+    "h": 360,
+    "bounds": [
+      {
+        "action": "pause-battle",
+        "x": 576,
+        "y": 8,
+        "w": 48,
+        "h": 48,
+        "enabled": true
+      },
+      {
+        "action": "dodge-up",
+        "x": 108,
+        "y": 148,
+        "w": 56,
+        "h": 56,
+        "enabled": true
+      },
+      {
+        "action": "dodge-back",
+        "x": 44,
+        "y": 212,
+        "w": 56,
+        "h": 56,
+        "enabled": true
+      },
+      {
+        "action": "dodge-down",
+        "x": 108,
+        "y": 276,
+        "w": 56,
+        "h": 56,
+        "enabled": true
+      },
+      {
+        "action": "dodge-forward",
+        "x": 172,
+        "y": 212,
+        "w": 56,
+        "h": 56,
+        "enabled": true
+      },
+      {
+        "action": "attack",
+        "x": 504,
+        "y": 236,
+        "w": 88,
+        "h": 88,
+        "enabled": true
+      }
+    ]
+  },
+  {
+    "name": "result-960",
+    "w": 960,
+    "h": 540,
+    "bounds": [
+      {
+        "action": "battle",
+        "x": 220,
+        "y": 362,
+        "w": 252,
+        "h": 56,
+        "enabled": true
+      },
+      {
+        "action": "lobby",
+        "x": 488,
+        "y": 362,
+        "w": 252,
+        "h": 56,
+        "enabled": true
+      }
+    ]
+  },
+  {
+    "name": "result-640",
+    "w": 640,
+    "h": 360,
+    "bounds": [
+      {
+        "action": "battle",
+        "x": 116,
+        "y": 262,
+        "w": 196,
+        "h": 56,
+        "enabled": true
+      },
+      {
+        "action": "lobby",
+        "x": 328,
+        "y": 262,
+        "w": 196,
+        "h": 56,
+        "enabled": true
+      }
+    ]
+  },
+  {
+    "name": "lobby-broke",
+    "w": 960,
+    "h": 540,
+    "bounds": [
+      {
+        "action": "character-0",
+        "x": 16,
+        "y": 78,
+        "w": 172,
+        "h": 62,
+        "enabled": true
+      },
+      {
+        "action": "character-1",
+        "x": 16,
+        "y": 152,
+        "w": 172,
+        "h": 62,
+        "enabled": false
+      },
+      {
+        "action": "character-2",
+        "x": 16,
+        "y": 226,
+        "w": 172,
+        "h": 62,
+        "enabled": false
+      },
+      {
+        "action": "upgrade-0",
+        "x": 864,
+        "y": 88.5,
+        "w": 64,
+        "h": 48,
+        "enabled": true
+      },
+      {
+        "action": "upgrade-1",
+        "x": 864,
+        "y": 167.5,
+        "w": 64,
+        "h": 48,
+        "enabled": true
+      },
+      {
+        "action": "upgrade-2",
+        "x": 864,
+        "y": 246.5,
+        "w": 64,
+        "h": 48,
+        "enabled": true
+      },
+      {
+        "action": "upgrade-3",
+        "x": 864,
+        "y": 325.5,
+        "w": 64,
+        "h": 48,
+        "enabled": true
+      },
+      {
+        "action": "relics",
+        "x": 410,
+        "y": 476,
+        "w": 219.29999999999998,
+        "h": 48,
+        "enabled": true
+      },
+      {
+        "action": "battle",
+        "x": 645.3,
+        "y": 476,
+        "w": 290.7,
+        "h": 48,
+        "enabled": true
+      },
+      {
+        "action": "prologue",
+        "x": 220,
+        "y": 402,
+        "w": 164,
+        "h": 48,
+        "enabled": true
+      }
+    ]
+  },
+  {
+    "name": "lobby-max",
+    "w": 960,
+    "h": 540,
+    "bounds": [
+      {
+        "action": "character-0",
+        "x": 16,
+        "y": 78,
+        "w": 172,
+        "h": 62,
+        "enabled": true
+      },
+      {
+        "action": "character-1",
+        "x": 16,
+        "y": 152,
+        "w": 172,
+        "h": 62,
+        "enabled": false
+      },
+      {
+        "action": "character-2",
+        "x": 16,
+        "y": 226,
+        "w": 172,
+        "h": 62,
+        "enabled": false
+      },
+      {
+        "action": "upgrade-0",
+        "x": 864,
+        "y": 88.5,
+        "w": 64,
+        "h": 48,
+        "enabled": false
+      },
+      {
+        "action": "upgrade-1",
+        "x": 864,
+        "y": 167.5,
+        "w": 64,
+        "h": 48,
+        "enabled": false
+      },
+      {
+        "action": "upgrade-2",
+        "x": 864,
+        "y": 246.5,
+        "w": 64,
+        "h": 48,
+        "enabled": false
+      },
+      {
+        "action": "upgrade-3",
+        "x": 864,
+        "y": 325.5,
+        "w": 64,
+        "h": 48,
+        "enabled": false
+      },
+      {
+        "action": "relics",
+        "x": 410,
+        "y": 476,
+        "w": 219.29999999999998,
+        "h": 48,
+        "enabled": true
+      },
+      {
+        "action": "battle",
+        "x": 645.3,
+        "y": 476,
+        "w": 290.7,
+        "h": 48,
+        "enabled": true
+      },
+      {
+        "action": "prologue",
+        "x": 220,
+        "y": 402,
+        "w": 164,
+        "h": 48,
+        "enabled": true
+      }
+    ]
+  },
+  {
+    "name": "relic-empty",
+    "w": 960,
+    "h": 540,
+    "bounds": [
+      {
+        "action": "relic-0",
+        "x": 230,
+        "y": 154,
+        "w": 156,
+        "h": 126,
+        "enabled": true
+      },
+      {
+        "action": "relic-1",
+        "x": 402,
+        "y": 154,
+        "w": 156,
+        "h": 126,
+        "enabled": true
+      },
+      {
+        "action": "relic-2",
+        "x": 574,
+        "y": 154,
+        "w": 156,
+        "h": 126,
+        "enabled": true
+      },
+      {
+        "action": "confirm",
+        "x": 390,
+        "y": 382,
+        "w": 180,
+        "h": 48,
+        "enabled": false
+      }
+    ]
+  },
+  {
+    "name": "relic-max",
+    "w": 960,
+    "h": 540,
+    "bounds": [
+      {
+        "action": "relic-0",
+        "x": 230,
+        "y": 154,
+        "w": 156,
+        "h": 126,
+        "enabled": true
+      },
+      {
+        "action": "relic-1",
+        "x": 402,
+        "y": 154,
+        "w": 156,
+        "h": 126,
+        "enabled": true
+      },
+      {
+        "action": "relic-2",
+        "x": 574,
+        "y": 154,
+        "w": 156,
+        "h": 126,
+        "enabled": true
+      },
+      {
+        "action": "confirm",
+        "x": 390,
+        "y": 382,
+        "w": 180,
+        "h": 48,
+        "enabled": true
+      }
+    ]
+  },
+  {
+    "name": "relic-confirmed",
+    "w": 960,
+    "h": 540,
+    "bounds": [
+      {
+        "action": "relic-0",
+        "x": 230,
+        "y": 154,
+        "w": 156,
+        "h": 126,
+        "enabled": false
+      },
+      {
+        "action": "relic-1",
+        "x": 402,
+        "y": 154,
+        "w": 156,
+        "h": 126,
+        "enabled": false
+      },
+      {
+        "action": "relic-2",
+        "x": 574,
+        "y": 154,
+        "w": 156,
+        "h": 126,
+        "enabled": false
+      },
+      {
+        "action": "lobby",
+        "x": 390,
+        "y": 382,
+        "w": 180,
+        "h": 48,
+        "enabled": true
+      }
+    ]
+  },
+  {
+    "name": "battle-perfect",
+    "w": 960,
+    "h": 540,
+    "bounds": [
+      {
+        "action": "pause-battle",
+        "x": 880,
+        "y": 14,
+        "w": 48,
+        "h": 48,
+        "enabled": true
+      },
+      {
+        "action": "dodge-up",
+        "x": 128,
+        "y": 278,
+        "w": 64,
+        "h": 64,
+        "enabled": true
+      },
+      {
+        "action": "dodge-back",
+        "x": 56,
+        "y": 350,
+        "w": 64,
+        "h": 64,
+        "enabled": true
+      },
+      {
+        "action": "dodge-down",
+        "x": 128,
+        "y": 422,
+        "w": 64,
+        "h": 64,
+        "enabled": true
+      },
+      {
+        "action": "dodge-forward",
+        "x": 200,
+        "y": 350,
+        "w": 64,
+        "h": 64,
+        "enabled": true
+      },
+      {
+        "action": "attack",
+        "x": 768,
+        "y": 360,
+        "w": 112,
+        "h": 112,
+        "enabled": true
+      }
+    ]
+  },
+  {
+    "name": "battle-parry",
+    "w": 960,
+    "h": 540,
+    "bounds": [
+      {
+        "action": "pause-battle",
+        "x": 880,
+        "y": 14,
+        "w": 48,
+        "h": 48,
+        "enabled": true
+      },
+      {
+        "action": "dodge-up",
+        "x": 128,
+        "y": 278,
+        "w": 64,
+        "h": 64,
+        "enabled": true
+      },
+      {
+        "action": "dodge-back",
+        "x": 56,
+        "y": 350,
+        "w": 64,
+        "h": 64,
+        "enabled": true
+      },
+      {
+        "action": "dodge-down",
+        "x": 128,
+        "y": 422,
+        "w": 64,
+        "h": 64,
+        "enabled": true
+      },
+      {
+        "action": "dodge-forward",
+        "x": 200,
+        "y": 350,
+        "w": 64,
+        "h": 64,
+        "enabled": true
+      },
+      {
+        "action": "attack",
+        "x": 768,
+        "y": 360,
+        "w": 112,
+        "h": 112,
+        "enabled": true
+      }
+    ]
+  },
+  {
+    "name": "battle-fail",
+    "w": 960,
+    "h": 540,
+    "bounds": [
+      {
+        "action": "pause-battle",
+        "x": 880,
+        "y": 14,
+        "w": 48,
+        "h": 48,
+        "enabled": true
+      },
+      {
+        "action": "dodge-up",
+        "x": 128,
+        "y": 278,
+        "w": 64,
+        "h": 64,
+        "enabled": true
+      },
+      {
+        "action": "dodge-back",
+        "x": 56,
+        "y": 350,
+        "w": 64,
+        "h": 64,
+        "enabled": true
+      },
+      {
+        "action": "dodge-down",
+        "x": 128,
+        "y": 422,
+        "w": 64,
+        "h": 64,
+        "enabled": true
+      },
+      {
+        "action": "dodge-forward",
+        "x": 200,
+        "y": 350,
+        "w": 64,
+        "h": 64,
+        "enabled": true
+      },
+      {
+        "action": "attack",
+        "x": 768,
+        "y": 360,
+        "w": 112,
+        "h": 112,
+        "enabled": true
+      }
+    ]
+  },
+  {
+    "name": "battle-wide",
+    "w": 1200,
+    "h": 540,
+    "bounds": [
+      {
+        "action": "pause-battle",
+        "x": 1120,
+        "y": 14,
+        "w": 48,
+        "h": 48,
+        "enabled": true
+      },
+      {
+        "action": "dodge-up",
+        "x": 128,
+        "y": 278,
+        "w": 64,
+        "h": 64,
+        "enabled": true
+      },
+      {
+        "action": "dodge-back",
+        "x": 56,
+        "y": 350,
+        "w": 64,
+        "h": 64,
+        "enabled": true
+      },
+      {
+        "action": "dodge-down",
+        "x": 128,
+        "y": 422,
+        "w": 64,
+        "h": 64,
+        "enabled": true
+      },
+      {
+        "action": "dodge-forward",
+        "x": 200,
+        "y": 350,
+        "w": 64,
+        "h": 64,
+        "enabled": true
+      },
+      {
+        "action": "attack",
+        "x": 1008,
+        "y": 360,
+        "w": 112,
+        "h": 112,
+        "enabled": true
+      }
+    ]
+  }
+]

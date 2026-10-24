@@ -1,0 +1,2885 @@
+{
+  "status": "passed",
+  "physicalFrames": 104,
+  "clipReferences": 132,
+  "sourceFeetEqual": true,
+  "actors": [
+    {
+      "actor": "player_dragon_daren",
+      "motion": "Idle",
+      "frames": [
+        {
+          "index": 0,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            8,
+            7,
+            26,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "4a280ebe23674174f0156a27280abdd0b74bee915461fd207225a319482c622e",
+          "pixelSha256": "ade87ac54a14586d00ef7d60368741def5286b94d76843b281ce01a2d603967c"
+        },
+        {
+          "index": 1,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            8,
+            7,
+            26,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "05b100b00eb58a6490a4ae7c7cc9058764ada42757b044058df892cfedc2808b",
+          "pixelSha256": "2730987200b21aa323a03ca60e56fd82e7d3e8d6efba69e7e087a3e82e3ad4c2"
+        },
+        {
+          "index": 2,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            8,
+            7,
+            27,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "f1d34cd15f3119255f584b730d3c06abd10544f7a59f2201644b1420446f5ec7",
+          "pixelSha256": "bd22eee044a4b8b341f64ae84b028a508ef0109a711645c1c164f97e7017861c"
+        },
+        {
+          "index": 3,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            8,
+            7,
+            27,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "c2bc1011134bccb692edd656fb1ad204da946ec48392d027410c396f2c213b93",
+          "pixelSha256": "0d4834a04bfb404e6a98d2c4ea656075666e0e5eb82df141cf621b4d45768384"
+        },
+        {
+          "index": 4,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            8,
+            7,
+            27,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "f8df31d0fe15763bcdda59ad121a0b4c98fcb22b68922cbcc2de9c4ce98128d1",
+          "pixelSha256": "8dadd6232e26f801c5f9d2dacb31ef0e789e3283a8a985f565beab1fa90b4fca"
+        },
+        {
+          "index": 5,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            8,
+            7,
+            27,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "da303f84f865252cd05390568d9bb26ccedc5a666e85b40aa37177d1b8507515",
+          "pixelSha256": "53c9e309c8c53fbc57ed3c59b2ab7e2d1748bda3876fb2e64294c5ed66d1a7dd"
+        },
+        {
+          "index": 6,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            8,
+            7,
+            27,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "a0af6cd3c55f23272647cd98926c437ce7ce9f05ce156c3633344d974c8b963d",
+          "pixelSha256": "ed3f51799e6c5014b9cb11185502f8fdfc3cca21b4936e0f2bd46b48ed4d43fa"
+        },
+        {
+          "index": 7,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            8,
+            7,
+            27,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "2520af6f186f9661fe65462d0c0b22ebbbb925a5186e451053cbdad5bc120035",
+          "pixelSha256": "bd23b3ce31d5ebe63a6c4a8582a59536ba30111f552b86cdf4c5832e25ff0834"
+        }
+      ],
+      "uniqueFrames": 8,
+      "footBaselineMatchesLuka": true
+    },
+    {
+      "actor": "player_dragon_daren",
+      "motion": "Run",
+      "frames": [
+        {
+          "index": 0,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            9,
+            8,
+            30,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "5c0fc9ab15ea4d98b49d1b5df082d148d2c722ffcc91d0f202dd443ec597ad28",
+          "pixelSha256": "65d99c0a242fced74d0e9e6773d9f853f15f6e67cb02584fe2cd670368f192cd"
+        },
+        {
+          "index": 1,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            4,
+            8,
+            27,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "9e8de7ebfec7e74468c8e0bda753c939f9ad7c81946eb37ba2ffc9e78669d87b",
+          "pixelSha256": "30e7612e6623e9d7090af279437dea8bc24c8ed7f76a09917c1ace2959236223"
+        },
+        {
+          "index": 2,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            3,
+            8,
+            27,
+            27
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "abf46de5523f34edf2775b9fb99c023eef8ff3db50181907ea0cb397b8d956a5",
+          "pixelSha256": "5d2956f9ffd4fb2e47019d2d56b1d2f2989ea9e9e4c3cd3dfcd9f786cb7b2c60"
+        },
+        {
+          "index": 3,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            6,
+            8,
+            27,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "4349f33c85c6514191ceafa270a4800d1f8aedc5fe654b5a28b0e00a7c0d390d",
+          "pixelSha256": "4cecc0f50e006af021d7a917c7c1ea0eba8531c8420269f374e111f02395a158"
+        },
+        {
+          "index": 4,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            9,
+            8,
+            29,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "15084788df2c6438cecc39b5fe0e08c772f8bcdf7837e1d552eb7d12bfdd86d3",
+          "pixelSha256": "ebba1b1e49c609fa2a4b7626c529d32ed64f891d585b773be9fe0da556d9abae"
+        },
+        {
+          "index": 5,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            4,
+            8,
+            31,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "981c5634abb1f6a9e0461cf35e84ba9dc497400d49609b1863a4bddad40fac77",
+          "pixelSha256": "790104b4e2cef8a5a386bc0e73c650a74c775359d2ca51219b7d9088b991193a"
+        },
+        {
+          "index": 6,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            3,
+            8,
+            31,
+            27
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "1aa9240b484d8c7f6bd3987ba7a51dd26d7aa274ca0b8442b4cc458e5ddd1b01",
+          "pixelSha256": "54123138f2dec12753942c1eeced847d6634afc6e3879f22ad1c6d9d6311f5e4"
+        },
+        {
+          "index": 7,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            6,
+            8,
+            31,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "dad4e1476ee569b24658c7b38ea07068ed69ea73f9ebf3b0b8d6251d6f3d38b6",
+          "pixelSha256": "e547caedc7ed8ae408614f65ce38136df55a583e2161fdba3bd25c3f14d3a399"
+        }
+      ],
+      "uniqueFrames": 8,
+      "footBaselineMatchesLuka": true
+    },
+    {
+      "actor": "player_dragon_daren",
+      "motion": "Attack",
+      "frames": [
+        {
+          "index": 0,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            2,
+            7,
+            29,
+            30
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "797a848864f657ec354345f0554b2bf7fbb1b88b88d8461f3ff3bd298c1295fd",
+          "pixelSha256": "810f17a76e46a7eb7a0f7ac3d017836ad8a7ca3a62774a40bb3721c41161511c"
+        },
+        {
+          "index": 1,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            1,
+            7,
+            28,
+            30
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "4bbed22aa5e4be4acc51f7f5f3ce0a15a4ae0f455fe761427eeae1d9ecce638b",
+          "pixelSha256": "dd4c76a333db0425c6451b47d6b6b9a1bd5bc5cd0a04d36876d85d6cd1bd0595"
+        },
+        {
+          "index": 2,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            1,
+            7,
+            27,
+            30
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "353dc68aeabc215df0b479c5bee6a2a7aebe502b342ef1c6f378364d0810c3f5",
+          "pixelSha256": "8a6b28375e6dfb9dcc217c1e228ede7a20271e9954068a55ca6088657b597e64"
+        },
+        {
+          "index": 3,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            3,
+            7,
+            29,
+            30
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "6f61f1a067dd5f7f3b0fd0f32fd78c071d821cdb99b755134838bedd46b8af70",
+          "pixelSha256": "9b0ce2a8418c189cf0d2c09a6d5cd57b2e9e02661773d6db9af2ffcf81d93c48"
+        },
+        {
+          "index": 4,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            8,
+            7,
+            29,
+            30
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "584c0fe6099757098f4478453b920f631c6dec590e8a96013ebeb54cc6d8f5c3",
+          "pixelSha256": "def854f542a6cb205f9b7a9df5033ebb46dda2ec4047b70274c0f80230266da3"
+        },
+        {
+          "index": 5,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            6,
+            7,
+            29,
+            30
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "b3e65d4b7aceeb7cfefe38acc8253b60eeb5fcfa0acdd8116f85082c5412f195",
+          "pixelSha256": "64dbbf1ead63a2255f6e9f03f31e0c52db376fe0dc729178f30ac450dcc09571"
+        },
+        {
+          "index": 6,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            3,
+            7,
+            29,
+            30
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "f86feb487c2ad9b026de72cdcedc9301e7d3c08636fffc652c1c556c50005461",
+          "pixelSha256": "d7c0fe6cc0d350853b419b8f769b2373a1d436a1fa47a2109634cacaa2129f02"
+        },
+        {
+          "index": 7,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            8,
+            6,
+            31,
+            30
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "00fb80b9c7e51b82a6f85cc7896a548cfc17a3ff969e7aedc6909e01cace21f3",
+          "pixelSha256": "a7d47e53a69a656d7ec3d12126735c3da7af73d5d634e98598f86f69dc097660"
+        },
+        {
+          "index": 8,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            7,
+            7,
+            31,
+            30
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "aec86b015e7b843f92db0b43124dfd45c8c2cdc943caeecc027f0b08507fd049",
+          "pixelSha256": "67504388141a70a6d4821543b882655c5fad93fd9b791140e6ee7bde0deb60a3"
+        },
+        {
+          "index": 9,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            7,
+            7,
+            31,
+            30
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "54cf4f1b95a1893ff534a39ed5cded10d60b13d3ed8edb2fc61aec8c1b2c7e38",
+          "pixelSha256": "8c461efe03fabc776ea5b93ba2cae4c444f08993429d7277cd54c8f048c2cf8f"
+        },
+        {
+          "index": 10,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            8,
+            7,
+            31,
+            30
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "9f84d3b073fe89947e9cf99e788722d4148248e7f294ab51cd6e0089a550619b",
+          "pixelSha256": "73222e65b9be4536b43d816952e02b887365375ef2a7931e37e67965d65845a2"
+        },
+        {
+          "index": 11,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            8,
+            7,
+            31,
+            30
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "841624c3a2fb72d26f058cac8e2484a1526aae86d11b7b2a5110b6ba302f1d03",
+          "pixelSha256": "739f4881fd1217fd110dc6a92abcd911e9f42c6e55902fd89b9a730013010a3a"
+        },
+        {
+          "index": 12,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            8,
+            7,
+            30,
+            30
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "4ddcbc9de659cda539f7a7128fd5cb747c21a3c4447a5cc7cc6f4dad4883f18d",
+          "pixelSha256": "75fd0e9f922211cfb97ed53816172c74885ee7b9f15068df250b623ab25786eb"
+        },
+        {
+          "index": 13,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            8,
+            7,
+            29,
+            30
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "2218c839025554f7d8c069358b58794a1e798f064abb0bcba440bc73a089e91b",
+          "pixelSha256": "95b666e4fd61a4e9a0876ebc9282bd480b72d21e7725cd9466f171cdc73d2796"
+        }
+      ],
+      "uniqueFrames": 14,
+      "footBaselineMatchesLuka": true
+    },
+    {
+      "actor": "player_dragon_daren",
+      "motion": "DodgeUp",
+      "frames": [
+        {
+          "index": 0,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            9,
+            7,
+            27,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "db9c7eda04b77bfd85dd583c14626d51c55d5d1cef1f8f0ce914de894a71b02a",
+          "pixelSha256": "7776f3526626c73f2d2da81e6d72da676deae2969be45dda46c1e2040817a5db"
+        },
+        {
+          "index": 1,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            9,
+            7,
+            26,
+            28
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "c793a13413065dfce65dff81c531e00dc26ba9c8303f2013511b42707c766784",
+          "pixelSha256": "d9c2f834ac854afe1017cafcd537dfb3165cced69399d7b38ae1d519b56811e4"
+        },
+        {
+          "index": 2,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            9,
+            6,
+            26,
+            27
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "569db4ae59fe4afc835a05162d6ec496375ba7ac2a32b55e6a8404a7d4120a12",
+          "pixelSha256": "bae227cef3ca1a0fef8e41cdbbc3a0a7dd0996d82e5156720785db797bb62dcc"
+        },
+        {
+          "index": 3,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            9,
+            5,
+            26,
+            26
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "695be75ad5c45e59052f7a6818fbb837f52d8664e708e6d698e72cbda8ee33c5",
+          "pixelSha256": "441fb2d1beba3b72897e8365f823aff83db84bff970a5c1d31a5d58fc6ccd012"
+        },
+        {
+          "index": 4,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            9,
+            6,
+            26,
+            27
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "f4bb73bb89de2aff12c71a7495fe435d6201d13ab087798669010ffff8ee12ca",
+          "pixelSha256": "a34d1231167bc1e9dd2859db172810be7b8bbaad8446cfe9fd7a224c10f8f21e"
+        },
+        {
+          "index": 5,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            9,
+            6,
+            27,
+            28
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "b32d8e8d60a12e4720a6854deee3e5221a56c288e080ebfeff1f506551ca0dc7",
+          "pixelSha256": "accff0507f782b67b49f73b534364d35926b2a4ca4cd914b0763fb3a5c5c33b5"
+        },
+        {
+          "index": 6,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            9,
+            7,
+            27,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "7a403c1f2b8c6e49fc468647e1a67594fc7ec63dac74220e3de008ed399be3b3",
+          "pixelSha256": "fd69c13949cb0ed2e9d9650240b05d4ceff1c67a5f6b02c2f58641757c94c049"
+        },
+        {
+          "index": 7,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            6,
+            6,
+            27,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "306c63318e5184522eb9fc64fd5db151f19f042d38251b2a49ea9805166c470b",
+          "pixelSha256": "6557055bc695058f45d138e46e48221c27bbff9ef54dda6b7d5e52810320626a"
+        }
+      ],
+      "uniqueFrames": 8,
+      "footBaselineMatchesLuka": true
+    },
+    {
+      "actor": "player_dragon_daren",
+      "motion": "DodgeBack",
+      "frames": [
+        {
+          "index": 0,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            5,
+            7,
+            26,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "5191fad7e383fd1ccddaf469e687c07c8e73a080014f04228988cbe5c40cc478",
+          "pixelSha256": "4801d92a8fd28ba42dc362310737a63b715d3a4a225ab1044c910d3623e8854e"
+        },
+        {
+          "index": 1,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            5,
+            7,
+            29,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "1ac304a0272375287ccfbd8ed72fd05f05f1fc44c0559295c1966f1b11e6f583",
+          "pixelSha256": "72cb75e294563759dcada688ff1683ae5bf552a58198640630d9f93db6c9f892"
+        },
+        {
+          "index": 2,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            7,
+            6,
+            30,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "ca0818bb4035d51bc0be7f11f9a1bad2376002e4cae3871a4cf8a7ee3067a2e3",
+          "pixelSha256": "c8cea1f8da918fec8635353abea99ef987867ed4545d9238ec9c35858c6e8dff"
+        },
+        {
+          "index": 3,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            5,
+            6,
+            29,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "66157043185fb0324ab874d9fb58e86e18989d64a24dd7f660e3a9ad348856cf",
+          "pixelSha256": "f400efe9042707d830f449c2d792d22955dab412f3b568dc8e7ed56418b4d5cd"
+        },
+        {
+          "index": 4,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            6,
+            6,
+            29,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "cd3184c917e6cedac543fdf83eaa4006d66c389e0a15ebb2d36bed710e25971f",
+          "pixelSha256": "797f003b1a26bffb0b65fe305ef9b63209339dd0a5f32290b286e3a6da33886a"
+        },
+        {
+          "index": 5,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            7,
+            7,
+            30,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "e3f1176c1f6ed8247cf18f1eefc2d085c9f108d486d6ba8a71e9b9efd71e3e44",
+          "pixelSha256": "873590d8d04c6c451761e2ae655b89c6479ea41ae4752ce5f5d1c967d8fa69bd"
+        },
+        {
+          "index": 6,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            7,
+            7,
+            30,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "8067f4debb08e57fe2e2cc051fcec72b179093b56c38e97ca80b12a7b2d88184",
+          "pixelSha256": "b17942ff5be6c95b8466d14c72e8f13069962fee47955674b6715f5685787d17"
+        },
+        {
+          "index": 7,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            6,
+            7,
+            28,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "15dc11f1d82b56f682309ef093d58885fe9468bf124f54b2a46ae7496257aa6f",
+          "pixelSha256": "28dc00b068a447d9f39576d70aa7b2c24b235e0dcb8ddb97ac5289375aafb42d"
+        }
+      ],
+      "uniqueFrames": 8,
+      "footBaselineMatchesLuka": true
+    },
+    {
+      "actor": "player_dragon_daren",
+      "motion": "Hit",
+      "frames": [
+        {
+          "index": 0,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            8,
+            7,
+            26,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "302744599ceecf688f876f420704e75187c8614aeea98035aa7bd5f9f2b421fb",
+          "pixelSha256": "695133d0f5029eb55bd2b70c322857ca0f46cce9ef0b5180992035d21feee565"
+        },
+        {
+          "index": 1,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            7,
+            7,
+            26,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "16df360bd7a3bba3ef7573a918b1ed4742dc0501a66be81d15765afff27e19bb",
+          "pixelSha256": "14ad7d8cf9350afef02480f6419d014e6ee5efb1d272c1e23e6d5931df1c0ce7"
+        },
+        {
+          "index": 2,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            7,
+            7,
+            26,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "b7ee09395bd1c6b92893e51d5043f4877434d4ba9558fd2b4c0c17bca88ced1e",
+          "pixelSha256": "c5cafaad5e366ac8d02e159d4929737807c4a6a034db12fdbf3ae46f8eadcca1"
+        },
+        {
+          "index": 3,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            7,
+            7,
+            26,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "eec01ff9b455a40fb7ba0c5e9a9479d71693e2fd58ca80d1fdf679ec17e484e0",
+          "pixelSha256": "521a3b4c778b3df1b77e7259a1a8a1b439208f094b3774136b9e67c3fe01eeaa"
+        },
+        {
+          "index": 4,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            8,
+            7,
+            26,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "1b0d338d1f4b1afc071381d62ea25a4594e8612f86151329171b73ac2ca3707a",
+          "pixelSha256": "1b1e500a1bda389b30b869bcb946daeb79f1df96e89614af54bc9288e127159a"
+        },
+        {
+          "index": 5,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            9,
+            7,
+            27,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#355D82",
+            "#668185",
+            "#6B3F2A",
+            "#AB6C37",
+            "#B7D3D0",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "31d19d5902af83154041ed1e6388ec80e51c08f6599c2e08fe120cb8febca689",
+          "pixelSha256": "e7c5ea556c56c065d96bcf00e569b4c3db2d48d7ade7937fce44420f501cb2a5"
+        }
+      ],
+      "uniqueFrames": 6,
+      "footBaselineMatchesLuka": true
+    },
+    {
+      "actor": "player_dragon_miel",
+      "motion": "Idle",
+      "frames": [
+        {
+          "index": 0,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            7,
+            5,
+            28,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "c70a9e46f45028a4fbfea8e399e202e4ad4a2e886aa6e48ba8aef9f052106bc6",
+          "pixelSha256": "e11c2798f767efff724cbcb7d348ebfdb8e1e2e0208d4b056b28d5eabbf4bdf9"
+        },
+        {
+          "index": 1,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            7,
+            5,
+            28,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "8221fcc52ed5b576f2a3b356e395dce74bddc9b8a933571b53208e16182df64f",
+          "pixelSha256": "b22caa59abe3916548759bdd18a0baa366cc76b9671ff04d331f568f2205b7a4"
+        },
+        {
+          "index": 2,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            7,
+            5,
+            28,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "bfd299e655f1770796f0e13e2b66bee665d3c703bea2da8846636b7202604569",
+          "pixelSha256": "c030d62b574099dc4a32b6f50f6434e80bf635f7de72cd48f727a4732bacdba7"
+        },
+        {
+          "index": 3,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            8,
+            4,
+            29,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "cfe991366b7589b5070526ac4a1f3489484d7456a0319183cc3d51be7732d56f",
+          "pixelSha256": "b938bc4f52c54603dafab85577fb77bd1d41709e862566658442559f8de1a385"
+        },
+        {
+          "index": 4,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            7,
+            4,
+            28,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "2e57c7a177874d50ac56f5fbb35e761b60f071752584a1bf8acbe5fd6fc27207",
+          "pixelSha256": "f245d7040c936d76dbabac245833a920f966c678cf0a7a015839bc03c2679e7f"
+        },
+        {
+          "index": 5,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            7,
+            4,
+            28,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "e0acaa0aade287b9037dddaae2b64f65550500a985fafde6ddd2f7926994ad13",
+          "pixelSha256": "f5e2666e49e3c3d710b073d380c9cff32b0ada1d2674f807e1a1e6ae0a1c2c9e"
+        },
+        {
+          "index": 6,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            7,
+            4,
+            28,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "92666f73dadc44803b13272f831a15873a0a6cd4881de024d2c14db6f6c18f38",
+          "pixelSha256": "ab53666551d91fe6dfeba3325772c646ccfda790883a2826c16248c1a6ae79a0"
+        },
+        {
+          "index": 7,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            8,
+            4,
+            29,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "67481d4640aff28c2f861c0f344de345eeac9c238d22a0f4121b30667f73d827",
+          "pixelSha256": "156da05411ddfacb207373464f2c766c072f526124bda7698be8b4689547f921"
+        }
+      ],
+      "uniqueFrames": 8,
+      "footBaselineMatchesLuka": true
+    },
+    {
+      "actor": "player_dragon_miel",
+      "motion": "Run",
+      "frames": [
+        {
+          "index": 0,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            9,
+            6,
+            31,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "7a6442d71d92e236da7296fb200d0e6be7e1a07ab6875fbc09e751c11923a264",
+          "pixelSha256": "4f51f31f81a46062b87dbe9dd2f1b60e5205f6888779d87cc3dd29a50d7ac8fb"
+        },
+        {
+          "index": 1,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            4,
+            5,
+            29,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "65f61e6dec5c203a5982a5999aa5d57a5180579db654728e87cecd9994dfa8e1",
+          "pixelSha256": "31b5b856e296d2ad88533495234abd585419584a522177963361b4f048d3168f"
+        },
+        {
+          "index": 2,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            3,
+            5,
+            27,
+            27
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "a93cb82d67fa76416fb070bffed57b446756a69ea2283cbe8b4d6ae85e18c338",
+          "pixelSha256": "513ecc3938b20a22a784ad5944a9a9ef0f9b77051ae7176425d2d2c175c9d3cf"
+        },
+        {
+          "index": 3,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            6,
+            5,
+            27,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "72671fa566e055c17501530444a31995455b13e25f8cc1d6435636d34081eedd",
+          "pixelSha256": "dcbdbe288be5b381bb93fdcc233eed2d33bcf884263b50b0ef837f3efc4926d9"
+        },
+        {
+          "index": 4,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            10,
+            5,
+            30,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "a1642126d739d159cecefd9feea52f9486fd9c47986b9a2d40ddbcbad0ab3a3f",
+          "pixelSha256": "5523dd49e50d1fc98a37b0cfb191344572eeae80eabc7060a6adaf0dc5bd3024"
+        },
+        {
+          "index": 5,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            4,
+            5,
+            31,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "6f2e0a21e838b52c681e053c61a4ce7c3b0d2820c94df921e1f1ace31a738e58",
+          "pixelSha256": "3cda26ba2fc6d8691c1df342f05776b9a1b88dfb579ca7e61beff02f771e57e1"
+        },
+        {
+          "index": 6,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            3,
+            5,
+            31,
+            27
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "0a3a3cf631408c61bb82f9a1ca135c7d46d050118f7e1c2f67eec628eea9c71e",
+          "pixelSha256": "cdef6b5710e99c1c8b1c56be98d1174e134bac67244f13557056b59d4da9e1d0"
+        },
+        {
+          "index": 7,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            6,
+            5,
+            31,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "4e060e61cb20afa39ebc08c6d85d7e1abfc55818ac74587174d084a1acdea085",
+          "pixelSha256": "3f177b516905111423b661aceaf048a049201e2491034d4bcb5c6147b0d14340"
+        }
+      ],
+      "uniqueFrames": 8,
+      "footBaselineMatchesLuka": true
+    },
+    {
+      "actor": "player_dragon_miel",
+      "motion": "Attack",
+      "frames": [
+        {
+          "index": 0,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            1,
+            4,
+            27,
+            30
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "af2a6f7ee51a2c9f299e9b4acc549ecd2e840f106aa321a8035b3ec370681344",
+          "pixelSha256": "57f6cf40e8dfebc9cd53f31c22d3410e22cbd325ee39b63227038e95de2f16a2"
+        },
+        {
+          "index": 1,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            1,
+            4,
+            26,
+            30
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "9dae5159cef946505865590a66c5df35070cb85557d346a1fac6c8f507de35eb",
+          "pixelSha256": "940ac2f32bfc8494eecd90fa7ccff10ba4cd40cc9acd8e31da941fb56a82af57"
+        },
+        {
+          "index": 2,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            1,
+            4,
+            27,
+            30
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "7dfade2bf7db62e3047fd418ab6a8fa7326a03c00cd054a9f03fb2438fa9e32c",
+          "pixelSha256": "bebee60ddb2a46158d649ac2e29dbb922630c52547d26d84a60493f1ec3ed228"
+        },
+        {
+          "index": 3,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            3,
+            4,
+            29,
+            30
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "dd28be73f6530ba5582866f814d44111c24515368c2a79e7c088ed0932984588",
+          "pixelSha256": "8f939fa071b172413318d9d6b07a9d06903cc9dff556474f77ee582e90ea1771"
+        },
+        {
+          "index": 4,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            9,
+            3,
+            29,
+            30
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "1ec79241560f4c37d4475c89f5295d7fdfb9b2411d95046a92611af0130957a4",
+          "pixelSha256": "3448cd9a27902caef6ee102fee906103322e48e14a263493e03f1420534d0ce0"
+        },
+        {
+          "index": 5,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            5,
+            3,
+            29,
+            30
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "021a943159daf356982ae43ad8c324f72a89eadd09cf818e23300c760a1856d0",
+          "pixelSha256": "3b0030b6faf4df6d4467710f65653ef6a72aa56403a5f067bebb80afc0697b93"
+        },
+        {
+          "index": 6,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            3,
+            3,
+            29,
+            30
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "2b11375cd04b62d2944d869f9933acf6ad45797a8a5ce0d8570b4a44d486be47",
+          "pixelSha256": "a8ee2a0e620d7137c493d90c880881c92fb25e5abb0856e318926dff24eda7ea"
+        },
+        {
+          "index": 7,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            8,
+            4,
+            30,
+            30
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "5e1a4a15ef81ef27a2f7bbdfa058b76d9666df4fabfe0b16e593837bcc4fd37c",
+          "pixelSha256": "4bf6a2e16ce2d6e883e4f3732ca74dba3af693f52af9296d466b664750e91c95"
+        },
+        {
+          "index": 8,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            8,
+            4,
+            31,
+            30
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "bfcfcd2e55bf30d15939bd6ce133b986d8278da2f0002120cdff88827bb2daca",
+          "pixelSha256": "d9ff98a0f4f467e1210901c4b0cae4118f587a3b6cf7ff8a646fa4f46f2ab69f"
+        },
+        {
+          "index": 9,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            8,
+            4,
+            31,
+            30
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "8acadba30d48aace598f1d905cc8a2a4abe70bab2272765012ca2aa5a6f25c74",
+          "pixelSha256": "6ea2863f7d263f9e7be5ab6478db2a2dfb5da0af0d79a982c6a171162d3175d4"
+        },
+        {
+          "index": 10,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            8,
+            4,
+            31,
+            30
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "56b9fcc1bc8c587e52c53f7fc17e1b49a86ffad45028ea8957ae10621728e7be",
+          "pixelSha256": "f425a8554db84cd4ce8505365a9bcde36892e7d13e42f2a2ec151fc37ae53475"
+        },
+        {
+          "index": 11,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            8,
+            4,
+            31,
+            30
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "40d7fd425ad199f8aec42fdac247186103633eb7aaa617d3cf5421abbab1ffdb",
+          "pixelSha256": "dcd11da79cad99f0b1eafbec626012b3eb42bbd5d84a10f58181e88c60fe4a6c"
+        },
+        {
+          "index": 12,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            10,
+            4,
+            30,
+            30
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "e326a50dd19772e5ab733f4ddd7d1bd764184717ccace621c3b5857574819d63",
+          "pixelSha256": "44dc002992e853268afd3d74e8d64bd4f9b57c2f4b5c204cd20da6289719d9fe"
+        },
+        {
+          "index": 13,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            10,
+            4,
+            29,
+            30
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "e69472c6e5f05f135b8b14b902ea191fa0ee629850bf860eda3f86b72345d160",
+          "pixelSha256": "9f3134037846c47681cf7462a0f3a74d947877b83d5982581f03bd12364bbf98"
+        }
+      ],
+      "uniqueFrames": 14,
+      "footBaselineMatchesLuka": true
+    },
+    {
+      "actor": "player_dragon_miel",
+      "motion": "DodgeUp",
+      "frames": [
+        {
+          "index": 0,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            9,
+            6,
+            28,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "64dc34df6369f4e1ce3f34c32a90864abf696e1b79655a7ee6d3003049ecd62f",
+          "pixelSha256": "010eadc70799908a7a7d1f9c2c644da879d20f2ef6a4f2de2528a750f52b6e20"
+        },
+        {
+          "index": 1,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            9,
+            6,
+            28,
+            28
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "14e2602683c16400166e56987e0b95135ce4260c9b371a57968a75fbcbed00ee",
+          "pixelSha256": "f57efd78a97b0abffc7cd26dfa95bd3e92de67569fa76b1a839793f5b0a02660"
+        },
+        {
+          "index": 2,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            9,
+            5,
+            27,
+            27
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "f9569c355475c5c7133a8e59dabb2361826c001bef02567c231d693be2efbab9",
+          "pixelSha256": "34d1296fc83722271ef181b6dcab77cea71b3a3c861f2db2c118c5c4ef978c3a"
+        },
+        {
+          "index": 3,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            9,
+            4,
+            27,
+            26
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "d3b2346a2273b7c67bf1be224614e027804a4e34af8f4f46b72cad0468dd6d5a",
+          "pixelSha256": "7bcd8489610494a59ca2d4731cdf594a7f328d9762a01a8ec628640251e52e67"
+        },
+        {
+          "index": 4,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            9,
+            4,
+            27,
+            27
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "ba332dae2f0bfdf0d28dd296b6fc6fd642f0e4f7c3e681e0d97b86bac5999c7b",
+          "pixelSha256": "c36857e9573f134a59d7f648f497a64407a87a0ee7afca45e6d6a676ae9a8060"
+        },
+        {
+          "index": 5,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            9,
+            4,
+            28,
+            28
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "4fa2884e92f2e00d57b4f411f7e0b6da074bd19e5b345000752c09ddb1221b63",
+          "pixelSha256": "de5d80bb63005630467edb1c86b31c84172867a1e8da3385fa19d7f56bd7c186"
+        },
+        {
+          "index": 6,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            9,
+            6,
+            28,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "932fc957555230366d9c7bbcc1a23265b021dec756c185a89275289628a94262",
+          "pixelSha256": "80a4dff3edc562ec39e2a89767d04618a622673687630a61131e392d80e4c64c"
+        },
+        {
+          "index": 7,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            8,
+            5,
+            29,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "b56c2742a8ef6ee9106e8e37255dc2afe4f5ff70fdbaad489ed96eb290ca14be",
+          "pixelSha256": "3366c30608a9cd05f8ca9927dbbdfdc06546222ee4ceb7f0be15cd55daecc5f0"
+        }
+      ],
+      "uniqueFrames": 8,
+      "footBaselineMatchesLuka": true
+    },
+    {
+      "actor": "player_dragon_miel",
+      "motion": "DodgeBack",
+      "frames": [
+        {
+          "index": 0,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            7,
+            5,
+            26,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "f6deac0786c5204c505ec5134a0840b4e5df594a870ce5bcf2b1c6785e30f245",
+          "pixelSha256": "f54c7530d73d0808087afa204d5e77179a7d32d32216f7a6f65fe8af4ed273f5"
+        },
+        {
+          "index": 1,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            8,
+            4,
+            29,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "82df4db8c462c713bae0eecf8c38a80b6a8c2feb6586c804cca56538926ec611",
+          "pixelSha256": "c8daa8e22fbcb77010dc214ebc586f40880f75682762ea792658c312d8f8d112"
+        },
+        {
+          "index": 2,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            7,
+            4,
+            30,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "754b8353c2e44e8309da78d2610abf2a53eeaf34264e529018f7cf8ec3a22ee3",
+          "pixelSha256": "903f428641e8e267ef3f0b89fe826abd6317830b9de20771f78a85c4ab697c25"
+        },
+        {
+          "index": 3,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            7,
+            4,
+            29,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "a91115e9edde3d8e039c95af6b900fa3c7a0fd2d313f355a7baf4bfe1a19b92c",
+          "pixelSha256": "22608e485c95df7078485dad1f6085c0451f55460a505f82a2e2fd24edc141b8"
+        },
+        {
+          "index": 4,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            7,
+            4,
+            29,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "0a8c55cef49e847a62c8f42e8a58c71ee1d6ac7fe99d32153e7c4bcc3f6429a3",
+          "pixelSha256": "fb6cd44af82fe39cb66634b60603d1e8ae62a87f5c5aa2cf5fd44ff34a2f6308"
+        },
+        {
+          "index": 5,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            8,
+            4,
+            30,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "688e1e8d746a266ecf5d0e7e87277a7f74e4b9aace87f4b8138d97704d141719",
+          "pixelSha256": "a96b87c3d2c1052eb7f6f2b17a5819a4597d310d7ccfbd413778b8d10ccb8493"
+        },
+        {
+          "index": 6,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            8,
+            4,
+            30,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "b6e2240a7b7e6281e1963663ac4d04d6915a846d8626b03cb486ecbbf213de9e",
+          "pixelSha256": "79ea99f33b5df7cee654808a0c4b841c5c046d39f92adf3bfe871327d74c45e6"
+        },
+        {
+          "index": 7,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            8,
+            4,
+            28,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "d289e0b737d566615693c0ab46b7d3ccb75ae615bb099bbd2aa18ff5dc95ec33",
+          "pixelSha256": "9a87a0daad20ef026a36f3c912de012a75eacc2b27c30ca8f8cce104fc982ab5"
+        }
+      ],
+      "uniqueFrames": 8,
+      "footBaselineMatchesLuka": true
+    },
+    {
+      "actor": "player_dragon_miel",
+      "motion": "Hit",
+      "frames": [
+        {
+          "index": 0,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            7,
+            5,
+            27,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "6db515cc31a1f30829373050001301981c5a1765679f8166bb2432538ca5de9f",
+          "pixelSha256": "586952215cfe99fc8d68aee0ccf38859db2ca9076629d2c39f4a69ec3aff6334"
+        },
+        {
+          "index": 1,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            7,
+            5,
+            28,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "31e3c72da6b1b68d06599ca453e9e0aab445964e0a2e58bd05208fa831444cd5",
+          "pixelSha256": "2ca553a624af4c36a5eb0418e20bd9581d03dcd77ae54a481d01769c0f78c662"
+        },
+        {
+          "index": 2,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            7,
+            5,
+            28,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "31e336b74a9f800e6058bfb883ae8b138293a919558cf6997d7823af314752e0",
+          "pixelSha256": "b0c6406bc12067bce84162fa116b7338b5f81af0e496aa807772c00aff7d969a"
+        },
+        {
+          "index": 3,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            7,
+            5,
+            28,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "4756304d4c505f089f18e9bd889803f8bb44a537cebda8d9bcbd834f10e0185f",
+          "pixelSha256": "2f6485eeaaeadca8841a9decfa5f506fccb2efe2fa0179b1abe42570cdd32fb6"
+        },
+        {
+          "index": 4,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            8,
+            5,
+            28,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#B7D3D0",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "fdc3b515c7bc15ce9a797142d3b4fa6fa082f1d4e89127c289047e69920f450f",
+          "pixelSha256": "6f7ead620ed8d6ac47eb052d003114f645317f40a54db2605f13a9ac6eb0cb47"
+        },
+        {
+          "index": 5,
+          "width": 32,
+          "height": 32,
+          "bounds": [
+            8,
+            5,
+            28,
+            29
+          ],
+          "colors": [
+            "#202D38",
+            "#287780",
+            "#6B3F2A",
+            "#745184",
+            "#E4AA41",
+            "#E8D9AD",
+            "#F3BD83"
+          ],
+          "alpha": [
+            0,
+            255
+          ],
+          "sha256": "fcc64548aaeae6eed04cce3285cf33c3044ae1fffd1a172b0a3fd9e3ac6df5eb",
+          "pixelSha256": "0448af5c94fce562d0bc1ae3433d916fceeb4cdead31f893df2f064ac0d776fb"
+        }
+      ],
+      "uniqueFrames": 6,
+      "footBaselineMatchesLuka": true
+    }
+  ]
+}

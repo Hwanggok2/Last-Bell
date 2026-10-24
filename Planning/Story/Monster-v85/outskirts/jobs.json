@@ -1,0 +1,358 @@
+{
+  "version": "v85",
+  "date": "2026-10-23",
+  "provider": "PixelLab",
+  "license": "AI-generated project assets; PixelLab account service terms apply, not CC0 stock.",
+  "style": {
+    "reference": "Client/Assets/Game/Art/Presentation/Clips/hero-v5-idle/01.png",
+    "referenceSha256": "70730ff409e0dcbe687edfcb90372d02248941f9a467bfb56ff8297110600f0f",
+    "referenceUsage": "Original file bytes supplied directly to create_image_pro.style_image_base64; no proxy hero, no resampling.",
+    "canvas": [
+      64,
+      64
+    ],
+    "palette": [
+      "#061322",
+      "#142d3c",
+      "#38505b",
+      "#71878d",
+      "#b3bba9",
+      "#f9d296",
+      "#f4a00f",
+      "#a86c32",
+      "#68452b",
+      "#3e2e27",
+      "#c38c52",
+      "#78917f",
+      "#456757",
+      "#335451",
+      "#b67e76",
+      "#e2b989"
+    ],
+    "maxColors": 8,
+    "outline": "dark navy, bold 2px logical blocks",
+    "shape": "compact torso, large simple head, short solid legs, broad two-tone planes; no fine fur or anatomy",
+    "finalPalette": [
+      "#061322",
+      "#17303d",
+      "#34505b",
+      "#58747b",
+      "#8fa7a2",
+      "#c9d6c0",
+      "#f9d296",
+      "#f4a00f",
+      "#966338",
+      "#5b3d2e",
+      "#352a2b",
+      "#59445b",
+      "#8a6674",
+      "#42665a",
+      "#649685",
+      "#b6be69"
+    ],
+    "finalPaletteReason": "Shared with residential team; original hero outline/cream/gold anchor the existing muted creature palette."
+  },
+  "jobs": [
+    {
+      "id": "wild_dog",
+      "name": "들개",
+      "height": 0.92,
+      "description": "A stylized scruffy STRAY DOG enemy facing LEFT in side view, compact chunky tawny-brown torso, BIG blunt angular muzzle and head about one third of its silhouette, one short bent floppy ear, four SHORT THICK block-shaped legs with large squared paws, short thin crooked tail, dark-brown saddle patch. Aggressive but simple adventure-game proportions. NO skinny realistic legs, no long greyhound body, no fur strands, no visible ribs, no necklace or armor. This dog is smaller and lower than the wolf.",
+      "baseJob": "ba127b7b-d15c-4504-b033-667d7eb29937",
+      "candidates": 16,
+      "baseRequest": {
+        "description": "A stylized scruffy STRAY DOG enemy facing LEFT in side view, compact chunky tawny-brown torso, BIG blunt angular muzzle and head about one third of its silhouette, one short bent floppy ear, four SHORT THICK block-shaped legs with large squared paws, short thin crooked tail, dark-brown saddle patch. Aggressive but simple adventure-game proportions. NO skinny realistic legs, no long greyhound body, no fur strands, no visible ribs, no necklace or armor. This dog is smaller and lower than the wolf. Match the ORIGINAL HERO style reference exactly in visual language: bold dark-navy 2px outline, large connected square pixel clusters, short solid body shapes, ONLY TWO flat tones for each material, no soft shading, no texture noise. All details must read as large simple shapes at actual small gameplay size. One complete sprite on transparent background, no ground or shadow, no text, no other objects. Full silhouette inside64x64 with motion margin.",
+        "width": 64,
+        "height": 64,
+        "max_colors": 8,
+        "palette": [
+          "#061322",
+          "#142d3c",
+          "#38505b",
+          "#71878d",
+          "#b3bba9",
+          "#f9d296",
+          "#f4a00f",
+          "#a86c32",
+          "#68452b",
+          "#3e2e27",
+          "#c38c52",
+          "#78917f",
+          "#456757",
+          "#335451",
+          "#b67e76",
+          "#e2b989"
+        ],
+        "palette_name": "Last Bell original hero navy and warm light, muted creature colours",
+        "no_background": true,
+        "style_copy": [
+          "outline",
+          "detail",
+          "shading"
+        ]
+      },
+      "selectedCandidate": 0,
+      "facesRight": true,
+      "baseSelectedJob": "01594b55-142b-41a2-95e4-b5ce48958f1e",
+      "baseReview": {
+        "approvedBy": "root and outskirts_art",
+        "decision": "dog00/wolf01/bear00 selected after side-by-side original-hero game-size review",
+        "canvasEdgeReview": "All touched edge pixels are complete #061322 outlines, not cut fill or missing paws. Add transparent animation margin without resampling."
+      },
+      "idleJob": "97c39b3e-fac1-4169-ad10-1a1fa41b1cee",
+      "idleRequest": {
+        "description": "A quiet natural IDLE BREATHING LOOP. Keep all four PAWS, lower legs and the whole body's ground position absolutely FIXED in the exact same pixels. Only the chest breathes very slightly, one ear twitches subtly, and the tail tip shifts by one or two pixels. No stepping, no foot sliding, no bobbing of the whole body, no turn, no attack. The first and last poses match perfectly. Preserve chunky simple pixel clusters and bold navy outlines.",
+        "direction": "east",
+        "frame_count": 8,
+        "no_background": true,
+        "view": "side",
+        "enhance_prompt": false,
+        "initial_pose": "A compact blocky four-legged wild dog standing firmly on the ground.",
+        "subject_description": "A simplified wild dog with a large head, short thick legs, bold dark navy outline and two-tone flat pixel clusters."
+      },
+      "attackJob": "f904ff1f-56e5-4f6f-964b-1008f318c765",
+      "attackRequest": {
+        "description": "One sharp bite to the RIGHT: plant hind paws, draw the big head back a little, then snap jaws forward with a short chest lunge and close the teeth at full reach. Plant front paws again and settle exactly into the starting ready stance. Keep four SHORT THICK legs and the large blocky muzzle consistent. No turning or running cycle, no new fur detail, no effects.",
+        "direction": "east",
+        "frame_count": 16,
+        "no_background": true,
+        "view": "side",
+        "enhance_prompt": false,
+        "initial_pose": "A compact blocky four-legged wild dog standing firmly on the ground.",
+        "subject_description": "A simplified wild dog with a large head, short thick legs, bold dark navy outline and two-tone flat pixel clusters."
+      },
+      "stunPoseJob": "ab1bbccb-b00a-4eee-a41b-bfbd1741a495",
+      "poseRequest": {
+        "image_url": "https://api.pixellab.ai/mcp/images/01594b55-142b-41a2-95e4-b5ce48958f1e/download",
+        "description": "Change ONLY the pose of this same wild dog to a clearly dazed stunned crouch, still facing RIGHT. Front knees buckle deeply; head and shoulders hang much lower, ears droop, rear paws stay planted. Keep its exact LARGE HEAD, SHORT THICK LEGS, compact torso, bold navy outline, flat colour blocks and proportions. Weak and slumped but NOT dead, not asleep, not lying on its side, not attacking. No stars, symbols or new objects. Transparent background.",
+        "method": "text",
+        "no_background": true,
+        "use_color_palette_correction": true
+      },
+      "idleOutputFrames": 9,
+      "attackOutputFrames": 17,
+      "stunJob": "a9873451-de50-484a-bb32-66dfd8146048",
+      "stunRequest": {
+        "description": "A subdued dazed wobble loop while remaining in this WEAK SLUMPED pose. Keep all paws planted and do not slide. The lowered head sways faintly and shoulders breathe weakly, front knees remain bent. Do not stand back up, do not attack, do not fall dead. Preserve the same short thick legs, large head, simple flat pixel clusters and navy outlines. No extra effects or objects.",
+        "direction": "east",
+        "frame_count": 8,
+        "no_background": true,
+        "view": "side",
+        "enhance_prompt": false,
+        "initial_pose": "Weak slumped stunned quadruped, lowered head and bent front knees.",
+        "subject_description": "The same simplified blocky wild dog in its dazed pose."
+      },
+      "stunOutputFrames": 9
+    },
+    {
+      "id": "grey_wolf",
+      "name": "회색 늑대",
+      "height": 1.2,
+      "description": "A stylized GREY WOLF enemy facing LEFT in side view, compact chunky dark-grey torso, BIG angular head with blunt muzzle, two short triangular ears, broad off-white neck ruff drawn as only THREE LARGE SOLID TRIANGLES, four SHORT STURDY block-shaped legs, big squared paws and one thick wedge-shaped fluffy tail. Fierce simplified adventure-game monster proportions. NO realistic thin legs, no flowing hair, no little tufts, no skinny body. Wolf stands a little taller and sturdier than the stray dog.",
+      "baseJob": "dceebbf1-175d-4254-bea3-3ff931da77a0",
+      "candidates": 16,
+      "baseRequest": {
+        "description": "A stylized GREY WOLF enemy facing LEFT in side view, compact chunky dark-grey torso, BIG angular head with blunt muzzle, two short triangular ears, broad off-white neck ruff drawn as only THREE LARGE SOLID TRIANGLES, four SHORT STURDY block-shaped legs, big squared paws and one thick wedge-shaped fluffy tail. Fierce simplified adventure-game monster proportions. NO realistic thin legs, no flowing hair, no little tufts, no skinny body. Wolf stands a little taller and sturdier than the stray dog. Match the ORIGINAL HERO style reference exactly in visual language: bold dark-navy 2px outline, large connected square pixel clusters, short solid body shapes, ONLY TWO flat tones for each material, no soft shading, no texture noise. All details must read as large simple shapes at actual small gameplay size. One complete sprite on transparent background, no ground or shadow, no text, no other objects. Full silhouette inside64x64 with motion margin.",
+        "width": 64,
+        "height": 64,
+        "max_colors": 8,
+        "palette": [
+          "#061322",
+          "#142d3c",
+          "#38505b",
+          "#71878d",
+          "#b3bba9",
+          "#f9d296",
+          "#f4a00f",
+          "#a86c32",
+          "#68452b",
+          "#3e2e27",
+          "#c38c52",
+          "#78917f",
+          "#456757",
+          "#335451",
+          "#b67e76",
+          "#e2b989"
+        ],
+        "palette_name": "Last Bell original hero navy and warm light, muted creature colours",
+        "no_background": true,
+        "style_copy": [
+          "outline",
+          "detail",
+          "shading"
+        ]
+      },
+      "selectedCandidate": 1,
+      "facesRight": false,
+      "baseSelectedJob": "e79434d7-8b8a-426a-95d8-b7d53c718ccd",
+      "baseReview": {
+        "approvedBy": "root and outskirts_art",
+        "decision": "dog00/wolf01/bear00 selected after side-by-side original-hero game-size review",
+        "canvasEdgeReview": "All touched edge pixels are complete #061322 outlines, not cut fill or missing paws. Add transparent animation margin without resampling."
+      },
+      "idleJob": "81680733-03dd-40de-9855-9940d5ce2b83",
+      "idleRequest": {
+        "description": "A quiet natural IDLE BREATHING LOOP. Keep all four PAWS, lower legs and the whole body's ground position absolutely FIXED in the exact same pixels. Only the chest breathes very slightly, one ear twitches subtly, and the tail tip shifts by one or two pixels. No stepping, no foot sliding, no bobbing of the whole body, no turn, no attack. The first and last poses match perfectly. Preserve chunky simple pixel clusters and bold navy outlines.",
+        "frame_count": 8,
+        "no_background": true,
+        "view": "side"
+      },
+      "attackJob": "cec612e7-d737-4ba2-9113-5c4002ca0616",
+      "attackRequest": {
+        "description": "One forceful pounce bite to the LEFT: crouch briefly onto the back legs, spring forward with the big jaws open and front paws stretched, snap the teeth at full reach, land and recover exactly to the starting stance. Preserve the squat solid torso, broad head, thick legs and large white neck shapes. No spin, no anatomy stretching, no new fine details, no effects.",
+        "direction": "west",
+        "frame_count": 16,
+        "no_background": true,
+        "view": "side",
+        "enhance_prompt": false,
+        "initial_pose": "A compact blocky four-legged grey wolf standing firmly on the ground.",
+        "subject_description": "A simplified grey wolf with a large head, short thick legs, bold dark navy outline and two-tone flat pixel clusters."
+      },
+      "stunPoseJob": "d2437189-4333-4773-85b7-e380fec60bf6",
+      "poseRequest": {
+        "image_url": "https://api.pixellab.ai/mcp/images/e79434d7-8b8a-426a-95d8-b7d53c718ccd/download",
+        "description": "Change ONLY the pose of this same grey wolf to a clearly dazed stunned crouch, still facing LEFT. Front knees buckle deeply; head and shoulders hang much lower, ears droop, rear paws stay planted. Keep its exact LARGE HEAD, SHORT THICK LEGS, compact torso, bold navy outline, flat colour blocks and proportions. Weak and slumped but NOT dead, not asleep, not lying on its side, not attacking. No stars, symbols or new objects. Transparent background.",
+        "method": "text",
+        "no_background": true,
+        "use_color_palette_correction": true
+      },
+      "idleOutputFrames": 9,
+      "attackOutputFrames": 17,
+      "stunJob": "0c407915-f092-438a-8a87-29825d98b9fe",
+      "stunRequest": {
+        "description": "A subdued dazed wobble loop while remaining in this WEAK SLUMPED pose. Keep all paws planted and do not slide. The lowered head sways faintly and shoulders breathe weakly, front knees remain bent. Do not stand back up, do not attack, do not fall dead. Preserve the same short thick legs, large head, simple flat pixel clusters and navy outlines. No extra effects or objects.",
+        "direction": "west",
+        "frame_count": 8,
+        "no_background": true,
+        "view": "side",
+        "enhance_prompt": false,
+        "initial_pose": "Weak slumped stunned quadruped, lowered head and bent front knees.",
+        "subject_description": "The same simplified blocky grey wolf in its dazed pose."
+      },
+      "stunOutputFrames": 9,
+      "idleRejected": {
+        "job": "81680733-03dd-40de-9855-9940d5ce2b83",
+        "directory": "idle",
+        "reason": "Full nine-frame first timeline rejected due to paw shifts; only the grounded subset is retained in the final reversible loop."
+      },
+      "idleDir": "idle",
+      "idleGenerator": "animate_image_pixminimax",
+      "idleRetryRejected": {
+        "job": "7d90f201-d545-4163-9715-5277fd0ef1e3",
+        "directory": "idle-retry",
+        "reason": "Strong inflation/morph of wolf ruff or bear back, plus moving paws. Entire retry excluded.",
+        "request": {
+          "action": "Freeze head, legs, paws, tail and body position. Only side of ribcage expands by one pixel and returns. No steps or head movement.",
+          "frame_count": 8,
+          "no_background": true
+        }
+      },
+      "idleSelection": "Only original grounded source frames selected and played forward/backward without pixel modification."
+    },
+    {
+      "id": "brown_bear",
+      "name": "불곰",
+      "height": 1.6,
+      "description": "A stylized BROWN BEAR enemy facing LEFT in side view, massive compact almost-square torso and high blocky shoulders, large blunt head with small ears and tan muzzle, four VERY THICK SHORT block-shaped legs, heavy squared paws with only two simple pale claw marks each, tiny tail. Brown body with one broad ochre plane on the shoulders. A powerful simplified adventure-game animal monster. NO realistic fur, no rounded teddy-bear body, no detailed anatomy, no tiny fingers. Bulkier and taller than dog and wolf.",
+      "baseJob": "40328714-1683-4f50-8950-8d3e5e071204",
+      "candidates": 16,
+      "baseRequest": {
+        "description": "A stylized BROWN BEAR enemy facing LEFT in side view, massive compact almost-square torso and high blocky shoulders, large blunt head with small ears and tan muzzle, four VERY THICK SHORT block-shaped legs, heavy squared paws with only two simple pale claw marks each, tiny tail. Brown body with one broad ochre plane on the shoulders. A powerful simplified adventure-game animal monster. NO realistic fur, no rounded teddy-bear body, no detailed anatomy, no tiny fingers. Bulkier and taller than dog and wolf. Match the ORIGINAL HERO style reference exactly in visual language: bold dark-navy 2px outline, large connected square pixel clusters, short solid body shapes, ONLY TWO flat tones for each material, no soft shading, no texture noise. All details must read as large simple shapes at actual small gameplay size. One complete sprite on transparent background, no ground or shadow, no text, no other objects. Full silhouette inside64x64 with motion margin.",
+        "width": 64,
+        "height": 64,
+        "max_colors": 8,
+        "palette": [
+          "#061322",
+          "#142d3c",
+          "#38505b",
+          "#71878d",
+          "#b3bba9",
+          "#f9d296",
+          "#f4a00f",
+          "#a86c32",
+          "#68452b",
+          "#3e2e27",
+          "#c38c52",
+          "#78917f",
+          "#456757",
+          "#335451",
+          "#b67e76",
+          "#e2b989"
+        ],
+        "palette_name": "Last Bell original hero navy and warm light, muted creature colours",
+        "no_background": true,
+        "style_copy": [
+          "outline",
+          "detail",
+          "shading"
+        ]
+      },
+      "selectedCandidate": 0,
+      "facesRight": true,
+      "baseSelectedJob": "1c0503f1-3a92-4162-a259-362522a32753",
+      "baseReview": {
+        "approvedBy": "root and outskirts_art",
+        "decision": "dog00/wolf01/bear00 selected after side-by-side original-hero game-size review",
+        "canvasEdgeReview": "All touched edge pixels are complete #061322 outlines, not cut fill or missing paws. Add transparent animation margin without resampling."
+      },
+      "idleJob": "f358bf21-cb20-46af-b9ba-089c9d5b03e0",
+      "idleRequest": {
+        "description": "A quiet natural IDLE BREATHING LOOP. Keep all four PAWS, lower legs and the whole body's ground position absolutely FIXED in the exact same pixels. Only the chest breathes very slightly, one ear twitches subtly, and the tail tip shifts by one or two pixels. No stepping, no foot sliding, no bobbing of the whole body, no turn, no attack. The first and last poses match perfectly. Preserve chunky simple pixel clusters and bold navy outlines.",
+        "frame_count": 8,
+        "no_background": true,
+        "view": "side"
+      },
+      "attackJob": "5eeab8fe-d0d5-43df-b384-19892f036ea5",
+      "attackRequest": {
+        "description": "One heavy claw strike to the RIGHT: brace hind paws, draw the near forepaw up toward the shoulder, then swing that paw forcefully forward and DOWN with a clear extended claw contact. Let the heavy shoulder follow through, then return the paw to the ground and settle exactly into the starting stance. Keep the compact blocky bear body and thick legs. No standing fully upright, no turning, no added effects.",
+        "direction": "east",
+        "frame_count": 16,
+        "no_background": true,
+        "view": "side",
+        "enhance_prompt": false,
+        "initial_pose": "A compact blocky four-legged brown bear standing firmly on the ground.",
+        "subject_description": "A simplified brown bear with a large head, short thick legs, bold dark navy outline and two-tone flat pixel clusters."
+      },
+      "stunPoseJob": "154a4df4-403f-44df-a71e-4d02f6e7bfbb",
+      "poseRequest": {
+        "image_url": "https://api.pixellab.ai/mcp/images/1c0503f1-3a92-4162-a259-362522a32753/download",
+        "description": "Change ONLY the pose of this same brown bear to a clearly dazed stunned crouch, still facing RIGHT. Front knees buckle deeply; head and shoulders hang much lower, ears droop, rear paws stay planted. Keep its exact LARGE HEAD, SHORT THICK LEGS, compact torso, bold navy outline, flat colour blocks and proportions. Weak and slumped but NOT dead, not asleep, not lying on its side, not attacking. No stars, symbols or new objects. Transparent background.",
+        "method": "text",
+        "no_background": true,
+        "use_color_palette_correction": true
+      },
+      "idleOutputFrames": 9,
+      "attackOutputFrames": 17,
+      "stunJob": "8ce0e9ba-cafb-4315-9d0b-70cb69d56137",
+      "stunRequest": {
+        "description": "A subdued dazed wobble loop while remaining in this WEAK SLUMPED pose. Keep all paws planted and do not slide. The lowered head sways faintly and shoulders breathe weakly, front knees remain bent. Do not stand back up, do not attack, do not fall dead. Preserve the same short thick legs, large head, simple flat pixel clusters and navy outlines. No extra effects or objects.",
+        "direction": "east",
+        "frame_count": 8,
+        "no_background": true,
+        "view": "side",
+        "enhance_prompt": false,
+        "initial_pose": "Weak slumped stunned quadruped, lowered head and bent front knees.",
+        "subject_description": "The same simplified blocky brown bear in its dazed pose."
+      },
+      "stunOutputFrames": 9,
+      "idleRejected": {
+        "job": "f358bf21-cb20-46af-b9ba-089c9d5b03e0",
+        "directory": "idle",
+        "reason": "Full nine-frame first timeline rejected due to paw shifts; only the grounded subset is retained in the final reversible loop."
+      },
+      "idleDir": "idle",
+      "idleGenerator": "animate_image_pixminimax",
+      "idleRetryRejected": {
+        "job": "40a278f8-1daa-4409-9877-38a76f448172",
+        "directory": "idle-retry",
+        "reason": "Strong inflation/morph of wolf ruff or bear back, plus moving paws. Entire retry excluded.",
+        "request": {
+          "action": "Freeze head, legs, paws, tail and body position. Only side of ribcage expands by one pixel and returns. No steps or head movement.",
+          "frame_count": 8,
+          "no_background": true
+        }
+      },
+      "idleSelection": "Only original grounded source frames selected and played forward/backward without pixel modification."
+    }
+  ]
+}

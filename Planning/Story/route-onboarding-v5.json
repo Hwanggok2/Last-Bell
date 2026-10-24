@@ -1,0 +1,904 @@
+{
+  "version": "route-onboarding-v5-planning-v6",
+  "date": "2026-10-22",
+  "status": "implemented-verified-public-progressive-damage",
+  "source": "route-onboarding-v4.json",
+  "spec": "../Presentation/design-spec-v6.md",
+  "prototypeLastStage": 20,
+  "restartStage": 1,
+  "assetScope": "10 reviewed fresh monsters + 5 preserved original appearances across 20 stages; 15 distinct enemy/art identities in the proposed roster. Stages 21-50 remain outside scope.",
+  "stages": [
+    {
+      "stage": 1,
+      "name": "등불의 길",
+      "enemyId": "gate_sentry",
+      "enemyName": "빗장 초병",
+      "artId": "gate_sentry",
+      "kind": "normal",
+      "zone": "gate",
+      "directions": [
+        "low",
+        "rear",
+        "thrust"
+      ],
+      "sequenceWeights": [
+        100,
+        0,
+        0
+      ],
+      "maxHp": 120,
+      "damage": 8,
+      "statsStatus": "progressive-damage-mvp1.8.2-hp-and-rewards-preserved",
+      "baseGold": 20,
+      "fragments": 0,
+      "relicChoice": false,
+      "after": "stage2",
+      "hudName": "빗장 초병",
+      "effectTier": 1,
+      "effectBossAccent": false
+    },
+    {
+      "stage": 2,
+      "name": "바깥 돌길",
+      "enemyId": "bell_hound",
+      "enemyName": "종추 사냥개",
+      "artId": "bell_hound",
+      "kind": "normal",
+      "zone": "gate",
+      "directions": [
+        "thrust",
+        "low"
+      ],
+      "sequenceWeights": [
+        100,
+        0,
+        0
+      ],
+      "maxHp": 128,
+      "damage": 9,
+      "statsStatus": "progressive-damage-mvp1.8.2-hp-and-rewards-preserved",
+      "baseGold": 26,
+      "fragments": 0,
+      "relicChoice": false,
+      "after": "stage3",
+      "hudName": "종추 사냥개",
+      "effectTier": 1,
+      "effectBossAccent": false
+    },
+    {
+      "stage": 3,
+      "name": "무너진 초소",
+      "enemyId": "cracked_blade",
+      "enemyName": "금 간 검기사",
+      "artId": "cracked_blade",
+      "kind": "normal",
+      "zone": "gate",
+      "directions": [
+        "high",
+        "thrust",
+        "low"
+      ],
+      "sequenceWeights": [
+        100,
+        0,
+        0
+      ],
+      "maxHp": 137,
+      "damage": 10,
+      "statsStatus": "progressive-damage-mvp1.8.2-hp-and-rewards-preserved",
+      "baseGold": 32,
+      "fragments": 0,
+      "relicChoice": false,
+      "after": "stage4",
+      "hudName": "금 간 검기사",
+      "effectTier": 1,
+      "effectBossAccent": false
+    },
+    {
+      "stage": 4,
+      "name": "경비 순찰로",
+      "enemyId": "gate_sentinel",
+      "enemyName": "성문 파수병",
+      "artId": "gate_sentinel",
+      "kind": "normal",
+      "zone": "gate",
+      "directions": [
+        "low",
+        "rear",
+        "thrust"
+      ],
+      "sequenceWeights": [
+        100,
+        0,
+        0
+      ],
+      "maxHp": 147,
+      "damage": 11,
+      "statsStatus": "progressive-damage-mvp1.8.2-hp-and-rewards-preserved",
+      "baseGold": 40,
+      "fragments": 0,
+      "relicChoice": false,
+      "after": "stage5",
+      "assetFamily": "original-five",
+      "placementReason": "초병이 반복되는 순찰로에 기존 갑옷 병사를 배치한다.",
+      "hudName": "성문 파수병",
+      "effectTier": 1,
+      "effectBossAccent": false
+    },
+    {
+      "stage": 5,
+      "name": "중간 검문소",
+      "enemyId": "gate_warden",
+      "enemyName": "성문 수문장",
+      "artId": "gate_warden",
+      "kind": "miniboss",
+      "zone": "gate",
+      "directions": [
+        "low",
+        "high",
+        "rear"
+      ],
+      "sequenceWeights": [
+        30,
+        70,
+        0
+      ],
+      "maxHp": 283,
+      "damage": 13,
+      "statsStatus": "progressive-damage-mvp1.8.2-hp-and-rewards-preserved",
+      "baseGold": 150,
+      "fragments": 1,
+      "relicChoice": false,
+      "after": "stage6",
+      "hudName": "성문 수문장",
+      "effectTier": 2,
+      "effectBossAccent": true,
+      "assetFamily": "original-five",
+      "placementReason": "기존9층 성문 수문장을5층 중간 보스로 승격한다.5층 체력·공격·보상 기준을 유지한다."
+    },
+    {
+      "stage": 6,
+      "name": "성벽 바깥길",
+      "enemyId": "ash_wisp",
+      "enemyName": "재의 불씨",
+      "artId": "ash_wisp",
+      "kind": "normal",
+      "zone": "gate",
+      "directions": [
+        "high",
+        "low",
+        "thrust"
+      ],
+      "sequenceWeights": [
+        100,
+        0,
+        0
+      ],
+      "maxHp": 168,
+      "damage": 14,
+      "statsStatus": "progressive-damage-mvp1.8.2-hp-and-rewards-preserved",
+      "baseGold": 62,
+      "fragments": 0,
+      "relicChoice": false,
+      "after": "stage7",
+      "assetFamily": "original-five",
+      "placementReason": "검문쇠 거인 뒤에 떠 있는 적을 넣어 실루엣과 공격 인상을 바꾼다.",
+      "hudName": "재의 불씨",
+      "effectTier": 2,
+      "effectBossAccent": false
+    },
+    {
+      "stage": 7,
+      "name": "성문 대교 앞",
+      "enemyId": "bell_hound",
+      "enemyName": "종추 사냥개",
+      "artId": "bell_hound",
+      "kind": "normal",
+      "zone": "gate",
+      "directions": [
+        "thrust",
+        "low"
+      ],
+      "sequenceWeights": [
+        100,
+        0,
+        0
+      ],
+      "maxHp": 180,
+      "damage": 15,
+      "statsStatus": "progressive-damage-mvp1.8.2-hp-and-rewards-preserved",
+      "baseGold": 78,
+      "fragments": 0,
+      "relicChoice": false,
+      "after": "stage8",
+      "hudName": "종추 사냥개",
+      "effectTier": 2,
+      "effectBossAccent": false
+    },
+    {
+      "stage": 8,
+      "name": "성문 광장 접근",
+      "enemyId": "cracked_blade",
+      "enemyName": "금 간 검기사",
+      "artId": "cracked_blade",
+      "kind": "normal",
+      "zone": "gate",
+      "directions": [
+        "high",
+        "thrust",
+        "low"
+      ],
+      "sequenceWeights": [
+        100,
+        0,
+        0
+      ],
+      "maxHp": 193,
+      "damage": 16,
+      "statsStatus": "progressive-damage-mvp1.8.2-hp-and-rewards-preserved",
+      "baseGold": 96,
+      "fragments": 0,
+      "relicChoice": false,
+      "after": "stage9",
+      "hudName": "금 간 검기사",
+      "effectTier": 2,
+      "effectBossAccent": false
+    },
+    {
+      "stage": 9,
+      "name": "마지막 검문선",
+      "enemyId": "gate_lock",
+      "enemyName": "검문쇠 거인",
+      "artId": "gate_lock",
+      "kind": "normal",
+      "zone": "gate",
+      "directions": [
+        "low",
+        "high"
+      ],
+      "sequenceWeights": [
+        100,
+        0,
+        0
+      ],
+      "maxHp": 206,
+      "damage": 17,
+      "statsStatus": "progressive-damage-mvp1.8.2-hp-and-rewards-preserved",
+      "baseGold": 120,
+      "fragments": 0,
+      "relicChoice": false,
+      "after": "stage10",
+      "hudName": "검문쇠 거인",
+      "effectTier": 2,
+      "effectBossAccent": false,
+      "placementReason": "기존5층 검문쇠 거인을9층 일반 적으로 옮긴다.9층 기준으로 단타만 사용한다."
+    },
+    {
+      "stage": 10,
+      "name": "성문 가디언",
+      "enemyId": "bell_knight",
+      "enemyName": "종의 기사 · 성문 가디언",
+      "artId": "bell_knight_concept",
+      "kind": "boss",
+      "zone": "gate",
+      "directions": [
+        "thrust",
+        "rear",
+        "high"
+      ],
+      "sequenceWeights": [
+        0,
+        100,
+        0
+      ],
+      "maxHp": 706,
+      "damage": 20,
+      "statsStatus": "progressive-damage-mvp1.8.2-hp-and-rewards-preserved",
+      "baseGold": 750,
+      "fragments": 3,
+      "relicChoice": true,
+      "after": "defeated boss visible -> story10 -> boss dissolve + immediate gold -> silent gate open -> relic choice -> heal -> stage11",
+      "hudName": "종의 기사",
+      "effectTier": 3,
+      "effectBossAccent": true
+    },
+    {
+      "stage": 11,
+      "name": "성문 안 진입",
+      "enemyId": "chain_puppet",
+      "enemyName": "문패 꼭두각시",
+      "artId": "chain_puppet",
+      "kind": "normal",
+      "zone": "chain",
+      "directions": [
+        "thrust",
+        "high",
+        "rear"
+      ],
+      "sequenceWeights": [
+        60,
+        40,
+        0
+      ],
+      "maxHp": 236,
+      "damage": 21,
+      "statsStatus": "progressive-damage-mvp1.8.2-hp-and-rewards-preserved",
+      "baseGold": 374,
+      "fragments": 0,
+      "relicChoice": false,
+      "after": "stage12",
+      "hudName": "문패 꼭두각시",
+      "effectTier": 3,
+      "effectBossAccent": false
+    },
+    {
+      "stage": 12,
+      "name": "배수 골목",
+      "enemyId": "hook_hound",
+      "enemyName": "배수로 갈고리개",
+      "artId": "hook_hound",
+      "kind": "normal",
+      "zone": "chain",
+      "directions": [
+        "rear",
+        "low"
+      ],
+      "sequenceWeights": [
+        30,
+        70,
+        0
+      ],
+      "maxHp": 252,
+      "damage": 22,
+      "statsStatus": "progressive-damage-mvp1.8.2-hp-and-rewards-preserved",
+      "baseGold": 466,
+      "fragments": 0,
+      "relicChoice": false,
+      "after": "stage13",
+      "hudName": "배수로 갈고리개",
+      "effectTier": 3,
+      "effectBossAccent": false
+    },
+    {
+      "stage": 13,
+      "name": "열쇠 골목",
+      "enemyId": "chain_dancer",
+      "enemyName": "사슬 무희",
+      "artId": "chain_dancer",
+      "kind": "normal",
+      "zone": "chain",
+      "directions": [
+        "high",
+        "low"
+      ],
+      "sequenceWeights": [
+        30,
+        70,
+        0
+      ],
+      "maxHp": 270,
+      "damage": 23,
+      "statsStatus": "progressive-damage-mvp1.8.2-hp-and-rewards-preserved",
+      "baseGold": 584,
+      "fragments": 0,
+      "relicChoice": false,
+      "after": "stage14",
+      "hudName": "사슬 무희",
+      "effectTier": 3,
+      "effectBossAccent": false
+    },
+    {
+      "stage": 14,
+      "name": "문패 거리",
+      "enemyId": "chain_thrall",
+      "enemyName": "사슬 망령",
+      "artId": "chain_thrall",
+      "kind": "normal",
+      "zone": "chain",
+      "directions": [
+        "thrust",
+        "low",
+        "rear"
+      ],
+      "sequenceWeights": [
+        30,
+        70,
+        0
+      ],
+      "maxHp": 289,
+      "damage": 24,
+      "statsStatus": "progressive-damage-mvp1.8.2-hp-and-rewards-preserved",
+      "baseGold": 728,
+      "fragments": 0,
+      "relicChoice": false,
+      "after": "stage15",
+      "assetFamily": "original-five",
+      "placementReason": "문패 꼭두각시의 반복을 줄이고 사슬 주거구의 적 구성을 넓힌다.",
+      "hudName": "사슬 망령",
+      "effectTier": 3,
+      "effectBossAccent": false
+    },
+    {
+      "stage": 15,
+      "name": "잠긴 수문",
+      "enemyId": "pendulum_warden",
+      "enemyName": "수문 추지기",
+      "artId": "pendulum_warden",
+      "kind": "miniboss",
+      "zone": "chain",
+      "directions": [
+        "rear",
+        "low",
+        "high"
+      ],
+      "sequenceWeights": [
+        0,
+        50,
+        50
+      ],
+      "maxHp": 556,
+      "damage": 27,
+      "statsStatus": "progressive-damage-mvp1.8.2-hp-and-rewards-preserved",
+      "baseGold": 2730,
+      "fragments": 1,
+      "relicChoice": false,
+      "after": "stage16",
+      "hudName": "수문 추지기",
+      "effectTier": 4,
+      "effectBossAccent": true
+    },
+    {
+      "stage": 16,
+      "name": "침수된 돌길",
+      "enemyId": "hook_hound",
+      "enemyName": "배수로 갈고리개",
+      "artId": "hook_hound",
+      "kind": "normal",
+      "zone": "chain",
+      "directions": [
+        "rear",
+        "low"
+      ],
+      "sequenceWeights": [
+        20,
+        50,
+        30
+      ],
+      "maxHp": 331,
+      "damage": 28,
+      "statsStatus": "progressive-damage-mvp1.8.2-hp-and-rewards-preserved",
+      "baseGold": 1138,
+      "fragments": 0,
+      "relicChoice": false,
+      "after": "stage17",
+      "hudName": "배수로 갈고리개",
+      "effectTier": 4,
+      "effectBossAccent": false
+    },
+    {
+      "stage": 17,
+      "name": "사슬 중정",
+      "enemyId": "chain_dancer",
+      "enemyName": "사슬 무희",
+      "artId": "chain_dancer",
+      "kind": "normal",
+      "zone": "chain",
+      "directions": [
+        "high",
+        "low"
+      ],
+      "sequenceWeights": [
+        20,
+        50,
+        30
+      ],
+      "maxHp": 354,
+      "damage": 29,
+      "statsStatus": "progressive-damage-mvp1.8.2-hp-and-rewards-preserved",
+      "baseGold": 1422,
+      "fragments": 0,
+      "relicChoice": false,
+      "after": "stage18",
+      "hudName": "사슬 무희",
+      "effectTier": 4,
+      "effectBossAccent": false
+    },
+    {
+      "stage": 18,
+      "name": "집행관 통로",
+      "enemyId": "chain_puppet",
+      "enemyName": "문패 꼭두각시",
+      "artId": "chain_puppet",
+      "kind": "normal",
+      "zone": "chain",
+      "directions": [
+        "thrust",
+        "high",
+        "rear"
+      ],
+      "sequenceWeights": [
+        20,
+        50,
+        30
+      ],
+      "maxHp": 379,
+      "damage": 30,
+      "statsStatus": "progressive-damage-mvp1.8.2-hp-and-rewards-preserved",
+      "baseGold": 1778,
+      "fragments": 0,
+      "relicChoice": false,
+      "after": "stage19",
+      "hudName": "문패 꼭두각시",
+      "effectTier": 4,
+      "effectBossAccent": false
+    },
+    {
+      "stage": 19,
+      "name": "주거구 종 앞",
+      "enemyId": "faded_bell_knight",
+      "enemyName": "빛바랜 종기사",
+      "artId": "bell_knight",
+      "kind": "normal",
+      "zone": "chain",
+      "directions": [
+        "high",
+        "low",
+        "thrust"
+      ],
+      "sequenceWeights": [
+        20,
+        50,
+        30
+      ],
+      "maxHp": 405,
+      "damage": 31,
+      "statsStatus": "progressive-damage-mvp1.8.2-hp-and-rewards-preserved",
+      "baseGold": 2222,
+      "fragments": 0,
+      "relicChoice": false,
+      "after": "stage20",
+      "assetFamily": "original-five",
+      "placementReason": "집행관 앞 마지막 호위로 배치하며 10층 종의 기사와 별도 개체로 구분한다.",
+      "hudName": "빛바랜 종기사",
+      "effectTier": 4,
+      "effectBossAccent": false
+    },
+    {
+      "stage": 20,
+      "name": "매달린 집행관",
+      "enemyId": "chain_jailer",
+      "enemyName": "매달린 집행관",
+      "artId": "chain_jailer",
+      "kind": "boss",
+      "zone": "chain",
+      "directions": [
+        "high",
+        "low",
+        "rear"
+      ],
+      "sequenceWeights": [
+        0,
+        25,
+        75
+      ],
+      "maxHp": 1388,
+      "damage": 35,
+      "statsStatus": "progressive-damage-mvp1.8.2-hp-and-rewards-preserved",
+      "baseGold": 13880,
+      "fragments": 3,
+      "relicChoice": true,
+      "after": "story20 -> relic choice -> complete20",
+      "hudName": "매달린 집행관",
+      "effectTier": 5,
+      "effectBossAccent": true
+    }
+  ],
+  "story20": {
+    "source": "story-world-v2.json / chain",
+    "lines": [
+      [
+        "매달린 집행관",
+        "그들은 사라진 게 아니다."
+      ],
+      [
+        "매달린 집행관",
+        "종이 가져간 것은 그들의 내일이다."
+      ],
+      [
+        "온",
+        "사슬을 끊으면, 돌려줄 수 있어."
+      ]
+    ],
+    "responses": {
+      "on": "사슬을 끊으면, 돌려줄 수 있어.",
+      "dam": "집으로 이어진 고리를 풀겠다.",
+      "rin": "빛마다 다른 목소리가 있어."
+    },
+    "automaticBellSound": false
+  },
+  "saveMigration": "Preserve permanent state; old completed Stage10 save returns to lobby; new run begins Stage1. Never grant old rewards again.",
+  "environment": "Closed gate until Stage10 defeat; open gate moves left at Stage11 and leaves on 11->12. Chain quarter visuals and bgm-quarter for Stage11-19. Boss music at15 and20.",
+  "revision": "2026-10-22-progressive-damage",
+  "originalMonsterReuse": {
+    "status": "implemented-stage5-warden-revision",
+    "currentRuntime": {
+      "lastPlayableStage": 20,
+      "originalAppearancesInPlayableStages": 5,
+      "boundaryOnly": {
+        "stage": 21,
+        "enemyId": "chain_thrall"
+      },
+      "bellKnightMapping": {
+        "enemyId": "bell_knight",
+        "artId": "bell_knight_concept",
+        "oldArtId": "bell_knight"
+      }
+    },
+    "placements": [
+      {
+        "stage": 4,
+        "enemyId": "gate_sentinel",
+        "enemyName": "성문 파수병",
+        "artId": "gate_sentinel",
+        "directions": [
+          "low",
+          "rear",
+          "thrust"
+        ],
+        "reason": "초병이 반복되는 순찰로에 기존 갑옷 병사를 배치한다.",
+        "replacesEnemyId": "gate_sentry",
+        "replacesEnemyName": "빗장 초병",
+        "sourceEnemyId": "gate_sentinel",
+        "originalName": "성문 파수병",
+        "previewSource": "Client/Assets/Game/Art/Presentation/Clips/sentinel-idle/00.png"
+      },
+      {
+        "stage": 5,
+        "enemyId": "gate_warden",
+        "enemyName": "성문 수문장",
+        "artId": "gate_warden",
+        "directions": [
+          "low",
+          "high",
+          "rear"
+        ],
+        "reason": "기존9층 성문 수문장을5층 중간 보스로 승격한다.5층 체력·공격·보상 기준을 유지한다.",
+        "replacesEnemyId": "gate_lock",
+        "replacesEnemyName": "검문쇠 거인",
+        "sourceEnemyId": "gate_warden",
+        "originalName": "성문 수문장",
+        "previewSource": "Client/Assets/Game/Art/Presentation/Clips/warden-idle/00.png"
+      },
+      {
+        "stage": 6,
+        "enemyId": "ash_wisp",
+        "enemyName": "재의 불씨",
+        "artId": "ash_wisp",
+        "directions": [
+          "high",
+          "low",
+          "thrust"
+        ],
+        "reason": "검문쇠 거인 뒤에 떠 있는 적을 넣어 실루엣과 공격 인상을 바꾼다.",
+        "replacesEnemyId": "gate_sentry",
+        "replacesEnemyName": "빗장 초병",
+        "sourceEnemyId": "ash_wisp",
+        "originalName": "재의 불씨",
+        "previewSource": "Client/Assets/Game/Art/Presentation/Clips/wisp-idle/00.png"
+      },
+      {
+        "stage": 14,
+        "enemyId": "chain_thrall",
+        "enemyName": "사슬 망령",
+        "artId": "chain_thrall",
+        "directions": [
+          "thrust",
+          "low",
+          "rear"
+        ],
+        "reason": "문패 꼭두각시의 반복을 줄이고 사슬 주거구의 적 구성을 넓힌다.",
+        "replacesEnemyId": "chain_puppet",
+        "replacesEnemyName": "문패 꼭두각시",
+        "sourceEnemyId": "chain_thrall",
+        "originalName": "사슬 망령",
+        "previewSource": "Client/Assets/Game/Art/Presentation/Clips/chain-idle/00.png"
+      },
+      {
+        "stage": 19,
+        "enemyId": "faded_bell_knight",
+        "enemyName": "빛바랜 종기사",
+        "artId": "bell_knight",
+        "directions": [
+          "high",
+          "low",
+          "thrust"
+        ],
+        "reason": "집행관 앞 마지막 호위로 배치하며 10층 종의 기사와 별도 개체로 구분한다.",
+        "replacesEnemyId": "chain_dancer",
+        "replacesEnemyName": "사슬 무희",
+        "sourceEnemyId": "bell_knight",
+        "originalName": "종의 기사",
+        "previewSource": "Client/Assets/Game/Art/Presentation/Clips/knight-idle/00.png"
+      }
+    ],
+    "gradePolicy": "All replacement stages stay normal. Gate warden and faded bell knight are imposing regular enemies, not new miniboss/boss encounters. Keep HP, damage, weights, rewards, stagger multiplier and duration from the replaced stage.",
+    "bossStagesUnchanged": [
+      5,
+      10,
+      15,
+      20
+    ],
+    "idSeparation": "Keep enemy bell_knight -> art bell_knight_concept for stage 10; add proposed enemy faded_bell_knight -> original art bell_knight for stage 19. No catalog entry changes yet.",
+    "motionPolicy": "Use preserved original Idle/Attack and static Stun fallback with current hit flash; do not mark original five as having new continuous Stun clips. Verify contact timing, feet/pivot and white flash before game integration."
+  },
+  "freshMonsterCoverage": [
+    {
+      "enemyId": "gate_sentry",
+      "enemyName": "빗장 초병",
+      "firstStage": 1,
+      "allStages": [
+        1
+      ]
+    },
+    {
+      "enemyId": "bell_hound",
+      "enemyName": "종추 사냥개",
+      "firstStage": 2,
+      "allStages": [
+        2,
+        7
+      ]
+    },
+    {
+      "enemyId": "cracked_blade",
+      "enemyName": "금 간 검기사",
+      "firstStage": 3,
+      "allStages": [
+        3,
+        8
+      ]
+    },
+    {
+      "enemyId": "gate_lock",
+      "enemyName": "검문쇠 거인",
+      "firstStage": 9,
+      "allStages": [
+        9
+      ]
+    },
+    {
+      "enemyId": "bell_knight",
+      "enemyName": "종의 기사 · 성문 가디언",
+      "firstStage": 10,
+      "allStages": [
+        10
+      ]
+    },
+    {
+      "enemyId": "chain_puppet",
+      "enemyName": "문패 꼭두각시",
+      "firstStage": 11,
+      "allStages": [
+        11,
+        18
+      ]
+    },
+    {
+      "enemyId": "hook_hound",
+      "enemyName": "배수로 갈고리개",
+      "firstStage": 12,
+      "allStages": [
+        12,
+        16
+      ]
+    },
+    {
+      "enemyId": "chain_dancer",
+      "enemyName": "사슬 무희",
+      "firstStage": 13,
+      "allStages": [
+        13,
+        17
+      ]
+    },
+    {
+      "enemyId": "pendulum_warden",
+      "enemyName": "수문 추지기",
+      "firstStage": 15,
+      "allStages": [
+        15
+      ]
+    },
+    {
+      "enemyId": "chain_jailer",
+      "enemyName": "매달린 집행관",
+      "firstStage": 20,
+      "allStages": [
+        20
+      ]
+    }
+  ],
+  "lateReappearances": [
+    {
+      "stage": 7,
+      "firstStage": 2,
+      "enemyId": "bell_hound",
+      "effect": "도약 뒤 짧은 잔상과 청동 분진"
+    },
+    {
+      "stage": 8,
+      "firstStage": 3,
+      "enemyId": "cracked_blade",
+      "effect": "칼날 잔상과 작은 접촉 불티"
+    },
+    {
+      "stage": 16,
+      "firstStage": 12,
+      "enemyId": "hook_hound",
+      "effect": "갈고리 잔상과 청록 금속 파편"
+    },
+    {
+      "stage": 17,
+      "firstStage": 13,
+      "enemyId": "chain_dancer",
+      "effect": "사슬의 절점 잔상과 청록 파편"
+    },
+    {
+      "stage": 18,
+      "firstStage": 11,
+      "enemyId": "chain_puppet",
+      "effect": "추의 짧은 잔상과 문패 가루"
+    }
+  ],
+  "presentationPolicy": {
+    "reference": "../Presentation/feedback-plan-v6.json#stageEffects",
+    "roster": "Only repeated slots were replaced; all ten fresh monsters remain. Keep the current 20-stage roster and use reinforced effects at their later appearances.",
+    "scope": "Within 1-20, not an additional 21+ stage expansion."
+  },
+  "story10": {
+    "id": "story_boss_10",
+    "status": "planning-proposal-not-applied",
+    "supersedes": "GameData story_boss_10 dialogue and earlier story-world-v2 gate dialogue when implemented",
+    "bossId": "bell_knight",
+    "purpose": "Reveal that the gate kept residents inside, then direct the player into the chained residential quarter.",
+    "lines": [
+      {
+        "speaker": "종의 기사",
+        "text": "이 문은 적을 막는 문이 아니었다.\n주민들이 밖으로 나가지 못하게 잠근 거다."
+      },
+      {
+        "speaker": "종의 기사",
+        "text": "주민들은 저 문 너머에 있다.\n집집마다 이어진 사슬을 따라가라."
+      },
+      {
+        "speaker": "온",
+        "text": "문 너머로 가겠어.\n사람들이 왜 갇혔는지 알아봐야 해."
+      }
+    ],
+    "responses": {
+      "on": "문 너머로 가겠어.\n사람들이 왜 갇혔는지 알아봐야 해.",
+      "dam": "문을 열어라.\n안에 남은 사람들을 찾겠다.",
+      "rin": "사람들은 아직 안에 있어.\n사슬을 따라가 볼게."
+    },
+    "automaticBellSound": false,
+    "flow": [
+      "boss_hp_zero_and_reward_commit_once",
+      "defeated_boss_visible_and_combat_stopped",
+      "dialogue_1_2_player_response",
+      "dialogue_complete_or_skip",
+      "boss_dissolve_550ms_and_immediate_torso_gold_flight",
+      "silent_gate_open_and_lights",
+      "relic_choice_and_heal",
+      "stage11"
+    ],
+    "presentation": {
+      "duringDialogue": "Keep the exact combat sprite/frame captured at defeat. Do not switch to Stun, replace art, fade or despawn before the last line ends. Stop all attacks; HP stays at0.",
+      "hud": "Combat name, stagger, boss HP and attack bells hide during dialogue; speaker name stays in the dialogue panel. Gold balance remains visible but waits for visual delivery.",
+      "afterDialogue": "Complete/skip releases dissolve and the first gold dot once. Following dots fly one at a time. Gate opening waits for the 550ms disappearance; visual gold finishes independently within 1630ms for an eight-dot batch and does not block reward UI.",
+      "repeatPolicy": "Keep existing first-clear/replay policy. Whenever the dialogue is shown the boss remains visible until completion. Already-read auto-skip is treated as dialogue completion.",
+      "save": "Save reward commitment, current dialogue line, dialogue completion and release flag. Resume an unfinished dialogue with the defeated boss visible; never re-award rewards. Restored gold text may immediately show the authoritative wallet; do not replay old reward particles.",
+      "pause": "Pause dialogue progression, dissolve and gold visual time. Return to the saved phase.",
+      "noAssetAssumption": "Use the existing combat frame; after loading a dialogue use the same actor Idle frame. Fade that same frame only after dialogue."
+    }
+  }
+}

@@ -1,0 +1,441 @@
+[
+  {
+    "actor": "goblin_scout",
+    "motion": "Attack",
+    "jobId": "b11b7472-7a0e-4525-aa6b-9e6fd784d0a8",
+    "workbenchId": "e07f1715-7ed6-4e85-9a4f-8e33c0466d30",
+    "assetId": "28d8810c-e08a-4b65-9deb-0b5cc2c79213",
+    "changes": [
+      {
+        "operation": "patch_pixels",
+        "layer": "image",
+        "frames": [
+          2
+        ],
+        "pixels": [
+          [
+            5,
+            15,
+            "#36573aff",
+            "#18272bff"
+          ],
+          [
+            5,
+            16,
+            "#36573aff",
+            "#18272bff"
+          ],
+          [
+            6,
+            16,
+            "#36573aff",
+            "#18272bff"
+          ],
+          [
+            7,
+            16,
+            "#36573aff",
+            "#18272bff"
+          ],
+          [
+            8,
+            17,
+            "#36573aff",
+            "#18272bff"
+          ],
+          [
+            9,
+            17,
+            "#36573aff",
+            "#18272bff"
+          ],
+          [
+            4,
+            18,
+            "#36573aff",
+            "#18272bff"
+          ],
+          [
+            5,
+            18,
+            "#36573aff",
+            "#18272bff"
+          ],
+          [
+            6,
+            18,
+            "#79a34aff",
+            "#18272bff"
+          ],
+          [
+            10,
+            18,
+            "#36573aff",
+            "#18272bff"
+          ],
+          [
+            6,
+            19,
+            "#36573aff",
+            "#18272bff"
+          ],
+          [
+            9,
+            20,
+            "#79a34aff",
+            "#18272bff"
+          ]
+        ],
+        "reason": "Reviewed sword-only pixels: restore navy blade edge instead of skin-green contamination; close the left tip inside x=1 rather than leave a cut blade at x=0. Keep grip, limb, body and foot pixels unchanged."
+      },
+      {
+        "operation": "patch_pixels",
+        "layer": "image",
+        "frames": [
+          3
+        ],
+        "pixels": [
+          [
+            10,
+            7,
+            "#79a34aff",
+            "#18272bff"
+          ]
+        ],
+        "reason": "Reviewed sword-only pixels: restore navy blade edge instead of skin-green contamination; close the left tip inside x=1 rather than leave a cut blade at x=0. Keep grip, limb, body and foot pixels unchanged."
+      },
+      {
+        "operation": "patch_pixels",
+        "layer": "image",
+        "frames": [
+          4
+        ],
+        "pixels": [
+          [
+            15,
+            7,
+            "#36573aff",
+            "#18272bff"
+          ],
+          [
+            16,
+            7,
+            "#36573aff",
+            "#18272bff"
+          ],
+          [
+            17,
+            7,
+            "#79a34aff",
+            "#18272bff"
+          ]
+        ],
+        "reason": "Reviewed sword-only pixels: restore navy blade edge instead of skin-green contamination; close the left tip inside x=1 rather than leave a cut blade at x=0. Keep grip, limb, body and foot pixels unchanged."
+      },
+      {
+        "operation": "patch_pixels",
+        "layer": "image",
+        "frames": [
+          5
+        ],
+        "pixels": [
+          [
+            0,
+            12,
+            "#c8d6c6ff",
+            "#18272b00"
+          ],
+          [
+            1,
+            12,
+            "#b5cc71ff",
+            "#18272bff"
+          ],
+          [
+            2,
+            12,
+            "#36573aff",
+            "#18272bff"
+          ],
+          [
+            0,
+            13,
+            "#c8d6c6ff",
+            "#18272b00"
+          ],
+          [
+            1,
+            13,
+            "#c8d6c6ff",
+            "#18272bff"
+          ],
+          [
+            3,
+            13,
+            "#36573aff",
+            "#18272bff"
+          ],
+          [
+            0,
+            14,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            1,
+            14,
+            "#c8d6c6ff",
+            "#18272bff"
+          ],
+          [
+            2,
+            15,
+            "#36573aff",
+            "#18272bff"
+          ]
+        ],
+        "reason": "Reviewed sword-only pixels: restore navy blade edge instead of skin-green contamination; close the left tip inside x=1 rather than leave a cut blade at x=0. Keep grip, limb, body and foot pixels unchanged."
+      },
+      {
+        "operation": "patch_pixels",
+        "layer": "image",
+        "frames": [
+          6
+        ],
+        "pixels": [
+          [
+            0,
+            18,
+            "#c8d6c6ff",
+            "#18272b00"
+          ],
+          [
+            1,
+            18,
+            "#79a34aff",
+            "#18272bff"
+          ],
+          [
+            2,
+            18,
+            "#36573aff",
+            "#18272bff"
+          ],
+          [
+            3,
+            18,
+            "#36573aff",
+            "#18272bff"
+          ],
+          [
+            0,
+            19,
+            "#c8d6c6ff",
+            "#18272b00"
+          ],
+          [
+            1,
+            19,
+            "#c8d6c6ff",
+            "#18272bff"
+          ],
+          [
+            3,
+            19,
+            "#79a34aff",
+            "#18272bff"
+          ],
+          [
+            4,
+            19,
+            "#79a34aff",
+            "#18272bff"
+          ],
+          [
+            5,
+            19,
+            "#36573aff",
+            "#18272bff"
+          ],
+          [
+            0,
+            20,
+            "#79a34aff",
+            "#18272b00"
+          ],
+          [
+            1,
+            20,
+            "#c8d6c6ff",
+            "#18272bff"
+          ],
+          [
+            1,
+            21,
+            "#36573aff",
+            "#18272bff"
+          ],
+          [
+            3,
+            21,
+            "#36573aff",
+            "#18272bff"
+          ],
+          [
+            4,
+            22,
+            "#36573aff",
+            "#18272bff"
+          ]
+        ],
+        "reason": "Reviewed sword-only pixels: restore navy blade edge instead of skin-green contamination; close the left tip inside x=1 rather than leave a cut blade at x=0. Keep grip, limb, body and foot pixels unchanged."
+      },
+      {
+        "operation": "patch_pixels",
+        "layer": "image",
+        "frames": [
+          7
+        ],
+        "pixels": [
+          [
+            3,
+            23,
+            "#36573aff",
+            "#18272bff"
+          ],
+          [
+            4,
+            23,
+            "#36573aff",
+            "#18272bff"
+          ],
+          [
+            5,
+            23,
+            "#36573aff",
+            "#18272bff"
+          ],
+          [
+            6,
+            23,
+            "#79a34aff",
+            "#18272bff"
+          ],
+          [
+            0,
+            24,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            1,
+            24,
+            "#c8d6c6ff",
+            "#18272bff"
+          ],
+          [
+            0,
+            25,
+            "#c8d6c6ff",
+            "#18272b00"
+          ],
+          [
+            1,
+            25,
+            "#c8d6c6ff",
+            "#18272bff"
+          ],
+          [
+            5,
+            25,
+            "#79a34aff",
+            "#18272bff"
+          ],
+          [
+            6,
+            25,
+            "#36573aff",
+            "#18272bff"
+          ],
+          [
+            0,
+            26,
+            "#79a34aff",
+            "#18272b00"
+          ],
+          [
+            1,
+            26,
+            "#c8d6c6ff",
+            "#18272bff"
+          ],
+          [
+            2,
+            26,
+            "#36573aff",
+            "#18272bff"
+          ]
+        ],
+        "reason": "Reviewed sword-only pixels: restore navy blade edge instead of skin-green contamination; close the left tip inside x=1 rather than leave a cut blade at x=0. Keep grip, limb, body and foot pixels unchanged."
+      },
+      {
+        "operation": "patch_pixels",
+        "layer": "image",
+        "frames": [
+          8
+        ],
+        "pixels": [
+          [
+            4,
+            22,
+            "#36573aff",
+            "#18272bff"
+          ],
+          [
+            4,
+            23,
+            "#36573aff",
+            "#18272bff"
+          ],
+          [
+            0,
+            24,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            1,
+            24,
+            "#c8d6c6ff",
+            "#18272bff"
+          ],
+          [
+            6,
+            24,
+            "#79a34aff",
+            "#18272bff"
+          ],
+          [
+            1,
+            25,
+            "#79a34aff",
+            "#18272bff"
+          ],
+          [
+            3,
+            25,
+            "#79a34aff",
+            "#18272bff"
+          ],
+          [
+            6,
+            25,
+            "#36573aff",
+            "#18272bff"
+          ]
+        ],
+        "reason": "Reviewed sword-only pixels: restore navy blade edge instead of skin-green contamination; close the left tip inside x=1 rather than leave a cut blade at x=0. Keep grip, limb, body and foot pixels unchanged."
+      }
+    ]
+  }
+]

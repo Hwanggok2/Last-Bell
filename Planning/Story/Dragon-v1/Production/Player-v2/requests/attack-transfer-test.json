@@ -1,0 +1,33 @@
+{
+  "tool": "transfer_outfit",
+  "request": {
+    "reference_image_url": "https://api.pixellab.ai/mcp/images/b6bef6dc-cd96-4909-85f4-64941281b01c/download",
+    "width": 32,
+    "height": 32,
+    "no_background": true,
+    "max_colors": 10,
+    "palette": [
+      "#202D38",
+      "#6B3F2A",
+      "#AB6C37",
+      "#F3BD83",
+      "#2D735D",
+      "#6DAF69",
+      "#C9433E",
+      "#8B2F35",
+      "#E8D9AD",
+      "#B7D3D0"
+    ],
+    "palette_name": "Coarse adventure ten-color palette",
+    "frame_urls": [
+      "https://api.pixellab.ai/mcp/images/1b9dd39c-c929-48d1-97fc-a0d702aa26a0/download",
+      "https://api.pixellab.ai/mcp/images/1d9bcb70-65e1-4255-8a65-92ef6621f0b3/download",
+      "https://api.pixellab.ai/mcp/images/8bb3d8c9-7ad1-44a5-91ac-10c32e5e0448/download"
+    ],
+    "seed": 24102457,
+    "additional_instructions": "Three existing attack poses in exact source order: ready low sword, torso twist with sword raised back, forward-UP slashing follow-through. Preserve body/shoulder/elbow/wrist/leg joint positions and sword ANGLE exactly, one upward cut NOT thrust. Source is motion reference only; completely replace hood and dark clothes with same young adventurer from canonical: brown short hair and visible face, red short scarf, GREEN tunic, brown boots, compact brown bag/cream roll. Same head size and outfit across3poses. ONE short STEEL blade with brown grip clearly connected to near/right hand in every frame; blade same5pixels length. No gold aura or slash trail baked in, no bell, hood, mask, additional sword, cape or background. Large flat color blocks. Transparent32canvas; keep source feet common y28 and wholebody ~22pixels high except arm/sword extension. Do not copy canonical idlepose onto attack."
+  },
+  "result": [
+    "id: f133a975-6afb-4dfb-9b2f-7947381d97bf\njob_id: f133a975-6afb-4dfb-9b2f-7947381d97bf\nframes: 3\nsize: 32x32px\ntransparent: True\ninstructions: Three existing attack poses in exact source order: ready low sword, torso twist with sword raised back, forward-UP slashing follow-through. Preserve body/shoulder/elbow/wrist/leg joint positions and sword ANGLE exactly, one upward cut NOT thrust. Source is motion reference only; completely replace hood and dark clothes with same young adventurer from canonical: brown short hair and visible face, red short scarf, GREEN tunic, brown boots, compact brown bag/cream roll. Same head size and outfit across3poses. ONE short STEEL blade with brown grip clearly connected to near/right hand in every frame; blade same5pixels length. No gold aura or slash trail baked in, no bell, hood, mask, additional sword, cape or background. Large flat color blocks. Transparent32canvas; keep source feet common y28 and wholebody ~22pixels high except arm/sword extension. Do not copy canonical idlepose onto attack.\nseed: 24102457\nasset_id: 31f78c46-7de4-5ee7-a93f-9815327276b3\nasset_status: pending (saved when generation completes)\ncost: ~10 generations\nstatus: processing (~1-2 min)\n\nhint: get_image(job_id=\"f133a975-6afb-4dfb-9b2f-7947381d97bf\")"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "package": "Planning/Story/Dragon-v1/Production/Player-v2",
+  "actor": "dragon_hero_on",
+  "nativeBodyHeight": 22,
+  "integerScale720p": 7,
+  "screenBodyHeight720p": 154,
+  "clips": [
+    {
+      "motion": "Run",
+      "frames": 8,
+      "uniquePixelFrames": 8,
+      "colors": 8,
+      "contactFrame": -1
+    },
+    {
+      "motion": "Idle",
+      "frames": 8,
+      "uniquePixelFrames": 7,
+      "colors": 8,
+      "contactFrame": -1
+    },
+    {
+      "motion": "Attack",
+      "frames": 14,
+      "uniquePixelFrames": 14,
+      "colors": 8,
+      "contactFrame": 7
+    },
+    {
+      "motion": "DodgeUp",
+      "frames": 8,
+      "uniquePixelFrames": 8,
+      "colors": 8,
+      "contactFrame": 3
+    },
+    {
+      "motion": "DodgeBack",
+      "frames": 8,
+      "uniquePixelFrames": 8,
+      "colors": 8,
+      "contactFrame": 3
+    },
+    {
+      "motion": "DodgeDown",
+      "frames": 14,
+      "uniquePixelFrames": 14,
+      "colors": 8,
+      "contactFrame": 7
+    },
+    {
+      "motion": "Hit",
+      "frames": 6,
+      "uniquePixelFrames": 6,
+      "colors": 8,
+      "contactFrame": -1
+    }
+  ],
+  "preservedOtherActors": 38,
+  "manifestSha256": "46e0803e5ee6c49fa87faa711b3fdd8d47f9bb6d83d83ed9db3211a756d1c880",
+  "sourceManifestSha256": "21ecb984efc092ed3599d2d609747dd030c7e510ff630561fc5fbe10dbd841d6"
+}

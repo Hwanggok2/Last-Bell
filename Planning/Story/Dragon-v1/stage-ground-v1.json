@@ -1,0 +1,970 @@
+{
+  "version": 1,
+  "date": "2026-10-24",
+  "coordinateSystem": "1280x720 plan, top-left; world camera applies vertical framing",
+  "groundApi": "ParallaxWorld.GroundForStage / GroundPoint",
+  "planGroundY": 590.0,
+  "worldGroundY": -1.9805555555555556,
+  "nominalScreenY720": 469.2258064516129,
+  "rasterNote": "기본 전투 카메라(-1.04), orthographicSize3.1 기준이며 보스 줌·흔들림은 제외. 실제 렌더에서 바닥/발의 경계와 대조하며 계획좌표590을 화면590으로 오해하지 않는다.",
+  "rules": [
+    "풀 끝과 장식 높이는 접지면이 아니다. 단단한 바닥의 윗경계가 접지 기준이다.",
+    "배경/바닥/양쪽 액터는 같은 GroundPoint 기준을 사용한다.",
+    "Idle·준비·회복은 지지발이 기준선에 닿는다. Run·도약의 의도적 공중 프레임은 별도 기록한다.",
+    "후속 공중형은 지지발 대신 지면+부유높이를 사용한다. 박쥐72px·와이번48px는720p 초기계획이며 착지공격에서는0으로복귀한다. 아직런타임미구현이다.",
+    "프레임마다 bbox 하단을 기준선으로 끌어내리지 않는다. 원본 클립 피벗과 의도한 높이 변화를 유지한다.",
+    "적 크기는 기준720p에서 정수 픽셀 배율로 정한다. 다른 해상도에서는 화면 비율로 축소된다. 보스도 발 피벗을 기준으로 위쪽으로 커진다.",
+    "이동 중 플레이어 기본 X는 고정한다. 지면은1배, 원경은0.08배로 흐른다.",
+    "전투 영역에는 실제 경사·발판·낭떠러지·지형 피해를 추가하지 않는다."
+  ],
+  "regions": [
+    {
+      "name": "바람들판",
+      "firstStage": 1,
+      "lastStage": 10,
+      "surface": "다져진 황토길과 짧은 풀 가장자리",
+      "planGroundY": 590.0,
+      "swatch": "#D5A15B",
+      "artStatus": "기존 초원 바닥 적용"
+    },
+    {
+      "name": "솔바람숲",
+      "firstStage": 11,
+      "lastStage": 20,
+      "surface": "단단한 숲 흙길과 이끼 가장자리",
+      "planGroundY": 590.0,
+      "swatch": "#A69F62",
+      "artStatus": "기존 바닥의 숲 색조 적용; 전용 숲 배경은 후속"
+    },
+    {
+      "name": "햇돌광산",
+      "firstStage": 21,
+      "lastStage": 30,
+      "surface": "평평하게 다진 회갈색 돌바닥",
+      "planGroundY": 590.0,
+      "swatch": "#A09B89",
+      "artStatus": "기획 · 전용 지형 아트 미구현"
+    },
+    {
+      "name": "구름고개",
+      "firstStage": 31,
+      "lastStage": 40,
+      "surface": "밝은 회색 바위길과 짧은 고산 풀",
+      "planGroundY": 590.0,
+      "swatch": "#A4AAA4",
+      "artStatus": "기획 · 전용 지형 아트 미구현"
+    },
+    {
+      "name": "붉은바위둥지",
+      "firstStage": 41,
+      "lastStage": 50,
+      "surface": "크림빛 암반과 붉은 지층 단면",
+      "planGroundY": 590.0,
+      "swatch": "#BE8F79",
+      "artStatus": "기획 · 전용 지형 아트 미구현"
+    }
+  ],
+  "stages": [
+    {
+      "stage": 1,
+      "enemy": "오솔길 슬라임",
+      "zone": "바람들판",
+      "surface": "다져진 황토길과 짧은 풀 가장자리",
+      "groundDetail": "마을 밖 흙길",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": true,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 2,
+      "enemy": "풀잎 슬라임",
+      "zone": "바람들판",
+      "surface": "다져진 황토길과 짧은 풀 가장자리",
+      "groundDetail": "풀잎 둔덕 옆 흙길",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": true,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 3,
+      "enemy": "뿔토끼",
+      "zone": "바람들판",
+      "surface": "다져진 황토길과 짧은 풀 가장자리",
+      "groundDetail": "돌울타리 길",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": true,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 4,
+      "enemy": "돌조각 슬라임",
+      "zone": "바람들판",
+      "surface": "다져진 황토길과 짧은 풀 가장자리",
+      "groundDetail": "자갈 섞인 흙길",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": true,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 5,
+      "enemy": "큰뿔토끼",
+      "zone": "바람들판",
+      "surface": "다져진 황토길과 짧은 풀 가장자리",
+      "groundDetail": "넓은 토끼 공터",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": true,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 6,
+      "enemy": "산멧돼지",
+      "zone": "바람들판",
+      "surface": "다져진 황토길과 짧은 풀 가장자리",
+      "groundDetail": "낮은 숲 가장자리",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": true,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 7,
+      "enemy": "물방울 슬라임",
+      "zone": "바람들판",
+      "surface": "다져진 황토길과 짧은 풀 가장자리",
+      "groundDetail": "물웅덩이 옆 마른 길",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": true,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 8,
+      "enemy": "돌발 뿔토끼",
+      "zone": "바람들판",
+      "surface": "다져진 황토길과 짧은 풀 가장자리",
+      "groundDetail": "돌무더기 옆 흙길",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": true,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 9,
+      "enemy": "붉은등 멧돼지",
+      "zone": "바람들판",
+      "surface": "다져진 황토길과 짧은 풀 가장자리",
+      "groundDetail": "멧돼지 오솔길",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": true,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 10,
+      "enemy": "큰엄니",
+      "zone": "바람들판",
+      "surface": "다져진 황토길과 짧은 풀 가장자리",
+      "groundDetail": "큰엄니 앞 넓은 공터",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": true,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 11,
+      "enemy": "숲길 고블린",
+      "zone": "솔바람숲",
+      "surface": "단단한 숲 흙길과 이끼 가장자리",
+      "groundDetail": "통행료 표지판 앞 흙길",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": true,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 12,
+      "enemy": "돌팔매 고블린",
+      "zone": "솔바람숲",
+      "surface": "단단한 숲 흙길과 이끼 가장자리",
+      "groundDetail": "작은 돌이 흩어진 흙길",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": true,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 13,
+      "enemy": "숲송이",
+      "zone": "솔바람숲",
+      "surface": "단단한 숲 흙길과 이끼 가장자리",
+      "groundDetail": "버섯 군락 옆 마른 길",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": true,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 14,
+      "enemy": "방패 고블린",
+      "zone": "솔바람숲",
+      "surface": "단단한 숲 흙길과 이끼 가장자리",
+      "groundDetail": "나무다리 앞 흙길",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": true,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 15,
+      "enemy": "숲송이 대장",
+      "zone": "솔바람숲",
+      "surface": "단단한 숲 흙길과 이끼 가장자리",
+      "groundDetail": "숲송이 공터",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": true,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 16,
+      "enemy": "창 고블린",
+      "zone": "솔바람숲",
+      "surface": "단단한 숲 흙길과 이끼 가장자리",
+      "groundDetail": "야영지로 가는 흙길",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": true,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 17,
+      "enemy": "포자 숲송이",
+      "zone": "솔바람숲",
+      "surface": "단단한 숲 흙길과 이끼 가장자리",
+      "groundDetail": "포자 군락 옆 흙길",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": true,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 18,
+      "enemy": "이끼 숲송이",
+      "zone": "솔바람숲",
+      "surface": "단단한 숲 흙길과 이끼 가장자리",
+      "groundDetail": "이끼 군락 옆 흙길",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": true,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 19,
+      "enemy": "기블의 문지기",
+      "zone": "솔바람숲",
+      "surface": "단단한 숲 흙길과 이끼 가장자리",
+      "groundDetail": "울타리 앞 흙길",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": true,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 20,
+      "enemy": "기블",
+      "zone": "솔바람숲",
+      "surface": "단단한 숲 흙길과 이끼 가장자리",
+      "groundDetail": "기블의 통행료 공터",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": true,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 21,
+      "enemy": "돌주먹",
+      "zone": "햇돌광산",
+      "surface": "평평하게 다진 회갈색 돌바닥",
+      "groundDetail": "갱도 입구 돌길",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": false,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 22,
+      "enemy": "모래 슬라임",
+      "zone": "햇돌광산",
+      "surface": "평평하게 다진 회갈색 돌바닥",
+      "groundDetail": "목재 지지대 앞 돌길",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": false,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 23,
+      "enemy": "광산 박쥐",
+      "zone": "햇돌광산",
+      "surface": "평평하게 다진 회갈색 돌바닥",
+      "groundDetail": "낮은 수정 군락 돌길",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "planned-hover",
+      "plannedHoverPixels720": 72,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": false,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 24,
+      "enemy": "갱도 돌주먹",
+      "zone": "햇돌광산",
+      "surface": "평평하게 다진 회갈색 돌바닥",
+      "groundDetail": "수레길 옆 돌바닥",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": false,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 25,
+      "enemy": "수정 골렘",
+      "zone": "햇돌광산",
+      "surface": "평평하게 다진 회갈색 돌바닥",
+      "groundDetail": "수정 경비 공터",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": false,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 26,
+      "enemy": "구릿빛 돌주먹",
+      "zone": "햇돌광산",
+      "surface": "평평하게 다진 회갈색 돌바닥",
+      "groundDetail": "빛구멍 아래 돌바닥",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": false,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 27,
+      "enemy": "수정날개 박쥐",
+      "zone": "햇돌광산",
+      "surface": "평평하게 다진 회갈색 돌바닥",
+      "groundDetail": "광석 더미 옆 돌길",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "planned-hover",
+      "plannedHoverPixels720": 72,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": false,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 28,
+      "enemy": "큰돌주먹",
+      "zone": "햇돌광산",
+      "surface": "평평하게 다진 회갈색 돌바닥",
+      "groundDetail": "옛 작업대 앞 돌길",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": false,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 29,
+      "enemy": "큰귀 박쥐",
+      "zone": "햇돌광산",
+      "surface": "평평하게 다진 회갈색 돌바닥",
+      "groundDetail": "경비문 앞 돌바닥",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "planned-hover",
+      "plannedHoverPixels720": 72,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": false,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 30,
+      "enemy": "돌문",
+      "zone": "햇돌광산",
+      "surface": "평평하게 다진 회갈색 돌바닥",
+      "groundDetail": "돌문의 넓은 경비 바닥",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": false,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 31,
+      "enemy": "바위도마뱀",
+      "zone": "구름고개",
+      "surface": "밝은 회색 바위길과 짧은 고산 풀",
+      "groundDetail": "광산 출구 바위길",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": false,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 32,
+      "enemy": "어린 와이번",
+      "zone": "구름고개",
+      "surface": "밝은 회색 바위길과 짧은 고산 풀",
+      "groundDetail": "바람 부는 능선길",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "planned-hover",
+      "plannedHoverPixels720": 48,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": false,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 33,
+      "enemy": "뿔도마뱀",
+      "zone": "구름고개",
+      "surface": "밝은 회색 바위길과 짧은 고산 풀",
+      "groundDetail": "낮은 구름 아래 바위길",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": false,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 34,
+      "enemy": "고개 오거 정찰꾼",
+      "zone": "구름고개",
+      "surface": "밝은 회색 바위길과 짧은 고산 풀",
+      "groundDetail": "평평한 고개길",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": false,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 35,
+      "enemy": "고개 오거",
+      "zone": "구름고개",
+      "surface": "밝은 회색 바위길과 짧은 고산 풀",
+      "groundDetail": "오거 앞 넓은 바위",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": false,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 36,
+      "enemy": "구름날개 와이번",
+      "zone": "구름고개",
+      "surface": "밝은 회색 바위길과 짧은 고산 풀",
+      "groundDetail": "풍화된 바위길",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "planned-hover",
+      "plannedHoverPixels720": 48,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": false,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 37,
+      "enemy": "돌비늘 도마뱀",
+      "zone": "구름고개",
+      "surface": "밝은 회색 바위길과 짧은 고산 풀",
+      "groundDetail": "작은 풀밭 옆 바위길",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": false,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 38,
+      "enemy": "산바람 박쥐",
+      "zone": "구름고개",
+      "surface": "밝은 회색 바위길과 짧은 고산 풀",
+      "groundDetail": "날개 자국이 있는 바위",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "planned-hover",
+      "plannedHoverPixels720": 72,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": false,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 39,
+      "enemy": "회색날개 와이번",
+      "zone": "구름고개",
+      "surface": "밝은 회색 바위길과 짧은 고산 풀",
+      "groundDetail": "와이번 둥지 앞 바위길",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "planned-hover",
+      "plannedHoverPixels720": 48,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": false,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 40,
+      "enemy": "능선 와이번",
+      "zone": "구름고개",
+      "surface": "밝은 회색 바위길과 짧은 고산 풀",
+      "groundDetail": "와이번의 넓은 바위 공터",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "planned-hover",
+      "plannedHoverPixels720": 48,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": false,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 41,
+      "enemy": "불씨 슬라임",
+      "zone": "붉은바위둥지",
+      "surface": "크림빛 암반과 붉은 지층 단면",
+      "groundDetail": "따뜻한 바위길",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": false,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 42,
+      "enemy": "온돌도마뱀",
+      "zone": "붉은바위둥지",
+      "surface": "크림빛 암반과 붉은 지층 단면",
+      "groundDetail": "황금 풀 옆 암반",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": false,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 43,
+      "enemy": "불빛 박쥐",
+      "zone": "붉은바위둥지",
+      "surface": "크림빛 암반과 붉은 지층 단면",
+      "groundDetail": "얕은 김 옆 마른 암반",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "planned-hover",
+      "plannedHoverPixels720": 72,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": false,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 44,
+      "enemy": "붉은돌 주먹",
+      "zone": "붉은바위둥지",
+      "surface": "크림빛 암반과 붉은 지층 단면",
+      "groundDetail": "큰 발자국 옆 암반",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": false,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 45,
+      "enemy": "불깃 와이번",
+      "zone": "붉은바위둥지",
+      "surface": "크림빛 암반과 붉은 지층 단면",
+      "groundDetail": "불깃 와이번 바위턱",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "planned-hover",
+      "plannedHoverPixels720": 48,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": false,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 46,
+      "enemy": "흑돌비늘 도마뱀",
+      "zone": "붉은바위둥지",
+      "surface": "크림빛 암반과 붉은 지층 단면",
+      "groundDetail": "붉은 지층 앞 암반",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": false,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 47,
+      "enemy": "햇비늘 와이번",
+      "zone": "붉은바위둥지",
+      "surface": "크림빛 암반과 붉은 지층 단면",
+      "groundDetail": "그을린 표지 옆 암반",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "planned-hover",
+      "plannedHoverPixels720": 48,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": false,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 48,
+      "enemy": "온천 돌주먹",
+      "zone": "붉은바위둥지",
+      "surface": "크림빛 암반과 붉은 지층 단면",
+      "groundDetail": "용 비늘이 떨어진 암반",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": false,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 49,
+      "enemy": "붉은날개 와이번",
+      "zone": "붉은바위둥지",
+      "surface": "크림빛 암반과 붉은 지층 단면",
+      "groundDetail": "둥지 앞 넓은 암반",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "planned-hover",
+      "plannedHoverPixels720": 48,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": false,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    },
+    {
+      "stage": 50,
+      "enemy": "브라크",
+      "zone": "붉은바위둥지",
+      "surface": "크림빛 암반과 붉은 지층 단면",
+      "groundDetail": "브라크의 평평한 결전 암반",
+      "planGroundY": 590.0,
+      "activeFootSpan": [
+        140,
+        1140
+      ],
+      "idleMode": "grounded",
+      "plannedHoverPixels720": 0,
+      "collisionShape": "flat; no slopes, ledges or ground hazards",
+      "implemented": false,
+      "detailArtImplemented": false,
+      "detailNote": "소재/장식 계획. 개별 스테이지 전용 바닥 그림 완성 의미 아님"
+    }
+  ],
+  "sourceSha256": "2d5f1dce9336e1d604689aaafbfdf231a05e5f1e6ca97420d297db5b32875dd2"
+}

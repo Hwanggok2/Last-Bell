@@ -1,0 +1,21 @@
+{
+  "version": "story-world-v2-polished-original",
+  "date": "2026-10-22",
+  "passed": true,
+  "checks": [
+    "Existing five zones, ranges, palettes and layers preserved",
+    "25 enemy IDs, silhouettes and move declarations preserved",
+    "All 50 encounter records preserved",
+    "Five scenes with three dialogue lines each",
+    "Prototype limit 10 and restart 1 retained",
+    "Down dodge sword parry retained",
+    "Local page links, five panels and six selection buttons checked",
+    "Inline JavaScript syntax valid",
+    "UTF-8 content checked"
+  ],
+  "runtimeApplied": false,
+  "publicSiteChanged": false,
+  "browserVisualQA": "not performed: browser policy blocked file:// access; no alternate browser/proxy attempted",
+  "sourceSha256": "0fe1335ba896f13dd985226f1400587058a41d6b59966968397a890fe0b6733d",
+  "scopeNote": "Historical validation of the earlier polished-original revision; the route/onboarding revision is covered by validation-v3.json."
+}

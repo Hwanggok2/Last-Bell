@@ -1,0 +1,1808 @@
+{
+  "sewer_rat": {
+    "idle": {
+      "frames": [
+        {
+          "frame": 0,
+          "bounds": [
+            34,
+            54,
+            154,
+            130
+          ],
+          "colors": 31,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "a83136f4acd5a659f23a4d2f76232f4bb650a85c505a0b84774c0d0a71d56869"
+        },
+        {
+          "frame": 1,
+          "bounds": [
+            34,
+            52,
+            154,
+            130
+          ],
+          "colors": 21,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "9764215109d0f3aeaead34b7cefe8bb5eb00a72eaaf16f145065492ee225a7cb"
+        },
+        {
+          "frame": 2,
+          "bounds": [
+            34,
+            50,
+            154,
+            130
+          ],
+          "colors": 22,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "fef86f8a00d3fa562c5496a0410bcdb138c8f08f4c679216ebf11a1d4f5ede97"
+        },
+        {
+          "frame": 3,
+          "bounds": [
+            34,
+            50,
+            156,
+            130
+          ],
+          "colors": 23,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "4872c89fa00076457fefed300c7e56599ce8398290f18c1df9870165cedcee41"
+        },
+        {
+          "frame": 4,
+          "bounds": [
+            34,
+            52,
+            156,
+            130
+          ],
+          "colors": 24,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "de40ff5d5d8c512f7a210d5234edf94a7fea0e43e9995382bbcfc35c06ea306c"
+        },
+        {
+          "frame": 5,
+          "bounds": [
+            34,
+            54,
+            160,
+            130
+          ],
+          "colors": 23,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "1d820599830bbf546ae8bfb452cda2957727a0c395a9e4f92e8234ae8567a9f0"
+        },
+        {
+          "frame": 6,
+          "bounds": [
+            34,
+            56,
+            162,
+            130
+          ],
+          "colors": 23,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "6b61a97cac33c01efd32de02ae3ce294d0fd4e4322b6f9fe2a7a8ba56297da92"
+        },
+        {
+          "frame": 7,
+          "bounds": [
+            34,
+            56,
+            158,
+            130
+          ],
+          "colors": 22,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "6078d23c12ccaf5de5db69c8fe5c79165a3a67d76f272ca592fc7679ea673e3b"
+        },
+        {
+          "frame": 8,
+          "bounds": [
+            34,
+            54,
+            154,
+            130
+          ],
+          "colors": 20,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "695d50c9f832942b00c6a055de7d4b82824d4b833dc5a1d92dbc429fbefe5d78"
+        }
+      ],
+      "pixelUniqueFrames": 9,
+      "firstLastPixelDiff": 2691,
+      "bottom6pxChanges": [
+        0,
+        184,
+        184,
+        184,
+        184,
+        180,
+        180,
+        180,
+        180
+      ],
+      "bottomRows": [
+        130,
+        130,
+        130,
+        130,
+        130,
+        130,
+        130,
+        130,
+        130
+      ]
+    },
+    "attack": {
+      "frames": [
+        {
+          "frame": 0,
+          "bounds": [
+            34,
+            54,
+            154,
+            130
+          ],
+          "colors": 31,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "a83136f4acd5a659f23a4d2f76232f4bb650a85c505a0b84774c0d0a71d56869"
+        },
+        {
+          "frame": 1,
+          "bounds": [
+            36,
+            55,
+            156,
+            130
+          ],
+          "colors": 23,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "9a5c52c498023a0e2dcf6f4395489e5b70cbe77b18e942cb6f7bb585fc15dfe3"
+        },
+        {
+          "frame": 2,
+          "bounds": [
+            38,
+            56,
+            158,
+            130
+          ],
+          "colors": 23,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "ca6c952a5103a5673dc474354b1b4833c0636962aff1d84c4db00a97db9f894a"
+        },
+        {
+          "frame": 3,
+          "bounds": [
+            40,
+            57,
+            161,
+            130
+          ],
+          "colors": 23,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "e1369830a161d2fbc29b5af7d066f9a55a5f17d6ac3b1667b4c599ad5cc926f0"
+        },
+        {
+          "frame": 4,
+          "bounds": [
+            42,
+            58,
+            163,
+            130
+          ],
+          "colors": 22,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "1221c14ca90813f12f56bf2f4401523e3b8459d591f324736a6d1aca1b859778"
+        },
+        {
+          "frame": 5,
+          "bounds": [
+            44,
+            58,
+            165,
+            130
+          ],
+          "colors": 23,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "b809dd016cb6490cf499eaa5544072e4901baf3adbca5cc65bff01bce3e350a1"
+        },
+        {
+          "frame": 6,
+          "bounds": [
+            47,
+            58,
+            166,
+            130
+          ],
+          "colors": 22,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "b692a107b0aea28c1c6642515d31ce61a5cb3563bb2c41555937b793b4959219"
+        },
+        {
+          "frame": 7,
+          "bounds": [
+            44,
+            58,
+            166,
+            130
+          ],
+          "colors": 23,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "af1190cf1cd51c2155a904810a45969f1511fa493ceef242147546bc4124cb72"
+        },
+        {
+          "frame": 8,
+          "bounds": [
+            22,
+            62,
+            162,
+            130
+          ],
+          "colors": 43,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "b4bf422e5bbc482fdae89032790c4c253dbf43da3172050fe9e19f96f9a709e7"
+        },
+        {
+          "frame": 9,
+          "bounds": [
+            0,
+            62,
+            163,
+            130
+          ],
+          "colors": 43,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": true,
+          "pixelHash": "01b16ba49bed2fb68eaeb0ba40437bd2f03fffb4675097e50f4468c5ece24fe4"
+        },
+        {
+          "frame": 10,
+          "bounds": [
+            0,
+            62,
+            165,
+            130
+          ],
+          "colors": 43,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": true,
+          "pixelHash": "3c089fba2ad10132f6b020078dc2bc4687bf761ca10402e180f27ec4323fd7c1"
+        },
+        {
+          "frame": 11,
+          "bounds": [
+            0,
+            62,
+            162,
+            130
+          ],
+          "colors": 45,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": true,
+          "pixelHash": "8ce308314b9b40800c16b5c8d1ad2196af6daef45345ce3e4fa8441887153ae4"
+        },
+        {
+          "frame": 12,
+          "bounds": [
+            0,
+            58,
+            160,
+            130
+          ],
+          "colors": 23,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": true,
+          "pixelHash": "d80553f49d32d0f9131eb1d5a2a080abe13d2cd2fd2cfb66a2aed42ab83b0d3b"
+        },
+        {
+          "frame": 13,
+          "bounds": [
+            34,
+            56,
+            160,
+            130
+          ],
+          "colors": 24,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "ee11c8ae334085087c3fef4b7a5ef664f791fb52671af65bc784b485c6c01e05"
+        },
+        {
+          "frame": 14,
+          "bounds": [
+            34,
+            54,
+            158,
+            130
+          ],
+          "colors": 25,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "6169b855c8ec370a2c19102fb075c7f22d26dd93be1eb2610281547f35d4db4d"
+        },
+        {
+          "frame": 15,
+          "bounds": [
+            34,
+            54,
+            154,
+            130
+          ],
+          "colors": 21,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "a78eab08ce83854d310dcb6df5989c511191f2ae2f7d2d184c969661ebe3f6b6"
+        },
+        {
+          "frame": 16,
+          "bounds": [
+            34,
+            54,
+            154,
+            130
+          ],
+          "colors": 21,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "a784cb1d3114a386067e9f3b03f6da78bfdce0367247118e98b9672d85fccb0f"
+        }
+      ],
+      "pixelUniqueFrames": 17,
+      "firstLastPixelDiff": 2710
+    },
+    "stun": {
+      "frames": [
+        {
+          "frame": 0,
+          "bounds": [
+            36,
+            54,
+            170,
+            130
+          ],
+          "colors": 33,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "9efe6f7af5e8c1352440dda6f8581c65527b115d8fb5969c71d4049931caa99d"
+        },
+        {
+          "frame": 1,
+          "bounds": [
+            36,
+            54,
+            170,
+            130
+          ],
+          "colors": 26,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "f315192f72009f92a60d2a47e80be5e107656c0260a8be0ca9a57f8ec7d56ebe"
+        },
+        {
+          "frame": 2,
+          "bounds": [
+            36,
+            54,
+            170,
+            130
+          ],
+          "colors": 26,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "1185892ea4aaf2535a6c08b66b89bf29d5c9880e95aff6dd6de30ed73fbb96a2"
+        },
+        {
+          "frame": 3,
+          "bounds": [
+            36,
+            54,
+            172,
+            130
+          ],
+          "colors": 27,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "43f62c1eb278d4d17c47ea8a70b58475ab334c8188d02153d72ba15b023190c6"
+        },
+        {
+          "frame": 4,
+          "bounds": [
+            38,
+            54,
+            172,
+            130
+          ],
+          "colors": 27,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "b577bb90dec0915cfff9fd305de23e46b6ce1363564a4145061f308ff24bd1e1"
+        },
+        {
+          "frame": 5,
+          "bounds": [
+            38,
+            54,
+            172,
+            130
+          ],
+          "colors": 27,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "5eafe0e1bb994bca08caa0ec44e079ca77d098909e60494641c2a5e20342d8d8"
+        },
+        {
+          "frame": 6,
+          "bounds": [
+            36,
+            54,
+            170,
+            130
+          ],
+          "colors": 26,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "60f325087bbff62b843d04715be8d9cae41c8370f4f56d6f65be8d79ac72d0b8"
+        },
+        {
+          "frame": 7,
+          "bounds": [
+            36,
+            54,
+            170,
+            130
+          ],
+          "colors": 26,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "60f325087bbff62b843d04715be8d9cae41c8370f4f56d6f65be8d79ac72d0b8"
+        },
+        {
+          "frame": 8,
+          "bounds": [
+            36,
+            54,
+            170,
+            130
+          ],
+          "colors": 26,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "60f325087bbff62b843d04715be8d9cae41c8370f4f56d6f65be8d79ac72d0b8"
+        }
+      ],
+      "pixelUniqueFrames": 7,
+      "firstLastPixelDiff": 2865
+    }
+  },
+  "drowned_resident": {
+    "idle": {
+      "frames": [
+        {
+          "frame": 0,
+          "bounds": [
+            42,
+            34,
+            142,
+            130
+          ],
+          "colors": 9,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "d25c4365aef49de4b49b935133dd5aff899bcfa789337a7a45ad592914252bbe"
+        },
+        {
+          "frame": 1,
+          "bounds": [
+            42,
+            34,
+            142,
+            130
+          ],
+          "colors": 8,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "1db0e1e0133d19ebae42cb377478fe59d63fba6deced378b91913ba0ced7a8fb"
+        },
+        {
+          "frame": 2,
+          "bounds": [
+            42,
+            32,
+            142,
+            130
+          ],
+          "colors": 8,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "2ceb7ffad898e7ebe7247a903fe00384df6f11946d11a1139730a4469d80ad76"
+        },
+        {
+          "frame": 3,
+          "bounds": [
+            42,
+            30,
+            142,
+            130
+          ],
+          "colors": 8,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "4258f126132579cad82d2467d393e3538503ac2dff53bd8ca0b451fa5c38d901"
+        },
+        {
+          "frame": 4,
+          "bounds": [
+            42,
+            29,
+            142,
+            130
+          ],
+          "colors": 9,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "0074e47bc3aa6fb789ac21bb6ef16d9bbd702450f922230e835e951ceb287b74"
+        },
+        {
+          "frame": 5,
+          "bounds": [
+            42,
+            31,
+            142,
+            130
+          ],
+          "colors": 8,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "79f43619ec9625b1424f7b94d8aa7b067d9d8b632abe87ba26becaf5beb065bd"
+        },
+        {
+          "frame": 6,
+          "bounds": [
+            42,
+            32,
+            142,
+            130
+          ],
+          "colors": 8,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "429de2121c61bab3cd877ccb0e5afb92cc3fac74c2af6421df01115f0764bfed"
+        },
+        {
+          "frame": 7,
+          "bounds": [
+            42,
+            34,
+            142,
+            130
+          ],
+          "colors": 8,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "199c1d21e67746759e1e54181ce2b68af2ea1a5790083a9162e46393fe1a53b2"
+        },
+        {
+          "frame": 8,
+          "bounds": [
+            42,
+            34,
+            142,
+            130
+          ],
+          "colors": 8,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "786d009d9f8e63de4b494de4a901fad57ce61df5b73b48a207b437c4dcbf5997"
+        }
+      ],
+      "pixelUniqueFrames": 9,
+      "firstLastPixelDiff": 68,
+      "bottom6pxChanges": [
+        0,
+        5,
+        56,
+        64,
+        64,
+        60,
+        56,
+        0,
+        0
+      ],
+      "bottomRows": [
+        130,
+        130,
+        130,
+        130,
+        130,
+        130,
+        130,
+        130,
+        130
+      ]
+    },
+    "attack": {
+      "frames": [
+        {
+          "frame": 0,
+          "bounds": [
+            42,
+            34,
+            142,
+            130
+          ],
+          "colors": 9,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "d25c4365aef49de4b49b935133dd5aff899bcfa789337a7a45ad592914252bbe"
+        },
+        {
+          "frame": 1,
+          "bounds": [
+            42,
+            34,
+            142,
+            130
+          ],
+          "colors": 8,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "f02743edd9b34ea2c60324dc5c3d4f339b12def06adf8d4d8a99975f095622a1"
+        },
+        {
+          "frame": 2,
+          "bounds": [
+            33,
+            33,
+            140,
+            130
+          ],
+          "colors": 9,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "c16da9b7fadfa1909fb9eafc2897cf574bcf37d4bcbc4793cb401f3de61f407d"
+        },
+        {
+          "frame": 3,
+          "bounds": [
+            30,
+            32,
+            136,
+            130
+          ],
+          "colors": 8,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "2bc84f9792db0571347327150ffda418534efefd71c03cd5f9ed00b3e21006c1"
+        },
+        {
+          "frame": 4,
+          "bounds": [
+            64,
+            28,
+            138,
+            130
+          ],
+          "colors": 9,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "eec578611b32b8a94b8fb44f1058da90ca120ae6ad1eac2e1638b8c914db463c"
+        },
+        {
+          "frame": 5,
+          "bounds": [
+            72,
+            28,
+            145,
+            130
+          ],
+          "colors": 9,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "17f84b0a84eabc7530fd2e49edd66a1857726954377619f3bbfecf028c4ccac1"
+        },
+        {
+          "frame": 6,
+          "bounds": [
+            76,
+            30,
+            160,
+            130
+          ],
+          "colors": 8,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "a591e119413984c8c96e5d7a0bf68c9a33ebe5c4006f3576090a7dc7fb55a23a"
+        },
+        {
+          "frame": 7,
+          "bounds": [
+            76,
+            30,
+            160,
+            130
+          ],
+          "colors": 8,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "a591e119413984c8c96e5d7a0bf68c9a33ebe5c4006f3576090a7dc7fb55a23a"
+        },
+        {
+          "frame": 8,
+          "bounds": [
+            76,
+            30,
+            160,
+            130
+          ],
+          "colors": 8,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "a591e119413984c8c96e5d7a0bf68c9a33ebe5c4006f3576090a7dc7fb55a23a"
+        },
+        {
+          "frame": 9,
+          "bounds": [
+            64,
+            28,
+            136,
+            130
+          ],
+          "colors": 9,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "ce9c55ac9fba99ebdf8aeb801a2987cb04c6547702036dabd02c1e905287567f"
+        },
+        {
+          "frame": 10,
+          "bounds": [
+            26,
+            40,
+            144,
+            132
+          ],
+          "colors": 22,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "5ac1f7bd1f03dbb9fee1058c0c65b1a32fbf275764196f8b8919cf106621cfb8"
+        },
+        {
+          "frame": 11,
+          "bounds": [
+            17,
+            40,
+            144,
+            130
+          ],
+          "colors": 8,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "2f8d2acb69f6d710916320ed7d9981d2a90b45d03b8a2ea35079e56d823f884f"
+        },
+        {
+          "frame": 12,
+          "bounds": [
+            32,
+            40,
+            144,
+            130
+          ],
+          "colors": 8,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "d9c055af228cc53d5a473f2d39949fa5599f159303c38020603bc188e51de729"
+        },
+        {
+          "frame": 13,
+          "bounds": [
+            32,
+            40,
+            144,
+            130
+          ],
+          "colors": 8,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "d9c055af228cc53d5a473f2d39949fa5599f159303c38020603bc188e51de729"
+        },
+        {
+          "frame": 14,
+          "bounds": [
+            33,
+            39,
+            144,
+            130
+          ],
+          "colors": 8,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "a885a0be915564d7feaf5e8441b9cfc0efc057682cc24c039ae1d2866e147528"
+        },
+        {
+          "frame": 15,
+          "bounds": [
+            36,
+            37,
+            144,
+            130
+          ],
+          "colors": 8,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "c560de20777680c2c8cb6938d5788523f13aa6e2cca16c310c983aba1bb37f80"
+        },
+        {
+          "frame": 16,
+          "bounds": [
+            42,
+            34,
+            142,
+            130
+          ],
+          "colors": 8,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "96034a9a0a8660ef01413d671ca4d4bef01881512c5237e298d96532d0b7f4eb"
+        }
+      ],
+      "pixelUniqueFrames": 14,
+      "firstLastPixelDiff": 217
+    },
+    "stun": {
+      "frames": [
+        {
+          "frame": 0,
+          "bounds": [
+            42,
+            36,
+            142,
+            130
+          ],
+          "colors": 39,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "a2054ebac09fd3f44d19bf8bc4dd90f10aa5806a978b6ed320e15cf9100e26d4"
+        },
+        {
+          "frame": 1,
+          "bounds": [
+            42,
+            36,
+            142,
+            130
+          ],
+          "colors": 25,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "defece2f244b7c3c2018e1b8c915abc1c98d1d058336be848982e028a5942ee8"
+        },
+        {
+          "frame": 2,
+          "bounds": [
+            42,
+            36,
+            142,
+            130
+          ],
+          "colors": 25,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "af80b3e412db93d69e22e2092b94cb376be25ce47b37a446559111fa7aa57c49"
+        },
+        {
+          "frame": 3,
+          "bounds": [
+            42,
+            32,
+            138,
+            130
+          ],
+          "colors": 26,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "0584deaf151768a3ce02825bddc19d133fa8fde30132d8342f77a96d809ffde2"
+        },
+        {
+          "frame": 4,
+          "bounds": [
+            42,
+            32,
+            138,
+            130
+          ],
+          "colors": 26,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "0584deaf151768a3ce02825bddc19d133fa8fde30132d8342f77a96d809ffde2"
+        },
+        {
+          "frame": 5,
+          "bounds": [
+            42,
+            32,
+            138,
+            130
+          ],
+          "colors": 26,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "0584deaf151768a3ce02825bddc19d133fa8fde30132d8342f77a96d809ffde2"
+        },
+        {
+          "frame": 6,
+          "bounds": [
+            42,
+            36,
+            142,
+            130
+          ],
+          "colors": 26,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "1f1979e8436579dd66b1063a5c34ca417bb9a73372e888545c7349b8f29a5d96"
+        },
+        {
+          "frame": 7,
+          "bounds": [
+            42,
+            36,
+            142,
+            130
+          ],
+          "colors": 26,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "1f1979e8436579dd66b1063a5c34ca417bb9a73372e888545c7349b8f29a5d96"
+        },
+        {
+          "frame": 8,
+          "bounds": [
+            42,
+            36,
+            142,
+            130
+          ],
+          "colors": 26,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "1f1979e8436579dd66b1063a5c34ca417bb9a73372e888545c7349b8f29a5d96"
+        }
+      ],
+      "pixelUniqueFrames": 5,
+      "firstLastPixelDiff": 2141
+    }
+  },
+  "water_wraith": {
+    "idle": {
+      "frames": [
+        {
+          "frame": 0,
+          "bounds": [
+            46,
+            30,
+            146,
+            130
+          ],
+          "colors": 10,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "996b1e2decddf33ac0aa8a8f9fd833089ba9b2376b32467aa5f65ad637c6bcbe"
+        },
+        {
+          "frame": 1,
+          "bounds": [
+            46,
+            30,
+            147,
+            130
+          ],
+          "colors": 9,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "c586eb7c3b32e98d44e909b4141e73311fab2ec8ab8eb1025ebfcd604a71234f"
+        },
+        {
+          "frame": 2,
+          "bounds": [
+            46,
+            30,
+            146,
+            130
+          ],
+          "colors": 9,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "7267d0f08ebd429770306190960ba891c702fd4c8f244d74db120aeb9f922dc2"
+        },
+        {
+          "frame": 3,
+          "bounds": [
+            46,
+            28,
+            144,
+            130
+          ],
+          "colors": 10,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "cdff7fda46b98bbf0900068f9357ffd17e8f9f1810d3d27db628ffc34e17240c"
+        },
+        {
+          "frame": 4,
+          "bounds": [
+            46,
+            27,
+            142,
+            126
+          ],
+          "colors": 10,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "1b9aeea6ac2202e2853fa5bf65af6051cd756577e5423dfe30a8cfad98732547"
+        },
+        {
+          "frame": 5,
+          "bounds": [
+            46,
+            28,
+            144,
+            125
+          ],
+          "colors": 10,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "e22d6600d0c591343f62f9fd728800436f32ea3051c4e06044e9d720b3824eed"
+        },
+        {
+          "frame": 6,
+          "bounds": [
+            46,
+            28,
+            146,
+            122
+          ],
+          "colors": 10,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "0a4d638e73711b91a6c19c7aeba750b87d13f02e8b101c55b0eba696c6c76f04"
+        },
+        {
+          "frame": 7,
+          "bounds": [
+            46,
+            30,
+            146,
+            126
+          ],
+          "colors": 10,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "d8cc7ea78c2816f0e7df73bfc32d94ff35dcb1f1f34c0228592083a39727a4e3"
+        },
+        {
+          "frame": 8,
+          "bounds": [
+            46,
+            30,
+            146,
+            130
+          ],
+          "colors": 10,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "7f4fd7d4c27758b1b70ffb2b91a9b0dadf91a1b036b809b50d3af9cd66fb623d"
+        }
+      ],
+      "pixelUniqueFrames": 9,
+      "firstLastPixelDiff": 69,
+      "bottom6pxChanges": [
+        0,
+        64,
+        106,
+        160,
+        148,
+        150,
+        144,
+        140,
+        0
+      ],
+      "bottomRows": [
+        130,
+        130,
+        130,
+        130,
+        126,
+        125,
+        122,
+        126,
+        130
+      ]
+    },
+    "attack": {
+      "frames": [
+        {
+          "frame": 0,
+          "bounds": [
+            46,
+            30,
+            146,
+            130
+          ],
+          "colors": 10,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "996b1e2decddf33ac0aa8a8f9fd833089ba9b2376b32467aa5f65ad637c6bcbe"
+        },
+        {
+          "frame": 1,
+          "bounds": [
+            50,
+            32,
+            148,
+            130
+          ],
+          "colors": 10,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "7ca0a269c20644332616e0ed8ccd07a84226bceb5e95bdfb71e894f5b437e409"
+        },
+        {
+          "frame": 2,
+          "bounds": [
+            28,
+            34,
+            154,
+            130
+          ],
+          "colors": 10,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "887ba559b4ea029c30756eb851c5d0c2b2fba1610ec686cd8c2ae93dae2824ff"
+        },
+        {
+          "frame": 3,
+          "bounds": [
+            28,
+            34,
+            158,
+            130
+          ],
+          "colors": 10,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "2dd0e7eb92185252853d6e10000bd5791aa89b57438d1ad6a25d002cd5c958e6"
+        },
+        {
+          "frame": 4,
+          "bounds": [
+            28,
+            34,
+            162,
+            126
+          ],
+          "colors": 10,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "2c4bb7656b9b829f183fbdfc4ccf671e5150e1673fda71782b52ea462a130650"
+        },
+        {
+          "frame": 5,
+          "bounds": [
+            50,
+            32,
+            159,
+            126
+          ],
+          "colors": 10,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "b795384e0b995e9304ff70e4db95a37270a929846be058574398e32b0dae2d8a"
+        },
+        {
+          "frame": 6,
+          "bounds": [
+            44,
+            30,
+            154,
+            126
+          ],
+          "colors": 10,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "bd9593fce19f1acfef933bdf6fef9b53a5460f58d9b040f1c2db6eb8a3d25173"
+        },
+        {
+          "frame": 7,
+          "bounds": [
+            44,
+            30,
+            148,
+            123
+          ],
+          "colors": 10,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "829811d92879d92d6954254840c49a0979c481ac6105626f708d328c979b169b"
+        },
+        {
+          "frame": 8,
+          "bounds": [
+            44,
+            30,
+            146,
+            130
+          ],
+          "colors": 10,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "4ffd32a46ed365dfb5d8614ecff602b4f5494d8a5f61437caa22c2dd1f612036"
+        },
+        {
+          "frame": 9,
+          "bounds": [
+            44,
+            30,
+            148,
+            130
+          ],
+          "colors": 10,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "3c9b4118c5c87ddcc1a8c5f24b628aa0e9301abbc9c9dffc92bb333577f32526"
+        },
+        {
+          "frame": 10,
+          "bounds": [
+            44,
+            30,
+            154,
+            130
+          ],
+          "colors": 10,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "2dc9e67e952181aecea73a5b7339b72c7b606f6e20b80825526fe654bc1474f3"
+        },
+        {
+          "frame": 11,
+          "bounds": [
+            45,
+            30,
+            158,
+            130
+          ],
+          "colors": 10,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "9f1da946e7ba642dd5def90ebfed1da1a6bfad6be1bb3792434f9577fd99bbe7"
+        },
+        {
+          "frame": 12,
+          "bounds": [
+            46,
+            30,
+            162,
+            126
+          ],
+          "colors": 10,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "6bf1ae28985abadd9f532252ffdace7b0684421f69bf98842df999b90f83122e"
+        },
+        {
+          "frame": 13,
+          "bounds": [
+            46,
+            30,
+            159,
+            126
+          ],
+          "colors": 10,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "84c380083f57e5774f5b5532f70f2056808f54190d40ecb8cf978c1d1d3616f4"
+        },
+        {
+          "frame": 14,
+          "bounds": [
+            46,
+            30,
+            154,
+            126
+          ],
+          "colors": 10,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "d3f4c519a87799d2a5b18d3d8ed1fa6c15d812d7a5ee89e45bee47718572052e"
+        },
+        {
+          "frame": 15,
+          "bounds": [
+            46,
+            30,
+            148,
+            123
+          ],
+          "colors": 10,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "909e97041d404d22e8b496b7088eb07f13d4767d29786f32eb16cb8963508ed6"
+        },
+        {
+          "frame": 16,
+          "bounds": [
+            46,
+            30,
+            146,
+            130
+          ],
+          "colors": 10,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "81288b75cf33a9380cbefc9a4ad28095e894024973beb1052df55c07fb17c503"
+        }
+      ],
+      "pixelUniqueFrames": 17,
+      "firstLastPixelDiff": 37
+    },
+    "stun": {
+      "frames": [
+        {
+          "frame": 0,
+          "bounds": [
+            42,
+            24,
+            166,
+            136
+          ],
+          "colors": 55,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "d9a93c04e10f0b57d96d6133248ba778a7c9e2d3930cfa84c6fc45f3eda1b8bc"
+        },
+        {
+          "frame": 1,
+          "bounds": [
+            42,
+            24,
+            166,
+            136
+          ],
+          "colors": 36,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "77266031b6259d1ab70b8a4d80c77577fe72d8f5cc02ee027401b91468c1823b"
+        },
+        {
+          "frame": 2,
+          "bounds": [
+            42,
+            24,
+            166,
+            136
+          ],
+          "colors": 36,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "1d1d19f077641761fe5bbad097bd01d79b175f9f1cb2e7105eed495a98fd49f8"
+        },
+        {
+          "frame": 3,
+          "bounds": [
+            42,
+            24,
+            166,
+            136
+          ],
+          "colors": 36,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "eb504b5cd9fa84a2a076e1bd50b905da32c24b380aefa607724842b9bca49568"
+        },
+        {
+          "frame": 4,
+          "bounds": [
+            42,
+            24,
+            166,
+            136
+          ],
+          "colors": 37,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "a264f753d92189f91da560a2ef2aa29224f92cb50395811a74092773aedaee82"
+        },
+        {
+          "frame": 5,
+          "bounds": [
+            42,
+            24,
+            166,
+            136
+          ],
+          "colors": 35,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "b3909c25af15fd8de835d928e79c7a6fb895d03f90f301dbc10ab79da224475b"
+        },
+        {
+          "frame": 6,
+          "bounds": [
+            42,
+            24,
+            166,
+            136
+          ],
+          "colors": 35,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "a6a2fa5400631e15ae1763af368e83410b8f67d5523ebf4ecc6d62ecc03134b1"
+        },
+        {
+          "frame": 7,
+          "bounds": [
+            42,
+            24,
+            166,
+            136
+          ],
+          "colors": 35,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "a6a2fa5400631e15ae1763af368e83410b8f67d5523ebf4ecc6d62ecc03134b1"
+        },
+        {
+          "frame": 8,
+          "bounds": [
+            42,
+            24,
+            166,
+            136
+          ],
+          "colors": 35,
+          "alphaValues": [
+            0,
+            255
+          ],
+          "touchesEdge": false,
+          "pixelHash": "28df471a728740990e8f7aa7780949be738cbd128ee273669df489fc17836ab9"
+        }
+      ],
+      "pixelUniqueFrames": 8,
+      "firstLastPixelDiff": 2908
+    }
+  }
+}

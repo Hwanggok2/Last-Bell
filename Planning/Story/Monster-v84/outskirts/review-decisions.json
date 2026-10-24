@@ -1,0 +1,291 @@
+{
+  "wild_dog": {
+    "worldHeight": 0.92,
+    "reviewer": "outskirts_art",
+    "base": "Native64 dark-navy staircase silhouette;7 opaque colours. Thin crooked tail and low muzzle distinguish from wolf.",
+    "attack": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "holdsMs": [
+        35,
+        35,
+        45,
+        50,
+        45,
+        35,
+        30,
+        30,
+        70,
+        35,
+        40,
+        45,
+        45,
+        35,
+        35,
+        35,
+        35
+      ],
+      "contactFrame": 8,
+      "observation": "Frames2-4 head and shoulder pull back;6-8 open-jaw lunge;9-13 recoil and planted paw recovery. Same thin-tail canine silhouette throughout.",
+      "contactPoint": {
+        "x": 28,
+        "y": 61
+      },
+      "sourceDir": "attack-final"
+    },
+    "stun": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "holdsMs": [
+        80,
+        80,
+        100,
+        140,
+        180,
+        140,
+        100,
+        80,
+        80
+      ],
+      "observation": "Dedicated slumped pose: head hangs below shoulder and forelegs stay visibly buckled throughout the 9-frame dazed wobble. Never returns to alert Idle during the stun loop.",
+      "sourceDir": "stun-final",
+      "rejectedEarlierJob": "0bfdb580-529c-4fc2-a4d6-d84931e7d643"
+    },
+    "checks": {
+      "allFramesViewed": true,
+      "clippedFrames": 0,
+      "fractionalAlphaPixels": 0,
+      "maxColors": 9,
+      "commonPalette16": true,
+      "finalAllFramesViewed": true
+    },
+    "notes": [
+      "No idle animation; use one exact source pose.",
+      "Hit uses existing white-flash shader; not a separate morphing pose.",
+      "PixelLab palette correction only where generation drifted; final opaque colours are subsets of shared-palette.png. Source positions and silhouette preserved."
+    ],
+    "crossReview": {
+      "reviewer": "residential_art",
+      "feedback": "Attack silhouettes and contacts approved. Initial wolf stun too close to Idle; all three stuns remade from dedicated slumped poses."
+    }
+  },
+  "grey_wolf": {
+    "worldHeight": 1.2,
+    "reviewer": "outskirts_art",
+    "base": "Native64 dark-navy staircase silhouette;10 opaque colours. Sharp white neck ruff and thick trailing tail distinguish from dog.",
+    "attack": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "holdsMs": [
+        30,
+        35,
+        40,
+        45,
+        45,
+        50,
+        55,
+        40,
+        30,
+        25,
+        25,
+        60,
+        40,
+        45,
+        50,
+        55,
+        60
+      ],
+      "contactFrame": 11,
+      "observation": "Frames3-7 shift weight back onto hind legs;8-11 open-jaw left pounce with four consistent limbs;12-16 landing and recovery. Widest lunge remains12px from canvas edge.",
+      "contactPoint": {
+        "x": 18,
+        "y": 62
+      },
+      "sourceDir": "attack"
+    },
+    "stun": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "holdsMs": [
+        80,
+        80,
+        100,
+        140,
+        180,
+        140,
+        100,
+        80,
+        80
+      ],
+      "observation": "Dedicated slumped pose: head hangs below shoulder and forelegs stay visibly buckled throughout the 9-frame dazed wobble. Never returns to alert Idle during the stun loop.",
+      "sourceDir": "stun-final",
+      "rejectedEarlierJob": "a2bbdfa1-e6f4-43ce-b605-65f5136b1137"
+    },
+    "checks": {
+      "allFramesViewed": true,
+      "clippedFrames": 0,
+      "fractionalAlphaPixels": 0,
+      "maxColors": 10,
+      "commonPalette16": true,
+      "finalAllFramesViewed": true
+    },
+    "notes": [
+      "Native pixel density retained on padded canvas.",
+      "Contact is maximum forward reach, frame11.",
+      "PixelLab palette correction only where generation drifted; final opaque colours are subsets of shared-palette.png. Source positions and silhouette preserved."
+    ],
+    "crossReview": {
+      "reviewer": "residential_art",
+      "feedback": "Attack silhouettes and contacts approved. Initial wolf stun too close to Idle; all three stuns remade from dedicated slumped poses."
+    }
+  },
+  "brown_bear": {
+    "worldHeight": 1.6,
+    "previousWorldHeight": 1.85,
+    "reviewer": "outskirts_art",
+    "base": "Native64 block shoulders, square paws, solid fur planes;7 opaque colours. Replaces rounded tiny fur shading.",
+    "attack": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "holdsMs": [
+        50,
+        60,
+        65,
+        65,
+        55,
+        45,
+        40,
+        70,
+        50,
+        45,
+        40,
+        40,
+        35,
+        30,
+        30,
+        30,
+        30
+      ],
+      "contactFrame": 7,
+      "observation": "Frames2-6 shoulder rises and near paw draws back;7 is the extended downward claw strike;8-13 follow-through;14-16 settle. Tiny ivory claw streak exists on7; it matches palette and appears only at contact.",
+      "contactPoint": {
+        "x": 17,
+        "y": 73
+      },
+      "sourceDir": "attack"
+    },
+    "stun": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "holdsMs": [
+        80,
+        80,
+        100,
+        140,
+        180,
+        140,
+        100,
+        80,
+        80
+      ],
+      "observation": "Dedicated slumped pose: head hangs below shoulder and forelegs stay visibly buckled throughout the 9-frame dazed wobble. Never returns to alert Idle during the stun loop.",
+      "sourceDir": "stun-final",
+      "rejectedEarlierJob": "5ba4a962-ce42-448c-bdfd-6897ac400a69"
+    },
+    "checks": {
+      "allFramesViewed": true,
+      "clippedFrames": 0,
+      "fractionalAlphaPixels": 0,
+      "maxColors": 7,
+      "commonPalette16": true,
+      "finalAllFramesViewed": true
+    },
+    "notes": [
+      "World height1.6 recommended from previous1.85 to keep visible pixel size closer to other new enemies.",
+      "Keep existing stage10 guardian unaffected.",
+      "PixelLab palette correction only where generation drifted; final opaque colours are subsets of shared-palette.png. Source positions and silhouette preserved."
+    ],
+    "crossReview": {
+      "reviewer": "residential_art",
+      "feedback": "Attack silhouettes and contacts approved. Initial wolf stun too close to Idle; all three stuns remade from dedicated slumped poses."
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "tool": "PixelLab pixelart_workbench",
+  "sourceJobId": "2f3064bd-13bf-4c25-9515-e4c4869eab23",
+  "changes": [
+    {
+      "operation": "patch_pixels",
+      "layer": "image",
+      "frames": [
+        4
+      ],
+      "pixels": [
+        [
+          8,
+          29,
+          "#202d38ff",
+          "#202d3800"
+        ],
+        [
+          9,
+          29,
+          "#ab6c37ff",
+          "#202d3800"
+        ],
+        [
+          10,
+          29,
+          "#ab6c37ff",
+          "#202d3800"
+        ]
+      ],
+      "reason": "The inspected boot is already fully outlined on row28. Remove redundant 3-pixel light-brown spur under the sole on row29; no body movement or automatic feet alignment."
+    }
+  ],
+  "result": [
+    "image_id: aa2734ba-f112-4237-b742-4629bb5bf03f\ncanvas: 32x32, 8 frame(s)\n1. patch_pixels: 3 px changed\nsheet rows: frames [4]\npalette (8): #6b3f2aff x775, #202d38ff x456, #2d735dff x237, #f3bd83ff x171, #ab6c37ff x139, #8b2f35ff x128, #b7d3d0ff x75, #e8d9adff x44\ndownload https://api.pixellab.ai/mcp/pixel-tools/aa2734ba-f112-4237-b742-4629bb5bf03f/: frames.png, animation.gif\nnext: edit aa2734ba-f112-4237-b742-4629bb5bf03f --changes […]"
+  ],
+  "saved": [
+    "added: gallery:29ea16c4-3802-40bb-a19d-23611287923b (image, 8 frames, 32x32) — in the Creator gallery\nreplace it later with target=\"gallery:29ea16c4-3802-40bb-a19d-23611287923b\"\nnext: pixelart_workbench(argv=[\"inspect\", \"gallery:29ea16c4-3802-40bb-a19d-23611287923b\"])"
+  ],
+  "finalAssetId": "29ea16c4-3802-40bb-a19d-23611287923b",
+  "finalPivotTopLeft": [
+    16,
+    29
+  ]
+}

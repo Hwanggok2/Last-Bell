@@ -1,0 +1,135 @@
+{
+  "checkedAt": "2026-10-24",
+  "status": "audition-candidates-not-unity-applied",
+  "reference": "용사는 타이밍 / Timing Hero",
+  "referenceListening": "No new side-by-side auditory evaluation or waveform matching was performed; likeness is not confirmed.",
+  "referenceFootage": "Planning/Reference/TimingHero-20261023/clips/reference-normal.mp4",
+  "firstDirection": "Compare A1-A3 retro sword effects first. Choose final clip only after hearing with gameplay.",
+  "files": [
+    {
+      "id": "current",
+      "title": "현재 Unity 공격음",
+      "description": "현재 비교 기준 · 칼날과 타격음을 합친 280ms 베기",
+      "author": "Kenney",
+      "sourceUrl": "https://kenney.nl/assets/rpg-audio",
+      "license": "CC0-1.0",
+      "original": {
+        "file": "Client/Assets/Game/Audio/Combat-v86/sword-strike.wav"
+      },
+      "originalSha256": "2d2eb4374ff21b8c967ac9754d0147cbe4e7e631bf510547e96a95313267ae6a",
+      "file": "Samples/current.wav",
+      "sha256": "af991c76a96fbcbbf662d5b97dbc05d0167bf37a483bdb56395baf02abfe24e8",
+      "durationMs": 280,
+      "peakDbfs": -6,
+      "edits": "Mono 44.1kHz PCM16; fixed gain 0.574377 to peak -6dBFS; no trimming/EQ/time change. Comparison only."
+    },
+    {
+      "id": "retro-1",
+      "title": "A1 · 8비트 검 1",
+      "description": "레트로 검 효과 후보 · 먼저 비교할 계열",
+      "author": "SubspaceAudio / Juhani Junkala",
+      "sourceUrl": "https://opengameart.org/content/512-sound-effects-8-bit-style",
+      "license": "CC0-1.0",
+      "original": {
+        "archive": "Sources/retro/The Essential Retro Video Game Sound Effects Collection [512 sounds].zip",
+        "member": "The Essential Retro Video Game Sound Effects Collection [512 sounds] By Juhani Junkala/Weapons/Melee/sfx_wpn_sword1.wav"
+      },
+      "originalSha256": "2e21c1d5a09ef753d1e2f50d41549a93cea4d7f5bf80ec6b82b6327f6b5f788b",
+      "file": "Samples/retro-1.wav",
+      "sha256": "d45c6d0b9e5138891bba6e0906bc76e9ea3fe31a2d5ced9a07551641f37ef1f6",
+      "durationMs": 111,
+      "peakDbfs": -6,
+      "edits": "Mono 44.1kHz PCM16; fixed gain 1.000055 to peak -6dBFS; no trimming/EQ/time change. Comparison only."
+    },
+    {
+      "id": "retro-2",
+      "title": "A2 · 8비트 검 2",
+      "description": "레트로 검 효과 후보 · A1과 공격 인상 비교",
+      "author": "SubspaceAudio / Juhani Junkala",
+      "sourceUrl": "https://opengameart.org/content/512-sound-effects-8-bit-style",
+      "license": "CC0-1.0",
+      "original": {
+        "archive": "Sources/retro/The Essential Retro Video Game Sound Effects Collection [512 sounds].zip",
+        "member": "The Essential Retro Video Game Sound Effects Collection [512 sounds] By Juhani Junkala/Weapons/Melee/sfx_wpn_sword2.wav"
+      },
+      "originalSha256": "96e0a4d21f785251660fd33b1feb7995d71848b4c7a90680ca077c0fd6c8b462",
+      "file": "Samples/retro-2.wav",
+      "sha256": "5e87b4574aee9cc76e7af9c38eccb053968c81aeba47e080780ff9e78cb1064e",
+      "durationMs": 96,
+      "peakDbfs": -6,
+      "edits": "Mono 44.1kHz PCM16; fixed gain 0.999994 to peak -6dBFS; no trimming/EQ/time change. Comparison only."
+    },
+    {
+      "id": "retro-3",
+      "title": "A3 · 8비트 검 3",
+      "description": "레트로 검 효과 후보 · A1·A2와 비교",
+      "author": "SubspaceAudio / Juhani Junkala",
+      "sourceUrl": "https://opengameart.org/content/512-sound-effects-8-bit-style",
+      "license": "CC0-1.0",
+      "original": {
+        "archive": "Sources/retro/The Essential Retro Video Game Sound Effects Collection [512 sounds].zip",
+        "member": "The Essential Retro Video Game Sound Effects Collection [512 sounds] By Juhani Junkala/Weapons/Melee/sfx_wpn_sword3.wav"
+      },
+      "originalSha256": "cb11e32087310ff94540342cc0fe2c6a52bfb9f764a7433ab9c52d9d97450022",
+      "file": "Samples/retro-3.wav",
+      "sha256": "1ac69e9a71ae19da359bda34dc77e0199ee46370c9eaeabe25db6d18a998f9b4",
+      "durationMs": 137,
+      "peakDbfs": -6,
+      "edits": "Mono 44.1kHz PCM16; fixed gain 0.999872 to peak -6dBFS; no trimming/EQ/time change. Comparison only."
+    },
+    {
+      "id": "metal-1",
+      "title": "B · 녹음한 칼날",
+      "description": "칼날 질감을 더하는 보조 후보",
+      "author": "StarNinjas",
+      "sourceUrl": "https://opengameart.org/content/20-sword-sound-effects-attacks-and-clashes",
+      "license": "CC0-1.0",
+      "original": {
+        "archive": "Sources/sword/sword_-_starninjas_1.zip",
+        "member": "sword - StarNinjas/sword.1.ogg"
+      },
+      "originalSha256": "4a3e80705619cbd7500682ab51004011ddf67e14ccf1818ceb9e5b539fe42b75",
+      "file": "Samples/metal-1.wav",
+      "sha256": "217127dbb3fd34a37e88ee21ea23c5da557eaf7866b4ebaea9b3ff03c9817329",
+      "durationMs": 985,
+      "peakDbfs": -6,
+      "edits": "Mono 44.1kHz PCM16; fixed gain 0.298380 to peak -6dBFS; no trimming/EQ/time change. Comparison only."
+    },
+    {
+      "id": "clash-1",
+      "title": "C · 검 충돌",
+      "description": "쳐내기·치명타의 접촉감을 분리할 후보",
+      "author": "StarNinjas",
+      "sourceUrl": "https://opengameart.org/content/20-sword-sound-effects-attacks-and-clashes",
+      "license": "CC0-1.0",
+      "original": {
+        "archive": "Sources/sword/sword_clash_-_starninjas_0.zip",
+        "member": "sword_clash.1.ogg"
+      },
+      "originalSha256": "5c5e78e466ba78fe2414f2b7a2a6eb674822ccfc8a8bc9fda32be22f5dde5e69",
+      "file": "Samples/clash-1.wav",
+      "sha256": "78ed1d0fda211fbbb384ff2e507f5b3f345ca57b68d0831222de6a5161a659b7",
+      "durationMs": 1035,
+      "peakDbfs": -6,
+      "edits": "Mono 44.1kHz PCM16; fixed gain 0.179723 to peak -6dBFS; no trimming/EQ/time change. Comparison only."
+    },
+    {
+      "id": "swish-9",
+      "title": "D · 짧은 휘두름",
+      "description": "베기 시작을 알리는 보조 후보",
+      "author": "artisticdude",
+      "sourceUrl": "https://opengameart.org/content/swishes-sound-pack",
+      "license": "CC0-1.0",
+      "original": {
+        "archive": "Sources/swishes/swishes.zip",
+        "member": "swishes/swish-9.wav"
+      },
+      "originalSha256": "123883f006ce55feecbff11eea5f87c4493df4399989983037144570a23723c1",
+      "file": "Samples/swish-9.wav",
+      "sha256": "327551bca4c1defd23f0df3e28493ab86539c588320b262afac9402b16d6f5d1",
+      "durationMs": 197,
+      "peakDbfs": -6,
+      "edits": "Mono 44.1kHz PCM16; fixed gain 0.367061 to peak -6dBFS; no trimming/EQ/time change. Comparison only."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+[
+  {
+    "actor": "gib",
+    "motion": "Attack",
+    "jobId": "f5d8928a-47b1-4902-a980-878f56417940",
+    "workbenchId": "78abc573-bc32-4768-889b-0d76efee1eff",
+    "assetId": "cf6aef35-9fcf-4815-9c9f-e0b040ca9775",
+    "changes": [
+      {
+        "operation": "patch_pixels",
+        "layer": "image",
+        "frames": [
+          3
+        ],
+        "pixels": [
+          [
+            47,
+            29,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            47,
+            30,
+            "#5e3f2dff",
+            "#18272b00"
+          ],
+          [
+            47,
+            31,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            46,
+            30,
+            "#5e3f2dff",
+            "#18272bff"
+          ]
+        ],
+        "reason": "Close only the rear spear-butt cap at x46 with a 1px navy edge and transparent x47. Windup shaft alone touched canvas boundary; preserve the entire grip, front blade, shield, body and boots."
+      },
+      {
+        "operation": "patch_pixels",
+        "layer": "image",
+        "frames": [
+          4
+        ],
+        "pixels": [
+          [
+            47,
+            29,
+            "#5e3f2dff",
+            "#18272b00"
+          ],
+          [
+            47,
+            30,
+            "#5e3f2dff",
+            "#18272b00"
+          ],
+          [
+            47,
+            31,
+            "#18272bff",
+            "#18272b00"
+          ],
+          [
+            46,
+            30,
+            "#5e3f2dff",
+            "#18272bff"
+          ]
+        ],
+        "reason": "Same reviewed 1px rear shaft cap repair on the next windup pose; no motion or body translation."
+      }
+    ]
+  }
+]

@@ -1,0 +1,24 @@
+<section id="battle-preview"><p class="note"><a href="Adventure-v6/index.html">최신 UI·스킬 변경 →</a> 아래 이미지는 초기 전투 시안입니다. 현재 실행 화면은 기획서 상단의 최신 제작 기록에서 확인하세요.</p>
+  <p class="eyebrow">LATEST · PIXEL WORLD V3 + UI V4</p>
+  <h2>캐릭터·배경·UI를 하나의 도트 스타일로.</h2>
+  <p class="lead">플레이어·NPC의 옷 주름과 작은 장식을 줄이고, 배경도 큰 색면으로 정리했습니다. 체력바와 방향키를 포함한 UI도 같은 도트 스타일로 맞췄습니다. 아래는 1280×720 정적 전투 시안입니다.</p>
+  <div class="route-tabs" role="tablist" aria-label="전투 시안 선택">
+    <button type="button" id="view-tab-normal" data-view="normal" role="tab" aria-selected="true" aria-controls="view-normal" tabindex="0">Stage 3 · 일반전</button>
+    <button type="button" id="view-tab-normal-warning" data-view="normal-warning" role="tab" aria-selected="false" aria-controls="view-normal-warning" tabindex="-1">일반전 · 예고</button>
+    <button type="button" id="view-tab-boss" data-view="boss" role="tab" aria-selected="false" aria-controls="view-boss" tabindex="-1">Stage 10 · 보스전</button>
+    <button type="button" id="view-tab-boss-warning" data-view="boss-warning" role="tab" aria-selected="false" aria-controls="view-boss-warning" tabindex="-1">보스전 · 예고</button>
+    <button type="button" id="view-tab-touch" data-view="touch" role="tab" aria-selected="false" aria-controls="view-touch" tabindex="-1">터치 영역</button>
+  </div>
+  <figure class="wide battle-view" id="view-normal" role="tabpanel" aria-labelledby="view-tab-normal"><a href="images/battle-normal-clean-v4.png"><img src="images/battle-normal-clean-v4.png" width="1280" height="720" alt="굵은 도트의 후드 검사 온과 뿔토끼가 밝고 단순한 초원에서 마주 선 전투 시안"></a><figcaption>일반전 · 온의 후드와 검, 뿔토끼의 귀와 뿔을 작은 화면에서도 구별하는 기준입니다. 체력은 각 캐릭터 아래에 둡니다.</figcaption></figure>
+  <figure class="wide battle-view" id="view-normal-warning" role="tabpanel" aria-labelledby="view-tab-normal-warning" hidden><a href="images/battle-normal-telegraph-v4.png"><img src="images/battle-normal-telegraph-v4.png" width="1280" height="720" alt="일반전 화면에 타이밍 원호와 산호색 위험 모서리를 표시한 예고 UI 배치"></a><figcaption>예고 UI 배치 검토 · 색뿐 아니라 연속 원호와 사각 모서리로 구별합니다. 적의 준비 애니메이션과 실제 판정 동기화를 구현한 장면은 아닙니다.</figcaption></figure>
+  <figure class="wide battle-view" id="view-boss" role="tabpanel" aria-labelledby="view-tab-boss" hidden><a href="images/battle-boss-clean-v4.png"><img src="images/battle-boss-clean-v4.png" width="1280" height="720" alt="작은 검사 온과 큰엄니 멧돼지 보스의 크기 차이를 보여 주는 전투 시안"></a><figcaption>보스전 · 큰엄니는 넓은 몸·등털·상아로 체급을 키웁니다. 보스 체력바는 최신 배치대로 적 아래에 길게 표시합니다.</figcaption></figure>
+  <figure class="wide battle-view" id="view-boss-warning" role="tabpanel" aria-labelledby="view-tab-boss-warning" hidden><a href="images/battle-boss-telegraph-v4.png"><img src="images/battle-boss-telegraph-v4.png" width="1280" height="720" alt="큰엄니 보스전에서 공격 예고와 캐릭터가 겹치는 정도를 확인하는 정적 시안"></a><figcaption>보스 예고 UI 배치 검토 · 큰 몸과 원호가 함께 보여도 이동 방향과 무기가 읽히는지 확인합니다. 새로운 공격 패턴이나 판정 수치를 추가한 것은 아닙니다.</figcaption></figure>
+  <figure class="wide battle-view" id="view-touch" role="tabpanel" aria-labelledby="view-tab-touch" hidden><a href="images/battle-wireframe-v4.png"><img src="images/battle-wireframe-v4.png" width="1280" height="720" alt="배경 없는 세 방향 화살표와 공격 버튼의 터치 영역을 점선으로 확인하는 전투 와이어프레임"></a><figcaption>터치 영역 · 회피104×104 / 공격144×144 기획 픽셀. 점선은 검토 표시이며 게임에는 나오지 않습니다. 실제 기기 DPI·안전 영역은 구현 때 검증합니다.</figcaption></figure>
+  <p class="note"><b>실행 화면을 예상하기 위한 시안입니다.</b> 캐릭터·배경은 GPT로 생성했고, HUD·체력바·조작부는 기존 배치를 바탕으로 코드에서 도트로 다시 그렸습니다. Unity 캡처나 플레이 가능한 빌드는 아닙니다.</p>
+  __PIXEL_UI_V4__
+  <h3>플레이어·NPC 5명</h3>
+  <figure class="wide"><a href="images/actors-pixel-v3.png"><img src="images/actors-pixel-v3.png" alt="도트 밀도를 낮춘 온 토리 리나 바룬 도토의 플레이어와 NPC 시트"></a><figcaption>왼쪽부터 온 · 토리 · 리나 · 바룬 · 도토. 후드·귀와 꼬리·모자·대검·망치처럼 인물을 구별하는 큰 특징을 남깁니다. 이 시트가 이전 상세 캐스트 원화보다 우선합니다.</figcaption></figure>
+  <div class="grid2"><article><h3>레퍼런스에서 가져온 표현 기준</h3><p>원작 캡처처럼 제한된 색 단계, 작은 실루엣, 비워 둔 전장 중앙을 기준으로 삼았습니다. 우리 게임의 밝은 판타지 색은 유지합니다.</p><p class="small">원작의 실제 원본 스프라이트 해상도는 확인하지 못했습니다. 24~32픽셀 인물·단순 명암은 우리 제작 목표이며 원작의 정확한 수치라고 주장하지 않습니다.</p></article><figure class="wide" style="margin:0"><a href="../../Reference/TimingHero-20261023/boss10/00240.000.jpg"><img src="../../Reference/TimingHero-20261023/boss10/00240.000.jpg" width="1200" height="540" alt="용사는 타이밍 사용자 제공 플레이 영상 캡처, 낮은 도트 밀도와 단순 전장 비교 참고"></a><figcaption>용사는 타이밍 · 기존 사용자 제공 영상 캡처. 표현 밀도 비교용이며 새 전투 시안의 자산으로 사용하지 않았습니다.</figcaption></figure></div>
+  <details><summary>배경만 보기 · 새 도트 기준</summary><figure class="wide"><a href="images/meadow-pixel-v3.png"><img src="images/meadow-pixel-v3.png" width="1672" height="941" alt="큰 사각 블록으로 정리한 초원 배경"></a><figcaption>풀잎·꽃·흙 알갱이를 줄이고 먼 산·들판·가장자리 수풀로 정리했습니다. 정식 제작 전 색면의 미세한 농담 제거와 반복 타일·레이어 분리가 필요합니다.</figcaption></figure></details>
+  <p><a href="pixel-v3-generation.json">배경·전투 생성 프롬프트</a> · <a href="actors-pixel-v3-generation.json">인물 생성 프롬프트</a> · <a href="pixel-v3-art-review.md">아트 검토</a> · <a href="pixel-v3-ui-review.md">전투 화면 검토</a></p>
+</section>

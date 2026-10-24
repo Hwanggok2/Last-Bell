@@ -1,0 +1,494 @@
+[
+  {
+    "actor": "forest_mushroom",
+    "motion": "Canonical",
+    "jobId": "ad641abd-a0e0-486c-b194-d31dfd1a6b88",
+    "width": 32,
+    "height": 32,
+    "count": 1,
+    "changes": [
+      {
+        "operation": "map_colors",
+        "layer": "image",
+        "frames": [
+          1
+        ],
+        "region": [
+          0,
+          0,
+          31,
+          31
+        ],
+        "colors": {
+          "#663d36": "#18272b"
+        },
+        "reason": "Match project NPC/monster single dark navy contour. Replace only darkest brown contour color; preserve geometry, cap red and root browns."
+      }
+    ],
+    "workbenchId": "bb72a7c5-21ae-4cf6-8a77-9a02e9cb95c0",
+    "assetId": "0380d213-5073-4473-a7ee-2e97fb331b85",
+    "result": "image_id: bb72a7c5-21ae-4cf6-8a77-9a02e9cb95c0\ncanvas: 32x32, 1 frame(s)\n1. map_colors: 89 px changed\nsheet rows: frames [1]\npalette (5): #18272bff x89, #ad4f3fff x85, #f4d99bff x83, #e18b57ff x25, #8c623cff x17\ndownload https://api.pixellab.ai/mcp/pixel-tools/bb72a7c5-21ae-4cf6-8a77-9a02e9cb95c0/: image.png, frames.png, animation.gif\nnext: edit bb72a7c5-21ae-4cf6-8a77-9a02e9cb95c0 --changes […]",
+    "saved": "added: gallery:0380d213-5073-4473-a7ee-2e97fb331b85 (image, 32x32) — in the Creator gallery\nreplace it later with target=\"gallery:0380d213-5073-4473-a7ee-2e97fb331b85\"\nnext: pixelart_workbench(argv=[\"inspect\", \"gallery:0380d213-5073-4473-a7ee-2e97fb331b85\"])"
+  },
+  {
+    "actor": "forest_mushroom",
+    "motion": "Idle",
+    "jobId": "b77f151c-3f7b-448d-ab08-467a7cd45b99",
+    "width": 32,
+    "height": 32,
+    "count": 9,
+    "changes": [
+      {
+        "operation": "map_colors",
+        "layer": "image",
+        "frames": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "region": [
+          0,
+          0,
+          31,
+          31
+        ],
+        "colors": {
+          "#663d36": "#18272b"
+        },
+        "reason": "Match project NPC/monster single dark navy contour. Replace only darkest brown contour color; preserve geometry, cap red and root browns."
+      }
+    ],
+    "workbenchId": "056f20ec-7aa2-4f18-9193-f736c4b3a75e",
+    "assetId": "1565ab49-7158-4bb4-b820-77819206485e",
+    "result": "image_id: 056f20ec-7aa2-4f18-9193-f736c4b3a75e\ncanvas: 32x32, 9 frame(s)\n1. map_colors: 822 px changed\nsheet rows: frames [6, 7, 8]\n9 frames changed, in 2,2,29,30; see every one: inspect 056f20ec-7aa2-4f18-9193-f736c4b3a75e --frames 1,2,3,4,5,6,7,8,9 --region 2,2,29,30\npalette (5): #18272bff x822, #f4d99bff x789, #ad4f3fff x773, #e18b57ff x252, #8c623cff x164\ndownload https://api.pixellab.ai/mcp/pixel-tools/056f20ec-7aa2-4f18-9193-f736c4b3a75e/: frames.png, animation.gif\nnext: edit 056f20ec-7aa2-4f18-9193-f736c4b3a75e --changes […]",
+    "saved": "added: gallery:1565ab49-7158-4bb4-b820-77819206485e (image, 9 frames, 32x32) — in the Creator gallery\nreplace it later with target=\"gallery:1565ab49-7158-4bb4-b820-77819206485e\"\nnext: pixelart_workbench(argv=[\"inspect\", \"gallery:1565ab49-7158-4bb4-b820-77819206485e\"])"
+  },
+  {
+    "actor": "forest_mushroom",
+    "motion": "Stun",
+    "jobId": "4e1f9cb4-7cba-44e8-815b-0297d10862ab",
+    "width": 32,
+    "height": 32,
+    "count": 9,
+    "changes": [
+      {
+        "operation": "map_colors",
+        "layer": "image",
+        "frames": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "region": [
+          0,
+          0,
+          31,
+          31
+        ],
+        "colors": {
+          "#663d36": "#18272b"
+        },
+        "reason": "Match project NPC/monster single dark navy contour. Replace only darkest brown contour color; preserve geometry, cap red and root browns."
+      }
+    ],
+    "workbenchId": "24fcb44a-cc12-4e29-8d6c-c07154936b2f",
+    "assetId": "42994c05-baf4-45dc-906f-65c6d2322af0",
+    "result": "image_id: 24fcb44a-cc12-4e29-8d6c-c07154936b2f\ncanvas: 32x32, 9 frame(s)\n1. map_colors: 801 px changed\nsheet rows: frames [2, 4, 5]\n9 frames changed, in 2,4,31,30; see every one: inspect 24fcb44a-cc12-4e29-8d6c-c07154936b2f --frames 1,2,3,4,5,6,7,8,9 --region 2,4,31,30\npalette (5): #18272bff x801, #ad4f3fff x766, #f4d99bff x747, #e18b57ff x220, #8c623cff x163\ndownload https://api.pixellab.ai/mcp/pixel-tools/24fcb44a-cc12-4e29-8d6c-c07154936b2f/: frames.png, animation.gif\nnext: edit 24fcb44a-cc12-4e29-8d6c-c07154936b2f --changes […]",
+    "saved": "added: gallery:42994c05-baf4-45dc-906f-65c6d2322af0 (image, 9 frames, 32x32) — in the Creator gallery\nreplace it later with target=\"gallery:42994c05-baf4-45dc-906f-65c6d2322af0\"\nnext: pixelart_workbench(argv=[\"inspect\", \"gallery:42994c05-baf4-45dc-906f-65c6d2322af0\"])"
+  },
+  {
+    "actor": "mushroom_captain",
+    "motion": "Canonical",
+    "jobId": "8cc007fc-cd8d-4ae1-870a-40493a896a83",
+    "width": 48,
+    "height": 48,
+    "count": 1,
+    "changes": [
+      {
+        "operation": "map_colors",
+        "layer": "image",
+        "frames": [
+          1
+        ],
+        "region": [
+          0,
+          0,
+          47,
+          47
+        ],
+        "colors": {
+          "#663d36": "#18272b"
+        },
+        "reason": "Match project NPC/monster single dark navy contour. Replace only darkest brown contour color; preserve geometry, cap red and root browns."
+      }
+    ],
+    "workbenchId": "58b78f97-055c-476c-b7b0-1cf76b856f8d",
+    "assetId": "0dcfa303-d5e6-4ef9-82f1-1a44b7aa9eaf",
+    "result": "image_id: 58b78f97-055c-476c-b7b0-1cf76b856f8d\ncanvas: 48x48, 1 frame(s)\n1. map_colors: 124 px changed\nsheet rows: frames [1]\npalette (6): #ad4f3fff x244, #18272bff x124, #f4d99bff x71, #8c623cff x69, #fff0caff x57, #b38a55ff x26\ndownload https://api.pixellab.ai/mcp/pixel-tools/58b78f97-055c-476c-b7b0-1cf76b856f8d/: image.png, frames.png, animation.gif\nnext: edit 58b78f97-055c-476c-b7b0-1cf76b856f8d --changes […]",
+    "saved": "added: gallery:0dcfa303-d5e6-4ef9-82f1-1a44b7aa9eaf (image, 48x48) — in the Creator gallery\nreplace it later with target=\"gallery:0dcfa303-d5e6-4ef9-82f1-1a44b7aa9eaf\"\nnext: pixelart_workbench(argv=[\"inspect\", \"gallery:0dcfa303-d5e6-4ef9-82f1-1a44b7aa9eaf\"])"
+  },
+  {
+    "actor": "mushroom_captain",
+    "motion": "Idle",
+    "jobId": "2c61f23d-0a57-4c5a-bd50-84dcaa883d1a",
+    "width": 48,
+    "height": 48,
+    "count": 9,
+    "changes": [
+      {
+        "operation": "map_colors",
+        "layer": "image",
+        "frames": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "region": [
+          0,
+          0,
+          47,
+          47
+        ],
+        "colors": {
+          "#663d36": "#18272b"
+        },
+        "reason": "Match project NPC/monster single dark navy contour. Replace only darkest brown contour color; preserve geometry, cap red and root browns."
+      }
+    ],
+    "workbenchId": "66d490ce-6fe8-44f1-8c5c-c971e0e17d33",
+    "assetId": "88fa3b5c-8489-497a-b486-e11dfc4de320",
+    "result": "image_id: 66d490ce-6fe8-44f1-8c5c-c971e0e17d33\ncanvas: 48x48, 9 frame(s)\n1. map_colors: 1145 px changed\nsheet rows: frames [5, 6, 7]\n9 frames changed, in 6,6,41,40; see every one: inspect 66d490ce-6fe8-44f1-8c5c-c971e0e17d33 --frames 1,2,3,4,5,6,7,8,9 --region 6,6,41,40\npalette (6): #ad4f3fff x2195, #18272bff x1145, #f4d99bff x689, #8c623cff x600, #fff0caff x513, #b38a55ff x249\ndownload https://api.pixellab.ai/mcp/pixel-tools/66d490ce-6fe8-44f1-8c5c-c971e0e17d33/: frames.png, animation.gif\nnext: edit 66d490ce-6fe8-44f1-8c5c-c971e0e17d33 --changes […]",
+    "saved": "added: gallery:88fa3b5c-8489-497a-b486-e11dfc4de320 (image, 9 frames, 48x48) — in the Creator gallery\nreplace it later with target=\"gallery:88fa3b5c-8489-497a-b486-e11dfc4de320\"\nnext: pixelart_workbench(argv=[\"inspect\", \"gallery:88fa3b5c-8489-497a-b486-e11dfc4de320\"])"
+  },
+  {
+    "actor": "mushroom_captain",
+    "motion": "Stun",
+    "jobId": "bbccfdfd-f176-4515-bb59-c6ec7a8278a3",
+    "width": 48,
+    "height": 48,
+    "count": 9,
+    "changes": [
+      {
+        "operation": "map_colors",
+        "layer": "image",
+        "frames": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "region": [
+          0,
+          0,
+          47,
+          47
+        ],
+        "colors": {
+          "#663d36": "#18272b"
+        },
+        "reason": "Match project NPC/monster single dark navy contour. Replace only darkest brown contour color; preserve geometry, cap red and root browns."
+      }
+    ],
+    "workbenchId": "d94d63b1-1eb3-4798-ad17-66e71f93c2f2",
+    "assetId": "a3a1641e-b4f8-4381-b02a-277cd161b9b3",
+    "result": "image_id: d94d63b1-1eb3-4798-ad17-66e71f93c2f2\ncanvas: 48x48, 9 frame(s)\n1. map_colors: 1111 px changed\nsheet rows: frames [5, 6, 9]\n9 frames changed, in 6,6,41,40; see every one: inspect d94d63b1-1eb3-4798-ad17-66e71f93c2f2 --frames 1,2,3,4,5,6,7,8,9 --region 6,6,41,40\npalette (6): #ad4f3fff x2195, #18272bff x1111, #f4d99bff x630, #8c623cff x609, #fff0caff x513, #b38a55ff x246\ndownload https://api.pixellab.ai/mcp/pixel-tools/d94d63b1-1eb3-4798-ad17-66e71f93c2f2/: frames.png, animation.gif\nnext: edit d94d63b1-1eb3-4798-ad17-66e71f93c2f2 --changes […]",
+    "saved": "added: gallery:a3a1641e-b4f8-4381-b02a-277cd161b9b3 (image, 9 frames, 48x48) — in the Creator gallery\nreplace it later with target=\"gallery:a3a1641e-b4f8-4381-b02a-277cd161b9b3\"\nnext: pixelart_workbench(argv=[\"inspect\", \"gallery:a3a1641e-b4f8-4381-b02a-277cd161b9b3\"])"
+  },
+  {
+    "actor": "spore_mushroom",
+    "motion": "Canonical",
+    "jobId": "ad3a74bc-bc68-4121-8172-2057f79541fc",
+    "width": 32,
+    "height": 32,
+    "count": 1,
+    "changes": [
+      {
+        "operation": "map_colors",
+        "layer": "image",
+        "frames": [
+          1
+        ],
+        "region": [
+          0,
+          0,
+          31,
+          31
+        ],
+        "colors": {
+          "#663d36": "#18272b"
+        },
+        "reason": "Match project NPC/monster single dark navy contour. Replace only darkest brown contour color; preserve geometry, cap red and root browns."
+      }
+    ],
+    "workbenchId": "ea8629f3-6b2d-4597-991f-4665c3c0a705",
+    "assetId": "74a1e98a-a7b0-4592-8948-b782c62dbd8f",
+    "result": "image_id: ea8629f3-6b2d-4597-991f-4665c3c0a705\ncanvas: 32x32, 1 frame(s)\n1. map_colors: 97 px changed\nsheet rows: frames [1]\npalette (6): #18272bff x97, #e18b57ff x64, #f4d99bff x59, #b38a55ff x18, #ad4f3fff x12, #8c623cff x5\ndownload https://api.pixellab.ai/mcp/pixel-tools/ea8629f3-6b2d-4597-991f-4665c3c0a705/: image.png, frames.png, animation.gif\nnext: edit ea8629f3-6b2d-4597-991f-4665c3c0a705 --changes […]",
+    "saved": "added: gallery:74a1e98a-a7b0-4592-8948-b782c62dbd8f (image, 32x32) — in the Creator gallery\nreplace it later with target=\"gallery:74a1e98a-a7b0-4592-8948-b782c62dbd8f\"\nnext: pixelart_workbench(argv=[\"inspect\", \"gallery:74a1e98a-a7b0-4592-8948-b782c62dbd8f\"])"
+  },
+  {
+    "actor": "spore_mushroom",
+    "motion": "Idle",
+    "jobId": "98f05872-c509-4189-a58f-8d23781ab82d",
+    "width": 32,
+    "height": 32,
+    "count": 9,
+    "changes": [
+      {
+        "operation": "map_colors",
+        "layer": "image",
+        "frames": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "region": [
+          0,
+          0,
+          31,
+          31
+        ],
+        "colors": {
+          "#663d36": "#18272b"
+        },
+        "reason": "Match project NPC/monster single dark navy contour. Replace only darkest brown contour color; preserve geometry, cap red and root browns."
+      }
+    ],
+    "workbenchId": "63bbf444-8bec-4b07-aff5-9394de08f4f7",
+    "assetId": "2964e5b6-d1b4-4194-bb3c-1c547a633a1b",
+    "result": "image_id: 63bbf444-8bec-4b07-aff5-9394de08f4f7\ncanvas: 32x32, 9 frame(s)\n1. map_colors: 876 px changed\nsheet rows: frames [6, 7, 8]\n9 frames changed, in 5,0,26,31; see every one: inspect 63bbf444-8bec-4b07-aff5-9394de08f4f7 --frames 1,2,3,4,5,6,7,8,9 --region 5,0,26,31\npalette (6): #18272bff x876, #e18b57ff x604, #f4d99bff x538, #b38a55ff x155, #ad4f3fff x113, #8c623cff x44\ndownload https://api.pixellab.ai/mcp/pixel-tools/63bbf444-8bec-4b07-aff5-9394de08f4f7/: frames.png, animation.gif\nnext: edit 63bbf444-8bec-4b07-aff5-9394de08f4f7 --changes […]",
+    "saved": "added: gallery:2964e5b6-d1b4-4194-bb3c-1c547a633a1b (image, 9 frames, 32x32) — in the Creator gallery\nreplace it later with target=\"gallery:2964e5b6-d1b4-4194-bb3c-1c547a633a1b\"\nnext: pixelart_workbench(argv=[\"inspect\", \"gallery:2964e5b6-d1b4-4194-bb3c-1c547a633a1b\"])"
+  },
+  {
+    "actor": "spore_mushroom",
+    "motion": "Stun",
+    "jobId": "c2768ed5-287c-4846-a2c1-a9961cb43afd",
+    "width": 32,
+    "height": 32,
+    "count": 9,
+    "changes": [
+      {
+        "operation": "map_colors",
+        "layer": "image",
+        "frames": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "region": [
+          0,
+          0,
+          31,
+          31
+        ],
+        "colors": {
+          "#663d36": "#18272b"
+        },
+        "reason": "Match project NPC/monster single dark navy contour. Replace only darkest brown contour color; preserve geometry, cap red and root browns."
+      }
+    ],
+    "workbenchId": "8f1b87cb-7664-405a-bd33-db4964b724b2",
+    "assetId": "d3e05a50-87db-4f4a-a0c1-9c60d9d598b0",
+    "result": "image_id: 8f1b87cb-7664-405a-bd33-db4964b724b2\ncanvas: 32x32, 9 frame(s)\n1. map_colors: 894 px changed\nsheet rows: frames [4, 7, 8]\n9 frames changed, in 4,0,29,31; see every one: inspect 8f1b87cb-7664-405a-bd33-db4964b724b2 --frames 1,2,3,4,5,6,7,8,9 --region 4,0,29,31\npalette (6): #18272bff x894, #e18b57ff x595, #f4d99bff x498, #b38a55ff x157, #ad4f3fff x102, #8c623cff x45\ndownload https://api.pixellab.ai/mcp/pixel-tools/8f1b87cb-7664-405a-bd33-db4964b724b2/: frames.png, animation.gif\nnext: edit 8f1b87cb-7664-405a-bd33-db4964b724b2 --changes […]",
+    "saved": "added: gallery:d3e05a50-87db-4f4a-a0c1-9c60d9d598b0 (image, 9 frames, 32x32) — in the Creator gallery\nreplace it later with target=\"gallery:d3e05a50-87db-4f4a-a0c1-9c60d9d598b0\"\nnext: pixelart_workbench(argv=[\"inspect\", \"gallery:d3e05a50-87db-4f4a-a0c1-9c60d9d598b0\"])"
+  },
+  {
+    "actor": "mushroom_captain",
+    "motion": "Attack",
+    "jobId": "a2b625b4-0db7-49df-a7fa-a370a3ba85e9",
+    "width": 48,
+    "height": 48,
+    "count": 9,
+    "changes": [
+      {
+        "operation": "patch_pixels",
+        "layer": "image",
+        "frames": [
+          4
+        ],
+        "pixels": [
+          [
+            36,
+            29,
+            "#663d36ff",
+            "#18272b00"
+          ],
+          [
+            36,
+            30,
+            "#663d36ff",
+            "#18272b00"
+          ],
+          [
+            35,
+            31,
+            "#663d36ff",
+            "#18272b00"
+          ],
+          [
+            8,
+            30,
+            "#663d36ff",
+            "#18272b00"
+          ],
+          [
+            9,
+            31,
+            "#663d36ff",
+            "#18272b00"
+          ],
+          [
+            8,
+            33,
+            "#663d36ff",
+            "#18272b00"
+          ],
+          [
+            36,
+            35,
+            "#663d36ff",
+            "#18272b00"
+          ]
+        ],
+        "reason": "Remove visually inspected detached dirt dots around captain fist gesture; preserve the entire connected body."
+      },
+      {
+        "operation": "patch_pixels",
+        "layer": "image",
+        "frames": [
+          5
+        ],
+        "pixels": [
+          [
+            5,
+            30,
+            "#663d36ff",
+            "#18272b00"
+          ],
+          [
+            6,
+            31,
+            "#663d36ff",
+            "#18272b00"
+          ],
+          [
+            11,
+            30,
+            "#663d36ff",
+            "#18272b00"
+          ],
+          [
+            40,
+            30,
+            "#663d36ff",
+            "#18272b00"
+          ],
+          [
+            39,
+            31,
+            "#663d36ff",
+            "#18272b00"
+          ],
+          [
+            41,
+            30,
+            "#663d36ff",
+            "#18272b00"
+          ],
+          [
+            38,
+            36,
+            "#663d36ff",
+            "#18272b00"
+          ]
+        ],
+        "reason": "Remove visually inspected detached dirt dots around captain fist gesture; preserve the entire connected body."
+      },
+      {
+        "operation": "patch_pixels",
+        "layer": "image",
+        "frames": [
+          6
+        ],
+        "pixels": [
+          [
+            2,
+            31,
+            "#663d36ff",
+            "#18272b00"
+          ],
+          [
+            43,
+            31,
+            "#663d36ff",
+            "#18272b00"
+          ]
+        ],
+        "reason": "Remove visually inspected detached dirt dots around captain fist gesture; preserve the entire connected body."
+      },
+      {
+        "operation": "map_colors",
+        "layer": "image",
+        "frames": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "region": [
+          0,
+          0,
+          47,
+          47
+        ],
+        "colors": {
+          "#663d36": "#18272b"
+        },
+        "reason": "Match project NPC/monster single dark navy contour. Replace only darkest brown contour color; preserve geometry, cap red and root browns."
+      }
+    ],
+    "workbenchId": "282b904a-6b55-480e-b1c8-61c08d0a69c6",
+    "assetId": "84d3eb3d-fb3c-4b73-9baa-cbd8e9eed9df",
+    "result": "image_id: 282b904a-6b55-480e-b1c8-61c08d0a69c6\ncanvas: 48x48, 9 frame(s)\n1. patch_pixels: 7 px changed\n2. patch_pixels: 7 px changed\n3. patch_pixels: 2 px changed\n4. map_colors: 1132 px changed\nsheet rows: frames [3, 4, 5]\n9 frames changed, in 0,6,45,40; see every one: inspect 282b904a-6b55-480e-b1c8-61c08d0a69c6 --frames 1,2,3,4,5,6,7,8,9 --region 0,6,45,40\npalette (6): #ad4f3fff x2191, #18272bff x1132, #f4d99bff x598, #8c623cff x550, #fff0caff x513, #b38a55ff x247\ndownload https://api.pixellab.ai/mcp/pixel-tools/282b904a-6b55-480e-b1c8-61c08d0a69c6/: frames.png, animation.gif\nnext: edit 282b904a-6b55-480e-b1c8-61c08d0a69c6 --changes […]",
+    "saved": "added: gallery:84d3eb3d-fb3c-4b73-9baa-cbd8e9eed9df (image, 9 frames, 48x48) — in the Creator gallery\nreplace it later with target=\"gallery:84d3eb3d-fb3c-4b73-9baa-cbd8e9eed9df\"\nnext: pixelart_workbench(argv=[\"inspect\", \"gallery:84d3eb3d-fb3c-4b73-9baa-cbd8e9eed9df\"])"
+  }
+]

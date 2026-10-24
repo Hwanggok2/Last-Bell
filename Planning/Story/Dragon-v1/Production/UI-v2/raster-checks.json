@@ -1,0 +1,96 @@
+{
+  "actualNativePreviewsReviewed": true,
+  "previewPixelChecks": [
+    {
+      "viewportWidth": 1280,
+      "sourceBarWidth": 160,
+      "healthColoredPixelsByState": [
+        0,
+        80,
+        560,
+        1040,
+        2080
+      ],
+      "zeroEmpty": true,
+      "tinyOneColumn": true,
+      "strictlyIncreasingRequestedStates": true,
+      "maxPaletteColors": 5
+    },
+    {
+      "viewportWidth": 1280,
+      "sourceBarWidth": 184,
+      "healthColoredPixelsByState": [
+        0,
+        80,
+        640,
+        1280,
+        2480
+      ],
+      "zeroEmpty": true,
+      "tinyOneColumn": true,
+      "strictlyIncreasingRequestedStates": true,
+      "maxPaletteColors": 5
+    },
+    {
+      "viewportWidth": 1280,
+      "sourceBarWidth": 280,
+      "healthColoredPixelsByState": [
+        0,
+        80,
+        1040,
+        2000,
+        4000
+      ],
+      "zeroEmpty": true,
+      "tinyOneColumn": true,
+      "strictlyIncreasingRequestedStates": true,
+      "maxPaletteColors": 5
+    },
+    {
+      "viewportWidth": 640,
+      "sourceBarWidth": 160,
+      "healthColoredPixelsByState": [
+        0,
+        20,
+        140,
+        260,
+        520
+      ],
+      "zeroEmpty": true,
+      "tinyOneColumn": true,
+      "strictlyIncreasingRequestedStates": true,
+      "maxPaletteColors": 5
+    },
+    {
+      "viewportWidth": 640,
+      "sourceBarWidth": 184,
+      "healthColoredPixelsByState": [
+        0,
+        20,
+        160,
+        320,
+        620
+      ],
+      "zeroEmpty": true,
+      "tinyOneColumn": true,
+      "strictlyIncreasingRequestedStates": true,
+      "maxPaletteColors": 5
+    },
+    {
+      "viewportWidth": 640,
+      "sourceBarWidth": 280,
+      "healthColoredPixelsByState": [
+        0,
+        20,
+        260,
+        500,
+        1000
+      ],
+      "zeroEmpty": true,
+      "tinyOneColumn": true,
+      "strictlyIncreasingRequestedStates": true,
+      "maxPaletteColors": 5
+    }
+  ],
+  "unityExecuted": false
+}

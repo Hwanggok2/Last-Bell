@@ -1,0 +1,18 @@
+{
+  "rejected": "First character_to_portrait result rendered humanlike armored face; did not preserve green skin and long goblin ears.",
+  "request": {
+    "content": [
+      {
+        "type": "text",
+        "text": "id: f82f9f60-7da6-4edd-85ad-2b155d566689\njob_id: f82f9f60-7da6-4edd-85ad-2b155d566689\nmode: text\nframes: 1\nsize: 48x48px\ntransparent: True\nedit: Correct this portrait to GIB, a GOBLIN raider captain, NOT a human knight. Replace the face and head shape: visible LEAF-GREEN SKIN, very long wide pointed green ears protruding from BOTH sides, small snub nose, broad mischievous grin with one tiny ivory fang, yellow dot eyes and short dark eyebrows. Keep a simple small open steel skullcap and ONE burnt-orange feather on top; no full face visor, no human skin, no big ornamental curled plume. Make green face and long ears the majority of the48x48 bust. Brown leather shoulder strap and brown rough wooden shield edge along the lower-right side, NO ornate steel shoulder armor. Friendly fantasy antagonist with boastful cheeky expression, not horror. Chunky simple flat8-10color pixelart matching the original game monster. Dark navy outline, leafgreen face, muted steel cap, burnt orange feather, brown leather and wood. Transparent background, exact48x48.\nseed: 243097\nasset_id: aa1b3120-148a-5d00-a9b1-3a084f36ee82\nasset_status: pending (saved when generation completes)\ncost: ~10 generations\nstatus: processing (~30-90s)\n\nhint: get_image(job_id=\"f82f9f60-7da6-4edd-85ad-2b155d566689\")"
+      }
+    ],
+    "isError": false
+  },
+  "result": [
+    {
+      "type": "text",
+      "text": "status: completed\nid: f82f9f60-7da6-4edd-85ad-2b155d566689\njob_id: f82f9f60-7da6-4edd-85ad-2b155d566689\nframes: 1\ntransparent: yes\nasset_id: aa1b3120-148a-5d00-a9b1-3a084f36ee82\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 10 generations\ndownload: https://api.pixellab.ai/mcp/images/f82f9f60-7da6-4edd-85ad-2b155d566689/download"
+    }
+  ]
+}

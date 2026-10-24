@@ -1,0 +1,2795 @@
+{
+  "status": "passed",
+  "actors": 5,
+  "idleFrames": 20,
+  "attackFrames": 38,
+  "runFrames": 40,
+  "totalFrames": 98,
+  "idleAttackHashesUnchanged": true,
+  "distinctPosesPerClip": true,
+  "binaryAlpha": true,
+  "maxColors": 8,
+  "constantGroundY": 29,
+  "noSideEdgeClipping": true,
+  "manualReview": [
+    "Canonical identity and every source frame inspected at4x.",
+    "32px melee weapon clipping rejected;48x32 rework reviewed.",
+    "Momo24px portrait reviewed.",
+    "Every generated run frame reviewed for arm/leg gait, costume/weapon continuity and fixed pivot. First Tori run rejected and replaced due to bow clipping.",
+    "Runtime projectiles removed from four ranged frames via guarded PixelLab edits."
+  ],
+  "frames": [
+    {
+      "file": "tori/frames/Idle/00.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        3,
+        4,
+        26,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#AB6C37",
+        "#D97935",
+        "#F3BD83"
+      ],
+      "colorCount": 6,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "5c2666f48bdadc65cb32b4484064ce0469f08ad4864c63ee8ac044872b14b717"
+    },
+    {
+      "file": "tori/frames/Idle/01.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        3,
+        3,
+        26,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#AB6C37",
+        "#D97935",
+        "#F3BD83"
+      ],
+      "colorCount": 6,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "01711652bc611998b41a47b8437fbf64c45e3fcd7fd78174bfb18f7d183694c2"
+    },
+    {
+      "file": "tori/frames/Idle/02.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        4,
+        3,
+        26,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#AB6C37",
+        "#D97935",
+        "#F3BD83"
+      ],
+      "colorCount": 6,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "2ff37f2bd3d312f8e608734ebdb2394f1dc8eaed89f7930a7e9193d1337386bf"
+    },
+    {
+      "file": "tori/frames/Idle/03.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        3,
+        4,
+        26,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#AB6C37",
+        "#D97935",
+        "#F3BD83"
+      ],
+      "colorCount": 6,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "7c157cbca5d56d5effcb58acb08e8fa2e7ce6b8b3d1473d46ec4e7be84a44764"
+    },
+    {
+      "file": "tori/frames/Attack/00.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        4,
+        4,
+        28,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#AB6C37",
+        "#D97935",
+        "#F3BD83"
+      ],
+      "colorCount": 6,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "d91fa73fd9fe80b2801d9f27dc29d373fdcb4675b0da4554c5f7ce35469ce0f4"
+    },
+    {
+      "file": "tori/frames/Attack/01.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        3,
+        4,
+        28,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#AB6C37",
+        "#D97935",
+        "#F3BD83"
+      ],
+      "colorCount": 6,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "6d6650e23679faa214acc6a2255509e619535cfc935bd8fc5a47a566502171b0"
+    },
+    {
+      "file": "tori/frames/Attack/02.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        3,
+        4,
+        25,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#AB6C37",
+        "#D97935",
+        "#F3BD83"
+      ],
+      "colorCount": 6,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "8adce76255c4d939bd4fb1528cfbff448b409dfbf9c231bdd9fcbaaef85de55e"
+    },
+    {
+      "file": "tori/frames/Attack/03.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        2,
+        4,
+        22,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#AB6C37",
+        "#D97935",
+        "#F3BD83"
+      ],
+      "colorCount": 6,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "ada5ced1d38fa9850758bb2ea60cdc0d3cffe830be7bae59936357cca838977c"
+    },
+    {
+      "file": "tori/frames/Attack/04.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        2,
+        4,
+        23,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#AB6C37",
+        "#D97935",
+        "#F3BD83"
+      ],
+      "colorCount": 6,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "9b6eeec7548ce1004495ee0bf2602162a4e17149d4c078f6ef0ed94ab31d0215"
+    },
+    {
+      "file": "tori/frames/Attack/05.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        2,
+        4,
+        24,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#AB6C37",
+        "#D97935",
+        "#F3BD83"
+      ],
+      "colorCount": 6,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "847e0b07be8c3003eed14e4ea1610feefa2f5eb7b084a72eb343695eb616fe17"
+    },
+    {
+      "file": "tori/frames/Attack/06.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        2,
+        4,
+        25,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#AB6C37",
+        "#D97935",
+        "#F3BD83"
+      ],
+      "colorCount": 6,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "619cae26ba682f8c2b28fbb65491fb8b4544ef6f12c49af94db53664c8578ae1"
+    },
+    {
+      "file": "tori/frames/Attack/07.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        3,
+        4,
+        26,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#AB6C37",
+        "#D97935",
+        "#F3BD83"
+      ],
+      "colorCount": 6,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "5c177d11f0c3a9586d056c11fb525c3ac44f47521e3dba455ead809cd2d6407a"
+    },
+    {
+      "file": "tori/frames/Run/00.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        3,
+        4,
+        26,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#AB6C37",
+        "#D97935",
+        "#F3BD83"
+      ],
+      "colorCount": 6,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "c84c2f64b5685b600bb2fd67ed6df2a42c74739a0221ee9252c97d820dbdb7de"
+    },
+    {
+      "file": "tori/frames/Run/01.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        2,
+        3,
+        27,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#AB6C37",
+        "#D97935",
+        "#F3BD83"
+      ],
+      "colorCount": 6,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "beaf4429c68a80582640e29a5db4e13ee0820019d6c8a1d74a21236074a13b9f"
+    },
+    {
+      "file": "tori/frames/Run/02.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        4,
+        3,
+        28,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#AB6C37",
+        "#D97935",
+        "#F3BD83"
+      ],
+      "colorCount": 6,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "af0ae1aaa81ca62b143f804edf96db5e86601b42a26847d506a5e7344a61c671"
+    },
+    {
+      "file": "tori/frames/Run/03.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        3,
+        4,
+        27,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#AB6C37",
+        "#D97935",
+        "#F3BD83"
+      ],
+      "colorCount": 6,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "da25deca1469a18560e46df85901d5814bcf819f50f8ecc5c2d9d4eb4eddacd2"
+    },
+    {
+      "file": "tori/frames/Run/04.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        4,
+        4,
+        27,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#AB6C37",
+        "#D97935",
+        "#F3BD83"
+      ],
+      "colorCount": 6,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "54d8981d6146318a3dde5424592f2c1423fc5a24573c02b2a75fd3532253d608"
+    },
+    {
+      "file": "tori/frames/Run/05.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        3,
+        4,
+        27,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#AB6C37",
+        "#D97935",
+        "#F3BD83"
+      ],
+      "colorCount": 6,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "2a5a37472a7943f6cd8a40da08c30c49eba4179438f1bc7a8a2f45857a866e51"
+    },
+    {
+      "file": "tori/frames/Run/06.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        2,
+        3,
+        26,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#AB6C37",
+        "#D97935",
+        "#F3BD83"
+      ],
+      "colorCount": 6,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "ba5b6576014d691c73df04667322a53a911ecc07ecb4bd71e5680a53bcc265c7"
+    },
+    {
+      "file": "tori/frames/Run/07.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        3,
+        4,
+        26,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#AB6C37",
+        "#D97935",
+        "#F3BD83"
+      ],
+      "colorCount": 6,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "b4ca73468691a32897e613005c313fcfcd389e0fd8d9a99425a20aa4c14a9c4c"
+    },
+    {
+      "file": "barun/frames/Idle/00.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        3,
+        4,
+        29,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#668185",
+        "#6B3F2A",
+        "#A23B2D",
+        "#AB6C37",
+        "#B7D3D0",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "2b4839fc9ec80120fdb8f43321a4de0546a37d6114feb3b8e4b57b1fb3f9936e"
+    },
+    {
+      "file": "barun/frames/Idle/01.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        3,
+        3,
+        29,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#668185",
+        "#6B3F2A",
+        "#A23B2D",
+        "#AB6C37",
+        "#B7D3D0",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "ef55dce35f420a3f7571fd6e78b7be85a22467429c0ec21a4ab5ab5e08d10e7a"
+    },
+    {
+      "file": "barun/frames/Idle/02.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        3,
+        4,
+        29,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#668185",
+        "#6B3F2A",
+        "#A23B2D",
+        "#AB6C37",
+        "#B7D3D0",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "60fe5983492b085fa99782c06b6c1a72d22ddacfbf93438e10a7c6b47a236d83"
+    },
+    {
+      "file": "barun/frames/Idle/03.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        3,
+        5,
+        29,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#668185",
+        "#6B3F2A",
+        "#A23B2D",
+        "#AB6C37",
+        "#B7D3D0",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "aa8f4834acdf1065cc2718bd02259dfda3f4a8dba810178140af0b16c830fcde"
+    },
+    {
+      "file": "barun/frames/AttackWide/00.png",
+      "size": [
+        48,
+        32
+      ],
+      "boundsTopLeft": [
+        11,
+        5,
+        29,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#668185",
+        "#6B3F2A",
+        "#A23B2D",
+        "#AB6C37",
+        "#B7D3D0",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "7fb721ed38038b3d63a618874e92b4d1ad4f05897bb5f14376ea9f3e5cab1d00"
+    },
+    {
+      "file": "barun/frames/AttackWide/01.png",
+      "size": [
+        48,
+        32
+      ],
+      "boundsTopLeft": [
+        9,
+        2,
+        26,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#668185",
+        "#6B3F2A",
+        "#A23B2D",
+        "#AB6C37",
+        "#B7D3D0",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "32c1c8445aad3efeeaab751e13f5743a06eb4013b0a5c8f70df0b84420df41d8"
+    },
+    {
+      "file": "barun/frames/AttackWide/02.png",
+      "size": [
+        48,
+        32
+      ],
+      "boundsTopLeft": [
+        5,
+        2,
+        26,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#668185",
+        "#6B3F2A",
+        "#A23B2D",
+        "#AB6C37",
+        "#B7D3D0",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "3740865bcaddd66cb1f7805719bc5dfd955274144feba0cbea1504712392e9c0"
+    },
+    {
+      "file": "barun/frames/AttackWide/03.png",
+      "size": [
+        48,
+        32
+      ],
+      "boundsTopLeft": [
+        5,
+        3,
+        26,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#668185",
+        "#6B3F2A",
+        "#A23B2D",
+        "#AB6C37",
+        "#B7D3D0",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "2d8a70abb0d6b739e00f047fd349fa748c9897c86018bdbaee0b231622fae140"
+    },
+    {
+      "file": "barun/frames/AttackWide/04.png",
+      "size": [
+        48,
+        32
+      ],
+      "boundsTopLeft": [
+        11,
+        7,
+        43,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#668185",
+        "#6B3F2A",
+        "#A23B2D",
+        "#AB6C37",
+        "#B7D3D0",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "0b8e51a4f768ba8cf06037dac634eafbf28be0fa9d5ad203357d75fe55b03152"
+    },
+    {
+      "file": "barun/frames/AttackWide/05.png",
+      "size": [
+        48,
+        32
+      ],
+      "boundsTopLeft": [
+        11,
+        6,
+        40,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#668185",
+        "#6B3F2A",
+        "#A23B2D",
+        "#AB6C37",
+        "#B7D3D0",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "e12a18549e1d38bdb0d658877f25e1b8ac6f050770f79932ce64b8e93c3f25d6"
+    },
+    {
+      "file": "barun/frames/AttackWide/06.png",
+      "size": [
+        48,
+        32
+      ],
+      "boundsTopLeft": [
+        11,
+        5,
+        38,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#668185",
+        "#6B3F2A",
+        "#A23B2D",
+        "#AB6C37",
+        "#B7D3D0",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "4430e088ab635f3afb5aa771dc7d4724eb36d586efa3db669d7daba14dd59930"
+    },
+    {
+      "file": "barun/frames/AttackWide/07.png",
+      "size": [
+        48,
+        32
+      ],
+      "boundsTopLeft": [
+        11,
+        5,
+        37,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#668185",
+        "#6B3F2A",
+        "#A23B2D",
+        "#AB6C37",
+        "#B7D3D0",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "e663c5c766a2d19fbe9c476f32f32ed2fadcdb47c1139aeb965c0d86aa8e8e53"
+    },
+    {
+      "file": "barun/frames/Run/00.png",
+      "size": [
+        48,
+        32
+      ],
+      "boundsTopLeft": [
+        9,
+        4,
+        37,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#668185",
+        "#6B3F2A",
+        "#A23B2D",
+        "#AB6C37",
+        "#B7D3D0",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "613dffebdc36cdac3c24d4c87390e4b9f3fa015db9536ea597d0912a699d412f"
+    },
+    {
+      "file": "barun/frames/Run/01.png",
+      "size": [
+        48,
+        32
+      ],
+      "boundsTopLeft": [
+        11,
+        3,
+        38,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#668185",
+        "#6B3F2A",
+        "#A23B2D",
+        "#AB6C37",
+        "#B7D3D0",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "2902fe66aa0316c6561f5bb9bb56aa6e0d8a6e02ac93dbb46a79de24f920d64e"
+    },
+    {
+      "file": "barun/frames/Run/02.png",
+      "size": [
+        48,
+        32
+      ],
+      "boundsTopLeft": [
+        10,
+        3,
+        39,
+        28
+      ],
+      "palette": [
+        "#202D38",
+        "#668185",
+        "#6B3F2A",
+        "#A23B2D",
+        "#AB6C37",
+        "#B7D3D0",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "57e6a43da7869e2296c3a4b9e82c1f4e8488bb53d0edfbf01a7c78e212934ddb"
+    },
+    {
+      "file": "barun/frames/Run/03.png",
+      "size": [
+        48,
+        32
+      ],
+      "boundsTopLeft": [
+        9,
+        4,
+        39,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#668185",
+        "#6B3F2A",
+        "#A23B2D",
+        "#AB6C37",
+        "#B7D3D0",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "1d771a542b50f2c93e7c15c56db657cfa9c68023ffc997f349da5f90c9dc598f"
+    },
+    {
+      "file": "barun/frames/Run/04.png",
+      "size": [
+        48,
+        32
+      ],
+      "boundsTopLeft": [
+        10,
+        4,
+        40,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#668185",
+        "#6B3F2A",
+        "#A23B2D",
+        "#AB6C37",
+        "#B7D3D0",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "0d3e7aaa4dc36c94010fb5cac568ffdf7e33057bbe66842ca805159710416bb5"
+    },
+    {
+      "file": "barun/frames/Run/05.png",
+      "size": [
+        48,
+        32
+      ],
+      "boundsTopLeft": [
+        12,
+        3,
+        39,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#668185",
+        "#6B3F2A",
+        "#A23B2D",
+        "#AB6C37",
+        "#B7D3D0",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "fbddcb2769dc1861a4a5c341f901e5362f3d42360e07af1928a36eab2c87bed1"
+    },
+    {
+      "file": "barun/frames/Run/06.png",
+      "size": [
+        48,
+        32
+      ],
+      "boundsTopLeft": [
+        9,
+        3,
+        39,
+        28
+      ],
+      "palette": [
+        "#202D38",
+        "#668185",
+        "#6B3F2A",
+        "#A23B2D",
+        "#AB6C37",
+        "#B7D3D0",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "dcbbf01b82e227b40efc506b576f8511a3dabc2a739a7cf83006165fa2cd572a"
+    },
+    {
+      "file": "barun/frames/Run/07.png",
+      "size": [
+        48,
+        32
+      ],
+      "boundsTopLeft": [
+        8,
+        4,
+        38,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#668185",
+        "#6B3F2A",
+        "#A23B2D",
+        "#AB6C37",
+        "#B7D3D0",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "deda3e239fe88d199edec26547feab418c1ab665abf6ae803c74d7a2564fc9f0"
+    },
+    {
+      "file": "doto/frames/Idle/00.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        6,
+        6,
+        24,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#355D82",
+        "#6B3F2A",
+        "#B7D3D0",
+        "#E4AA41",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "0f72a289a87b7f03df6800d793efb459f4d2b0fb52dd34c34ea0d724b2348f09"
+    },
+    {
+      "file": "doto/frames/Idle/01.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        6,
+        5,
+        24,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#355D82",
+        "#6B3F2A",
+        "#B7D3D0",
+        "#E4AA41",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "3aae001de5ed19ae5c3b72e0b28b419fd2b071886a6bce7a1ce04e5a1e74f46f"
+    },
+    {
+      "file": "doto/frames/Idle/02.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        6,
+        6,
+        24,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#355D82",
+        "#6B3F2A",
+        "#B7D3D0",
+        "#E4AA41",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "3a79de0de744a0199db4f285078e4c6d806530c8ba47ff6af61d71806399817e"
+    },
+    {
+      "file": "doto/frames/Idle/03.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        6,
+        7,
+        24,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#355D82",
+        "#6B3F2A",
+        "#B7D3D0",
+        "#E4AA41",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "bde59c75cd5849a0391a1e4bacd09c7ad2f1e31f7368fcd5e9b8ee0027e0fa81"
+    },
+    {
+      "file": "doto/frames/AttackWide/00.png",
+      "size": [
+        48,
+        32
+      ],
+      "boundsTopLeft": [
+        13,
+        4,
+        32,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#355D82",
+        "#6B3F2A",
+        "#B7D3D0",
+        "#E4AA41",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "d78cd7559cb4eb87cd15952c8351dc187a67ecd239c892ec578cd824448dc9ce"
+    },
+    {
+      "file": "doto/frames/AttackWide/01.png",
+      "size": [
+        48,
+        32
+      ],
+      "boundsTopLeft": [
+        17,
+        3,
+        42,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#355D82",
+        "#6B3F2A",
+        "#B7D3D0",
+        "#E4AA41",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "6a2dac8491659d4e1d212621566df59ab21b92dda31d713dfae1dd25f1853238"
+    },
+    {
+      "file": "doto/frames/AttackWide/02.png",
+      "size": [
+        48,
+        32
+      ],
+      "boundsTopLeft": [
+        17,
+        9,
+        41,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#355D82",
+        "#6B3F2A",
+        "#B7D3D0",
+        "#E4AA41",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "0801a28221beaef81fee9d42fc04fcf2a4e071b92a20a7a41697abf55ec7fc8b"
+    },
+    {
+      "file": "doto/frames/AttackWide/03.png",
+      "size": [
+        48,
+        32
+      ],
+      "boundsTopLeft": [
+        17,
+        8,
+        40,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#355D82",
+        "#6B3F2A",
+        "#B7D3D0",
+        "#E4AA41",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "1d6d6a5446e107c862b2db6a90f1beae1550e737b40900cdfc9511baf9dbb802"
+    },
+    {
+      "file": "doto/frames/AttackWide/04.png",
+      "size": [
+        48,
+        32
+      ],
+      "boundsTopLeft": [
+        17,
+        8,
+        34,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#355D82",
+        "#6B3F2A",
+        "#B7D3D0",
+        "#E4AA41",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "de813cc7d47bcd2b05d48f8ec29cb1abb9e5e883b88c87171733cdf5e6937825"
+    },
+    {
+      "file": "doto/frames/AttackWide/05.png",
+      "size": [
+        48,
+        32
+      ],
+      "boundsTopLeft": [
+        14,
+        7,
+        32,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#355D82",
+        "#6B3F2A",
+        "#B7D3D0",
+        "#E4AA41",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "a3163f5b0aaa3701b3db37e82ca6af44b8e2d5fb23690d5910345228cc3d051d"
+    },
+    {
+      "file": "doto/frames/Run/00.png",
+      "size": [
+        48,
+        32
+      ],
+      "boundsTopLeft": [
+        14,
+        6,
+        32,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#355D82",
+        "#6B3F2A",
+        "#B7D3D0",
+        "#E4AA41",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "d7ee60d763ddad9059b4ef69cfc50b7440d85d02a87b3a9dd56e858f1eb64f12"
+    },
+    {
+      "file": "doto/frames/Run/01.png",
+      "size": [
+        48,
+        32
+      ],
+      "boundsTopLeft": [
+        14,
+        4,
+        33,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#355D82",
+        "#6B3F2A",
+        "#B7D3D0",
+        "#E4AA41",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "f79c668d783cabc632f3d8955baee5cc6d261631eddfe1591192943183228d15"
+    },
+    {
+      "file": "doto/frames/Run/02.png",
+      "size": [
+        48,
+        32
+      ],
+      "boundsTopLeft": [
+        14,
+        3,
+        34,
+        28
+      ],
+      "palette": [
+        "#202D38",
+        "#355D82",
+        "#6B3F2A",
+        "#B7D3D0",
+        "#E4AA41",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "5b79fd42c1b70027dcd17ed0e2511eb8392f60a3feb7759968ee33cecce3ae81"
+    },
+    {
+      "file": "doto/frames/Run/03.png",
+      "size": [
+        48,
+        32
+      ],
+      "boundsTopLeft": [
+        14,
+        5,
+        34,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#355D82",
+        "#6B3F2A",
+        "#B7D3D0",
+        "#E4AA41",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "994cc5e26950b90d7c1bdfbd99be99bcc91f6017360a0c439b6fdfdda844c690"
+    },
+    {
+      "file": "doto/frames/Run/04.png",
+      "size": [
+        48,
+        32
+      ],
+      "boundsTopLeft": [
+        14,
+        6,
+        34,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#355D82",
+        "#6B3F2A",
+        "#B7D3D0",
+        "#E4AA41",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "92c806363a808323b1407522c5f550bd06ee27c32d1627e70474590cb1b79f3a"
+    },
+    {
+      "file": "doto/frames/Run/05.png",
+      "size": [
+        48,
+        32
+      ],
+      "boundsTopLeft": [
+        14,
+        5,
+        33,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#355D82",
+        "#6B3F2A",
+        "#B7D3D0",
+        "#E4AA41",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "57d1e323eed0665855f395a6b54ce92c9082f2893b89e111dacad1df49fffbb4"
+    },
+    {
+      "file": "doto/frames/Run/06.png",
+      "size": [
+        48,
+        32
+      ],
+      "boundsTopLeft": [
+        14,
+        4,
+        32,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#355D82",
+        "#6B3F2A",
+        "#B7D3D0",
+        "#E4AA41",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "fad07e08e74c5cf6c5b509c6b773533bbef49427d6362b4f8eaee235f07ac88c"
+    },
+    {
+      "file": "doto/frames/Run/07.png",
+      "size": [
+        48,
+        32
+      ],
+      "boundsTopLeft": [
+        14,
+        5,
+        33,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#355D82",
+        "#6B3F2A",
+        "#B7D3D0",
+        "#E4AA41",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "e662458b948d8711534302b5abc23cce59e831d1381c17368e95ca6fb26bd6d3"
+    },
+    {
+      "file": "rina/frames/Idle/00.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        6,
+        3,
+        25,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#6B3F2A",
+        "#745184",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "59831fa42a5479729d9159ecd7ed0b72e48d519dc24ff7200081c3dd110b6630"
+    },
+    {
+      "file": "rina/frames/Idle/01.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        6,
+        2,
+        25,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#6B3F2A",
+        "#745184",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "1171ba21394659eccd7b40cfb6b7bfbb8c00b69da936307aa4ba01d1db00a7dc"
+    },
+    {
+      "file": "rina/frames/Idle/02.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        6,
+        2,
+        25,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#6B3F2A",
+        "#745184",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "a30e852c235dc6d7f89b1e38dfe0a28376d177b884929eea233ba89382862fa4"
+    },
+    {
+      "file": "rina/frames/Idle/03.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        6,
+        3,
+        26,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#6B3F2A",
+        "#745184",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "c6cb2d07511e366918cc5301c9ae0476f1d04d12a9f0cd06b8f13e7d6d8cfc47"
+    },
+    {
+      "file": "rina/frames/Attack/00.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        5,
+        3,
+        23,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#6B3F2A",
+        "#745184",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "4d21d68a6904e0eb1ab3204c0eb4fbf846283925ce5d788ee8371eb6bfe8085b"
+    },
+    {
+      "file": "rina/frames/Attack/01.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        4,
+        3,
+        22,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#6B3F2A",
+        "#745184",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "878073e2e419ade035302e7d728d7f3be718fb73b33c9d1c832d5b84c216b1fb"
+    },
+    {
+      "file": "rina/frames/Attack/02.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        8,
+        3,
+        31,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#6B3F2A",
+        "#745184",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "e01e63401706f5fc5f75f36e357d73baa233e9a1c143c2110197e6611b2d3f38"
+    },
+    {
+      "file": "rina/frames/Attack/03.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        8,
+        3,
+        30,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#6B3F2A",
+        "#745184",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "04564185916ecb656b0b85eccec53e92276280cd61f32ccb9b7242b447244425"
+    },
+    {
+      "file": "rina/frames/Attack/04.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        8,
+        3,
+        30,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#6B3F2A",
+        "#745184",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "44976bb512b4afdb262f6393664ef2fadc4726a50e3ada0c763449a80d4418e1"
+    },
+    {
+      "file": "rina/frames/Attack/05.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        8,
+        3,
+        30,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#6B3F2A",
+        "#745184",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "766ac3e100bfcb4bb0fd63ac2d7f96d2515451a313a466706433f91bbe85fc9a"
+    },
+    {
+      "file": "rina/frames/Attack/06.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        8,
+        3,
+        30,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#6B3F2A",
+        "#745184",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "c75ca63e70520ac7e61c52dbbed895b504b60112e92a205d4a6726408ceb4a89"
+    },
+    {
+      "file": "rina/frames/Attack/07.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        6,
+        3,
+        26,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#6B3F2A",
+        "#745184",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "ab3f3bf2c998c6d5ca65a3a32af305cf734d80bd7e030368201ba03b680f69e9"
+    },
+    {
+      "file": "rina/frames/Run/00.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        6,
+        3,
+        25,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#6B3F2A",
+        "#745184",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "7d4d70270b8b490bf094a347de921a0ab6df6129b6873229a090247d47b828af"
+    },
+    {
+      "file": "rina/frames/Run/01.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        7,
+        2,
+        24,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#6B3F2A",
+        "#745184",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "7ec68c44f5e6ddd22ddefb2256a0021c3374ee5c699f21b9d0d2893490513d55"
+    },
+    {
+      "file": "rina/frames/Run/02.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        7,
+        2,
+        23,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#6B3F2A",
+        "#745184",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "ea792805048c7b9b59240a79ed5834cbcc4d8e29bf27d824e8381da430a328ba"
+    },
+    {
+      "file": "rina/frames/Run/03.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        8,
+        3,
+        24,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#6B3F2A",
+        "#745184",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "32a859a045d7b9757384c5c674531a9420b9e7637d05e845112cf7451067937c"
+    },
+    {
+      "file": "rina/frames/Run/04.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        7,
+        3,
+        24,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#6B3F2A",
+        "#745184",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "b2b89b4db794c38b86658f33043ea298c2a8d7f7ea36dcafbff71a4165234d28"
+    },
+    {
+      "file": "rina/frames/Run/05.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        7,
+        2,
+        25,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#6B3F2A",
+        "#745184",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "ad35bffbd8be4b9f1c14a2f0015f89f31b70575adbcb4ee6edcc8ae06916a2f7"
+    },
+    {
+      "file": "rina/frames/Run/06.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        6,
+        2,
+        26,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#6B3F2A",
+        "#745184",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "71f4e10ed9720d7549a6491ca53c5fe9b948dddd8f3db2703d0c0a7ee92de2e9"
+    },
+    {
+      "file": "rina/frames/Run/07.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        6,
+        3,
+        26,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#6B3F2A",
+        "#745184",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 7,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "f4b887a2f38f483084b401e2595e7e284dea2a0dc703bcccf99128a90d8a12bf"
+    },
+    {
+      "file": "momo/frames/Idle/00.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        6,
+        6,
+        24,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#75954A",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 8,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "fc02cf03f512bd28dc760ad9e408df57de27b3ba77640372f80f18144ee91b08"
+    },
+    {
+      "file": "momo/frames/Idle/01.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        6,
+        6,
+        24,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#75954A",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 8,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "d3c8305bcc65809678c7eac06999f0a1c502c35d212dae18b076a07afb8e893e"
+    },
+    {
+      "file": "momo/frames/Idle/02.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        6,
+        6,
+        24,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#75954A",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 8,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "1eaef0b2c6e22cb3d5c73f55837d947f5b63745a3eb9908d2d549e56088db3f0"
+    },
+    {
+      "file": "momo/frames/Idle/03.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        6,
+        7,
+        24,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#75954A",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 8,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "a6e66d164ce56899c9c8d11c078978358b8c16d5c7075e3a5eaf116600626850"
+    },
+    {
+      "file": "momo/frames/Attack/00.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        6,
+        7,
+        21,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#75954A",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 8,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "3fb1ce6506a84ff1b804662f95c2961d7bca8f737451533021f598fb27f6ed5c"
+    },
+    {
+      "file": "momo/frames/Attack/01.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        5,
+        7,
+        21,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#75954A",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 8,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "7f7b006a14ee4e80f8dd2ae5f6ca5cee86f29724b770ff4ea2ee0f71e9b95f0e"
+    },
+    {
+      "file": "momo/frames/Attack/02.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        5,
+        7,
+        21,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#75954A",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 8,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "0ecf097d03b622969c6388fc491473ebe4693d66773e9ca696de9798fcaffeea"
+    },
+    {
+      "file": "momo/frames/Attack/03.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        9,
+        7,
+        27,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#75954A",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 8,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "f7fb26e5746eb164da9e47288938bc47207384bc9a8d89c0b8ad52d49040ee4a"
+    },
+    {
+      "file": "momo/frames/Attack/04.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        9,
+        7,
+        26,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#75954A",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 8,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "81324d7efb9fea61554bb3a21230ffd9eef4c81cb01f509b6fb0c09657ec9fca"
+    },
+    {
+      "file": "momo/frames/Attack/05.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        8,
+        7,
+        24,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#75954A",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 8,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "877f9f71fda2055beef5e697495a7213456a1a04d39d2136e8fe6a5798eee484"
+    },
+    {
+      "file": "momo/frames/Attack/06.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        7,
+        7,
+        23,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#75954A",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 8,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "e70b0aad6e8c2cf48d5d27a717b9bf1a307b03b7ab6e7b5f5f8581a8006f512f"
+    },
+    {
+      "file": "momo/frames/Attack/07.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        6,
+        7,
+        24,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#75954A",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 8,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "a6e66d164ce56899c9c8d11c078978358b8c16d5c7075e3a5eaf116600626850"
+    },
+    {
+      "file": "momo/frames/Run/00.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        6,
+        6,
+        25,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#75954A",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 8,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "e00ab600e44b0119bf64ea3e8c77b5b345fb83c3e2dcc8715db5f6a645714731"
+    },
+    {
+      "file": "momo/frames/Run/01.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        7,
+        5,
+        25,
+        28
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#75954A",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 8,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "208cec55730f0d23dadbe836bc5caa16d04c410df3b43fe435b1fa18f484be60"
+    },
+    {
+      "file": "momo/frames/Run/02.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        7,
+        7,
+        25,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#75954A",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 8,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "d54e9cf339284c5cf776e0780f5a4cbecda36dd9091f1da00cf2fcef9594007b"
+    },
+    {
+      "file": "momo/frames/Run/03.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        7,
+        7,
+        24,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#75954A",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 8,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "5f0afd35acfdb796eaabd74b9ad598855404bbefda9d0bbede89c71101ca1436"
+    },
+    {
+      "file": "momo/frames/Run/04.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        7,
+        5,
+        24,
+        28
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#75954A",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 8,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "915708ba4e1aa113ed46461374d1044690316e4d73c55fa62dfd5edad0f3360d"
+    },
+    {
+      "file": "momo/frames/Run/05.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        8,
+        6,
+        24,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#75954A",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 8,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "1cd4ad9db80c008bbebda19e1b72e322fba78d05fc4e547c1573e74401c6f2cf"
+    },
+    {
+      "file": "momo/frames/Run/06.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        7,
+        7,
+        24,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#75954A",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 8,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "1ff2e9eb002c179b62eee5ef486a5952ded82e0e6c67473a67230ce9888469be"
+    },
+    {
+      "file": "momo/frames/Run/07.png",
+      "size": [
+        32,
+        32
+      ],
+      "boundsTopLeft": [
+        6,
+        5,
+        25,
+        29
+      ],
+      "palette": [
+        "#202D38",
+        "#287780",
+        "#6B3F2A",
+        "#75954A",
+        "#89C9AF",
+        "#AB6C37",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "colorCount": 8,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "c7bffda7ff315cef79b2889b801ea785a891952facaee04d72c57d46a5047c22"
+    }
+  ],
+  "portrait": {
+    "file": "portraits/momo.png",
+    "size": [
+      24,
+      24
+    ],
+    "boundsTopLeft": [
+      1,
+      1,
+      23,
+      24
+    ],
+    "palette": [
+      "#202D38",
+      "#6B3F2A",
+      "#75954A",
+      "#89C9AF",
+      "#AB6C37",
+      "#E8D9AD",
+      "#F3BD83"
+    ],
+    "colorCount": 7,
+    "alphaValues": [
+      0,
+      255
+    ],
+    "sha256": "a372ef9e8d457d4323142268bc20276d8f640330d16950bd545b07978b28323f"
+  }
+}

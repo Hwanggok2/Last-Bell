@@ -1,0 +1,42 @@
+<section id="game-identity" aria-labelledby="game-identity-title">
+  <style>
+    #game-identity .identity-flow{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:26px 0}
+    #game-identity .identity-step{background:var(--cream);border:3px solid var(--ink);padding:18px;box-shadow:4px 4px 0 var(--line)}
+    #game-identity .identity-step b{font:25px/1.4 Pixel;display:block;margin-bottom:10px}
+    #game-identity .identity-step p{font-size:14px;margin:0}
+    #game-identity .identity-step.new{border-color:var(--green)}
+    #game-identity .decision{border-left:6px solid var(--gold);padding-left:16px}
+    #game-identity .identity-time{font:25px Pixel;color:var(--green);white-space:nowrap}
+    @media(max-width:900px){#game-identity .identity-flow{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:520px){#game-identity .identity-flow{grid-template-columns:1fr}}
+  </style>
+  <p class="eyebrow">GAME FEEL · PLAYER CHOICE</p>
+  <h2 id="game-identity-title">잘 피한 뒤,<br>언제 반격할지는 내가 고른다.</h2>
+  <p class="lead">타이밍 성공이 끝이 아닙니다. 지금 크게 벨지, 한 번 더 버틸지, 기절을 먼저 열지. 같은 보스를 세 가지 판단으로 상대하는 모험을 만듭니다.</p>
+  <div class="identity-flow" role="list" aria-label="현재 전투와 새 스킬의 연결">
+    <div class="identity-step" role="listitem"><span class="pill">현재 구현</span><b>01 · 준비 자세 읽기</b><p>적의 방향 예고를 보고 위·뒤 회피 또는 아래 쳐내기를 고릅니다.</p></div>
+    <div class="identity-step new" role="listitem"><span class="pill">충전은 신규 기획</span><b>02 · 정확 대응 3회</b><p>적의 기절 누적과 함께 내 다음 공격의 전용 스킬을 준비합니다.</p></div>
+    <div class="identity-step new" role="listitem"><span class="pill">신규 기획</span><b>03 · 수동 스킬 공격</b><p>기존 공격 버튼으로 사용합니다. 준비됐다고 자동으로 때리지 않습니다.</p></div>
+    <div class="identity-step" role="listitem"><span class="pill">현재 구현과 연결</span><b>04 · 빈틈을 직접 열기</b><p>누적 100에서 적중하면 기절. 첫 타격 뒤의 후속 공격이 기세 보너스를 받습니다.</p></div>
+  </div>
+  <p class="note"><b>새 버튼·새 재화·자동 공격 없이.</b> 지금 구현된 대응과 수동 기절 전투에 캐릭터별 판단을 더하는 기획입니다. 전용 스킬은 미구현이며, 실제 플레이어는 현재 루카만 선택할 수 있습니다.</p>
+  <div class="grid3">
+    <article class="card"><h3>루카 · 지금 벨까?</h3><p class="decision">160% 피해를 바로 넣을까,<br>누적 100까지 더 피해서<br>기절까지 함께 열까?</p><p>공격력만 보지 않고 남은 패턴을 읽는 검사.</p></article>
+    <article class="card"><h3>다렌 · 여유를 만들까?</h3><p class="decision">지금 반격하고<br>다음 실수의 피해를<br>조금 덜 받을까?</p><p>실수 한 번을 완충하지만 계속 피해야 하는 기사.</p></article>
+    <article class="card"><h3>미엘 · 지금 끊을까?</h3><p class="decision">추가 누적 20이면<br>이 보스를 지금<br>기절시킬 수 있을까?</p><p>기절 직전과 면역 구간을 구분하는 마법사.</p></article>
+  </div>
+  <h3 style="margin-top:34px">보스와의 30초, 선택이 갈리는 순간</h3>
+  <p class="small">기획용 예시입니다. 실제 플레이 기록이나 현재 보스 패턴의 정확한 시간표가 아닙니다. 기절 누적 유물 없이 같은 상황을 비교합니다.</p>
+  <div class="scroll"><table><thead><tr><th>시간</th><th>읽고 행동하기</th><th>선택의 결과</th></tr></thead><tbody>
+    <tr><td><span class="identity-time">0–7초</span></td><td>방향을 보고 완벽 대응 3회</td><td>기존 보스 누적 <b>57.6</b>. 새 기획의 스킬은 3칸 준비. 자동 피해 없음.</td></tr>
+    <tr><td><span class="identity-time">7–11초</span></td><td>네 번째 완벽 대응</td><td>보스 누적 <b>83.2</b>. 다음 예고까지 틈을 보고 공격 여부를 결정.</td></tr>
+    <tr><td><span class="identity-time">11–15초</span></td><td><b>루카</b>는 160% 즉시 공격 또는 다음 대응까지 대기.<br><b>다렌</b>은 115% 공격과 다음 피해 1회 완충.<br><b>미엘</b>은 125% 공격과 추가 누적 20.</td><td>미엘은 <b>83.2 + 20 → 100</b>으로 기절을 한 번 먼저 열 수 있습니다. 기절을 여는 그 타격에 피해 보너스를 소급하지 않습니다.</td></tr>
+    <tr><td><span class="identity-time">15–22초</span></td><td>열린 기절 틈에는 직접 후속 공격</td><td>짧은 기절 안에 공격을 넣고, 회복하면 다시 방어. 자동 연타 없음.</td></tr>
+    <tr><td><span class="identity-time">22–30초</span></td><td>다시 대응하고, 처치하면 다음 적으로 달리기</td><td>쓴 충전은 0부터. 남은 충전만 같은 도전에서 이월. 면역 중 추가 기절 누적은 0.</td></tr>
+  </tbody></table></div>
+  <div class="grid2" style="margin-top:26px">
+    <article class="card"><h3>땅과 모션도 전투 정보</h3><p>발이 정확히 지면을 딛고, 회피는 위험한 공간을 비우며, 무기가 실제 접촉하는 순간이 보여야 타이밍을 믿을 수 있습니다. 지역의 바닥 재질이 달라져도 이 기준은 같습니다.</p><p>달리기에서는 몸과 장비를 유지하고, 플레이어 화면 x는 고정한 채 지면·배경이 움직입니다. 스킬 효과가 적의 다음 예고를 가리지 않게 합니다.</p></article>
+    <article class="card"><h3>기다리는 작업으로 만들지 않기</h3><p>다음 적에게 충전을 가져가는 판단은 허용하지만, 적을 오래 살려 충전하는 쪽이 가장 빠른 공략이 되면 조정합니다.</p><p>구현 후 같은 성장·같은 입력 기록으로 비교하고, 한 작업 묶음이 끝날 때 집중 QA를 합니다. 지금의 수치·30초 예시는 실측 결과가 아닙니다.</p></article>
+  </div>
+  <div class="files" style="margin-top:24px"><a href="dragon-identity-v1.md">차별성·30초 전투·완료 기준 상세</a><a href="#character-skills">캐릭터별 스킬 수치</a></div>
+</section>

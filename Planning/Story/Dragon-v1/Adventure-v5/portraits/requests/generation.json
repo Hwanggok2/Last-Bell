@@ -1,0 +1,334 @@
+[
+  {
+    "id": "tori",
+    "prompt": "DRAW the original game character described here from scratch as a genuinely primitive native24x24 GAME sprite bust, not a shrunken detailed portrait. Same character TORI: cheerful ORANGE FOX PERSON, two huge pointed orange ears with cream inner blocks, cream angular muzzle, single dark dot eyes, small dark nose, BLUE-TEAL SCARF on shoulders. Head and two shoulder blocks only. Front-threequarter face looking slightly left toward dialogue text. Extreme coarse8bit simplicity: eyes exactly1pixel each, mouth one2pixel dash, muzzle one cream block; fur silhouette as big stepped square clusters. Remove ALL hair/fur strokes, eyebrows, eye highlights, facial shading, neck folds, stitching. Only6FLAT colors total: navy outline #202D38, orange #D97935, cream #E8D9AD, blue-teal #287780, blue #355D82, brown #6B3F2A. At most1tone per material. Large clear ears and fox muzzle must survive. Native square pixel edges, NO antialiasing or gradient/dither. Transparent outside character cutout, NO backdrop/frame/border/card/circle/shadow/UI/text. Canvas24x24 with1transparentpixel margin left/right and top, shoulders end atbottom23. Must look MUCH ROUGHER and SIMPLER than a typical detailed RPG portrait. No new clothing or accessories.",
+    "palette": [
+      "#202D38",
+      "#D97935",
+      "#E8D9AD",
+      "#287780",
+      "#355D82",
+      "#6B3F2A"
+    ],
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"background_job_id\": \"a953b25d-cc86-43e2-9270-b654c90b9969\",\n  \"image_id\": \"7c561aaf-b2cc-5565-b2a3-022a1aa409f9\",\n  \"status\": \"processing\",\n  \"source_image_id\": \"7c561aaf-b2cc-5565-b2a3-022a1aa409f9\",\n  \"job_id\": \"a953b25d-cc86-43e2-9270-b654c90b9969\",\n  \"description\": \"DRAW the original game character described here from scratch as a genuinely primitive native24x24 GAME sprite bust, not a shrunken detailed portrait. Same character TORI: cheerful ORANGE FOX PERSON, two huge pointed orange ears with cream inner blocks, cream angular muzzle, single dark dot eyes, small dark nose, BLUE-TEAL SCARF on shoulders. Head and two shoulder blocks only. Front-threequarter face looking slightly left toward dialogue text. Extreme coarse8bit simplicity: eyes exactly1pixel each, mouth one2pixel dash, muzzle one cream block; fur silhouette as big stepped square clusters. Remove ALL hair/fur strokes, eyebrows, eye highlights, facial shading, neck folds, stitching. Only6FLAT colors total: navy outline #202D38, orange #D97935, cream #E8D9AD, blue-teal #287780, blue #355D82, brown #6B3F2A. At most1tone per material. Large clear ears and fox muzzle must survive. Native square pixel edges, NO antialiasing or gradient/dither. Transparent outside character cutout, NO backdrop/frame/border/card/circle/shadow/UI/text. Canvas24x24 with1transparentpixel margin left/right and top, shoulders end atbottom23. Must look MUCH ROUGHER and SIMPLER than a typical detailed RPG portrait. No new clothing or accessories.\",\n  \"seed\": 243501,\n  \"image_size\": {\n    \"width\": 24,\n    \"height\": 24\n  },\n  \"output_count\": 1,\n  \"estimated_generations\": 5,\n  \"pricing_provisional\": true,\n  \"poll_tool\": \"get_image\",\n  \"download_path\": \"/mcp/images/a953b25d-cc86-43e2-9270-b654c90b9969/download\"\n}\nPoll get_image(job_id=\"a953b25d-cc86-43e2-9270-b654c90b9969\"). The source_image_id is usable after completion; it is an image ID, not a character/object ID. Actual usage is reported on completion. cancel_job(job_id=...) cancels unfinished work."
+        }
+      ],
+      "structuredContent": {
+        "background_job_id": "a953b25d-cc86-43e2-9270-b654c90b9969",
+        "image_id": "7c561aaf-b2cc-5565-b2a3-022a1aa409f9",
+        "status": "processing",
+        "source_image_id": "7c561aaf-b2cc-5565-b2a3-022a1aa409f9",
+        "job_id": "a953b25d-cc86-43e2-9270-b654c90b9969",
+        "description": "DRAW the original game character described here from scratch as a genuinely primitive native24x24 GAME sprite bust, not a shrunken detailed portrait. Same character TORI: cheerful ORANGE FOX PERSON, two huge pointed orange ears with cream inner blocks, cream angular muzzle, single dark dot eyes, small dark nose, BLUE-TEAL SCARF on shoulders. Head and two shoulder blocks only. Front-threequarter face looking slightly left toward dialogue text. Extreme coarse8bit simplicity: eyes exactly1pixel each, mouth one2pixel dash, muzzle one cream block; fur silhouette as big stepped square clusters. Remove ALL hair/fur strokes, eyebrows, eye highlights, facial shading, neck folds, stitching. Only6FLAT colors total: navy outline #202D38, orange #D97935, cream #E8D9AD, blue-teal #287780, blue #355D82, brown #6B3F2A. At most1tone per material. Large clear ears and fox muzzle must survive. Native square pixel edges, NO antialiasing or gradient/dither. Transparent outside character cutout, NO backdrop/frame/border/card/circle/shadow/UI/text. Canvas24x24 with1transparentpixel margin left/right and top, shoulders end atbottom23. Must look MUCH ROUGHER and SIMPLER than a typical detailed RPG portrait. No new clothing or accessories.",
+        "seed": 243501,
+        "image_size": {
+          "width": 24,
+          "height": 24
+        },
+        "output_count": 1,
+        "estimated_generations": 5,
+        "pricing_provisional": true,
+        "poll_tool": "get_image",
+        "download_path": "/mcp/images/a953b25d-cc86-43e2-9270-b654c90b9969/download"
+      },
+      "isError": false
+    }
+  },
+  {
+    "id": "on",
+    "name": "루카",
+    "look": "LUKA: young friendly adventurer with BROWN short chunky hair, RED scarf and TEAL tunic shoulders. No hood, no headband or armor. Face peach skin, one dark dot per eye, small confident smile.",
+    "palette": [
+      "#202D38",
+      "#6B3F2A",
+      "#AB6C37",
+      "#F3BD83",
+      "#A23B2D",
+      "#287780",
+      "#E8D9AD"
+    ],
+    "prompt": "Native24x24 VERY COARSE early8bit RPG dialogue portrait cutout. ORIGINAL CHARACTER: LUKA: young friendly adventurer with BROWN short chunky hair, RED scarf and TEAL tunic shoulders. No hood, no headband or armor. Face peach skin, one dark dot per eye, small confident smile. HEAD and TWO shoulder blocks only, slightly looking left toward dialogue, whole silhouette fits24x24 with1transparentpixel margin top and sides, shoulders end atbottom23. Flat7colors maximum. One solid color per material; no shading, no gradients, no dithering. Eyes eachONEpixel, mouthONE orTWO pixels. Face onlyabout8pixels across. Use large blunt stepped square color clusters, almostlike an old8bitgame sprite; no hair strands, no facial shading, no eye whites/highlights, no clothing folds, no texture, no subtle details. Transparent outside cutout, absolutely NO BACKGROUND, no frame, no card, no square panel, no text, no outline border surrounding image, no glow/shadow. Draw it new at native24pixels, not a high-res anime portrait. Charming simple fantasy sprite.",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"background_job_id\": \"ea72cfd2-7c48-4bc4-87af-333145438726\",\n  \"image_id\": \"a9402bf7-1e29-5e28-869a-c60f5f0a254b\",\n  \"status\": \"processing\",\n  \"source_image_id\": \"a9402bf7-1e29-5e28-869a-c60f5f0a254b\",\n  \"job_id\": \"ea72cfd2-7c48-4bc4-87af-333145438726\",\n  \"description\": \"Native24x24 VERY COARSE early8bit RPG dialogue portrait cutout. ORIGINAL CHARACTER: LUKA: young friendly adventurer with BROWN short chunky hair, RED scarf and TEAL tunic shoulders. No hood, no headband or armor. Face peach skin, one dark dot per eye, small confident smile. HEAD and TWO shoulder blocks only, slightly looking left toward dialogue, whole silhouette fits24x24 with1transparentpixel margin top and sides, shoulders end atbottom23. Flat7colors maximum. One solid color per material; no shading, no gradients, no dithering. Eyes eachONEpixel, mouthONE orTWO pixels. Face onlyabout8pixels across. Use large blunt stepped square color clusters, almostlike an old8bitgame sprite; no hair strands, no facial shading, no eye whites/highlights, no clothing folds, no texture, no subtle details. Transparent outside cutout, absolutely NO BACKGROUND, no frame, no card, no square panel, no text, no outline border surrounding image, no glow/shadow. Draw it new at native24pixels, not a high-res anime portrait. Charming simple fantasy sprite.\",\n  \"seed\": 243501,\n  \"image_size\": {\n    \"width\": 24,\n    \"height\": 24\n  },\n  \"output_count\": 1,\n  \"estimated_generations\": 5,\n  \"pricing_provisional\": true,\n  \"poll_tool\": \"get_image\",\n  \"download_path\": \"/mcp/images/ea72cfd2-7c48-4bc4-87af-333145438726/download\"\n}\nPoll get_image(job_id=\"ea72cfd2-7c48-4bc4-87af-333145438726\"). The source_image_id is usable after completion; it is an image ID, not a character/object ID. Actual usage is reported on completion. cancel_job(job_id=...) cancels unfinished work."
+        }
+      ],
+      "structuredContent": {
+        "background_job_id": "ea72cfd2-7c48-4bc4-87af-333145438726",
+        "image_id": "a9402bf7-1e29-5e28-869a-c60f5f0a254b",
+        "status": "processing",
+        "source_image_id": "a9402bf7-1e29-5e28-869a-c60f5f0a254b",
+        "job_id": "ea72cfd2-7c48-4bc4-87af-333145438726",
+        "description": "Native24x24 VERY COARSE early8bit RPG dialogue portrait cutout. ORIGINAL CHARACTER: LUKA: young friendly adventurer with BROWN short chunky hair, RED scarf and TEAL tunic shoulders. No hood, no headband or armor. Face peach skin, one dark dot per eye, small confident smile. HEAD and TWO shoulder blocks only, slightly looking left toward dialogue, whole silhouette fits24x24 with1transparentpixel margin top and sides, shoulders end atbottom23. Flat7colors maximum. One solid color per material; no shading, no gradients, no dithering. Eyes eachONEpixel, mouthONE orTWO pixels. Face onlyabout8pixels across. Use large blunt stepped square color clusters, almostlike an old8bitgame sprite; no hair strands, no facial shading, no eye whites/highlights, no clothing folds, no texture, no subtle details. Transparent outside cutout, absolutely NO BACKGROUND, no frame, no card, no square panel, no text, no outline border surrounding image, no glow/shadow. Draw it new at native24pixels, not a high-res anime portrait. Charming simple fantasy sprite.",
+        "seed": 243501,
+        "image_size": {
+          "width": 24,
+          "height": 24
+        },
+        "output_count": 1,
+        "estimated_generations": 5,
+        "pricing_provisional": true,
+        "poll_tool": "get_image",
+        "download_path": "/mcp/images/ea72cfd2-7c48-4bc4-87af-333145438726/download"
+      },
+      "isError": false
+    }
+  },
+  {
+    "id": "dam",
+    "name": "다렌",
+    "look": "DAREN: compact guardian knight with BROWN short hair, STEEL OPEN HEADBAND across forehead, two STEEL shoulder plates, CREAM tabard with BLUE stripe at chest. Face peach skin, one dark dot per eye, firm kind expression. No helmet visor, no red scarf.",
+    "palette": [
+      "#202D38",
+      "#6B3F2A",
+      "#F3BD83",
+      "#B7D3D0",
+      "#E8D9AD",
+      "#355D82",
+      "#668185"
+    ],
+    "prompt": "Native24x24 VERY COARSE early8bit RPG dialogue portrait cutout. ORIGINAL CHARACTER: DAREN: compact guardian knight with BROWN short hair, STEEL OPEN HEADBAND across forehead, two STEEL shoulder plates, CREAM tabard with BLUE stripe at chest. Face peach skin, one dark dot per eye, firm kind expression. No helmet visor, no red scarf. HEAD and TWO shoulder blocks only, slightly looking left toward dialogue, whole silhouette fits24x24 with1transparentpixel margin top and sides, shoulders end atbottom23. Flat7colors maximum. One solid color per material; no shading, no gradients, no dithering. Eyes eachONEpixel, mouthONE orTWO pixels. Face onlyabout8pixels across. Use large blunt stepped square color clusters, almostlike an old8bitgame sprite; no hair strands, no facial shading, no eye whites/highlights, no clothing folds, no texture, no subtle details. Transparent outside cutout, absolutely NO BACKGROUND, no frame, no card, no square panel, no text, no outline border surrounding image, no glow/shadow. Draw it new at native24pixels, not a high-res anime portrait. Charming simple fantasy sprite.",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"background_job_id\": \"ccadae7f-4490-43b8-96c4-ac1048227be6\",\n  \"image_id\": \"bb133d63-d5fe-5510-8be8-54be7d0d29cd\",\n  \"status\": \"processing\",\n  \"source_image_id\": \"bb133d63-d5fe-5510-8be8-54be7d0d29cd\",\n  \"job_id\": \"ccadae7f-4490-43b8-96c4-ac1048227be6\",\n  \"description\": \"Native24x24 VERY COARSE early8bit RPG dialogue portrait cutout. ORIGINAL CHARACTER: DAREN: compact guardian knight with BROWN short hair, STEEL OPEN HEADBAND across forehead, two STEEL shoulder plates, CREAM tabard with BLUE stripe at chest. Face peach skin, one dark dot per eye, firm kind expression. No helmet visor, no red scarf. HEAD and TWO shoulder blocks only, slightly looking left toward dialogue, whole silhouette fits24x24 with1transparentpixel margin top and sides, shoulders end atbottom23. Flat7colors maximum. One solid color per material; no shading, no gradients, no dithering. Eyes eachONEpixel, mouthONE orTWO pixels. Face onlyabout8pixels across. Use large blunt stepped square color clusters, almostlike an old8bitgame sprite; no hair strands, no facial shading, no eye whites/highlights, no clothing folds, no texture, no subtle details. Transparent outside cutout, absolutely NO BACKGROUND, no frame, no card, no square panel, no text, no outline border surrounding image, no glow/shadow. Draw it new at native24pixels, not a high-res anime portrait. Charming simple fantasy sprite.\",\n  \"seed\": 243501,\n  \"image_size\": {\n    \"width\": 24,\n    \"height\": 24\n  },\n  \"output_count\": 1,\n  \"estimated_generations\": 5,\n  \"pricing_provisional\": true,\n  \"poll_tool\": \"get_image\",\n  \"download_path\": \"/mcp/images/ccadae7f-4490-43b8-96c4-ac1048227be6/download\"\n}\nPoll get_image(job_id=\"ccadae7f-4490-43b8-96c4-ac1048227be6\"). The source_image_id is usable after completion; it is an image ID, not a character/object ID. Actual usage is reported on completion. cancel_job(job_id=...) cancels unfinished work."
+        }
+      ],
+      "structuredContent": {
+        "background_job_id": "ccadae7f-4490-43b8-96c4-ac1048227be6",
+        "image_id": "bb133d63-d5fe-5510-8be8-54be7d0d29cd",
+        "status": "processing",
+        "source_image_id": "bb133d63-d5fe-5510-8be8-54be7d0d29cd",
+        "job_id": "ccadae7f-4490-43b8-96c4-ac1048227be6",
+        "description": "Native24x24 VERY COARSE early8bit RPG dialogue portrait cutout. ORIGINAL CHARACTER: DAREN: compact guardian knight with BROWN short hair, STEEL OPEN HEADBAND across forehead, two STEEL shoulder plates, CREAM tabard with BLUE stripe at chest. Face peach skin, one dark dot per eye, firm kind expression. No helmet visor, no red scarf. HEAD and TWO shoulder blocks only, slightly looking left toward dialogue, whole silhouette fits24x24 with1transparentpixel margin top and sides, shoulders end atbottom23. Flat7colors maximum. One solid color per material; no shading, no gradients, no dithering. Eyes eachONEpixel, mouthONE orTWO pixels. Face onlyabout8pixels across. Use large blunt stepped square color clusters, almostlike an old8bitgame sprite; no hair strands, no facial shading, no eye whites/highlights, no clothing folds, no texture, no subtle details. Transparent outside cutout, absolutely NO BACKGROUND, no frame, no card, no square panel, no text, no outline border surrounding image, no glow/shadow. Draw it new at native24pixels, not a high-res anime portrait. Charming simple fantasy sprite.",
+        "seed": 243501,
+        "image_size": {
+          "width": 24,
+          "height": 24
+        },
+        "output_count": 1,
+        "estimated_generations": 5,
+        "pricing_provisional": true,
+        "poll_tool": "get_image",
+        "download_path": "/mcp/images/ccadae7f-4490-43b8-96c4-ac1048227be6/download"
+      },
+      "isError": false
+    }
+  },
+  {
+    "id": "rin",
+    "name": "미엘",
+    "look": "MIEL: youthful mage, short GOLDEN BLONDE hair and a SMALL TEAL pointed cap, TEAL coat shoulders and CREAM little collar. Face peach skin, single dark dot eyes, curious small smile. Cap folds toward left and has no decoration. No purple hat, no beard.",
+    "palette": [
+      "#202D38",
+      "#E4AA41",
+      "#F3BD83",
+      "#287780",
+      "#E8D9AD",
+      "#6B3F2A",
+      "#745184"
+    ],
+    "prompt": "Native24x24 VERY COARSE early8bit RPG dialogue portrait cutout. ORIGINAL CHARACTER: MIEL: youthful mage, short GOLDEN BLONDE hair and a SMALL TEAL pointed cap, TEAL coat shoulders and CREAM little collar. Face peach skin, single dark dot eyes, curious small smile. Cap folds toward left and has no decoration. No purple hat, no beard. HEAD and TWO shoulder blocks only, slightly looking left toward dialogue, whole silhouette fits24x24 with1transparentpixel margin top and sides, shoulders end atbottom23. Flat7colors maximum. One solid color per material; no shading, no gradients, no dithering. Eyes eachONEpixel, mouthONE orTWO pixels. Face onlyabout8pixels across. Use large blunt stepped square color clusters, almostlike an old8bitgame sprite; no hair strands, no facial shading, no eye whites/highlights, no clothing folds, no texture, no subtle details. Transparent outside cutout, absolutely NO BACKGROUND, no frame, no card, no square panel, no text, no outline border surrounding image, no glow/shadow. Draw it new at native24pixels, not a high-res anime portrait. Charming simple fantasy sprite.",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"background_job_id\": \"6358b50f-93ae-4842-acbd-f3be8b310aea\",\n  \"image_id\": \"718eb848-2257-58f9-a130-26557cb1fa20\",\n  \"status\": \"processing\",\n  \"source_image_id\": \"718eb848-2257-58f9-a130-26557cb1fa20\",\n  \"job_id\": \"6358b50f-93ae-4842-acbd-f3be8b310aea\",\n  \"description\": \"Native24x24 VERY COARSE early8bit RPG dialogue portrait cutout. ORIGINAL CHARACTER: MIEL: youthful mage, short GOLDEN BLONDE hair and a SMALL TEAL pointed cap, TEAL coat shoulders and CREAM little collar. Face peach skin, single dark dot eyes, curious small smile. Cap folds toward left and has no decoration. No purple hat, no beard. HEAD and TWO shoulder blocks only, slightly looking left toward dialogue, whole silhouette fits24x24 with1transparentpixel margin top and sides, shoulders end atbottom23. Flat7colors maximum. One solid color per material; no shading, no gradients, no dithering. Eyes eachONEpixel, mouthONE orTWO pixels. Face onlyabout8pixels across. Use large blunt stepped square color clusters, almostlike an old8bitgame sprite; no hair strands, no facial shading, no eye whites/highlights, no clothing folds, no texture, no subtle details. Transparent outside cutout, absolutely NO BACKGROUND, no frame, no card, no square panel, no text, no outline border surrounding image, no glow/shadow. Draw it new at native24pixels, not a high-res anime portrait. Charming simple fantasy sprite.\",\n  \"seed\": 243501,\n  \"image_size\": {\n    \"width\": 24,\n    \"height\": 24\n  },\n  \"output_count\": 1,\n  \"estimated_generations\": 5,\n  \"pricing_provisional\": true,\n  \"poll_tool\": \"get_image\",\n  \"download_path\": \"/mcp/images/6358b50f-93ae-4842-acbd-f3be8b310aea/download\"\n}\nPoll get_image(job_id=\"6358b50f-93ae-4842-acbd-f3be8b310aea\"). The source_image_id is usable after completion; it is an image ID, not a character/object ID. Actual usage is reported on completion. cancel_job(job_id=...) cancels unfinished work."
+        }
+      ],
+      "structuredContent": {
+        "background_job_id": "6358b50f-93ae-4842-acbd-f3be8b310aea",
+        "image_id": "718eb848-2257-58f9-a130-26557cb1fa20",
+        "status": "processing",
+        "source_image_id": "718eb848-2257-58f9-a130-26557cb1fa20",
+        "job_id": "6358b50f-93ae-4842-acbd-f3be8b310aea",
+        "description": "Native24x24 VERY COARSE early8bit RPG dialogue portrait cutout. ORIGINAL CHARACTER: MIEL: youthful mage, short GOLDEN BLONDE hair and a SMALL TEAL pointed cap, TEAL coat shoulders and CREAM little collar. Face peach skin, single dark dot eyes, curious small smile. Cap folds toward left and has no decoration. No purple hat, no beard. HEAD and TWO shoulder blocks only, slightly looking left toward dialogue, whole silhouette fits24x24 with1transparentpixel margin top and sides, shoulders end atbottom23. Flat7colors maximum. One solid color per material; no shading, no gradients, no dithering. Eyes eachONEpixel, mouthONE orTWO pixels. Face onlyabout8pixels across. Use large blunt stepped square color clusters, almostlike an old8bitgame sprite; no hair strands, no facial shading, no eye whites/highlights, no clothing folds, no texture, no subtle details. Transparent outside cutout, absolutely NO BACKGROUND, no frame, no card, no square panel, no text, no outline border surrounding image, no glow/shadow. Draw it new at native24pixels, not a high-res anime portrait. Charming simple fantasy sprite.",
+        "seed": 243501,
+        "image_size": {
+          "width": 24,
+          "height": 24
+        },
+        "output_count": 1,
+        "estimated_generations": 5,
+        "pricing_provisional": true,
+        "poll_tool": "get_image",
+        "download_path": "/mcp/images/6358b50f-93ae-4842-acbd-f3be8b310aea/download"
+      },
+      "isError": false
+    }
+  },
+  {
+    "id": "rina",
+    "name": "리나",
+    "look": "RINA: friendly young woman mage with a BIG plain PURPLE pointed witch hat with broad brim, BROWN long hair as TWO solid side locks, CREAM robe shoulders and purple collar. Face peach skin, one dark dot per eye, small calm smile. Hat fully visible, no stars, no badge, no ribbons.",
+    "palette": [
+      "#202D38",
+      "#745184",
+      "#6B3F2A",
+      "#F3BD83",
+      "#E8D9AD",
+      "#AB6C37"
+    ],
+    "prompt": "Native24x24 VERY COARSE early8bit RPG dialogue portrait cutout. ORIGINAL CHARACTER: RINA: friendly young woman mage with a BIG plain PURPLE pointed witch hat with broad brim, BROWN long hair as TWO solid side locks, CREAM robe shoulders and purple collar. Face peach skin, one dark dot per eye, small calm smile. Hat fully visible, no stars, no badge, no ribbons. HEAD and TWO shoulder blocks only, slightly looking left toward dialogue, whole silhouette fits24x24 with1transparentpixel margin top and sides, shoulders end atbottom23. Flat6colors maximum. One solid color per material; no shading, no gradients, no dithering. Eyes eachONEpixel, mouthONE orTWO pixels. Face onlyabout8pixels across. Use large blunt stepped square color clusters, almostlike an old8bitgame sprite; no hair strands, no facial shading, no eye whites/highlights, no clothing folds, no texture, no subtle details. Transparent outside cutout, absolutely NO BACKGROUND, no frame, no card, no square panel, no text, no outline border surrounding image, no glow/shadow. Draw it new at native24pixels, not a high-res anime portrait. Charming simple fantasy sprite.",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"background_job_id\": \"24d419ee-56f7-4ac3-a972-a57094c02497\",\n  \"image_id\": \"e31b7f6e-1478-5e77-9e8a-05284ddab5d6\",\n  \"status\": \"processing\",\n  \"source_image_id\": \"e31b7f6e-1478-5e77-9e8a-05284ddab5d6\",\n  \"job_id\": \"24d419ee-56f7-4ac3-a972-a57094c02497\",\n  \"description\": \"Native24x24 VERY COARSE early8bit RPG dialogue portrait cutout. ORIGINAL CHARACTER: RINA: friendly young woman mage with a BIG plain PURPLE pointed witch hat with broad brim, BROWN long hair as TWO solid side locks, CREAM robe shoulders and purple collar. Face peach skin, one dark dot per eye, small calm smile. Hat fully visible, no stars, no badge, no ribbons. HEAD and TWO shoulder blocks only, slightly looking left toward dialogue, whole silhouette fits24x24 with1transparentpixel margin top and sides, shoulders end atbottom23. Flat6colors maximum. One solid color per material; no shading, no gradients, no dithering. Eyes eachONEpixel, mouthONE orTWO pixels. Face onlyabout8pixels across. Use large blunt stepped square color clusters, almostlike an old8bitgame sprite; no hair strands, no facial shading, no eye whites/highlights, no clothing folds, no texture, no subtle details. Transparent outside cutout, absolutely NO BACKGROUND, no frame, no card, no square panel, no text, no outline border surrounding image, no glow/shadow. Draw it new at native24pixels, not a high-res anime portrait. Charming simple fantasy sprite.\",\n  \"seed\": 243501,\n  \"image_size\": {\n    \"width\": 24,\n    \"height\": 24\n  },\n  \"output_count\": 1,\n  \"estimated_generations\": 5,\n  \"pricing_provisional\": true,\n  \"poll_tool\": \"get_image\",\n  \"download_path\": \"/mcp/images/24d419ee-56f7-4ac3-a972-a57094c02497/download\"\n}\nPoll get_image(job_id=\"24d419ee-56f7-4ac3-a972-a57094c02497\"). The source_image_id is usable after completion; it is an image ID, not a character/object ID. Actual usage is reported on completion. cancel_job(job_id=...) cancels unfinished work."
+        }
+      ],
+      "structuredContent": {
+        "background_job_id": "24d419ee-56f7-4ac3-a972-a57094c02497",
+        "image_id": "e31b7f6e-1478-5e77-9e8a-05284ddab5d6",
+        "status": "processing",
+        "source_image_id": "e31b7f6e-1478-5e77-9e8a-05284ddab5d6",
+        "job_id": "24d419ee-56f7-4ac3-a972-a57094c02497",
+        "description": "Native24x24 VERY COARSE early8bit RPG dialogue portrait cutout. ORIGINAL CHARACTER: RINA: friendly young woman mage with a BIG plain PURPLE pointed witch hat with broad brim, BROWN long hair as TWO solid side locks, CREAM robe shoulders and purple collar. Face peach skin, one dark dot per eye, small calm smile. Hat fully visible, no stars, no badge, no ribbons. HEAD and TWO shoulder blocks only, slightly looking left toward dialogue, whole silhouette fits24x24 with1transparentpixel margin top and sides, shoulders end atbottom23. Flat6colors maximum. One solid color per material; no shading, no gradients, no dithering. Eyes eachONEpixel, mouthONE orTWO pixels. Face onlyabout8pixels across. Use large blunt stepped square color clusters, almostlike an old8bitgame sprite; no hair strands, no facial shading, no eye whites/highlights, no clothing folds, no texture, no subtle details. Transparent outside cutout, absolutely NO BACKGROUND, no frame, no card, no square panel, no text, no outline border surrounding image, no glow/shadow. Draw it new at native24pixels, not a high-res anime portrait. Charming simple fantasy sprite.",
+        "seed": 243501,
+        "image_size": {
+          "width": 24,
+          "height": 24
+        },
+        "output_count": 1,
+        "estimated_generations": 5,
+        "pricing_provisional": true,
+        "poll_tool": "get_image",
+        "download_path": "/mcp/images/24d419ee-56f7-4ac3-a972-a57094c02497/download"
+      },
+      "isError": false
+    }
+  },
+  {
+    "id": "barun",
+    "name": "바룬",
+    "look": "BARUN: broad-shouldered friendly barbarian with DARK NAVY BLACK short spiky hair as3big blocks, wide peach face and bare upper arms, large RED scarf over BROWN vest. No beard. Tiny1pixel eyes, small confident grin. Keep the red scarf and dark hair very clear.",
+    "palette": [
+      "#202D38",
+      "#F3BD83",
+      "#A23B2D",
+      "#6B3F2A",
+      "#E8D9AD",
+      "#AB6C37"
+    ],
+    "prompt": "Native24x24 VERY COARSE early8bit RPG dialogue portrait cutout. ORIGINAL CHARACTER: BARUN: broad-shouldered friendly barbarian with DARK NAVY BLACK short spiky hair as3big blocks, wide peach face and bare upper arms, large RED scarf over BROWN vest. No beard. Tiny1pixel eyes, small confident grin. Keep the red scarf and dark hair very clear. HEAD and TWO shoulder blocks only, slightly looking left toward dialogue, whole silhouette fits24x24 with1transparentpixel margin top and sides, shoulders end atbottom23. Flat6colors maximum. One solid color per material; no shading, no gradients, no dithering. Eyes eachONEpixel, mouthONE orTWO pixels. Face onlyabout8pixels across. Use large blunt stepped square color clusters, almostlike an old8bitgame sprite; no hair strands, no facial shading, no eye whites/highlights, no clothing folds, no texture, no subtle details. Transparent outside cutout, absolutely NO BACKGROUND, no frame, no card, no square panel, no text, no outline border surrounding image, no glow/shadow. Draw it new at native24pixels, not a high-res anime portrait. Charming simple fantasy sprite.",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"background_job_id\": \"de9fac92-acce-4a81-ac0e-c1ffde498666\",\n  \"image_id\": \"0ab689a1-a126-5a54-a9e3-bb1dd8baae72\",\n  \"status\": \"processing\",\n  \"source_image_id\": \"0ab689a1-a126-5a54-a9e3-bb1dd8baae72\",\n  \"job_id\": \"de9fac92-acce-4a81-ac0e-c1ffde498666\",\n  \"description\": \"Native24x24 VERY COARSE early8bit RPG dialogue portrait cutout. ORIGINAL CHARACTER: BARUN: broad-shouldered friendly barbarian with DARK NAVY BLACK short spiky hair as3big blocks, wide peach face and bare upper arms, large RED scarf over BROWN vest. No beard. Tiny1pixel eyes, small confident grin. Keep the red scarf and dark hair very clear. HEAD and TWO shoulder blocks only, slightly looking left toward dialogue, whole silhouette fits24x24 with1transparentpixel margin top and sides, shoulders end atbottom23. Flat6colors maximum. One solid color per material; no shading, no gradients, no dithering. Eyes eachONEpixel, mouthONE orTWO pixels. Face onlyabout8pixels across. Use large blunt stepped square color clusters, almostlike an old8bitgame sprite; no hair strands, no facial shading, no eye whites/highlights, no clothing folds, no texture, no subtle details. Transparent outside cutout, absolutely NO BACKGROUND, no frame, no card, no square panel, no text, no outline border surrounding image, no glow/shadow. Draw it new at native24pixels, not a high-res anime portrait. Charming simple fantasy sprite.\",\n  \"seed\": 243501,\n  \"image_size\": {\n    \"width\": 24,\n    \"height\": 24\n  },\n  \"output_count\": 1,\n  \"estimated_generations\": 5,\n  \"pricing_provisional\": true,\n  \"poll_tool\": \"get_image\",\n  \"download_path\": \"/mcp/images/de9fac92-acce-4a81-ac0e-c1ffde498666/download\"\n}\nPoll get_image(job_id=\"de9fac92-acce-4a81-ac0e-c1ffde498666\"). The source_image_id is usable after completion; it is an image ID, not a character/object ID. Actual usage is reported on completion. cancel_job(job_id=...) cancels unfinished work."
+        }
+      ],
+      "structuredContent": {
+        "background_job_id": "de9fac92-acce-4a81-ac0e-c1ffde498666",
+        "image_id": "0ab689a1-a126-5a54-a9e3-bb1dd8baae72",
+        "status": "processing",
+        "source_image_id": "0ab689a1-a126-5a54-a9e3-bb1dd8baae72",
+        "job_id": "de9fac92-acce-4a81-ac0e-c1ffde498666",
+        "description": "Native24x24 VERY COARSE early8bit RPG dialogue portrait cutout. ORIGINAL CHARACTER: BARUN: broad-shouldered friendly barbarian with DARK NAVY BLACK short spiky hair as3big blocks, wide peach face and bare upper arms, large RED scarf over BROWN vest. No beard. Tiny1pixel eyes, small confident grin. Keep the red scarf and dark hair very clear. HEAD and TWO shoulder blocks only, slightly looking left toward dialogue, whole silhouette fits24x24 with1transparentpixel margin top and sides, shoulders end atbottom23. Flat6colors maximum. One solid color per material; no shading, no gradients, no dithering. Eyes eachONEpixel, mouthONE orTWO pixels. Face onlyabout8pixels across. Use large blunt stepped square color clusters, almostlike an old8bitgame sprite; no hair strands, no facial shading, no eye whites/highlights, no clothing folds, no texture, no subtle details. Transparent outside cutout, absolutely NO BACKGROUND, no frame, no card, no square panel, no text, no outline border surrounding image, no glow/shadow. Draw it new at native24pixels, not a high-res anime portrait. Charming simple fantasy sprite.",
+        "seed": 243501,
+        "image_size": {
+          "width": 24,
+          "height": 24
+        },
+        "output_count": 1,
+        "estimated_generations": 5,
+        "pricing_provisional": true,
+        "poll_tool": "get_image",
+        "download_path": "/mcp/images/de9fac92-acce-4a81-ac0e-c1ffde498666/download"
+      },
+      "isError": false
+    }
+  },
+  {
+    "id": "doto",
+    "name": "도토",
+    "look": "DOTO: stout friendly older DWARF BLACKSMITH, broad peach face with HUGE GOLDEN OCHRE BEARD in one stepped geometric block covering entire lowerface to chest, short GOLDEN hair and matching eyebrows. Small rounded nose, one dot eyes, BLUE apron shoulders and CREAM sleeves. No hat or cap. MUST visibly look like a dwarf with enormous gold beard; not young boy.",
+    "palette": [
+      "#202D38",
+      "#E4AA41",
+      "#AB6C37",
+      "#F3BD83",
+      "#355D82",
+      "#E8D9AD",
+      "#6B3F2A"
+    ],
+    "prompt": "Native24x24 VERY COARSE early8bit RPG dialogue portrait cutout. ORIGINAL CHARACTER: DOTO: stout friendly older DWARF BLACKSMITH, broad peach face with HUGE GOLDEN OCHRE BEARD in one stepped geometric block covering entire lowerface to chest, short GOLDEN hair and matching eyebrows. Small rounded nose, one dot eyes, BLUE apron shoulders and CREAM sleeves. No hat or cap. MUST visibly look like a dwarf with enormous gold beard; not young boy. HEAD and TWO shoulder blocks only, slightly looking left toward dialogue, whole silhouette fits24x24 with1transparentpixel margin top and sides, shoulders end atbottom23. Flat7colors maximum. One solid color per material; no shading, no gradients, no dithering. Eyes eachONEpixel, mouthONE orTWO pixels. Face onlyabout8pixels across. Use large blunt stepped square color clusters, almostlike an old8bitgame sprite; no hair strands, no facial shading, no eye whites/highlights, no clothing folds, no texture, no subtle details. Transparent outside cutout, absolutely NO BACKGROUND, no frame, no card, no square panel, no text, no outline border surrounding image, no glow/shadow. Draw it new at native24pixels, not a high-res anime portrait. Charming simple fantasy sprite.",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"background_job_id\": \"40a14096-2f56-4406-8591-7b7e96d7ffa4\",\n  \"image_id\": \"1732d01a-e94b-51e8-9b1e-962f3bb5117b\",\n  \"status\": \"processing\",\n  \"source_image_id\": \"1732d01a-e94b-51e8-9b1e-962f3bb5117b\",\n  \"job_id\": \"40a14096-2f56-4406-8591-7b7e96d7ffa4\",\n  \"description\": \"Native24x24 VERY COARSE early8bit RPG dialogue portrait cutout. ORIGINAL CHARACTER: DOTO: stout friendly older DWARF BLACKSMITH, broad peach face with HUGE GOLDEN OCHRE BEARD in one stepped geometric block covering entire lowerface to chest, short GOLDEN hair and matching eyebrows. Small rounded nose, one dot eyes, BLUE apron shoulders and CREAM sleeves. No hat or cap. MUST visibly look like a dwarf with enormous gold beard; not young boy. HEAD and TWO shoulder blocks only, slightly looking left toward dialogue, whole silhouette fits24x24 with1transparentpixel margin top and sides, shoulders end atbottom23. Flat7colors maximum. One solid color per material; no shading, no gradients, no dithering. Eyes eachONEpixel, mouthONE orTWO pixels. Face onlyabout8pixels across. Use large blunt stepped square color clusters, almostlike an old8bitgame sprite; no hair strands, no facial shading, no eye whites/highlights, no clothing folds, no texture, no subtle details. Transparent outside cutout, absolutely NO BACKGROUND, no frame, no card, no square panel, no text, no outline border surrounding image, no glow/shadow. Draw it new at native24pixels, not a high-res anime portrait. Charming simple fantasy sprite.\",\n  \"seed\": 243501,\n  \"image_size\": {\n    \"width\": 24,\n    \"height\": 24\n  },\n  \"output_count\": 1,\n  \"estimated_generations\": 5,\n  \"pricing_provisional\": true,\n  \"poll_tool\": \"get_image\",\n  \"download_path\": \"/mcp/images/40a14096-2f56-4406-8591-7b7e96d7ffa4/download\"\n}\nPoll get_image(job_id=\"40a14096-2f56-4406-8591-7b7e96d7ffa4\"). The source_image_id is usable after completion; it is an image ID, not a character/object ID. Actual usage is reported on completion. cancel_job(job_id=...) cancels unfinished work."
+        }
+      ],
+      "structuredContent": {
+        "background_job_id": "40a14096-2f56-4406-8591-7b7e96d7ffa4",
+        "image_id": "1732d01a-e94b-51e8-9b1e-962f3bb5117b",
+        "status": "processing",
+        "source_image_id": "1732d01a-e94b-51e8-9b1e-962f3bb5117b",
+        "job_id": "40a14096-2f56-4406-8591-7b7e96d7ffa4",
+        "description": "Native24x24 VERY COARSE early8bit RPG dialogue portrait cutout. ORIGINAL CHARACTER: DOTO: stout friendly older DWARF BLACKSMITH, broad peach face with HUGE GOLDEN OCHRE BEARD in one stepped geometric block covering entire lowerface to chest, short GOLDEN hair and matching eyebrows. Small rounded nose, one dot eyes, BLUE apron shoulders and CREAM sleeves. No hat or cap. MUST visibly look like a dwarf with enormous gold beard; not young boy. HEAD and TWO shoulder blocks only, slightly looking left toward dialogue, whole silhouette fits24x24 with1transparentpixel margin top and sides, shoulders end atbottom23. Flat7colors maximum. One solid color per material; no shading, no gradients, no dithering. Eyes eachONEpixel, mouthONE orTWO pixels. Face onlyabout8pixels across. Use large blunt stepped square color clusters, almostlike an old8bitgame sprite; no hair strands, no facial shading, no eye whites/highlights, no clothing folds, no texture, no subtle details. Transparent outside cutout, absolutely NO BACKGROUND, no frame, no card, no square panel, no text, no outline border surrounding image, no glow/shadow. Draw it new at native24pixels, not a high-res anime portrait. Charming simple fantasy sprite.",
+        "seed": 243501,
+        "image_size": {
+          "width": 24,
+          "height": 24
+        },
+        "output_count": 1,
+        "estimated_generations": 5,
+        "pricing_provisional": true,
+        "poll_tool": "get_image",
+        "download_path": "/mcp/images/40a14096-2f56-4406-8591-7b7e96d7ffa4/download"
+      },
+      "isError": false
+    }
+  },
+  {
+    "id": "gib",
+    "name": "기블",
+    "look": "GIB: boastful goblin raider captain with LEAFGREEN face and TWO LONG POINTED GREEN EARS sticking sideways, tiny yellow dot eyes, mischievous grin withONEIVORY fang. Small gray STEEL skullcap andONE burntORANGE feather over head. BROWN leather shoulder strap. No human skin, no fully enclosed helmet, no ornate armor.",
+    "palette": [
+      "#202D38",
+      "#75954A",
+      "#426B43",
+      "#B7D3D0",
+      "#D97935",
+      "#6B3F2A",
+      "#E8D9AD",
+      "#E4AA41"
+    ],
+    "prompt": "Native24x24 VERY COARSE early8bit RPG dialogue portrait cutout. ORIGINAL CHARACTER: GIB: boastful goblin raider captain with LEAFGREEN face and TWO LONG POINTED GREEN EARS sticking sideways, tiny yellow dot eyes, mischievous grin withONEIVORY fang. Small gray STEEL skullcap andONE burntORANGE feather over head. BROWN leather shoulder strap. No human skin, no fully enclosed helmet, no ornate armor. HEAD and TWO shoulder blocks only, slightly looking left toward dialogue, whole silhouette fits24x24 with1transparentpixel margin top and sides, shoulders end atbottom23. Flat8colors maximum. One solid color per material; no shading, no gradients, no dithering. Eyes eachONEpixel, mouthONE orTWO pixels. Face onlyabout8pixels across. Use large blunt stepped square color clusters, almostlike an old8bitgame sprite; no hair strands, no facial shading, no eye whites/highlights, no clothing folds, no texture, no subtle details. Transparent outside cutout, absolutely NO BACKGROUND, no frame, no card, no square panel, no text, no outline border surrounding image, no glow/shadow. Draw it new at native24pixels, not a high-res anime portrait. Charming simple fantasy sprite.",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"background_job_id\": \"a9d02034-948b-4d2a-8f33-031e546c9eba\",\n  \"image_id\": \"fef6e930-ba74-5199-8069-39135c0c4dd9\",\n  \"status\": \"processing\",\n  \"source_image_id\": \"fef6e930-ba74-5199-8069-39135c0c4dd9\",\n  \"job_id\": \"a9d02034-948b-4d2a-8f33-031e546c9eba\",\n  \"description\": \"Native24x24 VERY COARSE early8bit RPG dialogue portrait cutout. ORIGINAL CHARACTER: GIB: boastful goblin raider captain with LEAFGREEN face and TWO LONG POINTED GREEN EARS sticking sideways, tiny yellow dot eyes, mischievous grin withONEIVORY fang. Small gray STEEL skullcap andONE burntORANGE feather over head. BROWN leather shoulder strap. No human skin, no fully enclosed helmet, no ornate armor. HEAD and TWO shoulder blocks only, slightly looking left toward dialogue, whole silhouette fits24x24 with1transparentpixel margin top and sides, shoulders end atbottom23. Flat8colors maximum. One solid color per material; no shading, no gradients, no dithering. Eyes eachONEpixel, mouthONE orTWO pixels. Face onlyabout8pixels across. Use large blunt stepped square color clusters, almostlike an old8bitgame sprite; no hair strands, no facial shading, no eye whites/highlights, no clothing folds, no texture, no subtle details. Transparent outside cutout, absolutely NO BACKGROUND, no frame, no card, no square panel, no text, no outline border surrounding image, no glow/shadow. Draw it new at native24pixels, not a high-res anime portrait. Charming simple fantasy sprite.\",\n  \"seed\": 243501,\n  \"image_size\": {\n    \"width\": 24,\n    \"height\": 24\n  },\n  \"output_count\": 1,\n  \"estimated_generations\": 5,\n  \"pricing_provisional\": true,\n  \"poll_tool\": \"get_image\",\n  \"download_path\": \"/mcp/images/a9d02034-948b-4d2a-8f33-031e546c9eba/download\"\n}\nPoll get_image(job_id=\"a9d02034-948b-4d2a-8f33-031e546c9eba\"). The source_image_id is usable after completion; it is an image ID, not a character/object ID. Actual usage is reported on completion. cancel_job(job_id=...) cancels unfinished work."
+        }
+      ],
+      "structuredContent": {
+        "background_job_id": "a9d02034-948b-4d2a-8f33-031e546c9eba",
+        "image_id": "fef6e930-ba74-5199-8069-39135c0c4dd9",
+        "status": "processing",
+        "source_image_id": "fef6e930-ba74-5199-8069-39135c0c4dd9",
+        "job_id": "a9d02034-948b-4d2a-8f33-031e546c9eba",
+        "description": "Native24x24 VERY COARSE early8bit RPG dialogue portrait cutout. ORIGINAL CHARACTER: GIB: boastful goblin raider captain with LEAFGREEN face and TWO LONG POINTED GREEN EARS sticking sideways, tiny yellow dot eyes, mischievous grin withONEIVORY fang. Small gray STEEL skullcap andONE burntORANGE feather over head. BROWN leather shoulder strap. No human skin, no fully enclosed helmet, no ornate armor. HEAD and TWO shoulder blocks only, slightly looking left toward dialogue, whole silhouette fits24x24 with1transparentpixel margin top and sides, shoulders end atbottom23. Flat8colors maximum. One solid color per material; no shading, no gradients, no dithering. Eyes eachONEpixel, mouthONE orTWO pixels. Face onlyabout8pixels across. Use large blunt stepped square color clusters, almostlike an old8bitgame sprite; no hair strands, no facial shading, no eye whites/highlights, no clothing folds, no texture, no subtle details. Transparent outside cutout, absolutely NO BACKGROUND, no frame, no card, no square panel, no text, no outline border surrounding image, no glow/shadow. Draw it new at native24pixels, not a high-res anime portrait. Charming simple fantasy sprite.",
+        "seed": 243501,
+        "image_size": {
+          "width": 24,
+          "height": 24
+        },
+        "output_count": 1,
+        "estimated_generations": 5,
+        "pricing_provisional": true,
+        "poll_tool": "get_image",
+        "download_path": "/mcp/images/a9d02034-948b-4d2a-8f33-031e546c9eba/download"
+      },
+      "isError": false
+    }
+  }
+]

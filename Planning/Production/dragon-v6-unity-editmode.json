@@ -1,0 +1,56 @@
+{
+  "_meta": {
+    "fastmcp": {
+      "wrap_result": true
+    }
+  },
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"success\":true,\"message\":\"Test job status retrieved.\",\"error\":null,\"data\":{\"job_id\":\"97c94d2fb93745eb9c349faf743c3d6a\",\"status\":\"succeeded\",\"mode\":\"EditMode\",\"started_unix_ms\":1792857383206,\"finished_unix_ms\":1792857393895,\"last_update_unix_ms\":1792857393895,\"progress\":{\"completed\":202,\"total\":202,\"current_test_full_name\":null,\"current_test_started_unix_ms\":1792857393704,\"last_finished_test_full_name\":\"LastBell.Tests.SaveDirectorySelectorTests.ReopeningTheSamePlaytestPreservesItsCheckpointAndWallet\",\"last_finished_unix_ms\":1792857393712,\"stuck_suspected\":false,\"editor_is_focused\":false,\"blocked_reason\":null,\"failures_so_far\":[],\"failures_capped\":false},\"error\":null,\"result\":{\"mode\":\"EditMode\",\"summary\":{\"total\":202,\"passed\":202,\"failed\":0,\"skipped\":0,\"durationSeconds\":6.9847808,\"resultState\":\"Passed\"},\"results\":[]}},\"hint\":null}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "success": true,
+      "message": "Test job status retrieved.",
+      "error": null,
+      "data": {
+        "job_id": "97c94d2fb93745eb9c349faf743c3d6a",
+        "status": "succeeded",
+        "mode": "EditMode",
+        "started_unix_ms": 1792857383206,
+        "finished_unix_ms": 1792857393895,
+        "last_update_unix_ms": 1792857393895,
+        "progress": {
+          "completed": 202,
+          "total": 202,
+          "current_test_full_name": null,
+          "current_test_started_unix_ms": 1792857393704,
+          "last_finished_test_full_name": "LastBell.Tests.SaveDirectorySelectorTests.ReopeningTheSamePlaytestPreservesItsCheckpointAndWallet",
+          "last_finished_unix_ms": 1792857393712,
+          "stuck_suspected": false,
+          "editor_is_focused": false,
+          "blocked_reason": null,
+          "failures_so_far": [],
+          "failures_capped": false
+        },
+        "error": null,
+        "result": {
+          "mode": "EditMode",
+          "summary": {
+            "total": 202,
+            "passed": 202,
+            "failed": 0,
+            "skipped": 0,
+            "durationSeconds": 6.9847808,
+            "resultState": "Passed"
+          },
+          "results": []
+        }
+      },
+      "hint": null
+    }
+  },
+  "isError": false
+}

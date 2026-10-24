@@ -1,0 +1,439 @@
+{
+  "status": "passed",
+  "scope": "Source PNG integrity, native format, selected-sample counts and declared planted support-foot rows. Not Unity runtime QA.",
+  "canonicalCount": 10,
+  "clipCount": 30,
+  "frameSampleCount": 235,
+  "productionPngCount": 245,
+  "manifestSha256": "9f33fbb9118cbcccfb1513e5d3c8f9fe7e2ed18da3581e552ca36338faccdc94",
+  "productionBundleSha256": "7262fd182da9ed21d1f7efb27d1a71e849ef35f0c862c99b1f339be4ce46e301",
+  "errors": [],
+  "actors": [
+    {
+      "id": "goblin_scout",
+      "clips": [
+        {
+          "clip": "Idle",
+          "samples": 8,
+          "unique": 6,
+          "colors": 8,
+          "pivot": [
+            16,
+            30
+          ],
+          "contact": -1,
+          "durationsMs": null
+        },
+        {
+          "clip": "Attack",
+          "samples": 8,
+          "unique": 8,
+          "colors": 8,
+          "pivot": [
+            16,
+            30
+          ],
+          "contact": 4,
+          "durationsMs": null
+        },
+        {
+          "clip": "Stun",
+          "samples": 8,
+          "unique": 4,
+          "colors": 8,
+          "pivot": [
+            16,
+            30
+          ],
+          "contact": -1,
+          "durationsMs": null
+        }
+      ]
+    },
+    {
+      "id": "goblin_slinger",
+      "clips": [
+        {
+          "clip": "Idle",
+          "samples": 8,
+          "unique": 7,
+          "colors": 8,
+          "pivot": [
+            16,
+            30
+          ],
+          "contact": -1,
+          "durationsMs": null
+        },
+        {
+          "clip": "Attack",
+          "samples": 6,
+          "unique": 6,
+          "colors": 8,
+          "pivot": [
+            16,
+            30
+          ],
+          "contact": 3,
+          "durationsMs": null
+        },
+        {
+          "clip": "Stun",
+          "samples": 8,
+          "unique": 8,
+          "colors": 8,
+          "pivot": [
+            16,
+            30
+          ],
+          "contact": -1,
+          "durationsMs": null
+        }
+      ]
+    },
+    {
+      "id": "forest_mushroom",
+      "clips": [
+        {
+          "clip": "Idle",
+          "samples": 8,
+          "unique": 7,
+          "colors": 5,
+          "pivot": [
+            16,
+            29
+          ],
+          "contact": -1,
+          "durationsMs": null
+        },
+        {
+          "clip": "Attack",
+          "samples": 8,
+          "unique": 7,
+          "colors": 5,
+          "pivot": [
+            16,
+            29
+          ],
+          "contact": 3,
+          "durationsMs": null
+        },
+        {
+          "clip": "Stun",
+          "samples": 8,
+          "unique": 8,
+          "colors": 5,
+          "pivot": [
+            16,
+            29
+          ],
+          "contact": -1,
+          "durationsMs": null
+        }
+      ]
+    },
+    {
+      "id": "goblin_shield",
+      "clips": [
+        {
+          "clip": "Idle",
+          "samples": 8,
+          "unique": 8,
+          "colors": 7,
+          "pivot": [
+            16,
+            30
+          ],
+          "contact": -1,
+          "durationsMs": null
+        },
+        {
+          "clip": "Attack",
+          "samples": 8,
+          "unique": 8,
+          "colors": 7,
+          "pivot": [
+            16,
+            30
+          ],
+          "contact": 3,
+          "durationsMs": null
+        },
+        {
+          "clip": "Stun",
+          "samples": 8,
+          "unique": 7,
+          "colors": 7,
+          "pivot": [
+            16,
+            30
+          ],
+          "contact": -1,
+          "durationsMs": null
+        }
+      ]
+    },
+    {
+      "id": "mushroom_captain",
+      "clips": [
+        {
+          "clip": "Idle",
+          "samples": 8,
+          "unique": 7,
+          "colors": 6,
+          "pivot": [
+            24,
+            39
+          ],
+          "contact": -1,
+          "durationsMs": null
+        },
+        {
+          "clip": "Attack",
+          "samples": 8,
+          "unique": 7,
+          "colors": 6,
+          "pivot": [
+            24,
+            39
+          ],
+          "contact": 3,
+          "durationsMs": null
+        },
+        {
+          "clip": "Stun",
+          "samples": 8,
+          "unique": 6,
+          "colors": 6,
+          "pivot": [
+            24,
+            39
+          ],
+          "contact": -1,
+          "durationsMs": null
+        }
+      ]
+    },
+    {
+      "id": "goblin_spear",
+      "clips": [
+        {
+          "clip": "Idle",
+          "samples": 8,
+          "unique": 4,
+          "colors": 7,
+          "pivot": [
+            24,
+            30
+          ],
+          "contact": -1,
+          "durationsMs": null
+        },
+        {
+          "clip": "Attack",
+          "samples": 8,
+          "unique": 7,
+          "colors": 7,
+          "pivot": [
+            24,
+            30
+          ],
+          "contact": 5,
+          "durationsMs": null
+        },
+        {
+          "clip": "Stun",
+          "samples": 8,
+          "unique": 5,
+          "colors": 7,
+          "pivot": [
+            24,
+            30
+          ],
+          "contact": -1,
+          "durationsMs": null
+        }
+      ]
+    },
+    {
+      "id": "spore_mushroom",
+      "clips": [
+        {
+          "clip": "Idle",
+          "samples": 8,
+          "unique": 8,
+          "colors": 6,
+          "pivot": [
+            16,
+            31
+          ],
+          "contact": -1,
+          "durationsMs": null
+        },
+        {
+          "clip": "Attack",
+          "samples": 8,
+          "unique": 7,
+          "colors": 6,
+          "pivot": [
+            16,
+            31
+          ],
+          "contact": 3,
+          "durationsMs": null
+        },
+        {
+          "clip": "Stun",
+          "samples": 8,
+          "unique": 8,
+          "colors": 6,
+          "pivot": [
+            16,
+            31
+          ],
+          "contact": -1,
+          "durationsMs": null
+        }
+      ]
+    },
+    {
+      "id": "moss_mushroom",
+      "clips": [
+        {
+          "clip": "Idle",
+          "samples": 8,
+          "unique": 8,
+          "colors": 7,
+          "pivot": [
+            16,
+            28
+          ],
+          "contact": -1,
+          "durationsMs": null
+        },
+        {
+          "clip": "Attack",
+          "samples": 7,
+          "unique": 7,
+          "colors": 7,
+          "pivot": [
+            16,
+            28
+          ],
+          "contact": 3,
+          "durationsMs": null
+        },
+        {
+          "clip": "Stun",
+          "samples": 8,
+          "unique": 8,
+          "colors": 7,
+          "pivot": [
+            16,
+            28
+          ],
+          "contact": -1,
+          "durationsMs": null
+        }
+      ]
+    },
+    {
+      "id": "goblin_guard",
+      "clips": [
+        {
+          "clip": "Idle",
+          "samples": 8,
+          "unique": 8,
+          "colors": 8,
+          "pivot": [
+            16,
+            28
+          ],
+          "contact": -1,
+          "durationsMs": null
+        },
+        {
+          "clip": "Attack",
+          "samples": 8,
+          "unique": 6,
+          "colors": 8,
+          "pivot": [
+            16,
+            28
+          ],
+          "contact": 4,
+          "durationsMs": [
+            60,
+            50,
+            50,
+            40,
+            50,
+            70,
+            80,
+            100
+          ]
+        },
+        {
+          "clip": "Stun",
+          "samples": 8,
+          "unique": 7,
+          "colors": 8,
+          "pivot": [
+            16,
+            28
+          ],
+          "contact": -1,
+          "durationsMs": null
+        }
+      ]
+    },
+    {
+      "id": "gib",
+      "clips": [
+        {
+          "clip": "Idle",
+          "samples": 8,
+          "unique": 7,
+          "colors": 7,
+          "pivot": [
+            24,
+            45
+          ],
+          "contact": -1,
+          "durationsMs": null
+        },
+        {
+          "clip": "Attack",
+          "samples": 6,
+          "unique": 4,
+          "colors": 7,
+          "pivot": [
+            24,
+            45
+          ],
+          "contact": 4,
+          "durationsMs": [
+            60,
+            60,
+            50,
+            30,
+            60,
+            240
+          ]
+        },
+        {
+          "clip": "Stun",
+          "samples": 8,
+          "unique": 7,
+          "colors": 7,
+          "pivot": [
+            24,
+            45
+          ],
+          "contact": -1,
+          "durationsMs": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+[
+  {
+    "id": "tori",
+    "name": "토리",
+    "desc": "A cheerful small ORANGE FOX BEASTFOLK RANGER, huge pointed orange ears, short fox muzzle with CREAM mouth, one big orange tail with CREAM tip behind left, BLUE-TEAL short cloak, navy leggings and brown boots. Holds a SHORT BROWN BOW upright in front onRIGHT with one hand, other hand ready at bowstring. No sword, no quiver detail.",
+    "palette": [
+      "#202D38",
+      "#D97935",
+      "#E8D9AD",
+      "#287780",
+      "#355D82",
+      "#6B3F2A",
+      "#AB6C37",
+      "#F3BD83"
+    ],
+    "attack": "Raises short bow toward right, draws string visibly back beside face, releases ONE arrow at the middle of the clip, right shoulder recoils one pixel, lowers bow and returns to exact initial idle pose. Four distinct phases: bowraise, stringdraw, release, recover. Hands stay attached to same bow. No running or stepping, no giant arrow or VFX.",
+    "prompt": "A new native32x32 extremely simple chunky8bit FULL BODY companion sprite, facing EAST(right), pure eye-level side-scroller3/4 view. CHARACTER:A cheerful small ORANGE FOX BEASTFOLK RANGER, huge pointed orange ears, short fox muzzle with CREAM mouth, one big orange tail with CREAM tip behind left, BLUE-TEAL short cloak, navy leggings and brown boots. Holds a SHORT BROWN BOW upright in front onRIGHT with one hand, other hand ready at bowstring. No sword, no quiver detail. Match our approved32px Luka native pixel density and tiny hands, broad flat color blocks with darknavy singlepixeloutline. Character is approximately22logicalpixels high, head5–7pixelswide. All feet soles at y28, bodycenterx16, weaponfullyvisible. One neutral relaxed IDLE starting pose. Entire figure and equipment within x2..29,y2..28, NO cropping. Backgroundtransparent, no floor, no shadow, no text, no decorations. Flat8colors only; NO shading gradients, no antialiasing, no detailsmalltextures. Game-ready clean connected solidpixelclusters.",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"background_job_id\": \"c595aef4-60e5-43ab-8208-bcd7b741599c\",\n  \"image_id\": \"068d29ea-7880-5e03-a4f2-ca3d425e534c\",\n  \"status\": \"processing\",\n  \"source_image_id\": \"068d29ea-7880-5e03-a4f2-ca3d425e534c\",\n  \"job_id\": \"c595aef4-60e5-43ab-8208-bcd7b741599c\",\n  \"description\": \"A new native32x32 extremely simple chunky8bit FULL BODY companion sprite, facing EAST(right), pure eye-level side-scroller3/4 view. CHARACTER:A cheerful small ORANGE FOX BEASTFOLK RANGER, huge pointed orange ears, short fox muzzle with CREAM mouth, one big orange tail with CREAM tip behind left, BLUE-TEAL short cloak, navy leggings and brown boots. Holds a SHORT BROWN BOW upright in front onRIGHT with one hand, other hand ready at bowstring. No sword, no quiver detail. Match our approved32px Luka native pixel density and tiny hands, broad flat color blocks with darknavy singlepixeloutline. Character is approximately22logicalpixels high, head5\\u20137pixelswide. All feet soles at y28, bodycenterx16, weaponfullyvisible. One neutral relaxed IDLE starting pose. Entire figure and equipment within x2..29,y2..28, NO cropping. Backgroundtransparent, no floor, no shadow, no text, no decorations. Flat8colors only; NO shading gradients, no antialiasing, no detailsmalltextures. Game-ready clean connected solidpixelclusters.\",\n  \"seed\": 243602,\n  \"image_size\": {\n    \"width\": 32,\n    \"height\": 32\n  },\n  \"output_count\": 1,\n  \"estimated_generations\": 5,\n  \"pricing_provisional\": true,\n  \"poll_tool\": \"get_image\",\n  \"download_path\": \"/mcp/images/c595aef4-60e5-43ab-8208-bcd7b741599c/download\"\n}\nPoll get_image(job_id=\"c595aef4-60e5-43ab-8208-bcd7b741599c\"). The source_image_id is usable after completion; it is an image ID, not a character/object ID. Actual usage is reported on completion. cancel_job(job_id=...) cancels unfinished work."
+        }
+      ],
+      "structuredContent": {
+        "background_job_id": "c595aef4-60e5-43ab-8208-bcd7b741599c",
+        "image_id": "068d29ea-7880-5e03-a4f2-ca3d425e534c",
+        "status": "processing",
+        "source_image_id": "068d29ea-7880-5e03-a4f2-ca3d425e534c",
+        "job_id": "c595aef4-60e5-43ab-8208-bcd7b741599c",
+        "description": "A new native32x32 extremely simple chunky8bit FULL BODY companion sprite, facing EAST(right), pure eye-level side-scroller3/4 view. CHARACTER:A cheerful small ORANGE FOX BEASTFOLK RANGER, huge pointed orange ears, short fox muzzle with CREAM mouth, one big orange tail with CREAM tip behind left, BLUE-TEAL short cloak, navy leggings and brown boots. Holds a SHORT BROWN BOW upright in front onRIGHT with one hand, other hand ready at bowstring. No sword, no quiver detail. Match our approved32px Luka native pixel density and tiny hands, broad flat color blocks with darknavy singlepixeloutline. Character is approximately22logicalpixels high, head5–7pixelswide. All feet soles at y28, bodycenterx16, weaponfullyvisible. One neutral relaxed IDLE starting pose. Entire figure and equipment within x2..29,y2..28, NO cropping. Backgroundtransparent, no floor, no shadow, no text, no decorations. Flat8colors only; NO shading gradients, no antialiasing, no detailsmalltextures. Game-ready clean connected solidpixelclusters.",
+        "seed": 243602,
+        "image_size": {
+          "width": 32,
+          "height": 32
+        },
+        "output_count": 1,
+        "estimated_generations": 5,
+        "pricing_provisional": true,
+        "poll_tool": "get_image",
+        "download_path": "/mcp/images/c595aef4-60e5-43ab-8208-bcd7b741599c/download"
+      },
+      "isError": false
+    }
+  },
+  {
+    "id": "barun",
+    "name": "바룬",
+    "desc": "Friendly broad-shouldered BARBARIAN HUMAN, chunky dark navy-black hair, peach face and bare upper arms, big RED SCARF and RED SASH, BROWN vest/pants and boots. Holds ONE STEEL GREATSWORD in front towardRIGHT, broad blade pointed diagonally down, clear two hands. Strong but simple silhouette, not armor knight.",
+    "palette": [
+      "#202D38",
+      "#F3BD83",
+      "#A23B2D",
+      "#6B3F2A",
+      "#AB6C37",
+      "#E8D9AD",
+      "#B7D3D0",
+      "#668185"
+    ],
+    "attack": "Raises the same greatsword overhead in both hands, leans torso back slightly, performs ONE broad diagonal downward sword swing toRIGHT at middle of clip, visible followthrough, recovers to same low guard idle. Sword is attached to hands, full blade stays inside32pxcanvas. Feet planted, no running, no camera move, no VFX.",
+    "prompt": "A new native32x32 extremely simple chunky8bit FULL BODY companion sprite, facing EAST(right), pure eye-level side-scroller3/4 view. CHARACTER:Friendly broad-shouldered BARBARIAN HUMAN, chunky dark navy-black hair, peach face and bare upper arms, big RED SCARF and RED SASH, BROWN vest/pants and boots. Holds ONE STEEL GREATSWORD in front towardRIGHT, broad blade pointed diagonally down, clear two hands. Strong but simple silhouette, not armor knight. Match our approved32px Luka native pixel density and tiny hands, broad flat color blocks with darknavy singlepixeloutline. Character is approximately22logicalpixels high, head5–7pixelswide. All feet soles at y28, bodycenterx16, weaponfullyvisible. One neutral relaxed IDLE starting pose. Entire figure and equipment within x2..29,y2..28, NO cropping. Backgroundtransparent, no floor, no shadow, no text, no decorations. Flat8colors only; NO shading gradients, no antialiasing, no detailsmalltextures. Game-ready clean connected solidpixelclusters.",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"background_job_id\": \"68fecb8d-b361-446f-970d-bc6c002f2b87\",\n  \"image_id\": \"c962bebf-eeb3-5799-89fd-eaffede27995\",\n  \"status\": \"processing\",\n  \"source_image_id\": \"c962bebf-eeb3-5799-89fd-eaffede27995\",\n  \"job_id\": \"68fecb8d-b361-446f-970d-bc6c002f2b87\",\n  \"description\": \"A new native32x32 extremely simple chunky8bit FULL BODY companion sprite, facing EAST(right), pure eye-level side-scroller3/4 view. CHARACTER:Friendly broad-shouldered BARBARIAN HUMAN, chunky dark navy-black hair, peach face and bare upper arms, big RED SCARF and RED SASH, BROWN vest/pants and boots. Holds ONE STEEL GREATSWORD in front towardRIGHT, broad blade pointed diagonally down, clear two hands. Strong but simple silhouette, not armor knight. Match our approved32px Luka native pixel density and tiny hands, broad flat color blocks with darknavy singlepixeloutline. Character is approximately22logicalpixels high, head5\\u20137pixelswide. All feet soles at y28, bodycenterx16, weaponfullyvisible. One neutral relaxed IDLE starting pose. Entire figure and equipment within x2..29,y2..28, NO cropping. Backgroundtransparent, no floor, no shadow, no text, no decorations. Flat8colors only; NO shading gradients, no antialiasing, no detailsmalltextures. Game-ready clean connected solidpixelclusters.\",\n  \"seed\": 243602,\n  \"image_size\": {\n    \"width\": 32,\n    \"height\": 32\n  },\n  \"output_count\": 1,\n  \"estimated_generations\": 5,\n  \"pricing_provisional\": true,\n  \"poll_tool\": \"get_image\",\n  \"download_path\": \"/mcp/images/68fecb8d-b361-446f-970d-bc6c002f2b87/download\"\n}\nPoll get_image(job_id=\"68fecb8d-b361-446f-970d-bc6c002f2b87\"). The source_image_id is usable after completion; it is an image ID, not a character/object ID. Actual usage is reported on completion. cancel_job(job_id=...) cancels unfinished work."
+        }
+      ],
+      "structuredContent": {
+        "background_job_id": "68fecb8d-b361-446f-970d-bc6c002f2b87",
+        "image_id": "c962bebf-eeb3-5799-89fd-eaffede27995",
+        "status": "processing",
+        "source_image_id": "c962bebf-eeb3-5799-89fd-eaffede27995",
+        "job_id": "68fecb8d-b361-446f-970d-bc6c002f2b87",
+        "description": "A new native32x32 extremely simple chunky8bit FULL BODY companion sprite, facing EAST(right), pure eye-level side-scroller3/4 view. CHARACTER:Friendly broad-shouldered BARBARIAN HUMAN, chunky dark navy-black hair, peach face and bare upper arms, big RED SCARF and RED SASH, BROWN vest/pants and boots. Holds ONE STEEL GREATSWORD in front towardRIGHT, broad blade pointed diagonally down, clear two hands. Strong but simple silhouette, not armor knight. Match our approved32px Luka native pixel density and tiny hands, broad flat color blocks with darknavy singlepixeloutline. Character is approximately22logicalpixels high, head5–7pixelswide. All feet soles at y28, bodycenterx16, weaponfullyvisible. One neutral relaxed IDLE starting pose. Entire figure and equipment within x2..29,y2..28, NO cropping. Backgroundtransparent, no floor, no shadow, no text, no decorations. Flat8colors only; NO shading gradients, no antialiasing, no detailsmalltextures. Game-ready clean connected solidpixelclusters.",
+        "seed": 243602,
+        "image_size": {
+          "width": 32,
+          "height": 32
+        },
+        "output_count": 1,
+        "estimated_generations": 5,
+        "pricing_provisional": true,
+        "poll_tool": "get_image",
+        "download_path": "/mcp/images/68fecb8d-b361-446f-970d-bc6c002f2b87/download"
+      },
+      "isError": false
+    }
+  },
+  {
+    "id": "doto",
+    "name": "도토",
+    "desc": "Friendly short stout DWARF BLACKSMITH with HUGE GOLDEN OCHRE BEARD asone stepped block, short golden hair, peach nose, BLUE APRON over CREAM sleeves, brown trousers and boots. Holds ONE small BROWN-HANDLED STEEL WORK HAMMER on frontRIGHT shoulder with both hands. No hat, no helmet, no sword. Short wide body and large beard obvious.",
+    "palette": [
+      "#202D38",
+      "#E4AA41",
+      "#AB6C37",
+      "#F3BD83",
+      "#355D82",
+      "#E8D9AD",
+      "#6B3F2A",
+      "#B7D3D0"
+    ],
+    "attack": "Lifts workhammer slightly above right shoulder, swings ONE heavy hammer strike down and towardRIGHT at middle of clip, body squashes one pixel with effort, hammer follows through, returns hammer to same shoulder rest. Keep hammer metalhead square and same size, handle connected to hands. Feet planted, no step, no VFX.",
+    "prompt": "A new native32x32 extremely simple chunky8bit FULL BODY companion sprite, facing EAST(right), pure eye-level side-scroller3/4 view. CHARACTER:Friendly short stout DWARF BLACKSMITH with HUGE GOLDEN OCHRE BEARD asone stepped block, short golden hair, peach nose, BLUE APRON over CREAM sleeves, brown trousers and boots. Holds ONE small BROWN-HANDLED STEEL WORK HAMMER on frontRIGHT shoulder with both hands. No hat, no helmet, no sword. Short wide body and large beard obvious. Match our approved32px Luka native pixel density and tiny hands, broad flat color blocks with darknavy singlepixeloutline. Character is approximately22logicalpixels high, head5–7pixelswide. All feet soles at y28, bodycenterx16, weaponfullyvisible. One neutral relaxed IDLE starting pose. Entire figure and equipment within x2..29,y2..28, NO cropping. Backgroundtransparent, no floor, no shadow, no text, no decorations. Flat8colors only; NO shading gradients, no antialiasing, no detailsmalltextures. Game-ready clean connected solidpixelclusters.",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"background_job_id\": \"977151f0-f11e-4335-95e3-4e202d3be5ec\",\n  \"image_id\": \"cbbc70d3-1f51-597f-9aa4-22ccb1b9eba3\",\n  \"status\": \"processing\",\n  \"source_image_id\": \"cbbc70d3-1f51-597f-9aa4-22ccb1b9eba3\",\n  \"job_id\": \"977151f0-f11e-4335-95e3-4e202d3be5ec\",\n  \"description\": \"A new native32x32 extremely simple chunky8bit FULL BODY companion sprite, facing EAST(right), pure eye-level side-scroller3/4 view. CHARACTER:Friendly short stout DWARF BLACKSMITH with HUGE GOLDEN OCHRE BEARD asone stepped block, short golden hair, peach nose, BLUE APRON over CREAM sleeves, brown trousers and boots. Holds ONE small BROWN-HANDLED STEEL WORK HAMMER on frontRIGHT shoulder with both hands. No hat, no helmet, no sword. Short wide body and large beard obvious. Match our approved32px Luka native pixel density and tiny hands, broad flat color blocks with darknavy singlepixeloutline. Character is approximately22logicalpixels high, head5\\u20137pixelswide. All feet soles at y28, bodycenterx16, weaponfullyvisible. One neutral relaxed IDLE starting pose. Entire figure and equipment within x2..29,y2..28, NO cropping. Backgroundtransparent, no floor, no shadow, no text, no decorations. Flat8colors only; NO shading gradients, no antialiasing, no detailsmalltextures. Game-ready clean connected solidpixelclusters.\",\n  \"seed\": 243602,\n  \"image_size\": {\n    \"width\": 32,\n    \"height\": 32\n  },\n  \"output_count\": 1,\n  \"estimated_generations\": 5,\n  \"pricing_provisional\": true,\n  \"poll_tool\": \"get_image\",\n  \"download_path\": \"/mcp/images/977151f0-f11e-4335-95e3-4e202d3be5ec/download\"\n}\nPoll get_image(job_id=\"977151f0-f11e-4335-95e3-4e202d3be5ec\"). The source_image_id is usable after completion; it is an image ID, not a character/object ID. Actual usage is reported on completion. cancel_job(job_id=...) cancels unfinished work."
+        }
+      ],
+      "structuredContent": {
+        "background_job_id": "977151f0-f11e-4335-95e3-4e202d3be5ec",
+        "image_id": "cbbc70d3-1f51-597f-9aa4-22ccb1b9eba3",
+        "status": "processing",
+        "source_image_id": "cbbc70d3-1f51-597f-9aa4-22ccb1b9eba3",
+        "job_id": "977151f0-f11e-4335-95e3-4e202d3be5ec",
+        "description": "A new native32x32 extremely simple chunky8bit FULL BODY companion sprite, facing EAST(right), pure eye-level side-scroller3/4 view. CHARACTER:Friendly short stout DWARF BLACKSMITH with HUGE GOLDEN OCHRE BEARD asone stepped block, short golden hair, peach nose, BLUE APRON over CREAM sleeves, brown trousers and boots. Holds ONE small BROWN-HANDLED STEEL WORK HAMMER on frontRIGHT shoulder with both hands. No hat, no helmet, no sword. Short wide body and large beard obvious. Match our approved32px Luka native pixel density and tiny hands, broad flat color blocks with darknavy singlepixeloutline. Character is approximately22logicalpixels high, head5–7pixelswide. All feet soles at y28, bodycenterx16, weaponfullyvisible. One neutral relaxed IDLE starting pose. Entire figure and equipment within x2..29,y2..28, NO cropping. Backgroundtransparent, no floor, no shadow, no text, no decorations. Flat8colors only; NO shading gradients, no antialiasing, no detailsmalltextures. Game-ready clean connected solidpixelclusters.",
+        "seed": 243602,
+        "image_size": {
+          "width": 32,
+          "height": 32
+        },
+        "output_count": 1,
+        "estimated_generations": 5,
+        "pricing_provisional": true,
+        "poll_tool": "get_image",
+        "download_path": "/mcp/images/977151f0-f11e-4335-95e3-4e202d3be5ec/download"
+      },
+      "isError": false
+    }
+  },
+  {
+    "id": "rina",
+    "name": "리나",
+    "desc": "Friendly woman MAGE with large plain PURPLE TRIANGULAR WITCH HAT, brown hair locks, CREAM long robe with PURPLE cuffs/hem, brown boots. One simple BROWN STAFF held onRIGHT with MINT DIAMOND crystal tip, clear staff hand. Single dot face eye, no ornate hat decoration, no cape strands.",
+    "palette": [
+      "#202D38",
+      "#745184",
+      "#6B3F2A",
+      "#F3BD83",
+      "#E8D9AD",
+      "#89C9AF",
+      "#AB6C37",
+      "#287780"
+    ],
+    "attack": "Raises staff upward slightly, draws free hand to chest, extends staff and free palm towardRIGHT to release ONE small windbubble at middle of clip, holds clear casting pose briefly, returns to exact idle. Pose animation only: do NOT draw projectiles, glowing particles, light cloud or large magic ring. Hat/robe/staff identity stays fixed. Both feet planted.",
+    "prompt": "A new native32x32 extremely simple chunky8bit FULL BODY companion sprite, facing EAST(right), pure eye-level side-scroller3/4 view. CHARACTER:Friendly woman MAGE with large plain PURPLE TRIANGULAR WITCH HAT, brown hair locks, CREAM long robe with PURPLE cuffs/hem, brown boots. One simple BROWN STAFF held onRIGHT with MINT DIAMOND crystal tip, clear staff hand. Single dot face eye, no ornate hat decoration, no cape strands. Match our approved32px Luka native pixel density and tiny hands, broad flat color blocks with darknavy singlepixeloutline. Character is approximately22logicalpixels high, head5–7pixelswide. All feet soles at y28, bodycenterx16, weaponfullyvisible. One neutral relaxed IDLE starting pose. Entire figure and equipment within x2..29,y2..28, NO cropping. Backgroundtransparent, no floor, no shadow, no text, no decorations. Flat8colors only; NO shading gradients, no antialiasing, no detailsmalltextures. Game-ready clean connected solidpixelclusters.",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"background_job_id\": \"c0f7d836-3458-4bed-88a0-e777787ea37a\",\n  \"image_id\": \"5960d35d-5c04-509f-a167-c6958be049ec\",\n  \"status\": \"processing\",\n  \"source_image_id\": \"5960d35d-5c04-509f-a167-c6958be049ec\",\n  \"job_id\": \"c0f7d836-3458-4bed-88a0-e777787ea37a\",\n  \"description\": \"A new native32x32 extremely simple chunky8bit FULL BODY companion sprite, facing EAST(right), pure eye-level side-scroller3/4 view. CHARACTER:Friendly woman MAGE with large plain PURPLE TRIANGULAR WITCH HAT, brown hair locks, CREAM long robe with PURPLE cuffs/hem, brown boots. One simple BROWN STAFF held onRIGHT with MINT DIAMOND crystal tip, clear staff hand. Single dot face eye, no ornate hat decoration, no cape strands. Match our approved32px Luka native pixel density and tiny hands, broad flat color blocks with darknavy singlepixeloutline. Character is approximately22logicalpixels high, head5\\u20137pixelswide. All feet soles at y28, bodycenterx16, weaponfullyvisible. One neutral relaxed IDLE starting pose. Entire figure and equipment within x2..29,y2..28, NO cropping. Backgroundtransparent, no floor, no shadow, no text, no decorations. Flat8colors only; NO shading gradients, no antialiasing, no detailsmalltextures. Game-ready clean connected solidpixelclusters.\",\n  \"seed\": 243602,\n  \"image_size\": {\n    \"width\": 32,\n    \"height\": 32\n  },\n  \"output_count\": 1,\n  \"estimated_generations\": 5,\n  \"pricing_provisional\": true,\n  \"poll_tool\": \"get_image\",\n  \"download_path\": \"/mcp/images/c0f7d836-3458-4bed-88a0-e777787ea37a/download\"\n}\nPoll get_image(job_id=\"c0f7d836-3458-4bed-88a0-e777787ea37a\"). The source_image_id is usable after completion; it is an image ID, not a character/object ID. Actual usage is reported on completion. cancel_job(job_id=...) cancels unfinished work."
+        }
+      ],
+      "structuredContent": {
+        "background_job_id": "c0f7d836-3458-4bed-88a0-e777787ea37a",
+        "image_id": "5960d35d-5c04-509f-a167-c6958be049ec",
+        "status": "processing",
+        "source_image_id": "5960d35d-5c04-509f-a167-c6958be049ec",
+        "job_id": "c0f7d836-3458-4bed-88a0-e777787ea37a",
+        "description": "A new native32x32 extremely simple chunky8bit FULL BODY companion sprite, facing EAST(right), pure eye-level side-scroller3/4 view. CHARACTER:Friendly woman MAGE with large plain PURPLE TRIANGULAR WITCH HAT, brown hair locks, CREAM long robe with PURPLE cuffs/hem, brown boots. One simple BROWN STAFF held onRIGHT with MINT DIAMOND crystal tip, clear staff hand. Single dot face eye, no ornate hat decoration, no cape strands. Match our approved32px Luka native pixel density and tiny hands, broad flat color blocks with darknavy singlepixeloutline. Character is approximately22logicalpixels high, head5–7pixelswide. All feet soles at y28, bodycenterx16, weaponfullyvisible. One neutral relaxed IDLE starting pose. Entire figure and equipment within x2..29,y2..28, NO cropping. Backgroundtransparent, no floor, no shadow, no text, no decorations. Flat8colors only; NO shading gradients, no antialiasing, no detailsmalltextures. Game-ready clean connected solidpixelclusters.",
+        "seed": 243602,
+        "image_size": {
+          "width": 32,
+          "height": 32
+        },
+        "output_count": 1,
+        "estimated_generations": 5,
+        "pricing_provisional": true,
+        "poll_tool": "get_image",
+        "download_path": "/mcp/images/c0f7d836-3458-4bed-88a0-e777787ea37a/download"
+      },
+      "isError": false
+    }
+  },
+  {
+    "id": "momo",
+    "name": "모모",
+    "desc": "Small cheerful HUMAN HERBALIST with round BROWN BOB haircut, CREAM HEADKERCHIEF tied atback(no pointedhat), peach face, MINT GREEN APRON overcreamshortsleeves, brown boots. A large simple LEAF BUNDLE onbackleft, two green leafshapes, no wings. Holds ONE tiny brown seed pouch in right hand. Plaincompactbody with readable hands and twofeet. No animalears, no weapon, no jewelry.",
+    "palette": [
+      "#202D38",
+      "#6B3F2A",
+      "#AB6C37",
+      "#F3BD83",
+      "#E8D9AD",
+      "#89C9AF",
+      "#287780",
+      "#75954A"
+    ],
+    "attack": "Takes one tiny seedpouch in right hand from apron, winds throwing arm slightly backward, throws ONE seedpouch towardRIGHT at middle of clip with clear arm extension, arm follows through and returns to same relaxedidle. The seedpouch leaves hand onlyonce; do NOT draw thrown projectile or VFX in spriteframes. Leafbundle remains attached to back, creamkerchief remains on head. Feet planted, no stepping.",
+    "prompt": "A new native32x32 extremely simple chunky8bit FULL BODY companion sprite, facing EAST(right), pure eye-level side-scroller3/4 view. CHARACTER:Small cheerful HUMAN HERBALIST with round BROWN BOB haircut, CREAM HEADKERCHIEF tied atback(no pointedhat), peach face, MINT GREEN APRON overcreamshortsleeves, brown boots. A large simple LEAF BUNDLE onbackleft, two green leafshapes, no wings. Holds ONE tiny brown seed pouch in right hand. Plaincompactbody with readable hands and twofeet. No animalears, no weapon, no jewelry. Match our approved32px Luka native pixel density and tiny hands, broad flat color blocks with darknavy singlepixeloutline. Character is approximately22logicalpixels high, head5–7pixelswide. All feet soles at y28, bodycenterx16, weaponfullyvisible. One neutral relaxed IDLE starting pose. Entire figure and equipment within x2..29,y2..28, NO cropping. Backgroundtransparent, no floor, no shadow, no text, no decorations. Flat8colors only; NO shading gradients, no antialiasing, no detailsmalltextures. Game-ready clean connected solidpixelclusters.",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"background_job_id\": \"f524f8b7-5ea0-4c71-825c-d20f18a1d2e8\",\n  \"image_id\": \"519fb522-b9c5-5e52-a319-dec8820d8750\",\n  \"status\": \"processing\",\n  \"source_image_id\": \"519fb522-b9c5-5e52-a319-dec8820d8750\",\n  \"job_id\": \"f524f8b7-5ea0-4c71-825c-d20f18a1d2e8\",\n  \"description\": \"A new native32x32 extremely simple chunky8bit FULL BODY companion sprite, facing EAST(right), pure eye-level side-scroller3/4 view. CHARACTER:Small cheerful HUMAN HERBALIST with round BROWN BOB haircut, CREAM HEADKERCHIEF tied atback(no pointedhat), peach face, MINT GREEN APRON overcreamshortsleeves, brown boots. A large simple LEAF BUNDLE onbackleft, two green leafshapes, no wings. Holds ONE tiny brown seed pouch in right hand. Plaincompactbody with readable hands and twofeet. No animalears, no weapon, no jewelry. Match our approved32px Luka native pixel density and tiny hands, broad flat color blocks with darknavy singlepixeloutline. Character is approximately22logicalpixels high, head5\\u20137pixelswide. All feet soles at y28, bodycenterx16, weaponfullyvisible. One neutral relaxed IDLE starting pose. Entire figure and equipment within x2..29,y2..28, NO cropping. Backgroundtransparent, no floor, no shadow, no text, no decorations. Flat8colors only; NO shading gradients, no antialiasing, no detailsmalltextures. Game-ready clean connected solidpixelclusters.\",\n  \"seed\": 243602,\n  \"image_size\": {\n    \"width\": 32,\n    \"height\": 32\n  },\n  \"output_count\": 1,\n  \"estimated_generations\": 5,\n  \"pricing_provisional\": true,\n  \"poll_tool\": \"get_image\",\n  \"download_path\": \"/mcp/images/f524f8b7-5ea0-4c71-825c-d20f18a1d2e8/download\"\n}\nPoll get_image(job_id=\"f524f8b7-5ea0-4c71-825c-d20f18a1d2e8\"). The source_image_id is usable after completion; it is an image ID, not a character/object ID. Actual usage is reported on completion. cancel_job(job_id=...) cancels unfinished work."
+        }
+      ],
+      "structuredContent": {
+        "background_job_id": "f524f8b7-5ea0-4c71-825c-d20f18a1d2e8",
+        "image_id": "519fb522-b9c5-5e52-a319-dec8820d8750",
+        "status": "processing",
+        "source_image_id": "519fb522-b9c5-5e52-a319-dec8820d8750",
+        "job_id": "f524f8b7-5ea0-4c71-825c-d20f18a1d2e8",
+        "description": "A new native32x32 extremely simple chunky8bit FULL BODY companion sprite, facing EAST(right), pure eye-level side-scroller3/4 view. CHARACTER:Small cheerful HUMAN HERBALIST with round BROWN BOB haircut, CREAM HEADKERCHIEF tied atback(no pointedhat), peach face, MINT GREEN APRON overcreamshortsleeves, brown boots. A large simple LEAF BUNDLE onbackleft, two green leafshapes, no wings. Holds ONE tiny brown seed pouch in right hand. Plaincompactbody with readable hands and twofeet. No animalears, no weapon, no jewelry. Match our approved32px Luka native pixel density and tiny hands, broad flat color blocks with darknavy singlepixeloutline. Character is approximately22logicalpixels high, head5–7pixelswide. All feet soles at y28, bodycenterx16, weaponfullyvisible. One neutral relaxed IDLE starting pose. Entire figure and equipment within x2..29,y2..28, NO cropping. Backgroundtransparent, no floor, no shadow, no text, no decorations. Flat8colors only; NO shading gradients, no antialiasing, no detailsmalltextures. Game-ready clean connected solidpixelclusters.",
+        "seed": 243602,
+        "image_size": {
+          "width": 32,
+          "height": 32
+        },
+        "output_count": 1,
+        "estimated_generations": 5,
+        "pricing_provisional": true,
+        "poll_tool": "get_image",
+        "download_path": "/mcp/images/f524f8b7-5ea0-4c71-825c-d20f18a1d2e8/download"
+      },
+      "isError": false
+    }
+  }
+]

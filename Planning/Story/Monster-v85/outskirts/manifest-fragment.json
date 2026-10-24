@@ -1,0 +1,1753 @@
+{
+  "version": "v85",
+  "status": "reviewed-source-fragment-not-yet-Unity-imported",
+  "ownership": "Parent copies textures and merges these actors; preserve original hero and unrelated actors.",
+  "textures": [
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/base.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/animation-input.png",
+      "sha256": "6d0909a4382da12302537312d8d1fa1bc2535816977c2f59d63a54504db134aa",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/idle/00.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/idle/00.png",
+      "sha256": "ebcfc0ea67ba08eb7cc588d9dacd725d44be5cb5b5fe9423945adc169088084e",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/idle/01.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/idle/01.png",
+      "sha256": "f95363ad4e34d4dd77deaf2a761c23304843474f73904e0da8b11d663f979fc9",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/idle/02.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/idle/02.png",
+      "sha256": "9bf67598f273706e2654a54b569d201ddce3a7f15196f8bef834dec9b7ac2640",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/idle/03.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/idle/03.png",
+      "sha256": "a5ced3d18aa5f93eec103518fa476e3b90ae4d78f09ec997692ebb4ea8dc6f2d",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/idle/04.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/idle/04.png",
+      "sha256": "ebcfc0ea67ba08eb7cc588d9dacd725d44be5cb5b5fe9423945adc169088084e",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/idle/05.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/idle/05.png",
+      "sha256": "ebcfc0ea67ba08eb7cc588d9dacd725d44be5cb5b5fe9423945adc169088084e",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/idle/06.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/idle/06.png",
+      "sha256": "f95363ad4e34d4dd77deaf2a761c23304843474f73904e0da8b11d663f979fc9",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/idle/07.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/idle/07.png",
+      "sha256": "7156ab9b288fed9190d4ad2394cf23fe520f1fb2c65f6e1777f7cfa15db011dc",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/idle/08.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/idle/08.png",
+      "sha256": "235821ebacfb9fd271c6755e45ce82d4993ba09f8c354590cce2983a45eef3f9",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/attack/00.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/attack/00.png",
+      "sha256": "ebcfc0ea67ba08eb7cc588d9dacd725d44be5cb5b5fe9423945adc169088084e",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/attack/01.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/attack/01.png",
+      "sha256": "d7976b61745403859803ac7dcfe486cf12e30f23bc72f905374af72763eb50b7",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/attack/02.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/attack/02.png",
+      "sha256": "f33161631cd75415faa8397f5b000638778b79e536398269919758527162b7f7",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/attack/03.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/attack/03.png",
+      "sha256": "9834ba753e0437b070d54db4bb2c94ce65b409705404502ee6ee0dc1631d310a",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/attack/04.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/attack/04.png",
+      "sha256": "11ce204628a9f492838aea16316ecd57ae91fbcdd2d90dbf3a4c68a8c121bea1",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/attack/05.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/attack/05.png",
+      "sha256": "a8d805655865a8b19868357563f0b660a8f27b5c1f6287070024118f57236a4d",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/attack/06.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/attack/06.png",
+      "sha256": "bf2dcc9a90dc23b3c33660775e0eed72c7523474ce30c9d1116c0ac85915ad60",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/attack/07.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/attack/07.png",
+      "sha256": "8eb4de453d1af319cc2b5a6ecb4fade6b31a9268502bddb62b242faefc5dabb6",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/attack/08.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/attack/08.png",
+      "sha256": "3cf4d52413e502a74386bd7b6f14717136ff0d77f7efc272107c0bb28a525d96",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/attack/09.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/attack/09.png",
+      "sha256": "cfdb861f051ce0ff2e9a4e50cb196c6e47723599daa29eea3ad068217a796a9c",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/attack/10.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/attack/10.png",
+      "sha256": "0cdba2a5223f53fafb256fd98c355bf856da05645bdc9e4720b8e19defcad19e",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/attack/11.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/attack/11.png",
+      "sha256": "ec99f400300edeb6b3c1d9d3d88f91358ce3399494fb85871a5c21bd13c1c546",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/attack/12.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/attack/12.png",
+      "sha256": "f549eec883d49e8d0f9235e87370ce6c4dd7da7ea41e777f5fff3448329b84f8",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/attack/13.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/attack/13.png",
+      "sha256": "c920b314c222f40db0d71c359ddb6bbf23c57cc988377448728b62f5033249a2",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/attack/14.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/attack/14.png",
+      "sha256": "ebcfc0ea67ba08eb7cc588d9dacd725d44be5cb5b5fe9423945adc169088084e",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/attack/15.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/attack/15.png",
+      "sha256": "ebcfc0ea67ba08eb7cc588d9dacd725d44be5cb5b5fe9423945adc169088084e",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/attack/16.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/attack/16.png",
+      "sha256": "ebcfc0ea67ba08eb7cc588d9dacd725d44be5cb5b5fe9423945adc169088084e",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/stun/00.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/stun/00.png",
+      "sha256": "4477ef72f7b65079efb76bb7bacab4529f099facb35fe9cc24efc0180ff67991",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/stun/01.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/stun/01.png",
+      "sha256": "c170e6e467924741c09e992c5e422fa91955d69579225aeb989f43213ad8b5f3",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/stun/02.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/stun/02.png",
+      "sha256": "be311962dde17d4f29b1a734b3c735a256507a7e28697effd3a44be484be94cc",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/stun/03.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/stun/03.png",
+      "sha256": "ed2209bc8bfe273a310df7059b13f8fa2fb0c08602e105f05ab7543931328fa8",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/stun/04.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/stun/04.png",
+      "sha256": "4477ef72f7b65079efb76bb7bacab4529f099facb35fe9cc24efc0180ff67991",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/stun/05.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/stun/05.png",
+      "sha256": "4477ef72f7b65079efb76bb7bacab4529f099facb35fe9cc24efc0180ff67991",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/stun/06.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/stun/06.png",
+      "sha256": "c170e6e467924741c09e992c5e422fa91955d69579225aeb989f43213ad8b5f3",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/stun/07.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/stun/07.png",
+      "sha256": "12c172cd008190049d7e9fadd17fa8e309868c037eaa2432be4a3bad41080908",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/stun/08.png",
+      "source": "Planning/Story/Monster-v85/outskirts/wild_dog/stun/08.png",
+      "sha256": "ed2209bc8bfe273a310df7059b13f8fa2fb0c08602e105f05ab7543931328fa8",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/base.png",
+      "source": "Planning/Story/Monster-v85/outskirts/grey_wolf/animation-input.png",
+      "sha256": "103761290f66f5bb3c09099f4bae6f2f5f99de8efb8f232f393a71bc89e3f35d",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/idle/00.png",
+      "source": "Planning/Story/Monster-v85/outskirts/grey_wolf/idle/00.png",
+      "sha256": "74cd223445f77716f6a3459b79a63d1002ca56966a888244a22749ee668ed722",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/idle/01.png",
+      "source": "Planning/Story/Monster-v85/outskirts/grey_wolf/idle/01.png",
+      "sha256": "c62932f2962b16e273bb651defc8b9aa46f14ff2254f829f9764f1079c528253",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/idle/03.png",
+      "source": "Planning/Story/Monster-v85/outskirts/grey_wolf/idle/03.png",
+      "sha256": "35f1d07c02a9c05d8a9ce869046e030f12753fce78565a53ee4813ff09f0b40b",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/idle/04.png",
+      "source": "Planning/Story/Monster-v85/outskirts/grey_wolf/idle/04.png",
+      "sha256": "28d1be8002465d35ed6c567f9be8bd02fc277ceefbb1f1aeaa0d93a14fffd11c",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/idle/05.png",
+      "source": "Planning/Story/Monster-v85/outskirts/grey_wolf/idle/05.png",
+      "sha256": "459bebdde6677e8008f0d51742bb5eac3f5176da2f835cdc9788f7944d5dc1c7",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/attack/00.png",
+      "source": "Planning/Story/Monster-v85/outskirts/grey_wolf/attack/00.png",
+      "sha256": "74cd223445f77716f6a3459b79a63d1002ca56966a888244a22749ee668ed722",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/attack/01.png",
+      "source": "Planning/Story/Monster-v85/outskirts/grey_wolf/attack/01.png",
+      "sha256": "7a392dd595c727a8d9e9f7b0d56328e12307f1f55b2c01a1dacd290392385949",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/attack/02.png",
+      "source": "Planning/Story/Monster-v85/outskirts/grey_wolf/attack/02.png",
+      "sha256": "ffc582f39cf8139c91d769f10a9e2934da37208e563ec0ca7977b74bd123115a",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/attack/03.png",
+      "source": "Planning/Story/Monster-v85/outskirts/grey_wolf/attack/03.png",
+      "sha256": "7f25910ae335c3d2959a7f607cbaf10595fdd2bc4992663bdc3f74222af714c0",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/attack/04.png",
+      "source": "Planning/Story/Monster-v85/outskirts/grey_wolf/attack/04.png",
+      "sha256": "1ae3abe40d8a6e4f6b134cbcf0736ad8faf509acec0ed2af0710339585d79002",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/attack/05.png",
+      "source": "Planning/Story/Monster-v85/outskirts/grey_wolf/attack/05.png",
+      "sha256": "856b6ec3e9a9ad034012fd3cd9ff0334def9467c2834af4a414deeae64212af7",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/attack/06.png",
+      "source": "Planning/Story/Monster-v85/outskirts/grey_wolf/attack/06.png",
+      "sha256": "2563949d8bfa9fb43818e685190cea024b7cb78156dee96f9a1336994bbcb5ff",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/attack/07.png",
+      "source": "Planning/Story/Monster-v85/outskirts/grey_wolf/attack/07.png",
+      "sha256": "3791d8c28c93621922bb3c8bf5912df582d0300e74b371e7695d1ad1f82cc66e",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/attack/08.png",
+      "source": "Planning/Story/Monster-v85/outskirts/grey_wolf/attack/08.png",
+      "sha256": "4e5e14e91f01b2724dc37d72ea9411b8c3203eda9eca595c9b054388ecbf743e",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/attack/09.png",
+      "source": "Planning/Story/Monster-v85/outskirts/grey_wolf/attack/09.png",
+      "sha256": "52187691e6a3f643f57683a9b19b46fbfb560d84a43798461ab69df92831f7ac",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/attack/10.png",
+      "source": "Planning/Story/Monster-v85/outskirts/grey_wolf/attack/10.png",
+      "sha256": "7b8c242ca9025cf9657ce4a1419bc196b511af5f1005ad6dfb83f43d76eea9f2",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/attack/11.png",
+      "source": "Planning/Story/Monster-v85/outskirts/grey_wolf/attack/11.png",
+      "sha256": "74cd223445f77716f6a3459b79a63d1002ca56966a888244a22749ee668ed722",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/attack/12.png",
+      "source": "Planning/Story/Monster-v85/outskirts/grey_wolf/attack/12.png",
+      "sha256": "74cd223445f77716f6a3459b79a63d1002ca56966a888244a22749ee668ed722",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/attack/13.png",
+      "source": "Planning/Story/Monster-v85/outskirts/grey_wolf/attack/13.png",
+      "sha256": "74cd223445f77716f6a3459b79a63d1002ca56966a888244a22749ee668ed722",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/attack/14.png",
+      "source": "Planning/Story/Monster-v85/outskirts/grey_wolf/attack/14.png",
+      "sha256": "74cd223445f77716f6a3459b79a63d1002ca56966a888244a22749ee668ed722",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/attack/15.png",
+      "source": "Planning/Story/Monster-v85/outskirts/grey_wolf/attack/15.png",
+      "sha256": "eaa2aa17c790c4b402d6586b7f4cc3fc7938634bd545126674a280a80a791279",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/attack/16.png",
+      "source": "Planning/Story/Monster-v85/outskirts/grey_wolf/attack/16.png",
+      "sha256": "eaa2aa17c790c4b402d6586b7f4cc3fc7938634bd545126674a280a80a791279",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/stun/00.png",
+      "source": "Planning/Story/Monster-v85/outskirts/grey_wolf/stun/00.png",
+      "sha256": "2e171d6cc39d43ba9ee2b79f1800046400e7e931ceced8bdc5d88e94102b29f9",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/stun/01.png",
+      "source": "Planning/Story/Monster-v85/outskirts/grey_wolf/stun/01.png",
+      "sha256": "2e171d6cc39d43ba9ee2b79f1800046400e7e931ceced8bdc5d88e94102b29f9",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/stun/02.png",
+      "source": "Planning/Story/Monster-v85/outskirts/grey_wolf/stun/02.png",
+      "sha256": "2e171d6cc39d43ba9ee2b79f1800046400e7e931ceced8bdc5d88e94102b29f9",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/stun/03.png",
+      "source": "Planning/Story/Monster-v85/outskirts/grey_wolf/stun/03.png",
+      "sha256": "dffc12561e119a23e79dc0c115e2b3c9e08d950380b70a08079764e1e21d1aaf",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/stun/04.png",
+      "source": "Planning/Story/Monster-v85/outskirts/grey_wolf/stun/04.png",
+      "sha256": "83ecda5a299c4583b4a20b29b3a91042a30d7c10ba246f4d0c322a86fa32c0fa",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/stun/05.png",
+      "source": "Planning/Story/Monster-v85/outskirts/grey_wolf/stun/05.png",
+      "sha256": "c6161d8946cd7195ee1f3c216fa0ba754e27bc82d9cb5f253177c60924ad1e16",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/stun/06.png",
+      "source": "Planning/Story/Monster-v85/outskirts/grey_wolf/stun/06.png",
+      "sha256": "eed4a6b7801ca8061e091cf0889cc998dbbdcbedb69a1f4302f3e8599533bd61",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/stun/07.png",
+      "source": "Planning/Story/Monster-v85/outskirts/grey_wolf/stun/07.png",
+      "sha256": "ef5386a5583b138554b185107236ddc5fecd3abaad57b168d8a7a2213a8113c1",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/stun/08.png",
+      "source": "Planning/Story/Monster-v85/outskirts/grey_wolf/stun/08.png",
+      "sha256": "8affd049c12c7c9f7251597e4152e8529852de6579607bba5e9945f0bb853229",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/base.png",
+      "source": "Planning/Story/Monster-v85/outskirts/brown_bear/animation-input.png",
+      "sha256": "3c687da41cb1c654fca4aadd1925bcdcec0183dff41fbc50be451bda499b586b",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/idle/00.png",
+      "source": "Planning/Story/Monster-v85/outskirts/brown_bear/idle/00.png",
+      "sha256": "a76daec4f9cf53a0a9eed22dc2b5b6d5a1f04924c52a548b4a26162d9d28b2bb",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/idle/03.png",
+      "source": "Planning/Story/Monster-v85/outskirts/brown_bear/idle/03.png",
+      "sha256": "a36859c98ac05ad1bcc4d889389e9bbcebac62aed9c78d9f82bcd860caf92f91",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/idle/06.png",
+      "source": "Planning/Story/Monster-v85/outskirts/brown_bear/idle/06.png",
+      "sha256": "736b728ccc9080079607d6b4f3ae189ae7e45230d2500b68eb3b66e60a6826d3",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/idle/07.png",
+      "source": "Planning/Story/Monster-v85/outskirts/brown_bear/idle/07.png",
+      "sha256": "bbae040c05a00ca29808d0de5344ab835e8d96b02c0392a154c3a6b15b995862",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/idle/08.png",
+      "source": "Planning/Story/Monster-v85/outskirts/brown_bear/idle/08.png",
+      "sha256": "39fe6a0fa9ddb585d4812495fba82dd396c618a9b55b321c9cc12fd00aa8c394",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/attack/00.png",
+      "source": "Planning/Story/Monster-v85/outskirts/brown_bear/attack/00.png",
+      "sha256": "a76daec4f9cf53a0a9eed22dc2b5b6d5a1f04924c52a548b4a26162d9d28b2bb",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/attack/01.png",
+      "source": "Planning/Story/Monster-v85/outskirts/brown_bear/attack/01.png",
+      "sha256": "2e5ddab4e6167213e8bc13e3f5eb7aaa56b5cca48f77636146ab6b8ab3f94841",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/attack/02.png",
+      "source": "Planning/Story/Monster-v85/outskirts/brown_bear/attack/02.png",
+      "sha256": "cdb230d592f14b255bee13a1f4aaa9c067f24db215fa457630b548d0a17a97f6",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/attack/03.png",
+      "source": "Planning/Story/Monster-v85/outskirts/brown_bear/attack/03.png",
+      "sha256": "045e2323cd503f7457a71e001c8cb605082596c59aa86b0e38f4039144933c90",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/attack/04.png",
+      "source": "Planning/Story/Monster-v85/outskirts/brown_bear/attack/04.png",
+      "sha256": "c835efdeb51262d61122e8e46dc3d1b591baca44eb7376c9e7f5810ee64d8c7e",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/attack/05.png",
+      "source": "Planning/Story/Monster-v85/outskirts/brown_bear/attack/05.png",
+      "sha256": "b37e6f69d7047d29cd13741120dc2383c1862b9c7e32f0721e1e32db43a43050",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/attack/06.png",
+      "source": "Planning/Story/Monster-v85/outskirts/brown_bear/attack/06.png",
+      "sha256": "3b40c84d0ff0500380214763a7528c24c0c62e89576cae74ecdf5b176e3bcc05",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/attack/07.png",
+      "source": "Planning/Story/Monster-v85/outskirts/brown_bear/attack/07.png",
+      "sha256": "c7dce1383cf5c471e2d29de5644548382dbcec50ed577b811de53483859b644b",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/attack/08.png",
+      "source": "Planning/Story/Monster-v85/outskirts/brown_bear/attack/08.png",
+      "sha256": "e5423649b458db736783a77da676dff23a617886c430dcfaa03c3b107744e1d1",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/attack/09.png",
+      "source": "Planning/Story/Monster-v85/outskirts/brown_bear/attack/09.png",
+      "sha256": "8a179c0c4723c80d1738f19fcd207d9c078937993989e8db9e46661581d47ea1",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/attack/10.png",
+      "source": "Planning/Story/Monster-v85/outskirts/brown_bear/attack/10.png",
+      "sha256": "116fbef26e47b9a8da600af6b8c46cd05f84c25f01681e2599bc57e3241699c2",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/attack/11.png",
+      "source": "Planning/Story/Monster-v85/outskirts/brown_bear/attack/11.png",
+      "sha256": "116fbef26e47b9a8da600af6b8c46cd05f84c25f01681e2599bc57e3241699c2",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/attack/12.png",
+      "source": "Planning/Story/Monster-v85/outskirts/brown_bear/attack/12.png",
+      "sha256": "116fbef26e47b9a8da600af6b8c46cd05f84c25f01681e2599bc57e3241699c2",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/attack/13.png",
+      "source": "Planning/Story/Monster-v85/outskirts/brown_bear/attack/13.png",
+      "sha256": "b77c2b17c59c13d74e67c356bf72c8ced3abf754def8d62898bd8c6bc25b1c31",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/attack/14.png",
+      "source": "Planning/Story/Monster-v85/outskirts/brown_bear/attack/14.png",
+      "sha256": "f8a9df8448d79a31a544cb0f1e37f1ba657dc6f4fa323439ede535d279783d41",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/attack/15.png",
+      "source": "Planning/Story/Monster-v85/outskirts/brown_bear/attack/15.png",
+      "sha256": "89980c6ebb9868c1a43215bc7ec3ad8600d1fec70c8922fec6d0890a6f22cb07",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/attack/16.png",
+      "source": "Planning/Story/Monster-v85/outskirts/brown_bear/attack/16.png",
+      "sha256": "972b5e42b50179919f6822ebf439964b5d393b5c4f4a964643bd8a904d7d885d",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/stun/00.png",
+      "source": "Planning/Story/Monster-v85/outskirts/brown_bear/stun/00.png",
+      "sha256": "1c6cf50880b45b91ee157fa17a6c0172205a34ab7db7fe0fb7cd3d17114062d6",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/stun/01.png",
+      "source": "Planning/Story/Monster-v85/outskirts/brown_bear/stun/01.png",
+      "sha256": "073f3b00e793137b09014637f9cfaf16b73c62aa822e6ef773a21267d1bb9129",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/stun/02.png",
+      "source": "Planning/Story/Monster-v85/outskirts/brown_bear/stun/02.png",
+      "sha256": "c2ce0675538ee8379e7a087b264a5ba39c29130a782d3329667870ebfc03b337",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/stun/03.png",
+      "source": "Planning/Story/Monster-v85/outskirts/brown_bear/stun/03.png",
+      "sha256": "403266cd8f72f234c5b454842a6bf8d37a9787c5316052ccc1cca05c84a3d844",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/stun/04.png",
+      "source": "Planning/Story/Monster-v85/outskirts/brown_bear/stun/04.png",
+      "sha256": "7f662e8402fb131a206cb700ca62ec832a26e1160c96cd80c24bc20579343634",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/stun/05.png",
+      "source": "Planning/Story/Monster-v85/outskirts/brown_bear/stun/05.png",
+      "sha256": "7cae3da04bc68f435d8dd73226e51525ba1ad17418559bf1cc77b826f44553e0",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/stun/06.png",
+      "source": "Planning/Story/Monster-v85/outskirts/brown_bear/stun/06.png",
+      "sha256": "f0e7b727b9da60b6ad32aacef2da2219b84de4ec9481bb69599b3d26eba0ff9b",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/stun/07.png",
+      "source": "Planning/Story/Monster-v85/outskirts/brown_bear/stun/07.png",
+      "sha256": "5e2b4127436000e81c947a622bdd1f4679e76193af438a324ea104cd74debf3f",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/stun/08.png",
+      "source": "Planning/Story/Monster-v85/outskirts/brown_bear/stun/08.png",
+      "sha256": "3ac3173248b2e00bfcb8e01c9171bd6d5f81bb74fbf1eeed3113f826a5b6459a",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    }
+  ],
+  "actors": [
+    {
+      "id": "wild_dog",
+      "facesRight": true,
+      "height": 0.92,
+      "referenceHeightPixels": 62,
+      "clips": [
+        {
+          "motion": "Idle",
+          "sourceId": "v85-wild_dog-idle",
+          "sourceJob": "97c39b3e-fac1-4169-ad10-1a1fa41b1cee",
+          "note": "Original hero used directly for style. Reviewed native PixelLab frames; transparent padding only. Hit uses runtime white flash. No death.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/idle/00.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/idle/01.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/idle/02.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/idle/03.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/idle/04.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/idle/05.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/idle/06.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/idle/07.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/idle/08.png"
+          ],
+          "sourceFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "frameDurationsMs": [
+            180,
+            180,
+            180,
+            180,
+            180,
+            180,
+            180,
+            180,
+            180
+          ],
+          "fps": 5.555555555555555,
+          "loop": true,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 64,
+            "y": 48
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Attack",
+          "sourceId": "v85-wild_dog-attack",
+          "sourceJob": "f904ff1f-56e5-4f6f-964b-1008f318c765",
+          "note": "Original hero used directly for style. Reviewed native PixelLab frames; transparent padding only. Hit uses runtime white flash. No death.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/attack/00.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/attack/01.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/attack/02.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/attack/03.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/attack/04.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/attack/05.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/attack/06.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/attack/07.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/attack/08.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/attack/09.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/attack/10.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/attack/11.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/attack/12.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/attack/13.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/attack/14.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/attack/15.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/attack/16.png"
+          ],
+          "sourceFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "frameDurationsMs": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            60,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30
+          ],
+          "fps": 24.285714285714285,
+          "loop": false,
+          "contactFrame": 8,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 103,
+            "y": 43
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Stun",
+          "sourceId": "v85-wild_dog-stun",
+          "sourceJob": "a9873451-de50-484a-bb32-66dfd8146048",
+          "note": "Original hero used directly for style. Reviewed native PixelLab frames; transparent padding only. Hit uses runtime white flash. No death.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/stun/00.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/stun/01.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/stun/02.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/stun/03.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/stun/04.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/stun/05.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/stun/06.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/stun/07.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/stun/08.png"
+          ],
+          "sourceFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "frameDurationsMs": [
+            170,
+            170,
+            170,
+            170,
+            170,
+            170,
+            170,
+            170,
+            170
+          ],
+          "fps": 5.882352941176471,
+          "loop": true,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 64,
+            "y": 48
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Hit",
+          "sourceId": "v85-wild_dog-hit",
+          "sourceJob": "01594b55-142b-41a2-95e4-b5ce48958f1e",
+          "note": "Original hero used directly for style. Reviewed native PixelLab frames; transparent padding only. Hit uses runtime white flash. No death.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-v85/wild_dog/base.png"
+          ],
+          "sourceFrames": [
+            0
+          ],
+          "frameDurationsMs": [
+            120
+          ],
+          "fps": 8.333333333333334,
+          "loop": false,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 64,
+            "y": 48
+          },
+          "staticFallback": true,
+          "legacyStun": false
+        }
+      ]
+    },
+    {
+      "id": "grey_wolf",
+      "facesRight": false,
+      "height": 1.2,
+      "referenceHeightPixels": 46,
+      "clips": [
+        {
+          "motion": "Idle",
+          "sourceId": "v85-grey_wolf-idle",
+          "sourceJob": "81680733-03dd-40de-9855-9940d5ce2b83",
+          "note": "Original hero used directly for style. Reviewed native PixelLab frames; transparent padding only. Hit uses runtime white flash. No death.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/idle/00.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/idle/01.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/idle/03.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/idle/04.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/idle/05.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/idle/04.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/idle/03.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/idle/01.png"
+          ],
+          "sourceFrames": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            4,
+            3,
+            1
+          ],
+          "frameDurationsMs": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ],
+          "fps": 5.0,
+          "loop": true,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 64,
+            "y": 48
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Attack",
+          "sourceId": "v85-grey_wolf-attack",
+          "sourceJob": "cec612e7-d737-4ba2-9113-5c4002ca0616",
+          "note": "Original hero used directly for style. Reviewed native PixelLab frames; transparent padding only. Hit uses runtime white flash. No death.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/attack/00.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/attack/01.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/attack/02.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/attack/03.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/attack/04.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/attack/05.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/attack/06.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/attack/07.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/attack/08.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/attack/09.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/attack/10.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/attack/11.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/attack/12.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/attack/13.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/attack/14.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/attack/15.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/attack/16.png"
+          ],
+          "sourceFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "frameDurationsMs": [
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            60,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28
+          ],
+          "fps": 24.285714285714285,
+          "loop": false,
+          "contactFrame": 6,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 28,
+            "y": 53
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Stun",
+          "sourceId": "v85-grey_wolf-stun",
+          "sourceJob": "0c407915-f092-438a-8a87-29825d98b9fe",
+          "note": "Original hero used directly for style. Reviewed native PixelLab frames; transparent padding only. Hit uses runtime white flash. No death.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/stun/00.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/stun/01.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/stun/02.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/stun/03.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/stun/04.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/stun/05.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/stun/06.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/stun/07.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/stun/08.png"
+          ],
+          "sourceFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "frameDurationsMs": [
+            170,
+            170,
+            170,
+            170,
+            170,
+            170,
+            170,
+            170,
+            170
+          ],
+          "fps": 5.882352941176471,
+          "loop": true,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 64,
+            "y": 48
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Hit",
+          "sourceId": "v85-grey_wolf-hit",
+          "sourceJob": "e79434d7-8b8a-426a-95d8-b7d53c718ccd",
+          "note": "Original hero used directly for style. Reviewed native PixelLab frames; transparent padding only. Hit uses runtime white flash. No death.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-v85/grey_wolf/base.png"
+          ],
+          "sourceFrames": [
+            0
+          ],
+          "frameDurationsMs": [
+            120
+          ],
+          "fps": 8.333333333333334,
+          "loop": false,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 64,
+            "y": 48
+          },
+          "staticFallback": true,
+          "legacyStun": false
+        }
+      ]
+    },
+    {
+      "id": "brown_bear",
+      "facesRight": true,
+      "height": 1.6,
+      "referenceHeightPixels": 60,
+      "clips": [
+        {
+          "motion": "Idle",
+          "sourceId": "v85-brown_bear-idle",
+          "sourceJob": "f358bf21-cb20-46af-b9ba-089c9d5b03e0",
+          "note": "Original hero used directly for style. Reviewed native PixelLab frames; transparent padding only. Hit uses runtime white flash. No death.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/idle/00.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/idle/03.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/idle/06.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/idle/07.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/idle/08.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/idle/07.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/idle/06.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/idle/03.png"
+          ],
+          "sourceFrames": [
+            0,
+            3,
+            6,
+            7,
+            8,
+            7,
+            6,
+            3
+          ],
+          "frameDurationsMs": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ],
+          "fps": 5.0,
+          "loop": true,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 64,
+            "y": 48
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Attack",
+          "sourceId": "v85-brown_bear-attack",
+          "sourceJob": "5eeab8fe-d0d5-43df-b384-19892f036ea5",
+          "note": "Original hero used directly for style. Reviewed native PixelLab frames; transparent padding only. Hit uses runtime white flash. No death.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/attack/00.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/attack/01.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/attack/02.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/attack/03.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/attack/04.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/attack/05.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/attack/06.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/attack/07.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/attack/08.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/attack/09.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/attack/10.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/attack/11.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/attack/12.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/attack/13.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/attack/14.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/attack/15.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/attack/16.png"
+          ],
+          "sourceFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "frameDurationsMs": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            60,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30
+          ],
+          "fps": 24.285714285714285,
+          "loop": false,
+          "contactFrame": 8,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 99,
+            "y": 75
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Stun",
+          "sourceId": "v85-brown_bear-stun",
+          "sourceJob": "8ce0e9ba-cafb-4315-9d0b-70cb69d56137",
+          "note": "Original hero used directly for style. Reviewed native PixelLab frames; transparent padding only. Hit uses runtime white flash. No death.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/stun/00.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/stun/01.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/stun/02.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/stun/03.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/stun/04.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/stun/05.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/stun/06.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/stun/07.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/stun/08.png"
+          ],
+          "sourceFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "frameDurationsMs": [
+            170,
+            170,
+            170,
+            170,
+            170,
+            170,
+            170,
+            170,
+            170
+          ],
+          "fps": 5.882352941176471,
+          "loop": true,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 64,
+            "y": 48
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Hit",
+          "sourceId": "v85-brown_bear-hit",
+          "sourceJob": "1c0503f1-3a92-4162-a259-362522a32753",
+          "note": "Original hero used directly for style. Reviewed native PixelLab frames; transparent padding only. Hit uses runtime white flash. No death.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-v85/brown_bear/base.png"
+          ],
+          "sourceFrames": [
+            0
+          ],
+          "frameDurationsMs": [
+            120
+          ],
+          "fps": 8.333333333333334,
+          "loop": false,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 64,
+            "y": 48
+          },
+          "staticFallback": true,
+          "legacyStun": false
+        }
+      ]
+    }
+  ],
+  "qa": "review-decisions.json",
+  "provenance": "jobs.json"
+}

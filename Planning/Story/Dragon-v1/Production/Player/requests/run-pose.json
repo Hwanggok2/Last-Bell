@@ -1,0 +1,15 @@
+{
+  "id": "run-pose",
+  "tool": "edit_image_pixen",
+  "request": {
+    "image_url": "https://api.pixellab.ai/mcp/images/b521d718-274a-47bb-9271-02911e0f8e7a/download",
+    "width": 48,
+    "height": 48,
+    "no_background": true,
+    "seed": 24102413,
+    "description": "Change ONLY pose: same tiny cream-hooded swordsman sprinting RIGHT in place, chest leaning30degrees forward, head ahead of hips, one knee driving forward and rear leg extended back. Free bent arm pumps forward; sword hand bent behind hip, same short steel sword trails down-left. Keep exactly the same hood/outfit/scarf/colors/proportions and single connected weapon. No cape or bell. Fixed48canvas, feet near original ground line, all body/weapon inside."
+  },
+  "result": [
+    "id: 4a7388f1-b9c6-4a37-a159-20ce68d3447e\njob_id: 4a7388f1-b9c6-4a37-a159-20ce68d3447e\nmodel: pixen\nedit: Change ONLY pose: same tiny cream-hooded swordsman sprinting RIGHT in place, chest leaning30degrees forward, head ahead of hips, one knee driving forward and rear leg extended back. Free bent arm pumps forward; sword hand bent behind hip, same short steel sword trails down-left. Keep exactly the same hood/outfit/scarf/colors/proportions and single connected weapon. No cape or bell. Fixed48canvas, feet near original ground line, all body/weapon inside.\nsource: 48x48px\nsize: 48x48px\ntransparent: True\nseed: 24102413\nasset_id: cecfe8cc-ef8c-5272-9c7a-eeb109e7fd87\nasset_status: pending (saved when generation completes)\ncost: 1 generation\nstatus: processing (~10-40s)\n\nhint: get_image(job_id=\"4a7388f1-b9c6-4a37-a159-20ce68d3447e\")"
+  ]
+}

@@ -1,0 +1,268 @@
+{
+  "sewer_rat": {
+    "idle": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "selectedFrames": 9,
+      "uniquePixelFrames": 9,
+      "totalMs": 1620,
+      "seamAlphaChangedPixels": 0,
+      "seamMeanMaxRGBDifference": 0.716,
+      "edgeClipped": false,
+      "binaryAlpha": true,
+      "footAlphaRois": [
+        {
+          "rect": [
+            34,
+            124,
+            136,
+            130
+          ],
+          "changedPixels": [
+            0,
+            4,
+            4,
+            4,
+            4,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "attack": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        13,
+        14,
+        15,
+        16
+      ],
+      "selectedFrames": 13,
+      "uniquePixelFrames": 13,
+      "totalMs": 700,
+      "seamAlphaChangedPixels": 18,
+      "seamMeanMaxRGBDifference": 0.67,
+      "edgeClipped": false,
+      "binaryAlpha": true
+    },
+    "stun": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "selectedFrames": 9,
+      "uniquePixelFrames": 7,
+      "totalMs": 990,
+      "seamAlphaChangedPixels": 7,
+      "seamMeanMaxRGBDifference": 1.181,
+      "edgeClipped": false,
+      "binaryAlpha": true
+    }
+  },
+  "drowned_resident": {
+    "idle": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "selectedFrames": 9,
+      "uniquePixelFrames": 9,
+      "totalMs": 1620,
+      "seamAlphaChangedPixels": 0,
+      "seamMeanMaxRGBDifference": 0.457,
+      "edgeClipped": false,
+      "binaryAlpha": true,
+      "footAlphaRois": [
+        {
+          "rect": [
+            76,
+            124,
+            100,
+            130
+          ],
+          "changedPixels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "rect": [
+            113,
+            124,
+            143,
+            130
+          ],
+          "changedPixels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "attack": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "selectedFrames": 17,
+      "uniquePixelFrames": 14,
+      "totalMs": 700,
+      "seamAlphaChangedPixels": 0,
+      "seamMeanMaxRGBDifference": 1.604,
+      "edgeClipped": false,
+      "binaryAlpha": true
+    },
+    "stun": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "selectedFrames": 9,
+      "uniquePixelFrames": 5,
+      "totalMs": 990,
+      "seamAlphaChangedPixels": 0,
+      "seamMeanMaxRGBDifference": 1.533,
+      "edgeClipped": false,
+      "binaryAlpha": true
+    }
+  },
+  "water_wraith": {
+    "idle": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        1,
+        0,
+        8,
+        7,
+        8
+      ],
+      "selectedFrames": 8,
+      "uniquePixelFrames": 5,
+      "totalMs": 1600,
+      "seamAlphaChangedPixels": 5,
+      "seamMeanMaxRGBDifference": 0.422,
+      "edgeClipped": false,
+      "binaryAlpha": true
+    },
+    "attack": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "selectedFrames": 17,
+      "uniquePixelFrames": 17,
+      "totalMs": 700,
+      "seamAlphaChangedPixels": 9,
+      "seamMeanMaxRGBDifference": 0.138,
+      "edgeClipped": false,
+      "binaryAlpha": true
+    },
+    "stun": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "selectedFrames": 9,
+      "uniquePixelFrames": 8,
+      "totalMs": 990,
+      "seamAlphaChangedPixels": 3,
+      "seamMeanMaxRGBDifference": 1.489,
+      "edgeClipped": false,
+      "binaryAlpha": true
+    }
+  }
+}

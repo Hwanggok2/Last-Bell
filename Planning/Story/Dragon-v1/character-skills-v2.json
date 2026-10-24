@@ -1,0 +1,64 @@
+{
+  "version": "dragon-skills-v2",
+  "dataVersion": "mvp1.18.0",
+  "status": "v095-implementation-verification-in-progress",
+  "skills": [
+    {
+      "id": "skill_luka_gale_slash",
+      "characterId": "on",
+      "displayName": "바람 베기",
+      "description": "공격력 160%로 베기",
+      "cooldownMs": 20000,
+      "damagePercent": 160,
+      "shieldMaxHpPercent": 0,
+      "shieldDurationMs": 0,
+      "staggerGain": 0,
+      "characterName": "루카",
+      "activation": "하단 중앙 스킬 버튼 / 키보드 E",
+      "artId": "dragon_hero_on",
+      "contactDelayMs": 200
+    },
+    {
+      "id": "skill_daren_iron_counter",
+      "characterId": "dam",
+      "displayName": "방패 충격",
+      "description": "공격력 115%. 3초간 체력 8%를 1회 보호",
+      "cooldownMs": 20000,
+      "damagePercent": 115,
+      "shieldMaxHpPercent": 8,
+      "shieldDurationMs": 3000,
+      "staggerGain": 0,
+      "characterName": "다렌",
+      "activation": "하단 중앙 스킬 버튼 / 키보드 E",
+      "artId": "player_dragon_daren",
+      "contactDelayMs": 200
+    },
+    {
+      "id": "skill_miel_star_seal",
+      "characterId": "rin",
+      "displayName": "별빛 벼락",
+      "description": "공격력 125%. 기절 누적 +50, 보스 저항 적용",
+      "cooldownMs": 20000,
+      "damagePercent": 125,
+      "shieldMaxHpPercent": 0,
+      "shieldDurationMs": 0,
+      "staggerGain": 50,
+      "characterName": "미엘",
+      "activation": "하단 중앙 스킬 버튼 / 키보드 E",
+      "artId": "player_dragon_miel",
+      "contactDelayMs": 200
+    }
+  ],
+  "rules": {
+    "cooldownClock": "combat-only",
+    "consume": "accepted skill input",
+    "contact": "independent 200ms contact, usable during normal attack/dodge",
+    "rejectedInput": "no cooldown",
+    "cancelAfterAccepted": "keep cooldown, no contact effect",
+    "stageTravel": "retain cooldown; freeze outside combat",
+    "newRun": "ready",
+    "resume": "independent pending contact and cooldown/shield resume once",
+    "ordinaryAttack": "does not consume, block or cancel skill; independent deadlines",
+    "controls": "up/back dodge + down parry + normal attack + separate skill"
+  }
+}

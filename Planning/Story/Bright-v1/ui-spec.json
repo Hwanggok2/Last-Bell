@@ -1,0 +1,1293 @@
+{
+  "version": "bright-ui-v1-reviewed-composite",
+  "date": "2026-10-24",
+  "status": "reviewed planning proposal; final static composite aligned; Unity and economy unchanged",
+  "concept": "축제 시작 전 마을의 다섯 종을 울리러 가는 온의 작은 모험",
+  "frame": {
+    "width": 1280,
+    "height": 720,
+    "origin": "top-left",
+    "boundsFormat": "[x,y,width,height]",
+    "safeBounds": [
+      0,
+      0,
+      1280,
+      720
+    ],
+    "minimumReviewFrame": [
+      640,
+      360
+    ],
+    "scaling": "Fit 16:9 composition inside the landscape safe area; extend only background for wider screens. Bounds below are proposals, not Unity RectTransform measurements.",
+    "anchors": "top-left/top-center/top-right and bottom-left/bottom-center/bottom-right refer to safe-area edges. world-follow follows the actor; its bounds are the idle example only.",
+    "touchMinimum": 96,
+    "touchMinimumAt640": 48,
+    "touchCaveat": "48 image pixels at 640x360 is a layout check, not a verified 48dp physical touch size. Device DPI and safe-area validation remain necessary before implementation.",
+    "bodyFont": 32,
+    "secondaryFont": 28,
+    "headingFont": 44,
+    "dialogueFont": 34,
+    "outlinePixels": 4,
+    "bodyFontNote": "Final mock uses 30px for secondary lobby rows and 32px minimum for action-critical dynamic quotes; 640x360 gives 15px and16px respectively.",
+    "safeBoundsNote": "This 1280x720 frame is placed inside device Safe Area. Child touch bounds stay within it; the smallest nominal side inset is12px in the final wireframe."
+  },
+  "evidence": {
+    "latest": "Planning/Evidence/Feedback-v86/desktop and mobile",
+    "reviewed": [
+      "01-selection.png",
+      "03-upgrade.png",
+      "06-relic-collection.png",
+      "08-combat.png",
+      "11-boss-bottom-hp.png",
+      "14-relic-unselected.png",
+      "18-owned-relic.png",
+      "v84-story-10.png"
+    ],
+    "historicalOnly": [
+      "Planning/Evidence/Prototype10-Web/fullflow/09-lobby.png",
+      "Planning/Evidence/Prototype10-Web/fullflow/03-stage-1.png"
+    ],
+    "observed": {
+      "sourceFrame": [
+        960,
+        540
+      ],
+      "groundYApprox": 360,
+      "playerFootYApprox": 350,
+      "hpYApprox": 398,
+      "bossHp": "below actor, like regular enemy",
+      "lobby": "character selection then separate selected-stat upgrade screen",
+      "relics": "all owned relics apply automatically; capacity expansion, not equipment slots"
+    }
+  },
+  "currentContract": {
+    "authority": "latest root task correction; in-progress Client and older captures are not final control specifications",
+    "beatMs": 540,
+    "evades": [
+      "jump",
+      "back",
+      "forward"
+    ],
+    "upperDefense": "attack-button parry",
+    "removed": [
+      "down-evade",
+      "S-evade"
+    ],
+    "preserve": [
+      "current timing windows and combat rules",
+      "current actor appearance and animations",
+      "per-character progression",
+      "selected-stat +1/maximum upgrade",
+      "star ratings",
+      "gold and bell-fragment balances",
+      "exchange quotes and confirmations",
+      "automatic relic effects",
+      "relic duplicate levels",
+      "storage expansion costs",
+      "current rewards, retry and stage progression"
+    ],
+    "doNotRestore": [
+      "four-direction evade UI",
+      "old 650/900/250ms timing",
+      "old four-stat plus-button and ten-bell upgrade layout",
+      "relic equip button or equipment slots",
+      "old miniboss/boss currency grants"
+    ]
+  },
+  "palette": {
+    "ink": "#283F42",
+    "cream": "#FFF4DD",
+    "paper": "#FFF4DD",
+    "panel": "#F4DFC0",
+    "edge": "#71543F",
+    "sky": "#9AC6C9",
+    "arena": "#B8D4BE",
+    "mint": "#B8D4BE",
+    "wood": "#C7AC80",
+    "woodDark": "#71543F",
+    "teal": "#24766D",
+    "coral": "#B84232",
+    "mutedText": "#526A65",
+    "goldDecoration": "#C7832F",
+    "disabledFill": "#F4DFC0",
+    "source": "Planning/Story/Bright-v1/render-preview.cjs C object, reviewed 2026-10-24",
+    "usage": "Warm wood only for thin frame edges, not large dark panels. Main text uses ink; cream provides a quiet panel background. Teal is selected/success, coral is danger. Gold remains an accent for existing hero and currency art, never the sole warning color."
+  },
+  "contrast": {
+    "method": "WCAG relative-luminance calculation of proposed solid sRGB token pairs; does not validate moving graphics or antialiasing",
+    "inkOnCream": 10.23,
+    "inkOnArena": 7.02,
+    "tealOnCream": 4.95,
+    "coralOnCream": 4.98,
+    "mutedOnCream": 5.33,
+    "tealOnArena": 3.4,
+    "coralOnArena": 3.42,
+    "goldOnArena": 1.97,
+    "rule": "Actual mock palette C tokens. Arena is a nominal mint token, not every pixel in the generated background. Keep ink outlines or cream backing plus ink edge on danger/success/wave shapes because the image varies in luminance. Ordinary text stays ink on opaque cream."
+  },
+  "common": {
+    "back": {
+      "bounds": [
+        16,
+        8,
+        168,
+        96
+      ],
+      "anchor": "top-left",
+      "touch": true,
+      "copy": "뒤로"
+    },
+    "heading": {
+      "bounds": [
+        36,
+        26,
+        820,
+        56
+      ],
+      "anchor": "top-left",
+      "font": 40
+    },
+    "wallet": {
+      "bounds": [
+        916,
+        16,
+        332,
+        64
+      ],
+      "anchor": "top-right",
+      "font": 28,
+      "copy": "골드 {gold:N0}  ◆ {fragments:N0}",
+      "accessibleLabel": "골드 / 종 파편",
+      "overflowRule": "For long real balances grow to [900,8,364,88] and two right-aligned lines, never truncate confirmation values. Mock sample:1240 gold,16 fragments."
+    },
+    "panelStyle": {
+      "fill": "cream",
+      "frame": "woodDark",
+      "frameWidth": 4,
+      "cornerStyle": "one 4px square step; no ornamental corner clusters",
+      "selectedStyle": "teal inner left bar and filled square marker, plus ink label",
+      "disabledStyle": "disabledFill plus mutedText and explicit state when needed"
+    },
+    "footerLeft": {
+      "bounds": [
+        24,
+        608,
+        312,
+        96
+      ],
+      "anchor": "bottom-left",
+      "touch": true
+    },
+    "footerMiddle": {
+      "bounds": [
+        440,
+        608,
+        400,
+        96
+      ],
+      "anchor": "bottom-center",
+      "touch": true
+    },
+    "footerRight": {
+      "bounds": [
+        944,
+        608,
+        312,
+        96
+      ],
+      "anchor": "bottom-right",
+      "touch": true
+    }
+  },
+  "battle": {
+    "groundY": 480,
+    "actorFootY": 468,
+    "controlStrip": {
+      "bounds": [
+        0,
+        500,
+        1280,
+        220
+      ],
+      "anchor": "bottom-center",
+      "fill": "cream",
+      "rule": "Opaque quiet control area, with a 20px path lip above. Do not move the current world/ground down to the old y600 layout."
+    },
+    "combatQuietZone": [
+      320,
+      192,
+      760,
+      288
+    ],
+    "actorExamples": {
+      "playerFoot": [
+        500,
+        468
+      ],
+      "enemyFoot": [
+        900,
+        468
+      ],
+      "rule": "Keep current character art and runtime scale. These are idle composition anchors, not new hitboxes."
+    },
+    "elements": [
+      {
+        "id": "stage",
+        "bounds": [
+          30,
+          24,
+          216,
+          48
+        ],
+        "anchor": "top-left",
+        "font": 36,
+        "copy": "Stage {stage}",
+        "rule": "Preserve current stage-banner visibility timing; do not add a second simultaneous title."
+      },
+      {
+        "id": "runGold",
+        "bounds": [
+          30,
+          80,
+          216,
+          36
+        ],
+        "anchor": "top-left",
+        "font": 26,
+        "copy": "골드 +{runGold:N0}",
+        "rule": "Secondary running counter; exact spend values remain in lobby confirmation."
+      },
+      {
+        "id": "pause",
+        "bounds": [
+          1160,
+          16,
+          96,
+          96
+        ],
+        "anchor": "top-right",
+        "touch": true,
+        "copy": "",
+        "icon": "two drawn vertical bars",
+        "accessibleLabel": "일시정지"
+      },
+      {
+        "id": "beatBells",
+        "bounds": [
+          464,
+          72,
+          352,
+          80
+        ],
+        "anchor": "top-center",
+        "rule": "Existing cue count/progress; ink-edged bells over a quiet sky patch. No decorative bells in this area."
+      },
+      {
+        "id": "waveTarget",
+        "bounds": [
+          612,
+          332,
+          56,
+          56
+        ],
+        "anchor": "center",
+        "rule": "Existing wave meeting position and 540ms beat; no new permanent text or panel."
+      },
+      {
+        "id": "playerHp",
+        "bounds": [
+          420,
+          524,
+          160,
+          16
+        ],
+        "anchor": "world-follow",
+        "fill": "teal",
+        "rule": "Horizontal center follows actor. 4px ink edge and cream depleted portion; no HP words."
+      },
+      {
+        "id": "enemyHp",
+        "bounds": [
+          808,
+          524,
+          184,
+          16
+        ],
+        "anchor": "world-follow",
+        "fill": "coral",
+        "rule": "Same below-actor location for ordinary, middle-boss and boss in the latest layout; preserve current runtime width policy."
+      },
+      {
+        "id": "enemyName",
+        "bounds": [
+          716,
+          554,
+          368,
+          44
+        ],
+        "anchor": "world-follow",
+        "font": 28,
+        "copy": "Lv.{level} {enemyName}"
+      },
+      {
+        "id": "jump",
+        "bounds": [
+          96,
+          476,
+          104,
+          104
+        ],
+        "anchor": "bottom-left",
+        "touch": true,
+        "iconBounds": [
+          120,
+          500,
+          56,
+          56
+        ],
+        "icon": "up triangle",
+        "accessibleLabel": "점프",
+        "rule": "No visible button background; transparent hit area. The 24px overlap into the empty left path margin is intentional."
+      },
+      {
+        "id": "backEvade",
+        "bounds": [
+          12,
+          600,
+          104,
+          104
+        ],
+        "anchor": "bottom-left",
+        "touch": true,
+        "iconBounds": [
+          36,
+          624,
+          56,
+          56
+        ],
+        "icon": "left triangle",
+        "accessibleLabel": "후퇴"
+      },
+      {
+        "id": "forwardEvade",
+        "bounds": [
+          216,
+          600,
+          104,
+          104
+        ],
+        "anchor": "bottom-left",
+        "touch": true,
+        "iconBounds": [
+          240,
+          624,
+          56,
+          56
+        ],
+        "icon": "right triangle",
+        "accessibleLabel": "전진",
+        "rule": "Never use a down chevron for forward; this is a glyph clarification, not a fourth action."
+      },
+      {
+        "id": "attackParry",
+        "bounds": [
+          1120,
+          564,
+          144,
+          144
+        ],
+        "anchor": "bottom-right",
+        "touch": true,
+        "iconBounds": [
+          1152,
+          596,
+          80,
+          80
+        ],
+        "icon": "existing sword",
+        "accessibleLabel": "공격 · 쳐내기"
+      }
+    ],
+    "signalGrammar": {
+      "danger": {
+        "color": "coral",
+        "outline": "9px ink stroke under4px coral center stroke in final mock",
+        "shape": "existing attack footprint or contact mark with square broken corners; retain direction-specific monster preparation",
+        "rule": "No controller-like arrow inside the warning. Preserve current attack locations, hit times and footprints."
+      },
+      "rhythm": {
+        "color": "teal",
+        "outline": "6px ink stroke under2px teal; clip to waveClip so it never crosses the control strip",
+        "shape": "continuous converging wave arcs",
+        "rule": "Beat motion only; do not borrow the danger contact-marker shape."
+      },
+      "success": {
+        "color": "teal",
+        "outline": "cream backing plus ink edge",
+        "shape": "short outward four-point square sparkle",
+        "rule": "Perfect success remains visually distinct from an ordinary evade by existing magnitude/timing; use no new persistent words."
+      },
+      "hit": {
+        "shape": "existing square fragments and outlined damage numerals",
+        "rule": "Damage numbers remain large; critical remains larger. Dark outline is required around white/gold numbers over the daytime sky."
+      },
+      "nonColorRecognition": "Danger has contact geometry and broken corners; beat waves are continuous arcs; success is an outward starburst. All remain distinguishable in grayscale.",
+      "audioAndMotion": "Maintain existing mute and reduced-motion choices. Visual beat, threat and success must work with audio muted. Reduced motion preserves timing, hit targets and readable cues."
+    },
+    "pathTopY": 468,
+    "groundYNote": "480 is the path-band composition reference. In the final generated-image composite the visible walking surface starts at468 and the character sole is aligned there.",
+    "hudBacking": {
+      "bounds": [
+        16,
+        16,
+        244,
+        104
+      ],
+      "fill": "cream",
+      "frame": "woodDark"
+    },
+    "waveClip": [
+      0,
+      112,
+      1280,
+      388
+    ]
+  },
+  "lobbySelection": {
+    "heading": "종지기 선택",
+    "leftPanel": {
+      "bounds": [
+        24,
+        116,
+        300,
+        488
+      ],
+      "anchor": "top-left"
+    },
+    "rightPanel": {
+      "bounds": [
+        348,
+        116,
+        908,
+        488
+      ],
+      "anchor": "top-right"
+    },
+    "elements": [
+      {
+        "id": "on",
+        "bounds": [
+          36,
+          130,
+          276,
+          116
+        ],
+        "anchor": "top-left",
+        "touch": true,
+        "copy": "온"
+      },
+      {
+        "id": "dam",
+        "bounds": [
+          36,
+          276,
+          276,
+          116
+        ],
+        "anchor": "top-left",
+        "touch": true,
+        "copy": "담 · 준비 중"
+      },
+      {
+        "id": "rin",
+        "bounds": [
+          36,
+          422,
+          276,
+          116
+        ],
+        "anchor": "top-left",
+        "touch": true,
+        "copy": "린 · 준비 중"
+      },
+      {
+        "id": "name",
+        "bounds": [
+          384,
+          148,
+          560,
+          56
+        ],
+        "anchor": "top-left",
+        "font": 44,
+        "copy": "{name}"
+      },
+      {
+        "id": "ability",
+        "bounds": [
+          384,
+          214,
+          560,
+          44
+        ],
+        "anchor": "top-left",
+        "font": 30,
+        "copy": "쳐내기 · 반격"
+      },
+      {
+        "id": "stats",
+        "bounds": [
+          384,
+          290,
+          560,
+          244
+        ],
+        "anchor": "top-left",
+        "font": 30,
+        "lineHeight": 64,
+        "lines": [
+          "공격력 {attack}",
+          "체력 {health}",
+          "행운  치명 {crit}% · 골드 {goldBonus}%",
+          "공명 {resonance}%"
+        ]
+      },
+      {
+        "id": "idlePreview",
+        "bounds": [
+          952,
+          298,
+          224,
+          236
+        ],
+        "anchor": "top-right",
+        "rule": "Existing On appearance; sprite foot at[1064,534]."
+      },
+      {
+        "id": "back",
+        "bounds": [
+          24,
+          612,
+          200,
+          96
+        ],
+        "anchor": "bottom-left",
+        "touch": true,
+        "copy": "뒤로"
+      },
+      {
+        "id": "relics",
+        "bounds": [
+          348,
+          612,
+          220,
+          96
+        ],
+        "anchor": "bottom-center",
+        "touch": true,
+        "copy": "유물"
+      },
+      {
+        "id": "select",
+        "bounds": [
+          1000,
+          612,
+          256,
+          96
+        ],
+        "anchor": "bottom-right",
+        "touch": true,
+        "copy": "선택"
+      }
+    ],
+    "footer": {
+      "left": "뒤로",
+      "middle": "유물",
+      "right": "선택"
+    },
+    "states": {
+      "unavailable": "Keep inspectable future characters; select is unavailable with 준비 중, not a paid unlock."
+    },
+    "flow": "Selection leads to current upgrade screen; keep this separate from entering combat.",
+    "secondaryInfo": "The mock concentrates on the primary state. Existing highest-stage/total-level information and credits access must remain reachable in the implementation; the theme must not erase them."
+  },
+  "lobbyUpgrade": {
+    "heading": "온 · 강화",
+    "elements": [
+      {
+        "id": "attackStat",
+        "bounds": [
+          28,
+          104,
+          294,
+          96
+        ],
+        "anchor": "top-left",
+        "touch": true,
+        "copy": "공격력"
+      },
+      {
+        "id": "healthStat",
+        "bounds": [
+          338,
+          104,
+          294,
+          96
+        ],
+        "anchor": "top-left",
+        "touch": true,
+        "copy": "체력"
+      },
+      {
+        "id": "luckStat",
+        "bounds": [
+          648,
+          104,
+          294,
+          96
+        ],
+        "anchor": "top-left",
+        "touch": true,
+        "copy": "행운"
+      },
+      {
+        "id": "resonanceStat",
+        "bounds": [
+          958,
+          104,
+          294,
+          96
+        ],
+        "anchor": "top-left",
+        "touch": true,
+        "copy": "공명"
+      },
+      {
+        "id": "idlePreview",
+        "bounds": [
+          144,
+          286,
+          224,
+          224
+        ],
+        "anchor": "top-left",
+        "rule": "Existing sprite foot[256,510]."
+      },
+      {
+        "id": "change",
+        "bounds": [
+          512,
+          244,
+          680,
+          72
+        ],
+        "anchor": "top-left",
+        "font": 58,
+        "copy": "{before} [drawn arrow] {after}",
+        "sample": "50 to130"
+      },
+      {
+        "id": "levels",
+        "bounds": [
+          512,
+          322,
+          680,
+          44
+        ],
+        "anchor": "top-left",
+        "font": 32,
+        "copy": "Lv.{level} / Lv.{nextLevel}"
+      },
+      {
+        "id": "stars",
+        "bounds": [
+          512,
+          378,
+          400,
+          48
+        ],
+        "anchor": "top-left",
+        "copy": "성장 [drawn rating stars]",
+        "rule": "Selected stat rating; render glyphs as shapes if font lacks them."
+      },
+      {
+        "id": "oneLevel",
+        "bounds": [
+          512,
+          448,
+          340,
+          112
+        ],
+        "anchor": "top-right",
+        "touch": true,
+        "copy": "+1",
+        "role": "quote mode, no immediate spending"
+      },
+      {
+        "id": "maximum",
+        "bounds": [
+          892,
+          448,
+          300,
+          112
+        ],
+        "anchor": "top-right",
+        "touch": true,
+        "copy": "최대",
+        "role": "quote mode, no immediate spending"
+      },
+      {
+        "id": "back",
+        "bounds": [
+          28,
+          612,
+          204,
+          96
+        ],
+        "anchor": "bottom-left",
+        "touch": true,
+        "copy": "뒤로"
+      },
+      {
+        "id": "purchase",
+        "bounds": [
+          456,
+          612,
+          460,
+          96
+        ],
+        "anchor": "bottom-center",
+        "touch": true,
+        "copy": "강화 · {cost:N0} 골드",
+        "role": "executes the selected quote or opens existing exchange flow if appropriate"
+      },
+      {
+        "id": "start",
+        "bounds": [
+          952,
+          612,
+          300,
+          96
+        ],
+        "anchor": "bottom-right",
+        "touch": true,
+        "copy": "Stage {startStage}",
+        "accessibleLabel": "전투 시작 Stage {startStage}"
+      }
+    ],
+    "footer": {
+      "left": "뒤로",
+      "middle": "강화 · {cost:N0} 골드",
+      "right": "Stage {startStage}"
+    },
+    "rules": [
+      "Preserve +1/maximum quote and selected stat; no change to level cap, growth or breakthrough.",
+      "The quoted before/after value is primary; star rating is secondary.",
+      "If gold is short, use the existing exchange flow with visible cost and yield, not an automatic purchase.",
+      "Keep current full-value formatting; use two lines in the quote if high-level numbers cannot fit."
+    ],
+    "exchangeModal": {
+      "bounds": [
+        272,
+        160,
+        736,
+        400
+      ],
+      "heading": "골드 교환",
+      "copy": "종 파편 {fragments}개로\n골드 {gold:N0}개를 받을까요?",
+      "confirm": {
+        "bounds": [
+          656,
+          448,
+          312,
+          96
+        ],
+        "copy": "교환"
+      },
+      "cancel": {
+        "bounds": [
+          312,
+          448,
+          312,
+          96
+        ],
+        "copy": "취소"
+      }
+    },
+    "detailPanel": {
+      "bounds": [
+        28,
+        212,
+        1224,
+        378
+      ],
+      "anchor": "center"
+    },
+    "sample": {
+      "stat": "공격력",
+      "beforeLevel": 10,
+      "afterLevel": 11,
+      "before": 50,
+      "after": 130,
+      "costGold": 225,
+      "rating": 3,
+      "source": "Feedback-v86 current quote, not newly invented balance"
+    }
+  },
+  "relicCollection": {
+    "heading": "유물",
+    "inventoryPanel": {
+      "bounds": [
+        24,
+        116,
+        384,
+        500
+      ],
+      "anchor": "top-left"
+    },
+    "detailPanel": {
+      "bounds": [
+        432,
+        116,
+        824,
+        500
+      ],
+      "anchor": "top-right"
+    },
+    "elements": [
+      {
+        "id": "capacity",
+        "bounds": [
+          52,
+          148,
+          328,
+          44
+        ],
+        "anchor": "top-left",
+        "font": 30,
+        "copy": "보유 {owned}/{capacity}"
+      },
+      {
+        "id": "inventoryViewport",
+        "bounds": [
+          52,
+          212,
+          308,
+          300
+        ],
+        "anchor": "top-left",
+        "columns": 2,
+        "tileBounds": [
+          144,
+          140
+        ],
+        "stride": [
+          164,
+          160
+        ],
+        "rule": "Four visible cells; vertical scroll for further owned relics. No equipment slots. Different icon silhouettes identify relics; selected name is in the right detail panel."
+      },
+      {
+        "id": "icon",
+        "bounds": [
+          484,
+          152,
+          96,
+          96
+        ],
+        "anchor": "top-left"
+      },
+      {
+        "id": "name",
+        "bounds": [
+          600,
+          174,
+          608,
+          60
+        ],
+        "anchor": "top-left",
+        "font": 44,
+        "copy": "{relicName}"
+      },
+      {
+        "id": "level",
+        "bounds": [
+          600,
+          240,
+          608,
+          44
+        ],
+        "anchor": "top-left",
+        "font": 30,
+        "copy": "Lv.{level}"
+      },
+      {
+        "id": "effect",
+        "bounds": [
+          480,
+          330,
+          744,
+          48
+        ],
+        "anchor": "top-left",
+        "font": 36,
+        "copy": "{currentEffect}"
+      },
+      {
+        "id": "next",
+        "bounds": [
+          480,
+          388,
+          744,
+          44
+        ],
+        "anchor": "top-left",
+        "font": 30,
+        "copy": "다음 레벨 {nextEffect}"
+      },
+      {
+        "id": "autoApply",
+        "bounds": [
+          480,
+          460,
+          744,
+          44
+        ],
+        "anchor": "top-left",
+        "font": 30,
+        "copy": "보유 유물은 모두 적용됩니다."
+      },
+      {
+        "id": "back",
+        "bounds": [
+          24,
+          616,
+          200,
+          96
+        ],
+        "anchor": "bottom-left",
+        "touch": true,
+        "copy": "뒤로"
+      },
+      {
+        "id": "expandPreview",
+        "bounds": [
+          600,
+          634,
+          264,
+          56
+        ],
+        "anchor": "bottom-center",
+        "font": 30,
+        "copy": "보관 {capacity} [drawn arrow] {nextCapacity}",
+        "rule": "Arrow is drawn geometry, not a font glyph."
+      },
+      {
+        "id": "expand",
+        "bounds": [
+          960,
+          616,
+          296,
+          96
+        ],
+        "anchor": "bottom-right",
+        "touch": true,
+        "copy": "확장 ◆ {cost}",
+        "accessibleLabel": "보관함 확장 종 파편 {cost}개"
+      }
+    ],
+    "emptyCopy": "아직 유물이 없어요.\n보스를 이기면 하나를 고를 수 있어요.",
+    "rule": "All owned relics apply automatically. Do not draw equipment slots, add equip buttons or relabel storage as equipment. Values, duplicate levels and capacity prices come from the live data.",
+    "sample": {
+      "owned": 3,
+      "capacity": 5,
+      "nextCapacity": 6,
+      "costFragments": 12,
+      "walletFragments": 16,
+      "relicId": "relic_10",
+      "name": "새벽의 조각",
+      "level": 1,
+      "currentMaxHpPercent": 6,
+      "nextMaxHpPercent": 8
+    }
+  },
+  "relicReward": {
+    "panel": {
+      "bounds": [
+        208,
+        64,
+        864,
+        592
+      ],
+      "anchor": "center"
+    },
+    "title": {
+      "bounds": [
+        240,
+        96,
+        800,
+        64
+      ],
+      "copy": "유물 선택",
+      "font": 44
+    },
+    "cards": [
+      {
+        "bounds": [
+          256,
+          184,
+          240,
+          216
+        ],
+        "touch": true
+      },
+      {
+        "bounds": [
+          520,
+          184,
+          240,
+          216
+        ],
+        "touch": true
+      },
+      {
+        "bounds": [
+          784,
+          184,
+          240,
+          216
+        ],
+        "touch": true
+      }
+    ],
+    "description": {
+      "bounds": [
+        256,
+        416,
+        768,
+        112
+      ],
+      "font": 32,
+      "lineHeight": 36,
+      "rule": "At most three lines: new/duplicate and level; current→next effect; capacity/cost when relevant. Selecting a card previews; confirmation grants."
+    },
+    "confirm": {
+      "bounds": [
+        256,
+        544,
+        368,
+        96
+      ],
+      "touch": true,
+      "copy": "받기"
+    },
+    "goldAlternative": {
+      "bounds": [
+        656,
+        544,
+        368,
+        96
+      ],
+      "touch": true,
+      "copy": "대신 골드 {gold:N0}"
+    },
+    "states": {
+      "unselected": "보관 {owned}/{capacity} · 자동 적용",
+      "duplicate": "Lv.{level} → {nextLevel}",
+      "full": "보관함 {capacity}/{capacity} · 확장 종 파편 {cost}",
+      "expandConfirm": "확장 후 받기 · 파편 {cost}",
+      "insufficient": "종 파편 {missing}개 부족"
+    },
+    "rule": "Keep the current choices, gold alternative visibility and expansion confirmation behavior. No extra reward rolls, purchases or payout changes."
+  },
+  "bossDialogue": {
+    "state": "combat clock paused; attack/evade controls hidden; input routed only to dialogue",
+    "panel": {
+      "bounds": [
+        24,
+        518,
+        1232,
+        178
+      ],
+      "anchor": "bottom-center",
+      "fill": "cream",
+      "frame": "woodDark"
+    },
+    "speaker": {
+      "bounds": [
+        48,
+        534,
+        992,
+        40
+      ],
+      "anchor": "bottom-left",
+      "font": 32,
+      "copy": "{speaker}"
+    },
+    "body": {
+      "bounds": [
+        48,
+        584,
+        1016,
+        96
+      ],
+      "anchor": "bottom-left",
+      "font": 34,
+      "lineHeight": 44,
+      "maxLines": 2,
+      "targetKoreanCharactersPerLine": 26,
+      "copy": "{shortDialogue}"
+    },
+    "next": {
+      "bounds": [
+        1096,
+        600,
+        160,
+        96
+      ],
+      "anchor": "bottom-right",
+      "touch": true,
+      "copy": "다음"
+    },
+    "skip": {
+      "bounds": [
+        1096,
+        410,
+        160,
+        96
+      ],
+      "anchor": "bottom-right",
+      "touch": true,
+      "copy": "건너뛰기"
+    },
+    "rules": [
+      "Finalize dialogue text with the story owner; no new hidden lore or tragedy in UI copy.",
+      "Stop transient hit-flash and damage-number presentation before the dialogue idle composition. Keep gameplay rewards/state unchanged.",
+      "Hide below-actor HP/name while the dialogue panel covers their region; restore on return to combat.",
+      "No typewriter wait is required to understand or skip dialogue. No automatic text advance.",
+      "The skip button sits in the empty right margin below the action silhouette; do not overlay the boss face.",
+      "On resuming combat preserve the current full cue/timing rules; do not reinterpret dialogue as a new beat."
+    ],
+    "sampleOnly": {
+      "speaker": "온",
+      "text": "첫 종부터 울리자. 다음은 골목이야.",
+      "source": "story.json zones[0].dialogue[1], final story owner text"
+    }
+  },
+  "backgroundLayers": [
+    {
+      "id": "sky",
+      "factor": 0.02,
+      "color": "sky",
+      "motifs": "낮하늘, 작은 네모 구름",
+      "rules": "No sun or cloud edge immediately behind cue bells; no automatic brightness pulsing."
+    },
+    {
+      "id": "far",
+      "factor": 0.08,
+      "color": "arena",
+      "motifs": "낮은 언덕, 다섯 종탑 중 현재 구역 탑의 단순 윤곽",
+      "rules": "One low-contrast silhouette band; not five competing objective icons."
+    },
+    {
+      "id": "mid",
+      "factor": 0.22,
+      "color": "arena",
+      "motifs": "따뜻한 지붕, 시장 차양, 나무 아치",
+      "rules": "Central combat quiet zone remains broad, flat mint; no narrow gold horizontal railing resembling a warning."
+    },
+    {
+      "id": "near",
+      "factor": 0.48,
+      "color": "wood",
+      "motifs": "화면 가장자리의 낮은 울타리, 작은 나무 표지판",
+      "rules": "Keep posts and hanging decorations out of actor faces and threat footprints. Teal/coral pennants stay outside the combat quiet zone."
+    },
+    {
+      "id": "floor",
+      "factor": 1,
+      "color": "wood",
+      "motifs": "밝은 돌길, 작은 흙 틈, 풀 도트",
+      "rules": "Path surface y480; no decorative spikes, arrows, confetti or bright particles around feet. Control strip remains independent cream UI."
+    }
+  ],
+  "backgroundLayerNote": "Layer count and visual contents are proposed here. Factors retain the existing five-layer intent; this planning task does not change ParallaxWorld or asset files.",
+  "copyPolicy": {
+    "keep": [
+      "온",
+      "공격력",
+      "체력",
+      "행운",
+      "공명",
+      "골드",
+      "종 파편",
+      "Stage {stage}",
+      "유물",
+      "자동 적용",
+      "다음",
+      "건너뛰기"
+    ],
+    "remove": [
+      "더 강력한 공격을 할 수 있습니다.",
+      "더 많은 공격을 견딜 수 있습니다.",
+      "유물을 누르면 효과를 확인할 수 있어요."
+    ],
+    "replace": {
+      "업그레이드": "강화",
+      "↑ Lv": "+1",
+      "↑ Max": "최대",
+      "뒤로가기": "뒤로"
+    },
+    "doNotInvent": "No new currency, unlock route, battle rule, locked-character price or mandatory story popup. Currency confirmation always names spend and yield."
+  },
+  "reviewCoverage": {
+    "completed": [
+      "latest desktop and 640x360 screenshot visual review",
+      "current view/controller and evidence-text inspection",
+      "proposed solid-token contrast calculation",
+      "numeric bounds and minimum target specification",
+      "direct inspection of root mock images: combat, lobby, upgrade, relic, story, wireframe; updated palette matched to render-preview.cjs C",
+      "final upgraded/relic PNG corrections verified; index.html source checked for planning-description consistency"
+    ],
+    "notCompleted": [
+      "HTML interaction and narrow-screen mock behavior",
+      "Unity implementation",
+      "physical touch test",
+      "actual safe-area/DPI test",
+      "new palette in animated combat"
+    ],
+    "gate": "Ready for user planning review. Browser interaction, device checks and Unity implementation are not claimed; implementation follows direction confirmation."
+  },
+  "mockReview": {
+    "date": "2026-10-24",
+    "result": "All requested static-mock revisions verified; ready for user planning review.",
+    "images": [
+      "combat.png",
+      "lobby.png",
+      "upgrade.png",
+      "relic.png",
+      "story.png",
+      "wireframe.png"
+    ],
+    "passed": [
+      "daytime palette with existing hero silhouette",
+      "control strip separated from ground",
+      "three evade glyphs and sword",
+      "actor baseline aligned to path",
+      "boss idle visible above bottom dialogue",
+      "large footer targets"
+    ],
+    "requiredBeforeFreeze": [],
+    "metadataNote": "Final layout metadata follows the reviewed composite. No unresolved static mock revision requests. Existing runtime features not displayed in a static sample remain preserved by currentContract.",
+    "resolved": [
+      "four stat tabs restored",
+      "current 50 to130 and225 gold quote restored",
+      "relic next8percent and5to6 capacity12fragments shown with distinguishable icons",
+      "pause96x96",
+      "opaque upper-left HUD backing",
+      "boss dialogue and lower empty band fixed",
+      "storage progression uses a directly drawn arrow with no missing glyph",
+      "+1 and maximum select quotes; separate footer purchase button shows225gold"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "version": 3,
+  "animationThread": {
+    "id": "01a15e4d-1903-7852-bfc8-cf02d747c965",
+    "title": "애니메이션",
+    "hostId": "local"
+  },
+  "status": "reviewed-and-applied-to-unity",
+  "inputs": "../MonsterMotionFresh-v3/Inputs",
+  "candidateActors": 10,
+  "states": [
+    "Attack",
+    "Hit",
+    "Stun"
+  ],
+  "idleAnimation": false,
+  "attacksPerMonster": 1,
+  "deathAnimation": false,
+  "originalFivePreserved": true,
+  "delivery": "../MonsterMotionFresh-v3/delivery.json",
+  "review": "fresh-review.json",
+  "mainPreview": "../route-prologue-tutorial-v4.html#monster-motions",
+  "note": "All ten reviewed actors registered; current Stage 1-10 mapping updated after user approval. Original five and approved hero run retained. Expansion actors verified in native runtime probe.",
+  "runtimeEvidence": "../../Evidence/ReviewedMotionAudio-v4/verification.json"
+}

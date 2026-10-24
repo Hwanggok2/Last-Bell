@@ -1,0 +1,206 @@
+{
+  "red_fox": {
+    "animation-input.png": {
+      "source": "base.png",
+      "sourceBounds": [
+        8,
+        6,
+        64,
+        60
+      ],
+      "offset": [
+        32,
+        20
+      ],
+      "pixelPreserving": true,
+      "referenceHeight": 54,
+      "sha256": "18fee9672dd2456d492da4e1125b98e542f21d61641cd68c2601957cbd690908"
+    },
+    "stun-input.png": {
+      "source": "stun-pose.png",
+      "sourceBounds": [
+        4,
+        6,
+        64,
+        60
+      ],
+      "offset": [
+        32,
+        20
+      ],
+      "pixelPreserving": true,
+      "referenceHeight": 54,
+      "sha256": "53732a46c4573bd44af723ed432c73781469a0af72906473e7e7e9d46e229a02"
+    }
+  },
+  "wild_boar": {
+    "animation-input.png": {
+      "source": "base.png",
+      "sourceBounds": [
+        0,
+        4,
+        64,
+        64
+      ],
+      "offset": [
+        32,
+        16
+      ],
+      "pixelPreserving": true,
+      "referenceHeight": 60,
+      "sha256": "5d0f2cf955facb2f7612bad5c37dc726c1a06cba0425f14d5b1ec798f4b42a5b"
+    },
+    "stun-input.png": {
+      "source": "stun-pose.png",
+      "sourceBounds": [
+        2,
+        12,
+        64,
+        64
+      ],
+      "offset": [
+        32,
+        16
+      ],
+      "pixelPreserving": true,
+      "referenceHeight": 52,
+      "sha256": "ced2e5848c7a6f83d379d17afba861278194ee086306e5481eb4f8201a9b9da8"
+    }
+  },
+  "badger": {
+    "animation-input.png": {
+      "source": "base.png",
+      "sourceBounds": [
+        4,
+        12,
+        62,
+        50
+      ],
+      "offset": [
+        32,
+        30
+      ],
+      "pixelPreserving": true,
+      "referenceHeight": 38,
+      "sha256": "01334a7f6e31ce751e00c248527fea8993c209bd225b8602e665917c64bf0142"
+    },
+    "stun-input.png": {
+      "source": "stun-pose.png",
+      "sourceBounds": [
+        6,
+        15,
+        59,
+        50
+      ],
+      "offset": [
+        32,
+        30
+      ],
+      "pixelPreserving": true,
+      "referenceHeight": 35,
+      "sha256": "b2346687cbeeaf3032fee94c984590478434d631f3d7bf737d572247ed830710"
+    }
+  },
+  "lynx": {
+    "animation-input.png": {
+      "source": "base.png",
+      "sourceBounds": [
+        6,
+        6,
+        60,
+        60
+      ],
+      "offset": [
+        32,
+        20
+      ],
+      "pixelPreserving": true,
+      "referenceHeight": 54,
+      "sha256": "a1f41a705a8c47b274a6361bb8959a4b29eb404669b6961fc67310edd73724c5"
+    },
+    "stun-input.png": {
+      "source": "stun-pose.png",
+      "sourceBounds": [
+        3,
+        16,
+        60,
+        60
+      ],
+      "offset": [
+        32,
+        20
+      ],
+      "pixelPreserving": true,
+      "referenceHeight": 44,
+      "sha256": "3b16c6937058303e7471489f3e31af719c961606fdaf275e36a21cbcc6c33ac5"
+    }
+  },
+  "mountain_goat": {
+    "animation-input.png": {
+      "source": "base.png",
+      "sourceBounds": [
+        6,
+        10,
+        62,
+        60
+      ],
+      "offset": [
+        32,
+        20
+      ],
+      "pixelPreserving": true,
+      "referenceHeight": 50,
+      "sha256": "f64a41d2b7438b60390520fe31153680bb63c68eb23d51e01585108aa577be8d"
+    },
+    "stun-input.png": {
+      "source": "stun-pose.png",
+      "sourceBounds": [
+        7,
+        20,
+        60,
+        60
+      ],
+      "offset": [
+        32,
+        20
+      ],
+      "pixelPreserving": true,
+      "referenceHeight": 40,
+      "sha256": "47086c84d1c100109a5d3516044b3c064ba01a8c742b3a903ded77909f87fd11"
+    }
+  },
+  "great_stag": {
+    "animation-input.png": {
+      "source": "base.png",
+      "sourceBounds": [
+        0,
+        6,
+        60,
+        64
+      ],
+      "offset": [
+        32,
+        16
+      ],
+      "pixelPreserving": true,
+      "referenceHeight": 58,
+      "sha256": "97496f007dd44dd910785f609e73e2cffe901fae7d6934dffc7e5f0db820c80f"
+    },
+    "stun-input.png": {
+      "source": "stun-pose.png",
+      "sourceBounds": [
+        2,
+        13,
+        60,
+        64
+      ],
+      "offset": [
+        32,
+        16
+      ],
+      "pixelPreserving": true,
+      "referenceHeight": 51,
+      "sha256": "f14abb1d698540858c33a98d1bd6ced422c7cab3a4ca47b3419c8c4041ace749"
+    }
+  }
+}

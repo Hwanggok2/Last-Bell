@@ -1,0 +1,66 @@
+{
+  "tool": "PixelLab MCP",
+  "created": "2026-10-24",
+  "producer": "/root/dragon_playable_art_v4",
+  "canonicalSource": "Planning/Story/Dragon-v1/Production/Player-v3/canonical-a-outline.png",
+  "motionSource": "Planning/Story/Dragon-v1/Production/Player-v3/manifest.json",
+  "canonicalRequests": {
+    "daren": {
+      "content": [
+        {
+          "type": "text",
+          "text": "id: 0076c030-7180-48fe-8ef9-26ccc586c681\njob_id: 0076c030-7180-48fe-8ef9-26ccc586c681\nmode: text\nframes: 1\nsize: 32x32px\ntransparent: True\nedit: Redraw this 32x32 pixel adventurer as DAREN, a separate compact guardian knight of the same scale and pixel style. Preserve the exact 3/4 right-facing standing pose, foot baseline at y28, body height22 pixels, tiny simple eyes, navy chunky single-pixel outlines and flat 8-color shading. Replace clothing and head silhouette: short dark brown hair visible above an open steel headband, square steel shoulder armor, cream tabard with a blue vertical stripe, dark navy trousers, brown boots. No backpack, no red scarf. Steel SHORT SWORD stays in the right leading hand pointed diagonally up to the right. A small rounded-square blue steel shield on left forearm near hip, well separated from sword. Steel shoulders and shield make him visibly broader than Luka, friendly serious face. 8-bit game sprite not portrait. No ground, shadow, background, text, glow, antialiasing or extra weapons. Exactly32x32 transparent. All body and weapon pixels fit within x4..28 y5..28.\nseed: 243092\nasset_id: ed4dc145-1b3e-5df1-af68-45cf5136affa\nasset_status: pending (saved when generation completes)\ncost: ~10 generations\nstatus: processing (~30-90s)\n\nhint: get_image(job_id=\"0076c030-7180-48fe-8ef9-26ccc586c681\")"
+        }
+      ],
+      "isError": false
+    },
+    "miel": {
+      "content": [
+        {
+          "type": "text",
+          "text": "id: a40bed61-26d9-4991-8f66-62186d02e901\njob_id: a40bed61-26d9-4991-8f66-62186d02e901\nmode: text\nframes: 1\nsize: 32x32px\ntransparent: True\nedit: Redraw this32x32 pixel adventurer as MIEL, a separate small young battle mage of the same scale and pixel style. Preserve 3/4 right-facing standing pose, grounded feet at y28 and compact23pixel body, tiny one-pixel eyes, navy chunky outline, flat8colors. Distinct silhouette: short blonde hair, small pointed TEAL wizard cap angled backwards, short TEAL coat with CREAM collar and hem, plum sash, navy leggings and brown boots. No backpack, no red scarf, no sword. Replace sword with ONE short brown magic staff held in the right leading hand, diagonal up-right, cream four-pixel crystal tip. Staff length comparable to the old sword to fit all action frames. Left hand visibly free. This is a quick agile mage, not Rina's purple tall hat and long cream robe. Simple connected pixel clusters only. No ground/shadow/background/text/glow/sparkles/antialiasing. Exactly32x32 transparent. Fit all body and staff within x4..28 y4..28.\nseed: 243092\nasset_id: c20da257-5ccb-58e6-a84f-92091d0aec47\nasset_status: pending (saved when generation completes)\ncost: ~10 generations\nstatus: processing (~30-90s)\n\nhint: get_image(job_id=\"a40bed61-26d9-4991-8f66-62186d02e901\")"
+        }
+      ],
+      "isError": false
+    }
+  },
+  "canonicals": {},
+  "portraitJobIds": {
+    "on": "230da54a-52f6-4f55-8f26-da999312b85a",
+    "dam": "88b54c41-5b61-465f-b42e-540726e8a380",
+    "rin": "9214f8a5-a925-4e82-8cb3-a31547ae62c0",
+    "tori": "02f30ccb-97b1-4ebd-970d-75ff1e340d1d",
+    "rina": "2e54e387-174d-4797-8986-21d031c8b241",
+    "barun": "92009d65-9690-4945-8fee-4f52e39cda33",
+    "doto": "cd2ef064-97d6-4813-8d08-e215b7490025",
+    "gib": "d45c8b7a-76cc-4c9a-bdd2-d5ad3ea6525c"
+  },
+  "dotoRejected": "First portrait misread hammer as cap and omitted beard; rejected.",
+  "dotoRegeneration": {
+    "content": [
+      {
+        "type": "text",
+        "text": "id: 14e05173-c1f8-43e7-bcd5-1882f807e055\njob_id: 14e05173-c1f8-43e7-bcd5-1882f807e055\nmode: text\nframes: 1\nsize: 48x48px\ntransparent: True\nedit: Correct this NPC portrait to DOTO the friendly stocky DWARF blacksmith from our game. He must be an older stout man with a broad square face, HUGE GOLDEN OCHRE BEARD covering lower face and reaching chest in a single chunky stepped silhouette, thick golden eyebrows and short golden hair, warm skin, dark navy single-pixel outline, BLUE blacksmith apron and CREAM sleeves. NO HAT, NO CAP, NO HUMAN TEENAGER, NO SCARF, NO long hair, NO pipe. Replace the entire current boy head. Friendly patient expression, one dot eye per eye, generous round nose. Front/three-quarter bust looking to viewer's right. Extremely flat chunky48px pixel style, simplify details, exactly8flatcolors, transparent background. Keep the48x48 canvas and bust composition.\nseed: 243095\nasset_id: 1d732087-2d28-5b2a-8e99-6f31525e9639\nasset_status: pending (saved when generation completes)\ncost: ~10 generations\nstatus: processing (~30-90s)\n\nhint: get_image(job_id=\"14e05173-c1f8-43e7-bcd5-1882f807e055\")"
+      }
+    ],
+    "isError": false
+  },
+  "dotoFinal": [
+    {
+      "type": "text",
+      "text": "status: completed\nid: 7e8bffc7-589d-4479-a867-ab4bbb4489bc\njob_id: 7e8bffc7-589d-4479-a867-ab4bbb4489bc\nframes: 1\ntransparent: yes\nasset_id: 3c4e7714-a180-5c6f-9b5b-4041f882db5c\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 0.1 generations\ndownload: https://api.pixellab.ai/mcp/images/7e8bffc7-589d-4479-a867-ab4bbb4489bc/download"
+    }
+  ],
+  "unknown": [
+    {
+      "type": "text",
+      "text": "image_id: 303ddbd2-1592-4a30-a58b-9a1328012cf7\ncanvas: 48x48, 1 frame(s)\n1. map_colors: 1109 px changed, 1380 matched\nsheet rows: frames [1]\npalette (1): #202d38ff x1380\ndownload https://api.pixellab.ai/mcp/pixel-tools/303ddbd2-1592-4a30-a58b-9a1328012cf7/: image.png, frames.png, animation.gif\nnext: edit 303ddbd2-1592-4a30-a58b-9a1328012cf7 --changes […]"
+    }
+  ],
+  "mielGoldHair": [
+    {
+      "type": "text",
+      "text": "image_id: 2e39f8a8-0753-467a-a14c-2f3ed67ef86b\ncanvas: 48x48, 1 frame(s)\n1. map_colors: 252 px changed\nsheet rows: frames [1]\npalette (9): #202d38ff x410, #287780ff x252, #355d82ff x227, #f3bd83ff x167, #6b3f2aff x133, #e4aa41ff x119, #ab6c37ff x88, #e8d9adff x71, #d97935ff x29\ndownload https://api.pixellab.ai/mcp/pixel-tools/2e39f8a8-0753-467a-a14c-2f3ed67ef86b/: image.png, frames.png, animation.gif\nnext: edit 2e39f8a8-0753-467a-a14c-2f3ed67ef86b --changes […]"
+    }
+  ]
+}

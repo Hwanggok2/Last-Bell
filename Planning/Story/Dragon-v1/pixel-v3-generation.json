@@ -1,0 +1,86 @@
+{
+  "version": "pixel-world-v3",
+  "date": "2026-10-24",
+  "tool": "built-in image_gen",
+  "scope": "planning only",
+  "images": [
+    {
+      "file": "images/meadow-pixel-v3.png",
+      "prompt": "Edit the provided meadow background to match the VERY COARSE pixel language of the provided monster sheet. Image1 is the environment layout/colour reference; image2 is the REQUIRED pixel-density reference. Background ONLY, no monsters or people in the output.\nCreate one strict 16:9 landscape side-view game battlefield. Render as if authored on a 320x180 pixel grid then enlarged nearest-neighbor. Every edge must use broad square stair-steps. The source meadow is too delicate, too many trees, gradients and textures: massively simplify. No individual grass blades, flowers, soil pebbles, tiny bricks, wooden trim or stippled texture. Maximum12–16 SOLID flat colours for whole scene, only one flat shadow tone per form. NO gradients, NO anti-aliasing, NO blurry painted lighting, NO dither, NO glossy effects.\nComposition must support a real battle UI later: blue-cyan flat sky, two large pale stepped clouds high up, one silhouette of muted blue-green distant hills, one plane of muted sage middle hills, one sparse line of dark green block bushes near far-left and far-right. One SMALL timber farmhouse and orange roof at far-left edge x0–12%, one chunky wooden sign at far-right x94%; absolutely no obstacles in x20–85%. Battle figures will stand at x39% and70%; keep a plain midvalue green backdrop behind both at y40–65%. The perfectly horizontal TOP walkable edge is exactly65% of image height, with one dark-green/ochre2logicalpixel grass lip. From65% to100% is quiet flat golden-brown earth, no perspective depth, no diagonal path. This lower third will later hold thumb controls, so no major artwork there.\nMood bright and warm familiar fantasy. A clear side-on flat floor, no castle/gothic arches, bells, religious motifs, flags, text, HUD, characters, monsters, shadows of characters or weapons. Reserve high contrast and dark outlines for future actors; background shapes are softer in contrast but all pixel boundaries remain CRISP. Colour blocks as large as the accepted monster sheet, never intricate pixel painting.",
+      "references": [
+        "images/meadow-concept.png",
+        "images/monster-pixel-v2.png"
+      ]
+    },
+    {
+      "file": "images/battle-normal-scene-v3.png",
+      "prompt": "Create a finished-looking SCENE STUDY for our original fantasy timing-action game, landscape STRICT16:9, no UI. Inputs: image1 is the simplified meadow environment, image2 is our final coarse five-person actor sheet (ONLY the first small cream-hood swordsman On is the player), image3 is our monster identity sheet, image4 is a real reference-game screenshot for LOW PIXEL DENSITY ONLY. Do not copy image4 characters, composition, HUD, palette or words. The scene must look as SIMPLE and LOW-RESOLUTION as that reference game, but retain our warm coloured fantasy identities. All reference images are supporting references; compose a new scene.\n\nPixel treatment: draw as though the whole game scene were a tiny 256x144 bitmap scaled5x to1280x720 with nearest-neighbour. Crisp BIG SQUARE PIXELS. Player body only22–26 logical pixels tall. One dark pixel silhouette border, 4–6 flat colour regions per actor, NO muscle shading, cloth folds, fur texture, armor details, dithering, gradients, speckled ground, tiny texture. Faces one-square eyes. BACKGROUND even simpler than actors: broad flat sky, two stepped cream clouds high up, two solid muted teal/sage hill silhouettes, a few block bushes onlyatleft/rightedge, one tiny farmhouse far-left. The full central battlefield behind characters is calm sage green. No blurry edges or painted lighting.\n\nExact layout measured on1280x720 target: a horizontal ochre floor TOP at y468 (65%height), groundextendsdownflatto720. All feet meet EXACT same y468 baseline. Lower y500–720 must contain ONLY flat ochre earth, noactors, noshadows or scenery; we will overlay controls later. Player On centered x500(39%), standing RIGHT-facing, feet(500,468), fullbody height132 (18.3%ofimage), cream hood and shirt, dark navy limbs/face, gold scarf, one short pale blade heldforward-right attached visiblytohand, two boots. Use the SIMPLIFIED first character fromimage2; do not restore earlier folds/buckles. Enemy centered x900(70%), facingLEFT toward On. Keep both separated by clear air; idle/combat-ready poses, not touching. Characters have consistent logical pixel unit. A largerenemy uses a larger silhouette, not more shadeddetail. No names, text, healthbars, indicators, numbers, panels, buttons, logos, bells, UI, callouts, grid,splitpanels. Do not move groundup or center anactor. Preserve bright friendly fantasy with capable fighters. Ground must be perfectlyflat side-on; no isometric or diagonal perspective. Enemy for this scene: ONLY the horn rabbit fromimage3 top rowsecond. Tan ochre blocky rabbit, two upright ears, cream muzzle and a single short ivory horn. Totalheight132px includingears, slightlysmallerbodythanplayerbutdistincttall ears, compactquadrupedwithclearlydefinedfeetontheground. TwocharactersONLY: On andrabbit. Use nootherNPCs ormonsters.",
+      "references": [
+        "images/meadow-pixel-v3.png",
+        "images/actors-pixel-v3.png",
+        "images/monster-pixel-v2.png",
+        "../../Reference/TimingHero-20261023/boss10/00240.000.jpg"
+      ]
+    },
+    {
+      "file": "images/battle-boss-scene-v3-initial.png",
+      "prompt": "Create a finished-looking SCENE STUDY for our original fantasy timing-action game, landscape STRICT16:9, no UI. Inputs: image1 is the simplified meadow environment, image2 is our final coarse five-person actor sheet (ONLY the first small cream-hood swordsman On is the player), image3 is our monster identity sheet, image4 is a real reference-game screenshot for LOW PIXEL DENSITY ONLY. Do not copy image4 characters, composition, HUD, palette or words. The scene must look as SIMPLE and LOW-RESOLUTION as that reference game, but retain our warm coloured fantasy identities. All reference images are supporting references; compose a new scene.\n\nPixel treatment: draw as though the whole game scene were a tiny 256x144 bitmap scaled5x to1280x720 with nearest-neighbour. Crisp BIG SQUARE PIXELS. Player body only22–26 logical pixels tall. One dark pixel silhouette border, 4–6 flat colour regions per actor, NO muscle shading, cloth folds, fur texture, armor details, dithering, gradients, speckled ground, tiny texture. Faces one-square eyes. BACKGROUND even simpler than actors: broad flat sky, two stepped cream clouds high up, two solid muted teal/sage hill silhouettes, a few block bushes onlyatleft/rightedge, one tiny farmhouse far-left. The full central battlefield behind characters is calm sage green. No blurry edges or painted lighting.\n\nExact layout measured on1280x720 target: a horizontal ochre floor TOP at y468 (65%height), groundextendsdownflatto720. All feet meet EXACT same y468 baseline. Lower y500–720 must contain ONLY flat ochre earth, noactors, noshadows or scenery; we will overlay controls later. Player On centered x500(39%), standing RIGHT-facing, feet(500,468), fullbody height132 (18.3%ofimage), cream hood and shirt, dark navy limbs/face, gold scarf, one short pale blade heldforward-right attached visiblytohand, two boots. Use the SIMPLIFIED first character fromimage2; do not restore earlier folds/buckles. Enemy centered x900(70%), facingLEFT toward On. Keep both separated by clear air; idle/combat-ready poses, not touching. Characters have consistent logical pixel unit. A largerenemy uses a larger silhouette, not more shadeddetail. No names, text, healthbars, indicators, numbers, panels, buttons, logos, bells, UI, callouts, grid,splitpanels. Do not move groundup or center anactor. Preserve bright friendly fantasy with capable fighters. Ground must be perfectlyflat side-on; no isometric or diagonal perspective. Enemy for this scene: ONLY the GIANT BOAR fromimage3 top rowthird, named GreatTusk. A wide massive dark-brown block body, boldrust back ridge, hugeivorytusks, squatlegs, left-facingmuzzle. Enemy feet(900,468), totalheight248px (34.4%imageheight), width340px(26.5%imagewidth), so clearlyaroundtwicetheplayer'sheightandmuchwider. Both tusksreadaslargecreamblocks. No detailedfur ormetal. TwocharactersONLY: On andgiantboar. Samecameraandplayer scale asnormalbattle.",
+      "status": "not selected; player scale differed from normal scene"
+    },
+    {
+      "file": "images/battle-boss-scene-v3.png",
+      "prompt": "Edit ONLY the enemy in this exact normal battle scene. Image1 is the target scene; image2 is the monster design identity reference. Keep the entire background, pixel style, camera, floor, and especially the little cream-hood swordsman EXACTLY THE SAME POSITION, SIZE, CLOTHES, FACE AND SWORD as image1. Do not regenerate or shrink or move the swordsman, no zoom-out. The player's current feet and head position must remain unchanged. Keep horizon and floorline unchanged.\nREMOVE the rabbit entirely, replace it with our GIANT BOAR GreatTusk from image2 top rowthird: heavy dark-brown wide block body, rust-red back ridge, two huge ivory tusks, small dark square eye, squatlegs. Face LEFT at the player. Place the boar center at70% ofimagewidth, all feet flush with same floorline asplayer. Boar total height38%ofimageheight (roughly1.75times the player currentheight), totalwidth32%ofimagewidth, no cropping. Huge silhouette and broad simple flatcolourblocks, no fur texture, no gradients, no detailedshading. Keep logical pixel unit same asplayer. Upperrightspace aroundheadclear. Lowerthird ground remains empty for UI. NO words, bars, HUD, effects or newcharacters. Do not add any object to the player's body. Only replace the rabbit with the large boar.",
+      "references": [
+        "images/battle-normal-scene-v3.png",
+        "images/monster-pixel-v2.png"
+      ],
+      "status": "selected; same player and camera as normal scene"
+    }
+  ],
+  "uiComposition": {
+    "renderer": "render-battle-v3.cjs",
+    "frame": [
+      1280,
+      720
+    ],
+    "sceneViewportOffsetY": -16,
+    "reason": "Align generated scene walk line near y484 to planned feet baseline468; source PNG unmodified.",
+    "observedPlayerBodyCenterX": 470,
+    "normalEnemyCenterX": 810,
+    "bossEnemyCenterX": 850,
+    "playerHp": [
+      390,
+      524,
+      160,
+      16
+    ],
+    "normalEnemyHp": [
+      718,
+      524,
+      184,
+      16
+    ],
+    "bossEnemyHp": [
+      710,
+      524,
+      280,
+      16
+    ],
+    "controls": "design.json existing three evade touch areas and attack/parry retained",
+    "outputs": [
+      "images/battle-normal-clean-v3.png",
+      "images/battle-normal-telegraph-v3.png",
+      "images/battle-boss-clean-v3.png",
+      "images/battle-boss-telegraph-v3.png",
+      "images/battle-wireframe-v3.png"
+    ]
+  },
+  "reference": "Original supplied Timing Hero recording Screen_Recording_20261023_130328_TimingHero.mp4 frame240s; visual density reference only, not traced assets.",
+  "limitations": [
+    "Not Unity capture or playable build",
+    "Exact source sprite pixel counts of reference game are unknown; our logical canvas numbers are targets",
+    "Generated backgrounds still contain subtle tonal gradients",
+    "Exact sprite extraction, fixed pixel grid, animation and parallax layers remain production work",
+    "Telegraph overlays demonstrate UI placement, not enemy preparation animation or timing synchronization"
+  ]
+}

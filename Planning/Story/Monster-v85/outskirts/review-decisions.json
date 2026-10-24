@@ -1,0 +1,315 @@
+{
+  "wild_dog": {
+    "base": "Candidate 00 approved beside the original hero at actual world scale. Five colors, thick navy outline, short legs, large head. Source faces right and runtime flips it left.",
+    "idle": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "holdsMs": [
+        180,
+        180,
+        180,
+        180,
+        180,
+        180,
+        180,
+        180,
+        180
+      ],
+      "status": "approved",
+      "qa": "All 9 foot-band RGBA hashes are identical. Small ear, tail and chest changes only; no step or ground shift."
+    },
+    "attack": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "holdsMs": [
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        60,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30
+      ],
+      "contactFrame": 8,
+      "contactPoint": {
+        "x": 103,
+        "y": 43
+      },
+      "contactTimeMs": 400,
+      "durationMs": 700,
+      "status": "approved",
+      "qa": "Reviewed all 17 source frames. Short backward anticipation, open jaw, forward closed-jaw bite at frame 8, then return. Contact point is the leading teeth. No clipping, mirrored turn, smeared outline or duplicated limb."
+    },
+    "stun": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "holdsMs": [
+        170,
+        170,
+        170,
+        170,
+        170,
+        170,
+        170,
+        170,
+        170
+      ],
+      "status": "approved",
+      "qa": "Distinct dropped head and buckled front posture. All 9 foot-band RGBA hashes identical; very weak head/chest motion. No recovery to alert Idle while stunned."
+    },
+    "hit": "Static base with runtime white flash, then current motion. No replacement damage animation and no death clip."
+  },
+  "grey_wolf": {
+    "base": "Candidate 01 approved beside the original hero at actual world scale. Compact torso, large head, short legs, broad pale ruff, thick navy outline. Source faces left.",
+    "idle": {
+      "sourceFrames": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        4,
+        3,
+        1
+      ],
+      "holdsMs": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "status": "approved",
+      "rejected": "Initial PixMiniMax Idle moved feet and put lower pixels below the ground on frames 6 and 8. Raw sources retained under idle/.",
+      "qa": "Five unique original frames selected in a reversible loop. All 8 timeline foot-band RGBA hashes identical; 2px upper-body breathing and tail shift only. Original frames 2,6,8 with paw defects excluded; retry inflation entirely rejected."
+    },
+    "attack": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "holdsMs": [
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28
+      ],
+      "contactFrame": 6,
+      "contactPoint": {
+        "x": 28,
+        "y": 53
+      },
+      "contactTimeMs": 360,
+      "durationMs": 700,
+      "status": "approved",
+      "qa": "Reviewed all 17 source frames. Squat wind-up, short airborne pounce and open bite at frame 6, then grounded return. Leading lower mouth/teeth define contact, not tail or cloak. No clipping or extra limb."
+    },
+    "stun": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "holdsMs": [
+        170,
+        170,
+        170,
+        170,
+        170,
+        170,
+        170,
+        170,
+        170
+      ],
+      "status": "approved",
+      "qa": "Head and shoulders droop below alert pose. All 9 foot-band RGBA hashes identical. Small weak head/tail wobble, no step and no death collapse."
+    },
+    "hit": "Static base with runtime white flash."
+  },
+  "brown_bear": {
+    "base": "Candidate 00 approved beside the original hero at actual world scale. Blocky broad torso, heavy paws, flat brown/amber masses and thick navy outline. Source faces right and runtime flips it left.",
+    "idle": {
+      "sourceFrames": [
+        0,
+        3,
+        6,
+        7,
+        8,
+        7,
+        6,
+        3
+      ],
+      "holdsMs": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "status": "approved",
+      "rejected": "Initial PixMiniMax Idle lifted and shifted front paws. Raw sources retained under idle/.",
+      "qa": "Five unique original frames selected in a reversible loop. All 8 timeline foot-band RGBA hashes identical; tiny chest changes only. Original frames 1,2,4,5 with lifted paws excluded; retry enlarged torso entirely rejected."
+    },
+    "attack": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "holdsMs": [
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        60,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30
+      ],
+      "contactFrame": 8,
+      "contactPoint": {
+        "x": 99,
+        "y": 75
+      },
+      "contactTimeMs": 400,
+      "durationMs": 700,
+      "status": "approved",
+      "qa": "Reviewed all 17 source frames. Heavy front paw raises, forcefully sweeps down at frame 8, then recovers. Contact is the leading claw tip. Body stays broad and quadruped. No clipping, extra limb or unrequested effects."
+    },
+    "stun": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "holdsMs": [
+        170,
+        170,
+        170,
+        170,
+        170,
+        170,
+        170,
+        170,
+        170
+      ],
+      "status": "approved",
+      "qa": "Rounded shoulders and low exhausted head clearly separate from alert pose. All 9 foot-band RGBA hashes identical. Small torso/head sway on planted paws, no walking or death."
+    },
+    "hit": "Static base with runtime white flash."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "scope":"Only stage 4 through 9 new enemies; keep stage 1 wild_dog, stage 2 grey_wolf, stage 3 brown_bear, and existing stage 10 guardian unchanged.",
+  "style":"Direct original hero reference, same navy/cream/amber anchors and broad flat pixel clusters as approved v85. Species identity comes from silhouette and large color shapes, not intricate texture.",
+  "stages":[
+    {"stage":4,"id":"red_fox","identity":"pointed ears, broad cream-tipped tail, russet body","attack":"short low snapping bite","read":"small, quick threat"},
+    {"stage":5,"id":"wild_boar","identity":"wide low barrel torso, square snout, tusks, stepped bristled back","attack":"short heavy snout/tusk charge","read":"midboss with clear head wind-up"},
+    {"stage":6,"id":"badger","identity":"black/cream face mask, very low broad body, digging paws","attack":"one close low forepaw rake","read":"low stance and digging claw reach"},
+    {"stage":7,"id":"lynx","identity":"ear tufts, broad feline paws, short bobtail","attack":"one short forward feline paw pounce","read":"fast upper-body reach"},
+    {"stage":8,"id":"mountain_goat","identity":"back-curved horns, beard and squared hooves","attack":"head lowers, one strong horn headbutt","read":"horn anticipation is clear"},
+    {"stage":9,"id":"great_stag","identity":"broad stepped antlers, thick neck and shoulder","attack":"heavy head-down antler thrust","read":"large silhouette before gate guardian"}
+  ],
+  "motionContract":{
+    "Idle":"Natural low-amplitude breathing/ear or tail movement. Paws stay on identical ground pixels. Failed steps or body morph frames excluded, never code-drawn into fixes.",
+    "Attack":"Exactly one well-read wind-up/contact/recover action. 600-800ms total and first contact at 350-500ms. Frame and source-coordinate impact point recorded.",
+    "Stun":"Distinct exhausted lowered head/shoulder pose with weak motion. No death collapse.",
+    "Hit":"Static base + existing runtime white flash; no new hit sprite distortion.",
+    "Death":"Not produced."
+  },
+  "qa":"Inspect all raw frames, retain rejected sources and reasons, render selected timeline and actual-game-scale original-hero comparisons, validate source hashes, binary alpha, canvas margin, fixed Idle feet and contact metadata."
+}

@@ -1,0 +1,532 @@
+{
+  "schemaVersion": 1,
+  "documentType": "planning-character-bible",
+  "title": "용 잡으러 갑니다 — 캐릭터 정의",
+  "date": "2026-10-24",
+  "status": "v0.9.3 제작 기준 · 현재 플레이어3명/이야기 NPC4명 · 최종 용은 후속 지역 기획",
+  "premise": "선택한 모험가가 산길을 막은 붉은 용 브라크를 쓰러뜨리고 마을의 수레길을 되찾는다.",
+  "tone": [
+    "가볍고 친근한 판타지",
+    "목표는 시작부터 끝까지 용에게 이기기",
+    "위험은 실제지만 잔혹한 묘사는 하지 않음",
+    "짧은 말과 행동으로 성격을 표현"
+  ],
+  "taxonomyRule": "종족은 생김새와 생활 배경, 직업은 싸우거나 일하는 방식, 개별 인물은 이름과 성격으로 나눈다. 수인은 종족이고 마법사·바바리안은 직업이다.",
+  "species": [
+    {
+      "id": "human",
+      "name": "인간",
+      "visual": "명료한 사람형 실루엣. 체형과 장비로 직업을 구분한다.",
+      "scope": "루카·다렌·미엘·리나·바룬"
+    },
+    {
+      "id": "beastfolk",
+      "name": "수인",
+      "visual": "사람형 몸에 귀·꼬리 한두 특징을 크게 남긴다. 얼굴의 작은 무늬는 줄인다.",
+      "scope": "여우 수인 토리. 다른 수인 종족은 후속 확장 후보"
+    },
+    {
+      "id": "dwarf",
+      "name": "드워프",
+      "visual": "짧은 키, 넓은 몸, 큰 수염과 작업 도구.",
+      "scope": "도토"
+    },
+    {
+      "id": "elf",
+      "name": "엘프",
+      "visual": "길쭉한 귀, 가벼운 망토, 잎색 포인트.",
+      "scope": "세계관에 존재하는 확장 후보. 첫 50스테이지에 새 주역으로 추가하지 않음"
+    },
+    {
+      "id": "goblin",
+      "name": "고블린",
+      "visual": "작은 몸, 큰 귀와 손, 녹색 피부. 장비의 덩어리로 역할을 구분한다.",
+      "scope": "기블 일당. 고블린 전체를 악한 종족으로 정의하지 않음"
+    },
+    {
+      "id": "dragon",
+      "name": "용",
+      "visual": "큰 몸과 날개, 뿔, 꼬리. 브라크는 사족 용이며 와이번은 날개가 앞다리인 별도 생물.",
+      "scope": "브라크. 능선 와이번은 용과 구분하는 친척 생물"
+    }
+  ],
+  "otherKinds": [
+    {
+      "id": "animal",
+      "name": "야생 생물",
+      "description": "멧돼지 등 자연의 생물. 위협·영역 다툼이 전투의 원인이며 사람처럼 긴 대사를 하지 않는다."
+    },
+    {
+      "id": "construct",
+      "name": "마법 구조물",
+      "description": "골렘과 경비 조형물. 생물 종족으로 분류하지 않는다. 돌문은 광산의 오래된 경비 골렘이다."
+    }
+  ],
+  "jobs": [
+    {
+      "id": "swordsman",
+      "name": "검사",
+      "combatIdentity": "작고 빠른 한손검, 몸을 낮춘 달리기, 큰 사선 베기"
+    },
+    {
+      "id": "ranger",
+      "name": "궁수",
+      "combatIdentity": "짧은 활과 가벼운 몸, 귀와 꼬리가 보이는 조준 자세"
+    },
+    {
+      "id": "mage",
+      "name": "마법사",
+      "combatIdentity": "큰 모자와 짧은 지팡이, 한 번에 읽히는 큰 마법 형태"
+    },
+    {
+      "id": "barbarian",
+      "name": "바바리안",
+      "combatIdentity": "넓은 어깨와 묵직한 대검, 큰 예비동작과 강한 한 방"
+    },
+    {
+      "id": "blacksmith",
+      "name": "대장장이",
+      "combatIdentity": "전투 직업이 아닌 이야기 역할. 망치·앞치마·작업복으로 식별"
+    },
+    {
+      "id": "raider",
+      "name": "약탈단 대장",
+      "combatIdentity": "큰 방패와 짧은 창으로 길을 막는 방어적인 적"
+    },
+    {
+      "id": "guardian",
+      "name": "수호기사",
+      "combatIdentity": "검과 방패, 짧은 반격과 한 번의 보호"
+    }
+  ],
+  "coreCast": [
+    {
+      "id": "on",
+      "name": "루카",
+      "speciesId": "human",
+      "jobId": "swordsman",
+      "role": "플레이어",
+      "implementationScope": "Player-v2 모험가를 바탕으로 NPC와 외곽선·비율을 맞추는 Player-v3 제작. 안정적인 ID on과 기존 동작·능력치는 유지한다.",
+      "oneLine": "첫 큰 의뢰를 맡은, 겁은 조금 나지만 발은 빠른 검사.",
+      "personality": "담백하고 성실하다. 거창한 운명보다 오늘 맡은 일을 끝내고 싶어 한다.",
+      "motivation": "막힌 수레길을 열고 자신의 첫 용 퇴치 의뢰를 완수한다.",
+      "behavior": "위험을 만나면 잠깐 검을 고쳐 쥐고 곧바로 움직인다. 말을 길게 하지 않는다.",
+      "silhouette": "갈색 머리와 짧은 붉은 스카프, 초록 튜닉, 분명한 팔·다리와 한손검.",
+      "palette": [
+        "짙은 남색 윤곽",
+        "갈색 머리·가방",
+        "붉은 스카프·초록 튜닉",
+        "밝은 피부·강철 검"
+      ],
+      "equipment": "한손검 한 자루, 작은 여행 가방과 크림색 침낭. 종·장례 문양은 없다.",
+      "heightRatioToHero": 1.0,
+      "appearanceReason": "의뢰를 받고 처음부터 마지막까지 여행하는 주인공.",
+      "sampleLine": "용부터 잡고, 저녁 먹자.",
+      "notAllowed": [
+        "달릴 때 머리·옷·가방·검의 형태나 소유 관계가 바뀌는 프레임",
+        "성격 설명을 게임 대사로 길게 낭독",
+        "선택 없이 동료가 자동 합류하는 파티 전투"
+      ]
+    },
+    {
+      "id": "tori",
+      "name": "토리",
+      "speciesId": "beastfolk",
+      "subspecies": "여우 수인",
+      "jobId": "ranger",
+      "role": "이야기 NPC · 추후 플레이어 후보",
+      "implementationScope": "현재 1~20의 이야기 동료. 전투는 선택한 모험가 한 명을 조작한다.",
+      "oneLine": "숲길 지름길은 다 알지만, 남의 짐을 들어주는 일은 슬쩍 피하는 길잡이.",
+      "personality": "재빠르고 능청스럽다. 필요한 정보는 분명하게 알려준다.",
+      "motivation": "산길이 열려야 자신의 배달도 다시 시작할 수 있다.",
+      "behavior": "큰 귀로 소리를 듣고, 꼬리와 활 끝으로 길을 가리킨다.",
+      "silhouette": "뾰족한 두 귀, 큰 한 개의 꼬리, 짧은 활.",
+      "palette": [
+        "주황 털",
+        "크림 입 주변",
+        "청록 망토"
+      ],
+      "equipment": "짧은 활과 작은 화살통.",
+      "heightRatioToHero": 0.95,
+      "appearanceReason": "Stage 2에서 처음 만나 함께 여행하고, 10보스 뒤 숲길을 안내한다.",
+      "sampleLine": "숲길은 저쪽. 방패 든 녀석은 조심해.",
+      "notAllowed": [
+        "수인이므로 모두 야생 적이라는 설정",
+        "토리를 길막기 연습 보스로 사용"
+      ]
+    },
+    {
+      "id": "rina",
+      "name": "리나",
+      "speciesId": "human",
+      "jobId": "mage",
+      "role": "이야기 NPC · 추후 플레이어 후보",
+      "implementationScope": "현재 7의 대화·초상화를 제작했다. 40의 재회는 후속 기획.",
+      "oneLine": "화려한 마법보다 안전한 등산 준비를 더 꼼꼼하게 챙기는 마법사.",
+      "personality": "차분하고 현실적이다. 말은 짧고 조언은 구체적이다.",
+      "motivation": "고개의 길과 관측 자리를 되찾고 싶다.",
+      "behavior": "지팡이 끝으로 바람을 살피고 큰 모자를 한 번 눌러 쓴다.",
+      "silhouette": "머리보다 큰 자주색 모자, 짧은 지팡이, 단순한 로브.",
+      "palette": [
+        "자주색 모자",
+        "크림 로브",
+        "연한 청록 마법 포인트"
+      ],
+      "equipment": "짧은 지팡이와 허리의 작은 책 한 권.",
+      "heightRatioToHero": 1.0,
+      "heightIncludingHatRatioToHero": 1.25,
+      "appearanceReason": "Stage 7에서 약초를 구해 돌아오는 길에 만나고, 40에서 재회한다.",
+      "sampleLine": "용이 숨을 크게 들이쉬면, 불이 온다는 뜻이야.",
+      "notAllowed": [
+        "장문의 마법 세계사 설명",
+        "전투 중 자동 보호막을 주는 신규 동료 기능"
+      ]
+    },
+    {
+      "id": "barun",
+      "name": "바룬",
+      "speciesId": "human",
+      "jobId": "barbarian",
+      "role": "이야기 NPC · 추후 플레이어 후보",
+      "implementationScope": "현재 15의 대화·초상화를 제작했다. 30의 재회는 후속 기획.",
+      "oneLine": "큰 대검과 더 큰 배낭을 든, 웃음 많은 산길 운반꾼.",
+      "personality": "호탕하고 친절하다. 힘을 자랑하기보다 짐을 먼저 들어 준다.",
+      "motivation": "멈춰 선 운송 일을 다시 시작하고 싶다.",
+      "behavior": "어깨의 대검을 고쳐 메고 고개를 턱으로 가리킨다.",
+      "silhouette": "루카보다 넓은 어깨, 짧고 굵은 팔다리, 등 뒤의 넓은 대검.",
+      "palette": [
+        "붉은 천",
+        "갈색 가죽 방호구",
+        "어두운 철색 대검"
+      ],
+      "equipment": "끝이 둥근 묵직한 대검과 큰 배낭.",
+      "heightRatioToHero": 1.35,
+      "appearanceReason": "Stage 15에서 광부들 점심을 나르다 막힌 길에서 만나고, 30에서 재회한다.",
+      "sampleLine": "이제 오르막이다. 짐은 두고, 검만 꽉 잡아.",
+      "notAllowed": [
+        "바바리안을 독립 종족으로 표시",
+        "친근함을 표현하기 위해 전투 체급을 희화화"
+      ]
+    },
+    {
+      "id": "doto",
+      "name": "도토",
+      "speciesId": "dwarf",
+      "jobId": "blacksmith",
+      "role": "이야기 NPC",
+      "implementationScope": "현재 20의 대화·초상화를 제작했다. 별도 수리·제작 시스템은 없다.",
+      "oneLine": "길이 막힌 날에도 작업복은 반듯하게 챙겨 입는 드워프 대장장이.",
+      "personality": "꼼꼼하고 조금 퉁명스럽지만 믿을 수 있다.",
+      "motivation": "광산 수레와 마을 물건이 다시 오가도록 길을 연다.",
+      "behavior": "큰 망치를 바닥에 세우고 손바닥으로 다음 방향을 보여 준다.",
+      "silhouette": "낮고 넓은 몸, 노란 수염, 몸통 크기의 망치.",
+      "palette": [
+        "파란 작업복",
+        "황금빛 수염",
+        "짙은 갈색 앞치마"
+      ],
+      "equipment": "큰 작업 망치와 앞치마.",
+      "heightRatioToHero": 0.8,
+      "appearanceReason": "Stage 20 기블을 물리친 후 수레길에서 만나 갱도 지름길을 듣는다.",
+      "sampleLine": "갱도 끝 골렘이 길을 막았어. 어깨부터 잘 봐.",
+      "notAllowed": [
+        "강화에 새 광물 재료를 요구",
+        "강화 수치나 기존 화폐 수급 방식 임의 변경"
+      ]
+    },
+    {
+      "id": "gib",
+      "name": "기블",
+      "speciesId": "goblin",
+      "jobId": "raider",
+      "role": "적 · Stage 20 보스",
+      "implementationScope": "11~20 숲 구역의 Stage20 런타임 보스 아트와 표시명 제작. 안정적 기존 enemy ID와 전투 수치는 보존한다.",
+      "oneLine": "용 때문에 감시가 느슨해진 숲길을 자기 통행세 구역으로 정한 대장.",
+      "personality": "허세가 크고 방패 뒤에서는 목소리가 더 커진다.",
+      "motivation": "지나가는 수레에서 먹거리와 돈을 빼앗는다. 고블린 종족 전체가 아니라 기블의 일당이 적이다.",
+      "behavior": "큰 방패를 세워 길을 막고 틈 사이로 짧은 창을 내민다.",
+      "silhouette": "작은 몸보다 훨씬 큰 사각 방패, 긴 귀, 깃털 하나 달린 투구.",
+      "palette": [
+        "잎색 피부",
+        "진한 목재 방패",
+        "주황 깃털"
+      ],
+      "equipment": "큰 방패와 짧은 창.",
+      "heightRatioToHero": 0.9,
+      "heightIncludingEquipmentRatioToHero": 1.25,
+      "appearanceReason": "숲길을 차지한 약탈단의 마지막 길막이.",
+      "sampleLine": "이 길은 내 길이다! …방금부터!",
+      "defeat": "방패가 튕겨 나가고 뒷걸음질하다 도망간다. 피·절단 표현은 없다.",
+      "notAllowed": [
+        "루카의 훈련을 돕기 위해 일부러 싸우는 NPC로 변경",
+        "종족 전체에 악당 성격을 부여"
+      ]
+    },
+    {
+      "id": "dolmun",
+      "name": "돌문",
+      "kindId": "construct",
+      "jobId": null,
+      "role": "적 · Stage 30 보스",
+      "implementationScope": "광산 경비 골렘. 별도 퍼즐이나 필수 약점 조준 시스템은 추가하지 않는다.",
+      "oneLine": "수레길 한가운데서 여전히 경비 일을 수행하는 오래된 돌 골렘.",
+      "personality": "말하지 않는다. 느리게 살피고 크게 내려친다.",
+      "motivation": "닫힌 갱도를 지키는 옛 경비 동작을 반복한다.",
+      "behavior": "어깨와 주먹을 크게 들어 올려 공격을 예고하고, 맞으면 바위 조각이 떨어진다.",
+      "silhouette": "정사각 바위 어깨, 큰 두 주먹, 낮고 단단한 몸.",
+      "palette": [
+        "회갈색 바위",
+        "짙은 틈",
+        "작은 민트 결정"
+      ],
+      "equipment": "몸 자체가 무기. 황금 종이나 종 모양 장비는 붙이지 않는다.",
+      "heightRatioToHero": 2.6,
+      "appearanceReason": "폐쇄된 광산의 통로를 막고 있는 오래된 경비 구조물.",
+      "sampleLine": null,
+      "defeat": "어깨부터 큰 돌 덩어리가 분리되고 길 가장자리의 바위 더미로 주저앉는다.",
+      "notAllowed": [
+        "고대 봉인·희생·숨겨진 흑막 이야기로 확대",
+        "반드시 새 마법 키를 모아야 지나갈 수 있는 진행 조건"
+      ]
+    },
+    {
+      "id": "brak",
+      "name": "브라크",
+      "speciesId": "dragon",
+      "jobId": null,
+      "role": "적 · Stage 50 최종 보스",
+      "implementationScope": "용 퇴치 목표의 실제 결전 상대. 최종전 취소나 우호 NPC 전환으로 결말을 대신하지 않는다.",
+      "oneLine": "따뜻한 고갯길을 자기 자리로 정하고 수레를 쫓아내는 커다란 붉은 용.",
+      "personality": "자신만만하고 고집이 세다. 말과 표정은 단순하지만 체급과 공격은 위협적이다.",
+      "motivation": "산길 주변을 편한 휴식터와 사냥 영역으로 독차지하려 한다.",
+      "behavior": "앞발로 땅을 짚고 가슴을 부풀린 뒤 불을 뿜는다. 큰 날개와 꼬리를 사용한다.",
+      "silhouette": "큰 둥근 주둥이, 짧은 상아색 뿔, 네 다리, 넓은 두 날개와 긴 꼬리.",
+      "palette": [
+        "벽돌색·산호색 비늘",
+        "주황 배",
+        "상아색 뿔",
+        "짙은 적갈색 윤곽"
+      ],
+      "equipment": "이빨·발톱·날개·꼬리·불. 종, 해골 갑옷, 인간형 무기는 없다.",
+      "heightRatioToHero": 4.5,
+      "wingSpanRatioToHeroHeight": 6.5,
+      "sizeNote": "컨셉상의 상대 체급이다. 가로 전투 화면에서는 전신이 다 들어가도록 줄이지 말고 머리·앞발·공격 예고의 가독성을 먼저 검토한다. 최종 픽셀 크기는 시안 후 결정한다.",
+      "appearanceReason": "산길을 막은 원인이자 여정의 종착점.",
+      "sampleLine": "이 고개는 내 낮잠 자리다!",
+      "defeat": "루카와의 실제 전투에서 패한 뒤 고개를 내주고 사람이 살지 않는 능선으로 물러난다. 길이 열리는 결과를 화면에서 보여 준다.",
+      "notAllowed": [
+        "사실은 착한 용이라 전투하지 않는 반전",
+        "달래기나 음식 전달만으로 승리 처리",
+        "용을 잡기 직전에 다른 흑막을 최종 목표로 교체",
+        "친근한 얼굴 때문에 플레이어보다 작아지는 체급"
+      ]
+    },
+    {
+      "id": "dam",
+      "name": "다렌",
+      "jobId": "guardian",
+      "oneLine": "낯선 길에서도 먼저 앞에 서는 든든한 기사.",
+      "personality": "호탕하지만 사람을 먼저 챙긴다.",
+      "motivation": "산길을 열어 사람들이 안전하게 오가게 한다.",
+      "silhouette": "갈색 머리와 머리띠, 강철 어깨 갑옷, 파란 방패.",
+      "equipment": "한손검과 작은 방패.",
+      "speciesId": "human",
+      "role": "선택 가능한 플레이어",
+      "implementationScope": "현재 1~20 출전·강화·전용 스킬·대화 응답",
+      "appearanceReason": "로비에서 선택해 같은 여정을 각자의 진행으로 떠난다.",
+      "heightRatioToHero": 1.0,
+      "behavior": "각자의 무기와 복장을 유지하며 달리고 회피한다.",
+      "palette": [
+        "청록/푸른 계열 의상",
+        "크림 피부",
+        "진한 남색 외곽"
+      ],
+      "sampleLine": "함께 가자.",
+      "notAllowed": [
+        "모션마다 옷과 무기가 달라지는 표현"
+      ]
+    },
+    {
+      "id": "rin",
+      "name": "미엘",
+      "jobId": "mage",
+      "oneLine": "작은 단서도 놓치지 않는 호기심 많은 여행 마법사.",
+      "personality": "밝고 호기심이 많다. 관찰한 것을 반갑게 말한다.",
+      "motivation": "용을 직접 만나 보고 막힌 산길도 연다.",
+      "silhouette": "금발, 청록 모자와 짧은 로브, 수정봉.",
+      "equipment": "짧은 수정봉과 여행용 가방.",
+      "speciesId": "human",
+      "role": "선택 가능한 플레이어",
+      "implementationScope": "현재 1~20 출전·강화·전용 스킬·대화 응답",
+      "appearanceReason": "로비에서 선택해 같은 여정을 각자의 진행으로 떠난다.",
+      "heightRatioToHero": 1.0,
+      "behavior": "각자의 무기와 복장을 유지하며 달리고 회피한다.",
+      "palette": [
+        "청록/푸른 계열 의상",
+        "크림 피부",
+        "진한 남색 외곽"
+      ],
+      "sampleLine": "함께 가자.",
+      "notAllowed": [
+        "모션마다 옷과 무기가 달라지는 표현"
+      ]
+    }
+  ],
+  "bossSequence": [
+    {
+      "stage": 10,
+      "name": "큰엄니",
+      "archetype": "거대 멧돼지",
+      "kindId": "animal",
+      "castId": null,
+      "zone": "바람들판",
+      "heightRatioToHero": 2.0,
+      "silhouette": "낮고 넓은 몸, 큰 어금니, 흙색 등",
+      "reason": "수레길에 자리를 잡은 영역의 주인",
+      "defeat": "돌진이 멎고 비틀거린 뒤 풀숲으로 달아난다."
+    },
+    {
+      "stage": 20,
+      "name": "기블",
+      "kindId": "person",
+      "castId": "gib",
+      "zone": "솔바람숲",
+      "reason": "통행세를 뜯는 고블린 약탈단 대장"
+    },
+    {
+      "stage": 30,
+      "name": "돌문",
+      "kindId": "construct",
+      "castId": "dolmun",
+      "zone": "햇돌광산",
+      "reason": "갱도의 통로를 막은 경비 골렘"
+    },
+    {
+      "stage": 40,
+      "name": "능선 와이번",
+      "kindId": "animal",
+      "castId": null,
+      "zone": "구름고개",
+      "heightRatioToHero": 3.0,
+      "silhouette": "날개가 앞다리인 두 발 생물, 길고 좁은 머리, 청록 날개",
+      "reason": "용에게 터전을 밀려 고개에 둥지를 튼 포식자",
+      "defeat": "날갯짓이 흐트러지고 착지한 뒤 고개 반대편으로 날아간다."
+    },
+    {
+      "stage": 50,
+      "name": "브라크",
+      "kindId": "dragon",
+      "castId": "brak",
+      "zone": "붉은바위둥지",
+      "reason": "고개를 독차지한 붉은 용"
+    }
+  ],
+  "enemyFamilies": [
+    {
+      "zoneIndex": 1,
+      "range": "1–10",
+      "families": [
+        "슬라임",
+        "들짐승",
+        "거대 멧돼지"
+      ],
+      "visualRule": "초록·황토·크림의 밝은 자연색. 위험한 방향은 몸 기울기와 흙먼지 형태로 읽히게 한다."
+    },
+    {
+      "zoneIndex": 2,
+      "range": "11–20",
+      "families": [
+        "숲 생물",
+        "고블린 약탈단",
+        "기블"
+      ],
+      "visualRule": "초록 배경과 적 피부가 겹치지 않도록 갈색 장비·두꺼운 윤곽·주황 포인트를 둔다."
+    },
+    {
+      "zoneIndex": 3,
+      "range": "21–30",
+      "families": [
+        "동굴 생물",
+        "작은 경비 구조물",
+        "돌문"
+      ],
+      "visualRule": "차가운 바위 배경에 밝은 갈색 몸과 제한된 민트 결정. 빛나는 장식은 공격 예고보다 약하게."
+    },
+    {
+      "zoneIndex": 4,
+      "range": "31–40",
+      "families": [
+        "고산 생물",
+        "바람 생물",
+        "능선 와이번"
+      ],
+      "visualRule": "연한 하늘 배경에 청록·짙은 갈색 실루엣. 와이번과 최종 용의 신체 구조를 구분한다."
+    },
+    {
+      "zoneIndex": 5,
+      "range": "41–50",
+      "families": [
+        "화산 지대 생물",
+        "용 주변의 작은 비룡",
+        "브라크"
+      ],
+      "visualRule": "크림·회보라 바위 배경에 산호색 용. 화면 전체를 붉게 칠해 적·불·예고가 섞이지 않게 한다."
+    }
+  ],
+  "appearanceRules": [
+    "세계관 정의 → 인물의 필요 → 이야기 → 스테이지 배치 순서로 결정한다.",
+    "기본 캐릭터는 작은 크기에서 귀·모자·수염·어깨·검 중 두 가지 특징만으로 구분한다.",
+    "컨셉 이미지의 세부 장식은 제작 확정 자산이 아니다. 픽셀 그리드와 정수 배율에 맞춰 다시 정리한다.",
+    "Idle·달리기·회피·베기·피격의 프레임 전체에서 옷, 얼굴, 무기 길이, 손의 소유 관계를 유지한다.",
+    "밝은 분위기여도 공격 준비 자세, 위험 방향, 맞은 순간의 하얀 플래시, 막타·보스 체급은 또렷해야 한다.",
+    "NPC는 10스테이지 보스 후 짧은 대사 장면에만 필요한 만큼 등장한다. 강제 메뉴·파티창·동료 영입창은 새로 만들지 않는다."
+  ],
+  "productionScope": {
+    "thisRevision": "1~20 게임용 몬스터/루카 모험가 외형·지면 적용,캐릭터명 변경,전용스킬·차별성 기획",
+    "notDone": [
+      "다렌·미엘 플레이어 해금 및 신규 전용 스킬 구현",
+      "21~50 게임용 몬스터·구역 배경 완성",
+      "NPC 별도 게임용 배우 구현",
+      "경제·전투 수치 변경"
+    ],
+    "economy": "종 파편·공명·종 모양 장식의 명칭과 외형 교체는 root의 통합 기획에 따른다. 기존 수치와 지급 규칙은 이 문서에서 수정하지 않는다."
+  },
+  "review": {
+    "reviewers": [
+      "dragon_cast",
+      "dragon_story",
+      "dragon_art"
+    ],
+    "agreements": [
+      "핵심 8인 구성",
+      "종족과 직업 분리",
+      "초원→숲→광산→고산→용 둥지",
+      "10 멧돼지·20 기블·30 돌문·40 와이번·50 브라크",
+      "최종전 실제 승리 후 길이 열리는 결말",
+      "루카의 크림 후드·남색 그림자 정체성 유지"
+    ],
+    "status": "인물·역할·실루엣과 서사 연결 검토 완료. 캐스트 이미지 직접 확인 완료: 8명 구분·주색·장비·루카의 후드·용의 네 다리와 별도 날개가 정의에 맞는다. 이미지의 행별 배율은 정확한 체급표가 아니다.",
+    "latestPlayerOverride": "현재루카는Player-v3의갈색머리·붉은스카프·청록튜닉·등짐·한손검.이전원화의후드설명보다우선한다."
+  },
+  "playerRoster": [
+    {
+      "id": "on",
+      "name": "루카",
+      "job": "검사",
+      "availableInMvp": true
+    },
+    {
+      "id": "dam",
+      "name": "다렌",
+      "job": "수호기사",
+      "availableInMvp": false
+    },
+    {
+      "id": "rin",
+      "name": "미엘",
+      "job": "마법사",
+      "availableInMvp": false
+    }
+  ],
+  "playerSkills": "character-skills-v1.json · 기획안이며 런타임 미구현"
+}

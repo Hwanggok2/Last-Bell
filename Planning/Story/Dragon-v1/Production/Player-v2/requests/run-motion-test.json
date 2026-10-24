@@ -1,0 +1,34 @@
+{
+  "tool": "transfer_outfit",
+  "sourceLocalFrames": [
+    "Planning/Presentation/RunMotionFresh/run-dash-20261021-02/frames/run-01.png",
+    "Planning/Presentation/RunMotionFresh/run-dash-20261021-02/frames/run-03.png",
+    "Planning/Presentation/RunMotionFresh/run-dash-20261021-02/frames/run-05.png"
+  ],
+  "request": {
+    "frames_base64": "Three exact original local PNGs provided through official tool; base64 omitted from log.",
+    "reference_image_url": "https://api.pixellab.ai/mcp/images/b6bef6dc-cd96-4909-85f4-64941281b01c/download",
+    "width": 32,
+    "height": 32,
+    "no_background": true,
+    "max_colors": 10,
+    "palette": [
+      "#202D38",
+      "#6B3F2A",
+      "#AB6C37",
+      "#F3BD83",
+      "#2D735D",
+      "#6DAF69",
+      "#C9433E",
+      "#8B2F35",
+      "#E8D9AD",
+      "#B7D3D0"
+    ],
+    "palette_name": "Coarse adventure ten-color palette",
+    "seed": 24102453,
+    "additional_instructions": "Three motion test poses ONLY in original order: contact, flight, opposite contact. Keep the original running pose silhouette exactly: low forward torso lean, extended rear leg or folded heel, near sword hand forward at waist with connected blade, counterbalancing back arm. Re-render whole subject SMALLER to fit32 canvas, body19-20 pixels tall centered with same shared feet reference at y28. No cropping! Source128 images are POSE REFERENCE only; do NOT keep large128 resolution. Apply the new visible face/brown hair, red short scarf, green tunic, brown boots and compact bag/cream roll from reference. Replace hood entirely with hair. Preserve joint angles and motion phases, do not stand upright, do not freeze to idle. Broad flat pixel masses, NO shading detail or glow/sword trails. Short sword length and bag size fixed. Do not add limbs."
+  },
+  "result": [
+    "error: frame 1 is 128x128, larger than the 32x32 output, and would be cropped. set width/height to at least 128x128 or crop it to its content."
+  ]
+}

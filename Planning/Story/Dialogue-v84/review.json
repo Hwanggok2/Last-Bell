@@ -1,0 +1,180 @@
+{
+  "checks": {
+    "same_story_ids_and_stage_boss_mapping": true,
+    "four_prologue_paragraphs": true,
+    "three_pages_per_boss": true,
+    "all_text_two_lines": true,
+    "prologue_max_line_chars_20": true,
+    "dialogue_max_line_chars_22": true,
+    "original_bell_and_lantern_goal_preserved": true,
+    "resident_survival_preserved": true,
+    "no_new_playable_stages_or_story_triggers": true,
+    "all_html_local_links_resolve": true
+  },
+  "lineLengths": [
+    {
+      "id": "prologue",
+      "lineCharacters": [
+        9,
+        18
+      ]
+    },
+    {
+      "id": "prologue",
+      "lineCharacters": [
+        15,
+        20
+      ]
+    },
+    {
+      "id": "prologue",
+      "lineCharacters": [
+        19,
+        19
+      ]
+    },
+    {
+      "id": "prologue",
+      "lineCharacters": [
+        17,
+        18
+      ]
+    },
+    {
+      "id": "story_boss_10.0",
+      "lineCharacters": [
+        17,
+        22
+      ]
+    },
+    {
+      "id": "story_boss_10.1",
+      "lineCharacters": [
+        16,
+        19
+      ]
+    },
+    {
+      "id": "story_boss_10.2",
+      "lineCharacters": [
+        15,
+        17
+      ]
+    },
+    {
+      "id": "story_boss_10.2.on",
+      "lineCharacters": [
+        15,
+        17
+      ]
+    },
+    {
+      "id": "story_boss_10.2.dam",
+      "lineCharacters": [
+        10,
+        18
+      ]
+    },
+    {
+      "id": "story_boss_10.2.rin",
+      "lineCharacters": [
+        14,
+        20
+      ]
+    },
+    {
+      "id": "story_boss_20.0",
+      "lineCharacters": [
+        17,
+        17
+      ]
+    },
+    {
+      "id": "story_boss_20.1",
+      "lineCharacters": [
+        20,
+        20
+      ]
+    },
+    {
+      "id": "story_boss_20.2",
+      "lineCharacters": [
+        18,
+        18
+      ]
+    },
+    {
+      "id": "story_boss_20.2.on",
+      "lineCharacters": [
+        18,
+        18
+      ]
+    },
+    {
+      "id": "story_boss_20.2.dam",
+      "lineCharacters": [
+        15,
+        21
+      ]
+    },
+    {
+      "id": "story_boss_20.2.rin",
+      "lineCharacters": [
+        16,
+        17
+      ]
+    }
+  ],
+  "reviewedBy": "story_dialogue parallel agent; editorial self-review, not independent player testing",
+  "runtimeRender": "Pending integrating agent. Mockups are not Unity captures.",
+  "glyphWidthMeasurement": {
+    "font": "NeoDunggeunmoPro-Regular.ttf",
+    "method": "Pillow FreeType bounding measurement; conservative 24px at 960, 16px at 640; not a Unity TextGenerator result",
+    "results": [
+      {
+        "kind": "prologue",
+        "resolution": [
+          960,
+          540
+        ],
+        "fontSize": 24,
+        "availableWidth": 504.0,
+        "maxTextWidth": 399.0,
+        "fits": true
+      },
+      {
+        "kind": "story",
+        "resolution": [
+          960,
+          540
+        ],
+        "fontSize": 24,
+        "availableWidth": 720.0,
+        "maxTextWidth": 431.0,
+        "fits": true
+      },
+      {
+        "kind": "prologue",
+        "resolution": [
+          640,
+          360
+        ],
+        "fontSize": 16,
+        "availableWidth": 336.0,
+        "maxTextWidth": 265.0,
+        "fits": true
+      },
+      {
+        "kind": "story",
+        "resolution": [
+          640,
+          360
+        ],
+        "fontSize": 16,
+        "availableWidth": 480.0,
+        "maxTextWidth": 286.0,
+        "fits": true
+      }
+    ]
+  }
+}

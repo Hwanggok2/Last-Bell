@@ -1,0 +1,15 @@
+{
+  "id": "dodge-jump",
+  "tool": "animate_image",
+  "request": {
+    "first_frame_url": "https://api.pixellab.ai/mcp/images/b521d718-274a-47bb-9271-02911e0f8e7a/download",
+    "last_frame_url": "https://api.pixellab.ai/mcp/images/b521d718-274a-47bb-9271-02911e0f8e7a/download",
+    "frame_count": 8,
+    "no_background": true,
+    "seed": 24102415,
+    "action": "An evasive JUMP POSE and landing in place. F1-2 compress knees; F3-4 tuck both knees toward torso, boots clear the ground by2-3pixels; F5 begin extending; F6-7 land with bent knees; F8 original stance. Keep head mostly steady and body centered; runtime supplies the large upward displacement. Sword remains tucked close, no flip, spin or attack. Same cream hood/short tunic, navy face/limbs, ONE amber eye, ochre scarf, brown boots, ONE short steel sword with ochre hilt. Keep clothing, palette, proportions and right-facing silhouette identical. No bell/cape/extra limb/extra weapon/VFX. Fixed48canvas, native pixels, fixed root/scale."
+  },
+  "result": [
+    "id: 0d980ca7-c6b1-4a64-a181-ddc60e79a017\njob_id: 0d980ca7-c6b1-4a64-a181-ddc60e79a017\naction: An evasive JUMP POSE and landing in place. F1-2 compress knees; F3-4 tuck both knees toward torso, boots clear the ground by2-3pixels; F5 begin extending; F6-7 land with bent knees; F8 original stance. Keep head mostly steady and body centered; runtime supplies the large upward displacement. Sword remains tucked close, no flip, spin or attack. Same cream hood/short tunic, navy face/limbs, ONE amber eye, ochre scarf, brown boots, ONE short steel sword with ochre hilt. Keep clothing, palette, proportions and right-facing silhouette identical. No bell/cape/extra limb/extra weapon/VFX. Fixed48canvas, native pixels, fixed root/scale.\nframes: 8\nsize: 48x48px\ntransparent: True\nlast_frame: yes (interpolating to it)\nseed: 24102415\nasset_id: ecf99322-145e-54bb-92b8-43581320d460\nasset_status: pending (saved when generation completes)\ncost: 1 generation\nstatus: processing (~30-180s)\n\nhint: get_image(job_id=\"0d980ca7-c6b1-4a64-a181-ddc60e79a017\")"
+  ]
+}

@@ -1,0 +1,1026 @@
+{
+  "version": "v86",
+  "status": "reviewed-source-fragment-not-yet-Unity-imported",
+  "ownership": "Parent copies textures and merges these actors; preserve original hero and unrelated actors.",
+  "textures": [
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/badger/base.png",
+      "source": "Planning/Story/Monster-v86/outskirts/badger/animation-input.png",
+      "sha256": "01334a7f6e31ce751e00c248527fea8993c209bd225b8602e665917c64bf0142",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/badger/idle/00.png",
+      "source": "Planning/Story/Monster-v86/outskirts/badger/idle/00.png",
+      "sha256": "ed30c70d895f9bd559b2f1f072344f88f6e349b01fc1eec1db5790ddead4c04f",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/badger/idle/03.png",
+      "source": "Planning/Story/Monster-v86/outskirts/badger/idle/03.png",
+      "sha256": "390d27713ca800cfb4a32716e27a001b501898374f9fa4c0fb264bba5916e131",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/badger/idle/07.png",
+      "source": "Planning/Story/Monster-v86/outskirts/badger/idle/07.png",
+      "sha256": "aebca1f2f1920e682bc56d729130e53512336333a2dd5a1c75a608e71f532c24",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/badger/idle/08.png",
+      "source": "Planning/Story/Monster-v86/outskirts/badger/idle/08.png",
+      "sha256": "ed30c70d895f9bd559b2f1f072344f88f6e349b01fc1eec1db5790ddead4c04f",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/badger/attack/00.png",
+      "source": "Planning/Story/Monster-v86/outskirts/badger/attack/00.png",
+      "sha256": "ed30c70d895f9bd559b2f1f072344f88f6e349b01fc1eec1db5790ddead4c04f",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/badger/attack/01.png",
+      "source": "Planning/Story/Monster-v86/outskirts/badger/attack/01.png",
+      "sha256": "ed30c70d895f9bd559b2f1f072344f88f6e349b01fc1eec1db5790ddead4c04f",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/badger/attack/02.png",
+      "source": "Planning/Story/Monster-v86/outskirts/badger/attack/02.png",
+      "sha256": "ed30c70d895f9bd559b2f1f072344f88f6e349b01fc1eec1db5790ddead4c04f",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/badger/attack/03.png",
+      "source": "Planning/Story/Monster-v86/outskirts/badger/attack/03.png",
+      "sha256": "ed30c70d895f9bd559b2f1f072344f88f6e349b01fc1eec1db5790ddead4c04f",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/badger/attack/04.png",
+      "source": "Planning/Story/Monster-v86/outskirts/badger/attack/04.png",
+      "sha256": "b29343f9cae70e64e27ac5dabdcbf09637f93f782f8b1e478ec06d14bc7d7ba7",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/badger/attack/05.png",
+      "source": "Planning/Story/Monster-v86/outskirts/badger/attack/05.png",
+      "sha256": "1ea5a25d227587547dd704fd39859c6e02515d46d992f1da8f66ec09ed2542d1",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/badger/attack/06.png",
+      "source": "Planning/Story/Monster-v86/outskirts/badger/attack/06.png",
+      "sha256": "14d4586a7dd02d94e532abe09d526e511d71d85345b88a83425c637ecd79b6ab",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/badger/attack/07.png",
+      "source": "Planning/Story/Monster-v86/outskirts/badger/attack/07.png",
+      "sha256": "de8eafa45b622cc9abb550e2441778a780cd7ac4eb57958e0b9c90b0f9370b53",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/badger/attack/08.png",
+      "source": "Planning/Story/Monster-v86/outskirts/badger/attack/08.png",
+      "sha256": "5256256d204f49235b64dda5cf140c80939c2416281cb001a8ab417df8dd972d",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/badger/attack/13.png",
+      "source": "Planning/Story/Monster-v86/outskirts/badger/attack/13.png",
+      "sha256": "e9ae77c2d5a699233d9b73af3edfbc5a1f5c7fc4765116faf4ffa9843d412711",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/badger/attack/14.png",
+      "source": "Planning/Story/Monster-v86/outskirts/badger/attack/14.png",
+      "sha256": "ed30c70d895f9bd559b2f1f072344f88f6e349b01fc1eec1db5790ddead4c04f",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/badger/attack/15.png",
+      "source": "Planning/Story/Monster-v86/outskirts/badger/attack/15.png",
+      "sha256": "ed30c70d895f9bd559b2f1f072344f88f6e349b01fc1eec1db5790ddead4c04f",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/badger/attack/16.png",
+      "source": "Planning/Story/Monster-v86/outskirts/badger/attack/16.png",
+      "sha256": "ed30c70d895f9bd559b2f1f072344f88f6e349b01fc1eec1db5790ddead4c04f",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/badger/stun/00.png",
+      "source": "Planning/Story/Monster-v86/outskirts/badger/stun/00.png",
+      "sha256": "5473b45b978d264b5a6ff7e676e974100f76e06b814a41588f42e350b034324a",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/badger/stun/01.png",
+      "source": "Planning/Story/Monster-v86/outskirts/badger/stun/01.png",
+      "sha256": "8b9222c9017d0ebbec3879447ca29110938be89a079a65113a8db84139b466dc",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/badger/stun/02.png",
+      "source": "Planning/Story/Monster-v86/outskirts/badger/stun/02.png",
+      "sha256": "fb9595c7a5a3903a3f1bb0509ef6b176c2ed02d6c0176376e631509c6aa3fc53",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/badger/stun/03.png",
+      "source": "Planning/Story/Monster-v86/outskirts/badger/stun/03.png",
+      "sha256": "32cec242e01b8b0e87524759e98da9ec6107af1c2215baae52a6cba02a521b5a",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/badger/stun/04.png",
+      "source": "Planning/Story/Monster-v86/outskirts/badger/stun/04.png",
+      "sha256": "94212ce195ed3168efb29a5a3d2c468b126c9489af6fc34a26163b0050139ac0",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/badger/stun/05.png",
+      "source": "Planning/Story/Monster-v86/outskirts/badger/stun/05.png",
+      "sha256": "94a18931b4cfe5744e342c8ffb0a3e056b97320432dc448aa7b53e7e65186fdb",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/badger/stun/06.png",
+      "source": "Planning/Story/Monster-v86/outskirts/badger/stun/06.png",
+      "sha256": "bc1be6946f7bc6774de230328fbbcf477f598338d82f4d884ad35ed752a765ae",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/badger/stun/07.png",
+      "source": "Planning/Story/Monster-v86/outskirts/badger/stun/07.png",
+      "sha256": "c843a0f034b545c09f961a76194bbf1d61cb138d597519342b6df07c5c42aa35",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/badger/stun/08.png",
+      "source": "Planning/Story/Monster-v86/outskirts/badger/stun/08.png",
+      "sha256": "5473b45b978d264b5a6ff7e676e974100f76e06b814a41588f42e350b034324a",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/base.png",
+      "source": "Planning/Story/Monster-v86/outskirts/mountain_goat/animation-input.png",
+      "sha256": "f64a41d2b7438b60390520fe31153680bb63c68eb23d51e01585108aa577be8d",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/idle/00.png",
+      "source": "Planning/Story/Monster-v86/outskirts/mountain_goat/idle/00.png",
+      "sha256": "d91dc1311d5a2126c380b6af529aed17f38be7884a218bf1d8c62537afebfc89",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/idle/03.png",
+      "source": "Planning/Story/Monster-v86/outskirts/mountain_goat/idle/03.png",
+      "sha256": "cdc508d2f48f796ff20da26cc43f5a3671bca75f28bb28970e19340e2a741f75",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/idle/04.png",
+      "source": "Planning/Story/Monster-v86/outskirts/mountain_goat/idle/04.png",
+      "sha256": "4bd858356029b10dc20a6bf64924b12097bc4f7930296547eab3d5c01a469b5f",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/idle/06.png",
+      "source": "Planning/Story/Monster-v86/outskirts/mountain_goat/idle/06.png",
+      "sha256": "e6d0d7cad8283821fc95ac2b078a9afef351be021e44b088d38e1bc087601f11",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/idle/07.png",
+      "source": "Planning/Story/Monster-v86/outskirts/mountain_goat/idle/07.png",
+      "sha256": "8499a8637b2f9f01e73d719ab55567b5beb91471b8d3f051786fb329694f0006",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/attack/00.png",
+      "source": "Planning/Story/Monster-v86/outskirts/mountain_goat/attack/00.png",
+      "sha256": "d91dc1311d5a2126c380b6af529aed17f38be7884a218bf1d8c62537afebfc89",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/attack/01.png",
+      "source": "Planning/Story/Monster-v86/outskirts/mountain_goat/attack/01.png",
+      "sha256": "a21bded21ce91940dec30889a881724bebc3c0cc737a6d6ab822ee948738e64c",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/attack/02.png",
+      "source": "Planning/Story/Monster-v86/outskirts/mountain_goat/attack/02.png",
+      "sha256": "a21bded21ce91940dec30889a881724bebc3c0cc737a6d6ab822ee948738e64c",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/attack/03.png",
+      "source": "Planning/Story/Monster-v86/outskirts/mountain_goat/attack/03.png",
+      "sha256": "a21bded21ce91940dec30889a881724bebc3c0cc737a6d6ab822ee948738e64c",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/attack/04.png",
+      "source": "Planning/Story/Monster-v86/outskirts/mountain_goat/attack/04.png",
+      "sha256": "a21bded21ce91940dec30889a881724bebc3c0cc737a6d6ab822ee948738e64c",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/attack/05.png",
+      "source": "Planning/Story/Monster-v86/outskirts/mountain_goat/attack/05.png",
+      "sha256": "a21bded21ce91940dec30889a881724bebc3c0cc737a6d6ab822ee948738e64c",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/attack/06.png",
+      "source": "Planning/Story/Monster-v86/outskirts/mountain_goat/attack/06.png",
+      "sha256": "a21bded21ce91940dec30889a881724bebc3c0cc737a6d6ab822ee948738e64c",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/attack/07.png",
+      "source": "Planning/Story/Monster-v86/outskirts/mountain_goat/attack/07.png",
+      "sha256": "8dde4a0ed77096626ca0692759e20700e290cf42cba7410ce8300fd767ec6e62",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/attack/08.png",
+      "source": "Planning/Story/Monster-v86/outskirts/mountain_goat/attack/08.png",
+      "sha256": "32012bd897fd45350b844b7386ace434648ab0bdafd90008165638c98191fe5e",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/attack/12.png",
+      "source": "Planning/Story/Monster-v86/outskirts/mountain_goat/attack/12.png",
+      "sha256": "15dcfdabe1cafbdba697aa57aecec0554c9d8bd8c25bf4bc02f6ab3e07890af1",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/attack/13.png",
+      "source": "Planning/Story/Monster-v86/outskirts/mountain_goat/attack/13.png",
+      "sha256": "9c77ba20ba49b1ed8ad1ffb305bd7aa9aff94c6e8da9b81a0974f74b2cd68f87",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/attack/14.png",
+      "source": "Planning/Story/Monster-v86/outskirts/mountain_goat/attack/14.png",
+      "sha256": "ba36054fec7d7dc1c7f97e40467843a4f000f89c28eb7fbf9ae6f26a5853d14e",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/attack/15.png",
+      "source": "Planning/Story/Monster-v86/outskirts/mountain_goat/attack/15.png",
+      "sha256": "ba36054fec7d7dc1c7f97e40467843a4f000f89c28eb7fbf9ae6f26a5853d14e",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/attack/16.png",
+      "source": "Planning/Story/Monster-v86/outskirts/mountain_goat/attack/16.png",
+      "sha256": "ba36054fec7d7dc1c7f97e40467843a4f000f89c28eb7fbf9ae6f26a5853d14e",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/stun/00.png",
+      "source": "Planning/Story/Monster-v86/outskirts/mountain_goat/stun/00.png",
+      "sha256": "68598e4e8802bd2e2d9f4b4160d382ba501b87207aebe61775d47d2158cef047",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/stun/01.png",
+      "source": "Planning/Story/Monster-v86/outskirts/mountain_goat/stun/01.png",
+      "sha256": "68598e4e8802bd2e2d9f4b4160d382ba501b87207aebe61775d47d2158cef047",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/stun/02.png",
+      "source": "Planning/Story/Monster-v86/outskirts/mountain_goat/stun/02.png",
+      "sha256": "68598e4e8802bd2e2d9f4b4160d382ba501b87207aebe61775d47d2158cef047",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/stun/03.png",
+      "source": "Planning/Story/Monster-v86/outskirts/mountain_goat/stun/03.png",
+      "sha256": "4db96680b2e41e94f9a07cbd3797ab2311cb8898e6486f5ce73f1bab7346a2bb",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/stun/04.png",
+      "source": "Planning/Story/Monster-v86/outskirts/mountain_goat/stun/04.png",
+      "sha256": "e1dc564d4a7c2956ea44f4df55cc4a69aee5c5616b01dd95f5cffc66e5b0cb1e",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/stun/05.png",
+      "source": "Planning/Story/Monster-v86/outskirts/mountain_goat/stun/05.png",
+      "sha256": "892f4eddb800377d54fc7654ae24338982adb30ffb7daa9afe4c928e7b642d04",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/stun/06.png",
+      "source": "Planning/Story/Monster-v86/outskirts/mountain_goat/stun/06.png",
+      "sha256": "507bd7edac659fd4a96adb6905fd2fbc2f75b0116131531d1265a122932af1cc",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/stun/07.png",
+      "source": "Planning/Story/Monster-v86/outskirts/mountain_goat/stun/07.png",
+      "sha256": "3fe7fb250b24f6d620bd97e7175b70b9a68af7201bd6862272d295ca04a73373",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/stun/08.png",
+      "source": "Planning/Story/Monster-v86/outskirts/mountain_goat/stun/08.png",
+      "sha256": "32261f66d17baa0c49b940c80596d771f3883c51d29c58e4bfb867c017e35c6e",
+      "width": 128,
+      "height": 96,
+      "pivot": {
+        "x": 64,
+        "y": 80
+      }
+    }
+  ],
+  "actors": [
+    {
+      "id": "badger",
+      "facesRight": true,
+      "height": 0.85,
+      "referenceHeightPixels": 38,
+      "clips": [
+        {
+          "motion": "Idle",
+          "sourceId": "v86-badger-idle",
+          "sourceJob": "d92840b4-b4c6-4821-94ee-d608ae3431b5",
+          "note": "Original hero used directly for style. Reviewed native PixelLab frames; transparent padding only. Hit uses runtime white flash. No death.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-v86/badger/idle/00.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/badger/idle/03.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/badger/idle/07.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/badger/idle/08.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/badger/idle/07.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/badger/idle/03.png"
+          ],
+          "sourceFrames": [
+            0,
+            3,
+            7,
+            8,
+            7,
+            3
+          ],
+          "frameDurationsMs": [
+            300,
+            250,
+            250,
+            300,
+            250,
+            250
+          ],
+          "fps": 3.7499999999999996,
+          "loop": true,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 64,
+            "y": 48
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Attack",
+          "sourceId": "v86-badger-attack",
+          "sourceJob": "aa48c41b-871c-468c-b105-84fed0e21662",
+          "note": "Original hero used directly for style. Reviewed native PixelLab frames; transparent padding only. Hit uses runtime white flash. No death.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-v86/badger/attack/00.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/badger/attack/01.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/badger/attack/02.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/badger/attack/03.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/badger/attack/04.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/badger/attack/05.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/badger/attack/06.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/badger/attack/07.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/badger/attack/08.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/badger/attack/13.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/badger/attack/14.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/badger/attack/15.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/badger/attack/16.png"
+          ],
+          "sourceFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            13,
+            14,
+            15,
+            16
+          ],
+          "frameDurationsMs": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            60,
+            60,
+            60,
+            60,
+            60
+          ],
+          "fps": 18.571428571428573,
+          "loop": false,
+          "contactFrame": 8,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 96,
+            "y": 69
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Stun",
+          "sourceId": "v86-badger-stun",
+          "sourceJob": "b3fd8e57-eb7d-41a9-9aed-75a3637ade21",
+          "note": "Original hero used directly for style. Reviewed native PixelLab frames; transparent padding only. Hit uses runtime white flash. No death.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-v86/badger/stun/00.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/badger/stun/01.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/badger/stun/02.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/badger/stun/03.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/badger/stun/04.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/badger/stun/05.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/badger/stun/06.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/badger/stun/07.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/badger/stun/08.png"
+          ],
+          "sourceFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "frameDurationsMs": [
+            170,
+            170,
+            170,
+            170,
+            170,
+            170,
+            170,
+            170,
+            170
+          ],
+          "fps": 5.882352941176471,
+          "loop": true,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 64,
+            "y": 48
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Hit",
+          "sourceId": "v86-badger-hit",
+          "sourceJob": "aa6f2b5b-0f2e-4832-a6e0-3b63bedc628c",
+          "note": "Original hero used directly for style. Reviewed native PixelLab frames; transparent padding only. Hit uses runtime white flash. No death.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-v86/badger/base.png"
+          ],
+          "sourceFrames": [
+            0
+          ],
+          "frameDurationsMs": [
+            120
+          ],
+          "fps": 8.333333333333334,
+          "loop": false,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 64,
+            "y": 48
+          },
+          "staticFallback": true,
+          "legacyStun": false
+        }
+      ]
+    },
+    {
+      "id": "mountain_goat",
+      "facesRight": true,
+      "height": 1.35,
+      "referenceHeightPixels": 50,
+      "clips": [
+        {
+          "motion": "Idle",
+          "sourceId": "v86-mountain_goat-idle",
+          "sourceJob": "72cb4f59-52fc-4fa6-a5eb-1012984f7748",
+          "note": "Original hero used directly for style. Reviewed native PixelLab frames; transparent padding only. Hit uses runtime white flash. No death.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/idle/00.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/idle/03.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/idle/04.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/idle/06.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/idle/07.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/idle/06.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/idle/04.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/idle/03.png"
+          ],
+          "sourceFrames": [
+            0,
+            3,
+            4,
+            6,
+            7,
+            6,
+            4,
+            3
+          ],
+          "frameDurationsMs": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ],
+          "fps": 5.0,
+          "loop": true,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 64,
+            "y": 48
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Attack",
+          "sourceId": "v86-mountain_goat-attack",
+          "sourceJob": "71523e7c-9129-4e4b-86ef-3ea8d44e02c2",
+          "note": "Original hero used directly for style. Reviewed native PixelLab frames; transparent padding only. Hit uses runtime white flash. No death.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/attack/00.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/attack/01.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/attack/02.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/attack/03.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/attack/04.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/attack/05.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/attack/06.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/attack/07.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/attack/08.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/attack/12.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/attack/13.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/attack/14.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/attack/15.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/attack/16.png"
+          ],
+          "sourceFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "frameDurationsMs": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            60,
+            48,
+            48,
+            48,
+            48,
+            48
+          ],
+          "fps": 20.0,
+          "loop": false,
+          "contactFrame": 8,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 95,
+            "y": 47
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Stun",
+          "sourceId": "v86-mountain_goat-stun",
+          "sourceJob": "ebf12f23-172e-4c8f-ae8e-0a35d4c9d90f",
+          "note": "Original hero used directly for style. Reviewed native PixelLab frames; transparent padding only. Hit uses runtime white flash. No death.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/stun/00.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/stun/01.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/stun/02.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/stun/03.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/stun/04.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/stun/05.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/stun/06.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/stun/07.png",
+            "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/stun/08.png"
+          ],
+          "sourceFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "frameDurationsMs": [
+            170,
+            170,
+            170,
+            170,
+            170,
+            170,
+            170,
+            170,
+            170
+          ],
+          "fps": 5.882352941176471,
+          "loop": true,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 64,
+            "y": 48
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Hit",
+          "sourceId": "v86-mountain_goat-hit",
+          "sourceJob": "7267bf13-c9b3-437a-ba69-24a3c243f2ac",
+          "note": "Original hero used directly for style. Reviewed native PixelLab frames; transparent padding only. Hit uses runtime white flash. No death.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/monster-v86/mountain_goat/base.png"
+          ],
+          "sourceFrames": [
+            0
+          ],
+          "frameDurationsMs": [
+            120
+          ],
+          "fps": 8.333333333333334,
+          "loop": false,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 64,
+            "y": 48
+          },
+          "staticFallback": true,
+          "legacyStun": false
+        }
+      ]
+    }
+  ],
+  "qa": "review-decisions.json",
+  "provenance": "jobs.json"
+}

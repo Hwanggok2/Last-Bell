@@ -1,0 +1,1498 @@
+{
+  "status": "passed",
+  "originalHeroSha256Unchanged": true,
+  "originalHeroDirectReference": "Client/Assets/Game/Art/Presentation/Clips/hero-v5-idle/01.png",
+  "browserVisualQA": "Browser inventory unavailable in agent session. All frames inspected using rendered contact sheets and actual-world-scale original-hero comparison. Preview JavaScript syntax validated.",
+  "actors": {
+    "red_fox": {
+      "Idle": {
+        "sourceFrames": 8,
+        "uniquePixelFrames": 8,
+        "durationMs": 1600,
+        "footBandVariants": 1,
+        "colorCount": 5,
+        "noClippedPixels": true,
+        "binaryAlphaOnly": true,
+        "bounds": [
+          [
+            40,
+            26,
+            96,
+            80
+          ],
+          [
+            40,
+            24,
+            96,
+            80
+          ],
+          [
+            40,
+            24,
+            96,
+            80
+          ],
+          [
+            40,
+            24,
+            98,
+            80
+          ],
+          [
+            40,
+            24,
+            100,
+            80
+          ],
+          [
+            40,
+            28,
+            100,
+            80
+          ],
+          [
+            40,
+            28,
+            98,
+            80
+          ],
+          [
+            40,
+            26,
+            96,
+            80
+          ]
+        ]
+      },
+      "Attack": {
+        "sourceFrames": 17,
+        "uniquePixelFrames": 12,
+        "durationMs": 700,
+        "footBandVariants": 2,
+        "colorCount": 15,
+        "noClippedPixels": true,
+        "binaryAlphaOnly": true,
+        "bounds": [
+          [
+            40,
+            26,
+            96,
+            80
+          ],
+          [
+            40,
+            26,
+            96,
+            80
+          ],
+          [
+            38,
+            28,
+            96,
+            80
+          ],
+          [
+            36,
+            30,
+            96,
+            80
+          ],
+          [
+            32,
+            30,
+            98,
+            80
+          ],
+          [
+            32,
+            30,
+            98,
+            80
+          ],
+          [
+            30,
+            30,
+            96,
+            80
+          ],
+          [
+            32,
+            30,
+            96,
+            80
+          ],
+          [
+            30,
+            30,
+            96,
+            80
+          ],
+          [
+            28,
+            32,
+            96,
+            80
+          ],
+          [
+            32,
+            30,
+            96,
+            80
+          ],
+          [
+            34,
+            28,
+            96,
+            80
+          ],
+          [
+            38,
+            28,
+            96,
+            80
+          ],
+          [
+            40,
+            26,
+            96,
+            80
+          ],
+          [
+            40,
+            26,
+            96,
+            80
+          ],
+          [
+            40,
+            26,
+            96,
+            80
+          ],
+          [
+            40,
+            26,
+            96,
+            80
+          ]
+        ],
+        "contactFrame": 8,
+        "contactTimeMs": 400,
+        "effectOrigin": {
+          "x": 32,
+          "y": 55
+        }
+      },
+      "Stun": {
+        "sourceFrames": 9,
+        "uniquePixelFrames": 4,
+        "durationMs": 1530,
+        "footBandVariants": 1,
+        "colorCount": 4,
+        "noClippedPixels": true,
+        "binaryAlphaOnly": true,
+        "bounds": [
+          [
+            36,
+            26,
+            96,
+            80
+          ],
+          [
+            38,
+            26,
+            96,
+            80
+          ],
+          [
+            38,
+            26,
+            96,
+            80
+          ],
+          [
+            38,
+            26,
+            96,
+            80
+          ],
+          [
+            36,
+            26,
+            96,
+            80
+          ],
+          [
+            36,
+            26,
+            96,
+            80
+          ],
+          [
+            38,
+            26,
+            96,
+            80
+          ],
+          [
+            38,
+            26,
+            96,
+            80
+          ],
+          [
+            36,
+            26,
+            96,
+            80
+          ]
+        ]
+      },
+      "Hit": {
+        "sourceFrames": 1,
+        "uniquePixelFrames": 1,
+        "durationMs": 120,
+        "footBandVariants": 1,
+        "colorCount": 5,
+        "noClippedPixels": true,
+        "binaryAlphaOnly": true,
+        "bounds": [
+          [
+            40,
+            26,
+            96,
+            80
+          ]
+        ]
+      }
+    },
+    "wild_boar": {
+      "Idle": {
+        "sourceFrames": 8,
+        "uniquePixelFrames": 5,
+        "durationMs": 1600,
+        "footBandVariants": 1,
+        "colorCount": 6,
+        "noClippedPixels": true,
+        "binaryAlphaOnly": true,
+        "bounds": [
+          [
+            32,
+            20,
+            96,
+            80
+          ],
+          [
+            32,
+            18,
+            100,
+            80
+          ],
+          [
+            32,
+            18,
+            102,
+            80
+          ],
+          [
+            32,
+            20,
+            100,
+            80
+          ],
+          [
+            32,
+            20,
+            98,
+            80
+          ],
+          [
+            32,
+            20,
+            100,
+            80
+          ],
+          [
+            32,
+            18,
+            102,
+            80
+          ],
+          [
+            32,
+            18,
+            100,
+            80
+          ]
+        ]
+      },
+      "Attack": {
+        "sourceFrames": 17,
+        "uniquePixelFrames": 10,
+        "durationMs": 700,
+        "footBandVariants": 1,
+        "colorCount": 6,
+        "noClippedPixels": true,
+        "binaryAlphaOnly": true,
+        "bounds": [
+          [
+            32,
+            20,
+            96,
+            80
+          ],
+          [
+            32,
+            20,
+            96,
+            80
+          ],
+          [
+            32,
+            20,
+            96,
+            80
+          ],
+          [
+            32,
+            20,
+            96,
+            80
+          ],
+          [
+            32,
+            20,
+            96,
+            80
+          ],
+          [
+            32,
+            20,
+            96,
+            80
+          ],
+          [
+            32,
+            20,
+            98,
+            80
+          ],
+          [
+            32,
+            22,
+            100,
+            80
+          ],
+          [
+            30,
+            22,
+            100,
+            80
+          ],
+          [
+            28,
+            22,
+            102,
+            80
+          ],
+          [
+            26,
+            22,
+            100,
+            80
+          ],
+          [
+            26,
+            22,
+            96,
+            80
+          ],
+          [
+            26,
+            22,
+            94,
+            80
+          ],
+          [
+            26,
+            22,
+            96,
+            80
+          ],
+          [
+            30,
+            20,
+            98,
+            80
+          ],
+          [
+            32,
+            20,
+            96,
+            80
+          ],
+          [
+            32,
+            20,
+            96,
+            80
+          ]
+        ],
+        "contactFrame": 10,
+        "contactTimeMs": 400,
+        "effectOrigin": {
+          "x": 28,
+          "y": 61
+        }
+      },
+      "Stun": {
+        "sourceFrames": 9,
+        "uniquePixelFrames": 8,
+        "durationMs": 1530,
+        "footBandVariants": 1,
+        "colorCount": 5,
+        "noClippedPixels": true,
+        "binaryAlphaOnly": true,
+        "bounds": [
+          [
+            34,
+            28,
+            96,
+            80
+          ],
+          [
+            34,
+            28,
+            94,
+            80
+          ],
+          [
+            34,
+            28,
+            98,
+            80
+          ],
+          [
+            34,
+            28,
+            104,
+            80
+          ],
+          [
+            34,
+            28,
+            100,
+            80
+          ],
+          [
+            34,
+            28,
+            94,
+            80
+          ],
+          [
+            34,
+            28,
+            98,
+            80
+          ],
+          [
+            34,
+            28,
+            104,
+            80
+          ],
+          [
+            34,
+            28,
+            96,
+            80
+          ]
+        ]
+      },
+      "Hit": {
+        "sourceFrames": 1,
+        "uniquePixelFrames": 1,
+        "durationMs": 120,
+        "footBandVariants": 1,
+        "colorCount": 6,
+        "noClippedPixels": true,
+        "binaryAlphaOnly": true,
+        "bounds": [
+          [
+            32,
+            20,
+            96,
+            80
+          ]
+        ]
+      }
+    },
+    "badger": {
+      "Idle": {
+        "sourceFrames": 6,
+        "uniquePixelFrames": 3,
+        "durationMs": 1600,
+        "footBandVariants": 1,
+        "colorCount": 5,
+        "noClippedPixels": true,
+        "binaryAlphaOnly": true,
+        "bounds": [
+          [
+            36,
+            42,
+            94,
+            80
+          ],
+          [
+            34,
+            42,
+            94,
+            80
+          ],
+          [
+            34,
+            42,
+            94,
+            80
+          ],
+          [
+            36,
+            42,
+            94,
+            80
+          ],
+          [
+            34,
+            42,
+            94,
+            80
+          ],
+          [
+            34,
+            42,
+            94,
+            80
+          ]
+        ]
+      },
+      "Attack": {
+        "sourceFrames": 13,
+        "uniquePixelFrames": 7,
+        "durationMs": 700,
+        "footBandVariants": 2,
+        "colorCount": 5,
+        "noClippedPixels": true,
+        "binaryAlphaOnly": true,
+        "bounds": [
+          [
+            36,
+            42,
+            94,
+            80
+          ],
+          [
+            36,
+            42,
+            94,
+            80
+          ],
+          [
+            36,
+            42,
+            94,
+            80
+          ],
+          [
+            36,
+            42,
+            94,
+            80
+          ],
+          [
+            34,
+            42,
+            92,
+            80
+          ],
+          [
+            32,
+            40,
+            92,
+            80
+          ],
+          [
+            31,
+            40,
+            92,
+            80
+          ],
+          [
+            30,
+            40,
+            92,
+            80
+          ],
+          [
+            36,
+            42,
+            98,
+            80
+          ],
+          [
+            37,
+            42,
+            94,
+            80
+          ],
+          [
+            36,
+            42,
+            94,
+            80
+          ],
+          [
+            36,
+            42,
+            94,
+            80
+          ],
+          [
+            36,
+            42,
+            94,
+            80
+          ]
+        ],
+        "contactFrame": 8,
+        "contactTimeMs": 400,
+        "effectOrigin": {
+          "x": 96,
+          "y": 69
+        }
+      },
+      "Stun": {
+        "sourceFrames": 9,
+        "uniquePixelFrames": 8,
+        "durationMs": 1530,
+        "footBandVariants": 1,
+        "colorCount": 5,
+        "noClippedPixels": true,
+        "binaryAlphaOnly": true,
+        "bounds": [
+          [
+            38,
+            45,
+            91,
+            80
+          ],
+          [
+            38,
+            45,
+            91,
+            80
+          ],
+          [
+            38,
+            45,
+            91,
+            80
+          ],
+          [
+            38,
+            45,
+            91,
+            80
+          ],
+          [
+            36,
+            45,
+            91,
+            80
+          ],
+          [
+            34,
+            45,
+            91,
+            80
+          ],
+          [
+            36,
+            45,
+            91,
+            80
+          ],
+          [
+            36,
+            45,
+            91,
+            80
+          ],
+          [
+            38,
+            45,
+            91,
+            80
+          ]
+        ]
+      },
+      "Hit": {
+        "sourceFrames": 1,
+        "uniquePixelFrames": 1,
+        "durationMs": 120,
+        "footBandVariants": 1,
+        "colorCount": 5,
+        "noClippedPixels": true,
+        "binaryAlphaOnly": true,
+        "bounds": [
+          [
+            36,
+            42,
+            94,
+            80
+          ]
+        ]
+      }
+    },
+    "lynx": {
+      "Idle": {
+        "sourceFrames": 8,
+        "uniquePixelFrames": 5,
+        "durationMs": 1600,
+        "footBandVariants": 1,
+        "colorCount": 6,
+        "noClippedPixels": true,
+        "binaryAlphaOnly": true,
+        "bounds": [
+          [
+            38,
+            26,
+            92,
+            80
+          ],
+          [
+            38,
+            26,
+            94,
+            80
+          ],
+          [
+            38,
+            26,
+            96,
+            80
+          ],
+          [
+            38,
+            26,
+            94,
+            80
+          ],
+          [
+            38,
+            26,
+            92,
+            80
+          ],
+          [
+            38,
+            26,
+            94,
+            80
+          ],
+          [
+            38,
+            26,
+            96,
+            80
+          ],
+          [
+            38,
+            26,
+            94,
+            80
+          ]
+        ]
+      },
+      "Attack": {
+        "sourceFrames": 13,
+        "uniquePixelFrames": 13,
+        "durationMs": 700,
+        "footBandVariants": 5,
+        "colorCount": 9,
+        "noClippedPixels": true,
+        "binaryAlphaOnly": true,
+        "bounds": [
+          [
+            38,
+            26,
+            92,
+            80
+          ],
+          [
+            38,
+            28,
+            94,
+            80
+          ],
+          [
+            38,
+            30,
+            96,
+            80
+          ],
+          [
+            40,
+            32,
+            100,
+            78
+          ],
+          [
+            38,
+            26,
+            98,
+            78
+          ],
+          [
+            28,
+            34,
+            90,
+            80
+          ],
+          [
+            32,
+            32,
+            90,
+            80
+          ],
+          [
+            36,
+            30,
+            96,
+            80
+          ],
+          [
+            38,
+            28,
+            98,
+            80
+          ],
+          [
+            38,
+            26,
+            98,
+            80
+          ],
+          [
+            38,
+            26,
+            96,
+            80
+          ],
+          [
+            38,
+            26,
+            94,
+            80
+          ],
+          [
+            38,
+            26,
+            92,
+            80
+          ]
+        ],
+        "contactFrame": 5,
+        "contactTimeMs": 400,
+        "effectOrigin": {
+          "x": 33,
+          "y": 75
+        }
+      },
+      "Stun": {
+        "sourceFrames": 9,
+        "uniquePixelFrames": 9,
+        "durationMs": 1530,
+        "footBandVariants": 1,
+        "colorCount": 5,
+        "noClippedPixels": true,
+        "binaryAlphaOnly": true,
+        "bounds": [
+          [
+            35,
+            36,
+            92,
+            80
+          ],
+          [
+            35,
+            37,
+            98,
+            80
+          ],
+          [
+            35,
+            37,
+            98,
+            80
+          ],
+          [
+            35,
+            36,
+            96,
+            80
+          ],
+          [
+            35,
+            36,
+            90,
+            80
+          ],
+          [
+            35,
+            37,
+            98,
+            80
+          ],
+          [
+            35,
+            37,
+            94,
+            80
+          ],
+          [
+            35,
+            37,
+            96,
+            80
+          ],
+          [
+            35,
+            36,
+            92,
+            80
+          ]
+        ]
+      },
+      "Hit": {
+        "sourceFrames": 1,
+        "uniquePixelFrames": 1,
+        "durationMs": 120,
+        "footBandVariants": 1,
+        "colorCount": 6,
+        "noClippedPixels": true,
+        "binaryAlphaOnly": true,
+        "bounds": [
+          [
+            38,
+            26,
+            92,
+            80
+          ]
+        ]
+      }
+    },
+    "mountain_goat": {
+      "Idle": {
+        "sourceFrames": 8,
+        "uniquePixelFrames": 5,
+        "durationMs": 1600,
+        "footBandVariants": 1,
+        "colorCount": 8,
+        "noClippedPixels": true,
+        "binaryAlphaOnly": true,
+        "bounds": [
+          [
+            38,
+            30,
+            94,
+            80
+          ],
+          [
+            36,
+            30,
+            94,
+            80
+          ],
+          [
+            34,
+            30,
+            94,
+            80
+          ],
+          [
+            34,
+            30,
+            94,
+            80
+          ],
+          [
+            34,
+            30,
+            94,
+            80
+          ],
+          [
+            34,
+            30,
+            94,
+            80
+          ],
+          [
+            34,
+            30,
+            94,
+            80
+          ],
+          [
+            36,
+            30,
+            94,
+            80
+          ]
+        ]
+      },
+      "Attack": {
+        "sourceFrames": 14,
+        "uniquePixelFrames": 7,
+        "durationMs": 700,
+        "footBandVariants": 2,
+        "colorCount": 8,
+        "noClippedPixels": true,
+        "binaryAlphaOnly": true,
+        "bounds": [
+          [
+            38,
+            30,
+            94,
+            80
+          ],
+          [
+            38,
+            30,
+            94,
+            80
+          ],
+          [
+            38,
+            30,
+            94,
+            80
+          ],
+          [
+            38,
+            30,
+            94,
+            80
+          ],
+          [
+            38,
+            30,
+            94,
+            80
+          ],
+          [
+            38,
+            30,
+            94,
+            80
+          ],
+          [
+            38,
+            30,
+            94,
+            80
+          ],
+          [
+            38,
+            30,
+            94,
+            80
+          ],
+          [
+            36,
+            36,
+            96,
+            80
+          ],
+          [
+            42,
+            36,
+            102,
+            80
+          ],
+          [
+            40,
+            32,
+            98,
+            80
+          ],
+          [
+            38,
+            30,
+            94,
+            80
+          ],
+          [
+            38,
+            30,
+            94,
+            80
+          ],
+          [
+            38,
+            30,
+            94,
+            80
+          ]
+        ],
+        "contactFrame": 8,
+        "contactTimeMs": 400,
+        "effectOrigin": {
+          "x": 95,
+          "y": 47
+        }
+      },
+      "Stun": {
+        "sourceFrames": 9,
+        "uniquePixelFrames": 7,
+        "durationMs": 1530,
+        "footBandVariants": 1,
+        "colorCount": 5,
+        "noClippedPixels": true,
+        "binaryAlphaOnly": true,
+        "bounds": [
+          [
+            39,
+            40,
+            92,
+            80
+          ],
+          [
+            39,
+            40,
+            92,
+            80
+          ],
+          [
+            39,
+            40,
+            92,
+            80
+          ],
+          [
+            37,
+            40,
+            92,
+            80
+          ],
+          [
+            36,
+            38,
+            92,
+            80
+          ],
+          [
+            36,
+            38,
+            92,
+            80
+          ],
+          [
+            37,
+            40,
+            93,
+            80
+          ],
+          [
+            36,
+            40,
+            93,
+            80
+          ],
+          [
+            39,
+            40,
+            92,
+            80
+          ]
+        ]
+      },
+      "Hit": {
+        "sourceFrames": 1,
+        "uniquePixelFrames": 1,
+        "durationMs": 120,
+        "footBandVariants": 1,
+        "colorCount": 8,
+        "noClippedPixels": true,
+        "binaryAlphaOnly": true,
+        "bounds": [
+          [
+            38,
+            30,
+            94,
+            80
+          ]
+        ]
+      }
+    },
+    "great_stag": {
+      "Idle": {
+        "sourceFrames": 8,
+        "uniquePixelFrames": 4,
+        "durationMs": 1600,
+        "footBandVariants": 1,
+        "colorCount": 6,
+        "noClippedPixels": true,
+        "binaryAlphaOnly": true,
+        "bounds": [
+          [
+            32,
+            22,
+            92,
+            80
+          ],
+          [
+            32,
+            22,
+            92,
+            80
+          ],
+          [
+            32,
+            22,
+            92,
+            80
+          ],
+          [
+            32,
+            22,
+            92,
+            80
+          ],
+          [
+            32,
+            22,
+            92,
+            80
+          ],
+          [
+            32,
+            22,
+            92,
+            80
+          ],
+          [
+            32,
+            22,
+            92,
+            80
+          ],
+          [
+            32,
+            22,
+            92,
+            80
+          ]
+        ]
+      },
+      "Attack": {
+        "sourceFrames": 16,
+        "uniquePixelFrames": 16,
+        "durationMs": 700,
+        "footBandVariants": 4,
+        "colorCount": 6,
+        "noClippedPixels": true,
+        "binaryAlphaOnly": true,
+        "bounds": [
+          [
+            32,
+            22,
+            92,
+            80
+          ],
+          [
+            34,
+            23,
+            94,
+            80
+          ],
+          [
+            34,
+            26,
+            96,
+            80
+          ],
+          [
+            28,
+            28,
+            92,
+            80
+          ],
+          [
+            21,
+            30,
+            89,
+            80
+          ],
+          [
+            24,
+            26,
+            89,
+            80
+          ],
+          [
+            26,
+            24,
+            90,
+            80
+          ],
+          [
+            28,
+            22,
+            90,
+            80
+          ],
+          [
+            30,
+            22,
+            91,
+            80
+          ],
+          [
+            32,
+            22,
+            92,
+            80
+          ],
+          [
+            32,
+            22,
+            92,
+            80
+          ],
+          [
+            32,
+            22,
+            92,
+            80
+          ],
+          [
+            32,
+            22,
+            92,
+            80
+          ],
+          [
+            32,
+            22,
+            92,
+            80
+          ],
+          [
+            32,
+            22,
+            92,
+            80
+          ],
+          [
+            32,
+            22,
+            92,
+            80
+          ]
+        ],
+        "contactFrame": 4,
+        "contactTimeMs": 400,
+        "effectOrigin": {
+          "x": 23,
+          "y": 42
+        }
+      },
+      "Stun": {
+        "sourceFrames": 9,
+        "uniquePixelFrames": 9,
+        "durationMs": 1530,
+        "footBandVariants": 1,
+        "colorCount": 5,
+        "noClippedPixels": true,
+        "binaryAlphaOnly": true,
+        "bounds": [
+          [
+            34,
+            29,
+            92,
+            80
+          ],
+          [
+            34,
+            29,
+            90,
+            80
+          ],
+          [
+            34,
+            29,
+            92,
+            80
+          ],
+          [
+            34,
+            29,
+            92,
+            80
+          ],
+          [
+            34,
+            29,
+            92,
+            80
+          ],
+          [
+            34,
+            29,
+            91,
+            80
+          ],
+          [
+            34,
+            29,
+            92,
+            80
+          ],
+          [
+            34,
+            29,
+            94,
+            80
+          ],
+          [
+            34,
+            29,
+            92,
+            80
+          ]
+        ]
+      },
+      "Hit": {
+        "sourceFrames": 1,
+        "uniquePixelFrames": 1,
+        "durationMs": 120,
+        "footBandVariants": 1,
+        "colorCount": 6,
+        "noClippedPixels": true,
+        "binaryAlphaOnly": true,
+        "bounds": [
+          [
+            32,
+            22,
+            92,
+            80
+          ]
+        ]
+      }
+    }
+  },
+  "textureCount": 182,
+  "utf8NamesVerified": true
+}

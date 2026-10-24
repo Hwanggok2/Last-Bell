@@ -1,0 +1,15 @@
+{
+  "id": "stun",
+  "tool": "animate_image",
+  "request": {
+    "first_frame_url": "https://api.pixellab.ai/mcp/images/b521d718-274a-47bb-9271-02911e0f8e7a/download",
+    "last_frame_url": "https://api.pixellab.ai/mcp/images/b521d718-274a-47bb-9271-02911e0f8e7a/download",
+    "frame_count": 8,
+    "no_background": true,
+    "seed": 24102419,
+    "action": "One subdued STUNNED cycle in place. Knees slightly sag, shoulders slump, head gently tilts forward and returns; arms and held sword hang a little lower then recover. Eight poses with small controlled2pixel sway, no huge wobble, stars, falling, walking, spinning or outfit change. Loop back to original stance. Same cream hood/short tunic, navy face/limbs, ONE amber eye, ochre scarf, brown boots, ONE short steel sword with ochre hilt. Keep clothing, palette, proportions and right-facing silhouette identical. No bell/cape/extra limb/extra weapon/VFX. Fixed48canvas, native pixels, fixed root/scale."
+  },
+  "result": [
+    "id: bbc00cc6-891f-4168-8808-e906a3c54085\njob_id: bbc00cc6-891f-4168-8808-e906a3c54085\naction: One subdued STUNNED cycle in place. Knees slightly sag, shoulders slump, head gently tilts forward and returns; arms and held sword hang a little lower then recover. Eight poses with small controlled2pixel sway, no huge wobble, stars, falling, walking, spinning or outfit change. Loop back to original stance. Same cream hood/short tunic, navy face/limbs, ONE amber eye, ochre scarf, brown boots, ONE short steel sword with ochre hilt. Keep clothing, palette, proportions and right-facing silhouette identical. No bell/cape/extra limb/extra weapon/VFX. Fixed48canvas, native pixels, fixed root/scale.\nframes: 8\nsize: 48x48px\ntransparent: True\nlast_frame: yes (interpolating to it)\nseed: 24102419\nasset_id: fda25dd5-3eec-53c3-b69c-66d2a90aa01d\nasset_status: pending (saved when generation completes)\ncost: 1 generation\nstatus: processing (~30-180s)\n\nhint: get_image(job_id=\"bbc00cc6-891f-4168-8808-e906a3c54085\")"
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "version": 1,
+  "canonicalJobs": [
+    {
+      "id": "slime",
+      "jobId": "f38b85ec-7fc2-4254-832b-dbc51faf033e",
+      "sourceImageId": "4c5e921c-26d0-5e1b-b26b-515d7430cf17",
+      "width": 32,
+      "height": 32,
+      "seed": 202610241
+    },
+    {
+      "id": "horn_rabbit",
+      "jobId": "3ddb6655-0438-4c28-96be-498d373062a2",
+      "sourceImageId": "6b3c3d79-72c2-528f-8aab-682c96e875a4",
+      "width": 32,
+      "height": 32,
+      "seed": 202610242
+    },
+    {
+      "id": "boar",
+      "jobId": "e13bc633-5405-4fc0-9e66-8ab411944093",
+      "sourceImageId": "9067ebb3-5a3e-5b94-8287-3434950f99d6",
+      "width": 48,
+      "height": 40,
+      "seed": 202610243
+    }
+  ],
+  "animationJobs": [
+    {
+      "actor": "slime",
+      "motion": "Idle",
+      "tool": "animate_image_pixminimax",
+      "request": {
+        "description": "A very subtle idle breathing loop in place. The slime gently compresses by one pixel, slowly expands by one pixel, and returns to its exact original rounded shape. The flat bottom contact stays fixed. One small highlight and eyes stay attached. No hop, no travel, no new limbs or effects. Keep the original tiny square pixel shapes and flat colors.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/f38b85ec-7fc2-4254-832b-dbc51faf033e/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/f38b85ec-7fc2-4254-832b-dbc51faf033e/download?index=0",
+        "frame_count": 8,
+        "subject_description": "a tiny green slime blob with square dark eyes, no limbs",
+        "initial_pose": "squat rounded body resting on its flat base, facing left",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 202610251
+      },
+      "response": "id: 17292e25-6c86-4d98-bfd0-4e830e28b04b\njob_id: 17292e25-6c86-4d98-bfd0-4e830e28b04b\ndescription: A very subtle idle breathing loop in place. The slime gently compresses by one pixel, slowly expands by one pixel, and returns to its exact original rounded shape. The flat bottom contact stays fixed. One small highlight and eyes stay attached. No hop, no travel, no new limbs or effects. Keep the original tiny square pixel shapes and flat colors.\nframes: 8\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 202610251\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"17292e25-6c86-4d98-bfd0-4e830e28b04b\")\nasset_id: 6489e438-cdb8-55cd-8180-7e7747ee745b\nasset_status: pending (saved to your gallery when generation completes)"
+    },
+    {
+      "actor": "slime",
+      "motion": "Attack",
+      "tool": "animate_image_pixminimax",
+      "request": {
+        "description": "One single leftward body-bump attack, then recovery. First the blob compresses low and draws its left face slightly back; then its left side thrusts outward once, reaching the one hit around the middle frame; then it settles back to the original resting blob. Never attack twice. The blob stays on the same ground baseline and near the canvas center. Preserve both eyes, the flat green shapes, and the one highlight. No projectiles, no impact effects, no added limbs.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/f38b85ec-7fc2-4254-832b-dbc51faf033e/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/f38b85ec-7fc2-4254-832b-dbc51faf033e/download?index=0",
+        "frame_count": 8,
+        "subject_description": "a tiny green slime blob with square dark eyes, no limbs",
+        "initial_pose": "squat rounded body resting on its flat base, facing left",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 202610261
+      },
+      "response": "id: bf1885bc-c803-4513-803e-99fcb17405b4\njob_id: bf1885bc-c803-4513-803e-99fcb17405b4\ndescription: One single leftward body-bump attack, then recovery. First the blob compresses low and draws its left face slightly back; then its left side thrusts outward once, reaching the one hit around the middle frame; then it settles back to the original resting blob. Never attack twice. The blob stays on the same ground baseline and near the canvas center. Preserve both eyes, the flat green shapes, and the one highlight. No projectiles, no impact effects, no added limbs.\nframes: 8\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 202610261\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"bf1885bc-c803-4513-803e-99fcb17405b4\")\nasset_id: 07380355-6096-5f36-9a8e-13e5b5fdaef3\nasset_status: pending (saved to your gallery when generation completes)"
+    },
+    {
+      "actor": "slime",
+      "motion": "Stun",
+      "tool": "animate_image_pixminimax",
+      "request": {
+        "description": "A weak dizzy idle loop, not an attack. The slime sags lower, slowly wobbles its top left then right while its flat base remains planted, and returns to the same low soft shape. Very small motion. Keep the same eyes and attached highlight, same total body, no new shapes. No jump, no traveling, no stars, no flashes, no hit or strike effects.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/f38b85ec-7fc2-4254-832b-dbc51faf033e/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/f38b85ec-7fc2-4254-832b-dbc51faf033e/download?index=0",
+        "frame_count": 8,
+        "subject_description": "a tiny green slime blob with square dark eyes, no limbs",
+        "initial_pose": "squat rounded body resting on its flat base, facing left",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 202610271
+      },
+      "response": "id: f14f10d1-0c36-41cc-82f5-a65b5f98ab9b\njob_id: f14f10d1-0c36-41cc-82f5-a65b5f98ab9b\ndescription: A weak dizzy idle loop, not an attack. The slime sags lower, slowly wobbles its top left then right while its flat base remains planted, and returns to the same low soft shape. Very small motion. Keep the same eyes and attached highlight, same total body, no new shapes. No jump, no traveling, no stars, no flashes, no hit or strike effects.\nframes: 8\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 202610271\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"f14f10d1-0c36-41cc-82f5-a65b5f98ab9b\")\nasset_id: a5b0d6ae-9442-5e4f-af7b-9c7870ea4bd2\nasset_status: pending (saved to your gallery when generation completes)"
+    },
+    {
+      "actor": "horn_rabbit",
+      "motion": "Idle",
+      "tool": "animate_image_pixminimax",
+      "request": {
+        "description": "A subtle in-place rabbit idle loop. Tiny gentle breathing of the chest and one small ear twitch, then return exactly to the starting stance. Keep all feet planted at their original baseline, no hopping or travel. Keep the two ears, single ivory forehead horn, square eye, cream muzzle/chest and tail unchanged. No fur detail or new markings.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/3ddb6655-0438-4c28-96be-498d373062a2/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/3ddb6655-0438-4c28-96be-498d373062a2/download?index=0",
+        "frame_count": 8,
+        "subject_description": "a compact tan horn rabbit with long upright ears, one ivory forehead horn, cream muzzle chest and tail",
+        "initial_pose": "left-facing side view, four tiny feet planted, ears upright, horn pointing up-left",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 202610252
+      },
+      "response": "id: fb3135ec-83f0-4040-8a94-573c1a512ad2\njob_id: fb3135ec-83f0-4040-8a94-573c1a512ad2\ndescription: A subtle in-place rabbit idle loop. Tiny gentle breathing of the chest and one small ear twitch, then return exactly to the starting stance. Keep all feet planted at their original baseline, no hopping or travel. Keep the two ears, single ivory forehead horn, square eye, cream muzzle/chest and tail unchanged. No fur detail or new markings.\nframes: 8\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 202610252\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"fb3135ec-83f0-4040-8a94-573c1a512ad2\")\nasset_id: 288662fa-ed0f-5b9b-b5d7-3de0555325f2\nasset_status: pending (saved to your gallery when generation completes)"
+    },
+    {
+      "actor": "horn_rabbit",
+      "motion": "Attack",
+      "tool": "animate_image_pixminimax",
+      "request": {
+        "description": "One single forward left horn thrust, then recovery. The rabbit first crouches and folds its hind legs under the body; ears lean back slightly. It drives its forehead horn left once with the whole compact body in one short lunge, reaches the single hit in the middle, then recoils and restores the original four-foot stance. No repeated attack, no turning around, no extra horn. Keep movement inside the canvas and return soles to the same baseline. No smoke, slash marks or external effects.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/3ddb6655-0438-4c28-96be-498d373062a2/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/3ddb6655-0438-4c28-96be-498d373062a2/download?index=0",
+        "frame_count": 8,
+        "subject_description": "a compact tan horn rabbit with long upright ears, one ivory forehead horn, cream muzzle chest and tail",
+        "initial_pose": "left-facing side view, four tiny feet planted, ears upright, horn pointing up-left",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 202610262
+      },
+      "response": "id: a12b8d72-154f-411e-98ef-f1afbb371426\njob_id: a12b8d72-154f-411e-98ef-f1afbb371426\ndescription: One single forward left horn thrust, then recovery. The rabbit first crouches and folds its hind legs under the body; ears lean back slightly. It drives its forehead horn left once with the whole compact body in one short lunge, reaches the single hit in the middle, then recoils and restores the original four-foot stance. No repeated attack, no turning around, no extra horn. Keep movement inside the canvas and return soles to the same baseline. No smoke, slash marks or external effects.\nframes: 8\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 202610262\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"a12b8d72-154f-411e-98ef-f1afbb371426\")\nasset_id: baadbc23-ba77-5b52-8f12-ce97060cb399\nasset_status: pending (saved to your gallery when generation completes)"
+    },
+    {
+      "actor": "horn_rabbit",
+      "motion": "Stun",
+      "tool": "animate_image_pixminimax",
+      "request": {
+        "description": "A weak dizzy in-place rabbit sway loop. The rabbit lowers its head a little, lets both ears droop slightly and slowly rocks its torso once, then settles. All four feet stay planted and there is no hop or attack. Preserve the single forehead horn, two ears, eye, cream chest and tail. No stars, no sparkles, no ghosts, no extra limbs, no impact effect.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/3ddb6655-0438-4c28-96be-498d373062a2/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/3ddb6655-0438-4c28-96be-498d373062a2/download?index=0",
+        "frame_count": 8,
+        "subject_description": "a compact tan horn rabbit with long upright ears, one ivory forehead horn, cream muzzle chest and tail",
+        "initial_pose": "left-facing side view, four tiny feet planted, ears upright, horn pointing up-left",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 202610272
+      },
+      "response": "id: 3e27a10d-cd00-4a34-9016-bca834aa0e18\njob_id: 3e27a10d-cd00-4a34-9016-bca834aa0e18\ndescription: A weak dizzy in-place rabbit sway loop. The rabbit lowers its head a little, lets both ears droop slightly and slowly rocks its torso once, then settles. All four feet stay planted and there is no hop or attack. Preserve the single forehead horn, two ears, eye, cream chest and tail. No stars, no sparkles, no ghosts, no extra limbs, no impact effect.\nframes: 8\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 202610272\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"3e27a10d-cd00-4a34-9016-bca834aa0e18\")\nasset_id: 57ca96ca-fb50-52d8-98ef-56073bf2696a\nasset_status: pending (saved to your gallery when generation completes)"
+    },
+    {
+      "actor": "boar",
+      "motion": "Idle",
+      "tool": "animate_image_pixminimax",
+      "request": {
+        "description": "A restrained in-place boar idle loop. The heavy chest breathes slowly, the head shifts by one pixel and settles, with a tiny tail twitch. Four feet remain planted at their original baseline. Keep the same two tusks, blunt nose, square eye and short rust back ridge. No walking, no turning, no growing hair or extra details.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/e13bc633-5405-4fc0-9e66-8ab411944093/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/e13bc633-5405-4fc0-9e66-8ab411944093/download?index=0",
+        "frame_count": 8,
+        "subject_description": "a stocky brown boar with two ivory tusks, a rust-red stepped back ridge, four short legs and a small tail",
+        "initial_pose": "strict left-facing profile, four squat feet planted and head lowered slightly",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 202610253
+      },
+      "response": "id: 16b991e5-5b50-494f-8cd4-0de204a03ab3\njob_id: 16b991e5-5b50-494f-8cd4-0de204a03ab3\ndescription: A restrained in-place boar idle loop. The heavy chest breathes slowly, the head shifts by one pixel and settles, with a tiny tail twitch. Four feet remain planted at their original baseline. Keep the same two tusks, blunt nose, square eye and short rust back ridge. No walking, no turning, no growing hair or extra details.\nframes: 8\nsize: 48x40px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 202610253\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"16b991e5-5b50-494f-8cd4-0de204a03ab3\")\nasset_id: 04cdd9de-102a-58d7-a2b4-1b6545f70c11\nasset_status: pending (saved to your gallery when generation completes)"
+    },
+    {
+      "actor": "boar",
+      "motion": "Attack",
+      "tool": "animate_image_pixminimax",
+      "request": {
+        "description": "One single low leftward tusk ram, then recovery. The boar braces its hind legs and dips its head, scratches one front hoof back briefly, then thrusts its broad head and tusks forward left once. Reach one clear contact in the middle, then pull back and recover to the original four-foot stance. Keep the heavy low torso, two tusks and compact legs consistent. No traveling across the canvas, no second attack, no added weapons, no blood, no dust or impact VFX.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/e13bc633-5405-4fc0-9e66-8ab411944093/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/e13bc633-5405-4fc0-9e66-8ab411944093/download?index=0",
+        "frame_count": 8,
+        "subject_description": "a stocky brown boar with two ivory tusks, a rust-red stepped back ridge, four short legs and a small tail",
+        "initial_pose": "strict left-facing profile, four squat feet planted and head lowered slightly",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 202610263
+      },
+      "response": "id: d8606c54-6100-4809-8204-82ab27b66dd7\njob_id: d8606c54-6100-4809-8204-82ab27b66dd7\ndescription: One single low leftward tusk ram, then recovery. The boar braces its hind legs and dips its head, scratches one front hoof back briefly, then thrusts its broad head and tusks forward left once. Reach one clear contact in the middle, then pull back and recover to the original four-foot stance. Keep the heavy low torso, two tusks and compact legs consistent. No traveling across the canvas, no second attack, no added weapons, no blood, no dust or impact VFX.\nframes: 8\nsize: 48x40px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 202610263\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"d8606c54-6100-4809-8204-82ab27b66dd7\")\nasset_id: 03ad93a6-62ef-5518-b972-6f03cdd4f43d\nasset_status: pending (saved to your gallery when generation completes)"
+    },
+    {
+      "actor": "boar",
+      "motion": "Stun",
+      "tool": "animate_image_pixminimax",
+      "request": {
+        "description": "A slow weak in-place stunned boar sway loop. The heavy head droops and rocks slightly once left and right while the torso gently settles. Four short feet stay planted on the same ground baseline. Tusks, snout, ears, back ridge and tail remain attached and the same size. No attack, no lunge, no walking, no stars or flashes, no effects.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/e13bc633-5405-4fc0-9e66-8ab411944093/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/e13bc633-5405-4fc0-9e66-8ab411944093/download?index=0",
+        "frame_count": 8,
+        "subject_description": "a stocky brown boar with two ivory tusks, a rust-red stepped back ridge, four short legs and a small tail",
+        "initial_pose": "strict left-facing profile, four squat feet planted and head lowered slightly",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 202610273
+      },
+      "response": "id: 8b5f7e5b-318b-4122-9fc2-355d450a78c9\njob_id: 8b5f7e5b-318b-4122-9fc2-355d450a78c9\ndescription: A slow weak in-place stunned boar sway loop. The heavy head droops and rocks slightly once left and right while the torso gently settles. Four short feet stay planted on the same ground baseline. Tusks, snout, ears, back ridge and tail remain attached and the same size. No attack, no lunge, no walking, no stars or flashes, no effects.\nframes: 8\nsize: 48x40px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 202610273\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"8b5f7e5b-318b-4122-9fc2-355d450a78c9\")\nasset_id: 989a49b0-c094-527b-a760-8600499a95b9\nasset_status: pending (saved to your gallery when generation completes)"
+    }
+  ],
+  "license": {
+    "provider": "PixelLab",
+    "terms": "https://www.pixellab.ai/termsofservice",
+    "verifiedDate": "2026-10-24",
+    "termsLastUpdated": "2025-11-23",
+    "summary": "Commercial and non-commercial use, modification and distribution are permitted by provider terms; model training requires provider permission. Terms also incorporate Open RAIL-M. This records provider terms, not a guarantee of copyright eligibility.",
+    "usage": "Original Dragon-v1 game sprites, no third-party game imagery uploaded."
+  }
+}

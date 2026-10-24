@@ -1,0 +1,3106 @@
+{
+  "sourceCommit": "0b37413",
+  "actors": [
+    {
+      "id": "gate_sentinel",
+      "facesRight": false,
+      "height": 2,
+      "referenceHeightPixels": 86,
+      "clips": [
+        {
+          "motion": "Idle",
+          "sourceId": "sentinel-canonical-static-idle",
+          "sourceJob": "",
+          "note": "Static canonical original; no continuous monster Idle has been produced.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/sentinel-idle/00.png"
+          ],
+          "sourceFrames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [
+            {
+              "x": 76,
+              "y": 46
+            }
+          ],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": true,
+          "legacyStun": false
+        },
+        {
+          "motion": "Attack",
+          "sourceId": "sentinel-attack",
+          "sourceJob": "0247ba65-3671-405c-adfa-8d2198faaea4",
+          "note": "단일 공격 편집 후보. 메인 순서 1,5~13,21~24. 긴 중복 대기 제거. 원본 시트와 프레임은 전부 보존.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/sentinel-attack/01.png",
+            "Assets/Game/Art/Presentation/Clips/sentinel-attack/05.png",
+            "Assets/Game/Art/Presentation/Clips/sentinel-attack/06.png",
+            "Assets/Game/Art/Presentation/Clips/sentinel-attack/07.png",
+            "Assets/Game/Art/Presentation/Clips/sentinel-attack/08.png",
+            "Assets/Game/Art/Presentation/Clips/sentinel-attack/09.png",
+            "Assets/Game/Art/Presentation/Clips/sentinel-attack/10.png",
+            "Assets/Game/Art/Presentation/Clips/sentinel-attack/11.png",
+            "Assets/Game/Art/Presentation/Clips/sentinel-attack/12.png",
+            "Assets/Game/Art/Presentation/Clips/sentinel-attack/13.png",
+            "Assets/Game/Art/Presentation/Clips/sentinel-attack/21.png",
+            "Assets/Game/Art/Presentation/Clips/sentinel-attack/22.png",
+            "Assets/Game/Art/Presentation/Clips/sentinel-attack/23.png",
+            "Assets/Game/Art/Presentation/Clips/sentinel-attack/24.png"
+          ],
+          "sourceFrames": [
+            1,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            21,
+            22,
+            23,
+            24
+          ],
+          "fps": 20,
+          "loop": false,
+          "contactFrame": 7,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            }
+          ],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Hit",
+          "sourceId": "sentinel-v6-hit-clean",
+          "sourceJob": "4701aba2-8269-4fb5-a140-4732753791dd",
+          "note": "새 몸 반동 기획 후보. 원본 16장 중 9셀을 180ms로 선별. 무기/섬광이 추가된 이전 생성본은 제외. 도끼 실루엣 정리 필요.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/sentinel-v6-hit-clean/00.png",
+            "Assets/Game/Art/Presentation/Clips/sentinel-v6-hit-clean/04.png",
+            "Assets/Game/Art/Presentation/Clips/sentinel-v6-hit-clean/05.png",
+            "Assets/Game/Art/Presentation/Clips/sentinel-v6-hit-clean/06.png",
+            "Assets/Game/Art/Presentation/Clips/sentinel-v6-hit-clean/08.png",
+            "Assets/Game/Art/Presentation/Clips/sentinel-v6-hit-clean/09.png",
+            "Assets/Game/Art/Presentation/Clips/sentinel-v6-hit-clean/10.png",
+            "Assets/Game/Art/Presentation/Clips/sentinel-v6-hit-clean/11.png",
+            "Assets/Game/Art/Presentation/Clips/sentinel-v6-hit-clean/00.png"
+          ],
+          "sourceFrames": [
+            0,
+            4,
+            5,
+            6,
+            8,
+            9,
+            10,
+            11,
+            0
+          ],
+          "fps": 50,
+          "loop": false,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            }
+          ],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Death",
+          "sourceId": "sentinel-v6-hit-clean",
+          "sourceJob": "4701aba2-8269-4fb5-a140-4732753791dd",
+          "note": "Existing recoil frames reused beneath dissolve. No separate monster death clip generated.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/sentinel-v6-hit-clean/00.png",
+            "Assets/Game/Art/Presentation/Clips/sentinel-v6-hit-clean/04.png",
+            "Assets/Game/Art/Presentation/Clips/sentinel-v6-hit-clean/05.png",
+            "Assets/Game/Art/Presentation/Clips/sentinel-v6-hit-clean/06.png",
+            "Assets/Game/Art/Presentation/Clips/sentinel-v6-hit-clean/08.png",
+            "Assets/Game/Art/Presentation/Clips/sentinel-v6-hit-clean/09.png",
+            "Assets/Game/Art/Presentation/Clips/sentinel-v6-hit-clean/10.png",
+            "Assets/Game/Art/Presentation/Clips/sentinel-v6-hit-clean/11.png",
+            "Assets/Game/Art/Presentation/Clips/sentinel-v6-hit-clean/00.png"
+          ],
+          "sourceFrames": [
+            0,
+            4,
+            5,
+            6,
+            8,
+            9,
+            10,
+            11,
+            0
+          ],
+          "fps": 50,
+          "loop": false,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            }
+          ],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Stun",
+          "sourceId": "legacy-gate_sentinel-static-stun",
+          "sourceJob": "",
+          "note": "Existing prototype single Stun pose; no continuous Stun clip exists.",
+          "frames": [],
+          "sourceFrames": [],
+          "fps": 1,
+          "loop": true,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": true,
+          "legacyStun": true
+        }
+      ]
+    },
+    {
+      "id": "chain_thrall",
+      "facesRight": false,
+      "height": 2,
+      "referenceHeightPixels": 86,
+      "clips": [
+        {
+          "motion": "Idle",
+          "sourceId": "chain-canonical-static-idle",
+          "sourceJob": "",
+          "note": "Static canonical original; no continuous monster Idle has been produced.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/chain-idle/00.png"
+          ],
+          "sourceFrames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [
+            {
+              "x": 76,
+              "y": 46
+            }
+          ],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": true,
+          "legacyStun": false
+        },
+        {
+          "motion": "Attack",
+          "sourceId": "chain-attack",
+          "sourceJob": "ec00530e-eaf5-462e-8885-7ec4648ec9b7",
+          "note": "단일 사슬 휘두르기 후보. 메인 중복 대기 축소. 사슬·추 연결과 회수 프레임 후속 검수.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/chain-attack/01.png",
+            "Assets/Game/Art/Presentation/Clips/chain-attack/04.png",
+            "Assets/Game/Art/Presentation/Clips/chain-attack/05.png",
+            "Assets/Game/Art/Presentation/Clips/chain-attack/06.png",
+            "Assets/Game/Art/Presentation/Clips/chain-attack/07.png",
+            "Assets/Game/Art/Presentation/Clips/chain-attack/08.png",
+            "Assets/Game/Art/Presentation/Clips/chain-attack/09.png",
+            "Assets/Game/Art/Presentation/Clips/chain-attack/10.png",
+            "Assets/Game/Art/Presentation/Clips/chain-attack/11.png",
+            "Assets/Game/Art/Presentation/Clips/chain-attack/12.png",
+            "Assets/Game/Art/Presentation/Clips/chain-attack/13.png",
+            "Assets/Game/Art/Presentation/Clips/chain-attack/14.png",
+            "Assets/Game/Art/Presentation/Clips/chain-attack/15.png",
+            "Assets/Game/Art/Presentation/Clips/chain-attack/16.png",
+            "Assets/Game/Art/Presentation/Clips/chain-attack/17.png",
+            "Assets/Game/Art/Presentation/Clips/chain-attack/20.png",
+            "Assets/Game/Art/Presentation/Clips/chain-attack/24.png"
+          ],
+          "sourceFrames": [
+            1,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            20,
+            24
+          ],
+          "fps": 20,
+          "loop": false,
+          "contactFrame": 8,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            }
+          ],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Hit",
+          "sourceId": "chain-v6-hit-clean",
+          "sourceJob": "a7f76cad-fac8-4cd6-8011-32d53b5cc298",
+          "note": "새 몸 반동 기획 후보. 원본 16장 중 9셀을 180ms로 선별. 무기/섬광이 추가된 이전 생성본은 제외. 장비·몸의 연결과 복귀를 출시 전 정리.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/chain-v6-hit-clean/00.png",
+            "Assets/Game/Art/Presentation/Clips/chain-v6-hit-clean/01.png",
+            "Assets/Game/Art/Presentation/Clips/chain-v6-hit-clean/02.png",
+            "Assets/Game/Art/Presentation/Clips/chain-v6-hit-clean/04.png",
+            "Assets/Game/Art/Presentation/Clips/chain-v6-hit-clean/05.png",
+            "Assets/Game/Art/Presentation/Clips/chain-v6-hit-clean/07.png",
+            "Assets/Game/Art/Presentation/Clips/chain-v6-hit-clean/09.png",
+            "Assets/Game/Art/Presentation/Clips/chain-v6-hit-clean/10.png",
+            "Assets/Game/Art/Presentation/Clips/chain-v6-hit-clean/16.png"
+          ],
+          "sourceFrames": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            9,
+            10,
+            16
+          ],
+          "fps": 50,
+          "loop": false,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            }
+          ],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Death",
+          "sourceId": "chain-v6-hit-clean",
+          "sourceJob": "a7f76cad-fac8-4cd6-8011-32d53b5cc298",
+          "note": "Existing recoil frames reused beneath dissolve. No separate monster death clip generated.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/chain-v6-hit-clean/00.png",
+            "Assets/Game/Art/Presentation/Clips/chain-v6-hit-clean/01.png",
+            "Assets/Game/Art/Presentation/Clips/chain-v6-hit-clean/02.png",
+            "Assets/Game/Art/Presentation/Clips/chain-v6-hit-clean/04.png",
+            "Assets/Game/Art/Presentation/Clips/chain-v6-hit-clean/05.png",
+            "Assets/Game/Art/Presentation/Clips/chain-v6-hit-clean/07.png",
+            "Assets/Game/Art/Presentation/Clips/chain-v6-hit-clean/09.png",
+            "Assets/Game/Art/Presentation/Clips/chain-v6-hit-clean/10.png",
+            "Assets/Game/Art/Presentation/Clips/chain-v6-hit-clean/16.png"
+          ],
+          "sourceFrames": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            9,
+            10,
+            16
+          ],
+          "fps": 50,
+          "loop": false,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            }
+          ],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Stun",
+          "sourceId": "legacy-chain_thrall-static-stun",
+          "sourceJob": "",
+          "note": "Existing prototype single Stun pose; no continuous Stun clip exists.",
+          "frames": [],
+          "sourceFrames": [],
+          "fps": 1,
+          "loop": true,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": true,
+          "legacyStun": true
+        }
+      ]
+    },
+    {
+      "id": "ash_wisp",
+      "facesRight": false,
+      "height": 2,
+      "referenceHeightPixels": 88,
+      "clips": [
+        {
+          "motion": "Idle",
+          "sourceId": "wisp-canonical-static-idle",
+          "sourceJob": "",
+          "note": "Static canonical original; no continuous monster Idle has been produced.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/wisp-idle/00.png"
+          ],
+          "sourceFrames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [
+            {
+              "x": 76,
+              "y": 46
+            }
+          ],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": true,
+          "legacyStun": false
+        },
+        {
+          "motion": "Attack",
+          "sourceId": "wisp-attack",
+          "sourceJob": "a009465a-a238-4dbf-94ef-a380061180a2",
+          "note": "한 번 손을 뻗는 시전 후보. 메인 중복 대기 축소. 네 방향별 예고용 모션을 전부 만든 상태는 아님.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/wisp-attack/01.png",
+            "Assets/Game/Art/Presentation/Clips/wisp-attack/05.png",
+            "Assets/Game/Art/Presentation/Clips/wisp-attack/06.png",
+            "Assets/Game/Art/Presentation/Clips/wisp-attack/10.png",
+            "Assets/Game/Art/Presentation/Clips/wisp-attack/11.png",
+            "Assets/Game/Art/Presentation/Clips/wisp-attack/12.png",
+            "Assets/Game/Art/Presentation/Clips/wisp-attack/13.png",
+            "Assets/Game/Art/Presentation/Clips/wisp-attack/14.png",
+            "Assets/Game/Art/Presentation/Clips/wisp-attack/18.png",
+            "Assets/Game/Art/Presentation/Clips/wisp-attack/19.png",
+            "Assets/Game/Art/Presentation/Clips/wisp-attack/20.png",
+            "Assets/Game/Art/Presentation/Clips/wisp-attack/21.png",
+            "Assets/Game/Art/Presentation/Clips/wisp-attack/22.png",
+            "Assets/Game/Art/Presentation/Clips/wisp-attack/24.png"
+          ],
+          "sourceFrames": [
+            1,
+            5,
+            6,
+            10,
+            11,
+            12,
+            13,
+            14,
+            18,
+            19,
+            20,
+            21,
+            22,
+            24
+          ],
+          "fps": 20,
+          "loop": false,
+          "contactFrame": 5,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            }
+          ],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Hit",
+          "sourceId": "wisp-v6-hit-clean",
+          "sourceJob": "bef5d823-9595-4479-8c4d-dcc9439d2900",
+          "note": "새 몸 반동 기획 후보. 원본 16장 중 9셀을 180ms로 선별. 무기/섬광이 추가된 이전 생성본은 제외. 장비·몸의 연결과 복귀를 출시 전 정리.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/wisp-v6-hit-clean/00.png",
+            "Assets/Game/Art/Presentation/Clips/wisp-v6-hit-clean/02.png",
+            "Assets/Game/Art/Presentation/Clips/wisp-v6-hit-clean/03.png",
+            "Assets/Game/Art/Presentation/Clips/wisp-v6-hit-clean/04.png",
+            "Assets/Game/Art/Presentation/Clips/wisp-v6-hit-clean/09.png",
+            "Assets/Game/Art/Presentation/Clips/wisp-v6-hit-clean/10.png",
+            "Assets/Game/Art/Presentation/Clips/wisp-v6-hit-clean/11.png",
+            "Assets/Game/Art/Presentation/Clips/wisp-v6-hit-clean/12.png",
+            "Assets/Game/Art/Presentation/Clips/wisp-v6-hit-clean/16.png"
+          ],
+          "sourceFrames": [
+            0,
+            2,
+            3,
+            4,
+            9,
+            10,
+            11,
+            12,
+            16
+          ],
+          "fps": 50,
+          "loop": false,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            }
+          ],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Death",
+          "sourceId": "wisp-v6-hit-clean",
+          "sourceJob": "bef5d823-9595-4479-8c4d-dcc9439d2900",
+          "note": "Existing recoil frames reused beneath dissolve. No separate monster death clip generated.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/wisp-v6-hit-clean/00.png",
+            "Assets/Game/Art/Presentation/Clips/wisp-v6-hit-clean/02.png",
+            "Assets/Game/Art/Presentation/Clips/wisp-v6-hit-clean/03.png",
+            "Assets/Game/Art/Presentation/Clips/wisp-v6-hit-clean/04.png",
+            "Assets/Game/Art/Presentation/Clips/wisp-v6-hit-clean/09.png",
+            "Assets/Game/Art/Presentation/Clips/wisp-v6-hit-clean/10.png",
+            "Assets/Game/Art/Presentation/Clips/wisp-v6-hit-clean/11.png",
+            "Assets/Game/Art/Presentation/Clips/wisp-v6-hit-clean/12.png",
+            "Assets/Game/Art/Presentation/Clips/wisp-v6-hit-clean/16.png"
+          ],
+          "sourceFrames": [
+            0,
+            2,
+            3,
+            4,
+            9,
+            10,
+            11,
+            12,
+            16
+          ],
+          "fps": 50,
+          "loop": false,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            }
+          ],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Stun",
+          "sourceId": "legacy-ash_wisp-static-stun",
+          "sourceJob": "",
+          "note": "Existing prototype single Stun pose; no continuous Stun clip exists.",
+          "frames": [],
+          "sourceFrames": [],
+          "fps": 1,
+          "loop": true,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": true,
+          "legacyStun": true
+        }
+      ]
+    },
+    {
+      "id": "gate_warden",
+      "facesRight": false,
+      "height": 3.2,
+      "referenceHeightPixels": 92,
+      "clips": [
+        {
+          "motion": "Idle",
+          "sourceId": "warden-canonical-static-idle",
+          "sourceJob": "",
+          "note": "Static canonical original; no continuous monster Idle has been produced.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/warden-idle/00.png"
+          ],
+          "sourceFrames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [
+            {
+              "x": 68,
+              "y": 46
+            }
+          ],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": true,
+          "legacyStun": false
+        },
+        {
+          "motion": "Attack",
+          "sourceId": "warden-attack",
+          "sourceJob": "f039c5ed-514d-4b24-aa27-fa01290a3457",
+          "note": "철퇴 구간 단발 기획 후보. 방패 밀기는 제외했으나 0→10 준비 연결이 튀어 비타격 전환 프레임 보강 필요. 최종 채택 아님.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/warden-attack/00.png",
+            "Assets/Game/Art/Presentation/Clips/warden-attack/10.png",
+            "Assets/Game/Art/Presentation/Clips/warden-attack/11.png",
+            "Assets/Game/Art/Presentation/Clips/warden-attack/12.png",
+            "Assets/Game/Art/Presentation/Clips/warden-attack/13.png",
+            "Assets/Game/Art/Presentation/Clips/warden-attack/14.png",
+            "Assets/Game/Art/Presentation/Clips/warden-attack/15.png",
+            "Assets/Game/Art/Presentation/Clips/warden-attack/18.png",
+            "Assets/Game/Art/Presentation/Clips/warden-attack/19.png",
+            "Assets/Game/Art/Presentation/Clips/warden-attack/20.png",
+            "Assets/Game/Art/Presentation/Clips/warden-attack/21.png",
+            "Assets/Game/Art/Presentation/Clips/warden-attack/22.png",
+            "Assets/Game/Art/Presentation/Clips/warden-attack/23.png",
+            "Assets/Game/Art/Presentation/Clips/warden-attack/24.png"
+          ],
+          "sourceFrames": [
+            0,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24
+          ],
+          "fps": 20,
+          "loop": false,
+          "contactFrame": 8,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [
+            {
+              "x": 68,
+              "y": 46
+            },
+            {
+              "x": 61,
+              "y": 46
+            },
+            {
+              "x": 63,
+              "y": 46
+            },
+            {
+              "x": 65,
+              "y": 46
+            },
+            {
+              "x": 67,
+              "y": 46
+            },
+            {
+              "x": 70,
+              "y": 46
+            },
+            {
+              "x": 72,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 50
+            },
+            {
+              "x": 64,
+              "y": 49
+            },
+            {
+              "x": 69,
+              "y": 47
+            },
+            {
+              "x": 69,
+              "y": 47
+            },
+            {
+              "x": 69,
+              "y": 47
+            },
+            {
+              "x": 67,
+              "y": 46
+            },
+            {
+              "x": 68,
+              "y": 46
+            }
+          ],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Hit",
+          "sourceId": "warden-v6-hit-clean",
+          "sourceJob": "1c7ca319-c832-431e-b16e-b102d9709365",
+          "note": "새 몸 반동 기획 후보. 원본 16장 중 9셀을 180ms로 선별. 무기/섬광이 추가된 이전 생성본은 제외. 장비·몸의 연결과 복귀를 출시 전 정리.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/warden-v6-hit-clean/00.png",
+            "Assets/Game/Art/Presentation/Clips/warden-v6-hit-clean/01.png",
+            "Assets/Game/Art/Presentation/Clips/warden-v6-hit-clean/02.png",
+            "Assets/Game/Art/Presentation/Clips/warden-v6-hit-clean/04.png",
+            "Assets/Game/Art/Presentation/Clips/warden-v6-hit-clean/07.png",
+            "Assets/Game/Art/Presentation/Clips/warden-v6-hit-clean/09.png",
+            "Assets/Game/Art/Presentation/Clips/warden-v6-hit-clean/10.png",
+            "Assets/Game/Art/Presentation/Clips/warden-v6-hit-clean/11.png",
+            "Assets/Game/Art/Presentation/Clips/warden-v6-hit-clean/16.png"
+          ],
+          "sourceFrames": [
+            0,
+            1,
+            2,
+            4,
+            7,
+            9,
+            10,
+            11,
+            16
+          ],
+          "fps": 50,
+          "loop": false,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            }
+          ],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Death",
+          "sourceId": "warden-v6-hit-clean",
+          "sourceJob": "1c7ca319-c832-431e-b16e-b102d9709365",
+          "note": "Existing recoil frames reused beneath dissolve. No separate monster death clip generated.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/warden-v6-hit-clean/00.png",
+            "Assets/Game/Art/Presentation/Clips/warden-v6-hit-clean/01.png",
+            "Assets/Game/Art/Presentation/Clips/warden-v6-hit-clean/02.png",
+            "Assets/Game/Art/Presentation/Clips/warden-v6-hit-clean/04.png",
+            "Assets/Game/Art/Presentation/Clips/warden-v6-hit-clean/07.png",
+            "Assets/Game/Art/Presentation/Clips/warden-v6-hit-clean/09.png",
+            "Assets/Game/Art/Presentation/Clips/warden-v6-hit-clean/10.png",
+            "Assets/Game/Art/Presentation/Clips/warden-v6-hit-clean/11.png",
+            "Assets/Game/Art/Presentation/Clips/warden-v6-hit-clean/16.png"
+          ],
+          "sourceFrames": [
+            0,
+            1,
+            2,
+            4,
+            7,
+            9,
+            10,
+            11,
+            16
+          ],
+          "fps": 50,
+          "loop": false,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            }
+          ],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Stun",
+          "sourceId": "legacy-gate_warden-static-stun",
+          "sourceJob": "",
+          "note": "Existing prototype single Stun pose; no continuous Stun clip exists.",
+          "frames": [],
+          "sourceFrames": [],
+          "fps": 1,
+          "loop": true,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": true,
+          "legacyStun": true
+        }
+      ]
+    },
+    {
+      "id": "bell_knight",
+      "facesRight": false,
+      "height": 4,
+      "referenceHeightPixels": 94,
+      "clips": [
+        {
+          "motion": "Idle",
+          "sourceId": "knight-canonical-static-idle",
+          "sourceJob": "",
+          "note": "Static canonical original; no continuous monster Idle has been produced.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/knight-idle/00.png"
+          ],
+          "sourceFrames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [
+            {
+              "x": 75,
+              "y": 46
+            }
+          ],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": true,
+          "legacyStun": false
+        },
+        {
+          "motion": "Attack",
+          "sourceId": "knight-attack-retry",
+          "sourceJob": "8fd0327d-9aa4-471b-9985-a7452019f3d6",
+          "note": "재작업 단발 내려베기 후보. 원본9~11에 한 번의 타격과 잔상, 이후 회수. 보스 등장용은 피해 없는 한 클립으로 재생. 생성된 무기 잔상은 향후 분리 보강 대상.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/knight-attack-retry/00.png",
+            "Assets/Game/Art/Presentation/Clips/knight-attack-retry/01.png",
+            "Assets/Game/Art/Presentation/Clips/knight-attack-retry/02.png",
+            "Assets/Game/Art/Presentation/Clips/knight-attack-retry/03.png",
+            "Assets/Game/Art/Presentation/Clips/knight-attack-retry/04.png",
+            "Assets/Game/Art/Presentation/Clips/knight-attack-retry/05.png",
+            "Assets/Game/Art/Presentation/Clips/knight-attack-retry/06.png",
+            "Assets/Game/Art/Presentation/Clips/knight-attack-retry/07.png",
+            "Assets/Game/Art/Presentation/Clips/knight-attack-retry/08.png",
+            "Assets/Game/Art/Presentation/Clips/knight-attack-retry/09.png",
+            "Assets/Game/Art/Presentation/Clips/knight-attack-retry/10.png",
+            "Assets/Game/Art/Presentation/Clips/knight-attack-retry/11.png",
+            "Assets/Game/Art/Presentation/Clips/knight-attack-retry/12.png",
+            "Assets/Game/Art/Presentation/Clips/knight-attack-retry/13.png",
+            "Assets/Game/Art/Presentation/Clips/knight-attack-retry/14.png",
+            "Assets/Game/Art/Presentation/Clips/knight-attack-retry/15.png",
+            "Assets/Game/Art/Presentation/Clips/knight-attack-retry/16.png"
+          ],
+          "sourceFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "fps": 20,
+          "loop": false,
+          "contactFrame": 10,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [
+            {
+              "x": 75,
+              "y": 45
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 45
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 77,
+              "y": 46
+            },
+            {
+              "x": 65,
+              "y": 45
+            },
+            {
+              "x": 62,
+              "y": 45
+            },
+            {
+              "x": 60,
+              "y": 46
+            },
+            {
+              "x": 57,
+              "y": 46
+            },
+            {
+              "x": 75,
+              "y": 50
+            },
+            {
+              "x": 76,
+              "y": 49
+            },
+            {
+              "x": 76,
+              "y": 49
+            },
+            {
+              "x": 76,
+              "y": 49
+            },
+            {
+              "x": 76,
+              "y": 49
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 75,
+              "y": 45
+            }
+          ],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Hit",
+          "sourceId": "knight-v6-hit-clean",
+          "sourceJob": "4aa1f3b0-655c-4466-97fa-d4c87ad0e638",
+          "note": "새 몸 반동 기획 후보. 원본 16장 중 9셀을 180ms로 선별. 무기/섬광이 추가된 이전 생성본은 제외. 첫 반동만 사용하고 두 번째 반동을 제외.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/knight-v6-hit-clean/00.png",
+            "Assets/Game/Art/Presentation/Clips/knight-v6-hit-clean/01.png",
+            "Assets/Game/Art/Presentation/Clips/knight-v6-hit-clean/02.png",
+            "Assets/Game/Art/Presentation/Clips/knight-v6-hit-clean/03.png",
+            "Assets/Game/Art/Presentation/Clips/knight-v6-hit-clean/04.png",
+            "Assets/Game/Art/Presentation/Clips/knight-v6-hit-clean/05.png",
+            "Assets/Game/Art/Presentation/Clips/knight-v6-hit-clean/06.png",
+            "Assets/Game/Art/Presentation/Clips/knight-v6-hit-clean/07.png",
+            "Assets/Game/Art/Presentation/Clips/knight-v6-hit-clean/08.png"
+          ],
+          "sourceFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "fps": 50,
+          "loop": false,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            }
+          ],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Death",
+          "sourceId": "knight-v6-hit-clean",
+          "sourceJob": "4aa1f3b0-655c-4466-97fa-d4c87ad0e638",
+          "note": "Existing recoil frames reused beneath dissolve. No separate monster death clip generated.",
+          "frames": [
+            "Assets/Game/Art/Presentation/Clips/knight-v6-hit-clean/00.png",
+            "Assets/Game/Art/Presentation/Clips/knight-v6-hit-clean/01.png",
+            "Assets/Game/Art/Presentation/Clips/knight-v6-hit-clean/02.png",
+            "Assets/Game/Art/Presentation/Clips/knight-v6-hit-clean/03.png",
+            "Assets/Game/Art/Presentation/Clips/knight-v6-hit-clean/04.png",
+            "Assets/Game/Art/Presentation/Clips/knight-v6-hit-clean/05.png",
+            "Assets/Game/Art/Presentation/Clips/knight-v6-hit-clean/06.png",
+            "Assets/Game/Art/Presentation/Clips/knight-v6-hit-clean/07.png",
+            "Assets/Game/Art/Presentation/Clips/knight-v6-hit-clean/08.png"
+          ],
+          "sourceFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "fps": 50,
+          "loop": false,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            }
+          ],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": false,
+          "legacyStun": false
+        },
+        {
+          "motion": "Stun",
+          "sourceId": "legacy-bell_knight-static-stun",
+          "sourceJob": "",
+          "note": "Existing prototype single Stun pose; no continuous Stun clip exists.",
+          "frames": [],
+          "sourceFrames": [],
+          "fps": 1,
+          "loop": true,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": true,
+          "legacyStun": true
+        }
+      ]
+    }
+  ],
+  "enemies": [
+    {
+      "id": "gate_sentinel",
+      "displayName": "성문 파수병",
+      "artId": "gate_sentinel"
+    },
+    {
+      "id": "chain_thrall",
+      "displayName": "사슬 망령",
+      "artId": "chain_thrall"
+    },
+    {
+      "id": "ash_wisp",
+      "displayName": "재의 불씨",
+      "artId": "ash_wisp"
+    },
+    {
+      "id": "gate_warden",
+      "displayName": "성문 수문장",
+      "artId": "gate_warden"
+    },
+    {
+      "id": "bell_knight",
+      "displayName": "종의 기사",
+      "artId": "bell_knight"
+    }
+  ],
+  "stages": [
+    {
+      "number": 1,
+      "enemyId": "gate_sentinel"
+    },
+    {
+      "number": 2,
+      "enemyId": "chain_thrall"
+    },
+    {
+      "number": 3,
+      "enemyId": "ash_wisp"
+    },
+    {
+      "number": 4,
+      "enemyId": "gate_sentinel"
+    },
+    {
+      "number": 5,
+      "enemyId": "gate_warden"
+    },
+    {
+      "number": 6,
+      "enemyId": "chain_thrall"
+    },
+    {
+      "number": 7,
+      "enemyId": "ash_wisp"
+    },
+    {
+      "number": 8,
+      "enemyId": "gate_sentinel"
+    },
+    {
+      "number": 9,
+      "enemyId": "chain_thrall"
+    },
+    {
+      "number": 10,
+      "enemyId": "bell_knight"
+    },
+    {
+      "number": 11,
+      "enemyId": "chain_thrall"
+    }
+  ],
+  "textures": [
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/sentinel-idle/00.png",
+      "source": "Planning/Presentation/PixelLab/inputs/sentinel.png",
+      "sha256": "b9817bbab506a2f4eb6d73763c7b29a19ee96fa129c7f74e823e1fdd611c50f5",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/sentinel-attack/01.png",
+      "source": "Planning/Presentation/PixelLab/clips/sentinel-attack/frames/01.png",
+      "sha256": "48014e53d9e96ee44e9e1563014ae9fee0f22ce7516a7a49db55e2e83669a5b0",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/sentinel-attack/05.png",
+      "source": "Planning/Presentation/PixelLab/clips/sentinel-attack/frames/05.png",
+      "sha256": "37de0628fb76f0b1fdcbeee59aaec54ee6b872a25e44c2589384ef5102d5ea52",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/sentinel-attack/06.png",
+      "source": "Planning/Presentation/PixelLab/clips/sentinel-attack/frames/06.png",
+      "sha256": "7bbef37881a4ccab86cc2f2e184aa40beb6ac994d5005aa751051e36cf7c9f3a",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/sentinel-attack/07.png",
+      "source": "Planning/Presentation/PixelLab/clips/sentinel-attack/frames/07.png",
+      "sha256": "cc80d74f7abe540f32bc4f620e5d3976e3a3a299b8a853f2b8eec24f7751c08e",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/sentinel-attack/08.png",
+      "source": "Planning/Presentation/PixelLab/clips/sentinel-attack/frames/08.png",
+      "sha256": "314c236d33c4c2af084c12d0e8a0ba1bfdb116aef6b75d5690215468aad5a563",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/sentinel-attack/09.png",
+      "source": "Planning/Presentation/PixelLab/clips/sentinel-attack/frames/09.png",
+      "sha256": "c1e0d6d5ef83fa72a0fce8d55b900ef31335e8005cae00afde613ec7b3b84788",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/sentinel-attack/10.png",
+      "source": "Planning/Presentation/PixelLab/clips/sentinel-attack/frames/10.png",
+      "sha256": "78582fb9011eecd5d1be6b2ed199dc6586be056779781b6c5b3543a313aaddca",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/sentinel-attack/11.png",
+      "source": "Planning/Presentation/PixelLab/clips/sentinel-attack/frames/11.png",
+      "sha256": "3596260da60045a761c48b6d7917bbbda2e21c0ea9b2749ce667637e31f9746a",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/sentinel-attack/12.png",
+      "source": "Planning/Presentation/PixelLab/clips/sentinel-attack/frames/12.png",
+      "sha256": "ebab7d58586150a21554f81afda5281bd7d61bbbcc293c561a24e2781d9c5c60",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/sentinel-attack/13.png",
+      "source": "Planning/Presentation/PixelLab/clips/sentinel-attack/frames/13.png",
+      "sha256": "3d1a5949b5c1064a430e6515b688bac02c277bf5faaa33adf974f675ab23348e",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/sentinel-attack/21.png",
+      "source": "Planning/Presentation/PixelLab/clips/sentinel-attack/frames/21.png",
+      "sha256": "9159770efd7dd2458080d2830f19bf965f02d8e4eadd71cb906953f36e4b0518",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/sentinel-attack/22.png",
+      "source": "Planning/Presentation/PixelLab/clips/sentinel-attack/frames/22.png",
+      "sha256": "6866bd0134a35eb49b0459ded380e4978e36ba0a2073f17497147c43b515cdd8",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/sentinel-attack/23.png",
+      "source": "Planning/Presentation/PixelLab/clips/sentinel-attack/frames/23.png",
+      "sha256": "8b24a6b4ccb8334fb3254337cdad1af159a4c733b2173054469611a55c5b07c1",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/sentinel-attack/24.png",
+      "source": "Planning/Presentation/PixelLab/clips/sentinel-attack/frames/24.png",
+      "sha256": "d5f36eaddbce5d6b780f6a883f05fd6a8710115a48b2c30ffe4ba30503202a7e",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/sentinel-v6-hit-clean/00.png",
+      "source": "Planning/Presentation/PixelLab/clips/sentinel-v6-hit-clean/frames/00.png",
+      "sha256": "dbad83a2aeec21c6ccdf523c91d58e3567dd4435700e78c46be6d5ceb3afc35a",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/sentinel-v6-hit-clean/04.png",
+      "source": "Planning/Presentation/PixelLab/clips/sentinel-v6-hit-clean/frames/04.png",
+      "sha256": "cc188b595c65abbf24dcadc3a468eed78e0049bdff17d1b9ca8f8f445afef1d8",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/sentinel-v6-hit-clean/05.png",
+      "source": "Planning/Presentation/PixelLab/clips/sentinel-v6-hit-clean/frames/05.png",
+      "sha256": "bb58e0655956fd324b3945464cb02c7ef7e864ce7c5547e51cc6909a5e048fcd",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/sentinel-v6-hit-clean/06.png",
+      "source": "Planning/Presentation/PixelLab/clips/sentinel-v6-hit-clean/frames/06.png",
+      "sha256": "3bfbf4885e1842409ab4efed3c229ea96582471305241cc91dc3efad1d53f58f",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/sentinel-v6-hit-clean/08.png",
+      "source": "Planning/Presentation/PixelLab/clips/sentinel-v6-hit-clean/frames/08.png",
+      "sha256": "d3b89c1f2aec31d0397a7e16059747f3a2493a7839d69a844ff9991c1a4d5685",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/sentinel-v6-hit-clean/09.png",
+      "source": "Planning/Presentation/PixelLab/clips/sentinel-v6-hit-clean/frames/09.png",
+      "sha256": "62c696dee2c50d96bd8cef105fa22160ef233b6b516812f65b4e079ec490e58d",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/sentinel-v6-hit-clean/10.png",
+      "source": "Planning/Presentation/PixelLab/clips/sentinel-v6-hit-clean/frames/10.png",
+      "sha256": "efce9d42d2c2c6d9b4a43ce41fd226bd86edd4cd0fcb17b320df9874153140f6",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/sentinel-v6-hit-clean/11.png",
+      "source": "Planning/Presentation/PixelLab/clips/sentinel-v6-hit-clean/frames/11.png",
+      "sha256": "212dcb2ffdb2c242c8b042744698a0900f6cfc17b362ce5716f15e0b503aab13",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/chain-idle/00.png",
+      "source": "Planning/Presentation/PixelLab/inputs/chain.png",
+      "sha256": "c3a79abe93354bc91deaec11a2345a60db8309340d582d21d9887a0469b1f1cc",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/chain-attack/01.png",
+      "source": "Planning/Presentation/PixelLab/clips/chain-attack/frames/01.png",
+      "sha256": "4a4e34d95036faee42e16c0789dd8594ee19dd79272096aaaff9d1912fd0d3fe",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/chain-attack/04.png",
+      "source": "Planning/Presentation/PixelLab/clips/chain-attack/frames/04.png",
+      "sha256": "a380421609dc96538a13b010906138ab8f7a7b317b0316e7000e9870d31c4eea",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/chain-attack/05.png",
+      "source": "Planning/Presentation/PixelLab/clips/chain-attack/frames/05.png",
+      "sha256": "09bf85e4ceddb83a631340f3c8b1178fdad15d77ea7b148c88ab0b93518b409e",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/chain-attack/06.png",
+      "source": "Planning/Presentation/PixelLab/clips/chain-attack/frames/06.png",
+      "sha256": "4b33c47987fa091f900afe5f6f95eead7a91b0444eba9f837d9ad153036b732e",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/chain-attack/07.png",
+      "source": "Planning/Presentation/PixelLab/clips/chain-attack/frames/07.png",
+      "sha256": "64909e530c7e967774906ed541327c5168b0b187d00110e0c5e3b23ede0f9e8d",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/chain-attack/08.png",
+      "source": "Planning/Presentation/PixelLab/clips/chain-attack/frames/08.png",
+      "sha256": "7ea8bb593a0d93787a51948bc981fe9bc543b8791b35666ed1f72ae44e5c04b4",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/chain-attack/09.png",
+      "source": "Planning/Presentation/PixelLab/clips/chain-attack/frames/09.png",
+      "sha256": "0d77e4c94724462e985aefd29aad36ef5d7bbc63768f1c0dab5f7c111fe78791",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/chain-attack/10.png",
+      "source": "Planning/Presentation/PixelLab/clips/chain-attack/frames/10.png",
+      "sha256": "58d74dec142806d60fd274b304deee3c5e0b8cb9510dfdfd712b54cf1c7cb346",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/chain-attack/11.png",
+      "source": "Planning/Presentation/PixelLab/clips/chain-attack/frames/11.png",
+      "sha256": "998e55deaa048bc2b8dfae16558a4041e0c54cc0c62a41cd288655588da8bda3",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/chain-attack/12.png",
+      "source": "Planning/Presentation/PixelLab/clips/chain-attack/frames/12.png",
+      "sha256": "84535c39dcd44b763dc6a36f7a6a8979c2aae9f81f6aa5d27a50c666128a6046",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/chain-attack/13.png",
+      "source": "Planning/Presentation/PixelLab/clips/chain-attack/frames/13.png",
+      "sha256": "5ab9a38af781a354a1a6d34f61cff8b2a8bbc51c3849980f920f07fd773a2073",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/chain-attack/14.png",
+      "source": "Planning/Presentation/PixelLab/clips/chain-attack/frames/14.png",
+      "sha256": "d03835ffb636a4fcd3df029b0d648f0bf19db326829f421da293e5733abe3a8b",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/chain-attack/15.png",
+      "source": "Planning/Presentation/PixelLab/clips/chain-attack/frames/15.png",
+      "sha256": "e4a10734021def8048ca7fc76f0f31a305a0feb30634c0a4f32df456ffc3c24c",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/chain-attack/16.png",
+      "source": "Planning/Presentation/PixelLab/clips/chain-attack/frames/16.png",
+      "sha256": "4464d926678a07cdd263c5ca278c31d4873e652f2ebbb0de5630cc3f230d9c2c",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/chain-attack/17.png",
+      "source": "Planning/Presentation/PixelLab/clips/chain-attack/frames/17.png",
+      "sha256": "3a711c1157b08ce15e59d14a23a626c9deb43c91dee49edb4fff1ae426850c49",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/chain-attack/20.png",
+      "source": "Planning/Presentation/PixelLab/clips/chain-attack/frames/20.png",
+      "sha256": "44a217dd992ce7a51f6e7ae74d708954b4a3444bc04f0d0bde6fd438d62fef64",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/chain-attack/24.png",
+      "source": "Planning/Presentation/PixelLab/clips/chain-attack/frames/24.png",
+      "sha256": "b4fae5d93374274f8da38708b189f10dc3f56184b62471028f537c11a7e4feaa",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/chain-v6-hit-clean/00.png",
+      "source": "Planning/Presentation/PixelLab/clips/chain-v6-hit-clean/frames/00.png",
+      "sha256": "b460578df80c88d7fe20bd6bbbea59e8b673edc37d8125492795e6769c7a2ab3",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/chain-v6-hit-clean/01.png",
+      "source": "Planning/Presentation/PixelLab/clips/chain-v6-hit-clean/frames/01.png",
+      "sha256": "3aee067281263e268b331e1673114b4be053fb1ae8465582b3fe424d2dbbedf4",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/chain-v6-hit-clean/02.png",
+      "source": "Planning/Presentation/PixelLab/clips/chain-v6-hit-clean/frames/02.png",
+      "sha256": "bf57c87afef0409ce4335e5e0af4c233d27233640de85c187e8368d5b7ac2898",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/chain-v6-hit-clean/04.png",
+      "source": "Planning/Presentation/PixelLab/clips/chain-v6-hit-clean/frames/04.png",
+      "sha256": "333b3cbaa460067deaa73f5d4cf483e6846269f24a9444b4b148c58c86ea2995",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/chain-v6-hit-clean/05.png",
+      "source": "Planning/Presentation/PixelLab/clips/chain-v6-hit-clean/frames/05.png",
+      "sha256": "e6728b6424795497b910289de161fdc2c17f745768eef2619d398a6c1afb1f40",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/chain-v6-hit-clean/07.png",
+      "source": "Planning/Presentation/PixelLab/clips/chain-v6-hit-clean/frames/07.png",
+      "sha256": "5c9712900015c0698aa183462aa23d4b997299c130ed11756ea71720498aa0c3",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/chain-v6-hit-clean/09.png",
+      "source": "Planning/Presentation/PixelLab/clips/chain-v6-hit-clean/frames/09.png",
+      "sha256": "b6ed1fe426aaf471f1e6ba12a8bc4dd90970d0f093706cbfbba1aafb19e22a9d",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/chain-v6-hit-clean/10.png",
+      "source": "Planning/Presentation/PixelLab/clips/chain-v6-hit-clean/frames/10.png",
+      "sha256": "c8a78716e448b792758752a1ec2aaf86ec214d600470e01712ff800d543eebb4",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/chain-v6-hit-clean/16.png",
+      "source": "Planning/Presentation/PixelLab/clips/chain-v6-hit-clean/frames/16.png",
+      "sha256": "3f89f29fc63eef181748b6833e6696335280fb1af8306e511030beea25b91ccb",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/wisp-idle/00.png",
+      "source": "Planning/Presentation/PixelLab/inputs/wisp.png",
+      "sha256": "4535a26d9ebcb2dc3c97820629a5c4c196c3fd9cfb945a9c9ade1dd25eebdba8",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 76,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/wisp-attack/01.png",
+      "source": "Planning/Presentation/PixelLab/clips/wisp-attack/frames/01.png",
+      "sha256": "f60948cbae8ffd300a7022cf3fa29bf6ec9b7e8998c7bc3af76b52966867319e",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 76,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/wisp-attack/05.png",
+      "source": "Planning/Presentation/PixelLab/clips/wisp-attack/frames/05.png",
+      "sha256": "a3a910e422bfc4e19004db2fdcc6c458e1acb85a91e2436fd090b2f705ca1994",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 76,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/wisp-attack/06.png",
+      "source": "Planning/Presentation/PixelLab/clips/wisp-attack/frames/06.png",
+      "sha256": "d0296ac00cbdc5a0dbc67678db5b0a10ee897a985deb6038e3be05133acee429",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 76,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/wisp-attack/10.png",
+      "source": "Planning/Presentation/PixelLab/clips/wisp-attack/frames/10.png",
+      "sha256": "37a2b16fd69a40b424618dc6f97c5a5f0029dc687aef8e6d84e7c8eeaf5e6c29",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 76,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/wisp-attack/11.png",
+      "source": "Planning/Presentation/PixelLab/clips/wisp-attack/frames/11.png",
+      "sha256": "aa2a3e77b7235bcb12457cf370d14cd2f501a14e9ada65a6dc56ebabc7b48cef",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 76,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/wisp-attack/12.png",
+      "source": "Planning/Presentation/PixelLab/clips/wisp-attack/frames/12.png",
+      "sha256": "25e243994b575a8a9efe5443c82a83c0b8b2f00391f4f8770bb5d7f9f3c0b629",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 76,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/wisp-attack/13.png",
+      "source": "Planning/Presentation/PixelLab/clips/wisp-attack/frames/13.png",
+      "sha256": "a43e7b41f1d58f56882aff56fdf729817be342abd5c94f666e6d8d7cafa3fad0",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 76,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/wisp-attack/14.png",
+      "source": "Planning/Presentation/PixelLab/clips/wisp-attack/frames/14.png",
+      "sha256": "03ae0a70bce552b86a859f81c2431961a73ab764c5c3b0a4a383f5b4093f7549",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 76,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/wisp-attack/18.png",
+      "source": "Planning/Presentation/PixelLab/clips/wisp-attack/frames/18.png",
+      "sha256": "9a38557f63366964d44a37df8114352b543297989d48ec654626d6faedb1932c",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 76,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/wisp-attack/19.png",
+      "source": "Planning/Presentation/PixelLab/clips/wisp-attack/frames/19.png",
+      "sha256": "a731c43e4b1ebeb744019b465793e2e5a033f8aa85aff30ffcc739865e9c908a",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 76,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/wisp-attack/20.png",
+      "source": "Planning/Presentation/PixelLab/clips/wisp-attack/frames/20.png",
+      "sha256": "e5ab7d30ba28805501e669de5505f5cb5b01fac015fc86b2ad70550b71930561",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 76,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/wisp-attack/21.png",
+      "source": "Planning/Presentation/PixelLab/clips/wisp-attack/frames/21.png",
+      "sha256": "b7f71b82004232f625cf81d412eae16ffa2efb8aab852e4c270d42427d299074",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 76,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/wisp-attack/22.png",
+      "source": "Planning/Presentation/PixelLab/clips/wisp-attack/frames/22.png",
+      "sha256": "b99560e678fa639c3317ca78c723f76411b7323ba3b4223128456b63f14199ee",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 76,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/wisp-attack/24.png",
+      "source": "Planning/Presentation/PixelLab/clips/wisp-attack/frames/24.png",
+      "sha256": "f62dede66e7883926c4fc17f41c3b48ea3b0cf11034eb1642fec0c25f01d2812",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 76,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/wisp-v6-hit-clean/00.png",
+      "source": "Planning/Presentation/PixelLab/clips/wisp-v6-hit-clean/frames/00.png",
+      "sha256": "39946f4559b439ba2dc0f2814bc66707219e4480e9f300609debc4c11c77ddbf",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 76,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/wisp-v6-hit-clean/02.png",
+      "source": "Planning/Presentation/PixelLab/clips/wisp-v6-hit-clean/frames/02.png",
+      "sha256": "3520b693868c3fa73d25f5df6087fcb4bcf85cd806922f53c1f5d50b52f9ce17",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 76,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/wisp-v6-hit-clean/03.png",
+      "source": "Planning/Presentation/PixelLab/clips/wisp-v6-hit-clean/frames/03.png",
+      "sha256": "8935ad75dfa94e2f185d15fde4626f32240b9d1851b18d872a2f4f31d06f0050",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 76,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/wisp-v6-hit-clean/04.png",
+      "source": "Planning/Presentation/PixelLab/clips/wisp-v6-hit-clean/frames/04.png",
+      "sha256": "464953d7b57418f1ac986d05de9d91c02b85fbb3bb49c541e6c1cf10cbc91db1",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 76,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/wisp-v6-hit-clean/09.png",
+      "source": "Planning/Presentation/PixelLab/clips/wisp-v6-hit-clean/frames/09.png",
+      "sha256": "4e856dfb4fbaf5609aa03f28e0189e86e0f52e959ede43daffc8df6251707869",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 76,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/wisp-v6-hit-clean/10.png",
+      "source": "Planning/Presentation/PixelLab/clips/wisp-v6-hit-clean/frames/10.png",
+      "sha256": "4cfbf2166e1ec77c7d90ff8ed365f1836a8e35c24af2a50730b439a827f3e9b5",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 76,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/wisp-v6-hit-clean/11.png",
+      "source": "Planning/Presentation/PixelLab/clips/wisp-v6-hit-clean/frames/11.png",
+      "sha256": "b03e56b573f59fee3d136021813eca22f3a0c7ac5c3feb5725e875812659f3d5",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 76,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/wisp-v6-hit-clean/12.png",
+      "source": "Planning/Presentation/PixelLab/clips/wisp-v6-hit-clean/frames/12.png",
+      "sha256": "080d3a895d21c9432c9e87b122b42e46e058d46893bc86349c380ef41d929c0b",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 76,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/wisp-v6-hit-clean/16.png",
+      "source": "Planning/Presentation/PixelLab/clips/wisp-v6-hit-clean/frames/16.png",
+      "sha256": "83b33a4040cb1bf6c3c0eebb2e8c04dd1c274f4fdfe26e47cccb33399838b62c",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 76,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/warden-idle/00.png",
+      "source": "Planning/Presentation/PixelLab/inputs/warden.png",
+      "sha256": "b9f1ce6461578ae747a56888e087cd34d573d176a63a5b3e7fbf7bd1e069c0f0",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/warden-attack/00.png",
+      "source": "Planning/Presentation/PixelLab/clips/warden-attack/frames/00.png",
+      "sha256": "650f5c475a1d97b263c3d40a17657e6c0ecc9f16d6c7a1c64434b581a5dc2724",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/warden-attack/10.png",
+      "source": "Planning/Presentation/PixelLab/clips/warden-attack/frames/10.png",
+      "sha256": "e72ac51b31be00253615cc6491415ad1bb4a6fde4f35dc2a151116afc9d10307",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/warden-attack/11.png",
+      "source": "Planning/Presentation/PixelLab/clips/warden-attack/frames/11.png",
+      "sha256": "f7e988ec5dd3427717f7af341b08b87005891b96cdb3bf17392b790810b365ad",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/warden-attack/12.png",
+      "source": "Planning/Presentation/PixelLab/clips/warden-attack/frames/12.png",
+      "sha256": "0ef8b3a2753c03b84011692b07bf0a834cc62b8576607e557e8aa2b418f9e470",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/warden-attack/13.png",
+      "source": "Planning/Presentation/PixelLab/clips/warden-attack/frames/13.png",
+      "sha256": "a70c9123d23e285f9a8b93ab204263b1af7adc15875acc39df79d1ee3ab9ce74",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/warden-attack/14.png",
+      "source": "Planning/Presentation/PixelLab/clips/warden-attack/frames/14.png",
+      "sha256": "8f85caeeda968e8c448908a7278706557db26988748c28d67d5e51be87e9a80b",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/warden-attack/15.png",
+      "source": "Planning/Presentation/PixelLab/clips/warden-attack/frames/15.png",
+      "sha256": "c300e0d5731b5c23c7ce1b8fc72946e947f978c483d3ede357d3816e1f1ff362",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/warden-attack/18.png",
+      "source": "Planning/Presentation/PixelLab/clips/warden-attack/frames/18.png",
+      "sha256": "e8d324cfeca22d21a548178b8bd147ea6e29a57d1d9430d45c75144989e88209",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/warden-attack/19.png",
+      "source": "Planning/Presentation/PixelLab/clips/warden-attack/frames/19.png",
+      "sha256": "1fcfa0cf2c756f9a9b5d8514556e84fe5c0ae690f5c628b162689819d502b88c",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/warden-attack/20.png",
+      "source": "Planning/Presentation/PixelLab/clips/warden-attack/frames/20.png",
+      "sha256": "f8ddec91b064ca0300d8852ac24c5e694a4cff091e5a5daeb3bdbb3c450ce936",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/warden-attack/21.png",
+      "source": "Planning/Presentation/PixelLab/clips/warden-attack/frames/21.png",
+      "sha256": "466c00ede4488de4580a8962c95bbc5e89edc6c9b7bbbd694da29422847c7334",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/warden-attack/22.png",
+      "source": "Planning/Presentation/PixelLab/clips/warden-attack/frames/22.png",
+      "sha256": "686edac0d03389460772c92da665643f2795063967d3c20292c40e1c6b6e1953",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/warden-attack/23.png",
+      "source": "Planning/Presentation/PixelLab/clips/warden-attack/frames/23.png",
+      "sha256": "8368ea227632c3b72f8590b4132b052a7bff332836474f807cf681b83372c78e",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/warden-attack/24.png",
+      "source": "Planning/Presentation/PixelLab/clips/warden-attack/frames/24.png",
+      "sha256": "e6d8ca8e9b81d8c9a9c1c86cc37ef9c67004ce6700b11a6d8a7c0a61b5cb0541",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/warden-v6-hit-clean/00.png",
+      "source": "Planning/Presentation/PixelLab/clips/warden-v6-hit-clean/frames/00.png",
+      "sha256": "650f5c475a1d97b263c3d40a17657e6c0ecc9f16d6c7a1c64434b581a5dc2724",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/warden-v6-hit-clean/01.png",
+      "source": "Planning/Presentation/PixelLab/clips/warden-v6-hit-clean/frames/01.png",
+      "sha256": "7d2177bd1dbc9f5dbc13eb16bae055454aae0e4100e8bdfa249b0d1145ef2af6",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/warden-v6-hit-clean/02.png",
+      "source": "Planning/Presentation/PixelLab/clips/warden-v6-hit-clean/frames/02.png",
+      "sha256": "f56df048dc89ea5a093d6af757d1bbb3374bacbab99718131be32606c7061143",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/warden-v6-hit-clean/04.png",
+      "source": "Planning/Presentation/PixelLab/clips/warden-v6-hit-clean/frames/04.png",
+      "sha256": "d9f3992e8361eedc72463b81863621d1b62f0a132c76db8d242ad5760aa07664",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/warden-v6-hit-clean/07.png",
+      "source": "Planning/Presentation/PixelLab/clips/warden-v6-hit-clean/frames/07.png",
+      "sha256": "32c7d2ac1001d68846fe6b895409929f555bb0607d6e6ce13f634e0694d49789",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/warden-v6-hit-clean/09.png",
+      "source": "Planning/Presentation/PixelLab/clips/warden-v6-hit-clean/frames/09.png",
+      "sha256": "c194fe2f3731f920464c6ab127095f374d5b01e1ea915343e49210f3ba79128b",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/warden-v6-hit-clean/10.png",
+      "source": "Planning/Presentation/PixelLab/clips/warden-v6-hit-clean/frames/10.png",
+      "sha256": "b92b62f3c4d733b0ac1c24950cb7660fd050854cf359ee274ba1a11db6abc1c2",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/warden-v6-hit-clean/11.png",
+      "source": "Planning/Presentation/PixelLab/clips/warden-v6-hit-clean/frames/11.png",
+      "sha256": "60e77b05ce9e31dfa747035e891f54c53a003232788199f53b02ff6efca1d02c",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/warden-v6-hit-clean/16.png",
+      "source": "Planning/Presentation/PixelLab/clips/warden-v6-hit-clean/frames/16.png",
+      "sha256": "e196540aec201af0b2f25b8e506bedb64f6e7ecb05f504cf87a3e32f0ea7072d",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/knight-idle/00.png",
+      "source": "Planning/Presentation/PixelLab/inputs/knight.png",
+      "sha256": "3813c0c19881f3b075cea842927408a600d7a5980b710230c4fff19c59fbff4b",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/knight-attack-retry/00.png",
+      "source": "Planning/Presentation/PixelLab/clips/knight-attack-retry/frames/00.png",
+      "sha256": "679d256a32f6799c07bf8c0ef6af473bca1d914b0f03988c831fd8dd39e0a33f",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/knight-attack-retry/01.png",
+      "source": "Planning/Presentation/PixelLab/clips/knight-attack-retry/frames/01.png",
+      "sha256": "a87ecc24cdf0c7fc1873a121ba2e7ac40991062035d29a174329b9e4d195d22e",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/knight-attack-retry/02.png",
+      "source": "Planning/Presentation/PixelLab/clips/knight-attack-retry/frames/02.png",
+      "sha256": "871afc39775ce84de48ca7c8a219c832972966d0a18a3d32e923399f7eae3fda",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/knight-attack-retry/03.png",
+      "source": "Planning/Presentation/PixelLab/clips/knight-attack-retry/frames/03.png",
+      "sha256": "d308f2d864ec4944dc46f61b9978b8d923b33b33a1b8abaf6a1a434261d1f857",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/knight-attack-retry/04.png",
+      "source": "Planning/Presentation/PixelLab/clips/knight-attack-retry/frames/04.png",
+      "sha256": "977a50b598932df6e66f6b7d052a19776857fc315f8f82f40465822118c1851e",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/knight-attack-retry/05.png",
+      "source": "Planning/Presentation/PixelLab/clips/knight-attack-retry/frames/05.png",
+      "sha256": "b3680693f9fd057a3db4b9ad81d00269210e8bfb53da1314a327ce015043a9dc",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/knight-attack-retry/06.png",
+      "source": "Planning/Presentation/PixelLab/clips/knight-attack-retry/frames/06.png",
+      "sha256": "25360b985b4ee0764676308096fb8e6d706bff803b2fb30d4f6a1ae6597f73e4",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/knight-attack-retry/07.png",
+      "source": "Planning/Presentation/PixelLab/clips/knight-attack-retry/frames/07.png",
+      "sha256": "94d941778276ee07e25819657080fd0df4f744046b77669bc380b07a482f4e2b",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/knight-attack-retry/08.png",
+      "source": "Planning/Presentation/PixelLab/clips/knight-attack-retry/frames/08.png",
+      "sha256": "b296e05f38af1111f7277b9f455ed10b496551e363c7e5b427a83865a352e9e7",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/knight-attack-retry/09.png",
+      "source": "Planning/Presentation/PixelLab/clips/knight-attack-retry/frames/09.png",
+      "sha256": "852307b082e103709918c33a7197035815d91b4e35e928742e0d7619ce5e5b05",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/knight-attack-retry/10.png",
+      "source": "Planning/Presentation/PixelLab/clips/knight-attack-retry/frames/10.png",
+      "sha256": "b42b1bce99cac63421fecc62996e3f48b53adae33cef25b6c43096c331cfe659",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/knight-attack-retry/11.png",
+      "source": "Planning/Presentation/PixelLab/clips/knight-attack-retry/frames/11.png",
+      "sha256": "db12cba0ab973ea4c23569eeee728f3cde39f3fe994735d1b6d151ee34aab6e6",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/knight-attack-retry/12.png",
+      "source": "Planning/Presentation/PixelLab/clips/knight-attack-retry/frames/12.png",
+      "sha256": "5fc57c48d7ff9b5f09a1138ec3d6130f07e8ec14f98040384e728d7059eea99a",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/knight-attack-retry/13.png",
+      "source": "Planning/Presentation/PixelLab/clips/knight-attack-retry/frames/13.png",
+      "sha256": "343db1dcd4e45d985cb310e94f0003d422198eeda517dd04a9277929bf7152dc",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/knight-attack-retry/14.png",
+      "source": "Planning/Presentation/PixelLab/clips/knight-attack-retry/frames/14.png",
+      "sha256": "b6a2b1aebc2a9e1a8a4fe2263d3fc154d7ddfb77ac7839ee278a3f63931169ab",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/knight-attack-retry/15.png",
+      "source": "Planning/Presentation/PixelLab/clips/knight-attack-retry/frames/15.png",
+      "sha256": "3ff9acb250b37cfe3c75a3b546d9e83097c93580096f38aea3817593ee2ee48b",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/knight-attack-retry/16.png",
+      "source": "Planning/Presentation/PixelLab/clips/knight-attack-retry/frames/16.png",
+      "sha256": "8616b03b056e658c9d8b491ffac3b0b93a4904db15ff5087dd956cc0549e7571",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/knight-v6-hit-clean/00.png",
+      "source": "Planning/Presentation/PixelLab/clips/knight-v6-hit-clean/frames/00.png",
+      "sha256": "74d8b12713841a1ba1b051f8b7174386a7ca5ad681ab3888b54d781e68e45403",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/knight-v6-hit-clean/01.png",
+      "source": "Planning/Presentation/PixelLab/clips/knight-v6-hit-clean/frames/01.png",
+      "sha256": "fa9e258762e5c07ca0cbfe0002d21075e0f56f2b2d7f5a1c1df3bc88387611f7",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/knight-v6-hit-clean/02.png",
+      "source": "Planning/Presentation/PixelLab/clips/knight-v6-hit-clean/frames/02.png",
+      "sha256": "a7270bf9a80cf45b3398ec075f2463f7358aae5aad0d085885a2b407d45b062b",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/knight-v6-hit-clean/03.png",
+      "source": "Planning/Presentation/PixelLab/clips/knight-v6-hit-clean/frames/03.png",
+      "sha256": "7e9d0e88e0b6062adb310c0b80b3c0469db465489be0bb86ea17c92b9de6d6be",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/knight-v6-hit-clean/04.png",
+      "source": "Planning/Presentation/PixelLab/clips/knight-v6-hit-clean/frames/04.png",
+      "sha256": "c55bda71cc2a1712cf1332dab152cf2119fc93bc09db88f01eec0078fa839a99",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/knight-v6-hit-clean/05.png",
+      "source": "Planning/Presentation/PixelLab/clips/knight-v6-hit-clean/frames/05.png",
+      "sha256": "76e8447ccf6aa64b54117bd8640a7d9205f507c625ec0819efc7e38554d3dd7e",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/knight-v6-hit-clean/06.png",
+      "source": "Planning/Presentation/PixelLab/clips/knight-v6-hit-clean/frames/06.png",
+      "sha256": "4f1af7e1011537413e9d14d136d49f9ba58487fa4fcde936c6eed9843e7a782b",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/knight-v6-hit-clean/07.png",
+      "source": "Planning/Presentation/PixelLab/clips/knight-v6-hit-clean/frames/07.png",
+      "sha256": "7330bc5436d1fa79113b4cb6f300afb201838e498d4f1b48d7d4619301308f50",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    },
+    {
+      "path": "Assets/Game/Art/Presentation/Clips/knight-v6-hit-clean/08.png",
+      "source": "Planning/Presentation/PixelLab/clips/knight-v6-hit-clean/frames/08.png",
+      "sha256": "531da8c46a15ac7e4ff22257c24678a854341f8f12cc647f0a12d10d46ced1c3",
+      "width": 128,
+      "height": 128,
+      "pivot": {
+        "x": 78,
+        "y": 114
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "tool": "built-in image_gen",
+  "intent": "planning background concept; no Unity import; not a tile set",
+  "date": "2026-10-24",
+  "images": [
+    {
+      "file": "images/festival-gate-concept-v1.png",
+      "prompt": "Use case: stylized-concept. Create a new project-bound background concept for a low-resolution pixel-art side-on timing action game, landscape 16:9 composition. A cheerful small medieval town on a festival morning, gentle and adventurous for all ages, not infantile. Clear teal-blue daytime sky, huge simple cloud clusters, distant desaturated mint hills, small peach-roof houses, one open wooden town gate on the far right, a few simple bunting flags near the top edges, restrained bell motif. Flat broad stone path runs completely horizontally across at precisely 67 percent of image height; lower third is quiet muted warm stone and soil with very little detail for a future control overlay. Reserve x25–80 percent and y35–65 percent as sparse unobstructed mint midtone combat space, no foreground posts crossing this space. Strictly side-on orthographic, no perspective path into distance. Chunky simple pixel clusters as if 384x216 enlarged with nearest-neighbor, limited flat 12-color palette, stepped square edges, no antialiasing, no gradients, no intricate texture. Background muted medium teal #91B7B1 near characters; cream and yellow accents together under ten percent, avoid cream patches at character head height. Atmosphere: sunny, airy, warm timber, gentle wind; not a ruined cathedral. Background scenery ONLY, NO characters, NO enemies, NO weapons, NO text, NO HUD, NO logos, no crosses, skulls, dark fog, grief, chains of imprisonment, realistic painted rendering or plastic toys. This is one coherent game background concept, not a board, not a split image. Preserve a clear flat movement plane at y67 percent.",
+      "status": "earlier detailed concept"
+    },
+    {
+      "file": "images/festival-gate-concept.png",
+      "prompt": "Edit this background concept, keeping its exact side-on composition, 16:9 crop, ground level at67 percent, left house and right gate and central open battlefield. Simplify rendering dramatically to match a VERY LOW RESOLUTION GAME: visibly enlarged 320x180 pixel-grid appearance, LARGE square pixel clusters, only 16 flat colors, no dithering, no gradients, no painted lighting, no tiny mosaic bricks, no noise, no detailed leaves. Clouds become two large flat stepped shapes in muted pale blue, not bright ivory. Reduce all scenery saturation and contrast especially behind character locations x30–75%, y35–65%, emphasizing medium mint #91B7B1 there. Warm peach roof, plain teal sky, sparse flat mint hills. Replace any fleur-de-lis/cross heraldic emblems on blue hanging banners with one simple gold bell silhouette. Keep the upbeat festival morning, few bunting flags, flat broad path. Background ONLY. No characters, no monsters, no words, no HUD. Aim for simple chunky game pixel-art with huge clear shapes, not an elaborate pixel painting.",
+      "status": "selected simplified mood concept"
+    }
+  ],
+  "note": "Final background still needs pixel-grid cleanup, layer separation and seamless tiles before production. Existing actor sprites are composed unmodified by render-preview.cjs."
+}

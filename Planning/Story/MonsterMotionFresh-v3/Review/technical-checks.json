@@ -1,0 +1,2635 @@
+{
+  "passed": true,
+  "actorCount": 10,
+  "checked": "Input hashes; state/pivot/timing/contact contracts; PNG dimensions, transparency and clipping; exact base endpoints. This does not establish visual quality.",
+  "frames": [
+    {
+      "actor": "gate_sentry",
+      "motion": "Attack",
+      "index": 0,
+      "file": "Actors/gate_sentry/Attack/frame-000.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        50,
+        22,
+        105,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 80
+    },
+    {
+      "actor": "gate_sentry",
+      "motion": "Attack",
+      "index": 1,
+      "file": "Actors/gate_sentry/Attack/frame-001.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        54,
+        17,
+        103,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 70
+    },
+    {
+      "actor": "gate_sentry",
+      "motion": "Attack",
+      "index": 2,
+      "file": "Actors/gate_sentry/Attack/frame-002.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        55,
+        20,
+        106,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 70
+    },
+    {
+      "actor": "gate_sentry",
+      "motion": "Attack",
+      "index": 3,
+      "file": "Actors/gate_sentry/Attack/frame-003.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        56,
+        26,
+        107,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 85
+    },
+    {
+      "actor": "gate_sentry",
+      "motion": "Attack",
+      "index": 4,
+      "file": "Actors/gate_sentry/Attack/frame-004.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        56,
+        30,
+        107,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 90
+    },
+    {
+      "actor": "gate_sentry",
+      "motion": "Attack",
+      "index": 5,
+      "file": "Actors/gate_sentry/Attack/frame-005.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        13,
+        52,
+        110,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 60
+    },
+    {
+      "actor": "gate_sentry",
+      "motion": "Attack",
+      "index": 6,
+      "file": "Actors/gate_sentry/Attack/frame-006.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        12,
+        52,
+        109,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 40
+    },
+    {
+      "actor": "gate_sentry",
+      "motion": "Attack",
+      "index": 7,
+      "file": "Actors/gate_sentry/Attack/frame-007.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        12,
+        52,
+        109,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 40
+    },
+    {
+      "actor": "gate_sentry",
+      "motion": "Attack",
+      "index": 8,
+      "file": "Actors/gate_sentry/Attack/frame-008.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        18,
+        50,
+        112,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 60
+    },
+    {
+      "actor": "gate_sentry",
+      "motion": "Attack",
+      "index": 9,
+      "file": "Actors/gate_sentry/Attack/frame-009.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        41,
+        24,
+        102,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 65
+    },
+    {
+      "actor": "gate_sentry",
+      "motion": "Attack",
+      "index": 10,
+      "file": "Actors/gate_sentry/Attack/frame-010.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        55,
+        17,
+        103,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 65
+    },
+    {
+      "actor": "gate_sentry",
+      "motion": "Attack",
+      "index": 11,
+      "file": "Actors/gate_sentry/Attack/frame-011.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        52,
+        20,
+        105,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 65
+    },
+    {
+      "actor": "gate_sentry",
+      "motion": "Attack",
+      "index": 12,
+      "file": "Actors/gate_sentry/Attack/frame-012.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        50,
+        22,
+        105,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 80
+    },
+    {
+      "actor": "gate_sentry",
+      "motion": "Stun",
+      "index": 0,
+      "file": "Actors/gate_sentry/Stun/frame-000.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        14,
+        65,
+        111,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 170
+    },
+    {
+      "actor": "gate_sentry",
+      "motion": "Stun",
+      "index": 1,
+      "file": "Actors/gate_sentry/Stun/frame-001.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        14,
+        64,
+        110,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 190
+    },
+    {
+      "actor": "gate_sentry",
+      "motion": "Stun",
+      "index": 2,
+      "file": "Actors/gate_sentry/Stun/frame-002.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        13,
+        64,
+        110,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 220
+    },
+    {
+      "actor": "gate_sentry",
+      "motion": "Stun",
+      "index": 3,
+      "file": "Actors/gate_sentry/Stun/frame-003.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        14,
+        64,
+        110,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 190
+    },
+    {
+      "actor": "bell_hound",
+      "motion": "Attack",
+      "index": 0,
+      "file": "Actors/bell_hound/Attack/frame-000.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        34,
+        66,
+        121,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 60
+    },
+    {
+      "actor": "bell_hound",
+      "motion": "Attack",
+      "index": 1,
+      "file": "Actors/bell_hound/Attack/frame-001.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        37,
+        68,
+        122,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 90
+    },
+    {
+      "actor": "bell_hound",
+      "motion": "Attack",
+      "index": 2,
+      "file": "Actors/bell_hound/Attack/frame-002.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        30,
+        67,
+        122,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 110
+    },
+    {
+      "actor": "bell_hound",
+      "motion": "Attack",
+      "index": 3,
+      "file": "Actors/bell_hound/Attack/frame-003.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        9,
+        67,
+        108,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 70
+    },
+    {
+      "actor": "bell_hound",
+      "motion": "Attack",
+      "index": 4,
+      "file": "Actors/bell_hound/Attack/frame-004.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        14,
+        68,
+        108,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 45
+    },
+    {
+      "actor": "bell_hound",
+      "motion": "Attack",
+      "index": 5,
+      "file": "Actors/bell_hound/Attack/frame-005.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        19,
+        67,
+        111,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 60
+    },
+    {
+      "actor": "bell_hound",
+      "motion": "Attack",
+      "index": 6,
+      "file": "Actors/bell_hound/Attack/frame-006.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        24,
+        67,
+        114,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 65
+    },
+    {
+      "actor": "bell_hound",
+      "motion": "Attack",
+      "index": 7,
+      "file": "Actors/bell_hound/Attack/frame-007.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        29,
+        66,
+        118,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 70
+    },
+    {
+      "actor": "bell_hound",
+      "motion": "Attack",
+      "index": 8,
+      "file": "Actors/bell_hound/Attack/frame-008.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        32,
+        66,
+        120,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 75
+    },
+    {
+      "actor": "bell_hound",
+      "motion": "Attack",
+      "index": 9,
+      "file": "Actors/bell_hound/Attack/frame-009.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        34,
+        66,
+        121,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 70
+    },
+    {
+      "actor": "bell_hound",
+      "motion": "Stun",
+      "index": 0,
+      "file": "Actors/bell_hound/Stun/frame-000.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        8,
+        79,
+        115,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 180
+    },
+    {
+      "actor": "bell_hound",
+      "motion": "Stun",
+      "index": 1,
+      "file": "Actors/bell_hound/Stun/frame-001.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        8,
+        79,
+        115,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 170
+    },
+    {
+      "actor": "bell_hound",
+      "motion": "Stun",
+      "index": 2,
+      "file": "Actors/bell_hound/Stun/frame-002.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        8,
+        78,
+        115,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 230
+    },
+    {
+      "actor": "bell_hound",
+      "motion": "Stun",
+      "index": 3,
+      "file": "Actors/bell_hound/Stun/frame-003.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        8,
+        79,
+        115,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 170
+    },
+    {
+      "actor": "gate_lock",
+      "motion": "Attack",
+      "index": 0,
+      "file": "Actors/gate_lock/Attack/frame-000.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        34,
+        51,
+        121,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 70
+    },
+    {
+      "actor": "gate_lock",
+      "motion": "Attack",
+      "index": 1,
+      "file": "Actors/gate_lock/Attack/frame-001.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        45,
+        56,
+        119,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 90
+    },
+    {
+      "actor": "gate_lock",
+      "motion": "Attack",
+      "index": 2,
+      "file": "Actors/gate_lock/Attack/frame-002.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        57,
+        54,
+        115,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 110
+    },
+    {
+      "actor": "gate_lock",
+      "motion": "Attack",
+      "index": 3,
+      "file": "Actors/gate_lock/Attack/frame-003.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        57,
+        54,
+        115,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 70
+    },
+    {
+      "actor": "gate_lock",
+      "motion": "Attack",
+      "index": 4,
+      "file": "Actors/gate_lock/Attack/frame-004.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        22,
+        53,
+        112,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 75
+    },
+    {
+      "actor": "gate_lock",
+      "motion": "Attack",
+      "index": 5,
+      "file": "Actors/gate_lock/Attack/frame-005.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        22,
+        53,
+        112,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 45
+    },
+    {
+      "actor": "gate_lock",
+      "motion": "Attack",
+      "index": 6,
+      "file": "Actors/gate_lock/Attack/frame-006.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        23,
+        53,
+        113,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 60
+    },
+    {
+      "actor": "gate_lock",
+      "motion": "Attack",
+      "index": 7,
+      "file": "Actors/gate_lock/Attack/frame-007.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        28,
+        51,
+        117,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 100
+    },
+    {
+      "actor": "gate_lock",
+      "motion": "Attack",
+      "index": 8,
+      "file": "Actors/gate_lock/Attack/frame-008.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        34,
+        51,
+        121,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 90
+    },
+    {
+      "actor": "gate_lock",
+      "motion": "Stun",
+      "index": 0,
+      "file": "Actors/gate_lock/Stun/frame-000.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        8,
+        52,
+        113,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 200
+    },
+    {
+      "actor": "gate_lock",
+      "motion": "Stun",
+      "index": 1,
+      "file": "Actors/gate_lock/Stun/frame-001.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        8,
+        52,
+        113,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 230
+    },
+    {
+      "actor": "gate_lock",
+      "motion": "Stun",
+      "index": 2,
+      "file": "Actors/gate_lock/Stun/frame-002.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        8,
+        53,
+        113,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 210
+    },
+    {
+      "actor": "gate_lock",
+      "motion": "Stun",
+      "index": 3,
+      "file": "Actors/gate_lock/Stun/frame-003.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        8,
+        52,
+        113,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 230
+    },
+    {
+      "actor": "cracked_blade",
+      "motion": "Attack",
+      "index": 0,
+      "file": "Actors/cracked_blade/Attack/frame-000.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        52,
+        22,
+        104,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 60
+    },
+    {
+      "actor": "cracked_blade",
+      "motion": "Attack",
+      "index": 1,
+      "file": "Actors/cracked_blade/Attack/frame-001.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        60,
+        12,
+        115,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 70
+    },
+    {
+      "actor": "cracked_blade",
+      "motion": "Attack",
+      "index": 2,
+      "file": "Actors/cracked_blade/Attack/frame-002.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        64,
+        14,
+        118,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 95
+    },
+    {
+      "actor": "cracked_blade",
+      "motion": "Attack",
+      "index": 3,
+      "file": "Actors/cracked_blade/Attack/frame-003.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        58,
+        16,
+        112,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 100
+    },
+    {
+      "actor": "cracked_blade",
+      "motion": "Attack",
+      "index": 4,
+      "file": "Actors/cracked_blade/Attack/frame-004.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        14,
+        48,
+        113,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 60
+    },
+    {
+      "actor": "cracked_blade",
+      "motion": "Attack",
+      "index": 5,
+      "file": "Actors/cracked_blade/Attack/frame-005.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        14,
+        48,
+        113,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 45
+    },
+    {
+      "actor": "cracked_blade",
+      "motion": "Attack",
+      "index": 6,
+      "file": "Actors/cracked_blade/Attack/frame-006.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        14,
+        48,
+        113,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 45
+    },
+    {
+      "actor": "cracked_blade",
+      "motion": "Attack",
+      "index": 7,
+      "file": "Actors/cracked_blade/Attack/frame-007.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        20,
+        43,
+        107,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 70
+    },
+    {
+      "actor": "cracked_blade",
+      "motion": "Attack",
+      "index": 8,
+      "file": "Actors/cracked_blade/Attack/frame-008.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        52,
+        22,
+        104,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 70
+    },
+    {
+      "actor": "cracked_blade",
+      "motion": "Attack",
+      "index": 9,
+      "file": "Actors/cracked_blade/Attack/frame-009.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        52,
+        22,
+        104,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 65
+    },
+    {
+      "actor": "cracked_blade",
+      "motion": "Attack",
+      "index": 10,
+      "file": "Actors/cracked_blade/Attack/frame-010.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        52,
+        22,
+        104,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 75
+    },
+    {
+      "actor": "cracked_blade",
+      "motion": "Stun",
+      "index": 0,
+      "file": "Actors/cracked_blade/Stun/frame-000.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        17,
+        42,
+        105,
+        108
+      ],
+      "edgePixels": 0,
+      "durationMs": 190
+    },
+    {
+      "actor": "cracked_blade",
+      "motion": "Stun",
+      "index": 1,
+      "file": "Actors/cracked_blade/Stun/frame-001.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        18,
+        44,
+        106,
+        108
+      ],
+      "edgePixels": 0,
+      "durationMs": 220
+    },
+    {
+      "actor": "cracked_blade",
+      "motion": "Stun",
+      "index": 2,
+      "file": "Actors/cracked_blade/Stun/frame-002.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        18,
+        45,
+        109,
+        108
+      ],
+      "edgePixels": 0,
+      "durationMs": 230
+    },
+    {
+      "actor": "cracked_blade",
+      "motion": "Stun",
+      "index": 3,
+      "file": "Actors/cracked_blade/Stun/frame-003.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        17,
+        44,
+        108,
+        108
+      ],
+      "edgePixels": 0,
+      "durationMs": 220
+    },
+    {
+      "actor": "bell_knight",
+      "motion": "Attack",
+      "index": 0,
+      "file": "Actors/bell_knight/Attack/frame-000.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        44,
+        22,
+        112,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 80
+    },
+    {
+      "actor": "bell_knight",
+      "motion": "Attack",
+      "index": 1,
+      "file": "Actors/bell_knight/Attack/frame-001.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        44,
+        17,
+        109,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 70
+    },
+    {
+      "actor": "bell_knight",
+      "motion": "Attack",
+      "index": 2,
+      "file": "Actors/bell_knight/Attack/frame-002.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        33,
+        12,
+        105,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 85
+    },
+    {
+      "actor": "bell_knight",
+      "motion": "Attack",
+      "index": 3,
+      "file": "Actors/bell_knight/Attack/frame-003.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        34,
+        14,
+        108,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 100
+    },
+    {
+      "actor": "bell_knight",
+      "motion": "Attack",
+      "index": 4,
+      "file": "Actors/bell_knight/Attack/frame-004.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        38,
+        18,
+        114,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 100
+    },
+    {
+      "actor": "bell_knight",
+      "motion": "Attack",
+      "index": 5,
+      "file": "Actors/bell_knight/Attack/frame-005.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        28,
+        12,
+        105,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 50
+    },
+    {
+      "actor": "bell_knight",
+      "motion": "Attack",
+      "index": 6,
+      "file": "Actors/bell_knight/Attack/frame-006.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        16,
+        30,
+        113,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 80
+    },
+    {
+      "actor": "bell_knight",
+      "motion": "Attack",
+      "index": 7,
+      "file": "Actors/bell_knight/Attack/frame-007.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        16,
+        30,
+        111,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 60
+    },
+    {
+      "actor": "bell_knight",
+      "motion": "Attack",
+      "index": 8,
+      "file": "Actors/bell_knight/Attack/frame-008.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        21,
+        26,
+        110,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 70
+    },
+    {
+      "actor": "bell_knight",
+      "motion": "Attack",
+      "index": 9,
+      "file": "Actors/bell_knight/Attack/frame-009.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        39,
+        24,
+        110,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 80
+    },
+    {
+      "actor": "bell_knight",
+      "motion": "Attack",
+      "index": 10,
+      "file": "Actors/bell_knight/Attack/frame-010.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        44,
+        22,
+        112,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 75
+    },
+    {
+      "actor": "bell_knight",
+      "motion": "Attack",
+      "index": 11,
+      "file": "Actors/bell_knight/Attack/frame-011.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        44,
+        22,
+        112,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 90
+    },
+    {
+      "actor": "bell_knight",
+      "motion": "Stun",
+      "index": 0,
+      "file": "Actors/bell_knight/Stun/frame-000.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        23,
+        22,
+        117,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 350
+    },
+    {
+      "actor": "bell_knight",
+      "motion": "Stun",
+      "index": 1,
+      "file": "Actors/bell_knight/Stun/frame-001.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        19,
+        19,
+        117,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 350
+    },
+    {
+      "actor": "chain_jailer",
+      "motion": "Attack",
+      "index": 0,
+      "file": "Actors/chain_jailer/Attack/frame-000.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        49,
+        22,
+        106,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 80
+    },
+    {
+      "actor": "chain_jailer",
+      "motion": "Attack",
+      "index": 1,
+      "file": "Actors/chain_jailer/Attack/frame-001.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        51,
+        22,
+        111,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 90
+    },
+    {
+      "actor": "chain_jailer",
+      "motion": "Attack",
+      "index": 2,
+      "file": "Actors/chain_jailer/Attack/frame-002.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        51,
+        22,
+        112,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 100
+    },
+    {
+      "actor": "chain_jailer",
+      "motion": "Attack",
+      "index": 3,
+      "file": "Actors/chain_jailer/Attack/frame-003.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        49,
+        22,
+        109,
+        112
+      ],
+      "edgePixels": 0,
+      "durationMs": 90
+    },
+    {
+      "actor": "chain_jailer",
+      "motion": "Attack",
+      "index": 4,
+      "file": "Actors/chain_jailer/Attack/frame-004.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        17,
+        15,
+        87,
+        111
+      ],
+      "edgePixels": 0,
+      "durationMs": 70
+    },
+    {
+      "actor": "chain_jailer",
+      "motion": "Attack",
+      "index": 5,
+      "file": "Actors/chain_jailer/Attack/frame-005.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        18,
+        15,
+        88,
+        112
+      ],
+      "edgePixels": 0,
+      "durationMs": 60
+    },
+    {
+      "actor": "chain_jailer",
+      "motion": "Attack",
+      "index": 6,
+      "file": "Actors/chain_jailer/Attack/frame-006.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        19,
+        16,
+        89,
+        112
+      ],
+      "edgePixels": 0,
+      "durationMs": 60
+    },
+    {
+      "actor": "chain_jailer",
+      "motion": "Attack",
+      "index": 7,
+      "file": "Actors/chain_jailer/Attack/frame-007.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        49,
+        22,
+        104,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 80
+    },
+    {
+      "actor": "chain_jailer",
+      "motion": "Attack",
+      "index": 8,
+      "file": "Actors/chain_jailer/Attack/frame-008.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        49,
+        22,
+        106,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 80
+    },
+    {
+      "actor": "chain_jailer",
+      "motion": "Attack",
+      "index": 9,
+      "file": "Actors/chain_jailer/Attack/frame-009.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        49,
+        22,
+        106,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 70
+    },
+    {
+      "actor": "chain_jailer",
+      "motion": "Attack",
+      "index": 10,
+      "file": "Actors/chain_jailer/Attack/frame-010.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        49,
+        22,
+        106,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 100
+    },
+    {
+      "actor": "chain_jailer",
+      "motion": "Stun",
+      "index": 0,
+      "file": "Actors/chain_jailer/Stun/frame-000.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        39,
+        20,
+        96,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 230
+    },
+    {
+      "actor": "chain_jailer",
+      "motion": "Stun",
+      "index": 1,
+      "file": "Actors/chain_jailer/Stun/frame-001.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        37,
+        18,
+        94,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 200
+    },
+    {
+      "actor": "chain_jailer",
+      "motion": "Stun",
+      "index": 2,
+      "file": "Actors/chain_jailer/Stun/frame-002.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        36,
+        17,
+        93,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 230
+    },
+    {
+      "actor": "chain_jailer",
+      "motion": "Stun",
+      "index": 3,
+      "file": "Actors/chain_jailer/Stun/frame-003.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        37,
+        20,
+        95,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 200
+    },
+    {
+      "actor": "chain_dancer",
+      "motion": "Attack",
+      "index": 0,
+      "file": "Actors/chain_dancer/Attack/frame-000.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        51,
+        22,
+        105,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 70
+    },
+    {
+      "actor": "chain_dancer",
+      "motion": "Attack",
+      "index": 1,
+      "file": "Actors/chain_dancer/Attack/frame-001.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        49,
+        26,
+        106,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 80
+    },
+    {
+      "actor": "chain_dancer",
+      "motion": "Attack",
+      "index": 2,
+      "file": "Actors/chain_dancer/Attack/frame-002.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        49,
+        17,
+        109,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 90
+    },
+    {
+      "actor": "chain_dancer",
+      "motion": "Attack",
+      "index": 3,
+      "file": "Actors/chain_dancer/Attack/frame-003.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        50,
+        14,
+        108,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 120
+    },
+    {
+      "actor": "chain_dancer",
+      "motion": "Attack",
+      "index": 4,
+      "file": "Actors/chain_dancer/Attack/frame-004.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        17,
+        22,
+        110,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 45
+    },
+    {
+      "actor": "chain_dancer",
+      "motion": "Attack",
+      "index": 5,
+      "file": "Actors/chain_dancer/Attack/frame-005.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        18,
+        44,
+        110,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 70
+    },
+    {
+      "actor": "chain_dancer",
+      "motion": "Attack",
+      "index": 6,
+      "file": "Actors/chain_dancer/Attack/frame-006.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        28,
+        41,
+        108,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 55
+    },
+    {
+      "actor": "chain_dancer",
+      "motion": "Attack",
+      "index": 7,
+      "file": "Actors/chain_dancer/Attack/frame-007.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        26,
+        40,
+        106,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 65
+    },
+    {
+      "actor": "chain_dancer",
+      "motion": "Attack",
+      "index": 8,
+      "file": "Actors/chain_dancer/Attack/frame-008.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        46,
+        34,
+        105,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 70
+    },
+    {
+      "actor": "chain_dancer",
+      "motion": "Attack",
+      "index": 9,
+      "file": "Actors/chain_dancer/Attack/frame-009.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        50,
+        28,
+        105,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 70
+    },
+    {
+      "actor": "chain_dancer",
+      "motion": "Attack",
+      "index": 10,
+      "file": "Actors/chain_dancer/Attack/frame-010.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        51,
+        22,
+        105,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 90
+    },
+    {
+      "actor": "chain_dancer",
+      "motion": "Stun",
+      "index": 0,
+      "file": "Actors/chain_dancer/Stun/frame-000.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        27,
+        52,
+        103,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 180
+    },
+    {
+      "actor": "chain_dancer",
+      "motion": "Stun",
+      "index": 1,
+      "file": "Actors/chain_dancer/Stun/frame-001.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        29,
+        52,
+        103,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 220
+    },
+    {
+      "actor": "chain_dancer",
+      "motion": "Stun",
+      "index": 2,
+      "file": "Actors/chain_dancer/Stun/frame-002.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        29,
+        51,
+        103,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 240
+    },
+    {
+      "actor": "chain_dancer",
+      "motion": "Stun",
+      "index": 3,
+      "file": "Actors/chain_dancer/Stun/frame-003.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        29,
+        52,
+        103,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 220
+    },
+    {
+      "actor": "chain_puppet",
+      "motion": "Attack",
+      "index": 0,
+      "file": "Actors/chain_puppet/Attack/frame-000.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        43,
+        22,
+        112,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 80
+    },
+    {
+      "actor": "chain_puppet",
+      "motion": "Attack",
+      "index": 1,
+      "file": "Actors/chain_puppet/Attack/frame-001.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        45,
+        24,
+        116,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 90
+    },
+    {
+      "actor": "chain_puppet",
+      "motion": "Attack",
+      "index": 2,
+      "file": "Actors/chain_puppet/Attack/frame-002.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        46,
+        25,
+        116,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 100
+    },
+    {
+      "actor": "chain_puppet",
+      "motion": "Attack",
+      "index": 3,
+      "file": "Actors/chain_puppet/Attack/frame-003.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        43,
+        25,
+        116,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 70
+    },
+    {
+      "actor": "chain_puppet",
+      "motion": "Attack",
+      "index": 4,
+      "file": "Actors/chain_puppet/Attack/frame-004.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        38,
+        25,
+        118,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 60
+    },
+    {
+      "actor": "chain_puppet",
+      "motion": "Attack",
+      "index": 5,
+      "file": "Actors/chain_puppet/Attack/frame-005.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        37,
+        24,
+        111,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 50
+    },
+    {
+      "actor": "chain_puppet",
+      "motion": "Attack",
+      "index": 6,
+      "file": "Actors/chain_puppet/Attack/frame-006.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        11,
+        24,
+        109,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 65
+    },
+    {
+      "actor": "chain_puppet",
+      "motion": "Attack",
+      "index": 7,
+      "file": "Actors/chain_puppet/Attack/frame-007.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        20,
+        24,
+        109,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 60
+    },
+    {
+      "actor": "chain_puppet",
+      "motion": "Attack",
+      "index": 8,
+      "file": "Actors/chain_puppet/Attack/frame-008.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        34,
+        23,
+        109,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 65
+    },
+    {
+      "actor": "chain_puppet",
+      "motion": "Attack",
+      "index": 9,
+      "file": "Actors/chain_puppet/Attack/frame-009.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        41,
+        22,
+        109,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 70
+    },
+    {
+      "actor": "chain_puppet",
+      "motion": "Attack",
+      "index": 10,
+      "file": "Actors/chain_puppet/Attack/frame-010.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        43,
+        22,
+        109,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 75
+    },
+    {
+      "actor": "chain_puppet",
+      "motion": "Attack",
+      "index": 11,
+      "file": "Actors/chain_puppet/Attack/frame-011.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        43,
+        22,
+        115,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 75
+    },
+    {
+      "actor": "chain_puppet",
+      "motion": "Attack",
+      "index": 12,
+      "file": "Actors/chain_puppet/Attack/frame-012.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        43,
+        22,
+        112,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 90
+    },
+    {
+      "actor": "chain_puppet",
+      "motion": "Stun",
+      "index": 0,
+      "file": "Actors/chain_puppet/Stun/frame-000.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        43,
+        22,
+        112,
+        107
+      ],
+      "edgePixels": 0,
+      "durationMs": 420
+    },
+    {
+      "actor": "chain_puppet",
+      "motion": "Stun",
+      "index": 1,
+      "file": "Actors/chain_puppet/Stun/frame-001.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        43,
+        23,
+        112,
+        107
+      ],
+      "edgePixels": 0,
+      "durationMs": 420
+    },
+    {
+      "actor": "pendulum_warden",
+      "motion": "Attack",
+      "index": 0,
+      "file": "Actors/pendulum_warden/Attack/frame-000.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        37,
+        22,
+        119,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 90
+    },
+    {
+      "actor": "pendulum_warden",
+      "motion": "Attack",
+      "index": 1,
+      "file": "Actors/pendulum_warden/Attack/frame-001.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        32,
+        22,
+        117,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 90
+    },
+    {
+      "actor": "pendulum_warden",
+      "motion": "Attack",
+      "index": 2,
+      "file": "Actors/pendulum_warden/Attack/frame-002.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        27,
+        22,
+        116,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 110
+    },
+    {
+      "actor": "pendulum_warden",
+      "motion": "Attack",
+      "index": 3,
+      "file": "Actors/pendulum_warden/Attack/frame-003.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        25,
+        22,
+        117,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 100
+    },
+    {
+      "actor": "pendulum_warden",
+      "motion": "Attack",
+      "index": 4,
+      "file": "Actors/pendulum_warden/Attack/frame-004.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        23,
+        16,
+        105,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 65
+    },
+    {
+      "actor": "pendulum_warden",
+      "motion": "Attack",
+      "index": 5,
+      "file": "Actors/pendulum_warden/Attack/frame-005.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        12,
+        14,
+        105,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 45
+    },
+    {
+      "actor": "pendulum_warden",
+      "motion": "Attack",
+      "index": 6,
+      "file": "Actors/pendulum_warden/Attack/frame-006.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        11,
+        15,
+        105,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 75
+    },
+    {
+      "actor": "pendulum_warden",
+      "motion": "Attack",
+      "index": 7,
+      "file": "Actors/pendulum_warden/Attack/frame-007.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        13,
+        17,
+        105,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 70
+    },
+    {
+      "actor": "pendulum_warden",
+      "motion": "Attack",
+      "index": 8,
+      "file": "Actors/pendulum_warden/Attack/frame-008.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        18,
+        17,
+        105,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 65
+    },
+    {
+      "actor": "pendulum_warden",
+      "motion": "Attack",
+      "index": 9,
+      "file": "Actors/pendulum_warden/Attack/frame-009.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        9,
+        14,
+        105,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 75
+    },
+    {
+      "actor": "pendulum_warden",
+      "motion": "Attack",
+      "index": 10,
+      "file": "Actors/pendulum_warden/Attack/frame-010.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        29,
+        19,
+        111,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 85
+    },
+    {
+      "actor": "pendulum_warden",
+      "motion": "Attack",
+      "index": 11,
+      "file": "Actors/pendulum_warden/Attack/frame-011.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        37,
+        22,
+        119,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 100
+    },
+    {
+      "actor": "pendulum_warden",
+      "motion": "Stun",
+      "index": 0,
+      "file": "Actors/pendulum_warden/Stun/frame-000.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        37,
+        22,
+        121,
+        111
+      ],
+      "edgePixels": 0,
+      "durationMs": 230
+    },
+    {
+      "actor": "pendulum_warden",
+      "motion": "Stun",
+      "index": 1,
+      "file": "Actors/pendulum_warden/Stun/frame-001.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        36,
+        22,
+        121,
+        111
+      ],
+      "edgePixels": 0,
+      "durationMs": 210
+    },
+    {
+      "actor": "pendulum_warden",
+      "motion": "Stun",
+      "index": 2,
+      "file": "Actors/pendulum_warden/Stun/frame-002.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        35,
+        22,
+        121,
+        111
+      ],
+      "edgePixels": 0,
+      "durationMs": 240
+    },
+    {
+      "actor": "pendulum_warden",
+      "motion": "Stun",
+      "index": 3,
+      "file": "Actors/pendulum_warden/Stun/frame-003.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        36,
+        22,
+        121,
+        111
+      ],
+      "edgePixels": 0,
+      "durationMs": 210
+    },
+    {
+      "actor": "hook_hound",
+      "motion": "Attack",
+      "index": 0,
+      "file": "Actors/hook_hound/Attack/frame-000.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        34,
+        50,
+        121,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 80
+    },
+    {
+      "actor": "hook_hound",
+      "motion": "Attack",
+      "index": 1,
+      "file": "Actors/hook_hound/Attack/frame-001.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        28,
+        53,
+        119,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 90
+    },
+    {
+      "actor": "hook_hound",
+      "motion": "Attack",
+      "index": 2,
+      "file": "Actors/hook_hound/Attack/frame-002.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        23,
+        54,
+        119,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 100
+    },
+    {
+      "actor": "hook_hound",
+      "motion": "Attack",
+      "index": 3,
+      "file": "Actors/hook_hound/Attack/frame-003.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        9,
+        52,
+        116,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 55
+    },
+    {
+      "actor": "hook_hound",
+      "motion": "Attack",
+      "index": 4,
+      "file": "Actors/hook_hound/Attack/frame-004.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        13,
+        49,
+        113,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 45
+    },
+    {
+      "actor": "hook_hound",
+      "motion": "Attack",
+      "index": 5,
+      "file": "Actors/hook_hound/Attack/frame-005.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        14,
+        50,
+        113,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 45
+    },
+    {
+      "actor": "hook_hound",
+      "motion": "Attack",
+      "index": 6,
+      "file": "Actors/hook_hound/Attack/frame-006.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        10,
+        48,
+        111,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 70
+    },
+    {
+      "actor": "hook_hound",
+      "motion": "Attack",
+      "index": 7,
+      "file": "Actors/hook_hound/Attack/frame-007.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        8,
+        48,
+        113,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 65
+    },
+    {
+      "actor": "hook_hound",
+      "motion": "Attack",
+      "index": 8,
+      "file": "Actors/hook_hound/Attack/frame-008.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        25,
+        44,
+        115,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 70
+    },
+    {
+      "actor": "hook_hound",
+      "motion": "Attack",
+      "index": 9,
+      "file": "Actors/hook_hound/Attack/frame-009.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        34,
+        50,
+        121,
+        113
+      ],
+      "edgePixels": 0,
+      "durationMs": 100
+    },
+    {
+      "actor": "hook_hound",
+      "motion": "Stun",
+      "index": 0,
+      "file": "Actors/hook_hound/Stun/frame-000.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        34,
+        62,
+        125,
+        111
+      ],
+      "edgePixels": 0,
+      "durationMs": 380
+    },
+    {
+      "actor": "hook_hound",
+      "motion": "Stun",
+      "index": 1,
+      "file": "Actors/hook_hound/Stun/frame-001.png",
+      "size": [
+        128,
+        128
+      ],
+      "opaqueBounds": [
+        34,
+        63,
+        125,
+        111
+      ],
+      "edgePixels": 0,
+      "durationMs": 420
+    }
+  ]
+}

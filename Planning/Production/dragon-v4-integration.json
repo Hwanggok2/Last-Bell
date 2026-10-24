@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-24",
+  "status": "saved-assets-applied-windows-packaged",
+  "buildVersion": "0.9.3",
+  "dataVersion": "mvp1.16.0",
+  "playableStages": 20,
+  "planningStages": 50,
+  "signatureSkillsImplemented": true,
+  "availableCharacters": [
+    "on",
+    "dam",
+    "rin"
+  ],
+  "scope": [
+    "persistent readable warning",
+    "stagger body scale1.2 and bright colors",
+    "stage11 frontal dash only",
+    "3playable characters and manual20s skills",
+    "pixel input and hit SFX",
+    "5encounter scenes/25pages/9portraits"
+  ],
+  "save": {
+    "namespace": "persistentDataPath/Playtests/dragon-0.9.2",
+    "define": "LASTBELL_PLAYTEST_092",
+    "firstRun": "prologue->selection->Stage1 tutorial",
+    "laterRun": "continue existing0.9.2 journey",
+    "explicitOverrideHasPriority": true,
+    "defaultUserProfile": "NOT_ACCESSED"
+  },
+  "art": {
+    "newCharacterSourceFrames": 104,
+    "newFrameReferences": 132,
+    "portraits": 9,
+    "preservedOtherActors": 49
+  },
+  "sourceReviews": [
+    "Planning/Production/dragon-v093-client-handoff.md",
+    "Planning/Production/dragon-v093-dialogue-handoff.md",
+    "Planning/Story/Dragon-v1/Production/Player-v4/validation.json"
+  ],
+  "qaAcceptance": "Planning/QA/dragon-v4-acceptance-20261024.md",
+  "qaStatus": "CHANGED_SCOPE_PASS_WITH_LIMITS",
+  "sourceDataTests": {
+    "passed": 26,
+    "failed": 0,
+    "scope": "GameData/tests/test_export_catalog.py"
+  },
+  "limits": [
+    "Stage21-50 and unique regional backgrounds remain planning",
+    "OS physical input and mobile device testing remain deferred",
+    "No final auditory comparison to Timing Hero",
+    "Planning browser rendering not inspected"
+  ],
+  "unchanged": [
+    "stable character/enemy IDs",
+    "base attack and dodge timing",
+    "economy/relic settlement/checkpoints",
+    "previous art for remaining actors"
+  ],
+  "savedApply": "Planning/Production/dragon-v4-saved-apply.json",
+  "observedBuild": "Planning/Production/dragon-v4-observed-build-final.json",
+  "sourceCoreAssertions": 246,
+  "qaReport": "Planning/QA/dragon-v4-result-20261024.md",
+  "release": "Planning/Production/dragon-v4-release.json",
+  "nativeQa": {
+    "resolutions": [
+      "1280x720",
+      "640x360"
+    ],
+    "finalCandidate": "dragon-v4-candidate-03",
+    "finalProcesses": 4,
+    "allFinalProcessesPassed": true,
+    "adoptedEvidence": [
+      "dragon-v4-candidate-01: passed Luka/roster only",
+      "dragon-v4-candidate-02: passed 1280 functionality/dialogue excluding Stage11 motion"
+    ],
+    "fixedProductDefect": "Stage11 uniform-fps attack now enters actual forward approach/recovery",
+    "fixedProbeDefects": [
+      "JSON double roundtrip equality",
+      "optional audio tap on multiple AudioSources"
+    ],
+    "physicalInput": "DEFERRED",
+    "mobile": "NOT_RUN",
+    "audioListening": "NOT_RUN",
+    "audioVoiceOverlap": "NOT_CERTIFIED",
+    "finalChecks": 1037,
+    "finalConsoleErrors": 0
+  },
+  "rootVisualReview": "Planning/Production/dragon-v4-visual-review.md"
+}

@@ -1,0 +1,332 @@
+{
+  "version": "dialogue-v8.4",
+  "date": "2026-10-23",
+  "status": "reviewed-for-integration",
+  "onboarding": {
+    "prologueTitle": "마지막 불씨",
+    "prologueParagraphs": [
+      "종이 멎은 뒤로,\n마을에는 아침이 오지 않았습니다.",
+      "모두 잠든 마을의 성문 밖.\n등불 하나가 마지막 불씨를 지킵니다.",
+      "당신은 그 불씨를 이어받은 종지기.\n등불을 밝히고 다섯 종을 깨우세요.",
+      "첫 종은 닫힌 성문에 있습니다.\n잠든 이들에게 아침을 돌려주세요."
+    ]
+  },
+  "stories": [
+    {
+      "id": "story_boss_10",
+      "stage": 10,
+      "bossId": "bell_knight",
+      "lines": [
+        {
+          "speaker": "종의 기사",
+          "text": "나는 마을을 지키는 줄 알았다.\n그런데 이 문은 주민들을 가두고 있었지.",
+          "responses": []
+        },
+        {
+          "speaker": "종의 기사",
+          "text": "첫 종을 울려, 문을 열어라.\n집마다 걸린 사슬을 따라가 보거라.",
+          "responses": []
+        },
+        {
+          "speaker": "선택한 종지기",
+          "text": "등불이 닿는 곳까지 가볼게.\n안에 있는 사람들을 찾아야 해.",
+          "responses": [
+            {
+              "characterId": "on",
+              "text": "등불이 닿는 곳까지 가볼게.\n안에 있는 사람들을 찾아야 해."
+            },
+            {
+              "characterId": "dam",
+              "text": "문은 내가 열겠다.\n안에 남은 사람들을 되찾아 오지."
+            },
+            {
+              "characterId": "rin",
+              "text": "문 안에서 목소리가 들려.\n사슬 너머에서 누군가 기다리고 있어."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "story_boss_20",
+      "stage": 20,
+      "bossId": "chain_jailer",
+      "lines": [
+        {
+          "speaker": "매달린 집행관",
+          "text": "저 집의 사람들은 죽지 않았다.\n빼앗긴 내일 속에 잠들어 있지.",
+          "responses": []
+        },
+        {
+          "speaker": "매달린 집행관",
+          "text": "사슬로 거둔 시간이 탑에 남아 있다.\n이제 종을 울려, 집으로 돌려보내라.",
+          "responses": []
+        },
+        {
+          "speaker": "선택한 종지기",
+          "text": "그럼, 한 집도 빠뜨리지 않을게.\n다음 종까지 등불을 이어갈 거야.",
+          "responses": [
+            {
+              "characterId": "on",
+              "text": "그럼, 한 집도 빠뜨리지 않을게.\n다음 종까지 등불을 이어갈 거야."
+            },
+            {
+              "characterId": "dam",
+              "text": "돌려받을 몫이 남아 있었군.\n사슬을 풀고, 모두의 아침을 되찾겠다."
+            },
+            {
+              "characterId": "rin",
+              "text": "들려. 저마다 다른 목소리야.\n종을 울려서, 집으로 보내줄게."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "scope": "현재 구현된 프롤로그, 10층/20층 보스 처치 후 대사만 교체. 새로운 스토리 이벤트, 21층 이후 플레이, 별도 종 상호작용은 추가하지 않는다.",
+    "sources": [
+      "Planning/Story/story-world-v2.json",
+      "Planning/Story/route-onboarding-v5.json",
+      "GameData/mvp-catalog.json"
+    ],
+    "preserve": [
+      "불씨를 이어받아 등불을 밝히고 다섯 종을 울려 아침을 되찾는 큰 줄기.",
+      "1~9 성 밖 길, 10 성문 문지기, 11 입구 왼쪽 성문, 12부터 침수된 사슬 주거구.",
+      "주민은 죽거나 괴물이 된 것이 아니라 빼앗긴 시간 속에 잠들어 있다.",
+      "프롤로그 4문단/18초/건너뛰기, 보스별 3페이지, 기존 다음/건너뛰기 및 최초 표시 정책.",
+      "온·담·린은 동행 인물이 아닌 선택 주인공. 현재 온만 사용 가능하며 응답 변형이 새 캐릭터를 해금하지 않는다.",
+      "20층은 프로토타입 끝. 다음 종 언급은 여정이 이어진다는 서사이며 다음 스테이지를 열지 않는다."
+    ],
+    "continuityFixes": [
+      {
+        "issue": "현재 20층의 종이 울리면 다시 묶인다/추를 끝까지 멈춘다는 문구가 원작의 종을 깨워 반환한다는 목표를 뒤집는다.",
+        "resolution": "사슬이 거둔 시간이 탑에 남았다는 사실을 드러내고, 종을 울려 집으로 돌려보내는 목표를 잇는다."
+      },
+      {
+        "issue": "현재 적 이름 익사한 주민은 주민이 죽지 않았다는 설정과 충돌한다.",
+        "resolution": "같은 drowned_resident ID와 문짝 무기/젖은 외투를 유지하며 표시 이름 침수된 잔상을 권고. 사슬이 붙잡힌 기억을 흉내 낸 형상이며 주민의 시체가 아니다.",
+        "catalogChange": "통합 담당자가 표시 이름을 별도로 반영해야 함. 이 패치는 enemies를 수정하지 않는다."
+      },
+      {
+        "issue": "성 밖 적이 야생 동물로 바뀌어 예전 초병/갑옷에 관한 초반 서술이 현재 적 구성과 맞지 않는다.",
+        "resolution": "프롤로그는 길의 적 종류를 단정하지 않는다. 동물은 버려진 외곽 길의 주민이며 성문을 지키는 명령은 10층 기사에게 남긴다."
+      }
+    ],
+    "voices": {
+      "종의 기사": "지키려다 가두었다는 책임을 인정하는 짧은 고백. 플레이어를 평가하거나 긴 역사를 설명하지 않는다.",
+      "매달린 집행관": "명령에 묶인 관리자의 기억. 무엇을 거두었고 어디에 남았는지 담담하게 밝힌다.",
+      "온": "눈앞의 등불에서 사람의 집으로 관심이 넓어진다. 해볼게/이어갈 거야처럼 직접 행동을 약속한다.",
+      "담": "문을 열고 사람을 되찾는 책임과 결단. 하겠다 체.",
+      "린": "실제로 들리는 사람마다 다른 목소리를 말한다. 설명을 대신하는 초능력적 만능 해설은 피한다."
+    },
+    "copyRoles": {
+      "prologue": "짧은 서사 + 여정 목적",
+      "boss10": "반전 + 다음 구역으로 이동할 이유",
+      "boss20": "진실의 일부 + 종을 계속 울릴 이유"
+    },
+    "display": {
+      "referenceResolution": [
+        960,
+        540
+      ],
+      "minimumVerificationResolution": [
+        640,
+        360
+      ],
+      "storyTextBounds": "기존 하단 패널: 가로 화면의 4~79%, 아래 22~99px 영역(77px 높이). 실제 레이아웃의 폰트 크기를 유지.",
+      "prologueTextBounds": "기존 두루마리 ReadingWindow 504×286, 문단 영역 504×120(960×540 기준).",
+      "linePolicy": "모든 본문은 강제 2행. 프롤로그 행당 최대 20자, 대사 최대 22자(공백 포함).",
+      "verificationLimit": "첨부 이미지는 문구 배치 검수용 합성. 실제 Unity 렌더 검수는 통합 빌드에서 수행."
+    },
+    "uiCopySuggestions": {
+      "staggerReady": "공격하면 기절!",
+      "staggerHint": "게이지가 가득 차면 공격을 명중시켜 기절시키세요.",
+      "relicAutomatic": "획득한 유물은 자동으로 적용됩니다.",
+      "relicFull": "유물 보관함이 가득 찼습니다.",
+      "relicExpand": "보관함 확장",
+      "relicExpandExample": "보관 한도 5 → 6 · 종 파편 3",
+      "caution": "확장 예시의 숫자는 밸런스 제안이 아님. UI에서는 실제 한도·가격을 바인딩해야 함."
+    }
+  },
+  "review": {
+    "checks": {
+      "same_story_ids_and_stage_boss_mapping": true,
+      "four_prologue_paragraphs": true,
+      "three_pages_per_boss": true,
+      "all_text_two_lines": true,
+      "prologue_max_line_chars_20": true,
+      "dialogue_max_line_chars_22": true,
+      "original_bell_and_lantern_goal_preserved": true,
+      "resident_survival_preserved": true,
+      "no_new_playable_stages_or_story_triggers": true,
+      "all_html_local_links_resolve": true
+    },
+    "lineLengths": [
+      {
+        "id": "prologue",
+        "lineCharacters": [
+          9,
+          18
+        ]
+      },
+      {
+        "id": "prologue",
+        "lineCharacters": [
+          15,
+          20
+        ]
+      },
+      {
+        "id": "prologue",
+        "lineCharacters": [
+          19,
+          19
+        ]
+      },
+      {
+        "id": "prologue",
+        "lineCharacters": [
+          17,
+          18
+        ]
+      },
+      {
+        "id": "story_boss_10.0",
+        "lineCharacters": [
+          17,
+          22
+        ]
+      },
+      {
+        "id": "story_boss_10.1",
+        "lineCharacters": [
+          16,
+          19
+        ]
+      },
+      {
+        "id": "story_boss_10.2",
+        "lineCharacters": [
+          15,
+          17
+        ]
+      },
+      {
+        "id": "story_boss_10.2.on",
+        "lineCharacters": [
+          15,
+          17
+        ]
+      },
+      {
+        "id": "story_boss_10.2.dam",
+        "lineCharacters": [
+          10,
+          18
+        ]
+      },
+      {
+        "id": "story_boss_10.2.rin",
+        "lineCharacters": [
+          14,
+          20
+        ]
+      },
+      {
+        "id": "story_boss_20.0",
+        "lineCharacters": [
+          17,
+          17
+        ]
+      },
+      {
+        "id": "story_boss_20.1",
+        "lineCharacters": [
+          20,
+          20
+        ]
+      },
+      {
+        "id": "story_boss_20.2",
+        "lineCharacters": [
+          18,
+          18
+        ]
+      },
+      {
+        "id": "story_boss_20.2.on",
+        "lineCharacters": [
+          18,
+          18
+        ]
+      },
+      {
+        "id": "story_boss_20.2.dam",
+        "lineCharacters": [
+          15,
+          21
+        ]
+      },
+      {
+        "id": "story_boss_20.2.rin",
+        "lineCharacters": [
+          16,
+          17
+        ]
+      }
+    ],
+    "reviewedBy": "story_dialogue parallel agent; editorial self-review, not independent player testing",
+    "runtimeRender": "Pending integrating agent. Mockups are not Unity captures.",
+    "glyphWidthMeasurement": {
+      "font": "NeoDunggeunmoPro-Regular.ttf",
+      "method": "Pillow FreeType bounding measurement; conservative 24px at 960, 16px at 640; not a Unity TextGenerator result",
+      "results": [
+        {
+          "kind": "prologue",
+          "resolution": [
+            960,
+            540
+          ],
+          "fontSize": 24,
+          "availableWidth": 504.0,
+          "maxTextWidth": 399.0,
+          "fits": true
+        },
+        {
+          "kind": "story",
+          "resolution": [
+            960,
+            540
+          ],
+          "fontSize": 24,
+          "availableWidth": 720.0,
+          "maxTextWidth": 431.0,
+          "fits": true
+        },
+        {
+          "kind": "prologue",
+          "resolution": [
+            640,
+            360
+          ],
+          "fontSize": 16,
+          "availableWidth": 336.0,
+          "maxTextWidth": 265.0,
+          "fits": true
+        },
+        {
+          "kind": "story",
+          "resolution": [
+            640,
+            360
+          ],
+          "fontSize": 16,
+          "availableWidth": 480.0,
+          "maxTextWidth": 286.0,
+          "fits": true
+        }
+      ]
+    }
+  }
+}

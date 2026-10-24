@@ -1,0 +1,74 @@
+[
+  {
+    "id": "lynx",
+    "motion": "idle",
+    "job": "0762d8c0-3f5c-4724-9558-0bf0245e81a9",
+    "request": {
+      "description": "The lynx stands still and quietly breathes. Only the ear tips twitch subtly once and the short tail tip moves slightly, a small gentle chest breath. Keep the paws firmly planted, fixed head shape and position. The starting and ending stance are identical. Preserve exact original flat pixel blocks and palette.",
+      "frame_count": 4,
+      "direction": "west",
+      "view": "side",
+      "no_background": true,
+      "enhance_prompt": false,
+      "initial_pose": "A lynx stands on four planted paws.",
+      "subject_description": "A compact tawny lynx sprite."
+    },
+    "outputFrames": 5,
+    "directory": "idle-retry",
+    "reason": "Original Idle generated white contour fragments and changed foot pixels."
+  },
+  {
+    "id": "great_stag",
+    "motion": "idle",
+    "job": "6707e0aa-b9dd-4389-87a1-d8716eccba1b",
+    "request": {
+      "description": "The stag stands firmly in place. Only its small tail tip sways subtly and one ear twitches. Its large antlers, head, neck, torso and all four hoof positions stay motionless. A tiny natural resting loop of the living animal. Every visible pixel remains part of the solid animal silhouette. Transparent empty surroundings. First and last stance are identical.",
+      "frame_count": 4,
+      "direction": "west",
+      "view": "side",
+      "no_background": true,
+      "enhance_prompt": false,
+      "initial_pose": "A stag stands with its antlers held high and four hooves planted.",
+      "subject_description": "A compact brown stag with large angular antlers."
+    },
+    "outputFrames": 5,
+    "directory": "idle-retry",
+    "reason": "Original Idle generated white outlines on antlers, and only two clean foot-fixed poses remained."
+  },
+  {
+    "id": "red_fox",
+    "motion": "attack",
+    "job": "752a80dd-6d9c-4b55-86b6-c82b02adb030",
+    "request": {
+      "description": "Only the fox animal itself moves in a single physical bite. It crouches and draws its head back, opens its jaws, makes a short forward jaw snap with a clear extended closed-mouth contact, and returns to the supplied standing pose. Its solid body, four paws and broad tail remain complete and consistent. All visible pixels belong to the animal silhouette. Transparent empty surroundings.",
+      "frame_count": 16,
+      "direction": "west",
+      "view": "side",
+      "no_background": true,
+      "enhance_prompt": false,
+      "initial_pose": "The animal stands on four planted feet, matching the input exactly.",
+      "subject_description": "A RED FOX wild animal enemy facing LEFT in side view"
+    },
+    "outputFrames": 17,
+    "directory": "attack-retry",
+    "reason": "Original bite contact frames were overlaid with generated white speed lines."
+  },
+  {
+    "id": "wild_boar",
+    "motion": "attack",
+    "job": "95c79b0e-da6d-4a0c-b28d-d168902bbf29",
+    "request": {
+      "description": "Only the boar animal itself moves in one physical snout-and-tusk thrust. It lowers the head clearly toward the front, compresses its rear legs, drives head and shoulders a short strong distance forward, then recovers to the supplied stance. Clear muscular preparation and body motion, one contact. All visible pixels belong to the animal silhouette. Transparent empty surroundings.",
+      "frame_count": 16,
+      "direction": "west",
+      "view": "side",
+      "no_background": true,
+      "enhance_prompt": false,
+      "initial_pose": "The animal stands on four planted feet, matching the input exactly.",
+      "subject_description": "A WILD BOAR miniboss facing LEFT in side view"
+    },
+    "outputFrames": 17,
+    "directory": "attack-retry",
+    "reason": "Original tusk contact frames were covered by a large generated white impact shape."
+  }
+]

@@ -1,0 +1,526 @@
+{
+  "schemaVersion": 1,
+  "package": "Dragon-v1-adventurer-player-v2",
+  "status": "ready",
+  "coordinateConvention": "Integer source pixels, PNG top-left; use clip pivot override when present. No per-frame recenter or feet normalization.",
+  "pixelImport": {
+    "filter": "Point",
+    "compression": "None",
+    "mipmaps": false,
+    "alphaIsTransparency": true,
+    "meshType": "FullRect",
+    "perFrameTrim": false
+  },
+  "actors": [
+    {
+      "id": "hero_on",
+      "displayName": "모험가",
+      "canonical": "Planning/Story/Dragon-v1/Production/Player-v2/canonical-coarse.png",
+      "width": 32,
+      "height": 32,
+      "pivotTopLeft": [
+        16,
+        29
+      ],
+      "referenceHeight": 22,
+      "recommendedIntegerScale": 7,
+      "recommendedDisplayHeight": 154,
+      "worldHeight": 1.3261111111111112,
+      "facing": "east",
+      "palette": [
+        "#202D38",
+        "#6B3F2A",
+        "#AB6C37",
+        "#F3BD83",
+        "#2D735D",
+        "#8B2F35",
+        "#E8D9AD",
+        "#B7D3D0"
+      ],
+      "clips": {
+        "Run": {
+          "status": "ready",
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/run/00.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/run/01.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/run/02.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/run/03.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/run/04.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/run/05.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/run/06.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/run/07.png"
+          ],
+          "fps": 20,
+          "loop": true,
+          "contactFrame": -1,
+          "effectOriginTopLeft": null,
+          "pivotTopLeft": [
+            18,
+            29
+          ],
+          "sourceIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "sourceJobId": "b705e0e2-7ccf-4fa5-95e5-7ac66effd51c",
+          "frameDurationsMs": [
+            40,
+            40,
+            60,
+            60,
+            40,
+            40,
+            60,
+            60
+          ],
+          "legacySourceDirectory": "Planning/Presentation/RunMotionFresh/run-dash-20261021-02/frames",
+          "legacySourceIndices": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "review": "Planning/Story/Dragon-v1/Production/Player-v2/reviews/run-final.png",
+          "referenceHeight": 22,
+          "processedAssetId": "7bf99771-a4a7-48c0-94c8-86bcc260a475",
+          "sourceUrl": "https://api.pixellab.ai/mcp/images/b705e0e2-7ccf-4fa5-95e5-7ac66effd51c/download",
+          "sourceReference": "gallery:7bf99771-a4a7-48c0-94c8-86bcc260a475",
+          "usedInCurrentControls": true
+        },
+        "Idle": {
+          "status": "ready",
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/idle/00.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/idle/01.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/idle/02.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/idle/03.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/idle/04.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/idle/05.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/idle/06.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/idle/07.png"
+          ],
+          "fps": 12,
+          "loop": true,
+          "contactFrame": -1,
+          "effectOriginTopLeft": null,
+          "pivotTopLeft": [
+            16,
+            29
+          ],
+          "sourceIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "sourceJobId": "c2001b0f-c2ef-48c7-99c3-b2d771f42324",
+          "frameDurationsMs": [
+            83,
+            83,
+            84,
+            83,
+            83,
+            84,
+            83,
+            83
+          ],
+          "referenceHeight": 22,
+          "processedAssetId": "761d11db-0a05-5e7e-bde4-4ee13f80fc09",
+          "sourceUrl": "https://api.pixellab.ai/mcp/images/c2001b0f-c2ef-48c7-99c3-b2d771f42324/download",
+          "sourceReference": "gallery:761d11db-0a05-5e7e-bde4-4ee13f80fc09",
+          "usedInCurrentControls": true,
+          "legacySourceJobId": "49f0ec50-37d2-46d8-b851-567f9965b56c",
+          "legacySourceIndices": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "distinctFrameCount": 7,
+          "heldPoseNote": "8 generated frames, 7 unique RGBA poses. One held pose is intentional output, no artificial frame padding.",
+          "review": "Planning/Story/Dragon-v1/Production/Player-v2/reviews/idle-full.png"
+        },
+        "Attack": {
+          "status": "ready",
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/attack/00.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/attack/01.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/attack/02.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/attack/03.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/attack/04.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/attack/05.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/attack/06.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/attack/07.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/attack/08.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/attack/09.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/attack/10.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/attack/11.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/attack/12.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/attack/13.png"
+          ],
+          "fps": 60,
+          "loop": false,
+          "contactFrame": 7,
+          "effectOriginTopLeft": [
+            25,
+            15
+          ],
+          "pivotTopLeft": [
+            17,
+            30
+          ],
+          "sourceIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "sourceJobId": "feeedc23-e9f2-4a5b-b24b-b16e42f711ff",
+          "frameDurationsMs": [
+            132,
+            11,
+            11,
+            11,
+            12,
+            11,
+            12,
+            43,
+            43,
+            43,
+            43,
+            43,
+            43,
+            42
+          ],
+          "referenceHeight": 22,
+          "processedAssetId": "f7c45455-222e-46b0-b265-d95777133d6b",
+          "sourceUrl": "https://api.pixellab.ai/mcp/images/feeedc23-e9f2-4a5b-b24b-b16e42f711ff/download",
+          "sourceReference": "gallery:f7c45455-222e-46b0-b265-d95777133d6b",
+          "usedInCurrentControls": true,
+          "legacySourceJobId": "7ecc3608-786d-48ae-9b51-f23de1d494c0",
+          "legacySourceIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            17,
+            23,
+            24
+          ],
+          "contactTimeMs": 200,
+          "totalVisualDurationMs": 500,
+          "timingAuthority": "Runtime: approach hold 0-120ms, preparation 120-200ms, contact200ms, recover through500ms. Duration array is the equivalent preview schedule.",
+          "review": "Planning/Story/Dragon-v1/Production/Player-v2/reviews/attack-final.png"
+        },
+        "DodgeUp": {
+          "status": "ready",
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/dodge-up/00.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/dodge-up/01.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/dodge-up/02.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/dodge-up/03.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/dodge-up/04.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/dodge-up/05.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/dodge-up/06.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/dodge-up/07.png"
+          ],
+          "fps": 24,
+          "loop": false,
+          "contactFrame": 3,
+          "effectOriginTopLeft": null,
+          "pivotTopLeft": [
+            16,
+            29
+          ],
+          "sourceIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "sourceJobId": "2d26d5e7-8483-4d90-89cc-e278b8ff99b3",
+          "frameDurationsMs": [
+            42,
+            42,
+            41,
+            42,
+            42,
+            41,
+            42,
+            42
+          ],
+          "referenceHeight": 22,
+          "processedAssetId": "e62992d1-a687-5f74-8616-0bb8bb5a597f",
+          "sourceUrl": "https://api.pixellab.ai/mcp/images/2d26d5e7-8483-4d90-89cc-e278b8ff99b3/download",
+          "sourceReference": "gallery:e62992d1-a687-5f74-8616-0bb8bb5a597f",
+          "usedInCurrentControls": true,
+          "legacySourceJobId": "c6ff6c62-4330-48d9-921b-dc4bc9ccf0a6",
+          "legacySourceIndices": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            10,
+            14,
+            16
+          ],
+          "contactFrameMeaning": "Completed dodge pose held by runtime; not a new damage or invulnerability timing.",
+          "timingAuthority": "Runtime: enter50ms, hold at contactFrame3, return120ms. PNG animation does not control invulnerability.",
+          "review": "Planning/Story/Dragon-v1/Production/Player-v2/reviews/dodge-up-full.png"
+        },
+        "DodgeBack": {
+          "status": "ready",
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/dodge-back/00.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/dodge-back/01.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/dodge-back/02.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/dodge-back/03.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/dodge-back/04.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/dodge-back/05.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/dodge-back/06.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/dodge-back/07.png"
+          ],
+          "fps": 24,
+          "loop": false,
+          "contactFrame": 3,
+          "effectOriginTopLeft": null,
+          "pivotTopLeft": [
+            16,
+            29
+          ],
+          "sourceIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "sourceJobId": "2f3064bd-13bf-4c25-9515-e4c4869eab23",
+          "frameDurationsMs": [
+            42,
+            42,
+            41,
+            42,
+            42,
+            41,
+            42,
+            42
+          ],
+          "referenceHeight": 22,
+          "processedAssetId": "29ea16c4-3802-40bb-a19d-23611287923b",
+          "sourceUrl": "https://api.pixellab.ai/mcp/images/2f3064bd-13bf-4c25-9515-e4c4869eab23/download",
+          "sourceReference": "gallery:29ea16c4-3802-40bb-a19d-23611287923b",
+          "usedInCurrentControls": true,
+          "legacySourceJobId": "5cdaabb3-b007-4975-87f2-8b47bde76281",
+          "legacySourceIndices": [
+            0,
+            1,
+            6,
+            8,
+            9,
+            12,
+            14,
+            16
+          ],
+          "contactFrameMeaning": "Completed dodge pose held by runtime; not a new damage or invulnerability timing.",
+          "timingAuthority": "Runtime: enter50ms, hold at contactFrame3, return120ms. PNG animation does not control invulnerability.",
+          "review": "Planning/Story/Dragon-v1/Production/Player-v2/reviews/dodge-back-final.png"
+        },
+        "DodgeDown": {
+          "status": "ready",
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/attack/00.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/attack/01.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/attack/02.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/attack/03.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/attack/04.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/attack/05.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/attack/06.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/attack/07.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/attack/08.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/attack/09.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/attack/10.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/attack/11.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/attack/12.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/attack/13.png"
+          ],
+          "fps": 60,
+          "loop": false,
+          "contactFrame": 7,
+          "effectOriginTopLeft": [
+            25,
+            15
+          ],
+          "pivotTopLeft": [
+            17,
+            30
+          ],
+          "sourceIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "sourceJobId": "feeedc23-e9f2-4a5b-b24b-b16e42f711ff",
+          "frameDurationsMs": [
+            132,
+            11,
+            11,
+            11,
+            12,
+            11,
+            12,
+            43,
+            43,
+            43,
+            43,
+            43,
+            43,
+            42
+          ],
+          "referenceHeight": 22,
+          "processedAssetId": "f7c45455-222e-46b0-b265-d95777133d6b",
+          "sourceUrl": "https://api.pixellab.ai/mcp/images/feeedc23-e9f2-4a5b-b24b-b16e42f711ff/download",
+          "sourceReference": "gallery:f7c45455-222e-46b0-b265-d95777133d6b",
+          "usedInCurrentControls": true,
+          "legacySourceJobId": "7ecc3608-786d-48ae-9b51-f23de1d494c0",
+          "legacySourceIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            17,
+            23,
+            24
+          ],
+          "contactTimeMs": 200,
+          "totalVisualDurationMs": 500,
+          "timingAuthority": "Runtime: windup to enemy impact, contactFrame7, then180ms recovery; Attack duration array is preview only.",
+          "review": "Planning/Story/Dragon-v1/Production/Player-v2/reviews/attack-final.png"
+        },
+        "Hit": {
+          "status": "ready",
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/hit/00.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/hit/01.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/hit/02.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/hit/03.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/hit/04.png",
+            "Planning/Story/Dragon-v1/Production/Player-v2/clips/hit/05.png"
+          ],
+          "fps": 24,
+          "loop": false,
+          "contactFrame": -1,
+          "effectOriginTopLeft": null,
+          "pivotTopLeft": [
+            16,
+            29
+          ],
+          "sourceIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "sourceJobId": "58f6155c-5594-487b-90f1-3eb51b13c9ff",
+          "frameDurationsMs": [
+            42,
+            42,
+            41,
+            42,
+            42,
+            41
+          ],
+          "referenceHeight": 22,
+          "processedAssetId": "0ea51c72-579e-5003-8b9a-7fb1a3860788",
+          "sourceUrl": "https://api.pixellab.ai/mcp/images/58f6155c-5594-487b-90f1-3eb51b13c9ff/download",
+          "sourceReference": "gallery:0ea51c72-579e-5003-8b9a-7fb1a3860788",
+          "usedInCurrentControls": true,
+          "legacySourceJobId": "a6f18c5b-ce9e-410d-a43b-9b54fbf50ac0",
+          "legacySourceIndices": [
+            0,
+            1,
+            3,
+            5,
+            7,
+            8
+          ],
+          "peakFrame": 2,
+          "review": "Planning/Story/Dragon-v1/Production/Player-v2/reviews/hit-full.png"
+        }
+      },
+      "canonicalSourceJobId": "b6bef6dc-cd96-4909-85f4-64941281b01c",
+      "canonicalAssetId": "9b63a3e5-2973-5a18-bde9-65f29f042407"
+    }
+  ],
+  "license": "license.json",
+  "notes": [
+    "Run source pose/timing inherited from approved legacy dash. Free arm swing deliberately amplified per root/user direction.",
+    "DodgeDown reuses Attack14 rising slash, with parry runtime timing.",
+    "Stun and disabled Forward are outside this required bundle. No failed-v1 outfit reused."
+  ],
+  "artReviewStatus": "Ready for integration; source poses and final pixel repairs visually reviewed. Final Unity continuous-speed QA belongs to root.",
+  "visualReview": "visual-review.md"
+}

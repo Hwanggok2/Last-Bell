@@ -1,0 +1,592 @@
+{
+  "red_fox": {
+    "base": "Approved native64 candidate beside direct original hero, complete outline and anatomy. Transparent padding only.",
+    "idle": {
+      "status": "approved",
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "holdsMs": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "qa": "All selected feet pixels match. Gentle tail/ear motion only; source 3 tiny mouth extension excluded for consistency."
+    },
+    "attack": {
+      "status": "approved",
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "holdsMs": [
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        60,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30
+      ],
+      "contactFrame": 8,
+      "contactPoint": {
+        "x": 32,
+        "y": 55
+      },
+      "contactTimeMs": 400,
+      "durationMs": 700,
+      "qa": "Second generated take: all 17 frames inspected. Clear open-jaw preparation4-7 followed by closed-mouth bite contact8; clean recovery9-16. Every visible white/cream pixel belongs to teeth or fur; no detached effect. Root cross-review accepted. First take retained but excluded."
+    },
+    "stun": {
+      "status": "approved",
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "holdsMs": [
+        170,
+        170,
+        170,
+        170,
+        170,
+        170,
+        170,
+        170,
+        170
+      ],
+      "qa": "All nine original frames visually reviewed. Lowered head, drooping ears/shoulders distinguish exhausted state from alert Idle. Tiny weak movement on identical foot-band pixels throughout; no death collapse or effects."
+    },
+    "hit": "Static base with existing runtime white flash. No death clip."
+  },
+  "wild_boar": {
+    "base": "Approved native64 candidate beside direct original hero, complete outline and anatomy. Transparent padding only.",
+    "idle": {
+      "status": "approved",
+      "sourceFrames": [
+        0,
+        4,
+        5,
+        6,
+        8,
+        6,
+        5,
+        4
+      ],
+      "holdsMs": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "qa": "All selected feet pixels match. Small chest/ear/tail motion. Stray flecks in original sources 1,2,3,7 excluded."
+    },
+    "attack": {
+      "status": "approved",
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "holdsMs": [
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        25,
+        25,
+        25,
+        25,
+        60,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40
+      ],
+      "contactFrame": 10,
+      "contactPoint": {
+        "x": 28,
+        "y": 61
+      },
+      "contactTimeMs": 400,
+      "durationMs": 700,
+      "qa": "Second generated take: all 17 frames inspected. Lowered head and shoulder compression7-9, short forward snout/tusk drive at10-12, recover13-16. No detached white impact or speed lines, tusks remain attached. Root cross-review accepted. First take retained but excluded."
+    },
+    "stun": {
+      "status": "approved",
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "holdsMs": [
+        170,
+        170,
+        170,
+        170,
+        170,
+        170,
+        170,
+        170,
+        170
+      ],
+      "qa": "All nine original frames visually reviewed. Lowered head, drooping ears/shoulders distinguish exhausted state from alert Idle. Tiny weak movement on identical foot-band pixels throughout; no death collapse or effects."
+    },
+    "hit": "Static base with existing runtime white flash. No death clip."
+  },
+  "badger": {
+    "base": "Approved native64 candidate beside direct original hero, complete outline and anatomy. Transparent padding only.",
+    "idle": {
+      "status": "approved",
+      "sourceFrames": [
+        0,
+        3,
+        7,
+        8,
+        7,
+        3
+      ],
+      "holdsMs": [
+        300,
+        250,
+        250,
+        300,
+        250,
+        250
+      ],
+      "qa": "Four clean native poses in a 1.6s loop. All paws exactly fixed. Sources1,2,4,5,6 with contour lines or detached pixels excluded."
+    },
+    "attack": {
+      "status": "approved",
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        13,
+        14,
+        15,
+        16
+      ],
+      "holdsMs": [
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        60,
+        60,
+        60,
+        60,
+        60
+      ],
+      "contactFrame": 8,
+      "contactPoint": {
+        "x": 96,
+        "y": 69
+      },
+      "contactTimeMs": 400,
+      "durationMs": 700,
+      "qa": "Reviewed all 17 raw frames. Raised forepaw wind-up, short low forward rake at source8, recover via13-16. Reject9-12: generated detached white line/projectile, already covered by runtime effects. No other anatomy/clipping defects in selected frames."
+    },
+    "stun": {
+      "status": "approved",
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "holdsMs": [
+        170,
+        170,
+        170,
+        170,
+        170,
+        170,
+        170,
+        170,
+        170
+      ],
+      "qa": "All nine original frames visually reviewed. Lowered head, drooping ears/shoulders distinguish exhausted state from alert Idle. Tiny weak movement on identical foot-band pixels throughout; no death collapse or effects."
+    },
+    "hit": "Static base with existing runtime white flash. No death clip."
+  },
+  "lynx": {
+    "base": "Approved native64 candidate beside direct original hero, complete outline and anatomy. Transparent padding only.",
+    "idle": {
+      "status": "approved",
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        3,
+        2,
+        1
+      ],
+      "holdsMs": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "qa": "Second generated take: all five raw frames inspected. Paw pixels and ground baseline identical in every frame. Subtle ear/tail movement with solid antlers/head shape and fixed body size. Unique pixel poses: 5. No white outlines, fragments, or effects. Ping-pong loop 1.6s. First take preserved but not imported."
+    },
+    "attack": {
+      "status": "approved",
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "holdsMs": [
+        80,
+        80,
+        80,
+        80,
+        80,
+        60,
+        35,
+        35,
+        34,
+        34,
+        34,
+        34,
+        34
+      ],
+      "contactFrame": 5,
+      "contactPoint": {
+        "x": 33,
+        "y": 75
+      },
+      "contactTimeMs": 400,
+      "durationMs": 700,
+      "qa": "Retain compression and raised body wind-up0-4, contact on extended front paw/claws at source9, recover10-16. Exclude5-8 with detached white arc. Physical small claw tips at contact are attached to the paw."
+    },
+    "stun": {
+      "status": "approved",
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "holdsMs": [
+        170,
+        170,
+        170,
+        170,
+        170,
+        170,
+        170,
+        170,
+        170
+      ],
+      "qa": "All nine original frames visually reviewed. Lowered head, drooping ears/shoulders distinguish exhausted state from alert Idle. Tiny weak movement on identical foot-band pixels throughout; no death collapse or effects."
+    },
+    "hit": "Static base with existing runtime white flash. No death clip."
+  },
+  "mountain_goat": {
+    "base": "Approved native64 candidate beside direct original hero, complete outline and anatomy. Transparent padding only.",
+    "idle": {
+      "status": "approved",
+      "sourceFrames": [
+        0,
+        3,
+        4,
+        6,
+        7,
+        6,
+        4,
+        3
+      ],
+      "holdsMs": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "qa": "All selected feet pixels match. Gentle tail motion, fixed horn shape and body size. Sources 2,5 had a changed hoof pixel; source 1 back-outline noise excluded."
+    },
+    "attack": {
+      "status": "approved",
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "holdsMs": [
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        60,
+        48,
+        48,
+        48,
+        48,
+        48
+      ],
+      "contactFrame": 8,
+      "contactPoint": {
+        "x": 95,
+        "y": 47
+      },
+      "contactTimeMs": 400,
+      "durationMs": 700,
+      "qa": "Original horn-down head contact at source8, then recover12-16. Exclude9-11 generated white ring and debris. Horn count and shape retained; no silhouette clipping."
+    },
+    "stun": {
+      "status": "approved",
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "holdsMs": [
+        170,
+        170,
+        170,
+        170,
+        170,
+        170,
+        170,
+        170,
+        170
+      ],
+      "qa": "All nine original frames visually reviewed. Lowered head, drooping ears/shoulders distinguish exhausted state from alert Idle. Tiny weak movement on identical foot-band pixels throughout; no death collapse or effects."
+    },
+    "hit": "Static base with existing runtime white flash. No death clip."
+  },
+  "great_stag": {
+    "base": "Approved native64 candidate beside direct original hero, complete outline and anatomy. Transparent padding only.",
+    "idle": {
+      "status": "approved",
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        3,
+        2,
+        1
+      ],
+      "holdsMs": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "qa": "Second generated take: all five raw frames inspected. Paw pixels and ground baseline identical in every frame. Subtle ear/tail movement with solid antlers/head shape and fixed body size. Unique pixel poses: 4. No white outlines, fragments, or effects. Ping-pong loop 1.6s. First take preserved but not imported."
+    },
+    "attack": {
+      "status": "approved",
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "holdsMs": [
+        100,
+        100,
+        100,
+        100,
+        60,
+        22,
+        22,
+        22,
+        22,
+        22,
+        22,
+        22,
+        22,
+        22,
+        21,
+        21
+      ],
+      "contactFrame": 4,
+      "contactPoint": {
+        "x": 23,
+        "y": 42
+      },
+      "contactTimeMs": 400,
+      "durationMs": 700,
+      "qa": "One short antler/body thrust with clean source5 contact. Exclude source4 white speed streak. Retain all other wind-up and recovery frames; no extra antler branches or clipping."
+    },
+    "stun": {
+      "status": "approved",
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "holdsMs": [
+        170,
+        170,
+        170,
+        170,
+        170,
+        170,
+        170,
+        170,
+        170
+      ],
+      "qa": "All nine original frames visually reviewed. Lowered head, drooping ears/shoulders distinguish exhausted state from alert Idle. Tiny weak movement on identical foot-band pixels throughout; no death collapse or effects."
+    },
+    "hit": "Static base with existing runtime white flash. No death clip."
+  }
+}

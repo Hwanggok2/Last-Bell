@@ -1,0 +1,293 @@
+{
+  "version": "v0.8.4",
+  "date": "2026-10-23",
+  "provider": "PixelLab",
+  "terms": "https://pixellab.ai/termsofservice",
+  "assetLicense": "AI generated project assets under service account terms; not CC0 stock.",
+  "style": {
+    "original": "Client/Assets/Game/Art/Presentation/Clips/hero-v5-idle/01.png",
+    "styleConversionJob": "f9d4227f-d9fc-46c7-b420-1a4d3a104bae",
+    "palette": [
+      "#081820",
+      "#17303d",
+      "#34505b",
+      "#58747b",
+      "#8fa7a2",
+      "#c9d6c0",
+      "#f4e4bd",
+      "#d4a04a",
+      "#966338",
+      "#5b3d2e",
+      "#352a2b",
+      "#59445b",
+      "#8a6674",
+      "#42665a",
+      "#649685",
+      "#b6be69"
+    ],
+    "nativeSize": 64
+  },
+  "jobs": [
+    {
+      "id": "sewer_rat",
+      "base": "31f568ba-15cf-4b16-8348-86f7396cd09f",
+      "baseImageId": "2e4160fa-bdd8-565d-82c6-76f09fd15892",
+      "baseArgs": {
+        "description": "Giant sewer rat from a flooded medieval residential district. Strict left-facing side view, FOUR small angular paws, long sharp snout and one pale incisor, pointed ear, angular arched back, scruffy blue-grey fur formed from broad stepped pixel blocks. Long thin bare muted pink tail curled behind toward right, small rusty brass chain collar. Hostile animal, lean and ragged, not cute, not round. Compact silhouette 44 pixels wide, paws at y=51. One single full body enemy sprite, static ready pose, native 64x64 pixel art. Match the reference's coarse clean square pixel clusters and single deep navy outline. 1990s side scrolling action game with limited flat two-tone materials, no smooth gradients, no anti-aliasing, no painterly texture, no subpixel detail, no rim glow, no ground shadow, no particles, no text. Leave at least 8 pixels empty transparent margin all around for animation.",
+        "width": 64,
+        "height": 64,
+        "no_background": true,
+        "palette": [
+          "#081820",
+          "#17303d",
+          "#34505b",
+          "#58747b",
+          "#8fa7a2",
+          "#c9d6c0",
+          "#f4e4bd",
+          "#d4a04a",
+          "#966338",
+          "#5b3d2e",
+          "#352a2b",
+          "#59445b",
+          "#8a6674",
+          "#42665a",
+          "#649685",
+          "#b6be69"
+        ],
+        "max_colors": 16,
+        "style_image": {
+          "source_image_id": "c070ad07-4acb-52bc-a515-288b12877117",
+          "usage_description": "Copy only the coarse squared pixel-cluster size, crisp deep navy outline, angular steps and flat 2-tone material shading. Ignore the humanoid anatomy, clothes and sword. Background must be transparent."
+        },
+        "style_options": {
+          "color_palette": false,
+          "detail": true,
+          "outline": true,
+          "shading": true
+        }
+      },
+      "attack": "91c19736-7da1-45f8-bf9c-fbbe92302333",
+      "attackArgs": {
+        "description": "The rat lowers its shoulders and pulls its head back, then pushes from its hind legs and makes ONE short explosive bite toward LEFT. Jaws open and snap shut at maximum reach. Forepaws land, then the rat recoils to the exact initial ready stance. Tail follows the body. Stay inside the frame, no turning, no running cycle, no added particles. Preserve the exact coarse square pixel clusters, palette and dark outline of the input sprite. Keep all limbs and the weapon fully inside the transparent canvas.",
+        "direction": "west",
+        "view": "side",
+        "enhance_prompt": false,
+        "first_frame_base64": "local prepared/sewer_rat.png",
+        "last_frame_base64": "local prepared/sewer_rat.png",
+        "frame_count": 16,
+        "no_background": true,
+        "subject_description": "A lean blue-grey angular pixel-art sewer rat wearing a small rusty chain collar"
+      },
+      "stun": "5dbb4d7a-7ad0-48af-b893-3314063b4f94",
+      "stunArgs": {
+        "description": "A tiny dazed tremble in this crouched stunned pose. The chin stays close to the ground, the front legs remain buckled, and the back makes one small exhausted shiver. Tail remains limp on the ground. Do not stand upright, do not jump, do not attack, no particles or new symbols. Preserve the exact angular pixels, palette and size.",
+        "direction": "west",
+        "view": "side",
+        "enhance_prompt": false,
+        "first_frame_base64": "local prepared/sewer_rat-stun.png",
+        "last_frame_base64": "local prepared/sewer_rat-stun.png",
+        "frame_count": 8,
+        "no_background": true,
+        "subject_description": "A stunned angular blue-grey sewer rat with buckled forelegs and lowered chin"
+      },
+      "cancelledNarrowCanvas": {
+        "attack": "605a2d83-7734-40b3-a376-0e563c1590d9",
+        "stun": "a568c9cb-f1b5-4f94-b626-49c65afc90f5",
+        "reason": "Preflight bounds leave only 2 pixels of margin; reject before integration and add transparent padding without resampling."
+      },
+      "rejectedStun": {
+        "job": "7e437aa2-cdb9-4d06-9a3d-c35c61c5b9a8",
+        "reason": "Generated stun raised the head, reading as idle; replaced with buckled forelegs and chin lowered near ground."
+      },
+      "stunPoseJob": "4e24c836-6d31-4500-ab5d-d1f86b1a27cf",
+      "stunPosePrompt": "Change ONLY the pose to a clearly stunned rat: the front legs buckle so the chin almost touches the ground, the head hangs LOW, the back arches weakly, hind legs remain crouched, tail lies limp behind. Keep the nose facing LEFT, same body size and all original blue-grey fur colors, chain collar and pale tooth. Four legs, no extra limbs. Exact angular coarse pixel style and dark outline. Transparent background, no symbols, no effects.",
+      "stunDir": "stun-palette",
+      "nativeMotionJobs": {
+        "attack": "fe595787-0626-4079-9067-051a86fb11cf",
+        "stun": "65a18a74-4913-4bb6-af83-6dd3ce93956c"
+      },
+      "attackDir": "attack-palette",
+      "paletteCorrection": {
+        "provider": "PixelLab.reduce_colors",
+        "paletteImage": "prepared/sewer_rat.png",
+        "dithering": "none",
+        "note": "No resize, position change or silhouette edits. All motion frames use the actor base palette."
+      }
+    },
+    {
+      "id": "drowned_resident",
+      "base": "59dbf7af-8f9f-4c1c-b0a3-8de89bf0e02d",
+      "baseImageId": "e0f056fc-c527-56c2-bef0-5d6b38a3896f",
+      "baseArgs": {
+        "description": "The flood echo of an absent medieval townsperson, NOT a corpse. Strict left-facing side view, lean hunched figure in ragged teal long coat and brown trousers. Hollow dark featureless face underneath a squared hood, tiny pale water-light eye. Long straight broken wooden door plank held diagonally down-left as a club with BOTH hands. Two thin angular legs, flat boots. Broad flat blocks of teal cloth and wood, sparse angular tears, no strands/no gore. Height 43 pixels, boots at y=53. One single full body enemy sprite, static ready pose, native 64x64 pixel art. Match the reference's coarse clean square pixel clusters and single deep navy outline. 1990s side scrolling action game with limited flat two-tone materials, no smooth gradients, no anti-aliasing, no painterly texture, no subpixel detail, no rim glow, no ground shadow, no particles, no text. Leave at least 8 pixels empty transparent margin all around for animation.",
+        "width": 64,
+        "height": 64,
+        "no_background": true,
+        "palette": [
+          "#081820",
+          "#17303d",
+          "#34505b",
+          "#58747b",
+          "#8fa7a2",
+          "#c9d6c0",
+          "#f4e4bd",
+          "#d4a04a",
+          "#966338",
+          "#5b3d2e",
+          "#352a2b",
+          "#59445b",
+          "#8a6674",
+          "#42665a",
+          "#649685",
+          "#b6be69"
+        ],
+        "max_colors": 16,
+        "style_image": {
+          "source_image_id": "c070ad07-4acb-52bc-a515-288b12877117",
+          "usage_description": "Copy only the coarse squared pixel-cluster size, crisp deep navy outline, angular steps and flat 2-tone material shading. Ignore the humanoid anatomy, clothes and sword. Background must be transparent."
+        },
+        "style_options": {
+          "color_palette": false,
+          "detail": true,
+          "outline": true,
+          "shading": true
+        }
+      },
+      "attack": "c21ae099-ffaa-4ba8-a176-7b273b99c861",
+      "attackArgs": {
+        "description": "The figure grips its wooden plank with both hands, draws the plank back and upward, then makes ONE strong diagonal downward club strike toward LEFT with a forward lean. The plank reaches its farthest left position at impact. Both feet remain planted. Recover the same plank and both hands to the exact initial stance. Do not turn, do not change the weapon, no spinning, no effects. Preserve the exact coarse square pixel clusters, palette and dark outline of the input sprite. Keep all limbs and the weapon fully inside the transparent canvas.",
+        "direction": "west",
+        "view": "side",
+        "enhance_prompt": false,
+        "first_frame_base64": "local prepared/drowned_resident.png",
+        "last_frame_base64": "local prepared/drowned_resident.png",
+        "frame_count": 16,
+        "no_background": true,
+        "subject_description": "An angular teal hooded flood-echo holding one brown wooden door plank with both hands"
+      },
+      "stun": "0fef3d8d-bf2b-4408-b7b9-e4fd7d1768c6",
+      "stunArgs": {
+        "description": "A tiny dazed tremble while holding this weakened slumped pose. The head and shoulders droop and sway one or two pixels. Stay collapsed and exhausted throughout the whole loop. Do not stand upright, do not attack, do not turn, no new particles or symbols. Keep the exact input colors, angular pixel clusters, silhouette and size.",
+        "direction": "west",
+        "view": "side",
+        "enhance_prompt": false,
+        "first_frame_base64": "local prepared/drowned_resident-stun.png",
+        "last_frame_base64": "local prepared/drowned_resident-stun.png",
+        "frame_count": 8,
+        "no_background": true,
+        "subject_description": "An angular teal hooded flood-echo holding one brown wooden door plank with both hands in a visibly stunned slumped pose"
+      },
+      "cancelledNarrowCanvas": {
+        "attack": "3de7f4bf-f447-4341-81d5-40df3804076c",
+        "stun": "9b54bc78-9b5c-42e9-99fb-47950514e935",
+        "reason": "Preflight bounds leave only 2 pixels of margin; reject before integration and add transparent padding without resampling."
+      },
+      "rejectedStun": {
+        "job": "702763dd-4eb6-4cc0-9bd2-09babcd9bfa2",
+        "reason": "Motion was too close to idle and did not clearly communicate weakness; replaced with a bowed, slumped dedicated stun pose."
+      },
+      "stunPoseJob": "2b6182af-2bf7-4c64-a766-cd8b33fd41c9",
+      "stunPosePrompt": "Change ONLY the pose to a clearly stunned slumped pose: knees deeply bent, shoulders and hood drooped forward LEFT by 8 pixels, arms hanging weakly with the same wooden plank pointed at the ground. Keep both feet on the same ground line. Same character, exact coarse pixel style, same colors/outline and same size. Leave the transparent canvas and all margins. No new symbols, no effects, no death, no new anatomy.",
+      "stunDir": "stun-palette",
+      "nativeMotionJobs": {
+        "attack": "8cea5d76-7f6b-4ff0-b935-3171f123f063",
+        "stun": "f70d0983-5647-4bf4-8081-c8d1c4de6086"
+      },
+      "attackDir": "attack-palette",
+      "paletteCorrection": {
+        "provider": "PixelLab.reduce_colors",
+        "paletteImage": "prepared/drowned_resident.png",
+        "dithering": "none",
+        "note": "No resize, position change or silhouette edits. All motion frames use the actor base palette."
+      }
+    },
+    {
+      "id": "water_wraith",
+      "base": "a3d663ab-8fa5-4c5b-aa16-1e1aeaa398d4",
+      "baseImageId": "cc2293c7-3889-5987-b67b-f78e9c010cf0",
+      "baseArgs": {
+        "description": "Water-mist wraith formed from stolen time in a flooded medieval district. Strict left-facing side view. Tall narrow angular teal hood and jagged cloak, hollow dark face with ONE small amber eye. Small square brass house lantern embedded in the chest. Two angular claw-like arms extended left and three tapering stair-step water tendrils instead of legs. Asymmetric jagged silhouette, not rounded/cute, no smoke blur. Large flat cyan-teal pixel clusters, at most 3 shades for cloak. Height 45 pixels, bottom tendril at y=54. One single full body enemy sprite, static ready pose, native 64x64 pixel art. Match the reference's coarse clean square pixel clusters and single deep navy outline. 1990s side scrolling action game with limited flat two-tone materials, no smooth gradients, no anti-aliasing, no painterly texture, no subpixel detail, no rim glow, no ground shadow, no particles, no text. Leave at least 8 pixels empty transparent margin all around for animation.",
+        "width": 64,
+        "height": 64,
+        "no_background": true,
+        "palette": [
+          "#081820",
+          "#17303d",
+          "#34505b",
+          "#58747b",
+          "#8fa7a2",
+          "#c9d6c0",
+          "#f4e4bd",
+          "#d4a04a",
+          "#966338",
+          "#5b3d2e",
+          "#352a2b",
+          "#59445b",
+          "#8a6674",
+          "#42665a",
+          "#649685",
+          "#b6be69"
+        ],
+        "max_colors": 16,
+        "style_image": {
+          "source_image_id": "c070ad07-4acb-52bc-a515-288b12877117",
+          "usage_description": "Copy only the coarse squared pixel-cluster size, crisp deep navy outline, angular steps and flat 2-tone material shading. Ignore the humanoid anatomy, clothes and sword. Background must be transparent."
+        },
+        "style_options": {
+          "color_palette": false,
+          "detail": true,
+          "outline": true,
+          "shading": true
+        }
+      },
+      "attack": "7ee6f420-1181-487f-a228-292617a0e6aa",
+      "attackArgs": {
+        "description": "The wraith briefly draws both claw hands toward its glowing chest lantern, then makes ONE sharp claw thrust to the LEFT by leaning its hood and torso forward and extending the arms. The three lower water tendrils trail behind without becoming legs. After maximum reach, return hands, torso and tendrils to the exact initial hover pose. No turn, no teleport, no smoke blur, no extra particles. Preserve the exact coarse square pixel clusters, palette and dark outline of the input sprite. Keep all limbs and the weapon fully inside the transparent canvas.",
+        "direction": "west",
+        "view": "side",
+        "enhance_prompt": false,
+        "first_frame_base64": "local prepared/water_wraith.png",
+        "last_frame_base64": "local prepared/water_wraith.png",
+        "frame_count": 16,
+        "no_background": true,
+        "subject_description": "An angular teal water wraith with three water tendrils and a brass chest lantern"
+      },
+      "stun": "2d79f535-0e83-4697-8868-74fd695407e6",
+      "stunArgs": {
+        "description": "A tiny dazed tremble while holding this weakened slumped pose. The head and shoulders droop and sway one or two pixels. Stay collapsed and exhausted throughout the whole loop. Do not stand upright, do not attack, do not turn, no new particles or symbols. Keep the exact input colors, angular pixel clusters, silhouette and size.",
+        "direction": "west",
+        "view": "side",
+        "enhance_prompt": false,
+        "first_frame_base64": "local prepared/water_wraith-stun.png",
+        "last_frame_base64": "local prepared/water_wraith-stun.png",
+        "frame_count": 8,
+        "no_background": true,
+        "subject_description": "An angular teal water wraith with three water tendrils and a brass chest lantern in a visibly stunned slumped pose"
+      },
+      "cancelledNarrowCanvas": {
+        "attack": "7e97e055-e083-4082-acb1-e7ff1ab197b7",
+        "stun": "6e064853-470e-4721-a36d-11887171bb1f",
+        "reason": "Preflight bounds leave only 2 pixels of margin; reject before integration and add transparent padding without resampling."
+      },
+      "rejectedStun": {
+        "job": "1869cb16-edd0-470d-a727-f847e998db40",
+        "reason": "Motion was too close to idle and did not clearly communicate weakness; replaced with a bowed, slumped dedicated stun pose."
+      },
+      "stunPoseJob": "e17f0762-9005-4068-8774-5ea283fd0ef0",
+      "stunPosePrompt": "Change ONLY the pose to a clearly stunned weak pose: hood and torso bend down toward LEFT, both claw hands hang limply downward, three water tendrils bunch and sag so the whole silhouette is visibly shorter. Keep the brass lantern attached at the chest and keep the lowest tendril at the same height. Same character, coarse pixels, exact palette and dark outline. Transparent background, no symbols, no effects, no death.",
+      "stunDir": "stun-palette",
+      "nativeMotionJobs": {
+        "attack": "1bd20d67-0497-4bcb-8f38-432f7d4174c4",
+        "stun": "4c791d97-8252-416e-840a-497c6a1c4270"
+      },
+      "attackDir": "attack-palette",
+      "paletteCorrection": {
+        "provider": "PixelLab.reduce_colors",
+        "paletteImage": "prepared/water_wraith.png",
+        "dithering": "none",
+        "note": "No resize, position change or silhouette edits. All motion frames use the actor base palette."
+      }
+    }
+  ]
+}

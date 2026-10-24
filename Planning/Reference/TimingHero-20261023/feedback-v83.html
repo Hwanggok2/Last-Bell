@@ -1,0 +1,68 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Last Bell v8.3 · 전장별 몬스터와 전투 재미 분석</title>
+<style>@font-face{font-family:neo;src:url('../../../Client/Assets/Game/Art/Fonts/NeoDunggeunmoPro-Regular.ttf')}*{box-sizing:border-box}body{margin:0;background:#0d1821;color:#e6dfce;font:16px/1.8 system-ui,sans-serif}main{max-width:1160px;margin:auto;padding:44px 24px 100px}h1,h2,h3{line-height:1.4}h1{font:38px neo}h2{margin-top:60px;color:#f1c574;font-size:27px}h3{font-size:20px}p{max-width:970px}.muted,small{color:#a3b2ba}.tag{display:inline-block;padding:4px 12px;background:#274c46;color:#b6e5ca;border-radius:4px;margin-right:8px}.proposal{background:#493e29;color:#edcc8e}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}.card{padding:20px;background:#172631;border:1px solid #34434b;border-radius:8px}.card img{max-width:100%}figure{margin:0}figcaption{color:#a3b2ba;padding:8px 0}a{color:#8cd5db}table{width:100%;border-collapse:collapse;margin:18px 0;font-size:15px}td,th{text-align:left;padding:12px;border-bottom:1px solid #35444c;vertical-align:top}th{color:#eec781;background:#1b2d38}.scroll{overflow-x:auto}img.screen{width:100%;border:1px solid #53616a;image-rendering:pixelated}nav{display:flex;gap:18px;flex-wrap:wrap;margin:30px 0}.sprite{display:block;width:256px;height:256px;image-rendering:pixelated;background:#192830;margin:auto}.callout{border-left:4px solid #84cfb6;padding:18px 24px;background:#18312f}.stat{font:44px neo;color:#f5c267}button,select,input{font:inherit}button,select{background:#263b45;color:#e6dfce;border:1px solid #76969b;padding:8px 12px;border-radius:4px}input{accent-color:#b5dcc7}label{display:block;margin:12px 0}video{width:100%}svg{width:100%;height:auto}.small{font-size:14px}.review img{width:100%}.nowrap{white-space:nowrap}</style>
+<main><div class="tag">게임 적용 v0.8.3</div><span class="muted">2026.10.23 · 사용자 제공 영상 + 현재 코드 + 1차 자료</span>
+<h1>적을 기억하고,<br>잘 피한 다음의 공격을 기다리게 만들기</h1>
+<p>이번 변경은 골드·체력 UI와 전장별 몬스터를 실제 게임에 반영했다. 재미 분석의 우선순위는 <b>초반 처치 시간 → 입력 반응 → 완벽 회피의 보상 → 효과의 강약</b>이다. 아래 밸런스·입력 개선 수치는 다음 비교 실험안이며 이번 빌드에 섞어 적용하지 않았다.</p>
+<nav><a href="#build">적용 화면</a><a href="#monsters">몬스터·모션</a><a href="#diagnosis">재미 차이</a><a href="#next">다음 실험</a><a href="#evidence">근거·검수</a></nav>
+
+<h2 id="build">이번 게임에 반영한 내용</h2>
+<div class="grid"><div class="card"><h3>골드와 처치 보상</h3><p>선택·강화·전투·결과 화면의 ‘현상금’을 ‘골드’로 통일했다. 적 처치 시 실제 지급액을 중앙 상단에 <b>+숫자</b>로 1.1초 표시한다. 행운 보너스도 포함하며, 표시 자체는 재화를 다시 지급하지 않는다.</p><p>플레이어 타격 횟수 콤보는 제거했다. 종으로 나타내는 적의 연속 공격과 완벽 회피 판정은 유지한다.</p></div>
+<div class="card"><h3>작고 읽기 쉬운 체력 바</h3><p>960×540 기준 플레이어 126×16, 적 144×16. 어두운 금속 프레임 안에 플레이어는 옥색, 적은 적갈색으로 구분한다. 실제 HP 비율을 즉시 표시하며 보스도 같은 하단 자리를 쓴다.</p><p>레벨·이름은 적 체력 아래에 남겼다. 공격·회피 중에도 체력 바가 몸을 따라 흔들리지 않는다.</p></div></div>
+<div class="grid" style="margin-top:20px"><figure><img class="screen" src="../../Evidence/Reference-v82/desktop/08-combat.png"><figcaption>변경 전 v8.2 · 현상금, 굵은 막대, 성 밖 병사</figcaption></figure><figure><img class="screen" src="../../Evidence/Feedback-v83/desktop/v83-stage-01.png"><figcaption>변경 후 Windows 실제 화면 · 골드, 작은 체력 바, 들개</figcaption></figure></div>
+<figure style="margin-top:20px"><img class="screen" src="../../Evidence/Feedback-v83/desktop/v83-gold-reward.png"><figcaption>실제 처치 보상 표시. 검수용 적 HP를 1로 설정한 장면이라 피해 숫자는 1이며, +22는 해당 세션에 실제 지급된 골드다.</figcaption></figure>
+<details><summary>배치 명세 · Safe Area 기준</summary><p>화면은 가로형. 바 좌표는 960×540 중앙 전투 영역 기준 플레이어 (312,390,126,16), 적 (603,390,144,16). 골드 팝업은 1084×540 기준 (382,160,320,44)를 Safe Area에 비례 배치한다. 회피·공격 터치 영역과 겹치지 않고, 상단 종·기절 게이지 아래에 둔다. 좁은 640×360 렌더도 별도로 검수한다. 글꼴은 네오둥근모를 유지한다.</p>
+<svg viewBox="0 0 960 540" role="img" aria-label="전투 화면 영역 배치"><rect width="960" height="540" fill="#101a22"/><g fill="none" stroke="#b4c0c4" stroke-width="2"><rect x="14" y="78" width="230" height="38"/><rect x="390" y="50" width="180" height="90"/><rect x="338" y="160" width="284" height="44"/><rect x="250" y="220" width="510" height="145"/><rect x="312" y="390" width="126" height="16"/><rect x="603" y="390" width="144" height="16"/><rect x="560" y="428" width="230" height="44"/><rect x="24" y="334" width="170" height="190"/><rect x="815" y="376" width="120" height="132"/></g><g fill="#e1e3dd" font-size="20" text-anchor="middle"><text x="130" y="104">획득 골드</text><text x="480" y="90">종 / 기절</text><text x="480" y="190">+321</text><text x="505" y="290">캐릭터 · 예고 · 적</text><text x="674" y="455">Lv.1 들개</text><text x="110" y="445">회피</text><text x="875" y="445">공격</text></g></svg></details>
+
+<h2 id="monsters">전장별 몬스터와 공격</h2>
+<p>1~9는 성 밖 야생 동물, 10은 기존 성문 문지기. 11~19는 기존 스토리의 <b>물에 잠긴 사슬 주거구</b>에 맞춘 쥐·익사한 주민·물안개 망령, 20은 기존 사슬 간수장이다. 기존 몬스터 원본은 삭제하지 않았으며 10·20 보스의 아트와 수치는 유지했다. 이번에 새 배경까지 교체한 것은 아니다.</p>
+<div class="grid" id="creatures"></div>
+<div class="scroll"><table><thead><tr><th>스테이지</th><th>적 구성</th><th>읽어야 할 행동</th></tr></thead><tbody>
+<tr><td>1 / 4 / 7</td><td>들개</td><td>낮게 물기·전방 물기. 금빛 영역에 따라 위 또는 뒤로 피한다.</td></tr>
+<tr><td>2 / 6 / 9</td><td>회색 늑대</td><td>몸을 낮췄다가 도약해 물기. 전방 찌르기형·하단 위협.</td></tr>
+<tr><td>3 / 5 / 8</td><td>불곰 · 5는 중간보스</td><td>어깨를 올렸다가 앞발 강타. 상단은 아래 방향키로 쳐내기, 하단은 점프. 5에서 연속 공격 안내.</td></tr>
+<tr><td>10</td><td>기존 성문 문지기</td><td>기존 검격과 성문 연출 유지.</td></tr>
+<tr><td>11 / 14 / 17</td><td>하수구 거대쥐</td><td>낮은 자세와 짧은 앞니 돌진. 하단·전방.</td></tr>
+<tr><td>12 / 15 / 18</td><td>익사한 주민 · 15는 중간보스</td><td>부서진 문짝을 들어 내리치는 몽둥이 공격. 상단·전방.</td></tr>
+<tr><td>13 / 16 / 19</td><td>물안개 망령</td><td>가슴의 등불은 남고 물결 팔이 휘어진다. 세 방향의 공격 예고를 사용.</td></tr>
+<tr><td>20</td><td>기존 사슬 간수장</td><td>주거구를 봉쇄한 수문장. 기존 보스 유지.</td></tr>
+</tbody></table></div>
+<p class="small">각 새 적은 공격 1개, 기절 1개, 정지 기본 포즈로 구성했다. 피격은 현재 자세를 유지한 흰색 플래시(최초 45ms, 이후 75ms 복귀)이며 사망 클립은 추가하지 않았다. 방향마다 새 공격을 재생하는 구조가 아니라 같은 공격 클립과 방향 예고를 조합한다. 표시된 모션은 Unity에 사용한 원본 프레임이다.</p>
+<p>동물의 금속 무기 궤적을 제거하고 먼지·발톱 계열로, 주민은 나무색으로, 망령은 청록 물결로 구분했다. 실제 타격·쳐내기와 회피 성공에 같은 충격음을 겹치던 부분을 분리했다. 작은 적에게 검격·피해 숫자·파편이 몸통 높이에서 나타나도록 맞췄다.</p>
+
+<h2 id="diagnosis">레퍼런스가 재미있게 느껴지는 이유와 현재 차이</h2>
+<div class="callout"><b>가장 큰 차이로 의심되는 것은 ‘같은 입력을 몇 번 해야 장면이 바뀌는가’다.</b><p>현재 기본 공격력 10 / 첫 적 체력 120은 치명타·기절 보너스 없이 12타다. 영상에서 기록한 초반 공격력 18~20, 첫 적 체력 약 45~55라는 표본을 적용하면 약 3타다. 레퍼런스 HP는 체력 바 픽셀 추정이며 내부 수치를 확인한 것은 아니다. 재미의 원인 역시 실험 전 가설이다.</p></div>
+<div class="scroll"><table><thead><tr><th>축</th><th>영상·코드 근거</th><th>우리 게임에서의 의미</th></tr></thead><tbody>
+<tr><td>처치와 다음 적</td><td>레퍼런스 158~166초의 첫 전투와 앞선 능력치 화면. 현재 첫 적은 12타, 공격 시작부터 최단 5.7초.</td><td>초반부터 강화 전에는 같은 공격을 길게 반복한다. ‘피했다 → 때렸다 → 쓰러졌다 → 다음 실루엣’이라는 작은 보상 주기가 길어질 수 있다.</td></tr>
+<tr><td>공격 주기</td><td>레퍼런스 12층: 접촉 약 294.9초와 300.6~300.7초, 약 5.7~5.8초. 현재 일반 적은 접촉 후 대기 4.8초 + 예고 0.9초 = 5.7초.</td><td>단순히 레퍼런스 적이 훨씬 빨리 공격한다고 결론 내릴 수 없다. 속도 변경보다 그 사이의 유효 타격 횟수와 선택을 먼저 볼 필요가 있다.</td></tr>
+<tr><td>성공의 가치</td><td>영상에서 Just!·Chance!·기절 후 공격 기회가 구별된다. 현재 완벽 회피는 기절량 40(일반 20), 1.2초 반격 가능, 즉시 원위치 복귀를 준다.</td><td>우리 반격에는 별도 피해 배율이 없다. 파동이 커도 한 번의 반격으로 체력이 얼마나 줄었는지 차이가 약할 수 있다. 기절 보상은 존재하므로 이를 더 읽기 쉽게 드러내야 한다.</td></tr>
+<tr><td>입력 수용</td><td>현재 PointerCommand는 누르는 순간만 전달한다. 공격 쿨다운 500ms 중 누른 입력을 저장하는 버퍼가 없다. 레퍼런스의 내부 버퍼 유무는 영상으로 알 수 없다.</td><td>버튼을 눌렀는데 아무 일도 없는 경험이 생길 수 있다. 손의 박자와 쿨다운이 조금 어긋나는 모바일에서 우선 측정할 후보.</td></tr>
+<tr><td>적의 개성</td><td>영상은 식물·거북·나무·골렘·늑대인간 등 실루엣이 바뀐다. 기존 우리 적은 금빛 인간형과 공통 금속 효과의 비중이 컸다.</td><td>새 전장에 갔다는 감각과 공격을 학습할 단서가 약했다. 이번 동물/침수 주민 교체와 종별 예고 풀로 일부 해결했다.</td></tr>
+<tr><td>타격 강약</td><td>현재 흰색 플래시 120ms, 피해 숫자 650ms, 치명타 80ms/처치 120ms 흔들림은 이미 있다. 짧은 정지 효과는 없다.</td><td>파티클을 더 넣기만 하면 정보가 겹친다. 일반 타격·완벽 반격·처치의 우선순위를 나누고 실제 접촉에 맞추는 편이 낫다.</td></tr>
+<tr><td>진행 동기</td><td>영상의 용사 선택·스킬·유물은 다음 판의 플레이 선택을 만든다. 현재 구현에서 실제 사용 가능 용사는 온 1명이다.</td><td>숫자 강화 외의 새로운 플레이 동기가 적다. 다음 용사는 외형보다 회피 후 보상 방식이 달라져야 한다. 전투 자체 검증 후 확장할 항목.</td></tr>
+</tbody></table></div>
+<p class="muted">표본 타임스탬프는 100~200ms 간격으로 추출한 프레임 기준이며 입력 지연·정확한 내부 판정은 측정하지 못했다. 이번 관찰만으로 전체 이용자의 재미 원인을 단정하지 않는다.</p>
+<div class="grid"><figure><video controls preload="none" src="clips/reference-normal.mp4"></video><figcaption>사용자 제공 영상 · 일반 적의 예고와 공격 주기</figcaption></figure><figure><video controls preload="none" src="clips/reference-combo.mp4"></video><figcaption>사용자 제공 영상 · 연속 공격과 회피 흐름</figcaption></figure></div>
+
+<h2 id="next">다음 실험안 · 아직 게임에 적용하지 않은 수치</h2>
+<div class="grid"><div class="card"><span class="tag proposal">우선 1</span><h3>초반 처치 횟수 비교</h3><p>첫 적 HP 120 / 60 / 40, 기본 공격력 10으로 비교한다. 즉 12 / 6 / 4타. 성장 후 초반은 1~3타까지 줄고, 중후반은 다시 8~14타로 길어지는 곡선을 검토한다.</p><p>기존 요청인 10단위 급격한 난이도·강화비 상승은 유지한다. 단, 11층 진입 전 예상 강화 수준에서 몇 대 맞고 죽는지를 함께 검증해야 ‘수치 벽’과 ‘어려운 전투’를 구분할 수 있다.</p></div>
+<div class="card"><span class="tag proposal">우선 2</span><h3>공격 입력 80ms 버퍼</h3><p>쿨다운 종료 직전 누른 공격 1개만 최대 80ms 보관해 준비되는 즉시 실행한다. 회피는 자동 예약하지 않는다. 일시정지·사망·스테이지 전환·새 회피 입력 시 예약을 비운다.</p><p>공격 간격 500ms와 피해 판정은 그대로 두고, 무효 입력 비율이 줄어드는지만 먼저 비교한다. 자동 연타는 별도 안건이다.</p></div>
+<div class="card"><span class="tag proposal">우선 3</span><h3>완벽 반격의 한 방</h3><p>완벽 회피 후 첫 반격 1회에만 피해 1.4배를 비교 실험한다. 기절 피해·치명타와 함께 적용될 때 상한을 계산하고, 짧은 ‘반격’ 표시와 버튼 강조를 성공 후에만 켠다.</p><p>적 연속 공격 도중에는 아직 남은 종을 계속 보여 준다. 무턱대고 공격하도록 유도해 다음 타격을 맞게 만들지 않는다.</p></div>
+<div class="card"><span class="tag proposal">우선 4</span><h3>접촉 순간의 강약</h3><p>일반 타격은 기존 플래시, 반격·치명타는 35~45ms, 처치는 55ms의 짧은 정지를 실험한다. 정지를 넣는다면 판정·적 예고·애니메이션을 같은 시계로 멈추고, UI만 별도 시계를 사용한다.</p><p>경고 파동만 계속 움직이거나 완벽 회피 판정이 짧아지는 구현은 피한다. 접근성 옵션에서 흔들림·섬광을 줄여도 성공을 알 수 있어야 한다.</p></div></div>
+<div class="card" style="margin-top:18px"><h3>첫 전투 반복 횟수 계산기</h3><p class="muted">설명용 비교이며 게임 설정을 바꾸지 않는다. 방어 행동·치명타·기절·이동을 제외한 최단 공격 시간이다.</p><label>적 HP <input id="hp" type="range" min="20" max="160" step="10" value="120"> <output id="hpout">120</output></label><label>공격력 <input id="atk" type="range" min="10" max="50" step="2" value="10"> <output id="atkout">10</output></label><span class="stat" id="ttk"></span></div>
+<h3>통과 여부를 판단할 플레이테스트</h3><p>5명에게 순서를 섞어 동일한 첫 5스테이지를 플레이하게 한다. 처음 처치까지 걸린 시간, 1분당 무효 공격 입력, ‘방향을 틀림/타이밍을 틀림’의 비율, 완벽 회피 후 실제 반격 사용률, 강화를 고른 이유를 기록한다. 재미 점수 하나보다 <b>“공격이 안 나갔다”, “언제 때려야 하는지 모르겠다”, “적이 너무 오래 버틴다”</b>가 어느 변경에서 줄었는지 확인한다. 제안 수치가 좋아 보인다는 이유만으로 전 스테이지에 확장하지 않는다.</p>
+
+<h2 id="evidence">근거와 검수</h2>
+<p>게임 감각 연구는 물리적 일관성, 사건의 중요성을 전달하는 피드백, 플레이어 의도의 실행 지원을 나눠 다룬다. 이 구분을 적용해 이번 분석도 그림·효과뿐 아니라 입력과 보상 흐름을 함께 검토했다. <a href="https://arxiv.org/abs/2011.09201">Pichlmair &amp; Johansen, Designing Game Feel. A Survey</a></p>
+<p>흔들림은 사건의 강도에 따라 다르게 주고 시간이 지나며 감쇠시켜야 강약을 만들 수 있다. 모든 공격에 같은 큰 흔들림을 추가하는 안은 우선순위에서 제외했다. <a href="https://media.gdcvault.com/gdc2016/Presentations/Eiserloh_Squirrel_JuicingYourCameras.pdf">Squirrel Eiserloh, Juicing Your Cameras with Math, GDC 2016, pp.9–17</a></p>
+<p class="small">GDC의 Juice It or Lose It / Don't Juice It or Lose It은 관련 자료로 확인했으나 확인 시 Vault가 점검 페이지로 연결되어 강연 전문을 본 근거로 사용하지 않았다.</p>
+<ul><li>영상 원본: C:\Users\JW\Videos\LastBell\Screen_Recording_20261023_130328_TimingHero.mp4 · <a href="analysis.json">기존 프레임별 관찰 기록</a></li><li>현재 수치 원본: <a href="../../../GameData/mvp-catalog.json">GameData/mvp-catalog.json</a> · HP·공격력·보상·강화비·판정 시간은 이번 변경에서 유지.</li><li>새 몬스터: <a href="../../Story/Monster-v83/jobs.json">생성 작업·프롬프트 기록</a> / <a href="../../Story/Monster-v83/review.json">프레임 검수·접촉 프레임</a></li><li>픽셀랩 공식 약관 1.3·3.3에서 생성물의 상업적 사용을 허용한다. CC0 자산으로 표기하지 않았으며 제공한 스타일 이미지는 프로젝트의 기존 캐릭터다. <a href="https://www.pixellab.ai/termsofservice">PixelLab 이용약관</a> (확인 2026.10.23)</li><li><a href="../../Evidence/Feedback-v83/verification.json">최종 빌드·테스트 기록</a> · 실제 휴대폰 터치 감각은 별도 실기 테스트가 필요하다.</li></ul>
+<div class="grid"><figure><img class="screen" src="../../Evidence/Feedback-v83/mobile/v83-stage-13.png"><figcaption>640×360 Windows 렌더 · 물안개 망령</figcaption></figure><figure><img class="screen" src="../../Evidence/Feedback-v83/desktop/v83-stage-10.png"><figcaption>기존 문지기 보존 · 보스도 하단 체력</figcaption></figure></div>
+<p><a href="../../../Builds/Windows/LastBellMvp.exe">Windows 실행 파일</a> · <a href="../../../Builds/LastBellMvp-Windows.zip">Windows 압축 배포본</a></p>
+</main><script>
+const creatures=[['wild_dog','들개','짧은 물기'],['grey_wolf','회색 늑대','도약 물기'],['brown_bear','불곰','앞발 강타'],['sewer_rat','하수구 거대쥐','앞니 돌진'],['drowned_resident','익사한 주민','문짝 내려치기'],['water_wraith','물안개 망령','물결 발톱']];
+const root='../../Story/Monster-v83/';
+document.querySelector('#creatures').innerHTML=creatures.map(([id,name,move])=>`<article class="card"><h3>${name}</h3><img class="sprite" src="${root}${id}-attack.gif" alt="${name} 공격 모션"><p>${move}</p><select aria-label="${name} 모션" data-id="${id}"><option value="attack">공격</option><option value="stun">기절</option><option value="hit">피격 · 흰색 복귀</option></select><p class="small"><a href="${root}${id}-review.png">전체 프레임 검수판</a></p></article>`).join('');
+document.querySelectorAll('select').forEach(el=>el.addEventListener('change',()=>{const img=el.parentElement.querySelector('img');img.src=el.value==='hit'?root+'raw/'+el.dataset.id+'.png':root+el.dataset.id+'-'+el.value+'.gif';if(img.flash)img.flash.cancel();if(el.value==='hit')img.flash=img.animate([{filter:'brightness(0) invert(1)',offset:0},{filter:'brightness(0) invert(1)',offset:.03},{filter:'none',offset:.08},{filter:'none',offset:1}],{duration:1500,iterations:Infinity});}));
+function calc(){const hp=+document.querySelector('#hp').value,atk=+document.querySelector('#atk').value,hits=Math.ceil(hp/atk);document.querySelector('#hpout').textContent=hp;document.querySelector('#atkout').textContent=atk;document.querySelector('#ttk').textContent=hits+'타 · '+(.2+(hits-1)*.5).toFixed(1)+'초';}document.querySelectorAll('input').forEach(x=>x.oninput=calc);calc();
+</script></html>

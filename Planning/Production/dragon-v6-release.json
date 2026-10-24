@@ -1,0 +1,888 @@
+{
+  "version": "0.9.6",
+  "dataVersion": "mvp1.18.0",
+  "buildOptions": "None",
+  "extraScriptingDefines": [
+    "LASTBELL_PLAYTEST_092"
+  ],
+  "builtAtUtc": "2026-10-24T17:04:50.8934731Z",
+  "profile": "persistentDataPath/Playtests/dragon-0.9.2; explicit save-dir takes precedence",
+  "firstStart": "Existing prologue/selection flow -> Stage1 tutorial; subsequent launches resume this new journey",
+  "oldUserSavePreserved": true,
+  "qaProbeExcluded": true,
+  "zipIntegrity": "pass",
+  "executionEvidence": "Observed build targeted QA; ordinary release verified as package, not separately played",
+  "qaReport": "Planning/QA/dragon-v6-result-20261025.md",
+  "files": [
+    {
+      "path": "Builds/Dragon-v6/D3D12/D3D12Core.dll",
+      "bytes": 4725304,
+      "sha256": "625bd40005b1c3708695d5256ecf230d278e6b8edba5a88af70f3d91324f3052"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp.exe",
+      "bytes": 667648,
+      "sha256": "4e33a14c3ec94bf336fcdef8e56429f865a2bf5fef67261aa64713b15bf75d0b"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/app.info",
+      "bytes": 31,
+      "sha256": "600b008c7fa825f5373b5af5db261aa2136094702cd26a030e6c42f22c7b729c"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/boot.config",
+      "bytes": 156,
+      "sha256": "fbdf3035eebad992e24fd002387f18f3ac659c706939e43138619a761ad2cd85"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/globalgamemanagers",
+      "bytes": 36212,
+      "sha256": "69fb31f9e3093ca5b2f7de9abd7d230f5abd0d9a99b6b15c68b0e44fbe7eca06"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/globalgamemanagers.assets",
+      "bytes": 30404,
+      "sha256": "acbe19ee55a4f0db3bda5f2c3e3cd7d88ea239b181595b074dbf0f79c614878d"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/globalgamemanagers.assets.resS",
+      "bytes": 2798288,
+      "sha256": "ebf0f91664c0aa69e3b92e93d4d4e6feae1a9152529b0efeac047e3c9c3b0fc0"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/level0",
+      "bytes": 482764,
+      "sha256": "78c7523c319c70f29d17d3c63e26a45ae25e28f670d1b81d737247741153546a"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/LastBell.Runtime.dll",
+      "bytes": 323584,
+      "sha256": "e66ade648f5a60387a6d2bc35dfaf401b30c1b618f1362a2c230799e4dbff4d2"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/MCPForUnity.Runtime.dll",
+      "bytes": 31232,
+      "sha256": "76475907794728d6d8985f2af3143a50760b14e65af76adb069ba23f37b3d75d"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/Mono.Security.dll",
+      "bytes": 241152,
+      "sha256": "618009319dbf3ae374f9b5dc0d0522e1e1bdd172200c120a5471747b7991a584"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/mscorlib.dll",
+      "bytes": 4632064,
+      "sha256": "6c76e06e6d44cf0f39bf59e6a90770968b70093ad4c1572dfbc5e46e431c5fbf"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/netstandard.dll",
+      "bytes": 90112,
+      "sha256": "6ae62e082dc494a2433984177f60ca4db5fae69b1f360a8b33754172b310b8c5"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/Newtonsoft.Json.dll",
+      "bytes": 691712,
+      "sha256": "a56146202232958f46bd6a28b5a7da166aea123ee0d646735a46e5c341dfbf1f"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/System.ComponentModel.Composition.dll",
+      "bytes": 257024,
+      "sha256": "0c3e81771a5fe9657bea02887996de72606c3cb247e4fbe413f743f40e2af244"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/System.Configuration.dll",
+      "bytes": 124928,
+      "sha256": "04907729e87a101e62d3a5c93cfa16688bee745d05440d6daa0c541964be27ab"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/System.Core.dll",
+      "bytes": 1113088,
+      "sha256": "a5e7d47313da0eca0b92a901a30498f5e970916faf63b70b74dd62b09760ed72"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/System.Data.DataSetExtensions.dll",
+      "bytes": 29696,
+      "sha256": "498f14c37d83f946a47a79e01de777e62f269ee9c3820f2026b59ab1c1b9222f"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/System.Data.dll",
+      "bytes": 2125312,
+      "sha256": "427478545ce66b632414ca838088ea073f250ed16b21c70005f48cb571350e47"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/System.dll",
+      "bytes": 2641920,
+      "sha256": "7019d6b6dbfa07cf30f62e7d3ccb969f70cbf001fd72112938ffb535c7f75d81"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/System.Drawing.dll",
+      "bytes": 489984,
+      "sha256": "e182e688223acedb8135227e8fbff17d5ed22f47f81141aa9cb96ef1ab9926fc"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/System.EnterpriseServices.dll",
+      "bytes": 44544,
+      "sha256": "84af394ad863e31407eb2b9555ca7e96a9f1966630f5d7f0eec54f0011f6babc"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/System.IO.Compression.dll",
+      "bytes": 114688,
+      "sha256": "80421a67b4162a5f1b4aad6a8327c6d1fb4b04dedd39dae14a770b812594fae2"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/System.IO.Compression.FileSystem.dll",
+      "bytes": 18432,
+      "sha256": "2730d2a27f9362259a406ea14727e5f0a71bc21a6825be94f8623a84bd9f9c79"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/System.Net.Http.dll",
+      "bytes": 122880,
+      "sha256": "3cd3ac19050d5031c13644cd87958ad8029b79ce16c7747faf3d0542e7fb45a3"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/System.Numerics.dll",
+      "bytes": 119296,
+      "sha256": "ac9224b32355a09f09b706cab568384f64cf8116825c5911cef1e13221c61c38"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/System.Runtime.Serialization.dll",
+      "bytes": 934400,
+      "sha256": "1152ef687dbe39e0ccb6b9a68f6501004415a729072df29abab3bc7c66840217"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/System.Security.dll",
+      "bytes": 320000,
+      "sha256": "2101a4dd4475285f96b1ac3ba1715a52aa8067690709e675cc49a9eb8ed901a4"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/System.ServiceModel.Internals.dll",
+      "bytes": 215040,
+      "sha256": "888ec94a59c127854871b76afa49fdcefdf723c0f0b6fd78e87f73a8495b63b5"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/System.Transactions.dll",
+      "bytes": 35328,
+      "sha256": "f65dbc257d26a361dcc01edd58bf3e542d186c8ee492a4f7a62b0dd7d59f7050"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/System.Xml.dll",
+      "bytes": 3160064,
+      "sha256": "79194220adfcf027a334c87b1adcc6d07b9660a4061e04b3d9500c10d30f7d49"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/System.Xml.Linq.dll",
+      "bytes": 136704,
+      "sha256": "4f5d6bf313cbf091e7bff83d07dd03ed93d0ecb3ddb025ae786aadd6b5f477fb"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/Unity.InternalAPIEngineBridge.004.dll",
+      "bytes": 4608,
+      "sha256": "cfc013b3906ebbd0cef0d620730ff72f38c7dc136864165588496d1a4bb335c9"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/Unity.TextMeshPro.dll",
+      "bytes": 445952,
+      "sha256": "833d203ac8b0d174aec924dd1505695fb18cbc059d8502eada43edcb8941b61e"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.AccessibilityModule.dll",
+      "bytes": 51632,
+      "sha256": "1daaf8dfd3ad508f891f01f568201951fae15f345e6211c3fbbf23a45d3780f2"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.AdaptivePerformanceModule.dll",
+      "bytes": 124848,
+      "sha256": "9ec6faabe2250ef1c6b1b099d0668d32b88c439c784398c7ecdbc577eddf3c4a"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.AIModule.dll",
+      "bytes": 77224,
+      "sha256": "22f7da9b651fa4358615292af1503e1dfac0d15809ce516fe8f643052ac90dcc"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.AMDModule.dll",
+      "bytes": 21928,
+      "sha256": "7b7eb09e4745329f363fdaa204767681b5328382a3885c7585cd4a6fdf47d87a"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.AndroidJNIModule.dll",
+      "bytes": 121256,
+      "sha256": "29ae421d3f0699607e8d60a45777a59e02393874348af6059d65b40fcffb173e"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.AnimationModule.dll",
+      "bytes": 225200,
+      "sha256": "305e0395c6fe28d36b0612c12f3bc83f7a93a3dbe1997b085a5a416bc9e80f12"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.ARModule.dll",
+      "bytes": 25520,
+      "sha256": "0815bdf4daf32973fc5d2e26b6bd4992f079a34844322fc602b9aec591d0b71b"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.AssetBundleModule.dll",
+      "bytes": 41904,
+      "sha256": "77dbae6b1e55492495461824f42e85e97688064323a02513b5bdee590787e048"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.AudioModule.dll",
+      "bytes": 142760,
+      "sha256": "0c9403922ee3a23a1c4c7f1321345a6c6783813bb948816ddcbd6dfe03bb2913"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.ClothModule.dll",
+      "bytes": 36272,
+      "sha256": "e9808fcf7d0b84e92d2d0365e57df3aafdedd3ba95a38f2806f06368e0a81036"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.ClusterInputModule.dll",
+      "bytes": 28072,
+      "sha256": "6d91347698ab87d05a015e2564c64f8039db6e8cf5b90b1e13a6b57c7b6b946f"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.ClusterRendererModule.dll",
+      "bytes": 26536,
+      "sha256": "a5ff9c78ed25164a3f990b87ea191358ccae54eca2f3caac5d7b62730129458a"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.ContentLoadModule.dll",
+      "bytes": 32688,
+      "sha256": "e36779491d3d2b10443d5ef365e600325f2245e28987f2baf9aa8a6440658c76"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.CoreModule.dll",
+      "bytes": 1983920,
+      "sha256": "df9540eb156c2966b56e559d3803d1003e0abb15b09ccc2bc9122fe654518bb5"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.CrashReportingModule.dll",
+      "bytes": 26536,
+      "sha256": "d5a17b34f42cde7ce305e0377031b619676a45b1f6ebfc856729e38696318766"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.DirectorModule.dll",
+      "bytes": 41384,
+      "sha256": "db20d18fe6c2f04e758d04b07f37621a0e19028b67809471c328e9e3ffb38b14"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.dll",
+      "bytes": 197040,
+      "sha256": "04bf18c4ec5c60fcc6dace257a67847c899a689e01dbb7f571ed64057ebd6b4e"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.DSPGraphModule.dll",
+      "bytes": 31656,
+      "sha256": "a4636c01fcdb4dc4589e2b57efb8566b76e00af030b82c9d1198be122eccae08"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.GameCenterModule.dll",
+      "bytes": 45480,
+      "sha256": "0b27af7fac0d4f3b100368ffe295de597cd865b3e7199fe13d85969aa88876a7"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.GIModule.dll",
+      "bytes": 24496,
+      "sha256": "936c18fda53a4c60d503943f056bc7144d71243ce503465e105a04be1021799e"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.GraphicsStateCollectionSerializerModule.dll",
+      "bytes": 14248,
+      "sha256": "99f4dba4a84fb8afdfe21fe1e2fb4effff7586035dcde81cd370012541da33f4"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.GridModule.dll",
+      "bytes": 30128,
+      "sha256": "71c485fdb9c5209406a0ec25c6a8c34ad5b069e93965086de4f980c620c9e7ee"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.HierarchyCoreModule.dll",
+      "bytes": 109488,
+      "sha256": "17e0314e5f5f62870a6ab8c3795789000d1bafc1531c827f6245c27f8838b150"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.HierarchyModule.dll",
+      "bytes": 102320,
+      "sha256": "390e2c9f9f60cf170582faa20c3781545e4a8fe86ccd1687dd786dbce5686891"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.HotReloadModule.dll",
+      "bytes": 24496,
+      "sha256": "c07777fd05bddcad097115963aa6db36a95a23ca02f0f101322fdc44a8de5ae3"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.IdentifiersModule.dll",
+      "bytes": 14768,
+      "sha256": "3c4076fc02f3decb19c0dc1f35e4b33eb85c3b66959fdd3eed5862b0c318fd2d"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.ImageConversionModule.dll",
+      "bytes": 31144,
+      "sha256": "e3647086fbdeb3810459c0ba377de6d2b1f4502f07c5fd6687b8855ca6edd19c"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.IMGUIModule.dll",
+      "bytes": 214448,
+      "sha256": "6d58f9e4e0ad8bc73f5e37ade14952eea08779b5d581e0df457cb30d263352b6"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.InputForUIModule.dll",
+      "bytes": 57768,
+      "sha256": "5f0960f89647f17a7be79581a55e9b256a11ed2d3dba886ded56f97e795fa5f1"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.InputLegacyModule.dll",
+      "bytes": 45480,
+      "sha256": "fbe9427925ca2f9d15606f470e795d592a7a476d44f4d81606c91649992073cc"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.InputModule.dll",
+      "bytes": 28072,
+      "sha256": "d0297a3505218668a129a7c8c05cf3df390a273d181670cf91d8134e330c27de"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.InsightsModule.dll",
+      "bytes": 14248,
+      "sha256": "d6b459437a11ab4c33f1d704d83c4018d906ddafc46a35d4e17842ba76f184cf"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.JSONSerializeModule.dll",
+      "bytes": 27048,
+      "sha256": "d252fa1f00b65845f5d1fc6fe8da339f85f4910947fe8b476fa0d3b11f441795"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.LocalizationModule.dll",
+      "bytes": 27056,
+      "sha256": "e91822decdbcc1e1101fec43b8ea3fa28e869b14d8befa323de3566770544b97"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.MarshallingModule.dll",
+      "bytes": 83376,
+      "sha256": "591bba4241afe20b23f314660aa9734067a15f5b27b4f8dc78b6f280c323541e"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.MultiplayerModule.dll",
+      "bytes": 17840,
+      "sha256": "df7031eb4de8566944b45e02f7b7de2a27206a3adb6b6402a732872398617492"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.NVIDIAModule.dll",
+      "bytes": 40872,
+      "sha256": "08cfeff90193268d07a7ec8d75a251924082024d6972ccfaffb1a79a6ea9d726"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.ParticleSystemModule.dll",
+      "bytes": 171432,
+      "sha256": "0f6f15a8096e47f718162c87e90c88bb7940e149f70dd0f4082e8684cfe0bd2a"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.PerformanceReportingModule.dll",
+      "bytes": 25000,
+      "sha256": "44309f07717acb0b1ec011bb466cf27fdee839ab8c5c1629f43cb7ab000c0679"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.Physics2DModule.dll",
+      "bytes": 584104,
+      "sha256": "ed1454cb5bb05f6a93216fbdba0aaeb0dfe9e422443c1e89db1db593eec33909"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.PhysicsBackendPhysXModule.dll",
+      "bytes": 14248,
+      "sha256": "62fc876dc2eacb5dc9fc2c153c1f717d9798a95366ae32789ea20e045baa67db"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.PhysicsModule.dll",
+      "bytes": 183208,
+      "sha256": "1d0dbdeb820a3a975afc49c936e3663b477109ea8e18af9f6344d415e7113d6d"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.PropertiesModule.dll",
+      "bytes": 133544,
+      "sha256": "c8e21e141a1654afb1ad95e442ed371ea6d7e5c0540f0103baee5a852bcf6af6"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.RenderAs2DModule.dll",
+      "bytes": 25512,
+      "sha256": "6150cc2e3949368d993270aac6fbc3783a24ae8347c4ebf0cf88f9e02355b9b3"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll",
+      "bytes": 24488,
+      "sha256": "3d6f77aeee5880dee59ad441355cb4582df4e095e46b6cbc3cd3f2654a04df4a"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.ScreenCaptureModule.dll",
+      "bytes": 26032,
+      "sha256": "63cf37b3700ad041260b40841135020ff10b816ad4e1d9a12dd40d94badce30c"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.ShaderRuntimeModule.dll",
+      "bytes": 25512,
+      "sha256": "0e2fd551c422c8d20e96564b4129a198a9fb09a863ecd9fc95a2cb4eb5b45076"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.ShaderVariantAnalyticsModule.dll",
+      "bytes": 24488,
+      "sha256": "7d212ec73f7298d48cd27d19fabd1781d1092afe85cca215281cdfbeed2ccbba"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "bytes": 37800,
+      "sha256": "ba69b1474188c6acd401c77218c79c346b6f825989c68ae081ebf9042b80d0b5"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.SpriteMaskModule.dll",
+      "bytes": 28592,
+      "sha256": "c75ab7cdbdca36ef5f63d582d2f3c1361e79878f997353e2c0f84f67a45e91d7"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.SpriteShapeModule.dll",
+      "bytes": 32176,
+      "sha256": "ffa6a2e8ef9bf892027baa7a688f548e48d6d80b6b18361575fa2a0555de4129"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.StreamingModule.dll",
+      "bytes": 25512,
+      "sha256": "bde6e239bfefcdc2225b884e5ca76bdf8cb46091e82485aafff3b6e93d768357"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.SubstanceModule.dll",
+      "bytes": 29104,
+      "sha256": "f2998781131d948bd98149912f6420bcc0668b0c68f73d8bb3ff6989516d9c2e"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.SubsystemsModule.dll",
+      "bytes": 41896,
+      "sha256": "aa8ad0b1592ad46e52e5558f01331559d646a17382b74e828e169de9d016427c"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.TerrainModule.dll",
+      "bytes": 133552,
+      "sha256": "0f731241631f1dd68a77e2dd153c0b8878f1c094a3393438f365629bbf7400c1"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.TerrainPhysicsModule.dll",
+      "bytes": 25512,
+      "sha256": "35917cb9d1b2854afcde5b7901bc6f4f81770134f79ddbed8218ed9564fb56ed"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll",
+      "bytes": 81832,
+      "sha256": "d99ba357e8847c16d6bfec6d743ad795575418b37e5b04fc23c7a516aee04b86"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll",
+      "bytes": 333232,
+      "sha256": "c7c2e20cfa66586cf4e79b1545ec9867d37c5ec8a5ed135b870999b5c795c24c"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.TextRenderingModule.dll",
+      "bytes": 39344,
+      "sha256": "f42642c91cb3175656b39ca7fdaccc990ad0351a2c265f30210eb2fd935b8f06"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.TilemapModule.dll",
+      "bytes": 58792,
+      "sha256": "e2f730b2c040a51d0f49a44c2cdc66ba127194dabdc38126479f490f1ba569aa"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.TLSModule.dll",
+      "bytes": 31144,
+      "sha256": "2dc8206823c20a3a4f3b8a746144fb48fd22b04bcf4dc7bab60c058ebdfa362a"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.UI.dll",
+      "bytes": 276480,
+      "sha256": "6e5eb0d42741f16b876c77bdb67cfd0d5bc5a2a923e96b2763f657672c51857a"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.UIElementsModule.dll",
+      "bytes": 2448304,
+      "sha256": "49039e5250e69741ac652999027027b9ee83aaab9c7fbf3d5e648bd48ac83acf"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.UIModule.dll",
+      "bytes": 49576,
+      "sha256": "7b564ec6e0de85446107f1eab1c9d6f77bfb042b81672af12320398f236a04a0"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.UmbraModule.dll",
+      "bytes": 24496,
+      "sha256": "ab59c7781b830808e783662c32bbc370d75d18a400234148df4187e764a3c4cf"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll",
+      "bytes": 35752,
+      "sha256": "a27518fbce9808a0989959ce890189cb3f304f607341e45c90d2640f7df33e50"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.UnityAnalyticsModule.dll",
+      "bytes": 60848,
+      "sha256": "daad59a2c5afed0f83b05dceb35880c09adbe1bbc31a21ecaa895d8e36c9d5e4"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.UnityConnectModule.dll",
+      "bytes": 27568,
+      "sha256": "f18272bcfb97f7dce7113da509e6a0f8385b10d8bd4d0d69a7337c7cc760ab55"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.UnityConsentModule.dll",
+      "bytes": 16296,
+      "sha256": "e6ff1ce8afefb6dd8721205140a870d07182ad6df1aa55934198aa7f54a7bc50"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.UnityCurlModule.dll",
+      "bytes": 26032,
+      "sha256": "409990e730402160a97e93b5e05892480c4f39186668ad0bb2493a58432fa529"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll",
+      "bytes": 28592,
+      "sha256": "28190efe5c4c17fdd67c147e6941d4607cd4618b8f90223a3717ca50830f8c9a"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll",
+      "bytes": 28072,
+      "sha256": "ada7fda906f8860b5540b48a0bb4a0efb4ee6108160b9c4b39cccf1ab844be6c"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.UnityWebRequestModule.dll",
+      "bytes": 70064,
+      "sha256": "ef90aa8e6065aa19b0588836c96bfe10bf23ae05c168f172c030ed56d8cff016"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll",
+      "bytes": 27560,
+      "sha256": "6bb4510725b81b9b632b882ae5784c4e693736371cb7116c8d3c08109adfa02d"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll",
+      "bytes": 36264,
+      "sha256": "987c89b687b16de4dea765139b3c65df84b2e80f919301f1aec787ff883f14fd"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.VectorGraphicsModule.dll",
+      "bytes": 253352,
+      "sha256": "48e83de6aadac3c931f5ddffe5df680f305108cf0e786f29d1275ae8b9bebb0a"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.VehiclesModule.dll",
+      "bytes": 31144,
+      "sha256": "3e23c50e6f3ad96c3e13cc17706e09acb09796a6ed6f104c51c34bb61462fde3"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.VFXModule.dll",
+      "bytes": 78248,
+      "sha256": "b3ea9b515afe1a6a60707e27394465e19397ddab111d0ec72988844966c9596a"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.VideoModule.dll",
+      "bytes": 49072,
+      "sha256": "05cf8d7072eddc572189229731237c6942f616dbd4ce100ff01f79cadb3c4854"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.VirtualTexturingModule.dll",
+      "bytes": 42928,
+      "sha256": "b78f802b4adb38b0e0a121f1d14a11a2447d191e05e542cbbb722b01ff5811cc"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.VRModule.dll",
+      "bytes": 31664,
+      "sha256": "18df41ba6c219702e71dce22c330de3ced52846f583118499ae8400213fe9457"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.WindModule.dll",
+      "bytes": 26536,
+      "sha256": "324dff755a9acebe8dbfac19076627c0a22502249697247e3a8e5bde1bd28429"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Managed/UnityEngine.XRModule.dll",
+      "bytes": 88496,
+      "sha256": "58070ce044b20f06740c9b348117b0c4dc17a00a2098e64fb68cfb34ac02248b"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Resources/unity default resources",
+      "bytes": 5923140,
+      "sha256": "fb2492cd1ad7c38dda8a4ce5f1a1fb57edcff44e3ae250b263e44beae3660ec4"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/Resources/unity_builtin_extra",
+      "bytes": 400504,
+      "sha256": "876e3101e683c224bdb36995c1c423527d3c878f9d9dfc23398d489b6a456474"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/RuntimeInitializeOnLoads.json",
+      "bytes": 13,
+      "sha256": "6a33c1efd5944feb0cb1e012e26b30c3f43fec918e5643e72ab945a9c504ff13"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/ScriptingAssemblies.json",
+      "bytes": 3312,
+      "sha256": "35ecdf47ec6d88ef14efcbe6ea43e0943ada49546aaccacb62b6a2da09aa7b8c"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/sharedassets0.assets",
+      "bytes": 3838900,
+      "sha256": "603a9e2a36949dcae8c0964092449862e118e4d1cde30acda4484273b8e3d815"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/sharedassets0.assets.resS",
+      "bytes": 87343136,
+      "sha256": "d4836cc42b35de5921fbb9bc6e4190d6fbe24518e9ddf9cbb842c51ef15094df"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/sharedassets0.resource",
+      "bytes": 3925600,
+      "sha256": "47fa4fc50c67ca8662d7c29ada3704b032ed6f49f992258f8e7413c32dee4e0f"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/StreamingAssets/ArtLicenses/PixelLab-Dragon-v1.txt",
+      "bytes": 1393,
+      "sha256": "42a3a3f69e023e9a0b4515ce055c3b62c7f3019440c62b99e523858d892e7c84"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/StreamingAssets/ArtLicenses/PixelLab-Dragon-v2.txt",
+      "bytes": 1276,
+      "sha256": "1633ed12f906cca6de8edbe8cb703db046fb10e63a3edbf53dac4d169596d095"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/StreamingAssets/ArtLicenses/PixelLab-Dragon-v3-Forest.txt",
+      "bytes": 2134,
+      "sha256": "df2fad0358bd95cd4246afcfd1663baf4e23fa068ed43e9c7ad1753d7c62c017"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/StreamingAssets/ArtLicenses/PixelLab-Dragon-v3-Player.txt",
+      "bytes": 1798,
+      "sha256": "804c775290f6c4530922b5fc5a08a0d8ba30673d3ab5f90a328e3e9e072a84a6"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/StreamingAssets/ArtLicenses/PixelLab-Dragon-v4-Characters.txt",
+      "bytes": 1230,
+      "sha256": "a214fd4c4afd2f021037cdf937e2d8eae80999f9f46bf2b170e25cb1bad8aa1a"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/StreamingAssets/ArtLicenses/PixelLab-Dragon-v4-Portraits.txt",
+      "bytes": 1073,
+      "sha256": "6efc4cdb6c63e8ed0719a7137691c7c54645875583de8de53954785b05f198ec"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/StreamingAssets/ArtLicenses/PixelLab-Dragon-v5-Companions.txt",
+      "bytes": 1560,
+      "sha256": "511fbf78088e5f40cb2e017f5b27c6fa12ac371e706c4a92122dcc0df007117a"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/StreamingAssets/ArtLicenses/PixelLab-Dragon-v5-Portraits.txt",
+      "bytes": 1232,
+      "sha256": "f50cc08d1862c1d0e16c380db29cd3b615ac452b1614065fb8728ec96b60a300"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/StreamingAssets/ArtLicenses/PixelLab-v83.txt",
+      "bytes": 1199,
+      "sha256": "761abd948ac58fd6d5d520cbff864abedef50f85c32828184c04df6fcf223f1c"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/StreamingAssets/ArtLicenses/PixelLab-v84.txt",
+      "bytes": 1293,
+      "sha256": "153eeb87006e647b295f62eeaf2af629c98f4f1db82e8bf92fa5b6b65628e812"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/StreamingAssets/ArtLicenses/PixelLab-v85.txt",
+      "bytes": 1284,
+      "sha256": "e96d57e2eac876e8458f10a5b5d71752b72f8a45eab1effe315e8eabc4532d95"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/StreamingAssets/ArtLicenses/PixelLab-v86.txt",
+      "bytes": 1188,
+      "sha256": "39174acb1ec668f1964961183eddf6363c198dd60a23576ed9c6fde74fb88573"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/StreamingAssets/AudioLicenses/CC-BY-4.0.txt",
+      "bytes": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/StreamingAssets/AudioLicenses/CC0-1.0.txt",
+      "bytes": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/StreamingAssets/AudioLicenses/CREDITS.txt",
+      "bytes": 2477,
+      "sha256": "a6108b4512453320b21ff84c12d7eb71e1e8e202fdc756158ce85ad1315edbe9"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/StreamingAssets/AudioLicenses/Dragon-v4-CC0.txt",
+      "bytes": 807,
+      "sha256": "692bab018d9cc21e7370b6a1766001b38d9258c3968d9706e1fd35c2170d29bc"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/StreamingAssets/AudioLicenses/historical-v72-CREDITS.txt",
+      "bytes": 3134,
+      "sha256": "966a25314a1e8de8a2a057594a43bc9f84f00fde45cf0c794a56e12bb3d87b30"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/StreamingAssets/AudioLicenses/historical-v72-manifest.json",
+      "bytes": 8473,
+      "sha256": "e8bd3b9428c98d7f58e056bbc224548b3807c5df799c126f049d46c968128315"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/StreamingAssets/AudioLicenses/historical-v72-UI_CREDITS.txt",
+      "bytes": 1954,
+      "sha256": "b2d9454fbb721a8a73083e95542dbd7254f3f36ea28061a0a91ddd9898874cf3"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/StreamingAssets/AudioLicenses/impact-LICENSE.txt",
+      "bytes": 608,
+      "sha256": "b49aa9c56b04528b95913de13e506a0f7c5e807b9925db9bfef86af1f91120db"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/StreamingAssets/AudioLicenses/Juhani-Junkala-CC0.txt",
+      "bytes": 501,
+      "sha256": "0f80ba371b1c5b87875ea009b865a3d47f6cbc20f5d83cfd05c8836e76ac0c53"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/StreamingAssets/AudioLicenses/Kenney-RPG-CC0.txt",
+      "bytes": 478,
+      "sha256": "5735dfd72cb64cbbceda4ebc00c380c41ca680edb82ff153aa7c9ab97614c539"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/StreamingAssets/AudioLicenses/manifest.json",
+      "bytes": 7201,
+      "sha256": "eb7000e2940a69432cc8070b104676cc59fd22e3c66ce85269d8c6c302b699c1"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/StreamingAssets/AudioLicenses/rpg-LICENSE.txt",
+      "bytes": 478,
+      "sha256": "5735dfd72cb64cbbceda4ebc00c380c41ca680edb82ff153aa7c9ab97614c539"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/StreamingAssets/AudioLicenses/UI_CREDITS.txt",
+      "bytes": 2477,
+      "sha256": "a6108b4512453320b21ff84c12d7eb71e1e8e202fdc756158ce85ad1315edbe9"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/StreamingAssets/FontLicenses/manifest.json",
+      "bytes": 498,
+      "sha256": "513d69ed3577d25c2267167e12ddd8afd1d2364aef9a7b718594a9e80559fc0a"
+    },
+    {
+      "path": "Builds/Dragon-v6/LastBellMvp_Data/StreamingAssets/FontLicenses/NeoDunggeunmoPro-OFL.txt",
+      "bytes": 4419,
+      "sha256": "e3e0fdfb8349c52d3e7075c008d5c1456922ab1b0d80180b4b1b77377da34b4a"
+    },
+    {
+      "path": "Builds/Dragon-v6/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll",
+      "bytes": 7828912,
+      "sha256": "3bc2fec271ee6cda35e5ac5c39aae41a15d3ec46d69bafd0b1644059181d7c30"
+    },
+    {
+      "path": "Builds/Dragon-v6/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll",
+      "bytes": 611248,
+      "sha256": "54b6025a450f13fdc8b00ba9fd0e035702aa54582021b2eeeb4ddc930085ec0f"
+    },
+    {
+      "path": "Builds/Dragon-v6/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser",
+      "bytes": 1605,
+      "sha256": "8a1082057ac5681dcd4e9c227ed7fb8eb42ac1618963b5de3b65739dd77e2741"
+    },
+    {
+      "path": "Builds/Dragon-v6/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx",
+      "bytes": 60575,
+      "sha256": "751861040b69ea63a3827507b7c8da9c7f549dc181c1c8af4b7ca78cc97d710a"
+    },
+    {
+      "path": "Builds/Dragon-v6/MonoBleedingEdge/etc/mono/2.0/machine.config",
+      "bytes": 29066,
+      "sha256": "e91782a27fa39fc6c1d6ee8b08529f5d35052310d0006034b878eb04b8f2af30"
+    },
+    {
+      "path": "Builds/Dragon-v6/MonoBleedingEdge/etc/mono/2.0/settings.map",
+      "bytes": 2622,
+      "sha256": "49c6160f9d54af4270a3b4e997fc4a8301f79b9e2070118fa46ddbcbbc44f9a2"
+    },
+    {
+      "path": "Builds/Dragon-v6/MonoBleedingEdge/etc/mono/2.0/web.config",
+      "bytes": 11635,
+      "sha256": "cf2b54339e069b9e42f7d6795eecbf562c50c1011f4ca8f65f578fe52d97ff92"
+    },
+    {
+      "path": "Builds/Dragon-v6/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser",
+      "bytes": 1605,
+      "sha256": "8a1082057ac5681dcd4e9c227ed7fb8eb42ac1618963b5de3b65739dd77e2741"
+    },
+    {
+      "path": "Builds/Dragon-v6/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx",
+      "bytes": 60575,
+      "sha256": "751861040b69ea63a3827507b7c8da9c7f549dc181c1c8af4b7ca78cc97d710a"
+    },
+    {
+      "path": "Builds/Dragon-v6/MonoBleedingEdge/etc/mono/4.0/machine.config",
+      "bytes": 33598,
+      "sha256": "e60aec2c5115d65b3acb3c55ea21576dbd770f579166c017125571e46ae560ed"
+    },
+    {
+      "path": "Builds/Dragon-v6/MonoBleedingEdge/etc/mono/4.0/settings.map",
+      "bytes": 2622,
+      "sha256": "ce1db1ad8a9512073164e3eccdc193f7eda036e1a9733caec4635de21b2865c8"
+    },
+    {
+      "path": "Builds/Dragon-v6/MonoBleedingEdge/etc/mono/4.0/web.config",
+      "bytes": 18802,
+      "sha256": "e38bb8cc68fe5b4edecdfd288d094b9e8ced7629039b2a347682aba0d8bd7492"
+    },
+    {
+      "path": "Builds/Dragon-v6/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser",
+      "bytes": 1605,
+      "sha256": "8a1082057ac5681dcd4e9c227ed7fb8eb42ac1618963b5de3b65739dd77e2741"
+    },
+    {
+      "path": "Builds/Dragon-v6/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx",
+      "bytes": 60575,
+      "sha256": "751861040b69ea63a3827507b7c8da9c7f549dc181c1c8af4b7ca78cc97d710a"
+    },
+    {
+      "path": "Builds/Dragon-v6/MonoBleedingEdge/etc/mono/4.5/machine.config",
+      "bytes": 34056,
+      "sha256": "ee950004b576fb28dc85f4b0435ed04bf96612de2e8b53be84d07afe85a0de6c"
+    },
+    {
+      "path": "Builds/Dragon-v6/MonoBleedingEdge/etc/mono/4.5/settings.map",
+      "bytes": 2622,
+      "sha256": "ce1db1ad8a9512073164e3eccdc193f7eda036e1a9733caec4635de21b2865c8"
+    },
+    {
+      "path": "Builds/Dragon-v6/MonoBleedingEdge/etc/mono/4.5/web.config",
+      "bytes": 18811,
+      "sha256": "c4cbddd4fd9347b58cc5a72b36dc4ba1ad2bb699e65869d05cd3fb9865f0d824"
+    },
+    {
+      "path": "Builds/Dragon-v6/MonoBleedingEdge/etc/mono/browscap.ini",
+      "bytes": 311984,
+      "sha256": "4ddd50f31fb968f30bedefc253a46dc3f2890192d05cdaa9e0a64a056eee807e"
+    },
+    {
+      "path": "Builds/Dragon-v6/MonoBleedingEdge/etc/mono/config",
+      "bytes": 3815,
+      "sha256": "5776169973a26a387b8b3e5c0f2301a7ab9a6dd7c7d3efa22a96abc47fbf8662"
+    },
+    {
+      "path": "Builds/Dragon-v6/MonoBleedingEdge/etc/mono/mconfig/config.xml",
+      "bytes": 25817,
+      "sha256": "0c56e34c69124510fa8c19e7b4c2ca6c1c4ff460ae19f798dd0ca035809e396d"
+    },
+    {
+      "path": "Builds/Dragon-v6/UnityCrashHandler64.exe",
+      "bytes": 1621416,
+      "sha256": "95c730f3efc0b499922b6402d02673b0c08b3f2b9e527a44ca8b3d0f563df9fc"
+    },
+    {
+      "path": "Builds/Dragon-v6/UnityPlayer.dll",
+      "bytes": 36349360,
+      "sha256": "8069e155cecac6cbd8d2ec4bdb4c97301004b340184b1bb1e3570309509e7042"
+    }
+  ],
+  "archive": {
+    "path": "Builds/Dragon-v6-Windows-0.9.6.zip",
+    "bytes": 45429841,
+    "sha256": "4033f7c9de22c98164a05ce442ea0ee04e1be155f2ec9a660a69d66e8633470f"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "version": "v86",
+  "scope": "Stages14..19 reuse approved existing monster artwork. Only missing natural Idle animation is newly generated.",
+  "reviewer": "residential_art",
+  "existingArtDecision": "Preserve all six base silhouettes, colors, Attack frame sequences/contact timing, Stun sequences and runtime legacy Stun fallback. No serious attack defect found.",
+  "stageRecommendations": [
+    {
+      "stage": 14,
+      "id": "ash_wisp",
+      "concept": "떠도는 등불"
+    },
+    {
+      "stage": 15,
+      "id": "chain_thrall",
+      "concept": "사슬 집행자"
+    },
+    {
+      "stage": 16,
+      "id": "hook_hound",
+      "concept": "사슬 순찰견"
+    },
+    {
+      "stage": 17,
+      "id": "chain_puppet",
+      "concept": "거리 순찰 인형"
+    },
+    {
+      "stage": 18,
+      "id": "cracked_blade",
+      "concept": "주거구 경비의 잔상"
+    },
+    {
+      "stage": 19,
+      "id": "chain_dancer",
+      "concept": "광장의 사슬 조종자"
+    }
+  ],
+  "reviewedExistingMotions": {
+    "chain_thrall": {
+      "Attack": "17 frames inspected: wind-up, chain-ball sweep contact8, recovery. Preserve.",
+      "Stun": "Existing legacy static fallback preserved."
+    },
+    "ash_wisp": {
+      "Attack": "14 frames inspected: claw preparation, extension contact5, recovery. Preserve.",
+      "Stun": "Existing legacy static fallback preserved."
+    },
+    "cracked_blade": {
+      "Attack": "11 frames inspected: raise blade, single downward cut contact4, recovery. Preserve.",
+      "Stun": "4 frames inspected: bowed head, lowered blade. Preserve."
+    },
+    "chain_dancer": {
+      "Attack": "11 frames inspected: loop raised, single chain lash contact5, reset. Preserve.",
+      "Stun": "4 frames inspected: bowed torso and hanging chain. Preserve."
+    },
+    "chain_puppet": {
+      "Attack": "13 frames inspected: chain arm winds up, extended block fist contact6, returns. Preserve.",
+      "Stun": "2 frames inspected: tilted head and slack joints. Preserve."
+    },
+    "hook_hound": {
+      "Attack": "10 frames inspected: crouch, low beak lunge contact6, recovery. Previously grounded source version stays aligned. Preserve.",
+      "Stun": "2 frames inspected: collapsed forequarters and lowered tail ring. Preserve."
+    }
+  },
+  "noRuntimeWrites": true
+}

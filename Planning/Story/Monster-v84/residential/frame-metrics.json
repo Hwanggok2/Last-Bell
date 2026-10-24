@@ -1,0 +1,1190 @@
+{
+  "sewer_rat": {
+    "attack": [
+      {
+        "frame": 0,
+        "bbox": [
+          34,
+          35,
+          94,
+          65
+        ],
+        "colors": 12,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 1,
+        "bbox": [
+          36,
+          35,
+          97,
+          65
+        ],
+        "colors": 12,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 2,
+        "bbox": [
+          37,
+          35,
+          100,
+          65
+        ],
+        "colors": 12,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 3,
+        "bbox": [
+          37,
+          35,
+          100,
+          65
+        ],
+        "colors": 12,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 4,
+        "bbox": [
+          37,
+          35,
+          102,
+          65
+        ],
+        "colors": 12,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 5,
+        "bbox": [
+          37,
+          35,
+          105,
+          65
+        ],
+        "colors": 12,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 6,
+        "bbox": [
+          37,
+          35,
+          107,
+          65
+        ],
+        "colors": 12,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 7,
+        "bbox": [
+          0,
+          31,
+          108,
+          65
+        ],
+        "colors": 11,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": true
+      },
+      {
+        "frame": 8,
+        "bbox": [
+          22,
+          37,
+          106,
+          65
+        ],
+        "colors": 11,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 9,
+        "bbox": [
+          23,
+          37,
+          105,
+          65
+        ],
+        "colors": 11,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 10,
+        "bbox": [
+          23,
+          37,
+          103,
+          65
+        ],
+        "colors": 11,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 11,
+        "bbox": [
+          25,
+          36,
+          103,
+          65
+        ],
+        "colors": 11,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 12,
+        "bbox": [
+          28,
+          36,
+          100,
+          65
+        ],
+        "colors": 11,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 13,
+        "bbox": [
+          30,
+          33,
+          92,
+          65
+        ],
+        "colors": 12,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 14,
+        "bbox": [
+          32,
+          33,
+          91,
+          65
+        ],
+        "colors": 12,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 15,
+        "bbox": [
+          34,
+          35,
+          93,
+          65
+        ],
+        "colors": 12,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 16,
+        "bbox": [
+          34,
+          35,
+          94,
+          65
+        ],
+        "colors": 12,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      }
+    ],
+    "stun": [
+      {
+        "frame": 0,
+        "bbox": [
+          33,
+          34,
+          102,
+          66
+        ],
+        "colors": 12,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 1,
+        "bbox": [
+          33,
+          34,
+          102,
+          66
+        ],
+        "colors": 11,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 2,
+        "bbox": [
+          34,
+          33,
+          101,
+          66
+        ],
+        "colors": 11,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 3,
+        "bbox": [
+          34,
+          34,
+          102,
+          66
+        ],
+        "colors": 11,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 4,
+        "bbox": [
+          35,
+          32,
+          101,
+          66
+        ],
+        "colors": 11,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 5,
+        "bbox": [
+          34,
+          33,
+          102,
+          66
+        ],
+        "colors": 11,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 6,
+        "bbox": [
+          33,
+          34,
+          102,
+          66
+        ],
+        "colors": 11,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 7,
+        "bbox": [
+          33,
+          34,
+          102,
+          66
+        ],
+        "colors": 11,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 8,
+        "bbox": [
+          33,
+          34,
+          102,
+          66
+        ],
+        "colors": 11,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      }
+    ]
+  },
+  "drowned_resident": {
+    "attack": [
+      {
+        "frame": 0,
+        "bbox": [
+          41,
+          28,
+          81,
+          73
+        ],
+        "colors": 11,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 1,
+        "bbox": [
+          54,
+          26,
+          81,
+          73
+        ],
+        "colors": 11,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 2,
+        "bbox": [
+          56,
+          24,
+          92,
+          73
+        ],
+        "colors": 11,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 3,
+        "bbox": [
+          57,
+          23,
+          101,
+          73
+        ],
+        "colors": 11,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 4,
+        "bbox": [
+          57,
+          22,
+          101,
+          73
+        ],
+        "colors": 11,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 5,
+        "bbox": [
+          57,
+          22,
+          100,
+          73
+        ],
+        "colors": 11,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 6,
+        "bbox": [
+          57,
+          21,
+          100,
+          73
+        ],
+        "colors": 11,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 7,
+        "bbox": [
+          54,
+          22,
+          88,
+          73
+        ],
+        "colors": 10,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 8,
+        "bbox": [
+          26,
+          32,
+          82,
+          74
+        ],
+        "colors": 10,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 9,
+        "bbox": [
+          27,
+          33,
+          80,
+          73
+        ],
+        "colors": 10,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 10,
+        "bbox": [
+          29,
+          33,
+          79,
+          73
+        ],
+        "colors": 10,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 11,
+        "bbox": [
+          31,
+          32,
+          79,
+          73
+        ],
+        "colors": 10,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 12,
+        "bbox": [
+          33,
+          31,
+          79,
+          73
+        ],
+        "colors": 11,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 13,
+        "bbox": [
+          35,
+          30,
+          79,
+          73
+        ],
+        "colors": 11,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 14,
+        "bbox": [
+          37,
+          30,
+          80,
+          73
+        ],
+        "colors": 11,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 15,
+        "bbox": [
+          39,
+          29,
+          80,
+          73
+        ],
+        "colors": 11,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 16,
+        "bbox": [
+          41,
+          28,
+          81,
+          73
+        ],
+        "colors": 11,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      }
+    ],
+    "stun": [
+      {
+        "frame": 0,
+        "bbox": [
+          40,
+          29,
+          84,
+          73
+        ],
+        "colors": 11,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 1,
+        "bbox": [
+          40,
+          29,
+          84,
+          73
+        ],
+        "colors": 11,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 2,
+        "bbox": [
+          40,
+          29,
+          84,
+          73
+        ],
+        "colors": 11,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 3,
+        "bbox": [
+          40,
+          29,
+          83,
+          73
+        ],
+        "colors": 11,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 4,
+        "bbox": [
+          40,
+          29,
+          83,
+          73
+        ],
+        "colors": 11,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 5,
+        "bbox": [
+          40,
+          29,
+          86,
+          73
+        ],
+        "colors": 10,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 6,
+        "bbox": [
+          40,
+          29,
+          87,
+          73
+        ],
+        "colors": 10,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 7,
+        "bbox": [
+          40,
+          29,
+          85,
+          73
+        ],
+        "colors": 11,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 8,
+        "bbox": [
+          40,
+          29,
+          84,
+          73
+        ],
+        "colors": 11,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      }
+    ]
+  },
+  "water_wraith": {
+    "attack": [
+      {
+        "frame": 0,
+        "bbox": [
+          41,
+          19,
+          83,
+          78
+        ],
+        "colors": 9,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 1,
+        "bbox": [
+          41,
+          19,
+          83,
+          78
+        ],
+        "colors": 9,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 2,
+        "bbox": [
+          41,
+          19,
+          83,
+          78
+        ],
+        "colors": 9,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 3,
+        "bbox": [
+          47,
+          19,
+          86,
+          78
+        ],
+        "colors": 8,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 4,
+        "bbox": [
+          52,
+          19,
+          91,
+          78
+        ],
+        "colors": 8,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 5,
+        "bbox": [
+          54,
+          19,
+          93,
+          78
+        ],
+        "colors": 8,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 6,
+        "bbox": [
+          55,
+          19,
+          95,
+          78
+        ],
+        "colors": 8,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 7,
+        "bbox": [
+          22,
+          24,
+          98,
+          75
+        ],
+        "colors": 9,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 8,
+        "bbox": [
+          21,
+          24,
+          105,
+          67
+        ],
+        "colors": 9,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 9,
+        "bbox": [
+          21,
+          24,
+          104,
+          64
+        ],
+        "colors": 8,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 10,
+        "bbox": [
+          22,
+          24,
+          101,
+          65
+        ],
+        "colors": 9,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 11,
+        "bbox": [
+          27,
+          22,
+          96,
+          69
+        ],
+        "colors": 9,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 12,
+        "bbox": [
+          33,
+          20,
+          91,
+          73
+        ],
+        "colors": 9,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 13,
+        "bbox": [
+          36,
+          19,
+          81,
+          77
+        ],
+        "colors": 8,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 14,
+        "bbox": [
+          39,
+          19,
+          81,
+          79
+        ],
+        "colors": 9,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 15,
+        "bbox": [
+          41,
+          19,
+          83,
+          78
+        ],
+        "colors": 9,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 16,
+        "bbox": [
+          41,
+          19,
+          83,
+          78
+        ],
+        "colors": 9,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      }
+    ],
+    "stun": [
+      {
+        "frame": 0,
+        "bbox": [
+          46,
+          19,
+          86,
+          84
+        ],
+        "colors": 8,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 1,
+        "bbox": [
+          46,
+          19,
+          86,
+          84
+        ],
+        "colors": 8,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 2,
+        "bbox": [
+          46,
+          19,
+          86,
+          84
+        ],
+        "colors": 8,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 3,
+        "bbox": [
+          46,
+          19,
+          86,
+          84
+        ],
+        "colors": 8,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 4,
+        "bbox": [
+          46,
+          19,
+          86,
+          84
+        ],
+        "colors": 8,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 5,
+        "bbox": [
+          45,
+          19,
+          86,
+          84
+        ],
+        "colors": 8,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 6,
+        "bbox": [
+          45,
+          19,
+          86,
+          84
+        ],
+        "colors": 8,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 7,
+        "bbox": [
+          46,
+          19,
+          86,
+          84
+        ],
+        "colors": 8,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      },
+      {
+        "frame": 8,
+        "bbox": [
+          46,
+          19,
+          86,
+          84
+        ],
+        "colors": 8,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "touchesCanvasEdge": false
+      }
+    ]
+  }
+}

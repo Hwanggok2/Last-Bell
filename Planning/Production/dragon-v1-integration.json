@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-24",
+  "status": "complete-automated-and-representative-visual-QA-passed",
+  "scope": "1–10 bright fantasy pixel MVP; existing11–20 content retained",
+  "dataVersion": "mvp1.14.0",
+  "buildVersion": "0.9.0",
+  "controlContract": "Up/Back dodge, Down parry, Space attack. User explicitly confirmed.",
+  "referenceCenters720p": [
+    [
+      144.06,
+      506.67
+    ],
+    [
+      70.85,
+      613.33
+    ],
+    [
+      190.11,
+      641.33
+    ]
+  ],
+  "art": {
+    "nativeTemplates": 6,
+    "runtimeMappings": 11,
+    "sourcePngFrames": 190,
+    "playerClips": 9,
+    "monsterClips": 15,
+    "uiIcons": 45,
+    "background": "Approved meadow PNG unchanged; far0.08 and ground1.0 mirrored repeating layers"
+  },
+  "preserved": [
+    "stableCharacterEnemyRelicIds",
+    "saveSchema8",
+    "company/product save location",
+    "combat timing",
+    "growth/economy",
+    "20 playable stages",
+    "relic settlement queue"
+  ],
+  "limits": [
+    "Stage aliases share five monster forms",
+    "NPC dialogue speaker only; no new NPC actor scene",
+    "11–50 new region assets not included",
+    "physical OS input and mobile device QA remain deferred"
+  ],
+  "files": {
+    "Client/Assets/Game/Scenes/Mvp.unity": "997149d631c5b7cd091f71c550290e5592d6158d26cefc5365a3cf8fda2660da",
+    "Client/Assets/Game/Prefabs/GameView.prefab": "8d9ac12dfbf6f45b841aeaf6ed9dba235bdabd12bb2b928347812bb8944c1d72",
+    "Client/Assets/Game/Prefabs/PresentationWorld.prefab": "763be4f72e80cb1a803de944dd97be393b647889bb2e0d58c6d2b74de70ded13",
+    "Client/Assets/Game/Art/Presentation/manifest.json": "819498238a9724ab783ce726265c171be7c7f62edd1da9e70550e6798f9c2459",
+    "Client/Assets/Game/Art/Presentation/PresentationArtCatalog.asset": "c4938f3532be1d3bbf66f94b26b3007f44322faacb6319bf433dad5eecf5bea4",
+    "Client/Assets/Game/Data/Generated/mvp-catalog.json": "a9b54f7c0234ebd5f92b0a3078446159830eb26e4b7d6fe7942a8a8f3e0c1ee3",
+    "Client/Assets/Game/Runtime/Presentation/FeedbackLayout.cs": "328e9baa5458387acf2b24d97581b2bc34fcc45b43416134aa3054396767c734",
+    "Client/Assets/Game/Editor/DragonUiMigration.cs": "7c19474c1f4d5c992a5aee82e6eadc62cf48d67318d1facf5cfd30967acb7011",
+    "Client/Assets/Game/Editor/DragonThemeMigration.cs": "8d8471e614a55c133428f059d13f92d34084378e4618389f9e76a4fb0ebf7410"
+  },
+  "qaReport": "Planning/QA/dragon-v1-result-20261024.md",
+  "releaseManifest": "Planning/Production/dragon-v1-release.json"
+}

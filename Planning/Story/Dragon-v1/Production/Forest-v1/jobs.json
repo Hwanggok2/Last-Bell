@@ -1,0 +1,990 @@
+{
+  "canonical": [
+    {
+      "id": "goblin_scout",
+      "displayName": "숲길 고블린",
+      "stage": 11,
+      "width": 32,
+      "height": 32,
+      "body": "A small wiry GREEN goblin scout, big pointed ears, angular left-pointing nose, one dark eye, short bare head, rust-orange short sleeveless tunic, simple brown belt and two large brown boots. One SHORT STEEL SWORD held in the left-facing front hand at waist height pointing diagonally down-left. Free back hand clenched near belt. Crouched ready stance with two clearly separate legs. NO shield, helmet or backpack.",
+      "palette": [
+        "#18272B",
+        "#36573A",
+        "#79A34A",
+        "#B5CC71",
+        "#5E3F2D",
+        "#A87442",
+        "#C65E3D",
+        "#E7A867",
+        "#C8D6C6",
+        "#F3E7BE"
+      ],
+      "target": "Body around22px tall, head top y6, boot soles y28, whole swordtip inside x3; empty margin3px minimum.",
+      "request": {
+        "description": "One original enemy sprite for a cheerful coarse retro fantasy sidescrolling timing-combat game. STRICT LEFT-facing side profile. A small wiry GREEN goblin scout, big pointed ears, angular left-pointing nose, one dark eye, short bare head, rust-orange short sleeveless tunic, simple brown belt and two large brown boots. One SHORT STEEL SWORD held in the left-facing front hand at waist height pointing diagonally down-left. Free back hand clenched near belt. Crouched ready stance with two clearly separate legs. NO shield, helmet or backpack. Native 32x32 transparent PNG, Body around22px tall, head top y6, boot soles y28, whole swordtip inside x3; empty margin3px minimum. Only large solid color clusters, single-pixel dark contour, 2 flat shades per material, no more than10 colors. Very sparse detail like a native low-resolution sprite, not high-definition illustration. Full anatomy and equipment within canvas. No antialiasing, smooth gradients, dithering, fine texture, thin fur, ground shadow, detached pixels, outlines outside silhouette, labels, UI, scenery or effects. Keep clear empty space to left for attack animation.",
+        "width": 32,
+        "height": 32,
+        "max_colors": 10,
+        "no_background": true,
+        "palette": [
+          "#18272B",
+          "#36573A",
+          "#79A34A",
+          "#B5CC71",
+          "#5E3F2D",
+          "#A87442",
+          "#C65E3D",
+          "#E7A867",
+          "#C8D6C6",
+          "#F3E7BE"
+        ],
+        "palette_name": "Last Bell bright forest chunky flat palette",
+        "seed": 2026102411
+      },
+      "jobId": "1acb73dc-c9f2-421c-91ed-def1c0bc4d39",
+      "sourceImageId": "aca2d9f1-9be4-576a-9d10-56d2c340cfba",
+      "response": "{\n  \"background_job_id\": \"1acb73dc-c9f2-421c-91ed-def1c0bc4d39\",\n  \"image_id\": \"aca2d9f1-9be4-576a-9d10-56d2c340cfba\",\n  \"status\": \"processing\",\n  \"source_image_id\": \"aca2d9f1-9be4-576a-9d10-56d2c340cfba\",\n  \"job_id\": \"1acb73dc-c9f2-421c-91ed-def1c0bc4d39\",\n  \"description\": \"One original enemy sprite for a cheerful coarse retro fantasy sidescrolling timing-combat game. STRICT LEFT-facing side profile. A small wiry GREEN goblin scout, big pointed ears, angular left-pointing nose, one dark eye, short bare head, rust-orange short sleeveless tunic, simple brown belt and two large brown boots. One SHORT STEEL SWORD held in the left-facing front hand at waist height pointing diagonally down-left. Free back hand clenched near belt. Crouched ready stance with two clearly separate legs. NO shield, helmet or backpack. Native 32x32 transparent PNG, Body around22px tall, head top y6, boot soles y28, whole swordtip inside x3; empty margin3px minimum. Only large solid color clusters, single-pixel dark contour, 2 flat shades per material, no more than10 colors. Very sparse detail like a native low-resolution sprite, not high-definition illustration. Full anatomy and equipment within canvas. No antialiasing, smooth gradients, dithering, fine texture, thin fur, ground shadow, detached pixels, outlines outside silhouette, labels, UI, scenery or effects. Keep clear empty space to left for attack animation.\",\n  \"seed\": 2026102411,\n  \"image_size\": {\n    \"width\": 32,\n    \"height\": 32\n  },\n  \"output_count\": 1,\n  \"estimated_generations\": 5,\n  \"pricing_provisional\": true,\n  \"poll_tool\": \"get_image\",\n  \"download_path\": \"/mcp/images/1acb73dc-c9f2-421c-91ed-def1c0bc4d39/download\"\n}\nPoll get_image(job_id=\"1acb73dc-c9f2-421c-91ed-def1c0bc4d39\"). The source_image_id is usable after completion; it is an image ID, not a character/object ID. Actual usage is reported on completion. cancel_job(job_id=...) cancels unfinished work.",
+      "complete": true
+    },
+    {
+      "id": "forest_mushroom",
+      "displayName": "숲송이",
+      "stage": 13,
+      "width": 32,
+      "height": 32,
+      "body": "A small friendly-fantasy enemy walking MUSHROOM in LEFT profile. Wide low CORAL-RED mushroom cap shaped like a broad simple umbrella, exactly TWO big cream square patches, short chunky cream stalk-body with one dark square eye facing left, TWO short ROOT FEET spread on ground, two stubby root arms attached at waist. Cap width22px, stalk short and thick. No mouth, no clothing, no weapon, no face on top of cap.",
+      "palette": [
+        "#18272B",
+        "#663D36",
+        "#AD4F3F",
+        "#E18B57",
+        "#F4D99B",
+        "#FFF0CA",
+        "#8C623C",
+        "#B38A55"
+      ],
+      "target": "Complete mushroom about21px wide and19px tall, cap top y8, root soles y27, minimum3px empty margins.",
+      "request": {
+        "description": "One original enemy sprite for a cheerful coarse retro fantasy sidescrolling timing-combat game. STRICT LEFT-facing side profile. A small friendly-fantasy enemy walking MUSHROOM in LEFT profile. Wide low CORAL-RED mushroom cap shaped like a broad simple umbrella, exactly TWO big cream square patches, short chunky cream stalk-body with one dark square eye facing left, TWO short ROOT FEET spread on ground, two stubby root arms attached at waist. Cap width22px, stalk short and thick. No mouth, no clothing, no weapon, no face on top of cap. Native 32x32 transparent PNG, Complete mushroom about21px wide and19px tall, cap top y8, root soles y27, minimum3px empty margins. Only large solid color clusters, single-pixel dark contour, 2 flat shades per material, no more than8 colors. Very sparse detail like a native low-resolution sprite, not high-definition illustration. Full anatomy and equipment within canvas. No antialiasing, smooth gradients, dithering, fine texture, thin fur, ground shadow, detached pixels, outlines outside silhouette, labels, UI, scenery or effects. Keep clear empty space to left for attack animation.",
+        "width": 32,
+        "height": 32,
+        "max_colors": 8,
+        "no_background": true,
+        "palette": [
+          "#18272B",
+          "#663D36",
+          "#AD4F3F",
+          "#E18B57",
+          "#F4D99B",
+          "#FFF0CA",
+          "#8C623C",
+          "#B38A55"
+        ],
+        "palette_name": "Last Bell bright forest chunky flat palette",
+        "seed": 2026102413
+      },
+      "jobId": "ad641abd-a0e0-486c-b194-d31dfd1a6b88",
+      "sourceImageId": "a1db36dc-3c40-5467-ba76-be5d6910cf17",
+      "response": "{\n  \"background_job_id\": \"ad641abd-a0e0-486c-b194-d31dfd1a6b88\",\n  \"image_id\": \"a1db36dc-3c40-5467-ba76-be5d6910cf17\",\n  \"status\": \"processing\",\n  \"source_image_id\": \"a1db36dc-3c40-5467-ba76-be5d6910cf17\",\n  \"job_id\": \"ad641abd-a0e0-486c-b194-d31dfd1a6b88\",\n  \"description\": \"One original enemy sprite for a cheerful coarse retro fantasy sidescrolling timing-combat game. STRICT LEFT-facing side profile. A small friendly-fantasy enemy walking MUSHROOM in LEFT profile. Wide low CORAL-RED mushroom cap shaped like a broad simple umbrella, exactly TWO big cream square patches, short chunky cream stalk-body with one dark square eye facing left, TWO short ROOT FEET spread on ground, two stubby root arms attached at waist. Cap width22px, stalk short and thick. No mouth, no clothing, no weapon, no face on top of cap. Native 32x32 transparent PNG, Complete mushroom about21px wide and19px tall, cap top y8, root soles y27, minimum3px empty margins. Only large solid color clusters, single-pixel dark contour, 2 flat shades per material, no more than8 colors. Very sparse detail like a native low-resolution sprite, not high-definition illustration. Full anatomy and equipment within canvas. No antialiasing, smooth gradients, dithering, fine texture, thin fur, ground shadow, detached pixels, outlines outside silhouette, labels, UI, scenery or effects. Keep clear empty space to left for attack animation.\",\n  \"seed\": 2026102413,\n  \"image_size\": {\n    \"width\": 32,\n    \"height\": 32\n  },\n  \"output_count\": 1,\n  \"estimated_generations\": 5,\n  \"pricing_provisional\": true,\n  \"poll_tool\": \"get_image\",\n  \"download_path\": \"/mcp/images/ad641abd-a0e0-486c-b194-d31dfd1a6b88/download\"\n}\nPoll get_image(job_id=\"ad641abd-a0e0-486c-b194-d31dfd1a6b88\"). The source_image_id is usable after completion; it is an image ID, not a character/object ID. Actual usage is reported on completion. cancel_job(job_id=...) cancels unfinished work.",
+      "complete": true
+    },
+    {
+      "id": "goblin_slinger",
+      "displayName": "돌팔매 고블린",
+      "stage": 12,
+      "width": 32,
+      "height": 32,
+      "palette": [
+        "#18272B",
+        "#36573A",
+        "#79A34A",
+        "#B5CC71",
+        "#5E3F2D",
+        "#A87442",
+        "#C65E3D",
+        "#E7A867",
+        "#C8D6C6",
+        "#F3E7BE"
+      ],
+      "body": "A small wiry GREEN goblin slinger, big pointed ears and long left-facing nose, one eye, bare head with a tiny rust-red headband. Sleeveless TAN tunic, brown boots and a LARGE brown round stone pouch on right hip. Front LEFT hand visibly holds a SHORT folded rope SLING with one stone at waist; back arm ready beside torso. No sword, shield, spear or helmet. Two separate slender legs, leaning forward.",
+      "target": "Body22px tall, whole sling inside3px empty margin, soles at y28.",
+      "request": {
+        "description": "One original enemy sprite for a cheerful very coarse native pixel fantasy sidescrolling timing game. STRICT LEFT-facing side profile. A small wiry GREEN goblin slinger, big pointed ears and long left-facing nose, one eye, bare head with a tiny rust-red headband. Sleeveless TAN tunic, brown boots and a LARGE brown round stone pouch on right hip. Front LEFT hand visibly holds a SHORT folded rope SLING with one stone at waist; back arm ready beside torso. No sword, shield, spear or helmet. Two separate slender legs, leaning forward. Native32x32 transparent canvas. Body22px tall, whole sling inside3px empty margin, soles at y28. Very sparse chunky square clusters, one-pixel dark silhouette contour, flat base and shadow only. Exactly this palette maximum10 colors. All body/equipment fully visible. NO antialiasing, gradients, dithering, texture, ground shadow, tiny speckles, detached objects, labels, scenery, UI, glow or particles. One creature only.",
+        "width": 32,
+        "height": 32,
+        "max_colors": 10,
+        "no_background": true,
+        "palette": [
+          "#18272B",
+          "#36573A",
+          "#79A34A",
+          "#B5CC71",
+          "#5E3F2D",
+          "#A87442",
+          "#C65E3D",
+          "#E7A867",
+          "#C8D6C6",
+          "#F3E7BE"
+        ],
+        "palette_name": "Last Bell bright forest coarse pixel palette",
+        "seed": 2026102412
+      },
+      "jobId": "05be67d0-4efc-473b-a58d-c1317abb2105",
+      "sourceImageId": "6ad538c8-3b21-5d32-951d-c438b5065de6",
+      "response": "{\n  \"background_job_id\": \"05be67d0-4efc-473b-a58d-c1317abb2105\",\n  \"image_id\": \"6ad538c8-3b21-5d32-951d-c438b5065de6\",\n  \"status\": \"processing\",\n  \"source_image_id\": \"6ad538c8-3b21-5d32-951d-c438b5065de6\",\n  \"job_id\": \"05be67d0-4efc-473b-a58d-c1317abb2105\",\n  \"description\": \"One original enemy sprite for a cheerful very coarse native pixel fantasy sidescrolling timing game. STRICT LEFT-facing side profile. A small wiry GREEN goblin slinger, big pointed ears and long left-facing nose, one eye, bare head with a tiny rust-red headband. Sleeveless TAN tunic, brown boots and a LARGE brown round stone pouch on right hip. Front LEFT hand visibly holds a SHORT folded rope SLING with one stone at waist; back arm ready beside torso. No sword, shield, spear or helmet. Two separate slender legs, leaning forward. Native32x32 transparent canvas. Body22px tall, whole sling inside3px empty margin, soles at y28. Very sparse chunky square clusters, one-pixel dark silhouette contour, flat base and shadow only. Exactly this palette maximum10 colors. All body/equipment fully visible. NO antialiasing, gradients, dithering, texture, ground shadow, tiny speckles, detached objects, labels, scenery, UI, glow or particles. One creature only.\",\n  \"seed\": 2026102412,\n  \"image_size\": {\n    \"width\": 32,\n    \"height\": 32\n  },\n  \"output_count\": 1,\n  \"estimated_generations\": 5,\n  \"pricing_provisional\": true,\n  \"poll_tool\": \"get_image\",\n  \"download_path\": \"/mcp/images/05be67d0-4efc-473b-a58d-c1317abb2105/download\"\n}\nPoll get_image(job_id=\"05be67d0-4efc-473b-a58d-c1317abb2105\"). The source_image_id is usable after completion; it is an image ID, not a character/object ID. Actual usage is reported on completion. cancel_job(job_id=...) cancels unfinished work.",
+      "complete": true
+    },
+    {
+      "id": "goblin_shield",
+      "displayName": "방패 고블린",
+      "stage": 14,
+      "width": 32,
+      "height": 32,
+      "palette": [
+        "#18272B",
+        "#36573A",
+        "#79A34A",
+        "#B5CC71",
+        "#5E3F2D",
+        "#A87442",
+        "#C65E3D",
+        "#E7A867",
+        "#C8D6C6",
+        "#F3E7BE"
+      ],
+      "body": "A stocky GREEN goblin shield bearer with pointed ears and left-facing nose, one eye, bare head. Rust-orange tunic and brown boots, WIDE square WOODEN SHIELD in left/front hand reaching from chest to shin with one broad dark iron bar. Off hand grips short steel dagger low behind shield, blade fully visible. Wide planted stance. Shield almost half body width and distinct squat silhouette. No helmet, no spear.",
+      "target": "Body23px tall, whole shield and dagger inside3px empty margin; soles y28.",
+      "request": {
+        "description": "One original enemy sprite for a cheerful very coarse native pixel fantasy sidescrolling timing game. STRICT LEFT-facing side profile. A stocky GREEN goblin shield bearer with pointed ears and left-facing nose, one eye, bare head. Rust-orange tunic and brown boots, WIDE square WOODEN SHIELD in left/front hand reaching from chest to shin with one broad dark iron bar. Off hand grips short steel dagger low behind shield, blade fully visible. Wide planted stance. Shield almost half body width and distinct squat silhouette. No helmet, no spear. Native32x32 transparent canvas. Body23px tall, whole shield and dagger inside3px empty margin; soles y28. Very sparse chunky square clusters, one-pixel dark silhouette contour, flat base and shadow only. Exactly this palette maximum10 colors. All body/equipment fully visible. NO antialiasing, gradients, dithering, texture, ground shadow, tiny speckles, detached objects, labels, scenery, UI, glow or particles. One creature only.",
+        "width": 32,
+        "height": 32,
+        "max_colors": 10,
+        "no_background": true,
+        "palette": [
+          "#18272B",
+          "#36573A",
+          "#79A34A",
+          "#B5CC71",
+          "#5E3F2D",
+          "#A87442",
+          "#C65E3D",
+          "#E7A867",
+          "#C8D6C6",
+          "#F3E7BE"
+        ],
+        "palette_name": "Last Bell bright forest coarse pixel palette",
+        "seed": 2026102414
+      },
+      "jobId": "9d713392-c3ab-4859-b90b-face0b559f9e",
+      "sourceImageId": "8cae567d-810b-51b6-9ce0-1ccd093cb7ec",
+      "response": "{\n  \"background_job_id\": \"9d713392-c3ab-4859-b90b-face0b559f9e\",\n  \"image_id\": \"8cae567d-810b-51b6-9ce0-1ccd093cb7ec\",\n  \"status\": \"processing\",\n  \"source_image_id\": \"8cae567d-810b-51b6-9ce0-1ccd093cb7ec\",\n  \"job_id\": \"9d713392-c3ab-4859-b90b-face0b559f9e\",\n  \"description\": \"One original enemy sprite for a cheerful very coarse native pixel fantasy sidescrolling timing game. STRICT LEFT-facing side profile. A stocky GREEN goblin shield bearer with pointed ears and left-facing nose, one eye, bare head. Rust-orange tunic and brown boots, WIDE square WOODEN SHIELD in left/front hand reaching from chest to shin with one broad dark iron bar. Off hand grips short steel dagger low behind shield, blade fully visible. Wide planted stance. Shield almost half body width and distinct squat silhouette. No helmet, no spear. Native32x32 transparent canvas. Body23px tall, whole shield and dagger inside3px empty margin; soles y28. Very sparse chunky square clusters, one-pixel dark silhouette contour, flat base and shadow only. Exactly this palette maximum10 colors. All body/equipment fully visible. NO antialiasing, gradients, dithering, texture, ground shadow, tiny speckles, detached objects, labels, scenery, UI, glow or particles. One creature only.\",\n  \"seed\": 2026102414,\n  \"image_size\": {\n    \"width\": 32,\n    \"height\": 32\n  },\n  \"output_count\": 1,\n  \"estimated_generations\": 5,\n  \"pricing_provisional\": true,\n  \"poll_tool\": \"get_image\",\n  \"download_path\": \"/mcp/images/9d713392-c3ab-4859-b90b-face0b559f9e/download\"\n}\nPoll get_image(job_id=\"9d713392-c3ab-4859-b90b-face0b559f9e\"). The source_image_id is usable after completion; it is an image ID, not a character/object ID. Actual usage is reported on completion. cancel_job(job_id=...) cancels unfinished work.",
+      "complete": true
+    },
+    {
+      "id": "mushroom_captain",
+      "displayName": "숲송이 대장",
+      "stage": 15,
+      "width": 48,
+      "height": 48,
+      "palette": [
+        "#18272B",
+        "#663D36",
+        "#AD4F3F",
+        "#E18B57",
+        "#F4D99B",
+        "#FFF0CA",
+        "#8C623C",
+        "#B38A55"
+      ],
+      "body": "One large MUSHROOM CAPTAIN miniboss in LEFT-facing profile. A huge wide CORAL-RED tiered mushroom cap like two stacked broad umbrellas, THREE large cream square patches, thick cream stalk-body, one dark square eye on left side under the cap, TWO broad ROOT FISTS and thick wide root feet. Massive cap and low broad body distinguish the miniboss from small mushrooms. No crown, no clothes, no weapons, no face on cap.",
+      "target": "Full monster approximately34px wide and33px tall, cap top y7, root feet baseline y40;4px generous margins.",
+      "request": {
+        "description": "One original enemy sprite for a cheerful very coarse native pixel fantasy sidescrolling timing game. STRICT LEFT-facing side profile. One large MUSHROOM CAPTAIN miniboss in LEFT-facing profile. A huge wide CORAL-RED tiered mushroom cap like two stacked broad umbrellas, THREE large cream square patches, thick cream stalk-body, one dark square eye on left side under the cap, TWO broad ROOT FISTS and thick wide root feet. Massive cap and low broad body distinguish the miniboss from small mushrooms. No crown, no clothes, no weapons, no face on cap. Native48x48 transparent canvas. Full monster approximately34px wide and33px tall, cap top y7, root feet baseline y40;4px generous margins. Very sparse chunky square clusters, one-pixel dark silhouette contour, flat base and shadow only. Exactly this palette maximum8 colors. All body/equipment fully visible. NO antialiasing, gradients, dithering, texture, ground shadow, tiny speckles, detached objects, labels, scenery, UI, glow or particles. One creature only.",
+        "width": 48,
+        "height": 48,
+        "max_colors": 8,
+        "no_background": true,
+        "palette": [
+          "#18272B",
+          "#663D36",
+          "#AD4F3F",
+          "#E18B57",
+          "#F4D99B",
+          "#FFF0CA",
+          "#8C623C",
+          "#B38A55"
+        ],
+        "palette_name": "Last Bell bright forest coarse pixel palette",
+        "seed": 2026102415
+      },
+      "jobId": "8cc007fc-cd8d-4ae1-870a-40493a896a83",
+      "sourceImageId": "328c30b6-65f3-57ed-b67b-fef5f5a1f780",
+      "response": "{\n  \"background_job_id\": \"8cc007fc-cd8d-4ae1-870a-40493a896a83\",\n  \"image_id\": \"328c30b6-65f3-57ed-b67b-fef5f5a1f780\",\n  \"status\": \"processing\",\n  \"source_image_id\": \"328c30b6-65f3-57ed-b67b-fef5f5a1f780\",\n  \"job_id\": \"8cc007fc-cd8d-4ae1-870a-40493a896a83\",\n  \"description\": \"One original enemy sprite for a cheerful very coarse native pixel fantasy sidescrolling timing game. STRICT LEFT-facing side profile. One large MUSHROOM CAPTAIN miniboss in LEFT-facing profile. A huge wide CORAL-RED tiered mushroom cap like two stacked broad umbrellas, THREE large cream square patches, thick cream stalk-body, one dark square eye on left side under the cap, TWO broad ROOT FISTS and thick wide root feet. Massive cap and low broad body distinguish the miniboss from small mushrooms. No crown, no clothes, no weapons, no face on cap. Native48x48 transparent canvas. Full monster approximately34px wide and33px tall, cap top y7, root feet baseline y40;4px generous margins. Very sparse chunky square clusters, one-pixel dark silhouette contour, flat base and shadow only. Exactly this palette maximum8 colors. All body/equipment fully visible. NO antialiasing, gradients, dithering, texture, ground shadow, tiny speckles, detached objects, labels, scenery, UI, glow or particles. One creature only.\",\n  \"seed\": 2026102415,\n  \"image_size\": {\n    \"width\": 48,\n    \"height\": 48\n  },\n  \"output_count\": 1,\n  \"estimated_generations\": 5,\n  \"pricing_provisional\": true,\n  \"poll_tool\": \"get_image\",\n  \"download_path\": \"/mcp/images/8cc007fc-cd8d-4ae1-870a-40493a896a83/download\"\n}\nPoll get_image(job_id=\"8cc007fc-cd8d-4ae1-870a-40493a896a83\"). The source_image_id is usable after completion; it is an image ID, not a character/object ID. Actual usage is reported on completion. cancel_job(job_id=...) cancels unfinished work.",
+      "complete": true
+    },
+    {
+      "id": "goblin_spear",
+      "displayName": "창 고블린",
+      "stage": 16,
+      "width": 48,
+      "height": 32,
+      "palette": [
+        "#18272B",
+        "#36573A",
+        "#79A34A",
+        "#B5CC71",
+        "#5E3F2D",
+        "#A87442",
+        "#C65E3D",
+        "#E7A867",
+        "#C8D6C6",
+        "#F3E7BE"
+      ],
+      "body": "A lean GREEN goblin spearman, big long pointed ears and left-facing nose, one eye, simple RUST-ORANGE cone hood leaving face visible, tan vest and brown boots. BOTH hands visibly grip ONE long straight brown wooden SPEAR held horizontally at waist, pointed STEEL spearhead toward LEFT. The full spear reaches ahead of body but has generous space to thrust. Long spear, small hood and narrow legs distinguish this troop. No shield or sword.",
+      "target": "Body22px tall near x26, head top y6, solesy28; spear entirely within x6..39 with6px spare left margin.",
+      "request": {
+        "description": "One original enemy sprite for a cheerful very coarse native pixel fantasy sidescrolling timing game. STRICT LEFT-facing side profile. A lean GREEN goblin spearman, big long pointed ears and left-facing nose, one eye, simple RUST-ORANGE cone hood leaving face visible, tan vest and brown boots. BOTH hands visibly grip ONE long straight brown wooden SPEAR held horizontally at waist, pointed STEEL spearhead toward LEFT. The full spear reaches ahead of body but has generous space to thrust. Long spear, small hood and narrow legs distinguish this troop. No shield or sword. Native48x32 transparent canvas. Body22px tall near x26, head top y6, solesy28; spear entirely within x6..39 with6px spare left margin. Very sparse chunky square clusters, one-pixel dark silhouette contour, flat base and shadow only. Exactly this palette maximum10 colors. All body/equipment fully visible. NO antialiasing, gradients, dithering, texture, ground shadow, tiny speckles, detached objects, labels, scenery, UI, glow or particles. One creature only.",
+        "width": 48,
+        "height": 32,
+        "max_colors": 10,
+        "no_background": true,
+        "palette": [
+          "#18272B",
+          "#36573A",
+          "#79A34A",
+          "#B5CC71",
+          "#5E3F2D",
+          "#A87442",
+          "#C65E3D",
+          "#E7A867",
+          "#C8D6C6",
+          "#F3E7BE"
+        ],
+        "palette_name": "Last Bell bright forest coarse pixel palette",
+        "seed": 2026102416
+      },
+      "jobId": "25b93380-1adf-441f-a04c-06d275ab7a45",
+      "sourceImageId": "f4c7c027-d1c1-53ae-b7ff-f35bf0817ba7",
+      "response": "{\n  \"background_job_id\": \"25b93380-1adf-441f-a04c-06d275ab7a45\",\n  \"image_id\": \"f4c7c027-d1c1-53ae-b7ff-f35bf0817ba7\",\n  \"status\": \"processing\",\n  \"source_image_id\": \"f4c7c027-d1c1-53ae-b7ff-f35bf0817ba7\",\n  \"job_id\": \"25b93380-1adf-441f-a04c-06d275ab7a45\",\n  \"description\": \"One original enemy sprite for a cheerful very coarse native pixel fantasy sidescrolling timing game. STRICT LEFT-facing side profile. A lean GREEN goblin spearman, big long pointed ears and left-facing nose, one eye, simple RUST-ORANGE cone hood leaving face visible, tan vest and brown boots. BOTH hands visibly grip ONE long straight brown wooden SPEAR held horizontally at waist, pointed STEEL spearhead toward LEFT. The full spear reaches ahead of body but has generous space to thrust. Long spear, small hood and narrow legs distinguish this troop. No shield or sword. Native48x32 transparent canvas. Body22px tall near x26, head top y6, solesy28; spear entirely within x6..39 with6px spare left margin. Very sparse chunky square clusters, one-pixel dark silhouette contour, flat base and shadow only. Exactly this palette maximum10 colors. All body/equipment fully visible. NO antialiasing, gradients, dithering, texture, ground shadow, tiny speckles, detached objects, labels, scenery, UI, glow or particles. One creature only.\",\n  \"seed\": 2026102416,\n  \"image_size\": {\n    \"width\": 48,\n    \"height\": 32\n  },\n  \"output_count\": 1,\n  \"estimated_generations\": 5,\n  \"pricing_provisional\": true,\n  \"poll_tool\": \"get_image\",\n  \"download_path\": \"/mcp/images/25b93380-1adf-441f-a04c-06d275ab7a45/download\"\n}\nPoll get_image(job_id=\"25b93380-1adf-441f-a04c-06d275ab7a45\"). The source_image_id is usable after completion; it is an image ID, not a character/object ID. Actual usage is reported on completion. cancel_job(job_id=...) cancels unfinished work.",
+      "complete": true
+    },
+    {
+      "id": "spore_mushroom",
+      "displayName": "포자 숲송이",
+      "stage": 17,
+      "width": 32,
+      "height": 32,
+      "palette": [
+        "#18272B",
+        "#663D36",
+        "#AD4F3F",
+        "#E18B57",
+        "#F4D99B",
+        "#FFF0CA",
+        "#8C623C",
+        "#B38A55"
+      ],
+      "body": "A small tall slender walking MUSHROOM enemy in LEFT profile. TALL ORANGE conical cap with upturned brim and ONE broad cream square patch, narrow cream stalk-body with one dark square left-facing eye under cap, short attached root arms, TWO longish root feet planted. Distinct upright narrow silhouette, different from broad red forest mushroom. No weapon, no clothes, no floating spores or effects.",
+      "target": "Complete creature about16px wide and22px tall, cap top y6 and feety28 with4px margins.",
+      "request": {
+        "description": "One original enemy sprite for a cheerful very coarse native pixel fantasy sidescrolling timing game. STRICT LEFT-facing side profile. A small tall slender walking MUSHROOM enemy in LEFT profile. TALL ORANGE conical cap with upturned brim and ONE broad cream square patch, narrow cream stalk-body with one dark square left-facing eye under cap, short attached root arms, TWO longish root feet planted. Distinct upright narrow silhouette, different from broad red forest mushroom. No weapon, no clothes, no floating spores or effects. Native32x32 transparent canvas. Complete creature about16px wide and22px tall, cap top y6 and feety28 with4px margins. Very sparse chunky square clusters, one-pixel dark silhouette contour, flat base and shadow only. Exactly this palette maximum8 colors. All body/equipment fully visible. NO antialiasing, gradients, dithering, texture, ground shadow, tiny speckles, detached objects, labels, scenery, UI, glow or particles. One creature only.",
+        "width": 32,
+        "height": 32,
+        "max_colors": 8,
+        "no_background": true,
+        "palette": [
+          "#18272B",
+          "#663D36",
+          "#AD4F3F",
+          "#E18B57",
+          "#F4D99B",
+          "#FFF0CA",
+          "#8C623C",
+          "#B38A55"
+        ],
+        "palette_name": "Last Bell bright forest coarse pixel palette",
+        "seed": 2026102417
+      },
+      "jobId": "ad3a74bc-bc68-4121-8172-2057f79541fc",
+      "sourceImageId": "93698f76-23b3-5ae7-ab72-241f6b21bf25",
+      "response": "{\n  \"background_job_id\": \"ad3a74bc-bc68-4121-8172-2057f79541fc\",\n  \"image_id\": \"93698f76-23b3-5ae7-ab72-241f6b21bf25\",\n  \"status\": \"processing\",\n  \"source_image_id\": \"93698f76-23b3-5ae7-ab72-241f6b21bf25\",\n  \"job_id\": \"ad3a74bc-bc68-4121-8172-2057f79541fc\",\n  \"description\": \"One original enemy sprite for a cheerful very coarse native pixel fantasy sidescrolling timing game. STRICT LEFT-facing side profile. A small tall slender walking MUSHROOM enemy in LEFT profile. TALL ORANGE conical cap with upturned brim and ONE broad cream square patch, narrow cream stalk-body with one dark square left-facing eye under cap, short attached root arms, TWO longish root feet planted. Distinct upright narrow silhouette, different from broad red forest mushroom. No weapon, no clothes, no floating spores or effects. Native32x32 transparent canvas. Complete creature about16px wide and22px tall, cap top y6 and feety28 with4px margins. Very sparse chunky square clusters, one-pixel dark silhouette contour, flat base and shadow only. Exactly this palette maximum8 colors. All body/equipment fully visible. NO antialiasing, gradients, dithering, texture, ground shadow, tiny speckles, detached objects, labels, scenery, UI, glow or particles. One creature only.\",\n  \"seed\": 2026102417,\n  \"image_size\": {\n    \"width\": 32,\n    \"height\": 32\n  },\n  \"output_count\": 1,\n  \"estimated_generations\": 5,\n  \"pricing_provisional\": true,\n  \"poll_tool\": \"get_image\",\n  \"download_path\": \"/mcp/images/ad3a74bc-bc68-4121-8172-2057f79541fc/download\"\n}\nPoll get_image(job_id=\"ad3a74bc-bc68-4121-8172-2057f79541fc\"). The source_image_id is usable after completion; it is an image ID, not a character/object ID. Actual usage is reported on completion. cancel_job(job_id=...) cancels unfinished work.",
+      "complete": true
+    },
+    {
+      "id": "moss_mushroom",
+      "displayName": "이끼 숲송이",
+      "stage": 18,
+      "width": 32,
+      "height": 32,
+      "palette": [
+        "#18272B",
+        "#36573A",
+        "#79A34A",
+        "#B5CC71",
+        "#5E3F2D",
+        "#A87442",
+        "#E7A867",
+        "#F3E7BE"
+      ],
+      "body": "A small BROAD squat moss mushroom enemy in LEFT profile. Low flat dark moss-GREEN cap with scalloped stepped sides and exactly TWO large light moss blocks, broad TAN stalk-body, one dark square left-facing eye, thick attached root forearms and TWO short wide root feet. Wide almost square body, no red cap, no tiny grass strands. Heavy horizontal silhouette distinguishes this one from the tall orange mushroom. No clothes or equipment.",
+      "target": "Creature around23px wide and18px tall, cap top y10 and feety28 with3px margins.",
+      "request": {
+        "description": "One original enemy sprite for a cheerful very coarse native pixel fantasy sidescrolling timing game. STRICT LEFT-facing side profile. A small BROAD squat moss mushroom enemy in LEFT profile. Low flat dark moss-GREEN cap with scalloped stepped sides and exactly TWO large light moss blocks, broad TAN stalk-body, one dark square left-facing eye, thick attached root forearms and TWO short wide root feet. Wide almost square body, no red cap, no tiny grass strands. Heavy horizontal silhouette distinguishes this one from the tall orange mushroom. No clothes or equipment. Native32x32 transparent canvas. Creature around23px wide and18px tall, cap top y10 and feety28 with3px margins. Very sparse chunky square clusters, one-pixel dark silhouette contour, flat base and shadow only. Exactly this palette maximum8 colors. All body/equipment fully visible. NO antialiasing, gradients, dithering, texture, ground shadow, tiny speckles, detached objects, labels, scenery, UI, glow or particles. One creature only.",
+        "width": 32,
+        "height": 32,
+        "max_colors": 8,
+        "no_background": true,
+        "palette": [
+          "#18272B",
+          "#36573A",
+          "#79A34A",
+          "#B5CC71",
+          "#5E3F2D",
+          "#A87442",
+          "#E7A867",
+          "#F3E7BE"
+        ],
+        "palette_name": "Last Bell bright forest coarse pixel palette",
+        "seed": 2026102418
+      },
+      "jobId": "c03b5370-ef3d-4625-884e-fe11dd84b4ca",
+      "sourceImageId": "0109ea34-c6b6-573d-b8ac-f4bd00b73b6d",
+      "response": "{\n  \"background_job_id\": \"c03b5370-ef3d-4625-884e-fe11dd84b4ca\",\n  \"image_id\": \"0109ea34-c6b6-573d-b8ac-f4bd00b73b6d\",\n  \"status\": \"processing\",\n  \"source_image_id\": \"0109ea34-c6b6-573d-b8ac-f4bd00b73b6d\",\n  \"job_id\": \"c03b5370-ef3d-4625-884e-fe11dd84b4ca\",\n  \"description\": \"One original enemy sprite for a cheerful very coarse native pixel fantasy sidescrolling timing game. STRICT LEFT-facing side profile. A small BROAD squat moss mushroom enemy in LEFT profile. Low flat dark moss-GREEN cap with scalloped stepped sides and exactly TWO large light moss blocks, broad TAN stalk-body, one dark square left-facing eye, thick attached root forearms and TWO short wide root feet. Wide almost square body, no red cap, no tiny grass strands. Heavy horizontal silhouette distinguishes this one from the tall orange mushroom. No clothes or equipment. Native32x32 transparent canvas. Creature around23px wide and18px tall, cap top y10 and feety28 with3px margins. Very sparse chunky square clusters, one-pixel dark silhouette contour, flat base and shadow only. Exactly this palette maximum8 colors. All body/equipment fully visible. NO antialiasing, gradients, dithering, texture, ground shadow, tiny speckles, detached objects, labels, scenery, UI, glow or particles. One creature only.\",\n  \"seed\": 2026102418,\n  \"image_size\": {\n    \"width\": 32,\n    \"height\": 32\n  },\n  \"output_count\": 1,\n  \"estimated_generations\": 5,\n  \"pricing_provisional\": true,\n  \"poll_tool\": \"get_image\",\n  \"download_path\": \"/mcp/images/c03b5370-ef3d-4625-884e-fe11dd84b4ca/download\"\n}\nPoll get_image(job_id=\"c03b5370-ef3d-4625-884e-fe11dd84b4ca\"). The source_image_id is usable after completion; it is an image ID, not a character/object ID. Actual usage is reported on completion. cancel_job(job_id=...) cancels unfinished work.",
+      "complete": true
+    },
+    {
+      "id": "goblin_guard",
+      "displayName": "기블의 문지기",
+      "stage": 19,
+      "width": 32,
+      "height": 32,
+      "palette": [
+        "#18272B",
+        "#36573A",
+        "#79A34A",
+        "#B5CC71",
+        "#5E3F2D",
+        "#A87442",
+        "#C65E3D",
+        "#E7A867",
+        "#C8D6C6",
+        "#F3E7BE"
+      ],
+      "body": "A stocky GREEN goblin gate guard, left-facing pointed nose and big ears, one eye. Flat STEEL pot helmet with no feather, tan tunic with orange belt and brown boots. LARGE tall rectangular dark brown WOODEN SHIELD with ONE cream square emblem in front hand and SHORT STEEL SWORD held above/behind the shield by the other hand. Wide armored-looking silhouette, knees bent and both boots visible. Not giant, no spear.",
+      "target": "Helmet to soles24px tall, weapon and shield full inside3px margins; feet y29.",
+      "request": {
+        "description": "One original enemy sprite for a cheerful very coarse native pixel fantasy sidescrolling timing game. STRICT LEFT-facing side profile. A stocky GREEN goblin gate guard, left-facing pointed nose and big ears, one eye. Flat STEEL pot helmet with no feather, tan tunic with orange belt and brown boots. LARGE tall rectangular dark brown WOODEN SHIELD with ONE cream square emblem in front hand and SHORT STEEL SWORD held above/behind the shield by the other hand. Wide armored-looking silhouette, knees bent and both boots visible. Not giant, no spear. Native32x32 transparent canvas. Helmet to soles24px tall, weapon and shield full inside3px margins; feet y29. Very sparse chunky square clusters, one-pixel dark silhouette contour, flat base and shadow only. Exactly this palette maximum10 colors. All body/equipment fully visible. NO antialiasing, gradients, dithering, texture, ground shadow, tiny speckles, detached objects, labels, scenery, UI, glow or particles. One creature only.",
+        "width": 32,
+        "height": 32,
+        "max_colors": 10,
+        "no_background": true,
+        "palette": [
+          "#18272B",
+          "#36573A",
+          "#79A34A",
+          "#B5CC71",
+          "#5E3F2D",
+          "#A87442",
+          "#C65E3D",
+          "#E7A867",
+          "#C8D6C6",
+          "#F3E7BE"
+        ],
+        "palette_name": "Last Bell bright forest coarse pixel palette",
+        "seed": 2026102419
+      },
+      "jobId": "d923fb8d-2eee-44be-98b4-8e1d4d528a09",
+      "sourceImageId": "8bf865d0-6270-587a-a25f-09eae1f1e326",
+      "response": "{\n  \"background_job_id\": \"d923fb8d-2eee-44be-98b4-8e1d4d528a09\",\n  \"image_id\": \"8bf865d0-6270-587a-a25f-09eae1f1e326\",\n  \"status\": \"processing\",\n  \"source_image_id\": \"8bf865d0-6270-587a-a25f-09eae1f1e326\",\n  \"job_id\": \"d923fb8d-2eee-44be-98b4-8e1d4d528a09\",\n  \"description\": \"One original enemy sprite for a cheerful very coarse native pixel fantasy sidescrolling timing game. STRICT LEFT-facing side profile. A stocky GREEN goblin gate guard, left-facing pointed nose and big ears, one eye. Flat STEEL pot helmet with no feather, tan tunic with orange belt and brown boots. LARGE tall rectangular dark brown WOODEN SHIELD with ONE cream square emblem in front hand and SHORT STEEL SWORD held above/behind the shield by the other hand. Wide armored-looking silhouette, knees bent and both boots visible. Not giant, no spear. Native32x32 transparent canvas. Helmet to soles24px tall, weapon and shield full inside3px margins; feet y29. Very sparse chunky square clusters, one-pixel dark silhouette contour, flat base and shadow only. Exactly this palette maximum10 colors. All body/equipment fully visible. NO antialiasing, gradients, dithering, texture, ground shadow, tiny speckles, detached objects, labels, scenery, UI, glow or particles. One creature only.\",\n  \"seed\": 2026102419,\n  \"image_size\": {\n    \"width\": 32,\n    \"height\": 32\n  },\n  \"output_count\": 1,\n  \"estimated_generations\": 5,\n  \"pricing_provisional\": true,\n  \"poll_tool\": \"get_image\",\n  \"download_path\": \"/mcp/images/d923fb8d-2eee-44be-98b4-8e1d4d528a09/download\"\n}\nPoll get_image(job_id=\"d923fb8d-2eee-44be-98b4-8e1d4d528a09\"). The source_image_id is usable after completion; it is an image ID, not a character/object ID. Actual usage is reported on completion. cancel_job(job_id=...) cancels unfinished work.",
+      "complete": true
+    },
+    {
+      "id": "gib",
+      "displayName": "기블",
+      "stage": 20,
+      "width": 48,
+      "height": 48,
+      "palette": [
+        "#18272B",
+        "#36573A",
+        "#79A34A",
+        "#B5CC71",
+        "#5E3F2D",
+        "#A87442",
+        "#C65E3D",
+        "#E7A867",
+        "#C8D6C6",
+        "#F3E7BE"
+      ],
+      "body": "One imposing GREEN GOBLIN CAPTAIN BOSS named Gible in strict LEFT profile. Small green goblin body with long left-pointing nose, big ears, ONE dark eye, broad shoulders. Oversized flat STEEL helmet topped by ONE thick rust-orange feather, massive rectangular WOODEN SHIELD in front hand with a single cream bar, short straight wooden SPEAR with steel point in back hand pointing LEFT over shield. Brown leather boots, rust-orange tunic. Shield and full equipment dominate large boss silhouette; still goblin proportions, no human armor, no king crown. Strong planted two-leg stance, not standing frontally.",
+      "target": "Helmet feather to soles38px tall, full shield and spear within4px empty margins, soles at y43. All spear tips must stay well inside canvas.",
+      "request": {
+        "description": "One original enemy sprite for a cheerful very coarse native pixel fantasy sidescrolling timing game. STRICT LEFT-facing side profile. One imposing GREEN GOBLIN CAPTAIN BOSS named Gible in strict LEFT profile. Small green goblin body with long left-pointing nose, big ears, ONE dark eye, broad shoulders. Oversized flat STEEL helmet topped by ONE thick rust-orange feather, massive rectangular WOODEN SHIELD in front hand with a single cream bar, short straight wooden SPEAR with steel point in back hand pointing LEFT over shield. Brown leather boots, rust-orange tunic. Shield and full equipment dominate large boss silhouette; still goblin proportions, no human armor, no king crown. Strong planted two-leg stance, not standing frontally. Native48x48 transparent canvas. Helmet feather to soles38px tall, full shield and spear within4px empty margins, soles at y43. All spear tips must stay well inside canvas. Very sparse chunky square clusters, one-pixel dark silhouette contour, flat base and shadow only. Exactly this palette maximum10 colors. All body/equipment fully visible. NO antialiasing, gradients, dithering, texture, ground shadow, tiny speckles, detached objects, labels, scenery, UI, glow or particles. One creature only.",
+        "width": 48,
+        "height": 48,
+        "max_colors": 10,
+        "no_background": true,
+        "palette": [
+          "#18272B",
+          "#36573A",
+          "#79A34A",
+          "#B5CC71",
+          "#5E3F2D",
+          "#A87442",
+          "#C65E3D",
+          "#E7A867",
+          "#C8D6C6",
+          "#F3E7BE"
+        ],
+        "palette_name": "Last Bell bright forest coarse pixel palette",
+        "seed": 2026102420
+      },
+      "jobId": "5ec77f46-0d1d-414b-b767-72feb60bca20",
+      "sourceImageId": "15eaa8ec-0de2-57b2-9953-bb9e68bd7435",
+      "response": "{\n  \"background_job_id\": \"5ec77f46-0d1d-414b-b767-72feb60bca20\",\n  \"image_id\": \"15eaa8ec-0de2-57b2-9953-bb9e68bd7435\",\n  \"status\": \"processing\",\n  \"source_image_id\": \"15eaa8ec-0de2-57b2-9953-bb9e68bd7435\",\n  \"job_id\": \"5ec77f46-0d1d-414b-b767-72feb60bca20\",\n  \"description\": \"One original enemy sprite for a cheerful very coarse native pixel fantasy sidescrolling timing game. STRICT LEFT-facing side profile. One imposing GREEN GOBLIN CAPTAIN BOSS named Gible in strict LEFT profile. Small green goblin body with long left-pointing nose, big ears, ONE dark eye, broad shoulders. Oversized flat STEEL helmet topped by ONE thick rust-orange feather, massive rectangular WOODEN SHIELD in front hand with a single cream bar, short straight wooden SPEAR with steel point in back hand pointing LEFT over shield. Brown leather boots, rust-orange tunic. Shield and full equipment dominate large boss silhouette; still goblin proportions, no human armor, no king crown. Strong planted two-leg stance, not standing frontally. Native48x48 transparent canvas. Helmet feather to soles38px tall, full shield and spear within4px empty margins, soles at y43. All spear tips must stay well inside canvas. Very sparse chunky square clusters, one-pixel dark silhouette contour, flat base and shadow only. Exactly this palette maximum10 colors. All body/equipment fully visible. NO antialiasing, gradients, dithering, texture, ground shadow, tiny speckles, detached objects, labels, scenery, UI, glow or particles. One creature only.\",\n  \"seed\": 2026102420,\n  \"image_size\": {\n    \"width\": 48,\n    \"height\": 48\n  },\n  \"output_count\": 1,\n  \"estimated_generations\": 5,\n  \"pricing_provisional\": true,\n  \"poll_tool\": \"get_image\",\n  \"download_path\": \"/mcp/images/5ec77f46-0d1d-414b-b767-72feb60bca20/download\"\n}\nPoll get_image(job_id=\"5ec77f46-0d1d-414b-b767-72feb60bca20\"). The source_image_id is usable after completion; it is an image ID, not a character/object ID. Actual usage is reported on completion. cancel_job(job_id=...) cancels unfinished work.",
+      "complete": true
+    }
+  ],
+  "animations": [
+    {
+      "actor": "goblin_scout",
+      "motion": "Idle",
+      "request": {
+        "description": "A restrained in-place breathing loop. Chest and shoulders move down/up by at most1pixel, one small blink, free fingers relax. Maintain the exact held weapon and shield positions with only a tiny elbow shift. Both boots stay planted; no walking, no full-body bobbing, no attack. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/1acb73dc-c9f2-421c-91ed-def1c0bc4d39/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/1acb73dc-c9f2-421c-91ed-def1c0bc4d39/download?index=0",
+        "frame_count": 8,
+        "subject_description": "A small wiry GREEN goblin scout, big pointed ears, angular left-pointing nose, one dark eye, short bare head, rust-orange short sleeveless tunic, simple brown belt and two large brown boots. One SHORT STEEL SWORD held in the left-facing front hand at waist height pointing diagonally down-left. Free back hand clenched near belt. Crouched ready stance with two clearly separate legs. NO shield, helmet or backpack.",
+        "initial_pose": "left-facing battle ready stance with both boots grounded and signature weapon held",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 2026104110
+      },
+      "response": "1 validation error for call[animate_image_pixminimax]\nsubject_description\n  String should have at most 300 characters [type=string_too_long, input_value='A small wiry GREEN gobli...ld, helmet or backpack.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+    },
+    {
+      "actor": "goblin_scout",
+      "motion": "Attack",
+      "request": {
+        "description": "One single sword SLASH, not a thrust. Bend knees and draw the sword behind the torso, then swing the whole arm in one visible diagonal arc down-left across the front around frame4, then recover to the exact ready stance. Keep the short steel blade attached to the same hand with the same length. Feet remain on ground. No movement beyond1pixel left/right and never clip the sword. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/1acb73dc-c9f2-421c-91ed-def1c0bc4d39/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/1acb73dc-c9f2-421c-91ed-def1c0bc4d39/download?index=0",
+        "frame_count": 8,
+        "subject_description": "A small wiry GREEN goblin scout, big pointed ears, angular left-pointing nose, one dark eye, short bare head, rust-orange short sleeveless tunic, simple brown belt and two large brown boots. One SHORT STEEL SWORD held in the left-facing front hand at waist height pointing diagonally down-left. Free back hand clenched near belt. Crouched ready stance with two clearly separate legs. NO shield, helmet or backpack.",
+        "initial_pose": "left-facing battle ready stance with both boots grounded and signature weapon held",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 2026104111
+      },
+      "response": "1 validation error for call[animate_image_pixminimax]\nsubject_description\n  String should have at most 300 characters [type=string_too_long, input_value='A small wiry GREEN gobli...ld, helmet or backpack.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+    },
+    {
+      "actor": "goblin_scout",
+      "motion": "Stun",
+      "request": {
+        "description": "A weak stunned sway loop: knees soften, head and shoulders sag1pixel, torso rocks slightly backward and forward. Weapon hand and shield hand lower slightly but never let go. Equipment stays solid and same length, eyes briefly close. Both boots stay firmly grounded. No attack, no spin. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/1acb73dc-c9f2-421c-91ed-def1c0bc4d39/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/1acb73dc-c9f2-421c-91ed-def1c0bc4d39/download?index=0",
+        "frame_count": 8,
+        "subject_description": "A small wiry GREEN goblin scout, big pointed ears, angular left-pointing nose, one dark eye, short bare head, rust-orange short sleeveless tunic, simple brown belt and two large brown boots. One SHORT STEEL SWORD held in the left-facing front hand at waist height pointing diagonally down-left. Free back hand clenched near belt. Crouched ready stance with two clearly separate legs. NO shield, helmet or backpack.",
+        "initial_pose": "left-facing battle ready stance with both boots grounded and signature weapon held",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 2026104112
+      },
+      "response": "1 validation error for call[animate_image_pixminimax]\nsubject_description\n  String should have at most 300 characters [type=string_too_long, input_value='A small wiry GREEN gobli...ld, helmet or backpack.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+    },
+    {
+      "actor": "forest_mushroom",
+      "motion": "Idle",
+      "request": {
+        "description": "A subtle in-place idle breathing loop: stalk slightly bends and relaxes, cap compresses down1pixel then restores, root fingers relax. Never lift both feet, never bounce or hop. The cap never rises higher than its starting top edge. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/ad641abd-a0e0-486c-b194-d31dfd1a6b88/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/ad641abd-a0e0-486c-b194-d31dfd1a6b88/download?index=0",
+        "frame_count": 8,
+        "subject_description": "A small friendly-fantasy enemy walking MUSHROOM in LEFT profile. Wide low CORAL-RED mushroom cap shaped like a broad simple umbrella, exactly TWO big cream square patches, short chunky cream stalk-body with one dark square eye facing left, TWO short ROOT FEET spread on ground, two stubby root arms attached at waist. Cap width22px, stalk short and thick. No mouth, no clothing, no weapon, no face on top of cap.",
+        "initial_pose": "root feet planted, cap and stalk upright, facing left",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 2026104130
+      },
+      "response": "1 validation error for call[animate_image_pixminimax]\nsubject_description\n  String should have at most 300 characters [type=string_too_long, input_value='A small friendly-fantasy... no face on top of cap.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+    },
+    {
+      "actor": "forest_mushroom",
+      "motion": "Attack",
+      "request": {
+        "description": "One rooted stomp attack. The mushroom cap and torso slowly compress downward2pixels, both root arms draw inward, then the body forcefully expands back to its normal height and root fists press down into the ground once around frame4. Recover to original idle pose. No jump and no growth of overall body. Keep two grounded root feet, the same cap and its two cream patches. DO NOT draw ground roots, spikes, spores, particles or impact effects. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/ad641abd-a0e0-486c-b194-d31dfd1a6b88/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/ad641abd-a0e0-486c-b194-d31dfd1a6b88/download?index=0",
+        "frame_count": 8,
+        "subject_description": "A small friendly-fantasy enemy walking MUSHROOM in LEFT profile. Wide low CORAL-RED mushroom cap shaped like a broad simple umbrella, exactly TWO big cream square patches, short chunky cream stalk-body with one dark square eye facing left, TWO short ROOT FEET spread on ground, two stubby root arms attached at waist. Cap width22px, stalk short and thick. No mouth, no clothing, no weapon, no face on top of cap.",
+        "initial_pose": "root feet planted, cap and stalk upright, facing left",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 2026104131
+      },
+      "response": "1 validation error for call[animate_image_pixminimax]\nsubject_description\n  String should have at most 300 characters [type=string_too_long, input_value='A small friendly-fantasy... no face on top of cap.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+    },
+    {
+      "actor": "forest_mushroom",
+      "motion": "Stun",
+      "request": {
+        "description": "A slow weak stunned sway loop: cap and upper stalk lean slightly left then right with2pixel range while knees sag; cap stays attached, root arms hang low. Both root feet fixed. Never jump, attack or stretch into new shapes. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/ad641abd-a0e0-486c-b194-d31dfd1a6b88/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/ad641abd-a0e0-486c-b194-d31dfd1a6b88/download?index=0",
+        "frame_count": 8,
+        "subject_description": "A small friendly-fantasy enemy walking MUSHROOM in LEFT profile. Wide low CORAL-RED mushroom cap shaped like a broad simple umbrella, exactly TWO big cream square patches, short chunky cream stalk-body with one dark square eye facing left, TWO short ROOT FEET spread on ground, two stubby root arms attached at waist. Cap width22px, stalk short and thick. No mouth, no clothing, no weapon, no face on top of cap.",
+        "initial_pose": "root feet planted, cap and stalk upright, facing left",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 2026104132
+      },
+      "response": "1 validation error for call[animate_image_pixminimax]\nsubject_description\n  String should have at most 300 characters [type=string_too_long, input_value='A small friendly-fantasy... no face on top of cap.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+    },
+    {
+      "actor": "goblin_slinger",
+      "motion": "Idle",
+      "request": {
+        "description": "A restrained in-place breathing loop. Chest and shoulders move down/up by at most1pixel, one small blink, free fingers relax. Maintain the exact held weapon and shield positions with only a tiny elbow shift. Both boots stay planted; no walking, no full-body bobbing, no attack. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/05be67d0-4efc-473b-a58d-c1317abb2105/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/05be67d0-4efc-473b-a58d-c1317abb2105/download?index=0",
+        "frame_count": 8,
+        "subject_description": "A small wiry GREEN goblin slinger, big pointed ears and long left-facing nose, one eye, bare head with a tiny rust-red headband. Sleeveless TAN tunic, brown boots and a LARGE brown round stone pouch on right hip. Front LEFT hand visibly holds a SHORT folded rope SLING with one stone at waist; back arm ready beside torso. No sword, shield, spear or helmet. Two separate slender legs, leaning forward.",
+        "initial_pose": "left-facing battle ready stance with both boots grounded and signature weapon held",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 2026104120
+      },
+      "response": "1 validation error for call[animate_image_pixminimax]\nsubject_description\n  String should have at most 300 characters [type=string_too_long, input_value='A small wiry GREEN gobli... legs, leaning forward.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+    },
+    {
+      "actor": "goblin_slinger",
+      "motion": "Attack",
+      "request": {
+        "description": "One stone-sling throw. Raise the sling hand back near the right shoulder, circle the attached rope sling once overhead within the existing canvas, snap the hand forward-left once at frame4 as if releasing a stone, and lower it back to the original ready stance. The rope stays connected to the hand, pouch stays on hip. DO NOT draw the released stone or any projectile or effect; runtime will add it. Both feet remain planted. Do not rotate the whole body to face right. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/05be67d0-4efc-473b-a58d-c1317abb2105/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/05be67d0-4efc-473b-a58d-c1317abb2105/download?index=0",
+        "frame_count": 8,
+        "subject_description": "A small wiry GREEN goblin slinger, big pointed ears and long left-facing nose, one eye, bare head with a tiny rust-red headband. Sleeveless TAN tunic, brown boots and a LARGE brown round stone pouch on right hip. Front LEFT hand visibly holds a SHORT folded rope SLING with one stone at waist; back arm ready beside torso. No sword, shield, spear or helmet. Two separate slender legs, leaning forward.",
+        "initial_pose": "left-facing battle ready stance with both boots grounded and signature weapon held",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 2026104121
+      },
+      "response": "1 validation error for call[animate_image_pixminimax]\nsubject_description\n  String should have at most 300 characters [type=string_too_long, input_value='A small wiry GREEN gobli... legs, leaning forward.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+    },
+    {
+      "actor": "goblin_slinger",
+      "motion": "Stun",
+      "request": {
+        "description": "A weak stunned sway loop: knees soften, head and shoulders sag1pixel, torso rocks slightly backward and forward. Weapon hand and shield hand lower slightly but never let go. Equipment stays solid and same length, eyes briefly close. Both boots stay firmly grounded. No attack, no spin. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/05be67d0-4efc-473b-a58d-c1317abb2105/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/05be67d0-4efc-473b-a58d-c1317abb2105/download?index=0",
+        "frame_count": 8,
+        "subject_description": "A small wiry GREEN goblin slinger, big pointed ears and long left-facing nose, one eye, bare head with a tiny rust-red headband. Sleeveless TAN tunic, brown boots and a LARGE brown round stone pouch on right hip. Front LEFT hand visibly holds a SHORT folded rope SLING with one stone at waist; back arm ready beside torso. No sword, shield, spear or helmet. Two separate slender legs, leaning forward.",
+        "initial_pose": "left-facing battle ready stance with both boots grounded and signature weapon held",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 2026104122
+      },
+      "response": "1 validation error for call[animate_image_pixminimax]\nsubject_description\n  String should have at most 300 characters [type=string_too_long, input_value='A small wiry GREEN gobli... legs, leaning forward.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+    },
+    {
+      "actor": "goblin_shield",
+      "motion": "Idle",
+      "request": {
+        "description": "A restrained in-place breathing loop. Chest and shoulders move down/up by at most1pixel, one small blink, free fingers relax. Maintain the exact held weapon and shield positions with only a tiny elbow shift. Both boots stay planted; no walking, no full-body bobbing, no attack. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/9d713392-c3ab-4859-b90b-face0b559f9e/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/9d713392-c3ab-4859-b90b-face0b559f9e/download?index=0",
+        "frame_count": 8,
+        "subject_description": "A stocky GREEN goblin shield bearer with pointed ears and left-facing nose, one eye, bare head. Rust-orange tunic and brown boots, WIDE square WOODEN SHIELD in left/front hand reaching from chest to shin with one broad dark iron bar. Off hand grips short steel dagger low behind shield, blade fully visible. Wide planted stance. Shield almost half body width and distinct squat silhouette. No helmet, no spear.",
+        "initial_pose": "left-facing battle ready stance with both boots grounded and signature weapon held",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 2026104140
+      },
+      "response": "1 validation error for call[animate_image_pixminimax]\nsubject_description\n  String should have at most 300 characters [type=string_too_long, input_value='A stocky GREEN goblin sh...e. No helmet, no spear.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+    },
+    {
+      "actor": "goblin_shield",
+      "motion": "Attack",
+      "request": {
+        "description": "One shield bash. Bend both knees and draw the shield slightly backward toward the chest, brace, then extend the left forearm and push the entire intact rectangular shield forward-left by2pixels once around frame4. The dagger stays gripped behind the shield. Recover both hands and legs to original pose. No jump or horizontal travel. Keep shield straight and full-size, all edges and sword inside canvas. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/9d713392-c3ab-4859-b90b-face0b559f9e/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/9d713392-c3ab-4859-b90b-face0b559f9e/download?index=0",
+        "frame_count": 8,
+        "subject_description": "A stocky GREEN goblin shield bearer with pointed ears and left-facing nose, one eye, bare head. Rust-orange tunic and brown boots, WIDE square WOODEN SHIELD in left/front hand reaching from chest to shin with one broad dark iron bar. Off hand grips short steel dagger low behind shield, blade fully visible. Wide planted stance. Shield almost half body width and distinct squat silhouette. No helmet, no spear.",
+        "initial_pose": "left-facing battle ready stance with both boots grounded and signature weapon held",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 2026104141
+      },
+      "response": "1 validation error for call[animate_image_pixminimax]\nsubject_description\n  String should have at most 300 characters [type=string_too_long, input_value='A stocky GREEN goblin sh...e. No helmet, no spear.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+    },
+    {
+      "actor": "goblin_shield",
+      "motion": "Stun",
+      "request": {
+        "description": "A weak stunned sway loop: knees soften, head and shoulders sag1pixel, torso rocks slightly backward and forward. Weapon hand and shield hand lower slightly but never let go. Equipment stays solid and same length, eyes briefly close. Both boots stay firmly grounded. No attack, no spin. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/9d713392-c3ab-4859-b90b-face0b559f9e/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/9d713392-c3ab-4859-b90b-face0b559f9e/download?index=0",
+        "frame_count": 8,
+        "subject_description": "A stocky GREEN goblin shield bearer with pointed ears and left-facing nose, one eye, bare head. Rust-orange tunic and brown boots, WIDE square WOODEN SHIELD in left/front hand reaching from chest to shin with one broad dark iron bar. Off hand grips short steel dagger low behind shield, blade fully visible. Wide planted stance. Shield almost half body width and distinct squat silhouette. No helmet, no spear.",
+        "initial_pose": "left-facing battle ready stance with both boots grounded and signature weapon held",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 2026104142
+      },
+      "response": "1 validation error for call[animate_image_pixminimax]\nsubject_description\n  String should have at most 300 characters [type=string_too_long, input_value='A stocky GREEN goblin sh...e. No helmet, no spear.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+    },
+    {
+      "actor": "mushroom_captain",
+      "motion": "Idle",
+      "request": {
+        "description": "A subtle in-place idle breathing loop: stalk slightly bends and relaxes, cap compresses down1pixel then restores, root fingers relax. Never lift both feet, never bounce or hop. The cap never rises higher than its starting top edge. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/8cc007fc-cd8d-4ae1-870a-40493a896a83/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/8cc007fc-cd8d-4ae1-870a-40493a896a83/download?index=0",
+        "frame_count": 8,
+        "subject_description": "One large MUSHROOM CAPTAIN miniboss in LEFT-facing profile. A huge wide CORAL-RED tiered mushroom cap like two stacked broad umbrellas, THREE large cream square patches, thick cream stalk-body, one dark square eye on left side under the cap, TWO broad ROOT FISTS and thick wide root feet. Massive cap and low broad body distinguish the miniboss from small mushrooms. No crown, no clothes, no weapons, no face on cap.",
+        "initial_pose": "root feet planted, cap and stalk upright, facing left",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 2026104150
+      },
+      "response": "1 validation error for call[animate_image_pixminimax]\nsubject_description\n  String should have at most 300 characters [type=string_too_long, input_value='One large MUSHROOM CAPTA...eapons, no face on cap.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+    },
+    {
+      "actor": "mushroom_captain",
+      "motion": "Attack",
+      "request": {
+        "description": "One heavy grounded double-fist slam. Hunch the torso and raise both attached root fists beside the broad cap, then drive both fists DOWN together once around frame4, lower the cap2pixels and bend knees under the weight, then slowly recover. This is one simultaneous slam, not two attacks. Keep the huge two-tier red cap and its three spots, root legs and fists intact. Both feet remain grounded. NO growing spikes, projectiles, spores, clouds or flashes. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/8cc007fc-cd8d-4ae1-870a-40493a896a83/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/8cc007fc-cd8d-4ae1-870a-40493a896a83/download?index=0",
+        "frame_count": 8,
+        "subject_description": "One large MUSHROOM CAPTAIN miniboss in LEFT-facing profile. A huge wide CORAL-RED tiered mushroom cap like two stacked broad umbrellas, THREE large cream square patches, thick cream stalk-body, one dark square eye on left side under the cap, TWO broad ROOT FISTS and thick wide root feet. Massive cap and low broad body distinguish the miniboss from small mushrooms. No crown, no clothes, no weapons, no face on cap.",
+        "initial_pose": "root feet planted, cap and stalk upright, facing left",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 2026104151
+      },
+      "response": "1 validation error for call[animate_image_pixminimax]\nsubject_description\n  String should have at most 300 characters [type=string_too_long, input_value='One large MUSHROOM CAPTA...eapons, no face on cap.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+    },
+    {
+      "actor": "mushroom_captain",
+      "motion": "Stun",
+      "request": {
+        "description": "A slow weak stunned sway loop: cap and upper stalk lean slightly left then right with2pixel range while knees sag; cap stays attached, root arms hang low. Both root feet fixed. Never jump, attack or stretch into new shapes. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/8cc007fc-cd8d-4ae1-870a-40493a896a83/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/8cc007fc-cd8d-4ae1-870a-40493a896a83/download?index=0",
+        "frame_count": 8,
+        "subject_description": "One large MUSHROOM CAPTAIN miniboss in LEFT-facing profile. A huge wide CORAL-RED tiered mushroom cap like two stacked broad umbrellas, THREE large cream square patches, thick cream stalk-body, one dark square eye on left side under the cap, TWO broad ROOT FISTS and thick wide root feet. Massive cap and low broad body distinguish the miniboss from small mushrooms. No crown, no clothes, no weapons, no face on cap.",
+        "initial_pose": "root feet planted, cap and stalk upright, facing left",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 2026104152
+      },
+      "response": "1 validation error for call[animate_image_pixminimax]\nsubject_description\n  String should have at most 300 characters [type=string_too_long, input_value='One large MUSHROOM CAPTA...eapons, no face on cap.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+    },
+    {
+      "actor": "goblin_spear",
+      "motion": "Idle",
+      "request": {
+        "description": "A restrained in-place breathing loop. Chest and shoulders move down/up by at most1pixel, one small blink, free fingers relax. Maintain the exact held weapon and shield positions with only a tiny elbow shift. Both boots stay planted; no walking, no full-body bobbing, no attack. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/25b93380-1adf-441f-a04c-06d275ab7a45/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/25b93380-1adf-441f-a04c-06d275ab7a45/download?index=0",
+        "frame_count": 8,
+        "subject_description": "A lean GREEN goblin spearman, big long pointed ears and left-facing nose, one eye, simple RUST-ORANGE cone hood leaving face visible, tan vest and brown boots. BOTH hands visibly grip ONE long straight brown wooden SPEAR held horizontally at waist, pointed STEEL spearhead toward LEFT. The full spear reaches ahead of body but has generous space to thrust. Long spear, small hood and narrow legs distinguish this troop. No shield or sword.",
+        "initial_pose": "left-facing battle ready stance with both boots grounded and signature weapon held",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 2026104160
+      },
+      "response": "1 validation error for call[animate_image_pixminimax]\nsubject_description\n  String should have at most 300 characters [type=string_too_long, input_value='A lean GREEN goblin spea...op. No shield or sword.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+    },
+    {
+      "actor": "goblin_spear",
+      "motion": "Attack",
+      "request": {
+        "description": "One short spear thrust. BOTH hands keep contact with the same straight spear shaft: draw spear back to the right2pixels, brace knees, then extend arms together and thrust LEFT at frame4; retract to the original stance. No more than2pixels left extension, all spear tips inside canvas. Keep spear length and steel point unchanged, hood and body orientation fixed. Feet stay grounded, no jump, no spin. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/25b93380-1adf-441f-a04c-06d275ab7a45/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/25b93380-1adf-441f-a04c-06d275ab7a45/download?index=0",
+        "frame_count": 8,
+        "subject_description": "A lean GREEN goblin spearman, big long pointed ears and left-facing nose, one eye, simple RUST-ORANGE cone hood leaving face visible, tan vest and brown boots. BOTH hands visibly grip ONE long straight brown wooden SPEAR held horizontally at waist, pointed STEEL spearhead toward LEFT. The full spear reaches ahead of body but has generous space to thrust. Long spear, small hood and narrow legs distinguish this troop. No shield or sword.",
+        "initial_pose": "left-facing battle ready stance with both boots grounded and signature weapon held",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 2026104161
+      },
+      "response": "1 validation error for call[animate_image_pixminimax]\nsubject_description\n  String should have at most 300 characters [type=string_too_long, input_value='A lean GREEN goblin spea...op. No shield or sword.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+    },
+    {
+      "actor": "goblin_spear",
+      "motion": "Stun",
+      "request": {
+        "description": "A weak stunned sway loop: knees soften, head and shoulders sag1pixel, torso rocks slightly backward and forward. Weapon hand and shield hand lower slightly but never let go. Equipment stays solid and same length, eyes briefly close. Both boots stay firmly grounded. No attack, no spin. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/25b93380-1adf-441f-a04c-06d275ab7a45/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/25b93380-1adf-441f-a04c-06d275ab7a45/download?index=0",
+        "frame_count": 8,
+        "subject_description": "A lean GREEN goblin spearman, big long pointed ears and left-facing nose, one eye, simple RUST-ORANGE cone hood leaving face visible, tan vest and brown boots. BOTH hands visibly grip ONE long straight brown wooden SPEAR held horizontally at waist, pointed STEEL spearhead toward LEFT. The full spear reaches ahead of body but has generous space to thrust. Long spear, small hood and narrow legs distinguish this troop. No shield or sword.",
+        "initial_pose": "left-facing battle ready stance with both boots grounded and signature weapon held",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 2026104162
+      },
+      "response": "1 validation error for call[animate_image_pixminimax]\nsubject_description\n  String should have at most 300 characters [type=string_too_long, input_value='A lean GREEN goblin spea...op. No shield or sword.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+    },
+    {
+      "actor": "spore_mushroom",
+      "motion": "Idle",
+      "request": {
+        "description": "A subtle in-place idle breathing loop: stalk slightly bends and relaxes, cap compresses down1pixel then restores, root fingers relax. Never lift both feet, never bounce or hop. The cap never rises higher than its starting top edge. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/ad3a74bc-bc68-4121-8172-2057f79541fc/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/ad3a74bc-bc68-4121-8172-2057f79541fc/download?index=0",
+        "frame_count": 8,
+        "subject_description": "A small tall slender walking MUSHROOM enemy in LEFT profile. TALL ORANGE conical cap with upturned brim and ONE broad cream square patch, narrow cream stalk-body with one dark square left-facing eye under cap, short attached root arms, TWO longish root feet planted. Distinct upright narrow silhouette, different from broad red forest mushroom. No weapon, no clothes, no floating spores or effects.",
+        "initial_pose": "root feet planted, cap and stalk upright, facing left",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 2026104170
+      },
+      "response": "1 validation error for call[animate_image_pixminimax]\nsubject_description\n  String should have at most 300 characters [type=string_too_long, input_value='A small tall slender wal...ting spores or effects.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+    },
+    {
+      "actor": "spore_mushroom",
+      "motion": "Attack",
+      "request": {
+        "description": "One upward spore-toss BODY motion only. Lower cap and bend torso down2pixels, bring both stubby arms inward, then extend arms upward-left once around frame4 while the cap returns only to its initial height. Recover. The tall orange cap never rises above the starting top row and never changes shape. Both root feet grounded. NO visible projectile, spore cloud, dots, glow or special effect. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/ad3a74bc-bc68-4121-8172-2057f79541fc/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/ad3a74bc-bc68-4121-8172-2057f79541fc/download?index=0",
+        "frame_count": 8,
+        "subject_description": "A small tall slender walking MUSHROOM enemy in LEFT profile. TALL ORANGE conical cap with upturned brim and ONE broad cream square patch, narrow cream stalk-body with one dark square left-facing eye under cap, short attached root arms, TWO longish root feet planted. Distinct upright narrow silhouette, different from broad red forest mushroom. No weapon, no clothes, no floating spores or effects.",
+        "initial_pose": "root feet planted, cap and stalk upright, facing left",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 2026104171
+      },
+      "response": "1 validation error for call[animate_image_pixminimax]\nsubject_description\n  String should have at most 300 characters [type=string_too_long, input_value='A small tall slender wal...ting spores or effects.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+    },
+    {
+      "actor": "spore_mushroom",
+      "motion": "Stun",
+      "request": {
+        "description": "A slow weak stunned sway loop: cap and upper stalk lean slightly left then right with2pixel range while knees sag; cap stays attached, root arms hang low. Both root feet fixed. Never jump, attack or stretch into new shapes. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/ad3a74bc-bc68-4121-8172-2057f79541fc/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/ad3a74bc-bc68-4121-8172-2057f79541fc/download?index=0",
+        "frame_count": 8,
+        "subject_description": "A small tall slender walking MUSHROOM enemy in LEFT profile. TALL ORANGE conical cap with upturned brim and ONE broad cream square patch, narrow cream stalk-body with one dark square left-facing eye under cap, short attached root arms, TWO longish root feet planted. Distinct upright narrow silhouette, different from broad red forest mushroom. No weapon, no clothes, no floating spores or effects.",
+        "initial_pose": "root feet planted, cap and stalk upright, facing left",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 2026104172
+      },
+      "response": "1 validation error for call[animate_image_pixminimax]\nsubject_description\n  String should have at most 300 characters [type=string_too_long, input_value='A small tall slender wal...ting spores or effects.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+    },
+    {
+      "actor": "moss_mushroom",
+      "motion": "Idle",
+      "request": {
+        "description": "A subtle in-place idle breathing loop: stalk slightly bends and relaxes, cap compresses down1pixel then restores, root fingers relax. Never lift both feet, never bounce or hop. The cap never rises higher than its starting top edge. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/c03b5370-ef3d-4625-884e-fe11dd84b4ca/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/c03b5370-ef3d-4625-884e-fe11dd84b4ca/download?index=0",
+        "frame_count": 8,
+        "subject_description": "A small BROAD squat moss mushroom enemy in LEFT profile. Low flat dark moss-GREEN cap with scalloped stepped sides and exactly TWO large light moss blocks, broad TAN stalk-body, one dark square left-facing eye, thick attached root forearms and TWO short wide root feet. Wide almost square body, no red cap, no tiny grass strands. Heavy horizontal silhouette distinguishes this one from the tall orange mushroom. No clothes or equipment.",
+        "initial_pose": "root feet planted, cap and stalk upright, facing left",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 2026104180
+      },
+      "response": "1 validation error for call[animate_image_pixminimax]\nsubject_description\n  String should have at most 300 characters [type=string_too_long, input_value='A small BROAD squat moss...o clothes or equipment.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+    },
+    {
+      "actor": "moss_mushroom",
+      "motion": "Attack",
+      "request": {
+        "description": "One heavy sideways body shove. Crouch the broad body downward2pixels, draw root arms inward, then lean left and extend the left root fist once around frame4, without leaving the ground. Return to exact squat ready form. Preserve the broad flat green cap, its two light patches and thick tan stalk. No roots sprouting from ground, no waves, particles or flashes. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/c03b5370-ef3d-4625-884e-fe11dd84b4ca/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/c03b5370-ef3d-4625-884e-fe11dd84b4ca/download?index=0",
+        "frame_count": 8,
+        "subject_description": "A small BROAD squat moss mushroom enemy in LEFT profile. Low flat dark moss-GREEN cap with scalloped stepped sides and exactly TWO large light moss blocks, broad TAN stalk-body, one dark square left-facing eye, thick attached root forearms and TWO short wide root feet. Wide almost square body, no red cap, no tiny grass strands. Heavy horizontal silhouette distinguishes this one from the tall orange mushroom. No clothes or equipment.",
+        "initial_pose": "root feet planted, cap and stalk upright, facing left",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 2026104181
+      },
+      "response": "1 validation error for call[animate_image_pixminimax]\nsubject_description\n  String should have at most 300 characters [type=string_too_long, input_value='A small BROAD squat moss...o clothes or equipment.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+    },
+    {
+      "actor": "moss_mushroom",
+      "motion": "Stun",
+      "request": {
+        "description": "A slow weak stunned sway loop: cap and upper stalk lean slightly left then right with2pixel range while knees sag; cap stays attached, root arms hang low. Both root feet fixed. Never jump, attack or stretch into new shapes. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/c03b5370-ef3d-4625-884e-fe11dd84b4ca/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/c03b5370-ef3d-4625-884e-fe11dd84b4ca/download?index=0",
+        "frame_count": 8,
+        "subject_description": "A small BROAD squat moss mushroom enemy in LEFT profile. Low flat dark moss-GREEN cap with scalloped stepped sides and exactly TWO large light moss blocks, broad TAN stalk-body, one dark square left-facing eye, thick attached root forearms and TWO short wide root feet. Wide almost square body, no red cap, no tiny grass strands. Heavy horizontal silhouette distinguishes this one from the tall orange mushroom. No clothes or equipment.",
+        "initial_pose": "root feet planted, cap and stalk upright, facing left",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 2026104182
+      },
+      "response": "1 validation error for call[animate_image_pixminimax]\nsubject_description\n  String should have at most 300 characters [type=string_too_long, input_value='A small BROAD squat moss...o clothes or equipment.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+    },
+    {
+      "actor": "goblin_guard",
+      "motion": "Idle",
+      "request": {
+        "description": "A restrained in-place breathing loop. Chest and shoulders move down/up by at most1pixel, one small blink, free fingers relax. Maintain the exact held weapon and shield positions with only a tiny elbow shift. Both boots stay planted; no walking, no full-body bobbing, no attack. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/d923fb8d-2eee-44be-98b4-8e1d4d528a09/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/d923fb8d-2eee-44be-98b4-8e1d4d528a09/download?index=0",
+        "frame_count": 8,
+        "subject_description": "A stocky GREEN goblin gate guard, left-facing pointed nose and big ears, one eye. Flat STEEL pot helmet with no feather, tan tunic with orange belt and brown boots. LARGE tall rectangular dark brown WOODEN SHIELD with ONE cream square emblem in front hand and SHORT STEEL SWORD held above/behind the shield by the other hand. Wide armored-looking silhouette, knees bent and both boots visible. Not giant, no spear.",
+        "initial_pose": "left-facing battle ready stance with both boots grounded and signature weapon held",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 2026104190
+      },
+      "response": "1 validation error for call[animate_image_pixminimax]\nsubject_description\n  String should have at most 300 characters [type=string_too_long, input_value='A stocky GREEN goblin ga...e. Not giant, no spear.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+    },
+    {
+      "actor": "goblin_guard",
+      "motion": "Attack",
+      "request": {
+        "description": "One upward sword SLASH from behind the shield. First lower the short sword and brace behind the shield, then swing the sword arm upward-left in a single clear arc around frame4, then recover to original high guard. The rectangular shield and helmet remain held steady and unchanged; sword blade remains connected to hand. No blade trails, no flashing sword, no double attack. Feet remain grounded, head faces left. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/d923fb8d-2eee-44be-98b4-8e1d4d528a09/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/d923fb8d-2eee-44be-98b4-8e1d4d528a09/download?index=0",
+        "frame_count": 8,
+        "subject_description": "A stocky GREEN goblin gate guard, left-facing pointed nose and big ears, one eye. Flat STEEL pot helmet with no feather, tan tunic with orange belt and brown boots. LARGE tall rectangular dark brown WOODEN SHIELD with ONE cream square emblem in front hand and SHORT STEEL SWORD held above/behind the shield by the other hand. Wide armored-looking silhouette, knees bent and both boots visible. Not giant, no spear.",
+        "initial_pose": "left-facing battle ready stance with both boots grounded and signature weapon held",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 2026104191
+      },
+      "response": "1 validation error for call[animate_image_pixminimax]\nsubject_description\n  String should have at most 300 characters [type=string_too_long, input_value='A stocky GREEN goblin ga...e. Not giant, no spear.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+    },
+    {
+      "actor": "goblin_guard",
+      "motion": "Stun",
+      "request": {
+        "description": "A weak stunned sway loop: knees soften, head and shoulders sag1pixel, torso rocks slightly backward and forward. Weapon hand and shield hand lower slightly but never let go. Equipment stays solid and same length, eyes briefly close. Both boots stay firmly grounded. No attack, no spin. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/d923fb8d-2eee-44be-98b4-8e1d4d528a09/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/d923fb8d-2eee-44be-98b4-8e1d4d528a09/download?index=0",
+        "frame_count": 8,
+        "subject_description": "A stocky GREEN goblin gate guard, left-facing pointed nose and big ears, one eye. Flat STEEL pot helmet with no feather, tan tunic with orange belt and brown boots. LARGE tall rectangular dark brown WOODEN SHIELD with ONE cream square emblem in front hand and SHORT STEEL SWORD held above/behind the shield by the other hand. Wide armored-looking silhouette, knees bent and both boots visible. Not giant, no spear.",
+        "initial_pose": "left-facing battle ready stance with both boots grounded and signature weapon held",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 2026104192
+      },
+      "response": "1 validation error for call[animate_image_pixminimax]\nsubject_description\n  String should have at most 300 characters [type=string_too_long, input_value='A stocky GREEN goblin ga...e. Not giant, no spear.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+    },
+    {
+      "actor": "gib",
+      "motion": "Idle",
+      "request": {
+        "description": "A restrained in-place breathing loop. Chest and shoulders move down/up by at most1pixel, one small blink, free fingers relax. Maintain the exact held weapon and shield positions with only a tiny elbow shift. Both boots stay planted; no walking, no full-body bobbing, no attack. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/5ec77f46-0d1d-414b-b767-72feb60bca20/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/5ec77f46-0d1d-414b-b767-72feb60bca20/download?index=0",
+        "frame_count": 8,
+        "subject_description": "One imposing GREEN GOBLIN CAPTAIN BOSS named Gible in strict LEFT profile. Small green goblin body with long left-pointing nose, big ears, ONE dark eye, broad shoulders. Oversized flat STEEL helmet topped by ONE thick rust-orange feather, massive rectangular WOODEN SHIELD in front hand with a single cream bar, short straight wooden SPEAR with steel point in back hand pointing LEFT over shield. Brown leather boots, rust-orange tunic. Shield and full equipment dominate large boss silhouette; still goblin proportions, no human armor, no king crown. Strong planted two-leg stance, not standing frontally.",
+        "initial_pose": "left-facing battle ready stance with both boots grounded and signature weapon held",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 2026104200
+      },
+      "response": "1 validation error for call[animate_image_pixminimax]\nsubject_description\n  String should have at most 300 characters [type=string_too_long, input_value='One imposing GREEN GOBLI...not standing frontally.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+    },
+    {
+      "actor": "gib",
+      "motion": "Attack",
+      "request": {
+        "description": "One commanding shield-and-spear attack. Brace with bent knees, pull the spear behind the body and tilt the massive shield inward, then shove the SHIELD left by1pixel while extending the spear arm once around frame4, and recover to the exact starting guard. Keep spear point INSIDE the canvas at x>=1; do not translate the entire body. Strong shoulder and elbow motion, one hit only. Preserve oversized rectangular shield, short spear, feather helmet, green face and equipment sizes. Both feet remain planted, no jumping or spinning. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/5ec77f46-0d1d-414b-b767-72feb60bca20/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/5ec77f46-0d1d-414b-b767-72feb60bca20/download?index=0",
+        "frame_count": 8,
+        "subject_description": "One imposing GREEN GOBLIN CAPTAIN BOSS named Gible in strict LEFT profile. Small green goblin body with long left-pointing nose, big ears, ONE dark eye, broad shoulders. Oversized flat STEEL helmet topped by ONE thick rust-orange feather, massive rectangular WOODEN SHIELD in front hand with a single cream bar, short straight wooden SPEAR with steel point in back hand pointing LEFT over shield. Brown leather boots, rust-orange tunic. Shield and full equipment dominate large boss silhouette; still goblin proportions, no human armor, no king crown. Strong planted two-leg stance, not standing frontally.",
+        "initial_pose": "left-facing battle ready stance with both boots grounded and signature weapon held",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 2026104201
+      },
+      "response": "1 validation error for call[animate_image_pixminimax]\nsubject_description\n  String should have at most 300 characters [type=string_too_long, input_value='One imposing GREEN GOBLI...not standing frontally.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+    },
+    {
+      "actor": "gib",
+      "motion": "Stun",
+      "request": {
+        "description": "A weak stunned sway loop: knees soften, head and shoulders sag1pixel, torso rocks slightly backward and forward. Weapon hand and shield hand lower slightly but never let go. Equipment stays solid and same length, eyes briefly close. Both boots stay firmly grounded. No attack, no spin. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/5ec77f46-0d1d-414b-b767-72feb60bca20/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/5ec77f46-0d1d-414b-b767-72feb60bca20/download?index=0",
+        "frame_count": 8,
+        "subject_description": "One imposing GREEN GOBLIN CAPTAIN BOSS named Gible in strict LEFT profile. Small green goblin body with long left-pointing nose, big ears, ONE dark eye, broad shoulders. Oversized flat STEEL helmet topped by ONE thick rust-orange feather, massive rectangular WOODEN SHIELD in front hand with a single cream bar, short straight wooden SPEAR with steel point in back hand pointing LEFT over shield. Brown leather boots, rust-orange tunic. Shield and full equipment dominate large boss silhouette; still goblin proportions, no human armor, no king crown. Strong planted two-leg stance, not standing frontally.",
+        "initial_pose": "left-facing battle ready stance with both boots grounded and signature weapon held",
+        "direction": "west",
+        "view": "side",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 2026104202
+      },
+      "response": "1 validation error for call[animate_image_pixminimax]\nsubject_description\n  String should have at most 300 characters [type=string_too_long, input_value='One imposing GREEN GOBLI...not standing frontally.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+    }
+  ]
+}

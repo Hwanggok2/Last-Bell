@@ -1,0 +1,141 @@
+{
+  "date": "2026-10-24",
+  "status": "pass",
+  "scope": "Static planning links, source consistency and concept image metadata only",
+  "counts": {
+    "cast": 10,
+    "zones": 5,
+    "stages": 50,
+    "baseEnemyArchetypes": 11,
+    "localReferences": 191,
+    "entryPoints": 4
+  },
+  "images": {
+    "cast-concept": [
+      1536,
+      1024
+    ],
+    "journey-concept": [
+      1672,
+      941
+    ],
+    "meadow-concept": [
+      1672,
+      941
+    ],
+    "monster-pixel-v2": [
+      1536,
+      1024
+    ],
+    "actors-pixel-v3": [
+      2172,
+      724
+    ],
+    "meadow-pixel-v3": [
+      1672,
+      941
+    ],
+    "battle-normal-clean-v3": [
+      1280,
+      720
+    ],
+    "battle-normal-telegraph-v3": [
+      1280,
+      720
+    ],
+    "battle-boss-clean-v3": [
+      1280,
+      720
+    ],
+    "battle-boss-telegraph-v3": [
+      1280,
+      720
+    ],
+    "battle-wireframe-v3": [
+      1280,
+      720
+    ],
+    "battle-normal-clean-v4": [
+      1280,
+      720
+    ],
+    "battle-normal-telegraph-v4": [
+      1280,
+      720
+    ],
+    "battle-boss-clean-v4": [
+      1280,
+      720
+    ],
+    "battle-boss-telegraph-v4": [
+      1280,
+      720
+    ],
+    "battle-wireframe-v4": [
+      1280,
+      720
+    ],
+    "ui-components-v4": [
+      1280,
+      1120
+    ]
+  },
+  "review": [
+    "cast and story agents agreed characters before writing the final stage route",
+    "cast/story IDs, region and boss names, currency and stat names cross-checked",
+    "art agent and root visually inspected three original GPT concepts and the monster pixel revision",
+    "integrated source review corrected construct terminology and premature class-selection label",
+    "UI reviewer inspected v4 battle composites and component states; see pixel-ui-v4-review.md for scope and limitations",
+    "V4 manual skill contract, 3 playable actors and per-speaker portraits supersede the earlier charge-skill proposal",
+    "Player-v3 and Forest-v1 source art and Dragon-v3 plan have separate authored/independent review records linked in the board"
+  ],
+  "notPerformed": [
+    "Browser layout/interaction inspection; local file navigation was blocked",
+    "Runtime execution by this static script; see the separate integration and QA records"
+  ],
+  "limitations": [
+    "generated artwork is concept art with more detail than final target pixel density",
+    "50 stage entries reuse11 body archetypes and require variant-specific silhouettes/motions",
+    "title is a working title, not a store listing or repository rename"
+  ],
+  "errors": [],
+  "tabController": {
+    "status": "pass",
+    "method": "Node DOM stub; not a browser test",
+    "checks": [
+      "five region tabs and five battle tabs",
+      "click selection and panel visibility",
+      "arrow wrap, Home/End and focus",
+      "independent tab groups"
+    ]
+  },
+  "pixelUi": {
+    "status": "pass",
+    "date": "2026-10-24",
+    "scope": "static PNG and reference placement checks only",
+    "assets": 45,
+    "opaqueIconPixels": 71376,
+    "checks": [
+      "45 icon PNGs binary alpha and uniform4px cells",
+      "reference-position direction and attack hit areas insideframe and nonoverlapping",
+      "four battleviews1280x720"
+    ],
+    "notPerformed": [
+      "Unity runtime",
+      "browser layout",
+      "OS input",
+      "mobile Safe Area"
+    ]
+  },
+  "currentProduction": "../../Production/dragon-v6-integration.json",
+  "planning": {
+    "groundStages": 50,
+    "groundRegions": 5,
+    "signatureSkills": 3,
+    "skillsImplemented": true,
+    "playableStages": 20,
+    "portraits": 10,
+    "companionSkills": 5,
+    "healthTrail": "single actual damage >= maximum HP/3;120ms hold +550ms linear"
+  }
+}

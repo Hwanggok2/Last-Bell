@@ -1,0 +1,58 @@
+{
+  "version": "monster-pixel-v2",
+  "date": "2026-10-24",
+  "status": "기획용 개정 시안; Unity 미적용",
+  "tool": "built-in image_gen",
+  "input": "images/cast-concept.png",
+  "output": "images/monster-pixel-v2.png",
+  "prompt": "Edit/style-transfer from the supplied character concept. The provided sheet is ONLY an identity reference for the green goblin with wooden shield/spear, sandstone block golem with mint chest gem, and red four-legged dragon with orange belly and ivory horns. Create a NEW MONSTERS-ONLY low-resolution design sheet in an EXTREMELY COARSE, AUTHENTIC PIXEL SPRITE style. This is a radical reduction of resolution and detail, not merely a pixel-looking filter. Exclude all humanoid friendly adventurers from the original.\nABSOLUTE PRIORITY: huge visible perfectly SQUARE uniform pixels, extremely sparse detail. Imagine the entire sheet drawn at 192x128 logical pixels and enlarged 8x by NEAREST NEIGHBOR to 1536x1024. Every visible contour is a staircase of large equal-size square blocks. A pixel unit is about8 output pixels. A normal monster uses only16–24 logical pixels in body height, goblin32, golem40, wyvern40, dragon56. Not 100 or300 pixel illustrations. The old reference is far too detailed: remove scales, scales' outlines, muscle shading, fur strands, brick cracks, wood grain, shiny highlights, gradual shading, tiny claws and fingernails. Render as an early 8-bit fantasy action game with one dark 1-logical-pixel outline. Six to eight solid colors per monster MAXIMUM, flat base+one shadow, no antialiasing, no gradients, NO texture, NO dithering, no smooth curved edges, no soft painting.\nLayout landscape 3:2, flat solid warm cream background, no paper texture. TWO ROWS, clear empty margins and space. TOP ROW exactly4 monsters left-to-right: (1) small round green slime with two square eyes and a single stepped gleam,16pxbody; (2) tan horn rabbit with two upright block ears and one short cream horn,24pxbody; (3) stocky brown giant boar with two big ivory tusks, rust back ridge, squat32px body; (4) Gib goblin captain, green block face, dull gray helmet with one red feather, big rectangular brown shield and simple short spear,32px body. BOTTOM ROW exactly3 monsters left-to-right: (5) Dolmun big sandstone golem, square shoulders, thick separate arms and legs, two mint eye pixels and ONE diamond mint chest crystal,40pxbody; (6) blue-teal wyvern, narrow head, ONLY TWO walking legs and wings serving as forelimbs, tail, simple folded upward wings,40pxbody; (7) Brak large red dragon, FOUR legs plus TWO wings, short ivory horns, broad square muzzle, huge orange belly area, thick curled tail fully within frame,56pxbody and massive imposing silhouette, biggest creature. Dragon is formidable but friendly fantasy, not a baby toy. All monsters side-view facing LEFT toward the game's player, strong readable weapon poses, all bodies and weapon tips completely visible. Keep one consistent logical pixel unit across all creatures: bigger bosses have more pixels, not smoother detail. Maintain reference identities using only silhouette and essential color blocks. Do not add names, letters, labels, UI, grids, comparison panels or scenery.\nThe result MUST visibly be much coarser and simpler than the reference, recognizably low-bit dot graphics even as a small thumbnail. If any eye has iris/highlight detail beyond1or2 squares, or any scale/brick/wood-grain detail exists, simplify further. No semirealistic drawing, no high-definition pixel illustration.",
+  "priority": "몬스터의 도트 밀도는 이 개정안을 우선한다. 이전 cast-concept.png는 캐릭터 정체성·장비 참고로 보존한다.",
+  "order": {
+    "top": [
+      "슬라임",
+      "뿔토끼",
+      "큰엄니",
+      "깁"
+    ],
+    "bottom": [
+      "돌문",
+      "능선 와이번",
+      "브라크"
+    ]
+  },
+  "productionTargets": [
+    {
+      "type": "일반 몬스터",
+      "canvas": "16×16~32×32 논리 픽셀",
+      "examples": "슬라임·뿔토끼·일반 고블린"
+    },
+    {
+      "type": "중형",
+      "canvas": "48×48 논리 픽셀",
+      "examples": "멧돼지·큰뿔토끼"
+    },
+    {
+      "type": "보스",
+      "canvas": "64×64 논리 픽셀",
+      "examples": "깁의 장비 전체·돌문·와이번"
+    },
+    {
+      "type": "최종 용",
+      "canvas": "최대96×96 논리 픽셀",
+      "examples": "브라크 몸·날개·꼬리 전체"
+    }
+  ],
+  "rules": [
+    "픽셀 단위를 통일하고 정수 배율로 확대",
+    "보스는 픽셀 수와 실루엣을 키워 체급 표현",
+    "개체당6~10색, 기본색+그림자 중심의2단계 명암",
+    "비늘·털·금속 반짝임·나무결·돌 균열 최소화",
+    "준비 동작과 무기의 방향을 작은 크기에서도 식별"
+  ],
+  "limitations": [
+    "생성 이미지의 실제 파일 크기와 위 논리 캔버스 제작 목표는 다름",
+    "일부 내부 색면의 부드러운 농담과 픽셀 단위 차이가 남아 정식 제작 시 정리 필요",
+    "돌문은 정면에 가까운 검토 자세이며 실제 전투 좌향 모션은 별도 제작",
+    "이 이미지에서7종의 모션·투명 스프라이트가 완성된 것은 아님"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "tool": "reduce_colors",
+  "request": {
+    "image_urls": [
+      "https://api.pixellab.ai/mcp/images/5e35de86-eb42-40ab-8983-1027c580a3bd/download?index=0",
+      "https://api.pixellab.ai/mcp/images/5e35de86-eb42-40ab-8983-1027c580a3bd/download?index=1",
+      "https://api.pixellab.ai/mcp/images/5e35de86-eb42-40ab-8983-1027c580a3bd/download?index=2",
+      "https://api.pixellab.ai/mcp/images/5e35de86-eb42-40ab-8983-1027c580a3bd/download?index=3",
+      "https://api.pixellab.ai/mcp/images/5e35de86-eb42-40ab-8983-1027c580a3bd/download?index=4",
+      "https://api.pixellab.ai/mcp/images/47ede5d6-c143-4eb1-bd47-32d12fe1ef98/download?index=1",
+      "https://api.pixellab.ai/mcp/images/47ede5d6-c143-4eb1-bd47-32d12fe1ef98/download?index=2",
+      "https://api.pixellab.ai/mcp/images/47ede5d6-c143-4eb1-bd47-32d12fe1ef98/download?index=4"
+    ],
+    "palette_image_url": "https://api.pixellab.ai/mcp/images/4473ba56-0d75-4b42-8217-662a2653f156/download?index=0",
+    "dithering": "none"
+  },
+  "response": [
+    "id: 870421bb-fa2d-4f91-9443-e61bfb10175d\njob_id: 870421bb-fa2d-4f91-9443-e61bfb10175d\nasset_id: 583705bb-5fe1-587d-b3f7-a43835d4d4e0\nasset_status: pending (saved when generation completes)\nframes: 8\nsize: 48x48px (unchanged)\npalette: palette image\ndithering: none\ncost: 0.1 generations\nstatus: processing (~1s)\n\nhint: get_image(job_id=\"870421bb-fa2d-4f91-9443-e61bfb10175d\")"
+  ],
+  "reason": "Two added near-color shades appeared across the corrected attack. Lock all eight selected frames to the seven-color canonical palette without dithering; preserve original source frames."
+}

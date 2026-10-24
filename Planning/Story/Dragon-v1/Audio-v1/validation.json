@@ -1,0 +1,47 @@
+{
+  "status": "pass",
+  "scope": "File hashes, PCM decode, peak and local references only",
+  "files": [
+    {
+      "file": "Samples/current.wav",
+      "durationMs": 280,
+      "peakDbfs": -6.0
+    },
+    {
+      "file": "Samples/retro-1.wav",
+      "durationMs": 111,
+      "peakDbfs": -6.0
+    },
+    {
+      "file": "Samples/retro-2.wav",
+      "durationMs": 96,
+      "peakDbfs": -6.0
+    },
+    {
+      "file": "Samples/retro-3.wav",
+      "durationMs": 137,
+      "peakDbfs": -6.0
+    },
+    {
+      "file": "Samples/metal-1.wav",
+      "durationMs": 985,
+      "peakDbfs": -6.0
+    },
+    {
+      "file": "Samples/clash-1.wav",
+      "durationMs": 1035,
+      "peakDbfs": -6.0
+    },
+    {
+      "file": "Samples/swish-9.wav",
+      "durationMs": 197,
+      "peakDbfs": -6.0
+    }
+  ],
+  "localReferences": 12,
+  "notPerformed": [
+    "Browser playback/layout",
+    "New auditory A/B comparison against Timing Hero",
+    "Unity audio replacement"
+  ]
+}

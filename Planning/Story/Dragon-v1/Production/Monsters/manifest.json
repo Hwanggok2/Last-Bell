@@ -1,0 +1,3438 @@
+{
+  "schemaVersion": 1,
+  "package": "Dragon-v1-first-ten-stage-monsters",
+  "status": "reviewed-ready-for-integration",
+  "generatedWith": "PixelLab ProFlash and PixMiniMax",
+  "coordinateConvention": "PNG top-left origin; pivots in source pixels. Unity normalized pivot=(x/width,1-y/height).",
+  "pixelImport": {
+    "filter": "Point",
+    "compression": "None",
+    "mipmaps": false,
+    "alphaIsTransparency": true,
+    "meshType": "FullRect",
+    "perFrameTrim": false
+  },
+  "license": "LICENSE-PROVENANCE.md",
+  "actors": [
+    {
+      "id": "slime",
+      "displayName": "슬라임",
+      "canonical": "Planning/Story/Dragon-v1/Production/Monsters/slime/canonical.png",
+      "width": 32,
+      "height": 32,
+      "pivotTopLeft": [
+        16,
+        24
+      ],
+      "referenceHeight": 12,
+      "worldHeight": 1.4,
+      "facing": "west",
+      "faceAnchorTopLeft": [
+        11,
+        18
+      ],
+      "clips": {
+        "Idle": {
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Monsters/slime/production/idle/00.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/slime/production/idle/01.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/slime/production/idle/02.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/slime/production/idle/03.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/slime/production/idle/04.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/slime/production/idle/05.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/slime/production/idle/06.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/slime/production/idle/07.png"
+          ],
+          "fps": 8,
+          "loop": true,
+          "contactFrame": -1,
+          "contactSourceIndex": null,
+          "effectOriginTopLeft": null,
+          "faceAnchorTopLeft": [
+            11,
+            18
+          ],
+          "sourceJobId": "17292e25-6c86-4d98-bfd0-4e830e28b04b",
+          "sourceJobIds": [
+            "17292e25-6c86-4d98-bfd0-4e830e28b04b"
+          ],
+          "sourceIndices": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "sourceDirectory": "Planning/Story/Dragon-v1/Production/Monsters/slime/idle/raw",
+          "uniquePixelFrames": 4,
+          "review": "Selected body-only sequence reviewed in contact sheet.",
+          "records": [
+            {
+              "frame": 0,
+              "sourceIndex": 1,
+              "sourceJobId": "17292e25-6c86-4d98-bfd0-4e830e28b04b",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/slime/idle/raw/01.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/17292e25-6c86-4d98-bfd0-4e830e28b04b/download?index=1",
+              "sha256": "d1c464c167460bfa10e1791ee3df30bfd7ff05a62da2c35bbaf8dd702e54fdac",
+              "width": 32,
+              "height": 32,
+              "colors": 5,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                8,
+                12,
+                23,
+                23
+              ],
+              "rgbaHash": "2b5548cb215b9755057d1325ebc48a498951f553a226ffb61889e62c20e8e8dd"
+            },
+            {
+              "frame": 1,
+              "sourceIndex": 2,
+              "sourceJobId": "17292e25-6c86-4d98-bfd0-4e830e28b04b",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/slime/idle/raw/02.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/17292e25-6c86-4d98-bfd0-4e830e28b04b/download?index=2",
+              "sha256": "81b47cdbeb90ba04fdc3503be6207dd9dcaddf5b5079248b1ef3292ace0462db",
+              "width": 32,
+              "height": 32,
+              "colors": 5,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                9,
+                12,
+                23,
+                23
+              ],
+              "rgbaHash": "f14e1a690390a6b9d969211a55a4103876d994e2f934bc18e0a780d2b7742415"
+            },
+            {
+              "frame": 2,
+              "sourceIndex": 3,
+              "sourceJobId": "17292e25-6c86-4d98-bfd0-4e830e28b04b",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/slime/idle/raw/03.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/17292e25-6c86-4d98-bfd0-4e830e28b04b/download?index=3",
+              "sha256": "b92bd3bccfda49a1c32a7704182fae3f95c13c18485f3d72890f0f650b908711",
+              "width": 32,
+              "height": 32,
+              "colors": 5,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                9,
+                12,
+                24,
+                23
+              ],
+              "rgbaHash": "6cf3d60255b6a3a1c44a50698b8212551f23eccd154f15a3acd3df82bcd6ea23"
+            },
+            {
+              "frame": 3,
+              "sourceIndex": 4,
+              "sourceJobId": "17292e25-6c86-4d98-bfd0-4e830e28b04b",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/slime/idle/raw/04.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/17292e25-6c86-4d98-bfd0-4e830e28b04b/download?index=4",
+              "sha256": "3b4d01f907d1390c07408e4ee8322b5a370eb714ae547ff1bd98b1754be91746",
+              "width": 32,
+              "height": 32,
+              "colors": 5,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                9,
+                12,
+                24,
+                23
+              ],
+              "rgbaHash": "64d82f3dd48d5cba95f9c9dd40e36c9ed8f627dd2cd01ec24c7f3c2b5bd4e3ba"
+            },
+            {
+              "frame": 4,
+              "sourceIndex": 5,
+              "sourceJobId": "17292e25-6c86-4d98-bfd0-4e830e28b04b",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/slime/idle/raw/05.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/17292e25-6c86-4d98-bfd0-4e830e28b04b/download?index=5",
+              "sha256": "3b4d01f907d1390c07408e4ee8322b5a370eb714ae547ff1bd98b1754be91746",
+              "width": 32,
+              "height": 32,
+              "colors": 5,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                9,
+                12,
+                24,
+                23
+              ],
+              "rgbaHash": "64d82f3dd48d5cba95f9c9dd40e36c9ed8f627dd2cd01ec24c7f3c2b5bd4e3ba"
+            },
+            {
+              "frame": 5,
+              "sourceIndex": 6,
+              "sourceJobId": "17292e25-6c86-4d98-bfd0-4e830e28b04b",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/slime/idle/raw/06.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/17292e25-6c86-4d98-bfd0-4e830e28b04b/download?index=6",
+              "sha256": "b92bd3bccfda49a1c32a7704182fae3f95c13c18485f3d72890f0f650b908711",
+              "width": 32,
+              "height": 32,
+              "colors": 5,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                9,
+                12,
+                24,
+                23
+              ],
+              "rgbaHash": "6cf3d60255b6a3a1c44a50698b8212551f23eccd154f15a3acd3df82bcd6ea23"
+            },
+            {
+              "frame": 6,
+              "sourceIndex": 7,
+              "sourceJobId": "17292e25-6c86-4d98-bfd0-4e830e28b04b",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/slime/idle/raw/07.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/17292e25-6c86-4d98-bfd0-4e830e28b04b/download?index=7",
+              "sha256": "81b47cdbeb90ba04fdc3503be6207dd9dcaddf5b5079248b1ef3292ace0462db",
+              "width": 32,
+              "height": 32,
+              "colors": 5,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                9,
+                12,
+                23,
+                23
+              ],
+              "rgbaHash": "f14e1a690390a6b9d969211a55a4103876d994e2f934bc18e0a780d2b7742415"
+            },
+            {
+              "frame": 7,
+              "sourceIndex": 8,
+              "sourceJobId": "17292e25-6c86-4d98-bfd0-4e830e28b04b",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/slime/idle/raw/08.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/17292e25-6c86-4d98-bfd0-4e830e28b04b/download?index=8",
+              "sha256": "d1c464c167460bfa10e1791ee3df30bfd7ff05a62da2c35bbaf8dd702e54fdac",
+              "width": 32,
+              "height": 32,
+              "colors": 5,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                8,
+                12,
+                23,
+                23
+              ],
+              "rgbaHash": "2b5548cb215b9755057d1325ebc48a498951f553a226ffb61889e62c20e8e8dd"
+            }
+          ]
+        },
+        "Attack": {
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Monsters/slime/production/attack/00.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/slime/production/attack/01.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/slime/production/attack/02.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/slime/production/attack/03.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/slime/production/attack/04.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/slime/production/attack/05.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/slime/production/attack/06.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/slime/production/attack/07.png"
+          ],
+          "fps": 12,
+          "loop": false,
+          "contactFrame": 2,
+          "contactSourceIndex": 2,
+          "effectOriginTopLeft": [
+            5,
+            18
+          ],
+          "faceAnchorTopLeft": [
+            9,
+            18
+          ],
+          "sourceJobId": "bf1885bc-c803-4513-803e-99fcb17405b4",
+          "sourceJobIds": [
+            "bf1885bc-c803-4513-803e-99fcb17405b4"
+          ],
+          "sourceIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            8
+          ],
+          "sourceDirectory": "Planning/Story/Dragon-v1/Production/Monsters/slime/attack/raw",
+          "uniquePixelFrames": 7,
+          "review": "Selected body-only sequence reviewed in contact sheet.",
+          "records": [
+            {
+              "frame": 0,
+              "sourceIndex": 0,
+              "sourceJobId": "bf1885bc-c803-4513-803e-99fcb17405b4",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/slime/attack/raw/00.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/bf1885bc-c803-4513-803e-99fcb17405b4/download?index=0",
+              "sha256": "d1c464c167460bfa10e1791ee3df30bfd7ff05a62da2c35bbaf8dd702e54fdac",
+              "width": 32,
+              "height": 32,
+              "colors": 5,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                8,
+                12,
+                23,
+                23
+              ],
+              "rgbaHash": "2b5548cb215b9755057d1325ebc48a498951f553a226ffb61889e62c20e8e8dd"
+            },
+            {
+              "frame": 1,
+              "sourceIndex": 1,
+              "sourceJobId": "bf1885bc-c803-4513-803e-99fcb17405b4",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/slime/attack/raw/01.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/bf1885bc-c803-4513-803e-99fcb17405b4/download?index=1",
+              "sha256": "34eb8a16ad32cf2e98f646fcb42cb62f0af7c8bf4f4fa52957145ab5483881d5",
+              "width": 32,
+              "height": 32,
+              "colors": 5,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                7,
+                12,
+                22,
+                23
+              ],
+              "rgbaHash": "5e4d641de7b5ed545e7f813d13a14ed0639d75f7d54c8385c0cbf0219b013c2b"
+            },
+            {
+              "frame": 2,
+              "sourceIndex": 2,
+              "sourceJobId": "bf1885bc-c803-4513-803e-99fcb17405b4",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/slime/attack/raw/02.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/bf1885bc-c803-4513-803e-99fcb17405b4/download?index=2",
+              "sha256": "260081646df8714ee758e4568f9f86d8ab5d6f5404d5f6cc5113953059b4fda6",
+              "width": 32,
+              "height": 32,
+              "colors": 5,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                5,
+                12,
+                21,
+                23
+              ],
+              "rgbaHash": "e47c6e308ad91af9c136df7749e49a3a6de85e1b08e86689df79547981d51814"
+            },
+            {
+              "frame": 3,
+              "sourceIndex": 3,
+              "sourceJobId": "bf1885bc-c803-4513-803e-99fcb17405b4",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/slime/attack/raw/03.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/bf1885bc-c803-4513-803e-99fcb17405b4/download?index=3",
+              "sha256": "af8dc9d905e27383e39b41aaf8e88bc2f937950b7157555b4f42c9809cccb23f",
+              "width": 32,
+              "height": 32,
+              "colors": 5,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                5,
+                12,
+                21,
+                23
+              ],
+              "rgbaHash": "5d0d0ccc5027574e4078c6e60a079bbebdf2ab80a645fa50ca7bc0cb16a22330"
+            },
+            {
+              "frame": 4,
+              "sourceIndex": 4,
+              "sourceJobId": "bf1885bc-c803-4513-803e-99fcb17405b4",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/slime/attack/raw/04.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/bf1885bc-c803-4513-803e-99fcb17405b4/download?index=4",
+              "sha256": "0f5afa1d32eb59d7d367c21eab3f6ad0f70c7aebaa6d872ecdefa2b7cf25f72a",
+              "width": 32,
+              "height": 32,
+              "colors": 5,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                5,
+                12,
+                22,
+                23
+              ],
+              "rgbaHash": "9eb603ba7af9793facfdc3062aaca3d5c680c7fe638fad648c9dbcdd625a76bf"
+            },
+            {
+              "frame": 5,
+              "sourceIndex": 5,
+              "sourceJobId": "bf1885bc-c803-4513-803e-99fcb17405b4",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/slime/attack/raw/05.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/bf1885bc-c803-4513-803e-99fcb17405b4/download?index=5",
+              "sha256": "32fb8068556535529e102b079392c5d0fbc9fed5f3f632eca2430a1e16ca106d",
+              "width": 32,
+              "height": 32,
+              "colors": 5,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                7,
+                12,
+                24,
+                23
+              ],
+              "rgbaHash": "bc262aa26727ee6c778a7d36e802fde8b8014db3bbbb69030f8ddc8d5a400478"
+            },
+            {
+              "frame": 6,
+              "sourceIndex": 6,
+              "sourceJobId": "bf1885bc-c803-4513-803e-99fcb17405b4",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/slime/attack/raw/06.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/bf1885bc-c803-4513-803e-99fcb17405b4/download?index=6",
+              "sha256": "780fc0f91b2f255946d49f2471a7089089d77776aa3b0ec3e29a1f5c87695972",
+              "width": 32,
+              "height": 32,
+              "colors": 5,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                8,
+                12,
+                23,
+                23
+              ],
+              "rgbaHash": "b7f8a96b08c1fd3b1f97c438eb5c4eadd319cbfa12ca53a638145a227e8c9cd8"
+            },
+            {
+              "frame": 7,
+              "sourceIndex": 8,
+              "sourceJobId": "bf1885bc-c803-4513-803e-99fcb17405b4",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/slime/attack/raw/08.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/bf1885bc-c803-4513-803e-99fcb17405b4/download?index=8",
+              "sha256": "d1c464c167460bfa10e1791ee3df30bfd7ff05a62da2c35bbaf8dd702e54fdac",
+              "width": 32,
+              "height": 32,
+              "colors": 5,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                8,
+                12,
+                23,
+                23
+              ],
+              "rgbaHash": "2b5548cb215b9755057d1325ebc48a498951f553a226ffb61889e62c20e8e8dd"
+            }
+          ]
+        },
+        "Stun": {
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Monsters/slime/production/stun/00.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/slime/production/stun/01.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/slime/production/stun/02.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/slime/production/stun/03.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/slime/production/stun/04.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/slime/production/stun/05.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/slime/production/stun/06.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/slime/production/stun/07.png"
+          ],
+          "fps": 8,
+          "loop": true,
+          "contactFrame": -1,
+          "contactSourceIndex": null,
+          "effectOriginTopLeft": null,
+          "faceAnchorTopLeft": [
+            11,
+            18
+          ],
+          "sourceJobId": "58bbb507-ba5f-4213-bbaf-bc02042095e3",
+          "sourceJobIds": [
+            "58bbb507-ba5f-4213-bbaf-bc02042095e3"
+          ],
+          "sourceIndices": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "sourceDirectory": "Planning/Story/Dragon-v1/Production/Monsters/slime/stun-retry/raw",
+          "uniquePixelFrames": 8,
+          "review": "Selected body-only sequence reviewed in contact sheet.",
+          "records": [
+            {
+              "frame": 0,
+              "sourceIndex": 1,
+              "sourceJobId": "58bbb507-ba5f-4213-bbaf-bc02042095e3",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/slime/stun-retry/raw/01.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/58bbb507-ba5f-4213-bbaf-bc02042095e3/download?index=1",
+              "sha256": "65fcb0cb1be83f534e83863703a631e9df7544705d6ba710e1f4956bef29eb79",
+              "width": 32,
+              "height": 32,
+              "colors": 5,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                8,
+                12,
+                23,
+                23
+              ],
+              "rgbaHash": "8aa2121332499c85d8d123f85154c1b8249edf163750e43700fd747165a7f1f4"
+            },
+            {
+              "frame": 1,
+              "sourceIndex": 2,
+              "sourceJobId": "58bbb507-ba5f-4213-bbaf-bc02042095e3",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/slime/stun-retry/raw/02.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/58bbb507-ba5f-4213-bbaf-bc02042095e3/download?index=2",
+              "sha256": "d06733936e1588eaf687a4b5bc4633f058b0727256e6d3f369e37845da589a80",
+              "width": 32,
+              "height": 32,
+              "colors": 5,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                9,
+                12,
+                23,
+                23
+              ],
+              "rgbaHash": "c81ad14ea668e56203180975ebdb5f4840c1a2bcd7c5805a9626c543a3755abc"
+            },
+            {
+              "frame": 2,
+              "sourceIndex": 3,
+              "sourceJobId": "58bbb507-ba5f-4213-bbaf-bc02042095e3",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/slime/stun-retry/raw/03.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/58bbb507-ba5f-4213-bbaf-bc02042095e3/download?index=3",
+              "sha256": "da48233bb51c455b2eaa9f563b71c06e4e508065b390bcac4739ec4c00a5dd72",
+              "width": 32,
+              "height": 32,
+              "colors": 5,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                9,
+                12,
+                23,
+                23
+              ],
+              "rgbaHash": "2e1372dc380f200720fdd27d1319d57fab4f54b0e78d0570c410b45c7c506bb5"
+            },
+            {
+              "frame": 3,
+              "sourceIndex": 4,
+              "sourceJobId": "58bbb507-ba5f-4213-bbaf-bc02042095e3",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/slime/stun-retry/raw/04.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/58bbb507-ba5f-4213-bbaf-bc02042095e3/download?index=4",
+              "sha256": "90ff97038ec1f4263d4da7a7c1e3c3baca8c6036397d1abc26343352326c5d91",
+              "width": 32,
+              "height": 32,
+              "colors": 5,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                9,
+                12,
+                24,
+                23
+              ],
+              "rgbaHash": "668d44dc3f0d732ad1d6d6c71e982287eda9f01fa4e5a88ff57ce8f78acf3793"
+            },
+            {
+              "frame": 4,
+              "sourceIndex": 5,
+              "sourceJobId": "58bbb507-ba5f-4213-bbaf-bc02042095e3",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/slime/stun-retry/raw/05.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/58bbb507-ba5f-4213-bbaf-bc02042095e3/download?index=5",
+              "sha256": "b22d69fb2210c41bc3f79c5be7edeeab9e85408e8f6dfbfc48bdf0f651bd6d9b",
+              "width": 32,
+              "height": 32,
+              "colors": 5,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                9,
+                12,
+                23,
+                23
+              ],
+              "rgbaHash": "2f6196a8d265b46c4b25f4b4c4e9b64ca7ede2b80cc6f7665f242f9ad18d856c"
+            },
+            {
+              "frame": 5,
+              "sourceIndex": 6,
+              "sourceJobId": "58bbb507-ba5f-4213-bbaf-bc02042095e3",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/slime/stun-retry/raw/06.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/58bbb507-ba5f-4213-bbaf-bc02042095e3/download?index=6",
+              "sha256": "822cc0f631b20ef56f1a7872f45b50cd92d1bace66995db6a316b86661052aa3",
+              "width": 32,
+              "height": 32,
+              "colors": 5,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                9,
+                12,
+                23,
+                23
+              ],
+              "rgbaHash": "fa92fa29791380d28f9e62a953abcafb0091601761fc06d78410206c5062c839"
+            },
+            {
+              "frame": 6,
+              "sourceIndex": 7,
+              "sourceJobId": "58bbb507-ba5f-4213-bbaf-bc02042095e3",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/slime/stun-retry/raw/07.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/58bbb507-ba5f-4213-bbaf-bc02042095e3/download?index=7",
+              "sha256": "d7677b3089c8585200e8a3a36f118cb56ef365973c140670b96521f4f6f52e1e",
+              "width": 32,
+              "height": 32,
+              "colors": 5,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                8,
+                12,
+                23,
+                23
+              ],
+              "rgbaHash": "bb7fa033870e8c49e0e7337bf7659f964a349bbcb719730412667c917742f1f4"
+            },
+            {
+              "frame": 7,
+              "sourceIndex": 8,
+              "sourceJobId": "58bbb507-ba5f-4213-bbaf-bc02042095e3",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/slime/stun-retry/raw/08.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/58bbb507-ba5f-4213-bbaf-bc02042095e3/download?index=8",
+              "sha256": "a58c2abe73f2196bedb596d724e160e7f4f32f56b78abd5fde8f3d79cb539ec8",
+              "width": 32,
+              "height": 32,
+              "colors": 5,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                8,
+                12,
+                23,
+                23
+              ],
+              "rgbaHash": "62dbeb86d685eb278b83061bd41657c580a86ca504fa4586ff9fba7a5004fd7a"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "horn_rabbit",
+      "displayName": "뿔토끼",
+      "canonical": "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/canonical.png",
+      "width": 32,
+      "height": 32,
+      "pivotTopLeft": [
+        16,
+        28
+      ],
+      "referenceHeight": 23,
+      "worldHeight": 2,
+      "facing": "west",
+      "faceAnchorTopLeft": [
+        9,
+        19
+      ],
+      "clips": {
+        "Idle": {
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/production/idle/00.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/production/idle/01.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/production/idle/02.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/production/idle/03.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/production/idle/04.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/production/idle/05.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/production/idle/06.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/production/idle/07.png"
+          ],
+          "fps": 8,
+          "loop": true,
+          "contactFrame": -1,
+          "contactSourceIndex": null,
+          "effectOriginTopLeft": null,
+          "faceAnchorTopLeft": [
+            9,
+            19
+          ],
+          "sourceJobId": "fb3135ec-83f0-4040-8a94-573c1a512ad2",
+          "sourceJobIds": [
+            "fb3135ec-83f0-4040-8a94-573c1a512ad2"
+          ],
+          "sourceIndices": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "sourceDirectory": "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/idle/raw",
+          "uniquePixelFrames": 7,
+          "review": "Selected body-only sequence reviewed in contact sheet.",
+          "records": [
+            {
+              "frame": 0,
+              "sourceIndex": 1,
+              "sourceJobId": "fb3135ec-83f0-4040-8a94-573c1a512ad2",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/idle/raw/01.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/fb3135ec-83f0-4040-8a94-573c1a512ad2/download?index=1",
+              "sha256": "c9dd7de45ec4de5876db958a467f92f2403ba9f480ec1f8beeeda402735ac525",
+              "width": 32,
+              "height": 32,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                5,
+                5,
+                24,
+                27
+              ],
+              "rgbaHash": "b32630609b084afc822288fc0973d4b0eccb81765f80a6387667e62b44f40dc7"
+            },
+            {
+              "frame": 1,
+              "sourceIndex": 2,
+              "sourceJobId": "fb3135ec-83f0-4040-8a94-573c1a512ad2",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/idle/raw/02.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/fb3135ec-83f0-4040-8a94-573c1a512ad2/download?index=2",
+              "sha256": "e569a2505726e261e2f684092b46ed2bd5e1ebb9fbd30dc2c8edef50fd66da50",
+              "width": 32,
+              "height": 32,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                5,
+                4,
+                24,
+                27
+              ],
+              "rgbaHash": "430254e407feca258f02e4529093d39f81b7d79ee4a9074fb3349bb3a1359c14"
+            },
+            {
+              "frame": 2,
+              "sourceIndex": 3,
+              "sourceJobId": "fb3135ec-83f0-4040-8a94-573c1a512ad2",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/idle/raw/03.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/fb3135ec-83f0-4040-8a94-573c1a512ad2/download?index=3",
+              "sha256": "0805f3e54a782535b494e7aa0169f88871f573e7e04ebf3e5e1b885f0f3c41d6",
+              "width": 32,
+              "height": 32,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                5,
+                4,
+                24,
+                27
+              ],
+              "rgbaHash": "2a07f517d5a0531d8f42d85c48d0cb017e69715ba5c39eae56da50d01aa43669"
+            },
+            {
+              "frame": 3,
+              "sourceIndex": 4,
+              "sourceJobId": "fb3135ec-83f0-4040-8a94-573c1a512ad2",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/idle/raw/04.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/fb3135ec-83f0-4040-8a94-573c1a512ad2/download?index=4",
+              "sha256": "b23b8722874fb527f65ee6e4e605cbde111ae665d679512ed16b92bbcac85c0c",
+              "width": 32,
+              "height": 32,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                5,
+                5,
+                24,
+                27
+              ],
+              "rgbaHash": "fc490bc520a1b94261fc9fc6af01a4b590d57e4ceaba74f561b4be3e92d99840"
+            },
+            {
+              "frame": 4,
+              "sourceIndex": 5,
+              "sourceJobId": "fb3135ec-83f0-4040-8a94-573c1a512ad2",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/idle/raw/05.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/fb3135ec-83f0-4040-8a94-573c1a512ad2/download?index=5",
+              "sha256": "a55ab7a8144269e45d7a802ea9eaaa9aab59e2dfcf5823a0d1d445ece01082c0",
+              "width": 32,
+              "height": 32,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                5,
+                4,
+                24,
+                27
+              ],
+              "rgbaHash": "94569bae1c29186d0823c77cb3f9f4f97d819fad82913f454f79f98b8f983338"
+            },
+            {
+              "frame": 5,
+              "sourceIndex": 6,
+              "sourceJobId": "fb3135ec-83f0-4040-8a94-573c1a512ad2",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/idle/raw/06.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/fb3135ec-83f0-4040-8a94-573c1a512ad2/download?index=6",
+              "sha256": "1c8223e45b03d6cbc981ac716955d49b6d15afe1b819a4e26770e9080f5d1bd7",
+              "width": 32,
+              "height": 32,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                5,
+                4,
+                24,
+                27
+              ],
+              "rgbaHash": "039c9304bc8df68a3bef1c5b20dddb1fc825f42deb124bb12b9ad50722ae4c86"
+            },
+            {
+              "frame": 6,
+              "sourceIndex": 7,
+              "sourceJobId": "fb3135ec-83f0-4040-8a94-573c1a512ad2",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/idle/raw/07.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/fb3135ec-83f0-4040-8a94-573c1a512ad2/download?index=7",
+              "sha256": "9fcf6d599f2e50633f90ff48ea1116a5d8b854755d6cb33059d04405e93af6f9",
+              "width": 32,
+              "height": 32,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                5,
+                4,
+                24,
+                27
+              ],
+              "rgbaHash": "6f91cc5a412d74f39723b7520186ea0c08aff54b1e935e0d0b7ffb8f8850316c"
+            },
+            {
+              "frame": 7,
+              "sourceIndex": 8,
+              "sourceJobId": "fb3135ec-83f0-4040-8a94-573c1a512ad2",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/idle/raw/08.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/fb3135ec-83f0-4040-8a94-573c1a512ad2/download?index=8",
+              "sha256": "c9dd7de45ec4de5876db958a467f92f2403ba9f480ec1f8beeeda402735ac525",
+              "width": 32,
+              "height": 32,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                5,
+                5,
+                24,
+                27
+              ],
+              "rgbaHash": "b32630609b084afc822288fc0973d4b0eccb81765f80a6387667e62b44f40dc7"
+            }
+          ]
+        },
+        "Attack": {
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/production/attack/00.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/production/attack/01.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/production/attack/02.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/production/attack/03.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/production/attack/04.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/production/attack/05.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/production/attack/06.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/production/attack/07.png"
+          ],
+          "fps": 12,
+          "loop": false,
+          "contactFrame": 3,
+          "contactSourceIndex": 3,
+          "effectOriginTopLeft": [
+            3,
+            10
+          ],
+          "faceAnchorTopLeft": [
+            8,
+            18
+          ],
+          "sourceJobId": "98db9286-ae4b-4760-938a-d8d642b63c67",
+          "sourceJobIds": [
+            "98db9286-ae4b-4760-938a-d8d642b63c67"
+          ],
+          "sourceIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            8
+          ],
+          "sourceDirectory": "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/attack-retry/raw",
+          "uniquePixelFrames": 5,
+          "review": "Selected body-only sequence reviewed in contact sheet.",
+          "records": [
+            {
+              "frame": 0,
+              "sourceIndex": 0,
+              "sourceJobId": "98db9286-ae4b-4760-938a-d8d642b63c67",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/attack-retry/raw/00.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/98db9286-ae4b-4760-938a-d8d642b63c67/download?index=0",
+              "sha256": "c9dd7de45ec4de5876db958a467f92f2403ba9f480ec1f8beeeda402735ac525",
+              "width": 32,
+              "height": 32,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                5,
+                5,
+                24,
+                27
+              ],
+              "rgbaHash": "b32630609b084afc822288fc0973d4b0eccb81765f80a6387667e62b44f40dc7"
+            },
+            {
+              "frame": 1,
+              "sourceIndex": 1,
+              "sourceJobId": "98db9286-ae4b-4760-938a-d8d642b63c67",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/attack-retry/raw/01.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/98db9286-ae4b-4760-938a-d8d642b63c67/download?index=1",
+              "sha256": "fef106f51a56cf0bb4c07e55b354a4dd8b09eb0190bd3ae1927b9bc0bfdc2480",
+              "width": 32,
+              "height": 32,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                3,
+                5,
+                23,
+                27
+              ],
+              "rgbaHash": "42cc842a691eeb54666ed6541ee8f48b00084f6d3f7ee64de591713363d02323"
+            },
+            {
+              "frame": 2,
+              "sourceIndex": 2,
+              "sourceJobId": "98db9286-ae4b-4760-938a-d8d642b63c67",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/attack-retry/raw/02.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/98db9286-ae4b-4760-938a-d8d642b63c67/download?index=2",
+              "sha256": "48796b129dab7dcfe3f3c67e34cada40e4fab6a5bf5859bfc8dabb31548b6d9a",
+              "width": 32,
+              "height": 32,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                3,
+                4,
+                22,
+                27
+              ],
+              "rgbaHash": "78368241eb823e92fd1cfc890224c583dea26e1a3715ce63e4b5a3e93f6a462d"
+            },
+            {
+              "frame": 3,
+              "sourceIndex": 3,
+              "sourceJobId": "98db9286-ae4b-4760-938a-d8d642b63c67",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/attack-retry/raw/03.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/98db9286-ae4b-4760-938a-d8d642b63c67/download?index=3",
+              "sha256": "7e4b85a44763e40315c643951d35f7c6991091b3482e6b2a41ad4441976684e5",
+              "width": 32,
+              "height": 32,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                3,
+                4,
+                22,
+                27
+              ],
+              "rgbaHash": "6765b397241b1e7dd76e710a0009791540ce43b9b2af34e59d745471e7b8ed3f"
+            },
+            {
+              "frame": 4,
+              "sourceIndex": 4,
+              "sourceJobId": "98db9286-ae4b-4760-938a-d8d642b63c67",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/attack-retry/raw/04.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/98db9286-ae4b-4760-938a-d8d642b63c67/download?index=4",
+              "sha256": "7e4b85a44763e40315c643951d35f7c6991091b3482e6b2a41ad4441976684e5",
+              "width": 32,
+              "height": 32,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                3,
+                4,
+                22,
+                27
+              ],
+              "rgbaHash": "6765b397241b1e7dd76e710a0009791540ce43b9b2af34e59d745471e7b8ed3f"
+            },
+            {
+              "frame": 5,
+              "sourceIndex": 5,
+              "sourceJobId": "98db9286-ae4b-4760-938a-d8d642b63c67",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/attack-retry/raw/05.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/98db9286-ae4b-4760-938a-d8d642b63c67/download?index=5",
+              "sha256": "051bf68472c15914d41694423a034c95449bb91a954f649d144d8919bdf0d577",
+              "width": 32,
+              "height": 32,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                4,
+                5,
+                23,
+                27
+              ],
+              "rgbaHash": "18c2af0fb7780c3262c38d38dbc08962f59d04c16df634eaf460424d9614a973"
+            },
+            {
+              "frame": 6,
+              "sourceIndex": 6,
+              "sourceJobId": "98db9286-ae4b-4760-938a-d8d642b63c67",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/attack-retry/raw/06.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/98db9286-ae4b-4760-938a-d8d642b63c67/download?index=6",
+              "sha256": "c9dd7de45ec4de5876db958a467f92f2403ba9f480ec1f8beeeda402735ac525",
+              "width": 32,
+              "height": 32,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                5,
+                5,
+                24,
+                27
+              ],
+              "rgbaHash": "b32630609b084afc822288fc0973d4b0eccb81765f80a6387667e62b44f40dc7"
+            },
+            {
+              "frame": 7,
+              "sourceIndex": 8,
+              "sourceJobId": "98db9286-ae4b-4760-938a-d8d642b63c67",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/attack-retry/raw/08.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/98db9286-ae4b-4760-938a-d8d642b63c67/download?index=8",
+              "sha256": "c9dd7de45ec4de5876db958a467f92f2403ba9f480ec1f8beeeda402735ac525",
+              "width": 32,
+              "height": 32,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                5,
+                5,
+                24,
+                27
+              ],
+              "rgbaHash": "b32630609b084afc822288fc0973d4b0eccb81765f80a6387667e62b44f40dc7"
+            }
+          ]
+        },
+        "Stun": {
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/production/stun/00.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/production/stun/01.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/production/stun/02.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/production/stun/03.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/production/stun/04.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/production/stun/05.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/production/stun/06.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/production/stun/07.png"
+          ],
+          "fps": 8,
+          "loop": true,
+          "contactFrame": -1,
+          "contactSourceIndex": null,
+          "effectOriginTopLeft": null,
+          "faceAnchorTopLeft": [
+            9,
+            19
+          ],
+          "sourceJobId": "3e27a10d-cd00-4a34-9016-bca834aa0e18",
+          "sourceJobIds": [
+            "3e27a10d-cd00-4a34-9016-bca834aa0e18"
+          ],
+          "sourceIndices": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "sourceDirectory": "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/stun/raw",
+          "uniquePixelFrames": 6,
+          "review": "Selected body-only sequence reviewed in contact sheet.",
+          "records": [
+            {
+              "frame": 0,
+              "sourceIndex": 1,
+              "sourceJobId": "3e27a10d-cd00-4a34-9016-bca834aa0e18",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/stun/raw/01.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/3e27a10d-cd00-4a34-9016-bca834aa0e18/download?index=1",
+              "sha256": "264d935145c78cae182d382ba71ac8db91c03e95de6d3bf6b1e44c3ce7f1ade6",
+              "width": 32,
+              "height": 32,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                5,
+                5,
+                24,
+                27
+              ],
+              "rgbaHash": "4ca9055dd708fdac72fae8c685d3fc71d593e7cc1ea5dfd0b1c8007a529d92a2"
+            },
+            {
+              "frame": 1,
+              "sourceIndex": 2,
+              "sourceJobId": "3e27a10d-cd00-4a34-9016-bca834aa0e18",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/stun/raw/02.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/3e27a10d-cd00-4a34-9016-bca834aa0e18/download?index=2",
+              "sha256": "7d9eff2799f032c635b964a44db7067be9b46a06a92d46a0d72cbad4bd477bc9",
+              "width": 32,
+              "height": 32,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                4,
+                5,
+                24,
+                27
+              ],
+              "rgbaHash": "0d9515dfd23845164b778184d306adeb0d182697664f298be378bc2a91bedc26"
+            },
+            {
+              "frame": 2,
+              "sourceIndex": 3,
+              "sourceJobId": "3e27a10d-cd00-4a34-9016-bca834aa0e18",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/stun/raw/03.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/3e27a10d-cd00-4a34-9016-bca834aa0e18/download?index=3",
+              "sha256": "f506a1df70c82d335031238dc9487f54d168dc84aec752833fbafe9884ffb6dd",
+              "width": 32,
+              "height": 32,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                4,
+                6,
+                23,
+                27
+              ],
+              "rgbaHash": "e87e1262fdb768f9bbdb4909439a7a9ab90f39ea592693801587ea371f63ab6f"
+            },
+            {
+              "frame": 3,
+              "sourceIndex": 4,
+              "sourceJobId": "3e27a10d-cd00-4a34-9016-bca834aa0e18",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/stun/raw/04.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/3e27a10d-cd00-4a34-9016-bca834aa0e18/download?index=4",
+              "sha256": "f506a1df70c82d335031238dc9487f54d168dc84aec752833fbafe9884ffb6dd",
+              "width": 32,
+              "height": 32,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                4,
+                6,
+                23,
+                27
+              ],
+              "rgbaHash": "e87e1262fdb768f9bbdb4909439a7a9ab90f39ea592693801587ea371f63ab6f"
+            },
+            {
+              "frame": 4,
+              "sourceIndex": 5,
+              "sourceJobId": "3e27a10d-cd00-4a34-9016-bca834aa0e18",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/stun/raw/05.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/3e27a10d-cd00-4a34-9016-bca834aa0e18/download?index=5",
+              "sha256": "52c3f5674c81512422f4d5eea110162339997c774224df64f85f269ccb873d06",
+              "width": 32,
+              "height": 32,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                5,
+                5,
+                24,
+                27
+              ],
+              "rgbaHash": "dd2a22a90237b7007119eb95c0a7538a7f61274e50b728cd6f29b877f0abc163"
+            },
+            {
+              "frame": 5,
+              "sourceIndex": 6,
+              "sourceJobId": "3e27a10d-cd00-4a34-9016-bca834aa0e18",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/stun/raw/06.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/3e27a10d-cd00-4a34-9016-bca834aa0e18/download?index=6",
+              "sha256": "3721a80d5ccc3df1ef514f598b15bcfdd560cd02577341b99821aabd4b3a028c",
+              "width": 32,
+              "height": 32,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                5,
+                5,
+                24,
+                27
+              ],
+              "rgbaHash": "4d04a383a420356615e999c65886c2dda80a57ecd55d782406d1fdfd0557000f"
+            },
+            {
+              "frame": 6,
+              "sourceIndex": 7,
+              "sourceJobId": "3e27a10d-cd00-4a34-9016-bca834aa0e18",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/stun/raw/07.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/3e27a10d-cd00-4a34-9016-bca834aa0e18/download?index=7",
+              "sha256": "c9dd7de45ec4de5876db958a467f92f2403ba9f480ec1f8beeeda402735ac525",
+              "width": 32,
+              "height": 32,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                5,
+                5,
+                24,
+                27
+              ],
+              "rgbaHash": "b32630609b084afc822288fc0973d4b0eccb81765f80a6387667e62b44f40dc7"
+            },
+            {
+              "frame": 7,
+              "sourceIndex": 8,
+              "sourceJobId": "3e27a10d-cd00-4a34-9016-bca834aa0e18",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/horn_rabbit/stun/raw/08.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/3e27a10d-cd00-4a34-9016-bca834aa0e18/download?index=8",
+              "sha256": "c9dd7de45ec4de5876db958a467f92f2403ba9f480ec1f8beeeda402735ac525",
+              "width": 32,
+              "height": 32,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                5,
+                5,
+                24,
+                27
+              ],
+              "rgbaHash": "b32630609b084afc822288fc0973d4b0eccb81765f80a6387667e62b44f40dc7"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "boar",
+      "displayName": "산멧돼지",
+      "canonical": "Planning/Story/Dragon-v1/Production/Monsters/boar/canonical.png",
+      "width": 48,
+      "height": 40,
+      "pivotTopLeft": [
+        24,
+        32
+      ],
+      "referenceHeight": 21,
+      "worldHeight": 2,
+      "facing": "west",
+      "faceAnchorTopLeft": [
+        14,
+        21
+      ],
+      "clips": {
+        "Idle": {
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Monsters/boar/production/idle/00.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/boar/production/idle/01.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/boar/production/idle/02.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/boar/production/idle/03.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/boar/production/idle/04.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/boar/production/idle/05.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/boar/production/idle/06.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/boar/production/idle/07.png"
+          ],
+          "fps": 8,
+          "loop": true,
+          "contactFrame": -1,
+          "contactSourceIndex": null,
+          "effectOriginTopLeft": null,
+          "faceAnchorTopLeft": [
+            14,
+            21
+          ],
+          "sourceJobId": "16b991e5-5b50-494f-8cd4-0de204a03ab3",
+          "sourceJobIds": [
+            "16b991e5-5b50-494f-8cd4-0de204a03ab3"
+          ],
+          "sourceIndices": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "sourceDirectory": "Planning/Story/Dragon-v1/Production/Monsters/boar/idle/raw",
+          "uniquePixelFrames": 7,
+          "review": "Selected body-only sequence reviewed in contact sheet.",
+          "records": [
+            {
+              "frame": 0,
+              "sourceIndex": 1,
+              "sourceJobId": "16b991e5-5b50-494f-8cd4-0de204a03ab3",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/boar/idle/raw/01.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/16b991e5-5b50-494f-8cd4-0de204a03ab3/download?index=1",
+              "sha256": "a4c59bc148092391ea948f08ce36d1fe5e018d7ef0ccf076ffe08d6e9e26d214",
+              "width": 48,
+              "height": 40,
+              "colors": 8,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                7,
+                11,
+                38,
+                31
+              ],
+              "rgbaHash": "8191f4a3f2a2fd5c5f7696c0f22268d7c49fc5bd06feb84f535d9bcc0c906f40"
+            },
+            {
+              "frame": 1,
+              "sourceIndex": 2,
+              "sourceJobId": "16b991e5-5b50-494f-8cd4-0de204a03ab3",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/boar/idle/raw/02.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/16b991e5-5b50-494f-8cd4-0de204a03ab3/download?index=2",
+              "sha256": "62a68904810fd9e59002f2f0702ddfa43858fee0ad5c44915e21a49ad8133437",
+              "width": 48,
+              "height": 40,
+              "colors": 8,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                7,
+                10,
+                39,
+                31
+              ],
+              "rgbaHash": "480dd8e29df1439562c2e217880cd7d4f3ccbceed60f9736662146c881b42ee6"
+            },
+            {
+              "frame": 2,
+              "sourceIndex": 3,
+              "sourceJobId": "16b991e5-5b50-494f-8cd4-0de204a03ab3",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/boar/idle/raw/03.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/16b991e5-5b50-494f-8cd4-0de204a03ab3/download?index=3",
+              "sha256": "1d7841dfac6abb366ceb50627fe15342a8ecd8640c6f2b59a3a540a3c8a2f86d",
+              "width": 48,
+              "height": 40,
+              "colors": 8,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                7,
+                10,
+                40,
+                31
+              ],
+              "rgbaHash": "5e552126affa3587cb4ceac2b1c8349a56d799eaf1ad3529de32e3fb83cb218c"
+            },
+            {
+              "frame": 3,
+              "sourceIndex": 4,
+              "sourceJobId": "16b991e5-5b50-494f-8cd4-0de204a03ab3",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/boar/idle/raw/04.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/16b991e5-5b50-494f-8cd4-0de204a03ab3/download?index=4",
+              "sha256": "857bb73fee4850c80a975702bddeb4503b0fd2632b33a7013e3bbe2af64a12c0",
+              "width": 48,
+              "height": 40,
+              "colors": 8,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                7,
+                10,
+                40,
+                31
+              ],
+              "rgbaHash": "a106f2d7de3f9335a7dc26ea37ab1f2cb05b21816fddf03e61976546ca718bfc"
+            },
+            {
+              "frame": 4,
+              "sourceIndex": 5,
+              "sourceJobId": "16b991e5-5b50-494f-8cd4-0de204a03ab3",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/boar/idle/raw/05.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/16b991e5-5b50-494f-8cd4-0de204a03ab3/download?index=5",
+              "sha256": "857bb73fee4850c80a975702bddeb4503b0fd2632b33a7013e3bbe2af64a12c0",
+              "width": 48,
+              "height": 40,
+              "colors": 8,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                7,
+                10,
+                40,
+                31
+              ],
+              "rgbaHash": "a106f2d7de3f9335a7dc26ea37ab1f2cb05b21816fddf03e61976546ca718bfc"
+            },
+            {
+              "frame": 5,
+              "sourceIndex": 6,
+              "sourceJobId": "16b991e5-5b50-494f-8cd4-0de204a03ab3",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/boar/idle/raw/06.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/16b991e5-5b50-494f-8cd4-0de204a03ab3/download?index=6",
+              "sha256": "2abf3b065619b0110c60036ac715f993addf384fe7957e0fec567257e3289fe5",
+              "width": 48,
+              "height": 40,
+              "colors": 8,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                7,
+                10,
+                40,
+                31
+              ],
+              "rgbaHash": "a65c9f2c84bc795f5def6d1522ecef3880d952b6229c1add09acea154e9e464d"
+            },
+            {
+              "frame": 6,
+              "sourceIndex": 7,
+              "sourceJobId": "16b991e5-5b50-494f-8cd4-0de204a03ab3",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/boar/idle/raw/07.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/16b991e5-5b50-494f-8cd4-0de204a03ab3/download?index=7",
+              "sha256": "a56af5fd2bdcae3bf90a03c4d254ef919658a1711e383db51a1bedcf68dff982",
+              "width": 48,
+              "height": 40,
+              "colors": 8,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                7,
+                11,
+                40,
+                31
+              ],
+              "rgbaHash": "8b6835406314a799097a9cdfba26ee2da6106ec0bee2696d591cd2a767a831bd"
+            },
+            {
+              "frame": 7,
+              "sourceIndex": 8,
+              "sourceJobId": "16b991e5-5b50-494f-8cd4-0de204a03ab3",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/boar/idle/raw/08.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/16b991e5-5b50-494f-8cd4-0de204a03ab3/download?index=8",
+              "sha256": "9422a5e7e866819c7c80f840769cdaea87d36bf52d569e7140d79c507b0254de",
+              "width": 48,
+              "height": 40,
+              "colors": 8,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                7,
+                11,
+                38,
+                31
+              ],
+              "rgbaHash": "c3be170bd1bebbd8058e745558e182b5eb27ca499cf41c6999024c837e05dc11"
+            }
+          ]
+        },
+        "Attack": {
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Monsters/boar/production/attack/00.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/boar/production/attack/01.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/boar/production/attack/02.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/boar/production/attack/03.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/boar/production/attack/04.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/boar/production/attack/05.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/boar/production/attack/06.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/boar/production/attack/07.png"
+          ],
+          "fps": 12,
+          "loop": false,
+          "contactFrame": 5,
+          "contactSourceIndex": 7,
+          "effectOriginTopLeft": [
+            6,
+            22
+          ],
+          "faceAnchorTopLeft": [
+            13,
+            21
+          ],
+          "sourceJobId": "265dc3cc-ea00-4c07-8483-c3f27eca13f0",
+          "sourceJobIds": [
+            "265dc3cc-ea00-4c07-8483-c3f27eca13f0"
+          ],
+          "sourceIndices": [
+            0,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            0
+          ],
+          "sourceDirectory": "Planning/Story/Dragon-v1/Production/Monsters/boar/attack-retry/raw",
+          "uniquePixelFrames": 7,
+          "review": "Canonical start; single backward brace then forward head shove. Original01 omitted to avoid an extra early forward motion; canonical00 ends recovery.",
+          "records": [
+            {
+              "frame": 0,
+              "sourceIndex": 0,
+              "sourceJobId": "265dc3cc-ea00-4c07-8483-c3f27eca13f0",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/boar/attack-retry/raw/00.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/265dc3cc-ea00-4c07-8483-c3f27eca13f0/download?index=0",
+              "sha256": "9422a5e7e866819c7c80f840769cdaea87d36bf52d569e7140d79c507b0254de",
+              "width": 48,
+              "height": 40,
+              "colors": 8,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                7,
+                11,
+                38,
+                31
+              ],
+              "rgbaHash": "c3be170bd1bebbd8058e745558e182b5eb27ca499cf41c6999024c837e05dc11"
+            },
+            {
+              "frame": 1,
+              "sourceIndex": 2,
+              "sourceJobId": "265dc3cc-ea00-4c07-8483-c3f27eca13f0",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/boar/attack-retry/raw/02.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/265dc3cc-ea00-4c07-8483-c3f27eca13f0/download?index=2",
+              "sha256": "769bf840f71a53a7acd15915fbb7a39bf0988c9a9a082ebc6f312aaa633c7db6",
+              "width": 48,
+              "height": 40,
+              "colors": 8,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                7,
+                11,
+                40,
+                31
+              ],
+              "rgbaHash": "701318d7b232eff3f7459ae41ec5b838b643977d82e7f3da78336b6b8735be0d"
+            },
+            {
+              "frame": 2,
+              "sourceIndex": 3,
+              "sourceJobId": "265dc3cc-ea00-4c07-8483-c3f27eca13f0",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/boar/attack-retry/raw/03.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/265dc3cc-ea00-4c07-8483-c3f27eca13f0/download?index=3",
+              "sha256": "38455b2bc00b5f46a4eb2e68fa285f89749121246084eb2a95e8448512e77769",
+              "width": 48,
+              "height": 40,
+              "colors": 8,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                9,
+                11,
+                41,
+                31
+              ],
+              "rgbaHash": "c83ba7b6d8cb6264a587422343edeb8d1ce80c69a6fd0a92e80f0af2b099ffe7"
+            },
+            {
+              "frame": 3,
+              "sourceIndex": 4,
+              "sourceJobId": "265dc3cc-ea00-4c07-8483-c3f27eca13f0",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/boar/attack-retry/raw/04.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/265dc3cc-ea00-4c07-8483-c3f27eca13f0/download?index=4",
+              "sha256": "e6c72d1b41f403fa06ece14a2cd550bccba454bd98dc5fb9ca4105a0c795e52f",
+              "width": 48,
+              "height": 40,
+              "colors": 8,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                10,
+                11,
+                41,
+                31
+              ],
+              "rgbaHash": "2d16c8d841e7c27449eae5f61a9efeee4c58167a91090df7e931d712c0aa9cb1"
+            },
+            {
+              "frame": 4,
+              "sourceIndex": 6,
+              "sourceJobId": "265dc3cc-ea00-4c07-8483-c3f27eca13f0",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/boar/attack-retry/raw/06.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/265dc3cc-ea00-4c07-8483-c3f27eca13f0/download?index=6",
+              "sha256": "1d8ef9fa3276465d8d4cd23f9d3ce398c35992204a003cb9ce0745080fd1811e",
+              "width": 48,
+              "height": 40,
+              "colors": 8,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                8,
+                11,
+                39,
+                31
+              ],
+              "rgbaHash": "5d9dd6ab7ba381f115ab7fa374e191cb4841c958c3e49097d8a66919a3a3b8f7"
+            },
+            {
+              "frame": 5,
+              "sourceIndex": 7,
+              "sourceJobId": "265dc3cc-ea00-4c07-8483-c3f27eca13f0",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/boar/attack-retry/raw/07.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/265dc3cc-ea00-4c07-8483-c3f27eca13f0/download?index=7",
+              "sha256": "5c436c9b620cd8337faf31791770edf2978561648ebd6bb83249337590c5e294",
+              "width": 48,
+              "height": 40,
+              "colors": 8,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                6,
+                11,
+                37,
+                31
+              ],
+              "rgbaHash": "38e88350c7a7205f0e26a6ad542f9cbb0e200f511c65c64069f7dc0a91b276ba"
+            },
+            {
+              "frame": 6,
+              "sourceIndex": 8,
+              "sourceJobId": "265dc3cc-ea00-4c07-8483-c3f27eca13f0",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/boar/attack-retry/raw/08.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/265dc3cc-ea00-4c07-8483-c3f27eca13f0/download?index=8",
+              "sha256": "422608c1bc53773aa7ce5c54711f8fc7ed44a8e34239a5780d2991a07c44b9b2",
+              "width": 48,
+              "height": 40,
+              "colors": 8,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                7,
+                11,
+                38,
+                31
+              ],
+              "rgbaHash": "0c1d40d0389466214fa0b55e5a9afcac3fdec61b0aa5bcc4fefaae37a51b8ca4"
+            },
+            {
+              "frame": 7,
+              "sourceIndex": 0,
+              "sourceJobId": "265dc3cc-ea00-4c07-8483-c3f27eca13f0",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/boar/attack-retry/raw/00.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/265dc3cc-ea00-4c07-8483-c3f27eca13f0/download?index=0",
+              "sha256": "9422a5e7e866819c7c80f840769cdaea87d36bf52d569e7140d79c507b0254de",
+              "width": 48,
+              "height": 40,
+              "colors": 8,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                7,
+                11,
+                38,
+                31
+              ],
+              "rgbaHash": "c3be170bd1bebbd8058e745558e182b5eb27ca499cf41c6999024c837e05dc11"
+            }
+          ]
+        },
+        "Stun": {
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Monsters/boar/production/stun/00.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/boar/production/stun/01.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/boar/production/stun/02.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/boar/production/stun/03.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/boar/production/stun/04.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/boar/production/stun/05.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/boar/production/stun/06.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/boar/production/stun/07.png"
+          ],
+          "fps": 8,
+          "loop": true,
+          "contactFrame": -1,
+          "contactSourceIndex": null,
+          "effectOriginTopLeft": null,
+          "faceAnchorTopLeft": [
+            14,
+            21
+          ],
+          "sourceJobId": "8b5f7e5b-318b-4122-9fc2-355d450a78c9",
+          "sourceJobIds": [
+            "8b5f7e5b-318b-4122-9fc2-355d450a78c9"
+          ],
+          "sourceIndices": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "sourceDirectory": "Planning/Story/Dragon-v1/Production/Monsters/boar/stun/raw",
+          "uniquePixelFrames": 5,
+          "review": "Selected body-only sequence reviewed in contact sheet.",
+          "records": [
+            {
+              "frame": 0,
+              "sourceIndex": 1,
+              "sourceJobId": "8b5f7e5b-318b-4122-9fc2-355d450a78c9",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/boar/stun/raw/01.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/8b5f7e5b-318b-4122-9fc2-355d450a78c9/download?index=1",
+              "sha256": "ea9e8d5cd2b87c3088581c96634010be97b26515fb91c924c1be5bcf38fa5792",
+              "width": 48,
+              "height": 40,
+              "colors": 8,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                7,
+                11,
+                38,
+                31
+              ],
+              "rgbaHash": "2469370c41fbb390d2d400bad3f7db20312dca13ea1ef48daf867ec0a6fc6a51"
+            },
+            {
+              "frame": 1,
+              "sourceIndex": 2,
+              "sourceJobId": "8b5f7e5b-318b-4122-9fc2-355d450a78c9",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/boar/stun/raw/02.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/8b5f7e5b-318b-4122-9fc2-355d450a78c9/download?index=2",
+              "sha256": "ea9e8d5cd2b87c3088581c96634010be97b26515fb91c924c1be5bcf38fa5792",
+              "width": 48,
+              "height": 40,
+              "colors": 8,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                7,
+                11,
+                38,
+                31
+              ],
+              "rgbaHash": "2469370c41fbb390d2d400bad3f7db20312dca13ea1ef48daf867ec0a6fc6a51"
+            },
+            {
+              "frame": 2,
+              "sourceIndex": 3,
+              "sourceJobId": "8b5f7e5b-318b-4122-9fc2-355d450a78c9",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/boar/stun/raw/03.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/8b5f7e5b-318b-4122-9fc2-355d450a78c9/download?index=3",
+              "sha256": "ce89ab92845339e8630825bbf79ee4acd48d169246c41389d6dbe1203d454134",
+              "width": 48,
+              "height": 40,
+              "colors": 8,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                8,
+                11,
+                39,
+                31
+              ],
+              "rgbaHash": "01b5ee7a5d21385383d651dbcbc230c99293d83655b2b4176cd22ff2ef93adf0"
+            },
+            {
+              "frame": 3,
+              "sourceIndex": 4,
+              "sourceJobId": "8b5f7e5b-318b-4122-9fc2-355d450a78c9",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/boar/stun/raw/04.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/8b5f7e5b-318b-4122-9fc2-355d450a78c9/download?index=4",
+              "sha256": "914bab6552dfddbe9867ec610055e03e051747537fe1b692539238ad1256b0d9",
+              "width": 48,
+              "height": 40,
+              "colors": 8,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                9,
+                11,
+                40,
+                31
+              ],
+              "rgbaHash": "0c5b67afbbc648a71ce95e825bc91da5e1fb11314e02a0f2b1df5c06cb6d7780"
+            },
+            {
+              "frame": 4,
+              "sourceIndex": 5,
+              "sourceJobId": "8b5f7e5b-318b-4122-9fc2-355d450a78c9",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/boar/stun/raw/05.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/8b5f7e5b-318b-4122-9fc2-355d450a78c9/download?index=5",
+              "sha256": "914bab6552dfddbe9867ec610055e03e051747537fe1b692539238ad1256b0d9",
+              "width": 48,
+              "height": 40,
+              "colors": 8,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                9,
+                11,
+                40,
+                31
+              ],
+              "rgbaHash": "0c5b67afbbc648a71ce95e825bc91da5e1fb11314e02a0f2b1df5c06cb6d7780"
+            },
+            {
+              "frame": 5,
+              "sourceIndex": 6,
+              "sourceJobId": "8b5f7e5b-318b-4122-9fc2-355d450a78c9",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/boar/stun/raw/06.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/8b5f7e5b-318b-4122-9fc2-355d450a78c9/download?index=6",
+              "sha256": "b416f3cdc0cf0561b8d5e6f8ee565cde256ed0980ed59de78367912c78aebc4c",
+              "width": 48,
+              "height": 40,
+              "colors": 8,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                8,
+                11,
+                40,
+                31
+              ],
+              "rgbaHash": "e6e8b800cff9dffb80904f4f014f5ecf74dd39709856021a96dc97ea7f1df714"
+            },
+            {
+              "frame": 6,
+              "sourceIndex": 7,
+              "sourceJobId": "8b5f7e5b-318b-4122-9fc2-355d450a78c9",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/boar/stun/raw/07.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/8b5f7e5b-318b-4122-9fc2-355d450a78c9/download?index=7",
+              "sha256": "ce89ab92845339e8630825bbf79ee4acd48d169246c41389d6dbe1203d454134",
+              "width": 48,
+              "height": 40,
+              "colors": 8,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                8,
+                11,
+                39,
+                31
+              ],
+              "rgbaHash": "01b5ee7a5d21385383d651dbcbc230c99293d83655b2b4176cd22ff2ef93adf0"
+            },
+            {
+              "frame": 7,
+              "sourceIndex": 8,
+              "sourceJobId": "8b5f7e5b-318b-4122-9fc2-355d450a78c9",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/boar/stun/raw/08.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/8b5f7e5b-318b-4122-9fc2-355d450a78c9/download?index=8",
+              "sha256": "b1ccb247ee5aceceee263b028b881871fb3da150f381b5e69a8b28417e75ec0d",
+              "width": 48,
+              "height": 40,
+              "colors": 8,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                7,
+                11,
+                38,
+                31
+              ],
+              "rgbaHash": "076a1af19064396edeb5fec868fdfcc1e135ad4654968fb87205466899756e1b"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "great_horn_rabbit",
+      "displayName": "큰뿔토끼",
+      "canonical": "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/canonical.png",
+      "width": 48,
+      "height": 48,
+      "pivotTopLeft": [
+        24,
+        40
+      ],
+      "referenceHeight": 33,
+      "worldHeight": 3.2,
+      "facing": "west",
+      "faceAnchorTopLeft": [
+        14,
+        24
+      ],
+      "clips": {
+        "Idle": {
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/production/idle/00.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/production/idle/01.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/production/idle/02.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/production/idle/03.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/production/idle/04.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/production/idle/05.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/production/idle/06.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/production/idle/07.png"
+          ],
+          "fps": 8,
+          "loop": true,
+          "contactFrame": -1,
+          "contactSourceIndex": null,
+          "effectOriginTopLeft": null,
+          "faceAnchorTopLeft": [
+            14,
+            24
+          ],
+          "sourceJobId": "aa1b0ab9-44be-4b89-b83e-b65b1299b987",
+          "sourceJobIds": [
+            "aa1b0ab9-44be-4b89-b83e-b65b1299b987"
+          ],
+          "sourceIndices": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "sourceDirectory": "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/idle/raw",
+          "uniquePixelFrames": 8,
+          "review": "Selected body-only sequence reviewed in contact sheet.",
+          "records": [
+            {
+              "frame": 0,
+              "sourceIndex": 1,
+              "sourceJobId": "aa1b0ab9-44be-4b89-b83e-b65b1299b987",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/idle/raw/01.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/aa1b0ab9-44be-4b89-b83e-b65b1299b987/download?index=1",
+              "sha256": "fd6a50583582c4ab53777cb405ce566d1997e5cb69c2797ae1bdbe5b18260469",
+              "width": 48,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                3,
+                7,
+                39,
+                39
+              ],
+              "rgbaHash": "9498a1578fd2c66089f9d57549b6cced5f831a26dd145e35270c0b1b794025b1"
+            },
+            {
+              "frame": 1,
+              "sourceIndex": 2,
+              "sourceJobId": "aa1b0ab9-44be-4b89-b83e-b65b1299b987",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/idle/raw/02.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/aa1b0ab9-44be-4b89-b83e-b65b1299b987/download?index=2",
+              "sha256": "2c599c33938921c69e02c864ef549e673ac9d5dd67ed9c98ffe2ad8b375097e1",
+              "width": 48,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                3,
+                6,
+                39,
+                39
+              ],
+              "rgbaHash": "fe9096a18b87b0606c5793eeb797c800c88b16bf19f6d722c9e6b4a3764877c0"
+            },
+            {
+              "frame": 2,
+              "sourceIndex": 3,
+              "sourceJobId": "aa1b0ab9-44be-4b89-b83e-b65b1299b987",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/idle/raw/03.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/aa1b0ab9-44be-4b89-b83e-b65b1299b987/download?index=3",
+              "sha256": "c3d53c5500ad51e0bb147f820701cbf471999c0ec99ca2331547a7c85ba67365",
+              "width": 48,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                3,
+                6,
+                39,
+                39
+              ],
+              "rgbaHash": "417a96a750e32709c026ef083a4e3c1cf259df993cc7b67d800725a611a2ec15"
+            },
+            {
+              "frame": 3,
+              "sourceIndex": 4,
+              "sourceJobId": "aa1b0ab9-44be-4b89-b83e-b65b1299b987",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/idle/raw/04.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/aa1b0ab9-44be-4b89-b83e-b65b1299b987/download?index=4",
+              "sha256": "c80f1e1a258e3de29d44a55c2b7cb3a460754c059a5b20c81a06b016880cc270",
+              "width": 48,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                3,
+                6,
+                39,
+                39
+              ],
+              "rgbaHash": "c4e83df6a980401136637454ef88ab999abba7132b97c188e419fcab1dbdf2c6"
+            },
+            {
+              "frame": 4,
+              "sourceIndex": 5,
+              "sourceJobId": "aa1b0ab9-44be-4b89-b83e-b65b1299b987",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/idle/raw/05.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/aa1b0ab9-44be-4b89-b83e-b65b1299b987/download?index=5",
+              "sha256": "4f69356120de324fa40638e1e819dbf9732de12c0f9951331c8db719a5dfb5fe",
+              "width": 48,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                3,
+                6,
+                39,
+                39
+              ],
+              "rgbaHash": "8f0f718ec232531640fe2854775cde8745b151c8900283bf0e2347a5d7eda5ab"
+            },
+            {
+              "frame": 5,
+              "sourceIndex": 6,
+              "sourceJobId": "aa1b0ab9-44be-4b89-b83e-b65b1299b987",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/idle/raw/06.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/aa1b0ab9-44be-4b89-b83e-b65b1299b987/download?index=6",
+              "sha256": "e18267e244ee1315abb97adea9ee1fdcb7736eca9a97fc23ce3c8db682886287",
+              "width": 48,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                3,
+                6,
+                39,
+                39
+              ],
+              "rgbaHash": "21209c5c5970664bedf8c38e45b9c9eaeb903d4bd05087ab8057471521d598d5"
+            },
+            {
+              "frame": 6,
+              "sourceIndex": 7,
+              "sourceJobId": "aa1b0ab9-44be-4b89-b83e-b65b1299b987",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/idle/raw/07.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/aa1b0ab9-44be-4b89-b83e-b65b1299b987/download?index=7",
+              "sha256": "dc75a80e419f5abf300889806cdfa5014b0521fa9c05ef097bfef9714316220e",
+              "width": 48,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                3,
+                7,
+                39,
+                39
+              ],
+              "rgbaHash": "57f0ed7242c8d6e79e316970127e01a1e4a1cc89071ae9e6019dae7d3cc24dcc"
+            },
+            {
+              "frame": 7,
+              "sourceIndex": 8,
+              "sourceJobId": "aa1b0ab9-44be-4b89-b83e-b65b1299b987",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/idle/raw/08.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/aa1b0ab9-44be-4b89-b83e-b65b1299b987/download?index=8",
+              "sha256": "e23e75c2601f096028222d261b22d3e5da4bf3bb4f8a2670bd01cae60684bdf4",
+              "width": 48,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                3,
+                7,
+                39,
+                39
+              ],
+              "rgbaHash": "89848cf9b62004aab2804b21335cd026d86292ddb55aebfae77ca98df54d0282"
+            }
+          ]
+        },
+        "Attack": {
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/production/attack/00.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/production/attack/01.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/production/attack/02.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/production/attack/03.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/production/attack/04.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/production/attack/05.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/production/attack/06.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/production/attack/07.png"
+          ],
+          "fps": 12,
+          "loop": false,
+          "contactFrame": 4,
+          "contactSourceIndex": 4,
+          "effectOriginTopLeft": [
+            1,
+            23
+          ],
+          "faceAnchorTopLeft": [
+            16,
+            28
+          ],
+          "sourceJobId": null,
+          "sourceJobIds": [
+            "870421bb-fa2d-4f91-9443-e61bfb10175d"
+          ],
+          "sourceIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "sourceDirectory": null,
+          "uniquePixelFrames": 8,
+          "review": "Five approach samples including canonical, then three recovery samples. Source mapping: windup0/1/2/3/4 then recover1/2/4; all eight corrected together to the canonical seven-color palette with PixelLab reduce_colors, no dithering. Dedicated lowered-head contact pose; original weak body-shift attempt rejected.",
+          "records": [
+            {
+              "frame": 0,
+              "sourceIndex": 0,
+              "sourceJobId": "870421bb-fa2d-4f91-9443-e61bfb10175d",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/attack-palette/raw/00.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/870421bb-fa2d-4f91-9443-e61bfb10175d/download?index=0",
+              "sha256": "de4f87ba8d2b9f0bec31df1ff612a2dc29fe82c88714fbbcc5b8f349e770d99b",
+              "width": 48,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                3,
+                7,
+                39,
+                39
+              ],
+              "rgbaHash": "89848cf9b62004aab2804b21335cd026d86292ddb55aebfae77ca98df54d0282"
+            },
+            {
+              "frame": 1,
+              "sourceIndex": 1,
+              "sourceJobId": "870421bb-fa2d-4f91-9443-e61bfb10175d",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/attack-palette/raw/01.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/870421bb-fa2d-4f91-9443-e61bfb10175d/download?index=1",
+              "sha256": "99453b2da28f63c4755e987ed83dfd7b67b37da0f73baa5dcdaa53aa64933c5a",
+              "width": 48,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                5,
+                8,
+                40,
+                39
+              ],
+              "rgbaHash": "4548c58580a8d363f43091953f3ba4dc02e6dca06c553915465c747c2b170916"
+            },
+            {
+              "frame": 2,
+              "sourceIndex": 2,
+              "sourceJobId": "870421bb-fa2d-4f91-9443-e61bfb10175d",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/attack-palette/raw/02.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/870421bb-fa2d-4f91-9443-e61bfb10175d/download?index=2",
+              "sha256": "190afe748752ee7f01cf3257870f674255e83eff2f48f6dcbd736850a7d14aa0",
+              "width": 48,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                7,
+                12,
+                42,
+                39
+              ],
+              "rgbaHash": "aeeb10f24e878583c4b2f8f678cd3ca8bee049d4ea91fa2d0869e977e4e3b39e"
+            },
+            {
+              "frame": 3,
+              "sourceIndex": 3,
+              "sourceJobId": "870421bb-fa2d-4f91-9443-e61bfb10175d",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/attack-palette/raw/03.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/870421bb-fa2d-4f91-9443-e61bfb10175d/download?index=3",
+              "sha256": "f091aa197b6e8651fe2e4b452bc5b43d36bdbe0353d2d34019c00d8eefc029da",
+              "width": 48,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                3,
+                13,
+                45,
+                39
+              ],
+              "rgbaHash": "95c8c043384b171836a309c1646b076dbb39a3cf2ca30dfc42ca3ecf1a3f0d4d"
+            },
+            {
+              "frame": 4,
+              "sourceIndex": 4,
+              "sourceJobId": "870421bb-fa2d-4f91-9443-e61bfb10175d",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/attack-palette/raw/04.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/870421bb-fa2d-4f91-9443-e61bfb10175d/download?index=4",
+              "sha256": "fd76ac471ac72e9a0561eea1fb74313cdf9d6459f87887934a68d61dc533dfba",
+              "width": 48,
+              "height": 48,
+              "colors": 6,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                1,
+                15,
+                44,
+                39
+              ],
+              "rgbaHash": "435f6d11fa4923be35365edf542370e8ea5c16812b4107c45bd56f790d5442d4"
+            },
+            {
+              "frame": 5,
+              "sourceIndex": 5,
+              "sourceJobId": "870421bb-fa2d-4f91-9443-e61bfb10175d",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/attack-palette/raw/05.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/870421bb-fa2d-4f91-9443-e61bfb10175d/download?index=5",
+              "sha256": "d48663d1f0cb423a2db734031e21fd64d612c1399a4b645e19dbaf460dbbf5cb",
+              "width": 48,
+              "height": 48,
+              "colors": 5,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                1,
+                13,
+                43,
+                39
+              ],
+              "rgbaHash": "19d7ea65375b38f477e0dbddabf5913682fae2657ba1e105511da9d70b754bcc"
+            },
+            {
+              "frame": 6,
+              "sourceIndex": 6,
+              "sourceJobId": "870421bb-fa2d-4f91-9443-e61bfb10175d",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/attack-palette/raw/06.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/870421bb-fa2d-4f91-9443-e61bfb10175d/download?index=6",
+              "sha256": "1fbe4997b3f97ad3f6cf3ab8486816755958fe0ec153739ac509b94f6d52cfdf",
+              "width": 48,
+              "height": 48,
+              "colors": 5,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                2,
+                11,
+                41,
+                39
+              ],
+              "rgbaHash": "d8d268c99d178e03e41a5bfc9ecdfbce7bd2078dfb9cd90b3c47a3b0daf1c722"
+            },
+            {
+              "frame": 7,
+              "sourceIndex": 7,
+              "sourceJobId": "870421bb-fa2d-4f91-9443-e61bfb10175d",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/attack-palette/raw/07.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/870421bb-fa2d-4f91-9443-e61bfb10175d/download?index=7",
+              "sha256": "5a5c6b841bdbd552d7f8d83d2b8d8fad6b093c582383b2fcb5cdc86943bcdc8d",
+              "width": 48,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                3,
+                7,
+                39,
+                39
+              ],
+              "rgbaHash": "04651570a366e9c63c751fff8932e568347d623158d11912bd3abc993e401f88"
+            }
+          ]
+        },
+        "Stun": {
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/production/stun/00.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/production/stun/01.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/production/stun/02.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/production/stun/03.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/production/stun/04.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/production/stun/05.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/production/stun/06.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/production/stun/07.png"
+          ],
+          "fps": 8,
+          "loop": true,
+          "contactFrame": -1,
+          "contactSourceIndex": null,
+          "effectOriginTopLeft": null,
+          "faceAnchorTopLeft": [
+            14,
+            24
+          ],
+          "sourceJobId": "64dbfb4e-5218-465f-9202-6d41c057c11f",
+          "sourceJobIds": [
+            "64dbfb4e-5218-465f-9202-6d41c057c11f"
+          ],
+          "sourceIndices": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "sourceDirectory": "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/stun/raw",
+          "uniquePixelFrames": 8,
+          "review": "Selected body-only sequence reviewed in contact sheet.",
+          "records": [
+            {
+              "frame": 0,
+              "sourceIndex": 1,
+              "sourceJobId": "64dbfb4e-5218-465f-9202-6d41c057c11f",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/stun/raw/01.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/64dbfb4e-5218-465f-9202-6d41c057c11f/download?index=1",
+              "sha256": "53755cba67ed45bd3288474b136891cb93ebde5d293398fb07ce121bc8aeb2bc",
+              "width": 48,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                3,
+                7,
+                40,
+                39
+              ],
+              "rgbaHash": "8f1fd160e0b100378518a4531c699480143982c779a090171fd73192df711ea9"
+            },
+            {
+              "frame": 1,
+              "sourceIndex": 2,
+              "sourceJobId": "64dbfb4e-5218-465f-9202-6d41c057c11f",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/stun/raw/02.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/64dbfb4e-5218-465f-9202-6d41c057c11f/download?index=2",
+              "sha256": "27d3c497cf58ce83d1ec8dcfc0c0a699614aea075b2e9e1cf6f0af3f2891fb00",
+              "width": 48,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                4,
+                7,
+                40,
+                39
+              ],
+              "rgbaHash": "ea4c1aa50228b195a3e3d4ead8203ad2d435acf2113e2e2370a15e9de8b64f7f"
+            },
+            {
+              "frame": 2,
+              "sourceIndex": 3,
+              "sourceJobId": "64dbfb4e-5218-465f-9202-6d41c057c11f",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/stun/raw/03.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/64dbfb4e-5218-465f-9202-6d41c057c11f/download?index=3",
+              "sha256": "12a1da9a0021d21094b7a898fcf9cf05d9b1bafea629594de61288ae6be2385f",
+              "width": 48,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                5,
+                7,
+                41,
+                39
+              ],
+              "rgbaHash": "9fb21eeebac5fe658d603739ec80c1a698e7676b30767b222a0167b2ab9f570b"
+            },
+            {
+              "frame": 3,
+              "sourceIndex": 4,
+              "sourceJobId": "64dbfb4e-5218-465f-9202-6d41c057c11f",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/stun/raw/04.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/64dbfb4e-5218-465f-9202-6d41c057c11f/download?index=4",
+              "sha256": "3bf5cf0c06ce8f467d15c9adcc9059c9666d8c17ee9904b5cba721c9c103f87e",
+              "width": 48,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                5,
+                7,
+                41,
+                39
+              ],
+              "rgbaHash": "a7f4e911e019c50673c808f09c3a1934fcc6e3820a168a931b4f3e3a784a08b7"
+            },
+            {
+              "frame": 4,
+              "sourceIndex": 5,
+              "sourceJobId": "64dbfb4e-5218-465f-9202-6d41c057c11f",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/stun/raw/05.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/64dbfb4e-5218-465f-9202-6d41c057c11f/download?index=5",
+              "sha256": "4624bd8d226144349031fe91b79f977e83e01684370383586a66e5503cdaf028",
+              "width": 48,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                5,
+                7,
+                41,
+                39
+              ],
+              "rgbaHash": "c42f489dfd386e10c3b84ac09ec45e2d1f105ce2239c4a0110a3d9c9baa181e7"
+            },
+            {
+              "frame": 5,
+              "sourceIndex": 6,
+              "sourceJobId": "64dbfb4e-5218-465f-9202-6d41c057c11f",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/stun/raw/06.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/64dbfb4e-5218-465f-9202-6d41c057c11f/download?index=6",
+              "sha256": "9dca1b76a3a6f6cfc609828cd061448b87f64f94a98e65ff0abd7ec9d925842e",
+              "width": 48,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                4,
+                7,
+                40,
+                39
+              ],
+              "rgbaHash": "d3e19eca63bee6d8f6c6165ffb0cd334af1ccb8408d76b41464ee34eb8612d20"
+            },
+            {
+              "frame": 6,
+              "sourceIndex": 7,
+              "sourceJobId": "64dbfb4e-5218-465f-9202-6d41c057c11f",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/stun/raw/07.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/64dbfb4e-5218-465f-9202-6d41c057c11f/download?index=7",
+              "sha256": "a649909f8e0dadc9c5ca4b006b5b79f5b0df6c2eed3671fd3cef1d57634bc9ca",
+              "width": 48,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                3,
+                7,
+                39,
+                39
+              ],
+              "rgbaHash": "77e858949ac2a40852037c6dd0206f16cd2bd503d43034d1cdc291b953f60538"
+            },
+            {
+              "frame": 7,
+              "sourceIndex": 8,
+              "sourceJobId": "64dbfb4e-5218-465f-9202-6d41c057c11f",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_horn_rabbit/stun/raw/08.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/64dbfb4e-5218-465f-9202-6d41c057c11f/download?index=8",
+              "sha256": "e23e75c2601f096028222d261b22d3e5da4bf3bb4f8a2670bd01cae60684bdf4",
+              "width": 48,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                3,
+                7,
+                39,
+                39
+              ],
+              "rgbaHash": "89848cf9b62004aab2804b21335cd026d86292ddb55aebfae77ca98df54d0282"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "great_tusk",
+      "displayName": "큰엄니",
+      "canonical": "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/canonical.png",
+      "width": 64,
+      "height": 48,
+      "pivotTopLeft": [
+        32,
+        40
+      ],
+      "referenceHeight": 36,
+      "worldHeight": 4,
+      "facing": "west",
+      "faceAnchorTopLeft": [
+        20,
+        20
+      ],
+      "clips": {
+        "Idle": {
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/production/idle/00.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/production/idle/01.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/production/idle/02.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/production/idle/03.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/production/idle/04.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/production/idle/05.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/production/idle/06.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/production/idle/07.png"
+          ],
+          "fps": 8,
+          "loop": true,
+          "contactFrame": -1,
+          "contactSourceIndex": null,
+          "effectOriginTopLeft": null,
+          "faceAnchorTopLeft": [
+            20,
+            20
+          ],
+          "sourceJobId": "d05e420e-b517-425f-9a94-ce747ca7f6b1",
+          "sourceJobIds": [
+            "d05e420e-b517-425f-9a94-ce747ca7f6b1"
+          ],
+          "sourceIndices": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "sourceDirectory": "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/idle/raw",
+          "uniquePixelFrames": 3,
+          "review": "Selected body-only sequence reviewed in contact sheet.",
+          "records": [
+            {
+              "frame": 0,
+              "sourceIndex": 1,
+              "sourceJobId": "d05e420e-b517-425f-9a94-ce747ca7f6b1",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/idle/raw/01.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/d05e420e-b517-425f-9a94-ce747ca7f6b1/download?index=1",
+              "sha256": "39e6b4d95cfb83fce4cbedb99c23149b0d8814010202b505e5db5408083de9f4",
+              "width": 64,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                4,
+                4,
+                59,
+                39
+              ],
+              "rgbaHash": "4ba411a0fdfc2a1ca5577c9d4c5d8a52106d74e0d9ca7b06f8b2feff4032c5e7"
+            },
+            {
+              "frame": 1,
+              "sourceIndex": 2,
+              "sourceJobId": "d05e420e-b517-425f-9a94-ce747ca7f6b1",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/idle/raw/02.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/d05e420e-b517-425f-9a94-ce747ca7f6b1/download?index=2",
+              "sha256": "9ca49d8fac202b12209cd4d3cad6d7a2f2aeb7a7c23dec846416ec60e5ca6ea3",
+              "width": 64,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                4,
+                4,
+                59,
+                39
+              ],
+              "rgbaHash": "d8867f6b42040cc7df61854c4e06f8f6b9d8510d42caf1dba6de4e6c48b4a9c6"
+            },
+            {
+              "frame": 2,
+              "sourceIndex": 3,
+              "sourceJobId": "d05e420e-b517-425f-9a94-ce747ca7f6b1",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/idle/raw/03.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/d05e420e-b517-425f-9a94-ce747ca7f6b1/download?index=3",
+              "sha256": "9ca49d8fac202b12209cd4d3cad6d7a2f2aeb7a7c23dec846416ec60e5ca6ea3",
+              "width": 64,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                4,
+                4,
+                59,
+                39
+              ],
+              "rgbaHash": "d8867f6b42040cc7df61854c4e06f8f6b9d8510d42caf1dba6de4e6c48b4a9c6"
+            },
+            {
+              "frame": 3,
+              "sourceIndex": 4,
+              "sourceJobId": "d05e420e-b517-425f-9a94-ce747ca7f6b1",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/idle/raw/04.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/d05e420e-b517-425f-9a94-ce747ca7f6b1/download?index=4",
+              "sha256": "9ca49d8fac202b12209cd4d3cad6d7a2f2aeb7a7c23dec846416ec60e5ca6ea3",
+              "width": 64,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                4,
+                4,
+                59,
+                39
+              ],
+              "rgbaHash": "d8867f6b42040cc7df61854c4e06f8f6b9d8510d42caf1dba6de4e6c48b4a9c6"
+            },
+            {
+              "frame": 4,
+              "sourceIndex": 5,
+              "sourceJobId": "d05e420e-b517-425f-9a94-ce747ca7f6b1",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/idle/raw/05.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/d05e420e-b517-425f-9a94-ce747ca7f6b1/download?index=5",
+              "sha256": "9ca49d8fac202b12209cd4d3cad6d7a2f2aeb7a7c23dec846416ec60e5ca6ea3",
+              "width": 64,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                4,
+                4,
+                59,
+                39
+              ],
+              "rgbaHash": "d8867f6b42040cc7df61854c4e06f8f6b9d8510d42caf1dba6de4e6c48b4a9c6"
+            },
+            {
+              "frame": 5,
+              "sourceIndex": 6,
+              "sourceJobId": "d05e420e-b517-425f-9a94-ce747ca7f6b1",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/idle/raw/06.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/d05e420e-b517-425f-9a94-ce747ca7f6b1/download?index=6",
+              "sha256": "9ca49d8fac202b12209cd4d3cad6d7a2f2aeb7a7c23dec846416ec60e5ca6ea3",
+              "width": 64,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                4,
+                4,
+                59,
+                39
+              ],
+              "rgbaHash": "d8867f6b42040cc7df61854c4e06f8f6b9d8510d42caf1dba6de4e6c48b4a9c6"
+            },
+            {
+              "frame": 6,
+              "sourceIndex": 7,
+              "sourceJobId": "d05e420e-b517-425f-9a94-ce747ca7f6b1",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/idle/raw/07.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/d05e420e-b517-425f-9a94-ce747ca7f6b1/download?index=7",
+              "sha256": "61b591b6bdd1149d8c12f6f20274bd7d24996407e8e2de69ba5a7ced2d91e9e8",
+              "width": 64,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                4,
+                4,
+                59,
+                39
+              ],
+              "rgbaHash": "38022a2712556e74d3cfc50f12489a3a79fb635352171ac680e51de8d8b087fa"
+            },
+            {
+              "frame": 7,
+              "sourceIndex": 8,
+              "sourceJobId": "d05e420e-b517-425f-9a94-ce747ca7f6b1",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/idle/raw/08.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/d05e420e-b517-425f-9a94-ce747ca7f6b1/download?index=8",
+              "sha256": "61b591b6bdd1149d8c12f6f20274bd7d24996407e8e2de69ba5a7ced2d91e9e8",
+              "width": 64,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                4,
+                4,
+                59,
+                39
+              ],
+              "rgbaHash": "38022a2712556e74d3cfc50f12489a3a79fb635352171ac680e51de8d8b087fa"
+            }
+          ]
+        },
+        "Attack": {
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/production/attack/00.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/production/attack/01.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/production/attack/02.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/production/attack/03.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/production/attack/04.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/production/attack/05.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/production/attack/06.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/production/attack/07.png"
+          ],
+          "fps": 12,
+          "loop": false,
+          "contactFrame": 5,
+          "contactSourceIndex": 7,
+          "effectOriginTopLeft": [
+            1,
+            23
+          ],
+          "faceAnchorTopLeft": [
+            17,
+            20
+          ],
+          "sourceJobId": "b930d1b8-1997-4e88-928d-20a315ccce36",
+          "sourceJobIds": [
+            "b930d1b8-1997-4e88-928d-20a315ccce36"
+          ],
+          "sourceIndices": [
+            0,
+            1,
+            2,
+            5,
+            6,
+            7,
+            8,
+            0
+          ],
+          "sourceDirectory": "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/attack/raw",
+          "uniquePixelFrames": 7,
+          "review": "Original03/04 excluded because rear silhouette reaches the right canvas edge. Canonical00 repeated only as recovery.",
+          "records": [
+            {
+              "frame": 0,
+              "sourceIndex": 0,
+              "sourceJobId": "b930d1b8-1997-4e88-928d-20a315ccce36",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/attack/raw/00.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/b930d1b8-1997-4e88-928d-20a315ccce36/download?index=0",
+              "sha256": "61b591b6bdd1149d8c12f6f20274bd7d24996407e8e2de69ba5a7ced2d91e9e8",
+              "width": 64,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                4,
+                4,
+                59,
+                39
+              ],
+              "rgbaHash": "38022a2712556e74d3cfc50f12489a3a79fb635352171ac680e51de8d8b087fa"
+            },
+            {
+              "frame": 1,
+              "sourceIndex": 1,
+              "sourceJobId": "b930d1b8-1997-4e88-928d-20a315ccce36",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/attack/raw/01.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/b930d1b8-1997-4e88-928d-20a315ccce36/download?index=1",
+              "sha256": "c317d52a44e8259a482c549804e777ad7a0bd36cb48ae40f55858e1ac6d63ed7",
+              "width": 64,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                5,
+                4,
+                60,
+                39
+              ],
+              "rgbaHash": "0cbf2274e6bccf7f98a94a3b0f588dc59ec2636f032554553c8358e0efd95f35"
+            },
+            {
+              "frame": 2,
+              "sourceIndex": 2,
+              "sourceJobId": "b930d1b8-1997-4e88-928d-20a315ccce36",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/attack/raw/02.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/b930d1b8-1997-4e88-928d-20a315ccce36/download?index=2",
+              "sha256": "85f776d5a23771b8fe329f63044bf3980bf34598f6ed3b35b3405ccf25d1e483",
+              "width": 64,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                7,
+                4,
+                62,
+                39
+              ],
+              "rgbaHash": "fdd0dcc6451965adfaf420b9a8c475fec6854fa559887a4c09250233f19f7f59"
+            },
+            {
+              "frame": 3,
+              "sourceIndex": 5,
+              "sourceJobId": "b930d1b8-1997-4e88-928d-20a315ccce36",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/attack/raw/05.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/b930d1b8-1997-4e88-928d-20a315ccce36/download?index=5",
+              "sha256": "08a5ee9fd124ba6fb7557e8e16df98870057b99ab1f43f26d54021fe3761cfdf",
+              "width": 64,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                7,
+                4,
+                62,
+                39
+              ],
+              "rgbaHash": "03b54244f7c1bc329410e09fadddcde658f6dfd14be8c681f8bcd7c97dbad6ec"
+            },
+            {
+              "frame": 4,
+              "sourceIndex": 6,
+              "sourceJobId": "b930d1b8-1997-4e88-928d-20a315ccce36",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/attack/raw/06.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/b930d1b8-1997-4e88-928d-20a315ccce36/download?index=6",
+              "sha256": "e818ef4a491814a8a59acc80e8dd1d5ff3909ed3426e347be7aecfc84f18cbac",
+              "width": 64,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                3,
+                3,
+                60,
+                39
+              ],
+              "rgbaHash": "1e2b3fcc9923873b9817528cefdadeb9e80ec1f15c44eb324315ea8a0ee5b4f7"
+            },
+            {
+              "frame": 5,
+              "sourceIndex": 7,
+              "sourceJobId": "b930d1b8-1997-4e88-928d-20a315ccce36",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/attack/raw/07.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/b930d1b8-1997-4e88-928d-20a315ccce36/download?index=7",
+              "sha256": "21a59ba4c526db0d963d82b016c5a82e5a083d34c0a5e3eedf4b6c404a257004",
+              "width": 64,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                1,
+                4,
+                58,
+                39
+              ],
+              "rgbaHash": "0a1a4be0105b81b6f98eabbd9e29ee36ba503cc7437967a25bd18aebd46f0d6c"
+            },
+            {
+              "frame": 6,
+              "sourceIndex": 8,
+              "sourceJobId": "b930d1b8-1997-4e88-928d-20a315ccce36",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/attack/raw/08.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/b930d1b8-1997-4e88-928d-20a315ccce36/download?index=8",
+              "sha256": "406e21f3270f79230c55c3742d8b7d6c3fd385c2a9fd43726ae013929a72d614",
+              "width": 64,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                3,
+                4,
+                58,
+                39
+              ],
+              "rgbaHash": "ccd5eb2643dbc59e3c3fe12b068cff32b6595c304210a8b7597af8c66b3e9375"
+            },
+            {
+              "frame": 7,
+              "sourceIndex": 0,
+              "sourceJobId": "b930d1b8-1997-4e88-928d-20a315ccce36",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/attack/raw/00.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/b930d1b8-1997-4e88-928d-20a315ccce36/download?index=0",
+              "sha256": "61b591b6bdd1149d8c12f6f20274bd7d24996407e8e2de69ba5a7ced2d91e9e8",
+              "width": 64,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                4,
+                4,
+                59,
+                39
+              ],
+              "rgbaHash": "38022a2712556e74d3cfc50f12489a3a79fb635352171ac680e51de8d8b087fa"
+            }
+          ]
+        },
+        "Stun": {
+          "frames": [
+            "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/production/stun/00.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/production/stun/01.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/production/stun/02.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/production/stun/03.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/production/stun/04.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/production/stun/05.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/production/stun/06.png",
+            "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/production/stun/07.png"
+          ],
+          "fps": 8,
+          "loop": true,
+          "contactFrame": -1,
+          "contactSourceIndex": null,
+          "effectOriginTopLeft": null,
+          "faceAnchorTopLeft": [
+            20,
+            20
+          ],
+          "sourceJobId": "eca4aac8-a4b0-4ac5-835c-7b56d0744012",
+          "sourceJobIds": [
+            "eca4aac8-a4b0-4ac5-835c-7b56d0744012"
+          ],
+          "sourceIndices": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "sourceDirectory": "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/stun/raw",
+          "uniquePixelFrames": 6,
+          "review": "Selected body-only sequence reviewed in contact sheet.",
+          "records": [
+            {
+              "frame": 0,
+              "sourceIndex": 1,
+              "sourceJobId": "eca4aac8-a4b0-4ac5-835c-7b56d0744012",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/stun/raw/01.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/eca4aac8-a4b0-4ac5-835c-7b56d0744012/download?index=1",
+              "sha256": "ab44dfad5773d2e3b19e796894a741afde0d85e81884ab93280782efe3974a90",
+              "width": 64,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                4,
+                4,
+                59,
+                39
+              ],
+              "rgbaHash": "363176388e1846683c3da205941520680d1e5bb63b3c3daa75d730f619023f6a"
+            },
+            {
+              "frame": 1,
+              "sourceIndex": 2,
+              "sourceJobId": "eca4aac8-a4b0-4ac5-835c-7b56d0744012",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/stun/raw/02.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/eca4aac8-a4b0-4ac5-835c-7b56d0744012/download?index=2",
+              "sha256": "cdcde029938f18d081001e164cd49326d337bcf5fca27f82522119e61695eb13",
+              "width": 64,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                5,
+                5,
+                60,
+                39
+              ],
+              "rgbaHash": "506878700d58a6c7b071f71a317cc90a70555d342a06f9203d7c7deed82e3560"
+            },
+            {
+              "frame": 2,
+              "sourceIndex": 3,
+              "sourceJobId": "eca4aac8-a4b0-4ac5-835c-7b56d0744012",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/stun/raw/03.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/eca4aac8-a4b0-4ac5-835c-7b56d0744012/download?index=3",
+              "sha256": "07768fd5c4ae19474a608ea899070b58cddc0e2ccb62b3d0a8599d53986b8176",
+              "width": 64,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                5,
+                5,
+                60,
+                39
+              ],
+              "rgbaHash": "da960e5f032968a041c486673abd0c14a47ba9e385ca132a3f8ebd2d54a02c58"
+            },
+            {
+              "frame": 3,
+              "sourceIndex": 4,
+              "sourceJobId": "eca4aac8-a4b0-4ac5-835c-7b56d0744012",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/stun/raw/04.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/eca4aac8-a4b0-4ac5-835c-7b56d0744012/download?index=4",
+              "sha256": "eda36c2eb25c74d39def4a249d1cbbfeafaaeac7d16a762e6604ff86d5419cf6",
+              "width": 64,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                5,
+                5,
+                60,
+                39
+              ],
+              "rgbaHash": "0b08ebc8e605e0be358a3265ef384070e6cf456ae5af4fdbe5bb016eb913b95b"
+            },
+            {
+              "frame": 4,
+              "sourceIndex": 5,
+              "sourceJobId": "eca4aac8-a4b0-4ac5-835c-7b56d0744012",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/stun/raw/05.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/eca4aac8-a4b0-4ac5-835c-7b56d0744012/download?index=5",
+              "sha256": "47a5f609e9a77eb47a0afab9f1be499fb8368db30a5af32e1fcb9c20d4a02370",
+              "width": 64,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                5,
+                6,
+                60,
+                39
+              ],
+              "rgbaHash": "ff9e3a2ac64a1bdcba348b7bae2c25b8c3bd32f8c890394494cfbee4638d62b6"
+            },
+            {
+              "frame": 5,
+              "sourceIndex": 6,
+              "sourceJobId": "eca4aac8-a4b0-4ac5-835c-7b56d0744012",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/stun/raw/06.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/eca4aac8-a4b0-4ac5-835c-7b56d0744012/download?index=6",
+              "sha256": "82d76e95af6addedbbe7baad9d6d89d41b350af8a405ed08d838b38029c1ba10",
+              "width": 64,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                5,
+                5,
+                60,
+                39
+              ],
+              "rgbaHash": "6080275b6627c53cbb92d5a12d6c13d317e6bfcf513343e81a1e294ece1d86b6"
+            },
+            {
+              "frame": 6,
+              "sourceIndex": 7,
+              "sourceJobId": "eca4aac8-a4b0-4ac5-835c-7b56d0744012",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/stun/raw/07.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/eca4aac8-a4b0-4ac5-835c-7b56d0744012/download?index=7",
+              "sha256": "cdcde029938f18d081001e164cd49326d337bcf5fca27f82522119e61695eb13",
+              "width": 64,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                5,
+                5,
+                60,
+                39
+              ],
+              "rgbaHash": "506878700d58a6c7b071f71a317cc90a70555d342a06f9203d7c7deed82e3560"
+            },
+            {
+              "frame": 7,
+              "sourceIndex": 8,
+              "sourceJobId": "eca4aac8-a4b0-4ac5-835c-7b56d0744012",
+              "sourcePath": "Planning/Story/Dragon-v1/Production/Monsters/great_tusk/stun/raw/08.png",
+              "downloadUrl": "https://api.pixellab.ai/mcp/images/eca4aac8-a4b0-4ac5-835c-7b56d0744012/download?index=8",
+              "sha256": "ab44dfad5773d2e3b19e796894a741afde0d85e81884ab93280782efe3974a90",
+              "width": 64,
+              "height": 48,
+              "colors": 7,
+              "alpha": [
+                0,
+                255
+              ],
+              "bbox": [
+                4,
+                4,
+                59,
+                39
+              ],
+              "rgbaHash": "363176388e1846683c3da205941520680d1e5bb63b3c3daa75d730f619023f6a"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "stages": [
+    {
+      "stage": 1,
+      "enemyId": "trail_slime",
+      "actor": "slime"
+    },
+    {
+      "stage": 2,
+      "enemyId": "grass_slime",
+      "actor": "slime"
+    },
+    {
+      "stage": 3,
+      "enemyId": "horn_rabbit",
+      "actor": "horn_rabbit"
+    },
+    {
+      "stage": 4,
+      "enemyId": "pebble_slime",
+      "actor": "slime"
+    },
+    {
+      "stage": 5,
+      "enemyId": "great_horn_rabbit",
+      "actor": "great_horn_rabbit"
+    },
+    {
+      "stage": 6,
+      "enemyId": "young_boar",
+      "actor": "boar"
+    },
+    {
+      "stage": 7,
+      "enemyId": "puddle_slime",
+      "actor": "slime"
+    },
+    {
+      "stage": 8,
+      "enemyId": "stone_throw_rabbit",
+      "actor": "horn_rabbit"
+    },
+    {
+      "stage": 9,
+      "enemyId": "ridge_boar",
+      "actor": "boar"
+    },
+    {
+      "stage": 10,
+      "enemyId": "great_tusk",
+      "actor": "great_tusk"
+    }
+  ],
+  "limitations": [
+    "Three normal forms and two boss body variants, not ten or fifty unique designs.",
+    "Body Attack is a single lunge/thrust. Directional ground spikes, high attacks and kicked stones remain runtime pattern/VFX; dedicated anatomy for each direction is not included.",
+    "World heights are recommendations for integration; no Unity camera or runtime test was run by this package author.",
+    "Eight playback samples can contain genuine generated holds; unique pixel-frame counts are reported rather than claiming eight unique key poses."
+  ],
+  "checks": [
+    "All production frames same native canvas as their canonical.",
+    "All selected frames binary alpha 0/255 and at most10 opaque colors.",
+    "Production copies match their selected original PNG bytes.",
+    "Common per-actor pivot and referenceHeight, no per-frame rescale or trim.",
+    "No selected opaque pixel touches a canvas edge."
+  ]
+}

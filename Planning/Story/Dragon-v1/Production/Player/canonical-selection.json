@@ -1,0 +1,52 @@
+{
+  "selected": "canonical.png",
+  "source": "canonical-candidate-a.png",
+  "jobId": "b521d718-274a-47bb-9271-02911e0f8e7a",
+  "imageId": "c4c6c078-6764-5191-8fc3-b5132d446d3f",
+  "downloadUrl": "https://api.pixellab.ai/mcp/images/b521d718-274a-47bb-9271-02911e0f8e7a/download",
+  "canvas": [
+    48,
+    48
+  ],
+  "opaqueBounds": [
+    11,
+    12,
+    34,
+    38
+  ],
+  "opaqueHeight": 26,
+  "opaqueColors": 7,
+  "alphaValues": [
+    0,
+    255
+  ],
+  "feetPivotTopLeft": [
+    21,
+    38
+  ],
+  "selectionReason": "Coordinator clarified approved 20~28 logical-pixel design takes priority.26px opaque height fits this approved density. Preserve coarse identity; do not enlarge native body unnecessarily.",
+  "unselectedAlternative": {
+    "jobId": "4af4f410-e7ed-45d2-85d2-dcb62d40dc14",
+    "request": {
+      "description": "Single production pixel-art game sprite, full body, one little hooded swordsman facing RIGHT in strict side view, transparent background. Match this exact original design: oversized pale CREAM pointed cloth hood bending back to the LEFT, face fully DARK NAVY inside hood, ONE amber square eye near front edge. Pale CREAM short tunic with split hem, DARK NAVY bent arms and leggings, OCHRE short neck scarf with short tail, simple BROWN ankle boots. No visible skin, no nose, no mouth, no hair. One SHORT straight STEEL sword with OCHRE hilt held in the front RIGHT hand, blade angled up-right, other arm relaxed bent. Stable slightly crouched battle idle, feet apart at same ground level. Body from top of hood to boot soles MUST occupy40 pixels in height on a64x64 transparent canvas, not a tiny26pixel sprite. Hood top near y10 and feet baseline near y50. Character centered at x28. Keep generous blank margin around the entire body for later running and slashing animation. The sword tip stays within x53. Extremely coarse low detail 8-bit pixel art, 1pixel dark navy outline, uniform pixel grid, solid color blocks, no shading except one dark navy shadow under the hood. No ornament, belt buckle, armor, bell, cape, backpack, second weapon, effects, text, background or ground shadow. Keep dark arms separated from torso and hand connected to sword grip. Compact friendly fantasy proportions: oversized hood, small torso, legs not stumpy.",
+      "width": 64,
+      "height": 64,
+      "no_background": true,
+      "max_colors": 9,
+      "palette": [
+        "#182B32",
+        "#F7E4B0",
+        "#CBB77B",
+        "#E4AA41",
+        "#795039",
+        "#A1A9A2",
+        "#EDF1D0",
+        "#263F51",
+        "#996A3B"
+      ],
+      "palette_name": "On cream hood navy limbs ochre scarf",
+      "seed": 24102402
+    },
+    "reason": "Larger40px-body interpretation withdrawn after coordinator clarified approved density. Cancellation was attempted, but the service reported already completed; this alternative is not selected."
+  }
+}

@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "status": "reviewed-ready-for-integration",
+  "nativeSize": [
+    48,
+    48
+  ],
+  "displaySize720p": [
+    144,
+    144
+  ],
+  "importSettings": {
+    "filter": "Point",
+    "compression": "None",
+    "mipmaps": false,
+    "spriteMode": "Single"
+  },
+  "portraits": [
+    {
+      "id": "on",
+      "name": "루카",
+      "path": "Planning/Story/Dragon-v1/Production/Portraits-v1/on.png",
+      "unityPath": "Assets/Game/Art/Dialogue/Dragon-v4/on.png",
+      "width": 48,
+      "height": 48,
+      "bounds": [
+        0,
+        0,
+        47,
+        48
+      ],
+      "colors": [
+        "#202D38",
+        "#287780",
+        "#355D82",
+        "#6B3F2A",
+        "#A23B2D",
+        "#AB6C37",
+        "#D97935",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "19301ce12e0a1248882dc5354273eab548b4966e5abd9fbe5fa0e497433020e8",
+      "pixelSha256": "88d3ceff9985cd3f358f864228551eebfefedd2f8d9d0d312d262a141dbf9b2b"
+    },
+    {
+      "id": "dam",
+      "name": "다렌",
+      "path": "Planning/Story/Dragon-v1/Production/Portraits-v1/dam.png",
+      "unityPath": "Assets/Game/Art/Dialogue/Dragon-v4/dam.png",
+      "width": 48,
+      "height": 48,
+      "bounds": [
+        0,
+        0,
+        48,
+        48
+      ],
+      "colors": [
+        "#202D38",
+        "#287780",
+        "#355D82",
+        "#6B3F2A",
+        "#89C9AF",
+        "#B7D3D0",
+        "#D97935",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "c4f51e390e622badf4e11fc1f77c84fbb7d40ff5b38d08cd95eb6b23ee2c0119",
+      "pixelSha256": "348011c6ce437918933dd9b4d8e07f81d3c907187afb35108035d2c5bdbdc170"
+    },
+    {
+      "id": "rin",
+      "name": "미엘",
+      "path": "Planning/Story/Dragon-v1/Production/Portraits-v1/rin.png",
+      "unityPath": "Assets/Game/Art/Dialogue/Dragon-v4/rin.png",
+      "width": 48,
+      "height": 48,
+      "bounds": [
+        1,
+        0,
+        47,
+        48
+      ],
+      "colors": [
+        "#202D38",
+        "#287780",
+        "#355D82",
+        "#6B3F2A",
+        "#AB6C37",
+        "#D97935",
+        "#E4AA41",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "8ee285a8999a8e8444655b4ab6f82c72368ad5f2995195b3b52f4b2298449a7f",
+      "pixelSha256": "2ecd480d8e25f0d5adfc9255cd8b324dbca09f263bc150b0c79306bd670a5bc4"
+    },
+    {
+      "id": "tori",
+      "name": "토리",
+      "path": "Planning/Story/Dragon-v1/Production/Portraits-v1/tori.png",
+      "unityPath": "Assets/Game/Art/Dialogue/Dragon-v4/tori.png",
+      "width": 48,
+      "height": 48,
+      "bounds": [
+        2,
+        0,
+        46,
+        48
+      ],
+      "colors": [
+        "#202D38",
+        "#287780",
+        "#355D82",
+        "#6B3F2A",
+        "#AB6C37",
+        "#D97935",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "6eeb3cc89bcf3c66e84f64bfa90293d20595aa55e1f2589f2bed2e58a03bf56e",
+      "pixelSha256": "58da219239453626bd3591d236262e4490bf21f996198e04a10e139e7d83cdf5"
+    },
+    {
+      "id": "rina",
+      "name": "리나",
+      "path": "Planning/Story/Dragon-v1/Production/Portraits-v1/rina.png",
+      "unityPath": "Assets/Game/Art/Dialogue/Dragon-v4/rina.png",
+      "width": 48,
+      "height": 48,
+      "bounds": [
+        0,
+        0,
+        48,
+        47
+      ],
+      "colors": [
+        "#202D38",
+        "#287780",
+        "#355D82",
+        "#6B3F2A",
+        "#745184",
+        "#A23B2D",
+        "#AB6C37",
+        "#B7D3D0",
+        "#E8D9AD",
+        "#F3BD83"
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "63ee87f99162dccf331d35dd0d4564e6493324a632d36da687f41a39b42b4189",
+      "pixelSha256": "a377a2b7c4e8076be3358c721ea8cd2edb30ea0cc23d787ab3cf853de41f9d86"
+    },
+    {
+      "id": "barun",
+      "name": "바룬",
+      "path": "Planning/Story/Dragon-v1/Production/Portraits-v1/barun.png",
+      "unityPath": "Assets/Game/Art/Dialogue/Dragon-v4/barun.png",
+      "width": 48,
+      "height": 48,
+      "bounds": [
+        0,
+        0,
+        48,
+        47
+      ],
+      "colors": [
+        "#202D38",
+        "#287780",
+        "#355D82",
+        "#6B3F2A",
+        "#A23B2D",
+        "#B7D3D0",
+        "#D97935",
+        "#F3BD83"
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "fbbfe8dcf659e53e15f3a8a70dc36f5a2e23a505f9d97370b4a312f0f8fd9080",
+      "pixelSha256": "98c143914399682e7b1fd1a80c5a7bc3697c8277f8183b9e97abbebba51ec085"
+    },
+    {
+      "id": "doto",
+      "name": "도토",
+      "path": "Planning/Story/Dragon-v1/Production/Portraits-v1/doto.png",
+      "unityPath": "Assets/Game/Art/Dialogue/Dragon-v4/doto.png",
+      "width": 48,
+      "height": 48,
+      "bounds": [
+        0,
+        0,
+        48,
+        48
+      ],
+      "colors": [
+        "#161B25",
+        "#376087",
+        "#894212",
+        "#AA620F",
+        "#AC976F",
+        "#D37F41",
+        "#D79D19",
+        "#E8DBAD",
+        "#F0A369"
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "6f009d3f32f9fbc241fc968e868a89774db1e46294f5fa58d0ad222837b24ee2",
+      "pixelSha256": "369eb9b06e041051ea7b559dfa2f502382468675abd2a56f77a61536a4c13dbe"
+    },
+    {
+      "id": "gib",
+      "name": "기블",
+      "path": "Planning/Story/Dragon-v1/Production/Portraits-v1/gib.png",
+      "unityPath": "Assets/Game/Art/Dialogue/Dragon-v4/gib.png",
+      "width": 48,
+      "height": 48,
+      "bounds": [
+        0,
+        0,
+        47,
+        46
+      ],
+      "colors": [
+        "#07101E",
+        "#37594E",
+        "#413431",
+        "#487945",
+        "#719F50",
+        "#839FA0",
+        "#875032",
+        "#BC8960",
+        "#D6CE8D"
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "916fe87e0a4627b06b92c374e47e45635e83594d23d7be19ffe4e84ee7263da8",
+      "pixelSha256": "245be2a36730b2ff46925d06ff4770b0dbb1ea175c66c6bf8268956741d1da64"
+    },
+    {
+      "id": "unknown",
+      "name": "???",
+      "path": "Planning/Story/Dragon-v1/Production/Portraits-v1/unknown.png",
+      "unityPath": "Assets/Game/Art/Dialogue/Dragon-v4/unknown.png",
+      "width": 48,
+      "height": 48,
+      "bounds": [
+        2,
+        0,
+        46,
+        48
+      ],
+      "colors": [
+        "#202D38"
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "ff94132756f397e929c99112394252a24c2fabae9912a18512e297cfbe16da2a",
+      "pixelSha256": "500840d9450d5008f797eb82591a81463a9518fb624e23c9370b07d7a7f875ff"
+    }
+  ],
+  "license": "license.json",
+  "notes": [
+    "unknown is exact Tori silhouette for the first unrevealed line.",
+    "doto first portrait rejected; final regenerates bearded dwarf.",
+    "rin hair uses guarded PixelLab palette correction to match blonde battle sprite."
+  ]
+}

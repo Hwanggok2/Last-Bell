@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-24",
+  "scope": "planning and static mockups only",
+  "status": "pass",
+  "htmlLocalReferences": 34,
+  "htmlIds": 22,
+  "mockupDimensions": {
+    "combat": [
+      1280,
+      720
+    ],
+    "lobby": [
+      1280,
+      720
+    ],
+    "upgrade": [
+      1280,
+      720
+    ],
+    "relic": [
+      1280,
+      720
+    ],
+    "story": [
+      1280,
+      720
+    ],
+    "wireframe": [
+      1280,
+      720
+    ]
+  },
+  "mainPageEntries": {
+    "index.html": 1,
+    "Presentation/index.html": 1,
+    "Story/story-world-v2.html": 1
+  },
+  "storyChecks": [
+    "five consecutive 10-stage zones",
+    "three opening sentences",
+    "three ending sentences",
+    "two lines per boss"
+  ],
+  "visualReview": [
+    "root and art/UI agents inspected PNGs",
+    "corrected feet alignment, unsupported glyphs, HUD contrast, cropped background gap",
+    "current upgrade quote/purchase and automatic relic application preserved"
+  ],
+  "notPerformed": [
+    "browser rendering/real interaction QA",
+    "Unity import, runtime tests or build",
+    "physical device touch and motion contrast checks"
+  ],
+  "limitations": [
+    "selected background is a concept, not production tiles or separated parallax layers",
+    "zones 2–5 are story and palette/layout specifications, not completed raster backgrounds",
+    "boss story uses existing idle pose; new stop/exit animations are future work"
+  ],
+  "errors": []
+}

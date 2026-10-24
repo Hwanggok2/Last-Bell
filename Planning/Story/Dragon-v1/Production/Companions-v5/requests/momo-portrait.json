@@ -1,0 +1,40 @@
+{
+  "prompt": "Native24x24 coarse8bit game dialogue portrait of MOMO, friendly young HUMAN herbalist, round BROWN BOB hair, CREAM HEADKERCHIEF tied atback with small tail, two dot navy eyes, peach roundface and simplefriendlysmile. MINT GREEN APRON shoulders over cream sleeves, one green leaf peeks behind shoulder to suggest herb bundle. Head shoulders only, frontface, NO pointedhat, NO animal ears, NO wings, no ornate details. Max8flatcolors, big square pixel clusters and simple stepped navy outline, NO gradients or antialias. Like our existing24px fantasy companion portraits. Fullytransparent background, cutout only, NO border, frame, rectangle, text. Keep completehead within1pxclear margin.",
+  "palette": [
+    "#202D38",
+    "#6B3F2A",
+    "#AB6C37",
+    "#F3BD83",
+    "#E8D9AD",
+    "#89C9AF",
+    "#287780",
+    "#75954A"
+  ],
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"background_job_id\": \"04a354e3-40d9-468c-96b6-e1b77ba353a0\",\n  \"image_id\": \"7a875987-4f12-5e21-8273-8921d2d85671\",\n  \"status\": \"processing\",\n  \"source_image_id\": \"7a875987-4f12-5e21-8273-8921d2d85671\",\n  \"job_id\": \"04a354e3-40d9-468c-96b6-e1b77ba353a0\",\n  \"description\": \"Native24x24 coarse8bit game dialogue portrait of MOMO, friendly young HUMAN herbalist, round BROWN BOB hair, CREAM HEADKERCHIEF tied atback with small tail, two dot navy eyes, peach roundface and simplefriendlysmile. MINT GREEN APRON shoulders over cream sleeves, one green leaf peeks behind shoulder to suggest herb bundle. Head shoulders only, frontface, NO pointedhat, NO animal ears, NO wings, no ornate details. Max8flatcolors, big square pixel clusters and simple stepped navy outline, NO gradients or antialias. Like our existing24px fantasy companion portraits. Fullytransparent background, cutout only, NO border, frame, rectangle, text. Keep completehead within1pxclear margin.\",\n  \"seed\": 243612,\n  \"image_size\": {\n    \"width\": 24,\n    \"height\": 24\n  },\n  \"output_count\": 1,\n  \"estimated_generations\": 5,\n  \"pricing_provisional\": true,\n  \"poll_tool\": \"get_image\",\n  \"download_path\": \"/mcp/images/04a354e3-40d9-468c-96b6-e1b77ba353a0/download\"\n}\nPoll get_image(job_id=\"04a354e3-40d9-468c-96b6-e1b77ba353a0\"). The source_image_id is usable after completion; it is an image ID, not a character/object ID. Actual usage is reported on completion. cancel_job(job_id=...) cancels unfinished work."
+      }
+    ],
+    "structuredContent": {
+      "background_job_id": "04a354e3-40d9-468c-96b6-e1b77ba353a0",
+      "image_id": "7a875987-4f12-5e21-8273-8921d2d85671",
+      "status": "processing",
+      "source_image_id": "7a875987-4f12-5e21-8273-8921d2d85671",
+      "job_id": "04a354e3-40d9-468c-96b6-e1b77ba353a0",
+      "description": "Native24x24 coarse8bit game dialogue portrait of MOMO, friendly young HUMAN herbalist, round BROWN BOB hair, CREAM HEADKERCHIEF tied atback with small tail, two dot navy eyes, peach roundface and simplefriendlysmile. MINT GREEN APRON shoulders over cream sleeves, one green leaf peeks behind shoulder to suggest herb bundle. Head shoulders only, frontface, NO pointedhat, NO animal ears, NO wings, no ornate details. Max8flatcolors, big square pixel clusters and simple stepped navy outline, NO gradients or antialias. Like our existing24px fantasy companion portraits. Fullytransparent background, cutout only, NO border, frame, rectangle, text. Keep completehead within1pxclear margin.",
+      "seed": 243612,
+      "image_size": {
+        "width": 24,
+        "height": 24
+      },
+      "output_count": 1,
+      "estimated_generations": 5,
+      "pricing_provisional": true,
+      "poll_tool": "get_image",
+      "download_path": "/mcp/images/04a354e3-40d9-468c-96b6-e1b77ba353a0/download"
+    },
+    "isError": false
+  }
+}

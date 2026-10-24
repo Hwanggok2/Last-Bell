@@ -1,0 +1,19 @@
+{
+  "status": "pass",
+  "checkedUtc": "2026-10-24T16:52:15.221038+00:00",
+  "releaseBuildUtc": "2026-10-24T16:41:02.2305469Z",
+  "releaseSourceBaseline": "Planning/Evidence/Dragon-v6/dragon-v6-candidate-03/freeze.json",
+  "finalObservedFreeze": "Planning/Production/dragon-v6-observed-build.json",
+  "frozenFileCount": 5890,
+  "changedFiles": [
+    "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.V6.cs",
+    "Client/Assets/Game/Runtime/Bootstrap/DragonThemeSmokeProbe.cs",
+    "Tools/QA/Dragon-v6/README.md",
+    "Tools/QA/Dragon-v6/analyze.py",
+    "Tools/QA/Dragon-v6/run-campaign.ps1"
+  ],
+  "productionSourceChanges": [],
+  "finalFreezeLiveHashMismatch": [],
+  "ordinaryReleaseProbeExcluded": true,
+  "scope": "Release was built after candidate03 with identical production sources; candidate04 changes are probe/QA runner only. This comparison is not separate ordinary EXE gameplay validation."
+}

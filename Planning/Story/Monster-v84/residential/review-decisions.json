@@ -1,0 +1,295 @@
+{
+  "sewer_rat": {
+    "worldHeight": 0.8,
+    "reviewer": "residential_art",
+    "base": "Native64 angular blue-grey rat; dark navy outline, flat palette; collar and pink bare tail stay readable.",
+    "attack": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "holdsMs": [
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        80,
+        60,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40
+      ],
+      "contactFrame": 7,
+      "contactSourceFrame": 8,
+      "observation": "0-6 jaw and tail prepare; 8 gives the clear wide-jaw bite; 9-13 recoil; 16 returns to the source pose. Frame7 rejected because it adds a disconnected white projectile.",
+      "contactPoint": {
+        "x": 27,
+        "y": 46,
+        "description": "Leading upper tooth / open bite mouth; selected index7 is raw frame8.",
+        "pivot": {
+          "x": 64,
+          "y": 65
+        },
+        "referenceHeightPixels": 30
+      },
+      "totalDurationMs": 700,
+      "contactTimeMs": 320
+    },
+    "stun": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "holdsMs": [
+        90,
+        90,
+        110,
+        120,
+        140,
+        120,
+        110,
+        90,
+        90
+      ],
+      "observation": "Dedicated chin-near-ground pose with buckled forelegs and limp tail. All nine frames hold the weak posture with a small tremble; no upright idle."
+    },
+    "checks": {
+      "allSelectedFramesViewed": true,
+      "clippedFrames": 0,
+      "fractionalAlphaPixels": 0,
+      "maxColors": 12,
+      "paletteIsSubsetOfBase": true,
+      "alphaAndPixelPositionsUnchangedByPaletteCorrection": true,
+      "attackDurationMs": 700,
+      "stunDurationMs": 960,
+      "finalPalettizedFramesViewed": true
+    },
+    "crossReview": "outskirts_art accepted visual style and agreed to reject attack source frame7; replacement stun inspected by residential_art.",
+    "paletteCorrection": "All selected frames mapped through PixelLab reduce_colors to the unchanged base sprite palette, dithering none; binary alpha and pixel positions preserved."
+  },
+  "drowned_resident": {
+    "worldHeight": 1.6,
+    "reviewer": "residential_art",
+    "displayName": "침수된 잔상",
+    "base": "Native64 empty-faced water echo; teal coat and brown door plank; no corpse or gore. Foundational story keeps real residents asleep.",
+    "attack": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "holdsMs": [
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        60,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40
+      ],
+      "contactFrame": 8,
+      "contactSourceFrame": 8,
+      "observation": "0-7 draw the same plank up/right with both hands;8 is the clear diagonal down-left strike;9-16 recover while boots retain the same ground line. Torso turns naturally in the windup but never flips attack direction.",
+      "contactPoint": {
+        "x": 27,
+        "y": 72,
+        "description": "Broken door-plank tip at the end of the diagonal down-left strike.",
+        "pivot": {
+          "x": 64,
+          "y": 73
+        },
+        "referenceHeightPixels": 45
+      },
+      "totalDurationMs": 700,
+      "contactTimeMs": 320
+    },
+    "stun": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "holdsMs": [
+        90,
+        90,
+        110,
+        120,
+        140,
+        120,
+        110,
+        90,
+        90
+      ],
+      "observation": "Rejected first idle-like stun. New forward-bowed head and dropped arms preserve both hands/one plank. All nine frames show the limp pose with a restrained shoulder tremble."
+    },
+    "checks": {
+      "allSelectedFramesViewed": true,
+      "clippedFrames": 0,
+      "fractionalAlphaPixels": 0,
+      "maxColors": 11,
+      "paletteIsSubsetOfBase": true,
+      "alphaAndPixelPositionsUnchangedByPaletteCorrection": true,
+      "attackDurationMs": 700,
+      "stunDurationMs": 960,
+      "finalPalettizedFramesViewed": true
+    },
+    "crossReview": "outskirts_art accepted shared style and the plank attack contact at8; both agents rejected original idle-like stun.",
+    "paletteCorrection": "All selected frames mapped through PixelLab reduce_colors to the unchanged base sprite palette, dithering none; binary alpha and pixel positions preserved."
+  },
+  "water_wraith": {
+    "worldHeight": 1.8,
+    "reviewer": "residential_art",
+    "base": "Native64 angular watery hood, three lower tendrils, brass chest lantern. Same flat teal palette and dark outline.",
+    "attack": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "holdsMs": [
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        60,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40
+      ],
+      "contactFrame": 7,
+      "contactSourceFrame": 7,
+      "observation": "0-6 claws draw in;7-10 sharp left claw extension and trailing fluid body;11-16 retract to the original three-tendril hover. Lantern remains attached and no new legs or weapon appear.",
+      "contactPoint": {
+        "x": 23,
+        "y": 34,
+        "description": "Leading upper claw fingertip; lower claw reaches x22,y43 in the same frame.",
+        "pivot": {
+          "x": 64,
+          "y": 78
+        },
+        "referenceHeightPixels": 59
+      },
+      "totalDurationMs": 700,
+      "contactTimeMs": 280
+    },
+    "stun": {
+      "sourceFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "holdsMs": [
+        90,
+        90,
+        110,
+        120,
+        140,
+        120,
+        110,
+        90,
+        90
+      ],
+      "observation": "Rejected original idle-like hover. Dedicated bowed hood, hanging arms and sagging tendrils maintain a visibly exhausted silhouette across all nine frames."
+    },
+    "checks": {
+      "allSelectedFramesViewed": true,
+      "clippedFrames": 0,
+      "fractionalAlphaPixels": 0,
+      "maxColors": 9,
+      "paletteIsSubsetOfBase": true,
+      "alphaAndPixelPositionsUnchangedByPaletteCorrection": true,
+      "attackDurationMs": 700,
+      "stunDurationMs": 960,
+      "finalPalettizedFramesViewed": true
+    },
+    "crossReview": "outskirts_art accepted shared style and extension/recovery; both agents rejected original idle-like stun.",
+    "paletteCorrection": "All selected frames mapped through PixelLab reduce_colors to the unchanged base sprite palette, dithering none; binary alpha and pixel positions preserved."
+  }
+}

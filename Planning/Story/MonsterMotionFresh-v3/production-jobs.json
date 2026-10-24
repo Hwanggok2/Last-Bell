@@ -1,0 +1,1130 @@
+[
+  {
+    "actor": "gate_sentry",
+    "motion": "Attack",
+    "attempt": 1,
+    "jobId": "06bb2abe-acf3-4bdf-a9fa-6728c2ee533c",
+    "tool": "animate_image_pixminimax",
+    "prompt": "Perform exactly ONE committed spear THRUST toward screen-left, then return to the initial guard. First bend both knees and draw the hands and spear backward as a readable wind-up. Rotate the SAME long straight spear from vertical into a horizontal left-pointing position; the metal tip stays attached to the shaft. Then shift the torso and hips left and extend both arms together in one decisive forward thrust, with the front knee bent and rear foot bracing. The point reaches its maximum leftward extension once. Hold the hit pose briefly, then withdraw the spear, shift the weight back, and restore the initial upright guard. No repeated pokes, no spinning, no walking away. Keep the two feet grounded near their starting places, body scale constant and the camera fixed. Preserve exactly one helmet, two arms, two legs and the same single spear attached to the hands throughout. Entire spear and body remain inside the transparent canvas.",
+    "seed": 2241001,
+    "status": "accepted-with-frame-selection"
+  },
+  {
+    "actor": "gate_sentry",
+    "motion": "Stun",
+    "attempt": 1,
+    "jobId": "a710cd75-c2ee-4cfc-931e-73528f6e4182",
+    "tool": "animate_image_pixminimax",
+    "prompt": "The guard becomes STUNNED, with knees slowly buckling, chest slumping forward and helmet bowing down. Hands lose strength and the same spear is lowered diagonally, with its butt resting near the feet; the spear stays straight and connected to the hands. Settle into a weak bent-knee slumped pose and remain there, with only a tiny slow unsteady sway. No attacking, no thrust, no walking, no standing upright again. Keep feet planted near their initial positions, same body size and helmet identity. Fixed camera, no new objects, no stars or effects.",
+    "seed": 2241002,
+    "status": "rejected",
+    "rejection": "몸과 무릎이 거의 내려가지 않아 평상시 자세와 구별되지 않음. 후반 일부 떠 있는 잔여 픽셀도 관찰됨."
+  },
+  {
+    "actor": "gate_sentry",
+    "motion": "Stun",
+    "attempt": 2,
+    "jobId": "e9ed27d2-df66-4b63-8585-2f83e3324a40",
+    "tool": "animate_image",
+    "prompt": "Become badly STUNNED. Bend BOTH knees deeply and drop the hips visibly downward. Bow the helmet and upper torso forward, shoulders sagging. Lower the spear into a low diagonal resting position: the tip points up-left only slightly, the shaft rests beside the body, both arms hang weakly. Settle into a crouched exhausted slump with the head at least one head-height lower than its initial position. Remain collapsed in this low slumped posture with a tiny slow sway until the end. Do not stand back up. No attack, no deliberate thrust, no alert guard stance. Exactly the same armor, helmet, cloth and one straight spear attached to the hands. Feet remain on the original ground line, no displacement or zoom. No stars, particles or added effects.",
+    "seed": 2241003,
+    "status": "accepted-with-frame-selection"
+  },
+  {
+    "actor": "bell_hound",
+    "motion": "Attack",
+    "attempt": 1,
+    "jobId": "060bb7f7-8add-4500-8854-27747ab702ef",
+    "tool": "animate_image_pixminimax",
+    "prompt": "One powerful short HEAD RAM to the left. Compress all four legs and lower the heavy barrel-shaped bell head, shifting weight backward. Push hard with the hind legs, extend the neck and shoulders left for one solid head-first impact, with front legs catching the weight. The head remains the same hollow metal cylinder, never a mouth or cannon firing. Recoil slightly and step back into the original stance. Fixed camera and unchanged body size. Keep every original limb, weapon, chain link assembly and identifying part attached and consistent. No morphing, new props, smoke, sparks, stars or slash trails. Stay entirely inside the transparent 128x128 canvas. Feet return to the same ground registration. Perform one attack only, then return to the exact initial pose.",
+    "seed": 2241101,
+    "generatedFrames": 12,
+    "status": "accepted-with-frame-selection",
+    "resultFrameCount": 13,
+    "resultText": "status: completed\nid: 060bb7f7-8add-4500-8854-27747ab702ef\njob_id: 060bb7f7-8add-4500-8854-27747ab702ef\nframes: 13\ntransparent: yes\nasset_id: dafea6ae-058c-5b2c-88aa-c593827b0ba0\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 2 generations\ndownload: https://api.pixellab.ai/mcp/images/060bb7f7-8add-4500-8854-27747ab702ef/download?index=0 ... ?index=12\n(9 more frames not shown — fetch them from the download URLs above)"
+  },
+  {
+    "actor": "bell_hound",
+    "motion": "Stun",
+    "attempt": 1,
+    "jobId": "a99b7424-610a-45a2-bb99-66ec0df3c9cc",
+    "tool": "animate_image",
+    "prompt": "The mechanical hound becomes stunned: front knees buckle, chest and barrel head sink almost to the ground, hind legs spread to support its weight. Tail bell hangs limp. Settle into this low exhausted posture and stay low, with only a tiny slow shiver. No lunge, no barking, no attack, no walking and no standing back up. Keep the same cylindrical bell head and four attached legs; camera, size and ground position remain fixed.",
+    "seed": 2241102,
+    "generatedFrames": 8,
+    "status": "accepted-with-frame-selection",
+    "resultFrameCount": 9,
+    "resultText": "status: completed\nid: a99b7424-610a-45a2-bb99-66ec0df3c9cc\njob_id: a99b7424-610a-45a2-bb99-66ec0df3c9cc\nframes: 9\ntransparent: yes\nasset_id: 97d0688b-4d3e-5d7b-81c8-1640f8e0045f\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 2 generations\ndownload: https://api.pixellab.ai/mcp/images/a99b7424-610a-45a2-bb99-66ec0df3c9cc/download?index=0 ... ?index=8\n(5 more frames not shown — fetch them from the download URLs above)"
+  },
+  {
+    "actor": "cracked_blade",
+    "motion": "Attack",
+    "attempt": 1,
+    "jobId": "027d2aaa-8299-4773-91cf-d0b3a7bbf334",
+    "tool": "animate_image_pixminimax",
+    "prompt": "One decisive diagonal DOWNWARD SWORD CHOP toward the left. Bend the knees, shift the hips back and lift the same sword over the helmet with the elbow bending. Then shift the hips forward, rotate the shoulders and chop the blade down-left once with the front knee bending under the weight. The blade remains a rigid straight sword joined to the hilt. Follow through low, pause, then bring the sword back to the upright guard. Fixed camera and unchanged body size. Keep every original limb, weapon, chain link assembly and identifying part attached and consistent. No morphing, new props, smoke, sparks, stars or slash trails. Stay entirely inside the transparent 128x128 canvas. Feet return to the same ground registration. Perform one attack only, then return to the exact initial pose.",
+    "seed": 2241111,
+    "generatedFrames": 16,
+    "status": "accepted-with-frame-selection",
+    "resultFrameCount": 17,
+    "resultText": "status: completed\nid: 027d2aaa-8299-4773-91cf-d0b3a7bbf334\njob_id: 027d2aaa-8299-4773-91cf-d0b3a7bbf334\nframes: 17\ntransparent: yes\nasset_id: b9b8aab0-38a8-57bb-8393-dd6f3986cc42\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 2 generations\ndownload: https://api.pixellab.ai/mcp/images/027d2aaa-8299-4773-91cf-d0b3a7bbf334/download?index=0 ... ?index=16\n(13 more frames not shown — fetch them from the download URLs above)",
+    "visualReview": "1×/0.5× 및 접촉 정지 화면에서 검을 머리 위로 든 준비, 몸통과 앞무릎이 내려가는 단일 내려치기, 검을 다시 세우는 회수 확인. 선택 4번이 실제 접촉. 검날-손잡이-손 연결과 투구 외형 유지."
+  },
+  {
+    "actor": "cracked_blade",
+    "motion": "Stun",
+    "attempt": 1,
+    "jobId": "9bc66e74-8aee-461d-8eeb-860834af86ef",
+    "tool": "animate_image",
+    "prompt": "Lose strength and sink into a deep bent-knee STUNNED crouch. Helmet bows toward the chest, shoulders droop, and the sword hand hangs down with the sword tip resting near the ground on the left. Remain hunched and weakly sway, never raise the sword to attack or stand upright. Preserve the single straight sword, armor and cloth. Feet stay on the original ground line; no camera or scale change.",
+    "seed": 2241112,
+    "generatedFrames": 12,
+    "status": "rejected",
+    "resultFrameCount": 13,
+    "resultText": "status: completed\nid: 9bc66e74-8aee-461d-8eeb-860834af86ef\njob_id: 9bc66e74-8aee-461d-8eeb-860834af86ef\nframes: 13\ntransparent: yes\nasset_id: 48b41b33-6ec6-5ac0-85d9-5ef490084d3a\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 3 generations\ndownload: https://api.pixellab.ai/mcp/images/9bc66e74-8aee-461d-8eeb-860834af86ef/download?index=0 ... ?index=12\n(9 more frames not shown — fetch them from the download URLs above)",
+    "rejection": "검만 낮아지고 무릎/몸통의 무력한 자세 변화가 부족함."
+  },
+  {
+    "actor": "gate_lock",
+    "motion": "Attack",
+    "attempt": 1,
+    "jobId": "bb52971c-fcfb-4dc9-af67-b6148ecf08f9",
+    "tool": "animate_image_pixminimax",
+    "prompt": "One heavy LEFTWARD PISTON PUNCH using the existing rectangular front fist. Sink onto bent knees and pull that fist toward the chest, rotating the torso slightly away. Then drive the hips and shoulders left, extending the elbow and the heavy fist together into one short powerful punch. The rear crossbar stays rigid and attached to the back. Hold full extension briefly, pull the fist back, and restore the starting stance. Do not fire a projectile or detach any body part. Fixed camera and unchanged body size. Keep every original limb, weapon, chain link assembly and identifying part attached and consistent. No morphing, new props, smoke, sparks, stars or slash trails. Stay entirely inside the transparent 128x128 canvas. Feet return to the same ground registration. Perform one attack only, then return to the exact initial pose.",
+    "seed": 2241121,
+    "generatedFrames": 12,
+    "status": "accepted-with-frame-selection",
+    "resultFrameCount": 13,
+    "resultText": "status: completed\nid: bb52971c-fcfb-4dc9-af67-b6148ecf08f9\njob_id: bb52971c-fcfb-4dc9-af67-b6148ecf08f9\nframes: 13\ntransparent: yes\nasset_id: f562b2a9-04f7-5e37-861e-a58726550741\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 2 generations\ndownload: https://api.pixellab.ai/mcp/images/bb52971c-fcfb-4dc9-af67-b6148ecf08f9/download?index=0 ... ?index=12\n(9 more frames not shown — fetch them from the download URLs above)"
+  },
+  {
+    "actor": "gate_lock",
+    "motion": "Stun",
+    "attempt": 1,
+    "jobId": "418c90a0-4418-4b6e-bd3b-46d0f38a3e3a",
+    "tool": "animate_image",
+    "prompt": "The lock automaton powers down into a stunned slump. Both knees fold outward and the body sinks low; shoulders droop, the heavy front fist hangs near the floor and the back crossbar tilts with the slumped torso. Remain sagging with a tiny slow wobble, no punch or walking. Preserve all original mechanical joints and parts, with feet planted and body scale fixed.",
+    "seed": 2241122,
+    "generatedFrames": 8,
+    "status": "accepted-with-frame-selection",
+    "resultFrameCount": 9,
+    "resultText": "status: completed\nid: 418c90a0-4418-4b6e-bd3b-46d0f38a3e3a\njob_id: 418c90a0-4418-4b6e-bd3b-46d0f38a3e3a\nframes: 9\ntransparent: yes\nasset_id: 0ab06ffc-3660-5e19-bee9-13e7d82936a9\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 2 generations\ndownload: https://api.pixellab.ai/mcp/images/418c90a0-4418-4b6e-bd3b-46d0f38a3e3a/download?index=0 ... ?index=8\n(5 more frames not shown — fetch them from the download URLs above)"
+  },
+  {
+    "actor": "bell_knight",
+    "motion": "Attack",
+    "attempt": 1,
+    "jobId": "36daf6ad-05fe-4fbf-9050-7ea15032bf98",
+    "tool": "animate_image_pixminimax",
+    "prompt": "One weighty POLEAXE CHOP down-left. Brace the shield close to the body, bend both knees and raise the SAME poleaxe head backward above the shoulder. Rotate the torso and shift weight onto the forward foot, bringing the poleaxe down-left in one strong overhead chop. The poleaxe head is always rigidly attached to its straight shaft. Hold the low impact position, then recover the poleaxe to its original upright guard. Shield remains the same large rectangular shield attached to the other arm. Fixed camera and unchanged body size. Keep every original limb, weapon, chain link assembly and identifying part attached and consistent. No morphing, new props, smoke, sparks, stars or slash trails. Stay entirely inside the transparent 128x128 canvas. Feet return to the same ground registration. Perform one attack only, then return to the exact initial pose.",
+    "seed": 2241131,
+    "generatedFrames": 20,
+    "status": "accepted-with-frame-selection",
+    "resultFrameCount": 21,
+    "resultText": "status: completed\nid: 36daf6ad-05fe-4fbf-9050-7ea15032bf98\njob_id: 36daf6ad-05fe-4fbf-9050-7ea15032bf98\nframes: 21\ntransparent: yes\nasset_id: b268a7ef-9783-5990-8eb8-a67131146408\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 3 generations\ndownload: https://api.pixellab.ai/mcp/images/36daf6ad-05fe-4fbf-9050-7ea15032bf98/download?index=0 ... ?index=20\n(17 more frames not shown — fetch them from the download URLs above)",
+    "visualReview": "1×/0.5× 및 접촉 정지 화면에서 도끼를 어깨 뒤로 들고 방패로 몸을 지탱한 뒤 한 번 내려치는 동작 확인. 선택 6번에 도끼가 낮게 닿고 앞무릎이 굽는다. 도끼·방패의 손 연결과 발 기준 유지."
+  },
+  {
+    "actor": "bell_knight",
+    "motion": "Stun",
+    "attempt": 1,
+    "jobId": "b4f01009-20f8-4e45-821f-38569932f1d2",
+    "tool": "animate_image",
+    "prompt": "Become stunned and drop into a clearly exhausted bent-knee kneel-like crouch. Bow the bell helmet down and fold the upper body forward; the shield lowers until its bottom touches the ground, and the poleaxe is held weakly at a low diagonal. Stay slumped with a tiny uneven sway. No swings, no marching, no standing back up. Preserve helmet, shield and single poleaxe and keep feet on the original ground line.",
+    "seed": 2241132,
+    "generatedFrames": 12,
+    "status": "rejected",
+    "resultFrameCount": 13,
+    "resultText": "status: completed\nid: b4f01009-20f8-4e45-821f-38569932f1d2\njob_id: b4f01009-20f8-4e45-821f-38569932f1d2\nframes: 13\ntransparent: yes\nasset_id: 9392b34a-7be0-5b7a-820e-1cf0a6be3a35\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 3 generations\ndownload: https://api.pixellab.ai/mcp/images/b4f01009-20f8-4e45-821f-38569932f1d2/download?index=0 ... ?index=12\n(9 more frames not shown — fetch them from the download URLs above)",
+    "rejection": "낮춘 도끼 날이 원본과 다르게 양쪽으로 벌어지는 형태가 나타남. 더 낮은 기절 자세 필요."
+  },
+  {
+    "actor": "chain_puppet",
+    "motion": "Attack",
+    "attempt": 1,
+    "jobId": "7744698f-c257-47d9-b938-15aa039977eb",
+    "tool": "animate_image_pixminimax",
+    "prompt": "One pendulum STRIKE with the existing LEFT RECTANGULAR CHAIN WEIGHT. Bend the chain knees and lean the torso back as the left shoulder draws the weight backward. Then shift the hips forward and sweep the left arm forward-left so the attached chain straightens and the rectangular weight strikes outward once. The chain stays continuously attached from the shoulder through the arm to the same rectangular weight. Absorb the follow-through by bending the knees, let the weight return low, and regain the initial stance. Right arm remains loose, no second attack. Fixed camera and unchanged body size. Keep every original limb, weapon, chain link assembly and identifying part attached and consistent. No morphing, new props, smoke, sparks, stars or slash trails. Stay entirely inside the transparent 128x128 canvas. Feet return to the same ground registration. Perform one attack only, then return to the exact initial pose.",
+    "seed": 2241141,
+    "generatedFrames": 16,
+    "status": "accepted-with-frame-selection",
+    "resultFrameCount": 17,
+    "resultText": "status: completed\nid: 7744698f-c257-47d9-b938-15aa039977eb\njob_id: 7744698f-c257-47d9-b938-15aa039977eb\nframes: 17\ntransparent: yes\nasset_id: 5dcd3523-a626-578b-b81b-045dbbb4ee6b\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 2 generations\ndownload: https://api.pixellab.ai/mcp/images/7744698f-c257-47d9-b938-15aa039977eb/download?index=0 ... ?index=16\n(13 more frames not shown — fetch them from the download URLs above)",
+    "visualReview": "1×/0.5× 및 접촉 정지 화면에서 오른쪽 사슬팔을 당기고 몸을 돌린 뒤 왼쪽으로 추를 한 번 뻗는 동작 확인. 선택 6번에서 사슬이 곧게 펴지고 무릎/보폭이 함께 바뀐다. 두 팔과 두 추, 사슬 연결이 유지됨."
+  },
+  {
+    "actor": "chain_puppet",
+    "motion": "Stun",
+    "attempt": 1,
+    "jobId": "d24e7e48-05a2-4c31-a208-af06c6b26cea",
+    "tool": "animate_image",
+    "prompt": "Become a limp stunned puppet: knees buckle deeply, the torso and cage head hang forward, both chain arms droop straight downward under gravity and the rectangular weight rests low. Keep a small weak side-to-side sag while remaining collapsed. No deliberate chain swing, no attacking and no upright guard. Keep head and all chain limbs attached with the original length; feet stay planted.",
+    "seed": 2241142,
+    "generatedFrames": 12,
+    "status": "rejected",
+    "resultFrameCount": 13,
+    "resultText": "status: completed\nid: d24e7e48-05a2-4c31-a208-af06c6b26cea\njob_id: d24e7e48-05a2-4c31-a208-af06c6b26cea\nframes: 13\ntransparent: yes\nasset_id: fc30eb7e-1c83-58de-9ff1-a7c944d2666d\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 3 generations\ndownload: https://api.pixellab.ai/mcp/images/d24e7e48-05a2-4c31-a208-af06c6b26cea/download?index=0 ... ?index=12\n(9 more frames not shown — fetch them from the download URLs above)",
+    "rejection": "사슬 무릎이 충분히 접히지 않아 평상시와 구분 부족."
+  },
+  {
+    "actor": "hook_hound",
+    "motion": "Attack",
+    "attempt": 1,
+    "jobId": "7a31b559-8146-47b8-9f02-34ecef274d54",
+    "tool": "animate_image_pixminimax",
+    "prompt": "One hooked-beak DOWNWARD LUNGE to the left. Crouch with all four legs flexing, pull the hooked head back slightly, then push from the hindquarters and thrust the shoulders forward-left as the SAME rigid curved beak dips down for one stabbing impact. Front paws spread to absorb the weight. The beak stays attached to the head and never becomes a sword, mouth or extra limb. Recoil and restore the original four-legged stance; the ring tail follows through gently. Fixed camera and unchanged body size. Keep every original limb, weapon, chain link assembly and identifying part attached and consistent. No morphing, new props, smoke, sparks, stars or slash trails. Stay entirely inside the transparent 128x128 canvas. Feet return to the same ground registration. Perform one attack only, then return to the exact initial pose.",
+    "seed": 2241151,
+    "generatedFrames": 12,
+    "status": "rejected",
+    "resultFrameCount": 13,
+    "resultText": "status: completed\nid: 7a31b559-8146-47b8-9f02-34ecef274d54\njob_id: 7a31b559-8146-47b8-9f02-34ecef274d54\nframes: 13\ntransparent: yes\nasset_id: 70fbf926-dede-5a22-8eba-c711dad7a07a\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 2 generations\ndownload: https://api.pixellab.ai/mcp/images/7a31b559-8146-47b8-9f02-34ecef274d54/download?index=0 ... ?index=12\n(9 more frames not shown — fetch them from the download URLs above)",
+    "rejection": "실제 타격 구간 007~008에 거대한 참격 이펙트가 생겨 부리와 발을 가린다. 이 구간을 제거하면 분명한 공격이 남지 않아 전체 재생성."
+  },
+  {
+    "actor": "hook_hound",
+    "motion": "Stun",
+    "attempt": 1,
+    "jobId": "49853188-dbf2-439b-a633-680b6ce26ac6",
+    "tool": "animate_image",
+    "prompt": "Stunned, the front legs fold and the hook beak droops very close to the ground; the rear legs lower the body and the ring tail loses its upright stiffness. Settle into a low four-legged exhausted crouch with tiny slow body sway. No pecking, no lunge, no new objects, no standing back up. Keep the same curved beak, four legs, ring tail and fixed ground registration.",
+    "seed": 2241152,
+    "generatedFrames": 8,
+    "status": "rejected",
+    "resultFrameCount": 9,
+    "resultText": "status: completed\nid: 49853188-dbf2-439b-a633-680b6ce26ac6\njob_id: 49853188-dbf2-439b-a633-680b6ce26ac6\nframes: 9\ntransparent: yes\nasset_id: eebdcc24-49fa-5145-8eb9-25b9735dd98f\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 2 generations\ndownload: https://api.pixellab.ai/mcp/images/49853188-dbf2-439b-a633-680b6ce26ac6/download?index=0 ... ?index=8\n(5 more frames not shown — fetch them from the download URLs above)",
+    "rejectionReason": "확대 재생에서 숙인 부리가 길고 납작한 칼날처럼 변하는 점 확인. 원래 세로로 굽은 갈고리 형태를 유지하는 엎드린 자세로 재제작."
+  },
+  {
+    "actor": "chain_dancer",
+    "motion": "Attack",
+    "attempt": 1,
+    "jobId": "de0a3292-395d-4131-8543-a197eba952aa",
+    "tool": "animate_image_pixminimax",
+    "prompt": "One controlled overhead-to-left CHAIN SWEEP. Bend the supporting knee and turn the torso backward while pulling the existing overhead chain loop back with its raised hand. Shift the hips left and swing the attached chain in one wide forward-left arc, extending the arm at the single hit moment. The chain remains linked to the same hand and keeps its original total length; it never becomes hair, a snake or a solid blade. Follow through, decelerate the chain and recover the original balanced pose. Only one sweep. Fixed camera and unchanged body size. Keep every original limb, weapon, chain link assembly and identifying part attached and consistent. No morphing, new props, smoke, sparks, stars or slash trails. Stay entirely inside the transparent 128x128 canvas. Feet return to the same ground registration. Perform one attack only, then return to the exact initial pose.",
+    "seed": 2241161,
+    "generatedFrames": 20,
+    "status": "rejected",
+    "resultFrameCount": 21,
+    "resultText": "status: completed\nid: de0a3292-395d-4131-8543-a197eba952aa\njob_id: de0a3292-395d-4131-8543-a197eba952aa\nframes: 21\ntransparent: yes\nasset_id: c7177c59-484c-5376-b15b-38b8c8f0a566\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 3 generations\ndownload: https://api.pixellab.ai/mcp/images/de0a3292-395d-4131-8543-a197eba952aa/download?index=0 ... ?index=20\n(17 more frames not shown — fetch them from the download URLs above)",
+    "rejection": "큰 원호 효과가 발생하고 펼친 사슬이 캔버스 상단에 닿음. 작은 물리적 사슬 타격으로 재생성."
+  },
+  {
+    "actor": "chain_dancer",
+    "motion": "Stun",
+    "attempt": 1,
+    "jobId": "86f872c8-4c69-4f1c-b568-3e0e55f5d063",
+    "tool": "animate_image",
+    "prompt": "Lose balance and sag into a STUNNED low posture: the pointed supporting leg bends deeply, the hooded head hangs forward, the raised arm drops, and the chain loop collapses and hangs downward with gravity. Maintain a small weak wobble in this low limp posture. No elegant dance, no circling chain, no attack and no return to upright readiness. Preserve original chain connections, limbs and scale.",
+    "seed": 2241162,
+    "generatedFrames": 12,
+    "status": "accepted-with-frame-selection",
+    "resultFrameCount": 13,
+    "resultText": "status: completed\nid: 86f872c8-4c69-4f1c-b568-3e0e55f5d063\njob_id: 86f872c8-4c69-4f1c-b568-3e0e55f5d063\nframes: 13\ntransparent: yes\nasset_id: e25d60a0-0460-57ca-a4cd-433911978a15\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 3 generations\ndownload: https://api.pixellab.ai/mcp/images/86f872c8-4c69-4f1c-b568-3e0e55f5d063/download?index=0 ... ?index=12\n(9 more frames not shown — fetch them from the download URLs above)",
+    "visualReview": "1×/0.5×에서 후드를 깊게 숙이고 두 팔과 사슬이 낮게 처진 상태 유지. 루프는 사슬 끝만 작은 왕복으로 움직이며 몸이 다시 서거나 공격하지 않음."
+  },
+  {
+    "actor": "pendulum_warden",
+    "motion": "Attack",
+    "attempt": 1,
+    "jobId": "95a9612a-2c4b-4645-b3c0-67479a54392e",
+    "tool": "animate_image_pixminimax",
+    "prompt": "One heavy left-arm HAMMER PUNCH down-left. Bend the legs and shift the large rectangular torso backward, lifting the existing left fist beside the shoulder. Then plant the leading foot and drive the body weight forward, swinging that fist down-left once to strike at low chest height. The tall shield remains attached to the right arm and braces the body; the round pendulum stays visible inside the chest and sways only slightly. Recover the fist and torso into the original stance. Fixed camera and unchanged body size. Keep every original limb, weapon, chain link assembly and identifying part attached and consistent. No morphing, new props, smoke, sparks, stars or slash trails. Stay entirely inside the transparent 128x128 canvas. Feet return to the same ground registration. Perform one attack only, then return to the exact initial pose.",
+    "seed": 2241171,
+    "generatedFrames": 16,
+    "status": "rejected",
+    "resultFrameCount": 17,
+    "resultText": "status: completed\nid: 95a9612a-2c4b-4645-b3c0-67479a54392e\njob_id: 95a9612a-2c4b-4645-b3c0-67479a54392e\nframes: 17\ntransparent: yes\nasset_id: cd8324bb-ee5e-514b-97df-47ee187459a3\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 2 generations\ndownload: https://api.pixellab.ai/mcp/images/95a9612a-2c4b-4645-b3c0-67479a54392e/download?index=0 ... ?index=16\n(13 more frames not shown — fetch them from the download URLs above)",
+    "rejection": "상단의 원형 장식을 팔처럼 늘려 공격함. 원본 부품 연결을 유지하는 방패 밀기로 재생성."
+  },
+  {
+    "actor": "pendulum_warden",
+    "motion": "Stun",
+    "attempt": 1,
+    "jobId": "5f47fb31-ede8-41c5-99cd-b8b9a1b29791",
+    "tool": "animate_image",
+    "prompt": "The clockwork warden stalls into a low stunned slump. Both knees bend, the rectangular body tilts forward and sinks, the left fist hangs slack, and the right shield rests heavily against the ground. The chest pendulum droops and barely sways. Remain collapsed, no punches, no walking and no standing upright. Keep the same clock torso, pendulum and shield with all joints attached and size fixed.",
+    "seed": 2241172,
+    "generatedFrames": 12,
+    "status": "rejected",
+    "resultFrameCount": 13,
+    "resultText": "status: completed\nid: 5f47fb31-ede8-41c5-99cd-b8b9a1b29791\njob_id: 5f47fb31-ede8-41c5-99cd-b8b9a1b29791\nframes: 13\ntransparent: yes\nasset_id: fc491b04-6abd-5dc8-a3b1-e320ca146748\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 3 generations\ndownload: https://api.pixellab.ai/mcp/images/5f47fb31-ede8-41c5-99cd-b8b9a1b29791/download?index=0 ... ?index=12\n(9 more frames not shown — fetch them from the download URLs above)",
+    "rejection": "원형 가슴 진자가 후반에서 막대/작은 조각으로 변형됨."
+  },
+  {
+    "actor": "chain_jailer",
+    "motion": "Attack",
+    "attempt": 1,
+    "jobId": "48bd5124-c847-455b-ad30-4e91aacd0505",
+    "tool": "animate_image_pixminimax",
+    "prompt": "One sharp LEFT HOOK LASH. Draw the left hook and elbow back while the masked torso leans away, making a clear wind-up. Then lean the torso forward-left and extend that arm so the attached left chain and hook lash outward once toward screen-left. The hook stays hooked in shape and continuously connected to the same chain and hand. The right hook remains low and passive. Pull the left hook back and return the ragged body to its initial hanging posture. Preserve both upper suspension chains; no spins or repeated lash. Fixed camera and unchanged body size. Keep every original limb, weapon, chain link assembly and identifying part attached and consistent. No morphing, new props, smoke, sparks, stars or slash trails. Stay entirely inside the transparent 128x128 canvas. Feet return to the same ground registration. Perform one attack only, then return to the exact initial pose.",
+    "seed": 2241181,
+    "generatedFrames": 20,
+    "status": "accepted-with-frame-selection",
+    "resultFrameCount": 21,
+    "resultText": "status: completed\nid: 48bd5124-c847-455b-ad30-4e91aacd0505\njob_id: 48bd5124-c847-455b-ad30-4e91aacd0505\nframes: 21\ntransparent: yes\nasset_id: 3efe4ba8-3c6e-58b1-9cc8-099506297cfe\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 3 generations\ndownload: https://api.pixellab.ai/mcp/images/48bd5124-c847-455b-ad30-4e91aacd0505/download?index=0 ... ?index=20\n(17 more frames not shown — fetch them from the download URLs above)",
+    "visualReview": "1×/0.5× 및 접촉 정지 화면에서 갈고리를 당긴 준비 후 몸과 위쪽 사슬이 함께 기울며 한 번 왼쪽으로 뻗는 동작 확인. 선택 4번이 접촉. 두 갈고리와 마스크가 유지되고 회수 후 기본 매달린 자세로 복귀."
+  },
+  {
+    "actor": "chain_jailer",
+    "motion": "Stun",
+    "attempt": 1,
+    "jobId": "ba69937b-0abe-4262-bc47-6afe959eb2d7",
+    "tool": "animate_image",
+    "prompt": "The jailer becomes stunned and hangs completely limp from its two existing upper chains: masked head bowed, torso slumped lower, both arms and curved hooks dangling straight down, ragged skirt drooping. Keep a very small slow gravity-driven sway, no active pulling or hook attacks. Do not stand tall again. Preserve both upper chains, mask, hooks and cloth; fixed camera and scale, no new chains or effects.",
+    "seed": 2241182,
+    "generatedFrames": 12,
+    "status": "rejected",
+    "resultFrameCount": 13,
+    "resultText": "status: completed\nid: ba69937b-0abe-4262-bc47-6afe959eb2d7\njob_id: ba69937b-0abe-4262-bc47-6afe959eb2d7\nframes: 13\ntransparent: yes\nasset_id: ad5b44e2-ff7a-5e1b-8894-28240d6d1a00\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 3 generations\ndownload: https://api.pixellab.ai/mcp/images/ba69937b-0abe-4262-bc47-6afe959eb2d7/download?index=0 ... ?index=12\n(9 more frames not shown — fetch them from the download URLs above)",
+    "rejection": "원본에 없는 독립된 세 번째 사슬과 갈고리가 추가됨."
+  },
+  {
+    "actor": "hook_hound",
+    "motion": "Attack",
+    "attempt": 2,
+    "jobId": "864aeb2f-89a7-48c0-8523-7127aa99bf1d",
+    "tool": "animate_image",
+    "prompt": "The mechanical hook-beaked hound performs ONE physical hooked-beak PECK down and to the left. It first crouches by bending all four legs and drawing its rigid hooked head slightly back. Then the hind legs push its chest forward while the front knees bend, and its head rotates down-left sharply so the attached curved metal beak strikes once. Show actual leg, shoulder and neck weight transfer. Pause at the low peck with the hook still clearly visible, then lift the head and shift back into the exact starting four-legged stance. Keep the rigid curved beak, round eye, segmented body, four legs and ring tail exactly recognizable. No crescent slash, no motion trail, no sparks, no energy effect, no dust, no projectiles. Fixed camera and scale, entire body inside the original transparent canvas.",
+    "seed": 2241153,
+    "status": "rejected",
+    "resultFrameCount": 17,
+    "resultText": "status: completed\nid: 864aeb2f-89a7-48c0-8523-7127aa99bf1d\njob_id: 864aeb2f-89a7-48c0-8523-7127aa99bf1d\nframes: 17\ntransparent: yes\nasset_id: a99cca6f-c30f-506c-a7ef-c17c4a110c77\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 4 generations\ndownload: https://api.pixellab.ai/mcp/images/864aeb2f-89a7-48c0-8523-7127aa99bf1d/download?index=0 ... ?index=16\n(13 more frames not shown — fetch them from the download URLs above)",
+    "rejection": "부리/꼬리 고리 변형과 흰색 점멸·발사 효과가 생겨 물리 공격 요구에 맞지 않음."
+  },
+  {
+    "actor": "cracked_blade",
+    "motion": "Stun",
+    "attempt": 2,
+    "stage": "pose",
+    "jobId": "54003b73-dde0-482e-8cc0-f5f887e199b5",
+    "tool": "edit_image_pixen",
+    "prompt": "Change only the pose to a badly stunned deep crouch: both knees visibly bent, hips lowered 18 pixels, helmet and shoulders bowed forward. The sword arm hangs limp with the SAME straight sword tip touching ground left. Keep feet on y=114, same original scale, armor, helmet, cloth, single sword and colors. Do not shrink the character or change the sword. No effects, no new objects. Transparent 128x128.",
+    "seed": 2241201,
+    "status": "pose-approved",
+    "resultFrameCount": 1,
+    "resultText": "status: completed\nid: 54003b73-dde0-482e-8cc0-f5f887e199b5\njob_id: 54003b73-dde0-482e-8cc0-f5f887e199b5\nframes: 1\ntransparent: yes\nasset_id: 074d4814-220b-5367-af0d-ca6eba89c983\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 1 generation\ndownload: https://api.pixellab.ai/mcp/images/54003b73-dde0-482e-8cc0-f5f887e199b5/download"
+  },
+  {
+    "actor": "bell_knight",
+    "motion": "Stun",
+    "attempt": 2,
+    "stage": "pose",
+    "jobId": "554a183e-b403-4c34-adf2-5f71c3737c39",
+    "tool": "edit_image_pixen",
+    "prompt": "Stunned pose only: kneel low on one bent knee, hips lowered 20 pixels, bell helmet bowed and shoulders sagging. Lean weakly on the SAME upright poleaxe with its butt planted on the ground; keep its axe head exactly unchanged. Shield rests on the floor beside the body. Keep scale, two arms, armor, helmet and shield identical; ground y=114. No swing, effects or new objects. Transparent 128x128.",
+    "seed": 2241211,
+    "status": "pose-approved",
+    "resultFrameCount": 1,
+    "resultText": "status: completed\nid: 554a183e-b403-4c34-adf2-5f71c3737c39\njob_id: 554a183e-b403-4c34-adf2-5f71c3737c39\nframes: 1\ntransparent: yes\nasset_id: 7d1215e2-145a-5a3a-a9e9-9e057524512a\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 1 generation\ndownload: https://api.pixellab.ai/mcp/images/554a183e-b403-4c34-adf2-5f71c3737c39/download"
+  },
+  {
+    "actor": "chain_puppet",
+    "motion": "Stun",
+    "attempt": 2,
+    "stage": "pose",
+    "jobId": "78ff11f2-a9c5-44d2-a33c-a4757788ddd7",
+    "tool": "edit_image_pixen",
+    "prompt": "Change pose into a clearly limp stunned puppet: chain knees buckle into a deep squat, pelvis drops 22 pixels, cage head hangs forward and both original chain arms droop under gravity. Original rectangular hand weights hang down. Keep exactly two arms and two legs, original link lengths, head shape, torso, weight shapes and colors. Feet remain on y=114. No disconnected parts, extra chains or effects. Transparent 128x128.",
+    "seed": 2241221,
+    "status": "rejected",
+    "resultFrameCount": 1,
+    "resultText": "status: completed\nid: 78ff11f2-a9c5-44d2-a33c-a4757788ddd7\njob_id: 78ff11f2-a9c5-44d2-a33c-a4757788ddd7\nframes: 1\ntransparent: yes\nasset_id: fc29f854-8ff4-5aba-84ef-969122de4940\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 1 generation\ndownload: https://api.pixellab.ai/mcp/images/78ff11f2-a9c5-44d2-a33c-a4757788ddd7/download",
+    "rejection": "단일 자세 후보에서도 무릎과 중심이 충분히 내려가지 않아 기본 자세와 구별이 부족함."
+  },
+  {
+    "actor": "pendulum_warden",
+    "motion": "Stun",
+    "attempt": 2,
+    "stage": "pose",
+    "jobId": "1b8b5070-4a5e-4eff-9dca-39134ef0809c",
+    "tool": "edit_image_pixen",
+    "prompt": "Change only pose to stunned: bend both short knees deeply, lower the heavy clock torso 15 pixels, slump slightly forward, left fist hanging and right shield resting on floor. Preserve the EXACT broad circular golden chest pendulum, visibly ROUND and same diameter, facing camera. Keep clock box, top ornament, shield and attached limbs unchanged in size and design. Feet at y=114. No extra objects or effects. Transparent 128x128.",
+    "seed": 2241231,
+    "status": "rejected",
+    "resultFrameCount": 1,
+    "resultText": "status: completed\nid: 1b8b5070-4a5e-4eff-9dca-39134ef0809c\njob_id: 1b8b5070-4a5e-4eff-9dca-39134ef0809c\nframes: 1\ntransparent: yes\nasset_id: 197230db-7385-5f94-b0df-c94147a56a37\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 1 generation\ndownload: https://api.pixellab.ai/mcp/images/1b8b5070-4a5e-4eff-9dca-39134ef0809c/download",
+    "rejection": "단일 자세 후보에서도 무릎과 중심이 충분히 내려가지 않아 기본 자세와 구별이 부족함."
+  },
+  {
+    "actor": "chain_jailer",
+    "motion": "Stun",
+    "attempt": 2,
+    "stage": "pose",
+    "jobId": "5848ef5e-86fc-4aec-b94f-7e1c7b9f65d9",
+    "tool": "edit_image_pixen",
+    "prompt": "Change only to a limp stunned hanging pose: bow the same mask down, slump torso 14 pixels lower, arms droop, hooks hang quietly. EXACTLY the original TWO upper chains and TWO hand hooks, continuously connected at their original attachments. No third chain, no detached or floating hook. Preserve mask, robe silhouette, body scale and colors, within original 128x128 canvas with margins. No effects. Transparent background.",
+    "seed": 2241241,
+    "status": "pose-approved",
+    "resultFrameCount": 1,
+    "resultText": "status: completed\nid: 5848ef5e-86fc-4aec-b94f-7e1c7b9f65d9\njob_id: 5848ef5e-86fc-4aec-b94f-7e1c7b9f65d9\nframes: 1\ntransparent: yes\nasset_id: ec8f8aa8-3de2-5983-9ae1-c94c4d946d1a\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 1 generation\ndownload: https://api.pixellab.ai/mcp/images/5848ef5e-86fc-4aec-b94f-7e1c7b9f65d9/download"
+  },
+  {
+    "actor": "chain_dancer",
+    "motion": "Attack",
+    "attempt": 2,
+    "jobId": "1848163c-956d-4dc2-a0bb-16dbf6614b11",
+    "tool": "animate_image",
+    "prompt": "Perform exactly ONE compact sideways CHAIN SNAP to the left, then restore the initial stance. First bend the supporting knee and pull the existing chain loop slightly back. Turn the hips and shoulders left and extend the hand, sending the SAME linked chain outward once in a compact waist-height arc. Lean the torso with the strike. Decelerate the chain, draw it back and regain the initial upright balance. Keep the chain connected to its original hand/attachment, unchanged total length. Keep its arc below the original head top, at least 8 pixels inside all canvas borders. No overhead spin, no energy crescent, no slash trail, no particles. Same hood, limbs, scale and fixed ground registration.",
+    "seed": 2241251,
+    "status": "accepted-with-frame-selection",
+    "resultFrameCount": 17,
+    "resultText": "status: completed\nid: 1848163c-956d-4dc2-a0bb-16dbf6614b11\njob_id: 1848163c-956d-4dc2-a0bb-16dbf6614b11\nframes: 17\ntransparent: yes\nasset_id: bd4cad1c-111c-5885-9fc8-ee9c739df13c\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 4 generations\ndownload: https://api.pixellab.ai/mcp/images/1848163c-956d-4dc2-a0bb-16dbf6614b11/download?index=0 ... ?index=16\n(13 more frames not shown — fetch them from the download URLs above)",
+    "visualReview": "1×/0.5× 재생 및 타격 정지 화면 확인. 오른팔 뒤로 사슬을 세워 준비하고 보폭을 넓히며 몸을 왼쪽으로 돌려 한 번 낮게 내리친다. 선택5에서 사슬 끝이 가장 낮은 전방 접촉 위치. 두 팔·손과 사슬 연결, 후드와 허리장식 유지. 회수 후 제공 기본 자세로 복귀."
+  },
+  {
+    "actor": "pendulum_warden",
+    "motion": "Attack",
+    "attempt": 2,
+    "jobId": "09011f98-548a-434f-b493-a25f50ccfb18",
+    "tool": "animate_image",
+    "prompt": "Perform exactly ONE heavy SHIELD BASH toward screen-left, then restore the initial pose. Bend the knees and pull the torso back slightly, brace the SAME tall right-side rectangular shield close against the body. Push from both legs and rotate the hips and shoulders forward-left so the shield and whole body deliver one short impact. Keep the left fist close, and keep the top round ornament completely fixed to the torso. The round golden chest pendulum stays the same large circular disk facing the viewer. Pause at impact, then shift weight back and restore the guard. No new arm, no extending ornament, no weapon morphing, no effects or trails. Fixed camera, same body scale, stay inside the transparent canvas.",
+    "seed": 2241261,
+    "status": "accepted-with-frame-selection",
+    "resultFrameCount": 17,
+    "resultText": "status: completed\nid: 09011f98-548a-434f-b493-a25f50ccfb18\njob_id: 09011f98-548a-434f-b493-a25f50ccfb18\nframes: 17\ntransparent: yes\nasset_id: fbdc3017-a9a5-57f7-bcdd-318710efd1f5\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 4 generations\ndownload: https://api.pixellab.ai/mcp/images/09011f98-548a-434f-b493-a25f50ccfb18/download?index=0 ... ?index=16\n(13 more frames not shown — fetch them from the download URLs above)",
+    "visualReview": "1×/0.5× 및 타격 정지에서 방패를 안쪽으로 모은 준비 후 몸통과 앞다리에 체중을 실어 왼쪽으로 한 번 미는 방패 공격 확인. 선택6에서 방패가 가장 전방에 있고 팔이 방패를 지탱함. 원형 진자·상단 고리·시계 몸체 유지, 기본 자세 복귀. 큰 원호가 생긴009 제외."
+  },
+  {
+    "actor": "cracked_blade",
+    "motion": "Stun",
+    "attempt": 3,
+    "jobId": "51dc04b6-19e5-4bdc-a2d5-f090c6a6dd86",
+    "parentPoseJob": "54003b73-dde0-482e-8cc0-f5f887e199b5",
+    "tool": "animate_image",
+    "prompt": "Remain in this EXACT limp STUNNED pose throughout. A tiny slow involuntary sway of the shoulders and head, only one or two pixels, then return to the same slumped pose. Keep knees collapsed and all weapons lowered or resting exactly as shown. No attack, no raising weapons, no standing, no step, no new object. Preserve every armor, mask, shield, chain, hook and weapon shape and attachment. Do not change body size, ground position or camera. Seamless quiet loop on transparency.",
+    "seed": 2241202,
+    "status": "accepted-with-frame-selection",
+    "resultFrameCount": 5,
+    "resultText": "status: completed\nid: 51dc04b6-19e5-4bdc-a2d5-f090c6a6dd86\njob_id: 51dc04b6-19e5-4bdc-a2d5-f090c6a6dd86\nframes: 5\ntransparent: yes\nasset_id: 4d848b25-ca9d-527e-86e5-75323b3c6a33\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 1 generation\ndownload: https://api.pixellab.ai/mcp/images/51dc04b6-19e5-4bdc-a2d5-f090c6a6dd86/download?index=0 ... ?index=4\n(1 more frames not shown — fetch them from the download URLs above)",
+    "visualReview": "기절은 몸을 앞으로 숙이고 무릎을 굽힌 채 검 끝을 낮게 늘어뜨린다. 1×와 0.5× 재생 및 4프레임 시트에서 검·손·투구 연결과 숙인 자세의 작은 흔들림 확인. 공격의 머리 위 준비 자세와 뚜렷이 구별됨."
+  },
+  {
+    "actor": "bell_knight",
+    "motion": "Stun",
+    "attempt": 3,
+    "jobId": "d4a8c675-cb16-4de0-9c3b-4ca7120b0ee1",
+    "parentPoseJob": "554a183e-b403-4c34-adf2-5f71c3737c39",
+    "tool": "animate_image",
+    "prompt": "Remain in this EXACT limp STUNNED pose throughout. A tiny slow involuntary sway of the shoulders and head, only one or two pixels, then return to the same slumped pose. Keep knees collapsed and all weapons lowered or resting exactly as shown. No attack, no raising weapons, no standing, no step, no new object. Preserve every armor, mask, shield, chain, hook and weapon shape and attachment. Do not change body size, ground position or camera. Seamless quiet loop on transparency.",
+    "seed": 2241212,
+    "status": "accepted-with-frame-selection",
+    "resultFrameCount": 5,
+    "resultText": "status: completed\nid: d4a8c675-cb16-4de0-9c3b-4ca7120b0ee1\njob_id: d4a8c675-cb16-4de0-9c3b-4ca7120b0ee1\nframes: 5\ntransparent: yes\nasset_id: 9fcafbbf-c3fd-51ed-b9e8-bbbb81994554\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 1 generation\ndownload: https://api.pixellab.ai/mcp/images/d4a8c675-cb16-4de0-9c3b-4ca7120b0ee1/download?index=0 ... ?index=4\n(1 more frames not shown — fetch them from the download URLs above)",
+    "visualReview": "기절은 한쪽 무릎을 꿇고 투구를 숙인 채 도끼 자루를 지탱하고 방패를 바닥에 눕힌다. 1×와 0.5×에서 두 프레임의 작은 흔들림만 반복. 도끼 바깥 검은 곡선이 생긴 원본002~003은 제외."
+  },
+  {
+    "actor": "chain_jailer",
+    "motion": "Stun",
+    "attempt": 3,
+    "jobId": "6d9b13c5-128e-4d9c-9369-88b839fc3469",
+    "parentPoseJob": "5848ef5e-86fc-4aec-b94f-7e1c7b9f65d9",
+    "tool": "animate_image",
+    "prompt": "Remain in this EXACT limp STUNNED pose throughout. A tiny slow involuntary sway of the shoulders and head, only one or two pixels, then return to the same slumped pose. Keep knees collapsed and all weapons lowered or resting exactly as shown. No attack, no raising weapons, no standing, no step, no new object. Preserve every armor, mask, shield, chain, hook and weapon shape and attachment. Do not change body size, ground position or camera. Seamless quiet loop on transparency.",
+    "seed": 2241242,
+    "status": "accepted-with-frame-selection",
+    "resultFrameCount": 5,
+    "resultText": "status: completed\nid: 6d9b13c5-128e-4d9c-9369-88b839fc3469\njob_id: 6d9b13c5-128e-4d9c-9369-88b839fc3469\nframes: 5\ntransparent: yes\nasset_id: d89b84e9-b5f6-53d5-9134-09d42798378c\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 1 generation\ndownload: https://api.pixellab.ai/mcp/images/6d9b13c5-128e-4d9c-9369-88b839fc3469/download?index=0 ... ?index=4\n(1 more frames not shown — fetch them from the download URLs above)",
+    "visualReview": "기절은 고개와 어깨가 아래로 처지고 두 갈고리가 낮게 늘어진 매달린 자세. 1×와 0.5×, 루프 끝 정지 자세에서 마스크·두 위쪽 사슬·두 갈고리 유지와 작은 좌우 흔들림 확인. 세 번째 갈고리가 생겼던 이전 후보는 사용하지 않음."
+  },
+  {
+    "actor": "chain_puppet",
+    "motion": "Stun",
+    "attempt": 3,
+    "stage": "pose",
+    "jobId": "daac3055-0107-4821-a893-d9f86176c51f",
+    "tool": "edit_image",
+    "prompt": "Create only a new STUNNED pose of this exact puppet. Keep its cage head, gold chain body, TWO chain arms, TWO chain legs, and the same two rectangular hand weights unchanged. Pose: collapse BOTH knees into a DEEP SQUAT, thighs nearly horizontal, feet stay at their original floor at y=114. Lower pelvis by 24 pixels. Bend the torso forward and hang the cage head down at a 40-degree angle. Both arms dangle vertically, their weights nearly touching the floor. The whole figure must be visibly LOWER and limp, not standing alert. Same limb lengths and same scale; no missing chains, no detached parts or new props. Transparent 128x128.",
+    "seed": 2241223,
+    "status": "accepted-with-frame-selection",
+    "resultFrameCount": 1,
+    "resultText": "status: completed\nid: daac3055-0107-4821-a893-d9f86176c51f\njob_id: daac3055-0107-4821-a893-d9f86176c51f\nframes: 1\ntransparent: yes\nasset_id: f45345b5-c152-54f2-8031-5239f3c2fa7c\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 10 generations\ndownload: https://api.pixellab.ai/mcp/images/daac3055-0107-4821-a893-d9f86176c51f/download",
+    "visualReview": "1×/0.5×와 두 프레임 정지 화면에서 머리가 왼쪽 아래로 처지고 무릎을 굽힌 탈진 자세 확인. 두 사슬팔과 직사각형 추 두 개는 고정되며, 머리만1px 아래로 움직였다 복귀. PixelLab 정확 픽셀 편집으로 머리 크기·목 연결을 보존했고 추가 추/연기/머리 확대 후보는 모두 제외."
+  },
+  {
+    "actor": "pendulum_warden",
+    "motion": "Stun",
+    "attempt": 3,
+    "stage": "pose",
+    "jobId": "8f5fbc14-178b-4a86-9265-3a77021b8a8c",
+    "tool": "edit_image",
+    "prompt": "Only change this exact clock warden to a deeply collapsed STUNNED sitting crouch. Bend its two short legs outward so the bottom of the rectangular clock torso is just 5 pixels above the original floor y=114, lowering the entire torso by about 15 pixels without scaling it. Left fist rests on the floor, right shield is grounded and leaning with the arm. Keep the clock box dimensions, top round ornament and the large chest pendulum IDENTICAL. The pendulum must remain a full ROUND gold disk with the ORIGINAL diameter, facing the viewer; do not shrink it or turn it edge-on. Preserve all parts and colors. No extra arms or effects. Transparent 128x128.",
+    "seed": 2241233,
+    "status": "rejected",
+    "resultFrameCount": 1,
+    "resultText": "status: completed\nid: 8f5fbc14-178b-4a86-9265-3a77021b8a8c\njob_id: 8f5fbc14-178b-4a86-9265-3a77021b8a8c\nframes: 1\ntransparent: yes\nasset_id: ccaa9ec3-443a-52e9-86e9-f899b187fbbc\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 10 generations\ndownload: https://api.pixellab.ai/mcp/images/8f5fbc14-178b-4a86-9265-3a77021b8a8c/download",
+    "visualReview": "기본 이미지와 비교해 낮아진 자세와 원래 부품/연결을 유지하는지 컨택트 시트로 확인.",
+    "rejectionReason": "확대 재생에서 왼손 주먹이 기본 그림보다 과하게 커진 점 확인. 시계 본체 낮아짐도 충분하지 않아 기절 자세 재설계."
+  },
+  {
+    "actor": "hook_hound",
+    "motion": "Attack",
+    "attempt": 3,
+    "stage": "pose",
+    "jobId": "1c3e806f-559b-4c26-bafa-476af5845d75",
+    "tool": "edit_image",
+    "prompt": "Create a single physical ATTACK CONTACT pose of this exact mechanical hook hound. The whole body lunges 10 pixels left. Its front legs are deeply bent to absorb weight, hind legs extend backward pushing the torso, neck bends down-left, and its SAME rigid curved beak strikes low to the left. The beak remains a thick curved hook attached to the same head, and the golden eye remains unchanged. The ring at the tail tip stays a CLOSED circular ring, identical to the original. Four original jointed legs only. Preserve all body proportions and golden colors exactly. No white flash, spark, slash, projectile, shadow or added effect. Keep all parts inside 128x128 transparent canvas.",
+    "seed": 2241154,
+    "status": "accepted-with-frame-selection",
+    "resultFrameCount": 1,
+    "resultText": "status: completed\nid: 1c3e806f-559b-4c26-bafa-476af5845d75\njob_id: 1c3e806f-559b-4c26-bafa-476af5845d75\nframes: 1\ntransparent: yes\nasset_id: fcfb3747-7eac-56f2-bb72-5c8dd2b4b854\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 10 generations\ndownload: https://api.pixellab.ai/mcp/images/1c3e806f-559b-4c26-bafa-476af5845d75/download",
+    "visualReview": "1×/0.5× 및 타격 정지 화면 확인. 네 다리를 굽혔다 펴며 몸통을 한 번 들어 앞으로 보내고 아래로 굽은 부리를 한 번 내리친다. 선택6에서 부리가 최전방으로 내려온다. 부리·눈·네 다리·닫힌 꼬리 고리 유지, 회수 후 원래 기본 자세로 착지 복귀."
+  },
+  {
+    "actor": "chain_puppet",
+    "motion": "Stun",
+    "attempt": 4,
+    "seed": 2241224,
+    "stage": "loop",
+    "parentPoseJob": "daac3055-0107-4821-a893-d9f86176c51f",
+    "prompt": "Remain in this EXACT limp STUNNED pose throughout. Tiny slow involuntary sway of the bowed cage head and shoulders by one or two pixels then return to the same slumped pose. Knees stay bent and two hand weights hang low. Preserve exactly two chain arms, two chain legs, cage head and two rectangular weights. No attack, no raising arms, no standing, no stepping, no new object or effects. Same size and fixed ground. Seamless quiet loop on transparency.",
+    "jobId": "96969307-436a-490f-86d2-b581507a8560",
+    "tool": "animate_image",
+    "frameCount": 4,
+    "status": "rejected",
+    "resultFrameCount": 5,
+    "resultText": "status: completed\nid: 96969307-436a-490f-86d2-b581507a8560\njob_id: 96969307-436a-490f-86d2-b581507a8560\nframes: 5\ntransparent: yes\nasset_id: fc074a0b-c91a-5160-a027-9a60414288ad\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 1 generation\ndownload: https://api.pixellab.ai/mcp/images/96969307-436a-490f-86d2-b581507a8560/download?index=0 ... ?index=4\n(1 more frames not shown — fetch them from the download URLs above)",
+    "rejectionReason": "원본001~003에서 왼손의 추 위에 분리된 세 번째 직사각형 추가 생성됨. 두 팔/두 추 유지 기준 위반."
+  },
+  {
+    "actor": "pendulum_warden",
+    "motion": "Stun",
+    "attempt": 4,
+    "seed": 2241234,
+    "stage": "loop",
+    "parentPoseJob": "8f5fbc14-178b-4a86-9265-3a77021b8a8c",
+    "prompt": "Remain in this EXACT collapsed stunned sitting crouch. A subtle one-pixel slow body wobble then return to this same pose. Keep the left fist on the floor, knees collapsed outwards and shield grounded. Keep the full ROUND gold pendulum unchanged in size and shape throughout. Keep clock box, hands, top round ornament, short legs and shield connected and identical. No attack, no standing or raising hands, no new object, no effects. Same ground and scale. Quiet seamless loop on transparency.",
+    "jobId": "541610ae-cf08-4588-a2a7-96ec8a049123",
+    "tool": "animate_image",
+    "frameCount": 4,
+    "status": "rejected",
+    "resultFrameCount": 5,
+    "resultText": "status: completed\nid: 541610ae-cf08-4588-a2a7-96ec8a049123\njob_id: 541610ae-cf08-4588-a2a7-96ec8a049123\nframes: 5\ntransparent: yes\nasset_id: 717b4508-fafc-5a23-b375-a9f6de856c89\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 1 generation\ndownload: https://api.pixellab.ai/mcp/images/541610ae-cf08-4588-a2a7-96ec8a049123/download?index=0 ... ?index=4\n(1 more frames not shown — fetch them from the download URLs above)",
+    "rejectionReason": "확대 재생에서 왼손 주먹이 기본 그림보다 과하게 커진 점 확인. 시계 본체 낮아짐도 충분하지 않아 기절 자세 재설계."
+  },
+  {
+    "actor": "hook_hound",
+    "motion": "Attack",
+    "attempt": 4,
+    "stage": "approach",
+    "seed": 2241155,
+    "prompt": "ONE physical beak attack toward screen LEFT ending exactly in the supplied low contact pose. First two beats pull the torso slightly back to the right and bend rear legs to prepare. Then all four legs push the whole body LEFT with head lowered, ending in the target lunge. The curved beak is one RIGID part and the ring at the tail tip stays CLOSED and unchanged. Keep the eye, four legs, colors, proportions and head unchanged. Body weight moves through knees, not just a nod. No sparks, flashes, white highlights, slash arcs, projectiles or drawn effects. No extra attack, no recovery yet. Same fixed 128x128 transparent camera.",
+    "frameCount": 8,
+    "tool": "animate_image",
+    "jobId": "5b47974e-62cb-43fa-8e02-12fd47b6cc61",
+    "parentPoseJob": "1c3e806f-559b-4c26-bafa-476af5845d75",
+    "status": "accepted-with-frame-selection",
+    "resultFrameCount": 9,
+    "resultText": "status: completed\nid: 5b47974e-62cb-43fa-8e02-12fd47b6cc61\njob_id: 5b47974e-62cb-43fa-8e02-12fd47b6cc61\nframes: 9\ntransparent: yes\nasset_id: 65ba3693-5378-57fc-a04b-2cc433b4c46b\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 2 generations\ndownload: https://api.pixellab.ai/mcp/images/5b47974e-62cb-43fa-8e02-12fd47b6cc61/download?index=0 ... ?index=8\n(5 more frames not shown — fetch them from the download URLs above)",
+    "visualReview": "1×/0.5× 및 타격 정지 화면 확인. 네 다리를 굽혔다 펴며 몸통을 한 번 들어 앞으로 보내고 아래로 굽은 부리를 한 번 내리친다. 선택6에서 부리가 최전방으로 내려온다. 부리·눈·네 다리·닫힌 꼬리 고리 유지, 회수 후 원래 기본 자세로 착지 복귀."
+  },
+  {
+    "actor": "hook_hound",
+    "motion": "Attack",
+    "attempt": 5,
+    "stage": "recovery",
+    "seed": 2241156,
+    "prompt": "Recover ONLY from this low LEFT lunge into the supplied original standing pose. Push backward with front legs, lift head and torso slowly, draw hind legs underneath body, and settle exactly in the target base pose. No additional strike or windup. The rigid curved beak, golden eye, CLOSED circular tail ring and all four legs stay identical and attached. Same size, colors and ground y=114. No flash, sparks, streaks, white color change, projectiles or effects. Transparent fixed camera.",
+    "frameCount": 6,
+    "tool": "animate_image",
+    "jobId": "784b831c-1c8f-4c84-a8b2-2a1175379183",
+    "parentPoseJob": "1c3e806f-559b-4c26-bafa-476af5845d75",
+    "status": "accepted-with-frame-selection",
+    "resultFrameCount": 7,
+    "resultText": "status: completed\nid: 784b831c-1c8f-4c84-a8b2-2a1175379183\njob_id: 784b831c-1c8f-4c84-a8b2-2a1175379183\nframes: 7\ntransparent: yes\nasset_id: 25f75621-71c3-5e0a-b2af-5adae596db17\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 2 generations\ndownload: https://api.pixellab.ai/mcp/images/784b831c-1c8f-4c84-a8b2-2a1175379183/download?index=0 ... ?index=6\n(3 more frames not shown — fetch them from the download URLs above)",
+    "visualReview": "1×/0.5× 및 타격 정지 화면 확인. 네 다리를 굽혔다 펴며 몸통을 한 번 들어 앞으로 보내고 아래로 굽은 부리를 한 번 내리친다. 선택6에서 부리가 최전방으로 내려온다. 부리·눈·네 다리·닫힌 꼬리 고리 유지, 회수 후 원래 기본 자세로 착지 복귀."
+  },
+  {
+    "actor": "chain_puppet",
+    "motion": "Stun",
+    "attempt": 5,
+    "stage": "loop",
+    "seed": 2241225,
+    "prompt": "Nearly motionless exhausted pose, breathing gently. Only the cage head tilts one pixel further down and returns. Everything below the neck is perfectly still in its current drooping pose. Keep both arms, both hanging rectangular hands, both bent legs in exactly the same positions. Two hands total, no additional shapes anywhere. No lifting, extending or swinging arms. No effects, trails or duplicate shapes. The first pose and last pose are the same. Very quiet transparent loop.",
+    "frameCount": 4,
+    "tool": "animate_image",
+    "jobId": "d36bbe1e-7e3b-4d8f-b081-373f8cec5d4e",
+    "parentPoseJob": "daac3055-0107-4821-a893-d9f86176c51f",
+    "status": "rejected",
+    "resultFrameCount": 5,
+    "resultText": "status: completed\nid: d36bbe1e-7e3b-4d8f-b081-373f8cec5d4e\njob_id: d36bbe1e-7e3b-4d8f-b081-373f8cec5d4e\nframes: 5\ntransparent: yes\nasset_id: 749a9ef4-aae7-54c4-86aa-7b94959d0132\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 1 generation\ndownload: https://api.pixellab.ai/mcp/images/d36bbe1e-7e3b-4d8f-b081-373f8cec5d4e/download?index=0 ... ?index=4\n(1 more frames not shown — fetch them from the download URLs above)",
+    "rejectionReason": "001~003에 흰색 연기/기호가 추가되어 탈락. 오른손 추 모양도 흔들림. 새로 만든 기절 원본 자세에서 작은 머리 자세 변형을 직접 생성하는 방식으로 변경."
+  },
+  {
+    "actor": "pendulum_warden",
+    "motion": "Stun",
+    "attempt": 5,
+    "stage": "pose",
+    "seed": 2241235,
+    "prompt": "Change only the POSE of this exact clock automaton into a visibly helpless STUN. Its rigid rectangular clock torso TILTS 25 degrees toward screen RIGHT, leaning onto its grounded shield. Its two knees buckle, lowering the whole torso by 12 pixels. Left arm hangs loose with its ORIGINAL SMALL FIST, same size as the input fist, never enlarged or thrust toward camera. The large round pendulum stays the SAME round disk diameter and remains attached inside the clock. Top ornaments remain fixed on top of the torso. Shield rests diagonally on the floor supporting the collapsed body. Same armor parts, dimensions and scale. No new objects. Transparent 128x128.",
+    "tool": "edit_image",
+    "jobId": "fc39cfb0-d244-4beb-9499-e52f99763469",
+    "status": "accepted-with-frame-selection",
+    "resultFrameCount": 1,
+    "resultText": "status: completed\nid: fc39cfb0-d244-4beb-9499-e52f99763469\njob_id: fc39cfb0-d244-4beb-9499-e52f99763469\nframes: 1\ntransparent: yes\nasset_id: 59456123-b56c-5393-a77b-d52e1ac41b4f\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 10 generations\ndownload: https://api.pixellab.ai/mcp/images/fc39cfb0-d244-4beb-9499-e52f99763469/download",
+    "visualReview": "1×/0.5× 및 정지 화면에서 시계 몸통이 오른쪽 방패에 기대어 내려앉고 왼팔이 낮게 늘어진 자세 확인. 원래 작은 주먹과 원형 진자 크기 유지. 루프 전체가 기운 상태를 유지하며 공격이나 일어서기 동작 없이 작은 흔들림만 있음."
+  },
+  {
+    "actor": "hook_hound",
+    "motion": "Attack",
+    "attempt": 6,
+    "stage": "tail-ring-repair",
+    "seed": 2241157,
+    "prompt": "For EACH supplied frame preserve the character pose, framing, pixels, colors, four legs, body, head and rigid curved beak. Repair ONLY the gold ring at the TIP OF THE TAIL, in the upper-right of each frame: it must be a CLOSED ROUND GOLD RING with a dark empty center, not an open C-shaped hook. Close any gap in the ring with matching gold pixels and dark outline. Keep ring diameter and tail attachment unchanged. No other changes, no effects. Return the same three frames in order on transparent 128x128.",
+    "tool": "edit_image",
+    "jobId": "b2f99616-aeee-4d64-9c87-aafb91f11803",
+    "sourceJob": "5b47974e-62cb-43fa-8e02-12fd47b6cc61",
+    "sourceIndices": [
+      1,
+      2,
+      6
+    ],
+    "status": "accepted-with-frame-selection",
+    "resultFrameCount": 3,
+    "resultText": "status: completed\nid: b2f99616-aeee-4d64-9c87-aafb91f11803\njob_id: b2f99616-aeee-4d64-9c87-aafb91f11803\nframes: 3\ntransparent: yes\nasset_id: af5c3f2c-e78d-5784-9d17-3b40b8fef809\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 10 generations\ndownload: https://api.pixellab.ai/mcp/images/b2f99616-aeee-4d64-9c87-aafb91f11803/download?index=0 ... ?index=2",
+    "visualReview": "1×/0.5× 및 타격 정지 화면 확인. 네 다리를 굽혔다 펴며 몸통을 한 번 들어 앞으로 보내고 아래로 굽은 부리를 한 번 내리친다. 선택6에서 부리가 최전방으로 내려온다. 부리·눈·네 다리·닫힌 꼬리 고리 유지, 회수 후 원래 기본 자세로 착지 복귀."
+  },
+  {
+    "actor": "chain_puppet",
+    "motion": "Stun",
+    "attempt": 6,
+    "stage": "adjacent-pose",
+    "seed": 2241226,
+    "prompt": "Keep this exact slumped body, chain limbs and two rectangular hands completely unchanged. Only tilt the cage head 5 degrees farther downward and lower it by ONE pixel, preserving the same cage-head shape and its neck connection. This is an adjacent frame for a very quiet stunned sway. No new objects, smoke, effects or limb movement. Transparent.",
+    "tool": "edit_image_pixen",
+    "jobId": "20c90d8e-6228-4ebd-bae8-4a16f7f95b48",
+    "parentPoseJob": "daac3055-0107-4821-a893-d9f86176c51f",
+    "status": "rejected",
+    "resultFrameCount": 1,
+    "resultText": "status: completed\nid: 20c90d8e-6228-4ebd-bae8-4a16f7f95b48\njob_id: 20c90d8e-6228-4ebd-bae8-4a16f7f95b48\nframes: 1\ntransparent: yes\nasset_id: 49121868-4664-54fb-9012-ddec6e9fcbc5\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 1 generation\ndownload: https://api.pixellab.ai/mcp/images/20c90d8e-6228-4ebd-bae8-4a16f7f95b48/download",
+    "rejectionReason": "인접 자세 생성 결과 머리 크기가 약 1.5배로 커짐. 원래 크기를 보존하는 PixelLab exact pixel edit로 대체."
+  },
+  {
+    "actor": "pendulum_warden",
+    "motion": "Stun",
+    "attempt": 6,
+    "stage": "loop",
+    "seed": 2241236,
+    "prompt": "Remain leaning heavily on the shield in the EXACT same exhausted collapsed pose throughout. A tiny slow sway of the clock box by only one pixel, returning to the same pose. Both legs, left hand, shield and top ornaments stay in their original position and size. The left fist stays SMALL. The round gold pendulum remains round and the same diameter. Do not stand, attack, raise the arms or add anything. No effects. Seamless quiet loop on transparency.",
+    "tool": "animate_image",
+    "jobId": "345f3acb-5842-46a9-a996-72b103e08c7f",
+    "parentPoseJob": "fc39cfb0-d244-4beb-9499-e52f99763469",
+    "status": "accepted-with-frame-selection",
+    "resultFrameCount": 5,
+    "resultText": "status: completed\nid: 345f3acb-5842-46a9-a996-72b103e08c7f\njob_id: 345f3acb-5842-46a9-a996-72b103e08c7f\nframes: 5\ntransparent: yes\nasset_id: 0ec32bf8-6612-5ee5-b306-29403528759d\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 1 generation\ndownload: https://api.pixellab.ai/mcp/images/345f3acb-5842-46a9-a996-72b103e08c7f/download?index=0 ... ?index=4\n(1 more frames not shown — fetch them from the download URLs above)",
+    "visualReview": "1×/0.5× 및 정지 화면에서 시계 몸통이 오른쪽 방패에 기대어 내려앉고 왼팔이 낮게 늘어진 자세 확인. 원래 작은 주먹과 원형 진자 크기 유지. 루프 전체가 기운 상태를 유지하며 공격이나 일어서기 동작 없이 작은 흔들림만 있음."
+  },
+  {
+    "actor": "chain_puppet",
+    "motion": "Stun",
+    "attempt": 7,
+    "stage": "adjacent-pose",
+    "tool": "pixelart_workbench",
+    "jobId": "201e23b8-73f9-4504-a366-e683ee2253b5",
+    "sourceJob": "daac3055-0107-4821-a893-d9f86176c51f",
+    "sourceImageId": "aea846cc-6efa-4788-93d8-44347ba4cd22",
+    "changes": [
+      {
+        "operation": "copy_region",
+        "layer": "image",
+        "frames": [
+          1
+        ],
+        "source_layer": "image",
+        "source_frame": 1,
+        "region": [
+          56,
+          20,
+          85,
+          45
+        ],
+        "at": [
+          56,
+          21
+        ],
+        "reason": "새 기절 자세의 숙인 머리만 1px 내려 작은 탈진 흔들림을 만들며 원래 머리 크기와 두 팔/추를 그대로 보존."
+      }
+    ],
+    "prompt": "새로 생성한 기절 자세의 머리만 1px 아래로 복사 이동. 나머지 몸과 팔/추는 변경하지 않음.",
+    "resultFrameCount": 1,
+    "status": "accepted-with-frame-selection",
+    "visualReview": "1×/0.5×와 두 프레임 정지 화면에서 머리가 왼쪽 아래로 처지고 무릎을 굽힌 탈진 자세 확인. 두 사슬팔과 직사각형 추 두 개는 고정되며, 머리만1px 아래로 움직였다 복귀. PixelLab 정확 픽셀 편집으로 머리 크기·목 연결을 보존했고 추가 추/연기/머리 확대 후보는 모두 제외."
+  },
+  {
+    "actor": "hook_hound",
+    "motion": "Stun",
+    "attempt": 2,
+    "stage": "pose",
+    "prompt": "Create a STUNNED resting pose of this exact mechanical hound. Its BELLY rests just above the ground y=114, all four legs fold underneath and to the sides, shoulders sag. Lower the head with the body but keep the head orientation, eye and curved HOOK BEAK IDENTICAL to the input: the beak must curve VERTICALLY DOWNWARD, same thickness and length. Never flatten or stretch the beak into a horizontal blade. Preserve every original armor part and body size. The closed circular tail ring stays closed. Clearly collapsed on belly, not poised to attack. No effects or new objects. 128x128 transparent.",
+    "seed": 2241182,
+    "tool": "edit_image",
+    "jobId": "cad9ccd9-c074-4228-8235-b61402750017",
+    "status": "used-as-pose-source",
+    "resultFrameCount": 1,
+    "resultText": "status: completed\nid: cad9ccd9-c074-4228-8235-b61402750017\njob_id: cad9ccd9-c074-4228-8235-b61402750017\nframes: 1\ntransparent: yes\nasset_id: 94c9ad16-ae3d-52a6-b3b2-048654e56c2e\nasset_type: image\nasset_status: saved\ngallery: saved to your PixelLab gallery (pixellab.ai/create)\ncharged: 10 generations\ndownload: https://api.pixellab.ai/mcp/images/cad9ccd9-c074-4228-8235-b61402750017/download",
+    "visualReview": "갈고리 부리와 낮춘 닫힌 꼬리 고리의 형태를 보존한 새 자세. 그대로 사용하지 않고 PixelLab exact edit에서 상체를 낮추고 발을 고정."
+  },
+  {
+    "actor": "hook_hound",
+    "motion": "Stun",
+    "attempt": 3,
+    "stage": "collapse-pose",
+    "tool": "pixelart_workbench",
+    "jobId": "b0d06721-bebb-43dc-b1f3-5f744a6e2f47",
+    "sourceJob": "cad9ccd9-c074-4228-8235-b61402750017",
+    "changes": [
+      {
+        "operation": "copy_region",
+        "layer": "image",
+        "frames": [
+          1
+        ],
+        "source_layer": "image",
+        "source_frame": 1,
+        "region": [
+          0,
+          0,
+          127,
+          122
+        ],
+        "at": [
+          0,
+          5
+        ],
+        "reason": "새 자세의 발을 원래 지면 y=114 직전으로 맞춤. 크기와 픽셀은 유지."
+      },
+      {
+        "operation": "copy_region",
+        "layer": "image",
+        "frames": [
+          1
+        ],
+        "source_layer": "image",
+        "source_frame": 1,
+        "region": [
+          24,
+          40,
+          124,
+          94
+        ],
+        "at": [
+          24,
+          52
+        ],
+        "reason": "같은 갈고리 부리·몸통·낮은 꼬리를 다리보다 7px 더 내려 배가 낮은 힘 빠진 자세로 만듦. 갈고리를 회전/늘이지 않음."
+      }
+    ],
+    "prompt": "새 자세의 발을 원래 지면에 맞추고 상체를 다리보다 7px 더 내려 낮게 엎드린 자세 제작. 원형 꼬리/갈고리 부리 픽셀은 변형 없이 보존.",
+    "resultFrameCount": 1,
+    "status": "rejected",
+    "downloadKind": "pixel",
+    "rejectionReason": "확대 화면에서 x125~126에 원래 꼬리 외곽선 일부가 남아 있음. 상체 복사 영역을 캔버스 우측 끝까지 확장하여 수정."
+  },
+  {
+    "actor": "hook_hound",
+    "motion": "Stun",
+    "attempt": 4,
+    "stage": "adjacent-pose",
+    "tool": "pixelart_workbench",
+    "jobId": "9fc897a5-258f-454a-9f07-7da9e1bd084f",
+    "sourceJob": "b0d06721-bebb-43dc-b1f3-5f744a6e2f47",
+    "changes": [
+      {
+        "operation": "copy_region",
+        "layer": "image",
+        "frames": [
+          1
+        ],
+        "source_layer": "image",
+        "source_frame": 1,
+        "region": [
+          24,
+          50,
+          124,
+          103
+        ],
+        "at": [
+          24,
+          51
+        ],
+        "reason": "낮게 엎드린 상체만 1px 내려 기절 루프의 미세한 흔들림을 만들고 발은 지면에 고정."
+      }
+    ],
+    "prompt": "새로 제작한 엎드린 기절 자세의 상체만 1px 아래로 움직여 조용한 기절 루프 구성.",
+    "resultFrameCount": 1,
+    "status": "rejected",
+    "downloadKind": "pixel",
+    "rejectionReason": "확대 화면에서 x125~126에 원래 꼬리 외곽선 일부가 남아 있음. 상체 복사 영역을 캔버스 우측 끝까지 확장하여 수정."
+  },
+  {
+    "actor": "hook_hound",
+    "motion": "Stun",
+    "attempt": 5,
+    "stage": "collapse-pose",
+    "tool": "pixelart_workbench",
+    "jobId": "590fbfd5-efec-48c7-953b-d2441376b57f",
+    "sourceJob": "cad9ccd9-c074-4228-8235-b61402750017",
+    "changes": [
+      {
+        "operation": "copy_region",
+        "layer": "image",
+        "frames": [
+          1
+        ],
+        "source_layer": "image",
+        "source_frame": 1,
+        "region": [
+          0,
+          0,
+          127,
+          122
+        ],
+        "at": [
+          0,
+          5
+        ],
+        "reason": "발 지면을 원래 기준으로 정렬."
+      },
+      {
+        "operation": "copy_region",
+        "layer": "image",
+        "frames": [
+          1
+        ],
+        "source_layer": "image",
+        "source_frame": 1,
+        "region": [
+          24,
+          40,
+          127,
+          94
+        ],
+        "at": [
+          24,
+          52
+        ],
+        "reason": "꼬리 고리의 우측 외곽선까지 포함해 상체를 다리보다7px 더 낮춤. 이전 사각형 밖에 남았던 꼬리 외곽선 제거."
+      }
+    ],
+    "prompt": "발 지면을 원래 기준으로 정렬. 꼬리 고리의 우측 외곽선까지 포함해 상체를 다리보다7px 더 낮춤. 이전 사각형 밖에 남았던 꼬리 외곽선 제거.",
+    "resultFrameCount": 1,
+    "downloadKind": "pixel",
+    "status": "accepted-with-frame-selection",
+    "visualReview": "1×/0.5× 및 두 프레임 확대 화면에서 네 다리를 접어 몸을 낮추고 꼬리를 떨어뜨린 기절 자세 확인. 세로로 굽은 부리와 닫힌 꼬리 고리 형태 유지. 발은 고정된 채 상체만1px 왕복하며 공격의 도약/내려치기와 구별된다. 남은 꼬리 외곽선은 영역 수정 후 재검수해 제거 확인."
+  },
+  {
+    "actor": "hook_hound",
+    "motion": "Stun",
+    "attempt": 6,
+    "stage": "adjacent-pose",
+    "tool": "pixelart_workbench",
+    "jobId": "5e424d36-37be-45f7-a08b-54d7adb7d27d",
+    "sourceJob": "590fbfd5-efec-48c7-953b-d2441376b57f",
+    "changes": [
+      {
+        "operation": "copy_region",
+        "layer": "image",
+        "frames": [
+          1
+        ],
+        "source_layer": "image",
+        "source_frame": 1,
+        "region": [
+          24,
+          50,
+          127,
+          103
+        ],
+        "at": [
+          24,
+          51
+        ],
+        "reason": "꼬리 외곽선을 포함한 상체를1px 내리고 발 위치는 유지."
+      }
+    ],
+    "prompt": "꼬리 외곽선을 포함한 상체를1px 내리고 발 위치는 유지.",
+    "resultFrameCount": 1,
+    "downloadKind": "pixel",
+    "status": "accepted-with-frame-selection",
+    "visualReview": "1×/0.5× 및 두 프레임 확대 화면에서 네 다리를 접어 몸을 낮추고 꼬리를 떨어뜨린 기절 자세 확인. 세로로 굽은 부리와 닫힌 꼬리 고리 형태 유지. 발은 고정된 채 상체만1px 왕복하며 공격의 도약/내려치기와 구별된다. 남은 꼬리 외곽선은 영역 수정 후 재검수해 제거 확인."
+  },
+  {
+    "actor": "hook_hound",
+    "motion": "Attack",
+    "attempt": 7,
+    "stage": "ground-registration",
+    "tool": "pixelart_workbench",
+    "jobId": "c3752e88-203b-4e3b-a52a-ba813f286c69",
+    "sourceJob": "job:b2f99616-aeee-4d64-9c87-aafb91f11803:0",
+    "changes": [
+      {
+        "operation": "copy_region",
+        "layer": "image",
+        "frames": [
+          1
+        ],
+        "source_layer": "image",
+        "source_frame": 1,
+        "region": [
+          0,
+          0,
+          127,
+          119
+        ],
+        "at": [
+          0,
+          8
+        ],
+        "reason": "발 기준 y113으로 접지 위치 보정. 기존 포즈·색·좌우 이동 유지."
+      }
+    ],
+    "resultFrameCount": 1,
+    "downloadKind": "pixel",
+    "status": "accepted-with-frame-selection",
+    "visualReview": "발이 지면보다 8~23px 떠 있던 문제 수정. 원본 보이는 RGBA 픽셀 전체 보존 및 y113 접지 검증 통과."
+  },
+  {
+    "actor": "hook_hound",
+    "motion": "Attack",
+    "attempt": 8,
+    "stage": "ground-registration",
+    "tool": "pixelart_workbench",
+    "jobId": "28201e89-bb57-4d47-bd72-c9b197c53732",
+    "sourceJob": "job:b2f99616-aeee-4d64-9c87-aafb91f11803:1",
+    "changes": [
+      {
+        "operation": "copy_region",
+        "layer": "image",
+        "frames": [
+          1
+        ],
+        "source_layer": "image",
+        "source_frame": 1,
+        "region": [
+          0,
+          0,
+          127,
+          117
+        ],
+        "at": [
+          0,
+          10
+        ],
+        "reason": "발 기준 y113으로 접지 위치 보정. 기존 포즈·색·좌우 이동 유지."
+      }
+    ],
+    "resultFrameCount": 1,
+    "downloadKind": "pixel",
+    "status": "accepted-with-frame-selection",
+    "visualReview": "발이 지면보다 8~23px 떠 있던 문제 수정. 원본 보이는 RGBA 픽셀 전체 보존 및 y113 접지 검증 통과."
+  },
+  {
+    "actor": "hook_hound",
+    "motion": "Attack",
+    "attempt": 9,
+    "stage": "ground-registration",
+    "tool": "pixelart_workbench",
+    "jobId": "3d8b6261-84e4-4e61-93d0-722fbc88bedd",
+    "sourceJob": "job:b2f99616-aeee-4d64-9c87-aafb91f11803:2",
+    "changes": [
+      {
+        "operation": "copy_region",
+        "layer": "image",
+        "frames": [
+          1
+        ],
+        "source_layer": "image",
+        "source_frame": 1,
+        "region": [
+          0,
+          0,
+          127,
+          104
+        ],
+        "at": [
+          0,
+          23
+        ],
+        "reason": "발 기준 y113으로 접지 위치 보정. 기존 포즈·색·좌우 이동 유지."
+      }
+    ],
+    "resultFrameCount": 1,
+    "downloadKind": "pixel",
+    "status": "accepted-with-frame-selection",
+    "visualReview": "발이 지면보다 8~23px 떠 있던 문제 수정. 원본 보이는 RGBA 픽셀 전체 보존 및 y113 접지 검증 통과."
+  },
+  {
+    "actor": "hook_hound",
+    "motion": "Attack",
+    "attempt": 10,
+    "stage": "ground-registration",
+    "tool": "pixelart_workbench",
+    "jobId": "80ad1ba9-a21d-463e-9926-992e6a4933d3",
+    "sourceJob": "job:5b47974e-62cb-43fa-8e02-12fd47b6cc61:7",
+    "changes": [
+      {
+        "operation": "copy_region",
+        "layer": "image",
+        "frames": [
+          1
+        ],
+        "source_layer": "image",
+        "source_frame": 1,
+        "region": [
+          0,
+          0,
+          127,
+          106
+        ],
+        "at": [
+          0,
+          21
+        ],
+        "reason": "발 기준 y113으로 접지 위치 보정. 기존 포즈·색·좌우 이동 유지."
+      }
+    ],
+    "resultFrameCount": 1,
+    "downloadKind": "pixel",
+    "status": "accepted-with-frame-selection",
+    "visualReview": "발이 지면보다 8~23px 떠 있던 문제 수정. 원본 보이는 RGBA 픽셀 전체 보존 및 y113 접지 검증 통과."
+  },
+  {
+    "actor": "hook_hound",
+    "motion": "Attack",
+    "attempt": 11,
+    "stage": "ground-registration",
+    "tool": "pixelart_workbench",
+    "jobId": "3e4c65cd-29b0-4047-a393-a10494c0de11",
+    "sourceJob": "job:5b47974e-62cb-43fa-8e02-12fd47b6cc61:8",
+    "changes": [
+      {
+        "operation": "copy_region",
+        "layer": "image",
+        "frames": [
+          1
+        ],
+        "source_layer": "image",
+        "source_frame": 1,
+        "region": [
+          0,
+          0,
+          127,
+          109
+        ],
+        "at": [
+          0,
+          18
+        ],
+        "reason": "발 기준 y113으로 접지 위치 보정. 기존 포즈·색·좌우 이동 유지."
+      }
+    ],
+    "resultFrameCount": 1,
+    "downloadKind": "pixel",
+    "status": "accepted-with-frame-selection",
+    "visualReview": "발이 지면보다 8~23px 떠 있던 문제 수정. 원본 보이는 RGBA 픽셀 전체 보존 및 y113 접지 검증 통과."
+  },
+  {
+    "actor": "hook_hound",
+    "motion": "Attack",
+    "attempt": 12,
+    "stage": "ground-registration",
+    "tool": "pixelart_workbench",
+    "jobId": "468b4b6d-487e-4a5d-ab3f-b42fe85f897a",
+    "sourceJob": "job:784b831c-1c8f-4c84-a8b2-2a1175379183:1",
+    "changes": [
+      {
+        "operation": "copy_region",
+        "layer": "image",
+        "frames": [
+          1
+        ],
+        "source_layer": "image",
+        "source_frame": 1,
+        "region": [
+          0,
+          0,
+          127,
+          109
+        ],
+        "at": [
+          0,
+          18
+        ],
+        "reason": "발 기준 y113으로 접지 위치 보정. 기존 포즈·색·좌우 이동 유지."
+      }
+    ],
+    "resultFrameCount": 1,
+    "downloadKind": "pixel",
+    "status": "accepted-with-frame-selection",
+    "visualReview": "발이 지면보다 8~23px 떠 있던 문제 수정. 원본 보이는 RGBA 픽셀 전체 보존 및 y113 접지 검증 통과."
+  },
+  {
+    "actor": "hook_hound",
+    "motion": "Attack",
+    "attempt": 13,
+    "stage": "ground-registration",
+    "tool": "pixelart_workbench",
+    "jobId": "e1c0ef12-7be8-44fb-94ca-93c97c088cd4",
+    "sourceJob": "job:784b831c-1c8f-4c84-a8b2-2a1175379183:2",
+    "changes": [
+      {
+        "operation": "copy_region",
+        "layer": "image",
+        "frames": [
+          1
+        ],
+        "source_layer": "image",
+        "source_frame": 1,
+        "region": [
+          0,
+          0,
+          127,
+          109
+        ],
+        "at": [
+          0,
+          18
+        ],
+        "reason": "발 기준 y113으로 접지 위치 보정. 기존 포즈·색·좌우 이동 유지."
+      }
+    ],
+    "resultFrameCount": 1,
+    "downloadKind": "pixel",
+    "status": "accepted-with-frame-selection",
+    "visualReview": "발이 지면보다 8~23px 떠 있던 문제 수정. 원본 보이는 RGBA 픽셀 전체 보존 및 y113 접지 검증 통과."
+  },
+  {
+    "actor": "hook_hound",
+    "motion": "Attack",
+    "attempt": 14,
+    "stage": "ground-registration",
+    "tool": "pixelart_workbench",
+    "jobId": "98a12579-2c48-488c-ae6b-68f78fa6bb72",
+    "sourceJob": "job:784b831c-1c8f-4c84-a8b2-2a1175379183:5",
+    "changes": [
+      {
+        "operation": "copy_region",
+        "layer": "image",
+        "frames": [
+          1
+        ],
+        "source_layer": "image",
+        "source_frame": 1,
+        "region": [
+          0,
+          0,
+          127,
+          125
+        ],
+        "at": [
+          0,
+          2
+        ],
+        "reason": "발 기준 y113으로 접지 위치 보정. 기존 포즈·색·좌우 이동 유지."
+      }
+    ],
+    "resultFrameCount": 1,
+    "downloadKind": "pixel",
+    "status": "accepted-with-frame-selection",
+    "visualReview": "발이 지면보다 8~23px 떠 있던 문제 수정. 원본 보이는 RGBA 픽셀 전체 보존 및 y113 접지 검증 통과."
+  }
+]

@@ -1,0 +1,102 @@
+{
+  "slime": {
+    "width": 32,
+    "height": 32,
+    "bbox": [
+      8,
+      12,
+      23,
+      23
+    ],
+    "colors": 5,
+    "alphas": [
+      0,
+      255
+    ],
+    "pivot": [
+      16,
+      24
+    ],
+    "referenceHeight": 12
+  },
+  "horn_rabbit": {
+    "width": 32,
+    "height": 32,
+    "bbox": [
+      5,
+      5,
+      24,
+      27
+    ],
+    "colors": 7,
+    "alphas": [
+      0,
+      255
+    ],
+    "pivot": [
+      16,
+      28
+    ],
+    "referenceHeight": 23
+  },
+  "boar": {
+    "width": 48,
+    "height": 40,
+    "bbox": [
+      7,
+      11,
+      38,
+      31
+    ],
+    "colors": 8,
+    "alphas": [
+      0,
+      255
+    ],
+    "pivot": [
+      24,
+      32
+    ],
+    "referenceHeight": 21
+  },
+  "great_horn_rabbit": {
+    "width": 48,
+    "height": 48,
+    "bbox": [
+      3,
+      7,
+      39,
+      39
+    ],
+    "colors": 7,
+    "alphas": [
+      0,
+      255
+    ],
+    "pivot": [
+      24,
+      40
+    ],
+    "referenceHeight": 33
+  },
+  "great_tusk": {
+    "width": 64,
+    "height": 48,
+    "bbox": [
+      4,
+      4,
+      59,
+      39
+    ],
+    "colors": 7,
+    "alphas": [
+      0,
+      255
+    ],
+    "pivot": [
+      32,
+      40
+    ],
+    "referenceHeight": 36
+  }
+}

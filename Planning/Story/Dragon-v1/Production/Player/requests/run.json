@@ -1,0 +1,20 @@
+{
+  "id": "run",
+  "tool": "animate_image_pixminimax",
+  "request": {
+    "first_frame_url": "https://api.pixellab.ai/mcp/images/4a7388f1-b9c6-4a37-a159-20ce68d3447e/download",
+    "last_frame_url": "https://api.pixellab.ai/mcp/images/4a7388f1-b9c6-4a37-a159-20ce68d3447e/download",
+    "frame_count": 8,
+    "no_background": true,
+    "seed": 24102420,
+    "direction": "east",
+    "view": "side",
+    "initial_pose": "Already leaning forward into a rightward run, one knee forward, opposite leg folded back, sword arm bent behind hip and short sword trailing left.",
+    "subject_description": "The exact small cream-hooded swordsman: navy face and limbs, one amber eye, short cream tunic, ochre neck scarf, brown boots, ONE short steel sword with ochre guard.",
+    "enhance_prompt": false,
+    "description": "A seamless eight-pose RUN IN PLACE toward RIGHT. Keep chest leaning about30degrees forward, shoulders and hood ahead of hips, low purposeful sprint. Two clear alternating foot contacts and passing phases; knees drive forward, rear heel folds up then extends to push off. Both arms move in opposition to legs: free bent arm pumps forward/back, sword arm counter-swings modestly behind the hip while keeping hand/guard/blade connected and same short blade length. Keep hood and torso stable with at most1pixel vertical bounce, no upright pause or hopping. Fixed root, camera, scale and foot baseline; zero net horizontal travel. Scarf short tail trails left, no cape. Preserve exact outfit and pixel density in every frame. No sword attack, new clothing, stretched limbs, extra hands, effects or weapon duplication. Return seamlessly to opening mid-stride."
+  },
+  "result": [
+    "id: ddf022cc-e12c-41e7-9e01-2cfecc7b74fb\njob_id: ddf022cc-e12c-41e7-9e01-2cfecc7b74fb\ndescription: A seamless eight-pose RUN IN PLACE toward RIGHT. Keep chest leaning about30degrees forward, shoulders and hood ahead of hips, low purposeful sprint. Two clear alternating foot contacts and passing phases; knees drive forward, rear heel folds up then extends to push off. Both arms move in opposition to legs: free bent arm pumps forward/back, sword arm counter-swings modestly behind the hip while keeping hand/guard/blade connected and same short blade length. Keep hood and torso stable with at most1pixel vertical bounce, no upright pause or hopping. Fixed root, camera, scale and foot baseline; zero net horizontal travel. Scarf short tail trails left, no cape. Preserve exact outfit and pixel density in every frame. No sword attack, new clothing, stretched limbs, extra hands, effects or weapon duplication. Return seamlessly to opening mid-stride.\nframes: 8\nsize: 48x48px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 24102420\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"ddf022cc-e12c-41e7-9e01-2cfecc7b74fb\")\nasset_id: 7a63b128-452b-5bec-9e51-77a015e47a94\nasset_status: pending (saved to your gallery when generation completes)"
+  ]
+}

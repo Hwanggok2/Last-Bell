@@ -1,0 +1,50 @@
+{
+  "impactKeypose": {
+    "tool": "edit_image_pro_flash",
+    "sourceImageId": "ee1d9610-a2a9-57af-8f94-755efcda902b",
+    "jobId": "61c13669-ca53-49b3-92ed-dd91e9fcecf3",
+    "sourceResultImageId": "520d94f1-1783-5567-98bd-0ed2b3e8cbe5",
+    "seed": 202610332,
+    "description": "Change only the pose of this exact left-facing horn rabbit into the single impact pose of a horn thrust. Lower and bow the head about six pixels. The SAME long ivory horn now points almost horizontally LEFT, its tip safely near x3 y24. Fold hind legs deeply and stretch the front paws forward. Ears lean back toward upper right. Keep the same species, broad tan torso, cream chest, two ears, one horn, same seven flat colors. Preserve full transparent48x48 canvas; soles around y39 and all pixels inside2px margin. Body anatomy only and completely empty surrounding canvas. No circular or slash effects. The horn stays attached to the forehead. Do not change animal proportions or draw a new character."
+  },
+  "animationJobs": [
+    {
+      "actor": "great_horn_rabbit",
+      "motion": "Attack",
+      "part": "windup",
+      "request": {
+        "description": "A single deliberate horn thrust toward the left into the provided final lowered-head pose. First flex the hind knees slightly, then lower the head and turn the long attached horn toward the left while the front feet reach ahead. Keep the same broad body and sole baseline. Only body anatomy moves through the exact starting and ending poses.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/4473ba56-0d75-4b42-8217-662a2653f156/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/61c13669-ca53-49b3-92ed-dd91e9fcecf3/download?index=0",
+        "frame_count": 4,
+        "subject_description": "a broad tan rabbit with one long ivory forehead horn, two ears and cream chest",
+        "initial_pose": "standing in left-facing profile",
+        "view": "side",
+        "direction": "west",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 202610333
+      },
+      "response": "id: 5e35de86-eb42-40ab-8983-1027c580a3bd\njob_id: 5e35de86-eb42-40ab-8983-1027c580a3bd\ndescription: A single deliberate horn thrust toward the left into the provided final lowered-head pose. First flex the hind knees slightly, then lower the head and turn the long attached horn toward the left while the front feet reach ahead. Keep the same broad body and sole baseline. Only body anatomy moves through the exact starting and ending poses.\nframes: 4\nsize: 48x48px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 202610333\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"5e35de86-eb42-40ab-8983-1027c580a3bd\")\nasset_id: 3c9cd671-45d6-5e49-9c05-1bd1e35a7af5\nasset_status: pending (saved to your gallery when generation completes)"
+    },
+    {
+      "actor": "great_horn_rabbit",
+      "motion": "Attack",
+      "part": "recover",
+      "request": {
+        "description": "Recover from the provided lowered-head horn-thrust pose into the exact original standing rabbit pose. Draw the forefeet back, lift the head and horn, straighten the hind legs and settle on the same floor. One smooth recovery only, no new thrust. Only the connected animal body moves.",
+        "first_frame_url": "https://api.pixellab.ai/mcp/images/61c13669-ca53-49b3-92ed-dd91e9fcecf3/download?index=0",
+        "last_frame_url": "https://api.pixellab.ai/mcp/images/4473ba56-0d75-4b42-8217-662a2653f156/download?index=0",
+        "frame_count": 4,
+        "subject_description": "a broad tan rabbit with one long ivory forehead horn, two ears and cream chest",
+        "initial_pose": "crouched leftward horn-thrust pose",
+        "view": "side",
+        "direction": "west",
+        "no_background": true,
+        "enhance_prompt": false,
+        "seed": 202610334
+      },
+      "response": "id: 47ede5d6-c143-4eb1-bd47-32d12fe1ef98\njob_id: 47ede5d6-c143-4eb1-bd47-32d12fe1ef98\ndescription: Recover from the provided lowered-head horn-thrust pose into the exact original standing rabbit pose. Draw the forefeet back, lift the head and horn, straighten the hind legs and settle on the same floor. One smooth recovery only, no new thrust. Only the connected animal body moves.\nframes: 4\nsize: 48x48px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 202610334\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"47ede5d6-c143-4eb1-bd47-32d12fe1ef98\")\nasset_id: 75412c3d-2221-5abe-b391-a16166d22344\nasset_status: pending (saved to your gallery when generation completes)"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "id": "wild_dog",
+    "baseBounds": [
+      8,
+      39,
+      120,
+      108
+    ],
+    "pivot": {
+      "x": 64,
+      "y": 108
+    },
+    "height": 0.92,
+    "attackContactFrame": 9,
+    "attackDurationMs": 700,
+    "attackContactMs": 360,
+    "review": "All frames inspected: silhouette, left facing, consistent limbs, strike and recovery, no added death or idle loop."
+  },
+  {
+    "id": "grey_wolf",
+    "baseBounds": [
+      3,
+      35,
+      125,
+      110
+    ],
+    "pivot": {
+      "x": 64,
+      "y": 110
+    },
+    "height": 1.2,
+    "attackContactFrame": 8,
+    "attackDurationMs": 700,
+    "attackContactMs": 320,
+    "review": "All frames inspected: silhouette, left facing, consistent limbs, strike and recovery, no added death or idle loop."
+  },
+  {
+    "id": "brown_bear",
+    "baseBounds": [
+      7,
+      20,
+      122,
+      110
+    ],
+    "pivot": {
+      "x": 64,
+      "y": 110
+    },
+    "height": 1.85,
+    "attackContactFrame": 8,
+    "attackDurationMs": 700,
+    "attackContactMs": 320,
+    "review": "All frames inspected: silhouette, left facing, consistent limbs, strike and recovery, no added death or idle loop."
+  },
+  {
+    "id": "sewer_rat",
+    "baseBounds": [
+      4,
+      33,
+      119,
+      105
+    ],
+    "pivot": {
+      "x": 64,
+      "y": 105
+    },
+    "height": 0.8,
+    "attackContactFrame": 8,
+    "attackDurationMs": 700,
+    "attackContactMs": 320,
+    "review": "All frames inspected: silhouette, left facing, consistent limbs, strike and recovery, no added death or idle loop."
+  },
+  {
+    "id": "drowned_resident",
+    "baseBounds": [
+      5,
+      17,
+      99,
+      119
+    ],
+    "pivot": {
+      "x": 64,
+      "y": 119
+    },
+    "height": 1.6,
+    "attackContactFrame": 9,
+    "attackDurationMs": 700,
+    "attackContactMs": 360,
+    "review": "All frames inspected: silhouette, left facing, consistent limbs, strike and recovery, no added death or idle loop."
+  },
+  {
+    "id": "water_wraith",
+    "baseBounds": [
+      7,
+      7,
+      113,
+      123
+    ],
+    "pivot": {
+      "x": 64,
+      "y": 123
+    },
+    "height": 1.8,
+    "attackContactFrame": 7,
+    "attackDurationMs": 700,
+    "attackContactMs": 280,
+    "review": "All frames inspected: silhouette, left facing, consistent limbs, strike and recovery, no added death or idle loop."
+  }
+]

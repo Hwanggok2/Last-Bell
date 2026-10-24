@@ -1,0 +1,553 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>마지막 종지기 · 기존 스토리와 시작 장면 상세</title><style>
+@font-face{font-family:Nanum;src:url('../../Client/Assets/Game/Art/Fonts/NanumGothic-Regular.ttf');font-display:swap}
+:root{color-scheme:dark;--bg:#101923;--panel:#182735;--line:#354756;--ink:#ece4d5;--muted:#abb9c6;--gold:#e5be79;--mint:#a4d6c6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.9 Nanum,system-ui,sans-serif}a{color:var(--gold);text-underline-offset:4px}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--mint);outline-offset:5px}header,main,footer,.navigation{max-width:1120px;margin:auto;padding:24px}header{padding-top:54px}h1{font-size:clamp(34px,5.4vw,62px);line-height:1.25;letter-spacing:-1.5px;margin:17px 0 25px}h2{font-size:28px;line-height:1.5;margin:0 0 21px}h3{font-size:19px;line-height:1.6;margin:0 0 12px}p{margin:0 0 17px}.eyebrow{font-size:12px;letter-spacing:1.8px;color:var(--gold)}.lead{font-size:19px;max-width:820px}.muted,small,figcaption{color:var(--muted);font-size:13px}.notice{border-left:3px solid var(--mint);padding:12px 18px;background:#1a2c36}.navigation{display:flex;gap:22px;flex-wrap:wrap;border-block:1px solid var(--line);padding-block:16px}.navigation a{text-decoration:none}section{padding:38px 0;border-bottom:1px solid var(--line);scroll-margin-top:20px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card{padding:22px;background:var(--panel);border:1px solid var(--line);min-width:0}.card p:last-child{margin-bottom:0}.emphasis{font-size:21px;color:var(--gold);line-height:1.75}.synopsis{max-width:850px}.synopsis p{margin-bottom:24px}.synopsis p:first-child:first-letter{color:var(--gold);font-size:1.7em}.chapter-nav{display:flex;gap:9px;flex-wrap:wrap;margin:22px 0}.chapter-nav button{font:inherit;font-size:14px;min-height:48px;padding:10px 15px;border:1px solid #526271;background:#1c2e3c;color:var(--ink);cursor:pointer}.chapter-nav button[aria-pressed=true]{background:#41382a;border-color:var(--gold);color:#ffdda2}.chapter[hidden]{display:none}.chapter figure{margin:0 0 25px}.landscape{width:100%;height:auto;display:block;border:1px solid var(--line)}figcaption{margin-top:7px}.chapter-head{display:flex;justify-content:space-between;align-items:baseline;gap:15px}.chapter-head h3{font-size:25px}.emotion{font-size:14px;color:var(--mint);margin:22px 0}.dialogue{padding:18px 22px;background:#101d29;border-left:3px solid var(--gold)}.dialogue p{display:grid;grid-template-columns:112px 1fr;gap:18px;margin:0;padding:13px 0;border-bottom:1px solid var(--line)}.dialogue p:last-child{border:0}.dialogue b{font-size:13px;color:var(--gold)}.bestiary{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}.enemy{background:var(--panel);border:1px solid var(--line);min-width:0}.enemy summary{display:block;padding:14px;cursor:pointer}.enemy summary:after{content:'설정 펼치기 +';display:block;font-size:12px;color:var(--muted);margin-top:9px}.enemy[open] summary:after{content:'접기 −'}.enemy b{display:block;font-size:15px}.monster{width:100%;height:96px;display:block;margin-bottom:10px}.brief{padding:0 15px 14px;font-size:14px}.brief strong{color:var(--gold)}.brief small{overflow-wrap:anywhere}.minor{margin-top:28px}.scroll{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:14px;min-width:560px}td,th{padding:14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--gold)}td:first-child{min-width:110px}details{margin:18px 0}summary{cursor:pointer;color:var(--gold);padding:8px 0;min-height:44px}.bestiary details{margin:0}.logic{margin:0}.logic dt{color:var(--gold);font-weight:bold;margin:20px 0 7px}.logic dd{margin:0;color:var(--ink)}li{margin:9px 0}.ending{border-left:3px solid var(--gold);padding:4px 22px}.ending b{display:block;color:var(--gold)}.topline{display:flex;gap:14px;align-items:center;flex-wrap:wrap}.tag{border:1px solid #54675d;color:var(--mint);padding:3px 9px;font-size:12px}.old{color:var(--muted);font-size:14px}.new{color:var(--ink)}.labels{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.labels span{padding:6px 11px;background:#213241;font-size:13px}.scene-title{margin:28px 0 13px}footer{padding-block:35px 55px}footer a{margin-right:16px}@media(max-width:760px){header,main,footer,.navigation{padding-inline:18px}.grid{grid-template-columns:1fr}.bestiary{grid-template-columns:repeat(2,minmax(0,1fr))}.chapter-head{display:block}.dialogue p{grid-template-columns:80px 1fr;gap:12px}.card{padding:18px}h2{font-size:25px}.lead{font-size:17px}.chapter-nav button{flex:1 1 40%}section{padding-block:30px}.navigation{gap:16px}.synopsis p{margin-bottom:20px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{body{background:white;color:#111}.chapter[hidden]{display:block}.chapter-nav{display:none}.card,.dialogue,.notice{background:#f5f5f5;color:#111}h1{font-size:32px}section{break-inside:avoid}}
+</style></head><body><!-- dragon-v1:start --><aside id="latest-dragon-v1" style="padding:24px max(20px,calc((100% - 1240px)/2));background:#FFF1D1;color:#273D45;border-bottom:4px solid #315E4D;font:16px/1.7 'Malgun Gothic',sans-serif"><span style="font-size:13px;color:#315E4D">2026.10.25 · 최신 기획 · v0.9.6 · Unity 적용·표적 QA 완료 / 실행1~20</span><h2 style="margin:6px 0;font-size:27px;color:#273D45">용 잡으러 갑니다 — 최신 기획서</h2><p style="margin:0 0 16px;color:#273D45">스토리·캐릭터·스테이지 기획과 실제 게임 화면, 동료·회복력·도트 스킬 효과를 아래에서 확인하세요. 아래쪽 본문은 이전 제작 기록입니다.</p><div style="display:flex;gap:12px;flex-wrap:wrap"><a href="Dragon-v1/index.html" style="display:inline-block;padding:12px 20px;background:#315E4D;color:#FFF1D1;text-decoration:none;font-weight:bold">통합 기획서 열기 →</a><a href="Dragon-v1/Adventure-v6/index.html#skill" style="display:inline-block;padding:12px 20px;background:#315E4D;color:#FFF1D1;text-decoration:none;font-weight:bold">스킬·도트 이펙트</a><a href="Dragon-v1/Adventure-v6/index.html#companions" style="display:inline-block;padding:12px 20px;background:#315E4D;color:#FFF1D1;text-decoration:none;font-weight:bold">동료 스킬·강화</a></div></aside><!-- dragon-v1:end -->
+<header><div class="topline"><span class="eyebrow">LAST BELL · STORY · 2026.10.22</span><span class="tag">기존 서사 보강 · 게임 미적용</span></div><h1>종을 울리고,<br>꺼진 등불을 밝힌다.</h1>
+<p class="lead">꺼진 등불에 불씨를 나누고, 잠든 종을 울린다. 작은 종지기가 지나간 길을 따라 마을의 아침이 돌아온다.</p>
+<p class="lead">밤이 끝나지 않는 마을. 온은 성문 밖 등불에 남은 불씨를 이어 받아 종탑으로 향한다. 다섯 종을 깨우고 꺼진 등불을 밝히면 아침이 돌아온다고 믿는다. 종을 하나씩 울릴 때마다 길과 마을에 빛이 돌아오지만, 동시에 탑이 주민들의 시간을 빼앗아 왔다는 사실도 드러난다. 온은 마지막까지 종을 깨우는 일을 계속한다. 그 울림을 통해 빼앗긴 시간을 주민에게 돌려주기 위해서다.</p>
+<div class="notice">v1의 인물·사건·반전을 유지하고, 시작과 진행 과정을 자세히 서술했습니다.<br>정식 확장 서사는 50스테이지, 현재 프로토타입은 <b>10스테이지 종료 / 다시하기 1스테이지</b>입니다.</div><div class="labels"><span>마지막 불씨</span><span>다섯 종</span><span>이어지는 등불</span><span>돌아오는 아침</span></div></header>
+<nav class="navigation" aria-label="문서 목차"><a href="route-prologue-tutorial-v4.html">▶ 새 미리보기 열기</a><a href="#onboarding">프롤로그·동선·튜토리얼</a><a href="#opening">게임의 시작</a><a href="#synopsis">전체 이야기</a><a href="#chapters">다섯 전장과 대사</a><a href="#people">기존 인물</a><a href="#ending">마지막 종</a><a href="#prototype">10스테이지 범위</a></nav><main>
+<section id="onboarding"><div class="eyebrow">NEW REVIEW · 2026.10.22</div><h2>성문 밖에서 안쪽으로,<br>한 방향으로 이어지는 여정.</h2><p class="notice"><a href="route-prologue-tutorial-v4.html"><b>프롤로그 · 스테이지 동선 · 5스테이지 안내 미리보기 열기 →</b></a><br>프롤로그 재생, 9 → 10 성문 등장, 중앙 안내 패널에서 확인 후 전투 재개를 확인할 수 있습니다.</p>
+<div class="scroll"><table><thead><tr><th scope="col">구간</th><th scope="col">공간과 진행</th></tr></thead><tbody><tr><td>1–9</td><td>성문으로 가는 외곽 길. 성문 자체는 보이지 않고 돌길·초소·검문소를 지나간다.</td></tr><tr><td>10</td><td>9 → 10 이동 때 바닥 위 성문이 오른쪽에서 등장한다. 가디언 처치 → 첫 종 → 등불 점등 → 성문 개방. 현재 프로토타입은 여기서 결과 화면.</td></tr><tr><td>11 · 확장</td><td>문을 통과한 직후. 성문의 안쪽 면이 왼쪽에 보이고 오른쪽으로 주거구가 이어진다.</td></tr><tr><td>12 이후 · 확장</td><td>성문이 왼쪽 화면 밖으로 사라진다. 집·문패·배수로·사슬이 주거구의 배경을 이룬다.</td></tr></tbody></table></div>
+<h3 class="scene-title">프롤로그 · 마지막 불씨</h3>
+<p class="">새 저장의 첫 게임 시작에 한 번 자동 재생한다. 끝까지 읽거나 건너뛰면 prologueSeen을 저장하고 Stage 1로 들어간다. 사망 후 다시하기와 로비 재출전에는 반복하지 않는다. 다시 보기는 별도 제공한다.</p>
+<div class="dialogue">
+<p><b>01</b><span>그 마을의 아침은<br>종소리와 함께 찾아왔다.</span></p>
+<p><b>02</b><span>종이 울리면 등불이 켜지고,<br>사람들은 하루를 시작했다.</span></p>
+<p><b>03</b><span>그러나 마지막 종소리가 멎은 밤,<br>아침은 돌아오지 않았다.</span></p>
+<p><b>04</b><span>사람들은 어둠 속에 잠들고,<br>등불은 하나씩 빛을 잃었다.</span></p>
+<p><b>05</b><span>성문 밖,<br>아직 꺼지지 않은 등불 하나.</span></p>
+<p><b>06</b><span>작은 종지기는<br>그 안에 남은 불씨를 이어 받았다.</span></p>
+<p><b>07</b><span>꺼진 등불을 밝히고,<br>잠든 다섯 종을 깨우기 위해.</span></p>
+<p><b>08</b><span>마지막 종이 울릴 때,<br>이 마을에 다시 아침이 오도록.</span></p>
+</div>
+<p class="muted minor">28초 동안 아래에서 위로 자동 스크롤합니다. 일시정지·건너뛰기를 제공하고, 움직임 줄이기에서는 정지 문단으로 읽습니다. 전투 시계는 프롤로그 종료 후 시작합니다.</p>
+<h3 class="scene-title">5스테이지 최초 도달 · 중앙 안내 패널</h3>
+<p class="">현재 저장에서 최초 Stage 5 도착, 적 배치 후 첫 공격 예고 직전.</p>
+<div class="card" style="max-width:500px;margin:24px auto;text-align:center"><h3>연속 공격</h3><p class="emphasis">적들은 가끔 연속 공격을 합니다.<br>종의 개수를 살피세요!</p><p style="display:inline-block;min-width:160px;padding:10px 20px;background:#655032;border:1px solid #edc57f">확인</p></div>
+<div class="scroll"><table><thead><tr><th scope="col">단계</th><th scope="col">플레이어 경험</th></tr></thead><tbody><tr><td>1. 안내</td><td>화면 중앙 패널: “적들은 가끔 연속 공격을 합니다. 종의 개수를 살피세요!”</td></tr><tr><td>2. 확인</td><td>확인을 누르면 패널을 닫고 즉시 Stage 5 일반 전투를 시작한다.</td></tr></tbody></table></div>
+<div class="grid"><article class="card"><h3>확인 한 번으로 완료</h3>
+<p class="">확인 버튼 한 번이 완료 조건이다. 종 개수 문제, 자동 시연, 의무 회피 연습, 두 타 성공 판정은 없다.</p>
+<p class="">패널이 떠 있는 동안 적 AI·예고·파동·전투 시계·쿨타임·피해 판정을 멈춘다. 방향키와 공격 입력도 받지 않는다.</p>
+</article><article class="card"><h3>즉시 일반 전투</h3>
+<p class="">확인 즉시 패널을 닫고 정상 전투의 첫 예고부터 시작한다. 별도 시작/계속 버튼 없이 단발과 연속 공격이 기존 전투 규칙으로 진행된다. HP·적 HP·재화는 안내 전 그대로다.</p>
+<p class="">확인 전에 종료하면 완료를 기록하지 않는다. 이후 처음 Stage 5에 도달했을 때 다시 안내한다. 확인한 저장은 재도전에서 다시 표시하지 않는다.</p>
+</article></div>
+<p class="minor">1~4의 단발 네 방향 배치는 유지한다. 5 이후에는 단발과 연속 공격을 섞어 만난다. 세부 출현 비율은 이후 전투 밸런스에서 확정한다.</p>
+<details><summary>유지하는 박자와 표시 조건</summary>
+<p class="">전투 박자는 유지한다. 예고당 0/240/480ms, 단발은 720ms 타격. 2연타 예시는 하단 0/240/480 → 상단 720/960/1200 → 타격 1440/1920ms. 모든 예고 후 순서대로 공격.</p>
+<p class="">comboHintSeen (저장 단위). 확인을 누르는 시점에 true로 기록한다. 캐릭터별로 반복하지 않는다.</p>
+<p class="">미리보기는 확인 후 2연타와 단발 흐름을 번갈아 보여준다. 실제 HP·보상·게임 저장에는 접근하지 않는다. 실패해도 패널이 다시 뜨거나 연습으로 돌아가지 않는다.</p>
+</details><h3 class="scene-title">현재 게임 도트 스타일로 리디자인</h3>
+<p class="">현재 게임의 짙은 남색 외곽과 크림색·금색 면을 기준으로 큰 도트 덩어리를 사용한다. 무기·체형·종·문패·열쇠 등 기존 10종 콘셉트를 유지하고 잔장식과 금속 질감을 줄인다.</p>
+<ul><li>기본 그림 셀은 현행 128×128을 기준으로 검토한다. 온 84px, 기존 적 86~94px의 불투명 본체 높이와 Point 필터링을 참고한다.</li><li>짙은 남색·크림색·금색을 주색으로 두고 그림자는 한 단계로 정리한다. 면 안의 작은 반짝임과 표면 흠집은 생략한다.</li><li>한 적마다 무기 하나와 몸의 큰 형태만으로 역할이 읽혀야 한다. 사슬은 굵은 고리, 문패와 열쇠는 2~4개의 큰 기호로 줄인다.</li><li>몸통·무기·팔·다리를 명확히 나누고 준비 자세에서 공격 높이가 달라져야 한다. 기존 캐릭터의 발 기준점과 그림 크기는 제작 중 유지한다.</li><li>이번 리디자인은 Planning/Story/Concepts에만 저장한다. Unity Sprite·프리팹·아트 카탈로그는 교체하지 않는다.</li></ul>
+<figure style="margin:20px 0"><a href="Concepts/gate-road-v4-game-style.png"><img class="landscape" src="Concepts/gate-road-v4-game-style.png" alt="1–5: 빗장 초병 · 종추 사냥개 · 금 간 검기사 · 검문쇠 거인 · 성문 가디언" loading="lazy"></a><figcaption>1–5: 빗장 초병 · 종추 사냥개 · 금 간 검기사 · 검문쇠 거인 · 성문 가디언 · 번호는 디자인 번호입니다.</figcaption></figure>
+<figure style="margin:20px 0"><a href="Concepts/chain-quarter-v4-game-style.png"><img class="landscape" src="Concepts/chain-quarter-v4-game-style.png" alt="6–10: 문패 꼭두각시 · 배수로 갈고리개 · 사슬 무희 · 수문 추지기 · 매달린 집행관" loading="lazy"></a><figcaption>6–10: 문패 꼭두각시 · 배수로 갈고리개 · 사슬 무희 · 수문 추지기 · 매달린 집행관 · 번호는 디자인 번호입니다.</figcaption></figure>
+<p class="muted">기존 게임 그림을 참조한 리디자인 콘셉트 시트. 완성 스프라이트·프레임 애니메이션은 아니다. 도트 정리와 팔레트 통일, 분리·리깅은 제작 단계에서 진행한다.</p>
+<p><a href="route-prologue-tutorial-v4.html#monsters">10종의 외형·공격 준비·처치 연출 상세 보기</a> · <a href="Concepts/generation-v4.json">이미지 생성 프롬프트</a></p></section>
+<section id="revision"><div class="eyebrow">CORE JOURNEY</div><h2>플레이어가 하는 일과<br>이야기가 향하는 곳은 같다.</h2>
+<p class="emphasis">불씨를 들고 어두운 길을 지난다 → 길을 막는 수호자를 쓰러뜨린다 → 봉인된 종을 깨워 울린다 → 등불이 켜지고 다음 길이 드러난다.</p>
+<p class="">초반에는 길을 밝히는 일이었다. 후반에는 등불 하나하나가 시간을 돌려받을 사람의 집과 연결돼 있음을 안다. 행동은 같고, 그 행동의 의미가 깊어진다.</p>
+<div class="grid"><article class="card"><h3>종 · 구역의 봉인을 푼다</h3>
+<p class="">구역의 큰 종은 빛과 시간의 흐름을 다시 여는 중심이다. 10단위 보스를 쓰러뜨린 뒤 종을 울리는 장면으로 그 구역을 마무리한다.</p>
+</article><article class="card"><h3>등불 · 되찾은 길을 남긴다</h3>
+<p class="">등불은 플레이어가 되찾은 길의 흔적이다. 전장 곳곳에서 빛이 돌아오는 작은 변화를 보여주고, 구역의 종이 울릴 때 주변 등불들이 이어서 켜진다.</p>
+</article></div>
+<p class="minor">플레이어가 밝혀온 등불은 실제로 마을을 되살리는 과정이다. 반전 뒤에 그 행동이 주민을 해친 일이었다고 뒤집지 않는다.</p>
+<details><summary>기존 이야기에서 유지한 것과 다듬은 표현</summary>
+<p class="muted">v1의 인물·사건·반전을 유지하고 시작 장면과 종·등불의 연결을 보강한다. 이번에는 성문 밖→주거구 동선, 자동 스크롤 프롤로그, 최초 Stage 5 중앙 안내 패널, 1~20 적 외형과 배치를 구체화한다. 스승과 제자 관계, 왕녀의 장례, 스승 한 사람을 돌려받는 거래는 채택하지 않는다.</p>
+<ul><li>끝나지 않는 밤과 주민의 시간을 품은 종탑</li><li>등불에서 이어 받은 불씨를 들고 다섯 종을 깨우는 여정</li><li>10스테이지마다 달라지는 기존 다섯 전장</li><li>시왕의 상실에 대한 두려움과 시간 징수</li><li>배신자로 기록된 잿빛 성기사가 징수를 끊었다는 반전</li><li>불씨가 돌려줄 시간의 첫 조각이라는 사실</li><li>마지막에 시간을 돌려주어 아침을 되찾는 결말</li><li>다섯 전장·25종 적·50스테이지 구조와 네 방향 대응 규칙. 1~20 배치는 이번 동선·학습 순서에 맞춰 조정.</li></ul>
+<div class="scroll"><table><thead><tr><th scope="col">기존 표현</th><th scope="col">더 분명하게 정리한 내용</th></tr></thead><tbody><tr><td>불씨를 들고 종탑에 들어선다.</td><td>첫 화면에서 등불·손안의 불씨·멀리 보이는 종을 연결해 플레이어가 향할 곳을 보여준다.</td></tr><tr><td>종을 깨우면 아침이 돌아온다.</td><td>봉인을 풀고 종을 울리면 가까운 등불부터 켜진다. 마지막에는 그 불빛이 마을 전체로 이어진다.</td></tr><tr><td>탑의 비밀을 알아낸다.</td><td>문 안쪽의 빗장, 집 이름이 붙은 사슬, 움직이는 톱니를 먼저 보고 보스의 짧은 말로 의미를 확인한다.</td></tr><tr><td>마지막 종을 울리는 대신 시간을 돌려준다.</td><td>마지막 종을 울려 시간을 돌려준다. 종을 울리는 핵심 행동과 구원의 결말이 끝까지 같은 방향을 향하도록 표현을 바로잡는다.</td></tr></tbody></table></div>
+</details></section>
+<section id="opening"><div class="eyebrow">HOW THE GAME BEGINS</div><h2>성문 밖, 아직 꺼지지 않은 등불 하나.</h2><div class="synopsis">
+<p class="">처음 게임을 시작하면 먹빛 화면 위로 프롤로그 글이 천천히 올라간다. 종과 등불로 아침을 맞던 마을, 끝나지 않는 밤, 성문 밖에 남은 불씨를 차례로 이야기한다. 글을 마치거나 건너뛰면 온이 불씨를 든 성문 밖 길로 이어진다.</p>
+<p class="">온의 손에는 성문 밖 등불에서 이어 받은 작은 불씨가 있다. 주변은 짙은 푸른색인데 손안의 불씨만 따뜻한 금빛이다. 이 불씨가 누구의 것인지 설명하는 회상이나 긴 독백은 넣지 않는다. 화면만으로 지금 남아 있는 빛이 얼마 되지 않는다는 사실을 알 수 있게 한다.</p>
+<p class="">온이 성문 쪽으로 나아가면 앞을 지키던 빈 갑옷이 움직인다. 몸보다 큰 무기가 길을 막고, 금빛 공격 범위가 나타난다. 여기서 기존의 회피·공격 튜토리얼이 시작된다. 플레이어는 위험 범위를 읽고 첫 공격을 피한 뒤, 열린 틈에 자신의 첫 공격을 한다.</p>
+<p class="">적이 무너지면 갑옷 안에서 작은 빛이 빠져나온다. 그 빛이 길가의 꺼진 등불로 옮겨가고, 등불 아래 돌길과 다음 문이 드러난다. 온이 이동한 뒤에도 방금 켠 등불은 뒤에 남아 있다. 승리했다는 사실을 숫자뿐 아니라 장면의 변화로 느끼게 한다.</p>
+<p class="">1~9스테이지는 성문으로 가는 외곽 길이다. 5에서 잠시 멈춰 종 개수 안내 패널을 보여주고 확인하면 바로 전투를 잇는다. 9에서 10으로 이동할 때 성문이 지면 위에 등장하고, 10의 가디언을 쓰러뜨려 첫 종을 울린다. 11은 열린 성문이 왼쪽에 보이며, 12부터 문이 화면 밖으로 사라지고 주거구가 이어진다.</p>
+</div>
+<div class="scroll"><table><thead><tr><th scope="col">순서</th><th scope="col">플레이어가 보는 장면</th><th scope="col">자연스럽게 알게 되는 것</th></tr></thead><tbody><tr><td>프롤로그</td><td>새 저장의 첫 시작에 글이 아래에서 위로 자동 이동한다. 멈추기·건너뛰기 가능.</td><td>종과 등불을 깨워 마을의 아침을 되찾아야 한다.</td></tr><tr><td>첫 화면</td><td>온·손안의 불씨·꺼진 등불·오른쪽으로 이어지는 외곽 길을 보여준다. 성문은 10 진입 때 등장한다.</td><td>불씨를 가지고 저 종까지 가야 한다.</td></tr><tr><td>첫 공격 예고</td><td>기존 금빛 범위와 파동으로 회피 타이밍을 보여준다.</td><td>길을 막는 수호자를 상대해야 한다.</td></tr><tr><td>첫 회피와 공격</td><td>기존 튜토리얼 순서를 그대로 사용한다.</td><td>살아남고, 빈틈에 공격하는 법을 익힌다.</td></tr><tr><td>첫 승리</td><td>적에게 붙잡혀 있던 빛이 풀려 가까운 등불 하나를 켠다.</td><td>싸움에서 이기면 이 길이 밝아진다.</td></tr><tr><td>구간 진행</td><td>전투와 자동 이동 중 꺼진 등불, 생활 흔적, 봉인을 보여준다.</td><td>사람들이 떠난 것이 아니라 무언가에 붙잡혀 있다.</td></tr><tr><td>5스테이지 첫 도달</td><td>화면 중앙 패널에 “적들은 가끔 연속 공격을 합니다. 종의 개수를 살피세요!”를 표시한다. 확인하면 바로 일반 전투를 잇는다.</td><td>종의 개수는 다음 공격 묶음의 횟수다.</td></tr><tr><td>첫 큰 종</td><td>10스테이지 보스 처치 뒤 봉인이 풀리고 종이 울리며 거리의 등불이 이어진다.</td><td>처음 보였던 목표를 이루었다. 다음 종도 깨울 수 있다.</td></tr></tbody></table></div>
+<p class="muted minor">새 저장 첫 시작에 28초 자동 세로 스크롤 프롤로그. 일시정지·건너뛰기 가능. 종료 후 Stage 1 전투시작.</p>
+</section>
+<section id="synopsis"><div class="eyebrow">FULL STORY · 기존 반전과 결말 포함</div><h2>불씨 하나가 마을의 아침으로 이어지기까지</h2><div class="synopsis">
+<p class="">마을의 아침은 종소리와 함께 시작되었다. 그러나 어느 날부터 종이 멎고 밤이 끝나지 않는다. 창문의 불빛이 하나씩 사라지고, 사람들도 움직임을 멈춘다. 거리에는 미처 거두지 못한 빨래와 비어 있는 식탁, 문 앞의 작은 신발만 남아 있다. 누구도 마을을 버리고 떠난 것처럼 보이지 않는다. 하던 일을 잠시 멈춘 것처럼, 모든 것이 그대로다.</p>
+<p class="">성문 밖에는 아직 꺼지지 않은 등불 하나가 있다. 작은 종지기 온은 그 등불에서 불씨를 이어 받는다. 온이 아는 것은 단순하다. 탑의 다섯 종을 깨워야 하고, 길의 등불을 다시 밝혀야 한다는 것. 불씨를 누가 남겼는지, 사람들이 왜 잠들었는지는 아직 모른다. 온은 손안의 빛을 가린 채 닫힌 성문을 향해 걸어간다.</p>
+<p class="">첫 거리에서 온을 막는 것은 주민들이 아니라 비어 있는 갑옷과 오래된 경비 장치다. 그것들을 쓰러뜨리면 틈에 붙잡혀 있던 작은 빛이 풀려난다. 가까운 등불에 빛이 닿자 처음으로 길의 색이 보인다. 온이 지나온 자리에 불이 남는다. 플레이어는 여기서 전투의 목적을 경험한다. 어둠 속의 적을 이기는 만큼, 앞으로 나아갈 길이 밝아진다.</p>
+<p class="">성문 끝에서 종의 기사를 쓰러뜨리면 첫 번째 종의 봉인이 풀린다. 온이 종을 울리자 거리의 등불들이 차례로 켜지고, 문을 막던 빗장이 내려간다. 그런데 빗장은 바깥의 적을 막는 방향이 아니다. 주민들이 안에서 나가지 못하게 잠겨 있었다. 온은 처음으로 의심한다. 이 탑은 정말 마을을 지키고 있었던 것일까.</p>
+<p class="">문 너머의 사슬 주거구에는 집집마다 위로 이어진 사슬이 걸려 있다. 고리에 붙은 이름과 번호는 조금 전 지나온 거리의 문패와 같다. 매달린 집행관을 쓰러뜨리고 두 번째 종을 울리자, 사슬을 타고 위로 향하던 빛이 아래로 흐른다. 물에 비친 창문에 불이 켜지고 시곗바늘이 한 칸 움직인다. 주민들은 사라진 것이 아니다. 그들에게 돌아가야 할 시간이 탑 안에 묶여 있었다.</p>
+<p class="">시계 공방에 도착한 온은 탑이 고장 나지 않았다는 사실을 알게 된다. 톱니는 정확하게 맞물리고, 장치는 지금도 자기 일을 하고 있다. 시간을 돌려주지 말라는 명령이 계속 유지되고 있었을 뿐이다. 시왕은 소중한 것을 잃는 일이 두려워 하루를 붙잡았고, 그 하루를 끝없이 연장했다. 마을을 지킨다는 명분은 어느새 마을 사람들의 내일을 빼앗는 일이 되었다.</p>
+<p class="">온은 세 번째 종을 깨워 공방의 봉인을 푼다. 공방에 빛이 돌아오면서 종을 울리는 일의 의미도 분명해진다. 예전의 징수 장치를 다시 돌리려는 것이 아니다. 붙잡힌 시간을 밖으로 돌려보낼 길을 하나씩 열고 있는 것이다. 지금까지 밝혀온 등불은 그 길이 실제로 이어지고 있다는 증거다.</p>
+<p class="">재가 내리는 성당에는 종추를 부순 배신자, 잿빛 성기사가 남아 있다. 온은 부서진 종과 장비에서 성문 밖 등불과 같은 문장을 발견한다. 성기사를 쓰러뜨리고 봉인된 목소리가 돌아오자, 그가 종추를 부순 이유가 밝혀진다. 더는 주민의 시간을 빼앗지 못하게 하려던 것이다. 징수는 끊었지만 이미 빼앗긴 시간을 돌려주지는 못했고, 그는 자신의 귀환을 위한 불씨까지 밖에 남긴 채 탑에 갇혔다.</p>
+<p class="">처음부터 온의 손에 있던 불씨는 그가 남긴 것이었다. 새로운 종을 위해 태워야 할 연료가 아니라, 주인에게 돌려줄 시간의 첫 조각이었다. 네 번째 종이 울리자 하얀 재 사이로 등불의 빛이 번지고, 마지막 종루로 이어지는 길이 열린다. 온은 누군가가 시작했지만 끝내지 못한 일을 이어가고 있음을 알게 된다.</p>
+<p class="">마지막 종루에서는 지나온 마을 전체가 내려다보인다. 아직 어두운 집들 사이로 온이 밝혀온 등불들이 길게 이어져 있다. 빈 종 속에서는 많은 목소리가 하나의 명령처럼 겹쳐 들린다. 그러나 이제 온은 그 소리가 누구의 것인지 안다. 각각의 집으로 돌아가야 할 사람들의 시간과 기억이다.</p>
+<p class="">마지막 수호 명령을 깨뜨린 온은 모인 빛과 처음의 불씨를 종에 돌려놓는다. 그리고 마지막 종을 울린다. 울림은 아래로 퍼져, 지나온 네 구역의 종과 등불에 차례로 닿는다. 빛은 탑 안으로 빨려들지 않고 집집마다 내려간다. 멈춰 있던 시계가 움직이고, 잠들었던 사람들이 눈을 뜬다. 푸른 밤이 옅어지며 마을에 아침이 돌아온다.</p>
+<p class="">온의 여정은 시작부터 끝까지 같은 일을 향한다. 불씨를 지키고, 종을 깨우고, 등불을 밝히는 일이다. 달라진 것은 온이 그 의미를 알게 되었다는 점이다. 처음에는 아침을 부르기 위해 종을 울렸고, 마지막에는 그 아침을 기다리는 사람들에게 시간을 돌려주기 위해 종을 울린다.</p>
+</div></section>
+<section id="chapters"><div class="eyebrow">FIVE CHAPTERS</div><h2>같은 불씨를 들고,<br>다섯 전장을 밝힌다.</h2>
+<p class="muted">기존 다섯 전장과 25종 구조를 유지하며, 1~20의 이동 경로·외형·조우를 구체화했습니다. 아래 작은 도형 아이콘은 이전 설정 참고용이며 새 외형은 위의 콘셉트 시트에서 확인합니다.</p>
+<div class="chapter-nav" aria-label="전장 선택">
+<button type="button" data-zone="gate" aria-pressed="true" aria-controls="chapter-gate">1–10 · 닫힌 성문 거리</button>
+<button type="button" data-zone="chain" aria-pressed="false" aria-controls="chapter-chain">11–20 · 물에 잠긴 사슬 주거구</button>
+<button type="button" data-zone="clock" aria-pressed="false" aria-controls="chapter-clock">21–30 · 멈춘 시계 공방</button>
+<button type="button" data-zone="ash" aria-pressed="false" aria-controls="chapter-ash">31–40 · 재가 내리는 파종 성당</button>
+<button type="button" data-zone="dawn" aria-pressed="false" aria-controls="chapter-dawn">41–50 · 새벽이 고인 빈 종루</button>
+<button type="button" data-zone="all" aria-pressed="false">전체 보기</button></div>
+<article class="chapter" id="chapter-gate" aria-labelledby="title-gate" >
+<div class="chapter-head"><h3 id="title-gate">닫힌 성문 거리</h3><span class="eyebrow">STAGE 1—10</span></div>
+<p class="lead">작은 불빛이 이어져, 닫힌 성문을 연다.</p>
+<figure><img class="landscape" src="zone-gate.svg" width="960" height="320" alt="닫힌 성문 거리 기존 전장 구도"><figcaption>기존 전장 구도와 팔레트 유지 · 최종 게임 배경이 아닌 구도 시안</figcaption></figure>
+<p class="emotion">막막함 → 첫 성공 → 탑에 대한 의문</p>
+<div class="grid"><div class="card"><h3>목표와 사건</h3>
+<p class="">바깥의 재앙 때문에 문이 닫혔다고 믿는다.</p>
+<p class="">성문은 외부의 적을 막은 것이 아니라 주민을 탑의 시간 징수 안에 가둔 첫 봉인이었다.</p>
+</div><div class="card"><h3>말보다 먼저 보여줄 것</h3>
+<p class="">초소와 외곽 길의 경비 장치들은 마을 방향을 지킨다. 10 보스 처치 뒤 성문 안쪽의 빗장이 드러나고, 열린 문을 통해 주거구로 들어간다.</p>
+<p class="">10 보스 붕괴 때 빗장이 안쪽으로 떨어지고, 불씨 한 줄기가 탑 위가 아닌 마을 쪽으로 내려간다. 온이 첫 종을 울리면 거리의 등불이 차례로 켜진다. 온은 밝아진 길을 보고 다음 종을 향한다.</p>
+</div></div>
+<p class="minor">온이 첫 종을 울리면 거리의 등불이 차례로 켜진다. 온은 밝아진 길을 보고 다음 종을 향한다.</p>
+<h3 class="scene-title">보스 뒤 3줄</h3><div class="dialogue">
+<p><b>종의 기사</b><span>“적은 문밖에 없었다.”</span></p>
+<p><b>종의 기사</b><span>“이 빗장은 안에서 잠겼지.”</span></p>
+<p><b>온</b><span>“그럼 우리가 갇혀 있었던 거야?”</span></p>
+</div>
+<p class="muted minor">기사는 마을을 지킨다고 믿으며 주민을 가두었다. 패배 뒤 빗장을 바라본다.</p>
+<details><summary>담·린을 선택했을 때의 응답</summary>
+<div class="scroll"><table><thead><tr><th scope="col">선택 주인공</th><th scope="col">바뀌는 마지막 한 줄</th></tr></thead><tbody><tr><td>담</td><td>이 문은 사람들을 막고 있었군.</td></tr><tr><td>린</td><td>문 안에서 사람 목소리가 들려.</td></tr></tbody></table></div>
+</details><h3 class="scene-title">몬스터와 이야기의 연결</h3><div class="bestiary">
+<details class="enemy"><summary>
+<svg class="monster" viewBox="0 0 112 106" aria-hidden="true" style="color:#70879a;--accent:#203d5d"><g fill="currentColor"><path d="M45 30h24v36H45zM43 65h12v33H43zM62 65h11v33H62zM23 46h23v9H23zM72 42h25v9H72zM90 2h5v91h-5zM85 14l7-14 9 14z"/><rect x="47" y="10" width="20" height="19"/></g></svg>
+<small>일반</small><b>빗장 초병</b></summary><div class="brief">
+<p class="">성문 잠금 명령이 빈 갑옷을 움직인다.</p>
+<strong>처치 뒤 남는 것</strong>
+<p class="">무릎이 접히고 창이 바닥에 떨어진 뒤 열쇠 쪽에서 빛이 풀림.</p>
+<strong>기존 준비 자세 유지</strong>
+<p class="">창끝보다 긴 자루를 먼저 읽게 한다. 낮은 쓸기·몸통 찌르기·뒤로 도는 갈고리의 준비 높이를 구분.</p>
+<p class="muted">위 회피 · 점프 / 오른쪽 회피 · 전진 / 왼쪽 회피 · 후퇴</p>
+<small>gate_sentry</small></div></details>
+<details class="enemy"><summary>
+<svg class="monster" viewBox="0 0 112 106" aria-hidden="true" style="color:#70879a;--accent:#203d5d"><g fill="currentColor"><path d="M16 54l10-19h46l14 8 13-6v24H82l-8 13H37l-11-7-9 30H7l8-43M38 69l8 29H34l-9-30M73 67l14 29H73L60 69M70 41l8-21 10 22z"/></g></svg>
+<small>일반</small><b>종추 사냥개</b></summary><div class="brief">
+<p class="">버려진 종추와 경비 사슬이 결합한 추적 장치.</p>
+<strong>처치 뒤 남는 것</strong>
+<p class="">몸통의 종추와 다리가 분리되고 발치의 빛이 가까운 등불로 흐름.</p>
+<strong>기존 준비 자세 유지</strong>
+<p class="">낮게 웅크리는 동작과 몸통을 앞으로 겨누는 동작을 크게 구분. 성문의 큰 사슬과 혼동되지 않는 길이.</p>
+<p class="muted">왼쪽 회피 · 후퇴 / 위 회피 · 점프</p>
+<small>bell_hound</small></div></details>
+<details class="enemy"><summary>
+<svg class="monster" viewBox="0 0 112 106" aria-hidden="true" style="color:#70879a;--accent:#203d5d"><g fill="currentColor"><path d="M45 30h27l5 42H38zM40 69h12v29H40zM63 69h12v29H63zM23 44h22v10H23zM21 3h7v57h-7zM14 52h21v6H14zM69 40l20 15-7 8-20-13z"/><rect x="46" y="10" width="22" height="19"/></g></svg>
+<small>일반</small><b>금 간 검기사</b></summary><div class="brief">
+<p class="">보호 서약이 남은 훈련 갑옷. 주민이 들어 있지 않다.</p>
+<strong>처치 뒤 남는 것</strong>
+<p class="">투구 속 빈 공간을 보여주며 금 간 갑옷이 열림.</p>
+<strong>기존 준비 자세 유지</strong>
+<p class="">검을 높이 세우는 상단, 가슴 앞 찌르기, 발목 높이 쓸기를 서로 다른 자세로 준비.</p>
+<p class="muted">아래 회피 ↓/S · 제자리 검 쳐내기 / 왼쪽 회피 · 후퇴 / 위 회피 · 점프</p>
+<small>cracked_blade</small></div></details>
+<details class="enemy"><summary>
+<svg class="monster" viewBox="0 0 112 106" aria-hidden="true" style="color:#70879a;--accent:#203d5d"><g fill="currentColor"><path d="M26 24h58v51H26zM10 31h15v44H10zM85 31h15v44H85zM29 74h20v26H29zM61 74h20v26H61zM35 5h38v18H35z"/><path d="M35 34h40v30H35z" fill="none" stroke="var(--accent)"/></g></svg>
+<small>중간 보스</small><b>검문쇠 거인</b></summary><div class="brief">
+<p class="">성문으로 가는 중간 검문소의 이동식 빗장과 바리케이드에 경비 명령이 남아 움직인다. 진짜 성문은 이보다 더 안쪽에 있다.</p>
+<strong>처치 뒤 남는 것</strong>
+<p class="">가로 빗장이 풀리고 검문선만 열린다. 성문까지의 길은 계속된다.</p>
+<strong>기존 준비 자세 유지</strong>
+<p class="">Stage 5에서 첫 팔은 발목을 쓸고 다음 팔은 위에서 내려친다. 두 팔의 형태·높이가 다르다. 성문 자체처럼 보이는 완성 아치는 금지.</p>
+<p class="muted">위 회피 · 점프 / 아래 회피 ↓/S · 제자리 검 쳐내기</p>
+<small>gate_lock</small></div></details>
+<details class="enemy"><summary>
+<svg class="monster" viewBox="0 0 112 106" aria-hidden="true" style="color:#70879a;--accent:#203d5d"><g fill="currentColor"><path d="M39 30h36l10 47-10 23H40L28 76zM39 5h28v24H39zM32 40H10v32l11 11 15-12zM80 9h6v82h-6zM74 18l10-18 10 18z"/></g></svg>
+<small>보스</small><b>종의 기사 · 성문 가디언</b></summary><div class="brief">
+<p class="">명령을 어길 수 없는 성문 수호자의 기억.</p>
+<strong>처치 뒤 남는 것</strong>
+<p class="">방패의 걸쇠가 깨져 성문 봉인이 함께 풀림. 종을 울린 뒤 안쪽 빗장과 열린 길을 보임.</p>
+<strong>기존 준비 자세 유지</strong>
+<p class="">검문쇠 거인보다 높은 세로 덩어리. 찌르기·후방 원호·상단의 준비 자세를 큰 무기로 표시. 문과 몸이 겹치지 않게 배치.</p>
+<p class="muted">왼쪽 회피 · 후퇴 / 오른쪽 회피 · 전진 / 아래 회피 ↓/S · 제자리 검 쳐내기</p>
+<small>bell_knight</small></div></details>
+</div><details><summary>10개 조우 배치 확인</summary>
+<div class="scroll"><table><thead><tr><th scope="col">스테이지</th><th scope="col">조우</th><th scope="col">유형</th></tr></thead><tbody><tr><td>1</td><td>등불의 길</td><td>일반</td></tr><tr><td>2</td><td>바깥 돌길</td><td>일반</td></tr><tr><td>3</td><td>무너진 초소</td><td>일반</td></tr><tr><td>4</td><td>경비 순찰로</td><td>일반</td></tr><tr><td>5</td><td>중간 검문소</td><td>중간 보스</td></tr><tr><td>6</td><td>성벽 바깥길</td><td>일반</td></tr><tr><td>7</td><td>성문 대교 앞</td><td>일반</td></tr><tr><td>8</td><td>성문 광장 접근</td><td>일반</td></tr><tr><td>9</td><td>마지막 검문선</td><td>일반</td></tr><tr><td>10</td><td>성문 가디언</td><td>보스</td></tr></tbody></table></div>
+</details></article>
+<article class="chapter" id="chapter-chain" aria-labelledby="title-chain" hidden>
+<div class="chapter-head"><h3 id="title-chain">물에 잠긴 사슬 주거구</h3><span class="eyebrow">STAGE 11—20</span></div>
+<p class="lead">사슬에 묶인 시간을, 집 쪽으로 흘려보낸다.</p>
+<figure><img class="landscape" src="zone-chain.svg" width="960" height="320" alt="물에 잠긴 사슬 주거구 기존 전장 구도"><figcaption>기존 전장 구도와 팔레트 유지 · 최종 게임 배경이 아닌 구도 시안</figcaption></figure>
+<p class="emotion">불안 → 주민이 남아 있다는 안도 → 반환의 가능성</p>
+<div class="grid"><div class="card"><h3>목표와 사건</h3>
+<p class="">사슬이 위험한 존재를 봉인했다고 믿는다.</p>
+<p class="">사슬은 봉인이 아니라 주민들의 남은 시간을 탑으로 끌어올리는 배관이다. 주민은 죽거나 몬스터가 된 것이 아니라 멈춘 내일 속에 잠들어 있다.</p>
+</div><div class="card"><h3>말보다 먼저 보여줄 것</h3>
+<p class="">11에서 처음 본 집 문패가 이후 사슬 고리에서 반복된다. 처치할 때마다 위로 붙잡힌 빛 한 줄기가 집을 향해 흐른다.</p>
+<p class="">20 보스의 가면 뒤에서 주민들의 목소리가 들리고, 수면 속 한 집의 시계가 한 칸 움직인다. 두 번째 종의 울림이 사슬을 타고 내려간다. 물에 비친 창문과 등불이 켜지고 시계가 한 칸 움직인다.</p>
+</div></div>
+<p class="minor">두 번째 종의 울림이 사슬을 타고 내려간다. 물에 비친 창문과 등불이 켜지고 시계가 한 칸 움직인다.</p>
+<h3 class="scene-title">보스 뒤 3줄</h3><div class="dialogue">
+<p><b>매달린 집행관</b><span>“그들은 사라진 게 아니다.”</span></p>
+<p><b>매달린 집행관</b><span>“종이 가져간 것은 그들의 내일이다.”</span></p>
+<p><b>온</b><span>“사슬을 끊으면, 돌려줄 수 있어.”</span></p>
+</div>
+<p class="muted minor">집행관이 지키던 것은 죄인이 아니라 주민들에게 돌려줄 시간이다.</p>
+<details><summary>담·린을 선택했을 때의 응답</summary>
+<div class="scroll"><table><thead><tr><th scope="col">선택 주인공</th><th scope="col">바뀌는 마지막 한 줄</th></tr></thead><tbody><tr><td>담</td><td>집으로 이어진 고리를 풀겠다.</td></tr><tr><td>린</td><td>빛마다 다른 목소리가 있어.</td></tr></tbody></table></div>
+</details><h3 class="scene-title">몬스터와 이야기의 연결</h3><div class="bestiary">
+<details class="enemy"><summary>
+<svg class="monster" viewBox="0 0 112 106" aria-hidden="true" style="color:#59968f;--accent:#15383e"><g fill="currentColor"><path d="M36 34h39v33H36zM41 67h10v30H41zM63 67h10v30H63zM35 40L9 64l-6-9 32-27M76 39l26 21-5 8-28-19M40 10h31v20H40z"/><path d="M4 0l32 34M106 0L75 34" fill="none" stroke="currentColor" stroke-width="4"/><path d="M5 4v21M100 4v21" stroke="currentColor" stroke-width="3"/></g></svg>
+<small>일반</small><b>문패 꼭두각시</b></summary><div class="brief">
+<p class="">집 주소가 새겨진 목패를 사슬이 사람 모양으로 조인다.</p>
+<strong>처치 뒤 남는 것</strong>
+<p class="">사슬만 끊기고 온전한 문패가 바닥에 남음.</p>
+<strong>기존 준비 자세 유지</strong>
+<p class="">11에서 새 구역 첫 적으로 단발부터 다시 읽게 한다. 주민 몸이 아니며 문패는 파괴 대상이 아님.</p>
+<p class="muted">왼쪽 회피 · 후퇴 / 아래 회피 ↓/S · 제자리 검 쳐내기 / 오른쪽 회피 · 전진</p>
+<small>chain_puppet</small></div></details>
+<details class="enemy"><summary>
+<svg class="monster" viewBox="0 0 112 106" aria-hidden="true" style="color:#59968f;--accent:#15383e"><g fill="currentColor"><path d="M16 54l10-19h46l14 8 13-6v24H82l-8 13H37l-11-7-9 30H7l8-43M38 69l8 29H34l-9-30M73 67l14 29H73L60 69M70 41l8-21 10 22z"/><path d="M5 4v21M100 4v21" stroke="currentColor" stroke-width="3"/></g></svg>
+<small>일반</small><b>배수로 갈고리개</b></summary><div class="brief">
+<p class="">징수관을 청소하던 갈고리 장치가 네 발로 변했다.</p>
+<strong>처치 뒤 남는 것</strong>
+<p class="">갈고리가 풀리고 배수관 안의 작은 빛이 흐름.</p>
+<strong>기존 준비 자세 유지</strong>
+<p class="">후방으로 넘어오는 갈고리와 바닥 쓸기. 경비 사냥개의 직선 돌진과 역할을 구분.</p>
+<p class="muted">오른쪽 회피 · 전진 / 위 회피 · 점프</p>
+<small>hook_hound</small></div></details>
+<details class="enemy"><summary>
+<svg class="monster" viewBox="0 0 112 106" aria-hidden="true" style="color:#59968f;--accent:#15383e"><g fill="currentColor"><path d="M50 14h16v18H50zM43 32h30l-5 24 27 33H18l29-33zM40 89h12v12H40zM63 89h12v12H63zM9 23l35 18-5 8L5 32M72 39l31-19 5 8-32 22z"/><path d="M5 4v21M100 4v21" stroke="currentColor" stroke-width="3"/></g></svg>
+<small>일반</small><b>사슬 무희</b></summary><div class="brief">
+<p class="">종의 박자를 맞추던 자동 인형. 치맛자락은 열쇠 사슬이다.</p>
+<strong>처치 뒤 남는 것</strong>
+<p class="">회전이 멎고 열쇠가 각 집 쪽을 향함.</p>
+<strong>기존 준비 자세 유지</strong>
+<p class="">몸통은 작게, 실제 공격 높이를 만드는 열쇠 고리는 크게. 위·아래 회전 준비를 구분.</p>
+<p class="muted">아래 회피 ↓/S · 제자리 검 쳐내기 / 위 회피 · 점프</p>
+<small>chain_dancer</small></div></details>
+<details class="enemy"><summary>
+<svg class="monster" viewBox="0 0 112 106" aria-hidden="true" style="color:#59968f;--accent:#15383e"><g fill="currentColor"><path d="M18 24h73v12H18zM23 34h9v64h-9zM79 34h9v64h-9zM46 0h18v19H46z"/><path d="M55 32v39" stroke="currentColor" stroke-width="7"/><circle cx="55" cy="77" r="20"/><path d="M5 4v21M100 4v21" stroke="currentColor" stroke-width="3"/></g></svg>
+<small>중간 보스</small><b>수문 추지기</b></summary><div class="brief">
+<p class="">수문의 추와 철창을 엮은 중간 수호 장치.</p>
+<strong>처치 뒤 남는 것</strong>
+<p class="">추가 멎고 수문이 열려 빛이 마을 쪽으로 흐름.</p>
+<strong>기존 준비 자세 유지</strong>
+<p class="">성문 가디언의 장병기와 달리 추의 진자 궤적을 강조. 물보라는 예고를 가리지 않는 낮은 장식.</p>
+<p class="muted">오른쪽 회피 · 전진 / 위 회피 · 점프 / 아래 회피 ↓/S · 제자리 검 쳐내기</p>
+<small>pendulum_warden</small></div></details>
+<details class="enemy"><summary>
+<svg class="monster" viewBox="0 0 112 106" aria-hidden="true" style="color:#59968f;--accent:#15383e"><g fill="currentColor"><path d="M40 9h32v25H40zM30 35h50l17 49H14zM38 84h13v17H38zM66 84h13v17H66z"/><path d="M11 8v57h16M100 8v57H85" fill="none" stroke="currentColor" stroke-width="5"/><path d="M5 4v21M100 4v21" stroke="currentColor" stroke-width="3"/></g></svg>
+<small>보스</small><b>매달린 집행관</b></summary><div class="brief">
+<p class="">징수 명령에 묶인 관리자의 기억. 가면에 주민 명단이 새겨졌다.</p>
+<strong>처치 뒤 남는 것</strong>
+<p class="">사슬이 가면의 족쇄를 풀고 문패 빛들이 집으로 갈라짐.</p>
+<strong>기존 준비 자세 유지</strong>
+<p class="">가면보다 두 팔의 높이 차가 먼저 읽힌다. 연속 공격의 각 방향을 차례로 준비.</p>
+<p class="muted">아래 회피 ↓/S · 제자리 검 쳐내기 / 위 회피 · 점프 / 오른쪽 회피 · 전진</p>
+<small>chain_jailer</small></div></details>
+</div><details><summary>10개 조우 배치 확인</summary>
+<div class="scroll"><table><thead><tr><th scope="col">스테이지</th><th scope="col">조우</th><th scope="col">유형</th></tr></thead><tbody><tr><td>11</td><td>성문 안 진입</td><td>일반</td></tr><tr><td>12</td><td>배수 골목</td><td>일반</td></tr><tr><td>13</td><td>열쇠 골목</td><td>일반</td></tr><tr><td>14</td><td>문패 거리</td><td>일반</td></tr><tr><td>15</td><td>잠긴 수문</td><td>중간 보스</td></tr><tr><td>16</td><td>침수된 돌길</td><td>일반</td></tr><tr><td>17</td><td>사슬 중정</td><td>일반</td></tr><tr><td>18</td><td>집행관 통로</td><td>일반</td></tr><tr><td>19</td><td>주거구 종 앞</td><td>일반</td></tr><tr><td>20</td><td>매달린 집행관</td><td>보스</td></tr></tbody></table></div>
+</details></article>
+<article class="chapter" id="chapter-clock" aria-labelledby="title-clock" hidden>
+<div class="chapter-head"><h3 id="title-clock">멈춘 시계 공방</h3><span class="eyebrow">STAGE 21—30</span></div>
+<p class="lead">정확히 움직이는 장치가, 아침을 막고 있었다.</p>
+<figure><img class="landscape" src="zone-clock.svg" width="960" height="320" alt="멈춘 시계 공방 기존 전장 구도"><figcaption>기존 전장 구도와 팔레트 유지 · 최종 게임 배경이 아닌 구도 시안</figcaption></figure>
+<p class="emotion">고장을 고치려던 기대 → 진실에 대한 충격 → 목적의 이해</p>
+<div class="grid"><div class="card"><h3>목표와 사건</h3>
+<p class="">종이 다시 울리면 아침이 온다고 믿는다. 하지만 장치는 이미 움직이고 있다.</p>
+<p class="">시왕은 잃는 것을 두려워해 주민의 시간을 보관하고 돌려주지 않았다. 봉인을 풀어 종을 울리는 일이, 빼앗긴 시간을 되돌리는 일임을 깨닫는다.</p>
+</div><div class="card"><h3>말보다 먼저 보여줄 것</h3>
+<p class="">21 공방의 축은 움직인다. 24 설계도에는 고장 표시 대신 “반환 금지” 명령이 있다. 29 왕좌는 텅 비어 있다.</p>
+<p class="">30 보스의 몸이 사람 대신 명령을 기록한 시곗바늘로 풀린다. 명령의 주인도 오래전에 시간을 잃었다. 왕의 봉인을 풀고 세 번째 종을 울린다. 공방의 등불이 켜지며 빛이 안으로 모이지 않고 밖으로 흐른다.</p>
+</div></div>
+<p class="minor">왕의 봉인을 풀고 세 번째 종을 울린다. 공방의 등불이 켜지며 빛이 안으로 모이지 않고 밖으로 흐른다.</p>
+<h3 class="scene-title">보스 뒤 3줄</h3><div class="dialogue">
+<p><b>정지한 시왕</b><span>“하루만 더, 잃지 않으려 했을 뿐이다.”</span></p>
+<p><b>정지한 시왕</b><span>“그 하루를… 돌려주지 못했다.”</span></p>
+<p><b>온</b><span>“고칠 게 아니었어. 돌려줘야 해.”</span></p>
+</div>
+<p class="muted minor">시왕은 상실이 두려워 하루를 돌려주지 못했다. 새로운 가족사나 장례 설정은 추가하지 않는다.</p>
+<details><summary>담·린을 선택했을 때의 응답</summary>
+<div class="scroll"><table><thead><tr><th scope="col">선택 주인공</th><th scope="col">바뀌는 마지막 한 줄</th></tr></thead><tbody><tr><td>담</td><td>이제 사람들을 놓아줘야 한다.</td></tr><tr><td>린</td><td>멈춘 건 종소리가 아니라 사람들의 시간이야.</td></tr></tbody></table></div>
+</details><h3 class="scene-title">몬스터와 이야기의 연결</h3><div class="bestiary">
+<details class="enemy"><summary>
+<svg class="monster" viewBox="0 0 112 106" aria-hidden="true" style="color:#9f967e;--accent:#25303d"><g fill="currentColor"><ellipse cx="55" cy="48" rx="26" ry="22"/><path d="M34 34L11 16 3 38M31 47H3v27M35 61L15 86v14M76 33l24-17 7 24M80 47h27v27M76 63l21 23v14" fill="none" stroke="currentColor" stroke-width="7"/><circle cx="90" cy="16" r="12" fill="none" stroke="currentColor" stroke-width="4"/></g></svg>
+<small>일반</small><b>맞물림 거미</b></summary><div class="brief">
+<p class="">배관과 톱니의 틈을 수리하는 공방 장치.</p>
+<strong>처치 뒤 남는 것</strong>
+<p class="">여섯 다리가 하나의 멈춘 시곗바늘로 모인다.</p>
+<strong>기존 준비 자세 유지</strong>
+<p class="">낮게 펼친 다리와 상단으로 세운 톱니 다리를 구분한다.</p>
+<p class="muted">위 회피 · 점프 / 아래 회피 ↓/S · 제자리 검 쳐내기</p>
+<small>gear_spider</small></div></details>
+<details class="enemy"><summary>
+<svg class="monster" viewBox="0 0 112 106" aria-hidden="true" style="color:#9f967e;--accent:#25303d"><g fill="currentColor"><path d="M45 30h27l5 42H38zM40 69h12v29H40zM63 69h12v29H63zM23 44h22v10H23zM21 3h7v57h-7zM14 52h21v6H14zM69 40l20 15-7 8-20-13z"/><rect x="46" y="10" width="22" height="19"/><circle cx="90" cy="16" r="12" fill="none" stroke="currentColor" stroke-width="4"/></g></svg>
+<small>일반</small><b>분침 검수관</b></summary><div class="brief">
+<p class="">잘못 흐르는 시간을 자르던 검사 기구.</p>
+<strong>처치 뒤 남는 것</strong>
+<p class="">검이 평범한 공구로 돌아간다.</p>
+<strong>기존 준비 자세 유지</strong>
+<p class="">긴 분침 검을 세우거나 가슴 높이로 겨눈다. 변형은 갈고리/철필을 뒤로 돌아가는 궤도로 먼저 들어 보인다.</p>
+<p class="muted">아래 회피 ↓/S · 제자리 검 쳐내기 / 왼쪽 회피 · 후퇴 / 오른쪽 회피 · 전진</p>
+<small>dial_blade</small></div></details>
+<details class="enemy"><summary>
+<svg class="monster" viewBox="0 0 112 106" aria-hidden="true" style="color:#9f967e;--accent:#25303d"><g fill="currentColor"><path d="M25 15h60L70 42v13l15 31H25l15-31V42zM22 91h67v8H22zM22 3h67v8H22z"/><circle cx="55" cy="48" r="13" fill="var(--accent)"/><circle cx="90" cy="16" r="12" fill="none" stroke="currentColor" stroke-width="4"/></g></svg>
+<small>일반</small><b>역류 감시안</b></summary><div class="brief">
+<p class="">모래가 아래에서 위로 흐르는 감시 렌즈.</p>
+<strong>처치 뒤 남는 것</strong>
+<p class="">모래가 처음으로 아래로 떨어진다.</p>
+<strong>기존 준비 자세 유지</strong>
+<p class="">렌즈 아래로 빛을 낮추면 낮은 공격, 뒤편으로 궤도를 걸면 후방 공격.</p>
+<p class="muted">위 회피 · 점프 / 오른쪽 회피 · 전진</p>
+<small>hourglass_eye</small></div></details>
+<details class="enemy"><summary>
+<svg class="monster" viewBox="0 0 112 106" aria-hidden="true" style="color:#9f967e;--accent:#25303d"><g fill="currentColor"><path d="M26 24h58v51H26zM10 31h15v44H10zM85 31h15v44H85zM29 74h20v26H29zM61 74h20v26H61zM35 5h38v18H35z"/><path d="M35 34h40v30H35z" fill="none" stroke="var(--accent)"/><circle cx="90" cy="16" r="12" fill="none" stroke="currentColor" stroke-width="4"/></g></svg>
+<small>중간 보스</small><b>태엽 조립장</b></summary><div class="brief">
+<p class="">접힌 공방 팔이 한 덩어리로 조립된다.</p>
+<strong>처치 뒤 남는 것</strong>
+<p class="">태엽이 풀려 주변의 작업등을 켠다.</p>
+<strong>기존 준비 자세 유지</strong>
+<p class="">각 팔이 사용할 도구를 먼저 꺼내 모든 예고를 보여 준다.</p>
+<p class="muted">아래 회피 ↓/S · 제자리 검 쳐내기 / 왼쪽 회피 · 후퇴 / 위 회피 · 점프</p>
+<small>crank_master</small></div></details>
+<details class="enemy"><summary>
+<svg class="monster" viewBox="0 0 112 106" aria-hidden="true" style="color:#9f967e;--accent:#25303d"><g fill="currentColor"><path d="M35 29h40l13 61H22zM35 8l12 9L55 1l10 16 12-9-3 20H37zM22 91h68v9H22zM22 36h10v55H22zM80 36h10v55H80z"/><circle cx="90" cy="16" r="12" fill="none" stroke="currentColor" stroke-width="4"/></g></svg>
+<small>보스</small><b>정지한 시왕</b></summary><div class="brief">
+<p class="">자신의 불안까지 명령으로 남긴 왕의 시간 잔향.</p>
+<strong>처치 뒤 남는 것</strong>
+<p class="">왕관이 떨어지지만 그 아래 왕은 없다. 오래된 명령만 남는다.</p>
+<strong>기존 준비 자세 유지</strong>
+<p class="">왕관의 세 바늘이 공격 순서대로 잠깐 밝아진다. 실제 범위·파동이 판정 기준이다.</p>
+<p class="muted">아래 회피 ↓/S · 제자리 검 쳐내기 / 오른쪽 회피 · 전진 / 아래 회피 ↓/S · 제자리 검 쳐내기</p>
+<small>clock_regent</small></div></details>
+</div><details><summary>10개 조우 배치 확인</summary>
+<div class="scroll"><table><thead><tr><th scope="col">스테이지</th><th scope="col">조우</th><th scope="col">유형</th></tr></thead><tbody><tr><td>21</td><td>첫 톱니의 거미</td><td>일반</td></tr><tr><td>22</td><td>분침 검수관</td><td>일반</td></tr><tr><td>23</td><td>역류 감시안</td><td>일반</td></tr><tr><td>24</td><td>이중 맞물림 거미</td><td>일반</td></tr><tr><td>25</td><td>태엽 조립장</td><td>중간 보스</td></tr><tr><td>26</td><td>금지 명령 검수관</td><td>일반</td></tr><tr><td>27</td><td>상부 감시안</td><td>일반</td></tr><tr><td>28</td><td>삼중축 거미</td><td>일반</td></tr><tr><td>29</td><td>왕좌 앞 검수관</td><td>일반</td></tr><tr><td>30</td><td>정지한 시왕</td><td>보스</td></tr></tbody></table></div>
+</details></article>
+<article class="chapter" id="chapter-ash" aria-labelledby="title-ash" hidden>
+<div class="chapter-head"><h3 id="title-ash">재가 내리는 파종 성당</h3><span class="eyebrow">STAGE 31—40</span></div>
+<p class="lead">처음의 불씨를 남긴 사람을 만난다.</p>
+<figure><img class="landscape" src="zone-ash.svg" width="960" height="320" alt="재가 내리는 파종 성당 기존 전장 구도"><figcaption>기존 전장 구도와 팔레트 유지 · 최종 게임 배경이 아닌 구도 시안</figcaption></figure>
+<p class="emotion">경계 → 진실의 확인 → 이어 받은 불씨에 대한 책임</p>
+<div class="grid"><div class="card"><h3>목표와 사건</h3>
+<p class="">종추를 부순 성기사가 재앙을 일으킨 배신자라고 여긴다.</p>
+<p class="">잿빛 성기사는 징수를 끊으려 종추를 부순 마지막 종지기다. 주인공이 들고 온 불씨는 새 종의 연료가 아니라 시간을 돌려보낼 첫 조각이다. 그는 자기 귀환용 불씨까지 바깥에 남겨 혼자 갇혔다.</p>
+</div><div class="card"><h3>말보다 먼저 보여줄 것</h3>
+<p class="">성당의 파손 방향이 안쪽이다. 35 향로에 주인공 손안의 불씨와 같은 박자가 남아 있다. 39 성기사 문장은 로비 등불 문장과 같다.</p>
+<p class="">40 보스 흉갑의 금과 손안 불씨가 같은 박자로 빛난다. 그가 무릎을 꿇으며 종추를 플레이어에게 겨누지 않고 내려놓는다. 네 번째 종을 깨운다. 재 사이의 등불이 켜지고 손안의 불씨와 같은 박자로 빛난다. 마지막 종루로 가는 길이 열린다.</p>
+</div></div>
+<p class="minor">네 번째 종을 깨운다. 재 사이의 등불이 켜지고 손안의 불씨와 같은 박자로 빛난다. 마지막 종루로 가는 길이 열린다.</p>
+<h3 class="scene-title">보스 뒤 3줄</h3><div class="dialogue">
+<p><b>잿빛 성기사</b><span>“종을 부순 건 나다. 징수를 멈추려고.”</span></p>
+<p><b>잿빛 성기사</b><span>“그 불씨는 태울 것이 아니다. 돌려줄 시간이다.”</span></p>
+<p><b>온</b><span>“당신이 지킨 빛, 내가 이어 갈게.”</span></p>
+</div>
+<p class="muted minor">잿빛 성기사는 종추를 부순 이전 종지기다. 징수를 끊으려 한 행동이 배신으로 기록됐다.</p>
+<details><summary>담·린을 선택했을 때의 응답</summary>
+<div class="scroll"><table><thead><tr><th scope="col">선택 주인공</th><th scope="col">바뀌는 마지막 한 줄</th></tr></thead><tbody><tr><td>담</td><td>당신이 열지 못한 길은 내가 열겠다.</td></tr><tr><td>린</td><td>이 불씨에 남은 소리를 끝까지 전할게.</td></tr></tbody></table></div>
+</details><h3 class="scene-title">몬스터와 이야기의 연결</h3><div class="bestiary">
+<details class="enemy"><summary>
+<svg class="monster" viewBox="0 0 112 106" aria-hidden="true" style="color:#a28a83;--accent:#342c3b"><g fill="currentColor"><path d="M55 6L35 31h40zM34 34h42l13 63H20zM24 42L7 57l6 7 23-12M76 43l24 20 5-8-25-23z"/><circle cx="98" cy="78" r="11"/><path d="M27 14l-5-7M83 9l7-5M17 89l-6 7" stroke="currentColor" stroke-width="3"/></g></svg>
+<small>일반</small><b>잿불 시종</b></summary><div class="brief">
+<p class="">장례용 향로가 수호 명령을 되풀이한다.</p>
+<strong>처치 뒤 남는 것</strong>
+<p class="">재가 흩어지고 꺼진 향 한 가닥이 남는다.</p>
+<strong>기존 준비 자세 유지</strong>
+<p class="">향로를 위로 치켜들면 상단, 뒤로 감으면 후방 공격. 변형은 칼날/사슬을 발목 높이로 낮춰 준비한다.</p>
+<p class="muted">아래 회피 ↓/S · 제자리 검 쳐내기 / 오른쪽 회피 · 전진 / 위 회피 · 점프</p>
+<small>cinder_acolyte</small></div></details>
+<details class="enemy"><summary>
+<svg class="monster" viewBox="0 0 112 106" aria-hidden="true" style="color:#a28a83;--accent:#342c3b"><g fill="currentColor"><path d="M53 45L10 7 3 54l43 29 9-21 8 21 44-30-7-46-41 38zM50 27h12v64H50z"/><path d="M27 14l-5-7M83 9l7-5M17 89l-6 7" stroke="currentColor" stroke-width="3"/></g></svg>
+<small>일반</small><b>재날개 수호충</b></summary><div class="brief">
+<p class="">성당 장미창 파편이 잔향에 이끌려 날개를 이룬다.</p>
+<strong>처치 뒤 남는 것</strong>
+<p class="">날개 파편이 장미창의 한 조각으로 돌아간다.</p>
+<strong>기존 준비 자세 유지</strong>
+<p class="">낮게 접힌 날개와 바깥으로 크게 돌아오는 날개를 구분한다.</p>
+<p class="muted">위 회피 · 점프 / 오른쪽 회피 · 전진</p>
+<small>ash_moth</small></div></details>
+<details class="enemy"><summary>
+<svg class="monster" viewBox="0 0 112 106" aria-hidden="true" style="color:#a28a83;--accent:#342c3b"><g fill="currentColor"><path d="M45 30h24v36H45zM43 65h12v33H43zM62 65h11v33H62zM23 46h23v9H23zM72 42h25v9H72zM90 2h5v91h-5zM85 14l7-14 9 14z"/><rect x="47" y="10" width="20" height="19"/><path d="M27 14l-5-7M83 9l7-5M17 89l-6 7" stroke="currentColor" stroke-width="3"/></g></svg>
+<small>일반</small><b>파종 창기사</b></summary><div class="brief">
+<p class="">부러진 종추를 지키라는 서약에 갇힌 갑옷.</p>
+<strong>처치 뒤 남는 것</strong>
+<p class="">창날이 모여 종추의 원래 단면을 드러낸다.</p>
+<strong>기존 준비 자세 유지</strong>
+<p class="">창을 겨누는 자세와 부러진 날을 높이 드는 자세가 뚜렷하다. 변형은 갈고리/철필을 뒤로 돌아가는 궤도로 먼저 들어 보인다.</p>
+<p class="muted">왼쪽 회피 · 후퇴 / 아래 회피 ↓/S · 제자리 검 쳐내기 / 오른쪽 회피 · 전진</p>
+<small>broken_lancer</small></div></details>
+<details class="enemy"><summary>
+<svg class="monster" viewBox="0 0 112 106" aria-hidden="true" style="color:#a28a83;--accent:#342c3b"><g fill="currentColor"><path d="M14 53l15-28h41l22 13 14 18-16 13-9-5-3 35H64l-2-27H37l-5 27H17l4-33zM69 25l17-19 8 26z"/><circle cx="47" cy="43" r="12" fill="var(--accent)"/><path d="M27 14l-5-7M83 9l7-5M17 89l-6 7" stroke="currentColor" stroke-width="3"/></g></svg>
+<small>중간 보스</small><b>향로 성수</b></summary><div class="brief">
+<p class="">기도실의 향로와 부러진 사자상이 붙어 움직인다.</p>
+<strong>처치 뒤 남는 것</strong>
+<p class="">향로 불빛이 위로 타지 않고 손안 불씨를 향한다.</p>
+<strong>기존 준비 자세 유지</strong>
+<p class="">앞발 높이와 등 뒤로 넘어가는 사슬을 먼저 보여 준다.</p>
+<p class="muted">위 회피 · 점프 / 오른쪽 회피 · 전진 / 아래 회피 ↓/S · 제자리 검 쳐내기</p>
+<small>incense_beast</small></div></details>
+<details class="enemy"><summary>
+<svg class="monster" viewBox="0 0 112 106" aria-hidden="true" style="color:#a28a83;--accent:#342c3b"><g fill="currentColor"><path d="M39 15h30v24H39zM30 40h50l15 54H16zM33 94h18v7H33zM64 94h18v7H64zM8 27h10v65H8zM1 23h25v11H1zM78 12l14-12 9 12-9 19z"/><path d="M55 44l-8 18 14 11-10 17" fill="none" stroke="var(--accent)" stroke-width="3"/><path d="M27 14l-5-7M83 9l7-5M17 89l-6 7" stroke="currentColor" stroke-width="3"/></g></svg>
+<small>보스</small><b>잿빛 성기사</b></summary><div class="brief">
+<p class="">수호 명령과 싸우다 봉인에 남은 마지막 종지기.</p>
+<strong>처치 뒤 남는 것</strong>
+<p class="">흉갑의 금이 열리고 불씨 하나가 손안의 빛에 이어진다.</p>
+<strong>기존 준비 자세 유지</strong>
+<p class="">공격 준비가 플레이어의 제자리 올려 베기와 닮았다. 정교하지만 속임수는 없다.</p>
+<p class="muted">아래 회피 ↓/S · 제자리 검 쳐내기 / 왼쪽 회피 · 후퇴 / 오른쪽 회피 · 전진</p>
+<small>ash_paladin</small></div></details>
+</div><details><summary>10개 조우 배치 확인</summary>
+<div class="scroll"><table><thead><tr><th scope="col">스테이지</th><th scope="col">조우</th><th scope="col">유형</th></tr></thead><tbody><tr><td>31</td><td>재의 첫 기도</td><td>일반</td></tr><tr><td>32</td><td>장미창 수호충</td><td>일반</td></tr><tr><td>33</td><td>부러진 종추의 창</td><td>일반</td></tr><tr><td>34</td><td>멎은 향로 시종</td><td>일반</td></tr><tr><td>35</td><td>향로 성수</td><td>중간 보스</td></tr><tr><td>36</td><td>균열의 창기사</td><td>일반</td></tr><tr><td>37</td><td>세 겹 재날개</td><td>일반</td></tr><tr><td>38</td><td>귀환을 잃은 시종</td><td>일반</td></tr><tr><td>39</td><td>문장 수호기사</td><td>일반</td></tr><tr><td>40</td><td>잿빛 성기사</td><td>보스</td></tr></tbody></table></div>
+</details></article>
+<article class="chapter" id="chapter-dawn" aria-labelledby="title-dawn" hidden>
+<div class="chapter-head"><h3 id="title-dawn">새벽이 고인 빈 종루</h3><span class="eyebrow">STAGE 41—50</span></div>
+<p class="lead">마지막 종소리가, 모든 등불로 이어진다.</p>
+<figure><img class="landscape" src="zone-dawn.svg" width="960" height="320" alt="새벽이 고인 빈 종루 기존 전장 구도"><figcaption>기존 전장 구도와 팔레트 유지 · 최종 게임 배경이 아닌 구도 시안</figcaption></figure>
+<p class="emotion">긴장 → 마지막 봉인 해제 → 되살아난 마을을 보는 안도</p>
+<div class="grid"><div class="card"><h3>목표와 사건</h3>
+<p class="">마지막에는 누군가 새 종지기가 되어 탑을 떠받쳐야 한다고 생각한다.</p>
+<p class="">마지막 종은 새로운 제물로 채울 빈 그릇이 아니다. 안에는 이미 주민들의 시간이 남아 있다. 모인 빛과 처음의 불씨를 돌려놓고 봉인이 풀린 종을 울리면 시간이 각자의 집으로 돌아간다.</p>
+</div><div class="card"><h3>말보다 먼저 보여줄 것</h3>
+<p class="">41부터 여러 목소리가 하나의 명령처럼 겹친다. 45에서 고리를 끊으면 목소리가 각기 다른 방향의 집으로 흩어진다.</p>
+<p class="">기존 공격·반격으로 마지막 보스 HP를 0으로 만들면 종을 감싼 봉인이 무너진다. 대사·유물 선택·완주 저장 뒤 엔딩에서 마지막 종을 울리고 마을의 등불을 모두 밝힌다. 쳐내기만으로 보스를 즉사시키거나 특별한 추가 입력을 요구하지 않는다.</p>
+</div></div>
+<p class="minor">마지막 종을 울린다. 지나온 구역의 종과 등불을 거쳐 빛이 집으로 돌아가고 아침이 시작된다.</p>
+<h3 class="scene-title">보스 뒤 3줄</h3><div class="dialogue">
+<p><b>새벽의 빈 종</b><span>“다음 종지기를… 안으로…”</span></p>
+<p><b>온</b><span>“이건 명령이 아니야. 집으로 돌아가고 싶은 목소리야.”</span></p>
+<p><b>온</b><span>“모두 돌아갈 수 있도록, 마지막 종을 울릴게.”</span></p>
+</div>
+<p class="muted minor">빈 종의 목소리는 남은 수호 명령과 사람들의 시간이 겹친 것이다. 온은 새 희생을 바치지 않고 봉인을 해제한다.</p>
+<details><summary>담·린을 선택했을 때의 응답</summary>
+<div class="scroll"><table><thead><tr><th scope="col">선택 주인공</th><th scope="col">바뀌는 마지막 한 줄</th></tr></thead><tbody><tr><td>담</td><td>마지막 문까지 열겠다.</td></tr><tr><td>린</td><td>모두 자기 목소리로 돌아가.</td></tr></tbody></table></div>
+</details><h3 class="scene-title">몬스터와 이야기의 연결</h3><div class="bestiary">
+<details class="enemy"><summary>
+<svg class="monster" viewBox="0 0 112 106" aria-hidden="true" style="color:#a9c1c7;--accent:#334552"><g fill="currentColor"><path d="M41 31h27l6 36H35zM38 74h12v23H38zM61 74h12v23H61zM42 9h25v17H42zM84 8h6v88h-6zM80 11l7-11 11 11z"/><path d="M23 34h13v8H23zM75 53h8v14h-8zM38 65h14v7H38z" fill="var(--accent)"/><circle cx="55" cy="45" r="43" fill="none" stroke="currentColor" stroke-opacity=".3"/></g></svg>
+<small>일반</small><b>기억의 초병</b></summary><div class="brief">
+<p class="">1구역 초병의 명령이 해방된 기억으로 다시 엮였다.</p>
+<strong>처치 뒤 남는 것</strong>
+<p class="">1구역에서 떨어진 열쇠와 같은 집 이름의 빛이 마을로 돌아간다.</p>
+<strong>기존 준비 자세 유지</strong>
+<p class="">같은 창 실루엣이지만 갑옷 사이에 서로 다른 집의 빛이 보인다. 변형은 갈고리/철필을 뒤로 돌아가는 궤도로 먼저 들어 보인다. 변형은 칼날/사슬을 발목 높이로 낮춰 준비한다.</p>
+<p class="muted">왼쪽 회피 · 후퇴 / 아래 회피 ↓/S · 제자리 검 쳐내기 / 오른쪽 회피 · 전진 / 위 회피 · 점프</p>
+<small>memory_sentry</small></div></details>
+<details class="enemy"><summary>
+<svg class="monster" viewBox="0 0 112 106" aria-hidden="true" style="color:#a9c1c7;--accent:#334552"><g fill="currentColor"><path d="M5 41l16-23 15 23v41H5zM37 25L55 2l18 23v72H37zM75 41l16-23 15 23v41H75z"/><path d="M15 44h10v19H15zM50 30h11v30H50zM85 44h10v19H85z" fill="var(--accent)"/><circle cx="55" cy="45" r="43" fill="none" stroke="currentColor" stroke-opacity=".3"/></g></svg>
+<small>일반</small><b>잔향 성가대</b></summary><div class="brief">
+<p class="">개별 목소리를 하나의 명령으로 묶던 공명 장치.</p>
+<strong>처치 뒤 남는 것</strong>
+<p class="">여러 목소리가 각자의 문패와 함께 분리된다.</p>
+<strong>기존 준비 자세 유지</strong>
+<p class="">입처럼 보이는 틈이 아닌 몸 전체의 칼날 고리가 상단/낮은 높이를 가리킨다.</p>
+<p class="muted">아래 회피 ↓/S · 제자리 검 쳐내기 / 위 회피 · 점프</p>
+<small>echo_choir</small></div></details>
+<details class="enemy"><summary>
+<svg class="monster" viewBox="0 0 112 106" aria-hidden="true" style="color:#a9c1c7;--accent:#334552"><g fill="currentColor"><path d="M52 36L4 15v54l48 21 6-1 49-21V15L59 36zM44 9h24v20H44z"/><path d="M56 40v45M15 31l28 12M15 45l28 12M96 31L68 43M96 45L68 57" fill="none" stroke="var(--accent)" stroke-width="3"/><circle cx="55" cy="45" r="43" fill="none" stroke="currentColor" stroke-opacity=".3"/></g></svg>
+<small>일반</small><b>반환 서기관</b></summary><div class="brief">
+<p class="">돌아갈 시간을 기록하면서 반환을 금지하던 봉인 장부.</p>
+<strong>처치 뒤 남는 것</strong>
+<p class="">장부의 이름이 지워지는 대신 집 쪽으로 빛나며 넘어간다.</p>
+<strong>기존 준비 자세 유지</strong>
+<p class="">펼친 날개형 장부와 뒤로 돌아가는 철필의 궤적.</p>
+<p class="muted">오른쪽 회피 · 전진 / 아래 회피 ↓/S · 제자리 검 쳐내기</p>
+<small>return_scribe</small></div></details>
+<details class="enemy"><summary>
+<svg class="monster" viewBox="0 0 112 106" aria-hidden="true" style="color:#a9c1c7;--accent:#334552"><g fill="currentColor"><path d="M40 9h30v24H40zM25 36h60v42H25zM30 80h20v19H30zM61 80h20v19H61zM4 41h17v33H4zM88 41h17v33H88z"/><circle cx="55" cy="58" r="15" fill="none" stroke="var(--accent)" stroke-width="4"/><circle cx="55" cy="45" r="43" fill="none" stroke="currentColor" stroke-opacity=".3"/></g></svg>
+<small>중간 보스</small><b>마지막 봉인상</b></summary><div class="brief">
+<p class="">다섯 봉인의 남은 명령이 겹친 석상.</p>
+<strong>처치 뒤 남는 것</strong>
+<p class="">등의 다섯 고리가 하나씩 풀린다.</p>
+<strong>기존 준비 자세 유지</strong>
+<p class="">네 가지 대응을 이미 배운 형태 그대로3타씩 묶어 시험한다.</p>
+<p class="muted">아래 회피 ↓/S · 제자리 검 쳐내기 / 오른쪽 회피 · 전진 / 위 회피 · 점프</p>
+<small>last_seal</small></div></details>
+<details class="enemy"><summary>
+<svg class="monster" viewBox="0 0 112 106" aria-hidden="true" style="color:#a9c1c7;--accent:#334552"><g fill="currentColor"><path d="M40 9h30v14l13 11 5 40 14 12v10H8V86l14-12 5-40 13-11z"/><path d="M44 42h23v35H44z" fill="var(--accent)"/><path d="M49 0h12v10H49z"/><circle cx="55" cy="45" r="43" fill="none" stroke="currentColor" stroke-opacity=".3"/></g></svg>
+<small>보스</small><b>새벽의 빈 종</b></summary><div class="brief">
+<p class="">시간 저장소의 마지막 껍질. 사람도 신도 아닌 누적된 수호 명령.</p>
+<strong>처치 뒤 남는 것</strong>
+<p class="">종의 껍질이 열리고 빛이 위가 아닌 마을로 흘러내린다.</p>
+<strong>기존 준비 자세 유지</strong>
+<p class="">빈 중심에 금빛 상단 띠와 실체 칼날이 함께 생긴다. 마지막 묶음은 상단 쳐내기로 끝난다.</p>
+<p class="muted">왼쪽 회피 · 후퇴 / 위 회피 · 점프 / 아래 회피 ↓/S · 제자리 검 쳐내기</p>
+<small>dawn_last_bell</small></div></details>
+</div><details><summary>10개 조우 배치 확인</summary>
+<div class="scroll"><table><thead><tr><th scope="col">스테이지</th><th scope="col">조우</th><th scope="col">유형</th></tr></thead><tbody><tr><td>41</td><td>다시 보이는 첫 창</td><td>일반</td></tr><tr><td>42</td><td>하나로 묶인 목소리</td><td>일반</td></tr><tr><td>43</td><td>돌아가지 못한 장부</td><td>일반</td></tr><tr><td>44</td><td>이름을 되찾는 초병</td><td>일반</td></tr><tr><td>45</td><td>마지막 봉인상</td><td>중간 보스</td></tr><tr><td>46</td><td>갈라지는 성가</td><td>일반</td></tr><tr><td>47</td><td>반환 금지의 마지막 줄</td><td>일반</td></tr><tr><td>48</td><td>열린 문을 향한 초병</td><td>일반</td></tr><tr><td>49</td><td>모두의 다른 목소리</td><td>일반</td></tr><tr><td>50</td><td>새벽의 빈 종</td><td>보스</td></tr></tbody></table></div>
+</details></article>
+</section><section id="people"><div class="eyebrow">CHARACTERS</div><h2>기존 인물과 각자의 관점</h2><div class="grid">
+<article class="card"><h3>온</h3>
+<p class="">불씨를 이어 받은 종지기. 구원 방법을 믿었다가 스스로 바꾼다.</p>
+<p class="emphasis">다섯 종을 깨워 등불을 밝히고 아침을 되찾고 싶다.</p>
+<p class="">믿고 따르던 탑이 사람들의 시간을 빼앗았다는 사실과 마주한다.</p>
+<p class="">종을 울리는 일을 멈추는 대신, 봉인을 풀어 그 울림으로 시간을 돌려준다.</p>
+<p class="muted">처음에는 눈앞의 빛과 길을 말하고, 나중에는 그 빛을 돌려받을 사람들을 말한다.</p>
+</article>
+<article class="card"><h3>담</h3>
+<p class="">선택 주인공. 지키기 위해 닫던 문을, 지키기 위해 연다.</p>
+<p class="emphasis">마을 사람들을 지키고 싶다.</p>
+<p class="">문을 닫는 것이 늘 사람을 지키는 일은 아니었다.</p>
+<p class="">지키기 위해 닫던 문을, 지키기 위해 연다.</p>
+<p class="muted">책임과 행동이 드러나는 짧은 말.</p>
+</article>
+<article class="card"><h3>린</h3>
+<p class="">선택 주인공. 하나의 종소리를 사람마다 다른 목소리로 듣는다.</p>
+<p class="emphasis">사라진 종소리를 되찾고 싶다.</p>
+<p class="">하나로 겹친 울림 속에서 사람마다 다른 목소리를 듣는다.</p>
+<p class="">목소리들이 각자의 집으로 돌아갈 수 있게 한다.</p>
+<p class="muted">종소리 속에서 실제로 들은 것을 말한다.</p>
+</article>
+<article class="card"><h3>잿빛 성기사</h3>
+<p class="">배신자로 기록된 이전 종지기. 자기 귀환용 불씨를 바깥에 남긴 인물.</p>
+<p class="emphasis">주민의 시간을 더 빼앗지 못하게 하려 했다.</p>
+<p class="">징수는 끊었지만 반환을 끝내지 못한 채 탑에 갇혔다.</p>
+<p class="">그가 밖에 남긴 불씨를 선택 주인공이 이어 받아 여정을 완성한다.</p>
+<p class="muted">자신이 무엇을 부쉈고 무엇을 남겼는지 짧게 밝힌다.</p>
+</article>
+</div>
+<p class="muted minor">온·담·린은 같은 사건을 다른 시선으로 따라가는 선택 주인공이다. 세 인물이 동행하는 이야기는 추가하지 않는다. 잿빛 성기사는 이전 종지기이며, 온의 스승이나 가족이라는 관계는 설정하지 않는다.</p>
+</section><section id="ending"><div class="eyebrow">THE LAST BELL</div><h2>마지막 종소리가<br>처음의 등불까지 닿는다.</h2>
+<p class="">마지막 봉인이 풀리면 온은 처음의 불씨와 모인 빛을 종에 돌려놓고 종을 울립니다. 울림이 마을을 향해 내려가며 지금까지 밝혀온 길이 하나로 이어집니다. 새 희생자를 바치는 것이 아니라, 주민들에게 원래의 시간을 돌려주는 기존 결말입니다.</p>
+<div class="ending">
+<b>0–3초</b>
+<p class="">온이 처음의 불씨와 모인 빛을 종에 돌려놓고 마지막 종을 울린다. 울림이 아래로 퍼지고, 지나온 구역의 등불들이 마을의 창문까지 차례로 이어진다.</p>
+<b>3–6초</b>
+<p class="">시곗바늘이 움직이고 잠든 사람들의 창문이 열린다. 푸른 밤이 옅어져 아침빛이 들어온다. 온은 자신이 밝혀온 길을 바라본다.</p>
+</div>
+<p class="emphasis minor">“마침내, 아침이 돌아왔다.”</p>
+<p class="">마지막 장면은 첫 화면의 꺼진 거리와 같은 구도로 보여준다. 처음의 작은 불씨가 어디까지 이어졌는지 한눈에 알 수 있게 한다.</p>
+<p class="muted">정식 확장 이후 반복 도전은 남은 수호 명령의 재연으로 다룬다. 돌아온 아침을 취소하거나 주민들을 다시 희생시키지 않는다. 현재 프로토타입에는 NG+나 11스테이지 진행을 추가하지 않는다.</p>
+</section><section id="clues"><div class="eyebrow">SETUP & PAYOFF</div><h2>반전 전에, 증거부터 남긴다.</h2>
+<div class="scroll"><table><thead><tr><th scope="col">배치 → 회수</th><th scope="col">반복해서 보이는 것</th><th scope="col">의미의 변화</th></tr></thead><tbody><tr><td>첫 화면 → 40 → 50</td><td>등불의 불씨</td><td>남아 있는 작은 빛 → 이전 종지기가 남긴 반환의 첫 조각 → 마지막 종을 울릴 때 모든 빛과 합쳐짐.</td></tr><tr><td>1~9 → 10</td><td>안쪽 빗장</td><td>닫힌 성문의 낯선 방향 → 주민들을 가둔 문임을 확인 → 첫 종과 함께 길이 열림.</td></tr><tr><td>1~10 → 20</td><td>집 문패와 사슬</td><td>생활 흔적 → 사슬 고리의 같은 이름 → 되돌아갈 시간의 주인이 누구인지 알게 됨.</td></tr><tr><td>21 → 30</td><td>움직이는 톱니</td><td>고장으로 보였던 탑 → 정상 작동하는 반환 금지 명령 → 봉인을 풀고 세 번째 종을 깨움.</td></tr><tr><td>31 → 40</td><td>깨진 종추와 등불 문장</td><td>배신자의 파괴 흔적 → 징수를 끊은 흔적 → 처음 불씨를 남긴 이전 종지기의 행동과 연결.</td></tr><tr><td>첫 점등 → 각 구역 → 엔딩</td><td>이어지는 등불</td><td>전투로 되찾은 가까운 길 → 구역의 종이 울리며 이어지는 빛 → 마을 전체의 시간과 아침 회복.</td></tr></tbody></table></div>
+<details><summary>설정이 충돌하지 않도록 정리한 원인과 결과</summary><dl class="logic">
+<dt>왜 종을 울리고 등불을 밝히는가</dt><dd>각 구역의 종은 마을과 연결된 시간의 흐름을 여는 중심이다. 봉인이 풀린 종을 울리면 빛이 돌아오고, 등불은 그 흐름이 마을로 이어지고 있음을 보여준다.</dd>
+<dt>시간 징수와 종을 깨우는 행동은 어떻게 다른가</dt><dd>시왕의 명령은 주민의 시간을 탑 안에 붙잡았다. 온은 그 명령을 지키는 수호자를 쓰러뜨리고 봉인을 푼 다음 종을 울린다. 이미 밝혀온 등불을 해로운 행동이었다고 뒤집지 않는다.</dd>
+<dt>성기사가 종추를 부쉈는데 왜 구원이 끝나지 않았는가</dt><dd>더 가져오는 징수는 멈췄지만 이미 빼앗은 시간은 다섯 봉인 안에 남았다. 온은 종을 깨우며 반환을 완성한다.</dd>
+<dt>처음의 불씨는 무엇인가</dt><dd>이전 종지기가 성문 밖 등불에 남긴, 돌려줄 시간의 첫 조각이다. 그의 귀환을 위해 남아 있던 몫이기도 하다. 혈통이나 스승과 제자 관계를 추가하지 않는다.</dd>
+<dt>쓰러뜨리는 적은 마을 사람인가</dt><dd>주민의 몸이 아니다. 갑옷·도구·기억에 붙은 수호 명령이다. 처치 후 갑옷의 빈 공간과 풀려나는 빛으로 구분한다.</dd>
+<dt>중간 등불이 켜졌는데 왜 마지막 종까지 가야 하는가</dt><dd>구역마다 흐름의 일부가 풀린다. 가까운 등불과 창문의 작은 변화는 실제 반환의 징후다. 모든 봉인을 열고 마지막 종을 울려야 마을 전체의 시간이 다시 흐른다.</dd>
+<dt>실패와 재도전은 어떻게 연결되는가</dt><dd>등불과 불씨는 귀환의 시각적 연결로 사용한다. 사망 결과의 도달 스테이지·획득 재화를 보여주고 다시하기와 로비를 제공한다. 다시하기는 1스테이지부터이며 새로운 부활 비용·횟수 제한을 추가하지 않는다.</dd>
+</dl></details></section><section id="prototype"><div class="eyebrow">PLAYABLE SCOPE · 1—10</div><h2>10스테이지에서도 첫 구출을 끝낸다.</h2>
+<p class="notice">스토리 기획만 다듬음. 현재 공개 게임에는 적용하지 않음.</p>
+<div class="grid"><div class="card"><h3>이번 구간에 담을 장면</h3>
+<ul><li>자동 세로 스크롤 프롤로그와 건너뛰기</li><li>1~9 외곽 길·5 최초 중앙 안내 패널과 확인 즉시 전투</li><li>10 진입 때 바닥 위 성문 등장·가디언·첫 큰 종·등불 점등</li><li>11 성문 왼쪽, 12 이후 주거구: 확장 미리보기만</li></ul>
+</div><div class="card"><h3>다음 장을 위해 남길 것</h3>
+<ul><li>시간 징수의 전모</li><li>잿빛 성기사와 처음 불씨의 관계</li><li>마지막 종과 전체 마을의 아침</li></ul>
+<p class="">1~20의 동선과 몬스터 디자인을 구체화한다. 11~20은 확장 미리보기이며 현재 프로토타입의 10스테이지 제한은 유지한다.</p>
+</div></div>
+<p class="minor">10 보스 처치 → 봉인 해제·첫 종 울림·등불 점등 → 기존 짧은 대사 → 유물 선택 → 10스테이지 클리어 결과 → 다시하기 / 로비. 다시하기는 1스테이지부터.</p>
+<p class="emphasis">결과 문구 제안: “첫 번째 종이 깨어났습니다.”</p>
+<details><summary>연출·대사 적용 메모</summary>
+<p class="">새 저장 첫 시작에 28초 자동 세로 스크롤 프롤로그. 일시정지·건너뛰기 가능. 종료 후 Stage 1 전투시작.</p>
+<ul><li>프롤로그: 아침을 잃은 마을과 마지막 불씨</li><li>성문 밖 등불 → 온의 손안 불씨 → 오른쪽 외곽 길</li><li>기존 Stage 1 회피·공격 튜토리얼 → 첫 점등</li></ul>
+<p class="">프롤로그 글을 먼저 보여준다. 최초 5스테이지에서 중앙 안내 패널 하나로 종 개수를 설명하고 확인 후 바로 전투를 시작한다.</p>
+<p class="">보스 뒤 한 줄씩 표시하고 새 입력으로 넘기거나 건너뛴다. 읽기를 마친 뒤 기존 유물 선택으로 이어진다.</p>
+<p class="">기존 하단 대사 패널 사용. 실제 적용 시 640×360에서 최대 2행 가독성 확인.</p>
+<p class="">기존 0/240/480ms 점멸과 720ms 타격, 네 방향 회피를 유지한다. 서사의 실제 종과 공격 횟수를 표시하는 HUD 종은 역할을 구분한다. 전투 예고 중 점등 연출로 공격 범위나 파동을 가리지 않는다.</p>
+<p class="">정식 50스테이지에서 보스 처치·대사·유물 선택·완주 저장 후 마지막 종의 울림과 아침이 돌아오는 6초 엔딩. 별도 완벽 회피나 추가 입력을 엔딩 조건으로 강제하지 않는다.</p>
+<h3>추가로 필요한 그림 소품</h3>
+<ul><li>기존 첫 전장: 등불·불씨·멀리 보이는 구역 종의 연결</li><li>첫 승리 뒤 작은 빛이 등불에 옮겨가는 장면</li><li>각 구역 보스 뒤 봉인이 풀린 종과 주변 등불의 점등</li><li>마지막 종의 울림이 마을 전체의 등불로 이어지는 엔딩</li></ul>
+<p class="muted">기존 SVG 구도와 실루엣을 재사용한 기획 화면. 새 스프라이트나 게임 연출 제작은 하지 않았다.</p>
+</details></section></main><footer><a href="story-world-v2.json">전체 기획 데이터</a><a href="story-world-v1-archive.html">이전 v1 기획</a><a href="../Presentation/feedback-plan-v591.html">전투 기획</a><p class="muted minor">스토리 개정 제안입니다. Unity 대사 데이터·현재 공개 웹 게임·전투 수치에는 적용하지 않았습니다.</p></footer>
+<script>
+const buttons=[...document.querySelectorAll('[data-zone]')];
+const chapters=[...document.querySelectorAll('.chapter')];
+for(const button of buttons) button.addEventListener('click',()=>{
+  const selected=button.dataset.zone;
+  for(const other of buttons) other.setAttribute('aria-pressed',String(other===button));
+  for(const chapter of chapters) chapter.hidden=selected!=='all'&&chapter.id!=='chapter-'+selected;
+});
+</script></body></html>

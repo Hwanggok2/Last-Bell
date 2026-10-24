@@ -1,0 +1,43 @@
+{
+  "version": "route-onboarding-v4",
+  "date": "2026-10-22",
+  "passed": true,
+  "checks": [
+    "Gate absent through 9, enters during 9→10 at fixed ground Y and scale",
+    "Gate behind at 11 and exits left on 11→12; remains absent thereafter",
+    "Existing cue rhythm and input timing unchanged",
+    "Embedded data matches maintained specification; removed quiz/mandatory-practice controls",
+    "Prologue still pauses, completes and skips to Stage 1",
+    "First Stage 5 arrival pauses in central modal; no dodge input and focus on confirm",
+    "Exactly one confirm immediately starts combat, with no exercise success prerequisite",
+    "Missed attacks continue combat and never reopen tutorial or require retry",
+    "Confirm records the preview hint as seen even with zero successful defenses",
+    "Route reaches 9,10,11,12,20 and displays expansion scope",
+    "Explicit preview replay opens the same one-button panel; visibility loss pauses combat",
+    "Current story points to v4; first 9 gates absent; one-confirm tutorial; original plot and 10-stage prototype scope retained",
+    "Current story, v4 preview and v3 redirect: local files, anchors, ARIA references, UTF-8 and script syntax valid",
+    "Two game-style redesign boards and full reference/prompt record saved in planning; existing concept boards retained",
+    "Runtime source catalog retains prior SHA-256 and generated game fields match; no game build or deployment performed"
+  ],
+  "runtimeApplied": false,
+  "publicSiteChanged": false,
+  "browserVisualQA": "not performed: prior browser policy blocked local file access; no alternate browser/proxy used; DOM checks use stubs, not visual rendering",
+  "conceptArtReview": "Both generated boards inspected inline against actual hero/enemy source art. Flat cream/gold/navy clusters replace fine metal detail. Concept sheets only; production frame cleanup pending.",
+  "art": [
+    {
+      "path": "Concepts/gate-road-v4-game-style.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "e128e6b12f4428c2d2f1e0dba3576a5015d71c4f7d40849b51ccf4ac1050454d"
+    },
+    {
+      "path": "Concepts/chain-quarter-v4-game-style.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "441738ab498417ebb26d8ed57a9baa09f16de795d232e7a07444a736807fe26a"
+    }
+  ],
+  "storySha256": "6be297357ff5a4fa0b47315cbc05cb7090d54fd025750377c6435a7a77890891",
+  "previewSourceSha256": "60629c811c4ce89bb3e4f39a4bea4c3ad6a9cd2921dd119308f87047d4d7f312",
+  "runtimeCatalogSha256": "e0c46d1fa7599b48999b94f8820ef5ce052716a7907c29197c0d36fda2bff1e3"
+}

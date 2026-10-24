@@ -1,0 +1,300 @@
+{
+  "canonicalSource": {
+    "jobId": "b6bef6dc-cd96-4909-85f4-64941281b01c",
+    "workbenchId": "7b7aa1a8-e370-471d-9b8c-e3d55b933cbe"
+  },
+  "a": {
+    "workbenchId": "1d4fa6cb-bdb4-4de5-b599-c79e6bf76d2d",
+    "galleryId": "ba141fea-a268-4fca-ad90-53ebb8d6a5d8",
+    "changes": [
+      {
+        "operation": "patch_pixels",
+        "layer": "image",
+        "frames": [
+          1
+        ],
+        "pixels": [
+          [
+            13,
+            7,
+            "#6B3F2A",
+            "#202D38"
+          ],
+          [
+            14,
+            7,
+            "#6B3F2A",
+            "#202D38"
+          ],
+          [
+            15,
+            7,
+            "#6B3F2A",
+            "#202D38"
+          ],
+          [
+            16,
+            7,
+            "#6B3F2A",
+            "#202D38"
+          ],
+          [
+            17,
+            7,
+            "#6B3F2A",
+            "#202D38"
+          ],
+          [
+            18,
+            7,
+            "#6B3F2A",
+            "#202D38"
+          ],
+          [
+            12,
+            8,
+            "#6B3F2A",
+            "#202D38"
+          ],
+          [
+            19,
+            8,
+            "#6B3F2A",
+            "#202D38"
+          ],
+          [
+            11,
+            9,
+            "#6B3F2A",
+            "#202D38"
+          ],
+          [
+            20,
+            9,
+            "#6B3F2A",
+            "#202D38"
+          ],
+          [
+            11,
+            10,
+            "#6B3F2A",
+            "#202D38"
+          ],
+          [
+            21,
+            10,
+            "#6B3F2A",
+            "#202D38"
+          ],
+          [
+            10,
+            11,
+            "#6B3F2A",
+            "#202D38"
+          ],
+          [
+            21,
+            11,
+            "#6B3F2A",
+            "#202D38"
+          ],
+          [
+            11,
+            12,
+            "#6B3F2A",
+            "#202D38"
+          ],
+          [
+            20,
+            12,
+            "#6B3F2A",
+            "#202D38"
+          ],
+          [
+            9,
+            13,
+            "#6B3F2A",
+            "#202D38"
+          ],
+          [
+            10,
+            13,
+            "#6B3F2A",
+            "#202D38"
+          ],
+          [
+            19,
+            13,
+            "#6B3F2A",
+            "#202D38"
+          ],
+          [
+            8,
+            14,
+            "#6B3F2A",
+            "#202D38"
+          ],
+          [
+            19,
+            14,
+            "#6B3F2A",
+            "#202D38"
+          ],
+          [
+            8,
+            15,
+            "#6B3F2A",
+            "#202D38"
+          ],
+          [
+            9,
+            16,
+            "#6B3F2A",
+            "#202D38"
+          ],
+          [
+            8,
+            17,
+            "#6B3F2A",
+            "#202D38"
+          ],
+          [
+            8,
+            18,
+            "#6B3F2A",
+            "#202D38"
+          ],
+          [
+            8,
+            19,
+            "#6B3F2A",
+            "#202D38"
+          ],
+          [
+            9,
+            20,
+            "#6B3F2A",
+            "#202D38"
+          ],
+          [
+            10,
+            20,
+            "#6B3F2A",
+            "#202D38"
+          ]
+        ],
+        "reason": "Recolor only exposed hair and backpack edge pixels to the existing NPC-like navy; retain original silhouette, face, eye, grip, feet and blade."
+      },
+      {
+        "operation": "map_colors",
+        "layer": "image",
+        "frames": [
+          1
+        ],
+        "region": [
+          0,
+          0,
+          31,
+          31
+        ],
+        "colors": {
+          "#2D735D": "#287780",
+          "#8B2F35": "#A23B2D"
+        },
+        "reason": "Unify tunic with Tori teal and scarf with Barun warm red using the same eight-color palette size."
+      }
+    ]
+  },
+  "b": {
+    "workbenchId": "3757bceb-1bf1-4357-9ed7-23e091d448ca",
+    "galleryId": "e315403c-b889-4f9f-98ec-7859363f06cd",
+    "changes": [
+      {
+        "operation": "copy_region",
+        "layer": "image",
+        "frames": [
+          1
+        ],
+        "source_layer": "image",
+        "source_frame": 1,
+        "region": [
+          6,
+          7,
+          25,
+          7
+        ],
+        "at": [
+          6,
+          8
+        ],
+        "reason": "Lower the hair cap one pixel while preserving face, neck, hand, sword and feet."
+      },
+      {
+        "operation": "copy_region",
+        "layer": "image",
+        "frames": [
+          1
+        ],
+        "source_layer": "image",
+        "source_frame": 1,
+        "region": [
+          6,
+          8,
+          25,
+          8
+        ],
+        "at": [
+          6,
+          9
+        ],
+        "reason": "Retain the rounded stepped hair contour below the smaller cap."
+      },
+      {
+        "operation": "patch_pixels",
+        "layer": "image",
+        "frames": [
+          1
+        ],
+        "pixels": [
+          [
+            13,
+            7,
+            "#202D38",
+            "#202D3800"
+          ],
+          [
+            14,
+            7,
+            "#202D38",
+            "#202D3800"
+          ],
+          [
+            15,
+            7,
+            "#202D38",
+            "#202D3800"
+          ],
+          [
+            16,
+            7,
+            "#202D38",
+            "#202D3800"
+          ],
+          [
+            17,
+            7,
+            "#202D38",
+            "#202D3800"
+          ],
+          [
+            18,
+            7,
+            "#202D38",
+            "#202D3800"
+          ]
+        ],
+        "reason": "Erase only the former hair top row to reduce head height by one native pixel."
+      }
+    ]
+  }
+}

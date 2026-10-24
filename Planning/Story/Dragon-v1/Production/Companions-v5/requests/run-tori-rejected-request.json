@@ -1,0 +1,15 @@
+{
+  "id": "tori",
+  "motion": "run",
+  "description": "Seamless8-frame RUN-IN-PLACE towardRIGHT, one full gait/TWO alternating footcontacts,8distinct articulated poses. Lean chest forward15degrees from hips, brisk purposeful running. Bent elbows pump opposite knees; legs alternate forward reach/backdrive and heel recovery. Clear passing poses; no skipping/highknees/hopping. Root x FIXED at original foot midpoint. Headbob max1pixel. Contact sole stays y28, never belowy28. Keep EXACT source face, clothing, weapon, palette and nativepixel size. Keep same bow in front hand, free arm pumps. Tail trails with small sway; ears stay shaped. Start immediately in runningstride after reference, no startup/no stop/no return to standing. End adjacent to first RUN pose forloop. Entireequipment inside canvaswith margin. Transparentbackground; no dust/VFX/shadow.",
+  "jobId": "b4b6b88b-2107-4b7d-9079-c29f28159b13",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "id: b4b6b88b-2107-4b7d-9079-c29f28159b13\njob_id: b4b6b88b-2107-4b7d-9079-c29f28159b13\ndescription: Seamless8-frame RUN-IN-PLACE towardRIGHT, one full gait/TWO alternating footcontacts,8distinct articulated poses. Lean chest forward15degrees from hips, brisk purposeful running. Bent elbows pump opposite knees; legs alternate forward reach/backdrive and heel recovery. Clear passing poses; no skipping/highknees/hopping. Root x FIXED at original foot midpoint. Headbob max1pixel. Contact sole stays y28, never belowy28. Keep EXACT source face, clothing, weapon, palette and nativepixel size. Keep same bow in front hand, free arm pumps. Tail trails with small sway; ears stay shaped. Start immediately in runningstride after reference, no startup/no stop/no return to standing. End adjacent to first RUN pose forloop. Entireequipment inside canvaswith margin. Transparentbackground; no dust/VFX/shadow.\nframes: 8\nsize: 32x32px\ntransparent: True\nseed: 243680\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"b4b6b88b-2107-4b7d-9079-c29f28159b13\")\nasset_id: 5299faf3-3d5e-5435-9e7a-cd8591452794\nasset_status: pending (saved to your gallery when generation completes)"
+      }
+    ],
+    "isError": false
+  }
+}

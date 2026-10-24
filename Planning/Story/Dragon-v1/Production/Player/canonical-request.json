@@ -1,0 +1,27 @@
+{
+  "tool": "PixelLab create_image_pro_flash",
+  "created": "2026-10-24",
+  "request": {
+    "description": "Single production pixel-art game sprite, full body, one little hooded swordsman facing RIGHT in strict side view, transparent background. Match this exact original design: oversized pale CREAM pointed cloth hood bending back to the LEFT, face fully DARK NAVY inside hood, ONE amber square eye near front edge. Pale CREAM short tunic with split hem, DARK NAVY bent arms and leggings, OCHRE short neck scarf with short tail, simple BROWN ankle boots. No visible skin, no nose, no mouth, no hair. One SHORT straight STEEL sword with OCHRE hilt held in the front RIGHT hand, blade angled up-right, other arm relaxed bent. Stable slightly crouched battle idle, feet apart at same ground level. Body opaque height about34 pixels on a48x48 canvas, clear padding for weapons, character full body inside canvas. Extremely coarse low detail 8-bit pixel art, 1pixel dark navy outline, uniform pixel grid, solid color blocks, no shading except at most one shadow for hood. No ornament, belt buckle, armor, bell, cape, backpack, second weapon, effects, text, background or ground shadow. Keep dark arms separated from torso and hand connected to sword grip. Compact friendly fantasy proportions: oversized hood, small torso, legs not stumpy.",
+    "width": 48,
+    "height": 48,
+    "no_background": true,
+    "max_colors": 9,
+    "palette": [
+      "#182B32",
+      "#F7E4B0",
+      "#CBB77B",
+      "#E4AA41",
+      "#795039",
+      "#A1A9A2",
+      "#EDF1D0",
+      "#263F51",
+      "#996A3B"
+    ],
+    "palette_name": "On cream hood navy limbs ochre scarf",
+    "seed": 24102401
+  },
+  "jobId": "b521d718-274a-47bb-9271-02911e0f8e7a",
+  "imageId": "c4c6c078-6764-5191-8fc3-b5132d446d3f",
+  "referenceMethod": "Approved cream hood/navy/ochre design described in text, compared locally. Existing project art file upload was blocked by automatic review and was not performed."
+}

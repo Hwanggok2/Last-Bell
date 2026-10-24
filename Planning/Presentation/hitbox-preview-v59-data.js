@@ -1,5 +1,5 @@
 window.HITBOX_PREVIEW_SPEC = {
-  "version": "hitbox-preview-v5.9",
+  "version": "hitbox-preview-v5.9.1",
   "status": "runtime-aligned-preview",
   "referenceSize": [
     960,
@@ -17,9 +17,9 @@ window.HITBOX_PREVIEW_SPEC = {
   "borderPx": 2,
   "blinkCount": 3,
   "brightFraction": 0.5,
-  "defaultImpactMs": 540,
-  "fastImpactMs": 480,
-  "flightMs": 90,
+  "defaultImpactMs": 720,
+  "fastImpactMs": 720,
+  "flightMs": 120,
   "impactEffectMs": 260,
   "normalWindowMs": 160,
   "perfectWindowMs": 60,
@@ -66,29 +66,29 @@ window.HITBOX_PREVIEW_SPEC = {
   "timingRule": "beat=singleImpact/3; cue i starts at i*3beat; impact i=count*3beat+i*2beat; flight=beat/2; all three bright pulses complete before first release",
   "combo": {
     "rule": "Preview ALL attacks in sequence, three full flashes each; only then execute attacks in the same order.",
-    "defaultImpactGapMs": 360,
-    "fastImpactGapMs": 320,
+    "defaultImpactGapMs": 480,
+    "fastImpactGapMs": 480,
     "maxAttacks": 3,
     "completedCue": "outline alpha0.14 only; does not flash again",
     "defaultExampleMs": {
       "frontCue": [
         0,
-        540
+        720
       ],
       "rearCue": [
-        540,
-        1080
-      ],
-      "frontFlight": [
-        990,
-        1080
-      ],
-      "frontHit": 1080,
-      "rearFlight": [
-        1350,
+        720,
         1440
       ],
-      "rearHit": 1440
+      "frontFlight": [
+        1320,
+        1440
+      ],
+      "frontHit": 1440,
+      "rearFlight": [
+        1800,
+        1920
+      ],
+      "rearHit": 1920
     }
   },
   "attacks": [
@@ -125,15 +125,15 @@ window.HITBOX_PREVIEW_SPEC = {
     {
       "id": "high",
       "name": "상단 베기",
-      "dodge": "back",
-      "reviewLabel": "머리 높이의 띠 · 공격으로 쳐내기",
+      "dodge": "down",
+      "reviewLabel": "머리 높이의 띠 · 아래 회피로 쳐내기",
       "rect": [
         248,
         270,
         376,
         88
       ],
-      "anchorRule": "상단 금빛 범위를 향해 공격으로 쳐낸다. 파동이 중앙에 맞닿을 때 공격 입력.",
+      "anchorRule": "상단 금빛 범위를 향해 제자리에서 검을 휘두른다. 파동이 중앙에 맞닿을 때 아래 회피 입력.",
       "effect": "상단 궤적과 플레이어 검이 맞부딪힌 뒤 위쪽으로 튕겨 나감",
       "response": "parry"
     },
@@ -161,10 +161,11 @@ window.HITBOX_PREVIEW_SPEC = {
     "normalDodgeControls": true,
     "simultaneousFlashingAreas": 1,
     "reducedFlash": "constant gold fill0.12 during visible cue; three corner contractions; keep essential large circular fronts only",
-    "crouchControl": false
+    "crouchControl": false,
+    "downParryControl": true
   },
   "geometryContract": "Rectangles are dangerous areas, never safe zones. Shared authored AttackShape and player dodge-body poses must drive both the visual and Core hit decision. No hidden required-direction failure for a dodge that actually leaves the shown footprint.",
-  "previewScope": "Runtime-aligned v5.9 timing/movement/parry preview. Direct practice auto-matches dodge direction; full HP/save/offensive cooldown rules are verified in Unity.",
+  "previewScope": "Runtime-aligned v5.9.1. Four direction controls / WASD / arrows evade; Down uses a defensive sword swing for high attacks. Space attacks. Full HP/save/offense verified in Unity.",
   "perfect": {
     "origin": "fixed center of the battle viewport, in screen space; independent of character position and world-camera shake",
     "ringMs": 420,
@@ -211,7 +212,7 @@ window.HITBOX_PREVIEW_SPEC = {
   "timingAssist": {
     "origin": "two hidden fixed screen-space sources (-0.125W,0.5H) and (1.125W,0.5H)",
     "color": "#C7DAFA",
-    "firstLeadMs": 450,
+    "firstLeadMs": 600,
     "followupLead": "Every hit emits at T-2.5 beats and becomes visible at T-2 beats; identical speed throughout the sequence",
     "motion": "p=clamp((clock-start)/(T-start)); radius=(0.5+0.125)*W*p; same radius on both axes",
     "perfectTargetFromMs": -60,
@@ -226,8 +227,8 @@ window.HITBOX_PREVIEW_SPEC = {
     "primaryStrokePx": 4,
     "haloStrokePx": 18,
     "echoRadiusGapPx": 28,
-    "firstEmissionLeadMs": 450,
-    "firstVisibleLeadMs": 360,
+    "firstEmissionLeadMs": 600,
+    "firstVisibleLeadMs": 480,
     "contact": "radius=0.625W; leftSourceX+radius=rightSourceX-radius=W/2 at T",
     "contactAfterglowMs": 45,
     "runtimeContactInput": "Unity displays the exact T contact frame, then collects its input before resolving; not an added post-T window."
@@ -272,14 +273,14 @@ window.HITBOX_PREVIEW_SPEC = {
       "curve": "1-(1-p)^3",
       "pose": "hero-v6-slash-up frames 0..10,17,23,24"
     },
-    "status": "Applied to Unity in v5.9"
+    "status": "Applied to Unity in v5.9.1"
   },
   "hitboxExposure": {
     "defaultMode": "short",
     "options": {
       "short": {
-        "defaultMs": 540,
-        "fastMs": 480
+        "defaultMs": 720,
+        "fastMs": 720
       }
     },
     "blinkCount": 3,
@@ -287,13 +288,13 @@ window.HITBOX_PREVIEW_SPEC = {
     "afterVisibleCue": "outline alpha .14 until impact"
   },
   "parry": {
-    "input": "Attack; J or existing attack button",
+    "input": "Down dodge button; S or DownArrow. Attack remains ordinary offense/counter.",
     "normalWindowMs": 160,
     "perfectWindowMs": 60,
     "sharedDefenseReuseMs": 260,
     "attackCooldownInteraction": "timed parry is available independently of500ms offensive cooldown; does not reset it",
     "interruptOffense": "before its contact cancel the pending damage; after contact preserve already dealt damage; original offensive cooldown remains",
-    "priority": "eligible high threat + Attack => one parry, before counter or normal offense",
+    "priority": "Down => defensive sword swing; only a high threat inside the defense window is parried. No crouch.",
     "position": "snap to battle anchor and swing upward in place; no forward approach for a parry",
     "damage": 0,
     "normalStagger": 20,
@@ -302,7 +303,7 @@ window.HITBOX_PREVIEW_SPEC = {
     "success": "neutralize only the selected high threat; keep later attacks unless enemy death/stun cancels them",
     "wrongInput": "jump/back/forward remain inside the high footprint; no crouch input; geometry remains authoritative",
     "feedback": "ivory crossed blades and reflected enemy trail; perfect only adds center mint wave + label",
-    "scope": "Implemented in Unity; this Canvas demonstrates timing and input type, not full HP/stagger/offensive cooldown/save rules."
+    "scope": "Implemented in Unity; Canvas demonstrates defense timing and direction, not full HP/save/offensive cooldown rules."
   },
   "fastFlightMs": 80
 };

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "barun",
+    "jobId": "19f905a0-7ba7-432f-bb06-81c817ce6a84",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "id: 19f905a0-7ba7-432f-bb06-81c817ce6a84\njob_id: 19f905a0-7ba7-432f-bb06-81c817ce6a84\ndescription: Raises the same greatsword overhead in both hands, leans torso back slightly, performs ONE broad diagonal downward sword swing toRIGHT at middle of clip, visible followthrough, recovers to same low guard idle. Sword is attached to hands, full blade stays inside32pxcanvas. Feet planted, no running, no camera move, no VFX. Complete weapon must remain visible inside48x32 canvas, large free space on theRIGHT is for full sword/hammer swing. No pixel touches left/rightedges. Keep sourcepixel density, don't enlarge body. Entire body root fixed, soles same y28 and feet planted. ONE clear contact around middle then recover to same sourcepose. No projectiles or VFX.\nframes: 8\nsize: 48x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 243620\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"19f905a0-7ba7-432f-bb06-81c817ce6a84\")\nasset_id: fd776b78-3e71-5b47-a95c-15394c3c80dc\nasset_status: pending (saved to your gallery when generation completes)"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "id": "doto",
+    "jobId": "16e6901a-efce-4677-95b6-08e23d52d306",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "id: 16e6901a-efce-4677-95b6-08e23d52d306\njob_id: 16e6901a-efce-4677-95b6-08e23d52d306\ndescription: Lifts workhammer slightly above right shoulder, swings ONE heavy hammer strike down and towardRIGHT at middle of clip, body squashes one pixel with effort, hammer follows through, returns hammer to same shoulder rest. Keep hammer metalhead square and same size, handle connected to hands. Feet planted, no step, no VFX. Complete weapon must remain visible inside48x32 canvas, large free space on theRIGHT is for full sword/hammer swing. No pixel touches left/rightedges. Keep sourcepixel density, don't enlarge body. Entire body root fixed, soles same y28 and feet planted. ONE clear contact around middle then recover to same sourcepose. No projectiles or VFX.\nframes: 8\nsize: 48x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 243620\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"16e6901a-efce-4677-95b6-08e23d52d306\")\nasset_id: 31dbdd08-9e07-5574-8801-76fe9f21c48a\nasset_status: pending (saved to your gallery when generation completes)"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

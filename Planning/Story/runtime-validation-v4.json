@@ -1,0 +1,59 @@
+{
+  "version": "route-v4-original-monsters-restored",
+  "date": "2026-10-22",
+  "unityVersion": "6000.3.15f1",
+  "runtimeApplied": true,
+  "publicDeployment": false,
+  "prototypeLastStage": 10,
+  "restartStage": 1,
+  "saveSchema": 5,
+  "windowsBuild": {
+    "succeeded": true,
+    "errors": 0,
+    "executable": "Builds/Windows/LastBellMvp.exe",
+    "log": "Temp/monster-originals-capture-build.log"
+  },
+  "editMode": {
+    "total": "139",
+    "passed": "139",
+    "failed": "0",
+    "result": "Passed",
+    "file": "Temp/monster-originals-editmode.xml"
+  },
+  "playMode": {
+    "total": "18",
+    "passed": "18",
+    "failed": "0",
+    "result": "Passed",
+    "file": "Temp/monster-originals-playmode.xml"
+  },
+  "runtimeSmoke": {
+    "passed": true,
+    "checks": 46,
+    "evidence": "../Evidence/Monster-originals-runtime/index.html"
+  },
+  "monsters": {
+    "passed": true,
+    "runtimeEnemies": 5,
+    "candidates": 10,
+    "preservedOriginalPngs": 125,
+    "previewStates": 76,
+    "previewFrameReferences": 445,
+    "hitFlashMs": 120,
+    "enemyDeathClips": 0,
+    "heroRunPreserved": true,
+    "prototypeLastStage": 10,
+    "previewVerification": "static references and pure playback logic; not a browser render"
+  },
+  "preview": {
+    "modelAndDomScenarios": 11,
+    "browserRendered": false,
+    "spriteRenderCases": 20,
+    "spriteAlphaPreserved": true
+  },
+  "prompts": [
+    "MonsterMotion-v1/generation-plan.json",
+    "MonsterMotion-v1/jobs.json",
+    "MonsterMotion-v1/revisions.json"
+  ]
+}

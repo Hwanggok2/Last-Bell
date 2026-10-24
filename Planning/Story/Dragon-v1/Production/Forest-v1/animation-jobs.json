@@ -1,0 +1,382 @@
+[
+  {
+    "actor": "goblin_scout",
+    "motion": "Idle",
+    "request": {
+      "description": "A restrained in-place breathing loop. Chest and shoulders move down/up by at most1pixel, one small blink, free fingers relax. Maintain the exact held weapon and shield positions with only a tiny elbow shift. Both boots stay planted; no walking, no full-body bobbing, no attack. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+      "first_frame_url": "https://api.pixellab.ai/mcp/images/1acb73dc-c9f2-421c-91ed-def1c0bc4d39/download?index=0",
+      "last_frame_url": "https://api.pixellab.ai/mcp/images/1acb73dc-c9f2-421c-91ed-def1c0bc4d39/download?index=0",
+      "frame_count": 8,
+      "subject_description": "Small green goblin scout with pointed ears, orange tunic, brown boots and one short steel sword.",
+      "initial_pose": "left-facing battle ready stance with both boots grounded and signature weapon held",
+      "direction": "west",
+      "view": "side",
+      "no_background": true,
+      "enhance_prompt": false,
+      "seed": 2026104110
+    },
+    "jobId": "75b59ccb-ffc9-4d04-b161-a8969779cded",
+    "response": "id: 75b59ccb-ffc9-4d04-b161-a8969779cded\njob_id: 75b59ccb-ffc9-4d04-b161-a8969779cded\ndescription: A restrained in-place breathing loop. Chest and shoulders move down/up by at most1pixel, one small blink, free fingers relax. Maintain the exact held weapon and shield positions with only a tiny elbow shift. Both boots stay planted; no walking, no full-body bobbing, no attack. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.\nframes: 8\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 2026104110\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"75b59ccb-ffc9-4d04-b161-a8969779cded\")\nasset_id: c383a01a-0438-58cc-8c7c-364960624426\nasset_status: pending (saved to your gallery when generation completes)"
+  },
+  {
+    "actor": "goblin_scout",
+    "motion": "Attack",
+    "request": {
+      "description": "One single sword SLASH, not a thrust. Bend knees and draw the sword behind the torso, then swing the whole arm in one visible diagonal arc down-left across the front around frame4, then recover to the exact ready stance. Keep the short steel blade attached to the same hand with the same length. Feet remain on ground. No movement beyond1pixel left/right and never clip the sword. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+      "first_frame_url": "https://api.pixellab.ai/mcp/images/1acb73dc-c9f2-421c-91ed-def1c0bc4d39/download?index=0",
+      "last_frame_url": "https://api.pixellab.ai/mcp/images/1acb73dc-c9f2-421c-91ed-def1c0bc4d39/download?index=0",
+      "frame_count": 8,
+      "subject_description": "Small green goblin scout with pointed ears, orange tunic, brown boots and one short steel sword.",
+      "initial_pose": "left-facing battle ready stance with both boots grounded and signature weapon held",
+      "direction": "west",
+      "view": "side",
+      "no_background": true,
+      "enhance_prompt": false,
+      "seed": 2026104111
+    },
+    "jobId": "beba4f83-1010-4e07-9f90-a9b3ad3a9465",
+    "response": "id: beba4f83-1010-4e07-9f90-a9b3ad3a9465\njob_id: beba4f83-1010-4e07-9f90-a9b3ad3a9465\ndescription: One single sword SLASH, not a thrust. Bend knees and draw the sword behind the torso, then swing the whole arm in one visible diagonal arc down-left across the front around frame4, then recover to the exact ready stance. Keep the short steel blade attached to the same hand with the same length. Feet remain on ground. No movement beyond1pixel left/right and never clip the sword. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.\nframes: 8\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 2026104111\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"beba4f83-1010-4e07-9f90-a9b3ad3a9465\")\nasset_id: 484c1e4d-884e-574d-ab52-05e3e77be6fe\nasset_status: pending (saved to your gallery when generation completes)"
+  },
+  {
+    "actor": "goblin_scout",
+    "motion": "Stun",
+    "request": {
+      "description": "A weak stunned sway loop: knees soften, head and shoulders sag1pixel, torso rocks slightly backward and forward. Weapon hand and shield hand lower slightly but never let go. Equipment stays solid and same length, eyes briefly close. Both boots stay firmly grounded. No attack, no spin. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+      "first_frame_url": "https://api.pixellab.ai/mcp/images/1acb73dc-c9f2-421c-91ed-def1c0bc4d39/download?index=0",
+      "last_frame_url": "https://api.pixellab.ai/mcp/images/1acb73dc-c9f2-421c-91ed-def1c0bc4d39/download?index=0",
+      "frame_count": 8,
+      "subject_description": "Small green goblin scout with pointed ears, orange tunic, brown boots and one short steel sword.",
+      "initial_pose": "left-facing battle ready stance with both boots grounded and signature weapon held",
+      "direction": "west",
+      "view": "side",
+      "no_background": true,
+      "enhance_prompt": false,
+      "seed": 2026104112
+    },
+    "jobId": "5144b4f9-82bd-4e94-9758-43b6f0a26eeb",
+    "response": "id: 5144b4f9-82bd-4e94-9758-43b6f0a26eeb\njob_id: 5144b4f9-82bd-4e94-9758-43b6f0a26eeb\ndescription: A weak stunned sway loop: knees soften, head and shoulders sag1pixel, torso rocks slightly backward and forward. Weapon hand and shield hand lower slightly but never let go. Equipment stays solid and same length, eyes briefly close. Both boots stay firmly grounded. No attack, no spin. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.\nframes: 8\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 2026104112\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"5144b4f9-82bd-4e94-9758-43b6f0a26eeb\")\nasset_id: 5b9a8b39-5342-5b88-9658-a7ce51bd8c05\nasset_status: pending (saved to your gallery when generation completes)"
+  },
+  {
+    "actor": "forest_mushroom",
+    "motion": "Idle",
+    "request": {
+      "description": "A subtle in-place idle breathing loop: stalk slightly bends and relaxes, cap compresses down1pixel then restores, root fingers relax. Never lift both feet, never bounce or hop. The cap never rises higher than its starting top edge. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+      "first_frame_url": "https://api.pixellab.ai/mcp/images/ad641abd-a0e0-486c-b194-d31dfd1a6b88/download?index=0",
+      "last_frame_url": "https://api.pixellab.ai/mcp/images/ad641abd-a0e0-486c-b194-d31dfd1a6b88/download?index=0",
+      "frame_count": 8,
+      "subject_description": "Small cream-stalk mushroom with broad red cap, two cream spots, stubby root arms and feet.",
+      "initial_pose": "root feet planted, cap and stalk upright, facing left",
+      "direction": "west",
+      "view": "side",
+      "no_background": true,
+      "enhance_prompt": false,
+      "seed": 2026104130
+    },
+    "jobId": "b77f151c-3f7b-448d-ab08-467a7cd45b99",
+    "response": "id: b77f151c-3f7b-448d-ab08-467a7cd45b99\njob_id: b77f151c-3f7b-448d-ab08-467a7cd45b99\ndescription: A subtle in-place idle breathing loop: stalk slightly bends and relaxes, cap compresses down1pixel then restores, root fingers relax. Never lift both feet, never bounce or hop. The cap never rises higher than its starting top edge. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.\nframes: 8\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 2026104130\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"b77f151c-3f7b-448d-ab08-467a7cd45b99\")\nasset_id: 599d5a32-b7de-5525-b5f0-fb03ff7223ea\nasset_status: pending (saved to your gallery when generation completes)"
+  },
+  {
+    "actor": "forest_mushroom",
+    "motion": "Attack",
+    "request": {
+      "description": "One rooted stomp attack. The mushroom cap and torso slowly compress downward2pixels, both root arms draw inward, then the body forcefully expands back to its normal height and root fists press down into the ground once around frame4. Recover to original idle pose. No jump and no growth of overall body. Keep two grounded root feet, the same cap and its two cream patches. DO NOT draw ground roots, spikes, spores, particles or impact effects. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+      "first_frame_url": "https://api.pixellab.ai/mcp/images/ad641abd-a0e0-486c-b194-d31dfd1a6b88/download?index=0",
+      "last_frame_url": "https://api.pixellab.ai/mcp/images/ad641abd-a0e0-486c-b194-d31dfd1a6b88/download?index=0",
+      "frame_count": 8,
+      "subject_description": "Small cream-stalk mushroom with broad red cap, two cream spots, stubby root arms and feet.",
+      "initial_pose": "root feet planted, cap and stalk upright, facing left",
+      "direction": "west",
+      "view": "side",
+      "no_background": true,
+      "enhance_prompt": false,
+      "seed": 2026104131
+    },
+    "jobId": "acaedfe5-b56b-4597-8d7b-789b04b8e07b",
+    "response": "id: acaedfe5-b56b-4597-8d7b-789b04b8e07b\njob_id: acaedfe5-b56b-4597-8d7b-789b04b8e07b\ndescription: One rooted stomp attack. The mushroom cap and torso slowly compress downward2pixels, both root arms draw inward, then the body forcefully expands back to its normal height and root fists press down into the ground once around frame4. Recover to original idle pose. No jump and no growth of overall body. Keep two grounded root feet, the same cap and its two cream patches. DO NOT draw ground roots, spikes, spores, particles or impact effects. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.\nframes: 8\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 2026104131\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"acaedfe5-b56b-4597-8d7b-789b04b8e07b\")\nasset_id: 137e2f43-553b-5cca-a4e1-aeb6d2c47ba8\nasset_status: pending (saved to your gallery when generation completes)"
+  },
+  {
+    "actor": "forest_mushroom",
+    "motion": "Stun",
+    "request": {
+      "description": "A slow weak stunned sway loop: cap and upper stalk lean slightly left then right with2pixel range while knees sag; cap stays attached, root arms hang low. Both root feet fixed. Never jump, attack or stretch into new shapes. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+      "first_frame_url": "https://api.pixellab.ai/mcp/images/ad641abd-a0e0-486c-b194-d31dfd1a6b88/download?index=0",
+      "last_frame_url": "https://api.pixellab.ai/mcp/images/ad641abd-a0e0-486c-b194-d31dfd1a6b88/download?index=0",
+      "frame_count": 8,
+      "subject_description": "Small cream-stalk mushroom with broad red cap, two cream spots, stubby root arms and feet.",
+      "initial_pose": "root feet planted, cap and stalk upright, facing left",
+      "direction": "west",
+      "view": "side",
+      "no_background": true,
+      "enhance_prompt": false,
+      "seed": 2026104132
+    },
+    "jobId": "4e1f9cb4-7cba-44e8-815b-0297d10862ab",
+    "response": "id: 4e1f9cb4-7cba-44e8-815b-0297d10862ab\njob_id: 4e1f9cb4-7cba-44e8-815b-0297d10862ab\ndescription: A slow weak stunned sway loop: cap and upper stalk lean slightly left then right with2pixel range while knees sag; cap stays attached, root arms hang low. Both root feet fixed. Never jump, attack or stretch into new shapes. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.\nframes: 8\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 2026104132\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"4e1f9cb4-7cba-44e8-815b-0297d10862ab\")\nasset_id: 321365cf-ef94-579c-b761-051bc0f3b96a\nasset_status: pending (saved to your gallery when generation completes)"
+  },
+  {
+    "actor": "goblin_slinger",
+    "motion": "Idle",
+    "request": {
+      "description": "A restrained in-place breathing loop. Chest and shoulders move down/up by at most1pixel, one small blink, free fingers relax. Maintain the exact held weapon and shield positions with only a tiny elbow shift. Both boots stay planted; no walking, no full-body bobbing, no attack. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+      "first_frame_url": "https://api.pixellab.ai/mcp/images/05be67d0-4efc-473b-a58d-c1317abb2105/download?index=0",
+      "last_frame_url": "https://api.pixellab.ai/mcp/images/05be67d0-4efc-473b-a58d-c1317abb2105/download?index=0",
+      "frame_count": 8,
+      "subject_description": "Small green goblin slinger in tan vest and red headband, brown stone pouch and short rope sling.",
+      "initial_pose": "left-facing battle ready stance with both boots grounded and signature weapon held",
+      "direction": "west",
+      "view": "side",
+      "no_background": true,
+      "enhance_prompt": false,
+      "seed": 2026104120
+    },
+    "jobId": "6cd07d98-d138-4c54-b8e8-5c41e4dd61fa",
+    "response": "id: 6cd07d98-d138-4c54-b8e8-5c41e4dd61fa\njob_id: 6cd07d98-d138-4c54-b8e8-5c41e4dd61fa\ndescription: A restrained in-place breathing loop. Chest and shoulders move down/up by at most1pixel, one small blink, free fingers relax. Maintain the exact held weapon and shield positions with only a tiny elbow shift. Both boots stay planted; no walking, no full-body bobbing, no attack. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.\nframes: 8\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 2026104120\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"6cd07d98-d138-4c54-b8e8-5c41e4dd61fa\")\nasset_id: 5e95d92c-9beb-5f16-a650-33fb2279528a\nasset_status: pending (saved to your gallery when generation completes)"
+  },
+  {
+    "actor": "goblin_slinger",
+    "motion": "Attack",
+    "request": {
+      "description": "One stone-sling throw. Raise the sling hand back near the right shoulder, circle the attached rope sling once overhead within the existing canvas, snap the hand forward-left once at frame4 as if releasing a stone, and lower it back to the original ready stance. The rope stays connected to the hand, pouch stays on hip. DO NOT draw the released stone or any projectile or effect; runtime will add it. Both feet remain planted. Do not rotate the whole body to face right. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+      "first_frame_url": "https://api.pixellab.ai/mcp/images/05be67d0-4efc-473b-a58d-c1317abb2105/download?index=0",
+      "last_frame_url": "https://api.pixellab.ai/mcp/images/05be67d0-4efc-473b-a58d-c1317abb2105/download?index=0",
+      "frame_count": 8,
+      "subject_description": "Small green goblin slinger in tan vest and red headband, brown stone pouch and short rope sling.",
+      "initial_pose": "left-facing battle ready stance with both boots grounded and signature weapon held",
+      "direction": "west",
+      "view": "side",
+      "no_background": true,
+      "enhance_prompt": false,
+      "seed": 2026104121
+    },
+    "jobId": "6119ae4f-cfcc-4041-8102-3313dd438ae5",
+    "response": "id: 6119ae4f-cfcc-4041-8102-3313dd438ae5\njob_id: 6119ae4f-cfcc-4041-8102-3313dd438ae5\ndescription: One stone-sling throw. Raise the sling hand back near the right shoulder, circle the attached rope sling once overhead within the existing canvas, snap the hand forward-left once at frame4 as if releasing a stone, and lower it back to the original ready stance. The rope stays connected to the hand, pouch stays on hip. DO NOT draw the released stone or any projectile or effect; runtime will add it. Both feet remain planted. Do not rotate the whole body to face right. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.\nframes: 8\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 2026104121\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"6119ae4f-cfcc-4041-8102-3313dd438ae5\")\nasset_id: cf7029ac-5693-5b33-8a1a-ffe1ac12ae3c\nasset_status: pending (saved to your gallery when generation completes)"
+  },
+  {
+    "actor": "goblin_slinger",
+    "motion": "Stun",
+    "request": {
+      "description": "A weak stunned sway loop: knees soften, head and shoulders sag1pixel, torso rocks slightly backward and forward. Weapon hand and shield hand lower slightly but never let go. Equipment stays solid and same length, eyes briefly close. Both boots stay firmly grounded. No attack, no spin. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+      "first_frame_url": "https://api.pixellab.ai/mcp/images/05be67d0-4efc-473b-a58d-c1317abb2105/download?index=0",
+      "last_frame_url": "https://api.pixellab.ai/mcp/images/05be67d0-4efc-473b-a58d-c1317abb2105/download?index=0",
+      "frame_count": 8,
+      "subject_description": "Small green goblin slinger in tan vest and red headband, brown stone pouch and short rope sling.",
+      "initial_pose": "left-facing battle ready stance with both boots grounded and signature weapon held",
+      "direction": "west",
+      "view": "side",
+      "no_background": true,
+      "enhance_prompt": false,
+      "seed": 2026104122
+    },
+    "jobId": "9e452453-f57b-4366-9e85-3386661f42f8",
+    "response": "id: 9e452453-f57b-4366-9e85-3386661f42f8\njob_id: 9e452453-f57b-4366-9e85-3386661f42f8\ndescription: A weak stunned sway loop: knees soften, head and shoulders sag1pixel, torso rocks slightly backward and forward. Weapon hand and shield hand lower slightly but never let go. Equipment stays solid and same length, eyes briefly close. Both boots stay firmly grounded. No attack, no spin. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.\nframes: 8\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 2026104122\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"9e452453-f57b-4366-9e85-3386661f42f8\")\nasset_id: 31c60643-0939-527e-afc1-24b56ce5050d\nasset_status: pending (saved to your gallery when generation completes)"
+  },
+  {
+    "actor": "goblin_shield",
+    "motion": "Idle",
+    "request": {
+      "description": "A restrained in-place breathing loop. Chest and shoulders move down/up by at most1pixel, one small blink, free fingers relax. Maintain the exact held weapon and shield positions with only a tiny elbow shift. Both boots stay planted; no walking, no full-body bobbing, no attack. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+      "first_frame_url": "https://api.pixellab.ai/mcp/images/9d713392-c3ab-4859-b90b-face0b559f9e/download?index=0",
+      "last_frame_url": "https://api.pixellab.ai/mcp/images/9d713392-c3ab-4859-b90b-face0b559f9e/download?index=0",
+      "frame_count": 8,
+      "subject_description": "Stocky green goblin with square wooden shield, short dagger, orange tunic and brown boots.",
+      "initial_pose": "left-facing battle ready stance with both boots grounded and signature weapon held",
+      "direction": "west",
+      "view": "side",
+      "no_background": true,
+      "enhance_prompt": false,
+      "seed": 2026104140
+    },
+    "jobId": "1854c408-7bc8-49b1-850f-ae05cd4d817b",
+    "response": "id: 1854c408-7bc8-49b1-850f-ae05cd4d817b\njob_id: 1854c408-7bc8-49b1-850f-ae05cd4d817b\ndescription: A restrained in-place breathing loop. Chest and shoulders move down/up by at most1pixel, one small blink, free fingers relax. Maintain the exact held weapon and shield positions with only a tiny elbow shift. Both boots stay planted; no walking, no full-body bobbing, no attack. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.\nframes: 8\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 2026104140\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"1854c408-7bc8-49b1-850f-ae05cd4d817b\")\nasset_id: d2010203-3284-56d7-bc7b-b38618f743e7\nasset_status: pending (saved to your gallery when generation completes)"
+  },
+  {
+    "actor": "goblin_shield",
+    "motion": "Attack",
+    "request": {
+      "description": "One shield bash. Bend both knees and draw the shield slightly backward toward the chest, brace, then extend the left forearm and push the entire intact rectangular shield forward-left by2pixels once around frame4. The dagger stays gripped behind the shield. Recover both hands and legs to original pose. No jump or horizontal travel. Keep shield straight and full-size, all edges and sword inside canvas. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+      "first_frame_url": "https://api.pixellab.ai/mcp/images/9d713392-c3ab-4859-b90b-face0b559f9e/download?index=0",
+      "last_frame_url": "https://api.pixellab.ai/mcp/images/9d713392-c3ab-4859-b90b-face0b559f9e/download?index=0",
+      "frame_count": 8,
+      "subject_description": "Stocky green goblin with square wooden shield, short dagger, orange tunic and brown boots.",
+      "initial_pose": "left-facing battle ready stance with both boots grounded and signature weapon held",
+      "direction": "west",
+      "view": "side",
+      "no_background": true,
+      "enhance_prompt": false,
+      "seed": 2026104141
+    },
+    "jobId": "3100d009-94c1-4cf2-9d26-69623bba6992",
+    "response": "id: 3100d009-94c1-4cf2-9d26-69623bba6992\njob_id: 3100d009-94c1-4cf2-9d26-69623bba6992\ndescription: One shield bash. Bend both knees and draw the shield slightly backward toward the chest, brace, then extend the left forearm and push the entire intact rectangular shield forward-left by2pixels once around frame4. The dagger stays gripped behind the shield. Recover both hands and legs to original pose. No jump or horizontal travel. Keep shield straight and full-size, all edges and sword inside canvas. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.\nframes: 8\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 2026104141\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"3100d009-94c1-4cf2-9d26-69623bba6992\")\nasset_id: 2a76976e-c5ec-595c-b24e-2c9efd4eeb0e\nasset_status: pending (saved to your gallery when generation completes)"
+  },
+  {
+    "actor": "goblin_shield",
+    "motion": "Stun",
+    "request": {
+      "description": "A weak stunned sway loop: knees soften, head and shoulders sag1pixel, torso rocks slightly backward and forward. Weapon hand and shield hand lower slightly but never let go. Equipment stays solid and same length, eyes briefly close. Both boots stay firmly grounded. No attack, no spin. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+      "first_frame_url": "https://api.pixellab.ai/mcp/images/9d713392-c3ab-4859-b90b-face0b559f9e/download?index=0",
+      "last_frame_url": "https://api.pixellab.ai/mcp/images/9d713392-c3ab-4859-b90b-face0b559f9e/download?index=0",
+      "frame_count": 8,
+      "subject_description": "Stocky green goblin with square wooden shield, short dagger, orange tunic and brown boots.",
+      "initial_pose": "left-facing battle ready stance with both boots grounded and signature weapon held",
+      "direction": "west",
+      "view": "side",
+      "no_background": true,
+      "enhance_prompt": false,
+      "seed": 2026104142
+    },
+    "jobId": "e3143af2-d267-4c50-995a-46460fc82732",
+    "response": "id: e3143af2-d267-4c50-995a-46460fc82732\njob_id: e3143af2-d267-4c50-995a-46460fc82732\ndescription: A weak stunned sway loop: knees soften, head and shoulders sag1pixel, torso rocks slightly backward and forward. Weapon hand and shield hand lower slightly but never let go. Equipment stays solid and same length, eyes briefly close. Both boots stay firmly grounded. No attack, no spin. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.\nframes: 8\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 2026104142\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"e3143af2-d267-4c50-995a-46460fc82732\")\nasset_id: 1d407f34-4b8c-5069-940a-6b3d1d07c44a\nasset_status: pending (saved to your gallery when generation completes)"
+  },
+  {
+    "actor": "mushroom_captain",
+    "motion": "Idle",
+    "request": {
+      "description": "A subtle in-place idle breathing loop: stalk slightly bends and relaxes, cap compresses down1pixel then restores, root fingers relax. Never lift both feet, never bounce or hop. The cap never rises higher than its starting top edge. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+      "first_frame_url": "https://api.pixellab.ai/mcp/images/8cc007fc-cd8d-4ae1-870a-40493a896a83/download?index=0",
+      "last_frame_url": "https://api.pixellab.ai/mcp/images/8cc007fc-cd8d-4ae1-870a-40493a896a83/download?index=0",
+      "frame_count": 8,
+      "subject_description": "Huge mushroom captain with two-tier red cap, three cream spots, thick cream stalk and broad root fists and feet.",
+      "initial_pose": "root feet planted, cap and stalk upright, facing left",
+      "direction": "west",
+      "view": "side",
+      "no_background": true,
+      "enhance_prompt": false,
+      "seed": 2026104150
+    },
+    "jobId": "2c61f23d-0a57-4c5a-bd50-84dcaa883d1a",
+    "response": "id: 2c61f23d-0a57-4c5a-bd50-84dcaa883d1a\njob_id: 2c61f23d-0a57-4c5a-bd50-84dcaa883d1a\ndescription: A subtle in-place idle breathing loop: stalk slightly bends and relaxes, cap compresses down1pixel then restores, root fingers relax. Never lift both feet, never bounce or hop. The cap never rises higher than its starting top edge. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.\nframes: 8\nsize: 48x48px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 2026104150\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"2c61f23d-0a57-4c5a-bd50-84dcaa883d1a\")\nasset_id: d7d74dd9-4e1d-5e9b-a253-5d49decc647f\nasset_status: pending (saved to your gallery when generation completes)"
+  },
+  {
+    "actor": "mushroom_captain",
+    "motion": "Attack",
+    "request": {
+      "description": "One heavy grounded double-fist slam. Hunch the torso and raise both attached root fists beside the broad cap, then drive both fists DOWN together once around frame4, lower the cap2pixels and bend knees under the weight, then slowly recover. This is one simultaneous slam, not two attacks. Keep the huge two-tier red cap and its three spots, root legs and fists intact. Both feet remain grounded. NO growing spikes, projectiles, spores, clouds or flashes. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+      "first_frame_url": "https://api.pixellab.ai/mcp/images/8cc007fc-cd8d-4ae1-870a-40493a896a83/download?index=0",
+      "last_frame_url": "https://api.pixellab.ai/mcp/images/8cc007fc-cd8d-4ae1-870a-40493a896a83/download?index=0",
+      "frame_count": 8,
+      "subject_description": "Huge mushroom captain with two-tier red cap, three cream spots, thick cream stalk and broad root fists and feet.",
+      "initial_pose": "root feet planted, cap and stalk upright, facing left",
+      "direction": "west",
+      "view": "side",
+      "no_background": true,
+      "enhance_prompt": false,
+      "seed": 2026104151
+    },
+    "jobId": "a2b625b4-0db7-49df-a7fa-a370a3ba85e9",
+    "response": "id: a2b625b4-0db7-49df-a7fa-a370a3ba85e9\njob_id: a2b625b4-0db7-49df-a7fa-a370a3ba85e9\ndescription: One heavy grounded double-fist slam. Hunch the torso and raise both attached root fists beside the broad cap, then drive both fists DOWN together once around frame4, lower the cap2pixels and bend knees under the weight, then slowly recover. This is one simultaneous slam, not two attacks. Keep the huge two-tier red cap and its three spots, root legs and fists intact. Both feet remain grounded. NO growing spikes, projectiles, spores, clouds or flashes. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.\nframes: 8\nsize: 48x48px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 2026104151\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"a2b625b4-0db7-49df-a7fa-a370a3ba85e9\")\nasset_id: 1bef03d9-46a6-595d-a15c-daebea1189cc\nasset_status: pending (saved to your gallery when generation completes)"
+  },
+  {
+    "actor": "mushroom_captain",
+    "motion": "Stun",
+    "request": {
+      "description": "A slow weak stunned sway loop: cap and upper stalk lean slightly left then right with2pixel range while knees sag; cap stays attached, root arms hang low. Both root feet fixed. Never jump, attack or stretch into new shapes. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+      "first_frame_url": "https://api.pixellab.ai/mcp/images/8cc007fc-cd8d-4ae1-870a-40493a896a83/download?index=0",
+      "last_frame_url": "https://api.pixellab.ai/mcp/images/8cc007fc-cd8d-4ae1-870a-40493a896a83/download?index=0",
+      "frame_count": 8,
+      "subject_description": "Huge mushroom captain with two-tier red cap, three cream spots, thick cream stalk and broad root fists and feet.",
+      "initial_pose": "root feet planted, cap and stalk upright, facing left",
+      "direction": "west",
+      "view": "side",
+      "no_background": true,
+      "enhance_prompt": false,
+      "seed": 2026104152
+    },
+    "jobId": "bbccfdfd-f176-4515-bb59-c6ec7a8278a3",
+    "response": "id: bbccfdfd-f176-4515-bb59-c6ec7a8278a3\njob_id: bbccfdfd-f176-4515-bb59-c6ec7a8278a3\ndescription: A slow weak stunned sway loop: cap and upper stalk lean slightly left then right with2pixel range while knees sag; cap stays attached, root arms hang low. Both root feet fixed. Never jump, attack or stretch into new shapes. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.\nframes: 8\nsize: 48x48px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 2026104152\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"bbccfdfd-f176-4515-bb59-c6ec7a8278a3\")\nasset_id: c8cab11b-6154-572d-8040-a8d39481b9f7\nasset_status: pending (saved to your gallery when generation completes)"
+  },
+  {
+    "actor": "goblin_spear",
+    "motion": "Idle",
+    "request": {
+      "description": "A restrained in-place breathing loop. Chest and shoulders move down/up by at most1pixel, one small blink, free fingers relax. Maintain the exact held weapon and shield positions with only a tiny elbow shift. Both boots stay planted; no walking, no full-body bobbing, no attack. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+      "first_frame_url": "https://api.pixellab.ai/mcp/images/25b93380-1adf-441f-a04c-06d275ab7a45/download?index=0",
+      "last_frame_url": "https://api.pixellab.ai/mcp/images/25b93380-1adf-441f-a04c-06d275ab7a45/download?index=0",
+      "frame_count": 8,
+      "subject_description": "Lean green goblin in orange hood holding one long horizontal wooden spear with a steel tip, brown boots.",
+      "initial_pose": "left-facing battle ready stance with both boots grounded and signature weapon held",
+      "direction": "west",
+      "view": "side",
+      "no_background": true,
+      "enhance_prompt": false,
+      "seed": 2026104160
+    },
+    "jobId": "e5022d9d-61e4-4019-8262-905d3ca29b71",
+    "response": "id: e5022d9d-61e4-4019-8262-905d3ca29b71\njob_id: e5022d9d-61e4-4019-8262-905d3ca29b71\ndescription: A restrained in-place breathing loop. Chest and shoulders move down/up by at most1pixel, one small blink, free fingers relax. Maintain the exact held weapon and shield positions with only a tiny elbow shift. Both boots stay planted; no walking, no full-body bobbing, no attack. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.\nframes: 8\nsize: 48x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 2026104160\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"e5022d9d-61e4-4019-8262-905d3ca29b71\")\nasset_id: f02f3e7f-e2a9-5f44-904f-2fc164d23a0c\nasset_status: pending (saved to your gallery when generation completes)"
+  },
+  {
+    "actor": "goblin_spear",
+    "motion": "Attack",
+    "request": {
+      "description": "One short spear thrust. BOTH hands keep contact with the same straight spear shaft: draw spear back to the right2pixels, brace knees, then extend arms together and thrust LEFT at frame4; retract to the original stance. No more than2pixels left extension, all spear tips inside canvas. Keep spear length and steel point unchanged, hood and body orientation fixed. Feet stay grounded, no jump, no spin. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+      "first_frame_url": "https://api.pixellab.ai/mcp/images/25b93380-1adf-441f-a04c-06d275ab7a45/download?index=0",
+      "last_frame_url": "https://api.pixellab.ai/mcp/images/25b93380-1adf-441f-a04c-06d275ab7a45/download?index=0",
+      "frame_count": 8,
+      "subject_description": "Lean green goblin in orange hood holding one long horizontal wooden spear with a steel tip, brown boots.",
+      "initial_pose": "left-facing battle ready stance with both boots grounded and signature weapon held",
+      "direction": "west",
+      "view": "side",
+      "no_background": true,
+      "enhance_prompt": false,
+      "seed": 2026104161
+    },
+    "jobId": "2af7babd-111e-4c5d-99e2-c4442742d715",
+    "response": "id: 2af7babd-111e-4c5d-99e2-c4442742d715\njob_id: 2af7babd-111e-4c5d-99e2-c4442742d715\ndescription: One short spear thrust. BOTH hands keep contact with the same straight spear shaft: draw spear back to the right2pixels, brace knees, then extend arms together and thrust LEFT at frame4; retract to the original stance. No more than2pixels left extension, all spear tips inside canvas. Keep spear length and steel point unchanged, hood and body orientation fixed. Feet stay grounded, no jump, no spin. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.\nframes: 8\nsize: 48x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 2026104161\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"2af7babd-111e-4c5d-99e2-c4442742d715\")\nasset_id: 6ea45e29-8caa-57d4-835a-8d6e21a54e82\nasset_status: pending (saved to your gallery when generation completes)"
+  },
+  {
+    "actor": "goblin_spear",
+    "motion": "Stun",
+    "request": {
+      "description": "A weak stunned sway loop: knees soften, head and shoulders sag1pixel, torso rocks slightly backward and forward. Weapon hand and shield hand lower slightly but never let go. Equipment stays solid and same length, eyes briefly close. Both boots stay firmly grounded. No attack, no spin. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+      "first_frame_url": "https://api.pixellab.ai/mcp/images/25b93380-1adf-441f-a04c-06d275ab7a45/download?index=0",
+      "last_frame_url": "https://api.pixellab.ai/mcp/images/25b93380-1adf-441f-a04c-06d275ab7a45/download?index=0",
+      "frame_count": 8,
+      "subject_description": "Lean green goblin in orange hood holding one long horizontal wooden spear with a steel tip, brown boots.",
+      "initial_pose": "left-facing battle ready stance with both boots grounded and signature weapon held",
+      "direction": "west",
+      "view": "side",
+      "no_background": true,
+      "enhance_prompt": false,
+      "seed": 2026104162
+    },
+    "jobId": "9097fb7c-068a-4ec8-b8b2-8679b046db3d",
+    "response": "id: 9097fb7c-068a-4ec8-b8b2-8679b046db3d\njob_id: 9097fb7c-068a-4ec8-b8b2-8679b046db3d\ndescription: A weak stunned sway loop: knees soften, head and shoulders sag1pixel, torso rocks slightly backward and forward. Weapon hand and shield hand lower slightly but never let go. Equipment stays solid and same length, eyes briefly close. Both boots stay firmly grounded. No attack, no spin. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.\nframes: 8\nsize: 48x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 2026104162\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"9097fb7c-068a-4ec8-b8b2-8679b046db3d\")\nasset_id: 2fb75fed-66ff-5323-a50f-e10b78bcb7b9\nasset_status: pending (saved to your gallery when generation completes)"
+  },
+  {
+    "actor": "spore_mushroom",
+    "motion": "Idle",
+    "request": {
+      "description": "A subtle in-place idle breathing loop: stalk slightly bends and relaxes, cap compresses down1pixel then restores, root fingers relax. Never lift both feet, never bounce or hop. The cap never rises higher than its starting top edge. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+      "first_frame_url": "https://api.pixellab.ai/mcp/images/ad3a74bc-bc68-4121-8172-2057f79541fc/download?index=0",
+      "last_frame_url": "https://api.pixellab.ai/mcp/images/ad3a74bc-bc68-4121-8172-2057f79541fc/download?index=0",
+      "frame_count": 8,
+      "subject_description": "Tall thin cream mushroom with orange conical cap, one cream patch and root arms and feet.",
+      "initial_pose": "root feet planted, cap and stalk upright, facing left",
+      "direction": "west",
+      "view": "side",
+      "no_background": true,
+      "enhance_prompt": false,
+      "seed": 2026104170
+    },
+    "jobId": "98f05872-c509-4189-a58f-8d23781ab82d",
+    "response": "id: 98f05872-c509-4189-a58f-8d23781ab82d\njob_id: 98f05872-c509-4189-a58f-8d23781ab82d\ndescription: A subtle in-place idle breathing loop: stalk slightly bends and relaxes, cap compresses down1pixel then restores, root fingers relax. Never lift both feet, never bounce or hop. The cap never rises higher than its starting top edge. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.\nframes: 8\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 2026104170\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"98f05872-c509-4189-a58f-8d23781ab82d\")\nasset_id: 87cce212-d061-59ec-b113-f95d628f1836\nasset_status: pending (saved to your gallery when generation completes)"
+  },
+  {
+    "actor": "spore_mushroom",
+    "motion": "Attack",
+    "request": {
+      "description": "One upward spore-toss BODY motion only. Lower cap and bend torso down2pixels, bring both stubby arms inward, then extend arms upward-left once around frame4 while the cap returns only to its initial height. Recover. The tall orange cap never rises above the starting top row and never changes shape. Both root feet grounded. NO visible projectile, spore cloud, dots, glow or special effect. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.",
+      "first_frame_url": "https://api.pixellab.ai/mcp/images/ad3a74bc-bc68-4121-8172-2057f79541fc/download?index=0",
+      "last_frame_url": "https://api.pixellab.ai/mcp/images/ad3a74bc-bc68-4121-8172-2057f79541fc/download?index=0",
+      "frame_count": 8,
+      "subject_description": "Tall thin cream mushroom with orange conical cap, one cream patch and root arms and feet.",
+      "initial_pose": "root feet planted, cap and stalk upright, facing left",
+      "direction": "west",
+      "view": "side",
+      "no_background": true,
+      "enhance_prompt": false,
+      "seed": 2026104171
+    },
+    "jobId": "6cffc862-6a3a-49d6-883d-cd66373c8d04",
+    "response": "id: 6cffc862-6a3a-49d6-883d-cd66373c8d04\njob_id: 6cffc862-6a3a-49d6-883d-cd66373c8d04\ndescription: One upward spore-toss BODY motion only. Lower cap and bend torso down2pixels, bring both stubby arms inward, then extend arms upward-left once around frame4 while the cap returns only to its initial height. Recover. The tall orange cap never rises above the starting top row and never changes shape. Both root feet grounded. NO visible projectile, spore cloud, dots, glow or special effect. Preserve the exact canonical native square pixels, palette, proportions and equipment every frame. STRICT left-facing side view, no camera motion, no size changes, no detached parts. Keep same ground baseline and body root. Do not move the whole sprite across the canvas. No flashes, stars, trails, particles, ground shadows, scenery, new objects or effects.\nframes: 8\nsize: 32x32px\ntransparent: True\nlast_frame: yes (animating toward it)\nseed: 2026104171\ncost: 1 generation\nstatus: processing (~1-5 min)\n\nhint: get_image(job_id=\"6cffc862-6a3a-49d6-883d-cd66373c8d04\")\nasset_id: 5965dff7-0a33-55b4-9399-c93ead5eae77\nasset_status: pending (saved to your gallery when generation completes)"
+  }
+]

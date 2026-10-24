@@ -1,0 +1,2129 @@
+{
+  "version": "monster-motion-v3-three-states",
+  "generatedAt": "2026-10-22T06:14:07.439Z",
+  "hitFlash": {
+    "holdMs": 45,
+    "fadeMs": 75,
+    "previewCycleMs": 900
+  },
+  "actors": [
+    {
+      "id": "gate_sentinel",
+      "facesRight": false,
+      "height": 2,
+      "referenceHeightPixels": 86,
+      "clips": [
+        {
+          "motion": "Attack",
+          "sourceId": "sentinel-attack",
+          "sourceJob": "0247ba65-3671-405c-adfa-8d2198faaea4",
+          "note": "단일 공격 편집 후보. 메인 순서 1,5~13,21~24. 긴 중복 대기 제거. 원본 시트와 프레임은 전부 보존.",
+          "frames": [
+            "../../Client/Assets/Game/Art/Presentation/Clips/sentinel-attack/01.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/sentinel-attack/05.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/sentinel-attack/06.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/sentinel-attack/07.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/sentinel-attack/08.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/sentinel-attack/09.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/sentinel-attack/10.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/sentinel-attack/11.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/sentinel-attack/12.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/sentinel-attack/13.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/sentinel-attack/21.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/sentinel-attack/22.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/sentinel-attack/23.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/sentinel-attack/24.png"
+          ],
+          "sourceFrames": [
+            1,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            21,
+            22,
+            23,
+            24
+          ],
+          "fps": 20,
+          "loop": false,
+          "contactFrame": 7,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            }
+          ],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": false,
+          "legacyStun": false,
+          "pivot": [
+            78,
+            114
+          ]
+        },
+        {
+          "motion": "Hit",
+          "sourceId": "sentinel-canonical-static-idle",
+          "sourceJob": "",
+          "note": "Static canonical original; no continuous monster Idle has been produced.",
+          "frames": [
+            "../../Client/Assets/Game/Art/Presentation/Clips/sentinel-idle/00.png"
+          ],
+          "sourceFrames": [
+            0
+          ],
+          "fps": 1,
+          "loop": false,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [
+            {
+              "x": 76,
+              "y": 46
+            }
+          ],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": true,
+          "legacyStun": false,
+          "pivot": [
+            78,
+            114
+          ],
+          "effect": "whiteFlash",
+          "durationMs": 900
+        },
+        {
+          "motion": "Stun",
+          "sourceId": "legacy-gate_sentinel-static-stun",
+          "sourceJob": "",
+          "note": "Existing prototype single Stun pose; no continuous Stun clip exists.",
+          "frames": [
+            "../../Client/Assets/Game/Art/Source/gate-enemies-v1.png"
+          ],
+          "sourceFrames": [],
+          "fps": 1,
+          "loop": true,
+          "contactFrame": -1,
+          "referenceHeightPixels": 220,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": true,
+          "legacyStun": true,
+          "crop": [
+            66,
+            779,
+            193,
+            147
+          ],
+          "pivot": [
+            101.99999820000001,
+            147
+          ]
+        }
+      ],
+      "name": "성문 파수병",
+      "group": "original",
+      "status": "preserved",
+      "baseClip": {
+        "motion": "Idle",
+        "sourceId": "sentinel-canonical-static-idle",
+        "sourceJob": "",
+        "note": "Static canonical original; no continuous monster Idle has been produced.",
+        "frames": [
+          "../../Client/Assets/Game/Art/Presentation/Clips/sentinel-idle/00.png"
+        ],
+        "sourceFrames": [
+          0
+        ],
+        "fps": 1,
+        "loop": true,
+        "contactFrame": -1,
+        "referenceHeightPixels": 0,
+        "lowPoseFrames": [],
+        "recoverFrames": [],
+        "faceAnchors": [
+          {
+            "x": 76,
+            "y": 46
+          }
+        ],
+        "effectOrigin": {
+          "x": 0,
+          "y": 0
+        },
+        "staticFallback": true,
+        "legacyStun": false,
+        "pivot": [
+          78,
+          114
+        ]
+      }
+    },
+    {
+      "id": "chain_thrall",
+      "facesRight": false,
+      "height": 2,
+      "referenceHeightPixels": 86,
+      "clips": [
+        {
+          "motion": "Attack",
+          "sourceId": "chain-attack",
+          "sourceJob": "ec00530e-eaf5-462e-8885-7ec4648ec9b7",
+          "note": "단일 사슬 휘두르기 후보. 메인 중복 대기 축소. 사슬·추 연결과 회수 프레임 후속 검수.",
+          "frames": [
+            "../../Client/Assets/Game/Art/Presentation/Clips/chain-attack/01.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/chain-attack/04.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/chain-attack/05.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/chain-attack/06.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/chain-attack/07.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/chain-attack/08.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/chain-attack/09.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/chain-attack/10.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/chain-attack/11.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/chain-attack/12.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/chain-attack/13.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/chain-attack/14.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/chain-attack/15.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/chain-attack/16.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/chain-attack/17.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/chain-attack/20.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/chain-attack/24.png"
+          ],
+          "sourceFrames": [
+            1,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            20,
+            24
+          ],
+          "fps": 20,
+          "loop": false,
+          "contactFrame": 8,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            },
+            {
+              "x": 78,
+              "y": 46
+            }
+          ],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": false,
+          "legacyStun": false,
+          "pivot": [
+            78,
+            114
+          ]
+        },
+        {
+          "motion": "Hit",
+          "sourceId": "chain-canonical-static-idle",
+          "sourceJob": "",
+          "note": "Static canonical original; no continuous monster Idle has been produced.",
+          "frames": [
+            "../../Client/Assets/Game/Art/Presentation/Clips/chain-idle/00.png"
+          ],
+          "sourceFrames": [
+            0
+          ],
+          "fps": 1,
+          "loop": false,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [
+            {
+              "x": 76,
+              "y": 46
+            }
+          ],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": true,
+          "legacyStun": false,
+          "pivot": [
+            78,
+            114
+          ],
+          "effect": "whiteFlash",
+          "durationMs": 900
+        },
+        {
+          "motion": "Stun",
+          "sourceId": "legacy-chain_thrall-static-stun",
+          "sourceJob": "",
+          "note": "Existing prototype single Stun pose; no continuous Stun clip exists.",
+          "frames": [
+            "../../Client/Assets/Game/Art/Source/gate-enemies-v1.png"
+          ],
+          "sourceFrames": [],
+          "fps": 1,
+          "loop": true,
+          "contactFrame": -1,
+          "referenceHeightPixels": 225,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": true,
+          "legacyStun": true,
+          "crop": [
+            381,
+            767,
+            221,
+            159
+          ],
+          "pivot": [
+            119.00000696999999,
+            159
+          ]
+        }
+      ],
+      "name": "사슬 망령",
+      "group": "original",
+      "status": "preserved",
+      "baseClip": {
+        "motion": "Idle",
+        "sourceId": "chain-canonical-static-idle",
+        "sourceJob": "",
+        "note": "Static canonical original; no continuous monster Idle has been produced.",
+        "frames": [
+          "../../Client/Assets/Game/Art/Presentation/Clips/chain-idle/00.png"
+        ],
+        "sourceFrames": [
+          0
+        ],
+        "fps": 1,
+        "loop": true,
+        "contactFrame": -1,
+        "referenceHeightPixels": 0,
+        "lowPoseFrames": [],
+        "recoverFrames": [],
+        "faceAnchors": [
+          {
+            "x": 76,
+            "y": 46
+          }
+        ],
+        "effectOrigin": {
+          "x": 0,
+          "y": 0
+        },
+        "staticFallback": true,
+        "legacyStun": false,
+        "pivot": [
+          78,
+          114
+        ]
+      }
+    },
+    {
+      "id": "ash_wisp",
+      "facesRight": false,
+      "height": 2,
+      "referenceHeightPixels": 88,
+      "clips": [
+        {
+          "motion": "Attack",
+          "sourceId": "wisp-attack",
+          "sourceJob": "a009465a-a238-4dbf-94ef-a380061180a2",
+          "note": "한 번 손을 뻗는 시전 후보. 메인 중복 대기 축소. 네 방향별 예고용 모션을 전부 만든 상태는 아님.",
+          "frames": [
+            "../../Client/Assets/Game/Art/Presentation/Clips/wisp-attack/01.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/wisp-attack/05.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/wisp-attack/06.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/wisp-attack/10.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/wisp-attack/11.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/wisp-attack/12.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/wisp-attack/13.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/wisp-attack/14.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/wisp-attack/18.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/wisp-attack/19.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/wisp-attack/20.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/wisp-attack/21.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/wisp-attack/22.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/wisp-attack/24.png"
+          ],
+          "sourceFrames": [
+            1,
+            5,
+            6,
+            10,
+            11,
+            12,
+            13,
+            14,
+            18,
+            19,
+            20,
+            21,
+            22,
+            24
+          ],
+          "fps": 20,
+          "loop": false,
+          "contactFrame": 5,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            }
+          ],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": false,
+          "legacyStun": false,
+          "pivot": [
+            76,
+            114
+          ]
+        },
+        {
+          "motion": "Hit",
+          "sourceId": "wisp-canonical-static-idle",
+          "sourceJob": "",
+          "note": "Static canonical original; no continuous monster Idle has been produced.",
+          "frames": [
+            "../../Client/Assets/Game/Art/Presentation/Clips/wisp-idle/00.png"
+          ],
+          "sourceFrames": [
+            0
+          ],
+          "fps": 1,
+          "loop": false,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [
+            {
+              "x": 76,
+              "y": 46
+            }
+          ],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": true,
+          "legacyStun": false,
+          "pivot": [
+            76,
+            114
+          ],
+          "effect": "whiteFlash",
+          "durationMs": 900
+        },
+        {
+          "motion": "Stun",
+          "sourceId": "legacy-ash_wisp-static-stun",
+          "sourceJob": "",
+          "note": "Existing prototype single Stun pose; no continuous Stun clip exists.",
+          "frames": [
+            "../../Client/Assets/Game/Art/Source/gate-enemies-v1.png"
+          ],
+          "sourceFrames": [],
+          "fps": 1,
+          "loop": true,
+          "contactFrame": -1,
+          "referenceHeightPixels": 268,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": true,
+          "legacyStun": true,
+          "crop": [
+            719,
+            715,
+            150,
+            204
+          ],
+          "pivot": [
+            94.0000005,
+            204
+          ]
+        }
+      ],
+      "name": "재의 불씨",
+      "group": "original",
+      "status": "preserved",
+      "baseClip": {
+        "motion": "Idle",
+        "sourceId": "wisp-canonical-static-idle",
+        "sourceJob": "",
+        "note": "Static canonical original; no continuous monster Idle has been produced.",
+        "frames": [
+          "../../Client/Assets/Game/Art/Presentation/Clips/wisp-idle/00.png"
+        ],
+        "sourceFrames": [
+          0
+        ],
+        "fps": 1,
+        "loop": true,
+        "contactFrame": -1,
+        "referenceHeightPixels": 0,
+        "lowPoseFrames": [],
+        "recoverFrames": [],
+        "faceAnchors": [
+          {
+            "x": 76,
+            "y": 46
+          }
+        ],
+        "effectOrigin": {
+          "x": 0,
+          "y": 0
+        },
+        "staticFallback": true,
+        "legacyStun": false,
+        "pivot": [
+          76,
+          114
+        ]
+      }
+    },
+    {
+      "id": "gate_warden",
+      "facesRight": false,
+      "height": 3.2,
+      "referenceHeightPixels": 92,
+      "clips": [
+        {
+          "motion": "Attack",
+          "sourceId": "warden-attack",
+          "sourceJob": "f039c5ed-514d-4b24-aa27-fa01290a3457",
+          "note": "철퇴 구간 단발 기획 후보. 방패 밀기는 제외했으나 0→10 준비 연결이 튀어 비타격 전환 프레임 보강 필요. 최종 채택 아님.",
+          "frames": [
+            "../../Client/Assets/Game/Art/Presentation/Clips/warden-attack/00.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/warden-attack/10.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/warden-attack/11.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/warden-attack/12.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/warden-attack/13.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/warden-attack/14.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/warden-attack/15.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/warden-attack/18.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/warden-attack/19.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/warden-attack/20.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/warden-attack/21.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/warden-attack/22.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/warden-attack/23.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/warden-attack/24.png"
+          ],
+          "sourceFrames": [
+            0,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24
+          ],
+          "fps": 20,
+          "loop": false,
+          "contactFrame": 8,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [
+            {
+              "x": 68,
+              "y": 46
+            },
+            {
+              "x": 61,
+              "y": 46
+            },
+            {
+              "x": 63,
+              "y": 46
+            },
+            {
+              "x": 65,
+              "y": 46
+            },
+            {
+              "x": 67,
+              "y": 46
+            },
+            {
+              "x": 70,
+              "y": 46
+            },
+            {
+              "x": 72,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 50
+            },
+            {
+              "x": 64,
+              "y": 49
+            },
+            {
+              "x": 69,
+              "y": 47
+            },
+            {
+              "x": 69,
+              "y": 47
+            },
+            {
+              "x": 69,
+              "y": 47
+            },
+            {
+              "x": 67,
+              "y": 46
+            },
+            {
+              "x": 68,
+              "y": 46
+            }
+          ],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": false,
+          "legacyStun": false,
+          "pivot": [
+            78,
+            114
+          ]
+        },
+        {
+          "motion": "Hit",
+          "sourceId": "warden-canonical-static-idle",
+          "sourceJob": "",
+          "note": "Static canonical original; no continuous monster Idle has been produced.",
+          "frames": [
+            "../../Client/Assets/Game/Art/Presentation/Clips/warden-idle/00.png"
+          ],
+          "sourceFrames": [
+            0
+          ],
+          "fps": 1,
+          "loop": false,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [
+            {
+              "x": 68,
+              "y": 46
+            }
+          ],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": true,
+          "legacyStun": false,
+          "pivot": [
+            78,
+            114
+          ],
+          "effect": "whiteFlash",
+          "durationMs": 900
+        },
+        {
+          "motion": "Stun",
+          "sourceId": "legacy-gate_warden-static-stun",
+          "sourceJob": "",
+          "note": "Existing prototype single Stun pose; no continuous Stun clip exists.",
+          "frames": [
+            "../../Client/Assets/Game/Art/Source/gate-enemies-v1.png"
+          ],
+          "sourceFrames": [],
+          "fps": 1,
+          "loop": true,
+          "contactFrame": -1,
+          "referenceHeightPixels": 293,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": true,
+          "legacyStun": true,
+          "crop": [
+            967,
+            724,
+            297,
+            209
+          ],
+          "pivot": [
+            208.4999994,
+            209
+          ]
+        }
+      ],
+      "name": "성문 수문장",
+      "group": "original",
+      "status": "preserved",
+      "baseClip": {
+        "motion": "Idle",
+        "sourceId": "warden-canonical-static-idle",
+        "sourceJob": "",
+        "note": "Static canonical original; no continuous monster Idle has been produced.",
+        "frames": [
+          "../../Client/Assets/Game/Art/Presentation/Clips/warden-idle/00.png"
+        ],
+        "sourceFrames": [
+          0
+        ],
+        "fps": 1,
+        "loop": true,
+        "contactFrame": -1,
+        "referenceHeightPixels": 0,
+        "lowPoseFrames": [],
+        "recoverFrames": [],
+        "faceAnchors": [
+          {
+            "x": 68,
+            "y": 46
+          }
+        ],
+        "effectOrigin": {
+          "x": 0,
+          "y": 0
+        },
+        "staticFallback": true,
+        "legacyStun": false,
+        "pivot": [
+          78,
+          114
+        ]
+      }
+    },
+    {
+      "id": "bell_knight",
+      "facesRight": false,
+      "height": 4,
+      "referenceHeightPixels": 94,
+      "clips": [
+        {
+          "motion": "Attack",
+          "sourceId": "knight-attack-retry",
+          "sourceJob": "8fd0327d-9aa4-471b-9985-a7452019f3d6",
+          "note": "재작업 단발 내려베기 후보. 원본9~11에 한 번의 타격과 잔상, 이후 회수. 보스 등장용은 피해 없는 한 클립으로 재생. 생성된 무기 잔상은 향후 분리 보강 대상.",
+          "frames": [
+            "../../Client/Assets/Game/Art/Presentation/Clips/knight-attack-retry/00.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/knight-attack-retry/01.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/knight-attack-retry/02.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/knight-attack-retry/03.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/knight-attack-retry/04.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/knight-attack-retry/05.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/knight-attack-retry/06.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/knight-attack-retry/07.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/knight-attack-retry/08.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/knight-attack-retry/09.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/knight-attack-retry/10.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/knight-attack-retry/11.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/knight-attack-retry/12.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/knight-attack-retry/13.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/knight-attack-retry/14.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/knight-attack-retry/15.png",
+            "../../Client/Assets/Game/Art/Presentation/Clips/knight-attack-retry/16.png"
+          ],
+          "sourceFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "fps": 20,
+          "loop": false,
+          "contactFrame": 10,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [
+            {
+              "x": 75,
+              "y": 45
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 45
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 77,
+              "y": 46
+            },
+            {
+              "x": 65,
+              "y": 45
+            },
+            {
+              "x": 62,
+              "y": 45
+            },
+            {
+              "x": 60,
+              "y": 46
+            },
+            {
+              "x": 57,
+              "y": 46
+            },
+            {
+              "x": 75,
+              "y": 50
+            },
+            {
+              "x": 76,
+              "y": 49
+            },
+            {
+              "x": 76,
+              "y": 49
+            },
+            {
+              "x": 76,
+              "y": 49
+            },
+            {
+              "x": 76,
+              "y": 49
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 46
+            },
+            {
+              "x": 75,
+              "y": 45
+            }
+          ],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": false,
+          "legacyStun": false,
+          "pivot": [
+            78,
+            114
+          ]
+        },
+        {
+          "motion": "Hit",
+          "sourceId": "knight-canonical-static-idle",
+          "sourceJob": "",
+          "note": "Static canonical original; no continuous monster Idle has been produced.",
+          "frames": [
+            "../../Client/Assets/Game/Art/Presentation/Clips/knight-idle/00.png"
+          ],
+          "sourceFrames": [
+            0
+          ],
+          "fps": 1,
+          "loop": false,
+          "contactFrame": -1,
+          "referenceHeightPixels": 0,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [
+            {
+              "x": 75,
+              "y": 46
+            }
+          ],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": true,
+          "legacyStun": false,
+          "pivot": [
+            78,
+            114
+          ],
+          "effect": "whiteFlash",
+          "durationMs": 900
+        },
+        {
+          "motion": "Stun",
+          "sourceId": "legacy-bell_knight-static-stun",
+          "sourceJob": "",
+          "note": "Existing prototype single Stun pose; no continuous Stun clip exists.",
+          "frames": [
+            "../../Client/Assets/Game/Art/Source/gate-enemies-v1.png"
+          ],
+          "sourceFrames": [],
+          "fps": 1,
+          "loop": true,
+          "contactFrame": -1,
+          "referenceHeightPixels": 353,
+          "lowPoseFrames": [],
+          "recoverFrames": [],
+          "faceAnchors": [],
+          "effectOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "staticFallback": true,
+          "legacyStun": true,
+          "crop": [
+            1377,
+            714,
+            210,
+            216
+          ],
+          "pivot": [
+            104.4999963,
+            216
+          ]
+        }
+      ],
+      "name": "종의 기사",
+      "group": "original",
+      "status": "preserved",
+      "baseClip": {
+        "motion": "Idle",
+        "sourceId": "knight-canonical-static-idle",
+        "sourceJob": "",
+        "note": "Static canonical original; no continuous monster Idle has been produced.",
+        "frames": [
+          "../../Client/Assets/Game/Art/Presentation/Clips/knight-idle/00.png"
+        ],
+        "sourceFrames": [
+          0
+        ],
+        "fps": 1,
+        "loop": true,
+        "contactFrame": -1,
+        "referenceHeightPixels": 0,
+        "lowPoseFrames": [],
+        "recoverFrames": [],
+        "faceAnchors": [
+          {
+            "x": 75,
+            "y": 46
+          }
+        ],
+        "effectOrigin": {
+          "x": 0,
+          "y": 0
+        },
+        "staticFallback": true,
+        "legacyStun": false,
+        "pivot": [
+          78,
+          114
+        ]
+      }
+    },
+    {
+      "id": "gate_sentry",
+      "sourceId": "gate_sentry",
+      "name": "빗장 초병",
+      "group": "candidate",
+      "status": "reviewed",
+      "height": 2,
+      "referenceHeightPixels": 92,
+      "pivot": [
+        78,
+        114
+      ],
+      "clips": [
+        {
+          "motion": "Attack",
+          "frames": [
+            "MonsterMotionFresh-v3/Actors/gate_sentry/Attack/frame-000.png",
+            "MonsterMotionFresh-v3/Actors/gate_sentry/Attack/frame-001.png",
+            "MonsterMotionFresh-v3/Actors/gate_sentry/Attack/frame-002.png",
+            "MonsterMotionFresh-v3/Actors/gate_sentry/Attack/frame-003.png",
+            "MonsterMotionFresh-v3/Actors/gate_sentry/Attack/frame-004.png",
+            "MonsterMotionFresh-v3/Actors/gate_sentry/Attack/frame-005.png",
+            "MonsterMotionFresh-v3/Actors/gate_sentry/Attack/frame-006.png",
+            "MonsterMotionFresh-v3/Actors/gate_sentry/Attack/frame-007.png",
+            "MonsterMotionFresh-v3/Actors/gate_sentry/Attack/frame-008.png",
+            "MonsterMotionFresh-v3/Actors/gate_sentry/Attack/frame-009.png",
+            "MonsterMotionFresh-v3/Actors/gate_sentry/Attack/frame-010.png",
+            "MonsterMotionFresh-v3/Actors/gate_sentry/Attack/frame-011.png",
+            "MonsterMotionFresh-v3/Actors/gate_sentry/Attack/frame-012.png"
+          ],
+          "frameDurationsMs": [
+            80,
+            70,
+            70,
+            85,
+            90,
+            60,
+            40,
+            40,
+            60,
+            65,
+            65,
+            65,
+            80
+          ],
+          "contactFrame": 5,
+          "loop": false,
+          "fps": 14.942528735632184,
+          "staticFallback": false
+        },
+        {
+          "motion": "Hit",
+          "frames": [
+            "MonsterMotionFresh-v3/Inputs/gate_sentry.png"
+          ],
+          "fps": 1,
+          "loop": false,
+          "contactFrame": -1,
+          "staticFallback": true,
+          "effect": "whiteFlash",
+          "durationMs": 900
+        },
+        {
+          "motion": "Stun",
+          "frames": [
+            "MonsterMotionFresh-v3/Actors/gate_sentry/Stun/frame-000.png",
+            "MonsterMotionFresh-v3/Actors/gate_sentry/Stun/frame-001.png",
+            "MonsterMotionFresh-v3/Actors/gate_sentry/Stun/frame-002.png",
+            "MonsterMotionFresh-v3/Actors/gate_sentry/Stun/frame-003.png"
+          ],
+          "frameDurationsMs": [
+            170,
+            190,
+            220,
+            190
+          ],
+          "contactFrame": -1,
+          "loop": true,
+          "fps": 5.194805194805195,
+          "staticFallback": false
+        }
+      ],
+      "baseClip": {
+        "motion": "Idle",
+        "frames": [
+          "MonsterMotionFresh-v3/Inputs/gate_sentry.png"
+        ],
+        "fps": 1,
+        "loop": true,
+        "contactFrame": -1,
+        "staticFallback": true
+      },
+      "review": {
+        "id": "gate_sentry",
+        "sourceSha256": "316d3a69ef34e2e7ac5838eb3566f9770f06902549d2fc0b1ebf319d60292283",
+        "passed": true,
+        "scope": "browser-preview-only; user in-game approval pending",
+        "notes": "1×/0.5× 재생 화면과 전체 프레임을 검수. 창을 세워 준비한 뒤 5번 프레임에서 수평으로 한 번 찌르며 앞무릎이 굽고 뒷발이 버틴다. 창끝-자루-양손 연결이 유지되고 8~11번에서 회수해 기본 자세로 복귀한다. 기절은 무릎이 접히고 창이 바닥에 내려간 4프레임 왕복 루프이며 공격과 실루엣이 다르다. Hit은 찌르는 현재 자세에서 흰색으로 변한 뒤 같은 자세와 색으로 돌아오는 것을 브라우저에서 확인했다."
+      }
+    },
+    {
+      "id": "bell_hound",
+      "sourceId": "bell_hound",
+      "name": "종추 사냥개",
+      "group": "candidate",
+      "status": "reviewed",
+      "height": 2,
+      "referenceHeightPixels": 92,
+      "pivot": [
+        78,
+        114
+      ],
+      "clips": [
+        {
+          "motion": "Attack",
+          "frames": [
+            "MonsterMotionFresh-v3/Actors/bell_hound/Attack/frame-000.png",
+            "MonsterMotionFresh-v3/Actors/bell_hound/Attack/frame-001.png",
+            "MonsterMotionFresh-v3/Actors/bell_hound/Attack/frame-002.png",
+            "MonsterMotionFresh-v3/Actors/bell_hound/Attack/frame-003.png",
+            "MonsterMotionFresh-v3/Actors/bell_hound/Attack/frame-004.png",
+            "MonsterMotionFresh-v3/Actors/bell_hound/Attack/frame-005.png",
+            "MonsterMotionFresh-v3/Actors/bell_hound/Attack/frame-006.png",
+            "MonsterMotionFresh-v3/Actors/bell_hound/Attack/frame-007.png",
+            "MonsterMotionFresh-v3/Actors/bell_hound/Attack/frame-008.png",
+            "MonsterMotionFresh-v3/Actors/bell_hound/Attack/frame-009.png"
+          ],
+          "frameDurationsMs": [
+            60,
+            90,
+            110,
+            70,
+            45,
+            60,
+            65,
+            70,
+            75,
+            70
+          ],
+          "contactFrame": 3,
+          "loop": false,
+          "fps": 13.986013986013987,
+          "staticFallback": false
+        },
+        {
+          "motion": "Hit",
+          "frames": [
+            "MonsterMotionFresh-v3/Inputs/bell_hound.png"
+          ],
+          "fps": 1,
+          "loop": false,
+          "contactFrame": -1,
+          "staticFallback": true,
+          "effect": "whiteFlash",
+          "durationMs": 900
+        },
+        {
+          "motion": "Stun",
+          "frames": [
+            "MonsterMotionFresh-v3/Actors/bell_hound/Stun/frame-000.png",
+            "MonsterMotionFresh-v3/Actors/bell_hound/Stun/frame-001.png",
+            "MonsterMotionFresh-v3/Actors/bell_hound/Stun/frame-002.png",
+            "MonsterMotionFresh-v3/Actors/bell_hound/Stun/frame-003.png"
+          ],
+          "frameDurationsMs": [
+            180,
+            170,
+            230,
+            170
+          ],
+          "contactFrame": -1,
+          "loop": true,
+          "fps": 5.333333333333333,
+          "staticFallback": false
+        }
+      ],
+      "baseClip": {
+        "motion": "Idle",
+        "frames": [
+          "MonsterMotionFresh-v3/Inputs/bell_hound.png"
+        ],
+        "fps": 1,
+        "loop": true,
+        "contactFrame": -1,
+        "staticFallback": true
+      },
+      "review": {
+        "id": "bell_hound",
+        "sourceSha256": "39e042ab77ace2d07a5d167357a2d1a34f5917b3fd5a2674f707efeaa10978d6",
+        "passed": true,
+        "scope": "browser-preview-only; user in-game approval pending",
+        "notes": "전체 프레임과 1×/0.5× 재생 화면 검수. 선택 1~2에서 다리가 압축되고 3번에서 원통 머리가 왼쪽으로 최대 전진하며 뒷다리가 몸을 민다. 한 번의 접촉 뒤 4~8에서 고개와 다리를 회수한다. 원통 머리·네 다리·꼬리 종의 연결과 접지선이 유지된다. 기절은 앞다리와 몸통이 바닥으로 내려가고 원통 머리가 낮게 놓인 자세이며 작은 꼬리 흔들림만 남는다."
+      }
+    },
+    {
+      "id": "cracked_blade",
+      "sourceId": "cracked_blade",
+      "name": "금 간 검기사",
+      "group": "candidate",
+      "status": "reviewed",
+      "height": 2,
+      "referenceHeightPixels": 92,
+      "pivot": [
+        78,
+        114
+      ],
+      "clips": [
+        {
+          "motion": "Attack",
+          "frames": [
+            "MonsterMotionFresh-v3/Actors/cracked_blade/Attack/frame-000.png",
+            "MonsterMotionFresh-v3/Actors/cracked_blade/Attack/frame-001.png",
+            "MonsterMotionFresh-v3/Actors/cracked_blade/Attack/frame-002.png",
+            "MonsterMotionFresh-v3/Actors/cracked_blade/Attack/frame-003.png",
+            "MonsterMotionFresh-v3/Actors/cracked_blade/Attack/frame-004.png",
+            "MonsterMotionFresh-v3/Actors/cracked_blade/Attack/frame-005.png",
+            "MonsterMotionFresh-v3/Actors/cracked_blade/Attack/frame-006.png",
+            "MonsterMotionFresh-v3/Actors/cracked_blade/Attack/frame-007.png",
+            "MonsterMotionFresh-v3/Actors/cracked_blade/Attack/frame-008.png",
+            "MonsterMotionFresh-v3/Actors/cracked_blade/Attack/frame-009.png",
+            "MonsterMotionFresh-v3/Actors/cracked_blade/Attack/frame-010.png"
+          ],
+          "frameDurationsMs": [
+            60,
+            70,
+            95,
+            100,
+            60,
+            45,
+            45,
+            70,
+            70,
+            65,
+            75
+          ],
+          "contactFrame": 4,
+          "loop": false,
+          "fps": 14.56953642384106,
+          "staticFallback": false
+        },
+        {
+          "motion": "Hit",
+          "frames": [
+            "MonsterMotionFresh-v3/Inputs/cracked_blade.png"
+          ],
+          "fps": 1,
+          "loop": false,
+          "contactFrame": -1,
+          "staticFallback": true,
+          "effect": "whiteFlash",
+          "durationMs": 900
+        },
+        {
+          "motion": "Stun",
+          "frames": [
+            "MonsterMotionFresh-v3/Actors/cracked_blade/Stun/frame-000.png",
+            "MonsterMotionFresh-v3/Actors/cracked_blade/Stun/frame-001.png",
+            "MonsterMotionFresh-v3/Actors/cracked_blade/Stun/frame-002.png",
+            "MonsterMotionFresh-v3/Actors/cracked_blade/Stun/frame-003.png"
+          ],
+          "frameDurationsMs": [
+            190,
+            220,
+            230,
+            220
+          ],
+          "contactFrame": -1,
+          "loop": true,
+          "fps": 4.651162790697675,
+          "staticFallback": false
+        }
+      ],
+      "baseClip": {
+        "motion": "Idle",
+        "frames": [
+          "MonsterMotionFresh-v3/Inputs/cracked_blade.png"
+        ],
+        "fps": 1,
+        "loop": true,
+        "contactFrame": -1,
+        "staticFallback": true
+      },
+      "review": {
+        "id": "cracked_blade",
+        "sourceSha256": "26266fff40fed63dca3e927a4019bd58668dea7a5159bde2d1c59eec9e52648a",
+        "passed": true,
+        "scope": "browser-preview-only; user in-game approval pending",
+        "notes": "1×/0.5× 및 접촉 정지 화면에서 검을 머리 위로 든 준비, 몸통과 앞무릎이 내려가는 단일 내려치기, 검을 다시 세우는 회수 확인. 선택 4번이 실제 접촉. 검날-손잡이-손 연결과 투구 외형 유지. 기절은 몸을 앞으로 숙이고 무릎을 굽힌 채 검 끝을 낮게 늘어뜨린다. 1×와 0.5× 재생 및 4프레임 시트에서 검·손·투구 연결과 숙인 자세의 작은 흔들림 확인. 공격의 머리 위 준비 자세와 뚜렷이 구별됨. Hit은 현재 자세의 알파를 보존하는 공통 45ms 흰색 유지/75ms 복귀 효과."
+      }
+    },
+    {
+      "id": "gate_lock",
+      "sourceId": "gate_lock",
+      "name": "검문쇠 거인",
+      "group": "candidate",
+      "status": "reviewed",
+      "height": 3.2,
+      "referenceHeightPixels": 92,
+      "pivot": [
+        78,
+        114
+      ],
+      "clips": [
+        {
+          "motion": "Attack",
+          "frames": [
+            "MonsterMotionFresh-v3/Actors/gate_lock/Attack/frame-000.png",
+            "MonsterMotionFresh-v3/Actors/gate_lock/Attack/frame-001.png",
+            "MonsterMotionFresh-v3/Actors/gate_lock/Attack/frame-002.png",
+            "MonsterMotionFresh-v3/Actors/gate_lock/Attack/frame-003.png",
+            "MonsterMotionFresh-v3/Actors/gate_lock/Attack/frame-004.png",
+            "MonsterMotionFresh-v3/Actors/gate_lock/Attack/frame-005.png",
+            "MonsterMotionFresh-v3/Actors/gate_lock/Attack/frame-006.png",
+            "MonsterMotionFresh-v3/Actors/gate_lock/Attack/frame-007.png",
+            "MonsterMotionFresh-v3/Actors/gate_lock/Attack/frame-008.png"
+          ],
+          "frameDurationsMs": [
+            70,
+            90,
+            110,
+            70,
+            75,
+            45,
+            60,
+            100,
+            90
+          ],
+          "contactFrame": 4,
+          "loop": false,
+          "fps": 12.67605633802817,
+          "staticFallback": false
+        },
+        {
+          "motion": "Hit",
+          "frames": [
+            "MonsterMotionFresh-v3/Inputs/gate_lock.png"
+          ],
+          "fps": 1,
+          "loop": false,
+          "contactFrame": -1,
+          "staticFallback": true,
+          "effect": "whiteFlash",
+          "durationMs": 900
+        },
+        {
+          "motion": "Stun",
+          "frames": [
+            "MonsterMotionFresh-v3/Actors/gate_lock/Stun/frame-000.png",
+            "MonsterMotionFresh-v3/Actors/gate_lock/Stun/frame-001.png",
+            "MonsterMotionFresh-v3/Actors/gate_lock/Stun/frame-002.png",
+            "MonsterMotionFresh-v3/Actors/gate_lock/Stun/frame-003.png"
+          ],
+          "frameDurationsMs": [
+            200,
+            230,
+            210,
+            230
+          ],
+          "contactFrame": -1,
+          "loop": true,
+          "fps": 4.597701149425287,
+          "staticFallback": false
+        }
+      ],
+      "baseClip": {
+        "motion": "Idle",
+        "frames": [
+          "MonsterMotionFresh-v3/Inputs/gate_lock.png"
+        ],
+        "fps": 1,
+        "loop": true,
+        "contactFrame": -1,
+        "staticFallback": true
+      },
+      "review": {
+        "id": "gate_lock",
+        "sourceSha256": "832409ace840acc1203ccf673660c2614fc5c6ae8ceeef531392a1f7b808f2b7",
+        "passed": true,
+        "scope": "browser-preview-only; user in-game approval pending",
+        "notes": "컨택트 시트 및 1×/0.5× 재생에서 몸을 뒤로 틀어 주먹을 당긴 준비, 4번의 큰 주먹 전방 타격, 주먹 회수를 확인. 앞주먹은 어깨-팔꿈치와 연결되어 있고 등 가로대도 몸에 붙어 함께 기운다. 발 기준선은 유지된다. 기절은 무릎과 몸통이 낮게 접혀 큰 주먹이 바닥에 놓이는 별도 실루엣이며 005~007 왕복에서 부품 연결을 확인했다."
+      }
+    },
+    {
+      "id": "bell_knight_concept",
+      "sourceId": "bell_knight",
+      "name": "종의 기사 · 성문 가디언",
+      "group": "candidate",
+      "status": "reviewed",
+      "height": 4,
+      "referenceHeightPixels": 92,
+      "pivot": [
+        78,
+        114
+      ],
+      "clips": [
+        {
+          "motion": "Attack",
+          "frames": [
+            "MonsterMotionFresh-v3/Actors/bell_knight/Attack/frame-000.png",
+            "MonsterMotionFresh-v3/Actors/bell_knight/Attack/frame-001.png",
+            "MonsterMotionFresh-v3/Actors/bell_knight/Attack/frame-002.png",
+            "MonsterMotionFresh-v3/Actors/bell_knight/Attack/frame-003.png",
+            "MonsterMotionFresh-v3/Actors/bell_knight/Attack/frame-004.png",
+            "MonsterMotionFresh-v3/Actors/bell_knight/Attack/frame-005.png",
+            "MonsterMotionFresh-v3/Actors/bell_knight/Attack/frame-006.png",
+            "MonsterMotionFresh-v3/Actors/bell_knight/Attack/frame-007.png",
+            "MonsterMotionFresh-v3/Actors/bell_knight/Attack/frame-008.png",
+            "MonsterMotionFresh-v3/Actors/bell_knight/Attack/frame-009.png",
+            "MonsterMotionFresh-v3/Actors/bell_knight/Attack/frame-010.png",
+            "MonsterMotionFresh-v3/Actors/bell_knight/Attack/frame-011.png"
+          ],
+          "frameDurationsMs": [
+            80,
+            70,
+            85,
+            100,
+            100,
+            50,
+            80,
+            60,
+            70,
+            80,
+            75,
+            90
+          ],
+          "contactFrame": 6,
+          "loop": false,
+          "fps": 12.76595744680851,
+          "staticFallback": false
+        },
+        {
+          "motion": "Hit",
+          "frames": [
+            "MonsterMotionFresh-v3/Inputs/bell_knight.png"
+          ],
+          "fps": 1,
+          "loop": false,
+          "contactFrame": -1,
+          "staticFallback": true,
+          "effect": "whiteFlash",
+          "durationMs": 900
+        },
+        {
+          "motion": "Stun",
+          "frames": [
+            "MonsterMotionFresh-v3/Actors/bell_knight/Stun/frame-000.png",
+            "MonsterMotionFresh-v3/Actors/bell_knight/Stun/frame-001.png"
+          ],
+          "frameDurationsMs": [
+            350,
+            350
+          ],
+          "contactFrame": -1,
+          "loop": true,
+          "fps": 2.857142857142857,
+          "staticFallback": false
+        }
+      ],
+      "baseClip": {
+        "motion": "Idle",
+        "frames": [
+          "MonsterMotionFresh-v3/Inputs/bell_knight.png"
+        ],
+        "fps": 1,
+        "loop": true,
+        "contactFrame": -1,
+        "staticFallback": true
+      },
+      "review": {
+        "id": "bell_knight",
+        "sourceSha256": "f50d6a9b3864365111856e6d5e8a318fb33c9dcec232075f3c484f8ef303f95e",
+        "passed": true,
+        "scope": "browser-preview-only; user in-game approval pending",
+        "notes": "1×/0.5× 및 접촉 정지 화면에서 도끼를 어깨 뒤로 들고 방패로 몸을 지탱한 뒤 한 번 내려치는 동작 확인. 선택 6번에 도끼가 낮게 닿고 앞무릎이 굽는다. 도끼·방패의 손 연결과 발 기준 유지. 기절은 한쪽 무릎을 꿇고 투구를 숙인 채 도끼 자루를 지탱하고 방패를 바닥에 눕힌다. 1×와 0.5×에서 두 프레임의 작은 흔들림만 반복. 도끼 바깥 검은 곡선이 생긴 원본002~003은 제외. Hit은 현재 자세의 알파를 보존하는 공통 45ms 흰색 유지/75ms 복귀 효과."
+      }
+    },
+    {
+      "id": "chain_puppet",
+      "sourceId": "chain_puppet",
+      "name": "문패 꼭두각시",
+      "group": "candidate",
+      "status": "reviewed",
+      "height": 2,
+      "referenceHeightPixels": 92,
+      "pivot": [
+        78,
+        114
+      ],
+      "clips": [
+        {
+          "motion": "Attack",
+          "frames": [
+            "MonsterMotionFresh-v3/Actors/chain_puppet/Attack/frame-000.png",
+            "MonsterMotionFresh-v3/Actors/chain_puppet/Attack/frame-001.png",
+            "MonsterMotionFresh-v3/Actors/chain_puppet/Attack/frame-002.png",
+            "MonsterMotionFresh-v3/Actors/chain_puppet/Attack/frame-003.png",
+            "MonsterMotionFresh-v3/Actors/chain_puppet/Attack/frame-004.png",
+            "MonsterMotionFresh-v3/Actors/chain_puppet/Attack/frame-005.png",
+            "MonsterMotionFresh-v3/Actors/chain_puppet/Attack/frame-006.png",
+            "MonsterMotionFresh-v3/Actors/chain_puppet/Attack/frame-007.png",
+            "MonsterMotionFresh-v3/Actors/chain_puppet/Attack/frame-008.png",
+            "MonsterMotionFresh-v3/Actors/chain_puppet/Attack/frame-009.png",
+            "MonsterMotionFresh-v3/Actors/chain_puppet/Attack/frame-010.png",
+            "MonsterMotionFresh-v3/Actors/chain_puppet/Attack/frame-011.png",
+            "MonsterMotionFresh-v3/Actors/chain_puppet/Attack/frame-012.png"
+          ],
+          "frameDurationsMs": [
+            80,
+            90,
+            100,
+            70,
+            60,
+            50,
+            65,
+            60,
+            65,
+            70,
+            75,
+            75,
+            90
+          ],
+          "contactFrame": 6,
+          "loop": false,
+          "fps": 13.68421052631579,
+          "staticFallback": false
+        },
+        {
+          "motion": "Hit",
+          "frames": [
+            "MonsterMotionFresh-v3/Inputs/chain_puppet.png"
+          ],
+          "fps": 1,
+          "loop": false,
+          "contactFrame": -1,
+          "staticFallback": true,
+          "effect": "whiteFlash",
+          "durationMs": 900
+        },
+        {
+          "motion": "Stun",
+          "frames": [
+            "MonsterMotionFresh-v3/Actors/chain_puppet/Stun/frame-000.png",
+            "MonsterMotionFresh-v3/Actors/chain_puppet/Stun/frame-001.png"
+          ],
+          "frameDurationsMs": [
+            420,
+            420
+          ],
+          "contactFrame": -1,
+          "loop": true,
+          "fps": 2.380952380952381,
+          "staticFallback": false
+        }
+      ],
+      "baseClip": {
+        "motion": "Idle",
+        "frames": [
+          "MonsterMotionFresh-v3/Inputs/chain_puppet.png"
+        ],
+        "fps": 1,
+        "loop": true,
+        "contactFrame": -1,
+        "staticFallback": true
+      },
+      "review": {
+        "id": "chain_puppet",
+        "sourceSha256": "d33a4f5bab880839bdad614894ded7eb149fb2ba4b3dd5ed88ae5331aa5dd417",
+        "passed": true,
+        "scope": "browser-preview-only; user in-game approval pending",
+        "notes": "1×/0.5× 및 접촉 정지 화면에서 오른쪽 사슬팔을 당기고 몸을 돌린 뒤 왼쪽으로 추를 한 번 뻗는 동작 확인. 선택 6번에서 사슬이 곧게 펴지고 무릎/보폭이 함께 바뀐다. 두 팔과 두 추, 사슬 연결이 유지됨. 1×/0.5×와 두 프레임 정지 화면에서 머리가 왼쪽 아래로 처지고 무릎을 굽힌 탈진 자세 확인. 두 사슬팔과 직사각형 추 두 개는 고정되며, 머리만1px 아래로 움직였다 복귀. PixelLab 정확 픽셀 편집으로 머리 크기·목 연결을 보존했고 추가 추/연기/머리 확대 후보는 모두 제외. Hit은 현재 자세를 보존하는 흰색 효과."
+      }
+    },
+    {
+      "id": "hook_hound",
+      "sourceId": "hook_hound",
+      "name": "배수로 갈고리개",
+      "group": "candidate",
+      "status": "reviewed",
+      "height": 2,
+      "referenceHeightPixels": 92,
+      "pivot": [
+        78,
+        114
+      ],
+      "clips": [
+        {
+          "motion": "Attack",
+          "frames": [
+            "MonsterMotionFresh-v3/Actors/hook_hound/Attack/frame-000.png",
+            "MonsterMotionFresh-v3/Actors/hook_hound/Attack/frame-001.png",
+            "MonsterMotionFresh-v3/Actors/hook_hound/Attack/frame-002.png",
+            "MonsterMotionFresh-v3/Actors/hook_hound/Attack/frame-003.png",
+            "MonsterMotionFresh-v3/Actors/hook_hound/Attack/frame-004.png",
+            "MonsterMotionFresh-v3/Actors/hook_hound/Attack/frame-005.png",
+            "MonsterMotionFresh-v3/Actors/hook_hound/Attack/frame-006.png",
+            "MonsterMotionFresh-v3/Actors/hook_hound/Attack/frame-007.png",
+            "MonsterMotionFresh-v3/Actors/hook_hound/Attack/frame-008.png",
+            "MonsterMotionFresh-v3/Actors/hook_hound/Attack/frame-009.png"
+          ],
+          "frameDurationsMs": [
+            80,
+            90,
+            100,
+            55,
+            45,
+            45,
+            70,
+            65,
+            70,
+            100
+          ],
+          "contactFrame": 6,
+          "loop": false,
+          "fps": 13.88888888888889,
+          "staticFallback": false
+        },
+        {
+          "motion": "Hit",
+          "frames": [
+            "MonsterMotionFresh-v3/Inputs/hook_hound.png"
+          ],
+          "fps": 1,
+          "loop": false,
+          "contactFrame": -1,
+          "staticFallback": true,
+          "effect": "whiteFlash",
+          "durationMs": 900
+        },
+        {
+          "motion": "Stun",
+          "frames": [
+            "MonsterMotionFresh-v3/Actors/hook_hound/Stun/frame-000.png",
+            "MonsterMotionFresh-v3/Actors/hook_hound/Stun/frame-001.png"
+          ],
+          "frameDurationsMs": [
+            380,
+            420
+          ],
+          "contactFrame": -1,
+          "loop": true,
+          "fps": 2.5,
+          "staticFallback": false
+        }
+      ],
+      "baseClip": {
+        "motion": "Idle",
+        "frames": [
+          "MonsterMotionFresh-v3/Inputs/hook_hound.png"
+        ],
+        "fps": 1,
+        "loop": true,
+        "contactFrame": -1,
+        "staticFallback": true
+      },
+      "review": {
+        "id": "hook_hound",
+        "sourceSha256": "e3fd2a75a54d67167f463fe63535d1c0322a2a7acec0d25d2c6478bcbcf466ea",
+        "passed": true,
+        "scope": "browser-preview-only; user in-game approval pending",
+        "notes": "전체 프레임 접지선과 원본 대비 픽셀 보존 검사 통과. 모든 지지발 하단 y113. 앞으로 파고드는 x 이동과 접촉 프레임6 유지. 스테이지12에서 1×/0.5× 반복 재생 및 기절 전환 확인. 1×/0.5× 및 두 프레임 확대 화면에서 네 다리를 접어 몸을 낮추고 꼬리를 떨어뜨린 기절 자세 확인. 세로로 굽은 부리와 닫힌 꼬리 고리 형태 유지. 발은 고정된 채 상체만1px 왕복하며 공격의 돌진/내려치기와 구별된다. 남은 꼬리 외곽선은 영역 수정 후 재검수해 제거 확인. 선택6 타격 자세에서 Hit 전환 후 흰색으로 변하고 같은 자세로 원래 색에 복귀하는 것을 0.25× 상세 재생에서 확인."
+      }
+    },
+    {
+      "id": "chain_dancer",
+      "sourceId": "chain_dancer",
+      "name": "사슬 무희",
+      "group": "candidate",
+      "status": "reviewed",
+      "height": 2,
+      "referenceHeightPixels": 92,
+      "pivot": [
+        78,
+        114
+      ],
+      "clips": [
+        {
+          "motion": "Attack",
+          "frames": [
+            "MonsterMotionFresh-v3/Actors/chain_dancer/Attack/frame-000.png",
+            "MonsterMotionFresh-v3/Actors/chain_dancer/Attack/frame-001.png",
+            "MonsterMotionFresh-v3/Actors/chain_dancer/Attack/frame-002.png",
+            "MonsterMotionFresh-v3/Actors/chain_dancer/Attack/frame-003.png",
+            "MonsterMotionFresh-v3/Actors/chain_dancer/Attack/frame-004.png",
+            "MonsterMotionFresh-v3/Actors/chain_dancer/Attack/frame-005.png",
+            "MonsterMotionFresh-v3/Actors/chain_dancer/Attack/frame-006.png",
+            "MonsterMotionFresh-v3/Actors/chain_dancer/Attack/frame-007.png",
+            "MonsterMotionFresh-v3/Actors/chain_dancer/Attack/frame-008.png",
+            "MonsterMotionFresh-v3/Actors/chain_dancer/Attack/frame-009.png",
+            "MonsterMotionFresh-v3/Actors/chain_dancer/Attack/frame-010.png"
+          ],
+          "frameDurationsMs": [
+            70,
+            80,
+            90,
+            120,
+            45,
+            70,
+            55,
+            65,
+            70,
+            70,
+            90
+          ],
+          "contactFrame": 5,
+          "loop": false,
+          "fps": 13.333333333333334,
+          "staticFallback": false
+        },
+        {
+          "motion": "Hit",
+          "frames": [
+            "MonsterMotionFresh-v3/Inputs/chain_dancer.png"
+          ],
+          "fps": 1,
+          "loop": false,
+          "contactFrame": -1,
+          "staticFallback": true,
+          "effect": "whiteFlash",
+          "durationMs": 900
+        },
+        {
+          "motion": "Stun",
+          "frames": [
+            "MonsterMotionFresh-v3/Actors/chain_dancer/Stun/frame-000.png",
+            "MonsterMotionFresh-v3/Actors/chain_dancer/Stun/frame-001.png",
+            "MonsterMotionFresh-v3/Actors/chain_dancer/Stun/frame-002.png",
+            "MonsterMotionFresh-v3/Actors/chain_dancer/Stun/frame-003.png"
+          ],
+          "frameDurationsMs": [
+            180,
+            220,
+            240,
+            220
+          ],
+          "contactFrame": -1,
+          "loop": true,
+          "fps": 4.651162790697675,
+          "staticFallback": false
+        }
+      ],
+      "baseClip": {
+        "motion": "Idle",
+        "frames": [
+          "MonsterMotionFresh-v3/Inputs/chain_dancer.png"
+        ],
+        "fps": 1,
+        "loop": true,
+        "contactFrame": -1,
+        "staticFallback": true
+      },
+      "review": {
+        "id": "chain_dancer",
+        "sourceSha256": "99dc67d3b4d2bac339b93104f59ddb64d633473023a8f466f1db14f2c9de4f66",
+        "passed": true,
+        "scope": "browser-preview-only; user in-game approval pending",
+        "notes": "1×/0.5× 재생 및 타격 정지 화면 확인. 오른팔 뒤로 사슬을 세워 준비하고 보폭을 넓히며 몸을 왼쪽으로 돌려 한 번 낮게 내리친다. 선택5에서 사슬 끝이 가장 낮은 전방 접촉 위치. 두 팔·손과 사슬 연결, 후드와 허리장식 유지. 회수 후 제공 기본 자세로 복귀. 1×/0.5×에서 후드를 깊게 숙이고 두 팔과 사슬이 낮게 처진 상태 유지. 루프는 사슬 끝만 작은 왕복으로 움직이며 몸이 다시 서거나 공격하지 않음. Hit은 현재 자세 알파를 보존하는 공통 흰색 점멸."
+      }
+    },
+    {
+      "id": "pendulum_warden",
+      "sourceId": "pendulum_warden",
+      "name": "수문 추지기",
+      "group": "candidate",
+      "status": "reviewed",
+      "height": 3.2,
+      "referenceHeightPixels": 92,
+      "pivot": [
+        78,
+        114
+      ],
+      "clips": [
+        {
+          "motion": "Attack",
+          "frames": [
+            "MonsterMotionFresh-v3/Actors/pendulum_warden/Attack/frame-000.png",
+            "MonsterMotionFresh-v3/Actors/pendulum_warden/Attack/frame-001.png",
+            "MonsterMotionFresh-v3/Actors/pendulum_warden/Attack/frame-002.png",
+            "MonsterMotionFresh-v3/Actors/pendulum_warden/Attack/frame-003.png",
+            "MonsterMotionFresh-v3/Actors/pendulum_warden/Attack/frame-004.png",
+            "MonsterMotionFresh-v3/Actors/pendulum_warden/Attack/frame-005.png",
+            "MonsterMotionFresh-v3/Actors/pendulum_warden/Attack/frame-006.png",
+            "MonsterMotionFresh-v3/Actors/pendulum_warden/Attack/frame-007.png",
+            "MonsterMotionFresh-v3/Actors/pendulum_warden/Attack/frame-008.png",
+            "MonsterMotionFresh-v3/Actors/pendulum_warden/Attack/frame-009.png",
+            "MonsterMotionFresh-v3/Actors/pendulum_warden/Attack/frame-010.png",
+            "MonsterMotionFresh-v3/Actors/pendulum_warden/Attack/frame-011.png"
+          ],
+          "frameDurationsMs": [
+            90,
+            90,
+            110,
+            100,
+            65,
+            45,
+            75,
+            70,
+            65,
+            75,
+            85,
+            100
+          ],
+          "contactFrame": 6,
+          "loop": false,
+          "fps": 12.371134020618557,
+          "staticFallback": false
+        },
+        {
+          "motion": "Hit",
+          "frames": [
+            "MonsterMotionFresh-v3/Inputs/pendulum_warden.png"
+          ],
+          "fps": 1,
+          "loop": false,
+          "contactFrame": -1,
+          "staticFallback": true,
+          "effect": "whiteFlash",
+          "durationMs": 900
+        },
+        {
+          "motion": "Stun",
+          "frames": [
+            "MonsterMotionFresh-v3/Actors/pendulum_warden/Stun/frame-000.png",
+            "MonsterMotionFresh-v3/Actors/pendulum_warden/Stun/frame-001.png",
+            "MonsterMotionFresh-v3/Actors/pendulum_warden/Stun/frame-002.png",
+            "MonsterMotionFresh-v3/Actors/pendulum_warden/Stun/frame-003.png"
+          ],
+          "frameDurationsMs": [
+            230,
+            210,
+            240,
+            210
+          ],
+          "contactFrame": -1,
+          "loop": true,
+          "fps": 4.49438202247191,
+          "staticFallback": false
+        }
+      ],
+      "baseClip": {
+        "motion": "Idle",
+        "frames": [
+          "MonsterMotionFresh-v3/Inputs/pendulum_warden.png"
+        ],
+        "fps": 1,
+        "loop": true,
+        "contactFrame": -1,
+        "staticFallback": true
+      },
+      "review": {
+        "id": "pendulum_warden",
+        "sourceSha256": "97355057863d547c90172e97adcd1a6f107dccabbd00d3e8164a76ac440e69a9",
+        "passed": true,
+        "scope": "browser-preview-only; user in-game approval pending",
+        "notes": "1×/0.5× 및 타격 정지에서 방패를 안쪽으로 모은 준비 후 몸통과 앞다리에 체중을 실어 왼쪽으로 한 번 미는 방패 공격 확인. 선택6에서 방패가 가장 전방에 있고 팔이 방패를 지탱함. 원형 진자·상단 고리·시계 몸체 유지, 기본 자세 복귀. 큰 원호가 생긴009 제외. 1×/0.5× 및 정지 화면에서 시계 몸통이 오른쪽 방패에 기대어 내려앉고 왼팔이 낮게 늘어진 자세 확인. 원래 작은 주먹과 원형 진자 크기 유지. 루프 전체가 기운 상태를 유지하며 공격이나 일어서기 동작 없이 작은 흔들림만 있음. Hit은 현재 자세의 알파를 유지하는 공통 흰색 점멸."
+      }
+    },
+    {
+      "id": "chain_jailer",
+      "sourceId": "chain_jailer",
+      "name": "매달린 집행관",
+      "group": "candidate",
+      "status": "reviewed",
+      "height": 4,
+      "referenceHeightPixels": 92,
+      "pivot": [
+        78,
+        114
+      ],
+      "clips": [
+        {
+          "motion": "Attack",
+          "frames": [
+            "MonsterMotionFresh-v3/Actors/chain_jailer/Attack/frame-000.png",
+            "MonsterMotionFresh-v3/Actors/chain_jailer/Attack/frame-001.png",
+            "MonsterMotionFresh-v3/Actors/chain_jailer/Attack/frame-002.png",
+            "MonsterMotionFresh-v3/Actors/chain_jailer/Attack/frame-003.png",
+            "MonsterMotionFresh-v3/Actors/chain_jailer/Attack/frame-004.png",
+            "MonsterMotionFresh-v3/Actors/chain_jailer/Attack/frame-005.png",
+            "MonsterMotionFresh-v3/Actors/chain_jailer/Attack/frame-006.png",
+            "MonsterMotionFresh-v3/Actors/chain_jailer/Attack/frame-007.png",
+            "MonsterMotionFresh-v3/Actors/chain_jailer/Attack/frame-008.png",
+            "MonsterMotionFresh-v3/Actors/chain_jailer/Attack/frame-009.png",
+            "MonsterMotionFresh-v3/Actors/chain_jailer/Attack/frame-010.png"
+          ],
+          "frameDurationsMs": [
+            80,
+            90,
+            100,
+            90,
+            70,
+            60,
+            60,
+            80,
+            80,
+            70,
+            100
+          ],
+          "contactFrame": 4,
+          "loop": false,
+          "fps": 12.5,
+          "staticFallback": false
+        },
+        {
+          "motion": "Hit",
+          "frames": [
+            "MonsterMotionFresh-v3/Inputs/chain_jailer.png"
+          ],
+          "fps": 1,
+          "loop": false,
+          "contactFrame": -1,
+          "staticFallback": true,
+          "effect": "whiteFlash",
+          "durationMs": 900
+        },
+        {
+          "motion": "Stun",
+          "frames": [
+            "MonsterMotionFresh-v3/Actors/chain_jailer/Stun/frame-000.png",
+            "MonsterMotionFresh-v3/Actors/chain_jailer/Stun/frame-001.png",
+            "MonsterMotionFresh-v3/Actors/chain_jailer/Stun/frame-002.png",
+            "MonsterMotionFresh-v3/Actors/chain_jailer/Stun/frame-003.png"
+          ],
+          "frameDurationsMs": [
+            230,
+            200,
+            230,
+            200
+          ],
+          "contactFrame": -1,
+          "loop": true,
+          "fps": 4.651162790697675,
+          "staticFallback": false
+        }
+      ],
+      "baseClip": {
+        "motion": "Idle",
+        "frames": [
+          "MonsterMotionFresh-v3/Inputs/chain_jailer.png"
+        ],
+        "fps": 1,
+        "loop": true,
+        "contactFrame": -1,
+        "staticFallback": true
+      },
+      "review": {
+        "id": "chain_jailer",
+        "sourceSha256": "27c91764d9924a6795fec2fb43bd3347a7428272c571d5f8f9969d8eb18174cf",
+        "passed": true,
+        "scope": "browser-preview-only; user in-game approval pending",
+        "notes": "1×/0.5× 및 접촉 정지 화면에서 갈고리를 당긴 준비 후 몸과 위쪽 사슬이 함께 기울며 한 번 왼쪽으로 뻗는 동작 확인. 선택 4번이 접촉. 두 갈고리와 마스크가 유지되고 회수 후 기본 매달린 자세로 복귀. 기절은 고개와 어깨가 아래로 처지고 두 갈고리가 낮게 늘어진 매달린 자세. 1×와 0.5×, 루프 끝 정지 자세에서 마스크·두 위쪽 사슬·두 갈고리 유지와 작은 좌우 흔들림 확인. 세 번째 갈고리가 생겼던 이전 후보는 사용하지 않음. Hit은 현재 자세의 알파를 보존하는 공통 45ms 흰색 유지/75ms 복귀 효과."
+      }
+    }
+  ]
+}
